@@ -1,0 +1,22 @@
+{
+  "name": "CodWiki",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.12.1",
+    "@nuxt/hints": "^1.0.0-alpha.2",
+    "@nuxt/icon": "^2.1.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "nuxt": "^4.2.1",
+    "nuxt-api-party": "^3.4.2",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  }
+}

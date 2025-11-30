@@ -1,0 +1,864 @@
+<div class="main-container gap-lg w-full flex-1 grid place-content-between grid-cols-[minmax(0,1fr)] fixed-sidebar s:[&amp;.fixed-sidebar]:grid-cols-[minmax(0,756px)_minmax(0,316px)] s:[&amp;.flex-sidebar]:grid-cols-[minmax(0,756px)_auto]"><main class="main w-full min-w-0" id="main-content">
+    <shreddit-feed-error-banner> </shreddit-feed-error-banner>
+    <div class="flex justify-between flex-wrap mb-xs mt-xs contents">
+      <div class="s:hidden">
+        
+      </div>
+      
+    </div>
+  <div class="flex flex-col ">
+      <shreddit-title title="ashes-of-the-damned"></shreddit-title>
+      <div id="subreddit-wiki-header" class="flex items-start justify-between gap-md  flex-col bg-neutral-background pb-[20px] border-0 border-b-sm  border-solid border-neutral-border-weak  mb-[0px] items-start wiki-pilot-communities rounded-t-md ps-0 pe-0 pt-2xl sticky-header ">
+    
+        
+                <div class="flex items-end w-100">
+                  <subreddit-wiki-toc></subreddit-wiki-toc>
+                  <div class="flex w-100 flex-col">
+                    <div class="flex justify-between gap-x-sm">
+                      
+    <div class="flex items-center gap-xs">
+      <h1 class="font-bold text-32 m-0 text-neutral-content-strong" id="wiki-page-title">
+        ashes-of-the-damned
+      </h1>
+      <rpl-dialog-trigger dialog-id="wiki-update-page-title-modal-dialog">
+        
+      </rpl-dialog-trigger>
+    </div>
+  
+                       <div class="flex flex-row gap-x-sm items-center">
+    
+          <faceplate-tooltip appearance="inverted" position="bottom"><span slot="trigger" class="text-neutral-content">
+              <a rpl="" class="w-xl h-xl
+button-small px-[var(--rem10)]
+button-secondary
+
+
+
+items-center justify-center
+button inline-flex " href="/r/CODZombies/wiki/revisions/ashes-of-the-damned/" type="button"><span class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs"><svg rpl="" fill="currentColor" height="16" icon-name="clock" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 2.8c3.97 0 7.2 3.23 7.2 7.2s-3.23 7.2-7.2 7.2-7.2-3.23-7.2-7.2S6.03 2.8 10 2.8zM10 1a9 9 0 10.001 18.001A9 9 0 0010 1zm.9 8.63V4.68H9.1V10c0 .24.1.47.26.64l3.76 3.76 1.27-1.27-3.49-3.5z"></path>
+    </svg></span>
+    </span>
+    </a>
+            </span>
+            View page history
+          </faceplate-tooltip>
+          
+          <rpl-dialog-trigger dialog-id="wiki-edit-restricted-modal-id">
+                <faceplate-tooltip appearance="inverted" position="bottom"><span slot="trigger" class="text-neutral-content">
+          <a rpl="" class="hover:no-underline
+button-small px-[var(--rem10)]
+button-secondary
+
+
+
+items-center justify-center
+button inline-flex " aria-haspopup="dialog" aria-expanded="false"><span class="flex items-center justify-center">
+      <span class="flex me-xs"><svg rpl="" fill="currentColor" height="16" icon-name="lock" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.995 8.168h-.429V6.61A5.573 5.573 0 0010 1.044 5.573 5.573 0 004.434 6.61v1.557h-.429A2.005 2.005 0 002 10.173v3.692a5.054 5.054 0 005.054 5.054h5.892A5.054 5.054 0 0018 13.865v-3.692a2.005 2.005 0 00-2.005-2.005zM6.233 6.61A3.771 3.771 0 0110 2.843a3.771 3.771 0 013.767 3.767v1.557H6.234V6.61h-.001zm9.967 7.254a3.258 3.258 0 01-3.254 3.254H7.054A3.258 3.258 0 013.8 13.864v-3.692c0-.113.092-.205.205-.205h11.991c.113 0 .205.092.205.205l-.001 3.692zm-7.1-1.676h1.8v2.809H9.1v-2.81z"></path>
+    </svg></span>
+      <span class="flex items-center gap-xs">Editing Locked</span>
+    </span>
+    </a>
+          </span>
+                  Permission needed for editing
+                </faceplate-tooltip>
+                </rpl-dialog-trigger>
+                <rpl-dialog size="large" dialog-id="wiki-edit-restricted-modal-id" dialog-classname="" label="" variant="default" style="display: none;">
+    <template>
+    
+
+        <rpl-modal-card auto-close="true" aria-label="Editing locked" class="m-auto m:max-w-[380px]  min-h-[180px] max-w-[96%]"><div slot="title">
+      <div class="self-stretch text-zinc-900 text-18 font-bold leading-7 tracking-tight">
+        <h2 id="title" aria-live="polite" class="m-0 text-neutral-content-strong" aria-label="heading">Editing Locked</h2>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center">
+        <p class="text-14">
+          You don't have permission to edit this page. Learn more about editing eligibility in Reddit’s Help Center.
+        </p>
+      </div>
+      <div slot="secondary-button" class="z-10">
+      <a rpl="" aria-label="Close Community List Modal" class="
+button-small px-[var(--rem10)]
+button-secondary
+
+
+
+items-center justify-center
+button inline-flex " href="https://support.reddithelp.com/hc/articles/15484260038420-Reddit-wikis-for-your-communities" target="_blank"><span class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs">Learn More</span>
+    </span>
+    </a>
+    </div>
+    <div slot="close-button" class="z-10">
+      <button rpl="" aria-label="Close Community List Modal" class="
+button-small px-[var(--rem6)]
+button-secondary
+
+
+icon
+items-center justify-center
+button inline-flex ">
+      <span class="flex items-center justify-center">
+      <span class="flex"><svg rpl="" fill="currentColor" height="16" icon-name="close" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.273 10l5.363-5.363a.9.9 0 10-1.273-1.273L10 8.727 4.637 3.364a.9.9 0 10-1.273 1.273L8.727 10l-5.363 5.363a.9.9 0 101.274 1.273L10 11.273l5.363 5.363a.897.897 0 001.274 0 .9.9 0 000-1.273L11.275 10h-.002z"></path>
+    </svg></span>
+      
+    </span>
+    
+    </button>
+    </div></rpl-modal-card>
+      
+    </template>
+  </rpl-dialog>
+        
+    
+  </div>
+                    </div>
+                  </div>
+                </div>
+              
+        
+      </div>
+      <div class="ps-0 pe-0 pt-sm pb-sm border-t-0 border-e-0 border-s-0 border-b-sm  border-solid border-neutral-border-weak flex justify-between items-center gap-sm">
+    <div class="flex justify-between w-100 ">
+      <div>
+    <span class="text-neutral-content-weak text-12">
+      <faceplate-number number="34442" pretty=""><!---->34K</faceplate-number> views
+       • 
+      <faceplate-number number="105" pretty=""><!---->105</faceplate-number> edits
+       • 
+      latest by <a rpl="" class=" a cursor-pointer
+  
+  
+  
+  no-visited
+  hover:underline
+  " href="/user/Kalinine/">Kalinine</a>
+      <faceplate-timeago ts="2025-11-29T19:36:28.000000+0000"><!----> <time datetime="2025-11-29T19:36:28.000Z" title="Saturday, November 29, 2025 at 8:36:28 PM GMT+1"><!--?lit$788827535$-->17 hours ago</time> </faceplate-timeago>
+    </span>
+  </div>
+    </div>
+  </div>
+      <div class=" wiki-content rounded-b-[16px] wiki-pilot-communities  [&amp;_a]:underline"><div class="rounded-2 mb-sm bg-neutral-background-container-strong"></div>
+    <div class="md wiki">
+<h1 id="wiki_ashes_of_the_damned_.7C_complete_map_breakdown">Ashes of the Damned | Complete Map Breakdown</h1>
+<p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
+<p>On PC, there is a list of all the <strong>Chapters</strong> on the right. Just click on the text and&nbsp;you will be taken there. Alternatively, to find specific information, press <strong>CTRL + F</strong> and type the information you want to find. On mobile, the list of all the <strong>Chapters and Topics</strong> is at the top of the page.</p>
+<p style="text-align: center;"><strong><em>A new world, a new enemy and some strangely familiar allies. Uncover the secrets of the Dark Aether's most dangerous corner and face the primordial power of its ancient guardian.</em></strong></p>
+<hr>
+<h1 id="wiki_key_features">Key Features</h1>
+<p>This is a walkthrough of the key features of the map, such as Pack-a-Punch, Wonder Weapons, etc.</p>
+<h2 id="wiki_necrofuild_gauntlet_wonder_weapon">Necrofuild Gauntlet Wonder Weapon</h2>
+<ol>
+<li><strong>Starting at Round 8</strong>, go to Janus Towers Plaza, and check the wreckage opposite of the Warden 308 wall-buy. A Uber Klaus will spawn. Killing it will drop the Stabilizer Chip.</li>
+<li>Bring the Stabilizer Chip to Sherrif's Office at Ashwood and place it on the cell panel. It will say "Update requires restart".</li>
+<li>Throw rapidly several Stun Grenades inside the cell to bring Klaus back online. Klaus will break free, and the Klaus Remote Control will become available. <strong>You can get a free Stun Grenade inside the Server Room at Janus Towers and on a shelf next to Juggernog in The&nbsp;Ruby Rabbit at Ashwood.</strong></li>
+<li>Bring Klaus to the Zarya Cosmodrome and send it in front of the panel in Support Systems, next to one of the purchasable doors.&nbsp;Klaus will reactivate the panel which will trigger a scanner next to it. Stay inside the scanner and survive until it is completed.&nbsp;If done correctly, the Aether Barrel will be available to be picked up.</li>
+<li>Bring the Aether Barrel to the Power Pump at either of the three locations (Ashwood, Blackwater Lake, Vandorn Farm) and place it inside. The barrel will be charged with Refined Energy. Once it is charged, pick the barrel up again and bring it to the Power Pumps at the other two locations.&nbsp;<strong>You will have a limited time to do it, and the timer resets with every charge.</strong></li>
+<li>Bring the fully charged Aether Barrel next to the cube in the Cellar of Vandorn Farm to make it absorb the Aether energy.</li>
+<li>Use a Jump Pad to see three alchemical symbols on the rooftops around Vandorn Farm.&nbsp;Input the symbols on each side of cube then interact with the red eye on the fourth side of the cube to receive the Necrofluid Gauntlet.&nbsp;This will trigger a short lockdown where you need to shoot the green orbs around you and reload the wonder weapon to acquire them.</li>
+<li>Once all the orbs are collected, the Necrofluid Gauntlet is fully usable.</li>
+</ol>
+<h2 id="wiki_ol.27_tessie">Ol' Tessie</h2>
+<p>Ol' Tessie is the primary vehicle to move around the map. The truck is first found in Janus Towers Plaza and requires to place T.E.D.D.'s Head in the truck to power it up. The head can be found in the Server Room. Once the truck is powered-up, several upgrades are available.</p>
+<h3 class="" id="wiki_pack.2Da.2Dpunch_upgrade"><em>Pack-a-Punch Upgrade</em></h3>
+<ol>
+<li>Drive through the Collapsed Tower to reach Vandorn Farm, destroy the growth infestation around the Power Pump. Once done, interact with the power switch in the Barn.</li>
+<li>Drive through the Grounded Ship to reach Ashwood, destroy the growth infestation around the Power Pump at Ashwood Bridge. Once done, interact with the power switch on the Market Square side of Ashwood.</li>
+<li>Drive Ol' Tessie next to the garage door in Ashwood to open it. Interact with the Vehicle Upgrade Station to upgrade Ol' Tessie and install the Pack-a-Punch Machine to it. This will unlock the Pack-a-Punch for the rest of the match.</li>
+</ol>
+<h3 id="wiki_abomination_beam_upgrade"><em>Abomination Beam Upgrade</em></h3>
+<ol>
+<li>Kill the Cook zombie in Reba's Diner at Exit 115 to drop the Freeze Key.</li>
+<li>Open the freezer in the same location to find the Abomination Carcass.</li>
+<li>Bring the Abomination Heads to the Ashwood garage to upgrade Ol' Tessie.</li>
+</ol>
+<h3 class="" id="wiki_dg.2D2_turret_upgrade"><em>DG-2 Turret Upgrade</em></h3>
+<ol>
+<li>
+<p class=""><strong>Complete the Serum step from the Main Quest. This is needed to spawn the Seal of Sorrow as well as the keys required to open it.</strong></p>
+</li>
+<li>Find several keys hidden in the various locations in the Fog. To obtain the keys, use the Necrofluid Gauntlet to pull them out to the ground to be picked up.&nbsp;<strong>Each key grants the holder a negative effect when held. There are also several spawns for each key</strong>:
+<ol>
+<li><strong>Bruin Key</strong> (Crashed Rocket; Yellow) - <strong>This key will force you to use a Knife while holding it.</strong></li>
+<li><strong>Nightbird Key</strong> (Orda Graveyard; Red) - <strong>This key will put you at extremely low health while holding it</strong>.</li>
+<li><strong>Terrapin Key&nbsp;</strong>(Grounded Ship; Green) - <strong>This key will slow you down significantly while holding it</strong>.</li>
+</ol>
+</li>
+</ol>
+<div class="table-container"><table style="width: 1150px; height: 245.483px;" border="0"><colgroup><col><col><col></colgroup>
+<tbody>
+<tr style="height: 245.483px;">
+<td style="width: 369px;">
+<p style="text-align: center;"><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="1080" data-media-id="f5k5rj37sh1g1" data-width="1920" height="1080" width="1920" src="https://preview.redd.it/f5k5rj37sh1g1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=cc2901aa27368ef5f9e6ce24529d31164b1a12bf">Bruin Key</p>
+</td>
+<td style="text-align: center; width: 369px;"><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="1080" data-media-id="2j2uzr9ash1g1" data-width="1920" height="1080" width="1920" src="https://preview.redd.it/2j2uzr9ash1g1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=fa578fb56de1d7ca534d7a9bc8bf6b38379ad78c">Nightbird Key</td>
+<td style="text-align: center; width: 369px;"><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="1080" data-media-id="z4eh6ywcsh1g1" data-width="1920" height="1080" width="1920" src="https://preview.redd.it/z4eh6ywcsh1g1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=0239e2406f45730577f7d94a5beb996576471d85">Terrapin Key</td>
+</tr>
+</tbody>
+</table></div>
+<ol>
+<li>Bring each key to the Seal of Sorrow in Ruby Alley at Ashwood to remove the chains. Note that you cannot use the Jump Pads, as they will make you drop the key at the pad location.</li>
+<li>If done correctly, a cinematic will play and the DG-2 Turret Barrel will be available. Bring it back to the Ashwood garage to upgrade Ol' Tessie.</li>
+</ol>
+<hr>
+<h1 id="wiki_.22dust_to_dust.22_main_quest">"Dust to Dust" Main Quest</h1>
+<p>The prerequisites for the Main Quest is to obtain the Necrofluid Gauntlet and get all the upgrades for Ol' Tessie (minus the DG-2 Barrel as noted above).&nbsp;<strong>Note that many of the following steps and items can be completed and acquired while doing those prerequisites.</strong></p>
+<h2 class="" id="wiki_create_the_serum">Create the Serum</h2>
+<ol>
+<li>Buy Wisp Tea and travel to the Tailor Shop at Ashwood. Activate the Wisp Tea's spirit and it will go inside the mirror, revealing the Seal of Sorrow. Shoot the mirror with the Necrofuild Gauntlet to drop the Powder of the Forgotten. <strong>Alternatively, you can acquire all the ingredients first, see after the table.</strong></li>
+<li>Travel to the Zarya Cosmodrome and reach Yuri's Lab. Interact with the powder on the table to reveal three pigpen ciphers on the chalkboard above the table. The ciphers indicate which ingredient will need to be acquired. Use this website to solve the ciphers: <a href="https://crypto.interactive-maths.com/pigpen-cipher.html" rel="nofollow noopener" target="_blank">https://crypto.interactive-maths.com/pigpen-cipher.html</a></li>
+</ol>
+<div class="table-container"><table style="width: 513px; height: 399.883px; table-layout: fixed;" border="1"><colgroup><col><col><col></colgroup>
+<tbody>
+<tr style="height: 90.2333px;">
+<td style="width: 72px;">FUNGI</td>
+<td style="width: 186px;">Widow's Lantern</td>
+<td style="width: 276px;" rowspan="5"><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="1275" data-media-id="0tw8ie0fvf1g1" data-width="1028" height="372" width="300" src="https://preview.redd.it/0tw8ie0fvf1g1.png?width=320&amp;height=397&amp;format=png&amp;auto=webp&amp;s=77bf43f7ff57dd8e8b0d53e238b5fc50eecbffd1"></td>
+</tr>
+<tr style="height: 78.25px;">
+<td style="width: 72px;">LIMBS</td>
+<td style="width: 186px;">Mysterious Limb</td>
+</tr>
+<tr style="height: 80.6667px;">
+<td style="width: 72px;">OCULI</td>
+<td style="width: 186px;">Ravager Eyes</td>
+</tr>
+<tr style="height: 71.65px;">
+<td style="width: 72px;">CONCH</td>
+<td style="width: 186px;">Hoard Hunk Chucks</td>
+</tr>
+<tr style="height: 79.0833px;">
+<td style="width: 72px;">TALUS</td>
+<td style="width: 186px;">Human Bones</td>
+</tr>
+</tbody>
+</table></div>
+<ol>
+<li>Acquire the required ingredients:
+<ol>
+<li><strong>Hoard Hunk Chucks</strong>: Destroy a purple Aether Flora with Ol' Tessie Abomination Beam.</li>
+<li><strong>Widow's Lantern</strong>: Get the Jar of Spores from under Cabin's kitchen cabinet at Blackwater Lake. Interact with the horse corpse covered with mushrooms at Vandorn Farm. Wait 3 rounds then interact again.</li>
+<li><strong>Ravager Eyes</strong>: Kill a Ravager with a Saw Trap.</li>
+<li><strong>Human Bones</strong>: Throw a Tomahawk at the foot of the hanging corpse dripping blood in the middle of the Barn at Vandorn Farm. If done correctly the foot will drop. Throw a Molotov Cocktail to burn it. <strong>You can get a free Tomahawk at the diner in Exit 115, or by triggering the Axe Throwing easter egg at Blackwater Lake (see Side Quests and Easter Eggs section). There is also a free Molotov Cocktail on a barrel next to the Ashwood garage</strong>.</li>
+<li><strong>Mysterious Limb</strong>: Kill a Zursa with the Ol' Tessie Abomination Beam.</li>
+</ol>
+</li>
+<li>Interact with each ingredient following the order shown on the chalkboard (top to bottom).</li>
+<li>Interact with the central equipment to add your Blood. This will trigger a lockdown.&nbsp;<strong>Your health will be reduced and you can only heal yourself with kills with the Necrofluid Gauntlet</strong>.</li>
+<li>Kill the zombies to gather their souls inside the Serum. If done correctly, the room will be filled with a purple gas and the lockdown will end.</li>
+</ol>
+<h2 class="" id="wiki_gauntlet_challenges">Gauntlet Challenges</h2>
+<ul>
+<li>After upgrading Ol' Tessie with the DG-2 Turret, use the turret and shoot at the clock tower floating above Ashwood. Doing so will freeze the clocks on the tower.</li>
+<li>With the Necrofluid Gauntlet, shoot at any of the clock faces and pull back. This will turn the Gauntlet into a purple and transparent version. <strong>The effect is limited in time, you can have three purple charges per round (1 for each side with a frozen clock face). Additionally, shooting the Gauntlet will remove the effect.</strong></li>
+</ul>
+<h3 class="" id="wiki_vandorn_farm">Vandorn Farm</h3>
+<ol>
+<li>Travel to the Farmhouse at Vandorn Farm and check the clock on the wall. On the ground, all around the dining table, there will be Roman numerals scratched on the floor.</li>
+<li>Stand above the numeral corresponding to the one on the clock then look at Pa at the end of the table. If done correctly, Pa's head will turn towards you with his eyes turning red. Shoot Pa's head with the purple Gauntlet to spawn four energy orbs that will fly away.</li>
+<li>Find four ritual items around Vandorn Farm:
+<ol>
+<li><strong>Tasty-Face</strong>: On a bunk bed, near Stamin-Up in Farmhouse</li>
+<li><strong>Junior's Fun-Face</strong>: Upstairs at the Barn, on a toy horse</li>
+<li><strong>Pa's Pigsticker</strong>: In the Garage</li>
+<li><strong>Ma's Chalice</strong>: In the bathtub in the Cellar.</li>
+</ol>
+</li>
+<li>Place the ritual items on the corresponding glowing circles around the farm, then interact with the last item placed to trigger a lockdown where you will have to defend the items from getting damaged. Survive until the end of the lockdown.</li>
+</ol>
+<h3 class="" id="wiki_zarya_cosmodrome">Zarya Cosmodrome</h3>
+<ol>
+<li>Shoot the two spinning radar dishes with the purple Gauntlet (requires two charges). If done correctly, the monitors inside the Control Room will light up and three souls will float above the chairs. <strong>You have a limited time to do so, and you need to shoot the radar dishes again if you fail.</strong></li>
+<li>The first two monitors will spell a word using the pigpen characters, two letters at a time: LAUNCH, WEAPON, ENGINE, ROCKET.</li>
+<div class="pigpen-helper">
+  <div class="helper-card">
+    <div class="helper-header">Pigpen Quick Selector</div>
+    <div class="helper-options" role="tablist" aria-label="Pigpen words">
+      <button class="helper-option" role="tab" aria-selected="false" data-word="LAUNCH" title="LAUNCH"><span class="pigpen">LAUNCH</span></button>
+      <button class="helper-option" role="tab" aria-selected="false" data-word="WEAPON" title="WEAPON"><span class="pigpen">WEAPON</span></button>
+      <button class="helper-option" role="tab" aria-selected="false" data-word="ENGINE" title="ENGINE"><span class="pigpen">ENGINE</span></button>
+      <button class="helper-option" role="tab" aria-selected="false" data-word="ROCKET" title="ROCKET"><span class="pigpen">ROCKET</span></button>
+    </div>
+    <div class="helper-results">
+      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="LAUNCH">11 - 00 - 20 - 13 - 02 - 07</div>
+      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="WEAPON">22 - 04 - 00 - 15 - 14 - 13</div>
+      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="ENGINE">04 - 13 - 06 - 08 - 13 - 04</div>
+      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="ROCKET">17 - 14 - 02 - 10 - 04 - 19</div>
+    </div>
+    <div class="helper-note">Click the matching pigpen word to show its numbers. Others hide automatically.</div>
+  </div>
+</div>
+<li>The other six monitors will cycle through numbers. Use the selector above to reveal the correct sequence, then lock each number <strong>from left to right</strong> by shooting the red button.</li>
+</li>
+<li>If done correctly, the souls will disappear and the Soyuz rocket will launch.</li>
+</ol>
+<h3 class="" id="wiki_exit_115">Exit 115</h3>
+<ol>
+<li>Travel to Exit 115 with Ol' Tessie and wait for the colored lightning strikes to appear at the beginning of a round. Alternatively, you can manually trigger the lightning strikes by shooting at three light poles with lightning sparks around the area using the DG-2 Turret on Ol' Tessie. Shooting at one pole will cause another random pole to have sparks.</li>
+<li>Go to the McDougal's Service Station and shoot at the clock with the purple Gauntlet to freeze time for one minute.</li>
+<li>You will need to revive three corpses:
+<ol>
+<li>Using Ol' Tessie, ram into the cargo container opposite of the service station to open it and revive a trucker, glowing red.</li>
+<li>Summon Klaus and send him to revive the mechanic inside the garage, glowing yellow.</li>
+<li>Melee the cash register several time to open it and revive the waitress, glowing blue. <strong>Melee Macchiato reduces the amount of melee hits required.</strong></li>
+</ol>
+</li>
+<li>Lead each zombie to its corresponding colored lightning, and they will be stunned and disappear afterwards. If the timer runs out while doing this, the lightning will despawn and players have to wait until the next round to manually trigger the lightning again, or for them to naturally spawn. Players also have to shoot at the clock with the purple Gauntlet again to trigger the time stop. Once all three zombies are led to their lightning bolts, the process will be completed, as noted by the Entity's dialogue.</li>
+</ol>
+<h3 class="" id="wiki_blackwater_lake">Blackwater Lake</h3>
+<ol>
+<li>Travel to Blackwater Lake and reach the pier. A soul will be floating around, interact with it to make it fly away.</li>
+<li>Go inside the Cabin and shoot the projector with the purple Gauntlet. The projector will show four images corresponding to locations inside Blackwater Lake and in the order in which you will need to shoot film reels. Note that if you shoot in the wrong order, a jumpscare will be triggered, and you will have to wait until the next round to retry.
+<ol>
+<li><strong>Toolshed</strong>: On a shelf near the Sprayer spawn location.</li>
+<li><strong>Front of Cabin</strong>: Upstairs near the gramophone.</li>
+<li><strong>Back of Cabin</strong>: Beneath the stairs next to the Ammo Box.</li>
+<li><strong>Boat house</strong>: On a wood beam when looking above.</li>
+</ol>
+</li>
+<li>If done correctly, the soul will appear inside the room with Speed Cola, on top of a box. Interact with the box to open it and the soul will fly away.</li>
+<li>Summon Klaus and send him in front of the box. Klaus will take the Hellion Horn inside the box and travel to the back of the Cabin and stand next to the Ammo Box while inspecting the horn. <strong>Note: if you Save &amp; Quit after this step, you will need to redo it again.</strong></li>
+</ol>
+<h2 class="" id="wiki_veytharion_boss_fight">Veytharion Boss Fight</h2>
+<ol>
+<li>Interact with Klaus to start the boss fight process. He will blow the horn, which will summon <strong>red orbs with white mists</strong> that fly all over the map.</li>
+<li>Drive Ol' Tessie and <strong>collect the orbs by driving over them</strong> at each of the following locations: Monolith Forest, Collapsed Tower, Grounded Ship, Lost Cabins. Each location has three orbs in total. This process has an unspecified time limit, after which the orbs will despawn, and players will have to restart the process by interacting with Klaus again.</li>
+<li>If all orbs are collected you are teleported (with Ol' Tessie) into Veytharion's Sepulcher. The encounter progresses through three distinct phases:</li>
+</ol>
+<div class="boss-phases">
+  <div class="boss-card phase1">
+    <div class="boss-title">Phase 1: Opening Assault</div>
+    <ul class="boss-points">
+      <li>Constant missile volleys; moderate density.</li>
+      <li>Green barnacles spawn regularly — drive through to heal Tessie.</li>
+      <li>Spin immunity triggers periodically: a light beam appears.</li>
+      <li>Charge Tessie through the beam to overcharge → ram boss to stun.</li>
+      <li>Stun exposes underside weak point for high critical damage.</li>
+      <li>Max Ammo & Armor drop after successful weak point damage cycle.</li>
+    </ul>
+    <div class="boss-tip">Tip: Save a Tessie boost for lining up the stun ram quickly.</div>
+  </div>
+  <div class="boss-card phase2">
+    <div class="boss-title">Phase 2: Escalated Barrage</div>
+    <ul class="boss-points">
+      <li>Missile barrages increase in size & impact radius.</li>
+      <li>Barnacle heal spawns slightly less frequent — prioritize routes.</li>
+      <li>Immunity cycles shorten; beams appear closer to arena edge.</li>
+      <li>Stun + weak point loop identical; damage threshold higher.</li>
+      <li>Resource pulls (Max Ammo/Armor) with Gauntlet become critical.</li>
+    </ul>
+    <div class="boss-tip">Tip: Start wide clockwise driving to pre-position for beam entry.</div>
+  </div>
+  <div class="boss-card phase3">
+    <div class="boss-title">Phase 3: Laser Pressure</div>
+    <ul class="boss-points">
+      <li>Laser charge attack: continuous tracking beam at Tessie.</li>
+      <li>Counter by: sustained boosting OR ram during charge-up.</li>
+      <li>Missile + laser overlap punishes stationary aiming.</li>
+      <li>Immunity + spin persists; stun loop unchanged.</li>
+      <li>Weak point window slightly shorter; maximize burst damage.</li>
+      <li>Late-phase barnacle heals critical; plan a loop path.</li>
+    </ul>
+    <div class="boss-tip">Tip: If low armor, prioritize ram interrupt over outrunning laser.</div>
+  </div>
+</div>
+<ol start="4">
+<li>Once Veytharion is defeated, the final cinematic will play.</li>
+</ol>
+<li>Once Veytharion is defeated, the final cinematic will play.</li>
+</ol>
+<p><strong>IMPORTANT: AFTER THE CUTSCENE, CONTINUE THE GAME TO BE ABLE TO INTERACT WITH THE MYSTERIOUS OBJECT AT BLACKWATER LAKE AND UNLOCK THE RELICS FOR CURSED MODE.</strong></p>
+</div>
+<div class="md wiki"><hr>
+<h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
+<h2 id="wiki_.22turned_to_ashes.22_song">"Turned to Ashes" song</h2>
+<p>Find three headphones.</p>
+<ul>
+<li>In Server Room at Janus Towers, near the original T.E.D.D. Head location.</li>
+<li>In Judgement Square at Ashwood near the VS Recon wall buy.</li>
+<li>At Exit 115, inside a vehicle.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=nF1Rh3vdaeQ" rel="nofollow noopener" target="_blank">"Turn to Ashes" By Kevin Sherwood and Elena Siegman</a></p>
+<h2 class="" id="wiki_aether_flora_.28free_loot.29">Aether Flora (Free loot)</h2>
+<ol>
+<li>Find a Fertilizer Canister around the map
+<ol>
+<li>At Janus Towers Plaza, right of the spawn.</li>
+<li>Upstairs in the Barn at Vandorn Farm.</li>
+<li>On a table in Judgement Square at Ashwood.</li>
+<li>In the Toolshed at Blackwater Lake.</li>
+</ol>
+</li>
+<li>Several Aether Flora growth can also be found around the map. Interact with one of them to fertilize it. This will attract zombies and you'll need to defend it as you continue to interact with it. Once it has fully grown, interact with it again to obtain random loot, including Essence and Salvage.</li>
+</ol>
+<p><strong>Note: Using Toxic Growth on the Aether Flora appears to accelerate the growth and increase the value of the dropped loot, which could include Aetherium Crystals, Aether Tools and perk cans.</strong></p>
+<h2 class="" id="wiki_good_soldiers_.28dempsey.27s_side_quest.29">Good Soldiers (Dempsey's Side Quest)</h2>
+<ol>
+<li>Play as "Tank" Dempsey</li>
+<li>Travel to Crashed Rocket.</li>
+<li>Look for the corpses and interact with the Dog Tag, hidden in the snow. This will trigger a scripted sequence where Dempsey will be alone in a forest and zombies will spawn, attacking him.</li>
+<li>Follow the black orb and kill zombies until the story progresses. Eventually, Dempsey will be turned into a Disciple, and you will be tasked with killing 3 zombies as the Disciple.</li>
+<li>Once done, the Dempsey player will return to the main map, and rewards will spawn at the location, including a legendary killstreak and additional loot. <strong>The </strong><strong>"Good Soldiers" trophy/achievement will also pop here.</strong></li>
+</ol>
+<h2 class="" id="wiki_power.2Dup_statues">Power-Up Statues</h2>
+<ul>
+<li><strong>Full Power</strong>: Zarya Cosmodrome</li>
+<li><strong>Insta-Kill</strong>: In the opening at the top of the silo in Vandorn Farm</li>
+<li><strong>Nuke</strong>: Top of the bell tower in Ashwood.</li>
+</ul>
+<h2 class="" id="wiki_jump_pads_portal">Jump Pads Portal</h2>
+<ol>
+<li>Open all the location barriers with Ol' Tessie and use all the Jump Pads</li>
+<li>After a few rounds, the most left light above the Janus Tower Reception will start blinking. It will display a 7-digit code, with digits going from 1 to 7. Those numbers correspond to the number seen on the back of the Jump Pads around the map. Use each Jump Pad in the order displayed by the blinking light.
+<ul>
+<li>Janus Towers: 1</li>
+<li>Vandorn Farm: 2</li>
+<li>Ashwood (Double Tap): 3</li>
+<li>Blackwater Lake: 4</li>
+<li>Exit 115: 5</li>
+<li>Zarya Cosmodrome: 6</li>
+<li>Ashwood (Juggernog): 7</li>
+</ul>
+</li>
+<li>If done correctly, a portal will appear in the sky between two Jump Pad locations. Find the correct Jump Pad to reach it. You will be teleported back to Ashwood and loot will drop from the portal there. <strong>Doing it above Round 18 will guarantee a Ray Gun Mark II to be dropped.</strong></li>
+</ol>
+<h2 class="" id="wiki_arc.2Dxd_race">ARC-XD Race</h2>
+<ul>
+<li>Find a remote controller in the Fog:
+<ul>
+<li>Next to a briefcase in the cabin leading to Blackwater Lake at Lost Cabin.</li>
+<li>Behind a tree at Crashed Plane.</li>
+<li>Above the window where the Terrapin Key can be found at Grounded Ship.</li>
+</ul>
+</li>
+<li>This will trigger an ARC-XD race at the Zarya Cosmodrome.</li>
+<li>Once the race is done, Mr Peeks will appear before spawning a trophy (one for each player) containing loot.</li>
+</ul>
+<h2 class="" id="wiki_axe_throwing">Axe Throwing</h2>
+<ol>
+<li>Interact with the trophy inside the Toolshed at Blackwater Lake.</li>
+<li>Get a Tomahawk outside, stuck in a log.</li>
+<li>Find the floating target near the road. Throw the Tomahawk at the target. It will disappear and a new one will spawn. The target will start to move after several throws. Repeat until all the targets are done.</li>
+<li>Once done, Mr Peeks will appear before spawning a trophy (one for each player) containing loot. Note that the rewards scale in value with higher rounds.</li>
+</ol>
+<h2 class="" id="wiki_tv_twins_free_perk">TV Twins Free Perk</h2>
+<ol>
+<li>Travel to the Farmhouse at Vandorn Farm, and interact with the TV near Stamin Up. Keep interacting with it until you see two human shapes.</li>
+<li>Continue to interact with the TV until only one human shape is visible. A laugh will play.</li>
+<li>Reach the Cellar and find the blue spirit drawing a figure on the ground.</li>
+<li>Return to the TV and keep interacting with it until no human shapes are visible.</li>
+<li>Find the two girl spirits dancing near the Jump Pad. After a few seconds they will disappear and drop some loot including a guaranteed Wisp Tea perk can.</li>
+<li>Every other round, the girls will respawn at random areas around Vandorn Farm dancing, and approaching them will result in additional random loot drops.</li>
+</ol>
+<h2 class="" id="wiki_maldruk_bear_fight">Maldruk Bear Fight</h2>
+<ol>
+<li>Equipped with Death Perception, check Crashed Rocket or Orda Graveyard for highlighted bear footprints.</li>
+<li>Follow the footprints until it triggers a cutscene. This will start the fight against a Zursa named Maldruk.</li>
+<li>Within the arena, you'll find a Ray Gun, a Legendary weapon and some equipment and Essence. Killing Maldruk will also drop additional loot.</li>
+</ol>
+<p><strong>Killing Maldruk only using your melee weapon will drop the Claw Talisman. Picking up the talisman will give a permanent Double Points for melee kills.</strong></p>
+<h2 class="" id="wiki_mixologist_.28free_perks.29">Mixologist (Free Perks)</h2>
+<p>Collect a specific trio of ingredients then mix them at the soda machine in Reba's Diner (Exit 115) to claim the perk. Crafting any recipe completes <strong>Soda Sommelier</strong>; crafting all four unlocks the <strong>Mixologist</strong> achievement. <strong>Only one drink per player.</strong> Picking up ingredients for multiple recipes causes a failed mix.</p>
+<div class="mixologist-grid">
+  <div class="perk-card quick" id="wiki_quick_revive">
+    <div class="perk-title">Quick Revive</div>
+    <ul class="perk-ingredients">
+      <li><strong>Fish</strong> – Blackwater Lake</li>
+      <li><strong>Toilet Cleaner</strong> – Server Room (Janus Towers)</li>
+      <li><strong>Stim Shot</strong> – Control Room (Zarya Cosmodrome)</li>
+    </ul>
+    <div class="perk-action">Mix at Reba's Diner soda machine.</div>
+    <div class="perk-tip">Tip: Grab Fish last to minimize cross-recipe pickups.</div>
+  </div>
+  <div class="perk-card stamin" id="wiki_stamin.2Dup">
+    <div class="perk-title">Stamin-Up</div>
+    <ul class="perk-ingredients">
+      <li><strong>Box of Potatoes</strong> – Cellar (Vandorn Farm)</li>
+      <li><strong>Bag of Beans</strong> – Hargrove's Mercantile (Ashwood)</li>
+      <li><strong>Jerrycan</strong> – Dumpster area (Exit 115)</li>
+    </ul>
+    <div class="perk-action">Mix at Reba's Diner soda machine.</div>
+    <div class="perk-tip">Tip: Route Farm → Ashwood → Exit 115 for fastest loop.</div>
+  </div>
+  <div class="perk-card speed" id="wiki_speed_cola">
+    <div class="perk-title">Speed Cola</div>
+    <ul class="perk-ingredients">
+      <li><strong>Plant</strong> – Under truck (Blackwater Lake)</li>
+      <li><strong>Cut Tomatoes</strong> – Crate near door (Hargrove's Mercantile)</li>
+      <li><strong>Sugar Box</strong> – Counter (Reba's Diner)</li>
+    </ul>
+    <div class="perk-action">Mix at Reba's Diner soda machine.</div>
+    <div class="perk-tip">Tip: Grab Sugar last to avoid accidental Juggernog overlap.</div>
+  </div>
+  <div class="perk-card jugger" id="wiki_juggernog">
+    <div class="perk-title">Juggernog</div>
+    <ul class="perk-ingredients">
+      <li><strong>Weed</strong> – Pavement (Janus Towers Plaza)</li>
+      <li><strong>Jar of Milk</strong> – Entrance to Cellar (Barn → Vandorn Farm)</li>
+      <li><strong>Box of Eggs</strong> – Shelf (Reba's Diner)</li>
+    </ul>
+    <div class="perk-action">Mix at Reba's Diner soda machine.</div>
+    <div class="perk-tip">Tip: Milk + Eggs are close; secure Weed first to avoid detours.</div>
+  </div>
+</div>
+<hr>
+<h1 id="wiki_relics">Relics</h1>
+<p>The nine <strong>Relics</strong> modify gameplay in Cursed Mode. They are grouped by difficulty: <span class="relic-chip grim">Grim</span> (entry), <span class="relic-chip sinister">Sinister</span> (mid), <span class="relic-chip wicked">Wicked</span> (high). Slot combinations raise your Cursed Tier:</p>
+<ul class="relic-tiers">
+  <li><strong>Tier I</strong>: Any 3 <span class="relic-chip grim">Grim</span> — Unlocks Golden Armor (45,000 Essence)</li>
+  <li><strong>Tier II</strong>: 2 <span class="relic-chip sinister">Sinister</span> + 2 <span class="relic-chip grim">Grim</span> (example loadout) — Unlocks Ultra Rarity (weapon upgrade cost scaling)</li>
+  <li><strong>Tier III</strong>: 3 <span class="relic-chip grim">Grim</span> + 2 <span class="relic-chip sinister">Sinister</span> + 1 <span class="relic-chip wicked">Wicked</span> (example) — Unlocks Pack‑a‑Punch IV (100,000 Essence)</li>
+</ul>
+<p class="relic-note">You can mix other combinations; higher tier requirements demand total difficulty value equal to target tier fill (Grim≈1 • Sinister≈2 • Wicked≈3).</p>
+<div class="relic-grid">
+  <div class="relic-section">
+    <h2 class="relic-heading grim">Grim Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card grim">
+        <div class="relic-title">DRAGON WINGS <span class="mini-tag">Power-Ups disabled</span></div>
+        <ol class="steps">
+          <li>Reach Round 20</li>
+          <li>Use Vandorn→Janus Jump Pad; shoot 3 purple rooftop symbols mid-air</li>
+          <li>Start trial at Barn portal</li>
+          <li>Survive 4 waves (Power-Ups hurt you)</li>
+        </ol>
+      </div>
+      <div class="relic-card grim">
+        <div class="relic-title">LAWYER'S PEN <span class="mini-tag">Items may spawn as Shock Mimics</span></div>
+        <ol class="steps">
+          <li>Reach Round 20</li>
+          <li>Ignite 3 red candles (Ruby Rabbit couch • Lost Cabin couch • Farmhouse bedside)</li>
+          <li>Start trial at Barn portal</li>
+          <li>Survive 4 waves with only Shock Mimics spawing</li>
+        </ol>
+      </div>
+      <div class="relic-card grim">
+        <div class="relic-title">TEDDY BEAR <span class="mini-tag">Round delay −75%</span></div>
+        <ol class="steps">
+          <li>Find 10 Mister Peeks while using Aether Shroud</li>
+          <li>Start Barn portal trial</li>
+          <li>Survive waves (each shot costs 100 Essence)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading sinister">Sinister Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card sinister">
+        <div class="relic-title">VRIL SPHERE <span class="mini-tag">Max 4 perks</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Tier I</li>
+          <li>Reach Round 40; spawn Doppleghast; kill via Jump Pad</li>
+          <li>Start launch pad portal trial (Zarya)</li>
+          <li>Survive 5 waves (purchases disabled; 2 HVT waves)</li>
+        </ol>
+      </div>
+      <div class="relic-card sinister">
+        <div class="relic-title">FOCUSING STONE <span class="mini-tag">No Self-Revives</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Tier I</li>
+          <li>Round 40: obtain 2 wine bottles (melee Zursa • T.E.D.D. Trial chest)</li>
+          <li>Place & pattern-shoot bottles (Blackwater Cabin)</li>
+          <li>Start Zarya launch portal trial (Essence wiped)</li>
+          <li>Survive waves with zero Essence</li>
+        </ol>
+      </div>
+      <div class="relic-card sinister">
+        <div class="relic-title">??? <span class="mini-tag">Unknown effect</span></div>
+        <p class="placeholder">Effect & steps undiscovered.</p>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading wicked">Wicked Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card wicked">
+        <div class="relic-title">BUS <span class="mini-tag">Enemy health regenerates</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Tier II</li>
+          <li>Reach Round 60; flawless round (no damage) → laugh cue</li>
+          <li>Start boat house portal trial (Blackwater)</li>
+          <li>Survive 6 waves (zombies only killable by other zombies; Brain Rot needed)</li>
+        </ol>
+      </div>
+      <div class="relic-card wicked">
+        <div class="relic-title">DRAGON <span class="mini-tag">Ammo Crates disabled</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Tier II</li>
+          <li>Complete Main Quest at Round 60 & continue</li>
+          <li>Start cabin portal trial (Blackwater)</li>
+          <li>Survive 6 waves (damage only with explosives)</li>
+        </ol>
+      </div>
+      <div class="relic-card wicked">
+        <div class="relic-title">BLOOD VIALS <span class="mini-tag">Augments off</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Tier II</li>
+          <li>Round 20: ringing red phone sequence (retry at 30 if fail)</li>
+          <li>Start interior cabin portal trial (Blackwater)</li>
+          <li>Survive 6 waves (−50% damage output)</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<h1 id="wiki_wall.2Dbuys_and_perk.2Da.2Dcolas">Wall-Buys and Perk-a-Colas</h1>
+<h2 id="wiki_wall.2Dbuys_locations">Wall-Buys Locations</h2>
+<div class="table-container"><table style="width: 421px; height: 930.267px; table-layout: fixed; border-width: 1px;" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 42.2333px;">
+<td style="border-width: 1px; width: 214px;">Code 9 <sup><em>Reception</em></sup></td>
+<td style="border-width: 1px; width: 180px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>JANUS TOWERS</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="border-width: 1px; width: 214px;">Warden 308 <sup><em>Plaza</em></sup></td>
+</tr>
+<tr style="height: 48.3667px;">
+<td style="border-width: 1px; width: 214px;">Echo 12</td>
+<td style="border-width: 1px; width: 180px;" rowspan="4">
+<p class="" style="text-align: left;"><strong>VANDORN FARM</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="border-width: 1px; width: 214px;">MK. 78 <sup><em>Cellar</em></sup></td>
+</tr>
+<tr style="height: 66.2333px;">
+<td style="width: 214px; border-width: 1px;">Peacekeeper Mk1 <sup><em>Farmhouse</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 214px; border-width: 1px;">Ryden 45K <em><sup>Barn</sup></em></td>
+</tr>
+<tr style="height: 43.9333px;">
+<td style="border-width: 1px; width: 214px;">M8A1</td>
+<td style="border-width: 1px; width: 180px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>BLACKWATER LAKE</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="border-width: 1px; width: 214px;">Dravec 45 <sup><em>Cabin</em></sup></td>
+</tr>
+<tr style="height: 70.6667px;">
+<td style="border-width: 1px; width: 214px;">M34 Novaline <sup><em>The Ruby Rabbit</em></sup></td>
+<td style="border-width: 1px; width: 180px;" rowspan="4">
+<p class="" style="text-align: left;"><strong>ASHWOOD</strong></p>
+</td>
+</tr>
+<tr style="height: 70.6667px;">
+<td style="border-width: 1px; width: 214px;">X9 Maverick <sup><em>Ruby Alley</em></sup></td>
+</tr>
+<tr style="height: 70.6667px;">
+<td style="border-width: 1px; width: 214px;">VS Recon <sup><em>Judgement Square</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="border-width: 1px; width: 214px;">Akita <sup><em>Sherrif's Office</em></sup></td>
+</tr>
+<tr style="height: 37.8px;">
+<td style="width: 214px; border-width: 1px;">M15 Mod 0</td>
+<td style="border-width: 1px; width: 180px;" rowspan="3">
+<p class="" style="text-align: left;"><strong>ZARYA COSMODROME</strong></p>
+</td>
+</tr>
+<tr style="height: 37.8px;">
+<td style="width: 214px; border-width: 1px;">XR-3 ION</td>
+</tr>
+<tr style="height: 70.6667px;">
+<td style="width: 214px; border-width: 1px;">DS20 Mirage <sup><em>Support System</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 214px; border-width: 1px;">AK-27</td>
+<td style="border-width: 1px; width: 180px;" rowspan="4">
+<p class="" style="text-align: left;"><strong>EXIT 11</strong></p>
+</td>
+</tr>
+<tr style="height: 37.8px;">
+<td style="width: 214px; border-width: 1px;">XM325</td>
+</tr>
+<tr style="height: 37.8px;">
+<td style="width: 214px; border-width: 1px;">Shadow SK</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 214px; border-width: 1px;">AK-27 <em><sup>Reba's Diner</sup></em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="wiki_perks_locations">Perks Locations</h2>
+<p><em>Note: Der Wunderfizz appears after purchasing or acquiring 4 Perk-a-Colas.</em></p>
+<div class="table-container"><table style="width: 547px; height: 586.833px; border-width: 1px; table-layout: fixed;" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">
+<p>Juggernog - <sup><em>The Ruby Rabbit</em></sup></p>
+</td>
+<td style="text-align: center; border-width: 1px; width: 208px;" rowspan="3">
+<p class="" style="text-align: left;"><strong>ASHWOOD</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Vulture Aid - <sup><em>Market Square</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Double Tap Root Beer - <em><sup>Judgement Square</sup></em></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Stamin Up - <em><sup>Farmhouse</sup></em></td>
+<td style="width: 208px; border-width: 1px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>VANDORN FARM</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Death Perception - <em><sup>Barn</sup></em></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Quick Revive - <em><sup>Server Room</sup></em></td>
+<td style="border-width: 1px; width: 208px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>JANUS TOWERS</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Der Wunderfizz - <sup><em>Reception</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Speed Cola - <sup><em>Cabin</em></sup></td>
+<td style="border-width: 1px; width: 208px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>BLACKWATER LAKE</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Melee Macchiato -<sup><em> Cabin</em></sup></td>
+</tr>
+<tr style="height: 37.8px;">
+<td style="width: 310px; border-width: 1px;">Wisp Tea</td>
+<td style="border-width: 1px; width: 208px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>ZARYA COSMODROME</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">PhD Flopper -<sup><em> Flame Trench</em></sup></td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Elemental Pop - <sup><em>Reba's Diner</em></sup></td>
+<td style="border-width: 1px; width: 208px;" rowspan="2">
+<p class="" style="text-align: left;"><strong>EXIT 115</strong></p>
+</td>
+</tr>
+<tr style="height: 42.2333px;">
+<td style="width: 310px; border-width: 1px;">Deadshot Daiquiri - <em><sup>McDougal's Service Station</sup></em></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h1 id="wiki_miscellaneous_features">Miscellaneous Features</h1>
+<h2 id="wiki_armor_vests_locations">Armor Vests Locations</h2>
+<ul>
+<li>Vandorn Farm - Garage</li>
+<li>Ashwood - Hargrove's Mercantile</li>
+<li>Ashwood - Ruby Alley</li>
+<li>Blackwater Lake</li>
+<li>Exit 115 - McDougal's Service Station</li>
+<li>Zarya Cosmodrome - Control Room</li>
+</ul>
+<h2 class="" id="wiki_chompy_locations">Chompy Locations</h2>
+<ul>
+<li>Janus Tower - Plaza</li>
+<li>Vandorn Farm</li>
+<li>Ashwood - Market Square</li>
+<li>Zarya Cosmodrome</li>
+</ul>
+<h2 id="wiki_traps_locations">Traps Locations</h2>
+<ul>
+<li>Vandorn Farm</li>
+<li>Ashwood - Shops</li>
+<li>Exit 115 - Reba's Diner</li>
+</ul>
+<h2 id="wiki_arsenal_locations">Arsenal Locations</h2>
+<ul>
+<li>Vandorn Farm - Cellar</li>
+<li>Blackwater Lake - Cabin</li>
+<li>Ashwood - Judgement Square</li>
+<li>Zarya Cosmodrome</li>
+<li>Exit 115</li>
+</ul>
+<h2 class="" id="wiki_crafting_table_locations"> Crafting Table Locations</h2>
+<ul>
+<li>Vandorn Farm - Barn</li>
+<li>Blackwater Lake - Toolshed</li>
+<li>Ashwood - Shops</li>
+<li>Zarya Cosmodrome - Support Systems</li>
+<li>Exit 115 - McDougal's Service Station</li>
+</ul> <script nonce="" src="https://embed.reddit.com/widgets.js" defer=""></script>
+      </div>
+      
+    </div>
+    <rpl-dialog dialog-id="wiki-update-page-title-modal-dialog" dialog-classname="" label="" variant="default" style="display: none;">
+      
+    <template>
+    
+        <wiki-page-title-modal subreddit-name="CODZombies" page-name="ashes-of-the-damned" dialog-id="wiki-update-page-title-modal-dialog">
+          <rpl-modal-card auto-close="" class="w-[400px]">
+            <h2 slot="title" class="m-0 mb-md text-neutral-content-strong">
+              Page title
+            </h2>
+            <faceplate-text-input maxlength="100" character-count="" name="pageTitle" value="ashes-of-the-damned">
+              <span slot="label">Page title</span>
+            </faceplate-text-input>
+            <div class="w-full flex text-left text-danger-content text-12 h-[16px] mt-[-16px] px-md" name="error"></div>
+            <button rpl="" class="
+button-small px-[var(--rem6)]
+button-secondary
+
+
+icon
+items-center justify-center
+button inline-flex " slot="close-button">
+      <span class="flex items-center justify-center">
+      <span class="flex"><svg rpl="" fill="currentColor" height="16" icon-name="close" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.273 10l5.363-5.363a.9.9 0 10-1.273-1.273L10 8.727 4.637 3.364a.9.9 0 10-1.273 1.273L8.727 10l-5.363 5.363a.9.9 0 101.274 1.273L10 11.273l5.363 5.363a.897.897 0 001.274 0 .9.9 0 000-1.273L11.275 10h-.002z"></path>
+    </svg></span>
+      
+    </span>
+    
+    </button>
+            <button rpl="" disabled="" class="
+button-medium px-[var(--rem14)]
+button-primary
+
+
+items-center justify-center
+button inline-flex " slot="primary-button">
+      <span class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs">Save</span>
+    </span>
+    
+    </button>
+            <button rpl="" class="
+button-medium px-[var(--rem14)]
+button-secondary
+
+
+items-center justify-center
+button inline-flex " slot="secondary-button">
+      <span class="flex items-center justify-center">
+      
+      <span class="flex items-center gap-xs">Cancel</span>
+    </span>
+    
+    </button>
+          </rpl-modal-card>
+        </wiki-page-title-modal>
+      
+    </template>
+  
+    </rpl-dialog>
+  </main>
