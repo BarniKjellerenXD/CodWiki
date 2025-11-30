@@ -7,6 +7,10 @@
             <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">Ashes of the Damned</h1>
             <NuxtLink class="text-sm text-white/70 hover:text-white underline underline-offset-4" to="/">Back to index</NuxtLink>
           </header>
+          <div class="curse-banner">
+            <div class="banner-text">Playing Cursed Mode and already finished the Main Quest once and interacted to unlock Relics?</div>
+            <button class="banner-btn" @click="scrollTo('wiki_relics')">Go to Relics</button>
+          </div>
           <article ref="articleRef" class="prose prose-invert max-w-none" @click="onArticleClick">
             <div v-if="html" v-html="html"></div>
             <div v-else class="text-white/70">Loading guide…</div>
@@ -14,18 +18,31 @@
         </div>
       </section>
       <aside class="hidden lg:block sticky top-6 h-[calc(100vh-3rem)] overflow-y-auto">
-        <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl shadow-cyan-500/10 p-4">
-          <h2 class="text-lg font-semibold mb-3 text-cyan-200">Chapters</h2>
-          <nav class="space-y-1">
-            <button
-              v-for="item in toc"
-              :key="item.id"
-              @click="scrollTo(item.id)"
-              class="block w-full text-left text-sm px-3 py-2 rounded-md hover:bg-white/10 text-white/90 border-l-2 border-transparent hover:border-cyan-300"
-              :class="item.level === 1 ? 'font-semibold text-white' : item.level === 2 ? 'pl-6' : 'pl-10'"
-            >
-              {{ item.text }}
-            </button>
+        <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl shadow-cyan-500/10 p-3">
+          <h2 class="text-base font-semibold mb-2 text-cyan-200 tracking-wide">Chapters</h2>
+          <div class="mb-2">
+            <div class="text-[11px] font-semibold text-white/70 mb-1">Pinned</div>
+            <nav class="space-y-1.5">
+              <div v-for="p in pinnedToc" :key="p.id" class="flex items-center gap-1.5">
+                <button @click="scrollTo(p.id)" class="flex-1 text-left text-[13px] px-2.5 py-1.5 rounded-md hover:bg-white/10 text-white border-l-2 border-cyan-400">
+                  {{ p.text }}
+                </button>
+                <button class="text-[11px] px-2 py-1 rounded-md bg-slate-800/60 border border-white/10 text-white/80" @click="togglePin(p.id)" title="Unpin">Unpin</button>
+              </div>
+            </nav>
+          </div>
+          <div class="divider" aria-hidden="true"></div>
+          <nav class="space-y-1.5 no-scrollbar max-h-[46vh] overflow-y-auto mt-2">
+            <div v-for="item in otherToc" :key="item.id" class="flex items-center gap-1.5">
+              <button
+                @click="scrollTo(item.id)"
+                class="flex-1 text-left text-[13px] px-2.5 py-1.5 rounded-md hover:bg-white/10 text-white/90 border-l-2 border-transparent hover:border-cyan-300"
+                :class="item.level === 1 ? 'font-semibold text-white' : item.level === 2 ? 'pl-5' : 'pl-8'"
+              >
+                {{ item.text }}
+              </button>
+              <button class="text-[11px] px-2 py-1 rounded-md bg-slate-800/60 border border-white/10 text-white/80" @click="togglePin(item.id)" title="Pin">Pin</button>
+            </div>
           </nav>
         </div>
       </aside>
@@ -36,11 +53,20 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, nextTick } from 'vue'
+import { ref, onMounted, nextTick, computed } from 'vue'
 
 const html = ref<string>('')
 const articleRef = ref<HTMLElement | null>(null)
 const toc = ref<Array<{ id: string; text: string; level: number }>>([])
+const pinnedOrderDefault = [
+  'wiki_relics',
+  'wiki_mixologist_.28free_perks.29',
+  'wiki_tv_twins_free_perk',
+  'wiki_necrofuild_gauntlet_wonder_weapon',
+  'wiki_create_the_serum',
+  'wiki_zarya_cosmodrome'
+]
+const pins = ref<string[]>([])
 const lightboxSrc = ref<string | null>(null)
 const lightboxAlt = ref<string>('')
 
@@ -65,6 +91,26 @@ function buildTocAndIds(root: HTMLElement) {
     toc.value.push({ id, text, level })
   })
 }
+
+function loadPins() {
+  try {
+    const raw = localStorage.getItem('guide-pins-ashes')
+    if (raw) {
+      const arr = JSON.parse(raw)
+      if (Array.isArray(arr)) pins.value = arr
+    }
+  } catch {}
+  if (!pins.value.length) pins.value = [...pinnedOrderDefault]
+}
+function savePins() { localStorage.setItem('guide-pins-ashes', JSON.stringify(pins.value)) }
+function isPinned(id: string) { return pins.value.includes(id) }
+function togglePin(id: string) {
+  if (isPinned(id)) pins.value = pins.value.filter(x => x !== id)
+  else pins.value.push(id)
+  savePins()
+}
+const pinnedToc = computed(() => pins.value.map(id => toc.value.find(t => t.id === id)).filter(Boolean) as {id:string;text:string;level:number}[])
+const otherToc = computed(() => toc.value.filter(t => !isPinned(t.id)))
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)
@@ -126,6 +172,7 @@ onMounted(async () => {
     html.value = combined || raw
     await nextTick()
     if (articleRef.value) buildTocAndIds(articleRef.value)
+    loadPins()
     // Initialize pigpen helper (no selection by default)
     initPigpenHelper()
   } catch (e) {
@@ -217,6 +264,16 @@ onMounted(async () => {
 .prose :where(li::marker) {
   color: var(--accent);
 }
+/* Hide scrollbar in chapters list */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { width: 0; height: 0; }
+/* Compact chapters UI and divider */
+.divider { height: 1px; background: linear-gradient(90deg, rgba(255,255,255,.0), rgba(255,255,255,.15), rgba(255,255,255,.0)); border: 0; }
+/* Cursed mode banner */
+.curse-banner { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin:-.25rem 0 1rem; padding:.6rem .75rem; border:1px solid rgba(255,255,255,.15); border-radius:.75rem; background:linear-gradient(120deg, rgba(34,211,238,.12), rgba(217,70,239,.08)); box-shadow:0 6px 20px -6px rgba(0,0,0,.45); }
+.banner-text { flex:1; font-size:.85rem; color:#e2e8f0; }
+.banner-btn { background:linear-gradient(135deg,#22d3ee,#d946ef); color:#0f172a; font-weight:700; letter-spacing:.04em; border:none; border-radius:.6rem; padding:.45rem .7rem; cursor:pointer; }
+.banner-btn:hover { filter:brightness(1.08); }
 
 /* Pigpen legend styling */
 .prose :where(.pigpen-helper .helper-card) {
