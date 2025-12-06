@@ -13,7 +13,8 @@ function goToMap() {
 
 // Static featured guides (manual entries)
 const featuredGuides = [
-  { title: 'Ashes of the Damned', to: '/guides/ashes-of-the-damned', desc: 'Complete map breakdown, quests, relics, and more.', img: '/images/ashes-hero.jpg' }
+  { title: 'Ashes of the Damned', to: '/guides/ashes-of-the-damned', desc: 'Complete map breakdown, quests, relics, and more.', img: '/images/ashes-hero.jpg' },
+  { title: 'Astra Malorum', to: '/guides/astra-malorum', desc: 'Space observatory guide: main quest, LGM-1, and secrets.', img: '/images/astra-hero.jpg' }
 ]
 </script>
 
