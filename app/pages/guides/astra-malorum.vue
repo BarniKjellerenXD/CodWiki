@@ -55,13 +55,8 @@ const html = ref<string>('')
 const articleRef = ref<HTMLElement | null>(null)
 const toc = ref<Array<{ id: string; text: string; level: number }>>([])
 const pinnedOrderDefault = [
-  'wiki_pack-a-punch',
-  'wiki_lgm-1',
-  'wiki_main_quest',
-  'wiki_side_quests_and_easter_eggs',
-  'wiki_wall-buys_locations',
-  'wiki_perks_locations',
-  'wiki_miscellaneous_features'
+  'wiki_lgm.2D1',
+  'wiki_main_quest'
 ]
 const pins = ref<string[]>([])
 const lightboxSrc = ref<string | null>(null)
@@ -320,4 +315,50 @@ onMounted(async () => {
   font-family: 'PigpenCipher', ui-sans-serif, system-ui;
   letter-spacing: 0.06em;
 }
+.prose :where(.quest-grid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.prose :where(.quest-block) {
+  padding: 1rem 1.1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.prose :where(.quest-block h2) {
+  border: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  font-size: 1.15rem;
+}
+.prose :where(.quest-block.phase1) { background: linear-gradient(135deg, rgba(14,165,233,0.18), rgba(30,41,59,0.45)); }
+.prose :where(.quest-block.phase2) { background: linear-gradient(135deg, rgba(129,140,248,0.2), rgba(30,41,59,0.45)); }
+.prose :where(.quest-block.phase3) { background: linear-gradient(135deg, rgba(236,72,153,0.2), rgba(30,41,59,0.45)); }
+.prose :where(.quest-block ol) { margin: 0.35rem 0 0; }
+.prose :where(.quest-block li::marker) { color: #a5f3fc; }
+.prose :where(.boss-phases) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+  margin: 0.75rem 0 1.5rem;
+}
+.prose :where(.boss-card) {
+  padding: 0.85rem 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, rgba(15,23,42,0.7), rgba(148,163,184,0.1));
+}
+.prose :where(.boss-card .boss-title) {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #e0f2fe;
+}
+.prose :where(.boss-card.phase1) { border-color: rgba(34,211,238,0.35); }
+.prose :where(.boss-card.phase2) { border-color: rgba(56,189,248,0.35); }
+.prose :where(.boss-card.phase3) { border-color: rgba(236,72,153,0.35); }
+.prose :where(.boss-card.phase4) { border-color: rgba(244,114,182,0.35); }
 </style>
