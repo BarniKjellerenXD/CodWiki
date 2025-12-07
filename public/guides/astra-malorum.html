@@ -87,30 +87,52 @@
     </ol>
   </div>
 </div>
-<div class="book-helper" id="wiki_bust_book_helper">
-  <h3>Bust book helper</h3>
-  <p>Click the book titles you see on the machine; this shows how many times to interact with each bust.</p>
-  <div class="book-grid">
-    <div>
-      <div class="book-header">Bust 1</div>
-      <label><input type="checkbox" data-bust="1"> The Musica Universalis</label>
-      <label><input type="checkbox" data-bust="1"> The Black Veil</label>
-      <label><input type="checkbox" data-bust="1"> The Moon Directive</label>
+<div class="helper-row">
+  <div class="book-helper" id="wiki_bust_book_helper">
+    <h3>Bust book helper</h3>
+    <p>Click the book titles you see on the machine; this shows how many times to interact with each bust.</p>
+    <div class="book-grid">
+      <div>
+        <div class="book-header">Bust 1</div>
+        <label><input type="checkbox" data-bust="1"> The Musica Universalis</label>
+        <label><input type="checkbox" data-bust="1"> The Black Veil</label>
+        <label><input type="checkbox" data-bust="1"> The Moon Directive</label>
+      </div>
+      <div>
+        <div class="book-header">Bust 2</div>
+        <label><input type="checkbox" data-bust="2"> Ash and Bones</label>
+        <label><input type="checkbox" data-bust="2"> Echoes of Andromeda</label>
+        <label><input type="checkbox" data-bust="2"> The Unknowable Void</label>
+      </div>
+      <div>
+        <div class="book-header">Bust 3</div>
+        <label><input type="checkbox" data-bust="3"> Pyramids of Cydonia</label>
+        <label><input type="checkbox" data-bust="3"> Silence at Singularity</label>
+        <label><input type="checkbox" data-bust="3"> Witchlight Codex</label>
+      </div>
     </div>
-    <div>
-      <div class="book-header">Bust 2</div>
-      <label><input type="checkbox" data-bust="2"> Ash and Bones</label>
-      <label><input type="checkbox" data-bust="2"> Echoes of Andromeda</label>
-      <label><input type="checkbox" data-bust="2"> The Unknowable Void</label>
+    <p id="bust-output">Select the book titles shown in-game to see how many times to interact with each bust.</p>
+  </div>
+
+  <div class="planet-helper" id="wiki_planet_code_helper">
+    <h3>Planet-to-code helper</h3>
+    <p>Click the three planets O.S.C.A.R. calls out in order; this converts them to the 3-digit code by solar distance (Mercury=1 … Neptune=8).</p>
+    <div class="planet-list">
+      <button type="button" data-digit="1">1: Mercury</button>
+      <button type="button" data-digit="2">2: Venus</button>
+      <button type="button" data-digit="3">3: Earth</button>
+      <button type="button" data-digit="4">4: Mars</button>
+      <button type="button" data-digit="5">5: Jupiter</button>
+      <button type="button" data-digit="6">6: Saturn</button>
+      <button type="button" data-digit="7">7: Uranus</button>
+      <button type="button" data-digit="8">8: Neptune</button>
     </div>
-    <div>
-      <div class="book-header">Bust 3</div>
-      <label><input type="checkbox" data-bust="3"> Pyramids of Cydonia</label>
-      <label><input type="checkbox" data-bust="3"> Silence at Singularity</label>
-      <label><input type="checkbox" data-bust="3"> Witchlight Codex</label>
+    <div class="planet-output" id="planet-output">Click planets to build the code…</div>
+    <div class="planet-actions">
+      <button type="button" id="planet-undo">Undo</button>
+      <button type="button" id="planet-reset">Clear</button>
     </div>
   </div>
-  <p id="bust-output">Select the book titles shown in-game to see how many times to interact with each bust.</p>
 </div>
 <script>
   (() => {
@@ -135,8 +157,54 @@
     checkboxes.forEach(cb => cb.addEventListener('change', update));
     update();
   })();
+
+  (() => {
+    const buttons = Array.from(document.querySelectorAll('#wiki_planet_code_helper [data-digit]'));
+    const out = document.getElementById('planet-output');
+    const undo = document.getElementById('planet-undo');
+    const resetBtn = document.getElementById('planet-reset');
+    if (!buttons.length || !out || !undo || !resetBtn) return;
+
+    const digits = [];
+
+    function render() {
+      if (!digits.length) {
+        out.textContent = 'Click planets to build the code…';
+      } else {
+        out.textContent = `Code: ${digits.join('')}`;
+      }
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const d = btn.getAttribute('data-digit') || '';
+        if (!d) return;
+        if (digits.length >= 3) digits.shift();
+        digits.push(d);
+        render();
+      });
+    });
+
+    undo.addEventListener('click', () => {
+      digits.pop();
+      render();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      digits.length = 0;
+      render();
+    });
+
+    render();
+  })();
 </script>
 <style>
+.helper-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
 .book-helper {
   margin: 1rem 0 1.5rem;
   padding: 1rem 1.1rem;
@@ -190,6 +258,51 @@
   color: #e0f2fe;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
 }
+.planet-helper {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: linear-gradient(135deg, rgba(15,23,42,0.65), rgba(217,70,239,0.12));
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.planet-helper h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #fce7f3; }
+.planet-helper p { margin: 0 0 0.6rem; color: rgba(255,255,255,0.85); }
+.planet-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.5rem; }
+.planet-list button {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.05);
+  color: #e0f2fe;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+.planet-list button:hover { border-color: rgba(34,211,238,0.5); background: rgba(34,211,238,0.08); transform: translateY(-1px); }
+.planet-output {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: #f8fafc;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.planet-actions { margin-top: 0.5rem; display: flex; gap: 0.5rem; }
+.planet-actions button {
+  flex: 1;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.07);
+  color: #e0f2fe;
+  cursor: pointer;
+  transition: filter 120ms ease, transform 120ms ease;
+}
+.planet-actions button:hover { filter: brightness(1.05); transform: translateY(-1px); }
 </style>
 <div class="table-container" style="text-align: center;">
   <img alt="Astra Malorum bust book titles" class="wiki-img-left wiki-img-with-wrap wiki-img-in-table" src="/images/astraMalorumBookNames.png">

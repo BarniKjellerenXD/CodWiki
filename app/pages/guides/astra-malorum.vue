@@ -153,6 +153,74 @@ function initPigpenHelper() {
   if (!container) return
 }
 
+function initBustHelper() {
+  const container = articleRef.value?.querySelector('#wiki_bust_book_helper') as HTMLElement | null
+  if (!container || container.getAttribute('data-initialized') === 'true') return
+  const checkboxes = Array.from(container.querySelectorAll('input[type="checkbox"]')) as HTMLInputElement[]
+  const output = container.querySelector('#bust-output') as HTMLElement | null
+  if (!checkboxes.length || !output) return
+
+  const update = () => {
+    const counts: [number, number, number] = [0, 0, 0]
+    checkboxes.forEach(cb => {
+      if (cb.checked) {
+        const bust = Number(cb.dataset.bust || '0')
+        if (bust >= 1 && bust <= 3) counts[bust - 1] += 1
+      }
+    })
+    const parts = counts
+      .map((c, i) => (c ? `Bust ${i + 1}: interact ${c} ${c === 1 ? 'time' : 'times'}` : ''))
+      .filter(Boolean)
+    output.textContent = parts.length
+      ? parts.join(' • ')
+      : 'Select the book titles shown in-game to see how many times to interact with each bust.'
+  }
+
+  checkboxes.forEach(cb => cb.addEventListener('change', update))
+  update()
+  container.setAttribute('data-initialized', 'true')
+}
+
+function initPlanetHelper() {
+  const container = articleRef.value?.querySelector('#wiki_planet_code_helper') as HTMLElement | null
+  if (!container || container.getAttribute('data-initialized') === 'true') return
+
+  const buttons = Array.from(container.querySelectorAll('[data-digit]')) as HTMLElement[]
+  const out = container.querySelector('#planet-output') as HTMLElement | null
+  const undo = container.querySelector('#planet-undo') as HTMLElement | null
+  const resetBtn = container.querySelector('#planet-reset') as HTMLElement | null
+  if (!buttons.length || !out || !undo || !resetBtn) return
+
+  const digits: string[] = []
+
+  const render = () => {
+    out.textContent = digits.length ? `Code: ${digits.join('')}` : 'Click planets to build the code…'
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const d = btn.getAttribute('data-digit') || ''
+      if (!d) return
+      if (digits.length >= 3) digits.shift()
+      digits.push(d)
+      render()
+    })
+  })
+
+  undo.addEventListener('click', () => {
+    digits.pop()
+    render()
+  })
+
+  resetBtn.addEventListener('click', () => {
+    digits.length = 0
+    render()
+  })
+
+  render()
+  container.setAttribute('data-initialized', 'true')
+}
+
 onMounted(async () => {
   try {
     const res = await fetch('/guides/astra-malorum.html', { cache: 'no-store' })
@@ -166,6 +234,8 @@ onMounted(async () => {
     if (articleRef.value) buildTocAndIds(articleRef.value)
     loadPins()
     initPigpenHelper()
+    initBustHelper()
+    initPlanetHelper()
   } catch (e) {
     html.value = '<p>Failed to load guide.</p>'
   }
@@ -324,6 +394,135 @@ onMounted(async () => {
 .prose :where(.pigpen) {
   font-family: 'PigpenCipher', ui-sans-serif, system-ui;
   letter-spacing: 0.06em;
+}
+.prose :where(.helper-row) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.prose :where(.book-helper) {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: linear-gradient(135deg, rgba(15,23,42,0.65), rgba(34,211,238,0.12));
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.prose :where(.book-helper h3) {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: #e0f2fe;
+}
+.prose :where(.book-helper p) {
+  margin: 0 0 0.65rem;
+  color: rgba(255,255,255,0.85);
+}
+.prose :where(.book-grid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.prose :where(.book-grid div) {
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.prose :where(.book-header) {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: #c7d2fe;
+}
+.prose :where(.book-grid label) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+  color: rgba(255,255,255,0.9);
+}
+.prose :where(.book-grid input[type="checkbox"]) {
+  accent-color: #22d3ee;
+  width: 16px;
+  height: 16px;
+}
+.prose :where(#bust-output) {
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: #e0f2fe;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.prose :where(.planet-helper) {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: linear-gradient(135deg, rgba(15,23,42,0.65), rgba(217,70,239,0.12));
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+.prose :where(.planet-helper h3) {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: #fce7f3;
+}
+.prose :where(.planet-helper p) {
+  margin: 0 0 0.6rem;
+  color: rgba(255,255,255,0.85);
+}
+.prose :where(.planet-list) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem;
+}
+.prose :where(.planet-list button) {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.05);
+  color: #e0f2fe;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+.prose :where(.planet-list button:hover) {
+  border-color: rgba(34,211,238,0.5);
+  background: rgba(34,211,238,0.08);
+  transform: translateY(-1px);
+}
+.prose :where(.planet-output) {
+  margin-top: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: #f8fafc;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.prose :where(.planet-actions) {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.prose :where(.planet-actions button) {
+  flex: 1;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.65rem;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.07);
+  color: #e0f2fe;
+  cursor: pointer;
+  transition: filter 120ms ease, transform 120ms ease;
+}
+.prose :where(.planet-actions button:hover) {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 .prose :where(.quest-grid) {
   display: grid;
