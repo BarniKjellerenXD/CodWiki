@@ -7,6 +7,10 @@
             <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">Astra Malorum</h1>
             <NuxtLink class="text-sm text-white/70 hover:text-white underline underline-offset-4" to="/">Back to index</NuxtLink>
           </header>
+          <div class="curse-banner">
+            <div class="banner-text">Already finished the Main Quest once and unlocked Relics? Jump straight to the modifiers.</div>
+            <button class="banner-btn" @click="scrollTo('wiki_relics')">Go to Relics</button>
+          </div>
           <article ref="articleRef" class="prose prose-invert max-w-none" @click="onArticleClick">
             <div v-if="html" v-html="html"></div>
             <div v-else class="text-white/70">Loading guide…</div>
@@ -55,6 +59,7 @@ const html = ref<string>('')
 const articleRef = ref<HTMLElement | null>(null)
 const toc = ref<Array<{ id: string; text: string; level: number }>>([])
 const pinnedOrderDefault = [
+  'wiki_relics',
   'wiki_lgm.2D1',
   'wiki_main_quest'
 ]
@@ -253,6 +258,11 @@ onMounted(async () => {
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { width: 0; height: 0; }
 .divider { height: 1px; background: linear-gradient(90deg, rgba(255,255,255,.0), rgba(255,255,255,.15), rgba(255,255,255,.0)); border: 0; }
+/* Cursed mode banner */
+.curse-banner { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin:-.25rem 0 1rem; padding:.6rem .75rem; border:1px solid rgba(255,255,255,.15); border-radius:.75rem; background:linear-gradient(120deg, rgba(34,211,238,.12), rgba(217,70,239,.08)); box-shadow:0 6px 20px -6px rgba(0,0,0,.45); }
+.banner-text { flex:1; font-size:.85rem; color:#e2e8f0; }
+.banner-btn { background:linear-gradient(135deg,#22d3ee,#d946ef); color:#0f172a; font-weight:700; letter-spacing:.04em; border:none; border-radius:.6rem; padding:.45rem .7rem; cursor:pointer; }
+.banner-btn:hover { filter:brightness(1.08); }
 .prose :where(.pigpen-helper .helper-card) {
   margin-top: 0.75rem;
   padding: 0.75rem 1rem;
@@ -361,4 +371,55 @@ onMounted(async () => {
 .prose :where(.boss-card.phase2) { border-color: rgba(56,189,248,0.35); }
 .prose :where(.boss-card.phase3) { border-color: rgba(236,72,153,0.35); }
 .prose :where(.boss-card.phase4) { border-color: rgba(244,114,182,0.35); }
+/* Relics styling */
+.prose :where(.relic-grid) {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+.prose :where(.relic-heading) {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 0 0 .65rem;
+  padding: .4rem .65rem;
+  border-radius: .6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  position: relative;
+}
+.prose :where(.relic-heading.grim) {background: linear-gradient(90deg, rgba(34,211,238,.18), rgba(34,211,238,.05)); border:1px solid rgba(34,211,238,.35); box-shadow:0 0 0 1px rgba(34,211,238,.25) inset;}
+.prose :where(.relic-heading.sinister) {background: linear-gradient(90deg, rgba(251,191,36,.22), rgba(251,191,36,.06)); border:1px solid rgba(251,191,36,.40); box-shadow:0 0 0 1px rgba(251,191,36,.28) inset;}
+.prose :where(.relic-heading.wicked) {background: linear-gradient(90deg, rgba(239,68,68,.28), rgba(239,68,68,.08)); border:1px solid rgba(239,68,68,.45); box-shadow:0 0 0 1px rgba(239,68,68,.32) inset;}
+.prose :where(.relic-cards) {
+  display: grid;
+  gap: 1rem;
+}
+.prose :where(.relic-card) {
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.05);
+  border-radius: .9rem;
+  padding: .75rem .85rem .8rem;
+  position: relative;
+  box-shadow: 0 8px 20px -4px rgba(0,0,0,.35);
+}
+.prose :where(.relic-card.grim) {border-color: rgba(34,211,238,.35);}
+.prose :where(.relic-card.sinister) {border-color: rgba(251,191,36,.45);}
+.prose :where(.relic-card.wicked) {border-color: rgba(239,68,68,.5);}
+.prose :where(.relic-title) {font-weight:600; margin-bottom:.4rem; font-size:.92rem; display:flex; flex-wrap:wrap; gap:.5rem; align-items:center;}
+.prose :where(.mini-tag) {font-size:.65rem; font-weight:600; letter-spacing:.05em; padding:.18rem .4rem; border-radius:.4rem; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.12);}
+.prose :where(.relic-card.grim .mini-tag){color:#22d3ee; border-color:rgba(34,211,238,.4);}
+.prose :where(.relic-card.sinister .mini-tag){color:#fbbf24; border-color:rgba(251,191,36,.5);}
+.prose :where(.relic-card.wicked .mini-tag){color:#ef4444; border-color:rgba(239,68,68,.55);}
+.prose :where(.steps){margin:0; padding-left:1rem; font-size:.8rem; line-height:1.15rem;}
+.prose :where(.steps li){margin:.2rem 0;}
+.prose :where(.placeholder){font-size:.75rem; opacity:.75; margin:0;}
+.prose :where(.relic-chip){display:inline-block; padding:.15rem .45rem; border-radius:.5rem; font-size:.65rem; font-weight:600; letter-spacing:.04em; vertical-align:baseline;}
+.prose :where(.relic-chip.grim){background:rgba(34,211,238,.18); color:#22d3ee; border:1px solid rgba(34,211,238,.4);}
+.prose :where(.relic-chip.sinister){background:rgba(251,191,36,.22); color:#fbbf24; border:1px solid rgba(251,191,36,.5);}
+.prose :where(.relic-chip.wicked){background:rgba(239,68,68,.28); color:#ef4444; border:1px solid rgba(239,68,68,.55);}
+.prose :where(.relic-tiers){margin:.6rem 0 .4rem; padding-left:1.2rem; font-size:.8rem;}
+.prose :where(.relic-tiers li){margin:.25rem 0;}
+.prose :where(.relic-note){font-size:.7rem; opacity:.7; margin:.2rem 0 .2rem;}
 </style>

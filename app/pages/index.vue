@@ -13,8 +13,18 @@ function goToMap() {
 
 // Static featured guides (manual entries)
 const featuredGuides = [
-  { title: 'Ashes of the Damned', to: '/guides/ashes-of-the-damned', desc: 'Complete map breakdown, quests, relics, and more.', img: '/images/ashes-hero.jpg' },
-  { title: 'Astra Malorum', to: '/guides/astra-malorum', desc: 'Space observatory guide: main quest, LGM-1, and secrets.', img: '/images/astra-hero.jpg' }
+  {
+    title: 'Ashes of the Damned',
+    to: '/guides/ashes-of-the-damned',
+    desc: 'Complete map breakdown, quests, relics, and more.',
+    img: 'https://preview.redd.it/z7ez6aakni1g1.jpeg?width=1920&height=1080&format=pjpg&auto=webp&s=1ed5e1a7992e560f49b5a60cdac2eea3b67e1afe'
+  },
+  {
+    title: 'Astra Malorum',
+    to: '/guides/astra-malorum',
+    desc: 'Space observatory guide: main quest, LGM-1, and secrets.',
+    img: 'https://preview.redd.it/vrzo1oc0lu2g1.png?width=1920&height=1080&format=png&auto=webp&s=e145b9a50f89d4e6bd00fe457ab19f394af88af5'
+  }
 ]
 </script>
 

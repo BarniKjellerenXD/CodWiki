@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm" @keydown="onKeydown" tabindex="0" ref="overlayRef">
     <div class="absolute inset-0" @click.self="close">
-      <div class="absolute top-4 right-4 flex items-center gap-2">
+      <div class="absolute top-4 right-4 flex items-center gap-2 z-20 pointer-events-auto">
         <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="zoom(0.25)">+
         </button>
         <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="zoom(-0.25)">-
@@ -13,7 +13,7 @@
       </div>
 
       <div
-        class="absolute inset-0 overflow-hidden select-none"
+        class="absolute inset-0 overflow-hidden select-none z-10"
         ref="viewportRef"
         @wheel.prevent="onWheel"
         @pointerdown="onPointerDown"
@@ -131,5 +131,7 @@ watch(() => props.src, () => {
 </script>
 
 <style scoped>
-/* No additional scoped styles necessary */
+.absolute.inset-0::selection {
+  background: transparent;
+}
 </style>
