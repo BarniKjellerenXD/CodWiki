@@ -1,0 +1,684 @@
+<div class="md wiki">
+<p class="g-hint">💡 Tap a section title to collapse or expand it.</p>
+<style>
+/* ══════════ Liquid Glass System ══════════ */
+.glass-card{position:relative;overflow:hidden;border-radius:1.05rem;padding:1.05rem 1.2rem 1.15rem;margin:1.15rem 0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.16));backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 16px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.10),inset 0 -1px 0 rgba(0,0,0,.28)}
+.glass-card::before{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(28px);opacity:.5;width:240px;height:240px;top:-90px;left:-70px;background:radial-gradient(circle,var(--glass-glow,rgba(245,158,11,.30)),transparent 65%)}
+.glass-card::after{content:"";position:absolute;pointer-events:none;top:0;left:8%;right:8%;height:1px;border-radius:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
+.glass-card h2{border:none!important;margin:.05rem 0 .6rem;padding-left:0!important;font-size:1.22rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.glass-card h2 .g-tag{border:1px solid var(--glass-accent,#f59e0b);border-radius:.45rem;background:linear-gradient(135deg,var(--glass-accent,#f59e0b)26,transparent);color:var(--glass-accent,#f59e0b);font-size:.68rem;font-weight:800;letter-spacing:.05em;line-height:1;padding:.28rem .5rem;text-transform:uppercase;white-space:nowrap}
+.glass-card h3{border-left:3px solid var(--glass-accent,#f59e0b);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border-radius:.65rem;padding:.55rem .75rem;margin:1rem 0 .5rem}
+.glass-card>ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.35rem 1rem}
+.glass-card ul ul{display:block}
+.glass-card ol{margin:.5rem 0 .25rem}
+.glass-card li{margin:.3rem 0}
+.glass-gold{--glass-accent:#f59e0b;--glass-glow:rgba(245,158,11,.30)}
+.glass-amber{--glass-accent:#fbbf24;--glass-glow:rgba(251,191,36,.26)}
+.glass-orange{--glass-accent:#f97316;--glass-glow:rgba(249,115,22,.28)}
+.glass-green{--glass-accent:#22c55e;--glass-glow:rgba(34,197,94,.22)}
+.glass-violet{--glass-accent:#a855f7;--glass-glow:rgba(168,85,247,.24)}
+.glass-red{--glass-accent:#ef4444;--glass-glow:rgba(239,68,68,.26)}
+.glass-boss{border-color:rgba(239,68,68,.38);box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 26px rgba(239,68,68,.14),inset 0 1px 0 rgba(255,255,255,.10)}
+.glass-quest{padding:1.2rem 1.3rem 1.3rem}
+.glass-quest ol>li{margin:.65rem 0}
+/* unify existing panels with the glass language */
+.evidence-card,.cheat-block{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
+.evidence-card{box-shadow:0 14px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
+
+/* ══════════ Collapsible sections ══════════ */
+.g-toggle{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;cursor:pointer;flex:1;min-width:0;width:100%}
+.g-toggle:hover{filter:brightness(1.1)}
+.g-cb{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.g-title{display:contents}
+.g-chev{margin-left:auto;color:var(--glass-accent,#f59e0b);font-size:.75rem;transition:transform .22s;flex:none;opacity:.85}
+.g-chev::after{content:"\25BE"}
+.g-cb:checked ~ .g-chev::after{content:"\25B8"}
+.glass-card:has(> h2 .g-cb:checked) > *:not(h2),.evidence-card:has(> h3 .g-cb:checked) > *:not(h3){display:none}
+.g-hint{font-size:.78rem;color:#fcd34d99;border:1px dashed rgba(245,158,11,.35);border-radius:.6rem;padding:.45rem .7rem;margin:.6rem 0 .2rem;background:rgba(245,158,11,.06)}</style>
+<style>
+.cheat-grid{display:grid;gap:.65rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:.75rem 0 1.25rem}
+.cheat-block{border:1px solid hsla(0,0%,100%,.12);border-radius:.8rem;box-shadow:0 8px 24px #00000040;padding:.7rem .8rem}
+.cheat-block h2{border:none;font-size:1rem;margin:0 0 .3rem;padding-left:0}
+.cheat-block.phase1{background:linear-gradient(135deg,#f59e0b2e,#24242b73)}
+.cheat-block.phase2{background:linear-gradient(135deg,#fbbf2433,#24242b73)}
+.cheat-block.phase3{background:linear-gradient(135deg,#f9731633,#24242b73)}
+.cheat-block.phase4{background:linear-gradient(135deg,#ef44442b,#24242b73)}
+.cheat-block ol{margin:0;padding-left:1.1rem}
+.cheat-block li{font-size:.82rem;line-height:1.3;margin:.2rem 0}
+.cheat-block li::marker{color:#fde68a}
+.cheat-block ul{margin:0;padding-left:1rem}
+.cheat-block ul li{font-size:.78rem;opacity:.85}
+.cheat-note{font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
+</style>
+<style>
+/* ══════════ Rex tools block ══════════ */
+.rex-tools{display:flex;gap:.55rem;flex-wrap:wrap;align-items:center;margin:.9rem 0 1.1rem;border:1px dashed rgba(245,158,11,.35);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem}
+.rex-tools-label{color:#fcd34d;font-size:.8rem}
+.rex-tool-link{display:inline-flex;padding:.42rem .65rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d!important;text-decoration:none!important;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
+.rex-tool-link:hover{filter:brightness(1.15)}
+</style>
+<style>
+/* ══════════ Rex tabs (Cleanse the Temples) ══════════ */
+.rex-tab-in{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.rex-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin:.8rem 0 .2rem}
+.rex-tabs h3{border:none!important;background:none!important;padding:0!important;margin:0!important;font-size:1rem}
+.rex-tab{display:inline-block;padding:.5rem .85rem;border:1px solid rgba(255,255,255,.15);border-radius:.55rem;font-size:.9rem;font-weight:700;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04)}
+#rextab-d:checked ~ .rex-tabs label[for="rextab-d"],#rextab-n:checked ~ .rex-tabs label[for="rextab-n"],#rextab-c:checked ~ .rex-tabs label[for="rextab-c"],#rextab-v:checked ~ .rex-tabs label[for="rextab-v"]{background:#f59e0b;color:#1b1204;border-color:#f59e0b}
+.rex-panel{display:none;border:1px solid rgba(255,255,255,.1);border-radius:.7rem;padding:.15rem .75rem .55rem;margin-top:.55rem}
+#rextab-d:checked ~ #rexp-d,#rextab-n:checked ~ #rexp-n,#rextab-c:checked ~ #rexp-c,#rextab-v:checked ~ #rexp-v{display:block}
+.rex-phase{border-left:3px solid var(--pc,#f59e0b);background:rgba(255,255,255,.03);border-radius:.6rem;padding:.55rem .8rem .6rem;margin:.75rem 0}
+.rex-phase-head{color:var(--pc,#f59e0b);font-weight:800;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .35rem}
+.rex-phase ol{margin:.2rem 0 .1rem}
+.rex-ph-note{font-size:.8rem;color:#a89062;margin:.2rem 0 .35rem}
+/* ══════════ Rex quote picker (Warden's Blight) ══════════ */
+.rex-q-in{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.rex-qsolver{border:1px dashed rgba(245,158,11,.4);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem;margin:.5rem 0 .7rem}
+.rex-q-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
+.rex-q-tabs label{padding:.35rem .75rem;border:1px solid rgba(255,255,255,.15);border-radius:.5rem;font-weight:800;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04);font-size:.85rem}
+#rexq-1:checked ~ .rex-q-tabs label[for="rexq-1"],#rexq-2:checked ~ .rex-q-tabs label[for="rexq-2"],#rexq-3:checked ~ .rex-q-tabs label[for="rexq-3"],#rexq-4:checked ~ .rex-q-tabs label[for="rexq-4"]{background:#f59e0b;color:#1b1204;border-color:#f59e0b}
+.rex-q-res{display:none}
+#rexq-1:checked ~ #rexq-r1,#rexq-2:checked ~ #rexq-r2,#rexq-3:checked ~ #rexq-r3,#rexq-4:checked ~ #rexq-r4{display:block}
+.rex-q-quote{font-style:italic;color:#e8d9b0;margin:.1rem 0 .5rem;font-size:.92rem}
+.rex-q-chips{display:flex;gap:.45rem;flex-wrap:wrap}
+.rex-q-chip{padding:.32rem .6rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
+.rex-q-chip.zero{opacity:.45;border-color:rgba(255,255,255,.2);color:#8a7548}
+</style>
+<h1 id="wiki_rex_infernus_.7C_complete_map_breakdown">Rex Infernus | Complete Map Breakdown</h1>
+
+<p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
+<p>On PC, there is a list of all the <strong>Chapters</strong> on the right. Just click on the text and&nbsp;you will be taken there. Alternatively, to find specific information, press <strong>CTRL + F</strong> and type the information you want to find. On mobile, the list of all the <strong>Chapters and Topics</strong> is at the top of the page.</p>
+<p style="text-align: center;"><strong><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="2160" data-media-id="m3gh7axgatlh1" data-width="3840" height="1080" width="1920" src="https://preview.redd.it/m3gh7axgatlh1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=d323b0b2b336753bef0dc75300c5e49390193093"></strong></p>
+<p style="text-align: center;"><strong><em>As reality stands on the cusp of destruction, the crew face their ultimate challenge. Cleanse the Shadowsmith places of power, find the Warden's inner sanctum, and put an end to his loathsome existence.</em></strong></p>
+<hr>
+
+<h1 id="wiki_key_features">Key Features</h1>
+
+<p>This is a walkthrough of the key features of the map, such as Pack-a-Punch, Wonder Weapons, etc.</p>
+
+<div class="glass-card glass-gold"><h2 id="wiki_void_claw"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Void Claw<span class="g-tag">🌀 Gadget</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ol>
+<li>Activate the Pack-a-Punch Machine in Nexus Forge.</li>
+<li>Interact with one of the small pilars with a glowing green orb to collect the <strong>Void Claw</strong>.
+<ul>
+<li><em>Note: The Void Claw will only be available for about 30 seconds before it needs to be collected again.</em></li>
+</ul>
+</li>
+</ol>
+<h3 class="" id="wiki_void_talon_upgrade">Void Talon Upgrade</h3>
+<ol>
+<li>From the Nexus Forge, look at Her House and shoot at the basketball located in the broken window. Shoot at it until it falls out of the map.
+<ul>
+<li><em>Note: This can be done immediately after stepping outside Her House before walking through portal.</em></li>
+</ul>
+</li>
+<li>In the subsequent rounds, four blue symbols will appear on Her House.
+<ul>
+<li><em>Note: The symbols will appear one by one, one every round or two, make sure to note the order in which they appeared.</em></li>
+</ul>
+</li>
+<li>On an Exfil round, shoot at the symbols in the order they appeared. If done correctly, the exfil booth will send you to Her House on completion. The Twins will appear and drop a Raw Aether Crystal.</li>
+<li>Inside Her House, travel upstair and shoot a charged shot of the Warden's Blight inside the bathroom. If done correctly, the <strong>Eye of the Forge</strong> will drop on the ground.</li>
+<li>Pick it up then wait for the portal to appear to return to Nexus Forge.</li>
+<li>Find one of the pillars with the glowing green orb and interact with it to empower it with the Eye of the Forge.
+<ul>
+<li><em>Note: With the Void Claw, it is possible to get the Eye of the Forge back into your inventory to empower another pedestal, such as the boss arena.</em></li>
+</ul>
+</li>
+<li>If done correctly, the <strong>Void Talon</strong> will be available to pick up.
+<ul>
+<li><em>Note: The Void Talon lasts significantly longer than the Void Claw.</em></li>
+</ul>
+</li>
+</ol></div>
+<div class="glass-card glass-gold"><h2 id="wiki_warden.27s_blight"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Warden's Blight<span class="g-tag">🧪 Wonder Tool</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ol>
+<li>Look for a purple orb floating around Nexus Forge and use the Void Claw to drag the orb to the Pack-a-Punch Machine. The orb will start circling around the Pack-a-Punch.</li>
+<li>Interact with the wheels on either side of the Pack-a-Punch to surge the Nexus. If done correctly, the orb will be thrown into the two cauldrons on top of the stairs.</li>
+<li>Travel to Dravakar Entrance and climb to the platform at the top of the entrance by wall-jumping. Open the wall on the right side of the structure hanging from the central wall, this can be done with PhD Flopper, explosives, Ray Gun, etc. If done correctly, the wall will open and the <strong>Fracture of Nyxara</strong> can be collected.</li>
+<li>Interact with one of the cauldrons to obtain the <strong>Astral Flame</strong>. Quickly travel to Nyxara Sanctuary and shoot at the eye statue inside the room with the Astral Flame.</li>
+<li>An orb will start bouncing around the room. Using the Void Claw, change the position of the crystals on the walls to make the orb bounce towards Nyxara Main Chamber. Wall-jump (or use the Void Claw) to the missing crystal and place the Fracture of Nyxara. Continue to change the position of the following crystals until the orb hits a door leading to Nyxara Inner Sanctum.</li>
+<li>Stay near the vines in the middle of the inner sanctum until the progression bar is filled. Wait a round then interact with the vines to eat a fruit.</li>
+<li>If done correctly, you will spawn into a forest where you need to find 3 charred bodies.
+<ul>
+<li>One is located against a rock in the middle of the area. After a short in-game animation, a part can be collected.</li>
+<li>One is located in the cabin, the floorboard near the body needs to be melee to reveal and collect a part.</li>
+<li>One is located on the opposite side of the spawn location, near a cavern entrance.</li>
+</ul>
+</li>
+<li>Travel to Dravakar Sanctuary and interact with the blue writing on the wall. A quote will play. The quote indicates the direction the four pillar symbols in the next room (Moon, Star, Galaxy, Meteor "Runner").
+<ul>
+<li>To change the direction of the symbols, there will be 3 Pull Switchs to interact with.
+<ul>
+<li>One is located on the left side of the pillar room next to an Armor wall-buy.&nbsp;<em>This is the "<strong>Left Switch</strong>"</em>.&nbsp;</li>
+<li>One is located in the room with the blue writing inside the wall opposite of the writing. <em>This is the "<strong>Middle Switch</strong>".</em></li>
+<li>One is located on the right side of the pillar room inside a wall. <em>This is the "<strong>Right Switch</strong>"</em>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Interact with the levers to change the direction of the symbols based on the quote — tap the quote you hear:
+<div class="rex-qsolver"><input type="radio" name="rexq" id="rexq-1" class="rex-q-in" checked><input type="radio" name="rexq" id="rexq-2" class="rex-q-in"><input type="radio" name="rexq" id="rexq-3" class="rex-q-in"><input type="radio" name="rexq" id="rexq-4" class="rex-q-in"><div class="rex-q-tabs"><label for="rexq-1">①</label><label for="rexq-2">②</label><label for="rexq-3">③</label><label for="rexq-4">④</label></div><div class="rex-q-res" id="rexq-r1"><p class="rex-q-quote">“I drift to the runner that travels moons, who borrow from galaxies when stars stay true.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×3</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×1</span></div></div><div class="rex-q-res" id="rexq-r2"><p class="rex-q-quote">“I remember the runner that travels to stars, while moons and galaxies stay true.”</p><div class="rex-q-chips"><span class="rex-q-chip zero">Left ×0</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×3</span></div></div><div class="rex-q-res" id="rexq-r3"><p class="rex-q-quote">“I drift to stars that remember moons, who borrow the runner that travels galaxies.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×1</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×2</span></div></div><div class="rex-q-res" id="rexq-r4"><p class="rex-q-quote">“I remember galaxies that drift to moons, who borrow the runner that travels the stars.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×2</span><span class="rex-q-chip zero">Middle ×0</span><span class="rex-q-chip">Right ×2</span></div></div></div>
+</li>
+<li>Interact with the lever inside the central pillar to input the combinations. If done correctly, the pillar will lower, revealing an opening.</li>
+<li>Use Void Claw to enter Dravakar Inner Sanctum and interact with the anvil to collect the <strong>Warden's Blight</strong>.</li>
+</ol></div>
+</div>
+<div class="md wiki">
+<hr>
+<h1 id="wiki_main_quest">Main Quest</h1>
+
+<p><em>Note: Several of the items needed can be collected in any order, or prior to their respective steps. Likewise, steps can be done in any order or concurrently with others.</em></p>
+<div class="cheat-grid">
+<div class="cheat-block phase1"><h2 id="wiki_cheat_pool">☁️ ① Swirling Pool</h2>
+<ol>
+<li>Veytharion's Sanctuary: collect the 4 cubes (pillar by GobbleGum, 2 windows in Mule Kick room, near Void Claw pedestal).</li>
+<li>Left opening bottom→top: <strong>Fire, Hand, Water, Leaf</strong>. Shuffle to the right opening → <strong>Water, Leaf, Hand, Fire</strong>. Fire must never touch Leaf/Water; slide empties if a round ends.</li>
+<li>Shoot/melee the circle to move the slide. Reward: swirling pool + Random Perk. <strong>Interacting with the pool triggers rain the next round (needed for every temple cleansing).</strong></li>
+</ol></div>
+<div class="cheat-block phase2"><h2 id="wiki_cheat_forge">⚙️ ② Nexus Forge</h2>
+<ol>
+<li>With <strong>Void Talon</strong>: free the 3 pillar Pull Switches + 6 panels around the Nexus Core.</li>
+<li>Clear the webs (explosives/Molotov, Astral/Ursuper Flam, or Warden's Blight) — Deathspinners spawn.</li>
+<li>Purple orb → Pack-a-Punch → surge, then quickly interact the ground Pull Switch next to Deadshot Daiquiri at the Nexus Core bottom.</li>
+<li>Pillars around the Forge can now be moved.</li>
+</ol></div>
+<div class="cheat-block phase3"><h2 id="wiki_cheat_cleanse">🛕 ③ Cleanse the Temples</h2>
+<ol>
+<li><strong>Align the 3 pillars in front of each temple first.</strong></li>
+<li>Per temple: quest item → cauldron + Astral Flame shot → attach floater to a zombie → its symbol matches a Titan Trap shackle (Caltheris / Veytharion Passage) → trap it.</li>
+<li>Tile mini-action → reflector: <strong>Dravakar</strong> re-plate several times · <strong>Nyxara</strong> prone · <strong>Caltheris</strong> aim 30 s · <strong>Veytharion</strong> keep jumping.</li>
+<li>Lift reflector (charged Warden's Blight) → aim beam at the marked wall → kill zombies beneath → wall breaks.</li>
+<li>Shoot Visage → lockdown → destroy 4 Shadow Souls → shoot again until screen turns white.</li>
+<li>Purple orb under the face + Warden's Blight lift → purple eyes → rain + Astral Flame to the face point = cleansed.</li>
+</ol>
+<ul>
+<li><strong>Items:</strong> Dravakar — Blacksmith's Hammer (Shatter Blast shields) · Nyxara — Ancient Scroll (Shadow Rift in forest) · Caltheris — Shimmering Thread (purple orbs) · Veytharion — Woven Sash (rain; Spira / Ruinas / Aranea Insula).</li>
+</ul></div>
+<div class="cheat-block phase4"><h2 id="wiki_cheat_boss">👹 ④ Warden Boss Fight</h2>
+<ol>
+<li>Start in the Nexus Core circles. Void Claw/Talon recommended — he pushes you out of the arena.</li>
+<li><strong>P1:</strong> Dread Skulls (Dead Wire) stun him → shoot the tail critical point.</li>
+<li>Immune: destroy Shadow Souls (Light Mend) → <strong>P2:</strong> destroy Stingers (Cryofreeze) or they trigger a wipe; dodge stun circles.</li>
+<li>Intermediate room: survive or kill the HVT. <strong>P3:</strong> armor-providing Shadow Souls + skulls. <strong>P4:</strong> more skulls before each stun.</li>
+</ol></div>
+</div>
+
+<div class="rex-tools"><strong class="rex-tools-label">🧰 Interactive tool:</strong><a class="rex-tool-link" href="/tools/rex-infernus-ring-solver.html" target="_blank" rel="noopener">🛕 Temple Ring Solver — pillar alignment &amp; 4-temple tour</a></div>
+
+
+<div class="glass-card glass-amber"><h2 id="wiki_uncover_the_swirling_pool"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Uncover the Swirling Pool<span class="g-tag">🧩 Puzzle</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ol>
+<li>Travel to Veytharion's Sanctuary and acquire four cubes to bring into the room with the Void Claw pedestal. <em>Note: Death Perception makes it easier to see them.</em>
+<ul>
+<li>One cube is located on a pillar in the Veytharion Main Chamber, next to the GobbleGum machine. Simply double jump and interact with the cube to drop it.</li>
+<li>One cube is located on the bottom window in the room with Mule Kick.</li>
+<li>One cube is located above the upper window in the room with Mule Kick.</li>
+<li>One cube is located near the edge in the same room with the Void Claw pedestal.</li>
+</ul>
+</li>
+<li>Place the cubes on the wall in the left vertical opening in this order: <strong>Fire</strong> (bottom) - <strong>Hand</strong> - <strong>Water</strong> - <strong>Leaf</strong> (top).</li>
+<li>The goal is to move the cubes from the left vertical opening to the right vertical opening to form this order: <strong>Water</strong> (bottom) - <strong>Leaf</strong> - <strong>Hand</strong> - <strong>Fire</strong> (top)
+<ul>
+<li><em>Note: The Fire cube must never touch either the Leaf or Water cube, otherwise all the cubes will disappear and return to their original spots. Furthermore, if the cubes are not placed in a vertical opening when a round ends, they will return to their original spots.</em></li>
+</ul>
+</li>
+<li>Transfer the cubes from the left opening to the right opening. <em>Note: Shoot or melee the circle on the wall to move the slide back and forth between the two openings after placing the cubes in the slide.</em>
+<ol>
+<li>Transfer 1
+<ol>
+<li>Put <strong>Hand</strong> and <strong>Fire&nbsp;</strong>cubes in the slide and bring it to the right.</li>
+<li>Place the&nbsp;<strong>Fire</strong> cube in the right opening.</li>
+<li>Bring back slide to the left.</li>
+</ol>
+</li>
+<li>Transfer 2
+<ol>
+<li>Add the <strong>Water</strong> cube in the slide and bring it to the right.</li>
+<li>Place the <strong>Hand</strong> cube in the right opening first, then place the <strong>Water</strong> cube. Put the <strong>Fire</strong> cube back in the slide first, then the <strong>Hand </strong>cube.</li>
+<li>Bring back slide to the left.</li>
+</ol>
+</li>
+<li>Transfer 3
+<ol>
+<li>Put <strong>Hand</strong> cube in the left opening first, then put the <strong>Fire</strong> cube.</li>
+<li>Put the <strong>Leaf</strong> cube in the slide, then the <strong>Hand</strong> cube.</li>
+<li>Place the <strong>Leaf</strong> cube in the right opening.</li>
+<li>Bring back the slide to the left.</li>
+</ol>
+</li>
+<li>Transfer 4
+<ol>
+<li>Put the <strong>Fire</strong> cube in the slide.</li>
+<li>Place the <strong>Hand</strong> cube in the right opening first, then the <strong>Fire</strong> cube.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>If done correctly, the wall will open revealing the swirling pool and a Random Perk drop.
+<ul>
+<li><em>Note: Interacting with the swirling pool will trigger rain the next round. <strong>This will be needed for the final step for each temple cleansing.</strong></em></li>
+</ul>
+</li>
+</ol></div>
+<div class="glass-card glass-amber"><h2 id="wiki_restart_the_nexus_forge"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Restart the Nexus Forge<span class="g-tag">⚙️ Forge</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ol>
+<li>With the <strong>Void Talon</strong>, free the three Pull Switchs located on the pillars around the Nexus Forge and the six panels located on each side of the Nexus Core, revealing machinery entangled with spider webs.</li>
+<li>Clear the spider webs with either explosives/Molotov, or Astral/Ursuper Flam, or Warden's Blight. <em>Note: Deathspinners will spawn when clearing the webs.</em></li>
+<li>Once done, bring a purple orb to the Pack-a-Punch machine and surge the Nexus Forge.</li>
+<li>While the surge is happening, quickly travel down the Nexus Core and interact with the Pull Switch located on the ground at the bottom of the stairs next to Deadshot Daiquiri.</li>
+<li>If done correctly, the pillars around the Nexus Forge can be moved around.</li>
+</ol></div>
+<div class="glass-card glass-orange"><h2 id="wiki_cleanse_the_temples"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Cleanse the Temples<span class="g-tag">⚔️ Temples</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p>The three pillars of the Nexus Forge need to be aligned in front of each temple before they can be cleansed. <em>Note: <a href="/tools/rex-infernus-ring-solver.html" rel="nofollow noopener" target="_blank">Ring Solver — align &amp; tour all temples</a>.</em></p>
+<input type="radio" name="rextemple" id="rextab-d" class="rex-tab-in" checked><input type="radio" name="rextemple" id="rextab-n" class="rex-tab-in"><input type="radio" name="rextemple" id="rextab-c" class="rex-tab-in"><input type="radio" name="rextemple" id="rextab-v" class="rex-tab-in">
+<div class="rex-tabs"><h3 id="wiki_dravakar"><label class="rex-tab" for="rextab-d">Dravakar</label></h3><h3 id="wiki_nyxara"><label class="rex-tab" for="rextab-n">Nyxara</label></h3><h3 id="wiki_caltheris"><label class="rex-tab" for="rextab-c">Caltheris</label></h3><h3 id="wiki_veytharion"><label class="rex-tab" for="rextab-v">Veytharion</label></h3></div>
+<div class="rex-panel" id="rexp-d"><div class="rex-phase" style="--pc:#f59e0b"><div class="rex-phase-head">🧰 Get the quest item</div><ol><li>Align the pillars in front of Dravakar's temple.</li><li>With Shatter Blast equipped, return to Dravakar Inner Sanctum, and look for viking shields hanging on the walls.</li><li>Kill a zombie with Shatter Blast next to a shield to drop it and reveal an opening. Do each viking shield until the <strong>Blacksmith's Hammer</strong> is available.
+<ul>
+<li><em>Note: The other rewards are a Self-Revive, Shadow Rift Ammo Mod and Light Mend Ammo Mod.</em></li>
+</ul>
+</li></ol></div><div class="rex-phase" style="--pc:#f97316"><div class="rex-phase-head">🔥 Cauldron &amp; Titan Trap</div><ol><li>Bring the <strong>Blacksmith's Hammer</strong> to the cauldron in Dravakar Main Chamber then light the cauldron with an Astral Flame shot. If done correctly, a piece of ice will start floading above the cauldron. Bring a zombie near the cauldron so the piece of ice attaches itself to it.</li><li>A specific symbol will float around the zombie and that symbol will match the shackle of the Titan next to Caltheris' temple. Bring the zombie to the Titan Trap in Caltheris Passage and activate the trap. If done correctly, one of the shackles will be destroyed.</li></ol></div><div class="rex-phase" style="--pc:#a855f7"><div class="rex-phase-head">🪞 Tile, Reflector &amp; Cleansing</div><p class="rex-ph-note"><em>This step can be done immediately after the pillars have been aligned.</em></p><ol><li>Return to Dravakar Main Chamber and interact with the tile on the ground to trigger a quote. While on the tile, re-plate yourself several times until the tile moves, revealing a reflector.
+<ul>
+<li><em>Note: Re-plating doesn't need to be continous, what matters is the number of times re-plating was done while on top of the tile.</em></li>
+</ul>
+</li><li>Shoot at the reflector with a charged shot of the Warden's Blight to lift it into the air. The reflector's beam will need to be oriented towards the top-right wall of Dravakar Main Chamber, next to the opening leading to Dravakar Sanctuary. Shoot the reflector to move the beam around until it is pointing agains that wall. Then kill zombies beneath the reflector to send waves of energy and destroy the wall.
+<ul>
+<li><em>Note: The trigger square can be seen when looking through the <strong>EAM IR-VIZ Reflex</strong> sight from the Season 05 - Week 3 challenges.</em></li>
+</ul>
+</li><li>If done correctly, the wall will be destroyed revealing Dravakar's Visage. Shoot at the Visage to trigger a lockdown. Destroy all four Shadow Soul that have spawned around the arena. Once done, shoot at the Visage again until the screen turns to white.</li><li>Bring a purple orb right under Dravakar's face<strong> </strong>outside of the temple, and lift it up with Warden's Blight. If done correctly, Dravakar's face should have purple eyes.</li><li>Wait for rain to appear (or interact with the swirling pool) then obtain an Astral Flame and shoot at the forehead of Dravakar's face.</li><li>If done correctly, all corruption from the temple will disappear indicating the temple was cleansed.</li></ol></div></div>
+<div class="rex-panel" id="rexp-n"><div class="rex-phase" style="--pc:#f59e0b"><div class="rex-phase-head">🧰 Get the quest item</div><ol><li>Align the pillars in front of Nyxara's temple.</li><li>With Shadow Rift equipped, travel back to the forest after consuming the fruit and continously kill zombies with Shadow Rift until one drops the <strong>Ancient Scroll</strong>.</li></ol></div><div class="rex-phase" style="--pc:#f97316"><div class="rex-phase-head">🔥 Cauldron &amp; Titan Trap</div><ol><li>Bring the <strong>Ancient Scroll</strong> to the cauldron in Nyxara Main Chamber then light the cauldron with an Astral Flame shot. If done correctly, a piece of fire will start floading above the cauldron. Bring a zombie near the cauldron so the piece of fire attaches itself to it.</li><li>A specific symbol will float around the zombie and that symbol will match the shackle of the Titan next to Veytharion' temple. Bring the zombie to the Titan Trap in Veytharion Passage and activate the trap. If done correctly, one of the shackles will be destroyed.</li></ol></div><div class="rex-phase" style="--pc:#a855f7"><div class="rex-phase-head">🪞 Tile, Reflector &amp; Cleansing</div><p class="rex-ph-note"><em>This step can be done immediately after the pillars have been aligned.</em></p><ol><li>Return to Nyxara Main Chamber and interact with the tile on the ground to trigger a quote. Prone on the tile until it moves, revealing a reflector.
+<ul>
+<li><em>Note: Lying on the tile doesn't need to be continous.</em></li>
+</ul>
+</li><li>Shoot at the reflector with a charged shot of the Warden's Blight to lift it into the air. The reflector's beam will need to be oriented towards the bottom-left wall of Nyxara Main Chamber, below the ground, near the door leading to Nyxara Inner Sanctum. A vertical/pointy shadow can be seen on that wall, the beam needs to be oriented below that shadow. Shoot the reflector to move the beam around until it is pointing agains that wall. Then kill zombies beneath the reflector to send waves of energy and destroy the wall.
+<ul>
+<li><em>Note: The trigger square can be seen when looking through the <strong>EAM IR-VIZ Reflex</strong> sight from the Season 05 - Week 3 challenges.</em></li>
+</ul>
+</li><li>If done correctly, the wall will be destroyed revealing Nyxara's Visage. Shoot at the Visage to trigger a lockdown. Destroy all four Shadow Soul that have spawned around the arena. Once done, shoot at the Visage again until the screen turns to white.</li><li>Bring a purple orb right under Nyxara's face outside of the temple, and lift it up with Warden's Blight. If done correctly, Nyxara's face should have purple eyes.</li><li>Wait for rain to appear (or interact with the swirling pool) then obtain an Astral Flame and shoot above the snout of Nyxara.</li><li>If done correctly, all corruption from the temple will disappear indicating the temple was cleansed.</li></ol></div></div>
+<div class="rex-panel" id="rexp-c"><div class="rex-phase" style="--pc:#f59e0b"><div class="rex-phase-head">🧰 Get the quest item</div><ol><li>Align the pillars in front of Caltheris' temple.</li><li>Travel to the bottom part of Caltheris Main Chamber and find the four plates on the ground. Stand on one plate to complete a sharshooting challenge by shooting glowing orbs appearing around the room.
+<ol>
+<li><em>Note: Far-Left plate will spawn orbs on the left wall, Left plate will spawn orbs on the wall in front of the room, Right plate will spawn orbs in the back of the room, Far-Right plate will spawn orbs on the right wall.</em></li>
+</ol>
+</li><li>Complete all four challenges to open the right wall, revealing a lantern and two purple orbs. The lantern can be interacted once every round to spawn more orbs.</li><li>With the Void Claw, bring purple orbs towards you and interact with the orb until one drops the<strong> Shimmering Thread</strong>.
+<ul>
+<li><em>Note: The Shimmering Thread can be acquired from any orb. The lantern is not mandatory but can provide additional orbs.</em></li>
+</ul>
+</li></ol></div><div class="rex-phase" style="--pc:#f97316"><div class="rex-phase-head">🔥 Cauldron &amp; Titan Trap</div><ol><li>Bring the <strong>Shimmering Thread </strong>to the cauldron in Caltheris Main Chamber then light the cauldron with an Astral Flame shot. If done correctly, a piece of rock will start floading above the cauldron. Bring a zombie near the cauldron so the piece of rock attaches itself to it.</li><li>A specific symbol will float around the zombie and that symbol will match the shackle of the Titan next to Caltheris' temple. Bring the zombie to the Titan Trap in Caltheris Passage and activate the trap. If done correctly, one of the shackles will be destroyed.</li></ol></div><div class="rex-phase" style="--pc:#a855f7"><div class="rex-phase-head">🪞 Tile, Reflector &amp; Cleansing</div><p class="rex-ph-note"><em>This step can be done immediately after the pillars have been aligned.</em></p><ol><li>Return to Caltheris Main Chamber and interact with the tile on the ground to trigger a quote. Aim with your weapon for 30 seconds while standing on the tile until it moves, revealing a reflector.
+<ul>
+<li><em>Note: Aiming while on the tile doesn't need to be continous.</em></li>
+</ul>
+</li><li>Shoot at the reflector with a charged shot of the Warden's Blight to lift it into the air. The reflector's beam will need to be oriented towards the wall of Caltheris Main Chamber right next to the left opening doorway. Shoot the reflector to move the beam around until it is pointing agains that wall. Then kill zombies beneath the reflector to send waves of energy and destroy the wall.
+<ul>
+<li><em>Note: The trigger square can be seen when looking through the <strong>EAM IR-VIZ Reflex</strong> sight from the Season 05 - Week 3 challenges.</em></li>
+</ul>
+</li><li>If done correctly, the wall will be destroyed revealing Caltheris's Visage. Shoot at the Visage to trigger a lockdown. Destroy all four Shadow Soul that have spawned around the arena. Once done, shoot at the Visage again until the screen turns to white.</li><li>Bring a purple orb right under Caltheris' face outside of the temple, and lift it up with Warden's Blight. If done correctly, Caltheris' face should have purple eyes.</li><li>Wait for rain to appear (or interact with the swirling pool) then obtain an Astral Flame and shoot at the forehead of Caltheris' face.</li><li>If done correctly, all corruption from the temple will disappear indicating the temple was cleansed.</li></ol></div></div>
+<div class="rex-panel" id="rexp-v"><div class="rex-phase" style="--pc:#f59e0b"><div class="rex-phase-head">🧰 Get the quest item</div><ol><li>Align the pillars in front of Veytharion's temple.</li><li>Wait for rain to appear (or interact with the swirling pool), and collect the <strong>Woven Sash</strong> which can be found in different locations:
+<ul>
+<li>Outside of Spira Insula, after the second platform when coming from Nyxara Sanctuary</li>
+<li>Outside of Ruinas Insula, behind the wall behind the Mystery Box location</li>
+<li>Outside of Aranea Insulta, below the ground right after the platform when coming from Veytharion Sanctuary</li>
+</ul>
+</li></ol></div><div class="rex-phase" style="--pc:#f97316"><div class="rex-phase-head">🔥 Cauldron &amp; Titan Trap</div><ol><li>Bring the <strong>Woven Sash </strong>to the cauldron in Veytharion Main Chamber then light the cauldron with an Astral Flame shot. If done correctly, a piece of flesh will start floading above the cauldron. Bring a zombie near the cauldron so the piece of flesh attaches itself to it.</li><li>A specific symbol will float around the zombie and that symbol will match the shackle of the Titan next to Veytharion' temple. Bring the zombie to the Titan Trap in Veytharion Passage and activate the trap. If done correctly, one of the shackles will be destroyed.</li></ol></div><div class="rex-phase" style="--pc:#a855f7"><div class="rex-phase-head">🪞 Tile, Reflector &amp; Cleansing</div><p class="rex-ph-note"><em>This step can be done immediately after the pillars have been aligned.</em></p><ol><li>Return to Veytharion Main Chamber and interact with the tile on the ground to trigger a quote. Keeping jumping on the plate until it moves, revealing a reflector.&nbsp;
+<ul>
+<li><em>Note: Jumping on the tile doesn't need to be continous.</em></li>
+</ul>
+</li><li>Shoot at the reflector with a charged shot of the Warden's Blight to lift it into the air. The reflector's beam will need to be oriented towards the left window opening of Veytharion Main Chamber, right next to the doorway leading to the rest of the temple. Shoot the reflector to move the beam around until it is pointing agains that wall. Then kill zombies beneath the reflector to send waves of energy and destroy the wall.
+<ul>
+<li><em>Note: The trigger square can be seen when looking through the <strong>EAM IR-VIZ Reflex</strong> sight from the Season 05 - Week 3 challenges.</em></li>
+</ul>
+</li><li>If done correctly, the wall will be destroyed revealing Veytharion's Visage. Shoot at the Visage to trigger a lockdown. Destroy all four Shadow Soul that have spawned around the arena. Once done, shoot at the Visage again until the screen turns to white.</li><li>Bring a purple orb right under Veytharion's mouths outside of the temple, and lift it up with Warden's Blight. If done correctly, Veytharion's mouths should turn purple.</li><li>Wait for rain to appear (or interact with the swirling pool) then obtain an Astral Flame and shoot above the front mouth of Veytharion.</li><li>If done correctly, all corruption from the temple will disappear indicating the temple was cleansed.</li></ol></div></div></div>
+<div class="glass-card glass-red glass-boss"><h2 id="wiki_warden_boss_fight"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Warden Boss Fight<span class="g-tag">👹 BOSS</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p>Travel to Nexus Core and stand in one of the circles to start the encounter. At the start of the fight, the Warden will take the form of a Scorpion-man. The Warden will move extremely fast, with the goal of pushing you out of the arena. The use of Void Claw (or Void Talon) is recommended.</p>
+<p><strong>Phase 1</strong> - The Warden is accompanied by a Dread Skull (weak to Dead Wire), destroying the Dread Skull will stun the Warden revealing a critical point at the end of its tail. Repeat the process until a third of the health is gone and the Warden becomes immune. While it is immune, Shadow Soul (weak to Light Mend) will appear around the map, destroy them all to start Phase 2.</p>
+<p><strong>Phase 2</strong> - In addition to the Dread Skulls, the Warden will spawn floating circles that will stun and deal damages. Moreover, Warden's Stingers (weak to Cryofreeze) will appear around the arena. It is important to destroy as many stingers otherwise they can create a wipe attack. Continue until only a third of its health remains.</p>
+<p><strong>Intermediate Phase</strong> - The Warden will send you to a close room where the objective will be to either survive a specific amount of time, or to eliminate a HVT. Once the objective is complete, you will be teleported back into the arena.</p>
+<p><strong>Phase 3</strong> - Alongside the Warden's Stingers, circles, Dread Skulls, Shadow Souls will appear around the arena providing armor to the Warden and need to be destroyed. Repeat the same process until there is no more health.</p>
+<p><strong>Phase 4</strong> - A surprise fourth phase will start. The Warden will have a third of health remaining and even more Shadow Souls providing armor. Additionally, several Dread Skulls need to be destroyed before the Warden can be stunned. Repeat the same process until the fight is finally done.</p></div>
+<hr>
+<h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
+
+
+<div class="glass-card glass-violet"><h2 id="wiki_.22all_we_are.22_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"All We Are" Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p>Find three Mr Peeks headphones around the map:</p>
+<ul>
+<li>
+<p>On top of a pillar in Nyxara Main Chamber, requires wall-jumping to reach.</p>
+</li>
+<li>
+<p>At a window in Ruinas Insula.</p>
+</li>
+<li>
+<p>Around a skull hidden between a rock and a low wall in Arena Insula.</p>
+</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=MjpeDV0uVp4" rel="nofollow noopener" target="_blank">"All We Are" by Kevin Sherwood and Elena Siegman</a></p></div>
+<div class="glass-card glass-violet"><h2 id="wiki_masks"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Masks<span class="g-tag">🎭 Masks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p>There are four masks available in Rex Infernus, all the masks can be used within the same game and each mask can be removed and placed on a specific pedestal to easily swap between them all.</p>
+<h3 class="" id="wiki_horned_skull_mask_.28stone_cold_strongold_x_ring_of_fire.29">Horned Skull Mask (Stone Cold Strongold x Ring of Fire)</h3>
+<ol>
+<li>Remain inside Her House for at least 9 rounds.</li>
+<li>Melee the painting on the right side of the chimney to collect the <strong>Horned Skull Mask</strong>.
+<ul>
+<li><em>Note: Meleeing the painting after 5-6 rounds will reward with 600 Essence or some Ammo while after 7-8 rounds it will be either a free Perk can or a Rare Aether Tool.</em></li>
+</ul>
+</li>
+</ol>
+<p>The Horned Skull Mask offers a damage and armor boost while standing still, with a circle that will damage any enemy entering it. <em>Note: There is a cooldown of 1 minute between each use.&nbsp;</em>The mask can be placed on the pedestal inside Veytharion Sanctuary.</p>
+<h3 class="" id="wiki_cowboy_hat_mask_.28spider_immunity.29">Cowboy Hat Mask (Spider Immunity)</h3>
+<ol>
+<li>Ride a Web Mother next to the Pack-a-Punch machine and kill around 50 enemies. <em>Note: Riding the Web Mother is time-limited and may require several tries.</em></li>
+<li>Once enough enemies have been killed, the Web Mother will jump into the Pack-a-Punch dying instantly and dropping the <strong>Cowboy Hat Mask</strong>.</li>
+</ol>
+<p>The Cowboy Hat Mask offers some immunity against Deathspinners and Web Mothers. The mask can be placed on the pedestal inside Nyxara Inner Sanctum.</p>
+<h3 class="" id="wiki_astronaut_helmet_mask_.28longer.2Dlasting_void_claw.29">Astronaut Helmet Mask (Longer-lasting Void Claw)</h3>
+<ol>
+<li>Collect six parts of Mr Peeks:
+<ul>
+<li>The head is on a shelf in Her House next to Quick Revive.</li>
+<li>A part is against a rock pillar just outside of Caltheris' Passage on the right side; requires the Void Claw.</li>
+<li>A part is located on the other side of the cliff opposite of the Mystery Box location in Ruinas Insula; requires the Void Claw.</li>
+<li>A part is located floating over an edge below the main ground and a platform in Aranea Insula; requires the Void Claw.</li>
+<li>A part is located on top of a rock pillar above Juggernog in front of the higher platform in Spira Insula; requires the Void Claw.</li>
+<li>A part is located outside of Nexus Forge, in-between Veytharion's and Dravakar's temples; requires the Void Claw.</li>
+</ul>
+</li>
+<li>Make sure all the doors around the map are open.</li>
+<li>Travel to Caltheris Main Chamber and look for Mr Peeks on the ledge of the platform above the Mystery Box location.</li>
+<li>Interact with Mr Peeks to start a Grappling Hook parkour course. Cross every Mr Peeks circle until it reaches the doorway of Nyxara Entrance.</li>
+<li>Completing the parkour course in 50 seconds or less will drop the <strong>Astronaut Helmet</strong>, alongside other loot such as a Raw Aetherium Crystal.
+<ul>
+<li><em>Note: Complete the parkour course will reward with loot such as Essence, Salvaga and a Mystery Perk while completing it under a minute will aware a Ray Gun.</em></li>
+</ul>
+</li>
+</ol>
+<p>The Astronaut Helmet offers an increased 30 seconds of use for the Void Claw and Void Talon. The mask can be placed on the pedestal in Caltheris Main Chamber on the platform above the Mystery Box location.</p>
+<h3 class="" id="wiki_spiked_skull_mask_.28twins_ammo_effect.29">Spiked Skull Mask (Twins Ammo effect)</h3>
+<ol>
+<li>Travel to the forest from Nyxara Inner Sanctum.
+<ul>
+<li><em>Note: This can be done once per round after the fruit has spawned.</em></li>
+</ul>
+</li>
+<li>Interact with the music box located below a fallen tree trunk and leave the forest.</li>
+<li>Return to the forest and interact with a blue toy box located between two trees.</li>
+<li>Three items will appear above the toy box, interacting with an item will trigger a mini-game by the Twins:
+<ul>
+<li><strong>Teddy Bear</strong>: Collect glowing plushies while being pursued by enemies who will move only when you're not looking before the time runs out.</li>
+<li><strong>Mask</strong>: Quickly find the Twins before the time runs out. <em>Note: When the Twins are found, their energy will move towards the direction of their next spot.</em></li>
+<li><strong>Rope</strong>: Do a skipping rope game, failing 3 times will end the mini-game.</li>
+</ul>
+</li>
+<li>Completing the Mask mini-game will reward with 1000 Essence; completing the Rope mini-game will reward with 600 Essence; and completing the Teddy Bear mini-game will reward with 600 Essence.
+<ul>
+<li><em>Note: Completing all the mini-games will reward with possible Aether Tool, Aetherium Crystal, Mystery Perk, and Wonder Weapon</em>.</li>
+</ul>
+</li>
+<li>Return to the forest and complete all three mini-games once more. However, the min-games will be harder to complete this time around
+<ul>
+<li><strong>Teddy Bear</strong>: Zombies are faster with less time to complete.</li>
+<li><strong>Mask</strong>: Being stunned every time the Twins are found.</li>
+<li><strong>Rope</strong>: Longer with more variation, failing 2 times will end the mini-game.</li>
+</ul>
+</li>
+<li>Completing the harder version of all the mini-games will reward with the same kind of loot as the normal version with the <strong>Spiked Skull Mask</strong> also becoming available.</li>
+</ol>
+<p>The Spiked Skull Mask offers a Twins ammo effect for your gun, the Twins will appear on the ground like a lightning strike kill all the zombies nearby. The mask can be placed on the pedestal inside Dravakar Sanctuary, on the left of the Armor wall-buy and doorway.</p></div>
+<div class="glass-card glass-violet"><h2 id="wiki_mr._peeks.27_dance_off"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Mr. Peeks' Dance Off<span class="g-tag">🕺 Dance Off</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ol>
+<li>With the Void Claw, open the various Dig Spots until one of them drops a glowing cassette.</li>
+<li>Travel to Aranea Insula and find the cassette player. Interact with the player to place the cassette.</li>
+<li>If done correctly, you will be teleported to Her House to complete a rythm mini-game. Buttons will be shown on screen and needs to be pressed in the correct order before the time runs out.</li>
+<li>Once the mini-game is finished, a trophy will appear in Nexus Forge containing loot and Essence.</li>
+</ol></div>
+<div class="glass-card glass-gold"><h2 id="wiki_corrupted_weapons"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Corrupted Weapons<span class="g-tag">☢️ Corrupted</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<h3 class="" id="wiki_corrupted_press_f">Corrupted Press F</h3>
+<ol>
+<li>Purchase the M34 Novaline from Dravakar Sanctuary.</li>
+<li>Pack-a-Punch three different weapons.</li>
+<li>Wait for rain to appear (or interact with the swirling pool) and if done correctly, the M34 Novaline wall-buy will start glowing.</li>
+<li>Obtain the Astral Flame and shoot at the wall-buy while it's raining. This should spawn a Web Mother HVT.</li>
+<li>After killing the HVT, the Unstable TR2 can be picked up in front of the wall-buy. <strong>Quickly return</strong> to Nexus Forge as the weapon will constantly damage you.</li>
+<li>Pack-a-Punch the weapon to obtain the <strong>Corrupted Press F</strong>
+<ul>
+<li><em>Note: The Corrupted Press F is an Ultra weapon that will still damage you if your shot doesn't damage/kill any enemy.</em></li>
+</ul>
+</li>
+</ol>
+<h3 class="" id="wiki_corrupted_pluto">Corrupted Pluto</h3>
+<ul>
+<li>Purchase the M10 Breacher from Caltheris Entrance.</li>
+<li>Pack-a-Punch three different weapons.</li>
+<li>Wait for rain to appear (or interact with the swirling pool) and if done correctly, the M10 Breacher wall-buy will start glowing.</li>
+<li>Obtain the Astral Flame and shoot at the wall-buy while it's raining. This should spawn a Web Mother HVT.</li>
+<li>After killing the HVT, the Unstable Olympia can be picked up in front of the wall-buy. <strong>Quickly return</strong> to Nexus Forge as the weapon will constantly damage you.</li>
+<li>Pack-a-Punch the weapon to obtain the <strong>Corrupted Pluto</strong>
+<ul>
+<li><em>Note: The Corrupted Pluto is an Ultra weapon that will still damage you if your shot doesn't damage/kill any enemy.</em></li>
+</ul>
+</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_power.2Dup_statues"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Power-Up Statues<span class="g-tag">⚡ Statues</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p>There are 7 Power-Up statues around Rex Infernus giving out the corresponding Power-Ups when shooting them, with two additional statues appearing after the first 7 are activated.</p>
+<ul>
+<li>
+<p class=""><strong>Bonus Point</strong>: Inside the structure outside the map on the right side of Her House when seen from Nyxara Passage.</p>
+</li>
+<li>
+<p><strong>Insta-Kill</strong>: Inside the arch on the right side of the pit beneath Nyxara Entrance.</p>
+</li>
+<li>
+<p><strong>Double Points</strong>: In the structure outside the map, behind Her House when looking from Caltheris Passage.</p>
+</li>
+<li>
+<p><strong>Nuke</strong>: On the flat roof of a structure outside the map when seen from Caltheris Main Chamber.</p>
+</li>
+<li>
+<p><strong>Full Power</strong>: At the very top of the left pillar in Veytharion Main Chamber when looking from the entrance of the temple.</p>
+</li>
+<li>
+<p><strong>Max Armor</strong>: On the ground of the left window in Dravakar Entrance when looking from the entrance of the temple, requires to jump to see it.</p>
+</li>
+<li>
+<p><strong>Max Ammo</strong>: Hidden behind the interactable painting in Her House.</p>
+</li>
+<li>
+<p><strong>Fire Sale</strong>: Inside the structure outside the map, behind the Mystery Box location in Spira Insula. <strong>Only available after all the others have been activated.</strong></p>
+</li>
+<li>
+<p><strong>Random Perk:&nbsp;</strong>On the bridge outside the map below Aranea Insula.&nbsp;<strong>Only available after all the others have been activated.</strong></p>
+</li>
+</ul></div>
+<hr>
+<h1 id="wiki_wall.2Dbuys_and_perk.2Da.2Dcolas">Wall-Buys and Perk-a-Colas</h1>
+
+
+<div class="glass-card glass-green"><h2 id="wiki_wall.2Dbuys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<div class="table-container"><table style="width: 369px; height: 707.2px" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 44px">
+<td style="width: 136px">CODA-9</td>
+<td style="width: 205px">Her House</td>
+</tr>
+<tr style="height: 46px">
+<td style="width: 136px">Warden 308</td>
+<td style="width: 205px">Her House</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">MK.78</td>
+<td style="width: 205px">Nexus Core</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Ryden 45K</td>
+<td style="width: 205px">Nexus Forge</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Echo 12</td>
+<td style="width: 205px">Nyxara Passage</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Peacekeeper Mk1</td>
+<td style="width: 205px">Nyxara Entrance</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">VS Recon</td>
+<td style="width: 205px">Nyxara Sanctuary</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">DS20 Mirage</td>
+<td style="width: 205px">Spira Insula</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">M8A1</td>
+<td style="width: 205px">Veytharion Passage</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Akita</td>
+<td style="width: 205px">Veytharion Main Chamber</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Shadow SK</td>
+<td style="width: 205px">Veytharion Sanctuary</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">XM325</td>
+<td style="width: 205px">Aranea Insula</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">XR-3 Ion</td>
+<td style="width: 205px">Aranea Insula</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">Dravec 45</td>
+<td style="width: 205px">Dravakar Passage</td>
+</tr>
+<tr style="height: 10px">
+<td style="width: 136px">AK-27</td>
+<td style="width: 205px">Dravakar Main Chamber</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">M34 Novaline</td>
+<td style="width: 205px">Dravakar Sanctuary</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">M15 Mod 0</td>
+<td style="width: 205px">Ruinas Insula</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">M10 Breacher</td>
+<td style="width: 205px">Caltheris Entrance</td>
+</tr>
+<tr style="height: 37.95px">
+<td style="width: 136px">X9 Maverick</td>
+<td style="width: 205px">Caltheris Entrance</td>
+</tr>
+</tbody>
+</table></div></div>
+<div class="glass-card glass-green"><h2 id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<p><em>Note: Der Wunderfizz appears after purchasing 4 Perk-a-Colas or after reaching Round 20.</em></p>
+<div class="table-container"><table style="width: 491px; height: 29.2px; border-width: 1px" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 29.2px">
+<td style="width: 174px; border-width: 1px">Quick Revive</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Her House</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Deadshot Daiquiri</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Nexus Core</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Stamin-Up</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Nyxara Passage</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Double Tap Root Beer</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Nyxara Main Chamber</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Juggernog</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Spira Insula</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Vulture Aid</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Veytharion Passage</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Mule Kick</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Veytharion Sanctuary</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Widow's Wine</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Aranea Insula</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Speed Cola</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Dravakar Entrance</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Death Perception</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Dravakar Main Chamber</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Phd Flopper</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Ruinas Insula</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Wisp Tea</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Caltheris Passage</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Elemental Pop</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Caltheris Main Chamber</td>
+</tr>
+<tr>
+<td style="width: 174px; border-width: 1px">Der Wunderfizz</td>
+<td style="text-align: center; border-width: 1px; width: 288px">Nexus Core</td>
+</tr>
+</tbody>
+</table></div></div>
+<hr>
+<h1 id="wiki_miscellaneous_features">Miscellaneous Features</h1>
+
+
+<div class="glass-card glass-green"><h2 id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ul>
+<li>Nyxara Sanctuary</li>
+<li>Veytharion Sanctuary</li>
+<li>Dravakar Sanctuary</li>
+<li>Caltheris Main Chamber</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_traps_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Traps Locations<span class="g-tag">🪤 Traps</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ul>
+<li>
+<h4><strong>Titan Trap</strong>: Caltheris Passage; Veytharion Passage</h4>
+</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_arsenal_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Arsenal Locations<span class="g-tag">🎯 Arsenal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ul>
+<li>Nyxara Sanctuary</li>
+<li>Veytharion Main Chamber</li>
+<li>Dravakar Sanctuary</li>
+<li>Caltheris Main Chamber</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">&nbsp;Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+
+<ul>
+<li>Veytharion Sanctuary</li>
+<li>Dravakar Main Chamber</li>
+<li>Caltheris Main Chamber</li>
+</ul></div>
+</div>

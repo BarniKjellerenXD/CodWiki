@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rex Infernus — Temple Ring Solver</title>
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#241b0b,#0a0a0c 60%);color:#f5ead2;font:16px system-ui,-apple-system,sans-serif;min-height:100vh;padding:24px}
+.wrap{max-width:760px;margin:auto}
+.card{background:#17130bee;border:1px solid #5c4411;border-radius:18px;padding:22px;box-shadow:0 18px 50px #0008;margin-bottom:18px}
+h1{color:#fcd34d;font-size:1.45rem;margin:0 0 4px}
+p.sub{color:#a89062;font-size:.9rem;line-height:1.55;margin:.35rem 0 0}
+.mode{display:flex;gap:8px;margin:16px 0 0;flex-wrap:wrap}
+.mode button{flex:1;min-width:180px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.15);color:#d6c28d;border-radius:10px;padding:10px;font-weight:700;cursor:pointer}
+.mode button.active{background:#f59e0b;color:#1b1204;border-color:#f59e0b}
+.pick{display:flex;gap:8px;justify-content:center;margin:14px 0 2px;flex-wrap:wrap;align-items:center}
+.pick .lbl{font-size:12px;color:#a89062;text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-right:2px}
+.ringchip{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.16);color:#d6c28d;border-radius:10px;padding:8px 14px;font-weight:800;font-size:.85rem;cursor:pointer}
+.ringchip.active{color:#1b1204;border-color:currentColor;filter:brightness(1.05)}
+.ringchip.active.rc0{background:#fbbf24;border-color:#fbbf24}
+.ringchip.active.rc1{background:#f97316;border-color:#f97316}
+.ringchip.active.rc2{background:#ef4444;border-color:#ef4444}
+.targetrow{display:flex;gap:8px;justify-content:center;margin:10px 0 0;flex-wrap:wrap;align-items:center}
+.tgtlbl{font-size:12px;color:#a89062;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.tgtval{color:#fcd34d;font-weight:800;font-size:.95rem}
+.reset{background:none;border:none;color:#8a7548;font-size:.78rem;cursor:pointer;text-decoration:underline;padding:4px}
+.solve{margin-top:16px;width:100%;border:1px solid #f59e0b;background:#f59e0b;color:#1b1204;border-radius:10px;padding:12px;font-weight:800;font-size:1rem;cursor:pointer}
+.solve:hover{filter:brightness(1.08)}
+.hidden{display:none!important}
+.result{margin-top:18px;border-top:1px dashed #6b4b0b;padding-top:16px}
+.counts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.cnt{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:10px 18px;text-align:center;min-width:92px}
+.cnt .n{font-size:1.9rem;font-weight:800;color:#fcd34d;display:block;line-height:1.1}
+.cnt .l{font-size:11px;color:#a89062;text-transform:uppercase;letter-spacing:.08em}
+.total{text-align:center;color:#e8d9b0;font-size:.95rem;margin:6px 0 2px}
+.total b{color:#fcd34d}
+.seq{margin-top:12px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px 12px;font-size:.82rem;line-height:1.9;color:#d8c9a3;max-height:220px;overflow-y:auto}
+.seq b{color:#fcd34d}
+.visit{color:#7ee787;font-weight:700}
+.vizwrap{text-align:center;margin-top:6px}
+svg{max-width:100%;height:auto;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.hintline{text-align:center;font-size:.8rem;color:#8a7548;margin-top:4px}
+.controls{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:10px;flex-wrap:wrap}
+.controls button{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);color:#f5ead2;border-radius:8px;padding:8px 16px;font-weight:700;cursor:pointer}
+.controls button:disabled{opacity:.35;cursor:default}
+.stepcap{font-size:.85rem;color:#c7a967;min-width:200px;text-align:center}
+.note{font-size:.78rem;color:#8a7548;margin-top:14px;line-height:1.5}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="card">
+<h1>🛕 Temple Ring Solver</h1>
+<p class="sub">Six stops clockwise: <b>Empty → Dravakar → Caltheris → House → Nyxara → Veytharion</b>. Pressing a ring's button moves <b>that ring 1 stop</b> and the <b>other two rings 2 stops</b>, in the lever's direction. Lever flips are free — each press uses the direction you pick.</p>
+<div class="mode">
+<button id="mAlign" class="active" type="button">🎯 Align to one temple</button>
+<button id="mTour" type="button">🔁 Tour all 4 temples</button>
+</div>
+<div class="pick"><span class="lbl">Place pillar:</span><button class="ringchip rc0 active" id="chip0" type="button">Inside</button><button class="ringchip rc1" id="chip1" type="button">Middle</button><button class="ringchip rc2" id="chip2" type="button">Outside</button><button class="reset" id="reset" type="button">reset</button></div>
+<div class="vizwrap">
+<svg id="viz" width="300" height="300" viewBox="-150 -150 300 300" aria-hidden="true"></svg>
+<div class="hintline" id="hintline">Tap a spoke to place the selected pillar — then tap a <b>temple</b> as the target</div>
+</div>
+<div class="targetrow hidden" id="targetrow"><span class="tgtlbl">Target:</span><span class="tgtval" id="tgtval">— none —</span></div>
+<button class="solve" id="solve" type="button">Solve</button>
+<div class="result hidden" id="res">
+<div class="counts" id="counts"></div>
+<div class="total" id="totalTxt"></div>
+<div class="controls">
+<button id="prev" type="button">◀ Prev</button>
+<span class="stepcap" id="stepcap"></span>
+<button id="next" type="button">Next ▶</button>
+</div>
+<div class="seq" id="seq"></div>
+</div>
+<p class="note">Empty and House are alignment stops but not temples. The tour treats a temple you're already aligned with at the start as visited (do its EE first!). Solver: breadth-first search over all 216 ring states — always the fewest possible presses.</p>
+</div>
+</main>
+<script>
+(function(){
+  'use strict';
+  var NAMES=['Empty','Dravakar','Caltheris','House','Nyxara','Veytharion'];
+  var TEMPLE_IDX={Veytharion:5,Dravakar:1,Caltheris:2,Nyxara:4};
+  var RING=['Inside','Middle','Outside'];
+  var COLORS=['#fbbf24','#f97316','#ef4444'];
+  var RADII=[52,80,108];
+  function el(id){return document.getElementById(id);}
+  function norm(x){return ((x%6)+6)%6;}
+  function move(state,k,d){
+    var p=[state[0],state[1],state[2]];
+    for(var i=0;i<3;i++)p[i]=norm(p[i]+(i===k?d:2*d));
+    return p;
+  }
+  function key(s){return s[0]*36+s[1]*6+s[2];}
+  function bfsAll(start){
+    var dist={};dist[key(start)]={d:0,prev:null,mv:null};
+    var q=[start];
+    for(var h=0;h<q.length;h++){
+      var cur=q[h],cd=dist[key(cur)].d;
+      for(var k=0;k<3;k++)for(var di=0;di<2;di++){
+        var d=di===0?1:-1,nxt=move(cur,k,d),kk=key(nxt);
+        if(!dist[kk]){dist[kk]={d:cd+1,prev:cur,mv:[k,d]};q.push(nxt);}
+      }
+    }
+    return dist;
+  }
+  function solveAlign(start,target){
+    var t=TEMPLE_IDX[target],goal=[t,t,t];
+    var dist=bfsAll(start),e=dist[key(goal)];
+    if(!e)return null;
+    var seq=[],cur=goal;
+    while(dist[key(cur)].prev){seq.unshift(dist[key(cur)].mv);cur=dist[key(cur)].prev;}
+    return seq;
+  }
+  function maskOf(s){
+    var m=0,i;
+    for(i=0;i<4;i++){var v=[5,1,2,4][i];if(s[0]===v&&s[1]===v&&s[2]===v)m|=(1<<i);}
+    return m;
+  }
+  function solveTour(start){
+    var startNode=[key(start),maskOf(start)];
+    var seen={};seen[startNode[0]+'_'+startNode[1]]=null;
+    var q=[[start,startNode[1]]];
+    var goal=null;
+    for(var h=0;h<q.length&&!goal;h++){
+      var cur=q[h],st=cur[0],mk=cur[1];
+      for(var k=0;k<3;k++)for(var di=0;di<2;di++){
+        var d=di===0?1:-1,nxt=move(st,k,d),nm=mk|maskOf(nxt);
+        var nk=key(nxt)+'_'+nm;
+        if(!(nk in seen)){
+          seen[nk]=[st,mk,[k,d]];
+          if(nm===15){goal=nk;break;}
+          q.push([nxt,nm]);
+        }
+      }
+    }
+    if(!goal)return null;
+    var seq=[],cur=goal;
+    while(seen[cur]){var p=seen[cur];seq.unshift(p[2]);cur=key(p[0])+'_'+p[1];}
+    return seq;
+  }
+  function checkpoints(start,seq){
+    var p=start.slice(),visits=[],seenM={};
+    var m0=maskOf(p);
+    for(var i=0;i<4;i++)if(m0&(1<<i)){visits.push({press:0,name:NAMES[[5,1,2,4][i]]});}
+    for(var idx=0;idx<seq.length;idx++){
+      p=move(p,seq[idx][0],seq[idx][1]);
+      if(p[0]===p[1]&&p[1]===p[2]){
+        var v=NAMES[p[0]];
+        if(TEMPLE_IDX.hasOwnProperty(v)&&!seenM[v]){seenM[v]=1;visits.push({press:idx+1,name:v});}
+      }
+    }
+    return visits;
+  }
+  // ---------- state ----------
+  var cur=[0,0,0],active=0,mode='align',target=null,seq=[],step=0;
+  function stopAngle(i){return (-90+i*60)*Math.PI/180;}
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function draw(){
+    var svg=el('viz'),s='';
+    var r,i;
+    for(r=0;r<3;r++){
+      var isA=(r===active);
+      s+='<circle r="'+RADII[r]+'" fill="none" stroke="'+(isA?COLORS[r]:'rgba(255,255,255,.12)')+'" stroke-width="'+(isA?2:1)+'" stroke-dasharray="3 5"'+(isA?' opacity=".8"':' opacity=".9"')+'/>';
+    }
+    for(i=0;i<6;i++){
+      var a=stopAngle(i);
+      var ca=Math.cos(a),sa=Math.sin(a);
+      var isT=NAMES[i]!=='Empty'&&NAMES[i]!=='House';
+      s+='<line x1="0" y1="0" x2="'+(ca*122).toFixed(1)+'" y2="'+(sa*122).toFixed(1)+'" stroke="rgba(255,255,255,.08)" stroke-width="1"/>';
+      s+='<circle cx="'+(ca*130).toFixed(1)+'" cy="'+(sa*130).toFixed(1)+'" r="2.5" fill="'+(isT?'#f59e0b':'#5c5647')+'"/>';
+      var lx=ca*138,ly=sa*138;
+      var isTgt=(mode==='align'&&target===i);
+      s+='<text x="'+lx.toFixed(1)+'" y="'+(ly+3).toFixed(1)+'" text-anchor="middle" font-size="9.5" font-weight="'+(isTgt?'800':'700')+'" fill="'+(isTgt?'#fcd34d':(isT?'#f59e0b99':'#8a7548'))+'">'+(isTgt?'🎯 ':'')+NAMES[i]+'</text>';
+      if(isT&&mode==='align'){
+        s+='<circle class="hit" data-stop="'+i+'" data-kind="target" cx="'+lx.toFixed(1)+'" cy="'+ly.toFixed(1)+'" r="24" fill="rgba(0,0,0,0)" style="cursor:pointer"/>';
+      }
+      s+='<circle class="hit" data-stop="'+i+'" data-kind="place" cx="'+(ca*94).toFixed(1)+'" cy="'+(sa*94).toFixed(1)+'" r="34" fill="rgba(0,0,0,0)" style="cursor:pointer"/>';
+    }
+    for(var k=0;k<3;k++){
+      var a2=stopAngle(cur[k]),px=Math.cos(a2)*RADII[k],py=Math.sin(a2)*RADII[k];
+      var gl=(k===active)?'<circle cx="'+px.toFixed(1)+'" cy="'+py.toFixed(1)+'" r="14" fill="none" stroke="'+COLORS[k]+'" stroke-width="1.5" stroke-dasharray="2 3"/>':'';
+      s+=gl;
+      s+='<circle cx="'+px.toFixed(1)+'" cy="'+py.toFixed(1)+'" r="9" fill="'+COLORS[k]+'" stroke="#0a0a0c" stroke-width="2"/>';
+      s+='<text x="'+px.toFixed(1)+'" y="'+(py+3).toFixed(1)+'" text-anchor="middle" font-size="8" font-weight="800" fill="#1b1204">'+RING[k][0]+'</text>';
+    }
+    svg.innerHTML=s;
+    var hits=svg.querySelectorAll('.hit');
+    for(i=0;i<hits.length;i++){
+      hits[i].addEventListener('click',onHit);
+    }
+  }
+  function onHit(ev){
+    var t=ev.currentTarget;
+    var stop=parseInt(t.getAttribute('data-stop'),10);
+    var kind=t.getAttribute('data-kind');
+    if(kind==='place'){
+      cur[active]=stop;
+      active=(active+1)%3;
+      clearResult();
+      syncChips();
+      draw();
+      updateHint();
+    }else if(kind==='target'&&mode==='align'){
+      target=stop;
+      clearResult();
+      draw();
+      updateTarget();
+    }
+  }
+  function clearResult(){
+    seq=[];step=0;
+    el('res').classList.add('hidden');
+  }
+  function updateHint(){
+    el('hintline').innerHTML='Tap a spoke to place the <b style="color:'+COLORS[active]+'">'+RING[active]+'</b> pillar · chips switch pillar · tap a <b>temple</b> to set the target';
+  }
+  function updateTarget(){
+    el('targetrow').classList.remove('hidden');
+    el('tgtval').textContent=target===null?'— none —':NAMES[target]+' (tap a temple on the ring to change)';
+  }
+  function syncChips(){
+    for(var i=0;i<3;i++){
+      el('chip'+i).classList.toggle('active', i===active);
+    }
+  }
+  el('chip0').onclick=function(){active=0;syncChips();draw();updateHint();};
+  el('chip1').onclick=function(){active=1;syncChips();draw();updateHint();};
+  el('chip2').onclick=function(){active=2;syncChips();draw();updateHint();};
+  el('reset').onclick=function(){cur=[0,0,0];active=0;clearResult();syncChips();draw();updateHint();};
+  el('prev').onclick=function(){if(step>0){step--;updateUI();}};
+  el('next').onclick=function(){if(step<seq.length){step++;updateUI();}};
+  el('mAlign').onclick=function(){mode='align';el('mAlign').classList.add('active');el('mTour').classList.remove('active');updateTarget();clearResult();syncChips();draw();};
+  el('mTour').onclick=function(){mode='tour';el('mTour').classList.add('active');el('mAlign').classList.remove('active');el('targetrow').classList.add('hidden');clearResult();syncChips();draw();};
+  function updateUI(){
+    var state=cur.slice();
+    for(var i=0;i<step;i++)state=move(state,seq[i][0],seq[i][1]);
+    draw();
+    el('prev').disabled=step<=0;
+    el('next').disabled=step>=seq.length;
+    var al=state[0]===state[1]&&state[1]===state[2]?NAMES[state[0]]:null;
+    var cap;
+    if(step===0){cap='Start — '+state.map(function(p,i){return RING[i]+' on '+NAMES[p];}).join(', ');}
+    else{
+      var mv=seq[step-1];
+      cap='Press '+step+'/'+seq.length+': <b>'+RING[mv[0]]+' ring · '+(mv[1]===1?'clockwise':'counter-clockwise')+'</b>';
+    }
+    if(al)cap+=' — <span class="visit">aligned at '+al+' ✓</span>';
+    el('stepcap').innerHTML=cap;
+  }
+  el('solve').onclick=function(){
+    if(mode==='align'&&target===null){updateTarget();el('tgtval').textContent='tap a temple on the ring first!';return;}
+    seq=mode==='align'?solveAlign(cur,NAMES[target]):solveTour(cur);
+    if(!seq){el('res').classList.remove('hidden');el('totalTxt').textContent='No solution found (should not happen).';return;}
+    step=0;
+    var counts=[0,0,0],i;
+    for(i=0;i<seq.length;i++)counts[seq[i][0]]++;
+    var ch='';
+    for(i=0;i<3;i++)ch+='<div class="cnt"><span class="n">'+counts[i]+'</span><span class="l">'+RING[i]+'</span></div>';
+    el('counts').innerHTML=ch;
+    var txt='<b>'+seq.length+'</b> total button presses';
+    if(mode==='tour'){
+      var vis=checkpoints(cur,seq);
+      txt+=' — visiting order: ';
+      var parts=[];
+      for(i=0;i<vis.length;i++)parts.push((vis[i].press===0?'start: ':'press '+vis[i].press+': ')+'<b>'+vis[i].name+'</b>');
+      txt+=parts.join(' → ');
+    }else{
+      txt+=' to align all pillars on <b>'+NAMES[target]+'</b>';
+    }
+    el('totalTxt').innerHTML=txt;
+    var sl='';
+    for(i=0;i<seq.length;i++){
+      sl+='Press '+(i+1)+': <b>'+RING[seq[i][0]]+'</b> · '+(seq[i][1]===1?'clockwise':'counter-clockwise')+'<br>';
+    }
+    el('seq').innerHTML=sl||'Already aligned — 0 presses needed.';
+    el('res').classList.remove('hidden');
+    updateUI();
+    el('res').scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+  updateHint();
+  updateTarget();
+  draw();
+})();
+</script>
+</body>
+</html>

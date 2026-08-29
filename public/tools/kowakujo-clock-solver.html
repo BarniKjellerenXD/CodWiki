@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kowakujō — Clock &amp; Flags Solver</title>
+<link rel="icon" href="/favicon.ico">
+<style>
+  :root{
+    --bg:#0a0a0c; --gold:#f59e0b; --amber:#fbbf24; --orange:#f97316;
+    --line:rgba(255,255,255,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg); color:#f5f0e6;
+    font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:2rem 1rem 3rem;
+    position:relative; overflow-x:hidden;
+  }
+  body::before, body::after{
+    content:""; position:fixed; border-radius:50%; filter:blur(90px); pointer-events:none; z-index:0;
+  }
+  body::before{ width:560px;height:560px; top:-220px; left:-160px; background:radial-gradient(circle,rgba(245,158,11,.16),transparent 65%); }
+  body::after{ width:640px;height:640px; bottom:-260px; right:-200px; background:radial-gradient(circle,rgba(249,115,22,.13),transparent 65%); }
+
+  .wrap{ position:relative; z-index:1; width:100%; max-width:700px; }
+
+  .backlink{
+    display:inline-flex; align-items:center; gap:.4rem; color:#fcd34d; text-decoration:none;
+    font-size:.85rem; font-weight:600; opacity:.85; margin-bottom:1rem; transition:opacity .2s;
+  }
+  .backlink:hover{ opacity:1 }
+
+  .glass{
+    position:relative; overflow:hidden; border-radius:1.25rem; padding:1.6rem 1.6rem 1.7rem;
+    border:1px solid var(--line);
+    background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.18));
+    backdrop-filter:blur(20px) saturate(150%); -webkit-backdrop-filter:blur(20px) saturate(150%);
+    box-shadow:0 24px 60px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.10), inset 0 -1px 0 rgba(0,0,0,.28);
+  }
+  .glass::before{
+    content:""; position:absolute; pointer-events:none; border-radius:50%; filter:blur(34px); opacity:.55;
+    width:300px;height:300px; top:-120px; left:-100px;
+    background:radial-gradient(circle,rgba(245,158,11,.28),transparent 65%);
+  }
+  .glass::after{
+    content:""; position:absolute; pointer-events:none; top:0; left:8%; right:8%; height:1px; border-radius:1px;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);
+  }
+  .glass > *{ position:relative; z-index:1 }
+
+  h1{
+    font-size:1.45rem; font-weight:800; letter-spacing:.01em; display:flex; align-items:center; gap:.55rem; flex-wrap:wrap;
+  }
+  h1 .map{ font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--gold);
+    border:1px solid rgba(245,158,11,.45); border-radius:.5rem; background:linear-gradient(135deg,rgba(245,158,11,.22),transparent);
+    padding:.3rem .55rem; }
+  .sub{ margin-top:.5rem; font-size:.92rem; color:#ffffffb0; line-height:1.55; }
+  .sub strong{ color:#ffe8bf }
+
+  .howto{
+    margin:1.1rem 0 .4rem; border-radius:1rem; padding:.9rem 1.05rem;
+    border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.03);
+    font-size:.8rem; color:#ffffffb3; line-height:1.6;
+  }
+  .howto b{ color:var(--gold) }
+
+  .blocklabel{
+    display:flex; align-items:center; gap:.5rem; margin:1.1rem 0 .45rem;
+    font-size:.8rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:#ffffffb0;
+  }
+  .blocklabel .hint{ margin-left:auto; font-size:.68rem; font-weight:600; text-transform:none; letter-spacing:0; color:#ffffff77 }
+
+  .inputs{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:.7rem;
+  }
+  .inbox{
+    border:1px solid rgba(255,255,255,.13); border-radius:.9rem; padding:.65rem .75rem;
+    background:linear-gradient(155deg,rgba(255,255,255,.05),rgba(0,0,0,.12));
+    display:flex; flex-direction:column; gap:.35rem;
+  }
+  .inbox label{ font-size:.72rem; font-weight:800; color:#ffffffb3; display:flex; align-items:center; gap:.35rem; }
+  .inbox .kanji{ color:var(--gold); font-size:1rem }
+  .inbox input{
+    width:100%; border:1px solid rgba(245,158,11,.35); border-radius:.55rem; background:rgba(10,10,12,.55);
+    color:#ffe8bf; font-size:1.5rem; font-weight:800; text-align:center; padding:.25rem .3rem;
+    font-family:inherit; outline:none; transition:border-color .18s;
+  }
+  .inbox input:focus{ border-color:var(--gold) }
+  .inbox input::placeholder{ color:#ffffff40; font-weight:600; font-size:1rem }
+
+  .flags{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(64px,1fr)); gap:.5rem;
+  }
+  .fbox{
+    border:1px solid rgba(255,255,255,.13); border-radius:.75rem; padding:.45rem .5rem;
+    background:linear-gradient(155deg,rgba(255,255,255,.04),rgba(0,0,0,.12));
+    display:flex; flex-direction:column; gap:.25rem; align-items:center;
+  }
+  .fbox label{ font-size:.66rem; font-weight:800; color:#ffffff99; }
+  .fbox label b{ color:var(--gold); font-size:.85rem }
+  .fbox input{
+    width:100%; border:1px solid rgba(255,255,255,.16); border-radius:.5rem; background:rgba(10,10,12,.55);
+    color:#ffe8bf; font-size:1.1rem; font-weight:800; text-align:center; padding:.18rem .2rem;
+    font-family:inherit; outline:none; transition:border-color .18s;
+  }
+  .fbox input:focus{ border-color:var(--gold) }
+
+  .opts{ display:flex; align-items:center; justify-content:center; gap:.7rem; flex-wrap:wrap; margin-top:1.1rem; }
+  .optbox{ display:flex; align-items:center; gap:.45rem; font-size:.78rem; color:#ffffffb0; }
+  .optbox select{
+    border:1px solid rgba(255,255,255,.16); border-radius:.6rem; background:rgba(10,10,12,.55);
+    color:#ffe8bf; font-size:.8rem; font-weight:700; padding:.4rem .5rem; font-family:inherit; outline:none; cursor:pointer;
+  }
+  .optbox select:focus{ border-color:var(--gold) }
+
+  .btn{
+    border:1px solid rgba(245,158,11,.55); border-radius:.7rem; cursor:pointer; font-family:inherit;
+    font-size:.85rem; font-weight:800; letter-spacing:.02em; padding:.55rem 1.1rem;
+    background:linear-gradient(135deg,rgba(245,158,11,.28),rgba(249,115,22,.16)); color:#ffe8bf;
+    box-shadow:0 8px 24px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.12);
+    transition:all .18s;
+  }
+  .btn:hover{ background:linear-gradient(135deg,rgba(245,158,11,.42),rgba(249,115,22,.26)); transform:translateY(-1px) }
+  .btn.ghost{ border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.05); color:#ffffffb0 }
+  .btn.ghost:hover{ background:rgba(255,255,255,.10); color:#fff }
+
+  .results{ display:none; margin-top:1.2rem; flex-direction:column; gap:.75rem; }
+  .results.show{ display:flex }
+
+  .sol-head{
+    border-radius:1rem; padding:.8rem 1rem;
+    border:1px solid rgba(34,197,94,.35); background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(255,255,255,.02));
+    font-size:.9rem; font-weight:800; color:#bbf7d0; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  }
+  .sol-head .meta{ margin-left:auto; font-size:.74rem; color:#ffffff99; font-weight:600 }
+
+  .res-card{
+    border-radius:1rem; padding:.85rem 1rem 1rem;
+    border:1px solid rgba(245,158,11,.28); background:linear-gradient(135deg,rgba(245,158,11,.09),rgba(255,255,255,.02));
+  }
+  .res-card h3{ font-size:.88rem; color:#ffe8bf; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin-bottom:.55rem }
+  .res-card h3 .kanji{ color:var(--gold); font-size:1.05rem }
+  .res-card h3 .need{ margin-left:auto; font-size:.74rem; color:#ffffff99; font-weight:700 }
+  .res-card h3 .need b{ color:var(--amber); font-size:.95rem }
+  .combos{ display:flex; flex-wrap:wrap; gap:.4rem; }
+  .combo{
+    border:1px solid rgba(245,158,11,.4); border-radius:.55rem; background:rgba(245,158,11,.12);
+    color:#ffe8bf; font-size:.8rem; font-weight:700; padding:.3rem .55rem; display:inline-flex; align-items:center; gap:.35rem;
+  }
+  .combo.best{ border-color:var(--gold); background:linear-gradient(135deg,rgba(245,158,11,.32),rgba(249,115,22,.18)); box-shadow:0 0 14px rgba(245,158,11,.25) }
+  .combo .plus{ color:#ffffff77; font-weight:600 }
+  .combo .flags{ color:#ffffff88; font-size:.68rem; font-weight:600 }
+  .res-empty{ font-size:.82rem; color:#86efac; font-weight:700 }
+  .res-warn{ font-size:.78rem; color:#fca5a5; font-weight:600; margin-top:.5rem; line-height:1.5 }
+  .unused{ margin-top:.7rem; font-size:.76rem; color:#ffffff99; font-weight:600 }
+  .unused b{ color:#ffe8bf }
+  .alts{ margin-top:.7rem; border-top:1px dashed rgba(255,255,255,.14); padding-top:.6rem }
+  .alts .alt-title{ font-size:.72rem; font-weight:800; color:#ffffff99; text-transform:uppercase; letter-spacing:.05em; margin-bottom:.4rem }
+  .alt{ font-size:.76rem; color:#ffffffb3; margin:.2rem 0; line-height:1.5 }
+  .alt b{ color:var(--gold) }
+
+  footer{ margin-top:1.4rem; font-size:.72rem; color:#ffffff66; text-align:center; line-height:1.5 }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="backlink" href="/guides/kowakujo">← Back to the Kowakujō guide</a>
+
+  <div class="glass">
+    <h1><span class="map">Kowakujō</span> Clock &amp; Flags Solver</h1>
+    <p class="sub">Enter the clock's <strong>4-digit code</strong> and how many flags of each size you <strong>found</strong> — the tool works out which flags go in which area, using each flag only once.</p>
+
+    <div class="howto">
+      <b>Code order</b> — <span style="color:var(--gold)">一</span> (1) Stables · <span style="color:var(--gold)">二</span> (2) Flower Garden · <span style="color:var(--gold)">三</span> (3) Central Courtyard · <span style="color:var(--gold)">四</span> (4) Spawn / Outer Ward.<br>
+      <b>Flags</b> spawn where the bamboo shoots were, each with a symbol count (3 diamonds, 4 squares…). Count what you picked up, then drop the chosen flags into each area's bamboo shoot and interact with the clock again.
+    </div>
+
+    <div class="blocklabel">① Code from the clock</div>
+    <div class="inputs" id="inputs"></div>
+
+    <div class="blocklabel">② Flags you have <span class="hint">by symbol count — 0 if you found none</span></div>
+    <div class="flags" id="flags"></div>
+
+    <div class="opts">
+      <span class="optbox">Max flags per number
+        <select id="maxPerNum">
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+        </select>
+      </span>
+      <button type="button" class="btn" id="solveBtn">🚩 Solve</button>
+      <button type="button" class="btn ghost" id="resetBtn">Reset</button>
+    </div>
+
+    <div class="results" id="results"></div>
+  </div>
+
+  <footer>Kowakujō guide tool · codguides.wolden.eu</footer>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var LOCS = [
+    { kanji:'一', name:'Stables' },
+    { kanji:'二', name:'Flower Garden' },
+    { kanji:'三', name:'Central Courtyard' },
+    { kanji:'四', name:'Spawn / Outer Ward' }
+  ];
+  var MAXSIZE = 9;
+
+  var inputsEl = document.getElementById('inputs');
+  LOCS.forEach(function(loc, i){
+    var box = document.createElement('div');
+    box.className = 'inbox';
+    var label = document.createElement('label');
+    label.innerHTML = '<span class="kanji">' + loc.kanji + '</span>' + loc.name;
+    var inp = document.createElement('input');
+    inp.type = 'number'; inp.min = 0; inp.max = 99; inp.value = '';
+    inp.placeholder = 'digit';
+    inp.dataset.i = i;
+    box.appendChild(label); box.appendChild(inp);
+    inputsEl.appendChild(box);
+  });
+
+  var flagsEl = document.getElementById('flags');
+  for (var s = 1; s <= MAXSIZE; s++){
+    var fbox = document.createElement('div');
+    fbox.className = 'fbox';
+    var fl = document.createElement('label');
+    fl.innerHTML = '<b>' + s + '</b>-sym';
+    var fi = document.createElement('input');
+    fi.type = 'number'; fi.min = 0; fi.max = 20; fi.value = '0';
+    fi.dataset.size = s;
+    fbox.appendChild(fl); fbox.appendChild(fi);
+    flagsEl.appendChild(fbox);
+  }
+
+  var resultsEl = document.getElementById('results');
+
+  // read inventory as array index 0..8 (size 1..9)
+  function readInv(){
+    var inv = new Array(MAXSIZE).fill(0);
+    document.querySelectorAll('.fbox input').forEach(function(inp){
+      var v = parseInt(inp.value, 10);
+      if (isNaN(v) || v < 0) v = 0;
+      inv[parseInt(inp.dataset.size, 10) - 1] = v;
+    });
+    return inv;
+  }
+  function readCode(){
+    var vals = [];
+    document.querySelectorAll('.inbox input').forEach(function(inp){
+      var v = parseInt(inp.value, 10);
+      if (isNaN(v) || v < 0) v = 0;
+      vals.push(v);
+    });
+    return vals;
+  }
+  function totalFlags(inv){
+    var t = 0; inv.forEach(function(c){ t += c; }); return t;
+  }
+
+  // patterns for target n: count-vectors over sizes, sum(size*count)=n, total flags ≤ cap,
+  // each count ≤ inv[size-1]. Non-increasing sizes to avoid duplicate multisets.
+  function genPatterns(n, inv, cap){
+    if (n === 0) return [new Array(MAXSIZE).fill(0)];
+    var out = [];
+    function rec(sizeIdx, rem, vec){
+      if (rem === 0){ out.push(vec.slice()); return; }
+      if (sizeIdx < 0 || rem < 0) return;
+      var used = vec.reduce(function(a,b){ return a+b; }, 0);
+      if (used >= cap) return;
+      var size = sizeIdx + 1;
+      var maxTake = Math.min(inv[sizeIdx], Math.floor(rem / size), cap - used);
+      for (var t = maxTake; t >= 0; t--){
+        if (t > 0){ vec[sizeIdx] += t; rec(sizeIdx - 1, rem - t * size, vec); vec[sizeIdx] -= t; }
+        else rec(sizeIdx - 1, rem, vec);
+      }
+    }
+    // start from the largest size that could fit
+    rec(MAXSIZE - 1, n, new Array(MAXSIZE).fill(0));
+    return out;
+  }
+
+  // DFS assign patterns to locations
+  function solve(code, inv, cap){
+    var solutions = [];
+    var MAX_SOL = 200;
+    function dfs(i, invLeft, used){
+      if (solutions.length >= MAX_SOL) return;
+      if (i === code.length){ solutions.push(used.slice()); return; }
+      var pats = genPatterns(code[i], invLeft, cap);
+      if (pats.length === 0) return;
+      for (var p = 0; p < pats.length; p++){
+        if (solutions.length >= MAX_SOL) break;
+        var pat = pats[p];
+        var inv2 = invLeft.slice();
+        var ok = true;
+        for (var s = 0; s < MAXSIZE; s++){
+          if (inv2[s] < pat[s]){ ok = false; break; }
+          inv2[s] -= pat[s];
+        }
+        if (!ok) continue;
+        used.push(pat);
+        dfs(i + 1, inv2, used);
+        used.pop();
+      }
+    }
+    dfs(0, inv.slice(), []);
+    // score: fewer total flags first
+    solutions.sort(function(a, b){
+      var ta = 0, tb = 0;
+      a.forEach(function(p){ p.forEach(function(c){ ta += c; }); });
+      b.forEach(function(p){ p.forEach(function(c){ tb += c; }); });
+      return ta - tb;
+    });
+    return solutions;
+  }
+
+  function patToString(pat){
+    var parts = [];
+    for (var s = MAXSIZE - 1; s >= 0; s--){
+      for (var k = 0; k < pat[s]; k++) parts.push((s + 1) + '-flag');
+    }
+    return parts;
+  }
+
+  function formatCombos(list, bestIdx){
+    return list.map(function(seq, k){
+      return '<span class="combo' + (k === bestIdx ? ' best' : '') + '">' +
+        seq.join('<span class="plus"> + </span>') +
+        ' <span class="flags">(' + seq.length + ')</span></span>';
+    }).join('');
+  }
+
+  document.getElementById('solveBtn').addEventListener('click', function(){
+    var code = readCode();
+    var inv = readInv();
+    var cap = parseInt(document.getElementById('maxPerNum').value, 10);
+
+    if (totalFlags(inv) === 0){
+      resultsEl.classList.add('show');
+      resultsEl.innerHTML = '<div class="res-card"><h3>Enter how many flags you found first (section ②)</h3></div>';
+      return;
+    }
+
+    var solutions = solve(code, inv, cap);
+
+    var html = '';
+    if (solutions.length === 0){
+      html += '<div class="res-card"><h3>No way to cover all 4 numbers with these flags</h3>';
+      html += '<div class="res-warn">Check the code or the flag counts. Possible combos per number (from what you have):</div>';
+      code.forEach(function(n, i){
+        var pats = genPatterns(n, inv, cap);
+        html += '<h3 style="margin-top:.8rem"><span class="kanji">' + LOCS[i].kanji + '</span>' + LOCS[i].name +
+                '<span class="need">need <b>' + n + '</b></span></h3>';
+        if (pats.length === 0){
+          html += '<div class="res-warn">Nothing can make ' + n + ' — need bigger flags or a higher "Max flags per number".</div>';
+        } else {
+          var seqs = pats.map(patToString);
+          html += '<div class="combos">' + formatCombos(seqs, 0) + '</div>';
+        }
+      });
+      html += '</div>';
+    } else {
+      var best = solutions[0];
+      var bestTot = 0;
+      best.forEach(function(p){ p.forEach(function(c){ bestTot += c; }); });
+      var usedInv = new Array(MAXSIZE).fill(0);
+      html += '<div class="sol-head">✨ Solution — place these<span class="meta">' + bestTot + ' flag' + (bestTot === 1 ? '' : 's') + ' total</span></div>';
+      best.forEach(function(pat, i){
+        var seq = patToString(pat);
+        pat.forEach(function(c, s){ usedInv[s] += c; });
+        html += '<div class="res-card"><h3><span class="kanji">' + LOCS[i].kanji + '</span>' + LOCS[i].name +
+                '<span class="need">need <b>' + code[i] + '</b></span></h3>';
+        if (seq.length === 0){
+          html += '<div class="res-empty">✓ Nothing to place here — skip this number.</div>';
+        } else {
+          html += '<div class="combos"><span class="combo best">' + seq.join('<span class="plus"> + </span>') +
+                  ' <span class="flags">(' + seq.length + ')</span></span></div>';
+        }
+        html += '</div>';
+      });
+      var leftover = [];
+      for (var s = 0; s < MAXSIZE; s++){
+        var left = inv[s] - usedInv[s];
+        if (left > 0) leftover.push(left + '× ' + (s + 1) + '-flag');
+      }
+      html += '<div class="unused">Unused: ' + (leftover.length ? leftover.join(' · ') : 'none — all flags placed') + '</div>';
+
+      if (solutions.length > 1){
+        html += '<div class="alts"><div class="alt-title">Alternative ways (' + (solutions.length - 1) + ' more)</div>';
+        for (var a = 1; a < Math.min(solutions.length, 4); a++){
+          var parts = [];
+          solutions[a].forEach(function(pat, i){
+            var seq = patToString(pat);
+            parts.push('<b>' + LOCS[i].kanji + '</b> ' + (seq.length ? seq.join('+') : '—'));
+          });
+          html += '<div class="alt">Option ' + (a + 1) + ': ' + parts.join(' · ') + '</div>';
+        }
+        html += '</div>';
+      }
+    }
+
+    resultsEl.innerHTML = html;
+    resultsEl.classList.add('show');
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    document.querySelectorAll('.inbox input').forEach(function(inp){ inp.value = ''; });
+    document.querySelectorAll('.fbox input').forEach(function(inp){ inp.value = '0'; });
+    document.getElementById('maxPerNum').value = '3';
+    resultsEl.classList.remove('show');
+    resultsEl.innerHTML = '';
+  });
+
+  document.querySelectorAll('.inbox input').forEach(function(inp){
+    inp.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') document.getElementById('solveBtn').click();
+    });
+  });
+  document.querySelectorAll('.fbox input').forEach(function(inp){
+    inp.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') document.getElementById('solveBtn').click();
+    });
+  });
+})();
+</script>
+</body>
+</html>

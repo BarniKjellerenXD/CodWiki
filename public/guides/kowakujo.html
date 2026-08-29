@@ -1,0 +1,747 @@
+<div class="md wiki">
+<p class="g-hint">💡 Tap a section title to collapse or expand it.</p>
+
+<style>
+/* ══════════ Liquid Glass System ══════════ */
+.glass-card{position:relative;overflow:hidden;border-radius:1.05rem;padding:1.05rem 1.2rem 1.15rem;margin:1.15rem 0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.16));backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 16px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.10),inset 0 -1px 0 rgba(0,0,0,.28)}
+.glass-card::before{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(28px);opacity:.5;width:240px;height:240px;top:-90px;left:-70px;background:radial-gradient(circle,var(--glass-glow,rgba(245,158,11,.30)),transparent 65%)}
+.glass-card::after{content:"";position:absolute;pointer-events:none;top:0;left:8%;right:8%;height:1px;border-radius:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
+.glass-card h2{border:none!important;margin:.05rem 0 .6rem;padding-left:0!important;font-size:1.22rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.glass-card h2 .g-tag{border:1px solid var(--glass-accent,#f59e0b);border-radius:.45rem;background:linear-gradient(135deg,var(--glass-accent,#f59e0b)26,transparent);color:var(--glass-accent,#f59e0b);font-size:.68rem;font-weight:800;letter-spacing:.05em;line-height:1;padding:.28rem .5rem;text-transform:uppercase;white-space:nowrap}
+.glass-card h3{border-left:3px solid var(--glass-accent,#f59e0b);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border-radius:.65rem;padding:.55rem .75rem;margin:1rem 0 .5rem}
+.glass-card>ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.35rem 1rem}
+.glass-card ul ul{display:block}
+.glass-card ol{margin:.5rem 0 .25rem}
+.glass-card li{margin:.3rem 0}
+.glass-gold{--glass-accent:#f59e0b;--glass-glow:rgba(245,158,11,.30)}
+.glass-amber{--glass-accent:#fbbf24;--glass-glow:rgba(251,191,36,.26)}
+.glass-orange{--glass-accent:#f97316;--glass-glow:rgba(249,115,22,.28)}
+.glass-green{--glass-accent:#22c55e;--glass-glow:rgba(34,197,94,.22)}
+.glass-violet{--glass-accent:#a855f7;--glass-glow:rgba(168,85,247,.24)}
+.glass-red{--glass-accent:#ef4444;--glass-glow:rgba(239,68,68,.26)}
+.glass-boss{border-color:rgba(239,68,68,.38);box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 26px rgba(239,68,68,.14),inset 0 1px 0 rgba(255,255,255,.10)}
+.glass-quest{padding:1.2rem 1.3rem 1.3rem}
+.glass-quest ol>li{margin:.65rem 0}
+/* unify existing panels with the glass language */
+.evidence-card,.cheat-block{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
+/* collapsible pestle fold */
+details.glass-fold{border:1px solid rgba(245,158,11,.4);border-radius:.75rem;background:linear-gradient(135deg,rgba(245,158,11,.14),rgba(255,255,255,.03));margin:.6rem 0 .8rem;overflow:hidden}
+details.glass-fold>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:.5rem;padding:.55rem .8rem;font-weight:800;color:#fcd34d;font-size:.88rem;user-select:none;-webkit-user-select:none}
+details.glass-fold>summary::-webkit-details-marker{display:none}
+details.glass-fold>summary:hover{background:rgba(245,158,11,.08)}
+details.glass-fold .fold-note{margin-left:auto;font-size:.66rem;color:#ffffff99;font-weight:600}
+details.glass-fold .fold-arrow{color:#f59e0b;font-size:.8rem;transition:transform .2s}
+details.glass-fold[open] .fold-arrow{transform:rotate(90deg)}
+details.glass-fold ol{margin:.2rem 0;padding:.2rem 1.3rem .9rem 2.1rem}
+details.glass-fold li{margin:.28rem 0}
+.evidence-card{box-shadow:0 14px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
+
+/* ══════════ Collapsible sections ══════════ */
+.g-toggle{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;cursor:pointer;flex:1;min-width:0;width:100%}
+.g-toggle:hover{filter:brightness(1.1)}
+.g-cb{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.g-title{display:contents}
+.g-chev{margin-left:auto;color:var(--glass-accent,#f59e0b);font-size:.75rem;transition:transform .22s;flex:none;opacity:.85}
+.g-chev::after{content:"\25BE"}
+.g-cb:checked ~ .g-chev::after{content:"\25B8"}
+.glass-card:has(> h2 .g-cb:checked) > *:not(h2),.evidence-card:has(> h3 .g-cb:checked) > *:not(h3){display:none}
+.g-hint{font-size:.78rem;color:#fcd34d99;border:1px dashed rgba(245,158,11,.35);border-radius:.6rem;padding:.45rem .7rem;margin:.6rem 0 .2rem;background:rgba(245,158,11,.06)}</style>
+
+<h1 id="wiki_kowakujo_.7C_complete_map_breakdown">Kowakujō | Complete Map Breakdown</h1>
+<p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
+<p>On PC, there is a list of all the <strong>Chapters</strong> on the right. Just click on the text and you will be taken there. Alternatively, to find specific information, press <strong>CTRL + F</strong> and type the information you want to find. On mobile, the list of all the <strong>Chapters and Topics</strong> is at the top of the page.</p>
+<p style="text-align: center;"><strong><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="1080" data-media-id="zbkpq4edmf9h1" data-width="1920" height="1080" width="1920" src="https://preview.redd.it/zbkpq4edmf9h1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=ced067d560492db33c432ccd7baa9df793199d36"></strong></p>
+<p style="text-align: center;"><strong><em>On the fractured slopes of a volcanic landscape, a castle harbors a smouldering mystery. Face the Dragon's undead army, investigate the Shogun's fate, and expose the curse that blackened Takeo's soul.</em></strong></p>
+<hr>
+
+<h1 id="wiki_key_features">Key Features</h1>
+<p>This is a walkthrough of the key features of the map, such as Pack-a-Punch, Wonder Weapons, etc.</p>
+
+<div class="glass-card glass-gold"><h2 id="wiki_nekomancer"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Nekomancer<span class="g-tag">🐱 Wonder Weapon</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Build the Maneki-Neko at the bench near Vulture Aid in Workshop.
+<ul>
+<li><strong>Cat Statue</strong> — Kitchens or Gatehouse.</li>
+<li><strong>Bell</strong> — Sinking House in Stables or hanging above the Warden wallbuy.</li>
+<li><strong>Robot Figurine</strong> — Storage/Workshop.</li>
+</ul>
+</li>
+<li>With PhD Flopper equipped, dive to prone below the suspended cage at Tenshu Entrance to drop it.</li>
+<li>Pick up the cage and throw it into lava, the cage should melt and a Nekomata will run away.</li>
+<li>Get a kill at the entrance of one of the doorways until glowing paw prints spawn on the ground.
+<ul>
+<li>Entrance of Flower Garden going into Kitchens</li>
+<li>Entrance of Kitchens going into Central Courtyard</li>
+<li>Entrance of Stables going into Staging Area</li>
+<li>Entrance of Training Area going into Stables</li>
+</ul>
+</li>
+<li>The paws will point towards a direction, walk a few steps in that direction get another kill. If done correctly, a new set of paws will appear on the ground.</li>
+<li>Repeat the step until you find a triangular shape made of paw prints.</li>
+<li>Throw the Maneki-Neko in the middle of the shape. If done correctly, the Nekomata will jump out of the lava. <strong>Note: the lava must not be cooled during that step.</strong></li>
+<li>An Abomination will spawn and eat the Nekomata. Kill the Abomination to free it.</li>
+<li>Wait the next round, and the Nekomata will appear somewhere near the creaky floorboards in either Kitchens or Training Area. The cat will be sleeping and purring.</li>
+<li>Sneak on the Nekomata by avoiding the floorboards, which will be highlighted if Death Perception is equipped, and pick it up.</li>
+<li>Bring the Nekomata to the World Seed next to the Pack-a-Punch machine. If done correctly, it will jump on the seed.</li>
+<li>Wait until the seed traps the Nekomata and pulses red. Each pulsation will push you back and damage you. Keep rushing and meleeing the seed fast enough until the Nekomata is freed.</li>
+<li>If done correctly, the Nekomata will jump on the floor and can be picked up as the Nekomancer.</li>
+</ol>
+<hr>
+
+</div><h1 id="wiki_main_quest">Main Quest</h1>
+<style>
+.cheat-grid{display:grid;gap:.65rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:.75rem 0 1.25rem}
+.cheat-block{border:1px solid hsla(0,0%,100%,.12);border-radius:.8rem;box-shadow:0 8px 24px #00000040;padding:.7rem .8rem}
+.cheat-block h2{border:none;font-size:1rem;margin:0 0 .3rem;padding-left:0}
+.cheat-block.phase1{background:linear-gradient(135deg,#f59e0b2e,#24242b73)}
+.cheat-block.phase2{background:linear-gradient(135deg,#fbbf2433,#24242b73)}
+.cheat-block.phase3{background:linear-gradient(135deg,#f9731633,#24242b73)}
+.cheat-block.phase4{background:linear-gradient(135deg,#ef44442b,#24242b73)}
+.cheat-block ol{margin:0;padding-left:1.1rem}
+.cheat-block li{font-size:.82rem;line-height:1.3;margin:.2rem 0}
+.cheat-block li::marker{color:#fde68a}
+.cheat-block ul{margin:0;padding-left:1rem}
+.cheat-block ul li{font-size:.78rem;opacity:.85}
+.cheat-note{font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
+.cheat-chip{border:1px solid var(--cc,#f59e0b);border-radius:.4rem;color:var(--cc,#f59e0b);display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;margin-left:.15rem;padding:.12rem .4rem;vertical-align:middle}
+</style>
+<p><em>One-screen quick reference. Full details for every step are in the sections below.</em></p>
+<div class="cheat-grid">
+  <div class="cheat-block phase1">
+    <h2>① Setup</h2>
+    <ol>
+      <li>Build &amp; upgrade the <strong>Maneki-Neko</strong>, obtain the <strong>Nekomancer</strong>.</li>
+      <li><strong>Lantern Step:</strong> shoot 11 lanterns (timed!) → spirit corpse in War Room → <strong>Ceramic Shards</strong>.</li>
+      <li><strong>Mask Step:</strong> Ninja Kite → Fox Mask → Simon Says ×3 → blue mask.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase2">
+    <h2>② Evidences — <span class="cheat-chip" style="--cc:#f59e0b">🎭 Suspect</span> <span class="cheat-chip" style="--cc:#f97316">🤝 Accomplice</span></h2>
+    <ol>
+      <li><strong>Suspect:</strong> hide-and-seek mask → 3 items (Pipe, Comb, Case) → Meditation Room shelves.</li>
+      <li><strong>Accomplice — Merchant:</strong> Coin Purse at spawn → apple zombie → kill at merchant window → <strong>Abacus</strong>.</li>
+      <li><strong>Gardener:</strong> fill Bucket (3 waters!) → water 3 plants → shoot glowing flowers → <strong>Shears</strong>.</li>
+      <li><strong>Noble:</strong> 3 decoys at windows → reflect grenades → <strong>Hat</strong>.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase2">
+    <h2>③ Evidences — <span class="cheat-chip" style="--cc:#22c55e">☠️ Poison</span></h2>
+    <ol>
+      <li><strong>Monkshood:</strong> Empty Pouch → Plant + Volcanic Ash (fissure) → pot + tornado → flower.</li>
+      <li><strong>Plum Pit:</strong> punch fruit in Kitchens → jump until gold seed.</li>
+      <li><strong>Pufferfish:</strong> need <strong>Pestle</strong> → kitchen bowl soul box → ghost → fish.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase2">
+    <h2>④ Evidences — <span class="cheat-chip" style="--cc:#a855f7">📍 Location</span> <span class="cheat-chip" style="--cc:#ef4444">🗡️ Motive</span></h2>
+    <ol>
+      <li><strong>Location</strong> (need <strong>Saka Cup</strong>): 3 soul boxes → War Room, Collapse Study, Tea Garden (chase dog).</li>
+      <li><strong>Motive:</strong> Netsuke of Brothers (Stables statue) + Hanko (first Oni).</li>
+      <li><strong>Clock Puzzle:</strong> storage clock ×4 → assault wave → Japanese numbers → flags into bamboo shoots → final evidence. <a href="/tools/kowakujo-clock-solver.html" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 solver</a></li>
+    </ol>
+  </div>
+  <div class="cheat-block phase3">
+    <h2>⑤ Key Items &amp; Murder Puzzle</h2>
+    <ol>
+      <li><strong>Saka Cup:</strong> repair ceramic shards at Tea Garden table.</li>
+      <li><strong>Pestle:</strong> scroll pattern in Storage Rooms → Doctor's Note.</li>
+      <li><strong>Paintings 1–5:</strong> place matching evidence by each painting; use trap ghost (accomplice), Doctor's Note + dial (poison), background match (location).</li>
+    </ol>
+    <p class="cheat-note">Witness Testimony &amp; Zodiac Dial are part of the murder puzzle — full details in the Painting steps below.</p>
+  </div>
+  <div class="cheat-block phase4">
+    <h2>⑥ Endgame</h2>
+    <ol>
+      <li><strong>Purify World Seed:</strong> follow light → mini-boss → dragon takes seed. (Perfect run → Katana in PaP room.)</li>
+      <li><strong>Expel the Onryo:</strong> incense bowls → glowing orb → Shogun's Sanctum → World Seed → Onryo fight (shoot its masks to break immunity).</li>
+      <li><strong>Nyxara:</strong> 3 fishes on pole in PaP room → fast travel → volcano boss.</li>
+    </ol>
+  </div>
+</div>
+
+<h2 class="" id="wiki_lantern_step">Lantern Step</h2>
+<ol>
+<li>With the Nekomancer shoot at 11 lanterns located around the map. <strong>Note: There is a timer to complete this step.</strong> (Easiest to start from Kitchens and do a circle.)
+<ul>
+<li><strong>Tensu</strong> — Near Bath entrance</li>
+<li><strong>Central Courtyard</strong> — Left side of the tree</li>
+<li><strong>Central Courtyard</strong> — Near Kitchen entrance</li>
+<li><strong>Kitchen</strong> — Near stairs</li>
+<li><strong>Flower Garden</strong> — Near Gobblegum machine</li>
+<li><strong>Gatehouse</strong> — Near Speed Cola</li>
+<li><strong>Outer Ward</strong> — Near Mystery Box spawn</li>
+<li><strong>Staging Area</strong> — Near hillside to Central Courtyard</li>
+<li><strong>Stables</strong> — Near Gobblegum machine</li>
+<li><strong>Training Area</strong> — Out of bounds near Melee Macchiato</li>
+<li><strong>Tea Garden</strong> — Near Mystery Box spawn</li>
+</ul>
+</li>
+<li>If done correctly, a spirit corpse with a katana embedded in it will spawn in War Room. Interact with it to trigger a short in-game cinematic.</li>
+<li>Pick up the Ceramic Shards from where the spirit corpse was.</li>
+</ol>
+
+<h2 class="" id="wiki_mask_step">Mask Step</h2>
+<ol>
+<li>Use the Ninja Kite (glider above where you crafted the Maneki-Neko), hold to the right and use the interact button to pick up the <strong>Fox Mask</strong> hanging from the end of one of the roof edges.</li>
+<li>Bring the Fox Mask to the wall with the other masks in Storage Rooms.</li>
+<li>Interact with the wall to start a Simon Says-like game. Some of the masks will glow one by one then zombies wearing the same masks will appear. Kill the zombies in the same order as the masks glowed.</li>
+<li>Repeat the process 3 times. If done correctly, the Fox Mask will turn blue and interacting with it will trigger an in-game cinematic.</li>
+</ol>
+
+<style>
+.evidence-card{border:1px solid hsla(0,0%,100%,.12);border-radius:.9rem;margin:1.1rem 0;padding:.85rem 1rem 1.05rem;box-shadow:0 12px 32px #00000040}
+.evidence-card h3{border:none;display:flex;align-items:center;gap:.55rem;font-size:1.08rem;margin:0 0 .5rem;padding-left:0;flex-wrap:wrap}
+.evidence-card h3::before{content:none}
+.evidence-card h3 .ev-chip{border-radius:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:.2rem .5rem;white-space:nowrap}
+.evidence-card.ev-suspect{background:linear-gradient(135deg,#f59e0b1f,#24242b40);border-color:#f59e0b59}
+.evidence-card.ev-accomplice{background:linear-gradient(135deg,#f9731624,#24242b40);border-color:#f9731659}
+.evidence-card.ev-poison{background:linear-gradient(135deg,#22c55e1f,#24242b40);border-color:#22c55e59}
+.evidence-card.ev-location{background:linear-gradient(135deg,#a855f724,#24242b40);border-color:#a855f759}
+.evidence-card.ev-motive{background:linear-gradient(135deg,#ef444427,#24242b40);border-color:#ef444466}
+.evidence-card .ev-chip{display:inline-block}
+.evidence-card ul,.evidence-card ol{margin:.4rem 0 .2rem}
+.evidence-card>p{margin:.45rem 0}
+.evidence-sub{border-left:3px solid var(--ev-accent,#f59e0b);border-radius:0 .6rem .6rem 0;margin:.7rem 0;padding:.5rem .7rem .6rem;background:rgba(255,255,255,.03);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.evidence-sub .ev-tag{color:var(--ev-accent,#f59e0b);display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.03em;margin:0 0 .3rem}
+.evidence-sub ol{margin:.2rem 0 0}
+</style>
+<div class="evidence-card ev-suspect" style="--ev-accent:#f59e0b"><h3 style="--ev-accent:#f59e0b" id="wiki_suspect_evidences"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">#1 — Suspect Evidences<span class="ev-chip" style="background:#f59e0b26;border:1px solid #f59e0b66;color:#f59e0b">🎭 Suspect</span></span><span class="g-chev" aria-hidden="true"></span></label></h3>
+<p>The Fox Mask will move and hide around the map (Hide and Seek Mask Step). Shoot the mask to drop an evidence and pick each one:</p>
+<ul>
+<li><strong>Takeshi's Pipe</strong>: Bottom shelf beside the Workshop stairs.</li>
+<li><strong>Mitsuhime's Comb</strong>: Wunderfizz ceiling.</li>
+<li><strong>Takeo's Case</strong>: Far-left Elemental Pop window.</li>
+</ul>
+<p>Place all three items on the shelves in Meditation Room. If done correctly, the painting of a person wearing the fox mask will appear on the other side of the room.</p>
+
+</div>
+<div class="evidence-card ev-accomplice" style="--ev-accent:#f97316"><h3 style="--ev-accent:#f97316" id="wiki_accomplice_evidences"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">#2 — Accomplice Evidences<span class="ev-chip" style="background:#f9731626;border:1px solid #f9731666;color:#f97316">🤝 Accomplice</span></span><span class="g-chev" aria-hidden="true"></span></label></h3>
+<div class="evidence-sub"><span class="ev-tag">Merchant (Abacus)</span><ol>
+<li>Find the Mystery Box location with the gold Japanese plaque at its base. If the Mystery Box isn't there, keep moving it until it spawns (Fire Sale helps).</li>
+<li>Place the Maneki-Neko by the side of the Mystery Box near the symbol and use the box (spin for a gun — it will give you the Coin Purse instead).</li>
+<li>Pick up the Coin Purse.</li>
+<li>Go to Outer Ward (spawn) and place the Coin Purse on the right of Rampage Inducer, then interact with it again to trigger a short in-game cinematic. (<strong>Must activate the Coin Purse at spawn before proceeding!</strong>)</li>
+<li>In Kitchens, punch the apple in the basket so it falls onto the floor. Leave it there.</li>
+<li>Within 1–2 rounds a zombie will spawn eating the apple. Lead it to the merchant window in the Staging Area.</li>
+<li>Knife the zombie in front of the bloody window with the Nekomancer Wonder Weapon.</li>
+<li>The Merchant will appear. Kill him quickly and collect the Abacus evidence + note.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Gardener (Garden Shears)</span><ol>
+<li>Collect the Bucket from:
+<ul>
+<li>Inside a cupboard in Tea Garden</li>
+<li>Top floor of Onsen Baths</li>
+</ul>
+</li>
+<li>Interact with either pool to fill the Bucket. <strong>Note: The Bucket contains 3 parts of water. Running, sprinting, getting hit will remove one part each time.</strong></li>
+<li>Water the three sprouted plants that appear on the gravel path in Flower Garden. <strong>They only appear after completing the Coin Purse step.</strong></li>
+<li>Hold interact on each patch.</li>
+<li>A Gardener zombie will spawn. He is immune until he waters all three plants.</li>
+<li>Two flowers will begin glowing — shoot the glowing flowers with a charged Nekomancer shot to remove his immunity.</li>
+<li>Kill the Gardener and collect the Gardening Shears evidence + note.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Noble (Noble's Hat)</span><ol>
+<li>Go to the Training Area. Above the entrance to the Tea Garden there are 3 windows with shutter boards.</li>
+<li>Throw 3 decoys at the window — a noble zombie will spawn in the window throwing grenades.</li>
+<li>Reflect the grenades back at the noble to kill him. <strong>Strategy: hold the grenade to cook it and time your throw to hit him.</strong></li>
+<li>Once dead, he will drop the Noble's Hat evidence + note.</li>
+</ol></div>
+
+</div>
+<div class="evidence-card ev-poison" style="--ev-accent:#22c55e"><h3 style="--ev-accent:#22c55e" id="wiki_poison_evidences"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">#3 — Poison Evidences<span class="ev-chip" style="background:#22c55e26;border:1px solid #22c55e66;color:#22c55e">☠️ Poison</span></span><span class="g-chev" aria-hidden="true"></span></label></h3>
+<div class="evidence-sub"><span class="ev-tag">Monkshood Flower</span><ol>
+<li>Go to the room next to Melee Macchiato with the crafting table and ammo box. Shoot the top section of the broken doorway (facing the large tree) with a charged Nekomancer shot. Collect the <strong>Empty Pouch</strong>.</li>
+<li>Find the <strong>Plant</strong> beside the broken bridge near the crafting table — look in the cracks on the right-hand side of the rocks.</li>
+<li>When a Fissure becomes active on the map, stay near it and use the Empty Pouch to collect <strong>Volcanic Ash</strong>.</li>
+<li>Plant the Plant in the pot near the Exfil entrance in Tenshu Entrance. Pour the Volcanic Ash onto the planted plant.</li>
+<li>Punch a cherry blossom tree three times to gain the glowing effect, then return to the pot and spin around in a circle until a small tornado appears.</li>
+<li>If done correctly, the Monkshood Flower evidence can be picked up.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Plum Pit</span><ol>
+<li>Travel to Kitchens and punch the green fruit in the basket near the fire pit. If done correctly, a plum should drop on the ground.</li>
+<li>Jump on the green fruit until a gold seed spawns — collect the Plum Pit evidence.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Pufferfish</span>
+<details class="glass-fold" id="wiki_pestle">
+<summary>🔨 Pestle key item <span class="fold-note">tap to expand</span><span class="fold-arrow">▸</span></summary>
+<ol>
+<li>Go to the Storage Rooms. Scrolls are hanging out of a box on the inside wall.</li>
+<li>Hit the scrolls in a certain pattern for them all to go into the wall — or use the <a href="/tools/kowakujo-pestle-solver.html" target="_blank" rel="noopener">🧮 Pestle Scroll Solver</a>.</li>
+<li>A scroll will pop onto the floor and unroll, revealing a <strong>Doctor&#39;s Note</strong> (used later in the painting puzzle).</li>
+<li>Collect the <strong>Pestle</strong> key item.</li>
+</ol>
+</details>
+<ol>
+<li>Obtain the <strong>Pestle</strong> key item first (expand the card above).</li>
+<li>Go to the Kitchen, and on the stove area there is a bowl. Interact with it — a green liquid will start stirring, beginning a soul box.</li>
+<li>Kill zombies until the soul box is filled.</li>
+<li>When complete, a light will flash to show a ghost cutscene.</li>
+<li>Once the ghost is finished walking, the Pufferfish evidence will spawn near the creaky floorboards behind you.</li>
+<li>Place the Pufferfish evidence in the evidence room.</li>
+</ol></div>
+
+</div>
+<div class="evidence-card ev-location" style="--ev-accent:#a855f7"><h3 style="--ev-accent:#a855f7" id="wiki_location_evidences"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">#4 — Location Evidences<span class="ev-chip" style="background:#a855f726;border:1px solid #a855f766;color:#a855f7">📍 Location</span></span><span class="g-chev" aria-hidden="true"></span></label></h3>
+<p><em>All require the Saka Cup key item (expand the card below). If failed, the evidence turns back to ceramic shards — return to tea garden table to repair Saka Cup and flip around to try again.</em></p>
+<details class="glass-fold" id="wiki_saka_cup">
+<summary>🥛 Saka Cup key item <span class="fold-note">tap to expand</span><span class="fold-arrow">▸</span></summary>
+<ol>
+<li>Broken ceramic shards are found near the pool of blood by the Pack-a-Punch stairs.</li>
+<li>Once the Poison evidence has been completed, the final shard will spawn on the painting in the evidence room.</li>
+<li>Take the shards to the Tea Garden table to repair them into the Saka Cup.</li>
+<li>The Saka Cup will glow to start a ghost cutscene when ready.</li>
+<li><em>You may need to flip the cup around if unable to pick it up.</em></li>
+</ol>
+</details>
+<div class="evidence-sub"><span class="ev-tag">Horse Statue</span><ol>
+<li>Go to the War Room — in the back left of the room by the map, there is a tea bag on paper on the floor.</li>
+<li>Interact to start a pulsing yellow light soul box. Kill zombies until complete.</li>
+<li>Once done, the Horse Statue evidence will spawn by the table behind you.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Collapse Study</span><ol>
+<li>Go to Collapse Study — in the back left by the Wunderfizz machine, interact to spawn a pulsing yellow light soul box.</li>
+<li>Kill zombies until the soul box is complete.</li>
+<li>Location evidence will spawn.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Tea Garden</span><ol>
+<li>Go to the Tea Garden, in the area where you collect the bucket. Interact to spawn a pulsing yellow light soul box.</li>
+<li>Kill zombies until the soul box is complete.</li>
+<li>A dog may spawn and take the evidence item and run away — chase the dog and kill it to collect the final location evidence item.</li>
+</ol></div>
+
+</div>
+<div class="evidence-card ev-motive" style="--ev-accent:#ef4444"><h3 style="--ev-accent:#ef4444" id="wiki_motive_evidences"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">#5 — Motive Evidences<span class="ev-chip" style="background:#ef444426;border:1px solid #ef444466;color:#ef4444">🗡️ Motive</span></span><span class="g-chev" aria-hidden="true"></span></label></h3>
+<div class="evidence-sub"><span class="ev-tag">Netsuke of Brothers</span><ol>
+<li>When the lava blacks out in the Stables, a small statue appears.</li>
+<li>Throw a Molotov or explosive at the statue to knock it to the ground.</li>
+<li>Collect the Netsuke of Brothers evidence.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Hanko</span><ol>
+<li>Kill the first regular Oni that spawns (this is the Hanko Oni — not the Onryo boss from the endgame).</li>
+<li>Collect the Shogun's Hanko evidence that drops.</li>
+</ol></div>
+<div class="evidence-sub"><span class="ev-tag">Clock Puzzle (Final Motive Evidence)</span><ol>
+<li>Make sure all previous evidence is placed in the evidence room.</li>
+<li>Go to the Storage Rooms — left of the entrance by the rubble you will see a clock.</li>
+<li>Interact with the clock 4 times to get it to spin, revealing a 4-digit code.</li>
+<li>This triggers an assault wave — complete it as normal.</li>
+<li>4 blue numbers will appear around the map in Japanese for the code order:
+<ul>
+<li><strong>一</strong> (1) — Stables</li>
+<li><strong>二</strong> (2) — Flower Garden</li>
+<li><strong>三</strong> (3) — Central Courtyard</li>
+<li><strong>四</strong> (4) — Spawn / Outer Ward</li>
+</ul>
+</li>
+<li>Around the map where the bamboo shoots were, flags have spawned with symbols (e.g., 3 diamonds, 4 squares). Pick up the flags to create your number. (Example: if your first number is 6, find 2 flags with 3 symbols each, or a flag with 4 symbols and a flag with 2 symbols.)</li>
+<li>There are bamboo shoots in each area with no flag — place your flags in these shoots.</li>
+<li>Go back to the clock and interact. If done correctly, it will open to give you the last piece of motive evidence.</li>
+</ol>
+<p style="margin:.7rem 0 0"><a href="/tools/kowakujo-clock-solver.html" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;border-radius:.75rem;border:1px solid rgba(245,158,11,.55);background:linear-gradient(135deg,rgba(245,158,11,.24),rgba(255,255,255,.05));color:#fcd34d;font-weight:800;font-size:.88rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.12)">🧮 <span>Clock &amp; Flags Solver — enter the 4-digit code</span></a></p>
+</div>
+
+</div><div class="glass-card glass-gold"><h2 class="" id="wiki_key_items"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Key Items<span class="g-tag">🗝️ Key Items</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><em>Both key items are picked up inside their evidence steps — jump to the step that needs them:</em></p>
+<ul>
+<li><strong>Saka Cup</strong> — collect it in the <a href="#wiki_location_evidences">#4 — Location Evidences</a> step (collapsible card at its start).</li>
+<li><strong>Pestle</strong> — collect it in the <a href="#wiki_poison_evidences">#3 — Poison Evidences</a> step, Pufferfish (collapsible card at its start).</li>
+</ul>
+</div>
+
+<div class="glass-card glass-amber"><h2 class="" id="wiki_solving_the_murder"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Solving the Murder (Painting Puzzle)<span class="g-tag">🖼️ Murder Puzzle</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Collect all the evidence and go to the evidence room. Make sure all the evidence is input. Using all the notes you will find which evidence should be placed by the correct painting. Two of the paintings have sub-steps — the <strong>Witness Testimony</strong> (Painting 2) and the <strong>Zodiac Dial</strong> (Painting 3) — which are covered below.</p>
+
+<p><strong>Painting 1 (Leftmost)</strong> — Place the <strong>Comb</strong> in front of the first painting.</p>
+
+<p><strong>Painting 2 (Accomplice)</strong> — Whichever ghost you identify through the <a href="#wiki_witness_testimony">Witness Testimony</a> (Gardener, Merchant, or Noble) determines which evidence you place. Put that evidence in front of the second painting.</p>
+
+<h3 class="" id="wiki_witness_testimony">Witness Testimony</h3>
+<p>This identifies the accomplice for Painting 2. Go to one of the Ghostly Riflemen Traps and activate it. After about 10 to 20 kills, a Ghostly Fireman will appear:</p>
+<ul>
+<li>Entrance between Outer Ward and Gatehouse; the Ghostly Rifleman will be behind the trap near the house against the wall.</li>
+<li>Entrance between Flower Garden and Kitchens; the Ghostly Rifleman will be in Kitchens in the upper room near the window.</li>
+<li>Entrance between Central Courtyard and Tenshu Entrance; the Ghostly Rifleman will be behind the trap near the door.</li>
+</ul>
+<p>While the trap is active, approach the Ghostly Fireman so he can talk and reveal the accomplice:</p>
+<ul>
+<li>"That merchant from the market was hanging around..."</li>
+</ul>
+<p>However, if the Ghostly Fireman doesn't mention anyone, that means another trap needs to be activated. The ghost you see confirms which accomplice evidence to use.</p>
+
+<p><strong>Painting 3 (Poison)</strong> — Using the Doctor's Note (from the Pestle step), it will tell you how he died and by what poison. Match the correct poison to the note and place it by the third painting. The note also gives the time of death, which you set on the <a href="#wiki_zodiac_dial">Zodiac Dial</a>:</p>
+
+<h3 class="" id="wiki_zodiac_dial">Zodiac Dial</h3>
+<ol>
+<li>Check the Death Records and note the "Time of Death" which will display the name of a Zodiac animal as "Hour of the [Animal]".</li>
+<li>Note: All possible animals are Dog, Boar, Rat, Ox, Tiger and Hare.</li>
+<li>Check the note with the poison list and note the time it takes for the corresponding item on the cloth to kill someone.</li>
+<li>Place the dial hand on the animal from the Death Records, then, like a normal clock, remove the time from poison list.</li>
+<li>Example: If the Time of Death is "Hour of the Hare" and the time from the poison is "3 hours", place the hand on the hare then move it by 3 cases anti-clockwise (from right to left) which should correspond to the rat.</li>
+</ol>
+
+<p><strong>Painting 4 (Location)</strong> — There is a painting hanging nearby (fish, mountain, etc.) which will match with the background of the 4th painting. Whatever evidence you found in that area is the one you place.</p>
+
+<p><strong>Painting 5 (Rightmost)</strong> — Place the <strong>Clock Seal</strong> in front of the fifth painting.</p>
+
+<p>If done correctly a glowing light will spawn that you have to follow.</p></div>
+
+<div class="glass-card glass-orange"><h2 class="" id="wiki_purify_world_seed"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Purify the World Seed<span class="g-tag">🌱 World Seed</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Follow the glowing light to the World Seed.</li>
+<li>Interact with it to purify it — this takes you to a mini-boss fight arena.</li>
+<li>Defeat the mini-boss and you will be taken back to the map.</li>
+<li>The dragon will spawn in and take the World Seed away.</li>
+<li><strong>Note: If you complete the evidence steps correctly on the first attempt, a Katana will spawn in the Pack-a-Punch room. If you fail and have to redo, it will not appear.</strong></li>
+</ol></div>
+
+<div class="glass-card glass-red"><h2 class="" id="wiki_expel_the_onryo"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Expel the Onryo<span class="g-tag">👹 Onryo</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Interact with the incense bowls on either side of the paintings. If done correctly, a glowing orb will appear.</li>
+<li>Kill zombies near the orb until it moves to Shogun's Sanctum.</li>
+<li>Interact with the World Seed to start the fight against the Onryo.</li>
+<li>After being teleported to the Central Courtyard a special Oni will appear as the Onryo. Periodically, the Onryo will become immune and shooting its masks will remove that immunity.</li>
+<li>Once the Onryo is killed, a fast travel will appear in Shogun's Sanctum to travel to the Volcano and fight Nyxara.</li>
+<li>Additionally, if the mystery was solved without any mistake, an Ultra-rarity Path of Sorrows will drop in the room and can be picked up for the Melee slot.</li>
+</ol></div>
+
+<div class="glass-card glass-red glass-boss"><h2 class="" id="wiki_boss_fight"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Nyxara Boss Fight<span class="g-tag">⚔️ BOSS</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Reach the boss arena in two ways: walk towards the three fishes on the pole in the Pack-a-Punch room for a fast travel, or use the fast travel that appears in Shogun's Sanctum after the Onryo is defeated.</li>
+<li>Nyxara fight details TBD.</li>
+</ol>
+<hr>
+
+</div><h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
+
+<div class="glass-card glass-amber"><h2 id="wiki_maneki_neko_upgrade"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Upgrading the Maneki-Neko<span class="g-tag">🐱 Upgrade</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>The Maneki-Neko can be upgraded in two stages at the bench in Workshop. Both start with the <strong>White Powder</strong> obtained from the Ghostly Riflemen trap in Central Courtyard.</p>
+<ol>
+<li>Obtain the Combat Bow and activate the Ghostly Riflemen trap in front of Central Courtyard.</li>
+<li>A blue target should appear when looking through one of the holes in the wall.</li>
+<li>Shoot at it with the Combat Bow, if done correctly another target should appear.</li>
+<li>Rapidly shoot all the targets then return to the wall and pick up the <strong>White Powder</strong> on the ground.</li>
+<li>Return to the bench in Workshop to upgrade the Maneki-Neko (Stage 1).</li>
+</ol>
+<p><strong>Stage 2 — Maneki-Bomb:</strong> collect three items, note that neither of them will appear on the HUD or inventory:</p>
+<ul>
+<li>The <strong>White Powder</strong> from Stage 1 (or re-acquire it by activating the Ghostly Riflemen Trap in Central Courtyard and standing behind the right-most hole while reloading your weapon).</li>
+<li><strong>Matches</strong> found at the bottom of a shelf in Kitchens across Double Tap Root Beer.</li>
+<li>A piece of <strong>charcoal</strong> found in the left entrance at the bottom of the cubic kamado stove on the side facing away from the Mystery Box location in Kitchens.</li>
+</ul>
+<p>Return to the bench in Workshop to craft the Maneki-Bomb, re-purchasable for 1500 Salvage.</p>
+<p>The Maneki-Bomb is a Tactical Equipment that will create a shield bubble for around 15 seconds around the equipment preventing any zombie or enemy from entering the area, and stopping projectiles.</p></div>
+
+<div class="glass-card glass-orange"><h2 id="wiki_mecha_mayhem"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Mecha Mayhem (Dark Ops)<span class="g-tag">🤖 Dark Ops</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Within Flower Garden, several rocks can be seen floating in the river of lava in the middle of the area or at the right of Wisp Tea.</li>
+<li>Shoot at the rocks to drop either a robot arm, robot leg or robot torso.</li>
+<li>Once all 5 parts are collected, a UBER Klaus Core will spawn and move through the area before exploding and crashing on the ground.</li>
+<li>Interacting with the Klaus Core corpse will send you to a mini-boss fight arena as a Rhino and you will need to eliminate a Zursa and an Abomination.</li>
+<li>Once done, a new Remote Robot support can be purchased from the Klaus Core corpse for 1750 Salvage.</li>
+</ol>
+<p>The Remote Robot is a Rhino with a samurai helmet.</p></div>
+
+<div class="glass-card glass-green"><h2 id="wiki_par_course"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Par Course Challenge<span class="g-tag">🏃 Challenge</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Starting from Round 9, jump on the floating rock that will appear behind Melee Macchiato in Training Area.</li>
+<li>Continue to drift on the rock until it reaches the roof of a sunken house. This will trigger an obstacle course.</li>
+<li>Complete the obstacle course.</li>
+<li>If done correctly, four statues will spawn and one of them will have the Ray Gun in its mouth which can be picked up.</li>
+</ol></div>
+
+<div class="glass-card glass-amber"><h2 id="wiki_horse_race"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Horse Race<span class="g-tag">🐎 Challenge</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Collect 4 carrots:
+<ul>
+<li>In a basket left of Quick Revive in Outer Ward.</li>
+<li>Inside the cabbage stand in Kitchens, near the fire pit.</li>
+<li>Sticking out of the ground next to the Exfil phonebooth in Flower Garden.</li>
+<li>In a basket inside Workshop.</li>
+</ul>
+</li>
+<li>If done correctly the four carrots should appear inside a bucket left of the Mystery Box in the Stables.</li>
+<li>Make sure to open all the doors on the map. Once all of them are opened, an origami horse should be floating above the bucket. Interact with the horse to start the race.</li>
+<li>The race will feature massive balls chasing you, sushi platforms above lava, koi carps jumping in and out of lava, and koi carps falling out of the sky creating plume of fire.</li>
+<li>Finish the race back at the Stables and collect the reward. The faster the completion the better rewards. The race can be repeated.</li>
+</ol></div>
+
+<div class="glass-card glass-green"><h2 id="wiki_power_up_statues"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Power-Up Statues<span class="g-tag">⚡ Statues</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>There are 7 Power-Up statues around Kowakujō giving out the corresponding Power-Ups when shooting them, with two additional statues appearing after the first 7 are activated.</p>
+<ul>
+<li><strong>Bonus Point</strong>: In the exterior corner of Kitchens, on the other side of the Novaline 34 Wall-Buy.</li>
+<li><strong>Insta-Kill</strong>: Behind the drawer doors at the bottom of the desk where the Karakuri figure for the Maneki-Neko can be found in Storage Rooms.</li>
+<li><strong>Double Points</strong>: Between the two branches of the massive cherry blossom tree in Central Courtyard.</li>
+<li><strong>Nuke</strong>: In the lava, against the cliff opposite of Melee Macchiato in Training Area.</li>
+<li><strong>Full Power</strong>: Inside the roof of a sunken house outside of Flower Garden behind the Exfil phonebooth.</li>
+<li><strong>Max Armor</strong>: On the ground between a crate and a chest inside an out-of-bounds room near Vulture Aid in Workshop. <em>Note: Requires to jump to see it.</em></li>
+<li><strong>Max Ammo</strong>: At the bottom of a shelf near a lamp in the out-of-bounds room in Training Area.</li>
+<li><strong>Fire Sale</strong>: Underwater in Onsen Baths, beneath the tiles. <strong>Only available after all the others have been activated.</strong></li>
+<li><strong>Random Perk</strong>: Inside a golden vase on a shelf near the fire pit in Kitchens. <strong>Only available after all the others have been activated.</strong></li>
+</ul>
+<hr>
+
+</div></div>
+<div class="md wiki">
+<hr>
+
+<div class="glass-card glass-violet"><h2 id="wiki_evencry_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Evencry" Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Find three Mr Peeks headphones around the map:</p>
+<ul>
+<li>At Stables</li>
+<li>At Kitchen</li>
+<li>At Onsen Baths</li>
+</ul>
+<p>"Evencry" by Kevin Sherwood, Malukah and Cole Rolland</p></div>
+
+<div class="glass-card glass-violet"><h2 id="wiki_when_the_stars_go_dark"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">When The Stars Go Dark (Tom Kane tribute)<span class="g-tag">🎵 Tribute</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Travel to Central Courtyard.</li>
+<li>Find the TK symbol on ground next to the cherry blossom tree.</li>
+<li>Crouch in front of the symbol and look up the tree, then wait a few seconds.</li>
+<li>If done correctly, the screen will glow and the music starts before a quote from Tom Kane's Takeo is played.</li>
+</ol>
+<p>"When The Stars Go Dark (A Tribute to Tom Kane)" by Brian Tuey</p></div>
+
+<div class="glass-card glass-red"><h2 id="wiki_echoes_of_the_damned"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Echoes of the Damned<span class="g-tag">⚔️ Quest</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Play as Takeo Masaki and obtain a Psych Grenade.</li>
+<li>Throw a Psych Grenade inside the War Room near the stairs leading to the Pack-a-Punch machine.</li>
+<li>Another Takeo should appear; walk towards him and he will disappear leaving his Katana behind. Interact with the Katana to start the quest.</li>
+<li>Progress through the forest and eliminate the Hellhounds, then the Scorched Zombies, and finally the Heavy Zombies.</li>
+<li>Once done, Takeshi will spawn. Eliminate Takeshi to complete the quest and return to the map.</li>
+<li>A Rare Katana will be available as a reward, alongside an Aether Tool whose rarity will depend on the completion round.</li>
+</ol></div>
+
+<div class="glass-card glass-gold"><h2 id="wiki_maneki_neko_tactical_equipment"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Maneki-Neko Tactical Equipment<span class="g-tag">🧰 Equipment</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Collect three different items:</p>
+<ul>
+<li><strong>Maneki-neko (Cat figure)</strong>:
+<ul>
+<li>On a crate in Gatehouse</li>
+<li>On a barrel in Kitchens near Double Tap Root Beer</li>
+<li>On a barrel in Kitchens</li>
+</ul>
+</li>
+<li><strong>Furin (Wind chime)</strong>:
+<ul>
+<li>Hanging above the passage to the red flag in Staging Area</li>
+<li>Hanging above the Warden 308 wall-buy in Training Area</li>
+<li>Hanging above the doorway of the half sunken house in Stables</li>
+</ul>
+</li>
+<li><strong>Karakuri (Man figure)</strong>:
+<ul>
+<li>On the floor in Storage Rooms on the same floor as PhD Flopper</li>
+<li>On a desk in Storage Rooms</li>
+<li>Next to a wicker vase in Workshop</li>
+</ul>
+</li>
+</ul>
+<p>Craft the Maneki-Neko from the bench next to Vulture Aid in Workshop which can be re-purchased at the bench for 500 Salvage.</p>
+<p>The Maneki-Neko is a Tactical Equipment that will repel zombies and enemies when thrown.</p></div>
+
+<div class="glass-card glass-green"><h2 id="wiki_neko_cafe"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Neko Cafe (Free Perks)<span class="g-tag">☕ Free Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Collect 5 different rat toys across 8 possible locations.</li>
+<li>Shoot at 5 different cats to scare them away, across 8 possible locations.</li>
+<li>Only one cat will be available at a time, and the next cat will not appear after 3 or 4 rounds from scaring away the previous cat.</li>
+<li>Every time a cat is scared away, it will appear on top of the roof of the small house in Tea Garden.</li>
+<li>Once all the rat toys are collected and all the cats are on the roof, the screen will turn white and a Random Perk will appear as a reward.</li>
+<li>Within the small house, several cat houses will appear with the cats playing on them alongside paintings of cats. Additionally, two Mystery Perk cans can be found on the table within the house.</li>
+</ol></div>
+
+<div class="glass-card glass-amber"><h2 id="wiki_gacha_machine"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Gacha Machine<span class="g-tag">🎰 Machine</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Wait for a Fissure to become active in Kitchens.</li>
+<li>Note: Getting the cherry blossom tree buff can be useful to reduce the damage taken from the Fissure.</li>
+<li>In one of the outdoor corners, near the cherry blossom tree, there should be a gacha machine.</li>
+<li>Melee the machine to spawn a glowing orb. Run into the orb to spawn the next one, repeat the process for a total of 8 times with the final one closing the Fissure.</li>
+<li>If done correctly, the machine will remain permanently in Kitchens. The machine can be interacted with for 500 Essence.</li>
+</ol>
+<p>There are 4 possible charms that can be acquired from the machine:</p>
+<ul>
+<li><strong>Pufferfish</strong>: With the Pufferfish Charm equipped, zombies will drop Plant Food replenishing health by 50 points.</li>
+<li><strong>Kite</strong>: TBD</li>
+<li><strong>Karakuri</strong>: TBD</li>
+<li><strong>Maneki-neko</strong>: TBD</li>
+</ul>
+<p><em>Note: Equipping the charm will remove the Pack-a-Punch level damage from the weapon, it is unclear if it's intentional or a glitch.</em></p></div>
+
+<style>
+.relic-ok{border:1px solid rgba(34,197,94,.35);border-radius:.55rem;background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(255,255,255,.02));color:#bbf7d0;font-size:.74rem;font-weight:700;padding:.35rem .6rem;margin:.4rem 0 .5rem}
+.relic-warn{border:1px solid rgba(239,68,68,.45);border-radius:.55rem;background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(255,255,255,.02));color:#fecaca;font-size:.76rem;font-weight:700;line-height:1.45;padding:.45rem .65rem;margin:.4rem 0 .5rem}
+.relic-meta{font-size:.78rem;color:#ffffffb3;line-height:1.5;margin:.4rem 0 0}
+.relic-meta b{color:#fcd34d}
+.relic-meta.dim{color:#ffffff77}
+.relic-order{display:inline-flex;gap:.35rem;flex-wrap:wrap}
+.relic-order b{border:1px solid rgba(245,158,11,.5);border-radius:.45rem;background:linear-gradient(135deg,rgba(245,158,11,.2),transparent);color:#ffe8bf;font-size:.8rem;padding:.15rem .5rem}
+.relic-trial{margin:.4rem 0 0 1.2rem;padding:0}
+.relic-trial li{font-size:.76rem;margin:.22rem 0;color:#ffffffa6}
+</style>
+<h1 class="" id="wiki_relics">Relics</h1>
+<p>There are 6 Relics that can be unlocked from playing Kowakujō, those Relics are then used as gameplay modifiers for Cursed mode.</p>
+<p>The Relics are divided into three groups: <strong>Grim</strong>, <strong>Sinister</strong>, and <strong>Wicked</strong>. Each group fill the Cursed Tier bar differently with the Grim Relics filling up a third of the bar, the Sinister Relics filling up two thirds, and the Wicked Relics filling up the entire bar. As such you will need to apply different Relics to reach the desired Tier level.</p>
+<ul class="relic-tiers">
+  <li><strong>Tier I</strong>: Any 3 <span class="relic-chip grim">Grim</span> — Unlocks Golden Armor (45,000 Essence)</li>
+  <li><strong>Tier II</strong>: 2 <span class="relic-chip sinister">Sinister</span> + 2 <span class="relic-chip grim">Grim</span> (example loadout) — Unlocks Ultra Rarity (8,000 Salvage or 17,500 Salvage from default rarity)</li>
+  <li><strong>Tier III</strong>: 3 <span class="relic-chip grim">Grim</span> + 2 <span class="relic-chip sinister">Sinister</span> + 1 <span class="relic-chip wicked">Wicked</span> (example) — Unlocks Pack-a-Punch IV (100,000 Essence)</li>
+</ul>
+<p class="relic-note">Make sure to scroll sideways to see the steps. Higher tiers just need the total difficulty value to match the target fill; swap relics as you discover them.</p>
+<div class="relic-grid">
+  <div class="relic-section">
+    <h2 class="relic-heading grim">Grim Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card grim">
+        <div class="relic-title">GRAMOPHONE <span class="mini-tag">Bullets deal increased damage but each shot consumes 2 bullets</span></div>
+        <div class="relic-ok">✅ Any Cursed tier — currently can be done on any round</div>
+        <ol class="steps">
+          <li>Pick up <strong>2 drum sticks</strong> — one in the <strong>Gatehouse</strong> (to the left of the Lucky Cat spawn) and one in the <strong>Workshop</strong>.</li>
+          <li>Go to the <strong>drums in the stairs</strong> from Flower Garden inside the <strong>Kitchen</strong> — melee both drums, then press interact on them to start <strong>Simon Says</strong>.</li>
+          <li>Play <strong>Simon Says</strong>: shoot or melee the drums in the order shown to you. You must do this <strong>3 times</strong> before the portal opens.</li>
+        </ol>
+        <div class="relic-meta"><b>Portal:</b> Kitchens</div>
+        <div class="relic-meta"><b>Trial:</b> Only sniper damage counts to kill enemies. The only sniper wallbuy is the <strong>XR3 Ion</strong> across the room from Pack-a-Punch (a shotgun attachment on the Shadow SK also works).</div>
+        <div class="relic-meta dim"><b>Tips:</b> Doable with the XR3 Ion — use Free Fire + Insta-Kill for the last 2 HVTs; it's relatively easy.</div>
+      </div>
+      <div class="relic-card grim">
+        <div class="relic-title">DRUID STONE <span class="mini-tag">No bleed out bar self-revives instantly revives you</span></div>
+        <div class="relic-ok">✅ Any Cursed tier</div>
+        <ol class="steps">
+          <li>Survive until <strong>round 20</strong> without taking damage from zombies.</li>
+          <li>Walking in lava is fine — you just cannot get hit by zombies (similar to the Social Distancing Dark Ops, but slightly different).</li>
+          <li><em>Cheese (until patched):</em> play a Squad No-Fill game and invite a player on round 19, then reach round 20. Solo: beat the boss, save &amp; quit as soon as you return from the boss fight, then reload the save.</li>
+        </ol>
+        <div class="relic-meta"><b>Portal:</b> Flower Garden</div>
+        <div class="relic-meta"><b>Trial:</b> Zombies can only take damage when you are overhealed.</div>
+        <div class="relic-meta dim"><b>Tips:</b> Light Mend on your weapon, Cherry Blossoms (pink trees — melee 3× for overcharged health), or Stim Shots.</div>
+        <div class="relic-meta dim"><b>Solved by:</b> @OhAero (Calamiityy)</div>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading sinister">Sinister Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card sinister">
+        <div class="relic-title">VALKYRIE HELMET <span class="mini-tag">Areas you stay in start to spawn electric fields that damage you</span></div>
+        <div class="relic-warn">⚠️ DO NOT SAVE &amp; QUIT during this relic quest. ⚠️⚠️ DO NOT open the Cat Cafe Easter Egg before getting the Bowl — you WILL get softlocked.</div>
+        <div class="relic-ok">✅ Every step can be done on any round before 40</div>
+        <ol class="steps">
+          <li>Get <strong>4 broken pieces</strong> by getting kills with the <strong>upgraded Maneki-Neko</strong> and the wonder weapon — kill a lot of zombies while inside the upgraded Maneki-Neko with the charged WW shot. The shard spawns where the Maneki was (or near it); they glow faint orange and are very small / easy to miss.</li>
+          <li>Put the 4 broken pieces in the <strong>fireplace in the Kitchen</strong> and throw a <strong>Molotov</strong> to reassemble them.</li>
+          <li>Open the Cat Cafe side EE and get the <strong>Catnip</strong> on one of the cat trees — <a href="https://docs.google.com/document/d/1W76WINy9b_6LLzpuFcBn6FpDKQSumn5FhWVQa4Wenrs/edit?tab=t.0" target="_blank" rel="noopener">guide</a>.</li>
+          <li>Put the bowl with Catnip on the <strong>flat rock next to the big tree</strong>.</li>
+          <li><strong>Fail both assault phases</strong> on Flower Garden and Training Area — the next assault phase will be at the <strong>Castle Trap</strong>. (You can force an assault phase by doing the Clock step for the 4th poster of the EE — might shave off some rounds.)</li>
+          <li>Kill ~50 zombies with the wonder weapon <strong>during the assault phase</strong> in the big tree area — souls get sucked by the bowl (radius is the whole area). You can fail the first defense step if you need more time / more zombies.</li>
+        </ol>
+        <div class="relic-meta"><b>Portal:</b> Training Area — in the room where you get the Ash Pouch</div>
+        <div class="relic-meta"><b>Trial:</b> Reloading makes you explode (30–40 HP per reload).</div>
+        <div class="relic-meta dim"><b>Credit:</b> solve @Mmult · bowl @Pork · catnip @Rantsycancy · info @siimwa</div>
+      </div>
+      <div class="relic-card sinister">
+        <div class="relic-title">FILM REEL <span class="mini-tag">Player can only carry one Pack-a-Punch weapon</span></div>
+        <div class="relic-ok">✅ Cursed Tier I or higher — round doesn't matter</div>
+        <ol class="steps">
+          <li>Pack-a-Punch <strong>10 different unique weapons</strong> — the Pack-a-Punch machine and crystals both work. (The multi-pack Augment for Mule Kick is unconfirmed; gobblegums have mixed reports.)</li>
+          <li>"Unique" means no duplicates — in co-op the whole team cannot pack the same weapons; it needs 10 completely different weapons total to trigger the portal.</li>
+          <li>Sam's drawing apparently also works but will likely be patched — it must still be 10 different weapons.</li>
+        </ol>
+        <div class="relic-meta"><b>Portal:</b> Tea Garden</div>
+        <div class="relic-meta"><b>Trial:</b> Zombies can only die to assigned scorestreaks. Recommended: Support Group, Instakill and Temporal Gift; Dead Drop while playing (keep decent salvage). Failing the trial lets you retry.</div>
+        <div class="relic-meta dim"><b>Credit:</b> first portal @RyanXLVI · trigger @Pork &amp; @Deleted User</div>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading wicked">Wicked Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card wicked">
+        <div class="relic-title">DRAGON EGG <span class="mini-tag">Elites and Special zombies in normal round spawning will now be randomized</span></div>
+        <div class="relic-ok">✅ Cursed Tier II or higher — no round 60 needed</div>
+        <ol class="steps">
+          <li>Complete the <strong>Path of Torment</strong> part of the main EE to get <strong>Takeo's Sword</strong> — do the main EE up until the boss fight.</li>
+          <li>You MUST correctly solve the <strong>Murder Mystery step on the first try</strong> (<a href="https://kowakujo.netlify.app/" target="_blank" rel="noopener">use the solver</a>).</li>
+          <li>3 symbols spawn around the map — transfer energy from the <strong>Oni</strong> using the sword's <strong>parry</strong>, then melee the symbol. The symbol turns <strong>red</strong> when you have it right.</li>
+          <li>Hit the symbols in this order to spawn the portal: <span class="relic-order"><b>姿</b> (1) → <b>を</b> (2) → <b>見世</b> (3)</span></li>
+        </ol>
+        <div class="relic-meta"><b>Symbol locations:</b> across from PhD near the mask puzzle (Storage Rooms) · across from Vulture Aid (Workshop) · inside the burnt house (Stables) · on a rock near wisp tea (Flower Garden) · under the bridge in spawn (Outer Ward) · on the roof above the cat cage spawn (Tenshu Eaves)</div>
+        <div class="relic-meta"><b>Portal:</b> Onsen Baths</div>
+        <div class="relic-meta"><b>Trial:</b> Survive Mr Peeks' 6 tiers of insanity</div>
+        <ol class="relic-trial">
+          <li>Assault wave at the Flower Garden</li>
+          <li>Find Mr Peeks in the Gatehouse and kill two HVT Abominations</li>
+          <li>Escort Mr Peeks to the Keep</li>
+          <li>Kill all Oni with the charged, upgraded Path of Sorrows</li>
+          <li>Kill Doppelghasts in the Ash Storm</li>
+          <li>Kill the boss within the time limit</li>
+        </ol>
+        <div class="relic-meta dim"><b>Notes:</b> The trial counts as an EE completion. Failing the boss fight ends your game. No time limit between waves 5 and 6 — use it to prepare (no zombies to farm points). Finishing the regular boss fight instead locks you out of this relic. Any round works, but enemy health scales to round 60.</div>
+        <div class="relic-meta dim"><b>Solved by:</b> @Attic</div>
+      </div>
+      <div class="relic-card wicked">
+        <div class="relic-title">MANNEQUIN TURRET <span class="mini-tag">No starting Armor. Only armor available is Gold Armor from the wall buy.</span></div>
+        <div class="relic-ok">✅ 99% solved — Cursed Tier II or higher, round 60</div>
+        <ol class="steps">
+          <li>Reach <strong>round 60</strong> in Tier II or higher <strong>without failing the Attack Waves</strong> — trap statues seem fine to fail, but failing the flag defense fails the relic.</li>
+        </ol>
+        <div class="relic-meta dim"><b>How we know (99%):</b> the theory is round 60 in Tier 2+ with no failed flag defenses. @.funnymonkey tested: reached 60 without failing attack waves, flipped rounds, then saved &amp; quit — on reload he got the laugh/portal again; after intentionally failing an attack wave, there was no laugh/portal on reload. @Attic confirmed it by doing the relic with only the wonder weapon built, one attack wave passed, and the gramophone trial.</div>
+        <div class="relic-meta"><b>Portal:</b> War Room</div>
+        <div class="relic-meta"><b>Trial:</b> Health regen is turned off — players are fully healed at the end of each wave. Stims and Light Mend still heal/overheal; standard regen is disabled. (Armor-gettin gobblegum does NOT work with the relic active.)</div>
+        <div class="relic-meta dim"><b>Credit:</b> first portal @Attic · fail-testing @.funnymonkey &amp; @unknown-user</div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 id="wiki_wall_buys_and_perk_a_colas">Wall-Buys and Perk-a-Colas</h1>
+<div class="glass-card glass-gold"><h2 id="wiki_wall_buys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li><strong>Jäger 45</strong> — Outer Ward</li>
+<li><strong>Echo 12</strong> — Staging Area</li>
+<li><strong>MPC-25</strong> — Stables</li>
+<li><strong>Warden .308</strong> — Training Area</li>
+<li><strong>M10 Breacher</strong> — Gatehouse</li>
+<li><strong>Ryden 45K</strong> — Flower Garden</li>
+<li><strong>M34 Novaline</strong> — Kitchens</li>
+<li><strong>Peacekeeper Mk1</strong> — Central Courtyard</li>
+<li><strong>M15 Mod 0</strong> — Tenshu Entrance</li>
+<li><strong>MK.78</strong> — Storage Rooms</li>
+<li><strong>XM325</strong> — Onsen Baths</li>
+<li><strong>XR-3 Ion</strong> — Shogun's Sanctum</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><em>Note: Der Wunderfizz appears after purchasing 4 Perk-a-Colas or after reaching Round 20.</em></p>
+<ul>
+<li><strong>Quick Revive</strong> — Outer Ward</li>
+<li><strong>Stamin-Up</strong> — Staging Area</li>
+<li><strong>Speed Cola</strong> — Gatehouse</li>
+<li><strong>Death Perception</strong> — Stables</li>
+<li><strong>Melee Macchiato</strong> — Training Area</li>
+<li><strong>Wisp Tea</strong> — Flower Garden</li>
+<li><strong>Double Tap Root Beer</strong> — Kitchen</li>
+<li><strong>Juggernog</strong> — Central Courtyard</li>
+<li><strong>PhD Flopper</strong> — Storage Rooms</li>
+<li><strong>Mule Kick</strong> — Tenshu Entrance</li>
+<li><strong>Elemental Pop</strong> — Onsen Baths</li>
+<li><strong>Vulture Aid</strong> — Workshop</li>
+<li><strong>Der Wunderfizz</strong> — Collapsed Study</li>
+</ul></div>
+<h1 id="wiki_miscellaneous_features">Miscellaneous Features</h1>
+<div class="glass-card glass-amber"><h2 id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Tea Garden</li>
+<li>Collapsed Study</li>
+<li>Flower Garden</li>
+</ul></div>
+<div class="glass-card glass-red"><h2 id="wiki_traps_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Traps Locations<span class="g-tag">🪤 Traps</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li><strong>Ghostly Riflemen</strong>: Outer Ward, Stables, Flower Garden, Central Courtyard</li>
+</ul></div>
+<div class="glass-card glass-orange"><h2 id="wiki_arsenal_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Arsenal Locations<span class="g-tag">🎯 Arsenal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Stables</li>
+<li>Storage Rooms</li>
+</ul></div>
+<div class="glass-card glass-amber"><h2 id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Flower Garden</li>
+</ul></div>
+

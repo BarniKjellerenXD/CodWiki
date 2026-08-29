@@ -1,0 +1,494 @@
+<div class="md wiki">
+<p class="g-hint">💡 Tap a section title to collapse or expand it.</p>
+
+<style>
+/* ══════════ Liquid Glass System ══════════ */
+.glass-card{position:relative;overflow:hidden;border-radius:1.05rem;padding:1.05rem 1.2rem 1.15rem;margin:1.15rem 0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.16));backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 16px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.10),inset 0 -1px 0 rgba(0,0,0,.28)}
+.glass-card::before{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(28px);opacity:.5;width:240px;height:240px;top:-90px;left:-70px;background:radial-gradient(circle,var(--glass-glow,rgba(245,158,11,.30)),transparent 65%)}
+.glass-card::after{content:"";position:absolute;pointer-events:none;top:0;left:8%;right:8%;height:1px;border-radius:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
+.glass-card h2{border:none!important;margin:.05rem 0 .6rem;padding-left:0!important;font-size:1.22rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.glass-card h2 .g-tag{border:1px solid var(--glass-accent,#f59e0b);border-radius:.45rem;background:linear-gradient(135deg,var(--glass-accent,#f59e0b)26,transparent);color:var(--glass-accent,#f59e0b);font-size:.68rem;font-weight:800;letter-spacing:.05em;line-height:1;padding:.28rem .5rem;text-transform:uppercase;white-space:nowrap}
+.glass-card h3{border-left:3px solid var(--glass-accent,#f59e0b);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border-radius:.65rem;padding:.55rem .75rem;margin:1rem 0 .5rem}
+.glass-card>ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.35rem 1rem}
+.glass-card ul ul{display:block}
+.glass-card ol{margin:.5rem 0 .25rem}
+.glass-card li{margin:.3rem 0}
+.glass-gold{--glass-accent:#f59e0b;--glass-glow:rgba(245,158,11,.30)}
+.glass-amber{--glass-accent:#fbbf24;--glass-glow:rgba(251,191,36,.26)}
+.glass-orange{--glass-accent:#f97316;--glass-glow:rgba(249,115,22,.28)}
+.glass-green{--glass-accent:#22c55e;--glass-glow:rgba(34,197,94,.22)}
+.glass-violet{--glass-accent:#a855f7;--glass-glow:rgba(168,85,247,.24)}
+.glass-red{--glass-accent:#ef4444;--glass-glow:rgba(239,68,68,.26)}
+.glass-boss{border-color:rgba(239,68,68,.38);box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 26px rgba(239,68,68,.14),inset 0 1px 0 rgba(255,255,255,.10)}
+.glass-quest{padding:1.2rem 1.3rem 1.3rem}
+.glass-quest ol>li{margin:.65rem 0}
+/* unify existing panels with the glass language */
+.evidence-card,.cheat-block{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
+.evidence-card{box-shadow:0 14px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
+
+/* ══════════ Collapsible sections ══════════ */
+.g-toggle{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;cursor:pointer;flex:1;min-width:0;width:100%}
+.g-toggle:hover{filter:brightness(1.1)}
+.g-cb{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
+.g-title{display:contents}
+.g-chev{margin-left:auto;color:var(--glass-accent,#f59e0b);font-size:.75rem;transition:transform .22s;flex:none;opacity:.85}
+.g-chev::after{content:"\25BE"}
+.g-cb:checked ~ .g-chev::after{content:"\25B8"}
+.glass-card:has(> h2 .g-cb:checked) > *:not(h2),.evidence-card:has(> h3 .g-cb:checked) > *:not(h3){display:none}
+.g-hint{font-size:.78rem;color:#fcd34d99;border:1px dashed rgba(245,158,11,.35);border-radius:.6rem;padding:.45rem .7rem;margin:.6rem 0 .2rem;background:rgba(245,158,11,.06)}</style>
+
+
+<h1 id="wiki_totenreich_.7C_complete_map_breakdown">Totenreich | Complete Map Breakdown</h1>
+<p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
+<p>On PC, there is a list of all the <strong>Chapters</strong> on the right. Just click on the text and&nbsp;you will be taken there. Alternatively, to find specific information, press <strong>CTRL + F</strong> and type the information you want to find. On mobile, the list of all the <strong>Chapters and Topics</strong> is at the top of the page.</p>
+<p style="text-align: center;"><strong><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="2160" data-media-id="dw20zrdbxkyg1" data-width="3840" height="1080" width="1920" src="https://preview.redd.it/dw20zrdbxkyg1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=6ce24ee781684f670d44a1110695076cc08e7130"></strong></p>
+<p style="text-align: center;"><em><strong>In the frozen birthplace of nuclear fire, a Group 935 research base hides sinister secrets. Awaken the steel colossus, ignite the flame of vengeance, and free the giant Shadowsmith from the Warden's icy grip!</strong></em></p>
+<hr>
+<h1 id="wiki_key_features">Key Features</h1>
+<p>This is a walkthrough of the key features of the map, such as Pack-a-Punch, Wonder Weapons, etc.</p>
+<div class="glass-card glass-gold"><h2 id="wiki_jotunn_star"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Jotunn Star<span class="g-tag">⭐ Wonder Weapon</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Get 3 items:
+<ol>
+<li><strong>Chilly Chunks</strong> - Back of a truck next to Deadshot Daiquiri in Storm Bridge.</li>
+<li><strong>Lantern</strong> - Place the Chilly Chunks on the table in the center of Skallen Market. <strong>Starting with the 2nd Special Round</strong>, a named Zursa will spawn and will drop the Lantern after being killed.</li>
+<li><strong>Chain Links</strong> - Interact with the button in Titan Crane to lower a wooden slab in front of the ship. Wall jump towards the bow of the ship and interact to get the chains.
+<ul>
+<li><em>Note: the slab will only stay down for 30 seconds, but the button can be interacted as many times as needed.</em></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Reach the Burial Grounds and interact with the door to put the chain links in, then hold interact to repair the door.</li>
+<li>Place the Lantern on the shrine in Burial Grounds. The lantern will emit lights on the wall, revealing constellations that rotate.</li>
+<li>Interact with the constellation symbols on the wall, based on the ones on the shrine at Burial Grounds
+<ul>
+<li>The order is Left, Right, Back, Front when looking at the shrine from the stairs.</li>
+</ul>
+</li>
+<li>If done correctly, the ghost of Astrid will appear above the shrine.</li>
+<li>Follow Astrid. She will move toward the market, then stop. Kill Frost zombies that spawn to charge her energy bar until it is filled.</li>
+<li>Once Astrid is near the lighthouse, repeat the energy charging process once more. Once done, floating platforms will appear. Climb the platforms and reach the lighthouse.</li>
+<li>Continue to climb the lighthouse with the stairs and the outside platforms.</li>
+<li>Interact with the ladder on top of the lighthouse to enter the top chamber, where the Jotunn Star will be available for pickup.</li>
+</ol>
+<hr>
+</div><h1 id="wiki_main_quest">Main Quest</h1>
+<style>
+.cheat-grid{display:grid;gap:.65rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:.75rem 0 1.25rem}
+.cheat-block{border:1px solid hsla(0,0%,100%,.12);border-radius:.8rem;box-shadow:0 8px 24px #00000040;padding:.7rem .8rem}
+.cheat-block h2{border:none;font-size:1rem;margin:0 0 .3rem;padding-left:0}
+.cheat-block.phase1{background:linear-gradient(135deg,#f59e0b2e,#24242b73)}
+.cheat-block.phase2{background:linear-gradient(135deg,#fbbf2433,#24242b73)}
+.cheat-block.phase3{background:linear-gradient(135deg,#f9731633,#24242b73)}
+.cheat-block.phase4{background:linear-gradient(135deg,#ef44442b,#24242b73)}
+.cheat-block ol{margin:0;padding-left:1.1rem}
+.cheat-block li{font-size:.82rem;line-height:1.3;margin:.2rem 0}
+.cheat-block li::marker{color:#fde68a}
+.cheat-block ul{margin:0;padding-left:1rem}
+.cheat-block ul li{font-size:.78rem;opacity:.85}
+.cheat-note{font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
+</style>
+<p><em>One-screen quick reference. Full details for every step are in the sections below.</em></p>
+<div class="cheat-grid">
+  <div class="cheat-block phase1">
+    <h2>① Setup</h2>
+    <ol>
+      <li>Obtain the <strong>Jotunn Star</strong> (wonder weapon).</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase1">
+    <h2>② Wundersignal</h2>
+    <ol>
+      <li><strong>Crowbar</strong> in Lighthouse; find the note (Dry Dock / Tyr's Foot) → read the crate code: <strong>III-6, V-7, X-9, or IV-3</strong>.</li>
+      <li>Open the matching crate → <strong>Flak Gun Round</strong>. (Wrong crate = 30s penalty.)</li>
+      <li>Load the flak gun near the Lighthouse, shoot the <strong>Riese head</strong> in spawn.</li>
+      <li>Take <strong>Transmitter</strong> from Riese head → place in Tyr's head (2nd floor).</li>
+      <li>Count the 2 sets of blinking lights → <strong>2×2-digit numbers</strong>.</li>
+      <li>Core Foundry Ascender (Molotov) → console: calibrate <strong>Amplitude + Frequency</strong> → fire both sets → <strong>Wunderbarrage Controller</strong>.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase2">
+    <h2>③ Atomkraft Core — 3 Uraniums</h2>
+    <ol>
+      <li><strong>U-1:</strong> Fishing Rod → glowing green fish → Irradiated Ravager next round → kill for Uranium.</li>
+      <li><strong>U-2:</strong> ARC-XD melee vent → secret room → head jars A–E + radioactive symbols → Necrospike lockpick → Uranium.</li>
+      <li><strong>U-3:</strong> Glocke Drop → shoot floating zombies, light 3 green lights → Uranium.</li>
+      <li>Clear debris (Wunderbarrage) → Machine Workshop → claw machine: <strong>6&amp;3 / 7&amp;2 / 7&amp;1&amp;1</strong> → <strong>Atomkraft Core</strong>.</li>
+      <li>Defend generator (Quick Revive pallets) → Charged Core to Storm Bridge barrel → <strong>Dravakar Shard</strong>.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase3">
+    <h2>④ Vegvisir</h2>
+    <ol>
+      <li>Place shard on Blodheim Hall bonfire → light with Jotunn Star ranged attack.</li>
+      <li>Disciple Injection → throw zombies into fire → lockdown → kill <strong>Necropincer HVT</strong> → <strong>Sunstone</strong>.</li>
+      <li>Sunstone in Eidskallen Stave Church center → giant arrow circle → shoot rune wood piles in order (arrow count = order).</li>
+      <li>Return to Tyr's Head console → <strong>boss fight</strong>.</li>
+    </ol>
+  </div>
+  <div class="cheat-block phase4">
+    <h2>⑤ Dravakar Boss</h2>
+    <ol>
+      <li>Shoot red weak spots while Tyr wrestles; ice attacks freeze areas → use 3 Flammenfalle traps.</li>
+      <li>Tyr disabled → <strong>Gjallarfrost heads</strong>: grenade in mouth or Jotunn Star ranged to stun → destroy; dodge ice shard runes, shoot random weak spots.</li>
+      <li>More Gjallarfrost heads; middle area locked, no cover — keep DPS on weak spots until health bar empties.</li>
+    </ol>
+    <p class="cheat-note">Astra Malorum done? <strong>Caltheris's Blessing</strong> revives a downed player when all players are down with no revives.</p>
+  </div>
+</div>
+
+<ol>
+<li>Obtain the Jotunn Star</li>
+</ol>
+<div class="glass-card glass-amber"><h2 class="" id="wiki_wundersignal"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wundersignal<span class="g-tag">📡 Signal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Get the Crowbar from a shelf inside the Lighthouse.</li>
+<li>Find a note on the ground, in either Dry Dock in the room with the interactable button, or at Tyr's Foot near a corpse. The note will display a message that will determine which crate to open:
+<ul>
+<li><em>"I replaced the PzGR shipment with parts from the lab [...]</em>" means it's the crate marked <strong>III-6</strong></li>
+<li><em>"I couldn’t tamper with the PzGR shipment [...]" </em>means it's the crate marked<em> </em><strong>V-7</strong></li>
+<li><em>"The PzGR shells are gone and now carry robot parts instead [...]"</em> means it's the crate marked <strong>X-9</strong></li>
+<li><em>"The switch is done, PzGR shells out, chemical bomb in [...]" </em>means it's the crate marked&nbsp;<strong>IV-3</strong></li>
+</ul>
+</li>
+<li>Find the corresponding crate in one of the possible spawn location. If done correctly, the Flak Gun Round will drop from the crate. However, opening&nbsp;the wrong crate will trigger an effect for about 30 seconds, either repeated electrical shots, suffered from gas exposure, or experiencing hallucination similarly to Psych Grenades.
+<ul>
+<li><strong>War Factory</strong>, in a corner near the Admin room.</li>
+<li><strong>Dry Dock</strong>, behind the boat opposite of PhD Flopper.</li>
+<li><strong>Core Foundry</strong>, next to the VS Recon wall buy.</li>
+<li><strong>Fjord Road</strong>, next to the Flammefalle Trap.</li>
+</ul>
+</li>
+<li>Reach the flak gun near the Lighthouse facing spawn area, and place the Flak Gun Round inside then hit it with the Jotunn Star. If done correctly, the gun should shoot at the Riese robot head in spawn.</li>
+<li>Go to the Riese robot head in spawn and hold interact with it to get the Transmitter. Place the Transmitter inside Tyr's head on the second floor.</li>
+<li>Check the two blinking lights inside Tyr's head. The two lights will blink at the same time, then reset, and blink again. Count the number of blinks each time for each light. This will be 2 sets of 2-digit numbers.</li>
+<li>Travel to Core Foundry and unlock the Ascender with a Molotov. Use the Ascender and enter the console to calibrate the Amplitude (right) and Frequency (left) using the numbers from the blinking lights. Enter the first set of numbers which will launch a barrage strike somewhere on the map, then enter the second set of numbers.</li>
+<li>If done correctly, a free Wunderbarrage Controller will spawn in the room next to the radio tower. The controller will also become available at crafting tables.</li>
+</ol></div>
+<div class="glass-card glass-orange"><h2 class="" id="wiki_atomkraft_core"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Atomkraft Core<span class="g-tag">☢️ Core</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Obtain three Uraniums, which can be done in any order:
+<ul>
+<li>Uranium 1
+<ol>
+<li>Find a Fishing Rod (Dry Dock, Storm Bridge, Fishery Island, Beacon Island)</li>
+<li>Find a glowing green fish jumping in the water at one of the fishing location and use the Fishing Rod. Catching the fish will spawn an Irradiated Ravager.</li>
+<li>Wait for the next round, and it will appear somewhere on the map, alongside a horde of regular Ravagers. Killing the Irradiated Ravager will drop the Uranium.</li>
+</ol>
+</li>
+<li>Uranium 2
+<ol>
+<li>Get an ARC-XD and melee the vent near stairs and Zipline in Core Foundry. With the ARC-XD jump on the boat on the other side and enter the secret room to destroy the barrels and open the Group 935 Genetic Lab.
+<ul>
+<li><em>Note: a free ARC-XD can be picked up in the Eidskallen Square, and it can also be acquired randomly from fishing.</em></li>
+</ul>
+</li>
+<li>There will be 5 head jars marked A to E around the room. Look at the corridor next to the locked cell door and note the radioactive symbols beneath the numbers (1 to 5). The numbers match the letter on the jars (A=1 ... E=5) and the radioactive symbols show which jar is needed. Pick up the corresponding jars and place them in the machine next to the cell to get the glowing purple jar.</li>
+<li>Interact with the crab arm on the table to pick up the Necrospike. Use the Necrospike on the cell door to trigger a lockpicking mini-game.</li>
+<li>If done correctly, the cell door will open and the Uranium can be picked up. <em>Note: a radio can also be picked up on the ground beneath the bench for a Relic.</em></li>
+</ol>
+</li>
+<li>Uranium 3 - <em>Note: This Uranium can be acquired without the need to build the Jotunn Star or start the main quest.</em>
+<ol>
+<li>Obtain the Glocke Drop and activate it.
+<ul>
+<li><em>Note: a free drop is available as part of the beginning steps of the main quest, and it can also be acquired randomly from fishing.</em></li>
+</ul>
+</li>
+<li>While active, shoot all the floating zombies to turn on the green light. Keep doing it until all 3 green lights are lit. If done correctly, the Glocke will drop the Uranium.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Use the Wunderbarrage Controller to clear the debris on the stairs outside of 02 Building in Dry Dock. Climb the stairs and enter the Machine Workshop. The door to the other side will then automatically open.</li>
+<li>Place all 3 Uraniums inside the claw machine and interact with it.</li>
+<li>Complete the mini-game by placing the cylinders in slots in a way that the cursor does not go over the green section on screen.The goal is to create several groups by placing the three Uranium tubes in specific places. The configurations can either be: <strong>6 &amp; 3</strong>; <strong>7 &amp; 2</strong>; or <strong>7 &amp; 1 &amp; 1</strong>. <a href="https://cod-zombies.com/tools/uranium-pincers" rel="nofollow noopener" target="_blank">Solver tool available here</a>.</li>
+<li>If done correctly, the Atomkraft Core will drop.
+<ul>
+<li><em>Note that you cannot sprint while holding the Atomkraft Core and using a zipline or entering Tyr will drop it on the ground.</em></li>
+</ul>
+</li>
+<li>Place the Atomkraft Core on pallets next to Quick Revive then turn on the generator in the shed behind the perk. You will need to defend the Atomkraft Core. During the defense, the generator will occasionally require rebooting to progress.</li>
+<li>Once done, bring the Charged Atomkraft Core to Storm Bridge and place it on a barrel. If done correctly, a cutscene will play and the Dravakar Shard will drop next to Tyr's Foot.</li>
+</ol></div>
+<div class="glass-card glass-green"><h2 class="" id="wiki_vegvisir"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Vegvisir<span class="g-tag">🧭 Vegvisir</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Bring the shard inside the Blodheim Hall and place it on the bonfire. Lit the bonfire with the ranged attack of the Jotunn Star.</li>
+<li>Get a Disciple Injection and throw zombies inside the bonfire. <em>Note: a free Disciple Injection can be found in the Eidskallen Stave Church.</em></li>
+<li>If done correctly, this should trigger a lockdown and spawn an Necropincer HVT.</li>
+<li>After killing the HVT, the Sunstone can be picked up.</li>
+<li>Place the Sunstone in the center of Eidskallen Stave Church and use the Jotunn Star's range attack on it. A giant circle will spawn above the church with arrows pointing at different runes.</li>
+<li>Runes will spawn around the map, shoot the wooden pile below each rune with the range attack of the Jotunn Star in the order shown in the giant circle, based on the number of arrow points per rune.</li>
+<li>Once done, return to Tyr's Head and interact with the console to start the boss fight</li>
+</ol></div>
+<div class="glass-card glass-red glass-boss"><h2 class="" id="wiki_dravakar_boss_fight"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Dravakar Boss Fight<span class="g-tag">🐉 BOSS</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><em>Note: Throughout the duration of this fight, if players have completed the Astra Malorum main quest, a power-up called Caltheris's Blessing will drop when all players go down and have no revives left. It will revive the downed player who picks it up.</em></p>
+<ol>
+<li>At the start of the fight, Dravakar will wrestle with Tyr in the background. At certain points, red weak spots will glow on Dravakar; deal damage to these weak spots until they break, which will allow Tyr to gain the upper hand. Otherwise, Dravakar will focus on the players and release an ice attack to one of the three areas in the arena, causing it to freeze temporarily. Three Flammenfalle traps are placed around the arena, which can be used to counter the effects of the ice attacks.</li>
+<li>After dealing enough damage to Dravakar, he will disable Tyr for the rest of the fight. A Gjallarfrost head will spawn in the middle area, which will attack players when spotted. Stun the Gjallarfrost by throwing a grenade in its mouth, or using the ranged attack of the Jotunn Star, then deal damage with any weapon until it is destroyed. Dravakar will then appear and summon ice shards in rune patterns and shoot them at the players; hide behind covers to avoid the shards, or study the rune patterns to dodge them. During this phase, Dravakar's body will have random red glowing weak spots that can be shot at.</li>
+<li>In later phases, Dravakar will summon additional Gjallarfrost heads on other sides of the arena. Eventually he will also block off access to the other areas, forcing the player to stay in the middle area with no cover from the ice shard attacks. Continue dealing damage to Dravakar's weak spots until his health bar is depleted.</li>
+</ol></div>
+
+
+</div>
+<div class="md wiki">
+<hr>
+<h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
+<div class="glass-card glass-violet"><h2 id="wiki_.22no_one_there.22_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"No One There" Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Find three Mr Peeks headphones around the map:</p>
+<ul>
+<li>On boxes near PhD Flopper at Dry Dock</li>
+<li>Near Double Tap Root Beer at Core Foundry</li>
+<li>Bottom of a shelf, next to a plate, at Loven's Antiquities</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=g_AlO2pmAjE" rel="nofollow noopener" target="_blank">"No One There" by Kevin Sherwood and Vicky Psarakis</a></p></div>
+<div class="glass-card glass-red"><h2 id="wiki_.22echoes_of_the_damned.22_richtofen_quest"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Echoes of the Damned" Richtofen Quest<span class="g-tag">⚔️ Quest</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Equip Melee Macchiato</li>
+<li>Starting on Round 15 (and every subsequent rounds ending on 5 or 0) and hit the barrel near the doorway in the courtyard of Core Foundry.</li>
+<li>Dig inside the barrel and retrieve the Iron Cross to trigger the quest.</li>
+</ol></div>
+<div class="glass-card glass-amber"><h2 class="" id="wiki_fishing"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Fishing<img alt="" class="wiki-img-right wiki-img-with-wrap wiki-img-in-table" data-height="2175" data-media-id="4yzta00n5yzg1" data-width="2560" height="217" width="256" src="https://preview.redd.it/4yzta00n5yzg1.jpeg?width=320&amp;height=271&amp;format=pjpg&amp;auto=webp&amp;s=99001d9572499fd8c8e4601aa55b71db37a8a7f1"><span class="g-tag">🎣 Fishing</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>There are several fishing rods, called Olaf's Cod Cranker, that can be found around the maps. Those fishing rods can be used at specific spot to catch loot such as Essence, Salvage, Equipment, Killstreaks, etc. Sometimes one or more boots will appear, turning into zombies.</p>
+<ul>
+<li>The Olaf's Cod Cranker fishing rods (Green) can be found in:
+<ul>
+<li>Blodheim Hall, Dry Dock, Fishery Island, Storm Bridge, Beacon Island</li>
+</ul>
+</li>
+<li>There are 11 fishing spots (Red) around the map:
+<ul>
+<li>Eidskallen Landing (x2), Eidskallen Square (x2), Dry Dock, Beacon Island (x2), Fishery Island (x2), Tyr's Foot, Tyr's Shoulder.</li>
+</ul>
+</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 id="wiki_tyr.27s_power.2Dups"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Tyr's Power-Ups<span class="g-tag">⚡ Power-Ups</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Inside Tyr's Head, several lightbubs can be found above the robot's monitor. The lightbubs will display coordinates (such as F 8 or E 2, etc) and the number 75. That number indicates how many zombies need to be killed while being within the coordinates.</p>
+<p>If done correctly, Tyr's head will flash green when seen from the outside, and a random Power-Up will spawn inside the head. This can be done once per round.</p></div>
+<div class="glass-card glass-gold"><h2 class="" id="wiki_helmets"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Helmets<span class="g-tag">🪖 Helmets</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><strong>Golden Tide Helm (Blue; Fishing)</strong></p>
+<ol>
+<li>Get the Olaf's Cod Cranker fishing rod.</li>
+<li>Use it at the fishing locations until a special zombie called Olaf, Cranker of Cod spawn wearing a helmet.</li>
+<li>Kill the zombie to drop the helmet and pick it up.</li>
+</ol>
+<p>While wearing the helmet, it should take less time before catching something when fishing, and there will be more chances for better loot like increased Salvage or even Power-Ups. The Golden Tide Helm can be picked up again at Blodheim Hall at no cost.</p>
+<p class=""><strong>Kneehigh Helm (Orange; Gnome)</strong></p>
+<ol>
+<li>Obtain Shadow Rift on your weapon.</li>
+<li>Shoot four Gnome statues around the map. <strong>Note: shooting at the statues should show a hitmarker and/or a shield icon.</strong>
+<ul>
+<li>Between two wooden sheets next to the catwalk of Machine Workshop.</li>
+<li>Next to a search light on top of a concrete building far outside of Tyr's Foot.</li>
+<li>Below the painting on the altar of Eidskallen Stave Church.</li>
+<li>On the catwalk at the top of the lighthouse when looking at it from the Flak gun facing away from the lighthouse.&nbsp;</li>
+</ul>
+</li>
+<li>Travel to Loven's Antiquities and pick up the Kneehigh Helm from the counter.</li>
+</ol>
+<p>Whenever you will crouch while wearing the Kneehigh Helm, you will be turned into a Gnome statue. The Kneehigh Helm can be bought up again at Bloodheim Hall for 6000 Essence.</p>
+<div>
+<div><strong>Cointoss Helm (Yellow; Power-Up)</strong>
+</div>
+<ol>
+<li>Complete the Tyr's Power-Ups about 15 times (to be confirmed).</li>
+<li>If done correctly, the Cointoss Helm should be available within Tyr's Head.</li>
+</ol>
+<p>The helmet seemingly increases the frequency of Power-Ups spawn. The Cointoss Helm can be picked up again at Bloodheim Hall at no cost.</p>
+<p class=""><strong>Icebane Helm (White; Freeze immunity)</strong></p>
+<ol>
+<li>Get kills with the Flammenfalle trap:
+<ul>
+<li>Get 250 kills with the trap itself.</li>
+<li>Kill 50 Frost Zombies while inside the trap area of effect with a bullet weapon.</li>
+</ul>
+</li>
+<li>If done correctly, the Icebane Helm should drop on the ground.</li>
+</ol>
+<p>The helmet will prevent getting frozen during the Special Rounds. When sliding into zombies while wearing the helmet, any zombies hit will be frozen. The Icebane Helm can be picked up again at Bloodheim Hall at no cost.</p>
+</div></div>
+
+<div class="glass-card glass-orange"><h2 class="" id="wiki_fishy_fish_bot_trap"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Fishy Fish Bot Trap<span class="g-tag">🤖 Trap</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Get the fish from the bucket located on a shelf inside the shed next to the Arsenal at Beacon Island.</li>
+<li>Get a Shock Charge and wait for a T.E.D.D. Task to spawn.</li>
+<li>Place the fish on the T.E.D.D. Task machine and throw the Shock Charge at it then complete the T.E.D.D. Task to the maximum reward.</li>
+<li>If done correctly, the fish will drop along aside a piece of the machine.</li>
+<li>Bring both items to the mount on the wall across the Arsenal in Eidskallen Square and hold to build the trap.</li>
+</ol>
+<p>The trap costs 2000 Essence and when activated T.E.D.D. will attract the zombies before turning a handful of them into brain-rotted zombies.</p></div>
+
+<div class="glass-card glass-green"><h2 class="" id="wiki_power.2Dup_statues"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Power-Up Statues<span class="g-tag">⚡ Statues</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>There are 7 Power-Up statues around Totenreich giving out the corresponding Power-Ups when shooting them, with two additional statues appearing after the first 7 are activated.</p>
+<ul>
+<li><strong>Bonus Point</strong>: Outside Beacon Island, between two wooden walls.</li>
+<li><strong>Insta-Kill</strong>: On a tombstone outside Burial Grounds.</li>
+<li><strong>Double Points</strong>: TBD.</li>
+<li><strong>Nuke</strong>: Behind the Riese robot head in War Factory.</li>
+<li><strong>Full Power</strong>: Boat window inside Dry Dock.</li>
+<li><strong>Max Armor</strong>: TBD.</li>
+<li><strong>Max Ammo</strong>: TBD.</li>
+<li><strong>Fire Sale</strong>: TBD. <strong>Only available after all the others have been activated.</strong></li>
+<li><strong>Random Perk</strong>: TBD. <strong>Only available after all the others have been activated.</strong></li>
+</ul></div>
+
+<h1 class="" id="wiki_relics">Relics</h1>
+<p>There are 6 Relics that can be unlocked from playing Totenreich, those Relics are then used as gameplay modifiers for Cursed mode.</p>
+<p>The Relics are divided into three groups: <strong>Grim</strong>, <strong>Sinister</strong>, and <strong>Wicked</strong>. Each group fill the Cursed Tier bar differently with the Grim Relics filling up a third of the bar, the Sinister Relics filling up two thirds, and the Wicked Relics filling up the entire bar. As such you will need to apply different Relics to reach the desired Tier level.</p>
+<ul class="relic-tiers">
+  <li><strong>Tier I</strong>: Any 3 <span class="relic-chip grim">Grim</span> — Unlocks Golden Armor (45,000 Essence)</li>
+  <li><strong>Tier II</strong>: 2 <span class="relic-chip sinister">Sinister</span> + 2 <span class="relic-chip grim">Grim</span> (example loadout) — Unlocks Ultra Rarity (8,000 Salvage or 17,500 Salvage from default rarity)</li>
+  <li><strong>Tier III</strong>: 3 <span class="relic-chip grim">Grim</span> + 2 <span class="relic-chip sinister">Sinister</span> + 1 <span class="relic-chip wicked">Wicked</span> (example) — Unlocks Pack-a-Punch IV (100,000 Essence)</li>
+</ul>
+<p class="relic-note">Make sure to scroll sideways to see the steps. Higher tiers just need the total difficulty value to match the target fill; swap relics as you discover them.</p>
+<div class="relic-grid">
+  <div class="relic-section">
+    <h2 class="relic-heading grim">Grim Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card grim">
+        <div class="relic-title">POWER SWITCH <span class="mini-tag">Tactical and lethal equipment randomizes each round</span></div>
+        <ol class="steps">
+          <li>Start a game in Cursed Mode</li>
+          <li>Find 4 wooden structures outside the map and count the number of deer heads for each of them. A scoped weapon makes it easier to spot the structures.  Outside of Eidskallen Landing, when looking at the opening opposite of the Rampage Inducer.</li>
+          <li>Outside of Burial Grounds, right of a Mystery Box spawn location.</li>
+          <li>Outside of Core Foundry, on the left-most mountain top when looking from the left side of the piled up crates.</li>
+          <li>Outside of Tyr's Foot, left of the road.</li>
+          <li>Get a Combat Axe and throw it at a specific bear pelt hanging on the walls of Blodheim Hall in an order based on the number of deer heads (from 1 to 4)  Eidskallen Landing => Pelt surrounded by 3 round shields with another shield on the ground.</li>
+          <li>Burial Grounds => Pelt with only 1 shield on its left.</li>
+          <li>Core Foundry => Pelt surrounded by 4 round shields.</li>
+          <li>Tyr's Foot => Pelt surrounded by 1 shield on both sides.</li>
+          <li>If done correctly, a green portal will spawn on the pelt surrounded by the 4 shields.</li>
+          <li>Survive 3 waves as zombies can only be killed with traps.</li>
+        </ol>
+      </div>
+      <div class="relic-card grim">
+        <div class="relic-title">??? <span class="mini-tag">TBD</span></div>
+        <ol class="steps">
+          <li>Reach Round 20</li>
+          <li>TBD</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading sinister">Sinister Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card sinister">
+        <div class="relic-title">STUFFED ELEPHANT <span class="mini-tag">Health regen delay is increased</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier I</li>
+          <li>Reach Round 40 without buying or getting any Perks.</li>
+          <li>If done correctly, a yellow portal will spawn on a wall behind Juggernog in Fishery Island.</li>
+          <li>Shoot at 4 Mr. Peeks Eggs located around the map and defeat the HVT that will spawn.  On the lower catwalk at the lighthouse in Beacon Island.</li>
+          <li>On a window corner at the house behind Mule Kick in Skallen Market.</li>
+          <li>Near Tyr's Foot outside of Storm Bridge.</li>
+          <li>On a steel beam next to the roof opening in the RK-9 room at Dry Dock.</li>
+        </ol>
+      </div>
+      <div class="relic-card sinister">
+        <div class="relic-title">DANCING ARNIE <span class="mini-tag">All Perk-a-Cola machines have been cursed and now give out random Perk-a-Colas</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier I. Do not build the Jotunn Star before Step 4.</li>
+          <li>Get the pot located on the ground below a wooden table behind Mule Kick in Skallen Market and place it on the fire at the center of Blodheim Hall.</li>
+          <li>Get 2 items and place them inside the pot in Blodheim Hall:  The beer mug located on a wooden barrel near the barge between Loven's Antiquities and the Arsenal in Eidskallen Square. Return to Blodheim Hall and pour the beer into the pot.</li>
+          <li>The Chilly Chunks from Storm Bridge.</li>
+          <li>With an explosive weapon shoot at the truck in Storm Bridge to get a new fish can and build the Jotunn Star.</li>
+          <li>Get 2 more items to be placed inside the pot:  The red lobster dropped by killing a Necropincer with the Flammenfalle Trap only.</li>
+          <li>Round 41+ — Wait for a Special Round and use the fishing spots to catch a unique fish item.</li>
+          <li>If done correctly, Mr. Peeks will appear above the pot in Blodheim Hall.</li>
+          <li>Kill 100 zombies with the Jotunn Star around Mr. Peeks.</li>
+          <li>A yellow portal will spawn on a wall above Pack-a-Punch in Fishery Island.</li>
+          <li>Survive 5 waves while the zombies and HVTs can only take melee damage.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading wicked">Wicked Relics</h2>
+    <div class="relic-cards">
+      <div class="relic-card wicked">
+        <div class="relic-title">AGARTHAN DEVICE <span class="mini-tag">Each round, a different type of zombie will spawn</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier II and one player HAS TO be playing as Richtofen.</li>
+          <li>Reach the Urzikstan and Liberty Falls room when ejecting from Tyr's head.</li>
+          <li>Urzikstan: Pick the military helmet located on a crate at the bottom of the shelves.</li>
+          <li>Liberty Falls: Grab Mr. Peeks from under the bed.</li>
+          <li>Open the cell in Group 935 Genetic Lab and pick up the radio on the ground under the bench.</li>
+          <li>Activate the Richtofen's Echo of the Damned quest (Round 15+).</li>
+          <li>Once the echo of Von List has left, place the items on the seat.</li>
+          <li>If done correctly, a red portal will spawn at Dry Dock.</li>
+          <li>Survive 6 waves while the zombies can only be damaged while the players are indoors.</li>
+        </ol>
+      </div>
+      <div class="relic-card wicked">
+        <div class="relic-title">MUSIC BOX <span class="mini-tag">Enemies only take critical damage</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier II</li>
+          <li>Reach Round 60 and enter Tyr's Head.</li>
+          <li>From Tyr's Head window, get 5 Critical Kills.</li>
+          <li>If done correctly, Mr. Peeks will laugh and a red portal will spawn on a wall in Dry Dock near the Melee Macchiato machine.</li>
+          <li>Survive 6 waves by holding out lockdowns at specific locations on the map.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 class="" id="wiki_wall_buys_and_perk_a_colas">Wall-Buys and Perk-a-Colas</h1>
+<div class="glass-card glass-gold"><h2 class="" id="wiki_wall_buys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li><strong>CODA 9</strong> — Eidskallen Landing</li>
+<li><strong>Echo 12</strong> — Eidskallen Landing</li>
+<li><strong>RK-9</strong> — Dry Dock</li>
+<li><strong>X9 Maverick</strong> — Dry Dock</li>
+<li><strong>VS Recon</strong> — Core Foundry</li>
+<li><strong>DS20 Mirage</strong> — War Factory</li>
+<li><strong>MXR-17</strong> — Fishery Island</li>
+<li><strong>Warden 308</strong> — Tyr's Foot</li>
+<li><strong>Shadow SK</strong> — Tyr's Shoulder</li>
+<li><strong>M34 Novaline</strong> — Tyr's Head Ejection - Knights Room</li>
+<li><strong>Dravec 45</strong> — Tyr's Head Ejection - Urzikstan Room</li>
+<li><strong>AK-27</strong> — Tyr's Head Ejection - Liberty Falls Room</li>
+<li><strong>M8A1</strong> — Eidskallen Stave Church</li>
+<li><strong>Peacekeeper Mk1</strong> — Skallen Market</li>
+<li><strong>M10 Breacher</strong> — Blodheim Hall</li>
+<li><strong>MPC-25</strong> — Eidskallen Square</li>
+<li><strong>XM325</strong> — Beacon Island</li>
+</ul></div>
+<div class="glass-card glass-green"><h2 class="" id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><em>Note: Der Wunderfizz appears after purchasing 4 Perk-a-Colas or after reaching Round 20.</em></p>
+<ul>
+<li><strong>Quick Revive</strong> — Eidskallen Landing</li>
+<li><strong>Melee Macchiato</strong> — Dry Dock</li>
+<li><strong>Stamin-Up</strong> — Eidskallen Square</li>
+<li><strong>Speed Cola</strong> — Dry Dock</li>
+<li><strong>PhD Flopper</strong> — Dry Dock</li>
+<li><strong>Vulture Aid</strong> — Blodheim Hall</li>
+<li><strong>Juggernog</strong> — Fishery Island</li>
+<li><strong>Mule Kick</strong> — Skallen Market</li>
+<li><strong>Double Tap Root Beer</strong> — Core Foundry</li>
+<li><strong>Deadshot Daiquiri</strong> — Storm Bridge</li>
+<li><strong>Der Wunderfizz</strong> — Beacon Island</li>
+</ul></div>
+<h1 class="" id="wiki_miscellaneous_features">Miscellaneous Features</h1>
+<div class="glass-card glass-amber"><h2 class="" id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Eidskallen Square</li>
+<li>Dry Dock</li>
+</ul></div>
+<div class="glass-card glass-red"><h2 class="" id="wiki_traps_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Traps Locations<span class="g-tag">🪤 Traps</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li><strong>Flammenfalle</strong>: Fjord Road, Beacon Island, Eidskallen Square, Core Foundry</li>
+<li><strong>Fishy Fish Bot</strong>: Eidskallen Square</li>
+</ul></div>
+<div class="glass-card glass-orange"><h2 class="" id="wiki_arsenal_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Arsenal Locations<span class="g-tag">🎯 Arsenal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Eidskallen Square</li>
+<li>Beacon Island</li>
+</ul></div>
+<div class="glass-card glass-amber"><h2 class="" id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Dry Dock</li>
+<li>Eidskallen Stave Church</li>
+</ul></div>
+
