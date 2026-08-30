@@ -1,7 +1,7 @@
 {
   "name": "codwiki-desktop",
   "productName": "CodWiki",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "COD Zombies Wiki - desktop app for codguides.wolden.eu",
   "main": "main.js",
   "author": "BarniKjellerenXD",

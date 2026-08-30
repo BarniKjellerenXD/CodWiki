@@ -8,18 +8,31 @@ const progress = document.getElementById('progress')
 const btnBack = document.getElementById('btn-back')
 const btnFwd = document.getElementById('btn-fwd')
 
+let settings = window.CW_SETTINGS || null
 let lastSiteUrl = localStorage.getItem('cw-last') || SITE + '/'
 let errorPageShown = false
 
-const EXTRA_EXTERNAL = {
-  section: 'tools',
-  label: 'Uranium Pincers',
-  icon: '🕸️',
-  url: 'https://cod-zombies.com/tools/uranium-pincers',
-  external: true
+/* ---------- build sidebar (settings-aware) ---------- */
+function navById () {
+  const m = new Map()
+  for (const it of window.NAV) m.set(it.id, it)
+  return m
 }
 
-/* ---------- build sidebar ---------- */
+function effectiveItems () {
+  const byId = navById()
+  let order = (settings && Array.isArray(settings.order) && settings.order.length)
+    ? settings.order
+    : window.NAV.map((n) => n.id)
+  const hidden = (settings && Array.isArray(settings.hidden)) ? settings.hidden : []
+  const labels = (settings && settings.labels) || {}
+  return order
+    .map((id) => byId.get(id))
+    .filter(Boolean)
+    .filter((it) => !hidden.includes(it.id))
+    .map((it) => ({ ...it, label: labels[it.id] || it.label }))
+}
+
 function makeItem (item) {
   const el = document.createElement('div')
   el.className = 'nav-item'
@@ -51,33 +64,34 @@ function makeItem (item) {
     el.appendChild(ext)
   }
   el.addEventListener('click', () => {
-    if (item.external) {
-      window.cw.openExternal(item.url)
-    } else {
-      webview.loadURL(SITE + item.url)
-    }
+    if (item.external) window.cw.openExternal(item.url)
+    else webview.loadURL(SITE + item.url)
   })
   return el
 }
 
-let section = null
-for (const item of window.NAV) {
-  if (item.section !== section) {
-    section = item.section
-    const lab = document.createElement('div')
-    lab.className = 'nav-label'
-    lab.textContent = section === 'guides' ? 'Guides' : 'Tools'
-    navEl.appendChild(lab)
+function buildSidebar () {
+  navEl.innerHTML = ''
+  let section = null
+  for (const item of effectiveItems()) {
+    if (item.section !== section) {
+      section = item.section
+      const lab = document.createElement('div')
+      lab.className = 'nav-label'
+      lab.textContent = section
+      navEl.appendChild(lab)
+    }
+    navEl.appendChild(makeItem(item))
   }
-  navEl.appendChild(makeItem(item))
+  setActive(webview.src || lastSiteUrl)
 }
-{
-  const lab = document.createElement('div')
-  lab.className = 'nav-label'
-  lab.textContent = 'More'
-  navEl.appendChild(lab)
-  navEl.appendChild(makeItem(EXTRA_EXTERNAL))
-}
+buildSidebar()
+
+window.cw.onSettingsChanged((s) => {
+  settings = s
+  window.CW_SETTINGS = s
+  buildSidebar()
+})
 
 /* ---------- helpers ---------- */
 function setActive (url) {
@@ -158,6 +172,9 @@ document.getElementById('btn-home').addEventListener('click', () => webview.load
 document.getElementById('open-browser').addEventListener('click', () => window.cw.openExternal(lastSiteUrl))
 
 /* ---------- restore last page ---------- */
-if (lastSiteUrl.startsWith(SITE)) {
-  webview.loadURL(lastSiteUrl)
+function restoreStart () {
+  const restore = !settings || settings.restoreLastPage !== false
+  const url = restore && lastSiteUrl.startsWith(SITE) ? lastSiteUrl : SITE + '/'
+  webview.loadURL(url)
 }
+restoreStart()

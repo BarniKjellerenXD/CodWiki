@@ -15,7 +15,7 @@
       <nav id="nav"></nav>
       <div id="sidebar-footer">
         <a id="open-browser">Open in browser ↗</a>
-        <span>v1.0.0</span>
+        <span>v1.1.0</span>
       </div>
     </aside>
     <main id="content">
@@ -25,14 +25,61 @@
           <button id="btn-fwd" title="Forward (Alt+→)">›</button>
           <button id="btn-reload" title="Reload (F5)">⟳</button>
           <button id="btn-home" title="Home (Ctrl+H)">⌂</button>
+          <button id="btn-settings" title="Settings (Ctrl+,)">⚙</button>
         </div>
         <div id="address" class="no-drag">codguides.wolden.eu</div>
       </div>
       <div id="progress"></div>
       <webview id="webview" src="https://codguides.wolden.eu/"></webview>
+
+      <div id="settings-panel" hidden>
+        <div class="sp-head drag">
+          <h2>⚙ Settings</h2>
+          <button id="sp-close" class="no-drag" title="Close (Esc)">✕</button>
+        </div>
+        <div class="sp-body no-drag">
+          <div class="sp-tabs no-drag">
+            <button class="sp-tab active" data-tab="shortcuts">Shortcuts</button>
+            <button class="sp-tab" data-tab="sidebar">Sidebar</button>
+            <button class="sp-tab" data-tab="general">General</button>
+          </div>
+
+          <section class="sp-tab-page" data-page="shortcuts">
+            <p class="sp-hint">Click <b>Change</b> then press the new key combination. <b>Esc</b> cancels. Conflicts are rejected.</p>
+            <div class="sp-row">
+              <button id="sp-reset-shortcuts" class="sp-ghost">Reset all to defaults</button>
+            </div>
+            <div id="sp-shortcut-list"></div>
+          </section>
+
+          <section class="sp-tab-page" data-page="sidebar" hidden>
+            <p class="sp-hint">Reorder, rename, hide or show sidebar entries.</p>
+            <div id="sp-nav-list"></div>
+          </section>
+
+          <section class="sp-tab-page" data-page="general" hidden>
+            <div class="sp-general-row">
+              <label for="sp-zoom">Default zoom</label>
+              <select id="sp-zoom">
+                <option value="-1.224">80%</option>
+                <option value="-0.578">90%</option>
+                <option value="0">100%</option>
+                <option value="0.523">110%</option>
+                <option value="1.224">125%</option>
+              </select>
+            </div>
+            <div class="sp-general-row">
+              <label for="sp-restore">Restore last page on start</label>
+              <input type="checkbox" id="sp-restore">
+            </div>
+            <p class="sp-hint">Settings are saved instantly and survive app updates.</p>
+          </section>
+        </div>
+      </div>
     </main>
   </div>
   <script src="nav.js"></script>
+  <script src="settings.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
