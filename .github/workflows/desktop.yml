@@ -1,0 +1,37 @@
+name: CodWiki Desktop (Windows)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "desktop-app/**"
+      - ".github/workflows/desktop.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: desktop-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install deps
+        run: npm ci
+      - name: Build installer + portable zip
+        run: npx electron-builder --win nsis zip --x64
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VER=$(node -p "require('./package.json').version")
+          TAG="desktop-v$VER"
+          gh release create "$TAG" --title "CodWiki Desktop v$VER" \
+            --notes "CodWiki desktop app for Windows. Run the Setup .exe to install (Start Menu + desktop shortcuts), or grab the portable zip and extract anywhere." \
+            dist/*.exe dist/*.zip || gh release upload "$TAG" dist/*.exe dist/*.zip --clobber

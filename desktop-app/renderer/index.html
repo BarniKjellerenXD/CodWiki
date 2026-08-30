@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>CodWiki</title>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div id="brand" class="drag">
+        <img src="../build/icon.png" alt="">
+        <span>CodWiki</span>
+      </div>
+      <nav id="nav"></nav>
+      <div id="sidebar-footer">
+        <a id="open-browser">Open in browser ↗</a>
+        <span>v1.0.0</span>
+      </div>
+    </aside>
+    <main id="content">
+      <div id="topbar" class="drag">
+        <div class="tb-buttons no-drag">
+          <button id="btn-back" title="Back (Alt+←)">‹</button>
+          <button id="btn-fwd" title="Forward (Alt+→)">›</button>
+          <button id="btn-reload" title="Reload (F5)">⟳</button>
+          <button id="btn-home" title="Home (Ctrl+H)">⌂</button>
+        </div>
+        <div id="address" class="no-drag">codguides.wolden.eu</div>
+      </div>
+      <div id="progress"></div>
+      <webview id="webview" src="https://codguides.wolden.eu/"></webview>
+    </main>
+  </div>
+  <script src="nav.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

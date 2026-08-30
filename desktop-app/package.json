@@ -1,0 +1,37 @@
+{
+  "name": "codwiki-desktop",
+  "productName": "CodWiki",
+  "version": "1.0.0",
+  "description": "COD Zombies Wiki - desktop app for codguides.wolden.eu",
+  "main": "main.js",
+  "author": "BarniKjellerenXD",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "44.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "eu.wolden.codguides",
+    "productName": "CodWiki",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "preload.js", "renderer/**", "build/icon.ico", "build/icon.png"],
+    "win": {
+      "target": [
+        { "target": "nsis", "arch": ["x64"] },
+        { "target": "zip", "arch": ["x64"] }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "CodWiki"
+    }
+  }
+}
