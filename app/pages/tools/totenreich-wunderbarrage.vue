@@ -64,6 +64,13 @@ const summary = computed(() => {
   gap: .7rem;
 }
 
+.wseq {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  margin-top: .4rem;
+}
+
 .wrow {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -87,5 +94,31 @@ const summary = computed(() => {
   font-size: .68rem;
   color: #ffffff77;
   margin-bottom: .5rem;
+}
+
+.wsum {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(245, 158, 11, .28);
+  background: linear-gradient(135deg, rgba(245, 158, 11, .09), rgba(255, 255, 255, .02));
+  padding: .75rem 1rem;
+  text-align: center;
+}
+
+.wsum .t {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #ffffff99;
+}
+
+.wsum .v {
+  margin-top: .35rem;
+  font-family: ui-monospace, monospace;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffe8bf;
+  letter-spacing: .06em;
 }
 </style>

@@ -285,4 +285,80 @@ defineExpose({ scrollTo })
 .prose :where(.cheat-block ul li){font-size:.78rem;opacity:.85}
 .prose :where(.cheat-note){font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
 .prose :where(.cheat-chip){border:1px solid var(--cc,#f59e0b);border-radius:.4rem;color:var(--cc,#f59e0b);display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;margin-left:.15rem;padding:.12rem .4rem;vertical-align:middle}
+
+/* Evidence cards (murder mystery sections) */
+.prose :where(.evidence-card){border:1px solid hsla(0,0%,100%,.12);border-radius:.9rem;margin:1.1rem 0;padding:.85rem 1rem 1.05rem;box-shadow:0 12px 32px #00000040}
+.prose :where(.evidence-card h3){border:none;display:flex;align-items:center;gap:.55rem;font-size:1.08rem;margin:0 0 .5rem;padding-left:0;flex-wrap:wrap}
+.prose :where(.evidence-card h3)::before{content:none}
+.prose :where(.evidence-card h3 .ev-chip){border-radius:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:.2rem .5rem;white-space:nowrap}
+.prose :where(.evidence-card.ev-suspect){background:linear-gradient(135deg,#f59e0b1f,#24242b40);border-color:#f59e0b59}
+.prose :where(.evidence-card.ev-accomplice){background:linear-gradient(135deg,#f9731624,#24242b40);border-color:#f9731659}
+.prose :where(.evidence-card.ev-poison){background:linear-gradient(135deg,#22c55e1f,#24242b40);border-color:#22c55e59}
+.prose :where(.evidence-card.ev-location){background:linear-gradient(135deg,#a855f724,#24242b40);border-color:#a855f759}
+.prose :where(.evidence-card.ev-motive){background:linear-gradient(135deg,#ef444427,#24242b40);border-color:#ef444466}
+.prose :where(.evidence-card .ev-chip){display:inline-block}
+.prose :where(.evidence-card ul,.evidence-card ol){margin:.4rem 0 .2rem}
+.prose :where(.evidence-card>p){margin:.45rem 0}
+.prose :where(.evidence-sub){border-left:3px solid var(--ev-accent,#f59e0b);border-radius:0 .6rem .6rem 0;margin:.7rem 0;padding:.5rem .7rem .6rem;background:rgba(255,255,255,.03);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.prose :where(.evidence-sub .ev-tag){color:var(--ev-accent,#f59e0b);display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.03em;margin:0 0 .3rem}
+.prose :where(.evidence-sub ol){margin:.2rem 0 0}
+
+/* Rex Infernus tools block + temple tabs + quote picker */
+.prose :where(.rex-tools){display:flex;gap:.55rem;flex-wrap:wrap;align-items:center;margin:.9rem 0 1.1rem;border:1px dashed rgba(245,158,11,.35);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem}
+.prose :where(.rex-tools-label){color:#fcd34d;font-size:.8rem}
+.prose :where(.rex-tool-link){display:inline-flex;padding:.42rem .65rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d!important;text-decoration:none!important;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
+.prose :where(.rex-tool-link:hover){filter:brightness(1.15)}
+.prose :where(.rex-tabs){display:flex;gap:.4rem;flex-wrap:wrap;margin:.8rem 0 .2rem}
+.prose :where(.rex-tabs h3){border:none!important;background:none!important;padding:0!important;margin:0!important;font-size:1rem}
+.prose :where(.rex-tab){display:inline-block;padding:.5rem .85rem;border:1px solid rgba(255,255,255,.15);border-radius:.55rem;font-size:.9rem;font-weight:700;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04)}
+.prose :where(.rex-panel){display:none;border:1px solid rgba(255,255,255,.1);border-radius:.7rem;padding:.15rem .75rem .55rem;margin-top:.55rem}
+.prose :deep(#rextab-d:checked ~ #rexp-d),.prose :deep(#rextab-n:checked ~ #rexp-n),.prose :deep(#rextab-c:checked ~ #rexp-c),.prose :deep(#rextab-v:checked ~ #rexp-v){display:block}
+.prose :deep(#rextab-d:checked ~ .rex-tabs label[for="rextab-d"]),.prose :deep(#rextab-n:checked ~ .rex-tabs label[for="rextab-n"]),.prose :deep(#rextab-c:checked ~ .rex-tabs label[for="rextab-c"]),.prose :deep(#rextab-v:checked ~ .rex-tabs label[for="rextab-v"]){background:#f59e0b;color:#1b1204;border-color:#f59e0b}
+.prose :where(.rex-phase){border-left:3px solid var(--pc,#f59e0b);background:rgba(255,255,255,.03);border-radius:.6rem;padding:.55rem .8rem .6rem;margin:.75rem 0}
+.prose :where(.rex-phase-head){color:var(--pc,#f59e0b);font-weight:800;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .35rem}
+.prose :where(.rex-phase ol){margin:.2rem 0 .1rem}
+.prose :where(.rex-ph-note){font-size:.8rem;color:#a89062;margin:.2rem 0 .35rem}
+.prose :where(.rex-qsolver){border:1px dashed rgba(245,158,11,.4);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem;margin:.5rem 0 .7rem}
+.prose :where(.rex-q-tabs){display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
+.prose :where(.rex-q-tabs label){padding:.35rem .75rem;border:1px solid rgba(255,255,255,.15);border-radius:.5rem;font-weight:800;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04);font-size:.85rem}
+.prose :where(.rex-q-res){display:none}
+.prose :deep(#rexq-1:checked ~ #rexq-r1),.prose :deep(#rexq-2:checked ~ #rexq-r2),.prose :deep(#rexq-3:checked ~ #rexq-r3),.prose :deep(#rexq-4:checked ~ #rexq-r4){display:block}
+.prose :deep(#rexq-1:checked ~ .rex-q-tabs label[for="rexq-1"]),.prose :deep(#rexq-2:checked ~ .rex-q-tabs label[for="rexq-2"]),.prose :deep(#rexq-3:checked ~ .rex-q-tabs label[for="rexq-3"]),.prose :deep(#rexq-4:checked ~ .rex-q-tabs label[for="rexq-4"]){background:#f59e0b;color:#1b1204;border-color:#f59e0b}
+.prose :where(.rex-q-quote){font-style:italic;color:#e8d9b0;margin:.1rem 0 .5rem;font-size:.92rem}
+.prose :where(.rex-q-chips){display:flex;gap:.45rem;flex-wrap:wrap}
+.prose :where(.rex-q-chip){padding:.32rem .6rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
+.prose :where(.rex-q-chip.zero){opacity:.45;border-color:rgba(255,255,255,.2);color:#8a7548}
+
+/* Astra helper row (bust books + planet code) */
+.prose :where(.helper-row){display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:1rem 0 1.5rem}
+.prose :where(.book-helper){background:linear-gradient(135deg,#0f172aa6,#f59e0b1f);border:1px solid hsla(0,0%,100%,.14);border-radius:1rem;box-shadow:0 20px 50px #00000059;margin:1rem 0 1.5rem;padding:1rem 1.1rem}
+.prose :where(.book-helper h3){color:#fef3c7;font-size:1.05rem;margin:0 0 .35rem}
+.prose :where(.book-helper p){color:#ffffffd9;margin:0 0 .65rem}
+.prose :where(.book-grid){display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:.5rem}
+.prose :where(.book-grid div){background:#ffffff0a;border:1px solid hsla(0,0%,100%,.12);border-radius:.75rem;box-shadow:inset 0 1px #ffffff0d;padding:.65rem .75rem}
+.prose :where(.book-header){color:#c7d2fe;font-weight:700;margin-bottom:.35rem}
+.prose :where(.book-grid label){align-items:center;color:#ffffffe6;display:flex;font-size:.95rem;gap:.5rem;margin:.25rem 0}
+.prose :where(.book-grid input[type=checkbox]){accent-color:#f59e0b;height:16px;width:16px}
+.prose :where(.bust-output,#bust-output){background:#ffffff0a;border:1px solid hsla(0,0%,100%,.1);border-radius:.75rem;box-shadow:inset 0 1px #ffffff0d;color:#fef3c7;padding:.65rem .75rem}
+.prose :where(.planet-helper){background:linear-gradient(135deg,#0f172aa6,#d946ef1f);border:1px solid hsla(0,0%,100%,.14);border-radius:1rem;box-shadow:0 20px 50px #00000059;margin:1rem 0 1.5rem;padding:1rem 1.05rem}
+.prose :where(.planet-helper h3){color:#fce7f3;font-size:1.05rem;margin:0 0 .35rem}
+.prose :where(.planet-helper p){color:#ffffffd9;margin:0 0 .6rem}
+.prose :where(.planet-list){display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.prose :where(.planet-list button){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.16);border-radius:.65rem;color:#fef3c7;cursor:pointer;padding:.55rem .65rem;text-align:left;transition:border-color .12s ease,background .12s ease,transform .12s ease;width:100%}
+.prose :where(.planet-list button:hover){background:#f59e0b14;border-color:#f59e0b80;transform:translateY(-1px)}
+.prose :where(.planet-output){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.12);border-radius:.75rem;color:#f8fafc;font-weight:700;letter-spacing:.08em;margin-top:.65rem;padding:.65rem .75rem}
+.prose :where(.planet-actions){display:flex;gap:.5rem;margin-top:.5rem}
+.prose :where(.planet-actions button){background:#ffffff12;border:1px solid hsla(0,0%,100%,.16);border-radius:.65rem;color:#fef3c7;cursor:pointer;flex:1;padding:.45rem .6rem;transition:filter .12s ease,transform .12s ease}
+.prose :where(.planet-actions button:hover){filter:brightness(1.05);transform:translateY(-1px)}
+
+/* Kowakujo relic cards */
+.prose :where(.relic-ok){border:1px solid rgba(34,197,94,.35);border-radius:.55rem;background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(255,255,255,.02));color:#bbf7d0;font-size:.74rem;font-weight:700;padding:.35rem .6rem;margin:.4rem 0 .5rem}
+.prose :where(.relic-warn){border:1px solid rgba(239,68,68,.45);border-radius:.55rem;background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(255,255,255,.02));color:#fecaca;font-size:.76rem;font-weight:700;line-height:1.45;padding:.45rem .65rem;margin:.4rem 0 .5rem}
+.prose :where(.relic-meta){font-size:.78rem;color:#ffffffb3;line-height:1.5;margin:.4rem 0 0}
+.prose :where(.relic-meta b){color:#fcd34d}
+.prose :where(.relic-meta.dim){color:#ffffff77}
+.prose :where(.relic-order){display:inline-flex;gap:.35rem;flex-wrap:wrap}
+.prose :where(.relic-order b){border:1px solid rgba(245,158,11,.5);border-radius:.45rem;background:linear-gradient(135deg,rgba(245,158,11,.2),transparent);color:#ffe8bf;font-size:.8rem;padding:.15rem .5rem}
+.prose :where(.relic-trial){margin:.4rem 0 0 1.2rem;padding:0}
+.prose :where(.relic-trial li){font-size:.76rem;margin:.22rem 0;color:#ffffffa6}
 </style>

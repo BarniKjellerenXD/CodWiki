@@ -137,4 +137,307 @@
 
   <AstraPlanetCodeHelper />
 </div>
+
+
+<div class="table-container" style="text-align: center;">
+  <img alt="Astra Malorum bust book titles" class="wiki-img-left wiki-img-with-wrap wiki-img-in-table" src="/images/astraMalorumBookNames.png">
+</div>
+<h2 id="wiki_caltheris_boss_fight_cards">Caltheris Boss Fight — Phase Cards</h2>
+<div class="boss-phases">
+  <div class="boss-card phase1">
+    <div class="boss-title">Phase 1 - Laser and lava orbs</div>
+    <p>Kill zombies while dodging lasers to charge the right Tesla coil; fire the brain beam. Repeat on the left; lava orbs leave burning pools.</p>
+    <ul>
+      <li>Gas flood + poison zombies: climb the stairs when the floor fills.</li>
+    </ul>
+  </div>
+  <div class="boss-card phase2">
+    <div class="boss-title">Phase 2 - Small golem</div>
+    <p>Chases, slaps, throws rocks. Damage until a blue weak point appears, then focus fire while kiting zombies.</p>
+  </div>
+  <div class="boss-card phase3">
+    <div class="boss-title">Phase 3 - Larger golem</div>
+    <p>Same kit plus slam shockwave. Jump as the slam lands to avoid damage.</p>
+  </div>
+  <div class="boss-card phase4">
+    <div class="boss-title">Phase 4 - Empowered golem</div>
+    <p>All attacks hit harder. Rock throw leaves purple electric pools; slam has bigger radius, longer stun—keep moving and jump slams.</p>
+  </div>
+</div>
+<hr>
+<h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
+<div class="glass-card glass-violet"><h2 id="wiki_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Secret song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Find three Mr Peeks headphones around the map:</p>
+<ul>
+<li>At the bottom shelf, left of the exit door in Luminarium </li>
+<li>On a display case in Machina Astralis</li>
+<li>On the ground next to a wall in Mars</li>
+</ul>
+<p>By Avenged Sevenfold</p></div>
+<div class="glass-card glass-violet"><h2 id="wiki_alpha_omega_game_over_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Alpha Omega Game Over Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Find three records:</p>
+<ul>
+<li>Inside a wooden box in Machina Astralis in a box on the middle floor</li>
+<li>At the top of a bookshelf in the Luminarium</li>
+<li>On a wooden sil above a zombie spawner in the Museum</li>
+</ul>
+<p>Bring the records to gramophone in the Luminarium and it will play the Game Over song from Alpha Omega.</p></div>
+<div class="glass-card glass-amber"><h2 id="wiki_friendly_ravager"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title"> Friendly Ravager<span class="g-tag">🦖 Ravager</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Look for glowing eyes in zombie spawners around the map and throw a shiny trinket at them; the Ravager will eat the trinket and later reappear in another zombie spawn. Repeat this process twice more, and on the third time he will jump out, clap his cymbals together, and become a temporary friendly Ravager.</p>
+<hr>
+
+</div><div class="glass-card glass-violet"><h2 class="" id="wiki_magic_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Magic" Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Find three Mr Peeks headphones around the map:</p>
+<ul>
+<li>At the bottom of the bookshelf, left of the door in The Luminarium going to Abyssal Rim.</li>
+<li>In a display case in Machina Astralis.</li>
+<li>On a chair in Observatory Dome.</li>
+</ul>
+<p>"Magic" by Avenged Sevenfold</p></div>
+
+<div class="glass-card glass-red"><h2 class="" id="wiki_echoes_of_the_damned_nikolai"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Echoes of the Damned (Nikolai's Side Quest)<span class="g-tag">⚔️ Quest</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Play as Nikolai Belinski.</li>
+<li>Travel to the lower part of Abyssal Rim, and throw a Molotov Cocktail on the ground near the Ammo Cache. This will create fiery footprints forming a trail. Throw additional Molotov Cocktails and follow the footprints until they reach an inaccessible cave.</li>
+<li>Interact with the toy near the cave to trigger a cutscene.</li>
+<li>After the cutscene, you will be teleported into the cave. Travel through the cave until you find an altar. Interacting with the altar will spawn Ravagers. Kill all the Ravagers until another cutscene is played.</li>
+<li>Once done, you will be back into the map. Loot will drop on the ground including a Molotov Cocktail and a Legendary Echo 12. Completing the side quest also rewards the "Echoes of the Damned" Dark Ops Calling Card.</li>
+</ol></div>
+
+<div class="glass-card glass-green"><h2 class="" id="wiki_the_five_skulls"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">The Five Skulls (Free Random Perk)<span class="g-tag">💀 Skulls</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Get a Pack-a-Punched Weapon.</li>
+<li>Find 5 skulls around the map and shoot each one to light the eye sockets, then interact to pick them up:
+<ul>
+<li>In the courtyard between Crash Site and The Luminarium.</li>
+<li>In one of the displays in Museum Infinitum.</li>
+<li>In a zombie spawn hole next to the Ammo Cache in Stargazer's Courtyard.</li>
+<li>In a display case in Machina Astralis on the left side when coming from Stargazer's Courtyard.</li>
+<li>In a corner behind the brick wall in The Veilwalk on the right side when coming from Archive of Orbis.</li>
+</ul>
+</li>
+<li>Once all the skulls are collected, place them on the cabinet with the large mirror in Machina Astralis.</li>
+<li>All the skulls' eye sockets will shine and activate a Simon Says mini-game. Shoot the skulls in the correct order.</li>
+<li>If done correctly, all the skulls will float and merge into a Random Perk Power-Up.</li>
+</ol></div>
+
+<div class="glass-card glass-amber"><h2 class="" id="wiki_bongo_friendly_ravager"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Bongo" The Friendly Ravager<span class="g-tag">🦖 Bongo</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>When defeating O.S.C.A.R., it will drop a toy robot called "Shiny Trinket" which will replace your Tactical when picked up.</li>
+<li>Find a white dot on the minimap, located outside the playable area and usually a place where zombies will spawn.</li>
+<li>Travel to that location, and you should find a green-eyed Ravager. Throw the Shiny Trinket at it. The Ravager will eat it and hide away.</li>
+<li>Repeat the process two more times.</li>
+<li>On the third time, the Ravager will jump into the map as "Bongo" and play with cymbals before attacking enemies for a few rounds.</li>
+</ol></div>
+
+<div class="glass-card glass-orange"><h2 class="" id="wiki_gramophones_challenges"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Gramophones Challenges (Free Mystery Perks)<span class="g-tag">🎶 Gramophones</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Three gramophones can be found around the map. Each gramophone needs a corresponding vinyl record. While the records are playing, you need to complete a challenge.</p>
+<ul>
+<li><strong>Archive of Orbis</strong> (near Stamin-Up): The record can be found inside a wooden box in the middle floor of Machina Astralis. While the song is playing, kill 5 zombies with equipment. Once the music stops, Equipment and a Mystery Perk can will drop.</li>
+<li><strong>The Luminarium</strong> (near Mr Peeks headphone): The record can be found at the top of a bookshelf, next to one of the grandfather clocks. While the song is playing, kill 15 zombies with Field Upgrades. Once the music stops, Essence and a Mystery Perk can will drop.</li>
+<li><strong>Museum Infinitum</strong> (near Speed Cola): The record can be found on the capital of the wooden pillar above a zombie window. While the song is playing, kill 5 zombies with melee weapons. Once the music stops, Salvage and a Mystery Perk can will drop.</li>
+</ul></div>
+
+<div class="glass-card glass-green"><h2 class="" id="wiki_the_twins"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">The Twins (Free Cryo Freeze and loot)<span class="g-tag">🧊 Twins</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>During a special round, travel to Museum Infinitum and interact with the left-most display cabinet beneath the painting of a mansion/castle.</li>
+<li>During the next rounds, weird noises will play from one of the displays in the museum, one per round and four times in total. Interact with each display.</li>
+<li>If done correctly, the ghost twins will appear somewhere around the map. They can be found in three states: dancing which plays music; drawing with chalk on the ground; standing holding hands. The Twins can appear in:
+<ul>
+<li>Crash Site: Behind Ol' Tessie.</li>
+<li>The Luminarium: Inside the Stellar Dissector or in a corner outside on the Abyssal Rim side.</li>
+<li>Abyssal Rim: Next to Wisp Tea.</li>
+<li>Observatory Dome: In a corner near the X9 Maverick wall-buy.</li>
+<li>The Veilwalk: Next to the door leading to Observatory Dome.</li>
+<li>Machina Astralis: On the upper floor or in a corner near the door leading to Scholar's Way.</li>
+<li>Museum Infinitum: In a corner near the door leading to Scholar's Way.</li>
+</ul>
+</li>
+<li>Once you come across the Twins, they will disappear leaving loot behind including Salvage and Equipment and a free Cryo Freeze Ammo Mod the first time they are encountered. The Twins will reappear every subsequent round giving additional loot.</li>
+</ol></div>
+
+<div class="glass-card glass-gold"><h2 class="" id="wiki_time_dilation"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Time Dilation<span class="g-tag">⏳ Dilation</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Rapidly melee 5 grandfather clocks found around the map:
+<ul>
+<li>One in The Luminarium, next to the bookshelves.</li>
+<li>One in Museum Infinitum, near Speed Cola.</li>
+<li>Two in Machina Astralis: one on the bottom floor, one on the middle floor.</li>
+<li>One in Archive of Orbis, next to Stamin-Up.</li>
+</ul>
+</li>
+<li>If done correctly, all the enemies will move slowly for 60 seconds. This can be repeated once per round.</li>
+</ol></div>
+
+<div class="glass-card glass-green"><h2 class="" id="wiki_wisp_orbs"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wisp Orbs (Free Ray Gun)<span class="g-tag">🟢 Wisp Orbs</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>There are 9 lanterns against walls around the map:
+<ul>
+<li>Two in Crash Site.</li>
+<li>Three in the courtyard in front of The Luminarium.</li>
+<li>Two in the back of The Luminarium.</li>
+<li>Two in Scholar's Way.</li>
+</ul>
+</li>
+<li>Find the lantern that is shining with a white wisp. Aim at the lantern to obtain the wisp inside. The wisp will now orbit around you. Using your melee button will throw the wisp before it comes back to you. When thrown at zombies, the wisp will usually kill 1 or 2 zombies. Killing zombies with the wisp does not give any Essence.</li>
+<li>To upgrade the wisp, place it inside all the 9 lanterns by throwing it then getting it back by aiming at the lantern.</li>
+<li>Once the wisp is in the last lantern, pass the round. If done correctly, the wisp will now turn yellow/orange. The wisps will also be available from any lantern.</li>
+<li>You can collect up to 5 wisps at a time, which will orbit around you. Each upgraded wisp can kill about 5 zombies.</li>
+<li>Starting at Round 16, the rocket from Ashes of the Damned will be seen floating in front of Saturn. Hit the rocket by throwing an upgraded wisp. If done correctly, the wisp will come back and drop a Ray Gun.</li>
+<li>Additionally, aiming at the rocket long enough will play the song "Once In A Blown Up Moon" by Brian Tuey.</li>
+</ol></div>
+
+<div class="glass-card glass-orange"><h2 class="" id="wiki_dg2_turret_upgrade"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">DG-2 Turret Upgrade<span class="g-tag">🔫 DG-2</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>In the area near Wisp Tea machine, an asteroid can be located nearby. Throw a grenade at the asteroid so that its explosion will knock the asteroid closer to you.</li>
+<li>Sprint and wall jump to the left side of the asteroid. If done correctly, you will float into space and travel back to the Crash Site. As you travel, the DG-2 Turret will spawn; interact with it as you pass to grab it. While you travel a new mix of "Pareidolia" by Brian Tuey will play.</li>
+<li>Once back at the Crash Site, install the turret onto Ol' Tessie. The turret can be used freely and is effective against O.S.C.A.R.</li>
+</ol></div>
+
+<div class="glass-card glass-violet"><h2 class="" id="wiki_pareidolia_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Pareidolia Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Reach Mars and activate the portal.</li>
+<li>Aim at the giant statue head on the right side of the stairs, when viewed from the portal entrance.</li>
+</ol>
+<p>This will play a remastered version of Pareidolia.</p></div>
+
+<div class="glass-card glass-red"><h2 class="" id="wiki_skull_jumpscare"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Skull Jumpscare<span class="g-tag">💀 Jumpscare</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ol>
+<li>Move the telescope as part of the steps to unlock the LGM-1.</li>
+<li>Interact with the binoculars on the left side of the organ and bring the cursor to the small-sized skull located at RA 2h 23m and DEC 42° 21'.</li>
+<li>If done correctly, a short skull jumpscare should be triggered before forcing you out of the screen. The skull is gone afterwards.</li>
+</ol></div>
+
+<div class="glass-card glass-gold"><h2 id="wiki_relics"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Relics<span class="g-tag">💎 Relics</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p>Six Relics modify Cursed Mode in Astra Malorum (two per tier). Effects and unlock steps are still undiscovered; use the placeholders below until they are found.</p>
+<p>The Relics are divided into three groups: <strong>Grim</strong>, <strong>Sinister</strong>, and <strong>Wicked</strong>. Each fills the Cursed Tier bar differently (Grim ≈ 1, Sinister ≈ 2, Wicked ≈ 3). Mix combinations to reach the tier you want:</p>
+<ul class="relic-tiers">
+<li><strong>Tier I</strong>: Any 3 <span class="relic-chip grim">Grim</span> — Unlocks Golden Armor (45,000 Essence)</li>
+<li><strong>Tier II</strong>: 2 <span class="relic-chip sinister">Sinister</span> + 2 <span class="relic-chip grim">Grim</span> (example) — Unlocks Ultra Rarity</li>
+<li><strong>Tier III</strong>: 3 <span class="relic-chip grim">Grim</span> + 2 <span class="relic-chip sinister">Sinister</span> + 1 <span class="relic-chip wicked">Wicked</span> (example) — Unlocks Pack-a-Punch IV (100,000 Essence)</li>
+</ul>
+<p class="relic-note">Higher tiers just need the total difficulty value to match the target fill; swap relics as you discover them.</p>
+<div class="relic-grid">
+  <div class="relic-section">
+    <h2 class="relic-heading grim">Grim Relics</h2>
+    <div class="relic-cards">
+            <div class="relic-card grim">
+        <div class="relic-title">GONG <span class="mini-tag">Field Upgrade starts charged, but can only be charged by full power.</span></div>
+        <ol class="steps">
+          <li>Have Tesla Storm as your Field Upgrade, and at least one weapon with Dead Wire.</li>
+          <li>Starting at Round 20, and every round afterwards, a zombie will spawn with a lightning rod embedded into its body.</li>
+          <li>Around the map, there will be three doorways with a light bulb above them: The Luminarium (near the brain jar); Observatory Dome (near the room with the portal); and Archive of Orbis (next to the portal room).</li>
+          <li>Bring the zombie with the lightning rod below the bulb and activate Tesla Storm. Then shoot the zombie to electrocute it with Dead Wire. If done correctly, the electricity will travel to the light bulb.</li>
+          <li>Once all three are done, look for the green portal outside between Observatory Dome and Stargazer's Courtyard.</li>
+          <li>Survive 4 waves where zombies can only be damaged with electric damage. Klaus Cores will also spawn there.</li>
+        </ol>
+      </div>
+            <div class="relic-card grim">
+        <div class="relic-title">SEED <span class="mini-tag">Mystery Box is disabled.</span></div>
+        <ol class="steps">
+          <li>Reach Round 20.</li>
+          <li>A pistol will spawn on the ground somewhere on the map.</li>
+          <li>Pick the pistol and kill the exact number of enemies as the round you are in (Round 21 = 21 kills, etc). Once it is done, pass the round using any other weapon. Otherwise, start again the next round. The pistol can be Pack-a-Punched and its rarity can be upgraded.</li>
+          <li>Travel to Observatory Dome and interact with the green portal to start the Relic Trial.</li>
+          <li>Survive 4 waves with only a Pack-a-Punched pistol.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading sinister">Sinister Relics</h2>
+    <div class="relic-cards">
+            <div class="relic-card sinister">
+        <div class="relic-title">SPIDER FANG <span class="mini-tag">Perks costs at machines never decrease.</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier I.</li>
+          <li>Reach Round 40 and defeat O.S.C.A.R. with a melee weapon while Wisp Tea spirit is attacking it. O.S.C.A.R. can be damaged with other way but the killing blow needs to be done with a melee.</li>
+          <li>Travel to Archive of Orbis and interact with the yellow portal to start the Relic Trial.</li>
+          <li>Survive 5 waves while all perks are disabled.</li>
+        </ol>
+      </div>
+            <div class="relic-card sinister">
+        <div class="relic-title">MATRYOSHKA DOLL <span class="mini-tag">Salvage drop rate halved.</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier I.</li>
+          <li>Open the portal to Mars and reach Round 40.</li>
+          <li>Place a C4 on each of the three gut piles found on the central platform on Mars.</li>
+          <li>Gather a group of zombies in the middle of the platform and detonate the C4. If done correctly, Mr Peeks will be heard laughing.</li>
+          <li>Travel to the side room of Machina Astralis and interact with the yellow portal to start the Relic Trial.</li>
+          <li>Survive 5 waves while zombies and HVTs can only be killed with Field Upgrades.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="relic-section">
+    <h2 class="relic-heading wicked">Wicked Relics</h2>
+    <div class="relic-cards">
+            <div class="relic-card wicked">
+        <div class="relic-title">GOLDEN SPORK <span class="mini-tag">Enemies deal double damage.</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier II.</li>
+          <li>Open the portal to Mars and reach Round 60.</li>
+          <li>Get a Mangler Cannon and travel to Mars. Shoot the portal with the Mangler Cannon, then teleport back to Machina Astralis.</li>
+          <li>After a few seconds, the shot from the Mangler Cannon will leave the portal going towards Archive of Orbis. You need to gather a group of zombies inside the red circle on the ground near the portal, using Decoys for example.</li>
+          <li>If enough zombies were killed, a red portal will appear on a wall at Crash Site. Interact with it to start the Relic Trial.</li>
+          <li>Survive 6 waves while zombies and HVTs only take damage from hip-fire.</li>
+        </ol>
+      </div>
+            <div class="relic-card wicked">
+        <div class="relic-title">CIVIL PROTECTOR HEAD <span class="mini-tag">Perk decay — every 100 kills you lose a perk.</span></div>
+        <ol class="steps">
+          <li>Activate Cursed Mode Tier II.</li>
+          <li>Reach Round 60 and make sure to have PhD Flopper.</li>
+          <li>Get Energy Mine and trigger a mine next to Ol' Tessie. If done correctly, the headlights will flash three times signaling the start of a sequence. Afterwards each of the headlights and brake lights will light up. This will be the order for the chandeliers in Museum Infinitum.</li>
+          <li>The two chandeliers near the doorway to Stargazer's Courtyard are the headlights, while the two chandeliers near the doorway to Crash Site are the brake lights.</li>
+          <li>Wall jump to reach the chandeliers to put out the candles, in the order shown by Ol' Tessie.</li>
+          <li>Travel to Crash Site and interact with the red portal to start the Relic Trial.</li>
+          <li>Survive 6 waves by killing HVTs while all zombies are turned into sprinters. <a href="/tools/astra-harmonic-organ" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 organ order helper</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</div><h1 id="wiki_wall.2Dbuys_and_perk.2Da.2Dcolas">Wall-Buys and Perk-a-Colas</h1>
+<div class="glass-card glass-gold"><h2 id="wiki_wall.2Dbuys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<div class="table-container"><table style="width: 421px; table-layout: fixed; border-width: 1px;" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Jäger 45</td><td style="text-align: center; border-width: 1px; width: 189px;">Crash Site</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">M34 Novaline</td><td style="text-align: center; border-width: 1px; width: 189px;">The Luminarium</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Carbon 57</td><td style="text-align: center; border-width: 1px; width: 189px;">Museum Infinitum</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Akita</td><td style="text-align: center; border-width: 1px; width: 189px;">Machina Astralis</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Shadow SK</td><td style="text-align: center; border-width: 1px; width: 189px;">Abyssal Rim</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">XM325</td><td style="text-align: center; border-width: 1px; width: 189px;">Stargazer's Courtyard</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">X9 Maverick</td><td style="text-align: center; border-width: 1px; width: 189px;">Observatory Dome</td></tr>
+</tbody>
+</table></div></div>
+<div class="glass-card glass-green"><h2 id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<p><em>Note: Der Wunderfizz appears after purchasing or acquiring 4 Perk-a-Colas.</em></p>
+<div class="table-container"><table style="width: 136px; border-width: 1px; table-layout: fixed;" border="1"><colgroup><col><col></colgroup>
+<tbody>
+<tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Juggernog</td><td style="text-align: center; border-width: 1px; width: 189px;">The Luminarium</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Quick Revive</td><td style="text-align: center; border-width: 1px; width: 189px;">Crash Site</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Mule Kick</td><td style="text-align: center; border-width: 1px; width: 189px;">The Veilwalk</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Wisp Tea</td><td style="text-align: center; border-width: 1px; width: 189px;">Abyssal Rim</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Speed Cola</td><td style="text-align: center; border-width: 1px; width: 189px;">Museum Infinitum</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Stamin-Up</td><td style="text-align: center; border-width: 1px; width: 189px;">Archive of Orbis</td></tr> <tr style="height: 37.8px;"><td style="width: 124px; border-width: 1px;">Der Wunderfizz</td><td style="text-align: center; border-width: 1px; width: 189px;">Stargazer's Courtyard</td></tr>
+</tbody>
+</table></div>
+<hr>
+</div><h1 id="wiki_miscellaneous_features">Miscellaneous Features</h1>
+<div class="glass-card glass-amber"><h2 id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Machina Astralis</li>
+<li>Abyssal Rim</li>
+<li>Stargazer's Courtyard</li>
+</ul></div>
+<div class="glass-card glass-amber"><h2 id="wiki_chompy_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Chompy Locations<span class="g-tag">🧟 Chompy</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>TBD</li>
+</ul></div>
+<div class="glass-card glass-red"><h2 id="wiki_traps_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Traps Locations<span class="g-tag">🪤 Traps</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li><strong>Stellar Dissector</strong> — The Luminarium</li>
+<li><strong>Apogee Annihilator</strong> — Stargazer's Courtyard</li>
+</ul></div>
+<div class="glass-card glass-orange"><h2 id="wiki_arsenal_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Arsenal Locations<span class="g-tag">🎯 Arsenal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>The Luminarium</li>
+<li>Machina Astralis</li>
+</ul></div>
+<div class="glass-card glass-amber"><h2 id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title"> Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<ul>
+<li>Museum Infinitum</li>
+<li>Abyssal Rim</li>
+</ul></div>
 </template>

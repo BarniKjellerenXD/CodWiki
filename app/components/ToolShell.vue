@@ -26,7 +26,10 @@ defineProps<{
 }>()
 </script>
 
-<style scoped>
+<style>
+/* Unscoped: slot content belongs to page scope, so shared tool styles
+   must not carry ToolShell's scope attribute. Everything is namespaced
+   under .tool-page to avoid leaking into guides. */
 .tool-page {
   --bg: #0a0a0c;
   --gold: #f59e0b;

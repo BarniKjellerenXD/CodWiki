@@ -26,8 +26,9 @@ function transformHtml(raw, slug) {
   const re = /<div class="md wiki">([\s\S]*?)(?=<div class="md wiki">|$)/g
   let m
   while ((m = re.exec(html)) !== null) {
-    // Drop trailing Reddit chrome (widgets script etc.) captured inside a block
-    let inner = m[1].replace(/<script[\s\S]*$/g, '')
+    // Drop trailing Reddit chrome (widgets script etc.) captured inside a block.
+    // Only chrome — an inline <script> would be mid-content and must NOT truncate it.
+    let inner = m[1].replace(/<script[^>]*(?:src=|nonce)[^>]*>[\s\S]*$/, '')
     // Drop trailing <hr> + the block's own closing </div>
     inner = inner.replace(/(?:\s|<\/div>|<hr>)*$/, '')
     // The content may end with a `</div>` that closed the .md.wiki wrapper;
@@ -45,14 +46,17 @@ function transformHtml(raw, slug) {
   // Strip embedded style blocks (moved into GuideArticle / per-page styles)
   html = html.replace(/<style>[\s\S]*?<\/style>/g, '')
 
-  // Strip Reddit widgets script + any html/head wrappers
-  html = html.replace(/<script[\s\S]*?<\/script>/g, '')
+  // Strip Reddit widgets script (chrome) — inline scripts are handled separately
+  html = html.replace(/<script[^>]*(?:src=|nonce)[^>]*>\s*<\/script>/g, '')
 
   // Drop the Reddit TOC block if present (we render our own sidebar)
   html = html.replace(/<div class="toc">[\s\S]*?<\/div>\s*<\/div>/g, '')
 
   // SC markers
   html = html.replace(/<!--\s*SC_(OFF|ON)\s*-->/g, '')
+
+  // Drop inline scripts (interactive helpers are replaced by Vue components below)
+  html = html.replace(/<script>[\s\S]*?<\/script>/g, '')
 
   // Internal tool links: /tools/x.html -> /tools/x (now Vue routes)
   html = html.replace(/href="\/tools\/([\w-]+)\.html"/g, 'href="/tools/$1"')
