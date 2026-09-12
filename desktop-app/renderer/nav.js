@@ -10,23 +10,23 @@ const NAV = [
   { id: 'totenreich', section: 'Guides', label: 'Totenreich', icon: '💀', url: '/guides/totenreich', thumb: '/images/totenreich-thumb.jpg', accel: 'Ctrl+5' },
   { id: 'kowakujo', section: 'Guides', label: 'Kowakujō', icon: '⛩️', url: '/guides/kowakujo', thumb: '/images/kowakujo-thumb.jpg', accel: 'Ctrl+6' },
   // ---- tools: kowakujo ----
-  { id: 'kowakujo-pestle', section: 'Kowakujō', label: 'Pestle Scroll Solver', icon: '📜', url: '/tools/kowakujo-pestle-solver.html', accel: 'Ctrl+7' },
-  { id: 'kowakujo-clock', section: 'Kowakujō', label: 'Clock & Flags Solver', icon: '🕐', url: '/tools/kowakujo-clock-solver.html', accel: 'Ctrl+8' },
-  { id: 'kowakujo-murder', section: 'Kowakujō', label: 'Murder Mystery Solver', icon: '🗡️', url: '/tools/kowakujo-murder-solver.html', accel: 'Ctrl+Shift+1' },
+  { id: 'kowakujo-pestle', section: 'Kowakujō', label: 'Pestle Scroll Solver', icon: '📜', url: '/tools/kowakujo-pestle-solver', accel: 'Ctrl+7' },
+  { id: 'kowakujo-clock', section: 'Kowakujō', label: 'Clock & Flags Solver', icon: '🕐', url: '/tools/kowakujo-clock-solver', accel: 'Ctrl+8' },
+  { id: 'kowakujo-murder', section: 'Kowakujō', label: 'Murder Mystery Solver', icon: '🗡️', url: '/tools/kowakujo-murder-solver', accel: 'Ctrl+Shift+1' },
   // ---- tools: rex infernus ----
-  { id: 'rex-ring', section: 'Rex Infernus', label: 'Temple Ring Solver', icon: '🔄', url: '/tools/rex-infernus-ring-solver.html', accel: 'Ctrl+9' },
-  { id: 'rex-pillars', section: 'Rex Infernus', label: 'Pillars & Levers', icon: '🏛️', url: '/tools/rex-infernus-pillars.html', accel: 'Ctrl+Shift+2' },
-  { id: 'rex-house-symbols', section: 'Rex Infernus', label: 'House Symbols Tracker', icon: '🏠', url: '/tools/rex-infernus-house-symbols.html', accel: 'Ctrl+Shift+3' },
+  { id: 'rex-ring', section: 'Rex Infernus', label: 'Temple Ring Solver', icon: '🔄', url: '/tools/rex-infernus-ring-solver', accel: 'Ctrl+9' },
+  { id: 'rex-pillars', section: 'Rex Infernus', label: 'Pillars & Levers', icon: '🏛️', url: '/tools/rex-infernus-pillars', accel: 'Ctrl+Shift+2' },
+  { id: 'rex-house-symbols', section: 'Rex Infernus', label: 'House Symbols Tracker', icon: '🏠', url: '/tools/rex-infernus-house-symbols', accel: 'Ctrl+Shift+3' },
   // ---- tools: totenreich ----
-  { id: 'totenreich-uranium', section: 'Totenreich', label: 'Uranium Pincers Solver', icon: '☢️', url: '/tools/totenreich-uranium-pincers.html', accel: 'Ctrl+Shift+4' },
-  { id: 'totenreich-wunderbarrage', section: 'Totenreich', label: 'Wunderbarrage Codes', icon: '📡', url: '/tools/totenreich-wunderbarrage.html', accel: 'Ctrl+Shift+5' },
+  { id: 'totenreich-uranium', section: 'Totenreich', label: 'Uranium Pincers Solver', icon: '☢️', url: '/tools/totenreich-uranium-pincers', accel: 'Ctrl+Shift+4' },
+  { id: 'totenreich-wunderbarrage', section: 'Totenreich', label: 'Wunderbarrage Codes', icon: '📡', url: '/tools/totenreich-wunderbarrage', accel: 'Ctrl+Shift+5' },
   // ---- tools: ashes ----
-  { id: 'ashes-rocket-launch', section: 'Ashes of the Damned', label: 'Rocket Launch Codes', icon: '🚀', url: '/tools/ashes-rocket-launch.html', accel: 'Ctrl+Shift+6' },
-  { id: 'ashes-serum', section: 'Ashes of the Damned', label: 'Serum Ingredient Order', icon: '🧪', url: '/tools/ashes-serum.html', accel: 'Ctrl+Shift+7' },
+  { id: 'ashes-rocket-launch', section: 'Ashes of the Damned', label: 'Rocket Launch Codes', icon: '🚀', url: '/tools/ashes-rocket-launch', accel: 'Ctrl+Shift+6' },
+  { id: 'ashes-serum', section: 'Ashes of the Damned', label: 'Serum Ingredient Order', icon: '🧪', url: '/tools/ashes-serum', accel: 'Ctrl+Shift+7' },
   // ---- tools: astra ----
-  { id: 'astra-mars-code', section: 'Astra Malorum', label: 'Mars Code', icon: '🪐', url: '/tools/astra-mars-code.html', accel: 'Ctrl+Shift+8' },
-  { id: 'astra-organ', section: 'Astra Malorum', label: 'Harmonic Organ Order', icon: '🎹', url: '/tools/astra-harmonic-organ.html', accel: 'Ctrl+Shift+9' },
-  { id: 'astra-planets', section: 'Astra Malorum', label: 'Planet Sheets Map', icon: '🧭', url: '/tools/astra-planet-sheets.html', accel: 'Ctrl+Shift+0' }
+  { id: 'astra-mars-code', section: 'Astra Malorum', label: 'Mars Code', icon: '🪐', url: '/tools/astra-mars-code', accel: 'Ctrl+Shift+8' },
+  { id: 'astra-organ', section: 'Astra Malorum', label: 'Harmonic Organ Order', icon: '🎹', url: '/tools/astra-harmonic-organ', accel: 'Ctrl+Shift+9' },
+  { id: 'astra-planets', section: 'Astra Malorum', label: 'Planet Sheets Map', icon: '🧭', url: '/tools/astra-planet-sheets', accel: 'Ctrl+Shift+0' }
 ]
 
 // System-wide actions (non-navigation), also remappable in settings.

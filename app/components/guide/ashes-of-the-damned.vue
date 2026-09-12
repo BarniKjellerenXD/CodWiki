@@ -1,188 +1,8 @@
-<div class="main-container gap-lg w-full flex-1 grid place-content-between grid-cols-[minmax(0,1fr)] fixed-sidebar s:[&amp;.fixed-sidebar]:grid-cols-[minmax(0,756px)_minmax(0,316px)] s:[&amp;.flex-sidebar]:grid-cols-[minmax(0,756px)_auto]"><main class="main w-full min-w-0" id="main-content">
-    <shreddit-feed-error-banner> </shreddit-feed-error-banner>
-    <div class="flex justify-between flex-wrap mb-xs mt-xs contents">
-      <div class="s:hidden">
-        
-      </div>
-      
-    </div>
-  <div class="flex flex-col ">
-      <shreddit-title title="ashes-of-the-damned"></shreddit-title>
-      <div id="subreddit-wiki-header" class="flex items-start justify-between gap-md  flex-col bg-neutral-background pb-[20px] border-0 border-b-sm  border-solid border-neutral-border-weak  mb-[0px] items-start wiki-pilot-communities rounded-t-md ps-0 pe-0 pt-2xl sticky-header ">
-    
-        
-                <div class="flex items-end w-100">
-                  <subreddit-wiki-toc></subreddit-wiki-toc>
-                  <div class="flex w-100 flex-col">
-                    <div class="flex justify-between gap-x-sm">
-                      
-    <div class="flex items-center gap-xs">
-      <h1 class="font-bold text-32 m-0 text-neutral-content-strong" id="wiki-page-title">
-        ashes-of-the-damned
-      </h1>
-      <rpl-dialog-trigger dialog-id="wiki-update-page-title-modal-dialog">
-        
-      </rpl-dialog-trigger>
-    </div>
-  
-                       <div class="flex flex-row gap-x-sm items-center">
-    
-          <faceplate-tooltip appearance="inverted" position="bottom"><span slot="trigger" class="text-neutral-content">
-              <a rpl="" class="w-xl h-xl
-button-small px-[var(--rem10)]
-button-secondary
-
-
-
-items-center justify-center
-button inline-flex " href="/r/CODZombies/wiki/revisions/ashes-of-the-damned/" type="button"><span class="flex items-center justify-center">
-      
-      <span class="flex items-center gap-xs"><svg rpl="" fill="currentColor" height="16" icon-name="clock" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 2.8c3.97 0 7.2 3.23 7.2 7.2s-3.23 7.2-7.2 7.2-7.2-3.23-7.2-7.2S6.03 2.8 10 2.8zM10 1a9 9 0 10.001 18.001A9 9 0 0010 1zm.9 8.63V4.68H9.1V10c0 .24.1.47.26.64l3.76 3.76 1.27-1.27-3.49-3.5z"></path>
-    </svg></span>
-    </span>
-    </a>
-            </span>
-            View page history
-          </faceplate-tooltip>
-          
-          <rpl-dialog-trigger dialog-id="wiki-edit-restricted-modal-id">
-                <faceplate-tooltip appearance="inverted" position="bottom"><span slot="trigger" class="text-neutral-content">
-          <a rpl="" class="hover:no-underline
-button-small px-[var(--rem10)]
-button-secondary
-
-
-
-items-center justify-center
-button inline-flex " aria-haspopup="dialog" aria-expanded="false"><span class="flex items-center justify-center">
-      <span class="flex me-xs"><svg rpl="" fill="currentColor" height="16" icon-name="lock" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15.995 8.168h-.429V6.61A5.573 5.573 0 0010 1.044 5.573 5.573 0 004.434 6.61v1.557h-.429A2.005 2.005 0 002 10.173v3.692a5.054 5.054 0 005.054 5.054h5.892A5.054 5.054 0 0018 13.865v-3.692a2.005 2.005 0 00-2.005-2.005zM6.233 6.61A3.771 3.771 0 0110 2.843a3.771 3.771 0 013.767 3.767v1.557H6.234V6.61h-.001zm9.967 7.254a3.258 3.258 0 01-3.254 3.254H7.054A3.258 3.258 0 013.8 13.864v-3.692c0-.113.092-.205.205-.205h11.991c.113 0 .205.092.205.205l-.001 3.692zm-7.1-1.676h1.8v2.809H9.1v-2.81z"></path>
-    </svg></span>
-      <span class="flex items-center gap-xs">Editing Locked</span>
-    </span>
-    </a>
-          </span>
-                  Permission needed for editing
-                </faceplate-tooltip>
-                </rpl-dialog-trigger>
-                <rpl-dialog size="large" dialog-id="wiki-edit-restricted-modal-id" dialog-classname="" label="" variant="default" style="display: none;">
-    <template>
-    
-
-        <rpl-modal-card auto-close="true" aria-label="Editing locked" class="m-auto m:max-w-[380px]  min-h-[180px] max-w-[96%]"><div slot="title">
-      <div class="self-stretch text-zinc-900 text-18 font-bold leading-7 tracking-tight">
-        <h2 id="title" aria-live="polite" class="m-0 text-neutral-content-strong" aria-label="heading">Editing Locked</h2>
-      </div>
-    </div>
-    <div class="flex flex-col justify-center">
-        <p class="text-14">
-          You don't have permission to edit this page. Learn more about editing eligibility in Reddit’s Help Center.
-        </p>
-      </div>
-      <div slot="secondary-button" class="z-10">
-      <a rpl="" aria-label="Close Community List Modal" class="
-button-small px-[var(--rem10)]
-button-secondary
-
-
-
-items-center justify-center
-button inline-flex " href="https://support.reddithelp.com/hc/articles/15484260038420-Reddit-wikis-for-your-communities" target="_blank"><span class="flex items-center justify-center">
-      
-      <span class="flex items-center gap-xs">Learn More</span>
-    </span>
-    </a>
-    </div>
-    <div slot="close-button" class="z-10">
-      <button rpl="" aria-label="Close Community List Modal" class="
-button-small px-[var(--rem6)]
-button-secondary
-
-
-icon
-items-center justify-center
-button inline-flex ">
-      <span class="flex items-center justify-center">
-      <span class="flex"><svg rpl="" fill="currentColor" height="16" icon-name="close" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-      <path d="M11.273 10l5.363-5.363a.9.9 0 10-1.273-1.273L10 8.727 4.637 3.364a.9.9 0 10-1.273 1.273L8.727 10l-5.363 5.363a.9.9 0 101.274 1.273L10 11.273l5.363 5.363a.897.897 0 001.274 0 .9.9 0 000-1.273L11.275 10h-.002z"></path>
-    </svg></span>
-      
-    </span>
-    
-    </button>
-    </div></rpl-modal-card>
-      
-    </template>
-  </rpl-dialog>
-        
-    
-  </div>
-                    </div>
-                  </div>
-                </div>
-              
-        
-      </div>
-      <div class="ps-0 pe-0 pt-sm pb-sm border-t-0 border-e-0 border-s-0 border-b-sm  border-solid border-neutral-border-weak flex justify-between items-center gap-sm">
-    <div class="flex justify-between w-100 ">
-      <div>
-    <span class="text-neutral-content-weak text-12">
-      <faceplate-number number="34442" pretty=""><!---->34K</faceplate-number> views
-       • 
-      <faceplate-number number="105" pretty=""><!---->105</faceplate-number> edits
-       • 
-      latest by <a rpl="" class=" a cursor-pointer
-  
-  
-  
-  no-visited
-  hover:underline
-  " href="/user/Kalinine/">Kalinine</a>
-      <faceplate-timeago ts="2025-11-29T19:36:28.000000+0000"><!----> <time datetime="2025-11-29T19:36:28.000Z" title="Saturday, November 29, 2025 at 8:36:28 PM GMT+1"><!--?lit$788827535$-->17 hours ago</time> </faceplate-timeago>
-    </span>
-  </div>
-    </div>
-  </div>
-      <div class=" wiki-content rounded-b-[16px] wiki-pilot-communities  [&amp;_a]:underline"><div class="rounded-2 mb-sm bg-neutral-background-container-strong"></div>
-    <div class="md wiki">
+<!-- AUTO-GENERATED by scripts/convert-guides.mjs from public/guides/ashes-of-the-damned.html -->
+<template>
 <p class="g-hint">💡 Tap a section title to collapse or expand it.</p>
 
-<style>
-/* ══════════ Liquid Glass System ══════════ */
-.glass-card{position:relative;overflow:hidden;border-radius:1.05rem;padding:1.05rem 1.2rem 1.15rem;margin:1.15rem 0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.16));backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 16px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.10),inset 0 -1px 0 rgba(0,0,0,.28)}
-.glass-card::before{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(28px);opacity:.5;width:240px;height:240px;top:-90px;left:-70px;background:radial-gradient(circle,var(--glass-glow,rgba(245,158,11,.30)),transparent 65%)}
-.glass-card::after{content:"";position:absolute;pointer-events:none;top:0;left:8%;right:8%;height:1px;border-radius:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
-.glass-card h2{border:none!important;margin:.05rem 0 .6rem;padding-left:0!important;font-size:1.22rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
-.glass-card h2 .g-tag{border:1px solid var(--glass-accent,#f59e0b);border-radius:.45rem;background:linear-gradient(135deg,var(--glass-accent,#f59e0b)26,transparent);color:var(--glass-accent,#f59e0b);font-size:.68rem;font-weight:800;letter-spacing:.05em;line-height:1;padding:.28rem .5rem;text-transform:uppercase;white-space:nowrap}
-.glass-card h3{border-left:3px solid var(--glass-accent,#f59e0b);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border-radius:.65rem;padding:.55rem .75rem;margin:1rem 0 .5rem}
-.glass-card>ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.35rem 1rem}
-.glass-card ul ul{display:block}
-.glass-card ol{margin:.5rem 0 .25rem}
-.glass-card li{margin:.3rem 0}
-.glass-gold{--glass-accent:#f59e0b;--glass-glow:rgba(245,158,11,.30)}
-.glass-amber{--glass-accent:#fbbf24;--glass-glow:rgba(251,191,36,.26)}
-.glass-orange{--glass-accent:#f97316;--glass-glow:rgba(249,115,22,.28)}
-.glass-green{--glass-accent:#22c55e;--glass-glow:rgba(34,197,94,.22)}
-.glass-violet{--glass-accent:#a855f7;--glass-glow:rgba(168,85,247,.24)}
-.glass-red{--glass-accent:#ef4444;--glass-glow:rgba(239,68,68,.26)}
-.glass-boss{border-color:rgba(239,68,68,.38);box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 26px rgba(239,68,68,.14),inset 0 1px 0 rgba(255,255,255,.10)}
-.glass-quest{padding:1.2rem 1.3rem 1.3rem}
-.glass-quest ol>li{margin:.65rem 0}
-/* unify existing panels with the glass language */
-.evidence-card,.cheat-block{backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
-.evidence-card{box-shadow:0 14px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
 
-/* ══════════ Collapsible sections ══════════ */
-.g-toggle{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;cursor:pointer;flex:1;min-width:0;width:100%}
-.g-toggle:hover{filter:brightness(1.1)}
-.g-cb{position:absolute;opacity:0;pointer-events:none;width:0;height:0}
-.g-title{display:contents}
-.g-chev{margin-left:auto;color:var(--glass-accent,#f59e0b);font-size:.75rem;transition:transform .22s;flex:none;opacity:.85}
-.g-chev::after{content:"\25BE"}
-.g-cb:checked ~ .g-chev::after{content:"\25B8"}
-.glass-card:has(> h2 .g-cb:checked) > *:not(h2),.evidence-card:has(> h3 .g-cb:checked) > *:not(h3){display:none}
-.g-hint{font-size:.78rem;color:#fcd34d99;border:1px dashed rgba(245,158,11,.35);border-radius:.6rem;padding:.45rem .7rem;margin:.6rem 0 .2rem;background:rgba(245,158,11,.06)}</style>
 
 <h1 id="wiki_ashes_of_the_damned_.7C_complete_map_breakdown">Ashes of the Damned | Complete Map Breakdown</h1>
 <p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
@@ -247,21 +67,7 @@ button inline-flex ">
 </ol>
 <hr>
 </div><h1 id="wiki_.22dust_to_dust.22_main_quest">"Dust to Dust" Main Quest</h1>
-<style>
-.cheat-grid{display:grid;gap:.65rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:.75rem 0 1.25rem}
-.cheat-block{border:1px solid hsla(0,0%,100%,.12);border-radius:.8rem;box-shadow:0 8px 24px #00000040;padding:.7rem .8rem}
-.cheat-block h2{border:none;font-size:1rem;margin:0 0 .3rem;padding-left:0}
-.cheat-block.phase1{background:linear-gradient(135deg,#f59e0b2e,#24242b73)}
-.cheat-block.phase2{background:linear-gradient(135deg,#fbbf2433,#24242b73)}
-.cheat-block.phase3{background:linear-gradient(135deg,#f9731633,#24242b73)}
-.cheat-block.phase4{background:linear-gradient(135deg,#ef44442b,#24242b73)}
-.cheat-block ol{margin:0;padding-left:1.1rem}
-.cheat-block li{font-size:.82rem;line-height:1.3;margin:.2rem 0}
-.cheat-block li::marker{color:#fde68a}
-.cheat-block ul{margin:0;padding-left:1rem}
-.cheat-block ul li{font-size:.78rem;opacity:.85}
-.cheat-note{font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
-</style>
+
 <p><em>One-screen quick reference. Full details for every step are in the sections below.</em></p>
 <div class="cheat-grid">
   <div class="cheat-block phase1">
@@ -276,7 +82,7 @@ button inline-flex ">
     <h2>② Create the Serum</h2>
     <ol>
       <li>Wisp Tea at Tailor Shop → spirit into mirror → shoot with Gauntlet → <strong>Powder of the Forgotten</strong>.</li>
-      <li>Yuri's Lab: 3 pigpen ciphers = ingredient order: <strong>Hoard Hunk Chucks, Widow's Lantern, Ravager Eyes, Human Bones, Mysterious Limb</strong> (use the pigpen helper below). <a href="/tools/ashes-serum.html" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 ingredient order tracker</a></li>
+      <li>Yuri's Lab: 3 pigpen ciphers = ingredient order: <strong>Hoard Hunk Chucks, Widow's Lantern, Ravager Eyes, Human Bones, Mysterious Limb</strong> (use the pigpen helper below). <a href="/tools/ashes-serum" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 ingredient order tracker</a></li>
       <li>Interact ingredients top→bottom → add your blood (lockdown, heal via Gauntlet kills) → fill serum with zombie souls → <strong>Serum</strong>.</li>
     </ol>
   </div>
@@ -398,27 +204,9 @@ button inline-flex ">
 <h3 class="" id="wiki_zarya_cosmodrome">Zarya Cosmodrome</h3>
 <ol>
 <li>Shoot the two spinning radar dishes with the purple Gauntlet (requires two charges). If done correctly, the monitors inside the Control Room will light up and three souls will float above the chairs. <strong>You have a limited time to do so, and you need to shoot the radar dishes again if you fail.</strong></li>
-<li>The first two monitors will spell a word using the pigpen characters, two letters at a time: LAUNCH, WEAPON, ENGINE, ROCKET. <a href="/tools/ashes-rocket-launch.html" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 shoot codes</a></li>
-<div class="pigpen-helper">
-  <div class="helper-card">
-    <div class="helper-header">Pigpen Quick Selector</div>
-    <div class="helper-options" role="tablist" aria-label="Pigpen words">
-      <button class="helper-option" role="tab" aria-selected="false" data-word="LAUNCH" title="LAUNCH"><span class="pigpen">LAUNCH</span></button>
-      <button class="helper-option" role="tab" aria-selected="false" data-word="WEAPON" title="WEAPON"><span class="pigpen">WEAPON</span></button>
-      <button class="helper-option" role="tab" aria-selected="false" data-word="ENGINE" title="ENGINE"><span class="pigpen">ENGINE</span></button>
-      <button class="helper-option" role="tab" aria-selected="false" data-word="ROCKET" title="ROCKET"><span class="pigpen">ROCKET</span></button>
-    </div>
-    <div class="helper-results">
-      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="LAUNCH">11 - 00 - 20 - 13 - 02 - 07</div>
-      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="WEAPON">22 - 04 - 00 - 15 - 14 - 13</div>
-      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="ENGINE">04 - 13 - 06 - 08 - 13 - 04</div>
-      <div class="helper-numbers" role="tabpanel" aria-hidden="true" data-word="ROCKET">17 - 14 - 02 - 10 - 04 - 19</div>
-    </div>
-    <div class="helper-note">Click the matching pigpen word to show its numbers. Others hide automatically.</div>
-  </div>
-</div>
+<li>The first two monitors will spell a word using the pigpen characters, two letters at a time: LAUNCH, WEAPON, ENGINE, ROCKET. <a href="/tools/ashes-rocket-launch" target="_blank" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 shoot codes</a></li>
+<PigpenHelper />
 <li>The other six monitors will cycle through numbers. Use the selector above to reveal the correct sequence, then lock each number <strong>from left to right</strong> by shooting the red button.</li>
-</li>
 <li>If done correctly, the souls will disappear and the Soyuz rocket will launch.</li>
 </ol>
 <h3 class="" id="wiki_exit_115">Exit 115</h3>
@@ -494,9 +282,8 @@ button inline-flex ">
 <ol start="4">
 <li>Once Veytharion is defeated, the final cinematic will play.</li>
 </ol>
-<p><strong>IMPORTANT: AFTER THE CUTSCENE, CONTINUE THE GAME TO BE ABLE TO INTERACT WITH THE MYSTERIOUS OBJECT AT BLACKWATER LAKE AND UNLOCK THE RELICS FOR CURSED MODE.</strong></p>
-</div></div>
-<div class="md wiki"><hr>
+<p><strong>IMPORTANT: AFTER THE CUTSCENE, CONTINUE THE GAME TO BE ABLE TO INTERACT WITH THE MYSTERIOUS OBJECT AT BLACKWATER LAKE AND UNLOCK THE RELICS FOR CURSED MODE.</strong></p></div>
+<hr>
 <h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
 <div class="glass-card glass-violet"><h2 id="wiki_.22turned_to_ashes.22_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Turned to Ashes" song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <p>Find three headphones.</p>
@@ -731,14 +518,8 @@ button inline-flex ">
           <li>Round 20: ringing red phone sequence (retry at 30 if fail)</li>
           <li>Start interior cabin portal trial (Blackwater)</li>
           <li>Survive 6 waves (−50% damage output)</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<hr>
-<div class="md wiki">
+        </ol></div></div></div></div>
+
 <h1 id="wiki_wall.2Dbuys_and_perk.2Da.2Dcolas">Wall-Buys and Perk-a-Colas</h1>
 <div class="glass-card glass-gold"><h2 id="wiki_wall.2Dbuys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <div class="table-container"><table style="width: 421px; height: 930.267px; table-layout: fixed; border-width: 1px;" border="1"><colgroup><col><col></colgroup>
@@ -924,70 +705,5 @@ button inline-flex ">
 <li>Ashwood - Shops</li>
 <li>Zarya Cosmodrome - Support Systems</li>
 <li>Exit 115 - McDougal's Service Station</li>
-</ul> </div>
-<script nonce="" src="https://embed.reddit.com/widgets.js" defer=""></script>
-      </div>
-      
-    </div>
-    <rpl-dialog dialog-id="wiki-update-page-title-modal-dialog" dialog-classname="" label="" variant="default" style="display: none;">
-      
-    <template>
-    
-        <wiki-page-title-modal subreddit-name="CODZombies" page-name="ashes-of-the-damned" dialog-id="wiki-update-page-title-modal-dialog">
-          <rpl-modal-card auto-close="" class="w-[400px]">
-            <h2 slot="title" class="m-0 mb-md text-neutral-content-strong">
-              Page title
-            </h2>
-            <faceplate-text-input maxlength="100" character-count="" name="pageTitle" value="ashes-of-the-damned">
-              <span slot="label">Page title</span>
-            </faceplate-text-input>
-            <div class="w-full flex text-left text-danger-content text-12 h-[16px] mt-[-16px] px-md" name="error"></div>
-            <button rpl="" class="
-button-small px-[var(--rem6)]
-button-secondary
-
-
-icon
-items-center justify-center
-button inline-flex " slot="close-button">
-      <span class="flex items-center justify-center">
-      <span class="flex"><svg rpl="" fill="currentColor" height="16" icon-name="close" viewBox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg">
-      <path d="M11.273 10l5.363-5.363a.9.9 0 10-1.273-1.273L10 8.727 4.637 3.364a.9.9 0 10-1.273 1.273L8.727 10l-5.363 5.363a.9.9 0 101.274 1.273L10 11.273l5.363 5.363a.897.897 0 001.274 0 .9.9 0 000-1.273L11.275 10h-.002z"></path>
-    </svg></span>
-      
-    </span>
-    
-    </button>
-            <button rpl="" disabled="" class="
-button-medium px-[var(--rem14)]
-button-primary
-
-
-items-center justify-center
-button inline-flex " slot="primary-button">
-      <span class="flex items-center justify-center">
-      
-      <span class="flex items-center gap-xs">Save</span>
-    </span>
-    
-    </button>
-            <button rpl="" class="
-button-medium px-[var(--rem14)]
-button-secondary
-
-
-items-center justify-center
-button inline-flex " slot="secondary-button">
-      <span class="flex items-center justify-center">
-      
-      <span class="flex items-center gap-xs">Cancel</span>
-    </span>
-    
-    </button>
-          </rpl-modal-card>
-        </wiki-page-title-modal>
-      
-    </template>
-  
-    </rpl-dialog>
-  </main></div>
+</ul></div>
+</template>
