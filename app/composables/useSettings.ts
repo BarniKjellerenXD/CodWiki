@@ -10,7 +10,7 @@ export interface ThemeDef {
 }
 
 export const THEMES: ThemeDef[] = [
-  { id: 'archive', name: 'Archive', description: 'Warm charcoal & gold', swatch: '#d4a24a', scheme: 'dark' },
+  { id: 'archive', name: 'Archive', description: 'Charcoal & warm gold', swatch: '#ddb363', scheme: 'dark' },
   { id: 'midnight', name: 'Midnight', description: 'Cool blue graphite', swatch: '#5aa6e0', scheme: 'dark' },
   { id: 'forest', name: 'Forest', description: 'Deep moss & amber', swatch: '#c9a94a', scheme: 'dark' },
   { id: 'ember', name: 'Ember', description: 'Dark maroon & copper', swatch: '#e08a4c', scheme: 'dark' },

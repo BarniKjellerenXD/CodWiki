@@ -1,8 +1,8 @@
 /*
  * CodWiki design system
  * ------------------------------------------------------------------
- * Direction: "warm archive field manual".
- *  - Warm charcoal surfaces (browns, not blue-greys) so long reads feel soft.
+ * Direction: neutral charcoal with warm gold accents.
+ *  - Distinct charcoal surfaces, soft white text, and clear neutral borders.
  *  - A single gold accent instead of the old cyan->fuchsia gradients.
  *  - Flat panels and hairline borders: no backdrop blur, no glow.
  *  - Body copy bumped to 17px with a taller line height for readability.
@@ -12,26 +12,26 @@
   color-scheme: dark;
 
   /* Surfaces */
-  --bg: #14110e;
-  --bg-accent: #1a1613;
-  --surface: #1e1a16;
-  --surface-2: #26211b;
-  --surface-3: #2f2921;
+  --bg: #111214;
+  --bg-accent: #17191c;
+  --surface: #1c1e22;
+  --surface-2: #26292e;
+  --surface-3: #30343a;
 
   /* Lines */
-  --line: #322b23;
-  --line-strong: #453a2d;
+  --line: #383c43;
+  --line-strong: #50555e;
 
   /* Text */
-  --text: #ece5d8;
-  --muted: #b6a992;
-  --faint: #8d8069;
+  --text: #f2f2f0;
+  --muted: #b4b7bd;
+  --faint: #979ca5;
 
   /* Brand */
-  --gold: #d4a24a;
-  --gold-bright: #e8bd68;
-  --gold-dim: rgba(212, 162, 74, 0.14);
-  --gold-border: rgba(212, 162, 74, 0.34);
+  --gold: #ddb363;
+  --gold-bright: #edc984;
+  --gold-dim: rgba(221, 179, 99, 0.10);
+  --gold-border: rgba(221, 179, 99, 0.38);
   --on-gold: #1b1409;
 
   /* Semantic accents (muted to fit the palette) */
@@ -80,7 +80,7 @@
    every page and tool inherits a theme automatically.
 
    Themes:
-     archive  — warm charcoal + gold (default)
+     archive  — neutral charcoal + gold (default)
      midnight — cool blue graphite
      forest   — deep moss green
      ember    — dark maroon
@@ -89,20 +89,20 @@
 
 :root[data-theme="archive"] {
   color-scheme: dark;
-  --bg: #14110e;
-  --bg-accent: #1a1613;
-  --surface: #1e1a16;
-  --surface-2: #26211b;
-  --surface-3: #2f2921;
-  --line: #322b23;
-  --line-strong: #453a2d;
-  --text: #ece5d8;
-  --muted: #b6a992;
-  --faint: #8d8069;
-  --gold: #d4a24a;
-  --gold-bright: #e8bd68;
-  --gold-dim: rgba(212, 162, 74, 0.14);
-  --gold-border: rgba(212, 162, 74, 0.34);
+  --bg: #111214;
+  --bg-accent: #17191c;
+  --surface: #1c1e22;
+  --surface-2: #26292e;
+  --surface-3: #30343a;
+  --line: #383c43;
+  --line-strong: #50555e;
+  --text: #f2f2f0;
+  --muted: #b4b7bd;
+  --faint: #979ca5;
+  --gold: #ddb363;
+  --gold-bright: #edc984;
+  --gold-dim: rgba(221, 179, 99, 0.10);
+  --gold-border: rgba(221, 179, 99, 0.38);
   --on-gold: #1b1409;
   --green: #7fb47a;
   --red: #c9766a;

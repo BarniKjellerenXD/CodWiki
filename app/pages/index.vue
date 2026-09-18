@@ -70,9 +70,8 @@ const eras: Era[] = [
   }
 ]
 
-const superEggMatches = computed(() => !lowerQuery.value || 'bo7 super easter egg toy box ashes astra paradox kowakujo'.includes(lowerQuery.value))
-
 const lowerQuery = computed(() => query.value.trim().toLowerCase())
+const superEggMatches = computed(() => !lowerQuery.value || 'bo7 super easter egg super ee toy box'.includes(lowerQuery.value))
 
 const filteredEras = computed(() => {
   const q = lowerQuery.value
@@ -84,7 +83,7 @@ const filteredEras = computed(() => {
         g.title.toLowerCase().includes(q) || g.desc.toLowerCase().includes(q)
       )
     }))
-    .filter(era => era.guides.length > 0)
+    .filter(era => era.guides.length > 0 || (era.id === 'bo7' && superEggMatches.value))
 })
 
 const matchCount = computed(() =>
@@ -100,6 +99,7 @@ function submitSearch() {
   const hit = exact || partial
   if (hit) router.push(hit.to)
   else if (superEggMatches.value) router.push('/guides/bo7-super-easter-egg')
+  else if (filteredEras.value[0]?.guides[0]) router.push(filteredEras.value[0].guides[0].to)
 }
 </script>
 
@@ -140,20 +140,6 @@ function submitSearch() {
       </p>
     </section>
 
-    <NuxtLink v-if="superEggMatches" to="/guides/bo7-super-easter-egg" class="super-feature">
-      <div class="feature-copy">
-        <span class="feature-label">Black Ops 7 <span>Discovery in progress</span></span>
-        <h2>Super Easter Egg</h2>
-        <p>Four maps. Follow the toys.<br>The discoveries so far, one clear step at a time.</p>
-        <span class="feature-action">Open the guide <span aria-hidden="true">↗</span></span>
-      </div>
-      <div class="feature-images" aria-hidden="true">
-        <img src="/images/ashes-thumb.jpg" alt="" />
-        <img src="/images/astra-thumb.jpg" alt="" />
-        <img src="/images/paradox-thumb.jpg" alt="" />
-        <img src="/images/kowakujo-thumb.jpg" alt="" />
-      </div>
-    </NuxtLink>
     <div v-if="!filteredEras.length && !superEggMatches" class="empty">
       No guides match “{{ query }}”.
     </div>
@@ -166,7 +152,19 @@ function submitSearch() {
         </div>
       </div>
 
-      <div class="guide-grid">
+      <NuxtLink v-if="era.id === 'bo7' && superEggMatches" to="/guides/bo7-super-easter-egg" class="super-quest">
+        <span class="quest-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 3 9 9-9 9-9-9 9-9Z"/><path d="M12 7v10M7 12h10"/></svg>
+        </span>
+        <div class="quest-copy">
+          <h3>Super Easter Egg</h3>
+          <p>The toy box quest across four maps</p>
+        </div>
+        <span class="quest-status">In progress</span>
+        <span class="quest-arrow" aria-hidden="true">→</span>
+      </NuxtLink>
+
+      <div v-if="era.guides.length" class="guide-grid">
         <NuxtLink v-for="g in era.guides" :key="g.to" :to="g.to" class="guide-card">
           <div class="guide-thumb">
             <img :src="g.img" :alt="g.title" loading="lazy" />
@@ -182,27 +180,45 @@ function submitSearch() {
 </template>
 
 <style scoped>
-.super-feature { display: grid; grid-template-columns: 1.2fr 1fr; margin: 0 0 3rem; border: 1px solid var(--gold-border); border-radius: var(--radius-lg); background: var(--surface); overflow: hidden; color: var(--text); text-decoration: none; transition: border-color .2s; }
-.super-feature:hover { border-color: var(--gold); }
-.feature-copy { padding: 2rem 2.2rem; }
-.feature-label { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; color: var(--gold); text-transform: uppercase; letter-spacing: .1em; font-size: .68rem; font-weight: 600; }
-.feature-label > span { font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--muted); border: 1px solid var(--line-strong); border-radius: 99px; padding: .2rem .6rem; }
-.feature-copy h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); letter-spacing: -.035em; font-weight: 600; margin: .9rem 0 .6rem; }
-.feature-copy p { color: var(--muted); font-size: .95rem; line-height: 1.8; margin: 0; }
-.feature-action { display: inline-flex; gap: 1.8rem; color: var(--gold-bright); font-size: .88rem; margin-top: 1.5rem; }
-.feature-images { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; overflow: hidden; }
-.feature-images img { width: 100%; height: 100%; min-height: 0; object-fit: cover; opacity: .78; }
-@media (max-width: 600px) { .super-feature { grid-template-columns: 1fr; } .feature-copy { padding: 1.5rem; } .feature-images { height: 5.5rem; grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr; } }
+.super-quest {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--gold);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: background-color .16s ease, border-color .16s ease;
+}
+.super-quest:hover { background: var(--surface-2); border-color: var(--gold-border); }
+.super-quest:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.quest-symbol { display: grid; place-items: center; flex: 0 0 2.5rem; height: 2.5rem; border-radius: 9px; color: var(--gold); background: var(--gold-dim); }
+.quest-symbol svg { width: 1.4rem; height: 1.4rem; }
+.quest-copy { flex: 1; min-width: 0; }
+.quest-copy h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+.quest-copy p { margin: .25rem 0 0; font-size: .82rem; color: var(--muted); line-height: 1.5; }
+.quest-status { color: var(--muted); font-size: .72rem; white-space: nowrap; }
+.quest-arrow { color: var(--gold); margin-left: .6rem; }
+@media (max-width: 560px) {
+  .super-quest { gap: .75rem; padding: .9rem; }
+  .quest-symbol { flex-basis: 2rem; height: 2rem; }
+  .quest-status { display: none; }
+  .quest-arrow { margin-left: 0; }
+}
 
 .home {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 4rem 1.5rem 5rem;
+  padding: 3rem 1.5rem 5rem;
 }
 
 .home-header {
   max-width: 40rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .eyebrow {
@@ -233,7 +249,7 @@ function submitSearch() {
 
 .search {
   max-width: 42rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.25rem;
 }
 
 .search-row {
@@ -325,19 +341,9 @@ function submitSearch() {
   color: var(--faint);
 }
 
-.section-link {
-  font-size: 0.88rem;
-  color: var(--gold-bright);
-  text-decoration: none;
-}
-
-.section-link:hover {
-  text-decoration: underline;
-}
-
 .guide-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
@@ -396,7 +402,12 @@ function submitSearch() {
   color: var(--muted);
 }
 
+@media (max-width: 900px) {
+  .guide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 560px) {
+  .guide-grid { grid-template-columns: 1fr; }
   .home {
     padding: 2.75rem 1.1rem 4rem;
   }
