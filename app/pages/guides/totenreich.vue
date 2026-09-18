@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Totenreich"
     storage-key="guide-pins-toten"
     :default-pins="[

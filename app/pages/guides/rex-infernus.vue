@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Rex Infernus"
     storage-key="guide-pins-rex"
     :default-pins="[

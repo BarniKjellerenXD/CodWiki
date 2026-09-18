@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Ashes of the Damned"
     storage-key="guide-pins-ashes"
     :default-pins="[

@@ -45,6 +45,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import Stepper from '../../components/tool/Stepper.vue'
 
 const s1a = ref<number | null>(null)
 const s1f = ref<number | null>(null)

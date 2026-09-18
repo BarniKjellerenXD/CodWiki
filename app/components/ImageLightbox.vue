@@ -1,19 +1,16 @@
 <template>
-  <div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm" @keydown="onKeydown" tabindex="0" ref="overlayRef">
-    <div class="absolute inset-0" @click.self="close">
-      <div class="absolute top-4 right-4 flex items-center gap-2 z-20 pointer-events-auto">
-        <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="zoom(0.25)">+
-        </button>
-        <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="zoom(-0.25)">-
-        </button>
-        <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="reset">Reset
-        </button>
-        <a class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" :href="src" target="_blank" rel="noopener noreferrer">Open</a>
-        <button class="px-3 py-1.5 rounded-md bg-white/10 border border-white/20 text-white hover:bg-white/20" @click="close">Close</button>
+  <div class="lightbox" @keydown="onKeydown" tabindex="0" ref="overlayRef">
+    <div class="lightbox-inner" @click.self="close">
+      <div class="lightbox-toolbar">
+        <button class="lb-btn" @click="zoom(0.25)">+</button>
+        <button class="lb-btn" @click="zoom(-0.25)">-</button>
+        <button class="lb-btn" @click="reset">Reset</button>
+        <a class="lb-btn" :href="src" target="_blank" rel="noopener noreferrer">Open</a>
+        <button class="lb-btn" @click="close">Close</button>
       </div>
 
       <div
-        class="absolute inset-0 overflow-hidden select-none z-10"
+        class="lightbox-viewport"
         ref="viewportRef"
         @wheel.prevent="onWheel"
         @pointerdown="onPointerDown"
@@ -26,7 +23,7 @@
           ref="imgRef"
           :src="src"
           :alt="alt"
-          class="max-w-none will-change-transform"
+          class="lightbox-img"
           :style="{
             transform: `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale})`,
             transformOrigin: 'center center',
@@ -37,8 +34,8 @@
         />
       </div>
 
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white/80 text-sm px-3 py-1.5 rounded-md bg-white/10 border border-white/20">
-        Scroll to zoom • Drag to pan • Esc to close
+      <div class="lightbox-hint">
+        Scroll to zoom · Drag to pan · Esc to close
       </div>
     </div>
   </div>
@@ -131,7 +128,80 @@ watch(() => props.src, () => {
 </script>
 
 <style scoped>
-.absolute.inset-0::selection {
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(10, 8, 6, 0.88);
+}
+
+.lightbox-inner {
+  position: absolute;
+  inset: 0;
+}
+
+.lightbox-toolbar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lb-btn:hover {
+  background: var(--surface-3);
+  border-color: var(--gold-border);
+  color: var(--gold-bright);
+}
+
+.lightbox-viewport {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  overflow: hidden;
+  select-none: none;
+  touch-action: none;
+}
+
+.lightbox-img {
+  display: block;
+  margin: auto;
+  max-width: none;
+  will-change: transform;
+}
+
+.lightbox-hint {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.lightbox-inner::selection {
   background: transparent;
 }
 </style>

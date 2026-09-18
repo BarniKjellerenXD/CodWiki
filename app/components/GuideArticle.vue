@@ -1,46 +1,54 @@
 <template>
-  <div class="min-h-screen w-full px-4 sm:px-6 lg:px-8 py-6 bg-gradient-to-br from-cyan-500/10 via-transparent to-fuchsia-600/10">
-    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-6">
+  <div class="guide-page">
+    <div class="guide-grid">
       <section class="min-w-0">
-        <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl shadow-cyan-500/10 p-4 sm:p-6">
-          <header class="flex items-center justify-between gap-4 mb-4 border-b border-white/10 pb-3">
-            <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">{{ title }}</h1>
-            <NuxtLink class="text-sm text-white/70 hover:text-white underline underline-offset-4" to="/">Back to index</NuxtLink>
+        <div class="guide-surface">
+          <header class="guide-header">
+            <div class="guide-heading">
+              <span v-if="mapName" class="guide-map">{{ mapName }}</span>
+              <h1 class="guide-title">{{ title }}</h1>
+            </div>
+            <NuxtLink class="guide-back" to="/">← All guides</NuxtLink>
           </header>
+          <NuxtLink v-if="superEggMap" class="super-egg-link" :to="`/guides/bo7-super-easter-egg#${superEggMap}`">Super Easter Egg <span>Toy box walkthrough ↗</span></NuxtLink>
           <div v-if="bannerText" class="curse-banner">
             <div class="banner-text">{{ bannerText }}</div>
             <button class="banner-btn" @click="scrollTo(bannerTarget)">{{ bannerLabel }}</button>
           </div>
-          <article ref="articleRef" class="prose prose-invert max-w-none guide-article" @click="onArticleClick">
+          <article ref="articleRef" class="prose guide-article" @click="onArticleClick">
             <slot />
           </article>
         </div>
       </section>
-      <aside class="hidden lg:block sticky top-6 h-[calc(100vh-3rem)] overflow-y-auto">
-        <div class="rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl shadow-cyan-500/10 p-3">
-          <h2 class="text-base font-semibold mb-2 text-cyan-200 tracking-wide">Chapters</h2>
-          <div class="mb-2">
-            <div class="text-[11px] font-semibold text-white/70 mb-1">Pinned</div>
-            <nav class="space-y-1.5">
-              <div v-for="p in pinnedToc" :key="p.id" class="flex items-center gap-1.5">
-                <button @click="scrollTo(p.id)" class="flex-1 text-left text-[13px] px-2.5 py-1.5 rounded-md hover:bg-white/10 text-white border-l-2 border-cyan-400">
-                  {{ p.text }}
-                </button>
-                <button class="text-[11px] px-2 py-1 rounded-md bg-slate-800/60 border border-white/10 text-white/80" @click="togglePin(p.id)" title="Unpin">Unpin</button>
+
+      <aside class="guide-aside">
+        <div class="toc">
+          <div class="toc-head">
+            <Icon name="mdi:format-list-bulleted" />
+            <span>On this page</span>
+          </div>
+
+          <template v-if="pinnedToc.length">
+            <div class="toc-group-label">Pinned</div>
+            <nav class="toc-nav">
+              <div v-for="p in pinnedToc" :key="p.id" class="toc-row">
+                <button class="toc-link is-pinned" @click="scrollTo(p.id)">{{ p.text }}</button>
+                <button class="toc-pin" @click="togglePin(p.id)" title="Unpin">Unpin</button>
               </div>
             </nav>
-          </div>
-          <div class="divider" aria-hidden="true"></div>
-          <nav class="space-y-1.5 no-scrollbar max-h-[46vh] overflow-y-auto mt-2">
-            <div v-for="item in otherToc" :key="item.id" class="flex items-center gap-1.5">
+            <div class="divider" aria-hidden="true"></div>
+          </template>
+
+          <nav class="toc-nav toc-scroll">
+            <div v-for="item in otherToc" :key="item.id" class="toc-row">
               <button
+                class="toc-link"
+                :class="item.level === 1 ? 'lvl-1' : item.level === 2 ? 'lvl-2' : 'lvl-3'"
                 @click="scrollTo(item.id)"
-                class="flex-1 text-left text-[13px] px-2.5 py-1.5 rounded-md hover:bg-white/10 text-white/90 border-l-2 border-transparent hover:border-cyan-300"
-                :class="item.level === 1 ? 'font-semibold text-white' : item.level === 2 ? 'pl-5' : 'pl-8'"
               >
                 {{ item.text }}
               </button>
-              <button class="text-[11px] px-2 py-1 rounded-md bg-slate-800/60 border border-white/10 text-white/80" @click="togglePin(item.id)" title="Pin">Pin</button>
+              <button class="toc-pin" @click="togglePin(item.id)" title="Pin">Pin</button>
             </div>
           </nav>
         </div>
@@ -57,12 +65,17 @@ export interface GuideTocItem { id: string; text: string; level: number }
 
 const props = defineProps<{
   title: string
+  mapName?: string
   storageKey: string
   defaultPins?: string[]
   bannerText?: string
   bannerTarget?: string
   bannerLabel?: string
 }>()
+
+const route = useRoute()
+const superEggRoutes: Record<string, string> = { '/guides/ashes-of-the-damned': 'ashes', '/guides/astra-malorum': 'astra', '/guides/paradox-junction': 'paradox', '/guides/kowakujo': 'kowakujo' }
+const superEggMap = computed(() => superEggRoutes[route.path.replace(/\/$/, '')])
 
 const articleRef = ref<HTMLElement | null>(null)
 const toc = ref<GuideTocItem[]>([])
@@ -112,7 +125,8 @@ function togglePin(id: string) {
 const pinnedToc = computed(() => pins.value.map(id => toc.value.find(t => t.id === id)).filter(Boolean) as GuideTocItem[])
 const otherToc = computed(() => toc.value.filter(t => !isPinned(t.id)))
 
-function scrollTo(id: string) {
+function scrollTo(id?: string) {
+  if (!id) return
   const el = document.getElementById(id)
   if (el) {
     el.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -140,225 +154,904 @@ defineExpose({ scrollTo })
 
 <style scoped>
 @font-face{font-family:PigpenCipher;src:local("PigpenCipher Regular"),local("PigpenCipher"),url(/fonts/pigpen-cipher.otf) format(opentype);font-display:swap;font-weight:400;font-style:normal}
-.prose{--accent:#f59e0b;--accent2:#f97316}
-.prose :where(table){border-collapse:collapse;width:100%}
-.prose :where(th,td){border:1px solid hsla(0,0%,100%,.15);padding:.5rem}
-.prose :where(thead th){background:linear-gradient(90deg,#f59e0b26,#f9731626);font-weight:600}
-.prose :where(tr:nth-child(odd)){background-color:#ffffff0a}
-.prose :where(img){border-radius:.5rem;box-shadow:0 10px 30px #00000040;cursor:zoom-in}
-.prose :where(h1){border-bottom:1px solid hsla(0,0%,100%,.1);font-size:1.85rem;line-height:1.2;padding-bottom:.25rem}
-.prose :where(h2){border-left:3px solid var(--accent);font-size:1.35rem;margin-top:1.5rem;padding-left:.5rem}
-.prose :where(h3){color:#ffffffe6;font-size:1.1rem;margin-top:1rem}
-.prose :where(hr){background:linear-gradient(90deg,#fff0,#fff3,#fff0);border:none;height:1px}
-.prose :where(a){color:var(--accent);text-decoration-thickness:2px;text-underline-offset:2px}
-.prose :where(a:hover){color:#fcd34d}
-.prose :where(code){background-color:#ffffff14;border:1px solid hsla(0,0%,100%,.1);border-radius:.375rem;padding:.15rem .35rem}
-.prose :where(pre){background-color:#00000059;border:1px solid hsla(0,0%,100%,.1);border-radius:.75rem;padding:.75rem 1rem}
-.prose :where(ul){list-style:disc;margin-left:.25rem;padding-left:1.25rem}
-.prose :where(ol){list-style:decimal;margin-left:.25rem;padding-left:1.25rem}
-.prose :where(li){margin:.25rem 0}
-.prose :where(li::marker){color:var(--accent)}
-.no-scrollbar{scrollbar-width:none}
-.no-scrollbar::-webkit-scrollbar{height:0;width:0}
-.divider{background:linear-gradient(90deg,#fff0,#ffffff26,#fff0);border:0;height:1px}
-.curse-banner{align-items:center;background:linear-gradient(120deg,#f59e0b1f,#f9731614);border:1px solid hsla(0,0%,100%,.15);border-radius:.75rem;box-shadow:0 6px 20px -6px #00000073;display:flex;flex-wrap:wrap;gap:.6rem;margin:-.25rem 0 1rem;padding:.6rem .75rem}
-.banner-text{color:#e2e8f0;flex:1;font-size:.85rem}
-.banner-btn{background:linear-gradient(135deg,#f59e0b,#f97316);border:none;border-radius:.6rem;color:#0a0a0c;cursor:pointer;font-weight:700;letter-spacing:.04em;padding:.45rem .7rem}
-.banner-btn:hover{filter:brightness(1.08)}
-.prose :where(.pigpen-helper .helper-card){background-color:#ffffff0f;border:1px solid hsla(0,0%,100%,.15);border-radius:.75rem;box-shadow:0 12px 32px #00000040;margin-top:.75rem;padding:.75rem 1rem}
-.prose :where(.pigpen-helper .helper-header){color:#fffffff2;font-size:.95rem;font-weight:700;margin-bottom:.5rem}
-.prose :where(.pigpen-helper .helper-options){display:grid;gap:.5rem;grid-template-columns:repeat(2,minmax(0,1fr))}
-.prose :where(.pigpen-helper .helper-option){align-items:center;background-color:#ffffff0a;border:1px solid hsla(0,0%,100%,.12);border-radius:.5rem;color:#ffffffe6;display:flex;gap:.5rem;justify-content:space-between;padding:.5rem .6rem}
-.prose :where(.pigpen-helper .helper-option:hover){background-color:#ffffff14}
-.prose :where(.pigpen-helper .helper-option.active){border-color:var(--accent);box-shadow:inset 0 0 0 2px #f59e0b40}
-.prose :where(.pigpen-helper .helper-results){margin-top:.5rem}
-.prose :where(.pigpen-helper .helper-numbers){background-color:#ffffff0a;border:1px solid hsla(0,0%,100%,.12);border-radius:.5rem;display:none;padding:.4rem .5rem}
-.prose :where(.pigpen-helper .helper-numbers.active){display:block}
-.prose :where(.pigpen-helper .helper-note){color:#ffffffb3;font-size:.85rem;margin-top:.5rem}
-.prose :where(.pigpen-helper .helper-label){font-weight:600}
-.prose :where(.pigpen){font-family:PigpenCipher,ui-sans-serif,system-ui;letter-spacing:.06em}
-.prose :where(.relic-grid){display:grid;gap:1.5rem;margin-top:1.25rem}
-.prose :where(.relic-heading){align-items:center;border-radius:.6rem;display:inline-flex;font-size:1.05rem;font-weight:700;gap:.5rem;letter-spacing:.02em;margin:0 0 .65rem;padding:.4rem .65rem;position:relative}
-.prose :where(.relic-heading.grim){background:linear-gradient(90deg,#f59e0b2e,#f59e0b0d);border:1px solid rgba(245,158,11,.35);box-shadow:inset 0 0 0 1px #f59e0b40}
-.prose :where(.relic-heading.sinister){background:linear-gradient(90deg,#fbbf2438,#fbbf240f);border:1px solid rgba(251,191,36,.4);box-shadow:inset 0 0 0 1px #fbbf2447}
-.prose :where(.relic-heading.wicked){background:linear-gradient(90deg,#ef444447,#ef444414);border:1px solid rgba(239,68,68,.45);box-shadow:inset 0 0 0 1px #ef444452}
-.prose :where(.relic-cards){display:grid;gap:1rem}
-.prose :where(.relic-card){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.12);border-radius:.9rem;box-shadow:0 8px 20px -4px #00000059;padding:.75rem .85rem .8rem;position:relative}
-.prose :where(.relic-card.grim){border-color:#f59e0b59}
-.prose :where(.relic-card.sinister){border-color:#fbbf2473}
-.prose :where(.relic-card.wicked){border-color:#ef444480}
-.prose :where(.relic-title){align-items:center;display:flex;flex-wrap:wrap;font-size:.92rem;font-weight:600;gap:.5rem;margin-bottom:.4rem}
-.prose :where(.mini-tag){background:#ffffff14;border:1px solid hsla(0,0%,100%,.12);border-radius:.4rem;font-size:.65rem;font-weight:600;letter-spacing:.05em;padding:.18rem .4rem}
-.prose :where(.relic-card.grim .mini-tag){border-color:#f59e0b66;color:#f59e0b}
-.prose :where(.relic-card.sinister .mini-tag){border-color:#fbbf2480;color:#fbbf24}
-.prose :where(.relic-card.wicked .mini-tag){border-color:#ef44448c;color:#ef4444}
-.prose :where(.steps){font-size:.8rem;line-height:1.15rem;margin:0;padding-left:1rem}
-.prose :where(.steps li){margin:.2rem 0}
-.prose :where(.placeholder){font-size:.75rem;margin:0;opacity:.75}
-.prose :where(.relic-chip){border-radius:.5rem;display:inline-block;font-size:.65rem;font-weight:600;letter-spacing:.04em;padding:.15rem .45rem;vertical-align:baseline}
-.prose :where(.relic-chip.grim){background:#f59e0b2e;border:1px solid rgba(245,158,11,.4);color:#f59e0b}
-.prose :where(.relic-chip.sinister){background:#fbbf2438;border:1px solid rgba(251,191,36,.5);color:#fbbf24}
-.prose :where(.relic-chip.wicked){background:#ef444447;border:1px solid rgba(239,68,68,.55);color:#ef4444}
-.prose :where(.relic-tiers){font-size:.8rem;margin:.6rem 0 .4rem;padding-left:1.2rem}
-.prose :where(.relic-tiers li){margin:.25rem 0}
-.prose :where(.relic-note){font-size:.7rem;margin:.2rem 0;opacity:.7}
-.prose :where(.boss-phases){display:grid;gap:1rem;margin:.75rem 0 1rem}
-.prose :where(.boss-card){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.12);border-radius:.9rem;box-shadow:0 8px 22px -6px #0006;padding:.7rem .8rem .75rem;position:relative}
-.prose :where(.boss-card.phase1){border-color:#f59e0b59}
-.prose :where(.boss-card.phase2){border-color:#fbbf2473}
-.prose :where(.boss-card.phase3){border-color:#ef444480}
-.prose :where(.boss-title){font-size:.9rem;font-weight:600;letter-spacing:.02em;margin:0 0 .4rem}
-.prose :where(.boss-points){font-size:.75rem;line-height:1.05rem;margin:0;padding-left:1.05rem}
-.prose :where(.boss-points li){margin:.2rem 0}
-.prose :where(.boss-tip){font-size:.65rem;font-weight:600;letter-spacing:.04em;margin:.45rem 0 0;opacity:.85}
-.prose :where(.mixologist-grid){display:grid;gap:1rem;margin:.75rem 0 1.1rem}
-.prose :where(.perk-card){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.12);border-radius:.85rem;box-shadow:0 6px 18px -4px #00000059;padding:.65rem .75rem .7rem}
-.prose :where(.perk-card.quick){border-color:#3b82f68c;box-shadow:inset 0 0 0 1px #3b82f659}
-.prose :where(.perk-card.stamin){border-color:#fbbf248c;box-shadow:inset 0 0 0 1px #fbbf2452}
-.prose :where(.perk-card.speed){border-color:#10b98199;box-shadow:inset 0 0 0 1px #10b98159}
-.prose :where(.perk-card.jugger){border-color:#ef444499;box-shadow:inset 0 0 0 1px #ef444461}
-.prose :where(.perk-title){border-radius:.55rem;display:inline-block;font-size:.9rem;font-weight:600;letter-spacing:.02em;margin:0 0 .35rem;padding:.3rem .55rem}
-.prose :where(.perk-card.quick .perk-title){background:#3b82f626;border:1px solid rgba(59,130,246,.35);color:#3b82f6}
-.prose :where(.perk-card.stamin .perk-title){background:#fbbf242e;border:1px solid rgba(251,191,36,.4);color:#fbbf24}
-.prose :where(.perk-card.speed .perk-title){background:#10b9812e;border:1px solid rgba(16,185,129,.45);color:#10b981}
-.prose :where(.perk-card.jugger .perk-title){background:#ef44442e;border:1px solid rgba(239,68,68,.45);color:#ef4444}
-.prose :where(.perk-ingredients){font-size:.75rem;line-height:1.05rem;margin:0 0 .4rem;padding-left:1.05rem}
-.prose :where(.perk-ingredients li){margin:.18rem 0}
-.prose :where(.perk-action){font-size:.7rem;font-weight:600;letter-spacing:.04em;margin:.2rem 0 .25rem;opacity:.9}
-.prose :where(.perk-tip){font-size:.62rem;letter-spacing:.04em;opacity:.75}
 
-/* Liquid Glass System (guide content) */
-.prose :where(.glass-card){position:relative;overflow:hidden;border-radius:1.05rem;padding:1.05rem 1.2rem 1.15rem;margin:1.15rem 0;border:1px solid rgba(255,255,255,.14);background:linear-gradient(155deg,rgba(255,255,255,.075),rgba(255,255,255,.02) 45%,rgba(0,0,0,.16));backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);box-shadow:0 16px 44px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.10),inset 0 -1px 0 rgba(0,0,0,.28)}
-.prose :where(.glass-card)::before{content:"";position:absolute;pointer-events:none;border-radius:50%;filter:blur(28px);opacity:.5;width:240px;height:240px;top:-90px;left:-70px;background:radial-gradient(circle,var(--glass-glow,rgba(245,158,11,.30)),transparent 65%)}
-.prose :where(.glass-card)::after{content:"";position:absolute;pointer-events:none;top:0;left:8%;right:8%;height:1px;border-radius:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
-.prose :where(.glass-card h2){border:none!important;margin:.05rem 0 .6rem;padding-left:0!important;font-size:1.22rem;display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
-.prose :where(.glass-card h2 .g-tag){border:1px solid var(--glass-accent,#f59e0b);border-radius:.45rem;background:linear-gradient(135deg,var(--glass-accent,#f59e0b)26,transparent);color:var(--glass-accent,#f59e0b);font-size:.68rem;font-weight:800;letter-spacing:.05em;line-height:1;padding:.28rem .5rem;text-transform:uppercase;white-space:nowrap}
-.prose :where(.glass-card h3){border-left:3px solid var(--glass-accent,#f59e0b);background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border-radius:.65rem;padding:.55rem .75rem;margin:1rem 0 .5rem}
-.prose :where(.glass-card>ul){display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.35rem 1rem}
-.prose :where(.glass-card ul ul){display:block}
-.prose :where(.glass-card ol){margin:.5rem 0 .25rem}
-.prose :where(.glass-card li){margin:.3rem 0}
-.prose :where(.glass-gold){--glass-accent:#f59e0b;--glass-glow:rgba(245,158,11,.30)}
-.prose :where(.glass-amber){--glass-accent:#fbbf24;--glass-glow:rgba(251,191,36,.26)}
-.prose :where(.glass-orange){--glass-accent:#f97316;--glass-glow:rgba(249,115,22,.28)}
-.prose :where(.glass-green){--glass-accent:#22c55e;--glass-glow:rgba(34,197,94,.22)}
-.prose :where(.glass-violet){--glass-accent:#a855f7;--glass-glow:rgba(168,85,247,.24)}
-.prose :where(.glass-red){--glass-accent:#ef4444;--glass-glow:rgba(239,68,68,.26)}
-.prose :where(.glass-boss){border-color:rgba(239,68,68,.38);box-shadow:0 16px 44px rgba(0,0,0,.5),0 0 26px rgba(239,68,68,.14),inset 0 1px 0 rgba(255,255,255,.10)}
-.prose :where(.glass-quest){padding:1.2rem 1.3rem 1.3rem}
-.prose :where(.glass-quest ol>li){margin:.65rem 0}
-.prose :where(.evidence-card,.cheat-block){backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%)}
-.prose :where(details.glass-fold){border:1px solid rgba(245,158,11,.4);border-radius:.75rem;background:linear-gradient(135deg,rgba(245,158,11,.14),rgba(255,255,255,.03));margin:.6rem 0 .8rem;overflow:hidden}
-.prose :where(details.glass-fold>summary){list-style:none;cursor:pointer;display:flex;align-items:center;gap:.5rem;padding:.55rem .8rem;font-weight:800;color:#fcd34d;font-size:.88rem;user-select:none;-webkit-user-select:none}
-.prose :where(details.glass-fold>summary::-webkit-details-marker){display:none}
-.prose :where(details.glass-fold>summary:hover){background:rgba(245,158,11,.08)}
-.prose :where(details.glass-fold .fold-note){margin-left:auto;font-size:.66rem;color:#ffffff99;font-weight:600}
-.prose :where(details.glass-fold .fold-arrow){color:#f59e0b;font-size:.8rem;transition:transform .2s}
-.prose :where(details.glass-fold[open] .fold-arrow){transform:rotate(90deg)}
-.prose :where(details.glass-fold ol){margin:.2rem 0;padding:.2rem 1.3rem .9rem 2.1rem}
-.prose :where(details.glass-fold li){margin:.28rem 0}
-.prose :where(.evidence-card){box-shadow:0 14px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08)}
+/* ---------------------------------------------------------- Page chrome --- */
 
-/* Collapsible sections */
-.prose :where(.g-toggle){display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;cursor:pointer;flex:1;min-width:0;width:100%}
-.prose :where(.g-toggle:hover){filter:brightness(1.1)}
-.prose :where(.g-cb){position:absolute;opacity:0;pointer-events:none;width:0;height:0}
-.prose :where(.g-title){display:contents}
-.prose :where(.g-chev){margin-left:auto;color:var(--glass-accent,#f59e0b);font-size:.75rem;transition:transform .22s;flex:none;opacity:.85}
-.prose :where(.g-chev)::after{content:"\25BE"}
-.prose :where(.g-cb:checked ~ .g-chev)::after{content:"\25B8"}
-.prose :where(.glass-card:has(> h2 .g-cb:checked) > *:not(h2),.evidence-card:has(> h3 .g-cb:checked) > *:not(h3)){display:none}
-.prose :where(.g-hint){font-size:.78rem;color:#fcd34d99;border:1px dashed rgba(245,158,11,.35);border-radius:.6rem;padding:.45rem .7rem;margin:.6rem 0 .2rem;background:rgba(245,158,11,.06)}
+.guide-page {
+  min-height: 100vh;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2rem;
+  max-width: 82rem;
+  margin: 0 auto;
+}
+
+.guide-surface {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem 2.75rem;
+  box-shadow: var(--shadow);
+}
+
+.guide-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.guide-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.guide-map {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding-bottom: 0.2rem;
+}
+
+.guide-title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.guide-back {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  padding-top: 0.35rem;
+}
+
+.guide-back:hover {
+  color: var(--gold-bright);
+}
+
+/* ------------------------------------------------------------- Sidebar ---- */
+
+.guide-aside {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+  height: calc(100vh - 4rem);
+}
+
+.toc {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.toc-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 0 0.35rem 0.75rem;
+}
+
+.toc-group-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 0 0.35rem 0.4rem;
+}
+
+.toc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0.25rem 0;
+}
+
+.toc-scroll {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  scrollbar-width: none;
+}
+
+.toc-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.toc-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.toc-link {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.35;
+  padding: 0.4rem 0.55rem;
+  cursor: pointer;
+  transition: color 0.14s ease, background-color 0.14s ease, border-color 0.14s ease;
+}
+
+.toc-link:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.toc-link.lvl-1 {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.toc-link.lvl-2 {
+  padding-left: 1rem;
+}
+
+.toc-link.lvl-3 {
+  padding-left: 1.75rem;
+  font-size: 0.8rem;
+}
+
+.toc-link.is-pinned {
+  border-left-color: var(--gold);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.toc-pin {
+  flex: none;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--faint);
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 0.25rem 0.4rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+}
+
+.toc-row:hover .toc-pin,
+.toc-pin:focus-visible {
+  opacity: 1;
+}
+
+.toc-pin:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold-border);
+}
+
+.divider {
+  height: 1px;
+  border: 0;
+  background: var(--line);
+  margin: 0.65rem 0;
+}
+
+/* ------------------------------------------------------- Curse banner ----- */
+
+.curse-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--gold-border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius-sm);
+  background: var(--gold-dim);
+}
+
+.banner-text {
+  flex: 1;
+  min-width: 12rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.banner-btn {
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  background: var(--gold);
+  color: var(--on-gold);
+  font-size: 0.82rem;
+  font-weight: 650;
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  background: var(--gold-bright);
+}
+
+/* ----------------------------------------------------- Guide components --- */
+
+.prose :where(.g-hint) {
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  padding: 0.55rem 0.8rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Cards replace the old glass surfaces: flat, hairline, warm. */
+.prose :where(.glass-card) {
+  --glass-accent: var(--gold);
+  position: relative;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--glass-accent);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 1.2rem 1.35rem 1.35rem;
+  margin: 1.5rem 0;
+}
+
+.prose :where(.glass-card h2) {
+  border: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.prose :where(.glass-card h2 .g-tag) {
+  border: 1px solid var(--glass-accent);
+  border-radius: 6px;
+  background: var(--gold-dim);
+  color: var(--gold-bright);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.prose :where(.glass-card h3) {
+  border: none;
+  border-left: 2px solid var(--line-strong);
+  background: none;
+  border-radius: 0;
+  padding: 0 0 0 0.65rem;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--text);
+}
+
+.prose :where(.glass-card > ul) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.35rem 1.25rem;
+}
+
+.prose :where(.glass-card ul ul) {
+  display: block;
+}
+
+.prose :where(.glass-card ol) {
+  margin: 0.6rem 0 0.3rem;
+}
+
+.prose :where(.glass-card li) {
+  margin: 0.35rem 0;
+}
+
+/* Accent variants: keep a single accent, vary only the label hue. */
+.prose :where(.glass-amber) { --glass-accent: var(--gold-bright); }
+.prose :where(.glass-orange) { --glass-accent: var(--orange); }
+.prose :where(.glass-green) { --glass-accent: var(--green); }
+.prose :where(.glass-violet) { --glass-accent: #a98bc4; }
+.prose :where(.glass-red),
+.prose :where(.glass-boss) { --glass-accent: var(--red); }
+
+.prose :where(.glass-boss) {
+  border-color: var(--line);
+  border-left-color: var(--red);
+}
+
+.prose :where(.glass-quest) {
+  padding: 1.35rem 1.45rem 1.45rem;
+}
+
+.prose :where(.glass-quest ol > li) {
+  margin: 0.7rem 0;
+}
 
 /* Cheat sheet grid */
-.prose :where(.cheat-grid){display:grid;gap:.65rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:.75rem 0 1.25rem}
-.prose :where(.cheat-block){border:1px solid hsla(0,0%,100%,.12);border-radius:.8rem;box-shadow:0 8px 24px #00000040;padding:.7rem .8rem}
-.prose :where(.cheat-block h2){border:none;font-size:1rem;margin:0 0 .3rem;padding-left:0}
-.prose :where(.cheat-block.phase1){background:linear-gradient(135deg,#f59e0b2e,#24242b73)}
-.prose :where(.cheat-block.phase2){background:linear-gradient(135deg,#fbbf2433,#24242b73)}
-.prose :where(.cheat-block.phase3){background:linear-gradient(135deg,#f9731633,#24242b73)}
-.prose :where(.cheat-block.phase4){background:linear-gradient(135deg,#ef44442b,#24242b73)}
-.prose :where(.cheat-block ol){margin:0;padding-left:1.1rem}
-.prose :where(.cheat-block li){font-size:.82rem;line-height:1.3;margin:.2rem 0}
-.prose :where(.cheat-block li::marker){color:#fde68a}
-.prose :where(.cheat-block ul){margin:0;padding-left:1rem}
-.prose :where(.cheat-block ul li){font-size:.78rem;opacity:.85}
-.prose :where(.cheat-note){font-size:.75rem;color:#ffffffb3;margin:.35rem 0 0}
-.prose :where(.cheat-chip){border:1px solid var(--cc,#f59e0b);border-radius:.4rem;color:var(--cc,#f59e0b);display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.04em;margin-left:.15rem;padding:.12rem .4rem;vertical-align:middle}
+.prose :where(.cheat-grid) {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1.25rem 0 1.75rem;
+}
 
-/* Evidence cards (murder mystery sections) */
-.prose :where(.evidence-card){border:1px solid hsla(0,0%,100%,.12);border-radius:.9rem;margin:1.1rem 0;padding:.85rem 1rem 1.05rem;box-shadow:0 12px 32px #00000040}
-.prose :where(.evidence-card h3){border:none;display:flex;align-items:center;gap:.55rem;font-size:1.08rem;margin:0 0 .5rem;padding-left:0;flex-wrap:wrap}
-.prose :where(.evidence-card h3)::before{content:none}
-.prose :where(.evidence-card h3 .ev-chip){border-radius:.5rem;font-size:.7rem;font-weight:700;letter-spacing:.06em;padding:.2rem .5rem;white-space:nowrap}
-.prose :where(.evidence-card.ev-suspect){background:linear-gradient(135deg,#f59e0b1f,#24242b40);border-color:#f59e0b59}
-.prose :where(.evidence-card.ev-accomplice){background:linear-gradient(135deg,#f9731624,#24242b40);border-color:#f9731659}
-.prose :where(.evidence-card.ev-poison){background:linear-gradient(135deg,#22c55e1f,#24242b40);border-color:#22c55e59}
-.prose :where(.evidence-card.ev-location){background:linear-gradient(135deg,#a855f724,#24242b40);border-color:#a855f759}
-.prose :where(.evidence-card.ev-motive){background:linear-gradient(135deg,#ef444427,#24242b40);border-color:#ef444466}
-.prose :where(.evidence-card .ev-chip){display:inline-block}
-.prose :where(.evidence-card ul,.evidence-card ol){margin:.4rem 0 .2rem}
-.prose :where(.evidence-card>p){margin:.45rem 0}
-.prose :where(.evidence-sub){border-left:3px solid var(--ev-accent,#f59e0b);border-radius:0 .6rem .6rem 0;margin:.7rem 0;padding:.5rem .7rem .6rem;background:rgba(255,255,255,.03);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
-.prose :where(.evidence-sub .ev-tag){color:var(--ev-accent,#f59e0b);display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:.03em;margin:0 0 .3rem}
-.prose :where(.evidence-sub ol){margin:.2rem 0 0}
+.prose :where(.cheat-block) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 1rem 1.1rem 1.15rem;
+}
 
-/* Rex Infernus tools block + temple tabs + quote picker */
-.prose :where(.rex-tools){display:flex;gap:.55rem;flex-wrap:wrap;align-items:center;margin:.9rem 0 1.1rem;border:1px dashed rgba(245,158,11,.35);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem}
-.prose :where(.rex-tools-label){color:#fcd34d;font-size:.8rem}
-.prose :where(.rex-tool-link){display:inline-flex;padding:.42rem .65rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d!important;text-decoration:none!important;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
-.prose :where(.rex-tool-link:hover){filter:brightness(1.15)}
-.prose :where(.rex-tabs){display:flex;gap:.4rem;flex-wrap:wrap;margin:.8rem 0 .2rem}
-.prose :where(.rex-tabs h3){border:none!important;background:none!important;padding:0!important;margin:0!important;font-size:1rem}
-.prose :where(.rex-tab){display:inline-block;padding:.5rem .85rem;border:1px solid rgba(255,255,255,.15);border-radius:.55rem;font-size:.9rem;font-weight:700;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04)}
-.prose :where(.rex-panel){display:none;border:1px solid rgba(255,255,255,.1);border-radius:.7rem;padding:.15rem .75rem .55rem;margin-top:.55rem}
-.prose :deep(#rextab-d:checked ~ #rexp-d),.prose :deep(#rextab-n:checked ~ #rexp-n),.prose :deep(#rextab-c:checked ~ #rexp-c),.prose :deep(#rextab-v:checked ~ #rexp-v){display:block}
-.prose :deep(#rextab-d:checked ~ .rex-tabs label[for="rextab-d"]),.prose :deep(#rextab-n:checked ~ .rex-tabs label[for="rextab-n"]),.prose :deep(#rextab-c:checked ~ .rex-tabs label[for="rextab-c"]),.prose :deep(#rextab-v:checked ~ .rex-tabs label[for="rextab-v"]){background:#f59e0b;color:#1b1204;border-color:#f59e0b}
-.prose :where(.rex-phase){border-left:3px solid var(--pc,#f59e0b);background:rgba(255,255,255,.03);border-radius:.6rem;padding:.55rem .8rem .6rem;margin:.75rem 0}
-.prose :where(.rex-phase-head){color:var(--pc,#f59e0b);font-weight:800;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase;margin:0 0 .35rem}
-.prose :where(.rex-phase ol){margin:.2rem 0 .1rem}
-.prose :where(.rex-ph-note){font-size:.8rem;color:#a89062;margin:.2rem 0 .35rem}
-.prose :where(.rex-qsolver){border:1px dashed rgba(245,158,11,.4);background:rgba(245,158,11,.06);border-radius:.6rem;padding:.6rem .7rem;margin:.5rem 0 .7rem}
-.prose :where(.rex-q-tabs){display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem}
-.prose :where(.rex-q-tabs label){padding:.35rem .75rem;border:1px solid rgba(255,255,255,.15);border-radius:.5rem;font-weight:800;color:#d6c28d;cursor:pointer;background:rgba(255,255,255,.04);font-size:.85rem}
-.prose :where(.rex-q-res){display:none}
-.prose :deep(#rexq-1:checked ~ #rexq-r1),.prose :deep(#rexq-2:checked ~ #rexq-r2),.prose :deep(#rexq-3:checked ~ #rexq-r3),.prose :deep(#rexq-4:checked ~ #rexq-r4){display:block}
-.prose :deep(#rexq-1:checked ~ .rex-q-tabs label[for="rexq-1"]),.prose :deep(#rexq-2:checked ~ .rex-q-tabs label[for="rexq-2"]),.prose :deep(#rexq-3:checked ~ .rex-q-tabs label[for="rexq-3"]),.prose :deep(#rexq-4:checked ~ .rex-q-tabs label[for="rexq-4"]){background:#f59e0b;color:#1b1204;border-color:#f59e0b}
-.prose :where(.rex-q-quote){font-style:italic;color:#e8d9b0;margin:.1rem 0 .5rem;font-size:.92rem}
-.prose :where(.rex-q-chips){display:flex;gap:.45rem;flex-wrap:wrap}
-.prose :where(.rex-q-chip){padding:.32rem .6rem;border:1px solid #f59e0b;border-radius:.5rem;color:#fcd34d;background:rgba(245,158,11,.12);font-weight:800;font-size:.8rem}
-.prose :where(.rex-q-chip.zero){opacity:.45;border-color:rgba(255,255,255,.2);color:#8a7548}
+.prose :where(.cheat-block h2) {
+  border: none;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
 
-/* Astra helper row (bust books + planet code) */
-.prose :where(.helper-row){display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:1rem 0 1.5rem}
-.prose :where(.book-helper){background:linear-gradient(135deg,#0f172aa6,#f59e0b1f);border:1px solid hsla(0,0%,100%,.14);border-radius:1rem;box-shadow:0 20px 50px #00000059;margin:1rem 0 1.5rem;padding:1rem 1.1rem}
-.prose :where(.book-helper h3){color:#fef3c7;font-size:1.05rem;margin:0 0 .35rem}
-.prose :where(.book-helper p){color:#ffffffd9;margin:0 0 .65rem}
-.prose :where(.book-grid){display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:.5rem}
-.prose :where(.book-grid div){background:#ffffff0a;border:1px solid hsla(0,0%,100%,.12);border-radius:.75rem;box-shadow:inset 0 1px #ffffff0d;padding:.65rem .75rem}
-.prose :where(.book-header){color:#c7d2fe;font-weight:700;margin-bottom:.35rem}
-.prose :where(.book-grid label){align-items:center;color:#ffffffe6;display:flex;font-size:.95rem;gap:.5rem;margin:.25rem 0}
-.prose :where(.book-grid input[type=checkbox]){accent-color:#f59e0b;height:16px;width:16px}
-.prose :where(.bust-output,#bust-output){background:#ffffff0a;border:1px solid hsla(0,0%,100%,.1);border-radius:.75rem;box-shadow:inset 0 1px #ffffff0d;color:#fef3c7;padding:.65rem .75rem}
-.prose :where(.planet-helper){background:linear-gradient(135deg,#0f172aa6,#d946ef1f);border:1px solid hsla(0,0%,100%,.14);border-radius:1rem;box-shadow:0 20px 50px #00000059;margin:1rem 0 1.5rem;padding:1rem 1.05rem}
-.prose :where(.planet-helper h3){color:#fce7f3;font-size:1.05rem;margin:0 0 .35rem}
-.prose :where(.planet-helper p){color:#ffffffd9;margin:0 0 .6rem}
-.prose :where(.planet-list){display:grid;gap:.5rem;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
-.prose :where(.planet-list button){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.16);border-radius:.65rem;color:#fef3c7;cursor:pointer;padding:.55rem .65rem;text-align:left;transition:border-color .12s ease,background .12s ease,transform .12s ease;width:100%}
-.prose :where(.planet-list button:hover){background:#f59e0b14;border-color:#f59e0b80;transform:translateY(-1px)}
-.prose :where(.planet-output){background:#ffffff0d;border:1px solid hsla(0,0%,100%,.12);border-radius:.75rem;color:#f8fafc;font-weight:700;letter-spacing:.08em;margin-top:.65rem;padding:.65rem .75rem}
-.prose :where(.planet-actions){display:flex;gap:.5rem;margin-top:.5rem}
-.prose :where(.planet-actions button){background:#ffffff12;border:1px solid hsla(0,0%,100%,.16);border-radius:.65rem;color:#fef3c7;cursor:pointer;flex:1;padding:.45rem .6rem;transition:filter .12s ease,transform .12s ease}
-.prose :where(.planet-actions button:hover){filter:brightness(1.05);transform:translateY(-1px)}
+.prose :where(.cheat-block ol) {
+  margin: 0;
+  padding-left: 1.2rem;
+}
 
-/* Kowakujo relic cards */
-.prose :where(.relic-ok){border:1px solid rgba(34,197,94,.35);border-radius:.55rem;background:linear-gradient(135deg,rgba(34,197,94,.12),rgba(255,255,255,.02));color:#bbf7d0;font-size:.74rem;font-weight:700;padding:.35rem .6rem;margin:.4rem 0 .5rem}
-.prose :where(.relic-warn){border:1px solid rgba(239,68,68,.45);border-radius:.55rem;background:linear-gradient(135deg,rgba(239,68,68,.14),rgba(255,255,255,.02));color:#fecaca;font-size:.76rem;font-weight:700;line-height:1.45;padding:.45rem .65rem;margin:.4rem 0 .5rem}
-.prose :where(.relic-meta){font-size:.78rem;color:#ffffffb3;line-height:1.5;margin:.4rem 0 0}
-.prose :where(.relic-meta b){color:#fcd34d}
-.prose :where(.relic-meta.dim){color:#ffffff77}
-.prose :where(.relic-order){display:inline-flex;gap:.35rem;flex-wrap:wrap}
-.prose :where(.relic-order b){border:1px solid rgba(245,158,11,.5);border-radius:.45rem;background:linear-gradient(135deg,rgba(245,158,11,.2),transparent);color:#ffe8bf;font-size:.8rem;padding:.15rem .5rem}
-.prose :where(.relic-trial){margin:.4rem 0 0 1.2rem;padding:0}
-.prose :where(.relic-trial li){font-size:.76rem;margin:.22rem 0;color:#ffffffa6}
+.prose :where(.cheat-block li) {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0.3rem 0;
+}
+
+.prose :where(.cheat-block ul) {
+  margin: 0.25rem 0 0;
+  padding-left: 1rem;
+}
+
+.prose :where(.cheat-block ul li) {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.prose :where(.cheat-note) {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+
+.prose :where(.cheat-chip) {
+  border: 1px solid var(--gold-border);
+  border-radius: 6px;
+  background: var(--gold-dim);
+  color: var(--gold-bright);
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  margin-left: 0.2rem;
+  padding: 0.12rem 0.4rem;
+  vertical-align: middle;
+}
+
+/* Relic + effect cards */
+.prose :where(.relic-grid) {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.prose :where(.relic-heading) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 0 0 0.7rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.prose :where(.relic-heading.grim) { border-color: var(--gold-border); color: var(--gold-bright); }
+.prose :where(.relic-heading.sinister) { border-color: rgba(251,191,36,.4); color: #e8c56a; }
+.prose :where(.relic-heading.wicked) { border-color: rgba(201,118,106,.45); color: #d9887c; }
+
+.prose :where(.relic-cards) {
+  display: grid;
+  gap: 1rem;
+}
+
+.prose :where(.relic-card) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 0.9rem 1rem 1rem;
+}
+
+.prose :where(.relic-card.grim) { border-left: 3px solid var(--gold); }
+.prose :where(.relic-card.sinister) { border-left: 3px solid #e8c56a; }
+.prose :where(.relic-card.wicked) { border-left: 3px solid #d9887c; }
+
+.prose :where(.relic-title) {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.98rem;
+  font-weight: 650;
+  margin-bottom: 0.45rem;
+}
+
+.prose :where(.mini-tag) {
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--surface-3);
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 650;
+  letter-spacing: 0.05em;
+  padding: 0.18rem 0.42rem;
+}
+
+.prose :where(.relic-card.grim .mini-tag) { border-color: var(--gold-border); color: var(--gold-bright); }
+.prose :where(.relic-card.sinister .mini-tag) { border-color: rgba(251,191,36,.4); color: #e8c56a; }
+.prose :where(.relic-card.wicked .mini-tag) { border-color: rgba(201,118,106,.45); color: #d9887c; }
+
+.prose :where(.steps) {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.prose :where(.steps li) { margin: 0.25rem 0; }
+.prose :where(.placeholder) { font-size: 0.8rem; margin: 0; color: var(--faint); }
+
+.prose :where(.relic-chip) {
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+}
+
+.prose :where(.relic-chip.grim) { background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold-bright); }
+.prose :where(.relic-chip.sinister) { background: rgba(251,191,36,.1); border: 1px solid rgba(251,191,36,.4); color: #e8c56a; }
+.prose :where(.relic-chip.wicked) { background: rgba(201,118,106,.12); border: 1px solid rgba(201,118,106,.45); color: #d9887c; }
+
+.prose :where(.relic-tiers) { font-size: 0.86rem; margin: 0.7rem 0 0.5rem; padding-left: 1.3rem; }
+.prose :where(.relic-tiers li) { margin: 0.3rem 0; }
+.prose :where(.relic-note) { font-size: 0.78rem; margin: 0.25rem 0; color: var(--faint); }
+
+.prose :where(.relic-ok) {
+  border: 1px solid rgba(127,180,122,.4);
+  border-radius: var(--radius-sm);
+  background: rgba(127,180,122,.1);
+  color: #c5e0c1;
+  font-size: 0.78rem;
+  font-weight: 650;
+  padding: 0.4rem 0.65rem;
+  margin: 0.45rem 0 0.55rem;
+}
+
+.prose :where(.relic-warn) {
+  border: 1px solid rgba(201,118,106,.5);
+  border-radius: var(--radius-sm);
+  background: rgba(201,118,106,.1);
+  color: #e6b3aa;
+  font-size: 0.8rem;
+  font-weight: 650;
+  line-height: 1.5;
+  padding: 0.5rem 0.7rem;
+  margin: 0.45rem 0 0.55rem;
+}
+
+.prose :where(.relic-meta) { font-size: 0.82rem; color: var(--muted); line-height: 1.6; margin: 0.45rem 0 0; }
+.prose :where(.relic-meta b) { color: var(--gold-bright); }
+.prose :where(.relic-meta.dim) { color: var(--faint); }
+
+/* Quest cheat-sheet blocks (used by Astra / Ashes) */
+.prose :where(.quest-grid) {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin: 1.25rem 0 1.75rem;
+}
+
+.prose :where(.quest-block) {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.prose :where(.quest-block.phase1) { border-left-color: var(--gold); }
+.prose :where(.quest-block.phase2) { border-left-color: var(--orange); }
+.prose :where(.quest-block.phase3) { border-left-color: var(--gold-bright); }
+.prose :where(.quest-block.phase4) { border-left-color: var(--red); }
+
+.prose :where(.quest-block h2) {
+  border: none;
+  margin: 0 0 0.55rem;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.prose :where(.quest-block ol) {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.prose :where(.quest-block li) {
+  font-size: 0.87rem;
+  line-height: 1.55;
+  margin: 0.3rem 0;
+}
+
+.prose :where(.relic-order) { display: inline-flex; gap: 0.35rem; flex-wrap: wrap; }
+.prose :where(.relic-order b) {
+  border: 1px solid var(--gold-border);
+  border-radius: 6px;
+  background: var(--gold-dim);
+  color: #f0d9a8;
+  font-size: 0.82rem;
+  padding: 0.15rem 0.5rem;
+}
+
+.prose :where(.relic-trial) { margin: 0.45rem 0 0 1.3rem; padding: 0; }
+.prose :where(.relic-trial li) { font-size: 0.8rem; margin: 0.25rem 0; color: var(--muted); }
+
+/* Boss + perk cards */
+.prose :where(.boss-phases) { display: grid; gap: 1rem; margin: 0.9rem 0 1.25rem; }
+.prose :where(.boss-card) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 0.85rem 1rem 1rem;
+}
+
+.prose :where(.boss-card.phase1) { border-left: 3px solid var(--gold); }
+.prose :where(.boss-card.phase2) { border-left: 3px solid #e8c56a; }
+.prose :where(.boss-card.phase3) { border-left: 3px solid var(--red); }
+
+.prose :where(.boss-title) { font-size: 0.95rem; font-weight: 650; letter-spacing: 0.02em; margin: 0 0 0.45rem; }
+.prose :where(.boss-points) { font-size: 0.82rem; line-height: 1.55; margin: 0; padding-left: 1.15rem; }
+.prose :where(.boss-points li) { margin: 0.25rem 0; }
+.prose :where(.boss-tip) { font-size: 0.72rem; font-weight: 650; letter-spacing: 0.04em; margin: 0.5rem 0 0; color: var(--muted); }
+
+.prose :where(.mixologist-grid) { display: grid; gap: 1rem; margin: 0.9rem 0 1.2rem; }
+.prose :where(.perk-card) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 0.8rem 0.9rem 0.9rem;
+}
+
+.prose :where(.perk-card.quick) { border-left: 3px solid #7d9fc4; }
+.prose :where(.perk-card.stamin) { border-left: 3px solid #e8c56a; }
+.prose :where(.perk-card.speed) { border-left: 3px solid var(--green); }
+.prose :where(.perk-card.jugger) { border-left: 3px solid var(--red); }
+
+.prose :where(.perk-title) { display: inline-block; border-radius: 6px; font-size: 0.92rem; font-weight: 650; letter-spacing: 0.02em; margin: 0 0 0.4rem; padding: 0.3rem 0.55rem; }
+.prose :where(.perk-card.quick .perk-title) { background: rgba(125,159,196,.12); border: 1px solid rgba(125,159,196,.4); color: #a9c4e0; }
+.prose :where(.perk-card.stamin .perk-title) { background: var(--gold-dim); border: 1px solid var(--gold-border); color: var(--gold-bright); }
+.prose :where(.perk-card.speed .perk-title) { background: rgba(127,180,122,.12); border: 1px solid rgba(127,180,122,.4); color: #b7d9b3; }
+.prose :where(.perk-card.jugger .perk-title) { background: rgba(201,118,106,.12); border: 1px solid rgba(201,118,106,.45); color: #e0a99f; }
+
+.prose :where(.perk-ingredients) { font-size: 0.8rem; line-height: 1.5; margin: 0 0 0.45rem; padding-left: 1.15rem; }
+.prose :where(.perk-ingredients li) { margin: 0.2rem 0; }
+.prose :where(.perk-action) { font-size: 0.76rem; font-weight: 650; letter-spacing: 0.04em; margin: 0.25rem 0 0.3rem; color: var(--muted); }
+.prose :where(.perk-tip) { font-size: 0.68rem; letter-spacing: 0.04em; color: var(--faint); }
+
+/* Evidence cards (murder mystery) */
+.prose :where(.evidence-card) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 1.25rem 0;
+  padding: 0.95rem 1.1rem 1.15rem;
+  background: var(--surface-2);
+}
+
+.prose :where(.evidence-card h3) {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.08rem;
+  margin: 0 0 0.55rem;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.prose :where(.evidence-card h3)::before { content: none; }
+
+.prose :where(.evidence-card h3 .ev-chip) {
+  border-radius: 6px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-3);
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+}
+
+.prose :where(.evidence-card.ev-suspect) { border-left: 3px solid var(--gold); }
+.prose :where(.evidence-card.ev-accomplice) { border-left: 3px solid var(--orange); }
+.prose :where(.evidence-card.ev-poison) { border-left: 3px solid var(--green); }
+.prose :where(.evidence-card.ev-location) { border-left: 3px solid #a98bc4; }
+.prose :where(.evidence-card.ev-motive) { border-left: 3px solid var(--red); }
+
+.prose :where(.evidence-card ul, .evidence-card ol) { margin: 0.45rem 0 0.25rem; }
+.prose :where(.evidence-card > p) { margin: 0.5rem 0; }
+.prose :where(.evidence-sub) {
+  border-left: 3px solid var(--line-strong);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 0.8rem 0;
+  padding: 0.5rem 0.75rem 0.6rem;
+  background: var(--surface-3);
+}
+
+.prose :where(.evidence-sub .ev-tag) { display: inline-block; color: var(--gold-bright); font-size: 0.88rem; font-weight: 650; letter-spacing: 0.03em; margin: 0 0 0.35rem; }
+.prose :where(.evidence-sub ol) { margin: 0.2rem 0 0; }
+
+/* Foldable sections */
+.prose :where(details.glass-fold) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  margin: 0.8rem 0 1rem;
+  overflow: hidden;
+}
+
+.prose :where(details.glass-fold > summary) {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.7rem 0.9rem;
+  font-weight: 650;
+  color: var(--gold-bright);
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+.prose :where(details.glass-fold > summary::-webkit-details-marker) { display: none; }
+.prose :where(details.glass-fold > summary:hover) { background: var(--surface-3); }
+.prose :where(details.glass-fold .fold-note) { margin-left: auto; font-size: 0.7rem; color: var(--faint); font-weight: 600; }
+.prose :where(details.glass-fold .fold-arrow) { color: var(--gold); font-size: 0.8rem; transition: transform 0.2s; }
+.prose :where(details.glass-fold[open] .fold-arrow) { transform: rotate(90deg); }
+.prose :where(details.glass-fold ol) { margin: 0.2rem 0; padding: 0.2rem 1.4rem 1rem 2.2rem; }
+.prose :where(details.glass-fold li) { margin: 0.3rem 0; }
+
+/* Collapsible card headers */
+.prose :where(.g-toggle) { display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap; cursor: pointer; flex: 1; min-width: 0; width: 100%; }
+.prose :where(.g-cb) { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
+.prose :where(.g-title) { display: contents; }
+
+.prose :where(.g-chev) {
+  margin-left: auto;
+  color: var(--gold);
+  font-size: 0.75rem;
+  transition: transform 0.2s;
+  flex: none;
+  opacity: 0.8;
+}
+
+.prose :where(.g-chev)::after { content: "\25BE"; }
+.prose :where(.g-cb:checked ~ .g-chev)::after { content: "\25B8"; }
+
+.prose :where(.glass-card:has(> h2 .g-cb:checked) > *:not(h2),
+.evidence-card:has(> h3 .g-cb:checked) > *:not(h3)) { display: none; }
+
+/* Shared helper blocks */
+.prose :where(.helper-row) { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin: 1.25rem 0 1.75rem; }
+
+.prose :where(.book-helper),
+.prose :where(.planet-helper) {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 1.15rem 1.25rem 1.25rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.prose :where(.book-helper h3),
+.prose :where(.planet-helper h3) { color: var(--text); font-size: 1.05rem; margin: 0 0 0.4rem; }
+.prose :where(.book-helper p),
+.prose :where(.planet-helper p) { color: var(--muted); margin: 0 0 0.75rem; }
+
+.prose :where(.book-grid) { display: grid; gap: 0.85rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 0.6rem; }
+.prose :where(.book-grid div) { background: var(--surface-3); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0.75rem 0.85rem; }
+.prose :where(.book-header) { color: var(--text); font-weight: 650; margin-bottom: 0.4rem; }
+.prose :where(.book-grid label) { display: flex; align-items: center; gap: 0.5rem; color: var(--text); font-size: 0.95rem; margin: 0.3rem 0; }
+
+.prose :where(.bust-output, #bust-output) {
+  background: var(--surface-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--gold-bright);
+  padding: 0.75rem 0.85rem;
+}
+
+.prose :where(.planet-list) { display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.prose :where(.planet-list button) {
+  width: 100%;
+  text-align: left;
+  background: var(--surface-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.6rem 0.7rem;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.prose :where(.planet-list button:hover) { border-color: var(--gold-border); background: var(--surface-2); }
+.prose :where(.planet-output) { background: var(--surface-3); border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--text); font-weight: 650; letter-spacing: 0.08em; margin-top: 0.7rem; padding: 0.7rem 0.8rem; }
+.prose :where(.planet-actions) { display: flex; gap: 0.5rem; margin-top: 0.6rem; }
+.prose :where(.planet-actions button) {
+  flex: 1;
+  background: var(--surface-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  cursor: pointer;
+  padding: 0.5rem 0.65rem;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.prose :where(.planet-actions button:hover) { border-color: var(--gold-border); background: var(--surface-2); }
+
+/* Pigpen helper */
+.prose :where(.pigpen-helper .helper-card) {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin-top: 0.9rem;
+  padding: 0.9rem 1.1rem;
+}
+
+.prose :where(.pigpen-helper .helper-header) { color: var(--text); font-size: 0.98rem; font-weight: 650; margin-bottom: 0.6rem; }
+.prose :where(.pigpen-helper .helper-options) { display: grid; gap: 0.55rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.prose :where(.pigpen-helper .helper-option) { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; background: var(--surface-3); border: 1px solid var(--line); border-radius: var(--radius-sm); color: var(--text); padding: 0.55rem 0.65rem; }
+.prose :where(.pigpen-helper .helper-option:hover) { border-color: var(--line-strong); }
+.prose :where(.pigpen-helper .helper-option.active) { border-color: var(--gold); background: var(--gold-dim); }
+.prose :where(.pigpen-helper .helper-results) { margin-top: 0.6rem; }
+.prose :where(.pigpen-helper .helper-numbers) { display: none; background: var(--surface-3); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0.45rem 0.55rem; }
+.prose :where(.pigpen-helper .helper-numbers.active) { display: block; }
+.prose :where(.pigpen-helper .helper-note) { color: var(--muted); font-size: 0.85rem; margin-top: 0.55rem; }
+.prose :where(.pigpen-helper .helper-label) { font-weight: 650; }
+.prose :where(.pigpen) { font-family: PigpenCipher, ui-sans-serif, system-ui; letter-spacing: 0.06em; }
+
+/* Rex Infernus tabs + quote picker (flat segmented controls) */
+.prose :where(.rex-tools) { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin: 1rem 0 1.25rem; border: 1px solid var(--line); border-left: 3px solid var(--gold); background: var(--surface-2); border-radius: var(--radius-sm); padding: 0.7rem 0.85rem; }
+.prose :where(.rex-tools-label) { color: var(--muted); font-size: 0.85rem; }
+.prose :where(.rex-tool-link) {
+  display: inline-flex;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  color: var(--gold-bright) !important;
+  text-decoration: none !important;
+  background: var(--gold-dim);
+  font-weight: 650;
+  font-size: 0.82rem;
+}
+
+.prose :where(.rex-tool-link:hover) { background: rgba(212,162,74,.22); }
+
+.prose :where(.rex-tabs) { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0.9rem 0 0.25rem; }
+.prose :where(.rex-tabs h3) { border: none !important; background: none !important; padding: 0 !important; margin: 0 !important; font-size: 1rem; }
+.prose :where(.rex-tab) { display: inline-block; padding: 0.5rem 0.9rem; border: 1px solid var(--line); border-radius: var(--radius-sm); font-size: 0.88rem; font-weight: 650; color: var(--muted); cursor: pointer; background: var(--surface-2); }
+.prose :where(.rex-panel) { display: none; border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0.2rem 0.85rem 0.65rem; margin-top: 0.6rem; background: var(--surface-2); }
+
+.prose :deep(#rextab-d:checked ~ #rexp-d),
+.prose :deep(#rextab-n:checked ~ #rexp-n),
+.prose :deep(#rextab-c:checked ~ #rexp-c),
+.prose :deep(#rextab-v:checked ~ #rexp-v) { display: block; }
+
+.prose :deep(#rextab-d:checked ~ .rex-tabs label[for="rextab-d"]),
+.prose :deep(#rextab-n:checked ~ .rex-tabs label[for="rextab-n"]),
+.prose :deep(#rextab-c:checked ~ .rex-tabs label[for="rextab-c"]),
+.prose :deep(#rextab-v:checked ~ .rex-tabs label[for="rextab-v"]) { background: var(--gold); color: var(--on-gold); border-color: var(--gold); }
+
+.prose :where(.rex-phase) { border-left: 3px solid var(--gold); background: var(--surface-3); border-radius: var(--radius-sm); padding: 0.6rem 0.85rem 0.65rem; margin: 0.8rem 0; }
+.prose :where(.rex-phase-head) { color: var(--gold-bright); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 0.4rem; }
+.prose :where(.rex-phase ol) { margin: 0.2rem 0 0.1rem; }
+.prose :where(.rex-ph-note) { font-size: 0.82rem; color: var(--muted); margin: 0.25rem 0 0.4rem; }
+
+.prose :where(.rex-qsolver) { border: 1px solid var(--line); border-left: 3px solid var(--gold); background: var(--surface-2); border-radius: var(--radius-sm); padding: 0.7rem 0.85rem; margin: 0.6rem 0 0.8rem; }
+.prose :where(.rex-q-tabs) { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+.prose :where(.rex-q-tabs label) { padding: 0.35rem 0.75rem; border: 1px solid var(--line); border-radius: var(--radius-sm); font-weight: 650; color: var(--muted); cursor: pointer; background: var(--surface-3); font-size: 0.84rem; }
+.prose :where(.rex-q-res) { display: none; }
+
+.prose :deep(#rexq-1:checked ~ #rexq-r1),
+.prose :deep(#rexq-2:checked ~ #rexq-r2),
+.prose :deep(#rexq-3:checked ~ #rexq-r3),
+.prose :deep(#rexq-4:checked ~ #rexq-r4) { display: block; }
+
+.prose :deep(#rexq-1:checked ~ .rex-q-tabs label[for="rexq-1"]),
+.prose :deep(#rexq-2:checked ~ .rex-q-tabs label[for="rexq-2"]),
+.prose :deep(#rexq-3:checked ~ .rex-q-tabs label[for="rexq-3"]),
+.prose :deep(#rexq-4:checked ~ .rex-q-tabs label[for="rexq-4"]) { background: var(--gold); color: var(--on-gold); border-color: var(--gold); }
+
+.prose :where(.rex-q-quote) { font-style: italic; color: var(--text); margin: 0.1rem 0 0.55rem; font-size: 0.92rem; }
+.prose :where(.rex-q-chips) { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+.prose :where(.rex-q-chip) { padding: 0.32rem 0.6rem; border: 1px solid var(--gold-border); border-radius: var(--radius-sm); color: var(--gold-bright); background: var(--gold-dim); font-weight: 650; font-size: 0.8rem; }
+.prose :where(.rex-q-chip.zero) { opacity: 0.5; border-color: var(--line); color: var(--faint); }
+
+/* ----------------------------------------------------------- Responsive --- */
+
+@media (max-width: 1023px) {
+  .guide-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guide-aside {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .guide-page {
+    padding: 1.1rem 0.85rem 3rem;
+  }
+
+  .guide-surface {
+    padding: 1.35rem 1.15rem 2rem;
+  }
+
+  .guide-header {
+    gap: 0.75rem;
+  }
+
+  .toc-link.lvl-2,
+  .toc-link.lvl-3 {
+    padding-left: 0.9rem;
+  }
+}
+</style>
+
+<style scoped>
+.super-egg-link { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: .9rem 1.25rem; margin: 0 0 1rem; border: 1px solid var(--gold-border); border-radius: var(--radius-sm); color: var(--gold-bright); text-decoration: none; font-size: .85rem; background: var(--gold-dim); }
+.super-egg-link span { color: var(--muted); }
+.super-egg-link:hover { border-color: var(--gold); }
 </style>

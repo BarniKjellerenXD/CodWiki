@@ -1,7 +1,8 @@
 <template>
-  <div class="min-h-screen bg-slate-900 text-slate-100">
+  <div class="app-shell">
     <NuxtRouteAnnouncer />
     <NuxtPage />
+    <SettingsPanel />
     <button
       v-if="showTop"
       class="back-to-top"
@@ -50,30 +51,40 @@ onBeforeUnmount(() => {
   font-display: swap;
 }
 
+.app-shell {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 .back-to-top {
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 50;
-  width: 2.6rem;
-  height: 2.6rem;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  width: 2.75rem;
+  height: 2.75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: linear-gradient(135deg, rgba(34,211,238,0.28), rgba(217,70,239,0.22));
-  color: #0f172a;
-  font-weight: 800;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border: 1px solid var(--gold-border);
+  background: var(--surface-2);
+  color: var(--gold-bright);
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow);
   cursor: pointer;
-  transition: transform 120ms ease, box-shadow 150ms ease, filter 120ms ease;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 150ms ease;
 }
 
 .back-to-top:hover {
-  transform: translateY(-2px) scale(1.03);
-  filter: brightness(1.05);
-  box-shadow: 0 14px 36px rgba(0,0,0,0.45);
+  background: var(--surface-3);
+  border-color: var(--gold);
+  transform: translateY(-2px);
 }
 
 .back-to-top:active {
-  transform: translateY(0) scale(0.99);
+  transform: translateY(0);
 }
 </style>

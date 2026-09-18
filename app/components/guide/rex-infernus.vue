@@ -10,6 +10,7 @@
 <p>This guide is broken down into <strong>Chapters</strong> and <strong>Topics</strong>, a Chapter defines the content of the Topics to make all of the guides easier to navigate and read.</p>
 <p>On PC, there is a list of all the <strong>Chapters</strong> on the right. Just click on the text and&nbsp;you will be taken there. Alternatively, to find specific information, press <strong>CTRL + F</strong> and type the information you want to find. On mobile, the list of all the <strong>Chapters and Topics</strong> is at the top of the page.</p>
 <p style="text-align: center;"><strong><img alt="" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="2160" data-media-id="m3gh7axgatlh1" data-width="3840" height="1080" width="1920" src="https://preview.redd.it/m3gh7axgatlh1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=d323b0b2b336753bef0dc75300c5e49390193093"></strong></p>
+<p style="text-align: center;"><strong><img alt="Rex Infernus hero" class="wiki-img-none wiki-img-no-wrap wiki-img-in-table" data-height="2160" data-media-id="m3gh7axgatlh1" data-width="3840" height="1080" width="1920" src="https://preview.redd.it/m3gh7axgatlh1.jpeg?width=1920&amp;height=1080&amp;format=pjpg&amp;auto=webp&amp;s=d323b0b2b336753bef0dc75300c5e49390193093"></strong></p>
 <p style="text-align: center;"><strong><em>As reality stands on the cusp of destruction, the crew face their ultimate challenge. Cleanse the Shadowsmith places of power, find the Warden's inner sanctum, and put an end to his loathsome existence.</em></strong></p>
 <hr>
 

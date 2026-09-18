@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Astra Malorum"
     storage-key="guide-pins-astra"
     :default-pins="[

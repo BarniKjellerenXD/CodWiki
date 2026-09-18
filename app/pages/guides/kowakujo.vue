@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Kowakujō"
     storage-key="guide-pins-kowakujo"
     :default-pins="[

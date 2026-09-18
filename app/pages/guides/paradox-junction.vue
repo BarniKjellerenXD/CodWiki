@@ -1,5 +1,6 @@
 <template>
   <GuideArticle
+    map-name="COD: Black Ops 7"
     title="Paradox Junction"
     storage-key="guide-pins-paradox"
     :default-pins="[

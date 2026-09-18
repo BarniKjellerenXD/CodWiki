@@ -52,7 +52,7 @@
           ><img :src="`/tools/zodiac/${z.toLowerCase()}.svg`" :alt="z"></button>
           <div class="znum" :style="dialPos(numr, idx)">{{ idx === 0 ? '12' : idx }}</div>
         </template>
-        <div class="hand" :style="{ transform: `rotate(${-90 + (resultHour ?? 0) * 30 + 90}deg)` }" />
+        <div class="hand" :style="{ transform: `rotate(${(resultHour ?? 0) * 30}deg)` }" />
         <div class="center"><div class="cv">{{ dialText }}</div></div>
       </div>
     </div>
@@ -333,7 +333,7 @@ function ordinal(i: number) {
   font-size: .68rem;
   font-weight: 800;
   color: #ffffff66;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 
 .hand {

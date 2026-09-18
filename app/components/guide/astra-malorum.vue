@@ -137,31 +137,40 @@
 
   <AstraPlanetCodeHelper />
 </div>
-
-
-<div class="table-container" style="text-align: center;">
-  <img alt="Astra Malorum bust book titles" class="wiki-img-left wiki-img-with-wrap wiki-img-in-table" src="/images/astraMalorumBookNames.png">
-</div>
-<h2 id="wiki_caltheris_boss_fight_cards">Caltheris Boss Fight — Phase Cards</h2>
+<h1 id="wiki_caltheris_boss_fight_overview">Caltheris Boss Fight — Overview</h1>
 <div class="boss-phases">
   <div class="boss-card phase1">
-    <div class="boss-title">Phase 1 - Laser and lava orbs</div>
-    <p>Kill zombies while dodging lasers to charge the right Tesla coil; fire the brain beam. Repeat on the left; lava orbs leave burning pools.</p>
-    <ul>
-      <li>Gas flood + poison zombies: climb the stairs when the floor fills.</li>
+    <div class="boss-title">Phase 1 · Lasers and lava orbs</div>
+    <ul class="boss-points">
+      <li>Kill zombies while dodging lasers to charge the Tesla coil on the right side of the arena.</li>
+      <li>Once charged, interact with the machine at the top of the stairs to fire a beam that drains <strong>1/3 of her health bar</strong>.</li>
+      <li>Repeat on the left side. Lava orbs leave burning pools on the floor.</li>
+      <li>Each successful beam adds a new attack: meteor strikes that set an area on fire, or toxic gas on the lower area (drains you to exactly 175 HP) plus toxic zombies.</li>
     </ul>
   </div>
   <div class="boss-card phase2">
-    <div class="boss-title">Phase 2 - Small golem</div>
-    <p>Chases, slaps, throws rocks. Damage until a blue weak point appears, then focus fire while kiting zombies.</p>
+    <div class="boss-title">Phase 2 · Small golem</div>
+    <ul class="boss-points">
+      <li>Caltheris reforms into a smaller rock golem that chases you, slaps you into the air, and throws rocks.</li>
+      <li>Damage her until a glowing blue weak point appears, then hit it for critical damage.</li>
+      <li>Keep kiting zombies while bursting the weak point.</li>
+    </ul>
   </div>
   <div class="boss-card phase3">
-    <div class="boss-title">Phase 3 - Larger golem</div>
-    <p>Same kit plus slam shockwave. Jump as the slam lands to avoid damage.</p>
+    <div class="boss-title">Phase 3 · Caltheris Ascendant</div>
+    <ul class="boss-points">
+      <li>She gains an immunity period during which armored zombies spawn — restock on armor plates.</li>
+      <li>Plays like phase 2, with a slam attack added: jump as the slam lands to avoid the shockwave.</li>
+    </ul>
   </div>
   <div class="boss-card phase4">
-    <div class="boss-title">Phase 4 - Empowered golem</div>
-    <p>All attacks hit harder. Rock throw leaves purple electric pools; slam has bigger radius, longer stun—keep moving and jump slams.</p>
+    <div class="boss-title">Phase 4 · Caltheris the Needle</div>
+    <ul class="boss-points">
+      <li>All attacks are empowered. Rock throws leave purple pools of electricity that deal heavy damage.</li>
+      <li>Movement speed increases exponentially; the slam hits harder, stuns longer, and covers a wider area.</li>
+      <li>Deplete her health bar to finish the fight.</li>
+      <li>If you completed the Ashes of the Damned main quest, <strong>Veytharion's Blessing</strong> spawns at the top of the arena — it refills ammo/armor and grants infinite ammo and equipment for a limited time.</li>
+    </ul>
   </div>
 </div>
 <hr>
@@ -321,19 +330,21 @@
   <div class="relic-section">
     <h2 class="relic-heading grim">Grim Relics</h2>
     <div class="relic-cards">
-            <div class="relic-card grim">
-        <div class="relic-title">GONG <span class="mini-tag">Field Upgrade starts charged, but can only be charged by full power.</span></div>
+      <div class="relic-card grim">
+        <div class="relic-title">GONG</div>
+        <p class="relic-meta"><b>Effect:</b> Field Upgrade starts charged, but can only be charged by full power.</p>
         <ol class="steps">
-          <li>Have Tesla Storm as your Field Upgrade, and at least one weapon with Dead Wire.</li>
+          <li>Have <strong>Tesla Storm</strong> as your Field Upgrade, and at least one weapon with <strong>Dead Wire</strong>.</li>
           <li>Starting at Round 20, and every round afterwards, a zombie will spawn with a lightning rod embedded into its body.</li>
-          <li>Around the map, there will be three doorways with a light bulb above them: The Luminarium (near the brain jar); Observatory Dome (near the room with the portal); and Archive of Orbis (next to the portal room).</li>
+          <li>Around the map, there will be three doorways with a light bulb above them: The Luminarium (near the brain jar), Observatory Dome (near the room with the portal), and Archive of Orbis (next to the portal room).</li>
           <li>Bring the zombie with the lightning rod below the bulb and activate Tesla Storm. Then shoot the zombie to electrocute it with Dead Wire. If done correctly, the electricity will travel to the light bulb.</li>
           <li>Once all three are done, look for the green portal outside between Observatory Dome and Stargazer's Courtyard.</li>
           <li>Survive 4 waves where zombies can only be damaged with electric damage. Klaus Cores will also spawn there.</li>
         </ol>
       </div>
-            <div class="relic-card grim">
-        <div class="relic-title">SEED <span class="mini-tag">Mystery Box is disabled.</span></div>
+      <div class="relic-card grim">
+        <div class="relic-title">SEED</div>
+        <p class="relic-meta"><b>Effect:</b> Mystery Box is disabled.</p>
         <ol class="steps">
           <li>Reach Round 20.</li>
           <li>A pistol will spawn on the ground somewhere on the map.</li>
@@ -347,8 +358,9 @@
   <div class="relic-section">
     <h2 class="relic-heading sinister">Sinister Relics</h2>
     <div class="relic-cards">
-            <div class="relic-card sinister">
-        <div class="relic-title">SPIDER FANG <span class="mini-tag">Perks costs at machines never decrease.</span></div>
+      <div class="relic-card sinister">
+        <div class="relic-title">SPIDER FANG</div>
+        <p class="relic-meta"><b>Effect:</b> Perk costs at machines never decrease.</p>
         <ol class="steps">
           <li>Activate Cursed Mode Tier I.</li>
           <li>Reach Round 40 and defeat O.S.C.A.R. with a melee weapon while Wisp Tea spirit is attacking it. O.S.C.A.R. can be damaged with other way but the killing blow needs to be done with a melee.</li>
@@ -356,8 +368,9 @@
           <li>Survive 5 waves while all perks are disabled.</li>
         </ol>
       </div>
-            <div class="relic-card sinister">
-        <div class="relic-title">MATRYOSHKA DOLL <span class="mini-tag">Salvage drop rate halved.</span></div>
+      <div class="relic-card sinister">
+        <div class="relic-title">MATRYOSHKA DOLL</div>
+        <p class="relic-meta"><b>Effect:</b> Salvage drop rate is halved.</p>
         <ol class="steps">
           <li>Activate Cursed Mode Tier I.</li>
           <li>Open the portal to Mars and reach Round 40.</li>
@@ -372,8 +385,9 @@
   <div class="relic-section">
     <h2 class="relic-heading wicked">Wicked Relics</h2>
     <div class="relic-cards">
-            <div class="relic-card wicked">
-        <div class="relic-title">GOLDEN SPORK <span class="mini-tag">Enemies deal double damage.</span></div>
+      <div class="relic-card wicked">
+        <div class="relic-title">GOLDEN SPORK</div>
+        <p class="relic-meta"><b>Effect:</b> Enemies deal double damage.</p>
         <ol class="steps">
           <li>Activate Cursed Mode Tier II.</li>
           <li>Open the portal to Mars and reach Round 60.</li>
@@ -383,8 +397,9 @@
           <li>Survive 6 waves while zombies and HVTs only take damage from hip-fire.</li>
         </ol>
       </div>
-            <div class="relic-card wicked">
-        <div class="relic-title">CIVIL PROTECTOR HEAD <span class="mini-tag">Perk decay — every 100 kills you lose a perk.</span></div>
+      <div class="relic-card wicked">
+        <div class="relic-title">CIVIL PROTECTOR HEAD</div>
+        <p class="relic-meta"><b>Effect:</b> Perk decay — every 100 kills you lose a perk.</p>
         <ol class="steps">
           <li>Activate Cursed Mode Tier II.</li>
           <li>Reach Round 60 and make sure to have PhD Flopper.</li>

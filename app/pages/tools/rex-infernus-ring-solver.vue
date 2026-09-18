@@ -1,5 +1,5 @@
 <template>
-  <ToolShell map-name="Rex Infernus" back-to="/guides/rex-infernus" class="ring-page">
+  <ToolShell map-name="Rex Infernus" back-to="/guides/rex-infernus">
     <template #title>🛕 Temple Ring Solver</template>
     <template #sub>Six stops clockwise: <b>Empty → Dravakar → Caltheris → House → Nyxara → Veytharion</b>. Pressing a ring's button moves <b>that ring 1 stop</b> and the <b>other two rings 2 stops</b>, in the lever's direction. Lever flips are free — each press uses the direction you pick.</template>
     <template #howto>
@@ -155,31 +155,39 @@ function maskOf(s: number[]) {
 }
 
 function solveTour(start: number[]): [number, number][] | null {
-  let mk = maskOf(start)
-  const seen: Record<string, [number[], number, [number, number] | null]> = {}
-  seen[`${key(start)}_${mk}`] = [start, mk, null]
-  const q: [number[], number][] = [[start, mk]]
-  let goal: string | null = null
-  for (let h = 0; h < q.length && !goal; h++) {
+  // BFS over (state, collected-temple mask). Keyed with a plain numeric id so
+  // the visited set and the parent pointers are indexed identically — the
+  // previous string-keyed map could re-store a goal node without a move,
+  // which made the reconstruction walk spin forever (and freeze the page).
+  const startKey = key(start) * 16 + maskOf(start)
+  const prev = new Map<number, number>()
+  const moves = new Map<number, [number, number]>()
+  prev.set(startKey, -1)
+  const q: [number[], number][] = [[start, maskOf(start)]]
+  let goal = -1
+  for (let h = 0; h < q.length && goal === -1; h++) {
     const [st, sm] = q[h]
+    const sk = key(st) * 16 + sm
     for (let k = 0; k < 3; k++) for (const d of [1, -1] as const) {
       const nxt = move(st, k, d)
       const nm = sm | maskOf(nxt)
-      const nk = `${key(nxt)}_${nm}`
-      if (!(nk in seen)) {
-        seen[nk] = [nxt, nm, [k, d]]
+      const nk = key(nxt) * 16 + nm
+      if (!prev.has(nk)) {
+        prev.set(nk, sk)
+        moves.set(nk, [k, d])
         if (nm === 15) { goal = nk; break }
         q.push([nxt, nm])
       }
     }
   }
-  if (!goal) return null
+  if (goal === -1) return null
   const seq: [number, number][] = []
   let cur = goal
-  while (seen[cur][2]) {
-    const p = seen[cur]
-    seq.unshift(p[2]!)
-    cur = `${key(p[0])}_${p[1]}`
+  let guard = 0
+  while (prev.get(cur) !== -1) {
+    if (++guard > 100000) return null
+    seq.unshift(moves.get(cur)!)
+    cur = prev.get(cur)!
   }
   return seq
 }

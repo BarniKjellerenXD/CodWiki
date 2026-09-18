@@ -3,6 +3,7 @@
 // `accel` is the DEFAULT shortcut — user remaps live via the settings page.
 const NAV = [
   // ---- guides ----
+  { id: 'bo7-super-easter-egg', section: 'Guides', label: 'Super Easter Egg', icon: '✦', url: '/guides/bo7-super-easter-egg', thumb: '/images/ashes-thumb.jpg' },
   { id: 'rex-infernus', section: 'Guides', label: 'Rex Infernus', icon: '🐉', url: '/guides/rex-infernus', thumb: '/images/rex-infernus-thumb.jpg', accel: 'Ctrl+1' },
   { id: 'ashes-of-the-damned', section: 'Guides', label: 'Ashes of the Damned', icon: '🔥', url: '/guides/ashes-of-the-damned', thumb: '/images/ashes-thumb.jpg', accel: 'Ctrl+2' },
   { id: 'astra-malorum', section: 'Guides', label: 'Astra Malorum', icon: '🔭', url: '/guides/astra-malorum', thumb: '/images/astra-thumb.jpg', accel: 'Ctrl+3' },
