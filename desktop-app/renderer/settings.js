@@ -126,17 +126,20 @@
       const up = document.createElement('button')
       up.className = 'sp-btn icon'
       up.textContent = '↑'
+      up.setAttribute('aria-label', 'Move ' + item.label + ' up')
       up.disabled = idx === 0
       up.addEventListener('click', () => move(idx, -1))
       const down = document.createElement('button')
       down.className = 'sp-btn icon'
       down.textContent = '↓'
+      down.setAttribute('aria-label', 'Move ' + item.label + ' down')
       down.disabled = idx === ordered.length - 1
       down.addEventListener('click', () => move(idx, 1))
       const chk = document.createElement('input')
       chk.type = 'checkbox'
       chk.checked = !settings.hidden.includes(item.id)
       chk.title = 'Show in sidebar'
+      chk.setAttribute('aria-label', 'Show ' + item.label + ' in sidebar')
       chk.addEventListener('change', () => {
         if (chk.checked) settings.hidden = settings.hidden.filter((h) => h !== item.id)
         else settings.hidden = [...settings.hidden, item.id]
@@ -149,6 +152,7 @@
       const inp = document.createElement('input')
       inp.type = 'text'
       inp.className = 'sp-nav-label'
+      inp.setAttribute('aria-label', 'Label for ' + item.label)
       inp.value = settings.labels[item.id] !== undefined ? settings.labels[item.id] : item.label
       inp.placeholder = item.label
       inp.addEventListener('change', () => {
@@ -185,17 +189,22 @@
 
   /* ---------- open / close ---------- */
   function open () {
+    if (!settings) return
     panel.hidden = false
+    btnSettings.setAttribute('aria-expanded', 'true')
     document.getElementById('webview').style.visibility = 'hidden'
     renderShortcuts()
     renderNavList()
     selZoom.value = String(settings.startZoom || 0)
     chkRestore.checked = settings.restoreLastPage !== false
+    btnClose.focus()
   }
   function close () {
     stopCapture()
     panel.hidden = true
+    btnSettings.setAttribute('aria-expanded', 'false')
     document.getElementById('webview').style.visibility = 'visible'
+    btnSettings.focus()
   }
   function toggle () { panel.hidden ? open() : close() }
 

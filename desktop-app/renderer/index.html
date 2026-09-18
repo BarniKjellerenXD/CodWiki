@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles.css">
@@ -10,22 +10,22 @@
     <aside id="sidebar">
       <div id="brand" class="drag">
         <img src="../build/icon.png" alt="">
-        <span>CodWiki</span>
+        <div><span>Cod Wiki</span><small>Zombies companion</small></div>
       </div>
-      <nav id="nav"></nav>
+      <nav id="nav" aria-label="Guides and tools"></nav>
       <div id="sidebar-footer">
-        <a id="open-browser">Open in browser ↗</a>
-        <span>v1.1.0</span>
+        <button id="open-browser" type="button">Open in browser ↗</button>
+        <span>v1.2.0</span>
       </div>
     </aside>
     <main id="content">
       <div id="topbar" class="drag">
         <div class="tb-buttons no-drag">
-          <button id="btn-back" title="Back (Alt+←)">‹</button>
-          <button id="btn-fwd" title="Forward (Alt+→)">›</button>
-          <button id="btn-reload" title="Reload (F5)">⟳</button>
-          <button id="btn-home" title="Home (Ctrl+H)">⌂</button>
-          <button id="btn-settings" title="Settings (Ctrl+,)">⚙</button>
+          <button id="btn-back" title="Back (Alt+←)" aria-label="Back">‹</button>
+          <button id="btn-fwd" title="Forward (Alt+→)" aria-label="Forward">›</button>
+          <button id="btn-reload" title="Reload (F5)" aria-label="Reload">⟳</button>
+          <button id="btn-home" title="Home (Ctrl+H)" aria-label="Home">⌂</button>
+          <button id="btn-settings" title="Settings (Ctrl+,)" aria-label="Settings" aria-expanded="false" aria-controls="settings-panel">⚙</button>
         </div>
         <div id="address" class="no-drag">codguides.wolden.eu</div>
       </div>
@@ -34,8 +34,8 @@
 
       <div id="settings-panel" hidden>
         <div class="sp-head drag">
-          <h2>⚙ Settings</h2>
-          <button id="sp-close" class="no-drag" title="Close (Esc)">✕</button>
+          <div><h2>Settings</h2><p>Make the companion work for your next run.</p></div>
+          <button id="sp-close" class="no-drag" title="Close (Esc)" aria-label="Close settings">✕</button>
         </div>
         <div class="sp-body no-drag">
           <div class="sp-tabs no-drag">

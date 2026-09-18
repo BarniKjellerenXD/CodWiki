@@ -203,12 +203,12 @@ function createWindow () {
     height: 920,
     minWidth: 980,
     minHeight: 620,
-    backgroundColor: '#0a0a0c',
+    backgroundColor: '#111214',
     title: 'CodWiki',
     icon: path.join(__dirname, 'build', 'icon.png'),
     show: false,
     ...(process.platform === 'win32'
-      ? { titleBarStyle: 'hidden', titleBarOverlay: { color: '#0a0a0c', symbolColor: '#d4d4d8', height: 40 } }
+      ? { titleBarStyle: 'hidden', titleBarOverlay: { color: '#1c1e22', symbolColor: '#b4b7bd', height: 48 } }
       : {}),
     webPreferences: {
       webviewTag: true,

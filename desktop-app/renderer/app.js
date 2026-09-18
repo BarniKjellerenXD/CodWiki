@@ -34,12 +34,15 @@ function effectiveItems () {
 }
 
 function makeItem (item) {
-  const el = document.createElement('div')
+  const el = document.createElement('button')
+  el.type = 'button'
   el.className = 'nav-item'
+  if (item.id === 'bo7-super-easter-egg') el.classList.add('quest')
   el.dataset.url = item.url
-  if (item.thumb) {
+  if (item.thumb && item.id !== 'bo7-super-easter-egg') {
     const img = document.createElement('img')
     img.className = 'thumb'
+    img.alt = ''
     img.src = SITE + item.thumb
     img.addEventListener('error', () => {
       const s = document.createElement('span')
@@ -78,7 +81,7 @@ function buildSidebar () {
       section = item.section
       const lab = document.createElement('div')
       lab.className = 'nav-label'
-      lab.textContent = section
+      lab.textContent = section === 'Guides' ? 'Black Ops 7 · Guides' : section
       navEl.appendChild(lab)
     }
     navEl.appendChild(makeItem(item))
@@ -103,7 +106,10 @@ function setActive (url) {
   const items = navEl.querySelectorAll('.nav-item')
   items.forEach((el) => {
     const u = el.dataset.url
-    el.classList.toggle('active', u !== undefined && (SITE + u === SITE + path || (u !== '/' && path.startsWith(u))))
+    const active = u !== undefined && (SITE + u === SITE + path || (u !== '/' && path.startsWith(u)))
+    el.classList.toggle('active', active)
+    if (active) el.setAttribute('aria-current', 'page')
+    else el.removeAttribute('aria-current')
   })
 }
 
@@ -114,11 +120,13 @@ function updateButtons () {
 
 function showError (desc) {
   errorPageShown = true
-  const html = '<!doctype html><html><body style="background:#0a0a0c;color:#e5e7eb;font-family:system-ui;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0">' +
-    '<div style="font-size:44px">⚠️</div>' +
-    '<h1 style="color:#f59e0b;font-size:22px;margin:12px 0 6px">Can\'t reach CodWiki</h1>' +
-    '<p style="color:#9ca3af;margin:0 0 20px">' + (desc || 'Network error') + '</p>' +
-    '<a href="' + SITE + '/" style="background:#f59e0b;color:#18181b;padding:10px 22px;border-radius:10px;text-decoration:none;font-weight:600">Retry</a>' +
+  const message = document.createElement('span')
+  message.textContent = desc || 'Network error'
+  const html = '<!doctype html><html><body style="background:#111214;color:#f2f2f0;font-family:system-ui;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;margin:0">' +
+    '<div style="font-size:36px;color:#ddb363">↗</div>' +
+    '<h1 style="font-size:24px;margin:16px 0 10px">Can\'t reach Cod Wiki</h1>' +
+    '<p style="color:#b4b7bd;margin:0 0 24px">' + message.innerHTML + '</p>' +
+    '<a href="' + SITE + '/" style="background:#ddb363;color:#1b1409;padding:10px 22px;border-radius:9px;text-decoration:none;font-weight:600">Retry</a>' +
     '</body></html>'
   webview.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(html))
 }
