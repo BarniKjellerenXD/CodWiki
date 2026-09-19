@@ -20,7 +20,12 @@ export function sanitizePuzzleState(id, input) {
     case 'books': return {selected:unique(v.selected,0,8,9)}
     case 'rings': return {positions:fixed(v.positions,3,n=>int(n,0,5)),target:one(v.target,[...temples,'tour'],'tour'),visited:unique(v.visited,0,5,4).filter(n=>temples.includes(n))}
     case 'pillars': return {riddle:int(v.riddle,0,3)}
-    case 'house': return {order:unique(v.order,0,3,4)}
+    case 'house': {
+      // Preserve saved locations from the former preset tracker as editable points.
+      const previous=[{x:33,y:60},{x:43,y:59},{x:75.5,y:44.5},{x:83.5,y:66}]
+      const points=Array.isArray(v.points)?v.points:unique(v.order,0,3,4).map(i=>previous[i])
+      return {points:points.filter(p=>p&&Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=0&&p.x<=100&&p.y>=0&&p.y<=100).slice(0,4).map(p=>({x:p.x,y:p.y}))}
+    }
     default: return {}
   }
 }

@@ -1,10 +1,66 @@
 <script setup lang="ts">
 const {state,change,undo,reset,canUndo,saveError}=usePuzzleState('house')
-const spots=[{name:'Left wing · inner edge',x:33,y:60},{name:'Center · above lower windows',x:43,y:59},{name:'Right · above upstairs window',x:75.5,y:44.5},{name:'Far right · lower wall',x:83.5,y:66}]
-const slot=ref(0)
-const oldPoints=ref<{x:number,y:number}[]>([])
-onMounted(()=>{try{const value=JSON.parse(localStorage.getItem('cw-rex-house-symbols')||'[]');if(Array.isArray(value))oldPoints.value=value.filter(p=>Number.isFinite(p?.x)&&Number.isFinite(p?.y)&&p.x>=0&&p.x<=100&&p.y>=0&&p.y<=100).slice(0,4)}catch{}})
-function pick(id:number) {const order=state.value.order.slice(); const previous=order.indexOf(id); if(previous>=0&&previous!==slot.value) {const old=order[slot.value]; order[previous]=old; }order[Math.min(slot.value,order.length)]=id;change({order});slot.value=Math.min(order.length,3)}
+const slot=ref<number|null>(0)
+const cursor=ref({x:50,y:50})
+const keyboard=ref(false)
+const helpId=useId()
+watch(()=>state.value.points.length, length=>{slot.value=length<4?length:null})
+function place(x:number,y:number) {
+  if(slot.value===null) return
+  const points=state.value.points.slice()
+  points[Math.min(slot.value,points.length)]={x:Math.max(0,Math.min(100,x)),y:Math.max(0,Math.min(100,y))}
+  change({points})
+  slot.value=points.length<4?points.length:null
+}
+function clickImage(event:MouseEvent) {
+  if(event.detail===0) {place(cursor.value.x,cursor.value.y);return}
+  keyboard.value=false
+  const rect=(event.currentTarget as HTMLElement).getBoundingClientRect()
+  place((event.clientX-rect.left)/rect.width*100,(event.clientY-rect.top)/rect.height*100)
+}
+function moveCursor(event:KeyboardEvent) {
+  const movement:Record<string,[number,number]>={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}
+  const delta=movement[event.key]
+  if(!delta) return
+  event.preventDefault()
+  keyboard.value=true
+  const step=event.shiftKey?5:1
+  cursor.value={x:Math.max(0,Math.min(100,cursor.value.x+delta[0]*step)),y:Math.max(0,Math.min(100,cursor.value.y+delta[1]*step))}
+}
+function select(n:number) {slot.value=n;cursor.value=state.value.points[n]||{x:50,y:50}}
 </script>
-<template><div class="puzzle"><p>After obtaining Warden’s Blight, shoot the basketball in the broken roof from Nexus Forge. Advance a round for the first symbol, then three more rounds for the others.</p><p>Choose a slot, then the location where its symbol appeared.</p><div class="p-row"><button v-for="n in 4" :key="n" :aria-pressed="slot===n-1" :disabled="n-1>state.order.length" @click="slot=n-1">{{ n }} · {{ state.order[n-1]===undefined?'Empty':spots[state.order[n-1]].name }}</button></div><div class="house-image"><img src="/tools/rex-infernus-house-symbols.jpg" alt="Spawn house viewed from Nexus Forge"><button v-for="(spot,i) in spots" :key="spot.name" :style="{left:spot.x+'%',top:spot.y+'%'}" :aria-label="spot.name" @click="pick(i)">{{ state.order.includes(i)?state.order.indexOf(i)+1:String.fromCharCode(65+i) }}</button></div><div class="p-grid"><button v-for="(spot,i) in spots" :key="spot.name" @click="pick(i)">{{ String.fromCharCode(65+i) }} · {{ spot.name }}</button></div><div class="p-result" aria-live="polite"><strong>{{ state.order.length===4?'Shoot in this order during an Exfil round':'Appearance order · '+state.order.length+'/4' }}</strong><ol style="list-style:decimal;padding-left:1.4rem"><li v-for="id in state.order" :key="id">{{ spots[id].name }}</li></ol></div><p class="p-muted">Then activate Exfil, kill the HVT and take the portal into the house. The letters here identify locations, not in-game symbols.</p><details v-if="oldPoints.length"><summary>Your previous freeform markers</summary><p class="p-muted">Use these as a reference to record named locations above. They have not been snapped to a different position.</p><div class="house-image"><img src="/tools/rex-infernus-house-symbols.jpg" alt="Your previously marked house"><span v-for="(point,i) in oldPoints" :key="i" class="old-marker" :style="{left:point.x+'%',top:point.y+'%'}">{{ i+1 }}</span></div></details><PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset();slot=0" /></div></template>
-<style scoped>.old-marker{position:absolute;transform:translate(-50%,-50%);border:2px solid var(--wp-gold);border-radius:50%;padding:.3rem;background:#171717;color:white}.house-image{position:relative;margin:.8rem 0}.house-image img{display:block;width:100%;border-radius:8px}.house-image button{position:absolute;transform:translate(-50%,-50%);border:2px solid var(--wp-gold);border-radius:50%;background:#171717;color:#fff;width:44px;height:44px;padding:0;font-weight:800}</style>
+
+<template>
+  <div class="puzzle house-tracker">
+    <p>After obtaining Warden’s Blight, shoot the basketball in the broken roof from Nexus Forge. Advance a round for the first symbol, then three more rounds for the others.</p>
+    <p>Click or tap each symbol on the photo as it appears. The numbered circles record your shooting order.</p>
+    <div class="p-row house-slots" aria-label="Symbol appearance order">
+      <button v-for="n in 4" :key="n" type="button" :aria-label="`Symbol ${n} · ${state.points[n-1]?'marked':'place'}`" :aria-pressed="slot===n-1" :disabled="n-1>state.points.length" @click="select(n-1)"><strong>{{ n }}</strong><small>{{ state.points[n-1]?'Marked':'Place' }}</small></button>
+    </div>
+    <p :id="helpId" class="p-muted" aria-live="polite">{{ slot===null?'All four marked. Select a numbered circle to move it.':state.points[slot]?`Tap a new position for symbol ${slot+1}.`:`Tap the photo to place symbol ${slot+1}.` }}</p>
+    <div class="house-image">
+      <img src="/tools/rex-infernus-house-symbols.jpg" alt="Spawn house viewed from Nexus Forge" draggable="false">
+      <button class="house-canvas" type="button" :aria-label="slot===null?'House photo — select a numbered symbol to reposition it':`Place symbol ${slot+1} on the house photo`" :aria-describedby="helpId" @click="clickImage" @keydown="moveCursor" @blur="keyboard=false">
+        <span v-if="keyboard && slot!==null" class="house-cursor" :style="{left:cursor.x+'%',top:cursor.y+'%'}" aria-hidden="true">+</span>
+      </button>
+      <button v-for="(point,i) in state.points" :key="i" type="button" class="house-marker" :style="{left:point.x+'%',top:point.y+'%'}" :aria-label="`Move symbol ${Number(i)+1}`" :aria-pressed="slot===i" @click="select(Number(i))"><span>{{ Number(i)+1 }}</span></button>
+    </div>
+    <div class="p-result" aria-live="polite"><strong>{{ state.points.length===4?'Shoot the marked symbols in order: 1 → 2 → 3 → 4':'Appearance order · '+state.points.length+'/4 marked' }}</strong></div>
+    <p class="p-muted">Then activate Exfil, kill the HVT and take the portal into the house. Select a number and tap the photo to correct its position.</p>
+    <details><summary>Keyboard controls</summary><p class="p-muted">Focus the photo and use the arrow keys to aim. Hold Shift to move faster. Press Enter or Space to place the circle.</p></details>
+    <PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset();slot=0;cursor={x:50,y:50}" />
+  </div>
+</template>
+
+<style scoped>
+.house-slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.4rem}.house-slots button{display:flex;align-items:center;justify-content:center;gap:.4rem;font-size:.83rem}.house-slots small{font-size:.75rem}
+.house-image{position:relative;margin:.8rem 0;isolation:isolate;overflow:hidden;border-radius:10px}
+.house-image img{display:block;width:100%;height:auto;margin:0;border-radius:10px;user-select:none}
+.house-tracker .house-canvas{position:absolute;inset:0;width:100%;height:100%;min-height:0;padding:0;border:0;background:transparent;cursor:crosshair;border-radius:10px;touch-action:manipulation}
+.house-canvas:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.house-tracker .house-marker{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:transparent;z-index:1;touch-action:manipulation}
+.house-marker span{display:grid;place-items:center;width:30px;height:30px;border:2px solid #fff;border-radius:50%;background:#171717b3;color:#fff;font-size:16px;font-weight:800;box-shadow:0 1px 5px #000}
+.house-marker[aria-pressed=true] span{border-color:#f5cd74;background:#6b4818e6}
+.house-marker:focus-visible{outline:2px solid var(--gold);outline-offset:1px}
+.house-cursor{position:absolute;transform:translate(-50%,-50%);color:#fff;font-size:32px;text-shadow:0 1px 3px #000;line-height:1;pointer-events:none}
+</style>

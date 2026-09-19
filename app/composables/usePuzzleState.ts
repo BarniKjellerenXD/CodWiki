@@ -2,7 +2,7 @@ import { sanitizePuzzleState, migratePuzzleState, legacyPuzzleKeys } from '~/uti
 
 // Shared within this Nuxt app (including inline/full-page helpers), isolated per SSR request.
 export function usePuzzleState(id: string) {
-  const version = ['rings', 'murder'].includes(id) ? 3 : 2
+  const version = ['rings', 'murder', 'house'].includes(id) ? 3 : 2
   const state = useState<any>(`puzzle-${id}-v${version}`, () => sanitizePuzzleState(id, {}))
   const ready = useState(`puzzle-${id}-ready`, () => false)
   const history = useState<any[]>(`puzzle-${id}-history`, () => [])
@@ -22,6 +22,10 @@ export function usePuzzleState(id: string) {
           if(migrated) state.value=migrated
           else legacyNotice.value='This helper has changed. Record the current clues again; your older saved input has been kept separately.'
         }
+      }
+      if(id==='house' && !localStorage.getItem(key) && !state.value.points.length) {
+        const original=JSON.parse(localStorage.getItem('cw-rex-house-symbols') || '[]')
+        state.value=sanitizePuzzleState(id,{points:original})
       }
     } catch {}
     ready.value = true

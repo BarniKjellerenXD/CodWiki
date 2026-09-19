@@ -84,6 +84,14 @@ test('part completion keeps legacy partial progress and unrelated maps/preferenc
   const restored=readProgress(JSON.stringify(progress));assert.equal(restored.runs.ashes.hideCompleted,true);resetRun(restored,'ashes');assert.deepEqual(restored.runs.rex.done,['x']);assert.equal(restored.toys.ashes,true);assert.equal(restored.runs.ashes.hideCompleted,true)
 })
 
+test('house markers retain exact coordinates and migrate previous preset order',()=>{
+  const points=[{x:12.375,y:65.25},{x:0,y:100},{x:100,y:0},{x:51,y:49}]
+  assert.deepEqual(sanitizePuzzleState('house',{points}),{points})
+  assert.deepEqual(sanitizePuzzleState('house',{points:[null,{x:-1,y:30},{x:'5',y:5},...points,{x:90,y:90}]}),{points})
+  assert.deepEqual(sanitizePuzzleState('house',{order:[2,0,3,1]}),{points:[{x:75.5,y:44.5},{x:33,y:60},{x:83.5,y:66},{x:43,y:59}]})
+  assert.deepEqual(sanitizePuzzleState('house',{points:[],order:[2,0]}),{points:[]})
+})
+
 test('legacy migration preserves compatible clues but never imports obsolete solutions',()=>{
  assert.deepEqual(migratePuzzleState('rocket',{selected:'ENGINE'}),{word:'ENGINE'})
  assert.deepEqual(migratePuzzleState('mars',{picked:['venus','mars','neptune']}),{slots:[2,4,8]})
