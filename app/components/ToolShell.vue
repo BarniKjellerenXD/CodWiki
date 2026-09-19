@@ -5,9 +5,9 @@
 
       <div class="glass">
         <h1><span class="map">{{ mapName }}</span> <slot name="title" /></h1>
-        <p class="sub"><slot name="sub" /></p>
+        <p v-if="$slots.sub" class="sub"><slot name="sub" /></p>
 
-        <details class="howto"><summary>How to use this tool</summary><slot name="howto" /></details>
+        <details v-if="$slots.howto" class="howto"><summary>How to use this tool</summary><slot name="howto" /></details>
 
         <slot />
 

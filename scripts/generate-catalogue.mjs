@@ -23,7 +23,7 @@ for (const map of catalogue.maps) {
     n.children?.forEach(child => walk(child, quick))
   }
   walk(root)
-  for (const phase of quests[map.id] || []) entries.push({ id:`${map.id}:quick-${phase.id}`, name:phase.title, map:map.id, kind:'Quick steps', route:`${map.route}#quick-${phase.id}`, keywords:map.name+' main quest checklist' })
+  for (const phase of quests[map.id] || []) entries.push({ id:`${map.id}:quick-${phase.id}`, name:phase.title, map:map.id, kind:'Quick parts', route:`${map.route}#quick-${phase.id}`, keywords:map.name+' main quest checklist' })
 }
 for (const tool of catalogue.tools) entries.push({ ...tool, kind: 'Tool', keywords: `${catalogue.maps.find(m=>m.id===tool.map).name} solver tracker` })
 entries.push({ id: 'super-ee', name: 'Super Easter Egg', map: '', kind: 'Quest', route: '/guides/bo7-super-easter-egg', keywords: 'super ee toys warden exfil' })

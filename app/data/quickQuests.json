@@ -31,7 +31,10 @@
         },
         {
           "id": "phase-2-ol-2",
-          "html": "Yuri's Lab: 3 pigpen ciphers = ingredient order: <strong>Hoard Hunk Chucks, Widow's Lantern, Ravager Eyes, Human Bones, Mysterious Limb</strong> (open Full Details for the pigpen reference). <a href=\"/tools/ashes-serum\" rel=\"noopener\">🧮 ingredient order tracker</a>"
+          "html": "Yuri’s Lab: match the <strong>three Pigpen words on the chalkboard, top to bottom</strong>, to the required ingredients.",
+          "tools": [
+            "ashes-serum"
+          ]
         },
         {
           "id": "phase-2-ol-3",
@@ -79,7 +82,10 @@
         },
         {
           "id": "phase-5-ol-2",
-          "html": "Monitors spell <strong>LAUNCH / WEAPON / ENGINE / ROCKET</strong> (pigpen) → open the Rocket Launch Codes tool → lock numbers <strong>left to right</strong> by shooting red buttons."
+          "html": "Match the Pigpen word on the monitors, then lock each two-digit value <strong>left to right</strong> using the red buttons.",
+          "tools": [
+            "ashes-rocket-launch"
+          ]
         },
         {
           "id": "phase-5-ol-3",
@@ -169,7 +175,7 @@
     {
       "id": "phase-1",
       "title": "Awaken the astronomer",
-      "detail": "wiki_main_quest",
+      "detail": "wiki_main_quest_awaken_astronomer",
       "steps": [
         {
           "id": "phase-1-ol-1",
@@ -177,7 +183,10 @@
         },
         {
           "id": "phase-1-ol-2",
-          "html": "<strong>Starting at Round 10</strong>, follow O.S.C.A.R. until it calls out three planets. Convert planets to numbers by their distance from the Sun (Mercury = 1, Neptune = 8)."
+          "html": "<strong>Starting at Round 10</strong>, follow O.S.C.A.R. until it calls out three planets. Convert planets to numbers by their distance from the Sun (Mercury = 1, Neptune = 8).",
+          "tools": [
+            "astra-mars-code"
+          ]
         },
         {
           "id": "phase-1-ol-3",
@@ -205,7 +214,7 @@
     {
       "id": "phase-2",
       "title": "Power and align the observatory",
-      "detail": "wiki_main_quest",
+      "detail": "wiki_main_quest_portal_to_mars",
       "steps": [
         {
           "id": "phase-2-ol-1",
@@ -217,7 +226,10 @@
         },
         {
           "id": "phase-2-ol-3",
-          "html": "In Archive of Orbis, match the three busts to the counted book titles from their shelves (do this at round start for time)."
+          "html": "In Archive of Orbis, match the three busts to the counted book titles from their shelves (do this at round start for time).",
+          "tools": [
+            "astra-books"
+          ]
         },
         {
           "id": "phase-2-ol-4",
@@ -229,7 +241,10 @@
         },
         {
           "id": "phase-2-ol-6",
-          "html": "Align the planets on the model display to the noted directions (compass around the Sun model)."
+          "html": "Align the planets on the model display to the noted directions (compass around the Sun model).",
+          "tools": [
+            "astra-planets"
+          ]
         },
         {
           "id": "phase-2-ol-7",
@@ -241,7 +256,7 @@
     {
       "id": "phase-3",
       "title": "Mars sequence",
-      "detail": "wiki_main_quest",
+      "detail": "wiki_main_quest_mars_sequence",
       "steps": [
         {
           "id": "phase-3-ol-1",
@@ -261,7 +276,10 @@
         },
         {
           "id": "phase-3-ol-5",
-          "html": "Back in Observatory Dome, read the organ screen: it shows the five symbols in order with one missing (denoted by wavy lines). Note the missing symbol and its position."
+          "html": "Back in Observatory Dome, read the organ screen: it shows the five symbols in order with one missing (denoted by wavy lines). Note the missing symbol and its position.",
+          "tools": [
+            "astra-organ"
+          ]
         },
         {
           "id": "phase-3-ol-6",
@@ -311,7 +329,7 @@
         },
         {
           "id": "phase-1-ol-2",
-          "html": "<strong>The Twins Swing:</strong> swing seat (Normal, Yellow House) → RC-XD race (Destroyed) → Chalk → rehang swing → Twins scene."
+          "html": "<span class=\"era\">Normal</span> Shoot Yellow backyard’s swing; take its seat. <span class=\"era\">Destroyed</span> RC-XD race → Chalk → return seat and chalk to the swing → Twins scene."
         }
       ],
       "legacy": "h2-setup"
@@ -323,19 +341,19 @@
       "steps": [
         {
           "id": "phase-2-ol-1",
-          "html": "Irradiated Seeds (Destroyed garage toolbox) → plant in Normal Trinity Ave mound → fill tree with souls (Blundergat/Sundergat)."
+          "html": "<span class=\"era\">Destroyed</span> Seeds: Yellow garage’s red toolbox. <span class=\"era\">Normal</span> Plant left of Trinity Ave PaP and feed the tree souls with either Blundergat."
         },
         {
           "id": "phase-2-ol-2",
-          "html": "3 Combat Axes → Strange Firewood → fireplace (Molotov)."
+          "html": "<span class=\"era\">Destroyed</span> Throw 3 Combat Axes at the tree for firewood. <span class=\"era\">Normal</span> Place it in Yellow House’s fireplace and light with a Molotov."
         },
         {
           "id": "phase-2-ol-3",
-          "html": "Stand on the massive X in Destroyed Trinity Ave until it stays blue → Normal: hopscotch scene → jump 1→12→1 (avoid smoke, 30s fail wait)."
+          "html": "<span class=\"era\">Destroyed</span> Stand on Trinity Ave’s X until it stays blue. <span class=\"era\">Normal</span> Watch the scene; hop 1→12→1, avoiding smoke (30s retry wait)."
         },
         {
           "id": "phase-2-ol-4",
-          "html": "Golden music box spawns → fill with souls (Sundergat) → escort to fireplace."
+          "html": "<span class=\"era\">Normal</span> Feed the golden music box souls with the Sundergat; escort it to the fireplace."
         }
       ],
       "legacy": "h2-strange-tree-hopscotch"
@@ -347,15 +365,18 @@
       "steps": [
         {
           "id": "phase-3-ol-1",
-          "html": "Destroyed Green House: turn <strong>Piano Teacher</strong> (Brain Rot/Psych) → teleport back → it plays piano &amp; explodes."
+          "html": "<span class=\"era\">Destroyed</span> Turn the Green backyard Piano Teacher with Brain Rot/Psych. Follow it indoors, then <strong>quickly teleport to Normal</strong> for its piano scene."
         },
         {
           "id": "phase-3-ol-2",
-          "html": "8 glowing notes in Destroyed — blink order 1–8 → interact in order → piano order on wall is always <strong>86756535</strong>."
+          "html": "<span class=\"era\">Destroyed</span> Record each note’s blink count and collect in 1–8 order. <span class=\"era\">Normal</span> Green House piano: <strong>8 6 7 5 6 5 3 5</strong>.",
+          "tools": [
+            "paradox-notes"
+          ]
         },
         {
           "id": "phase-3-ol-3",
-          "html": "Kill 3 floating zombies → souls over the X → Normal: ball trial — kill airborne zombies before ball lands → music sheet → escort to piano (Sundergat)."
+          "html": "<span class=\"era\">Destroyed</span> Kill 3 floating backyard zombies. <span class=\"era\">Normal</span> Trinity Ave ball trial: kill airborne zombies before the ball lands. Feed the music sheet souls with Sundergat; escort to piano."
         }
       ],
       "legacy": "h2-piano-bouncing-ball"
@@ -367,19 +388,19 @@
       "steps": [
         {
           "id": "phase-4-ol-1",
-          "html": "Destroyed PaP area: shoot speaker pole → Goggles (use Wisp Tea to bring in)."
+          "html": "<span class=\"era\">Destroyed</span> Shoot the top of the speaker pole at Trinity Ave PaP; use Wisp Tea to retrieve the Goggles."
         },
         {
           "id": "phase-4-ol-2",
-          "html": "Death Perception: find Headset outline → Normal toy box scene."
+          "html": "<span class=\"era\">Destroyed</span> Death Perception reveals the Headset. <span class=\"era\">Normal</span> Interact with the blue toy box by Trinity Ave’s crates."
         },
         {
           "id": "phase-4-ol-3",
-          "html": "Red ball → shoot to the massive X in Destroyed Green House Backyard → Four Square trial — bounce ball square-to-square until timer ends."
+          "html": "<span class=\"era\">Destroyed</span> Shoot the red ball to Green backyard’s X. <span class=\"era\">Normal</span> Start Four Square; melee the ball between squares, allowing just one bounce per square, until time ends."
         },
         {
           "id": "phase-4-ol-4",
-          "html": "Cymbals spawn → fill with souls (Sundergat) → escort to toy box."
+          "html": "<span class=\"era\">Normal</span> Feed the cymbals souls with Sundergat; escort to the toy box."
         }
       ],
       "legacy": "h2-toy-box-four-square"
@@ -391,11 +412,11 @@
       "steps": [
         {
           "id": "phase-5-ol-1",
-          "html": "Destroyed: shoot crumbled clock → hands to 0."
+          "html": "After all three branches: <span class=\"era\">Destroyed</span> shoot crumbled clock → both hands to 0."
         },
         {
           "id": "phase-5-ol-2",
-          "html": "Teleport to Normal; <strong>shoot the hands again during the teleport animation</strong>."
+          "html": "Start teleporting to <span class=\"era\">Normal</span>; <strong>shoot the red hand once just before the teleport animation ends</strong>."
         },
         {
           "id": "phase-5-ol-3",
@@ -461,7 +482,10 @@
         },
         {
           "id": "phase-2-ol-5",
-          "html": "Count the 2 sets of blinking lights → <strong>2×2-digit numbers</strong>."
+          "html": "Count the 2 sets of blinking lights → <strong>2×2-digit numbers</strong>.",
+          "tools": [
+            "totenreich-wunderbarrage"
+          ]
         },
         {
           "id": "phase-2-ol-6",
@@ -489,7 +513,10 @@
         },
         {
           "id": "phase-3-ol-4",
-          "html": "Clear debris (Wunderbarrage) → Machine Workshop → claw machine: <strong>6&amp;3 / 7&amp;2 / 7&amp;1&amp;1</strong> → <strong>Atomkraft Core</strong>."
+          "html": "Clear debris (Wunderbarrage) → Machine Workshop → record the six existing tubes and place three Uranium tubes to keep the gauge in its target range → <strong>Atomkraft Core</strong>.",
+          "tools": [
+            "totenreich-uranium"
+          ]
         },
         {
           "id": "phase-3-ol-5",
@@ -623,7 +650,10 @@
         },
         {
           "id": "phase-4-ol-3",
-          "html": "<strong>Clock Puzzle:</strong> storage clock ×4 → assault wave → Japanese numbers → flags into bamboo shoots → final evidence. <a href=\"/tools/kowakujo-clock-solver\" rel=\"noopener\">🧮 solver</a>"
+          "html": "<strong>Clock Puzzle:</strong> storage clock ×4 → assault wave → read Japanese numbers → allocate up to two flags per area → final evidence.",
+          "tools": [
+            "kowakujo-clock"
+          ]
         }
       ],
       "legacy": "h2-evidences-location-motive"
@@ -639,11 +669,17 @@
         },
         {
           "id": "phase-5-ol-2",
-          "html": "<strong>Pestle:</strong> scroll pattern in Storage Rooms → Doctor's Note."
+          "html": "<strong>Pestle:</strong> scroll pattern in Storage Rooms → Doctor's Note.",
+          "tools": [
+            "kowakujo-pestle"
+          ]
         },
         {
           "id": "phase-5-ol-3",
-          "html": "<strong>Paintings 1–5:</strong> place matching evidence by each painting; use trap ghost (accomplice), Doctor's Note + dial (poison), background match (location)."
+          "html": "<strong>Paintings 1–5:</strong> match the evidence using the trap ghost, Death Records, Poison Compendium and fourth painting’s background.",
+          "tools": [
+            "kowakujo-murder"
+          ]
         }
       ],
       "legacy": "h2-key-items-murder-puzzle"
@@ -670,6 +706,31 @@
     }
   ],
   "rex-infernus": [
+    {
+      "id": "setup",
+      "title": "Warden’s Blight & Void Talon",
+      "detail": "wiki_key_features",
+      "steps": [
+        {
+          "id": "setup-claw",
+          "html": "Unlock Pack-a-Punch and collect the <strong>Void Claw</strong>. Follow the Warden’s Blight route through the Fracture and recover its three parts."
+        },
+        {
+          "id": "setup-blight",
+          "html": "Dravakar Sanctuary: match the wall riddle to its lever pulls, confirm at the center pillar and forge <strong>Warden’s Blight</strong>.",
+          "tools": [
+            "rex-pillars"
+          ]
+        },
+        {
+          "id": "setup-talon",
+          "html": "Shoot the basketball in the house roof. Record four symbols across the next four rounds; shoot them in that order on an Exfil round. Exfil to Her House, retrieve the Eye of the Forge and upgrade a Void Claw pedestal.",
+          "tools": [
+            "rex-house-symbols"
+          ]
+        }
+      ]
+    },
     {
       "id": "phase-1",
       "title": "Swirling Pool",
@@ -721,7 +782,10 @@
       "steps": [
         {
           "id": "phase-3-ol-1",
-          "html": "<strong>Align the 3 pillars in front of each temple first.</strong>"
+          "html": "<strong>Align the 3 pillars in front of each temple first.</strong>",
+          "tools": [
+            "rex-ring"
+          ]
         },
         {
           "id": "phase-3-ol-2",

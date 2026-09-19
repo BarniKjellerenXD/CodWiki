@@ -13,6 +13,7 @@ export function readProgress(raw) {
         view: run.view === 'full' ? 'full' : 'quick',
         collapsed: run.collapsed && typeof run.collapsed === 'object' ? run.collapsed : {},
         groups: Array.isArray(run.groups) ? run.groups.filter(s=>typeof s==='string') : [],
+        hideCompleted: run.hideCompleted === true,
       }
     }
     for (const [id, done] of Object.entries(data.toys || {})) if (/^[a-z0-9-]+$/.test(id)) result.toys[id] = done === true
@@ -28,6 +29,15 @@ export function resetRun(state, id) {
   run.done = []
   run.section = ''
   if (state.last?.route.endsWith('/' + id)) state.last.section = ''
+}
+export function partStatus(done, steps) {
+  const count = steps.filter(step => done.includes(step.id)).length
+  return count === steps.length && count > 0 ? 'complete' : count > 0 ? 'partial' : 'empty'
+}
+export function togglePart(done, steps) {
+  const ids = new Set(steps.map(step => step.id))
+  const rest = done.filter(id => !ids.has(id))
+  return partStatus(done, steps) === 'complete' ? rest : [...rest, ...ids]
 }
 export function normalizeSearch(value) {
   return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()

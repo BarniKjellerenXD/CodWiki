@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - "desktop-app/**"
+      - "shared/**"
+      - "scripts/generate-catalogue.mjs"
       - ".github/workflows/desktop.yml"
 
 permissions:
@@ -21,10 +23,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Generate shared navigation and check compatibility
+        working-directory: .
+        run: |
+          npm ci
+          node scripts/generate-catalogue.mjs
+          npm test
       - name: Install deps
         run: npm ci
       - name: Build installer + portable zip
-        run: npx electron-builder --win nsis zip --x64
+        run: npm run dist:win
       - name: Publish release
         shell: bash
         env:

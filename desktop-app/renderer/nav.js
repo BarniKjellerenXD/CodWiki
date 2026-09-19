@@ -81,6 +81,16 @@ const NAV = [
     "icon": "◇"
   },
   {
+    "id": "paradox-notes",
+    "map": "paradox-junction",
+    "kind": "tool",
+    "section": "Paradox Junction",
+    "label": "Note Order & Piano",
+    "url": "/tools/paradox-note-order",
+    "accel": "Ctrl+Alt+1",
+    "icon": "↗"
+  },
+  {
     "id": "totenreich",
     "map": "totenreich",
     "kind": "guide",

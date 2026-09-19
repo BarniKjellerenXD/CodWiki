@@ -148,7 +148,7 @@
 <li>Turn the Piano Teacher with either Brain Rot or a Psych Grenade and follow the Piano Teacher in Green House.</li>
 <li><strong>Quickly</strong> teleport back to Normal Nuketown and the Piano Teacher should start interacting with the piano before exploding.</li>
 <li>Travel back to Destroyed Nuketown and find 8 notes glowing blue around the map.</li>
-<li>Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in that order.</li>
+<li>Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in that order.<InlineTool tool="paradox-notes" /></li>
 <li>Return to Normal Nuketown and in the Green House. The notes will now appear on the wall in the same order. Interact with the piano to play the notes in the order seen on the wall. <strong>Note: the order is always 86756535.</strong></li>
 <li>Travel back to Destroyed Nuketown. Outside the map there will be three floating zombies in either Green House Backyard or Yellow House Backyard, kill all three zombies to free their souls.</li>
 <li>The souls will now appear above the massive X on ground in Trinity Ave.</li>
@@ -186,7 +186,7 @@
 <div class="glass-card glass-gold"><h2 class="" id="wiki_clock_tower_and_the_twins"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Clock Tower and The Twins<span class="g-tag">🕰️ Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
 <li>In Destroyed Nuketown, shoot at the crumbled clock to move both the white and red hands on 0.</li>
-<li>Start to teleport back to Normal Nuketown, but during the animation shoot at the hands again to move them again before teleporting.</li>
+<li>Start to teleport back to Normal Nuketown, but just before the animation ends, shoot the red hand once.</li>
 <li>If done correctly, a white orb will appear in the middle of the map.</li>
 <li>This will trigger a scene with the orb moving to the piano turning into the Twins, then move to the Toy Box, then the fireplace.</li>
 <li>The Twins will finally appear at the swing in Yellow House Backyard with a yellow portal that will start the boss fight.</li>

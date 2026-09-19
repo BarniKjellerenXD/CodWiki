@@ -315,7 +315,7 @@
     "id": "ashes-of-the-damned:quick-phase-1",
     "name": "Prerequisites",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-1",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -323,7 +323,7 @@
     "id": "ashes-of-the-damned:quick-phase-2",
     "name": "Create the Serum",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-2",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -331,7 +331,7 @@
     "id": "ashes-of-the-damned:quick-phase-3",
     "name": "Purple Gauntlet",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-3",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -339,7 +339,7 @@
     "id": "ashes-of-the-damned:quick-phase-4",
     "name": "Challenges — Vandorn Farm",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-4",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -347,7 +347,7 @@
     "id": "ashes-of-the-damned:quick-phase-5",
     "name": "Challenges — Zarya Cosmodrome",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-5",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -355,7 +355,7 @@
     "id": "ashes-of-the-damned:quick-phase-6",
     "name": "Challenges — Exit 115",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-6",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -363,7 +363,7 @@
     "id": "ashes-of-the-damned:quick-phase-7",
     "name": "Challenges — Blackwater Lake",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-7",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -371,7 +371,7 @@
     "id": "ashes-of-the-damned:quick-phase-8",
     "name": "Veytharion Boss",
     "map": "ashes-of-the-damned",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/ashes-of-the-damned#quick-phase-8",
     "keywords": "Ashes of the Damned main quest checklist"
   },
@@ -667,7 +667,7 @@
     "id": "astra-malorum:quick-phase-1",
     "name": "Awaken the astronomer",
     "map": "astra-malorum",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/astra-malorum#quick-phase-1",
     "keywords": "Astra Malorum main quest checklist"
   },
@@ -675,7 +675,7 @@
     "id": "astra-malorum:quick-phase-2",
     "name": "Power and align the observatory",
     "map": "astra-malorum",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/astra-malorum#quick-phase-2",
     "keywords": "Astra Malorum main quest checklist"
   },
@@ -683,7 +683,7 @@
     "id": "astra-malorum:quick-phase-3",
     "name": "Mars sequence",
     "map": "astra-malorum",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/astra-malorum#quick-phase-3",
     "keywords": "Astra Malorum main quest checklist"
   },
@@ -691,7 +691,7 @@
     "id": "astra-malorum:quick-boss",
     "name": "Caltheris boss fight",
     "map": "astra-malorum",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/astra-malorum#quick-boss",
     "keywords": "Astra Malorum main quest checklist"
   },
@@ -1011,7 +1011,7 @@
     "id": "paradox-junction:quick-phase-1",
     "name": "Setup",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-1",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1019,7 +1019,7 @@
     "id": "paradox-junction:quick-phase-2",
     "name": "Strange Tree / Hopscotch",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-2",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1027,7 +1027,7 @@
     "id": "paradox-junction:quick-phase-3",
     "name": "Piano / Bouncing Ball",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-3",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1035,7 +1035,7 @@
     "id": "paradox-junction:quick-phase-4",
     "name": "Toy Box / Four Square",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-4",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1043,7 +1043,7 @@
     "id": "paradox-junction:quick-phase-5",
     "name": "Clock Tower",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-5",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1051,7 +1051,7 @@
     "id": "paradox-junction:quick-phase-6",
     "name": "Dark Heart Boss",
     "map": "paradox-junction",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/paradox-junction#quick-phase-6",
     "keywords": "Paradox Junction main quest checklist"
   },
@@ -1283,7 +1283,7 @@
     "id": "totenreich:quick-phase-1",
     "name": "Setup",
     "map": "totenreich",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/totenreich#quick-phase-1",
     "keywords": "Totenreich main quest checklist"
   },
@@ -1291,7 +1291,7 @@
     "id": "totenreich:quick-phase-2",
     "name": "Wundersignal",
     "map": "totenreich",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/totenreich#quick-phase-2",
     "keywords": "Totenreich main quest checklist"
   },
@@ -1299,7 +1299,7 @@
     "id": "totenreich:quick-phase-3",
     "name": "Atomkraft Core — 3 Uraniums",
     "map": "totenreich",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/totenreich#quick-phase-3",
     "keywords": "Totenreich main quest checklist"
   },
@@ -1307,7 +1307,7 @@
     "id": "totenreich:quick-phase-4",
     "name": "Vegvisir",
     "map": "totenreich",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/totenreich#quick-phase-4",
     "keywords": "Totenreich main quest checklist"
   },
@@ -1315,7 +1315,7 @@
     "id": "totenreich:quick-phase-5",
     "name": "Dravakar Boss",
     "map": "totenreich",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/totenreich#quick-phase-5",
     "keywords": "Totenreich main quest checklist"
   },
@@ -1659,7 +1659,7 @@
     "id": "kowakujo:quick-phase-1",
     "name": "Setup",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-1",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1667,7 +1667,7 @@
     "id": "kowakujo:quick-phase-2",
     "name": "Evidences — 🎭 Suspect 🤝 Accomplice",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-2",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1675,7 +1675,7 @@
     "id": "kowakujo:quick-phase-3",
     "name": "Evidences — ☠️ Poison",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-3",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1683,7 +1683,7 @@
     "id": "kowakujo:quick-phase-4",
     "name": "Evidences — 📍 Location 🗡️ Motive",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-4",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1691,7 +1691,7 @@
     "id": "kowakujo:quick-phase-5",
     "name": "Key Items & Murder Puzzle",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-5",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1699,7 +1699,7 @@
     "id": "kowakujo:quick-phase-6",
     "name": "Endgame",
     "map": "kowakujo",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/kowakujo#quick-phase-6",
     "keywords": "Kowakujō main quest checklist"
   },
@@ -1976,10 +1976,18 @@
     "keywords": "Rex Infernus"
   },
   {
+    "id": "rex-infernus:quick-setup",
+    "name": "Warden’s Blight & Void Talon",
+    "map": "rex-infernus",
+    "kind": "Quick parts",
+    "route": "/guides/rex-infernus#quick-setup",
+    "keywords": "Rex Infernus main quest checklist"
+  },
+  {
     "id": "rex-infernus:quick-phase-1",
     "name": "Swirling Pool",
     "map": "rex-infernus",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/rex-infernus#quick-phase-1",
     "keywords": "Rex Infernus main quest checklist"
   },
@@ -1987,7 +1995,7 @@
     "id": "rex-infernus:quick-phase-2",
     "name": "Nexus Forge",
     "map": "rex-infernus",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/rex-infernus#quick-phase-2",
     "keywords": "Rex Infernus main quest checklist"
   },
@@ -1995,7 +2003,7 @@
     "id": "rex-infernus:quick-phase-3",
     "name": "Cleanse the Temples",
     "map": "rex-infernus",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/rex-infernus#quick-phase-3",
     "keywords": "Rex Infernus main quest checklist"
   },
@@ -2003,7 +2011,7 @@
     "id": "rex-infernus:quick-phase-4",
     "name": "Warden Boss Fight",
     "map": "rex-infernus",
-    "kind": "Quick steps",
+    "kind": "Quick parts",
     "route": "/guides/rex-infernus#quick-phase-4",
     "keywords": "Rex Infernus main quest checklist"
   },
@@ -2123,6 +2131,15 @@
     "shortcut": "Ctrl+Shift+0",
     "kind": "Tool",
     "keywords": "Astra Malorum solver tracker"
+  },
+  {
+    "id": "paradox-notes",
+    "name": "Note Order & Piano",
+    "map": "paradox-junction",
+    "route": "/tools/paradox-note-order",
+    "shortcut": "Ctrl+Alt+1",
+    "kind": "Tool",
+    "keywords": "Paradox Junction solver tracker"
   },
   {
     "id": "super-ee",

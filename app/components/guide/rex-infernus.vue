@@ -31,12 +31,12 @@
 <ol>
 <li>From the Nexus Forge, look at Her House and shoot at the basketball located in the broken window. Shoot at it until it falls out of the map.
 <ul>
-<li><em>Note: This can be done immediately after stepping outside Her House before walking through portal.</em></li>
+<li><em>Note: Obtain Warden’s Blight before beginning this sequence.</em></li>
 </ul>
 </li>
 <li>In the subsequent rounds, four blue symbols will appear on Her House.
 <ul>
-<li><em>Note: The symbols will appear one by one, one every round or two, make sure to note the order in which they appeared.</em> <a href="/tools/rex-infernus-house-symbols" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 symbol tracker</a></li>
+<li><em>Note: Advance a round after shooting the basketball for the first symbol, then three more rounds for the remaining symbols. Record their appearance order.</em> <InlineTool tool="rex-house-symbols" /></li>
 </ul>
 </li>
 <li>On an Exfil round, shoot at the symbols in the order they appeared. If done correctly, the exfil booth will send you to Her House on completion. The Twins will appear and drop a Raw Aether Crystal.</li>
@@ -81,7 +81,7 @@
 </ul>
 </li>
 <li>Interact with the levers to change the direction of the symbols based on the quote — tap the quote you hear:
-<div class="rex-qsolver"><input type="radio" name="rexq" id="rexq-1" class="rex-q-in" checked><input type="radio" name="rexq" id="rexq-2" class="rex-q-in"><input type="radio" name="rexq" id="rexq-3" class="rex-q-in"><input type="radio" name="rexq" id="rexq-4" class="rex-q-in"><div class="rex-q-tabs"><label for="rexq-1">①</label><label for="rexq-2">②</label><label for="rexq-3">③</label><label for="rexq-4">④</label></div><div class="rex-q-res" id="rexq-r1"><p class="rex-q-quote">“I drift to the runner that travels moons, who borrow from galaxies when stars stay true.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×3</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×1</span></div></div><div class="rex-q-res" id="rexq-r2"><p class="rex-q-quote">“I remember the runner that travels to stars, while moons and galaxies stay true.”</p><div class="rex-q-chips"><span class="rex-q-chip zero">Left ×0</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×3</span></div></div><div class="rex-q-res" id="rexq-r3"><p class="rex-q-quote">“I drift to stars that remember moons, who borrow the runner that travels galaxies.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×1</span><span class="rex-q-chip">Middle ×2</span><span class="rex-q-chip">Right ×2</span></div></div><div class="rex-q-res" id="rexq-r4"><p class="rex-q-quote">“I remember galaxies that drift to moons, who borrow the runner that travels the stars.”</p><div class="rex-q-chips"><span class="rex-q-chip">Left ×2</span><span class="rex-q-chip zero">Middle ×0</span><span class="rex-q-chip">Right ×2</span></div></div></div>
+<InlineTool tool="rex-pillars" />
 </li>
 <li>Interact with the lever inside the central pillar to input the combinations. If done correctly, the pillar will lower, revealing an opening.</li>
 <li>Use Void Claw to enter Dravakar Inner Sanctum and interact with the anvil to collect the <strong>Warden's Blight</strong>.</li>
@@ -126,7 +126,7 @@
 </ol></div>
 </div>
 
-<div class="rex-tools"><strong class="rex-tools-label">🧰 Interactive tool:</strong><a class="rex-tool-link" href="/tools/rex-infernus-ring-solver" rel="noopener">🛕 Temple Ring Solver — pillar alignment &amp; 4-temple tour</a></div>
+<div class="rex-tools"><strong class="rex-tools-label">🧰 Interactive tool:</strong><InlineTool tool="rex-ring" /></div>
 
 
 <div class="glass-card glass-amber"><h2 id="wiki_uncover_the_swirling_pool"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Uncover the Swirling Pool<span class="g-tag">🧩 Puzzle</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
@@ -195,7 +195,7 @@
 </ol></div>
 <div class="glass-card glass-orange"><h2 id="wiki_cleanse_the_temples"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Cleanse the Temples<span class="g-tag">⚔️ Temples</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 
-<p>The three pillars of the Nexus Forge need to be aligned in front of each temple before they can be cleansed. <em>Note: <a href="/tools/rex-infernus-ring-solver" rel="nofollow noopener">Ring Solver — align &amp; tour all temples</a>.</em></p>
+<p>Align all three Nexus Forge pillars in front of each temple before cleansing it.</p><InlineTool tool="rex-ring" />
 <input type="radio" name="rextemple" id="rextab-d" class="rex-tab-in" checked><input type="radio" name="rextemple" id="rextab-n" class="rex-tab-in"><input type="radio" name="rextemple" id="rextab-c" class="rex-tab-in"><input type="radio" name="rextemple" id="rextab-v" class="rex-tab-in">
 <div class="rex-tabs"><h3 id="wiki_dravakar"><label class="rex-tab" for="rextab-d">Dravakar</label></h3><h3 id="wiki_nyxara"><label class="rex-tab" for="rextab-n">Nyxara</label></h3><h3 id="wiki_caltheris"><label class="rex-tab" for="rextab-c">Caltheris</label></h3><h3 id="wiki_veytharion"><label class="rex-tab" for="rextab-v">Veytharion</label></h3></div>
 <div class="rex-panel" id="rexp-d"><div class="rex-phase" style="--pc:#f59e0b"><div class="rex-phase-head">🧰 Get the quest item</div><ol><li>Align the pillars in front of Dravakar's temple.</li><li>With Shatter Blast equipped, return to Dravakar Inner Sanctum, and look for viking shields hanging on the walls.</li><li>Kill a zombie with Shatter Blast next to a shield to drop it and reveal an opening. Do each viking shield until the <strong>Blacksmith's Hammer</strong> is available.

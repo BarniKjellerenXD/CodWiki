@@ -8,7 +8,7 @@
             <NuxtLink class="guide-back" to="/">← Maps & tools</NuxtLink>
           </header>
           <div class="guide-toolbar">
-            <div class="reading-switch" role="group" aria-label="Reading view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Steps</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button></div>
+            <div class="reading-switch" role="group" aria-label="Reading view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button></div>
             <button class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
             <button class="companion-button subtle" @click="confirmReset = !confirmReset">Start new run</button>
           </div>
@@ -16,7 +16,7 @@
           <nav class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
           <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="reset(mapId); confirmReset = false; switchView('quick')">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
-          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps :map-id="mapId" :phases="phases" :completed="current.done" @toggle="toggle(mapId, $event)" @details="scrollTo" @visit="remember" /></div>
+          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :phases="phases" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
           <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /></article>
           <section v-if="mapTools.length" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
         </div>
@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import { togglePart } from '~/utils/companion.mjs'
 import catalogue from '~/data/catalogue.json'
 import quickQuests from '~/data/quickQuests.json'
 export interface GuideTocItem { id: string; text: string; level: number }
@@ -35,7 +36,7 @@ const props = defineProps<{ title:string, mapName?:string, storageKey:string, de
 useSeoMeta({ title: () => `${props.title} · CodWiki`, description: () => `Quest checklist, complete walkthrough and puzzle tools for ${props.title}.` })
 const route = useRoute()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
-const { run, toggle, visit, save, reset, init, saveError } = useProgress()
+const { run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
 const phases = (quickQuests as Record<string, any[]>)[mapId] || []
 const mapTools = catalogue.tools.filter(t => t.map === mapId)
@@ -44,6 +45,7 @@ const active = ref('')
 const mobileOpen = ref(false)
 const confirmReset = ref(false)
 const articleRef = ref<HTMLElement | null>(null)
+const partsRef = ref<{ reveal: (id: string) => void } | null>(null)
 const quickRef = ref<HTMLElement | null>(null)
 const toc = ref<GuideTocItem[]>([])
 const pins = ref<string[]>([])
@@ -95,6 +97,7 @@ async function scrollTo(id?:string, updateUrl=true) {
   if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases[0]?.id
   if(id!=='map-tools') view.value=id.startsWith('quick-')?'quick':'full'
   mobileOpen.value=false
+  partsRef.value?.reveal(id)
   await nextTick()
   const el=document.getElementById(id)
   if(!el) return
@@ -127,7 +130,7 @@ function onArticleClick(e:MouseEvent) {
     if(href.startsWith('#')) { e.preventDefault(); scrollTo(decodeURIComponent(href.slice(1))) }
     else if(href.startsWith('/tools/')) { e.preventDefault(); remember(target.closest('.quest-phase')?.id || active.value); navigateTo(href) }
   }
-  if(target.tagName==='IMG') { lightboxSrc.value=(target as HTMLImageElement).src; lightboxAlt.value=(target as HTMLImageElement).alt }
+  if(target.tagName==='IMG' && !target.closest('.puzzle')) { lightboxSrc.value=(target as HTMLImageElement).src; lightboxAlt.value=(target as HTMLImageElement).alt }
 }
 let scrollTimer:ReturnType<typeof setTimeout>
 function trackPosition() {
@@ -240,6 +243,7 @@ defineExpose({scrollTo})
   top: 2rem;
   align-self: start;
   height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
 }
 
 .toc {
@@ -1064,11 +1068,12 @@ defineExpose({scrollTo})
 .map-tools { margin-top:2.5rem; border-top:1px solid var(--line); padding:1.5rem 0; scroll-margin-top:6rem; }
 .map-tools h2 { font-size:1.25rem; margin:.5rem 0 1rem; }
 .map-tools > div { display:flex; gap:.6rem; flex-wrap:wrap; }
-.saved-note { font-size:.72rem; color:var(--faint); padding-top:1rem; margin-top:auto; }
+.saved-note { flex:none; font-size:.72rem; color:var(--faint); padding-top:.7rem; margin:0; }
+.toc-head { flex:none; }
 .toc { overflow:hidden; }
 @media(max-width:1023px) {
   .mobile-sections { display:inline-flex; }
-  .mobile-contents { display:block; max-height:55vh; overflow:auto; border:1px solid var(--line); padding:.8rem; background:var(--surface); position:sticky; top:116px; z-index:14; border-radius:var(--radius); }
+  .mobile-contents { display:flex; flex-direction:column; height:55vh; height:55dvh; overflow:hidden; border:1px solid var(--line); padding:.8rem; background:var(--surface); position:sticky; top:116px; z-index:14; border-radius:var(--radius); }
   .guide-toolbar > .subtle { margin-left:auto; font-size:.75rem; }
 }
 @media(max-width:600px) { .guide-surface { padding:1rem; } .guide-toolbar { gap:.3rem; } .guide-toolbar .companion-button { padding:.5rem .6rem; font-size:.8rem; } .guide-grid { gap:0; } }

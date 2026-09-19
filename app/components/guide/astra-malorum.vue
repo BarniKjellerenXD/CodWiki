@@ -56,26 +56,26 @@
 <h1 id="wiki_main_quest">Main Quest</h1>
 
 <ol>
-<li><strong>Acquire the LGM-1</strong> (see Key Features for the full trap sequence).</li>
-<li><strong>Starting at Round 10</strong>, stay behind O.S.C.A.R. and follow it until it plays a recording, during which Dr. Thurston will recite the name of three planets. Turn the planets into numbers based on their distance from the Sun (Mercury = 1, Venus = 2, ... Neptune = 8). <a href="/tools/astra-mars-code" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 code solver</a></li>
+<li id="wiki_main_quest_awaken_astronomer" style="scroll-margin-top:8rem"><strong>Acquire the LGM-1</strong> (see Key Features for the full trap sequence).</li>
+<li><strong>Starting at Round 10</strong>, stay behind O.S.C.A.R. and follow it until it plays a recording, during which Dr. Thurston will recite the name of three planets. Turn the planets into numbers based on their distance from the Sun (Mercury = 1, Venus = 2, ... Neptune = 8). <InlineTool tool="astra-mars-code" /></li>
 <li>Travel to the Observatory Dome and enter the 3-digit code into the terminal. If done correctly, a lift will drop down next to the Pack-a-Punch.</li>
 <li>Retrieve the key from the corpse on the lift, then travel to Machina Astralis and interact with the cryopod located in the adjacent room leading to Scholar&rsquo;s Way. The pod will open, revealing Dr. Thurston&rsquo;s corpse. <strong>Note that this will summon O.S.C.A.R. and spawn several zombies to your location.</strong></li>
 <li>Travel to Museum Infinitum and find the Rock Saw located behind a glass display; shoot the glass to pick it up. Return to the cryopod and interact with the corpse to collect Thurston&rsquo;s brain. <strong>You can pick up the Rock Saw before Step 4. Once the cryopod is opened, hold interact on Thurston&rsquo;s head to collect his brain &mdash; you will be immune to damage during the process.</strong></li>
 <li>Travel to The Luminarium and interact with the brain jar on the table to replace the monkey brain with Thurston&rsquo;s brain. Interact once more, and this will trigger a short lockdown where you need to defend the brain.</li>
 <li>Pick the brain jar up and place it in the machine near the portal in Machina Astralis. <strong>Holding the jar will slow you down.</strong> Hold interact on the machine to connect the jar to it. If done correctly, the machine will power up and display a list of book titles on the left screen (9 possible titles).</li>
-<li>Go to the Archive of Orbis. Inside the room there are three busts, each with a set of 3 bookshelves beside it. Interacting with each bookshelf displays one of the book titles. Find the book titles shown by the machine, then <strong>as fast as possible</strong>, interact with each bust as many times as the number of matching titles found in its set of shelves. <em>Example: if the machine shows The Black Veil, Echoes of Andromeda, Witchlight Codex, Silence at Singularity, interact with bust 1 once, bust 2 once, bust 3 twice.</em></li>
+<li id="wiki_main_quest_portal_to_mars" style="scroll-margin-top:8rem">Go to the Archive of Orbis. Inside the room there are three busts, each with a set of 3 bookshelves beside it. Interacting with each bookshelf displays one of the book titles. Find the book titles shown by the machine, then <strong>as fast as possible</strong>, interact with each bust as many times as the number of matching titles found in its set of shelves. <em>Example: if the machine shows The Black Veil, Echoes of Andromeda, Witchlight Codex, Silence at Singularity, interact with bust 1 once, bust 2 once, bust 3 twice.</em><InlineTool tool="astra-books" /></li>
 <li>If done correctly, a panel will open above the ladder in the room. Climb it to retrieve the Neptune model and place it in the display at the top of Machina Astralis.</li>
 <li>Find three pages around the map; each page shows a random planet (e.g. Mars) and a random direction (e.g. NE): one on a table in The Luminarium (same room as the Stellar Dissector trap), one on a desk in Machina Astralis, one on the large table in Archive of Orbis.</li>
-<li>Shoot the corresponding planets (Mars, Saturn, Neptune) on the model display to align each in the direction from the notes. <strong>The compass showing the directions is below the Sun model.</strong> <a href="/tools/astra-planet-sheets" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 compass solver</a></li>
+<li>Shoot the corresponding planets (Mars, Saturn, Neptune) on the model display to align each in the direction from the notes. <strong>The compass showing the directions is below the Sun model.</strong> <InlineTool tool="astra-planets" /></li>
 <li>Travel to the Observatory Dome and interact with the telescope. Look for Mars and note its declination (DEC) &mdash; this corresponds to a 4-digit code.</li>
 <li>On the second floor of Machina Astralis, enter the code into the machine. If done correctly, Thurston will acknowledge the successful code input.</li>
 <li>Interact with the machine to reboot the portal. This spawns O.S.C.A.R., who constantly launches flying saucers at the portal to damage it. Destroy the saucers and defend the portal until it finishes rebooting &mdash; if it takes too much damage before the timer runs out, the step fails. If done correctly, you will be teleported to Mars automatically.</li>
-<li>While on Mars, pick up Thurston&rsquo;s brain jar in the center of the arena and place it in the machine at the top of the stairs. Interact with it to create a portal. (Step 6 of the cheat sheet can be done as you create the portal.)</li>
+<li id="wiki_main_quest_mars_sequence" style="scroll-margin-top:8rem">While on Mars, pick up Thurston&rsquo;s brain jar in the center of the arena and place it in the machine at the top of the stairs. Interact with it to create a portal. (Step 6 of the cheat sheet can be done as you create the portal.)</li>
 <li>Interact with the machine to play music (once per round). When the music plays, the Ascendant Eye will be seen flying near the giant head outside the map.</li>
 <li>Shoot the four pylons outside the map in order: <strong>Back Right, Back Left, Front Right, Front Left</strong>, then the pylon above the machine on top of the temple to bring the Ascendant Eye into the arena. <strong>Shooting the temple pylon repeatedly keeps the music playing, forcing the Ascendant Eye to stay.</strong></li>
 <li>Wait for the Ascendant Eye to fly low in the arena, then jump and interact to grab it. <strong>Easier with low gravity enabled.</strong></li>
 <li>Place the Ascendant Eye in the device on the right side of the arena. With the LGM-1, shoot the antennas on the five pillars around the arena &mdash; each plays a note and displays a symbol on its pillar.</li>
-<li>Back in the Observatory Dome, interact with the organ. The screen on the right displays the five symbols in order, with one hidden behind distorted wave lines. <strong>This step can be done immediately after unlocking Pack-a-Punch.</strong></li>
+<li>Back in the Observatory Dome, interact with the organ. The screen on the right displays the five symbols in order, with one hidden behind distorted wave lines. <strong>This step can be done immediately after unlocking Pack-a-Punch.</strong><InlineTool tool="astra-organ" /></li>
 <li>Return to Mars and interact with the pillars in the order shown on the organ&rsquo;s screen, inserting the missing symbol where indicated. If done correctly, the screen brightens and a quote from Thurston plays.</li>
 <li>Interact with the machine at the top of the stairs to start the fight against <strong>Caltheris</strong>.</li>
 </ol>
@@ -94,11 +94,11 @@
 </div><span id="wiki_main_quest_cheat_sheet" class="legacy-anchor"></span>
 
 <div class="quest-grid">
-  <div class="quest-block phase1" id="wiki_main_quest_awaken_astronomer">
+  <div class="quest-block phase1">
     <h2>Awaken the astronomer</h2>
     <ol>
       <li>Acquire the LGM-1 (see Key Features).</li>
-      <li><strong>Starting at Round 10</strong>, follow O.S.C.A.R. until it calls out three planets. Convert planets to numbers by their distance from the Sun (Mercury = 1, Neptune = 8).</li>
+      <li><strong>Starting at Round 10</strong>, follow O.S.C.A.R. until it calls out three planets. Convert planets to numbers by their distance from the Sun (Mercury = 1, Neptune = 8).<InlineTool tool="astra-mars-code" /></li>
       <li>Enter the 3-digit code at the Observatory Dome terminal; a lift drops with a corpse and a key.</li>
       <li>Go to Machina Astralis, open the cryopod with the key to reveal a corpse.</li>
       <li>Shoot the glass at Museum Infinitum to grab the Saw, return to the pod, and take the brain.</li>
@@ -106,37 +106,33 @@
       <li>Bring the brain to the machine near the teleporter in Machina Astralis to power it; it will list book titles.</li>
     </ol>
   </div>
-  <div class="quest-block phase2" id="wiki_main_quest_portal_to_mars">
+  <div class="quest-block phase2">
     <h2>Power and align the observatory</h2>
     <ol>
       <li>Use the Observatory Dome telescope (requires trap activation or LGM-1) to find Mars coordinates (4-digit code).</li>
       <li>Enter the code at the Machina Astralis machine; it confirms Mars.</li>
-      <li>In Archive of Orbis, match the three busts to the counted book titles from their shelves (do this at round start for time).</li>
+      <li>In Archive of Orbis, match the three busts to the counted book titles from their shelves (do this at round start for time).<InlineTool tool="astra-books" /></li>
       <li>When correct, climb the opened panel to grab the Neptune model and place it atop Machina Astralis.</li>
       <li>Collect three planet notes (directions + planet): Luminarium desk, Machina Astralis table, Archive of Orbis table.</li>
-      <li>Align the planets on the model display to the noted directions (compass around the Sun model).</li>
+      <li>Align the planets on the model display to the noted directions (compass around the Sun model).<InlineTool tool="astra-planets" /></li>
       <li>Return to Machina Astralis, interact with the brain to reboot the portal, defend against O.S.C.A.R.; you will be sent to Mars.</li>
     </ol>
   </div>
-  <div class="quest-block phase3" id="wiki_main_quest_mars_sequence">
+  <div class="quest-block phase3">
     <h2>Mars sequence</h2>
     <ol>
       <li>Pick up the brain at the arena center, place it in the machine up the stairs, and create the portal.</li>
       <li>Each round, play the machine sound to spot the ascendant eye; while it flies, shoot pylons: Back Right > Back Left > Front Right > Front Left > temple pylon above the machine. Grab the eye when it dives.</li>
       <li>Place the ascendant eye in the device on the right side of the arena (facing where you shot pylons).</li>
       <li>With the LGM-1, shoot the antennas of the five arena pillars until each shows a symbol and a song plays.</li>
-      <li>Back in Observatory Dome, read the organ screen: it shows the five symbols in order with one missing (denoted by wavy lines). Note the missing symbol and its position.</li>
+      <li>Back in Observatory Dome, read the organ screen: it shows the five symbols in order with one missing (denoted by wavy lines). Note the missing symbol and its position.<InlineTool tool="astra-organ" /></li>
       <li>Return to Mars and interact with the pillars in that exact order, inserting the missing symbol where indicated.</li>
       <li>Interact with the machine atop the stairs to start the fight against Caltheris.</li>
     </ol>
   </div>
 </div>
 
-<div class="helper-row">
-  <AstraBustHelper />
 
-  <AstraPlanetCodeHelper />
-</div>
 <h1 id="wiki_caltheris_boss_fight_overview">Caltheris Boss Fight — Overview</h1>
 <div class="boss-phases">
   <div class="boss-card phase1">
@@ -407,7 +403,7 @@
           <li>The two chandeliers near the doorway to Stargazer's Courtyard are the headlights, while the two chandeliers near the doorway to Crash Site are the brake lights.</li>
           <li>Wall jump to reach the chandeliers to put out the candles, in the order shown by Ol' Tessie.</li>
           <li>Travel to Crash Site and interact with the red portal to start the Relic Trial.</li>
-          <li>Survive 6 waves by killing HVTs while all zombies are turned into sprinters. <a href="/tools/astra-harmonic-organ" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 organ order helper</a></li>
+          <li>Survive 6 waves by killing HVTs while all zombies are turned into sprinters.</li>
         </ol>
       </div>
     </div>

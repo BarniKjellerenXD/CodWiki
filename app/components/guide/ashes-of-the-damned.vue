@@ -82,7 +82,7 @@
     <h2>② Create the Serum</h2>
     <ol>
       <li>Wisp Tea at Tailor Shop → spirit into mirror → shoot with Gauntlet → <strong>Powder of the Forgotten</strong>.</li>
-      <li>Yuri's Lab: 3 pigpen ciphers = ingredient order: <strong>Hoard Hunk Chucks, Widow's Lantern, Ravager Eyes, Human Bones, Mysterious Limb</strong> (use the pigpen helper below). <a href="/tools/ashes-serum" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 ingredient order tracker</a></li>
+      <li>Yuri’s Lab: match the three chalkboard words from top to bottom. <InlineTool tool="ashes-serum" /></li>
       <li>Interact ingredients top→bottom → add your blood (lockdown, heal via Gauntlet kills) → fill serum with zombie souls → <strong>Serum</strong>.</li>
     </ol>
   </div>
@@ -141,7 +141,7 @@
 <div class="glass-card glass-green"><h2 class="" id="wiki_create_the_serum"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Create the Serum<span class="g-tag">🧪 Serum</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
 <li>Buy Wisp Tea and travel to the Tailor Shop at Ashwood. Activate the Wisp Tea's spirit and it will go inside the mirror, revealing the Seal of Sorrow. Shoot the mirror with the Necrofuild Gauntlet to drop the Powder of the Forgotten. <strong>Alternatively, you can acquire all the ingredients first, see after the table.</strong></li>
-<li>Travel to the Zarya Cosmodrome and reach Yuri's Lab. Interact with the powder on the table to reveal three pigpen ciphers on the chalkboard above the table. The ciphers indicate which ingredient will need to be acquired. Use this website to solve the ciphers: <a href="https://crypto.interactive-maths.com/pigpen-cipher.html" rel="nofollow noopener" target="_blank">https://crypto.interactive-maths.com/pigpen-cipher.html</a></li>
+<li>Travel to the Zarya Cosmodrome and reach Yuri's Lab. Interact with the powder on the table to reveal three pigpen ciphers on the chalkboard above the table. The ciphers indicate which ingredient will need to be acquired. Read the rows from top to bottom. <InlineTool tool="ashes-serum" /></li>
 </ol>
 <div class="table-container"><table style="width: 513px; height: 399.883px; table-layout: fixed;" border="1"><colgroup><col><col><col></colgroup>
 <tbody>
@@ -204,8 +204,8 @@
 <h3 class="" id="wiki_zarya_cosmodrome">Zarya Cosmodrome</h3>
 <ol>
 <li>Shoot the two spinning radar dishes with the purple Gauntlet (requires two charges). If done correctly, the monitors inside the Control Room will light up and three souls will float above the chairs. <strong>You have a limited time to do so, and you need to shoot the radar dishes again if you fail.</strong></li>
-<li>The first two monitors will spell a word using the pigpen characters, two letters at a time: LAUNCH, WEAPON, ENGINE, ROCKET. <a href="/tools/ashes-rocket-launch" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 shoot codes</a></li>
-<PigpenHelper />
+<li>The first two monitors will spell a word using the pigpen characters, two letters at a time: LAUNCH, WEAPON, ENGINE, ROCKET. <InlineTool tool="ashes-rocket-launch" /></li>
+
 <li>The other six monitors will cycle through numbers. Use the selector above to reveal the correct sequence, then lock each number <strong>from left to right</strong> by shooting the red button.</li>
 <li>If done correctly, the souls will disappear and the Soyuz rocket will launch.</li>
 </ol>

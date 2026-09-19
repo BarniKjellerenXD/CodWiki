@@ -1,0 +1,6 @@
+<script setup lang="ts">
+import { rocketWords,rocketCode } from '~/utils/puzzles.mjs'
+const {state,change,undo,reset,canUndo,saveError}=usePuzzleState('rocket')
+const code=computed(()=>rocketCode(state.value.word))
+</script>
+<template><div class="puzzle"><p>Match the Pigpen word on the two clue monitors.</p><div class="p-grid"><button v-for="word in rocketWords" :key="word" class="p-card" :aria-pressed="state.word===word" @click="change({word})"><span class="pigpen-symbol" aria-hidden="true">{{ word }}</span><strong>{{ word }}</strong></button></div><div class="p-result" aria-live="polite"><strong>Monitor values · left → right</strong><ol v-if="code.length" class="p-sequence"><li v-for="(n,i) in code" :key="i"><small>Monitor {{ i+1 }}</small><b>{{ n }}</b></li></ol><p v-else>Choose the matching word to reveal all six values.</p><p v-if="code.length">Shoot each monitor’s red button when it shows its value.</p></div><details><summary>Setup and retry</summary><p>Slow both radar dishes with purple Gauntlet shots. If you lock a wrong value, stop all six monitors, then shoot the dishes again to retry. Avoid explosive shots near the buttons.</p></details><PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset" /></div></template>

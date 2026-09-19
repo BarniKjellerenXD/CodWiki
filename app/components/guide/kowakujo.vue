@@ -79,7 +79,7 @@
     <ol>
       <li><strong>Location</strong> (need <strong>Saka Cup</strong>): 3 soul boxes → War Room, Collapse Study, Tea Garden (chase dog).</li>
       <li><strong>Motive:</strong> Netsuke of Brothers (Stables statue) + Hanko (first Oni).</li>
-      <li><strong>Clock Puzzle:</strong> storage clock ×4 → assault wave → Japanese numbers → flags into bamboo shoots → final evidence. <a href="/tools/kowakujo-clock-solver" rel="noopener" style="color:#fcd34d;font-weight:700">🧮 solver</a></li>
+      <li><strong>Clock Puzzle:</strong> storage clock ×4 → assault wave → Japanese numbers → flags into bamboo shoots → final evidence. <InlineTool tool="kowakujo-clock" /></li>
     </ol>
   </div>
   <div class="cheat-block phase3">
@@ -192,7 +192,7 @@
 <summary>🔨 Pestle key item <span class="fold-note">tap to expand</span><span class="fold-arrow">▸</span></summary>
 <ol>
 <li>Go to the Storage Rooms. Scrolls are hanging out of a box on the inside wall.</li>
-<li>Hit the scrolls in a certain pattern for them all to go into the wall — or use the <a href="/tools/kowakujo-pestle-solver" rel="noopener">🧮 Pestle Scroll Solver</a>.</li>
+<li>Hit the scrolls in a certain pattern for them all to go into the wall — or use the <InlineTool tool="kowakujo-pestle" />.</li>
 <li>A scroll will pop onto the floor and unroll, revealing a <strong>Doctor&#39;s Note</strong> (used later in the painting puzzle).</li>
 <li>Collect the <strong>Pestle</strong> key item.</li>
 </ol>
@@ -263,7 +263,7 @@
 <li>There are bamboo shoots in each area with no flag — place your flags in these shoots.</li>
 <li>Go back to the clock and interact. If done correctly, it will open to give you the last piece of motive evidence.</li>
 </ol>
-<p style="margin:.7rem 0 0"><a href="/tools/kowakujo-clock-solver" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;border-radius:.75rem;border:1px solid rgba(245,158,11,.55);background:linear-gradient(135deg,rgba(245,158,11,.24),rgba(255,255,255,.05));color:#fcd34d;font-weight:800;font-size:.88rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.12)">🧮 <span>Clock &amp; Flags Solver — enter the 4-digit code</span></a></p>
+<InlineTool tool="kowakujo-clock" />
 </div>
 
 </div><div class="glass-card glass-gold"><h2 class="" id="wiki_key_items"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Key Items<span class="g-tag">🗝️ Key Items</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
@@ -276,7 +276,7 @@
 
 <div class="glass-card glass-amber"><h2 class="" id="wiki_solving_the_murder"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Solving the Murder (Painting Puzzle)<span class="g-tag">🖼️ Murder Puzzle</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <p>Collect all the evidence and go to the evidence room. Make sure all the evidence is input. Using all the notes you will find which evidence should be placed by the correct painting. Two of the paintings have sub-steps — the <strong>Witness Testimony</strong> (Painting 2) and the <strong>Zodiac Dial</strong> (Painting 3) — which are covered below.</p>
-<p style="margin:.7rem 0 0"><a href="/tools/kowakujo-murder-solver" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;padding:.6rem 1.05rem;border-radius:.75rem;border:1px solid rgba(245,158,11,.55);background:linear-gradient(135deg,rgba(245,158,11,.24),rgba(255,255,255,.05));color:#fcd34d;font-weight:800;font-size:.88rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.12)">🧮 <span>Murder Mystery Solver — accomplice, poison &amp; dial</span></a></p>
+<InlineTool tool="kowakujo-murder" />
 
 <p><strong>Painting 1 (Leftmost)</strong> — Place the <strong>Comb</strong> in front of the first painting.</p>
 

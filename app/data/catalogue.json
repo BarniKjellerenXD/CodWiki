@@ -134,6 +134,13 @@
       "map": "astra-malorum",
       "route": "/tools/astra-planet-sheets",
       "shortcut": "Ctrl+Shift+0"
+    },
+    {
+      "id": "paradox-notes",
+      "name": "Note Order & Piano",
+      "map": "paradox-junction",
+      "route": "/tools/paradox-note-order",
+      "shortcut": "Ctrl+Alt+1"
     }
   ]
 }

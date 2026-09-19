@@ -120,7 +120,11 @@ function setActive (url) {
     const u = el.dataset.url
     const active = u !== undefined && (SITE + u === SITE + path || (u !== '/' && path.startsWith(u)))
     el.classList.toggle('active', active)
-    if (active) el.setAttribute('aria-current', 'page')
+    if (active) {
+      const changed = el.getAttribute('aria-current') !== 'page'
+      el.setAttribute('aria-current', 'page')
+      if (changed && !el.hidden) el.scrollIntoView({ block: 'nearest' })
+    }
     else el.removeAttribute('aria-current')
   })
 }
@@ -147,32 +151,21 @@ function showError (desc) {
 webview.addEventListener('did-start-loading', () => { progress.style.display = 'block' })
 webview.addEventListener('did-stop-loading', () => { progress.style.display = 'none' })
 
-webview.addEventListener('did-navigate', (e) => {
-  errorPageShown = false
+function syncNavigation(e) {
+  if (e.isMainFrame === false) return
   const url = e.url
   if (isSite(url)) {
+    errorPageShown = false
     lastSiteUrl = url
     localStorage.setItem(lastPageKey, url)
-  }
-  try {
     const u = new URL(url)
     address.textContent = u.host + (u.pathname === '/' ? '' : u.pathname)
-  } catch (_) {
-    address.textContent = url
   }
   setActive(url)
   updateButtons()
-})
-
-webview.addEventListener('did-navigate-in-page', (e) => {
-  const url = e.url
-  if (isSite(url)) {
-    lastSiteUrl = url
-    localStorage.setItem(lastPageKey, url)
-  }
-  setActive(url)
-  updateButtons()
-})
+}
+webview.addEventListener('did-navigate', syncNavigation)
+webview.addEventListener('did-navigate-in-page', syncNavigation)
 
 webview.addEventListener('did-fail-load', (e) => {
   if (e.isMainFrame && e.errorCode !== -3 && !errorPageShown) {

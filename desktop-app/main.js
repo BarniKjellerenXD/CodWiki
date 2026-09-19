@@ -2,7 +2,7 @@ const { app, BrowserWindow, Menu, shell, ipcMain, webContents } = require('elect
 const path = require('path')
 const fs = require('fs')
 
-const { siteForDevelopment, isInternal, mergeOrder } = require('./runtime')
+const { siteForDevelopment, isInternal, mergeOrder, mergeShortcuts, matchAccel } = require('./runtime')
 const SITE = siteForDevelopment(process.env.CW_SITE_URL, app.isPackaged)
 const HOME = SITE + '/'
 const nav = require('./renderer/nav.js')
@@ -47,7 +47,7 @@ function loadSettings () {
     settings = {
       ...JSON.parse(JSON.stringify(DEFAULT_SETTINGS)),
       ...raw,
-      shortcuts: { ...DEFAULT_SETTINGS.shortcuts, ...(raw.shortcuts || {}) },
+      shortcuts: mergeShortcuts(DEFAULT_SETTINGS.shortcuts, raw.shortcuts),
       order: mergeOrder(raw.order, nav),
       hidden: Array.isArray(raw.hidden) ? raw.hidden : [],
       labels: raw.labels && typeof raw.labels === 'object' ? raw.labels : {}
@@ -79,21 +79,6 @@ function saveSettings (next) {
 }
 
 /* ---------------- key handling ---------------- */
-function matchAccel (accel, input) {
-  if (!accel) return false
-  const parts = String(accel).split('+').map((s) => s.trim()).filter(Boolean)
-  const keyName = parts[parts.length - 1].toLowerCase()
-  const mods = new Set(parts.slice(0, -1).map((m) => m.toLowerCase()))
-  let inKey = (input.key || '').toLowerCase()
-  if (inKey === 'plus') inKey = '='
-  if (inKey !== keyName) return false
-  const ctrl = mods.has('ctrl') || mods.has('cmdorctrl')
-  const alt = mods.has('alt')
-  const shift = mods.has('shift')
-  const meta = mods.has('meta') || mods.has('cmd') || mods.has('super')
-  return !!input.control === ctrl && !!input.alt === alt && !!input.shift === shift && !!input.meta === meta
-}
-
 function dispatchAction (actionId, target) {
   if (actionId.startsWith('nav:')) {
     const id = actionId.slice(4)

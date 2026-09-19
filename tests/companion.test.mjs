@@ -5,7 +5,7 @@ import { createRequire } from 'node:module'
 import { parse } from '@vue/compiler-dom'
 import { emptyProgress, readProgress, ensureRun, resetRun, searchCatalogue } from '../app/utils/companion.mjs'
 const require = createRequire(import.meta.url)
-const { siteForDevelopment, isInternal, mergeOrder } = require('../desktop-app/runtime.js')
+const { siteForDevelopment, isInternal, mergeOrder, mergeShortcuts, matchAccel } = require('../desktop-app/runtime.js')
 const { groupNavigation } = require('../desktop-app/renderer/navigation.js')
 const catalogue = JSON.parse(fs.readFileSync(new URL('../shared/catalogue.json', import.meta.url)))
 const index = JSON.parse(fs.readFileSync(new URL('../app/data/searchIndex.json', import.meta.url)))
@@ -64,6 +64,37 @@ test('catalogue links and generated desktop shortcuts stay in sync', () => {
 test('new desktop entries appear without losing saved ordering or removed entry handling', () => {
   const entries=[{id:'ashes'},{id:'rex'},{id:'new-tool'}]
   assert.deepEqual(mergeOrder(['rex','removed','ashes','rex'], entries), ['rex','ashes','new-tool'])
+})
+
+test('desktop upgrades add Paradox notes while preserving customised and cleared shortcuts', () => {
+  const nav = require('../desktop-app/renderer/nav.js')
+  const defaults = Object.fromEntries(nav.map(item => ['nav:' + item.id, item.accel]))
+  const added = nav.find(item => item.id === 'paradox-notes')
+  assert.equal(added.url, '/tools/paradox-note-order')
+  const saved = { ...defaults }
+  delete saved['nav:paradox-notes']
+  assert.equal(mergeShortcuts(defaults, saved)['nav:paradox-notes'], 'Ctrl+Alt+1')
+  saved['nav:' + nav[0].id] = 'Ctrl+Alt+1'
+  saved['nav:' + nav[1].id] = null
+  saved['nav:removed'] = 'Ctrl+9'
+  const merged = mergeShortcuts(defaults, saved)
+  assert.equal(merged['nav:paradox-notes'], null)
+  assert.equal(merged['nav:' + nav[0].id], 'Ctrl+Alt+1')
+  assert.equal(merged['nav:' + nav[1].id], null)
+  assert.equal(merged['nav:removed'], undefined)
+  assert.deepEqual(mergeShortcuts(defaults, null), defaults)
+  const groups = groupNavigation(nav, nav.filter(item => item.id !== added.id).map(item => item.id))
+  assert.ok(groups.find(group => group.id === 'paradox-junction').items.some(item => item.id === added.id))
+})
+
+test('desktop tool shortcuts accept shifted digits and require the exact modifiers', () => {
+  assert.equal(matchAccel('Ctrl+Shift+1', { key: '!', code: 'Digit1', control: true, shift: true }), true)
+  assert.equal(matchAccel('Ctrl+Alt+1', { key: '1', code: 'Digit1', control: true, alt: true }), true)
+  assert.equal(matchAccel('Ctrl+Alt+1', { key: '1', code: 'Digit1', control: true }), false)
+  assert.equal(matchAccel('Ctrl+1', { key: '!', code: 'Digit1', control: true, shift: true }), false)
+  assert.equal(matchAccel('Alt+ArrowLeft', { key: 'ArrowLeft', alt: true }), true)
+  assert.equal(matchAccel('Ctrl+Space', { key: ' ', control: true }), true)
+  assert.equal(matchAccel('+', { key: '+' }), false)
 })
 
 test('legacy flat sidebar order becomes one category per map with its guide first', () => {
