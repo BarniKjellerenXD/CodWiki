@@ -23,12 +23,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Generate shared navigation and check compatibility
+      - name: Install website build and test dependencies
         working-directory: .
-        run: |
-          npm ci
-          node scripts/generate-catalogue.mjs
-          npm test
+        run: npm ci
+      - name: Generate shared navigation
+        working-directory: .
+        run: node scripts/generate-catalogue.mjs
+      - name: Check compatibility
+        working-directory: .
+        run: npm test
       - name: Install deps
         run: npm ci
       - name: Build installer + portable zip
