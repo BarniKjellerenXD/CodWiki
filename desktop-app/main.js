@@ -2,7 +2,8 @@ const { app, BrowserWindow, Menu, shell, ipcMain, webContents } = require('elect
 const path = require('path')
 const fs = require('fs')
 
-const SITE = 'https://codguides.wolden.eu'
+const { siteForDevelopment, isInternal, mergeOrder } = require('./runtime')
+const SITE = siteForDevelopment(process.env.CW_SITE_URL, app.isPackaged)
 const HOME = SITE + '/'
 const nav = require('./renderer/nav.js')
 const SYSTEM_ACTIONS = nav.SYSTEM_ACTIONS || []
@@ -47,7 +48,7 @@ function loadSettings () {
       ...JSON.parse(JSON.stringify(DEFAULT_SETTINGS)),
       ...raw,
       shortcuts: { ...DEFAULT_SETTINGS.shortcuts, ...(raw.shortcuts || {}) },
-      order: Array.isArray(raw.order) && raw.order.length ? raw.order : DEFAULT_SETTINGS.order,
+      order: mergeOrder(raw.order, nav),
       hidden: Array.isArray(raw.hidden) ? raw.hidden : [],
       labels: raw.labels && typeof raw.labels === 'object' ? raw.labels : {}
     }
@@ -134,7 +135,7 @@ function webviewFor (winObj) {
 }
 
 function allowed (url) {
-  return url.startsWith(SITE) || url.startsWith('data:') || url.startsWith('about:blank')
+  return isInternal(url, SITE) || url === 'about:blank' || url.startsWith('data:text/html')
 }
 
 // navigate in place for same-site, system browser for anything else
@@ -201,7 +202,7 @@ function createWindow () {
   win = new BrowserWindow({
     width: 1440,
     height: 920,
-    minWidth: 980,
+    minWidth: 760,
     minHeight: 620,
     backgroundColor: '#111214',
     title: 'CodWiki',
@@ -216,10 +217,18 @@ function createWindow () {
     }
   })
   win.loadFile(path.join(__dirname, 'renderer', 'index.html'))
+  win.webContents.on('will-attach-webview', (event, preferences, params) => {
+    if (!isInternal(params.src, SITE) && params.src !== 'about:blank') { event.preventDefault(); return }
+    preferences.preload = path.join(__dirname, 'webview-preload.js')
+    preferences.nodeIntegration = false
+    preferences.contextIsolation = true
+    preferences.sandbox = true
+  })
   win.once('ready-to-show', () => win.show())
   win.on('closed', () => { win = null })
 }
 
+ipcMain.handle('cw:runtime', () => ({ site: SITE, version: app.getVersion() }))
 ipcMain.handle('cw:open-external', (e, url) => {
   if (/^https?:\/\//i.test(url)) shell.openExternal(url)
 })

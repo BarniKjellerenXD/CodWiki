@@ -4,154 +4,160 @@
       <section class="min-w-0">
         <div class="guide-surface">
           <header class="guide-header">
-            <div class="guide-heading">
-              <span v-if="mapName" class="guide-map">{{ mapName }}</span>
-              <h1 class="guide-title">{{ title }}</h1>
-            </div>
-            <NuxtLink class="guide-back" to="/">← All guides</NuxtLink>
+            <div class="guide-heading"><span class="guide-map">{{ mapName }}</span><h1 class="guide-title">{{ title }}</h1></div>
+            <NuxtLink class="guide-back" to="/">← Maps & tools</NuxtLink>
           </header>
-          <NuxtLink v-if="superEggMap" class="super-egg-link" :to="`/guides/bo7-super-easter-egg#${superEggMap}`">Super Easter Egg <span>Toy box walkthrough ↗</span></NuxtLink>
-          <div v-if="bannerText" class="curse-banner">
-            <div class="banner-text">{{ bannerText }}</div>
-            <button class="banner-btn" @click="scrollTo(bannerTarget)">{{ bannerLabel }}</button>
+          <div class="guide-toolbar">
+            <div class="reading-switch" role="group" aria-label="Reading view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Steps</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button></div>
+            <button class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
+            <button class="companion-button subtle" @click="confirmReset = !confirmReset">Start new run</button>
           </div>
-          <article ref="articleRef" class="prose guide-article" @click="onArticleClick">
-            <slot />
-          </article>
+          <div v-if="mobileOpen" id="mobile-contents" class="mobile-contents"><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /></div>
+          <nav class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
+          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="reset(mapId); confirmReset = false; switchView('quick')">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
+          <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
+          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps :map-id="mapId" :phases="phases" :completed="current.done" @toggle="toggle(mapId, $event)" @details="scrollTo" @visit="remember" /></div>
+          <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /></article>
+          <section v-if="mapTools.length" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
         </div>
       </section>
-
-      <aside class="guide-aside">
-        <div class="toc">
-          <div class="toc-head">
-            <Icon name="mdi:format-list-bulleted" />
-            <span>On this page</span>
-          </div>
-
-          <template v-if="pinnedToc.length">
-            <div class="toc-group-label">Pinned</div>
-            <nav class="toc-nav">
-              <div v-for="p in pinnedToc" :key="p.id" class="toc-row">
-                <button class="toc-link is-pinned" @click="scrollTo(p.id)">{{ p.text }}</button>
-                <button class="toc-pin" @click="togglePin(p.id)" title="Unpin">Unpin</button>
-              </div>
-            </nav>
-            <div class="divider" aria-hidden="true"></div>
-          </template>
-
-          <nav class="toc-nav toc-scroll">
-            <div v-for="item in otherToc" :key="item.id" class="toc-row">
-              <button
-                class="toc-link"
-                :class="item.level === 1 ? 'lvl-1' : item.level === 2 ? 'lvl-2' : 'lvl-3'"
-                @click="scrollTo(item.id)"
-              >
-                {{ item.text }}
-              </button>
-              <button class="toc-pin" @click="togglePin(item.id)" title="Pin">Pin</button>
-            </div>
-          </nav>
-        </div>
-      </aside>
+      <aside class="guide-aside"><div class="toc"><div class="toc-head">On this page</div><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /><p class="saved-note">Progress saved on this device</p></div></aside>
     </div>
     <ImageLightbox v-if="lightboxSrc" :src="lightboxSrc" :alt="lightboxAlt" @close="lightboxSrc = null" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, nextTick, computed } from 'vue'
-
+import catalogue from '~/data/catalogue.json'
+import quickQuests from '~/data/quickQuests.json'
 export interface GuideTocItem { id: string; text: string; level: number }
-
-const props = defineProps<{
-  title: string
-  mapName?: string
-  storageKey: string
-  defaultPins?: string[]
-  bannerText?: string
-  bannerTarget?: string
-  bannerLabel?: string
-}>()
-
+const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string }>()
+useSeoMeta({ title: () => `${props.title} · CodWiki`, description: () => `Quest checklist, complete walkthrough and puzzle tools for ${props.title}.` })
 const route = useRoute()
-const superEggRoutes: Record<string, string> = { '/guides/ashes-of-the-damned': 'ashes', '/guides/astra-malorum': 'astra', '/guides/paradox-junction': 'paradox', '/guides/kowakujo': 'kowakujo' }
-const superEggMap = computed(() => superEggRoutes[route.path.replace(/\/$/, '')])
-
+const mapId = route.path.replace(/\/$/, '').split('/').pop()!
+const { run, toggle, visit, save, reset, init, saveError } = useProgress()
+const current = computed(() => run(mapId))
+const phases = (quickQuests as Record<string, any[]>)[mapId] || []
+const mapTools = catalogue.tools.filter(t => t.map === mapId)
+const view = ref('quick')
+const active = ref('')
+const mobileOpen = ref(false)
+const confirmReset = ref(false)
 const articleRef = ref<HTMLElement | null>(null)
+const quickRef = ref<HTMLElement | null>(null)
 const toc = ref<GuideTocItem[]>([])
 const pins = ref<string[]>([])
 const lightboxSrc = ref<string | null>(null)
-const lightboxAlt = ref<string>('')
-
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-}
-
-function buildTocAndIds(root: HTMLElement) {
-  toc.value = []
-  const headings = Array.from(root.querySelectorAll('h1, h2, h3')) as HTMLHeadingElement[]
-  headings.forEach(h => {
-    const text = h.textContent?.trim() || ''
-    if (!text) return
-    const idFromDom = h.getAttribute('id')
-    const id = idFromDom || `${h.tagName.toLowerCase()}-${slugify(text)}`
-    if (!idFromDom) h.id = id
-    const level = h.tagName === 'H1' ? 1 : h.tagName === 'H2' ? 2 : 3
-    toc.value.push({ id, text, level })
-  })
-}
-
-function loadPins() {
-  try {
-    const raw = localStorage.getItem(props.storageKey)
-    if (raw) {
-      const arr = JSON.parse(raw)
-      if (Array.isArray(arr)) pins.value = arr
-    }
-  } catch {}
-  if (!pins.value.length) pins.value = [...(props.defaultPins || [])]
-}
-function savePins() { localStorage.setItem(props.storageKey, JSON.stringify(pins.value)) }
-function isPinned(id: string) { return pins.value.includes(id) }
-function togglePin(id: string) {
-  if (isPinned(id)) pins.value = pins.value.filter(x => x !== id)
-  else pins.value.push(id)
-  savePins()
-}
-const pinnedToc = computed(() => pins.value.map(id => toc.value.find(t => t.id === id)).filter(Boolean) as GuideTocItem[])
-const otherToc = computed(() => toc.value.filter(t => !isPinned(t.id)))
-
-function scrollTo(id?: string) {
-  if (!id) return
-  const el = document.getElementById(id)
-  if (el) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+const lightboxAlt = ref('')
+const pinnedToc = computed(() => pins.value.map(id => [...toc.value,...phases.map(p=>({id:'quick-'+p.id,text:p.title,level:2}))].find(t=>t.id===id)).filter(Boolean))
+const shortcuts = computed(() => toc.value.filter(t => t.level===1 && /Main Quest|Key Features|Side Quests|Relics/.test(t.text)).map(t=>({...t, text:t.text==='Key Features'?'Setup':t.text})))
+const groups = computed(() => {
+  if (view.value === 'quick') return [{ id:'quick-'+phases[0]?.id, text:'Main quest', items:phases.map(p=>({id:'quick-'+p.id,text:p.title})) }, ...shortcuts.value.filter(t=>!/Main Quest/.test(t.text)).map(t=>({...t,items:[]})), ...(mapTools.length?[{id:'map-tools',text:'Tools',items:[]}]:[])]
+  const result: any[] = []
+  for (const item of toc.value) {
+    if (item.level===1 || !result.length) result.push({...item,items:[]})
+    else result[result.length-1].items.push(item)
   }
-}
-
-function onArticleClick(e: MouseEvent) {
-  const target = e.target as HTMLElement | null
-  if (!target) return
-  if (target.tagName === 'IMG') {
-    const img = target as HTMLImageElement
-    lightboxSrc.value = img.src
-    lightboxAlt.value = img.alt || ''
-  }
-}
-
-onMounted(async () => {
-  await nextTick()
-  if (articleRef.value) buildTocAndIds(articleRef.value)
-  loadPins()
+  if(mapTools.length) result.push({id:'map-tools',text:'Tools',items:[]})
+  return result
 })
-
-defineExpose({ scrollTo })
+function slugify(text:string) { return text.toLowerCase().replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-') }
+function buildTocAndIds(root:HTMLElement) {
+  toc.value = Array.from(root.querySelectorAll('h1,h2,h3')).map(h => {
+    const original = h.textContent?.trim() || ''
+    if (!h.id) h.id = h.tagName.toLowerCase()+'-'+slugify(original)
+    const copy = h.cloneNode(true) as HTMLElement
+    copy.querySelectorAll('.g-tag,.g-chev').forEach(n=>n.remove())
+    return {id:h.id,text:copy.textContent?.trim() || original,level:Number(h.tagName[1]), hidden:!!h.closest('.cheat-grid,.quest-grid')}
+  }).filter(h=>h.text && !h.hidden)
+}
+function loadPins() {
+  try { const raw=localStorage.getItem(props.storageKey); if(raw) { const value=JSON.parse(raw); if(Array.isArray(value)) { pins.value=value.filter(v=>typeof v==='string'); return } } } catch {}
+  pins.value=[...(props.defaultPins || [])]
+}
+function togglePin(id:string) {
+  pins.value=pins.value.includes(id)?pins.value.filter(v=>v!==id):[...pins.value,id]
+  try { localStorage.setItem(props.storageKey,JSON.stringify(pins.value)) } catch {}
+}
+function toggleGroup(id:string) { current.value.groups=current.value.groups.includes(id)?current.value.groups.filter((v:string)=>v!==id):[...current.value.groups,id]; save() }
+function remember(id:string) { active.value=id; visit(mapId,props.title,id,view.value) }
+function switchView(next:string) {
+  const previous=active.value
+  view.value=next; current.value.view=next; save()
+  const phase=phases.find(p=>p.detail===previous || 'quick-'+p.id===previous)
+  const target=phase?(next==='quick'?'quick-'+phase.id:phase.detail):(next==='quick'?'quick-'+phases[0]?.id:shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id)
+  if(target) scrollTo(target)
+}
+async function scrollTo(id?:string, updateUrl=true) {
+  if(!id) return
+  const legacy = phases.find(p=>p.legacy===id && p.legacy!==p.detail)
+  if(legacy) id='quick-'+legacy.id
+  if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases[0]?.id
+  if(id!=='map-tools') view.value=id.startsWith('quick-')?'quick':'full'
+  mobileOpen.value=false
+  await nextTick()
+  const el=document.getElementById(id)
+  if(!el) return
+  let ancestor:HTMLElement|null=el
+  while(ancestor && ancestor!==articleRef.value) {
+    if(ancestor.matches('.glass-card') || ancestor.matches('h2,h3')) {
+      const input=ancestor.querySelector('.g-cb') as HTMLInputElement|null
+      if(input) input.checked=false
+    }
+    if(ancestor.tagName==='DETAILS') (ancestor as HTMLDetailsElement).open=true
+    ancestor=ancestor.parentElement
+  }
+  saveCollapsed()
+  remember(id)
+  if(updateUrl) history.replaceState(history.state,'',route.path+'#'+encodeURIComponent(id))
+  el.scrollIntoView({behavior:'auto',block:'start'})
+}
+function saveCollapsed() {
+  articleRef.value?.querySelectorAll<HTMLInputElement>('.g-cb').forEach(input=>{
+    const id=input.closest('h2,h3')?.id
+    if(id) current.value.collapsed[id]=input.checked
+  })
+  save()
+}
+function onArticleClick(e:MouseEvent) {
+  const target=e.target as HTMLElement
+  const link=target.closest('a')
+  if(link) {
+    const href=link.getAttribute('href') || ''
+    if(href.startsWith('#')) { e.preventDefault(); scrollTo(decodeURIComponent(href.slice(1))) }
+    else if(href.startsWith('/tools/')) { e.preventDefault(); remember(target.closest('.quest-phase')?.id || active.value); navigateTo(href) }
+  }
+  if(target.tagName==='IMG') { lightboxSrc.value=(target as HTMLImageElement).src; lightboxAlt.value=(target as HTMLImageElement).alt }
+}
+let scrollTimer:ReturnType<typeof setTimeout>
+function trackPosition() {
+  clearTimeout(scrollTimer)
+  scrollTimer=setTimeout(()=>{
+    if(mobileOpen.value) return
+    const root=view.value==='quick'?quickRef.value:articleRef.value
+    const nodes=Array.from(root?.querySelectorAll<HTMLElement>(view.value==='quick'?'.quest-phase':'h1,h2,h3') || [])
+    const visible=nodes.filter(n=>n.getClientRects().length)
+    const item=visible.filter(n=>n.getBoundingClientRect().top<180).pop() || visible[0]
+    if(item?.id && active.value!==item.id) remember(item.id)
+  },180)
+}
+onMounted(async()=>{
+  init(); view.value=current.value.view; loadPins()
+  await nextTick()
+  if(articleRef.value) buildTocAndIds(articleRef.value)
+  articleRef.value?.querySelectorAll<HTMLInputElement>('.g-cb').forEach(input=>{
+    const id=input.closest('h2,h3')?.id
+    if(id && typeof current.value.collapsed[id]==='boolean') input.checked=current.value.collapsed[id]
+  })
+  const anchor=route.hash?decodeURIComponent(route.hash.slice(1)):current.value.section
+  if(anchor) await scrollTo(anchor,false)
+  else remember(view.value==='quick'?'quick-'+phases[0]?.id:'')
+  window.addEventListener('scroll',trackPosition,{passive:true})
+})
+watch(()=>route.hash,hash=>{ if(hash) scrollTo(decodeURIComponent(hash.slice(1)),false) })
+onBeforeUnmount(()=>{ window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer) })
+defineExpose({scrollTo})
 </script>
-
 <style scoped>
 @font-face{font-family:PigpenCipher;src:local("PigpenCipher Regular"),local("PigpenCipher"),url(/fonts/pigpen-cipher.otf) format(opentype);font-display:swap;font-weight:400;font-style:normal}
 
@@ -1051,7 +1057,19 @@ defineExpose({ scrollTo })
 </style>
 
 <style scoped>
-.super-egg-link { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: .9rem 1.25rem; margin: 0 0 1rem; border: 1px solid var(--gold-border); border-radius: var(--radius-sm); color: var(--gold-bright); text-decoration: none; font-size: .85rem; background: var(--gold-dim); }
-.super-egg-link span { color: var(--muted); }
-.super-egg-link:hover { border-color: var(--gold); }
+.guide-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:.6rem; position:sticky; top:0; z-index:15; background:var(--surface); padding:.75rem 0; border-bottom:1px solid var(--line); }
+.reading-switch { display:flex; gap:.3rem; }
+.guide-shortcuts { display:flex; flex-wrap:wrap; gap:.2rem; margin:.5rem 0 1.4rem; }
+.mobile-sections, .mobile-contents { display:none; }
+.map-tools { margin-top:2.5rem; border-top:1px solid var(--line); padding:1.5rem 0; scroll-margin-top:6rem; }
+.map-tools h2 { font-size:1.25rem; margin:.5rem 0 1rem; }
+.map-tools > div { display:flex; gap:.6rem; flex-wrap:wrap; }
+.saved-note { font-size:.72rem; color:var(--faint); padding-top:1rem; margin-top:auto; }
+.toc { overflow:hidden; }
+@media(max-width:1023px) {
+  .mobile-sections { display:inline-flex; }
+  .mobile-contents { display:block; max-height:55vh; overflow:auto; border:1px solid var(--line); padding:.8rem; background:var(--surface); position:sticky; top:116px; z-index:14; border-radius:var(--radius); }
+  .guide-toolbar > .subtle { margin-left:auto; font-size:.75rem; }
+}
+@media(max-width:600px) { .guide-surface { padding:1rem; } .guide-toolbar { gap:.3rem; } .guide-toolbar .companion-button { padding:.5rem .6rem; font-size:.8rem; } .guide-grid { gap:0; } }
 </style>

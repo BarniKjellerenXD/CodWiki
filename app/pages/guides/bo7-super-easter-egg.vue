@@ -1,7 +1,25 @@
 <script setup lang="ts">
 import { superEggMaps } from '~/data/superEasterEgg'
+const { progress, run, toggle, save, reset, visit, init } = useProgress()
+const activeMap = ref('ashes')
+const resetMap = ref('')
+const extracted = computed(() => superEggMaps.filter(m => !m.finale && progress.value.toys[m.id]).length)
+function setToy(id: string, event: Event) { progress.value.toys[id] = (event.target as HTMLInputElement).checked; save() }
+function continueQuest() {
+ const map = superEggMaps.find(m => !progress.value.toys[m.id]) || superEggMaps[5]!
+ const index = map.stepIds.findIndex(id => !run('super-'+map.id).done.includes(id))
+ document.getElementById(index < 0 ? map.id : map.id+'-'+map.stepIds[index])?.scrollIntoView({block:'start'})
+}
+let observer: IntersectionObserver
+onMounted(() => {
+ init()
+ visit('bo7-super-easter-egg', 'Super Easter Egg', location.hash.slice(1))
+ observer = new IntersectionObserver(entries => { for(const entry of entries) if(entry.isIntersecting) { activeMap.value=entry.target.id; visit('bo7-super-easter-egg','Super Easter Egg',entry.target.id) } }, {rootMargin:'-10% 0px -65% 0px'})
+ document.querySelectorAll('.map-section').forEach(el=>observer.observe(el))
+})
+onBeforeUnmount(()=>observer?.disconnect())
 
-useSeoMeta({ title: 'BO7 Super Easter Egg · Cod Wiki', description: 'Work-in-progress toy box walkthroughs for Ashes, Astra, Paradox and Kowakujō, with clear steps and in-game references.' })
+useSeoMeta({ title: 'BO7 Super Easter Egg · Cod Wiki', description: 'All five BO7 toy box quests and the Rex Infernus Warden walkthrough, with equipment, step-by-step instructions and map guide links.' })
 </script>
 
 <template>
@@ -9,21 +27,26 @@ useSeoMeta({ title: 'BO7 Super Easter Egg · Cod Wiki', description: 'Work-in-pr
     <NuxtLink class="back-link" to="/">← All guides</NuxtLink>
     <header class="egg-header">
       <div class="eyebrow">Black Ops 7 <span aria-hidden="true">/</span> Zombies</div>
-      <p class="status">Discovery in progress</p>
+      <p class="status">All steps found</p>
       <h1>Super Easter Egg</h1>
-      <p class="intro">Four maps. Follow the toys.</p>
-      <p class="source-note">The steps found so far, in one place. Based on community notes supplied for this guide; discoveries and requirements are still being worked out.</p>
+      <p class="intro">Five map toys. One final Warden quest.</p>
+      <p class="source-note">Collect and successfully exfil with the toys from Ashes, Astra, Paradox, Kowakujō and Totenreich. Then head to Rex Infernus to complete the Warden quest. Adapted from the supplied community guide.</p>
     </header>
 
+    <section class="toy-overview" aria-label="Your toy collection">
+      <div class="toy-heading"><div><span class="companion-label">Your collection</span><h2>{{ extracted }} of 5 map toys extracted</h2></div><button class="companion-button primary" @click="continueQuest">Continue quest →</button></div>
+      <div class="toy-checks"><label v-for="map in superEggMaps" :key="map.id" :class="{banked:progress.toys[map.id]}"><input type="checkbox" :checked="!!progress.toys[map.id]" @change="setToy(map.id,$event)" /><span>{{ map.short }}<small>{{ map.finale ? 'Warden placed' : 'Successfully exfilled' }}</small></span></label></div>
+      <p class="companion-muted">Mark each toy only after a successful exfil. Mark the Warden after placing it in Her House. Step checkboxes are tracked separately.</p>
+    </section>
     <aside class="exfil-note" aria-label="Important extraction requirement">
       <span class="notice-icon" aria-hidden="true">↗</span>
-      <div><strong>Finish with an exfil. Do not save and quit.</strong><p>The supplied notes report that Exit Strategy GobbleGum works for extraction.</p></div>
+      <div><strong>Successfully exfil with each of the five map toys.</strong><p>Once all five are banked, find them on the shelf inside Her House in Rex Infernus and begin the final toy quest.</p></div>
     </aside>
 
     <div class="reading-layout">
       <nav class="map-nav" aria-label="Jump to a map">
         <span class="nav-label">Choose your map</span>
-        <a v-for="(map, index) in superEggMaps" :key="map.id" :href="`#${map.id}`">
+        <a v-for="(map, index) in superEggMaps" :key="map.id" :href="`#${map.id}`" :aria-current="activeMap === map.id ? 'location' : undefined">
           <span class="nav-number">0{{ index + 1 }}</span><span>{{ map.short }}</span><span class="nav-arrow" aria-hidden="true">↗</span>
         </a>
       </nav>
@@ -32,21 +55,23 @@ useSeoMeta({ title: 'BO7 Super Easter Egg · Cod Wiki', description: 'Work-in-pr
         <section v-for="(map, index) in superEggMaps" :id="map.id" :key="map.id" class="map-section" :aria-labelledby="`${map.id}-title`">
           <div class="map-image"><img :src="map.image" alt="" :loading="index ? 'lazy' : 'eager'" /></div>
           <div class="map-body">
-            <div class="chapter">Map 0{{ index + 1 }} <span> / Toy box quest</span></div>
+            <div class="chapter">{{ map.finale ? 'Finale' : `Map 0${index + 1}` }} <span> / {{ map.finale ? 'Warden quest' : 'Toy box quest' }}</span></div>
             <h2 :id="`${map.id}-title`">{{ map.name }}</h2>
             <p class="map-intro">{{ map.intro }}</p>
             <div class="equipment"><span>Bring / unlock</span><p>{{ map.equipment }}</p></div>
             <p v-if="map.note" class="map-note">{{ map.note }}</p>
             <ol class="steps">
-              <li v-for="(step, stepIndex) in map.steps" :key="stepIndex">
+              <li v-for="(step, stepIndex) in map.steps" :id="`${map.id}-${map.stepIds[stepIndex]}`" :key="map.stepIds[stepIndex]" :class="{complete:run('super-'+map.id).done.includes(map.stepIds[stepIndex])}">
+                <input class="egg-check" type="checkbox" :aria-label="`Complete ${map.short}: ${step[0]}`" :checked="run('super-'+map.id).done.includes(map.stepIds[stepIndex])" @change="toggle('super-'+map.id,map.stepIds[stepIndex]!)" />
                 <span class="step-number" aria-hidden="true">{{ String(stepIndex + 1).padStart(2, '0') }}</span>
                 <div><h3>{{ step[0] }}</h3><p>{{ step[1] }}</p></div>
               </li>
             </ol>
+            <div class="egg-reset"><button class="companion-button subtle" @click="resetMap=map.id">Reset these steps</button><div v-if="resetMap===map.id" class="companion-confirm"><p>Clear {{ map.short }} step checkboxes? Your recorded toy stays saved.</p><button class="companion-button" @click="reset('super-'+map.id); resetMap=''">Clear steps</button><button class="companion-button" @click="resetMap=''">Cancel</button></div></div>
             <footer class="references"><span>Keep handy</span><div><NuxtLink v-for="link in map.links" :key="link.to" :to="link.to">{{ link.label }} <span aria-hidden="true">↗</span></NuxtLink></div></footer>
           </div>
         </section>
-        <p class="end-note">More discoveries to come. These four walkthroughs reflect the supplied notes, not a confirmed complete Super Easter Egg route.</p>
+        <p class="end-note">Finish the Rex minigame, collect the Warden action figure, and place it beside the five map toys in Her House.</p>
       </div>
     </div>
   </main>
@@ -104,13 +129,30 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.1rem); letter-spacing: -.025em; font-weigh
   .egg-page { padding: 1.5rem 1rem 4rem; }
   .egg-header { padding-top: 2.5rem; }
   .reading-layout { display: block; }
-  .map-nav { display: flex; position: sticky; top: 0; z-index: 10; background: var(--bg); padding: .6rem 0; gap: .3rem; margin-bottom: 1rem; }
+  .map-nav { display: flex; position: sticky; top: 0; z-index: 10; background: var(--bg); padding: .6rem 0; gap: .3rem; margin-bottom: 1rem; overflow-x: auto; flex-wrap: wrap; }
   .nav-label, .nav-number, .nav-arrow, .nav-foot { display: none; }
-  .map-nav a { flex: 1; justify-content: center; padding: .75rem .2rem; font-size: .77rem; }
+  .map-nav a { flex: 1 0 28%; justify-content: center; padding: .75rem .65rem; font-size: .77rem; white-space: nowrap; }
   .map-body { padding: 1.4rem 1.2rem .25rem; }
   .map-image { height: 8rem; }
   .map-section { scroll-margin-top: 5rem; }
   .steps li { gap: .7rem; }
   .exfil-note { padding: 1rem; gap: .8rem; margin-bottom: 1.4rem; }
 }
+</style>
+
+<style scoped>
+.toy-overview { border:1px solid var(--line); border-radius:var(--radius-lg); padding:1.5rem; margin:0 0 1.5rem; background:var(--surface); }
+.toy-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+.toy-heading h2 { font-size:1.4rem; }
+.toy-checks { display:grid; grid-template-columns:repeat(3,1fr); gap:.65rem; margin-top:1.2rem; }
+.toy-checks label { display:flex; align-items:center; gap:.75rem; padding:.8rem; border:1px solid var(--line); border-radius:var(--radius-sm); cursor:pointer; }
+.toy-checks label.banked { border-color:var(--gold); background:var(--gold-dim); }
+.toy-checks small { display:block; font-size:.72rem; color:var(--muted); margin-top:.3rem; }
+.toy-checks input, .egg-check { accent-color:var(--gold); width:1.15rem; height:1.15rem; flex:none; }
+.toy-overview > p { font-size:.85rem; margin-bottom:0; }
+.map-nav a[aria-current] { color:var(--gold-bright); background:var(--gold-dim); box-shadow:inset 2px 0 var(--gold); }
+.steps li { scroll-margin-top:8rem; gap:.8rem; }
+.steps li.complete { background:var(--gold-dim); }
+.egg-reset { margin-top:1rem; }
+@media(max-width:600px) { .toy-overview { padding:1rem; } .toy-checks { grid-template-columns:repeat(2,1fr); } .map-section { scroll-margin-top:8rem; } .step-number { display:none; } }
 </style>

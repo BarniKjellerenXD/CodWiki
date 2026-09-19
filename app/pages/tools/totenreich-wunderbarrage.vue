@@ -56,6 +56,7 @@ const summary = computed(() => {
   const d = (v: number | null) => (v === null ? '—' : String(v))
   return `${d(s1a.value)} ${d(s1f.value)} · ${d(s2a.value)} ${d(s2f.value)}`
 })
+useToolState('totenreich-wunderbarrage', { s1a, s1f, s2a, s2f })
 </script>
 
 <style scoped>

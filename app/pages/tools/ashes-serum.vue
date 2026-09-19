@@ -9,17 +9,20 @@
 
     <div class="blocklabel">① Ingredients <span class="hint">tap in collection order — max 3</span></div>
     <div class="ing">
-      <div
+      <button
+        type="button"
+        :aria-pressed="picked.includes(g.id)"
+        :disabled="picked.length >= 3 && !picked.includes(g.id)"
         v-for="g in ingredients"
         :key="g.id"
         class="ingcard"
         :class="{ sel: picked.includes(g.id), dis: picked.length >= 3 && !picked.includes(g.id) }"
         @click="toggle(g.id)"
       >
-        <img :src="`/tools/ashes-serum/${g.id}.png`" :alt="g.name">
+        <img :src="`/tools/ashes-serum/${g.id}.png`" alt="">
         <div class="nm">{{ g.name }}</div>
         <div v-if="picked.includes(g.id)" class="badge">{{ picked.indexOf(g.id) + 1 }}</div>
-      </div>
+      </button>
     </div>
     <div class="ingcount">{{ picked.length }} / 3 selected</div>
 
@@ -47,6 +50,7 @@ function toggle(id: string) {
   if (at !== -1) picked.value.splice(at, 1)
   else if (picked.value.length < 3) picked.value.push(id)
 }
+useToolState('ashes-serum', { picked })
 </script>
 
 <style scoped>

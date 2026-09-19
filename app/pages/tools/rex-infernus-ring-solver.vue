@@ -300,6 +300,7 @@ function solve() {
   }
   result.value = { type: 'ok', seq, counts, totalHtml: txt }
 }
+useToolState('rex-infernus-ring-solver', { cur, active, mode, target, result, step })
 </script>
 
 <style scoped>

@@ -78,6 +78,7 @@ function assign(dir: string, pl: string) {
 function reset() {
   dirs.forEach(d => { assignment[d.id] = null })
 }
+useToolState('astra-planet-sheets', { assignment })
 </script>
 
 <style scoped>

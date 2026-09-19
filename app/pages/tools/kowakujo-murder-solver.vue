@@ -176,6 +176,7 @@ const filled = computed(() => slotItems.value.filter(Boolean).length)
 function ordinal(i: number) {
   return `${i + 1}${['st', 'nd', 'rd'][i] ?? 'th'}`
 }
+useToolState('kowakujo-murder-solver', { state })
 </script>
 
 <style scoped>

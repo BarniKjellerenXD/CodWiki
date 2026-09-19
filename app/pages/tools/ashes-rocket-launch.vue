@@ -35,6 +35,7 @@ import { ref } from 'vue'
 
 const words = ['ROCKET', 'ENGINE', 'LAUNCH', 'WEAPON']
 const selected = ref<string | null>(null)
+useToolState('ashes-rocket-launch', { selected })
 </script>
 
 <style scoped>

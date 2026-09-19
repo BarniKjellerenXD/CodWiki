@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="themes.css">
   <title>CodWiki</title>
 </head>
 <body>
@@ -12,15 +12,17 @@
         <img src="../build/icon.png" alt="">
         <div><span>Cod Wiki</span><small>Zombies companion</small></div>
       </div>
+      <label class="sidebar-search"><span>Find a map or tool</span><input id="nav-search" type="search" placeholder="Search shortcuts…"></label>
       <nav id="nav" aria-label="Guides and tools"></nav>
       <div id="sidebar-footer">
         <button id="open-browser" type="button">Open in browser ↗</button>
-        <span>v1.2.0</span>
+        <span id="app-version"></span>
       </div>
     </aside>
     <main id="content">
       <div id="topbar" class="drag">
         <div class="tb-buttons no-drag">
+          <button id="btn-sidebar" aria-label="Toggle sidebar" aria-controls="sidebar" aria-expanded="true" title="Toggle sidebar">☰</button>
           <button id="btn-back" title="Back (Alt+←)" aria-label="Back">‹</button>
           <button id="btn-fwd" title="Forward (Alt+→)" aria-label="Forward">›</button>
           <button id="btn-reload" title="Reload (F5)" aria-label="Reload">⟳</button>
@@ -30,11 +32,11 @@
         <div id="address" class="no-drag">codguides.wolden.eu</div>
       </div>
       <div id="progress"></div>
-      <webview id="webview" src="https://codguides.wolden.eu/"></webview>
+      <webview id="webview" src="about:blank"></webview>
 
       <div id="settings-panel" hidden>
         <div class="sp-head drag">
-          <div><h2>Settings</h2><p>Make the companion work for your next run.</p></div>
+          <div><h2>Application settings</h2><p>Shortcuts, sidebar and window settings. Use Reading settings on the page for theme and text size.</p></div>
           <button id="sp-close" class="no-drag" title="Close (Esc)" aria-label="Close settings">✕</button>
         </div>
         <div class="sp-body no-drag">
@@ -53,7 +55,7 @@
           </section>
 
           <section class="sp-tab-page" data-page="sidebar" hidden>
-            <p class="sp-hint">Reorder, rename, hide or show sidebar entries.</p>
+            <p class="sp-hint">Reorder tools within each map, rename entries, or hide and show them. Each map's guide stays first.</p>
             <div id="sp-nav-list"></div>
           </section>
 
@@ -79,6 +81,7 @@
     </main>
   </div>
   <script src="nav.js"></script>
+  <script src="navigation.js"></script>
   <script src="settings.js"></script>
   <script src="app.js"></script>
 </body>

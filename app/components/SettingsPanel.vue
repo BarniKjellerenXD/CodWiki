@@ -2,24 +2,25 @@
   <div class="settings">
     <button
       class="settings-trigger"
+      ref="trigger"
       type="button"
-      aria-label="Open settings"
+      aria-label="Open reading settings"
       :aria-expanded="open"
       @click="open = !open"
     >
-      <Icon name="mdi:cog-outline" />
+      <UiIcon name="settings" />
     </button>
 
     <Transition name="pop">
       <div v-if="open" class="settings-scrim" @click.self="open = false">
-        <div class="settings-panel" role="dialog" aria-label="Settings">
+        <div ref="panel" class="settings-panel" role="dialog" aria-modal="true" aria-label="Reading settings" @keydown="onDialogKey">
           <header class="settings-head">
             <div>
-              <h2>Settings</h2>
-              <p>Make it yours</p>
+              <h2>Reading settings</h2>
+              <p>Theme and text size</p>
             </div>
             <button class="settings-close" type="button" aria-label="Close settings" @click="open = false">
-              <Icon name="mdi:close" />
+              <UiIcon name="close" />
             </button>
           </header>
 
@@ -32,6 +33,7 @@
                 type="button"
                 class="theme-card"
                 :class="{ active: state.theme === t.id }"
+                :aria-pressed="state.theme === t.id"
                 @click="setTheme(t.id)"
               >
                 <span class="theme-swatch" :style="{ background: t.swatch }" />
@@ -49,6 +51,7 @@
                 :key="s.id"
                 type="button"
                 :class="{ active: state.fontScale === s.id }"
+                :aria-pressed="state.fontScale === s.id"
                 @click="setFontScale(s.id)"
               >{{ s.label }}</button>
             </div>
@@ -62,10 +65,26 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch, nextTick } from 'vue'
 
 const { state, themes, setTheme, setFontScale, init } = useSettings()
 const open = ref(false)
+const panel = ref<HTMLElement | null>(null)
+const trigger = ref<HTMLButtonElement | null>(null)
+watch(open, async value => {
+  await nextTick()
+  if (value) panel.value?.querySelector<HTMLButtonElement>('button')?.focus()
+  else trigger.value?.focus()
+})
+function onDialogKey(event: KeyboardEvent) {
+  if (event.key === 'Escape') { open.value = false; event.preventDefault(); return }
+  if (event.key !== 'Tab') return
+  const buttons = panel.value?.querySelectorAll<HTMLButtonElement>('button')
+  if (!buttons?.length) return
+  const first = buttons[0]!, last = buttons[buttons.length - 1]!
+  if (event.shiftKey && document.activeElement === first) { last.focus(); event.preventDefault() }
+  else if (!event.shiftKey && document.activeElement === last) { first.focus(); event.preventDefault() }
+}
 
 const scales: { id: 'compact' | 'default' | 'relaxed', label: string }[] = [
   { id: 'compact', label: 'Compact' },
@@ -75,9 +94,6 @@ const scales: { id: 'compact' | 'default' | 'relaxed', label: string }[] = [
 
 onMounted(() => {
   init()
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') open.value = false
-  })
 })
 </script>
 

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "sys-settings",
+    "label": "Open Settings",
+    "accel": "Ctrl+,"
+  },
+  {
+    "id": "sys-home",
+    "label": "Go Home",
+    "accel": "Ctrl+H"
+  },
+  {
+    "id": "sys-reload",
+    "label": "Reload Page",
+    "accel": "F5"
+  },
+  {
+    "id": "sys-back",
+    "label": "Back",
+    "accel": "Alt+ArrowLeft"
+  },
+  {
+    "id": "sys-forward",
+    "label": "Forward",
+    "accel": "Alt+ArrowRight"
+  },
+  {
+    "id": "sys-zoom-in",
+    "label": "Zoom In",
+    "accel": "Ctrl+="
+  },
+  {
+    "id": "sys-zoom-out",
+    "label": "Zoom Out",
+    "accel": "Ctrl+-"
+  },
+  {
+    "id": "sys-zoom-reset",
+    "label": "Zoom Reset",
+    "accel": "Ctrl+0"
+  },
+  {
+    "id": "sys-devtools",
+    "label": "Toggle DevTools",
+    "accel": "F12"
+  }
+]

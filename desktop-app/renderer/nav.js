@@ -1,53 +1,242 @@
-// Shared navigation table: used by main.js (shortcuts) and the sidebar renderer.
-// Every item has a stable `id` used by settings (order / hidden / labels / shortcuts).
-// `accel` is the DEFAULT shortcut — user remaps live via the settings page.
+// Generated from shared/catalogue.json; run node scripts/generate-catalogue.mjs.
 const NAV = [
-  // ---- guides ----
-  { id: 'bo7-super-easter-egg', section: 'Guides', label: 'Super Easter Egg', icon: '✦', url: '/guides/bo7-super-easter-egg', thumb: '/images/ashes-thumb.jpg' },
-  { id: 'rex-infernus', section: 'Guides', label: 'Rex Infernus', icon: '🐉', url: '/guides/rex-infernus', thumb: '/images/rex-infernus-thumb.jpg', accel: 'Ctrl+1' },
-  { id: 'ashes-of-the-damned', section: 'Guides', label: 'Ashes of the Damned', icon: '🔥', url: '/guides/ashes-of-the-damned', thumb: '/images/ashes-thumb.jpg', accel: 'Ctrl+2' },
-  { id: 'astra-malorum', section: 'Guides', label: 'Astra Malorum', icon: '🔭', url: '/guides/astra-malorum', thumb: '/images/astra-thumb.jpg', accel: 'Ctrl+3' },
-  { id: 'paradox-junction', section: 'Guides', label: 'Paradox Junction', icon: '🌀', url: '/guides/paradox-junction', thumb: '/images/paradox-thumb.jpg', accel: 'Ctrl+4' },
-  { id: 'totenreich', section: 'Guides', label: 'Totenreich', icon: '💀', url: '/guides/totenreich', thumb: '/images/totenreich-thumb.jpg', accel: 'Ctrl+5' },
-  { id: 'kowakujo', section: 'Guides', label: 'Kowakujō', icon: '⛩️', url: '/guides/kowakujo', thumb: '/images/kowakujo-thumb.jpg', accel: 'Ctrl+6' },
-  // ---- tools: kowakujo ----
-  { id: 'kowakujo-pestle', section: 'Kowakujō', label: 'Pestle Scroll Solver', icon: '📜', url: '/tools/kowakujo-pestle-solver', accel: 'Ctrl+7' },
-  { id: 'kowakujo-clock', section: 'Kowakujō', label: 'Clock & Flags Solver', icon: '🕐', url: '/tools/kowakujo-clock-solver', accel: 'Ctrl+8' },
-  { id: 'kowakujo-murder', section: 'Kowakujō', label: 'Murder Mystery Solver', icon: '🗡️', url: '/tools/kowakujo-murder-solver', accel: 'Ctrl+Shift+1' },
-  // ---- tools: rex infernus ----
-  { id: 'rex-ring', section: 'Rex Infernus', label: 'Temple Ring Solver', icon: '🔄', url: '/tools/rex-infernus-ring-solver', accel: 'Ctrl+9' },
-  { id: 'rex-pillars', section: 'Rex Infernus', label: 'Pillars & Levers', icon: '🏛️', url: '/tools/rex-infernus-pillars', accel: 'Ctrl+Shift+2' },
-  { id: 'rex-house-symbols', section: 'Rex Infernus', label: 'House Symbols Tracker', icon: '🏠', url: '/tools/rex-infernus-house-symbols', accel: 'Ctrl+Shift+3' },
-  // ---- tools: totenreich ----
-  { id: 'totenreich-uranium', section: 'Totenreich', label: 'Uranium Pincers Solver', icon: '☢️', url: '/tools/totenreich-uranium-pincers', accel: 'Ctrl+Shift+4' },
-  { id: 'totenreich-wunderbarrage', section: 'Totenreich', label: 'Wunderbarrage Codes', icon: '📡', url: '/tools/totenreich-wunderbarrage', accel: 'Ctrl+Shift+5' },
-  // ---- tools: ashes ----
-  { id: 'ashes-rocket-launch', section: 'Ashes of the Damned', label: 'Rocket Launch Codes', icon: '🚀', url: '/tools/ashes-rocket-launch', accel: 'Ctrl+Shift+6' },
-  { id: 'ashes-serum', section: 'Ashes of the Damned', label: 'Serum Ingredient Order', icon: '🧪', url: '/tools/ashes-serum', accel: 'Ctrl+Shift+7' },
-  // ---- tools: astra ----
-  { id: 'astra-mars-code', section: 'Astra Malorum', label: 'Mars Code', icon: '🪐', url: '/tools/astra-mars-code', accel: 'Ctrl+Shift+8' },
-  { id: 'astra-organ', section: 'Astra Malorum', label: 'Harmonic Organ Order', icon: '🎹', url: '/tools/astra-harmonic-organ', accel: 'Ctrl+Shift+9' },
-  { id: 'astra-planets', section: 'Astra Malorum', label: 'Planet Sheets Map', icon: '🧭', url: '/tools/astra-planet-sheets', accel: 'Ctrl+Shift+0' }
+  {
+    "id": "ashes-of-the-damned",
+    "map": "ashes-of-the-damned",
+    "kind": "guide",
+    "section": "Ashes of the Damned",
+    "label": "Guide",
+    "url": "/guides/ashes-of-the-damned",
+    "accel": "Ctrl+2",
+    "icon": "◇"
+  },
+  {
+    "id": "ashes-rocket-launch",
+    "map": "ashes-of-the-damned",
+    "kind": "tool",
+    "section": "Ashes of the Damned",
+    "label": "Rocket Launch Codes",
+    "url": "/tools/ashes-rocket-launch",
+    "accel": "Ctrl+Shift+6",
+    "icon": "↗"
+  },
+  {
+    "id": "ashes-serum",
+    "map": "ashes-of-the-damned",
+    "kind": "tool",
+    "section": "Ashes of the Damned",
+    "label": "Serum Ingredient Order",
+    "url": "/tools/ashes-serum",
+    "accel": "Ctrl+Shift+7",
+    "icon": "↗"
+  },
+  {
+    "id": "astra-malorum",
+    "map": "astra-malorum",
+    "kind": "guide",
+    "section": "Astra Malorum",
+    "label": "Guide",
+    "url": "/guides/astra-malorum",
+    "accel": "Ctrl+3",
+    "icon": "◇"
+  },
+  {
+    "id": "astra-mars-code",
+    "map": "astra-malorum",
+    "kind": "tool",
+    "section": "Astra Malorum",
+    "label": "Mars Code",
+    "url": "/tools/astra-mars-code",
+    "accel": "Ctrl+Shift+8",
+    "icon": "↗"
+  },
+  {
+    "id": "astra-organ",
+    "map": "astra-malorum",
+    "kind": "tool",
+    "section": "Astra Malorum",
+    "label": "Harmonic Organ Order",
+    "url": "/tools/astra-harmonic-organ",
+    "accel": "Ctrl+Shift+9",
+    "icon": "↗"
+  },
+  {
+    "id": "astra-planets",
+    "map": "astra-malorum",
+    "kind": "tool",
+    "section": "Astra Malorum",
+    "label": "Planet Sheets Map",
+    "url": "/tools/astra-planet-sheets",
+    "accel": "Ctrl+Shift+0",
+    "icon": "↗"
+  },
+  {
+    "id": "paradox-junction",
+    "map": "paradox-junction",
+    "kind": "guide",
+    "section": "Paradox Junction",
+    "label": "Guide",
+    "url": "/guides/paradox-junction",
+    "accel": "Ctrl+4",
+    "icon": "◇"
+  },
+  {
+    "id": "totenreich",
+    "map": "totenreich",
+    "kind": "guide",
+    "section": "Totenreich",
+    "label": "Guide",
+    "url": "/guides/totenreich",
+    "accel": "Ctrl+5",
+    "icon": "◇"
+  },
+  {
+    "id": "totenreich-uranium",
+    "map": "totenreich",
+    "kind": "tool",
+    "section": "Totenreich",
+    "label": "Uranium Pincers Solver",
+    "url": "/tools/totenreich-uranium-pincers",
+    "accel": "Ctrl+Shift+4",
+    "icon": "↗"
+  },
+  {
+    "id": "totenreich-wunderbarrage",
+    "map": "totenreich",
+    "kind": "tool",
+    "section": "Totenreich",
+    "label": "Wunderbarrage Codes",
+    "url": "/tools/totenreich-wunderbarrage",
+    "accel": "Ctrl+Shift+5",
+    "icon": "↗"
+  },
+  {
+    "id": "kowakujo",
+    "map": "kowakujo",
+    "kind": "guide",
+    "section": "Kowakujō",
+    "label": "Guide",
+    "url": "/guides/kowakujo",
+    "accel": "Ctrl+6",
+    "icon": "◇"
+  },
+  {
+    "id": "kowakujo-pestle",
+    "map": "kowakujo",
+    "kind": "tool",
+    "section": "Kowakujō",
+    "label": "Pestle Scroll Solver",
+    "url": "/tools/kowakujo-pestle-solver",
+    "accel": "Ctrl+7",
+    "icon": "↗"
+  },
+  {
+    "id": "kowakujo-clock",
+    "map": "kowakujo",
+    "kind": "tool",
+    "section": "Kowakujō",
+    "label": "Clock & Flags Solver",
+    "url": "/tools/kowakujo-clock-solver",
+    "accel": "Ctrl+8",
+    "icon": "↗"
+  },
+  {
+    "id": "kowakujo-murder",
+    "map": "kowakujo",
+    "kind": "tool",
+    "section": "Kowakujō",
+    "label": "Murder Mystery Solver",
+    "url": "/tools/kowakujo-murder-solver",
+    "accel": "Ctrl+Shift+1",
+    "icon": "↗"
+  },
+  {
+    "id": "rex-infernus",
+    "map": "rex-infernus",
+    "kind": "guide",
+    "section": "Rex Infernus",
+    "label": "Guide",
+    "url": "/guides/rex-infernus",
+    "accel": "Ctrl+1",
+    "icon": "◇"
+  },
+  {
+    "id": "rex-ring",
+    "map": "rex-infernus",
+    "kind": "tool",
+    "section": "Rex Infernus",
+    "label": "Temple Ring Solver",
+    "url": "/tools/rex-infernus-ring-solver",
+    "accel": "Ctrl+9",
+    "icon": "↗"
+  },
+  {
+    "id": "rex-pillars",
+    "map": "rex-infernus",
+    "kind": "tool",
+    "section": "Rex Infernus",
+    "label": "Pillars & Levers",
+    "url": "/tools/rex-infernus-pillars",
+    "accel": "Ctrl+Shift+2",
+    "icon": "↗"
+  },
+  {
+    "id": "rex-house-symbols",
+    "map": "rex-infernus",
+    "kind": "tool",
+    "section": "Rex Infernus",
+    "label": "House Symbols Tracker",
+    "url": "/tools/rex-infernus-house-symbols",
+    "accel": "Ctrl+Shift+3",
+    "icon": "↗"
+  }
 ]
-
-// System-wide actions (non-navigation), also remappable in settings.
 const SYSTEM_ACTIONS = [
-  { id: 'sys-settings', label: 'Open Settings', accel: 'Ctrl+,' },
-  { id: 'sys-home', label: 'Go Home', accel: 'Ctrl+H' },
-  { id: 'sys-reload', label: 'Reload Page', accel: 'F5' },
-  { id: 'sys-back', label: 'Back', accel: 'Alt+ArrowLeft' },
-  { id: 'sys-forward', label: 'Forward', accel: 'Alt+ArrowRight' },
-  { id: 'sys-zoom-in', label: 'Zoom In', accel: 'Ctrl+=' },
-  { id: 'sys-zoom-out', label: 'Zoom Out', accel: 'Ctrl+-' },
-  { id: 'sys-zoom-reset', label: 'Zoom Reset', accel: 'Ctrl+0' },
-  { id: 'sys-devtools', label: 'Toggle DevTools', accel: 'F12' }
+  {
+    "id": "sys-settings",
+    "label": "Open Settings",
+    "accel": "Ctrl+,"
+  },
+  {
+    "id": "sys-home",
+    "label": "Go Home",
+    "accel": "Ctrl+H"
+  },
+  {
+    "id": "sys-reload",
+    "label": "Reload Page",
+    "accel": "F5"
+  },
+  {
+    "id": "sys-back",
+    "label": "Back",
+    "accel": "Alt+ArrowLeft"
+  },
+  {
+    "id": "sys-forward",
+    "label": "Forward",
+    "accel": "Alt+ArrowRight"
+  },
+  {
+    "id": "sys-zoom-in",
+    "label": "Zoom In",
+    "accel": "Ctrl+="
+  },
+  {
+    "id": "sys-zoom-out",
+    "label": "Zoom Out",
+    "accel": "Ctrl+-"
+  },
+  {
+    "id": "sys-zoom-reset",
+    "label": "Zoom Reset",
+    "accel": "Ctrl+0"
+  },
+  {
+    "id": "sys-devtools",
+    "label": "Toggle DevTools",
+    "accel": "F12"
+  }
 ]
-
-if (typeof window !== 'undefined') {
-  window.NAV = NAV
-  window.SYSTEM_ACTIONS = SYSTEM_ACTIONS
-}
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = NAV
-  module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS
-}
+if (typeof window !== 'undefined') { window.NAV = NAV; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS }
+if (typeof module !== 'undefined') { module.exports = NAV; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS }

@@ -1,0 +1,2135 @@
+[
+  {
+    "id": "ashes-of-the-damned",
+    "name": "Ashes of the Damned",
+    "map": "ashes-of-the-damned",
+    "kind": "Guide",
+    "route": "/guides/ashes-of-the-damned",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_key_features",
+    "name": "Key Features",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_key_features",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_necrofuild_gauntlet_wonder_weapon",
+    "name": "Necrofuild Gauntlet Wonder Weapon",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_necrofuild_gauntlet_wonder_weapon",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_ol.27_tessie",
+    "name": "Ol' Tessie",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_ol.27_tessie",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_pack.2Da.2Dpunch_upgrade",
+    "name": "Pack-a-Punch Upgrade",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_pack.2Da.2Dpunch_upgrade",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_abomination_beam_upgrade",
+    "name": "Abomination Beam Upgrade",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_abomination_beam_upgrade",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_dg.2D2_turret_upgrade",
+    "name": "DG-2 Turret Upgrade",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_dg.2D2_turret_upgrade",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_.22dust_to_dust.22_main_quest",
+    "name": "\"Dust to Dust\" Main Quest",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_.22dust_to_dust.22_main_quest",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_create_the_serum",
+    "name": "Create the Serum",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_create_the_serum",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_gauntlet_challenges",
+    "name": "Gauntlet Challenges",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_gauntlet_challenges",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_vandorn_farm",
+    "name": "Vandorn Farm",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_vandorn_farm",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_zarya_cosmodrome",
+    "name": "Zarya Cosmodrome",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_zarya_cosmodrome",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_exit_115",
+    "name": "Exit 115",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_exit_115",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_blackwater_lake",
+    "name": "Blackwater Lake",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_blackwater_lake",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_veytharion_boss_fight",
+    "name": "Veytharion Boss Fight",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_veytharion_boss_fight",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_side_quests_and_easter_eggs",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_.22turned_to_ashes.22_song",
+    "name": "\"Turned to Ashes\" song",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_.22turned_to_ashes.22_song",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_aether_flora_.28free_loot.29",
+    "name": "Aether Flora (Free loot)",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_aether_flora_.28free_loot.29",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_good_soldiers_.28dempsey.27s_side_quest.29",
+    "name": "Good Soldiers (Dempsey's Side Quest)",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_good_soldiers_.28dempsey.27s_side_quest.29",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_power.2Dup_statues",
+    "name": "Power-Up Statues",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_power.2Dup_statues",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_jump_pads_portal",
+    "name": "Jump Pads Portal",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_jump_pads_portal",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_arc.2Dxd_race",
+    "name": "ARC-XD Race",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_arc.2Dxd_race",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_axe_throwing",
+    "name": "Axe Throwing",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_axe_throwing",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_tv_twins_free_perk",
+    "name": "TV Twins Free Perk",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_tv_twins_free_perk",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_maldruk_bear_fight",
+    "name": "Maldruk Bear Fight",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_maldruk_bear_fight",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_mixologist_.28free_perks.29",
+    "name": "Mixologist (Free Perks)",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_mixologist_.28free_perks.29",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_relics",
+    "name": "Relics",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_relics",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:h2-grim-relics",
+    "name": "Grim Relics",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#h2-grim-relics",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:h2-sinister-relics",
+    "name": "Sinister Relics",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#h2-sinister-relics",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:h2-wicked-relics",
+    "name": "Wicked Relics",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#h2-wicked-relics",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_wall.2Dbuys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_wall.2Dbuys_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_perks_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_miscellaneous_features",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_armor_vests_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_chompy_locations",
+    "name": "Chompy Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_chompy_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_traps_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_arsenal_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "ashes-of-the-damned",
+    "kind": "Section",
+    "route": "/guides/ashes-of-the-damned#wiki_crafting_table_locations",
+    "keywords": "Ashes of the Damned"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-1",
+    "name": "Prerequisites",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-1",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-2",
+    "name": "Create the Serum",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-2",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-3",
+    "name": "Purple Gauntlet",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-3",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-4",
+    "name": "Challenges — Vandorn Farm",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-4",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-5",
+    "name": "Challenges — Zarya Cosmodrome",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-5",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-6",
+    "name": "Challenges — Exit 115",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-6",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-7",
+    "name": "Challenges — Blackwater Lake",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-7",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "ashes-of-the-damned:quick-phase-8",
+    "name": "Veytharion Boss",
+    "map": "ashes-of-the-damned",
+    "kind": "Quick steps",
+    "route": "/guides/ashes-of-the-damned#quick-phase-8",
+    "keywords": "Ashes of the Damned main quest checklist"
+  },
+  {
+    "id": "astra-malorum",
+    "name": "Astra Malorum",
+    "map": "astra-malorum",
+    "kind": "Guide",
+    "route": "/guides/astra-malorum",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "astra-malorum:wiki_key_features",
+    "name": "Key Features",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_key_features",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_pack.2Da.2Dpunch",
+    "name": "Pack-a-Punch",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_pack.2Da.2Dpunch",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_lgm.2D1",
+    "name": "LGM-1",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_lgm.2D1",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_leads",
+    "name": "Leads",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_leads",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_main_quest",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_caltheris_boss_fight",
+    "name": "Caltheris Boss Fight",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_caltheris_boss_fight",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_caltheris_boss_fight_overview",
+    "name": "Caltheris Boss Fight — Overview",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_caltheris_boss_fight_overview",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_side_quests_and_easter_eggs",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_secret_song",
+    "name": "Secret song",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_secret_song",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_alpha_omega_game_over_song",
+    "name": "Alpha Omega Game Over Song",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_alpha_omega_game_over_song",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_friendly_ravager",
+    "name": "Friendly Ravager",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_friendly_ravager",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_magic_secret_song",
+    "name": "\"Magic\" Secret Song",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_magic_secret_song",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_echoes_of_the_damned_nikolai",
+    "name": "Echoes of the Damned (Nikolai's Side Quest)",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_echoes_of_the_damned_nikolai",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_the_five_skulls",
+    "name": "The Five Skulls (Free Random Perk)",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_the_five_skulls",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_bongo_friendly_ravager",
+    "name": "\"Bongo\" The Friendly Ravager",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_bongo_friendly_ravager",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_gramophones_challenges",
+    "name": "Gramophones Challenges (Free Mystery Perks)",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_gramophones_challenges",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_the_twins",
+    "name": "The Twins (Free Cryo Freeze and loot)",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_the_twins",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_time_dilation",
+    "name": "Time Dilation",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_time_dilation",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_wisp_orbs",
+    "name": "Wisp Orbs (Free Ray Gun)",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_wisp_orbs",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_dg2_turret_upgrade",
+    "name": "DG-2 Turret Upgrade",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_dg2_turret_upgrade",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_pareidolia_secret_song",
+    "name": "Pareidolia Secret Song",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_pareidolia_secret_song",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_skull_jumpscare",
+    "name": "Skull Jumpscare",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_skull_jumpscare",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_relics",
+    "name": "Relics",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_relics",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:h2-grim-relics",
+    "name": "Grim Relics",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#h2-grim-relics",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:h2-sinister-relics",
+    "name": "Sinister Relics",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#h2-sinister-relics",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:h2-wicked-relics",
+    "name": "Wicked Relics",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#h2-wicked-relics",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_wall.2Dbuys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_wall.2Dbuys_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_perks_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_miscellaneous_features",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_armor_vests_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_chompy_locations",
+    "name": "Chompy Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_chompy_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_traps_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_arsenal_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "astra-malorum",
+    "kind": "Section",
+    "route": "/guides/astra-malorum#wiki_crafting_table_locations",
+    "keywords": "Astra Malorum"
+  },
+  {
+    "id": "astra-malorum:quick-phase-1",
+    "name": "Awaken the astronomer",
+    "map": "astra-malorum",
+    "kind": "Quick steps",
+    "route": "/guides/astra-malorum#quick-phase-1",
+    "keywords": "Astra Malorum main quest checklist"
+  },
+  {
+    "id": "astra-malorum:quick-phase-2",
+    "name": "Power and align the observatory",
+    "map": "astra-malorum",
+    "kind": "Quick steps",
+    "route": "/guides/astra-malorum#quick-phase-2",
+    "keywords": "Astra Malorum main quest checklist"
+  },
+  {
+    "id": "astra-malorum:quick-phase-3",
+    "name": "Mars sequence",
+    "map": "astra-malorum",
+    "kind": "Quick steps",
+    "route": "/guides/astra-malorum#quick-phase-3",
+    "keywords": "Astra Malorum main quest checklist"
+  },
+  {
+    "id": "astra-malorum:quick-boss",
+    "name": "Caltheris boss fight",
+    "map": "astra-malorum",
+    "kind": "Quick steps",
+    "route": "/guides/astra-malorum#quick-boss",
+    "keywords": "Astra Malorum main quest checklist"
+  },
+  {
+    "id": "paradox-junction",
+    "name": "Paradox Junction",
+    "map": "paradox-junction",
+    "kind": "Guide",
+    "route": "/guides/paradox-junction",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "paradox-junction:wiki_key_features",
+    "name": "Key Features",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_key_features",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_blundergat",
+    "name": "Blundergat",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_blundergat",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_sundergat_upgrade",
+    "name": "Sundergat Upgrade",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_sundergat_upgrade",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_main_quest",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_the_twins_swing",
+    "name": "The Twins Swing",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_the_twins_swing",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_strange_tree.2C_hopscotch_and_music_box",
+    "name": "Strange Tree, Hopscotch and Music Box",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_strange_tree.2C_hopscotch_and_music_box",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_piano_lesson.2C_bouncing_ball_and_music_sheet",
+    "name": "Piano Lesson, Bouncing Ball and Music Sheet",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_piano_lesson.2C_bouncing_ball_and_music_sheet",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_toy_box_and_four_square",
+    "name": "Toy Box and Four Square",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_toy_box_and_four_square",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_clock_tower_and_the_twins",
+    "name": "Clock Tower and The Twins",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_clock_tower_and_the_twins",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_the_dark_heart_boss_fight",
+    "name": "The Dark Heart Boss Fight",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_the_dark_heart_boss_fight",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_phase_1",
+    "name": "Phase 1",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_phase_1",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_phase_2",
+    "name": "Phase 2",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_phase_2",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_phase_3",
+    "name": "Phase 3",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_phase_3",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_side_quests_and_easter_eggs",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_.22come_back_down.22_secret_song",
+    "name": "\"Come Back Down\" Secret Song",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_.22come_back_down.22_secret_song",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_mini_golf_.28free_power_ups.29",
+    "name": "Mini Golf (Free Power Ups)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_mini_golf_.28free_power_ups.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_mini_golf_.28free_essence.29",
+    "name": "Mini Golf (Free Essence)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_mini_golf_.28free_essence.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_jumpscare",
+    "name": "Jumpscare",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_jumpscare",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_115_clock_.28free_loot.29",
+    "name": "115 Clock (Free loot)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_115_clock_.28free_loot.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_dissolving_the_mannequins_.28free_random_perk.29",
+    "name": "Dissolving the Mannequins (Free Random Perk)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_dissolving_the_mannequins_.28free_random_perk.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_lost_key_.28aether_tool.29",
+    "name": "Lost Key (Aether Tool)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_lost_key_.28aether_tool.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_bunker_.28free_random_perk.29",
+    "name": "Bunker (Free Random Perk)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_bunker_.28free_random_perk.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_masked_mannequin_head",
+    "name": "Masked Mannequin Head",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_masked_mannequin_head",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_stalking_mannequin",
+    "name": "Stalking Mannequin",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_stalking_mannequin",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_purple_cyst_.28free_loot_and_perks.29",
+    "name": "Purple Cyst (Free Loot and Perks)",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_purple_cyst_.28free_loot_and_perks.29",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_power.2Dup_statues",
+    "name": "Power-Up Statues",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_power.2Dup_statues",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_relics",
+    "name": "Relics",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_relics",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:h2-grim-relics",
+    "name": "Grim Relics",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#h2-grim-relics",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:h2-sinister-relics",
+    "name": "Sinister Relics",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#h2-sinister-relics",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:h2-wicked-relics",
+    "name": "Wicked Relics",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#h2-wicked-relics",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_wall_buys_and_perk_a_colas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_wall_buys_and_perk_a_colas",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_wall_buys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_wall_buys_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_perks_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_miscellaneous_features",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_armor_vests_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_traps_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_arsenal_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "paradox-junction",
+    "kind": "Section",
+    "route": "/guides/paradox-junction#wiki_crafting_table_locations",
+    "keywords": "Paradox Junction"
+  },
+  {
+    "id": "paradox-junction:quick-phase-1",
+    "name": "Setup",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-1",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "paradox-junction:quick-phase-2",
+    "name": "Strange Tree / Hopscotch",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-2",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "paradox-junction:quick-phase-3",
+    "name": "Piano / Bouncing Ball",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-3",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "paradox-junction:quick-phase-4",
+    "name": "Toy Box / Four Square",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-4",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "paradox-junction:quick-phase-5",
+    "name": "Clock Tower",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-5",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "paradox-junction:quick-phase-6",
+    "name": "Dark Heart Boss",
+    "map": "paradox-junction",
+    "kind": "Quick steps",
+    "route": "/guides/paradox-junction#quick-phase-6",
+    "keywords": "Paradox Junction main quest checklist"
+  },
+  {
+    "id": "totenreich",
+    "name": "Totenreich",
+    "map": "totenreich",
+    "kind": "Guide",
+    "route": "/guides/totenreich",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "totenreich:wiki_key_features",
+    "name": "Key Features",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_key_features",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_jotunn_star",
+    "name": "Jotunn Star",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_jotunn_star",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_main_quest",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_wundersignal",
+    "name": "Wundersignal",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_wundersignal",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_atomkraft_core",
+    "name": "Atomkraft Core",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_atomkraft_core",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_vegvisir",
+    "name": "Vegvisir",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_vegvisir",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_dravakar_boss_fight",
+    "name": "Dravakar Boss Fight",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_dravakar_boss_fight",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_side_quests_and_easter_eggs",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_.22no_one_there.22_secret_song",
+    "name": "\"No One There\" Secret Song",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_.22no_one_there.22_secret_song",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_.22echoes_of_the_damned.22_richtofen_quest",
+    "name": "\"Echoes of the Damned\" Richtofen Quest",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_.22echoes_of_the_damned.22_richtofen_quest",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_fishing",
+    "name": "Fishing",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_fishing",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_tyr.27s_power.2Dups",
+    "name": "Tyr's Power-Ups",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_tyr.27s_power.2Dups",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_helmets",
+    "name": "Helmets",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_helmets",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_fishy_fish_bot_trap",
+    "name": "Fishy Fish Bot Trap",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_fishy_fish_bot_trap",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_power.2Dup_statues",
+    "name": "Power-Up Statues",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_power.2Dup_statues",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_relics",
+    "name": "Relics",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_relics",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:h2-grim-relics",
+    "name": "Grim Relics",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#h2-grim-relics",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:h2-sinister-relics",
+    "name": "Sinister Relics",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#h2-sinister-relics",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:h2-wicked-relics",
+    "name": "Wicked Relics",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#h2-wicked-relics",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_wall_buys_and_perk_a_colas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_wall_buys_and_perk_a_colas",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_wall_buys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_wall_buys_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_perks_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_miscellaneous_features",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_armor_vests_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_traps_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_arsenal_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_crafting_table_locations",
+    "keywords": "Totenreich"
+  },
+  {
+    "id": "totenreich:quick-phase-1",
+    "name": "Setup",
+    "map": "totenreich",
+    "kind": "Quick steps",
+    "route": "/guides/totenreich#quick-phase-1",
+    "keywords": "Totenreich main quest checklist"
+  },
+  {
+    "id": "totenreich:quick-phase-2",
+    "name": "Wundersignal",
+    "map": "totenreich",
+    "kind": "Quick steps",
+    "route": "/guides/totenreich#quick-phase-2",
+    "keywords": "Totenreich main quest checklist"
+  },
+  {
+    "id": "totenreich:quick-phase-3",
+    "name": "Atomkraft Core — 3 Uraniums",
+    "map": "totenreich",
+    "kind": "Quick steps",
+    "route": "/guides/totenreich#quick-phase-3",
+    "keywords": "Totenreich main quest checklist"
+  },
+  {
+    "id": "totenreich:quick-phase-4",
+    "name": "Vegvisir",
+    "map": "totenreich",
+    "kind": "Quick steps",
+    "route": "/guides/totenreich#quick-phase-4",
+    "keywords": "Totenreich main quest checklist"
+  },
+  {
+    "id": "totenreich:quick-phase-5",
+    "name": "Dravakar Boss",
+    "map": "totenreich",
+    "kind": "Quick steps",
+    "route": "/guides/totenreich#quick-phase-5",
+    "keywords": "Totenreich main quest checklist"
+  },
+  {
+    "id": "kowakujo",
+    "name": "Kowakujō",
+    "map": "kowakujo",
+    "kind": "Guide",
+    "route": "/guides/kowakujo",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "kowakujo:wiki_key_features",
+    "name": "Key Features",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_key_features",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_nekomancer",
+    "name": "Nekomancer",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_nekomancer",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_main_quest",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_lantern_step",
+    "name": "Lantern Step",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_lantern_step",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_mask_step",
+    "name": "Mask Step",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_mask_step",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_suspect_evidences",
+    "name": "#1 — Suspect Evidences🎭 Suspect",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_suspect_evidences",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_accomplice_evidences",
+    "name": "#2 — Accomplice Evidences🤝 Accomplice",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_accomplice_evidences",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_poison_evidences",
+    "name": "#3 — Poison Evidences☠️ Poison",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_poison_evidences",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_location_evidences",
+    "name": "#4 — Location Evidences📍 Location",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_location_evidences",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_motive_evidences",
+    "name": "#5 — Motive Evidences🗡️ Motive",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_motive_evidences",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_key_items",
+    "name": "Key Items",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_key_items",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_solving_the_murder",
+    "name": "Solving the Murder (Painting Puzzle)",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_solving_the_murder",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_witness_testimony",
+    "name": "Witness Testimony",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_witness_testimony",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_zodiac_dial",
+    "name": "Zodiac Dial",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_zodiac_dial",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_purify_world_seed",
+    "name": "Purify the World Seed",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_purify_world_seed",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_expel_the_onryo",
+    "name": "Expel the Onryo",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_expel_the_onryo",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_boss_fight",
+    "name": "Nyxara Boss Fight",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_boss_fight",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_side_quests_and_easter_eggs",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_maneki_neko_upgrade",
+    "name": "Upgrading the Maneki-Neko",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_maneki_neko_upgrade",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_mecha_mayhem",
+    "name": "Mecha Mayhem (Dark Ops)",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_mecha_mayhem",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_par_course",
+    "name": "Par Course Challenge",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_par_course",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_horse_race",
+    "name": "Horse Race",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_horse_race",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_power_up_statues",
+    "name": "Power-Up Statues",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_power_up_statues",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_evencry_secret_song",
+    "name": "\"Evencry\" Secret Song",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_evencry_secret_song",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_when_the_stars_go_dark",
+    "name": "When The Stars Go Dark (Tom Kane tribute)",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_when_the_stars_go_dark",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_echoes_of_the_damned",
+    "name": "Echoes of the Damned",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_echoes_of_the_damned",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_maneki_neko_tactical_equipment",
+    "name": "Maneki-Neko Tactical Equipment",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_maneki_neko_tactical_equipment",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_neko_cafe",
+    "name": "Neko Cafe (Free Perks)",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_neko_cafe",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_gacha_machine",
+    "name": "Gacha Machine",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_gacha_machine",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_relics",
+    "name": "Relics",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_relics",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:h2-grim-relics",
+    "name": "Grim Relics",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#h2-grim-relics",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:h2-sinister-relics",
+    "name": "Sinister Relics",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#h2-sinister-relics",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:h2-wicked-relics",
+    "name": "Wicked Relics",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#h2-wicked-relics",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_wall_buys_and_perk_a_colas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_wall_buys_and_perk_a_colas",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_wall_buys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_wall_buys_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_perks_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_miscellaneous_features",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_armor_vests_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_traps_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_arsenal_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "kowakujo",
+    "kind": "Section",
+    "route": "/guides/kowakujo#wiki_crafting_table_locations",
+    "keywords": "Kowakujō"
+  },
+  {
+    "id": "kowakujo:quick-phase-1",
+    "name": "Setup",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-1",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "kowakujo:quick-phase-2",
+    "name": "Evidences — 🎭 Suspect 🤝 Accomplice",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-2",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "kowakujo:quick-phase-3",
+    "name": "Evidences — ☠️ Poison",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-3",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "kowakujo:quick-phase-4",
+    "name": "Evidences — 📍 Location 🗡️ Motive",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-4",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "kowakujo:quick-phase-5",
+    "name": "Key Items & Murder Puzzle",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-5",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "kowakujo:quick-phase-6",
+    "name": "Endgame",
+    "map": "kowakujo",
+    "kind": "Quick steps",
+    "route": "/guides/kowakujo#quick-phase-6",
+    "keywords": "Kowakujō main quest checklist"
+  },
+  {
+    "id": "rex-infernus",
+    "name": "Rex Infernus",
+    "map": "rex-infernus",
+    "kind": "Guide",
+    "route": "/guides/rex-infernus",
+    "keywords": "bo7 zombies main quest easter egg"
+  },
+  {
+    "id": "rex-infernus:wiki_key_features",
+    "name": "Key Features",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_key_features",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_void_claw",
+    "name": "Void Claw",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_void_claw",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_void_talon_upgrade",
+    "name": "Void Talon Upgrade",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_void_talon_upgrade",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_warden.27s_blight",
+    "name": "Warden's Blight",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_warden.27s_blight",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_main_quest",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_uncover_the_swirling_pool",
+    "name": "Uncover the Swirling Pool",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_uncover_the_swirling_pool",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_restart_the_nexus_forge",
+    "name": "Restart the Nexus Forge",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_restart_the_nexus_forge",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_cleanse_the_temples",
+    "name": "Cleanse the Temples",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_cleanse_the_temples",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_dravakar",
+    "name": "Dravakar",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_dravakar",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_nyxara",
+    "name": "Nyxara",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_nyxara",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_caltheris",
+    "name": "Caltheris",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_caltheris",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_veytharion",
+    "name": "Veytharion",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_veytharion",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_warden_boss_fight",
+    "name": "Warden Boss Fight",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_warden_boss_fight",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_side_quests_and_easter_eggs",
+    "name": "Side Quests and Easter Eggs",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_side_quests_and_easter_eggs",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_.22all_we_are.22_secret_song",
+    "name": "\"All We Are\" Secret Song",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_.22all_we_are.22_secret_song",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_masks",
+    "name": "Masks",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_masks",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_horned_skull_mask_.28stone_cold_strongold_x_ring_of_fire.29",
+    "name": "Horned Skull Mask (Stone Cold Strongold x Ring of Fire)",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_horned_skull_mask_.28stone_cold_strongold_x_ring_of_fire.29",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_cowboy_hat_mask_.28spider_immunity.29",
+    "name": "Cowboy Hat Mask (Spider Immunity)",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_cowboy_hat_mask_.28spider_immunity.29",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_astronaut_helmet_mask_.28longer.2Dlasting_void_claw.29",
+    "name": "Astronaut Helmet Mask (Longer-lasting Void Claw)",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_astronaut_helmet_mask_.28longer.2Dlasting_void_claw.29",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_spiked_skull_mask_.28twins_ammo_effect.29",
+    "name": "Spiked Skull Mask (Twins Ammo effect)",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_spiked_skull_mask_.28twins_ammo_effect.29",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_mr._peeks.27_dance_off",
+    "name": "Mr. Peeks' Dance Off",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_mr._peeks.27_dance_off",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_corrupted_weapons",
+    "name": "Corrupted Weapons",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_corrupted_weapons",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_corrupted_press_f",
+    "name": "Corrupted Press F",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_corrupted_press_f",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_corrupted_pluto",
+    "name": "Corrupted Pluto",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_corrupted_pluto",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_power.2Dup_statues",
+    "name": "Power-Up Statues",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_power.2Dup_statues",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "name": "Wall-Buys and Perk-a-Colas",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_wall.2Dbuys_and_perk.2Da.2Dcolas",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_wall.2Dbuys_locations",
+    "name": "Wall-Buys Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_wall.2Dbuys_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_perks_locations",
+    "name": "Perks Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_perks_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_miscellaneous_features",
+    "name": "Miscellaneous Features",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_miscellaneous_features",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_armor_vests_locations",
+    "name": "Armor Vests Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_armor_vests_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_traps_locations",
+    "name": "Traps Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_traps_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_arsenal_locations",
+    "name": "Arsenal Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_arsenal_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:wiki_crafting_table_locations",
+    "name": "Crafting Table Locations",
+    "map": "rex-infernus",
+    "kind": "Section",
+    "route": "/guides/rex-infernus#wiki_crafting_table_locations",
+    "keywords": "Rex Infernus"
+  },
+  {
+    "id": "rex-infernus:quick-phase-1",
+    "name": "Swirling Pool",
+    "map": "rex-infernus",
+    "kind": "Quick steps",
+    "route": "/guides/rex-infernus#quick-phase-1",
+    "keywords": "Rex Infernus main quest checklist"
+  },
+  {
+    "id": "rex-infernus:quick-phase-2",
+    "name": "Nexus Forge",
+    "map": "rex-infernus",
+    "kind": "Quick steps",
+    "route": "/guides/rex-infernus#quick-phase-2",
+    "keywords": "Rex Infernus main quest checklist"
+  },
+  {
+    "id": "rex-infernus:quick-phase-3",
+    "name": "Cleanse the Temples",
+    "map": "rex-infernus",
+    "kind": "Quick steps",
+    "route": "/guides/rex-infernus#quick-phase-3",
+    "keywords": "Rex Infernus main quest checklist"
+  },
+  {
+    "id": "rex-infernus:quick-phase-4",
+    "name": "Warden Boss Fight",
+    "map": "rex-infernus",
+    "kind": "Quick steps",
+    "route": "/guides/rex-infernus#quick-phase-4",
+    "keywords": "Rex Infernus main quest checklist"
+  },
+  {
+    "id": "kowakujo-pestle",
+    "name": "Pestle Scroll Solver",
+    "map": "kowakujo",
+    "route": "/tools/kowakujo-pestle-solver",
+    "shortcut": "Ctrl+7",
+    "kind": "Tool",
+    "keywords": "Kowakujō solver tracker"
+  },
+  {
+    "id": "kowakujo-clock",
+    "name": "Clock & Flags Solver",
+    "map": "kowakujo",
+    "route": "/tools/kowakujo-clock-solver",
+    "shortcut": "Ctrl+8",
+    "kind": "Tool",
+    "keywords": "Kowakujō solver tracker"
+  },
+  {
+    "id": "kowakujo-murder",
+    "name": "Murder Mystery Solver",
+    "map": "kowakujo",
+    "route": "/tools/kowakujo-murder-solver",
+    "shortcut": "Ctrl+Shift+1",
+    "kind": "Tool",
+    "keywords": "Kowakujō solver tracker"
+  },
+  {
+    "id": "rex-ring",
+    "name": "Temple Ring Solver",
+    "map": "rex-infernus",
+    "route": "/tools/rex-infernus-ring-solver",
+    "shortcut": "Ctrl+9",
+    "kind": "Tool",
+    "keywords": "Rex Infernus solver tracker"
+  },
+  {
+    "id": "rex-pillars",
+    "name": "Pillars & Levers",
+    "map": "rex-infernus",
+    "route": "/tools/rex-infernus-pillars",
+    "shortcut": "Ctrl+Shift+2",
+    "kind": "Tool",
+    "keywords": "Rex Infernus solver tracker"
+  },
+  {
+    "id": "rex-house-symbols",
+    "name": "House Symbols Tracker",
+    "map": "rex-infernus",
+    "route": "/tools/rex-infernus-house-symbols",
+    "shortcut": "Ctrl+Shift+3",
+    "kind": "Tool",
+    "keywords": "Rex Infernus solver tracker"
+  },
+  {
+    "id": "totenreich-uranium",
+    "name": "Uranium Pincers Solver",
+    "map": "totenreich",
+    "route": "/tools/totenreich-uranium-pincers",
+    "shortcut": "Ctrl+Shift+4",
+    "kind": "Tool",
+    "keywords": "Totenreich solver tracker"
+  },
+  {
+    "id": "totenreich-wunderbarrage",
+    "name": "Wunderbarrage Codes",
+    "map": "totenreich",
+    "route": "/tools/totenreich-wunderbarrage",
+    "shortcut": "Ctrl+Shift+5",
+    "kind": "Tool",
+    "keywords": "Totenreich solver tracker"
+  },
+  {
+    "id": "ashes-rocket-launch",
+    "name": "Rocket Launch Codes",
+    "map": "ashes-of-the-damned",
+    "route": "/tools/ashes-rocket-launch",
+    "shortcut": "Ctrl+Shift+6",
+    "kind": "Tool",
+    "keywords": "Ashes of the Damned solver tracker"
+  },
+  {
+    "id": "ashes-serum",
+    "name": "Serum Ingredient Order",
+    "map": "ashes-of-the-damned",
+    "route": "/tools/ashes-serum",
+    "shortcut": "Ctrl+Shift+7",
+    "kind": "Tool",
+    "keywords": "Ashes of the Damned solver tracker"
+  },
+  {
+    "id": "astra-mars-code",
+    "name": "Mars Code",
+    "map": "astra-malorum",
+    "route": "/tools/astra-mars-code",
+    "shortcut": "Ctrl+Shift+8",
+    "kind": "Tool",
+    "keywords": "Astra Malorum solver tracker"
+  },
+  {
+    "id": "astra-organ",
+    "name": "Harmonic Organ Order",
+    "map": "astra-malorum",
+    "route": "/tools/astra-harmonic-organ",
+    "shortcut": "Ctrl+Shift+9",
+    "kind": "Tool",
+    "keywords": "Astra Malorum solver tracker"
+  },
+  {
+    "id": "astra-planets",
+    "name": "Planet Sheets Map",
+    "map": "astra-malorum",
+    "route": "/tools/astra-planet-sheets",
+    "shortcut": "Ctrl+Shift+0",
+    "kind": "Tool",
+    "keywords": "Astra Malorum solver tracker"
+  },
+  {
+    "id": "super-ee",
+    "name": "Super Easter Egg",
+    "map": "",
+    "kind": "Quest",
+    "route": "/guides/bo7-super-easter-egg",
+    "keywords": "super ee toys warden exfil"
+  }
+]

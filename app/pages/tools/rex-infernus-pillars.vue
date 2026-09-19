@@ -54,6 +54,7 @@ const levers = [
 
 const selected = ref<string | null>(null)
 const current = computed(() => riddles.find(r => r.key === selected.value) ?? null)
+useToolState('rex-infernus-pillars', { selected })
 </script>
 
 <style scoped>

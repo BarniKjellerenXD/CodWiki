@@ -148,6 +148,7 @@ function reset() {
   done.value = false
   state.value = 511
 }
+useToolState('kowakujo-pestle-solver', { rule, state, solvedSteps, solvedRule, solveFailed, done })
 </script>
 
 <style scoped>

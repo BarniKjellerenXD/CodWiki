@@ -1,5 +1,7 @@
-const SITE = 'https://codguides.wolden.eu'
-const SITE_HOST = 'codguides.wolden.eu'
+;(async function () {
+const runtime = await window.cw.getRuntime()
+const SITE = runtime.site
+const SITE_HOST = new URL(SITE).host
 
 const webview = document.getElementById('webview')
 const navEl = document.getElementById('nav')
@@ -8,37 +10,50 @@ const progress = document.getElementById('progress')
 const btnBack = document.getElementById('btn-back')
 const btnFwd = document.getElementById('btn-fwd')
 
-let settings = window.CW_SETTINGS || null
-let lastSiteUrl = localStorage.getItem('cw-last') || SITE + '/'
+let settings = window.CW_SETTINGS || await window.cw.getSettings()
+const lastPageKey = 'cw-last:' + SITE
+let lastSiteUrl = localStorage.getItem(lastPageKey) || localStorage.getItem('cw-last') || SITE + '/'
+function isSite(url) { try { return new URL(url).origin === SITE } catch { return false } }
+document.getElementById('app-version').textContent = 'v' + runtime.version
+address.textContent = SITE_HOST
 let errorPageShown = false
 
-/* ---------- build sidebar (settings-aware) ---------- */
-function navById () {
-  const m = new Map()
-  for (const it of window.NAV) m.set(it.id, it)
-  return m
+/* ---------- companion navigation ---------- */
+function filterSidebar() {
+ const q = document.getElementById('nav-search').value.trim().toLowerCase()
+ for(const item of navEl.querySelectorAll('.nav-item')) item.hidden = !!q && !item.textContent.toLowerCase().includes(q) && !item.dataset.map.toLowerCase().includes(q) && !item.dataset.url.includes(q)
+ for(const label of navEl.querySelectorAll('.nav-label')) {
+  let next=label.nextElementSibling, shown=false
+  while(next && !next.classList.contains('nav-label')) { if(!next.hidden) shown=true; next=next.nextElementSibling }
+  label.hidden=!shown
+ }
 }
-
-function effectiveItems () {
-  const byId = navById()
-  let order = (settings && Array.isArray(settings.order) && settings.order.length)
-    ? settings.order
-    : window.NAV.map((n) => n.id)
+document.getElementById('nav-search').addEventListener('input',filterSidebar)
+const collapse = document.getElementById('btn-sidebar')
+function setCollapsed(value) { document.body.classList.toggle('sidebar-collapsed',value); collapse.setAttribute('aria-expanded',String(!value)); localStorage.setItem('cw-sidebar-collapsed',String(value)) }
+collapse.addEventListener('click',()=>setCollapsed(!document.body.classList.contains('sidebar-collapsed')))
+setCollapsed(localStorage.getItem('cw-sidebar-collapsed')==='true')
+webview.addEventListener('ipc-message',event=>{
+ if(event.channel==='cw-theme' && ['archive','midnight','forest','ember','paper'].includes(event.args[0]) && isSite(webview.getURL())) document.documentElement.dataset.theme=event.args[0]
+})
+/* ---------- build sidebar (settings-aware) ---------- */
+function effectiveGroups () {
   const hidden = (settings && Array.isArray(settings.hidden)) ? settings.hidden : []
   const labels = (settings && settings.labels) || {}
-  return order
-    .map((id) => byId.get(id))
-    .filter(Boolean)
-    .filter((it) => !hidden.includes(it.id))
-    .map((it) => ({ ...it, label: labels[it.id] || it.label }))
+  return window.groupNavigation(window.NAV, settings?.order || []).map(group => ({
+    ...group,
+    items: group.items.filter(item => !hidden.includes(item.id)).map(item => ({ ...item, label: labels[item.id] || item.label }))
+  })).filter(group => group.items.length)
 }
 
 function makeItem (item) {
   const el = document.createElement('button')
   el.type = 'button'
-  el.className = 'nav-item'
+  el.className = 'nav-item nav-' + item.kind
   if (item.id === 'bo7-super-easter-egg') el.classList.add('quest')
   el.dataset.url = item.url
+  el.dataset.map = item.section
+  el.setAttribute('aria-label', item.section + ': ' + item.label)
   if (item.thumb && item.id !== 'bo7-super-easter-egg') {
     const img = document.createElement('img')
     img.className = 'thumb'
@@ -75,17 +90,14 @@ function makeItem (item) {
 
 function buildSidebar () {
   navEl.innerHTML = ''
-  let section = null
-  for (const item of effectiveItems()) {
-    if (item.section !== section) {
-      section = item.section
-      const lab = document.createElement('div')
-      lab.className = 'nav-label'
-      lab.textContent = section === 'Guides' ? 'Black Ops 7 · Guides' : section
-      navEl.appendChild(lab)
-    }
-    navEl.appendChild(makeItem(item))
+  for (const group of effectiveGroups()) {
+    const lab = document.createElement('h2')
+    lab.className = 'nav-label'
+    lab.textContent = group.name
+    navEl.appendChild(lab)
+    for (const item of group.items) navEl.appendChild(makeItem(item))
   }
+  filterSidebar()
   setActive(webview.src || lastSiteUrl)
 }
 buildSidebar()
@@ -98,8 +110,8 @@ window.cw.onSettingsChanged((s) => {
 
 /* ---------- helpers ---------- */
 function setActive (url) {
-  if (!url.startsWith(SITE)) return
-  let path = url.slice(SITE.length)
+  if (!isSite(url)) return
+  let path = new URL(url).pathname.replace(/\/$/, '') || '/'
   const q = path.indexOf('?')
   if (q !== -1) path = path.slice(0, q)
   if (path === '' || path === '/') path = '/'
@@ -138,9 +150,9 @@ webview.addEventListener('did-stop-loading', () => { progress.style.display = 'n
 webview.addEventListener('did-navigate', (e) => {
   errorPageShown = false
   const url = e.url
-  if (url.startsWith(SITE)) {
+  if (isSite(url)) {
     lastSiteUrl = url
-    localStorage.setItem('cw-last', url)
+    localStorage.setItem(lastPageKey, url)
   }
   try {
     const u = new URL(url)
@@ -154,9 +166,9 @@ webview.addEventListener('did-navigate', (e) => {
 
 webview.addEventListener('did-navigate-in-page', (e) => {
   const url = e.url
-  if (url.startsWith(SITE)) {
+  if (isSite(url)) {
     lastSiteUrl = url
-    localStorage.setItem('cw-last', url)
+    localStorage.setItem(lastPageKey, url)
   }
   setActive(url)
   updateButtons()
@@ -182,7 +194,9 @@ document.getElementById('open-browser').addEventListener('click', () => window.c
 /* ---------- restore last page ---------- */
 function restoreStart () {
   const restore = !settings || settings.restoreLastPage !== false
-  const url = restore && lastSiteUrl.startsWith(SITE) ? lastSiteUrl : SITE + '/'
-  webview.loadURL(url)
+  const url = restore && isSite(lastSiteUrl) ? lastSiteUrl : SITE + '/'
+  webview.src = url
 }
 restoreStart()
+
+})().catch(error => { console.error(error); document.getElementById("address").textContent = "Unable to initialise CodWiki. Restart the app." })

@@ -62,6 +62,7 @@ function toggle(id: string) {
   if (at !== -1) picked.value.splice(at, 1)
   else if (picked.value.length < 3) picked.value.push(id)
 }
+useToolState('astra-mars-code', { picked })
 </script>
 
 <style scoped>

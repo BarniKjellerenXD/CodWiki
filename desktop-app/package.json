@@ -1,14 +1,16 @@
 {
   "name": "codwiki-desktop",
   "productName": "CodWiki",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "COD Zombies Wiki - desktop app for codguides.wolden.eu",
   "main": "main.js",
   "author": "BarniKjellerenXD",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "dist:win": "electron-builder --win nsis --x64"
+    "dist:win": "electron-builder --win nsis --x64",
+    "prestart": "node ../scripts/generate-catalogue.mjs",
+    "predist:win": "node ../scripts/generate-catalogue.mjs"
   },
   "devDependencies": {
     "electron": "44.0.0",
@@ -17,12 +19,32 @@
   "build": {
     "appId": "eu.wolden.codguides",
     "productName": "CodWiki",
-    "directories": { "output": "dist" },
-    "files": ["main.js", "preload.js", "renderer/**", "build/icon.ico", "build/icon.png"],
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**",
+      "build/icon.ico",
+      "build/icon.png",
+      "runtime.js",
+      "webview-preload.js"
+    ],
     "win": {
       "target": [
-        { "target": "nsis", "arch": ["x64"] },
-        { "target": "zip", "arch": ["x64"] }
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
       ],
       "icon": "build/icon.ico"
     },

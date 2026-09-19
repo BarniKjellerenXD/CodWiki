@@ -1,184 +1,47 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { useRouter } from 'vue-router'
-
-const router = useRouter()
+import catalogue from '~/data/catalogue.json'
+import searchIndex from '~/data/searchIndex.json'
+import quickQuests from '~/data/quickQuests.json'
+import { searchCatalogue } from '~/utils/companion.mjs'
 const query = ref('')
-
-interface Guide {
-  title: string
-  to: string
-  desc: string
-  img: string
+const selected = ref(0)
+const toolMap = ref('all')
+const { progress, run } = useProgress()
+const results = computed(() => searchCatalogue(searchIndex, query.value).slice(0,30))
+const last = computed(() => progress.value.last)
+const continueUrl = computed(() => last.value ? last.value.route + (last.value.section ? '#'+encodeURIComponent(last.value.section) : '') : '/')
+const filteredTools = computed(() => catalogue.tools.filter(t=>toolMap.value==='all'||t.map===toolMap.value))
+function mapName(id:string) { return catalogue.maps.find(m=>m.id===id)?.name || 'Black Ops 7' }
+function count(id:string) {
+  if (id === 'bo7-super-easter-egg') return `${Object.entries(progress.value.toys).filter(([key,done])=>key!=='rex' && done).length} / 5 toys extracted${progress.value.toys.rex ? ' · Warden placed' : ''}`
+  const phases=(quickQuests as Record<string,any[]>)[id] || []
+  const steps=phases.flatMap(p=>p.steps)
+  const done=steps.filter(s=>run(id).done.includes(s.id)).length
+  return done?`${done} / ${steps.length} steps complete`:'Start a run'
 }
-
-interface Era {
-  id: string
-  label: string
-  tagline: string
-  guides: Guide[]
-}
-
-/*
- * Guides are grouped by game era so Black Ops 3 / 4 can be added later
- * without reshuffling anything. Current release order inside BO7:
- * Ashes -> Astra -> Paradox -> Totenreich -> Kowakujō -> Rex Infernus.
- */
-const eras: Era[] = [
-  {
-    id: 'bo7',
-    label: 'Call of Duty: Black Ops 7',
-    tagline: 'Zombies · current season',
-    guides: [
-      {
-        title: 'Ashes of the Damned',
-        to: '/guides/ashes-of-the-damned',
-        desc: 'Complete map breakdown, quests, relics, and more.',
-        img: '/images/ashes-thumb.jpg'
-      },
-      {
-        title: 'Astra Malorum',
-        to: '/guides/astra-malorum',
-        desc: 'Space observatory guide: main quest, LGM-1, and secrets.',
-        img: '/images/astra-thumb.jpg'
-      },
-      {
-        title: 'Paradox Junction',
-        to: '/guides/paradox-junction',
-        desc: 'Multi-dimensional map guide: main quest and features.',
-        img: '/images/paradox-thumb.jpg'
-      },
-      {
-        title: 'Totenreich',
-        to: '/guides/totenreich',
-        desc: 'Undead realm guide: main quest, traps, and secrets.',
-        img: '/images/totenreich-thumb.jpg'
-      },
-      {
-        title: 'Kowakujō',
-        to: '/guides/kowakujo',
-        desc: 'Japanese castle map guide: main quest, wonder weapon, and more.',
-        img: '/images/kowakujo-thumb.jpg'
-      },
-      {
-        title: 'Rex Infernus',
-        to: '/guides/rex-infernus',
-        desc: 'Complete map breakdown: main quest, wonder tools, and the Warden boss fight.',
-        img: '/images/rex-infernus-thumb.jpg'
-      }
-    ]
-  }
-]
-
-const lowerQuery = computed(() => query.value.trim().toLowerCase())
-const superEggMatches = computed(() => !lowerQuery.value || 'bo7 super easter egg super ee toy box'.includes(lowerQuery.value))
-
-const filteredEras = computed(() => {
-  const q = lowerQuery.value
-  if (!q) return eras
-  return eras
-    .map(era => ({
-      ...era,
-      guides: era.guides.filter(g =>
-        g.title.toLowerCase().includes(q) || g.desc.toLowerCase().includes(q)
-      )
-    }))
-    .filter(era => era.guides.length > 0 || (era.id === 'bo7' && superEggMatches.value))
-})
-
-const matchCount = computed(() =>
-  filteredEras.value.reduce((n, era) => n + era.guides.length, 0) + (superEggMatches.value ? 1 : 0)
-)
-
-function submitSearch() {
-  const q = lowerQuery.value
-  if (!q) return
-  const flat = eras.flatMap(era => era.guides)
-  const exact = flat.find(g => g.title.toLowerCase() === q)
-  const partial = flat.find(g => g.title.toLowerCase().includes(q))
-  const hit = exact || partial
-  if (hit) router.push(hit.to)
-  else if (superEggMatches.value) router.push('/guides/bo7-super-easter-egg')
-  else if (filteredEras.value[0]?.guides[0]) router.push(filteredEras.value[0].guides[0].to)
-}
+function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
+function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
+watch(query,()=>{selected.value=0})
+useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Map guides, saved quest checklists and puzzle solvers for Black Ops 7 Zombies.'})
 </script>
 
 <template>
-  <div class="home">
-    <header class="home-header">
-      <span class="eyebrow">Call of Duty · Zombies</span>
-      <h1>Cod Wiki</h1>
-      <p class="lede">
-        Map breakdowns, quest walkthroughs and solver tools — written to be read
-        mid-game without squinting.
-      </p>
-    </header>
-
-    <section class="search" aria-label="Search guides">
-      <div class="search-row">
-        <Icon name="mdi:magnify" class="search-icon" />
-        <input
-          v-model="query"
-          type="search"
-          placeholder="Search maps and guides…"
-          aria-label="Search maps and guides"
-          @keydown.enter="submitSearch"
-        />
-        <button
-          v-if="query"
-          class="search-clear"
-          type="button"
-          aria-label="Clear search"
-          @click="query = ''"
-        >
-          <Icon name="mdi:close" />
-        </button>
-      </div>
-      <p class="search-hint">
-        <template v-if="lowerQuery">{{ matchCount }} result{{ matchCount === 1 ? '' : 's' }}</template>
-        <template v-else>Press Enter to open the top match.</template>
-      </p>
+  <main class="home">
+    <header class="home-header"><span class="eyebrow">CodWiki · Call of Duty Zombies</span><h1>Ready for your next run?</h1><p class="lede">Your maps, quest progress and puzzle tools. All within reach.</p></header>
+    <NuxtLink v-if="last" class="resume-card" :to="continueUrl"><div><span class="companion-label">Continue where you left off</span><h2>{{ last.title }}</h2><p>{{ count(last.route.split('/').pop()) }}</p></div><span aria-hidden="true">→</span></NuxtLink>
+    <section class="search" aria-label="Search everything">
+      <div class="search-row"><UiIcon name="search" class="search-icon" /><input v-model="query" type="search" placeholder="Search maps, quest steps and tools…" aria-label="Search maps, quest steps and tools" :aria-controls="query ? 'search-results' : undefined" :aria-activedescendant="query && results.length ? `result-${selected}` : undefined" @keydown.down.prevent="move(1)" @keydown.up.prevent="move(-1)" @keydown.enter.prevent="openSelected" @keydown.esc="query=''" /><button v-if="query" class="search-clear" aria-label="Clear search" @click="query=''"><UiIcon name="close" /></button></div>
+      <p class="search-hint" aria-live="polite">{{ query ? `${results.length}${results.length===30?'+':''} results` : 'Try “serum”, “boss fight” or “clock”. Use ↑ ↓ and Enter to open a result.' }}</p>
+      <div v-if="query" id="search-results" class="search-results"><p v-if="!results.length" class="companion-muted">No matches for “{{ query }}”. Try a map, quest or tool name.</p><NuxtLink v-for="(item,i) in results" :id="`result-${i}`" :key="item.id" :to="item.route" :class="{selected:i===selected}" @mouseenter="selected=i"><div><strong>{{ item.name }}</strong><small>{{ mapName(item.map) }}</small></div><span>{{ item.kind }} ↗</span></NuxtLink></div>
     </section>
-
-    <div v-if="!filteredEras.length && !superEggMatches" class="empty">
-      No guides match “{{ query }}”.
-    </div>
-
-    <section v-for="era in filteredEras" :key="era.id" class="era">
-      <div class="section-head">
-        <div>
-          <h2>{{ era.label }}</h2>
-          <span class="era-tagline">{{ era.tagline }}</span>
-        </div>
-      </div>
-
-      <NuxtLink v-if="era.id === 'bo7' && superEggMatches" to="/guides/bo7-super-easter-egg" class="super-quest">
-        <span class="quest-symbol" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 3 9 9-9 9-9-9 9-9Z"/><path d="M12 7v10M7 12h10"/></svg>
-        </span>
-        <div class="quest-copy">
-          <h3>Super Easter Egg</h3>
-          <p>The toy box quest across four maps</p>
-        </div>
-        <span class="quest-status">In progress</span>
-        <span class="quest-arrow" aria-hidden="true">→</span>
-      </NuxtLink>
-
-      <div v-if="era.guides.length" class="guide-grid">
-        <NuxtLink v-for="g in era.guides" :key="g.to" :to="g.to" class="guide-card">
-          <div class="guide-thumb">
-            <img :src="g.img" :alt="g.title" loading="lazy" />
-          </div>
-          <div class="guide-body">
-            <h3>{{ g.title }}</h3>
-            <p>{{ g.desc }}</p>
-          </div>
-        </NuxtLink>
-      </div>
-    </section>
-  </div>
+    <template v-if="!query">
+      <div class="section-head"><div><h2>Black Ops 7</h2><span class="era-tagline">Choose a map and pick up your quest</span></div><a class="companion-button subtle" href="#tools">Browse tools ↓</a></div>
+      <NuxtLink to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
+      <div class="guide-grid"><NuxtLink v-for="map in catalogue.maps" :key="map.id" :to="map.route" class="guide-card"><div class="guide-thumb"><img :src="map.image" alt="" loading="lazy" /></div><div class="guide-body"><h3>{{ map.name }}</h3><p>{{ count(map.id) }}</p><span class="map-card-action">Open guide →</span></div></NuxtLink></div>
+      <section id="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2>Puzzle tools</h2></div><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div></section>
+    </template>
+  </main>
 </template>
-
 <style scoped>
 .super-quest {
   display: flex;
@@ -412,4 +275,34 @@ function submitSearch() {
     padding: 2.75rem 1.1rem 4rem;
   }
 }
+</style>
+
+<style scoped>
+.home-header { padding-top:.5rem; margin-bottom:1.5rem; }
+.home-header h1 { font-size:clamp(2rem,4vw,3.1rem); }
+.resume-card { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.2rem 1.4rem; margin:1rem 0 1.5rem; border:1px solid var(--gold-border); background:var(--gold-dim); border-radius:var(--radius); color:var(--text); text-decoration:none; }
+.resume-card h2 { font-size:1.2rem; margin:.35rem 0; }
+.resume-card p { margin:0; color:var(--muted); font-size:.85rem; }
+.resume-card > span { color:var(--gold); font-size:1.5rem; }
+.search { max-width:none; }
+.search-results { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+.search-results > p { padding:1rem; }
+.search-results a { display:flex; justify-content:space-between; gap:1rem; padding:1rem 1.2rem; border-bottom:1px solid var(--line); color:var(--text); text-decoration:none; }
+.search-results a:last-child { border:0; }
+.search-results a.selected { background:var(--gold-dim); box-shadow:inset 3px 0 var(--gold); }
+.search-results small { display:block; margin-top:.3rem; color:var(--muted); }
+.search-results a > span { color:var(--gold); font-size:.75rem; white-space:nowrap; align-self:center; }
+.map-card-action { display:block; color:var(--gold); font-size:.8rem; margin-top:.8rem; }
+.tool-directory { margin-top:3rem; scroll-margin-top:1.5rem; }
+.tool-directory .section-head { flex-wrap:wrap; gap:1rem; }
+.tool-directory label { color:var(--muted); font-size:.85rem; }
+.tool-directory select { margin-left:.5rem; border:1px solid var(--line); border-radius:var(--radius-sm); padding:.7rem; background:var(--surface); color:var(--text); max-width:100%; }
+.tool-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
+.tool-grid a { display:grid; grid-template-columns:1fr auto; gap:.5rem; padding:1.2rem; border:1px solid var(--line); border-radius:var(--radius); color:var(--text); text-decoration:none; background:var(--surface); }
+.tool-grid a:hover { border-color:var(--gold); }
+.tool-grid a > span:first-child { grid-column:1 / -1; font-size:.73rem; color:var(--muted); }
+.tool-grid strong { font-size:.95rem; }
+.tool-grid a > span:last-child { color:var(--gold); }
+@media(max-width:760px) { .tool-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:480px) { .tool-grid { grid-template-columns:1fr; } .home { padding-top:1.5rem; } .home-header { padding-right:2rem; } .search-results a { padding:.9rem; } }
 </style>

@@ -25,7 +25,7 @@
     </div>
 
     <div class="opts">
-      <button type="button" class="btn ghost" @click="placed = []">↻ Reset</button>
+      <button type="button" class="btn ghost" @click="placed = []; solution = null; solCount = 0">↻ Reset</button>
     </div>
   </ToolShell>
 </template>
@@ -107,6 +107,7 @@ function onCell(i: number) {
   else if (placed.value.length < 6) placed.value.push(i)
   run()
 }
+useToolState('totenreich-uranium-pincers', { placed, solution, solCount })
 </script>
 
 <style scoped>

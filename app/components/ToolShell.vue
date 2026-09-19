@@ -1,29 +1,37 @@
 <template>
   <div class="tool-page">
     <div class="wrap">
-      <NuxtLink class="backlink" :to="backTo">← Back to the {{ mapName }} guide</NuxtLink>
+      <div class="tool-nav"><NuxtLink class="backlink" :to="returnTo">← Back to the {{ mapName }} guide</NuxtLink><NuxtLink class="backlink" to="/#tools">All tools</NuxtLink></div>
 
       <div class="glass">
         <h1><span class="map">{{ mapName }}</span> <slot name="title" /></h1>
         <p class="sub"><slot name="sub" /></p>
 
-        <div class="howto">
-          <slot name="howto" />
-        </div>
+        <details class="howto"><summary>How to use this tool</summary><slot name="howto" /></details>
 
         <slot />
 
-        <footer>{{ mapName }} guide tool · codguides.wolden.eu</footer>
+        <footer>Selections are saved on this device · {{ mapName }}</footer>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-defineProps<{
+import catalogue from '~/data/catalogue.json'
+const props = defineProps<{
   mapName: string
   backTo: string
 }>()
+const { run } = useProgress()
+const route = useRoute()
+const toolTitle = catalogue.tools.find(tool => tool.route === route.path.replace(/\/$/, ''))?.name || 'Puzzle tool'
+useSeoMeta({ title: `${toolTitle} · ${props.mapName} · CodWiki` })
+const returnTo = computed(() => {
+  const id = props.backTo.split('/').pop()!
+  const section = run(id).section
+  return props.backTo + (section ? '#' + encodeURIComponent(section) : '')
+})
 </script>
 
 <style>
@@ -80,14 +88,14 @@ defineProps<{
   padding: 0;
 }
 
-.wrap {
+.tool-page .wrap {
   position: relative;
   z-index: 1;
   width: 100%;
   max-width: 46rem;
 }
 
-.backlink {
+.tool-page .backlink {
   display: inline-flex;
   align-items: center;
   gap: .4rem;
@@ -99,11 +107,11 @@ defineProps<{
   transition: color .2s;
 }
 
-.backlink:hover {
+.tool-page .backlink:hover {
   color: var(--gold-bright);
 }
 
-.glass {
+.tool-page .glass {
   position: relative;
   border-radius: 18px;
   padding: 1.8rem 1.9rem 2rem;
@@ -112,12 +120,12 @@ defineProps<{
   box-shadow: var(--shadow);
 }
 
-.glass > * {
+.tool-page .glass > * {
   position: relative;
   z-index: 1;
 }
 
-h1 {
+.tool-page h1 {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -.01em;
@@ -128,7 +136,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-h1 .map {
+.tool-page h1 .map {
   font-size: .72rem;
   font-weight: 700;
   letter-spacing: .08em;
@@ -140,19 +148,19 @@ h1 .map {
   padding: .32rem .6rem;
 }
 
-.sub {
+.tool-page .sub {
   margin-top: .6rem;
   font-size: .98rem;
   color: var(--muted);
   line-height: 1.6;
 }
 
-.sub strong {
+.tool-page .sub strong {
   color: #f0e6d3;
   font-weight: 650;
 }
 
-.howto {
+.tool-page .howto {
   margin: 1.25rem 0 .5rem;
   border-radius: 10px;
   padding: .95rem 1.15rem;
@@ -164,11 +172,11 @@ h1 .map {
   line-height: 1.65;
 }
 
-.howto b {
+.tool-page .howto b {
   color: var(--gold-bright);
 }
 
-.blocklabel {
+.tool-page .blocklabel {
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -180,7 +188,7 @@ h1 .map {
   color: var(--muted);
 }
 
-.blocklabel .hint {
+.tool-page .blocklabel .hint {
   margin-left: auto;
   font-size: .72rem;
   font-weight: 500;
@@ -189,7 +197,7 @@ h1 .map {
   color: var(--faint);
 }
 
-.btn {
+.tool-page .btn {
   border: 1px solid transparent;
   border-radius: 10px;
   cursor: pointer;
@@ -203,22 +211,22 @@ h1 .map {
   transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
-.btn:hover {
+.tool-page .btn:hover {
   background: var(--gold-bright);
 }
 
-.btn.ghost {
+.tool-page .btn.ghost {
   border-color: var(--line);
   background: var(--surface-2);
   color: var(--text);
 }
 
-.btn.ghost:hover {
+.tool-page .btn.ghost:hover {
   background: var(--surface-3);
   border-color: var(--line-strong);
 }
 
-.opts {
+.tool-page .opts {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +235,7 @@ h1 .map {
   margin-top: 1.2rem;
 }
 
-.optbox {
+.tool-page .optbox {
   display: flex;
   align-items: center;
   gap: .45rem;
@@ -235,7 +243,7 @@ h1 .map {
   color: var(--muted);
 }
 
-.optbox select {
+.tool-page .optbox select {
   border: 1px solid var(--line);
   border-radius: 9px;
   background: var(--bg);
@@ -248,22 +256,22 @@ h1 .map {
   cursor: pointer;
 }
 
-.optbox select:focus {
+.tool-page .optbox select:focus {
   border-color: var(--gold-border);
 }
 
-.results {
+.tool-page .results {
   display: none;
   margin-top: 1.4rem;
   flex-direction: column;
   gap: .85rem;
 }
 
-.results.show {
+.tool-page .results.show {
   display: flex;
 }
 
-.sol-head {
+.tool-page .sol-head {
   border-radius: 10px;
   padding: .85rem 1.05rem;
   border: 1px solid rgba(127, 180, 122, .4);
@@ -278,14 +286,14 @@ h1 .map {
   flex-wrap: wrap;
 }
 
-.sol-head .meta {
+.tool-page .sol-head .meta {
   margin-left: auto;
   font-size: .78rem;
   color: var(--muted);
   font-weight: 500;
 }
 
-.res-card {
+.tool-page .res-card {
   border-radius: 12px;
   padding: .9rem 1.05rem 1.1rem;
   border: 1px solid var(--line);
@@ -293,7 +301,7 @@ h1 .map {
   background: var(--surface-2);
 }
 
-.res-card h3 {
+.tool-page .res-card h3 {
   font-size: .92rem;
   color: var(--text);
   display: flex;
@@ -303,30 +311,30 @@ h1 .map {
   margin-bottom: .65rem;
 }
 
-.res-card h3 .kanji {
+.tool-page .res-card h3 .kanji {
   color: var(--gold);
   font-size: 1.05rem;
 }
 
-.res-card h3 .need {
+.tool-page .res-card h3 .need {
   margin-left: auto;
   font-size: .78rem;
   color: var(--muted);
   font-weight: 600;
 }
 
-.res-card h3 .need b {
+.tool-page .res-card h3 .need b {
   color: var(--gold-bright);
   font-size: .95rem;
 }
 
-.combos {
+.tool-page .combos {
   display: flex;
   flex-wrap: wrap;
   gap: .45rem;
 }
 
-.combo {
+.tool-page .combo {
   border: 1px solid var(--line-strong);
   border-radius: 8px;
   background: var(--surface-3);
@@ -339,30 +347,30 @@ h1 .map {
   gap: .35rem;
 }
 
-.combo.best {
+.tool-page .combo.best {
   border-color: var(--gold);
   background: var(--gold-dim);
   color: #f0d9a8;
 }
 
-.combo .plus {
+.tool-page .combo .plus {
   color: var(--faint);
   font-weight: 500;
 }
 
-.combo .flags {
+.tool-page .combo .flags {
   color: var(--faint);
   font-size: .72rem;
   font-weight: 500;
 }
 
-.res-empty {
+.tool-page .res-empty {
   font-size: .86rem;
   color: #c5e0c1;
   font-weight: 650;
 }
 
-.res-warn {
+.tool-page .res-warn {
   font-size: .82rem;
   color: #e0a99f;
   font-weight: 500;
@@ -370,24 +378,24 @@ h1 .map {
   line-height: 1.6;
 }
 
-.unused {
+.tool-page .unused {
   margin-top: .8rem;
   font-size: .8rem;
   color: var(--muted);
   font-weight: 500;
 }
 
-.unused b {
+.tool-page .unused b {
   color: #f0e6d3;
 }
 
-.alts {
+.tool-page .alts {
   margin-top: .8rem;
   border-top: 1px solid var(--line);
   padding-top: .7rem;
 }
 
-.alts .alt-title {
+.tool-page .alts .alt-title {
   font-size: .72rem;
   font-weight: 700;
   color: var(--faint);
@@ -396,18 +404,18 @@ h1 .map {
   margin-bottom: .45rem;
 }
 
-.alt {
+.tool-page .alt {
   font-size: .8rem;
   color: var(--muted);
   margin: .25rem 0;
   line-height: 1.6;
 }
 
-.alt b {
+.tool-page .alt b {
   color: var(--gold-bright);
 }
 
-footer {
+.tool-page footer {
   margin-top: 1.6rem;
   font-size: .74rem;
   color: var(--faint);
@@ -420,7 +428,7 @@ footer {
     padding: 1.5rem .9rem 3rem;
   }
 
-  .glass {
+  .tool-page .glass {
     padding: 1.3rem 1.15rem 1.5rem;
   }
 }

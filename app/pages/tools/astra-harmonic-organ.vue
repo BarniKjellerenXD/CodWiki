@@ -60,6 +60,7 @@ function toggle(n: number) {
   if (at !== -1) picked.value.splice(at, 1)
   else if (picked.value.length < 4) picked.value.push(n)
 }
+useToolState('astra-harmonic-organ', { picked })
 </script>
 
 <style scoped>

@@ -119,21 +119,29 @@
 
   function renderNavList () {
     navListEl.innerHTML = ''
-    const ordered = settings.order.map((id) => window.NAV.find((n) => n.id === id)).filter(Boolean)
+    const ordered = window.groupNavigation(window.NAV, settings.order).flatMap(group => group.items)
+    let map = null
     ordered.forEach((item, idx) => {
+      if (item.map !== map) {
+        map = item.map
+        const heading = document.createElement('div')
+        heading.className = 'sp-group'
+        heading.textContent = item.section
+        navListEl.appendChild(heading)
+      }
       const row = document.createElement('div')
       row.className = 'sp-nav-row' + (settings.hidden.includes(item.id) ? ' hidden-item' : '')
       const up = document.createElement('button')
       up.className = 'sp-btn icon'
       up.textContent = '↑'
       up.setAttribute('aria-label', 'Move ' + item.label + ' up')
-      up.disabled = idx === 0
+      up.disabled = item.kind === 'guide' || ordered[idx - 1]?.kind !== 'tool' || ordered[idx - 1]?.map !== item.map
       up.addEventListener('click', () => move(idx, -1))
       const down = document.createElement('button')
       down.className = 'sp-btn icon'
       down.textContent = '↓'
       down.setAttribute('aria-label', 'Move ' + item.label + ' down')
-      down.disabled = idx === ordered.length - 1
+      down.disabled = item.kind === 'guide' || ordered[idx + 1]?.map !== item.map
       down.addEventListener('click', () => move(idx, 1))
       const chk = document.createElement('input')
       chk.type = 'checkbox'
@@ -167,9 +175,11 @@
   }
 
   function move (idx, delta) {
-    const order = [...settings.order]
+    const items = window.groupNavigation(window.NAV, settings.order).flatMap(group => group.items)
+    const order = items.map(item => item.id)
     const j = idx + delta
     if (j < 0 || j >= order.length) return
+    if (items[idx].kind !== 'tool' || items[j].kind !== 'tool' || items[idx].map !== items[j].map) return
     ;[order[idx], order[j]] = [order[j], order[idx]]
     settings.order = order
     persist()

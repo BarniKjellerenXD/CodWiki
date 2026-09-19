@@ -213,6 +213,7 @@ function reset() {
   cap.value = 3
   result.value = null
 }
+useToolState('kowakujo-clock-solver', { code, inv, cap, result })
 </script>
 
 <style scoped>
