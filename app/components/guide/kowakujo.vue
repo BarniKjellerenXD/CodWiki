@@ -295,7 +295,7 @@
 </ul>
 <p>However, if the Ghostly Fireman doesn't mention anyone, that means another trap needs to be activated. The ghost you see confirms which accomplice evidence to use.</p>
 
-<p><strong>Painting 3 (Poison)</strong> — Using the Doctor's Note (from the Pestle step), it will tell you how he died and by what poison. Match the correct poison to the note and place it by the third painting. The note also gives the time of death, which you set on the <a href="#wiki_zodiac_dial">Zodiac Dial</a>:</p>
+<p><strong>Painting 3 (Poison)</strong> — Combine the accomplice named by the ghost witness with the symptom in the Doctor's Record (from the Pestle step) to identify the poison. Use the Murder Mystery Solver above to find the matching item. The Doctor's Record also gives the death-time animal; subtract the delay from the Toxin Note to set the <a href="#wiki_zodiac_dial">Zodiac Dial</a>:</p>
 
 <h3 class="" id="wiki_zodiac_dial">Zodiac Dial</h3>
 <ol>

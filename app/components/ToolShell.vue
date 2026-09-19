@@ -1,5 +1,5 @@
 <template>
-  <div class="tool-page">
+  <div class="tool-page" :class="{ 'tool-page-wide': wide }">
     <div class="wrap">
       <div class="tool-nav"><NuxtLink class="backlink" :to="returnTo">← Back to the {{ mapName }} guide</NuxtLink><NuxtLink class="backlink" to="/#tools">All tools</NuxtLink></div>
 
@@ -22,6 +22,7 @@ import catalogue from '~/data/catalogue.json'
 const props = defineProps<{
   mapName: string
   backTo: string
+  wide?: boolean
 }>()
 const { run } = useProgress()
 const route = useRoute()
@@ -106,6 +107,8 @@ const returnTo = computed(() => {
   margin-bottom: 1rem;
   transition: color .2s;
 }
+
+.tool-page-wide .wrap { max-width: 70rem; }
 
 .tool-page .backlink:hover {
   color: var(--gold-bright);

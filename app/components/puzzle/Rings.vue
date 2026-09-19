@@ -1,17 +1,96 @@
 <script setup lang="ts">
-import {ringNames,ringStops,temples,solveRings,moveRing} from '~/utils/puzzles.mjs'
-const {state,change,undo,reset,canUndo,saveError}=usePuzzleState('rings')
-const playback=ref(0)
-const moves=computed(()=>solveRings(state.value.positions,state.value.target,state.value.visited))
-watch(state,()=>playback.value=0)
-const shown=computed(()=>(moves.value||[]).slice(0,playback.value).reduce((s:number[],m:number[])=>moveRing(s,m[0],m[1]),state.value.positions))
-const aligned=computed(()=>shown.value.every((n:number)=>n===shown.value[0])?ringStops[shown.value[0]]:null)
-const summary=computed(()=>ringNames.map((name,i)=>({name,cw:(moves.value||[]).filter((m:number[])=>m[0]===i&&m[1]===1).length,ccw:(moves.value||[]).filter((m:number[])=>m[0]===i&&m[1]===-1).length})))
-function set(i:number,value:string) {const positions=state.value.positions.slice();positions[i]=Number(value);change({...state.value,positions})}
-function visited(n:number) {const list=state.value.visited;change({...state.value,visited:list.includes(n)?list.filter((v:number)=>v!==n):[...list,n]})}
-function point(stop:number,r:number) {const a=(stop*60-90)*Math.PI/180;return {x:180+Math.cos(a)*r,y:165+Math.sin(a)*r}}
+import { ringNames, ringStops, temples } from '~/utils/puzzles.mjs'
+import { planRingRoute } from '~/utils/ringRoute.mjs'
+const { state, change, undo, reset, canUndo, saveError } = usePuzzleState('rings')
+const active = ref(0)
+const route = ref<any>(null)
+const playback = ref(0)
+const ready = computed(() => state.value.positions.every((n: any) => Number.isInteger(n)))
+const shown = computed(() => route.value ? route.value.states[playback.value] : state.value.positions)
+const rotations = computed(() => {
+  const values = state.value.positions.map((n: number | null) => (n ?? 0) * 60)
+  for (const [ring, direction] of route.value?.moves.slice(0, playback.value) || []) values.forEach((_: number, i: number) => { values[i] += direction * (i === ring ? 60 : 120) })
+  return values
+})
+const currentMove = computed(() => playback.value ? route.value?.moves[playback.value - 1] : null)
+const currentTemple = computed(() => shown.value.every((n: number | null) => n === shown.value[0]) && temples.includes(shown.value[0]) ? ringStops[shown.value[0]] : null)
+function clearPreview() { route.value = null; playback.value = 0 }
+watch(state, clearPreview, { deep: true, flush: 'sync' })
+function place(stop: number) {
+  const positions = state.value.positions.slice(); positions[active.value] = stop
+  change({ ...state.value, positions })
+  const missing = positions.findIndex((n: any) => n === null)
+  if (missing >= 0) active.value = missing
+}
+function setMode(tour: boolean) { change({ ...state.value, target: tour ? 'tour' : temples[0] }) }
+function toggleCompleted(temple: number) {
+  const visited = state.value.visited.includes(temple) ? state.value.visited.filter((n: number) => n !== temple) : [...state.value.visited, temple]
+  change({ ...state.value, visited })
+}
+function generate() {
+  playback.value = 0
+  route.value = planRingRoute(state.value.positions, state.value.target, state.value.visited)
+}
+function adoptPreview() { change({ ...state.value, positions: shown.value.slice() }); generate() }
+function completeNext() {
+  const next = route.value?.legs[0]
+  if (!next) return
+  const positions = route.value.states[next.press].slice()
+  change({ ...state.value, positions, visited: [...new Set([...state.value.visited, next.temple])] })
+  generate()
+}
+const directionName = (direction: number) => direction === 1 ? 'Clockwise' : 'Counter-clockwise'
 </script>
-<template><div class="puzzle"><p>Record where each pillar is now. One press moves that ring one stop and the other two rings two stops in the lever’s direction.</p><div class="p-grid"><label v-for="(name,i) in ringNames" :key="name">{{ name }} position<select :value="state.positions[i]" @change="set(i,($event.target as HTMLSelectElement).value)"><option v-for="(stop,n) in ringStops" :key="stop" :value="n">{{ stop }}</option></select></label></div><label>Destination<select :value="state.target" @change="change({...state,target:($event.target as HTMLSelectElement).value==='tour'?'tour':Number(($event.target as HTMLSelectElement).value)})"><option v-for="n in temples" :key="n" :value="n">{{ ringStops[n] }}</option><option value="tour">Visit remaining temples</option></select></label><div v-if="state.target==='tour'"><p class="p-muted">Mark temples already completed. The route also counts your starting alignment; finish that temple before moving.</p><div class="p-row"><button v-for="n in temples" :key="n" :aria-pressed="state.visited.includes(n)" @click="visited(n)">{{ ringStops[n] }}</button></div></div>
-<div class="p-result" aria-live="polite"><strong>{{ moves===null?'No route found':moves.length===0?'Already aligned':`${moves.length} presses` }}</strong><p v-if="state.target!=='tour'" class="p-muted">Set the lever to the indicated direction before each group of presses. Turn order does not affect the final alignment.</p><div v-if="state.target!=='tour'" class="p-grid"><div v-for="row in summary" :key="row.name"><b>{{ row.name }}</b><div>{{ row.cw }} clockwise · {{ row.ccw }} counter-clockwise</div></div></div><ol v-else><li v-for="(m,i) in moves" :key="i">{{ ringNames[m[0]] }} · {{ m[1]===1?'clockwise':'counter-clockwise' }}<strong v-if="moves && moves.slice(0,i+1).reduce((s,m)=>moveRing(s,m[0],m[1]),state.positions).every((v,_,s)=>v===s[0])"> → aligned: {{ ringStops[moves.slice(0,i+1).reduce((s,m)=>moveRing(s,m[0],m[1]),state.positions)[0]] }} — finish its quest before moving on</strong></li></ol></div>
-<details><summary>Preview each press and alignment</summary><div class="p-row"><button :disabled="playback===0" @click="playback--">Previous</button><span>{{ playback }} / {{ moves?.length || 0 }}</span><button :disabled="!moves || playback===moves.length" @click="playback++">Next press</button></div><p v-if="playback && moves">Press {{ playback }}: {{ ringNames[moves[playback-1][0]] }} · {{ moves[playback-1][1]===1?'clockwise':'counter-clockwise' }}</p><svg viewBox="0 0 360 330" class="ring-preview" role="img" :aria-label="ringNames.map((name,i)=>name+': '+ringStops[shown[i]]).join(', ')"><circle v-for="r in [55,80,105]" :key="r" cx="180" cy="165" :r="r" fill="none" stroke="currentColor" opacity=".3"/><g v-for="(stop,n) in ringStops" :key="stop"><text :x="point(n,139).x" :y="point(n,139).y" text-anchor="middle" fill="currentColor" font-size="11">{{ stop }}</text></g><g v-for="(name,i) in ringNames" :key="name"><circle :cx="point(shown[i],55+i*25).x" :cy="point(shown[i],55+i*25).y" r="13" fill="var(--wp-gold)"/><text :x="point(shown[i],55+i*25).x" :y="point(shown[i],55+i*25).y+4" text-anchor="middle" fill="#181818" font-size="12">{{ name[0] }}</text></g></svg><p v-for="(name,i) in ringNames" :key="name">{{ name }}: <strong>{{ ringStops[shown[i]] }}</strong></p><p v-if="aligned">Aligned at {{ aligned }}. Reaching a temple does not complete its quest.</p></details><PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset" /></div></template>
-<style scoped>.ring-preview{display:block;width:100%;max-width:360px;margin:auto}</style>
+
+<template>
+  <div class="puzzle workbench rings-workbench">
+    <p class="wb-intro">Set the three pillars as they are in your game. Find the fewest presses through every temple, then follow the route one temple at a time.</p>
+    <div class="wb-mode" role="group" aria-label="Route mode">
+      <button type="button" :aria-pressed="state.target==='tour'" @click="setMode(true)">All four temples</button>
+      <button type="button" :aria-pressed="state.target!=='tour'" @click="setMode(false)">One temple</button>
+    </div>
+    <div class="wb-columns ring-layout">
+      <section class="wb-panel ring-panel" aria-label="Ring positions and visualiser">
+        <div class="wb-panel-heading"><div><span class="wb-eyebrow">THE NEXUS</span><h2>{{ route ? 'Route preview' : 'Current positions' }}</h2></div><button v-if="route" type="button" class="wb-subtle" @click="clearPreview">Edit positions</button></div>
+        <div class="ring-pickers" role="group" aria-label="Choose a pillar to position">
+          <button v-for="(name,i) in ringNames" :key="name" type="button" :aria-pressed="active===i" :disabled="!!route" @click="active=i"><span class="ring-letter" :class="`ring-letter-${i}`">{{ name[0] }}</span><span>{{ name }}<small>{{ state.positions[i]===null?'Not set':ringStops[state.positions[i]] }}</small></span></button>
+        </div>
+        <PuzzleRingDiagram :positions="shown" :rotations="rotations" :active="active" :preview="!!route" @place="place" />
+        <p v-if="!route" class="wb-caption">Tap a named stop to place the <strong>{{ ringNames[active] }}</strong> pillar. Empty and House are positions, not temples.</p>
+        <template v-else>
+          <div class="ring-playback"><button type="button" :disabled="playback===0" aria-label="Preview previous press" @click="playback--">←</button><span>Press <strong>{{ playback }}</strong> / {{ route.presses }}</span><button type="button" :disabled="playback===route.presses" aria-label="Preview next press" @click="playback++">→</button></div>
+          <p class="preview-action" role="status">{{ currentMove ? `${ringNames[currentMove[0]]} · ${directionName(currentMove[1])}` : 'Your recorded starting positions' }}</p>
+          <div class="ring-position-readout"><span v-for="(name,i) in ringNames" :key="name">{{ name }} <b>{{ ringStops[shown[i]] }}</b></span></div>
+          <p v-if="currentTemple" class="wb-caption">Aligned at <strong>{{ currentTemple }}</strong>. {{ state.visited.includes(shown[0]) ? 'This temple is already marked complete.' : 'Complete its quest before moving on.' }}</p>
+          <button type="button" class="wb-adopt" :disabled="playback===0" @click="adoptPreview">Use shown positions &amp; replan</button>
+          <p class="wb-caption">Use this only when the in-game pillars match the preview. Previewing alone changes no saved progress.</p>
+        </template>
+      </section>
+
+      <section class="wb-panel ring-route" aria-label="Temple route">
+        <div class="wb-panel-heading"><div><span class="wb-eyebrow">ROUTE PLANNER</span><h2>{{ state.target==='tour'?'Through the temples':'Align to a temple' }}</h2></div></div>
+        <fieldset v-if="state.target==='tour'" class="wb-field"><legend>Already completed <span>optional</span></legend><div class="temple-toggles"><button v-for="temple in temples" :key="temple" type="button" :aria-pressed="state.visited.includes(temple)" @click="toggleCompleted(temple)"><span aria-hidden="true">{{ state.visited.includes(temple)?'✓':'○' }}</span> {{ ringStops[temple] }}</button></div></fieldset>
+        <label v-else class="wb-field">Destination<select :value="state.target" @change="change({...state,target:Number(($event.target as HTMLSelectElement).value)})"><option v-for="temple in temples" :key="temple" :value="temple">{{ ringStops[temple] }}</option></select></label>
+        <button type="button" class="wb-primary" :disabled="!ready" @click="generate">{{ state.target==='tour' ? (state.visited.length ? 'Find shortest remaining route' : 'Find shortest route through all 4') : 'Find shortest alignment' }} <span aria-hidden="true">→</span></button>
+        <p v-if="!ready" class="wb-caption">Set all three current positions to calculate a route.</p>
+        <p v-else class="wb-caption">Fewest presses first. Fewer direction changes break ties.</p>
+        <div v-if="route" class="route-output">
+          <div class="route-stats" role="status"><div><strong>{{ route.presses }}</strong><span>ring presses</span></div><div><strong>{{ route.switches }}</strong><span>direction changes</span></div></div>
+          <p v-if="state.target==='tour' && state.visited.length===4" class="wb-success">All temples marked complete.</p>
+          <p v-else-if="route.presses===0" class="wb-success">Already aligned — finish this temple before moving.</p>
+          <ol v-if="route.legs.length" class="temple-itinerary" aria-label="Temple visit order"><li v-for="(leg,i) in route.legs" :key="leg.temple"><button type="button" :aria-label="`Preview arrival at ${leg.name}`" @click="playback=leg.press"><span>{{ i+1 }}</span>{{ leg.name }}</button><span v-if="i<route.legs.length-1" aria-hidden="true">→</span></li></ol>
+          <details v-for="(leg,i) in route.legs" :key="leg.temple" class="route-leg" :open="i===0">
+            <summary><span class="leg-number">{{ i+1 }}</span><strong>{{ leg.name }}</strong><span>{{ leg.presses }} {{ leg.presses===1?'press':'presses' }}</span></summary>
+            <p v-if="!leg.presses" class="wb-caption">You are here now. Complete the temple quest first.</p>
+            <ol v-else class="route-instructions"><li v-for="(group,j) in leg.groups" :key="j"><span class="turn-icon" aria-hidden="true">{{ group.direction===1?'↻':'↺' }}</span><div><strong>{{ ringNames[group.ring] }} × {{ group.count }}</strong><span>{{ directionName(group.direction) }}</span></div><button type="button" :aria-label="`Preview ${leg.name}, instruction ${j+1}`" @click="playback=group.to">Preview</button></li></ol>
+            <p class="temple-stop">Stop here and complete {{ leg.name }}’s quest.</p>
+            <button v-if="i===0 && state.target==='tour'" type="button" class="wb-continue" @click="completeNext">Temple completed — continue →</button>
+          </details>
+        </div>
+        <div v-else class="wb-empty"><span aria-hidden="true">◎</span><strong>Your route will appear here</strong><p>See every temple stop and exactly which ring to turn.</p></div>
+      </section>
+    </div>
+    <details class="wb-help"><summary>How the rings move</summary><p>One press moves the chosen ring one stop and the other two rings two stops, in the lever’s direction. Match the direction before each instruction. Follow tour instructions in order so you do not skip an alignment.</p></details>
+    <PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset" />
+  </div>
+</template>

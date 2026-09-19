@@ -13,12 +13,12 @@ export function sanitizePuzzleState(id, input) {
     case 'planets': return {slots:fixed(v.slots,3,n=>one(n,directions))}
     case 'scroll': return {board:int(v.board,0,511,511)}
     case 'flags': return {targets:fixed(v.targets,4,n=>int(n,1,12)),inventory:fixed(v.inventory,6,n=>int(n,0,8,0))}
-    case 'murder': return {suspect:one(v.suspect,['merchant','noble','gardener']),symptom:one(v.symptom,['emesis','plant','paralysis']),poison:one(v.poison,['pufferfish','plumPit','monkshood']),hour:int(v.hour,0,11),delay:int(v.delay,1,12),painting:one(v.painting,['fish','mountains','bird'])}
+    case 'murder': return {suspect:one(v.suspect==='courtier'?'noble':v.suspect,['merchant','noble','gardener']),symptom:one(v.symptom,['emesis','plant','paralysis']),hour:int(v.hour,0,11),delay:int(v.delay,1,5),painting:one(v.painting,['fish','mountains','bird'])}
     case 'uranium': return {existing:unique(v.existing,0,15,6)}
     case 'wunder': return {counts:fixed(v.counts,4,(n,i)=>int(n,1,i%2===0?7:8))}
     case 'notes': return {counts:fixed(v.counts,8,n=>int(n,1,8))}
     case 'books': return {selected:unique(v.selected,0,8,9)}
-    case 'rings': return {positions:fixed(v.positions,3,n=>int(n,0,5,0)),target:one(v.target,[...temples,'tour'],1),visited:unique(v.visited,0,5,4).filter(n=>temples.includes(n))}
+    case 'rings': return {positions:fixed(v.positions,3,n=>int(n,0,5)),target:one(v.target,[...temples,'tour'],'tour'),visited:unique(v.visited,0,5,4).filter(n=>temples.includes(n))}
     case 'pillars': return {riddle:int(v.riddle,0,3)}
     case 'house': return {order:unique(v.order,0,3,4)}
     default: return {}
@@ -37,6 +37,7 @@ export function migratePuzzleState(id, old) {
   case 'uranium': input={existing:old.placed};break
   case 'wunder': input={counts:[old.s1a,old.s1f,old.s2a,old.s2f]};break
   case 'rings': input={positions:old.cur,target:old.mode==='tour'?'tour':old.target};break
+  case 'murder': input={...old,symptom:({paralysie:'paralysis',vomissement:'emesis',vegetal:'plant'})[old.symptom] || old.symptom};break
   case 'pillars': input={riddle:['runnerStars','driftRunner','driftStars','galaxiesMoons'].indexOf(old.selected)};break
   default:return null // Old collection order, organ gaps and ambiguous rule/result states are incompatible.
  }

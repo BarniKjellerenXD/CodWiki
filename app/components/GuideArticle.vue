@@ -65,7 +65,7 @@ const groups = computed(() => {
 })
 function slugify(text:string) { return text.toLowerCase().replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-') }
 function buildTocAndIds(root:HTMLElement) {
-  toc.value = Array.from(root.querySelectorAll('h1,h2,h3')).map(h => {
+  toc.value = Array.from(root.querySelectorAll('h1,h2,h3')).filter(h => !h.closest('.puzzle')).map(h => {
     const original = h.textContent?.trim() || ''
     if (!h.id) h.id = h.tagName.toLowerCase()+'-'+slugify(original)
     const copy = h.cloneNode(true) as HTMLElement
@@ -139,7 +139,7 @@ function trackPosition() {
     if(mobileOpen.value) return
     const root=view.value==='quick'?quickRef.value:articleRef.value
     const nodes=Array.from(root?.querySelectorAll<HTMLElement>(view.value==='quick'?'.quest-phase':'h1,h2,h3') || [])
-    const visible=nodes.filter(n=>n.getClientRects().length)
+    const visible=nodes.filter(n=>n.getClientRects().length && !n.closest('.puzzle'))
     const item=visible.filter(n=>n.getBoundingClientRect().top<180).pop() || visible[0]
     if(item?.id && active.value!==item.id) remember(item.id)
   },180)

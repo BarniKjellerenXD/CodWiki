@@ -2,16 +2,17 @@ import { sanitizePuzzleState, migratePuzzleState, legacyPuzzleKeys } from '~/uti
 
 // Shared within this Nuxt app (including inline/full-page helpers), isolated per SSR request.
 export function usePuzzleState(id: string) {
-  const state = useState<any>(`puzzle-${id}-v2`, () => sanitizePuzzleState(id, {}))
+  const version = ['rings', 'murder'].includes(id) ? 3 : 2
+  const state = useState<any>(`puzzle-${id}-v${version}`, () => sanitizePuzzleState(id, {}))
   const ready = useState(`puzzle-${id}-ready`, () => false)
   const history = useState<any[]>(`puzzle-${id}-history`, () => [])
   const saveError = useState(`puzzle-${id}-save-error`, () => false)
   const legacyNotice = useState(`puzzle-${id}-legacy-notice`, () => '')
-  const key = `codwiki-puzzle-${id}-v2`
+  const key = `codwiki-puzzle-${id}-v${version}`
   onMounted(() => {
     if (ready.value) return
     try {
-      const stored=localStorage.getItem(key)
+      const stored=localStorage.getItem(key) || (version === 3 ? localStorage.getItem(`codwiki-puzzle-${id}-v2`) : null)
       if(stored) state.value=sanitizePuzzleState(id,JSON.parse(stored))
       else {
         const oldId=(legacyPuzzleKeys as Record<string,string>)[id]

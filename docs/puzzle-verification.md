@@ -1,6 +1,17 @@
 # Puzzle and guide verification
 
-Implemented 19 September 2026. The implementation follows `guide-and-tool-improvement-plan.md`.
+Implemented 19 September 2026. The implementation follows `guide-and-tool-improvement-plan.md`, with the approved ring and murder redesign in `rings-and-murder-redesign-plan.md` superseding the original interfaces and murder deduction.
+
+## Ring and murder redesign follow-up
+
+- Rings now have an always-visible interactive diagram and an explicit four-temple route button. The planner minimises presses across the complete tour, then direction changes; instructions are grouped into temple legs without skipping intermediate arrivals. Preview, adopting the current position and completing a temple are separate actions. Fresh runs require three recorded positions.
+- Murder restores image-based clue choices, automatically derives poison from accomplice plus symptom, and shows larger numbered placement pictures with a separate zodiac wheel. All nine combinations and all three painting mappings were exercised on Margwa's visible solver during research. Six combinations resolve and three remain explicitly undocumented.
+- This corrects the earlier rewrite's wrong symptom-only deduction and mandatory manual poison choice. Courtier + plant gives Monkshood; Gardener + paralysis gives Monkshood. The symptom does not identify poison independently.
+- New `rings` and `murder` saves use v3 keys, retaining compatible v2 clues and positions while leaving original keys untouched. Saved manual poison is ignored, out-of-range delays require re-entry, and compatible original Courtier/symptom aliases migrate. Other tools retain v2 state.
+- The new route planner was checked against an independent reverse-graph Dijkstra oracle for all 216 starts × 16 completed-temple masks, plus all 216 starts × four individual destinations. Press counts, direction-change tiebreaks, replay states, checkpoint order and grouped instructions passed.
+- Murder tests cover all nine clue pairs, all 60 animal/delay combinations, painting outputs, unresolved states and saved-input migration. The full regression suite now has 28 passing tests.
+- Browser checks covered desktop, 840px, 390px mobile and 640×360 landscape layouts; dark and Paper themes; loaded item images; ring playback/adoption/completion/undo/refresh; unknown murder combinations and correction; and inline-to-full-page shared clues. The mobile result jump keeps Quick Parts active and focuses its result. Tool headings are excluded from guide navigation.
+- Production build passed. Existing desktop routes are unchanged; the desktop app loads these interfaces with the website deployment. No new desktop installer is needed for this website-only follow-up.
 
 ## What changed
 
@@ -21,7 +32,7 @@ These are source comparisons and automated/browser checks, not an in-game playte
 | Astra organ | [Community walkthrough](https://steamcommunity.com/sharedfiles/filedetails/?id=3624863442) and local full guide. Preserve the static slot, infer the unused symbol there. The five symbol assets already exist locally. |
 | Astra Mars / directions / books | [Astra solver](https://codzombiessolver.com/astra-malorum) and existing walkthrough/book reference. Distinguish O.S.C.A.R.'s three digits from telescope DEC's four digits. Direction is stored per planet. Book groups remain the established three shelf groups; show all three counts, including zero. |
 | Kowakujō scrolls / flags | [Independent scroll solver source](https://github.com/MySw33tPareidolia/Kowakujo-solvers/blob/main/solver.cpp), [illustrated quest](https://codzombiesguides.com/main-quests/black-ops-7/kowakujo/) and [existing solver](https://codzombiessolver.com/kowakujo). Self plus orthogonal toggles; two holders per area; flag values 1–6. Blank targets are not zero. |
-| Kowakujō murder | Same quest/source comparison. Published symptom mappings differ. The UI exposes ambiguity and requests the actual poison evidence; it does not derive poison from the accomplice. Death Records supplies death time, Poison Compendium supplies delay, fourth painting supplies location. |
+| Kowakujō murder | [Margwa's solver](https://margwa.net/kowakujo-murder-solver.html), tested through its visible inputs. Accomplice plus symptom determine the poison; the matrix and unknown combinations are recorded in the redesign plan. Doctor's Record supplies death time; Toxin Note supplies a delay of 1–5 positions; the fourth painting supplies the location item. |
 | Rex rings | [Reference solver](https://codzombiessolver.com/rex-infernus), exercised in the browser. Independent fixture: inner Caltheris / middle Empty / outer Dravakar → Veytharion with clockwise counts inner 3 / middle 1 / outer 2. Also checked House/House/House → Veytharion (4 per ring). Replayed under the one/two/two coupling. Tour visits represent alignment, not quest completion. |
 | Rex pillars | All four reference-solver outputs exercised. Columns are **left beside Armor / right opposite Armor / bottom lower crank**: `(0,3,2)`, `(3,1,2)`, `(1,2,2)`, `(2,2,0)`. This resolves the old middle/right ambiguity. Short distinctive opening phrases avoid an oversized quote picker. Counts assume the initial positions; no unverified in-game reset method is suggested. |
 | Rex house | [Quest instructions](https://codzombiesguides.com/main-quests/black-ops-7/rex-infernus/) and its [four-symbol screenshot](https://codzombiesguides.com/content/rex-infernus/rex-infernus-house-symbols.webp), visually compared with the existing local house photograph. Four named regions replace arbitrary clicks; keyboard buttons duplicate the markers. Symbols follow the basketball trigger and round changes. The hotspot centers identify facade regions, not pixel-perfect aiming points. |
@@ -51,6 +62,6 @@ Compatible legacy inputs migrate for rockets, Mars, planet sheets, uranium's ori
 
 ## Remaining evidence limits
 
-- No live-game playtest was available. Uranium remains a labeled community model and ambiguous poison clues require player confirmation.
+- No live-game playtest was available. Uranium remains a labeled community model and undocumented murder combinations require rechecking the clues rather than guessing a poison.
 - The original schematic map and generic music-staff decoder were optional ideas, not shipped: verified location cards/photos and the fixed piano reference cover the observed quest without guessed geometry.
 - Existing long imported full guides retain their original heading structure; Nuxt Hints reports pre-existing multiple-H1 warnings. These do not affect the new puzzle outputs.
