@@ -1,3 +1,4 @@
+import { readReaderContext } from './mapNavigation.mjs'
 export const PROGRESS_KEY = 'codwiki-progress-v1'
 export function emptyProgress() { return { version: 1, runs: {}, toys: {}, last: null } }
 export function readProgress(raw) {
@@ -10,7 +11,8 @@ export function readProgress(raw) {
       result.runs[id] = {
         done: Array.isArray(run.done) ? [...new Set(run.done.filter(s => typeof s === 'string'))] : [],
         section: typeof run.section === 'string' ? run.section : '',
-        view: run.view === 'full' ? 'full' : 'quick',
+        view: ['quick', 'full', 'map'].includes(run.view) ? run.view : 'quick',
+        reader: readReaderContext(run),
         collapsed: run.collapsed && typeof run.collapsed === 'object' ? run.collapsed : {},
         groups: Array.isArray(run.groups) ? run.groups.filter(s=>typeof s==='string') : [],
         hideCompleted: run.hideCompleted === true,
@@ -28,6 +30,7 @@ export function resetRun(state, id) {
   const run = ensureRun(state, id)
   run.done = []
   run.section = ''
+  if (run.reader) run.reader.section = ''
   if (state.last?.route.endsWith('/' + id)) state.last.section = ''
 }
 export function partStatus(done, steps) {

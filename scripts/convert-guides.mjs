@@ -1,13 +1,11 @@
 // One-off migration script: converts public/guides/*.html into Vue content components.
 // Run: node scripts/convert-guides.mjs
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 
 const root = process.cwd()
 const srcDir = join(root, 'public', 'guides')
 const outDir = join(root, 'app', 'components', 'guide')
-mkdirSync(outDir, { recursive: true })
-
 const guides = [
   'ashes-of-the-damned',
   'astra-malorum',
@@ -16,6 +14,25 @@ const guides = [
   'rex-infernus',
   'totenreich',
 ]
+
+// These components have since become maintained source files. Check every
+// destination before writing anything so an old HTML export cannot erase map
+// bindings or partially regenerate the guides before reaching a protected file.
+const protectedGuides = guides.filter(slug => {
+  const destination = join(outDir, `${slug}.vue`)
+  return existsSync(destination) && /<ShowOnMap\b/.test(readFileSync(destination, 'utf8'))
+})
+if (protectedGuides.length) {
+  console.error(
+    'Guide conversion refused: existing Vue guides contain ShowOnMap bindings.\n' +
+    'Edit app/components/guide/*.vue directly and preserve their map targets and step anchors.\n' +
+    'The public/guides HTML files are older migration inputs; no components were changed.\n' +
+    `Protected guides: ${protectedGuides.join(', ')}`
+  )
+  process.exit(1)
+}
+
+mkdirSync(outDir, { recursive: true })
 
 // Convert /tools/foo.html anchors into NuxtLink-friendly plain links (keep href, add styling hook)
 function transformHtml(raw, slug) {

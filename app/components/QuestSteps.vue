@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import { partStatus } from '~/utils/companion.mjs'
-const props = defineProps<{ mapId: string, phases: any[], completed: string[], hideCompleted?: boolean }>()
+const props = defineProps<{ mapId: string, phases: any[], completed: string[], hideCompleted?: boolean, mapLinks?: Record<string, string> }>()
 const emit = defineEmits<{ toggle: [steps: any[]], details: [anchor: string], visit: [anchor: string], hide: [value: boolean] }>()
 const expanded = ref<Record<string, boolean>>({})
 const status = (phase: any) => partStatus(props.completed, phase.steps)
 const count = computed(() => props.phases.filter(p => status(p) === 'complete').length)
 const isOpen = (phase: any) => expanded.value[phase.id] ?? !(props.hideCompleted && status(phase) === 'complete')
-function reveal(id: string) { expanded.value[id.replace(/^quick-/, '')] = true }
+function reveal(id: string) {
+  const phase = props.phases.find(p => id === `quick-${p.id}` || p.steps.some((s:any) => id === `quick-step-${s.id}`))
+  if (phase) expanded.value[phase.id] = true
+}
 function toggle(phase: any) {
   expanded.value[phase.id] = isOpen(phase)
   emit('toggle', phase.steps)
@@ -27,7 +30,7 @@ defineExpose({ reveal })
         <button class="part-details" @click="emit('details', phase.detail)">Full details ↗</button>
       </header>
       <div v-show="isOpen(phase)" :id="`${mapId}-${phase.id}-body`" class="part-body">
-        <ul class="quest-list"><li v-for="step in phase.steps" :key="step.id"><div class="step-copy" v-html="step.html" /><InlineTool v-for="tool in step.tools || []" :key="tool" :tool="tool" /></li></ul>
+        <ul class="quest-list"><li v-for="(step, stepIndex) in phase.steps" :id="`quick-step-${step.id}`" :key="step.id" data-guide-step><div class="step-copy" v-html="step.html" /><ShowOnMap v-if="mapLinks?.[step.id]" :target="mapLinks[step.id]" :label="`Show ${phase.title}, step ${stepIndex + 1} on map`" /><InlineTool v-for="tool in step.tools || []" :key="tool" :tool="tool" /></li></ul>
         <ParadoxLocations v-if="mapId === 'paradox-junction'" :phase="phase.id" />
       </div>
     </section>
@@ -51,7 +54,7 @@ input { width:1.1rem; height:1.1rem; accent-color:var(--gold); flex:none; }
 .part-details { color:var(--gold-bright); font-size:.75rem; }
 .quest-list { list-style:disc; margin:0; padding:.35rem .85rem .5rem 1.8rem; }
 .quest-list > li { padding:.2rem 0; }
-.step-copy { line-height:1.5; color:var(--text); }
+.step-copy { display:inline; line-height:1.5; color:var(--text); }
 .completed header { border-left:3px solid var(--gold); }
 .step-copy :deep(a) { color:var(--gold-bright); text-decoration:underline; }
 .step-copy :deep(.era) { font-size:.72em; text-transform:uppercase; letter-spacing:.04em; color:var(--gold-bright); border:1px solid var(--line-strong); border-radius:4px; padding:.1rem .3rem; white-space:nowrap; }

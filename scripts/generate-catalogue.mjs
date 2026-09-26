@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import { parse } from '@vue/compiler-dom'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import './generate-map-links.mjs'
 process.chdir(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'))
 const catalogue = JSON.parse(fs.readFileSync('shared/catalogue.json', 'utf8'))
 fs.writeFileSync('app/data/catalogue.json', JSON.stringify(catalogue, null, 2) + '\n')

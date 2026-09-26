@@ -1,6 +1,6 @@
 <template>
   <div class="guide-page">
-    <div class="guide-grid">
+    <div class="guide-grid" :class="{ 'showing-map': view === 'map' }">
       <section class="min-w-0">
         <div class="guide-surface">
           <header class="guide-header">
@@ -8,20 +8,24 @@
             <NuxtLink class="guide-back" to="/">← Maps & tools</NuxtLink>
           </header>
           <div class="guide-toolbar">
-            <div class="reading-switch" role="group" aria-label="Reading view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button></div>
-            <button class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
+            <div class="reading-switch" role="group" aria-label="Guide view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button><button class="companion-button" :aria-pressed="view === 'map'" @click="switchView('map')">Map</button></div>
+            <button v-if="view !== 'map'" class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
             <button class="companion-button subtle" @click="confirmReset = !confirmReset">Start new run</button>
           </div>
           <div v-if="mobileOpen" id="mobile-contents" class="mobile-contents"><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /></div>
-          <nav class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
-          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="reset(mapId); confirmReset = false; switchView('quick')">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
+          <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
+          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
-          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :phases="phases" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
+          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
           <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /></article>
-          <section v-if="mapTools.length" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
+          <section v-if="mapActivated" v-show="view === 'map'" ref="mapRef" class="guide-map-view" aria-label="Interactive map" tabindex="-1">
+            <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" />
+            <div v-else class="guide-map-loading"><p v-if="mapLoading" role="status">Loading {{ title }} map…</p><p v-else role="alert">{{ mapError }}</p><button v-if="mapError" class="companion-button" @click="loadMap">Try again</button><button class="companion-button" @click="returnToStep">Back to guide</button></div>
+          </section>
+          <section v-if="mapTools.length" v-show="view !== 'map'" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
         </div>
       </section>
-      <aside class="guide-aside"><div class="toc"><div class="toc-head">On this page</div><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /><p class="saved-note">Progress saved on this device</p></div></aside>
+      <aside v-show="view !== 'map'" class="guide-aside"><div class="toc"><div class="toc-head">On this page</div><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /><p class="saved-note">Progress saved on this device</p></div></aside>
     </div>
     <ImageLightbox v-if="lightboxSrc" :src="lightboxSrc" :alt="lightboxAlt" @close="lightboxSrc = null" />
   </div>
@@ -31,14 +35,20 @@
 import { togglePart } from '~/utils/companion.mjs'
 import catalogue from '~/data/catalogue.json'
 import quickQuests from '~/data/quickQuests.json'
+import quickMapIndex from '~/data/mapQuickLinks.json'
+import { GUIDE_MAP_NAVIGATION } from '~/utils/mapContext'
+import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readReaderContext } from '~/utils/mapNavigation.mjs'
 export interface GuideTocItem { id: string; text: string; level: number }
 const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string }>()
 useSeoMeta({ title: () => `${props.title} · CodWiki`, description: () => `Quest checklist, complete walkthrough and puzzle tools for ${props.title}.` })
 const route = useRoute()
+const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
 const { run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
 const phases = (quickQuests as Record<string, any[]>)[mapId] || []
+const quickMapLinks = (quickMapIndex as Record<string, Record<string, string>>)[mapId] || {}
+const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(mapId)
 const mapTools = catalogue.tools.filter(t => t.map === mapId)
 const view = ref('quick')
 const active = ref('')
@@ -47,6 +57,14 @@ const confirmReset = ref(false)
 const articleRef = ref<HTMLElement | null>(null)
 const partsRef = ref<{ reveal: (id: string) => void } | null>(null)
 const quickRef = ref<HTMLElement | null>(null)
+const mapRef = ref<HTMLElement | null>(null)
+const mapActivated = ref(false)
+const selectedMapTarget = ref('')
+const mapReturn = shallowRef<{ view: string; section: string; scrollY: number; focus?: HTMLElement } | null>(null)
+let ignoreHash: string | null = null
+let navigationVersion = 0
+let mounted = false
+let returnFrame = 0
 const toc = ref<GuideTocItem[]>([])
 const pins = ref<string[]>([])
 const lightboxSrc = ref<string | null>(null)
@@ -83,36 +101,111 @@ function togglePin(id:string) {
 }
 function toggleGroup(id:string) { current.value.groups=current.value.groups.includes(id)?current.value.groups.filter((v:string)=>v!==id):[...current.value.groups,id]; save() }
 function remember(id:string) { active.value=id; visit(mapId,props.title,id,view.value) }
+function captureReading(source?: HTMLElement) {
+  if (view.value === 'map') return
+  const element = source?.closest<HTMLElement>('[data-guide-step], [id^="guide-step-"], li[id], p[id], .quest-phase[id]')
+  const section = element?.id || active.value || (view.value === 'quick' ? 'quick-'+phases[0]?.id : shortcuts.value[0]?.id || '')
+  current.value.reader = { view: view.value, section }
+  mapReturn.value = { view: view.value, section, scrollY: window.scrollY, focus: source }
+  save()
+}
+function showOnMap(target = '', source?: HTMLElement) {
+  captureReading(source)
+  scrollTo(mapAnchor(target))
+}
+provide(GUIDE_MAP_NAVIGATION, { open: showOnMap })
+function selectMapTarget(target: string) { scrollTo(mapAnchor(target)) }
+function startNewRun() {
+  reset(mapId)
+  confirmReset.value = false
+  mapReturn.value = null
+  selectedMapTarget.value = ''
+  scrollTo('quick-'+phases[0]?.id)
+}
+async function returnToStep() {
+  const savedReader = readReaderContext(current.value)
+  if (mapReturn.value && (mapReturn.value.view !== savedReader.view || mapReturn.value.section !== savedReader.section)) mapReturn.value = null
+  const reader = mapReturn.value || savedReader
+  const section = reader.section || (reader.view === 'full' ? shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id : 'quick-'+phases[0]?.id)
+  await scrollTo(section)
+  await nextTick()
+  // Finish after the router's hash scrolling so returning to a small inline
+  // button restores the original reading position, including on mobile.
+  cancelAnimationFrame(returnFrame)
+  returnFrame = requestAnimationFrame(() => {
+    if (!mounted || view.value === 'map' || !mapReturn.value) return
+    mapReturn.value.focus?.focus({ preventScroll: true })
+    window.scrollTo({ top: mapReturn.value.scrollY, behavior: 'instant' })
+  })
+}
 function switchView(next:string) {
-  const previous=active.value
-  view.value=next; current.value.view=next; save()
-  const phase=phases.find(p=>p.detail===previous || 'quick-'+p.id===previous)
+  if (next === view.value) return
+  if (next === 'map') { showOnMap(selectedMapTarget.value); return }
+  const reader = readReaderContext(current.value)
+  if (view.value === 'map' && reader.view === next && reader.section) { returnToStep(); return }
+  const previous=view.value === 'map' ? reader.section : active.value
+  const element = document.getElementById(previous)
+  const headings = element ? Array.from(articleRef.value?.querySelectorAll<HTMLElement>('h1,h2,h3') || [])
+    .filter(heading => !heading.closest('.puzzle, .cheat-grid, .quest-grid') && (heading === element || !!(heading.compareDocumentPosition(element) & Node.DOCUMENT_POSITION_FOLLOWING)))
+    .map(heading => ({ id: heading.id, level: Number(heading.tagName[1]) })) : []
+  const phase=phaseForAnchor(phases, previous, headings)
   const target=phase?(next==='quick'?'quick-'+phase.id:phase.detail):(next==='quick'?'quick-'+phases[0]?.id:shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id)
   if(target) scrollTo(target)
 }
 async function scrollTo(id?:string, updateUrl=true) {
   if(!id) return
+  const version = ++navigationVersion
   const legacy = phases.find(p=>p.legacy===id && p.legacy!==p.detail)
   if(legacy) id='quick-'+legacy.id
   if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases[0]?.id
-  if(id!=='map-tools') view.value=id.startsWith('quick-')?'quick':'full'
+  const hash = '#'+encodeURIComponent(id)
+  if(updateUrl && decodeGuideHash(route.hash) !== id) {
+    ignoreHash = hash
+    try { await router.push({ path: route.path, query: route.query, hash }) } finally { ignoreHash = null }
+    if (version !== navigationVersion) return
+  }
   mobileOpen.value=false
+  const mapTarget = mapTargetFromAnchor(id)
+  if (mapTarget !== null) {
+    const enteringMap = view.value !== 'map' || !mapActivated.value
+    view.value='map'
+    mapActivated.value=true
+    selectedMapTarget.value=mapTarget
+    visit(mapId,props.title,id,'map')
+    await nextTick()
+    if (version !== navigationVersion || !mounted) return
+    if (enteringMap) {
+      mapRef.value?.focus({ preventScroll: true })
+      mapRef.value?.scrollIntoView({ behavior:'auto', block:'start' })
+    }
+    await loadMap()
+    await nextTick()
+    if (enteringMap && mounted && version === navigationVersion) mapRef.value?.scrollIntoView({ behavior:'auto', block:'start' })
+    return
+  }
+  if(id!=='map-tools') view.value=id.startsWith('quick-')?'quick':'full'
+  else if(view.value==='map') view.value=readReaderContext(current.value).view
+  if (mapReturn.value && (mapReturn.value.section !== id || mapReturn.value.view !== view.value)) mapReturn.value = null
   partsRef.value?.reveal(id)
   await nextTick()
+  if (version !== navigationVersion || !mounted) return
   const el=document.getElementById(id)
   if(!el) return
   let ancestor:HTMLElement|null=el
   while(ancestor && ancestor!==articleRef.value) {
-    if(ancestor.matches('.glass-card') || ancestor.matches('h2,h3')) {
+    if(ancestor.matches('.glass-card, .evidence-card, h2, h3')) {
       const input=ancestor.querySelector('.g-cb') as HTMLInputElement|null
       if(input) input.checked=false
     }
     if(ancestor.tagName==='DETAILS') (ancestor as HTMLDetailsElement).open=true
+    if (ancestor.classList.contains('rex-panel')) {
+      const radio = articleRef.value?.querySelector<HTMLInputElement>('#rextab-'+ancestor.id.replace('rexp-', ''))
+      if (radio) radio.checked=true
+    }
     ancestor=ancestor.parentElement
   }
   saveCollapsed()
   remember(id)
-  if(updateUrl) history.replaceState(history.state,'',route.path+'#'+encodeURIComponent(id))
   el.scrollIntoView({behavior:'auto',block:'start'})
 }
 function saveCollapsed() {
@@ -123,11 +216,12 @@ function saveCollapsed() {
   save()
 }
 function onArticleClick(e:MouseEvent) {
+  if(e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return
   const target=e.target as HTMLElement
   const link=target.closest('a')
   if(link) {
     const href=link.getAttribute('href') || ''
-    if(href.startsWith('#')) { e.preventDefault(); scrollTo(decodeURIComponent(href.slice(1))) }
+    if(href.startsWith('#')) { e.preventDefault(); const anchor=decodeGuideHash(href); const mapTarget=mapTargetFromAnchor(anchor); if(mapTarget !== null) showOnMap(mapTarget,link); else scrollTo(anchor) }
     else if(href.startsWith('/tools/')) { e.preventDefault(); remember(target.closest('.quest-phase')?.id || active.value); navigateTo(href) }
   }
   if(target.tagName==='IMG' && !target.closest('.puzzle')) { lightboxSrc.value=(target as HTMLImageElement).src; lightboxAlt.value=(target as HTMLImageElement).alt }
@@ -136,7 +230,7 @@ let scrollTimer:ReturnType<typeof setTimeout>
 function trackPosition() {
   clearTimeout(scrollTimer)
   scrollTimer=setTimeout(()=>{
-    if(mobileOpen.value) return
+    if(mobileOpen.value || view.value==='map') return
     const root=view.value==='quick'?quickRef.value:articleRef.value
     const nodes=Array.from(root?.querySelectorAll<HTMLElement>(view.value==='quick'?'.quest-phase':'h1,h2,h3') || [])
     const visible=nodes.filter(n=>n.getClientRects().length && !n.closest('.puzzle'))
@@ -152,13 +246,20 @@ onMounted(async()=>{
     const id=input.closest('h2,h3')?.id
     if(id && typeof current.value.collapsed[id]==='boolean') input.checked=current.value.collapsed[id]
   })
-  const anchor=route.hash?decodeURIComponent(route.hash.slice(1)):current.value.section
+  mounted=true
+  const anchor=route.hash?decodeGuideHash(route.hash):current.value.section || (view.value==='map'?'map':'')
   if(anchor) await scrollTo(anchor,false)
   else remember(view.value==='quick'?'quick-'+phases[0]?.id:'')
+  if (!mounted) return
   window.addEventListener('scroll',trackPosition,{passive:true})
 })
-watch(()=>route.hash,hash=>{ if(hash) scrollTo(decodeURIComponent(hash.slice(1)),false) })
-onBeforeUnmount(()=>{ window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer) })
+watch(()=>route.hash,hash=>{
+  if(!mounted || (ignoreHash !== null && decodeGuideHash(hash)===decodeGuideHash(ignoreHash))) return
+  const anchor=decodeGuideHash(hash)
+  if(anchor) scrollTo(anchor,false)
+  else scrollTo('quick-'+phases[0]?.id,false)
+})
+onBeforeUnmount(()=>{ mounted=false; navigationVersion++; window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer); cancelAnimationFrame(returnFrame) })
 defineExpose({scrollTo})
 </script>
 <style scoped>
@@ -1063,6 +1164,12 @@ defineExpose({scrollTo})
 <style scoped>
 .guide-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:.6rem; position:sticky; top:0; z-index:15; background:var(--surface); padding:.75rem 0; border-bottom:1px solid var(--line); }
 .reading-switch { display:flex; gap:.3rem; }
+.guide-grid.showing-map { grid-template-columns:minmax(0,1fr); }
+.guide-map-view { margin-top:.85rem; scroll-margin-top:5.5rem; outline:none; }
+.guide-surface :deep([id^="guide-step-"]), .guide-surface :deep([data-guide-step]) { scroll-margin-top:6rem; }
+@media(max-width:600px) { .guide-surface :deep([id^="guide-step-"]), .guide-surface :deep([data-guide-step]), .guide-map-view { scroll-margin-top:9rem; } }
+.guide-map-loading { min-height:25rem; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; gap:.7rem; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface-2); }
+.guide-map-loading p { width:100%; text-align:center; }
 .guide-shortcuts { display:flex; flex-wrap:wrap; gap:.2rem; margin:.5rem 0 1.4rem; }
 .mobile-sections, .mobile-contents { display:none; }
 .map-tools { margin-top:2.5rem; border-top:1px solid var(--line); padding:1.5rem 0; scroll-margin-top:6rem; }

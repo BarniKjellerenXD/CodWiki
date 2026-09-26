@@ -17,41 +17,42 @@
 <ol>
 <li>Get 4 parts:
 <ul>
-<li><strong>The Sealant:&nbsp;</strong>In Normal Nuketown, go to the bedroom in Yellow House Upstairs and get it from the bottom of the shelf near the window.</li>
-<li><strong>The Barrel</strong>: Find the Cyst that is emitting a humming sound in Destroyed Nuketown and feed it souls until it drops The Hammer.</li>
+<li id="guide-step-normal-yellowup-1" data-guide-step><strong>The Sealant:&nbsp;</strong>In Normal Nuketown, go to the bedroom in Yellow House Upstairs and get it from the bottom of the shelf near the window. <ShowOnMap target="step-normal-yellowup-1" /></li>
+<li id="guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-1" data-guide-step><strong>The Barrel</strong>: Find the Cyst that is emitting a humming sound in Destroyed Nuketown and feed it souls until it drops The Hammer. <ShowOnMap target="step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-1" /></li>
 <li><strong>The Hammer</strong>:
 <ol>
-<li>Get the SO<sub>3</sub> Vial found on the desk in Destroyed Yellow House Upstairs then interact with the kitchen sink in Destroyed Green House to get the H<sub>2</sub>SO<sub>4</sub> Vial. <strong>The Vial can be used 3 times before the need to refill it at the sink.</strong></li>
-<li>In Destroyed Nuketown, find the mannequin that emits a humming sound. There is a total of 12 mannequins; 9 around Cul-De-Sac and the houses and 3 in Trinity Ave.:
+<li id="guide-step-destroyed-yellowup-destroyed-green-1" data-guide-step>Get the SO<sub>3</sub> Vial found on the desk in Destroyed Yellow House Upstairs then interact with the kitchen sink in Destroyed Green House to get the H<sub>2</sub>SO<sub>4</sub> Vial. <strong>The Vial can be used 3 times before the need to refill it at the sink.</strong> <ShowOnMap target="step-destroyed-yellowup-destroyed-green-1" /></li>
+<li id="guide-step-locations-step-destroyed-yellowyard-1" data-guide-step>In Destroyed Nuketown, find the mannequin that emits a humming sound. There is a total of 12 mannequins; 9 around Cul-De-Sac and the houses and 3 in Trinity Ave.:
+ <ShowOnMap target="locations-step-destroyed-yellowyard-1" label="Show blundergat locations on map" />
 <ul>
-<li>Behind the swing in Yellow House Backyard</li>
-<li>Inside the garage of Green House, next to the Crafting Table.</li>
-<li>Near the big garage door in Trinity Ave.</li>
-<li>In Green House Backyard, behind the Perk location.</li>
+<li id="guide-step-destroyed-yellowyard-1" data-guide-step>Behind the swing in Yellow House Backyard</li>
+<li id="guide-step-destroyed-greengarage-1" data-guide-step>Inside the garage of Green House, next to the Crafting Table.</li>
+<li id="guide-step-destroyed-trinity-1" data-guide-step>Near the big garage door in Trinity Ave.</li>
+<li id="guide-step-destroyed-greenyard-1" data-guide-step>In Green House Backyard, behind the Perk location.</li>
 </ul>
 </li>
-<li>Return to Normal Nuketown and pour the H<sub>2</sub>SO<sub>4</sub> Vial on the corresponding mannequin.</li>
-<li>Go to Destroyed Nuketown, and if done correctly, the mannequin will have dissolved and dropped The Hammer.</li>
+<li id="guide-step-normal-culdesac-normal-green-normal-greenyard-normal-yellow-normal-yello-1" data-guide-step>Return to Normal Nuketown and pour the H<sub>2</sub>SO<sub>4</sub> Vial on the corresponding mannequin. <ShowOnMap target="step-normal-culdesac-normal-green-normal-greenyard-normal-yellow-normal-yello-1" /></li>
+<li id="guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-2" data-guide-step>Go to Destroyed Nuketown, and if done correctly, the mannequin will have dissolved and dropped The Hammer. <ShowOnMap target="step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-2" /></li>
 </ol>
 </li>
 <li><strong>The Stock</strong>:
 <ol>
-<li>In Destroyed Nuketown, find black goo on a wall that is <strong>emitting a humming sound. </strong>There are multiple locations.</li>
-<li>Return to Normal Nuketown, find the corresponding wall and throw an explosive to the wall to create a hole.</li>
+<li id="guide-step-destroyed-yellowgarage-destroyed-green-destroyed-trinity-1" data-guide-step>In Destroyed Nuketown, find black goo on a wall that is <strong>emitting a humming sound. </strong>There are multiple locations. <ShowOnMap target="step-destroyed-yellowgarage-destroyed-green-destroyed-trinity-1" /></li>
+<li id="guide-step-normal-yellowgarage-normal-green-normal-trinity-1" data-guide-step>Return to Normal Nuketown, find the corresponding wall and throw an explosive to the wall to create a hole. <ShowOnMap target="step-normal-yellowgarage-normal-green-normal-trinity-1" /></li>
 <li>Go back to Destroyed Nuketown. If done correctly, the hole will have The Stock inside available to be picked up.</li>
 </ol>
 </li>
 </ul>
 </li>
-<li><strong>Melee the workbench in Destroyed Truck Interior</strong> to open and build the Blundergat.</li>
+<li id="guide-step-destroyed-truck-1" data-guide-step><strong>Melee the workbench in Destroyed Truck Interior</strong> to open and build the Blundergat. <ShowOnMap target="step-destroyed-truck-1" /></li>
 </ol>
 <h3 class="" id="wiki_sundergat_upgrade">Sundergat Upgrade</h3>
 <ol>
-<li>After a few rounds in Destroyed Nuketown, a Tortured Zombie will spawn surrounded by a fire tornado. Bring the Tortured Zombie next to the bench and kill it with the Blundergat. <strong>Note: if the Tortured Zombie is near other zombies, it will weaken and die after its health bar is depleted.</strong></li>
-<li>Wait until the next round, then repeat the above step.</li>
-<li>In the next round, a third Tortured Zombie will spawn, but will transform into a Mimic when approaching. Repeat the process and kill it near the bench with the Blundergat.</li>
-<li>Travel back to Normal Nuketown and<strong> melee the workbench</strong> before placing the Blundergat.</li>
-<li>Return to Destroyed Nuketown, and melee the workbench again to pick up the Sundergat.</li>
+<li id="guide-step-destroyed-truck-2" data-guide-step>After a few rounds in Destroyed Nuketown, a Tortured Zombie will spawn surrounded by a fire tornado. Bring the Tortured Zombie next to the bench and kill it with the Blundergat. <strong>Note: if the Tortured Zombie is near other zombies, it will weaken and die after its health bar is depleted.</strong> <ShowOnMap target="step-destroyed-truck-2" /></li>
+<li id="guide-step-destroyed-truck-3" data-guide-step>Wait until the next round, then repeat the above step.</li>
+<li id="guide-step-destroyed-truck-4" data-guide-step>In the next round, a third Tortured Zombie will spawn, but will transform into a Mimic when approaching. Repeat the process and kill it near the bench with the Blundergat.</li>
+<li id="guide-step-normal-truck-1" data-guide-step>Travel back to Normal Nuketown and<strong> melee the workbench</strong> before placing the Blundergat. <ShowOnMap target="step-normal-truck-1" /></li>
+<li id="guide-step-destroyed-truck-5" data-guide-step>Return to Destroyed Nuketown, and melee the workbench again to pick up the Sundergat. <ShowOnMap target="step-destroyed-truck-5" /></li>
 </ol>
 <hr>
 </div><h1 id="wiki_main_quest">Main Quest</h1>
@@ -111,135 +112,138 @@
 </div>
 
 <ol>
-<li>Obtain the Blundergat and upgrade it to the Sundergat.</li>
+<li id="guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-2" data-guide-step>Obtain the Blundergat and upgrade it to the Sundergat. <ShowOnMap target="step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-2" /></li>
 </ol>
 <div class="glass-card glass-amber"><h2 class="" id="wiki_the_twins_swing"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">The Twins Swing<span class="g-tag">🎠 Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>In Normal Nuketown, shoot at the swing in the Yellow House Backyard and pick up the Swing Seat.</li>
-<li>Travel to Destroyed Nuketown and find the RC-XD Controller:
+<li id="guide-step-swing-1" data-guide-step>In Normal Nuketown, shoot at the swing in the Yellow House Backyard and pick up the Swing Seat. <ShowOnMap target="step-swing-1" /></li>
+<li id="guide-step-locations-step-rcxd-pap-1" data-guide-step>Travel to Destroyed Nuketown and find the RC-XD Controller:
+ <ShowOnMap target="locations-step-rcxd-pap-1" label="Show the twins swing locations on map" />
 <ul>
-<li>Against the boxes on the right side of Pack-a-Punch when looking at it.</li>
-<li>Against a fence at Green House Backyard</li>
-<li>On one of the shelves in the garage of Yellow House</li>
+<li id="guide-step-rcxd-pap-1" data-guide-step>Against the boxes on the right side of Pack-a-Punch when looking at it.</li>
+<li id="guide-step-rcxd-green-1" data-guide-step>Against a fence at Green House Backyard</li>
+<li id="guide-step-rcxd-yellow-1" data-guide-step>On one of the shelves in the garage of Yellow House</li>
 </ul>
 </li>
-<li>Interact with it to trigger a race. Drive the RC-XD and follow the ramps and jump over the debris to enter the garage. Then drive to the door and detonate it.</li>
-<li>Walk into the garage which will trigger a brief scene with a corpse turning into ash. Pick up the Chalk that will spawn shortly after.</li>
-<li>Go to the Yellow House Backyard and interact with the swing chains to place back the Swing Seat and the Chalk. This should trigger a scene with the Twins.</li>
+<li id="guide-step-destroyed-trinity-2" data-guide-step>Interact with it to trigger a race. Drive the RC-XD and follow the ramps and jump over the debris to enter the garage. Then drive to the door and detonate it. <ShowOnMap target="step-destroyed-trinity-2" /></li>
+<li id="guide-step-destroyed-trinity-3" data-guide-step>Walk into the garage which will trigger a brief scene with a corpse turning into ash. Pick up the Chalk that will spawn shortly after.</li>
+<li id="guide-step-swing-2" data-guide-step>Go to the Yellow House Backyard and interact with the swing chains to place back the Swing Seat and the Chalk. This should trigger a scene with the Twins. <ShowOnMap target="step-swing-2" /></li>
 </ol>
 <p><strong><em>NOTE: The steps in the next three sections can be done at the same time in any order.</em></strong></p></div>
 <div class="glass-card glass-green"><h2 class="" id="wiki_strange_tree.2C_hopscotch_and_music_box"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Strange Tree, Hopscotch and Music Box<span class="g-tag">🌳 Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>While in Destroyed Nuketown, go to the Yellow House Garage and crounch in front of the red toolbox on a shelf. Interact with the toolbox to open it and collect the Irradiated Seeds.</li>
-<li>Return to Normal Nuketown and go to Trinity Ave. There will an earth mound on the garden on the left side of Pack-a-Punch when looking at it. Place the Irradiated Seeds which will turn into a small there. Kill zombies with either version of the Blundergat to fill the tree with souls.</li>
-<li>Travel back to Destroyed Nuketown and obtain three Combat Axes. Throw each Combat Axe at the grown tree at Trinity Ave. to collect a total of three Strange Firewood.</li>
-<li>Return to Normal Nuketown and place the Strange Firewood inside the fireplace of the Yellow House then throw a Molotov to lit the fireplace on fire.</li>
-<li>While in Destroyed Nuketown, locate a massive X which can be found on the ground in Trinity Ave, facing the Wunderfizz machine. Step on the X until it glows blue and remains blue when you leave.</li>
-<li>Travel to Normal Nuketown and return to the same location in Trinity Ave., a small scene should play with the Twins drawing a hopscotch game on the ground.</li>
-<li>Interact with the white orb in front of the game to start the trial.</li>
-<li>While in third person mode, you will need to jump from 1 to 12 then 12 to 1 while avoiding the black smoke. <strong>Note: if you fail the step, the hopscotch will glow red and you'll need to wait 30s to interact with the white orb again.</strong></li>
-<li>A golden music box will spawn in the middle of the hopscotch. <strong>With the Sundergat</strong>, kill zombies to fill the box with souls and escort it to the fireplace at Yellow House.</li>
+<li id="guide-step-seeds-1" data-guide-step>While in Destroyed Nuketown, go to the Yellow House Garage and crounch in front of the red toolbox on a shelf. Interact with the toolbox to open it and collect the Irradiated Seeds. <ShowOnMap target="step-seeds-1" /></li>
+<li id="guide-step-tree-normal-1" data-guide-step>Return to Normal Nuketown and go to Trinity Ave. There will an earth mound on the garden on the left side of Pack-a-Punch when looking at it. Place the Irradiated Seeds which will turn into a small there. Kill zombies with either version of the Blundergat to fill the tree with souls. <ShowOnMap target="step-tree-normal-1" /></li>
+<li id="guide-step-tree-destroyed-1" data-guide-step>Travel back to Destroyed Nuketown and obtain three Combat Axes. Throw each Combat Axe at the grown tree at Trinity Ave. to collect a total of three Strange Firewood. <ShowOnMap target="step-tree-destroyed-1" /></li>
+<li id="guide-step-fireplace-1" data-guide-step>Return to Normal Nuketown and place the Strange Firewood inside the fireplace of the Yellow House then throw a Molotov to lit the fireplace on fire. <ShowOnMap target="step-fireplace-1" /></li>
+<li id="guide-step-destroyed-trinity-4" data-guide-step>While in Destroyed Nuketown, locate a massive X which can be found on the ground in Trinity Ave, facing the Wunderfizz machine. Step on the X until it glows blue and remains blue when you leave. <ShowOnMap target="step-destroyed-trinity-4" /></li>
+<li id="guide-step-normal-trinity-1" data-guide-step>Travel to Normal Nuketown and return to the same location in Trinity Ave., a small scene should play with the Twins drawing a hopscotch game on the ground. <ShowOnMap target="step-normal-trinity-1" /></li>
+<li id="guide-step-hopscotch-normal-1" data-guide-step>Interact with the white orb in front of the game to start the trial. <ShowOnMap target="step-hopscotch-normal-1" /></li>
+<li id="guide-step-hopscotch-normal-2" data-guide-step>While in third person mode, you will need to jump from 1 to 12 then 12 to 1 while avoiding the black smoke. <strong>Note: if you fail the step, the hopscotch will glow red and you'll need to wait 30s to interact with the white orb again.</strong></li>
+<li id="guide-step-hopscotch-normal-fireplace-2" data-guide-step>A golden music box will spawn in the middle of the hopscotch. <strong>With the Sundergat</strong>, kill zombies to fill the box with souls and escort it to the fireplace at Yellow House. <ShowOnMap target="step-hopscotch-normal-fireplace-2" /></li>
 </ol></div>
 <div class="glass-card glass-violet"><h2 class="" id="wiki_piano_lesson.2C_bouncing_ball_and_music_sheet"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Piano Lesson, Bouncing Ball and Music Sheet<span class="g-tag">🎹 Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>While in Destroyed Nuketown, travel to Green House Backyard and wait there until a zombie called Piano Teacher will spawn from outside the map.
+<li id="guide-step-destroyed-greenyard-2" data-guide-step>While in Destroyed Nuketown, travel to Green House Backyard and wait there until a zombie called Piano Teacher will spawn from outside the map.
 <h2 class=""><strong><img alt="" class="wiki-img-right wiki-img-in-table wiki-img-with-wrap" data-height="606" data-media-id="cb96a7hnt0pg1" data-width="1274" height="226" style="height: auto" width="475" src="https://preview.redd.it/cb96a7hnt0pg1.png?width=640&amp;height=304&amp;format=png&amp;auto=webp&amp;s=2f0eaf24968021ed102062707c2e20532c562bf0"></strong></h2>
-</li>
-<li>Turn the Piano Teacher with either Brain Rot or a Psych Grenade and follow the Piano Teacher in Green House.</li>
-<li><strong>Quickly</strong> teleport back to Normal Nuketown and the Piano Teacher should start interacting with the piano before exploding.</li>
-<li>Travel back to Destroyed Nuketown and find 8 notes glowing blue around the map.</li>
-<li>Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in that order.<InlineTool tool="paradox-notes" /></li>
-<li>Return to Normal Nuketown and in the Green House. The notes will now appear on the wall in the same order. Interact with the piano to play the notes in the order seen on the wall. <strong>Note: the order is always 86756535.</strong></li>
-<li>Travel back to Destroyed Nuketown. Outside the map there will be three floating zombies in either Green House Backyard or Yellow House Backyard, kill all three zombies to free their souls.</li>
-<li>The souls will now appear above the massive X on ground in Trinity Ave.</li>
-<li>Return to Trinity Ave. in Normal Nuketown and you'll see the Twins drawing a circle. A glowing ball will then appear in the center.</li>
-<li>Interact with the ball to start the trial.</li>
-<li>The ball will start bouncing and lifting up zombies in the air. You need to kill every zombie in the air before the ball hits the ground.</li>
-<li>If done correctly, a glowing music sheet will appear at the center of the circle. <strong>With the Sundergat</strong>, kill zombies to fill the sheet with souls and escort it to the piano at Green House.</li>
+ <ShowOnMap target="step-destroyed-greenyard-2" /></li>
+<li id="guide-step-destroyed-greenyard-3" data-guide-step>Turn the Piano Teacher with either Brain Rot or a Psych Grenade and follow the Piano Teacher in Green House.</li>
+<li id="guide-step-destroyed-greenyard-piano-2" data-guide-step><strong>Quickly</strong> teleport back to Normal Nuketown and the Piano Teacher should start interacting with the piano before exploding. <ShowOnMap target="step-destroyed-greenyard-piano-2" /></li>
+<li id="guide-step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-2" data-guide-step>Travel back to Destroyed Nuketown and find 8 notes glowing blue around the map. <ShowOnMap target="step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-2" /></li>
+<li id="guide-step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-3" data-guide-step>Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in that order.<InlineTool tool="paradox-notes" /></li>
+<li id="guide-step-piano-1" data-guide-step>Return to Normal Nuketown and in the Green House. The notes will now appear on the wall in the same order. Interact with the piano to play the notes in the order seen on the wall. <strong>Note: the order is always 86756535.</strong> <ShowOnMap target="step-piano-1" /></li>
+<li id="guide-step-destroyed-greenyard-destroyed-yellowyard-1" data-guide-step>Travel back to Destroyed Nuketown. Outside the map there will be three floating zombies in either Green House Backyard or Yellow House Backyard, kill all three zombies to free their souls. <ShowOnMap target="step-destroyed-greenyard-destroyed-yellowyard-1" /></li>
+<li id="guide-step-destroyed-trinity-5" data-guide-step>The souls will now appear above the massive X on ground in Trinity Ave. <ShowOnMap target="step-destroyed-trinity-5" /></li>
+<li id="guide-step-normal-trinity-2" data-guide-step>Return to Trinity Ave. in Normal Nuketown and you'll see the Twins drawing a circle. A glowing ball will then appear in the center. <ShowOnMap target="step-normal-trinity-2" /></li>
+<li id="guide-step-ball-trial-normal-1" data-guide-step>Interact with the ball to start the trial. <ShowOnMap target="step-ball-trial-normal-1" /></li>
+<li id="guide-step-ball-trial-normal-2" data-guide-step>The ball will start bouncing and lifting up zombies in the air. You need to kill every zombie in the air before the ball hits the ground.</li>
+<li id="guide-step-ball-trial-normal-piano-2" data-guide-step>If done correctly, a glowing music sheet will appear at the center of the circle. <strong>With the Sundergat</strong>, kill zombies to fill the sheet with souls and escort it to the piano at Green House. <ShowOnMap target="step-ball-trial-normal-piano-2" /></li>
 </ol></div>
 <div class="glass-card glass-orange"><h2 class="" id="wiki_toy_box_and_four_square"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Toy Box and Four Square<span class="g-tag">🧸 Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>While in Destroyed Nuketown, go to the Pack-a-Punch area in Trinity Ave.</li>
-<li>There will be a pole with a lot of speakers outside the map. Shoot the very top to drop the Goggles on the ground then use Wisp Tea to bring the Goggles into the map to collect them.</li>
-<li><strong>Obtain Death Perception</strong>, and look for a Headset outline:
+<li id="guide-step-destroyed-pap-1" data-guide-step>While in Destroyed Nuketown, go to the Pack-a-Punch area in Trinity Ave. <ShowOnMap target="step-destroyed-pap-1" /></li>
+<li id="guide-step-goggles-2" data-guide-step>There will be a pole with a lot of speakers outside the map. Shoot the very top to drop the Goggles on the ground then use Wisp Tea to bring the Goggles into the map to collect them. <ShowOnMap target="step-goggles-2" /></li>
+<li id="guide-step-locations-step-headset-street-1" data-guide-step><strong>Obtain Death Perception</strong>, and look for a Headset outline:
+ <ShowOnMap target="locations-step-headset-street-1" label="Show toy box and four square locations on map" />
 <ul>
-<li>Next to trash cans in Cul-De-Sac near the car at Green House</li>
-<li>The coat rack on the wall in the bedroom of Green House Upstairs</li>
-<li>In the hand of a headless mannequin next to the perk location in Yellow House Backyard</li>
+<li id="guide-step-headset-street-1" data-guide-step>Next to trash cans in Cul-De-Sac near the car at Green House</li>
+<li id="guide-step-headset-green-1" data-guide-step>The coat rack on the wall in the bedroom of Green House Upstairs</li>
+<li id="guide-step-headset-yellow-1" data-guide-step>In the hand of a headless mannequin next to the perk location in Yellow House Backyard</li>
 </ul>
 </li>
-<li>Travel back to Normal Nuketown and interact with the blue toy box against the crates near the chalk circle.</li>
-<li>Return to Destroyed Nuketown and reach Green House Backyard where a massive X will appear on the ground.</li>
-<li>Find a red ball around the map:
+<li id="guide-step-toybox-1" data-guide-step>Travel back to Normal Nuketown and interact with the blue toy box against the crates near the chalk circle. <ShowOnMap target="step-toybox-1" /></li>
+<li id="guide-step-destroyed-greenyard-4" data-guide-step>Return to Destroyed Nuketown and reach Green House Backyard where a massive X will appear on the ground. <ShowOnMap target="step-destroyed-greenyard-4" /></li>
+<li id="guide-step-locations-step-ball-crates-1" data-guide-step>Find a red ball around the map:
+ <ShowOnMap target="locations-step-ball-crates-1" label="Show toy box and four square locations on map" />
 <ul>
-<li>On top of munition crates in Trinity Ave.</li>
-<li>On top of a house in Trinity Ave.</li>
-<li>On top of the Yellow House mezzanine</li>
+<li id="guide-step-ball-crates-1" data-guide-step>On top of munition crates in Trinity Ave.</li>
+<li id="guide-step-ball-roof-1" data-guide-step>On top of a house in Trinity Ave.</li>
+<li id="guide-step-ball-yellow-1" data-guide-step>On top of the Yellow House mezzanine</li>
 </ul>
 </li>
-<li>Shoot the red ball to drop it on the ground then shoot it to make it move all the way to the massive X which should make the X glow.</li>
-<li>Teleport back to Normal Nuketown and return to Green House Backyard to find the Twins drawing a Four Square.</li>
-<li>The ball will spawn within the squares, interact with it to start the trial.</li>
-<li>With your melee weapon make the red ball bounce into a square then into another one. Continue until the timer ends. <strong>Note: the ball can only bounce once in a square before moving to the next.</strong></li>
-<li>If done correctly, glowing pair of cymbals will appear above the Four Square.&nbsp;<strong>With the Sundergat</strong>, kill zombies to fill the cymbals with souls and escort the to the toy box at Trinity Ave.</li>
+<li id="guide-step-ball-crates-ball-roof-ball-yellow-destroyed-greenyard-normal-greenyard-2" data-guide-step>Shoot the red ball to drop it on the ground then shoot it to make it move all the way to the massive X which should make the X glow. <ShowOnMap target="step-ball-crates-ball-roof-ball-yellow-destroyed-greenyard-normal-greenyard-2" /></li>
+<li id="guide-step-normal-greenyard-1" data-guide-step>Teleport back to Normal Nuketown and return to Green House Backyard to find the Twins drawing a Four Square.  <ShowOnMap target="step-normal-greenyard-1" /></li>
+<li id="guide-step-normal-greenyard-2" data-guide-step>The ball will spawn within the squares, interact with it to start the trial.</li>
+<li id="guide-step-normal-greenyard-3" data-guide-step>With your melee weapon make the red ball bounce into a square then into another one. Continue until the timer ends. <strong>Note: the ball can only bounce once in a square before moving to the next.</strong></li>
+<li id="guide-step-normal-greenyard-toybox-2" data-guide-step>If done correctly, glowing pair of cymbals will appear above the Four Square.&nbsp;<strong>With the Sundergat</strong>, kill zombies to fill the cymbals with souls and escort the to the toy box at Trinity Ave. <ShowOnMap target="step-normal-greenyard-toybox-2" /></li>
 </ol></div>
 <div class="glass-card glass-gold"><h2 class="" id="wiki_clock_tower_and_the_twins"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Clock Tower and The Twins<span class="g-tag">🕰️ Step</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>In Destroyed Nuketown, shoot at the crumbled clock to move both the white and red hands on 0.</li>
-<li>Start to teleport back to Normal Nuketown, but just before the animation ends, shoot the red hand once.</li>
+<li id="guide-step-destroyed-clock-2" data-guide-step>In Destroyed Nuketown, shoot at the crumbled clock to move both the white and red hands on 0. <ShowOnMap target="step-destroyed-clock-2" /></li>
+<li id="guide-step-destroyed-clock-normal-clock-2" data-guide-step>Start to teleport back to Normal Nuketown, but just before the animation ends, shoot the red hand once. <ShowOnMap target="step-destroyed-clock-normal-clock-2" /></li>
 <li>If done correctly, a white orb will appear in the middle of the map.</li>
-<li>This will trigger a scene with the orb moving to the piano turning into the Twins, then move to the Toy Box, then the fireplace.</li>
-<li>The Twins will finally appear at the swing in Yellow House Backyard with a yellow portal that will start the boss fight.</li>
+<li id="guide-step-piano-toybox-fireplace-swing-2" data-guide-step>This will trigger a scene with the orb moving to the piano turning into the Twins, then move to the Toy Box, then the fireplace. <ShowOnMap target="step-piano-toybox-fireplace-swing-2" /></li>
+<li id="guide-step-swing-3" data-guide-step>The Twins will finally appear at the swing in Yellow House Backyard with a yellow portal that will start the boss fight. <ShowOnMap target="step-swing-3" label="Show Yellow House swing and boss portal on map" /></li>
 </ol></div>
 <div class="glass-card glass-red glass-boss"><h2 class="" id="wiki_the_dark_heart_boss_fight"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">The Dark Heart Boss Fight<span class="g-tag">🖤 BOSS</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <h3 class="" id="wiki_phase_1">Phase 1</h3>
 <ol>
-<li>The Dark Heart will spawn three massive pile of black goo around the map. One a Trinity Ave., one at Yellow House Backyard and one at Green House Backyard.</li>
-<li>Each pile of goo will have a cyst attached near it, kill zombies to fill each cyst with souls. If done correctly, the black goo will disappear revealing an object (Piano, Music Box, Fireplace)</li>
-<li>One of the three object will have a Concentration Field around it. Defend the field from zombies and enemies before they can destroy it. Once it is done, the field will move to the next object.</li>
-<li>Once all three objects are done, the Dark Heart will be damageable in glowing orange areas. The Heart will periodically conjure meteors as well as fire tornadoes. The tornadoes can be redirected by throwing Molotovs in their paths.</li>
-<li>Once a third of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House.</li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-4" data-guide-step>The Dark Heart will spawn three massive pile of black goo around the map. One a Trinity Ave., one at Yellow House Backyard and one at Green House Backyard. <ShowOnMap target="step-boss-trinity-boss-yellowyard-boss-greenyard-4" /></li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-5" data-guide-step>Each pile of goo will have a cyst attached near it, kill zombies to fill each cyst with souls. If done correctly, the black goo will disappear revealing an object (Piano, Music Box, Fireplace)</li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-6" data-guide-step>One of the three object will have a Concentration Field around it. Defend the field from zombies and enemies before they can destroy it. Once it is done, the field will move to the next object.</li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-7" data-guide-step>Once all three objects are done, the Dark Heart will be damageable in glowing orange areas. The Heart will periodically conjure meteors as well as fire tornadoes. The tornadoes can be redirected by throwing Molotovs in their paths.</li>
+<li id="guide-step-normal-green-1" data-guide-step>Once a third of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House. <ShowOnMap target="step-normal-green-1" /></li>
 </ol>
 <h3 class="" id="wiki_phase_2">Phase 2</h3>
 <ol>
 <li>During this phase, Rad-Hounds will spawn in addition to regular zombies.&nbsp;</li>
-<li>The objects are again covered with black goo with a green orb floating above them. Kill all the zombies that spawn from the green orb until the black goo disappears.</li>
-<li>Once again, a Concentration Field will appear around one object and move to the others once successfully defended. While defending, the Dark Heart may conjure meteors and fire tornadoes to attack the players. Repeat for all three objects to be able to damage the Dark Heart once more.</li>
-<li>Similar to last phase, once two thirds of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House.</li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-8" data-guide-step>The objects are again covered with black goo with a green orb floating above them. Kill all the zombies that spawn from the green orb until the black goo disappears. <ShowOnMap target="step-boss-trinity-boss-yellowyard-boss-greenyard-8" /></li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-9" data-guide-step>Once again, a Concentration Field will appear around one object and move to the others once successfully defended. While defending, the Dark Heart may conjure meteors and fire tornadoes to attack the players. Repeat for all three objects to be able to damage the Dark Heart once more.</li>
+<li id="guide-step-normal-green-2" data-guide-step>Similar to last phase, once two thirds of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House. <ShowOnMap target="step-normal-green-2" /></li>
 </ol>
 <h3 class="" id="wiki_phase_3">Phase 3</h3>
 <ol>
 <li>During this phase, Shock Mimics will spawn in addition to regular zombies and Rad-Hounds.</li>
-<li>The objects are again covered with black goo. A Tortured Zombie will appear in the middle of the map, bring it to one of the objects and kill it to remove the goo.&nbsp;<strong>Note: Similar to the previous steps, the Tortured Zombie's health will gradually be drained when zombies are close by.</strong></li>
-<li>Once again, a Concentration Field will appear around one object and move to the others once successfully defended. Similar to the second phase, repeat for all three objects to be able to damage the Dark Heart once more.</li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-10" data-guide-step>The objects are again covered with black goo. A Tortured Zombie will appear in the middle of the map, bring it to one of the objects and kill it to remove the goo.&nbsp;<strong>Note: Similar to the previous steps, the Tortured Zombie's health will gradually be drained when zombies are close by.</strong> <ShowOnMap target="step-boss-trinity-boss-yellowyard-boss-greenyard-10" /></li>
+<li id="guide-step-boss-trinity-boss-yellowyard-boss-greenyard-11" data-guide-step>Once again, a Concentration Field will appear around one object and move to the others once successfully defended. Similar to the second phase, repeat for all three objects to be able to damage the Dark Heart once more.</li>
 <li>Damage the Dark Heart until it is killed and the cutscene is triggered.</li>
 </ol></div>
 
 <hr>
 <h1 id="wiki_side_quests_and_easter_eggs">Side Quests and Easter Eggs</h1>
 <div class="glass-card glass-violet"><h2 id="wiki_.22come_back_down.22_secret_song"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">"Come Back Down" Secret Song<span class="g-tag">🎵 Song</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
-<p>Find three Mr Peeks headphones around the map:</p>
+<p id="guide-step-locations-step-normal-yellow-1" data-guide-step>Find three Mr Peeks headphones around the map: <ShowOnMap target="locations-step-normal-yellow-1" label="Show &quot;come back down&quot; secret song locations on map" /></p>
 <ul>
-<li>Normal Yellow House, on a nightstand upstair.</li>
-<li>Under a truck in Destroyed Trinity Ave.</li>
-<li>Near the Perk location at Normal Trinity Ave.</li>
+<li id="guide-step-normal-yellow-1" data-guide-step>Normal Yellow House, on a nightstand upstair.</li>
+<li id="guide-step-destroyed-trinity-6" data-guide-step>Under a truck in Destroyed Trinity Ave.</li>
+<li id="guide-step-normal-trinity-3" data-guide-step>Near the Perk location at Normal Trinity Ave.</li>
 </ul>
 <p><a href="https://www.youtube.com/watch?v=SVJ4chMiBMw" rel="nofollow noopener" target="_blank">"Come Back Down" by Kevin Sherwood and Megan Rice</a></p></div>
 <div class="glass-card glass-green"><h2 class="" id="wiki_mini_golf_.28free_power_ups.29"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Mini Golf (Free Power Ups)<span class="g-tag">⛳ Mini Golf</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Go to Yellow House Backyard</li>
+<li id="guide-step-normal-yellowyard-1" data-guide-step>Go to Yellow House Backyard <ShowOnMap target="step-normal-yellowyard-1" /></li>
 <li>Shoot the golf ball into the hole with the white flag.</li>
 <li>If done correctly, three Power Ups will spawn: Max Armor, Insta Kill, Bonus Point. <strong>Note: Doing it in more than 2 shots will only spawn a single Power Up.</strong></li>
 </ol></div>
 <div class="glass-card glass-green"><h2 class="" id="wiki_mini_golf_.28free_essence.29"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Mini Golf (Free Essence)<span class="g-tag">⛳ Mini Golf</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Go to Destroyed Yellow House Backyard.</li>
+<li id="guide-step-destroyed-yellowyard-2" data-guide-step>Go to Destroyed Yellow House Backyard. <ShowOnMap target="step-destroyed-yellowyard-2" /></li>
 <li>Shoot the golf ball into the hole with the white flag.</li>
 <li>If done correctly, 500 Essence will drop.</li>
 </ol></div>
 <div class="glass-card glass-red"><h2 class="" id="wiki_jumpscare"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Jumpscare<span class="g-tag">👻 Jumpscare</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Go to Destroyed Green House.</li>
+<li id="guide-step-destroyed-green-1" data-guide-step>Go to Destroyed Green House. <ShowOnMap target="step-destroyed-green-1" /></li>
 <li>Shoot at the antenna at the top of the house until it aligns with the red orb.</li>
 <li>Interact with the TV inside the house until the channel is green. Interact with it again to trigger a jumpscare.</li>
 </ol></div>
@@ -255,13 +259,13 @@
 <div class="glass-card glass-amber"><h2 class="" id="wiki_dissolving_the_mannequins_.28free_random_perk.29"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Dissolving the Mannequins (Free Random Perk)<span class="g-tag">🧍 Mannequins</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
 <li>
-<p>Acquire the H<sub>2</sub>SO<sub>4</sub> Vial.</p>
+<p id="guide-step-destroyed-green-2" data-guide-step>Acquire the H<sub>2</sub>SO<sub>4</sub> Vial. <ShowOnMap target="step-destroyed-green-2" /></p>
 </li>
 <li>
-<p>Pour the acid on all the mannequins that can be found on Normal Nuketown. The Vial only contains 3 doses of acid, and needs to be refill in the Destroyed Green House kitchen sink.</p>
+<p id="guide-step-normal-green-3" data-guide-step>Pour the acid on all the mannequins that can be found on Normal Nuketown. The Vial only contains 3 doses of acid, and needs to be refill in the Destroyed Green House kitchen sink. <ShowOnMap target="step-normal-green-3" /></p>
 </li>
 <li>
-<p>If done correctly, the last mannequin that was dissolved will drop a Random Perk Power-Up when going back to Destroyed Nuketown.</p>
+<p id="guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-3" data-guide-step>If done correctly, the last mannequin that was dissolved will drop a Random Perk Power-Up when going back to Destroyed Nuketown. <ShowOnMap target="step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-3" /></p>
 </li>
 </ol></div>
 <div class="glass-card glass-orange"><h2 class="" id="wiki_lost_key_.28aether_tool.29"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Lost Key (Aether Tool)<span class="g-tag">🔑 Lost Key</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
@@ -269,109 +273,115 @@
 <li>Obtain Death Perception.</li>
 <li>In Normal Nuketown, find the outline of key inside one of the flower pots around the map. Shoot the pot to collect a Lost Key. <strong>Note: if you shoot a flower pot that does not contain the key, teleport to Destroyed Nuketown then back to Normal Nuketown to reset the step.</strong></li>
 <li>Collect a total of <strong>5 Lost Keys</strong>.</li>
-<li>Once all the keys are collected, go to the bedroom in Normal Green House Upstairs and interact with the suitcase on the ground.</li>
-<li>If done correctly, the suitcase will open and offer some Salvage, Essence and a free Aether Tool.</li>
+<li id="guide-step-normal-greenup-1" data-guide-step>Once all the keys are collected, go to the bedroom in Normal Green House Upstairs and interact with the suitcase on the ground. <ShowOnMap target="step-normal-greenup-1" /></li>
+<li id="guide-step-normal-greenup-2" data-guide-step>If done correctly, the suitcase will open and offer some Salvage, Essence and a free Aether Tool.</li>
 </ol></div>
 <div class="glass-card glass-green"><h2 class="" id="wiki_bunker_.28free_random_perk.29"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Bunker (Free Random Perk)<span class="g-tag">🎁 Bunker</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Build the Blundergat.</li>
-<li>Travel to Normal Nuketown, interact with the stove in Yellow House to turn it on.</li>
-<li>Kill a zombie next to the stove to drop a piece of meat on the pan and throw a Molotov at the pan.</li>
-<li>Return to Destroyed Nuketown, a mannequin will be sit at the table.</li>
-<li>Teleport back and forth until a Bonus Point appears on the table.</li>
-<li>Return to Normal Nuketown and reach the bunker in Green House Backyard, the mannequin should be next to it. With Brain Rot or a Psych Grenade, turn a zombie to make it knock the bunker until the door opens. <strong>Note: several zombies might be needed.</strong></li>
+<li id="guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-3" data-guide-step>Build the Blundergat. <ShowOnMap target="step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-3" /></li>
+<li id="guide-step-normal-yellow-2" data-guide-step>Travel to Normal Nuketown, interact with the stove in Yellow House to turn it on. <ShowOnMap target="step-normal-yellow-2" /></li>
+<li id="guide-step-normal-yellow-3" data-guide-step>Kill a zombie next to the stove to drop a piece of meat on the pan and throw a Molotov at the pan.</li>
+<li id="guide-step-destroyed-yellow-1" data-guide-step>Return to Destroyed Nuketown, a mannequin will be sit at the table. <ShowOnMap target="step-destroyed-yellow-1" /></li>
+<li id="guide-step-normal-yellow-4" data-guide-step>Teleport back and forth until a Bonus Point appears on the table. <ShowOnMap target="step-normal-yellow-4" /></li>
+<li id="guide-step-normal-greenyard-4" data-guide-step>Return to Normal Nuketown and reach the bunker in Green House Backyard, the mannequin should be next to it. With Brain Rot or a Psych Grenade, turn a zombie to make it knock the bunker until the door opens. <strong>Note: several zombies might be needed.</strong> <ShowOnMap target="step-normal-greenyard-4" /></li>
 <li>Go to the bunker in Destroyed Nuketown and several loot should have dropped on the ground including a Mystery Perk can.</li>
 </ol></div>
 <div class="glass-card glass-amber"><h2 class="" id="wiki_masked_mannequin_head"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Masked Mannequin Head<span class="g-tag">🎭 Mannequin</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Build the Blundergat.</li>
-<li>Interact with the mannequin head with a mask found on the ground of Normal Green House Upstairs.</li>
-<li>Follow the head as it travels to the headless mannequin in Green House Backyard and kill zombies to fill the head with souls.</li>
-<li>Once done, the head will move towards another headless mannequin in front of the Yellow House garage. Kill zombies to fill it with souls.</li>
-<li>The head will then move to Yellow House Upstairs and stops in front of another headless mannequin. Kill zombies to fill it with souls.</li>
-<li>If done correctly, the floating head will attach itself to the mannequin and the mannequin will start spinning before exploding dropping high-tier loot.</li>
+<li id="guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-4" data-guide-step>Build the Blundergat. <ShowOnMap target="step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-4" /></li>
+<li id="guide-step-normal-greenup-3" data-guide-step>Interact with the mannequin head with a mask found on the ground of Normal Green House Upstairs. <ShowOnMap target="step-normal-greenup-3" /></li>
+<li id="guide-step-normal-greenyard-5" data-guide-step>Follow the head as it travels to the headless mannequin in Green House Backyard and kill zombies to fill the head with souls. <ShowOnMap target="step-normal-greenyard-5" /></li>
+<li id="guide-step-normal-yellowgarage-1" data-guide-step>Once done, the head will move towards another headless mannequin in front of the Yellow House garage. Kill zombies to fill it with souls. <ShowOnMap target="step-normal-yellowgarage-1" /></li>
+<li id="guide-step-normal-yellowup-2" data-guide-step>The head will then move to Yellow House Upstairs and stops in front of another headless mannequin. Kill zombies to fill it with souls. <ShowOnMap target="step-normal-yellowup-2" /></li>
+<li id="guide-step-normal-yellowup-3" data-guide-step>If done correctly, the floating head will attach itself to the mannequin and the mannequin will start spinning before exploding dropping high-tier loot.</li>
 </ol></div>
 <div class="glass-card glass-red"><h2 class="" id="wiki_stalking_mannequin"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Stalking Mannequin<span class="g-tag">🧟 Mannequin</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ol>
-<li>Build the Blundergat.</li>
-<li>Travel to Destroyed Nuketown and go to the Perk location in Trinity Ave., on the right side there will be a mannequin outside the map.</li>
+<li id="guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-5" data-guide-step>Build the Blundergat. <ShowOnMap target="step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-5" /></li>
+<li id="guide-step-destroyed-trinity-7" data-guide-step>Travel to Destroyed Nuketown and go to the Perk location in Trinity Ave., on the right side there will be a mannequin outside the map. <ShowOnMap target="step-destroyed-trinity-7" /></li>
 <li>Look at the mannequin for a few seconds until its head will turn away from you. It will then start teleporting and following you around the map.</li>
-<li>Return to Normal Nuketown and look for that mannequin. There are several possible locations:
+<li id="guide-step-locations-step-destroyed-trinity-8" data-guide-step>Return to Normal Nuketown and look for that mannequin. There are several possible locations:
+ <ShowOnMap target="locations-step-destroyed-trinity-8" label="Show stalking mannequin locations on map" />
 <ul>
-<li>Driver seat of the truck at Trinity Ave.</li>
-<li>Behind the fences on the left side of Pack-a-Punch in Trinity Ave.</li>
-<li>In the wooden shed behind the Mystery Box in Green House Backyard.</li>
-<li>At the top of the chimney of the left house in Trinity Ave.</li>
+<li id="guide-step-destroyed-trinity-8" data-guide-step>Driver seat of the truck at Trinity Ave.</li>
+<li id="guide-step-destroyed-pap-2" data-guide-step>Behind the fences on the left side of Pack-a-Punch in Trinity Ave.</li>
+<li id="guide-step-destroyed-greenyard-5" data-guide-step>In the wooden shed behind the Mystery Box in Green House Backyard.</li>
+<li id="guide-step-destroyed-trinity-9" data-guide-step>At the top of the chimney of the left house in Trinity Ave.</li>
 </ul>
 </li>
 <li>Shoot at the mannequin head, and if done correctly, it will drop high tier loot.</li>
 </ol></div>
 <div class="glass-card glass-violet"><h2 class="" id="wiki_purple_cyst_.28free_loot_and_perks.29"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Purple Cyst (Free Loot and Perks)<span class="g-tag">🟣 Purple Cyst</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
-<p>Once the Blundergat is built, a purple cyst will appear in Destroyed Green House Backyard, placing specific items in front of it to obtain loot and a specific free perk based on the items selected.</p>
+<p id="guide-step-destroyed-greenyard-6" data-guide-step>Once the Blundergat is built, a purple cyst will appear in Destroyed Green House Backyard, placing specific items in front of it to obtain loot and a specific free perk based on the items selected. <ShowOnMap target="step-destroyed-greenyard-6" /></p>
 <p class=""><strong>Deadshot Daiquiri</strong></p>
 <ol>
-<li>You will need to bring this 4 items and place them in front of the Cyst.
+<li id="guide-step-locations-step-destroyed-trinity-10" data-guide-step>You will need to bring this 4 items and place them in front of the Cyst.
+ <ShowOnMap target="locations-step-destroyed-trinity-10" label="Show purple cyst (free loot and perks) locations on map" />
 <ul>
-<li><strong>Head&nbsp;</strong>- In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.</li>
-<li><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
-<li><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
-<li><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
+<li id="guide-step-destroyed-trinity-10" data-guide-step><strong>Head&nbsp;</strong>- In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.</li>
+<li id="guide-step-destroyed-greenyard-7" data-guide-step><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
+<li id="guide-step-destroyed-pap-3" data-guide-step><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
+<li id="guide-step-normal-green-4" data-guide-step><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
 </ul>
 </li>
-<li>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Doppleghast called Zynvara will spawn.</li>
-<li>Once the HVT is killed, loot will drop on the ground including a Deadshot Daiquiri can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)</li>
+<li id="guide-step-destroyed-greenyard-8" data-guide-step>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Doppleghast called Zynvara will spawn. <ShowOnMap target="step-destroyed-greenyard-8" /></li>
+<li id="guide-step-destroyed-greenyard-9" data-guide-step>Once the HVT is killed, loot will drop on the ground including a Deadshot Daiquiri can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)</li>
 </ol>
 <p class=""><strong>Elemental Pop</strong></p>
 <ol>
-<li>You will need to bring this 4 items and place them in front of the Cyst.
+<li id="guide-step-locations-step-normal-truck-2" data-guide-step>You will need to bring this 4 items and place them in front of the Cyst.
+ <ShowOnMap target="locations-step-normal-truck-2" label="Show purple cyst (free loot and perks) locations on map" />
 <ul>
-<li><strong>Battery</strong> - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.</li>
-<li><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
-<li><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
-<li><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
+<li id="guide-step-normal-truck-2" data-guide-step><strong>Battery</strong> - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.</li>
+<li id="guide-step-destroyed-greenyard-10" data-guide-step><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
+<li id="guide-step-destroyed-pap-4" data-guide-step><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
+<li id="guide-step-normal-green-5" data-guide-step><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
 </ul>
 </li>
-<li>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Mimic will spawn.</li>
-<li>Once the HVT is killed, loot will drop on the ground including an Elemental Pop can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)</li>
+<li id="guide-step-destroyed-greenyard-11" data-guide-step>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Mimic will spawn. <ShowOnMap target="step-destroyed-greenyard-11" /></li>
+<li id="guide-step-destroyed-greenyard-12" data-guide-step>Once the HVT is killed, loot will drop on the ground including an Elemental Pop can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)</li>
 </ol>
 <p class=""><strong>Quick Revive</strong></p>
 <ol>
-<li>You will need to bring this 4 items and place them in front of the Cyst.
+<li id="guide-step-locations-step-normal-trinity-4" data-guide-step>You will need to bring this 4 items and place them in front of the Cyst.
+ <ShowOnMap target="locations-step-normal-trinity-4" label="Show purple cyst (free loot and perks) locations on map" />
 <ul>
-<li><strong>Dog Collar</strong> - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.</li>
-<li><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
-<li><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
+<li id="guide-step-normal-trinity-4" data-guide-step><strong>Dog Collar</strong> - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.</li>
+<li id="guide-step-destroyed-greenyard-13" data-guide-step><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
+<li id="guide-step-normal-green-6" data-guide-step><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
 </ul>
 </li>
-<li>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Rad-Hound will spawn.</li>
-<li>Once the HVT is killed, loot will drop on the ground including a Quick Revive can and 500 Salvage (before Round 15) or 1000 Salvage (after Round 15)</li>
+<li id="guide-step-destroyed-greenyard-14" data-guide-step>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Rad-Hound will spawn. <ShowOnMap target="step-destroyed-greenyard-14" /></li>
+<li id="guide-step-destroyed-greenyard-15" data-guide-step>Once the HVT is killed, loot will drop on the ground including a Quick Revive can and 500 Salvage (before Round 15) or 1000 Salvage (after Round 15)</li>
 </ol>
 <p class=""><strong>Vulture Aid</strong></p>
 <ol>
-<li>You will need to bring this 4 items and place them in front of the Cyst.
+<li id="guide-step-locations-step-normal-yellowyard-2" data-guide-step>You will need to bring this 4 items and place them in front of the Cyst.
+ <ShowOnMap target="locations-step-normal-yellowyard-2" label="Show purple cyst (free loot and perks) locations on map" />
 <ul>
-<li><strong>Bucket</strong> - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.</li>
-<li><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
-<li><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
+<li id="guide-step-normal-yellowyard-2" data-guide-step><strong>Bucket</strong> - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.</li>
+<li id="guide-step-destroyed-greenyard-16" data-guide-step><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
+<li id="guide-step-normal-green-7" data-guide-step><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.</li>
 </ul>
 </li>
-<li>Kill zombies near the cyst to feed it with souls. Once the cyst is full, more HVT zombies will spawn.</li>
+<li id="guide-step-destroyed-greenyard-17" data-guide-step>Kill zombies near the cyst to feed it with souls. Once the cyst is full, more HVT zombies will spawn. <ShowOnMap target="step-destroyed-greenyard-17" /></li>
 <li>Once the zombies are killed, loot will drop on the ground including a Vulture Aid can and 500 Salvage (before Round 15) or 1000 Salvage (after Round 15)</li>
 </ol>
 <p class=""><strong>Aether Crystal + Speed Cola</strong></p>
 <ol>
-<li>You will need to bring all 7 items and place them in front of the Cyst.
+<li id="guide-step-locations-step-destroyed-trinity-11" data-guide-step>You will need to bring all 7 items and place them in front of the Cyst.
+ <ShowOnMap target="locations-step-destroyed-trinity-11" label="Show purple cyst (free loot and perks) locations on map" />
 <ul>
-<li><strong>Head&nbsp;</strong>- In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.</li>
-<li><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
-<li><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
-<li><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.&nbsp;</li>
-<li><strong>Dog Collar</strong> - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.</li>
-<li><strong>Battery</strong> - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.</li>
-<li><strong>Bucket</strong> - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.</li>
+<li id="guide-step-destroyed-trinity-11" data-guide-step><strong>Head&nbsp;</strong>- In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.</li>
+<li id="guide-step-destroyed-greenyard-18" data-guide-step><strong>Bone</strong> - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.</li>
+<li id="guide-step-destroyed-pap-5" data-guide-step><strong>Guts</strong> - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.</li>
+<li id="guide-step-normal-green-8" data-guide-step><strong>Ham</strong> - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.&nbsp;</li>
+<li id="guide-step-normal-trinity-5" data-guide-step><strong>Dog Collar</strong> - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.</li>
+<li id="guide-step-normal-truck-3" data-guide-step><strong>Battery</strong> - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.</li>
+<li id="guide-step-normal-yellowyard-3" data-guide-step><strong>Bucket</strong> - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.</li>
 </ul>
 </li>
-<li>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Dippleghast, a HVT Mimic and a Rad-Hound will spawn.</li>
+<li id="guide-step-destroyed-greenyard-19" data-guide-step>Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Dippleghast, a HVT Mimic and a Rad-Hound will spawn. <ShowOnMap target="step-destroyed-greenyard-19" /></li>
 <li>Once all three enemies are killed, loot will drop on the ground:
 <ol>
 <li><strong>Before Round 15</strong> - Refined Aetherium Crystal (PaP 2) Speed Cola can, 1000 Salvage</li>
@@ -380,17 +390,17 @@
 </li>
 </ol></div>
 <div class="glass-card glass-green"><h2 id="wiki_power.2Dup_statues"><label class="g-toggle"><input type="checkbox" class="g-cb" checked><span class="g-title">Power-Up Statues<span class="g-tag">⚡ Statues</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
-<p>There are 7 Power-Up statues around Paradox Junction giving out the corresponding Power-Ups when shooting them, with two additional statues appearing after the first 7 are activated.</p>
+<p id="guide-step-locations-step-destroyed-pap-6" data-guide-step>There are 7 Power-Up statues around Paradox Junction giving out the corresponding Power-Ups when shooting them, with two additional statues appearing after the first 7 are activated. <ShowOnMap target="locations-step-destroyed-pap-6" label="Show power-up statues locations on map" /></p>
 <ul>
-<li><strong>Bonus Point</strong>: Inside the house debris on the left side of Pack-a-Punch in Destroyed Trinity Ave.</li>
-<li><strong>Insta-Kill</strong>: On top of the BBQ grill outside Normal Green House Backyard.&nbsp;</li>
-<li><strong>Double Points</strong>: Behind fences on the right side of the houses at the back of Destroyed Cul-De-Sac.</li>
-<li><strong>Nuke</strong>: On top of the clock tower in Normal Nuketown from Normal Green House Backyard.</li>
-<li><strong>Full Power</strong>: Near the drawers opposite of the TV in Normal Green House Upstairs.</li>
-<li><strong>Max Armor</strong>: On a bench inside the yellow bus in Destroyed Cul-De-Sac</li>
-<li><strong>Max Ammo</strong>: On top of a generator next to the Yellow House in Normal Nuketown.</li>
-<li><strong>Fire Sale</strong>: Top room of the Destroyed Yellow House when seen from the back of Cul-De-Sac. <strong>Only available after all the others have been activated.</strong></li>
-<li><strong>Random Perk:&nbsp;</strong>On top of the cabinet behind the bunk bed in Normal Yellow House Upstairs. <strong>Only available after all the others have been activated.</strong></li>
+<li id="guide-step-destroyed-pap-6" data-guide-step><strong>Bonus Point</strong>: Inside the house debris on the left side of Pack-a-Punch in Destroyed Trinity Ave.</li>
+<li id="guide-step-normal-greenyard-6" data-guide-step><strong>Insta-Kill</strong>: On top of the BBQ grill outside Normal Green House Backyard.&nbsp;</li>
+<li id="guide-step-destroyed-culdesac-1" data-guide-step><strong>Double Points</strong>: Behind fences on the right side of the houses at the back of Destroyed Cul-De-Sac.</li>
+<li id="guide-step-normal-greenyard-7" data-guide-step><strong>Nuke</strong>: On top of the clock tower in Normal Nuketown from Normal Green House Backyard.</li>
+<li id="guide-step-normal-greenup-4" data-guide-step><strong>Full Power</strong>: Near the drawers opposite of the TV in Normal Green House Upstairs.</li>
+<li id="guide-step-destroyed-culdesac-2" data-guide-step><strong>Max Armor</strong>: On a bench inside the yellow bus in Destroyed Cul-De-Sac</li>
+<li id="guide-step-normal-yellow-5" data-guide-step><strong>Max Ammo</strong>: On top of a generator next to the Yellow House in Normal Nuketown.</li>
+<li id="guide-step-destroyed-yellow-destroyed-culdesac-1" data-guide-step><strong>Fire Sale</strong>: Top room of the Destroyed Yellow House when seen from the back of Cul-De-Sac. <strong>Only available after all the others have been activated.</strong></li>
+<li id="guide-step-normal-yellowup-4" data-guide-step><strong>Random Perk:&nbsp;</strong>On top of the cabinet behind the bunk bed in Normal Yellow House Upstairs. <strong>Only available after all the others have been activated.</strong></li>
 </ul>
 <hr>
 </div><h1 class="" id="wiki_relics">Relics</h1>
@@ -412,7 +422,7 @@
           <li>Reach Round 20</li>
           <li>In Normal Nuketown, brain rot a Rad-Hound and pet it.</li>
           <li>Call in a DAWG Killstreak in Destroyed Nuketown, put it in Sentry Mode and pet it.</li>
-          <li>Travel to Normal Nuketown and interact with the green portal in Green House Upstairs.</li>
+          <li id="guide-step-normal-greenup-5" data-guide-step>Travel to Normal Nuketown and interact with the green portal in Green House Upstairs. <ShowOnMap target="step-normal-greenup-5" /></li>
           <li>Survive 4 waves while enemies only take damages from their elemental weakness.  Shadow Rift for Toxic Zombies and Rad-Hounds</li>
           <li>Light Mend for Doppelghasts</li>
           <li>Brain Rot for Shock Mimics</li>
@@ -425,10 +435,10 @@
       <div class="relic-card sinister">
         <div class="relic-title">SUMMONING KEY <span class="mini-tag">Zombies explode on death dealing damage to nearby players</span></div>
         <ol class="steps">
-          <li>Throw a grenade inside the broken outside chimney of Destroyed Green House near Cul-De-Sac. This will drop the Dog Collar of Notso.</li>
-          <li>Return to Normal Nuketown and turn a Rad-Hound using Brain Rot/Psych Grenade. If done correctly, the dog will start digging in Yellow House Backyard. The dog will then stop and you can pick up the ball in its mouth.</li>
+          <li id="guide-step-destroyed-green-destroyed-culdesac-1" data-guide-step>Throw a grenade inside the broken outside chimney of Destroyed Green House near Cul-De-Sac. This will drop the Dog Collar of Notso. <ShowOnMap target="step-destroyed-green-destroyed-culdesac-1" /></li>
+          <li id="guide-step-normal-yellowyard-4" data-guide-step>Return to Normal Nuketown and turn a Rad-Hound using Brain Rot/Psych Grenade. If done correctly, the dog will start digging in Yellow House Backyard. The dog will then stop and you can pick up the ball in its mouth. <ShowOnMap target="step-normal-yellowyard-4" /></li>
           <li>Reach Round 40 and down yourself near the fences at the very back of Green House Backyard, behind the Perk location. If done correctly, a headstone will rise from the ground. Interact with the headstone to place the ball and dog collar.</li>
-          <li>Return to Normal Nuketown and interact with the yellow portal against the wall of Yellow House Backyard.</li>
+          <li id="guide-step-normal-yellowyard-5" data-guide-step>Return to Normal Nuketown and interact with the yellow portal against the wall of Yellow House Backyard.  <ShowOnMap target="step-normal-yellowyard-5" /></li>
           <li>Survive 5 waves while killing all the enemies of each wave before the time runs out (90 seconds).</li>
         </ol>
       </div>
@@ -443,10 +453,10 @@
         <ol class="steps">
           <li>Activate Cursed Mode Tier II. Do not pick the Seed Relic for this.</li>
           <li>Equip the Mister Peeks Field Upgrade and use the Mystery Box until Mister Peeks appears. Activate the Field Upgrade to drop Mister Peeks on the ground and pick it up. This needs to be done in both versions of Nuketown.</li>
-          <li>Place Mister Peeks on the mailbox of Yellow House in both versions of Nuketown.</li>
+          <li id="guide-step-normal-yellow-destroyed-yellow-1" data-guide-step>Place Mister Peeks on the mailbox of Yellow House in both versions of Nuketown. <ShowOnMap target="step-normal-yellow-destroyed-yellow-1" /></li>
           <li>Reach Round 60.</li>
-          <li>Pick the Ultra Knife found in the mailbox of either version of Nuketown which will now be opened. Doing so will spawn a HVT Mimic. Kill the Mimic with the Knife, which can be Pack-a-Punched. Note: If you kill the Mimic with something else, it will eventually respawn the next round.</li>
-          <li>If done correctly, travel to Destroyed Nuketown and interact with the red portal that spawned in front of the Green House front balcony.</li>
+          <li id="guide-step-normal-pap-destroyed-pap-1" data-guide-step>Pick the Ultra Knife found in the mailbox of either version of Nuketown which will now be opened. Doing so will spawn a HVT Mimic. Kill the Mimic with the Knife, which can be Pack-a-Punched. Note: If you kill the Mimic with something else, it will eventually respawn the next round. <ShowOnMap target="step-normal-pap-destroyed-pap-1" /></li>
+          <li id="guide-step-destroyed-green-3" data-guide-step>If done correctly, travel to Destroyed Nuketown and interact with the red portal that spawned in front of the Green House front balcony. <ShowOnMap target="step-destroyed-green-3" /></li>
           <li>Survive 6 waves with all Armor Plates removed and with 50 less health point.</li>
         </ol>
       </div>
@@ -454,53 +464,54 @@
   </div>
 </div>
 <h1 class="" id="wiki_wall_buys_and_perk_a_colas">Wall-Buys and Perk-a-Colas</h1>
-<div class="glass-card glass-gold"><h2 class="" id="wiki_wall_buys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<div class="glass-card glass-gold"><h2 data-guide-step class="" id="wiki_wall_buys_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Wall-Buys Locations<span class="g-tag">🔫 Wall-Buys</span></span><span class="g-chev" aria-hidden="true"></span></label> <ShowOnMap target="locations-wall-buys-locations" label="Show wall-buys locations on map" /></h2>
 <ul>
-<li><strong>Velox 5.7</strong> — Destroyed Cul-De-Sac</li>
-<li><strong>Razor 9mm</strong> — Destroyed Green House Backyard</li>
-<li><strong>M10 Breacher</strong> — Destroyed Yellow House Backyard</li>
-<li><strong>Echo 12</strong> — Normal Yellow House Backyard</li>
-<li><strong>Dravec 45</strong> — Normal Green House Backyard</li>
-<li><strong>CODA 9</strong> — Normal Cul-De-Sac</li>
+<li id="guide-step-destroyed-culdesac-3" data-guide-step><strong>Velox 5.7</strong> — Destroyed Cul-De-Sac</li>
+<li id="guide-step-destroyed-greenyard-20" data-guide-step><strong>Razor 9mm</strong> — Destroyed Green House Backyard</li>
+<li id="guide-step-destroyed-yellowyard-3" data-guide-step><strong>M10 Breacher</strong> — Destroyed Yellow House Backyard</li>
+<li id="guide-step-normal-yellowyard-6" data-guide-step><strong>Echo 12</strong> — Normal Yellow House Backyard</li>
+<li id="guide-step-normal-greenyard-8" data-guide-step><strong>Dravec 45</strong> — Normal Green House Backyard</li>
+<li id="guide-step-normal-culdesac-1" data-guide-step><strong>CODA 9</strong> — Normal Cul-De-Sac</li>
 <li><strong>XR-3 Ion</strong> — TBD</li>
 <li><strong>MK.78</strong> — TBD</li>
-<li><strong>Carbon 57</strong> — Normal Trinity Ave.</li>
+<li id="guide-step-normal-trinity-6" data-guide-step><strong>Carbon 57</strong> — Normal Trinity Ave.</li>
 <li><strong>VS Recon</strong> — TBD</li>
 <li><strong>MXR-17</strong> — TBD</li>
-<li><strong>M8A1</strong> — Destroyed Trinity Ave.</li>
+<li id="guide-step-destroyed-trinity-12" data-guide-step><strong>M8A1</strong> — Destroyed Trinity Ave.</li>
 </ul></div>
-<div class="glass-card glass-green"><h2 class="" id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<div class="glass-card glass-green"><h2 data-guide-step class="" id="wiki_perks_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Perks Locations<span class="g-tag">🥤 Perks</span></span><span class="g-chev" aria-hidden="true"></span></label> <ShowOnMap target="locations-perks-locations" label="Show perks locations on map" /></h2>
+<p id="wiki_cursed_mister_peeks" data-guide-step><strong>Mister Peeks · Cursed mode:</strong> Check his possible spawn locations. Shoot him when he appears to drop an egg that can contain perks and other loot. <ShowOnMap target="cursed-mister-peeks" label="Show Mister Peeks Cursed-mode spawn locations on map" /></p>
 <p><em>Note: Der Wunderfizz appears after purchasing 4 Perk-a-Colas or after reaching Round 20.</em></p>
 <ul>
-<li><strong>Quick Revive</strong> — Destroyed Cul-De-Sac</li>
-<li><strong>Randomized Perk</strong> — Destroyed Yellow House Backyard</li>
-<li><strong>Randomized Perk</strong> — Normal Yellow House Backyard</li>
-<li><strong>Randomized Perk</strong> — Normal Yellow House Downstairs</li>
-<li><strong>Randomized Perk</strong> — Destroyed Yellow House Upstairs</li>
-<li><strong>Randomized Perk</strong> — Normal Green House Backyard</li>
-<li><strong>Randomized Perk</strong> — Destroyed Green House Backyard</li>
-<li><strong>Randomized Perk</strong> — Normal Green House Downstairs</li>
-<li><strong>Randomized Perk</strong> — Normal Cul-De-Sac</li>
-<li><strong>Randomized Perk</strong> — Normal Trinity Ave.</li>
-<li><strong>Der Wunderfizz</strong> — Destroyed Trinity Ave.</li>
+<li id="guide-step-destroyed-culdesac-4" data-guide-step><strong>Quick Revive</strong> — Destroyed Cul-De-Sac</li>
+<li id="guide-step-destroyed-yellowyard-4" data-guide-step><strong>Randomized Perk</strong> — Destroyed Yellow House Backyard</li>
+<li id="guide-step-normal-yellowyard-7" data-guide-step><strong>Randomized Perk</strong> — Normal Yellow House Backyard</li>
+<li id="guide-step-normal-yellow-6" data-guide-step><strong>Randomized Perk</strong> — Normal Yellow House Downstairs</li>
+<li id="guide-step-destroyed-yellowup-1" data-guide-step><strong>Randomized Perk</strong> — Destroyed Yellow House Upstairs</li>
+<li id="guide-step-normal-greenyard-9" data-guide-step><strong>Randomized Perk</strong> — Normal Green House Backyard</li>
+<li id="guide-step-destroyed-greenyard-21" data-guide-step><strong>Randomized Perk</strong> — Destroyed Green House Backyard</li>
+<li id="guide-step-normal-green-9" data-guide-step><strong>Randomized Perk</strong> — Normal Green House Downstairs</li>
+<li id="guide-step-normal-culdesac-2" data-guide-step><strong>Randomized Perk</strong> — Normal Cul-De-Sac</li>
+<li id="guide-step-normal-trinity-7" data-guide-step><strong>Randomized Perk</strong> — Normal Trinity Ave.</li>
+<li id="guide-step-destroyed-trinity-13" data-guide-step><strong>Der Wunderfizz</strong> — Destroyed Trinity Ave.</li>
 </ul></div>
 <h1 class="" id="wiki_miscellaneous_features">Miscellaneous Features</h1>
-<div class="glass-card glass-amber"><h2 class="" id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<div class="glass-card glass-amber"><h2 data-guide-step class="" id="wiki_armor_vests_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Armor Vests Locations<span class="g-tag">🦺 Armor</span></span><span class="g-chev" aria-hidden="true"></span></label> <ShowOnMap target="locations-armor-vests-locations" label="Show armor vests locations on map" /></h2>
 <ul>
-<li>Yellow House Backyard</li>
-<li>Green House Backyard</li>
+<li id="guide-step-normal-yellowyard-8" data-guide-step>Yellow House Backyard</li>
+<li id="guide-step-normal-greenyard-10" data-guide-step>Green House Backyard</li>
 </ul></div>
 <div class="glass-card glass-red"><h2 class="" id="wiki_traps_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Traps Locations<span class="g-tag">🪤 Traps</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ul>
-<li><strong>Electro-Shock</strong> — Yellow House Garage; Green House</li>
+<li id="guide-step-normal-green-normal-yellowgarage-1" data-guide-step><strong>Electro-Shock</strong> — Yellow House Garage; Green House <ShowOnMap target="step-normal-green-normal-yellowgarage-1" /></li>
 </ul></div>
 <div class="glass-card glass-orange"><h2 class="" id="wiki_arsenal_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Arsenal Locations<span class="g-tag">🎯 Arsenal</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
 <ul>
-<li>Cul-De-Sac</li>
+<li id="guide-step-normal-culdesac-3" data-guide-step>Cul-De-Sac <ShowOnMap target="step-normal-culdesac-3" /></li>
 </ul></div>
-<div class="glass-card glass-amber"><h2 class="" id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label></h2>
+<div class="glass-card glass-amber"><h2 data-guide-step class="" id="wiki_crafting_table_locations"><label class="g-toggle"><input type="checkbox" class="g-cb"><span class="g-title">Crafting Table Locations<span class="g-tag">🔨 Crafting</span></span><span class="g-chev" aria-hidden="true"></span></label> <ShowOnMap target="locations-crafting-table-locations" label="Show crafting table locations on map" /></h2>
 <ul>
-<li>Normal Trinity Ave.</li>
-<li>Green House Garage</li>
+<li id="guide-step-normal-trinity-8" data-guide-step>Normal Trinity Ave.</li>
+<li id="guide-step-normal-greengarage-1" data-guide-step>Green House Garage</li>
 </ul></div>
 </template>

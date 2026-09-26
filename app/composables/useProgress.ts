@@ -23,6 +23,7 @@ export function useProgress() {
     const current = run(id)
     current.section = section
     if (view) current.view = view
+    if (view === 'quick' || view === 'full') current.reader = { view, section }
     progress.value.last = { route: `/guides/${id}`, title, section }
     save()
   }
