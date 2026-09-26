@@ -28,12 +28,12 @@ This is feasible in the existing Nuxt/Vue application. The largest uncertainty i
 
 **What the current code supports**
 
-- All six map pages use [GuideArticle.vue](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/app/components/GuideArticle.vue>). Its shared toolbar is the natural place for `Quick Parts | Full Details | Map`.
-- [QuestSteps.vue](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/app/components/QuestSteps.vue>) renders 128 quick steps across 34 parts. Each step already has a stable ID. The fields in [quickQuests.json](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/app/data/quickQuests.json>) currently describe text and tools, with no location references.
+- All six map pages use [GuideArticle.vue](../app/components/GuideArticle.vue). Its shared toolbar is the natural place for `Quick Parts | Full Details | Map`.
+- [QuestSteps.vue](../app/components/QuestSteps.vue) renders 128 quick steps across 34 parts. Each step already has a stable ID. The fields in [quickQuests.json](../app/data/quickQuests.json) currently describe text and tools, with no location references.
 - Full walkthroughs are Vue templates under `app/components/guide/`. Many have section anchors, but individual list items generally need explicit IDs for returning to an exact step. A quick step can summarize several full steps, so their location links need an explicit mapping.
-- [companion.mjs](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/app/utils/companion.mjs>) currently accepts only `quick` and `full` when loading saved views. Guide navigation and scroll tracking also assume two views. Adding a button alone would leave refresh and navigation incorrect.
-- [ParadoxLocations.vue](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/app/components/ParadoxLocations.vue>) already lists RC-XD, headset and ball spawn candidates, with reference-photo links. This makes Paradox a useful pilot, including its Normal/Destroyed distinction. Those references still need coordinate verification.
-- The [desktop app](<C:/Users/MainLocalUser/Proton Drive/barnikjelleren/My files/vsCode/CodWiki/desktop-app/README.md>) loads the website in an Electron webview. A guide-integrated map should reach both products through the website; desktop input and sizing still need checking. Locally hosted assets do not by themselves make the desktop app work offline.
+- [companion.mjs](../app/utils/companion.mjs) currently accepts only `quick` and `full` when loading saved views. Guide navigation and scroll tracking also assume two views. Adding a button alone would leave refresh and navigation incorrect.
+- [ParadoxLocations.vue](../app/components/ParadoxLocations.vue) already lists RC-XD, headset and ball spawn candidates, with reference-photo links. This makes Paradox a useful pilot, including its Normal/Destroyed distinction. Those references still need coordinate verification.
+- The [desktop app](../desktop-app/README.md) loads the website in an Electron webview. A guide-integrated map should reach both products through the website; desktop input and sizing still need checking. Locally hosted assets do not by themselves make the desktop app work offline.
 
 **Approaches considered**
 
