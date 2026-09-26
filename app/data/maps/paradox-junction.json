@@ -1,0 +1,3737 @@
+{
+  "id": "paradox-junction",
+  "name": "Paradox Junction",
+  "defaultLayer": "normal",
+  "sources": [
+    {
+      "name": "Call of Duty official tactical map",
+      "url": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+    },
+    {
+      "name": "Paradox Junction quest and spawn reference photos",
+      "url": "https://codzombiesguides.com/main-quests/black-ops-7/paradox-junction/",
+      "note": "RC-XD, headset and ball candidate descriptions; room-area placement reviewed against the official atlas."
+    },
+    {
+      "name": "Community map · Cursed Mister Peeks candidates",
+      "url": "https://codzombiesguides.com/maps/paradox-junction/",
+      "note": "Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+    }
+  ],
+  "layers": [
+    {
+      "id": "normal",
+      "label": "Normal · Past",
+      "image": "/maps/paradox-junction/overview.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "The official atlas shows Future above Past. Normal/Past markers are on the lower half. All floors share an overview; upstairs objects are labelled in their descriptions."
+    },
+    {
+      "id": "destroyed",
+      "label": "Destroyed · Future",
+      "image": "/maps/paradox-junction/overview.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "The official atlas shows Future above Past. Destroyed/Future markers are on the upper half. All floors share an overview; upstairs objects are labelled in their descriptions."
+    },
+    {
+      "id": "boss",
+      "label": "Dark Heart · arena overview",
+      "image": "/maps/paradox-junction/overview.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "Boss encounter uses the same neighborhood. Highlights show the three named encounter areas on the Past overview; boss transformations and moving objects are not depicted."
+    }
+  ],
+  "locations": [
+    {
+      "id": "official-3690",
+      "label": "Arsenal",
+      "layerId": "destroyed",
+      "x": 0.53515625,
+      "y": 0.19482421875,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3691",
+      "label": "Electric Trap",
+      "layerId": "destroyed",
+      "x": 0.393798828125,
+      "y": 0.115234375,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3692",
+      "label": "Electric Trap",
+      "layerId": "destroyed",
+      "x": 0.60546875,
+      "y": 0.108154296875,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3693",
+      "label": "GobbleGum Machine",
+      "layerId": "destroyed",
+      "x": 0.439697265625,
+      "y": 0.185302734375,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3694",
+      "label": "Exfil",
+      "layerId": "destroyed",
+      "x": 0.44482421875,
+      "y": 0.294921875,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3695",
+      "label": "Pack-A-Punch",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3696",
+      "label": "Mystery Box",
+      "layerId": "destroyed",
+      "x": 0.481201171875,
+      "y": 0.165283203125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3697",
+      "label": "Mystery Box",
+      "layerId": "destroyed",
+      "x": 0.714599609375,
+      "y": 0.06640625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3698",
+      "label": "Mystery Box",
+      "layerId": "destroyed",
+      "x": 0.3125,
+      "y": 0.1376953125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3699",
+      "label": "Quick Revive",
+      "layerId": "destroyed",
+      "x": 0.4970703125,
+      "y": 0.1220703125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3700",
+      "label": "Perk-A-Cola",
+      "layerId": "destroyed",
+      "x": 0.600830078125,
+      "y": 0.119873046875,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3701",
+      "label": "Perk-A-Cola",
+      "layerId": "destroyed",
+      "x": 0.756103515625,
+      "y": 0.139892578125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3702",
+      "label": "Perk-A-Cola",
+      "layerId": "destroyed",
+      "x": 0.39453125,
+      "y": 0.120849609375,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3703",
+      "label": "Perk-A-Cola",
+      "layerId": "destroyed",
+      "x": 0.2724609375,
+      "y": 0.1142578125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3723",
+      "label": "Ammo Cache",
+      "layerId": "destroyed",
+      "x": 0.28955078125,
+      "y": 0.06201171875,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3725",
+      "label": "Ammo Cache",
+      "layerId": "destroyed",
+      "x": 0.5458984375,
+      "y": 0.32568359375,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3726",
+      "label": "Armor Vest",
+      "layerId": "destroyed",
+      "x": 0.64892578125,
+      "y": 0.052490234375,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3727",
+      "label": "Armor Vest",
+      "layerId": "destroyed",
+      "x": 0.3720703125,
+      "y": 0.161376953125,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3728",
+      "label": "Wall Buy (Velox 5.7)",
+      "layerId": "destroyed",
+      "x": 0.463134765625,
+      "y": 0.204833984375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3729",
+      "label": "M10 Breacher",
+      "layerId": "destroyed",
+      "x": 0.7255859375,
+      "y": 0.115234375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3730",
+      "label": "Razor 9mm",
+      "layerId": "destroyed",
+      "x": 0.281494140625,
+      "y": 0.0341796875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3731",
+      "label": "VS Recon",
+      "layerId": "destroyed",
+      "x": 0.41015625,
+      "y": 0.33935546875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3732",
+      "label": "M8A1",
+      "layerId": "destroyed",
+      "x": 0.601806640625,
+      "y": 0.306640625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3733",
+      "label": "MXR-17",
+      "layerId": "destroyed",
+      "x": 0.4765625,
+      "y": 0.451904296875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future"
+    },
+    {
+      "id": "official-3734",
+      "label": "Arsenal",
+      "layerId": "normal",
+      "x": 0.5380859375,
+      "y": 0.701171875,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3735",
+      "label": "Electric Trap",
+      "layerId": "normal",
+      "x": 0.609375,
+      "y": 0.61083984375,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3736",
+      "label": "Electric Trap",
+      "layerId": "normal",
+      "x": 0.39892578125,
+      "y": 0.6181640625,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3737",
+      "label": "Pack-A-Punch",
+      "layerId": "normal",
+      "x": 0.501708984375,
+      "y": 0.988525390625,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3738",
+      "label": "Exfil",
+      "layerId": "normal",
+      "x": 0.44482421875,
+      "y": 0.809326171875,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3739",
+      "label": "GobbleGum Machine",
+      "layerId": "normal",
+      "x": 0.44384765625,
+      "y": 0.68701171875,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3740",
+      "label": "Crafting Table",
+      "layerId": "normal",
+      "x": 0.5048828125,
+      "y": 0.835693359375,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3741",
+      "label": "Crafting Table",
+      "layerId": "normal",
+      "x": 0.38232421875,
+      "y": 0.6318359375,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3742",
+      "label": "Jugger-Nog",
+      "layerId": "normal",
+      "x": 0.47802734375,
+      "y": 0.64013671875,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3743",
+      "label": "Perk-A-Cola",
+      "layerId": "normal",
+      "x": 0.28466796875,
+      "y": 0.54248046875,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3744",
+      "label": "Perk-A-Cola",
+      "layerId": "normal",
+      "x": 0.404296875,
+      "y": 0.599609375,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3745",
+      "label": "Perk-A-Cola",
+      "layerId": "normal",
+      "x": 0.59619140625,
+      "y": 0.61767578125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3746",
+      "label": "Perk-A-Cola",
+      "layerId": "normal",
+      "x": 0.35693359375,
+      "y": 0.863525390625,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3766",
+      "label": "Ammo Cache",
+      "layerId": "normal",
+      "x": 0.2880859375,
+      "y": 0.56298828125,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3767",
+      "label": "Ammo Cache",
+      "layerId": "normal",
+      "x": 0.5244140625,
+      "y": 0.6708984375,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3768",
+      "label": "Ammo Cache",
+      "layerId": "normal",
+      "x": 0.7138671875,
+      "y": 0.65625,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3769",
+      "label": "Ammo Cache",
+      "layerId": "normal",
+      "x": 0.53759765625,
+      "y": 0.847412109375,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3770",
+      "label": "Armor Vest",
+      "layerId": "normal",
+      "x": 0.65185546875,
+      "y": 0.55517578125,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3771",
+      "label": "Armor Vest",
+      "layerId": "normal",
+      "x": 0.37255859375,
+      "y": 0.66455078125,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3772",
+      "label": "Wall Buy (Echo 12)",
+      "layerId": "normal",
+      "x": 0.7265625,
+      "y": 0.62353515625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3773",
+      "label": "CODA 9",
+      "layerId": "normal",
+      "x": 0.4658203125,
+      "y": 0.7080078125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3774",
+      "label": "Dravec 45",
+      "layerId": "normal",
+      "x": 0.26904296875,
+      "y": 0.61767578125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3775",
+      "label": "MK. 78",
+      "layerId": "normal",
+      "x": 0.4150390625,
+      "y": 0.841064453125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3776",
+      "label": "XR-3 ION",
+      "layerId": "normal",
+      "x": 0.6015625,
+      "y": 0.806884765625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3777",
+      "label": "Carbon 57",
+      "layerId": "normal",
+      "x": 0.47802734375,
+      "y": 0.955322265625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3778",
+      "label": "Mystery Box",
+      "layerId": "normal",
+      "x": 0.7138671875,
+      "y": 0.56591796875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3779",
+      "label": "Mystery Box",
+      "layerId": "normal",
+      "x": 0.47607421875,
+      "y": 0.67431640625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "official-3780",
+      "label": "Mystery Box",
+      "layerId": "normal",
+      "x": 0.31396484375,
+      "y": 0.64111328125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past"
+    },
+    {
+      "id": "normal-green",
+      "label": "Green House · Normal",
+      "layerId": "normal",
+      "x": 0.398,
+      "y": 0.607,
+      "category": "area",
+      "precision": "area",
+      "description": "Main rooms in the western house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-greenup",
+      "label": "Green House · upstairs · Normal",
+      "layerId": "normal",
+      "x": 0.398,
+      "y": 0.607,
+      "category": "area",
+      "precision": "area",
+      "description": "Upper floor of the western house; same top-down footprint as downstairs.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Upstairs"
+    },
+    {
+      "id": "normal-greenyard",
+      "label": "Green House Backyard · Normal",
+      "layerId": "normal",
+      "x": 0.29,
+      "y": 0.605,
+      "category": "area",
+      "precision": "area",
+      "description": "Western backyard, including the bunker and the rear perk location.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-greengarage",
+      "label": "Green House Garage · Normal",
+      "layerId": "normal",
+      "x": 0.388,
+      "y": 0.653,
+      "category": "area",
+      "precision": "area",
+      "description": "Garage adjoining the western house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-yellow",
+      "label": "Yellow House · Normal",
+      "layerId": "normal",
+      "x": 0.613,
+      "y": 0.62,
+      "category": "area",
+      "precision": "area",
+      "description": "Main rooms in the eastern house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-yellowup",
+      "label": "Yellow House · upstairs · Normal",
+      "layerId": "normal",
+      "x": 0.613,
+      "y": 0.62,
+      "category": "area",
+      "precision": "area",
+      "description": "Upper floor of the eastern house; same top-down footprint as downstairs.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Upstairs"
+    },
+    {
+      "id": "normal-yellowyard",
+      "label": "Yellow House Backyard · Normal",
+      "layerId": "normal",
+      "x": 0.704,
+      "y": 0.594,
+      "category": "area",
+      "precision": "area",
+      "description": "Eastern backyard, including the swing, headless mannequin and putting green.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-yellowgarage",
+      "label": "Yellow House Garage · Normal",
+      "layerId": "normal",
+      "x": 0.616,
+      "y": 0.643,
+      "category": "area",
+      "precision": "area",
+      "description": "Garage of the eastern house. Search the shelves for the red toolbox or controller.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-trinity",
+      "label": "Trinity Avenue · Normal",
+      "layerId": "normal",
+      "x": 0.501,
+      "y": 0.865,
+      "category": "area",
+      "precision": "area",
+      "description": "Southern street leading to Pack-a-Punch.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-pap",
+      "label": "Trinity Avenue · Pack-a-Punch end · Normal",
+      "layerId": "normal",
+      "x": 0.501708984375,
+      "y": 0.988525390625,
+      "category": "area",
+      "precision": "area",
+      "description": "Far southern end of Trinity Avenue.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-truck",
+      "label": "Truck Interior · Normal",
+      "layerId": "normal",
+      "x": 0.508,
+      "y": 0.606,
+      "category": "area",
+      "precision": "area",
+      "description": "Truck between the houses at the head of the cul-de-sac. Blundergat/Sundergat workbench is inside.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-culdesac",
+      "label": "Cul-de-Sac · Normal",
+      "layerId": "normal",
+      "x": 0.5,
+      "y": 0.6819999999999999,
+      "category": "area",
+      "precision": "area",
+      "description": "Central road and bus between the two houses.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "normal-clock",
+      "label": "Green House · clock tower · Normal",
+      "layerId": "normal",
+      "x": 0.413,
+      "y": 0.587,
+      "category": "area",
+      "precision": "area",
+      "description": "Look up towards the clock on/above the Green House. Area marker; the roof height is not shown.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Roof / above the house"
+    },
+    {
+      "id": "destroyed-green",
+      "label": "Green House · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.398,
+      "y": 0.107,
+      "category": "area",
+      "precision": "area",
+      "description": "Main rooms in the western house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-greenup",
+      "label": "Green House · upstairs · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.398,
+      "y": 0.107,
+      "category": "area",
+      "precision": "area",
+      "description": "Upper floor of the western house; same top-down footprint as downstairs.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Upstairs"
+    },
+    {
+      "id": "destroyed-greenyard",
+      "label": "Green House Backyard · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.29,
+      "y": 0.105,
+      "category": "area",
+      "precision": "area",
+      "description": "Western backyard, including the bunker and the rear perk location.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-greengarage",
+      "label": "Green House Garage · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.388,
+      "y": 0.153,
+      "category": "area",
+      "precision": "area",
+      "description": "Garage adjoining the western house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-yellow",
+      "label": "Yellow House · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.613,
+      "y": 0.12,
+      "category": "area",
+      "precision": "area",
+      "description": "Main rooms in the eastern house.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-yellowup",
+      "label": "Yellow House · upstairs · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.613,
+      "y": 0.12,
+      "category": "area",
+      "precision": "area",
+      "description": "Upper floor of the eastern house; same top-down footprint as downstairs.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Upstairs"
+    },
+    {
+      "id": "destroyed-yellowyard",
+      "label": "Yellow House Backyard · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.704,
+      "y": 0.094,
+      "category": "area",
+      "precision": "area",
+      "description": "Eastern backyard, including the swing, headless mannequin and putting green.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-yellowgarage",
+      "label": "Yellow House Garage · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.616,
+      "y": 0.143,
+      "category": "area",
+      "precision": "area",
+      "description": "Garage of the eastern house. Search the shelves for the red toolbox or controller.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-trinity",
+      "label": "Trinity Avenue · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "area",
+      "precision": "area",
+      "description": "Southern street leading to Pack-a-Punch.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-pap",
+      "label": "Trinity Avenue · Pack-a-Punch end · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "area",
+      "precision": "area",
+      "description": "Far southern end of Trinity Avenue.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-truck",
+      "label": "Truck Interior · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.508,
+      "y": 0.106,
+      "category": "area",
+      "precision": "area",
+      "description": "Truck between the houses at the head of the cul-de-sac. Blundergat/Sundergat workbench is inside.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-culdesac",
+      "label": "Cul-de-Sac · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.5,
+      "y": 0.182,
+      "category": "area",
+      "precision": "area",
+      "description": "Central road and bus between the two houses.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "destroyed-clock",
+      "label": "Green House · clock tower · Destroyed",
+      "layerId": "destroyed",
+      "x": 0.413,
+      "y": 0.087,
+      "category": "area",
+      "precision": "area",
+      "description": "Look up towards the clock on/above the Green House. Area marker; the roof height is not shown.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Roof / above the house"
+    },
+    {
+      "id": "rcxd-pap",
+      "label": "RC-XD candidate · Pack-a-Punch crates",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: against the boxes on the right of Pack-a-Punch when facing it. Room-area guidance; use the reference photos.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "rcxd-green",
+      "label": "RC-XD candidate · Green backyard fence",
+      "layerId": "destroyed",
+      "x": 0.29,
+      "y": 0.105,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: against the fence in Green House Backyard. Room-area guidance; use the reference photos.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "rcxd-yellow",
+      "label": "RC-XD candidate · Yellow garage shelf",
+      "layerId": "destroyed",
+      "x": 0.616,
+      "y": 0.143,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: on a shelf in Yellow House Garage. Room-area guidance; use the reference photos.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "headset-street",
+      "label": "Headset candidate · Cul-de-Sac trash cans",
+      "layerId": "destroyed",
+      "x": 0.5,
+      "y": 0.182,
+      "category": "quest",
+      "precision": "area",
+      "description": "With Death Perception, check the trash cans near the Green House car / left of the GobbleGum machine. Area highlight.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "headset-green",
+      "label": "Headset candidate · Green upstairs wall",
+      "layerId": "destroyed",
+      "x": 0.398,
+      "y": 0.107,
+      "category": "quest",
+      "precision": "area",
+      "description": "With Death Perception, check the coat rack / wall between the upstairs rooms. Area highlight on the house footprint.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Upstairs"
+    },
+    {
+      "id": "headset-yellow",
+      "label": "Headset candidate · Yellow backyard mannequin",
+      "layerId": "destroyed",
+      "x": 0.704,
+      "y": 0.094,
+      "category": "quest",
+      "precision": "area",
+      "description": "With Death Perception, check the hand of the headless mannequin next to the perk location. Area highlight.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "ball-crates",
+      "label": "Red ball candidate · Trinity ammunition crates",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: on top of the ammunition crates in Trinity Avenue. Area highlight; exact crate not surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "ball-roof",
+      "label": "Red ball candidate · Trinity rooftop",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: on a house roof in Trinity Avenue. The road region is highlighted; exact rooftop has not been surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "ball-yellow",
+      "label": "Red ball candidate · Yellow patio / mezzanine",
+      "layerId": "destroyed",
+      "x": 0.704,
+      "y": 0.094,
+      "category": "quest",
+      "precision": "area",
+      "description": "Possible spawn: elevated on the Yellow House patio pillar / mezzanine. Backyard area highlighted; look upwards.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-green-bunker",
+      "label": "Glowing note · Green backyard · beside bunker",
+      "layerId": "destroyed",
+      "x": 0.29,
+      "y": 0.105,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-yellow-fence",
+      "label": "Glowing note · Yellow backyard · garden fence",
+      "layerId": "destroyed",
+      "x": 0.704,
+      "y": 0.094,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-bus",
+      "label": "Glowing note · Cul-de-Sac · yellow bus",
+      "layerId": "destroyed",
+      "x": 0.5,
+      "y": 0.182,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-teleporter",
+      "label": "Glowing note · Cul-de-Sac · fence by teleporter",
+      "layerId": "destroyed",
+      "x": 0.5,
+      "y": 0.182,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-garage",
+      "label": "Glowing note · Trinity · garage beside alley",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-m8a1",
+      "label": "Glowing note · Trinity · wall beside M8A1",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-rock",
+      "label": "Glowing note · Trinity · rock near Strange Tree",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "note-exfil",
+      "label": "Glowing note · Trinity · broken fence near Exfil",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "seeds",
+      "label": "Irradiated Seeds · red toolbox",
+      "layerId": "destroyed",
+      "x": 0.616,
+      "y": 0.143,
+      "category": "quest",
+      "precision": "area",
+      "description": "Destroyed Yellow House Garage: crouch at the red toolbox on the shelf and interact.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "goggles",
+      "label": "Goggles · speaker pole",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "quest",
+      "precision": "area",
+      "description": "Shoot the top of the speaker pole outside the playable area at the Pack-a-Punch end of Trinity Avenue; use Wisp Tea to retrieve the Goggles.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "tree-normal",
+      "label": "Strange Tree · planting area",
+      "layerId": "normal",
+      "x": 0.501708984375,
+      "y": 0.988525390625,
+      "category": "quest",
+      "precision": "area",
+      "description": "Plant the Irradiated Seeds in the earth mound on the left of Pack-a-Punch when facing it. Approximate end-of-street area.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "tree-destroyed",
+      "label": "Strange Tree · grown tree",
+      "layerId": "destroyed",
+      "x": 0.501708984375,
+      "y": 0.488525390625,
+      "category": "quest",
+      "precision": "area",
+      "description": "Throw three Combat Axes at the grown tree at the Pack-a-Punch end of Trinity Avenue.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "hopscotch-normal",
+      "label": "Hopscotch / Music Box · Trinity Avenue",
+      "layerId": "normal",
+      "x": 0.501,
+      "y": 0.865,
+      "category": "quest",
+      "precision": "area",
+      "description": "Find the Twins’ hopscotch drawing and the white orb facing the Wunderfizz area. Region highlighted; exact X is not surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "hopscotch-destroyed",
+      "label": "Hopscotch X · Destroyed Trinity Avenue",
+      "layerId": "destroyed",
+      "x": 0.501,
+      "y": 0.365,
+      "category": "quest",
+      "precision": "area",
+      "description": "Stand on the large X facing the Wunderfizz area until it stays blue. Region highlighted; exact X is not surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Destroyed / Future",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "ball-trial-normal",
+      "label": "Bouncing Ball / Music Sheet · Trinity Avenue",
+      "layerId": "normal",
+      "x": 0.501,
+      "y": 0.865,
+      "category": "quest",
+      "precision": "area",
+      "description": "The ball trial uses the chalk circle in Trinity Avenue. Region highlighted; this is a different drawing from Hopscotch.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "toybox",
+      "label": "Blue Toy Box · Trinity crates",
+      "layerId": "normal",
+      "x": 0.501,
+      "y": 0.865,
+      "category": "quest",
+      "precision": "area",
+      "description": "Blue toy box against the crates near the chalk circle in Trinity Avenue. Exact crate position not surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "fireplace",
+      "label": "Fireplace · Normal Yellow House",
+      "layerId": "normal",
+      "x": 0.613,
+      "y": 0.62,
+      "category": "quest",
+      "precision": "area",
+      "description": "Place firewood in the fireplace and light it with a Molotov; escort the golden music box here. House area highlighted.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "piano",
+      "label": "Piano · Normal Green House",
+      "layerId": "normal",
+      "x": 0.398,
+      "y": 0.607,
+      "category": "quest",
+      "precision": "area",
+      "description": "Play 86756535 at the piano after collecting the notes; escort the music sheet here. House area highlighted.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "swing",
+      "label": "Twins Swing · Normal Yellow backyard",
+      "layerId": "normal",
+      "x": 0.704,
+      "y": 0.594,
+      "category": "quest",
+      "precision": "area",
+      "description": "Shoot the swing seat, then return the seat and Chalk here. Later, the yellow portal here starts the boss fight. Backyard area highlighted.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Normal / Past",
+      "floor": "Ground / outside"
+    },
+    {
+      "id": "boss-trinity",
+      "label": "Trinity Avenue · Dark Heart defense",
+      "layerId": "boss",
+      "x": 0.501,
+      "y": 0.865,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Dark Heart encounter"
+    },
+    {
+      "id": "boss-yellowyard",
+      "label": "Yellow House Backyard · Dark Heart defense",
+      "layerId": "boss",
+      "x": 0.704,
+      "y": 0.594,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Dark Heart encounter"
+    },
+    {
+      "id": "boss-greenyard",
+      "label": "Green House Backyard · Dark Heart defense",
+      "layerId": "boss",
+      "x": 0.29,
+      "y": 0.605,
+      "category": "quest",
+      "precision": "area",
+      "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+      "state": "Dark Heart encounter"
+    },
+    {
+      "id": "cursed-peeks-normal-north",
+      "label": "Mister Peeks — Normal Nuketown · north of Cul-de-Sac",
+      "layerId": "normal",
+      "x": 0.58275,
+      "y": 0.508,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "area",
+      "description": "Possible Cursed-mode Mister Peeks egg-reward spawn on an off-map roof north of Cul-de-Sac. The published spawn is cropped beyond the upper edge of the Past map image; this marker identifies the nearby search area, not the exact roof position. Look above/outside the playable boundary. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed.",
+      "source": "https://codzombiesguides.com/maps/paradox-junction/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-normal-trinity",
+      "label": "Mister Peeks — Normal Nuketown · west of Trinity Avenue",
+      "layerId": "normal",
+      "x": 0.419256,
+      "y": 0.914155,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/paradox-junction/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-destroyed-north",
+      "label": "Mister Peeks — Destroyed Nuketown · north of Cul-de-Sac",
+      "layerId": "destroyed",
+      "x": 0.543367,
+      "y": 0.037461,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/paradox-junction/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-destroyed-trinity",
+      "label": "Mister Peeks — Destroyed Nuketown · east of Trinity Avenue",
+      "layerId": "destroyed",
+      "x": 0.621731,
+      "y": 0.471134,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/paradox-junction/",
+      "state": "Cursed mode · possible spawn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "blundergat",
+      "title": "Blundergat parts and workbench",
+      "locationIds": [
+        "normal-yellowup",
+        "destroyed-yellowup",
+        "destroyed-green",
+        "destroyed-truck"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the fixed vial, sealant, sink and workbench. The random humming cyst, mannequin and goo-wall spawns are not precisely surveyed.",
+      "guideAnchor": "guide-step-normal-yellowup-1"
+    },
+    {
+      "id": "sundergat",
+      "title": "Sundergat · workbench in both eras",
+      "locationIds": [
+        "destroyed-truck",
+        "normal-truck"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-truck-2"
+    },
+    {
+      "id": "twins-swing",
+      "title": "Twins Swing · seat, controller candidates and Chalk",
+      "locationIds": [
+        "swing",
+        "rcxd-pap",
+        "rcxd-green",
+        "rcxd-yellow",
+        "destroyed-trinity"
+      ],
+      "kind": "sequence",
+      "description": "Choose the controller that spawned, complete its race to the Trinity garage, then return the Chalk and seat to the Normal swing.",
+      "guideAnchor": "guide-step-swing-1"
+    },
+    {
+      "id": "rcxd-candidates",
+      "title": "RC-XD controller · possible spawns",
+      "locationIds": [
+        "rcxd-pap",
+        "rcxd-green",
+        "rcxd-yellow"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-rcxd-pap-1"
+    },
+    {
+      "id": "seeds-tree",
+      "title": "Seeds → plant the tree",
+      "locationIds": [
+        "seeds",
+        "tree-normal"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-seeds-1"
+    },
+    {
+      "id": "tree-fireplace",
+      "title": "Grown tree → fireplace",
+      "locationIds": [
+        "tree-destroyed",
+        "fireplace"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-tree-destroyed-1"
+    },
+    {
+      "id": "hopscotch",
+      "title": "Hopscotch · activate X and start trial",
+      "locationIds": [
+        "hopscotch-destroyed",
+        "hopscotch-normal"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-trinity-4"
+    },
+    {
+      "id": "music-box",
+      "title": "Music Box → fireplace",
+      "locationIds": [
+        "hopscotch-normal",
+        "fireplace"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-hopscotch-normal-fireplace-2"
+    },
+    {
+      "id": "piano-teacher",
+      "title": "Piano Teacher → Normal piano",
+      "locationIds": [
+        "destroyed-greenyard",
+        "destroyed-green",
+        "piano"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-greenyard-2"
+    },
+    {
+      "id": "notes-piano",
+      "title": "Eight glowing-note landmarks → piano",
+      "locationIds": [
+        "note-green-bunker",
+        "note-yellow-fence",
+        "note-bus",
+        "note-teleporter",
+        "note-garage",
+        "note-m8a1",
+        "note-rock",
+        "note-exfil",
+        "piano"
+      ],
+      "kind": "sequence",
+      "description": "All eight landmark areas are shown. Collect in the random blink-count order, not the order of markers. Exact wall positions are not surveyed; the Normal piano is on its own layer.",
+      "guideAnchor": "guide-step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-2"
+    },
+    {
+      "id": "ball-trial",
+      "title": "Floating zombies → ball trial → piano",
+      "locationIds": [
+        "destroyed-greenyard",
+        "destroyed-yellowyard",
+        "ball-trial-normal",
+        "piano"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-greenyard-destroyed-yellowyard-1"
+    },
+    {
+      "id": "goggles",
+      "title": "Goggles · Pack-a-Punch speaker pole",
+      "locationIds": [
+        "goggles"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-goggles-2"
+    },
+    {
+      "id": "headset-candidates",
+      "title": "Headset · possible spawns",
+      "locationIds": [
+        "headset-street",
+        "headset-green",
+        "headset-yellow"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-headset-street-1"
+    },
+    {
+      "id": "headset-toybox",
+      "title": "Headset candidates → blue toy box",
+      "locationIds": [
+        "headset-street",
+        "headset-green",
+        "headset-yellow",
+        "toybox"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-headset-street-1"
+    },
+    {
+      "id": "red-ball-candidates",
+      "title": "Red ball · possible spawns",
+      "locationIds": [
+        "ball-crates",
+        "ball-roof",
+        "ball-yellow"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-ball-crates-1"
+    },
+    {
+      "id": "four-square",
+      "title": "Red ball candidates → Four Square",
+      "locationIds": [
+        "ball-crates",
+        "ball-roof",
+        "ball-yellow",
+        "destroyed-greenyard",
+        "normal-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-greenyard-4"
+    },
+    {
+      "id": "cymbals",
+      "title": "Cymbals → blue toy box",
+      "locationIds": [
+        "normal-greenyard",
+        "toybox"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-greenyard-toybox-2"
+    },
+    {
+      "id": "clock",
+      "title": "Clock tower · Destroyed hands → Normal",
+      "locationIds": [
+        "destroyed-clock",
+        "normal-clock"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-clock-2"
+    },
+    {
+      "id": "twins-scenes",
+      "title": "Twins scenes → swing portal",
+      "locationIds": [
+        "piano",
+        "toybox",
+        "fireplace",
+        "swing"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-piano-toybox-fireplace-swing-2"
+    },
+    {
+      "id": "dark-heart",
+      "title": "Dark Heart · three defense areas",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-4"
+    },
+    {
+      "id": "step-normal-yellowup-1",
+      "title": "The Sealant: In Normal Nuketown, go to the bedroom in Yellow House Upstairs and get it from the bottom of the shelf near t…",
+      "locationIds": [
+        "normal-yellowup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowup-1",
+      "description": "The Sealant: In Normal Nuketown, go to the bedroom in Yellow House Upstairs and get it from the bottom of the shelf near the window."
+    },
+    {
+      "id": "step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-1",
+      "title": "The Barrel : Find the Cyst that is emitting a humming sound in Destroyed Nuketown and feed it souls until it drops The Ham…",
+      "locationIds": [
+        "destroyed-culdesac",
+        "destroyed-green",
+        "destroyed-greenyard",
+        "destroyed-yellow",
+        "destroyed-yellowyard",
+        "destroyed-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-1",
+      "description": "The Barrel : Find the Cyst that is emitting a humming sound in Destroyed Nuketown and feed it souls until it drops The Hammer."
+    },
+    {
+      "id": "step-destroyed-yellowup-destroyed-green-1",
+      "title": "Get the SO 3 Vial found on the desk in Destroyed Yellow House Upstairs then interact with the kitchen sink in Destroyed Gr…",
+      "locationIds": [
+        "destroyed-yellowup",
+        "destroyed-green"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-yellowup-destroyed-green-1",
+      "description": "Get the SO 3 Vial found on the desk in Destroyed Yellow House Upstairs then interact with the kitchen sink in Destroyed Green House to get the H 2 SO 4 Vial. The Vial can be used 3 times before the need to refill it at the sink."
+    },
+    {
+      "id": "step-destroyed-yellowyard-1",
+      "title": "Behind the swing in Yellow House Backyard",
+      "locationIds": [
+        "destroyed-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellowyard-1",
+      "description": "Behind the swing in Yellow House Backyard"
+    },
+    {
+      "id": "step-destroyed-greengarage-1",
+      "title": "Inside the garage of Green House, next to the Crafting Table.",
+      "locationIds": [
+        "destroyed-greengarage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greengarage-1",
+      "description": "Inside the garage of Green House, next to the Crafting Table."
+    },
+    {
+      "id": "step-destroyed-trinity-1",
+      "title": "Near the big garage door in Trinity Ave.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-1",
+      "description": "Near the big garage door in Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-greenyard-1",
+      "title": "In Green House Backyard, behind the Perk location.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-1",
+      "description": "In Green House Backyard, behind the Perk location."
+    },
+    {
+      "id": "step-normal-culdesac-normal-green-normal-greenyard-normal-yellow-normal-yello-1",
+      "title": "Return to Normal Nuketown and pour the H 2 SO 4 Vial on the corresponding mannequin.",
+      "locationIds": [
+        "normal-culdesac",
+        "normal-green",
+        "normal-greenyard",
+        "normal-yellow",
+        "normal-yellowyard",
+        "normal-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-culdesac-normal-green-normal-greenyard-normal-yellow-normal-yello-1",
+      "description": "Return to Normal Nuketown and pour the H 2 SO 4 Vial on the corresponding mannequin."
+    },
+    {
+      "id": "step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-2",
+      "title": "Go to Destroyed Nuketown, and if done correctly, the mannequin will have dissolved and dropped The Hammer.",
+      "locationIds": [
+        "destroyed-culdesac",
+        "destroyed-green",
+        "destroyed-greenyard",
+        "destroyed-yellow",
+        "destroyed-yellowyard",
+        "destroyed-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-2",
+      "description": "Go to Destroyed Nuketown, and if done correctly, the mannequin will have dissolved and dropped The Hammer."
+    },
+    {
+      "id": "step-destroyed-yellowgarage-destroyed-green-destroyed-trinity-1",
+      "title": "In Destroyed Nuketown, find black goo on a wall that is emitting a humming sound. There are multiple locations.",
+      "locationIds": [
+        "destroyed-yellowgarage",
+        "destroyed-green",
+        "destroyed-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-yellowgarage-destroyed-green-destroyed-trinity-1",
+      "description": "In Destroyed Nuketown, find black goo on a wall that is emitting a humming sound. There are multiple locations."
+    },
+    {
+      "id": "step-normal-yellowgarage-normal-green-normal-trinity-1",
+      "title": "Return to Normal Nuketown, find the corresponding wall and throw an explosive to the wall to create a hole.",
+      "locationIds": [
+        "normal-yellowgarage",
+        "normal-green",
+        "normal-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellowgarage-normal-green-normal-trinity-1",
+      "description": "Return to Normal Nuketown, find the corresponding wall and throw an explosive to the wall to create a hole."
+    },
+    {
+      "id": "step-destroyed-truck-1",
+      "title": "Melee the workbench in Destroyed Truck Interior to open and build the Blundergat.",
+      "locationIds": [
+        "destroyed-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-truck-1",
+      "description": "Melee the workbench in Destroyed Truck Interior to open and build the Blundergat."
+    },
+    {
+      "id": "step-destroyed-truck-2",
+      "title": "After a few rounds in Destroyed Nuketown, a Tortured Zombie will spawn surrounded by a fire tornado. Bring the Tortured Zo…",
+      "locationIds": [
+        "destroyed-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-truck-2",
+      "description": "After a few rounds in Destroyed Nuketown, a Tortured Zombie will spawn surrounded by a fire tornado. Bring the Tortured Zombie next to the bench and kill it with the Blundergat. Note: if the Tortured Zombie is near other zombies, it will weaken and die after its health bar is depleted."
+    },
+    {
+      "id": "step-destroyed-truck-3",
+      "title": "Wait until the next round, then repeat the above step.",
+      "locationIds": [
+        "destroyed-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-truck-3",
+      "description": "Wait until the next round, then repeat the above step."
+    },
+    {
+      "id": "step-destroyed-truck-4",
+      "title": "In the next round, a third Tortured Zombie will spawn, but will transform into a Mimic when approaching. Repeat the proces…",
+      "locationIds": [
+        "destroyed-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-truck-4",
+      "description": "In the next round, a third Tortured Zombie will spawn, but will transform into a Mimic when approaching. Repeat the process and kill it near the bench with the Blundergat."
+    },
+    {
+      "id": "step-normal-truck-1",
+      "title": "Travel back to Normal Nuketown and melee the workbench before placing the Blundergat.",
+      "locationIds": [
+        "normal-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-truck-1",
+      "description": "Travel back to Normal Nuketown and melee the workbench before placing the Blundergat."
+    },
+    {
+      "id": "step-destroyed-truck-5",
+      "title": "Return to Destroyed Nuketown, and melee the workbench again to pick up the Sundergat.",
+      "locationIds": [
+        "destroyed-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-truck-5",
+      "description": "Return to Destroyed Nuketown, and melee the workbench again to pick up the Sundergat."
+    },
+    {
+      "id": "step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-2",
+      "title": "Obtain the Blundergat and upgrade it to the Sundergat.",
+      "locationIds": [
+        "normal-yellowup",
+        "destroyed-yellowup",
+        "destroyed-green",
+        "destroyed-truck"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-2",
+      "description": "Obtain the Blundergat and upgrade it to the Sundergat."
+    },
+    {
+      "id": "step-swing-1",
+      "title": "In Normal Nuketown, shoot at the swing in the Yellow House Backyard and pick up the Swing Seat.",
+      "locationIds": [
+        "swing"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-swing-1",
+      "description": "In Normal Nuketown, shoot at the swing in the Yellow House Backyard and pick up the Swing Seat."
+    },
+    {
+      "id": "step-rcxd-pap-1",
+      "title": "Against the boxes on the right side of Pack-a-Punch when looking at it.",
+      "locationIds": [
+        "rcxd-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rcxd-pap-1",
+      "description": "Against the boxes on the right side of Pack-a-Punch when looking at it."
+    },
+    {
+      "id": "step-rcxd-green-1",
+      "title": "Against a fence at Green House Backyard",
+      "locationIds": [
+        "rcxd-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rcxd-green-1",
+      "description": "Against a fence at Green House Backyard"
+    },
+    {
+      "id": "step-rcxd-yellow-1",
+      "title": "On one of the shelves in the garage of Yellow House",
+      "locationIds": [
+        "rcxd-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rcxd-yellow-1",
+      "description": "On one of the shelves in the garage of Yellow House"
+    },
+    {
+      "id": "step-destroyed-trinity-2",
+      "title": "Interact with it to trigger a race. Drive the RC-XD and follow the ramps and jump over the debris to enter the garage. The…",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-2",
+      "description": "Interact with it to trigger a race. Drive the RC-XD and follow the ramps and jump over the debris to enter the garage. Then drive to the door and detonate it."
+    },
+    {
+      "id": "step-destroyed-trinity-3",
+      "title": "Walk into the garage which will trigger a brief scene with a corpse turning into ash. Pick up the Chalk that will spawn sh…",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-3",
+      "description": "Walk into the garage which will trigger a brief scene with a corpse turning into ash. Pick up the Chalk that will spawn shortly after."
+    },
+    {
+      "id": "step-swing-2",
+      "title": "Go to the Yellow House Backyard and interact with the swing chains to place back the Swing Seat and the Chalk. This should…",
+      "locationIds": [
+        "swing"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-swing-2",
+      "description": "Go to the Yellow House Backyard and interact with the swing chains to place back the Swing Seat and the Chalk. This should trigger a scene with the Twins."
+    },
+    {
+      "id": "step-seeds-1",
+      "title": "While in Destroyed Nuketown, go to the Yellow House Garage and crounch in front of the red toolbox on a shelf. Interact wi…",
+      "locationIds": [
+        "seeds"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-seeds-1",
+      "description": "While in Destroyed Nuketown, go to the Yellow House Garage and crounch in front of the red toolbox on a shelf. Interact with the toolbox to open it and collect the Irradiated Seeds."
+    },
+    {
+      "id": "step-tree-normal-1",
+      "title": "Return to Normal Nuketown and go to Trinity Ave. There will an earth mound on the garden on the left side of Pack-a-Punch …",
+      "locationIds": [
+        "tree-normal"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-tree-normal-1",
+      "description": "Return to Normal Nuketown and go to Trinity Ave. There will an earth mound on the garden on the left side of Pack-a-Punch when looking at it. Place the Irradiated Seeds which will turn into a small there. Kill zombies with either version of the Blundergat to fill the tree with souls."
+    },
+    {
+      "id": "step-tree-destroyed-1",
+      "title": "Travel back to Destroyed Nuketown and obtain three Combat Axes. Throw each Combat Axe at the grown tree at Trinity Ave. to…",
+      "locationIds": [
+        "tree-destroyed"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-tree-destroyed-1",
+      "description": "Travel back to Destroyed Nuketown and obtain three Combat Axes. Throw each Combat Axe at the grown tree at Trinity Ave. to collect a total of three Strange Firewood."
+    },
+    {
+      "id": "step-fireplace-1",
+      "title": "Return to Normal Nuketown and place the Strange Firewood inside the fireplace of the Yellow House then throw a Molotov to …",
+      "locationIds": [
+        "fireplace"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-fireplace-1",
+      "description": "Return to Normal Nuketown and place the Strange Firewood inside the fireplace of the Yellow House then throw a Molotov to lit the fireplace on fire."
+    },
+    {
+      "id": "step-destroyed-trinity-4",
+      "title": "While in Destroyed Nuketown, locate a massive X which can be found on the ground in Trinity Ave, facing the Wunderfizz mac…",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-4",
+      "description": "While in Destroyed Nuketown, locate a massive X which can be found on the ground in Trinity Ave, facing the Wunderfizz machine. Step on the X until it glows blue and remains blue when you leave."
+    },
+    {
+      "id": "step-normal-trinity-1",
+      "title": "Travel to Normal Nuketown and return to the same location in Trinity Ave., a small scene should play with the Twins drawin…",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-1",
+      "description": "Travel to Normal Nuketown and return to the same location in Trinity Ave., a small scene should play with the Twins drawing a hopscotch game on the ground."
+    },
+    {
+      "id": "step-hopscotch-normal-1",
+      "title": "Interact with the white orb in front of the game to start the trial.",
+      "locationIds": [
+        "hopscotch-normal"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-hopscotch-normal-1",
+      "description": "Interact with the white orb in front of the game to start the trial."
+    },
+    {
+      "id": "step-hopscotch-normal-2",
+      "title": "While in third person mode, you will need to jump from 1 to 12 then 12 to 1 while avoiding the black smoke. Note: if you f…",
+      "locationIds": [
+        "hopscotch-normal"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-hopscotch-normal-2",
+      "description": "While in third person mode, you will need to jump from 1 to 12 then 12 to 1 while avoiding the black smoke. Note: if you fail the step, the hopscotch will glow red and you'll need to wait 30s to interact with the white orb again."
+    },
+    {
+      "id": "step-hopscotch-normal-fireplace-2",
+      "title": "A golden music box will spawn in the middle of the hopscotch. With the Sundergat , kill zombies to fill the box with souls…",
+      "locationIds": [
+        "hopscotch-normal",
+        "fireplace"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-hopscotch-normal-fireplace-2",
+      "description": "A golden music box will spawn in the middle of the hopscotch. With the Sundergat , kill zombies to fill the box with souls and escort it to the fireplace at Yellow House."
+    },
+    {
+      "id": "step-destroyed-greenyard-2",
+      "title": "While in Destroyed Nuketown, travel to Green House Backyard and wait there until a zombie called Piano Teacher will spawn …",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-2",
+      "description": "While in Destroyed Nuketown, travel to Green House Backyard and wait there until a zombie called Piano Teacher will spawn from outside the map."
+    },
+    {
+      "id": "step-destroyed-greenyard-3",
+      "title": "Turn the Piano Teacher with either Brain Rot or a Psych Grenade and follow the Piano Teacher in Green House.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-3",
+      "description": "Turn the Piano Teacher with either Brain Rot or a Psych Grenade and follow the Piano Teacher in Green House."
+    },
+    {
+      "id": "step-destroyed-greenyard-piano-2",
+      "title": "Quickly teleport back to Normal Nuketown and the Piano Teacher should start interacting with the piano before exploding.",
+      "locationIds": [
+        "destroyed-greenyard",
+        "piano"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-greenyard-piano-2",
+      "description": "Quickly teleport back to Normal Nuketown and the Piano Teacher should start interacting with the piano before exploding."
+    },
+    {
+      "id": "step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-2",
+      "title": "Travel back to Destroyed Nuketown and find 8 notes glowing blue around the map.",
+      "locationIds": [
+        "note-green-bunker",
+        "note-yellow-fence",
+        "note-bus",
+        "note-teleporter",
+        "note-garage",
+        "note-m8a1",
+        "note-rock",
+        "note-exfil"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-2",
+      "description": "Travel back to Destroyed Nuketown and find 8 notes glowing blue around the map."
+    },
+    {
+      "id": "step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-3",
+      "title": "Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in tha…",
+      "locationIds": [
+        "note-green-bunker",
+        "note-yellow-fence",
+        "note-bus",
+        "note-teleporter",
+        "note-garage",
+        "note-m8a1",
+        "note-rock",
+        "note-exfil"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-note-green-bunker-note-yellow-fence-note-bus-note-teleporter-note-garage-3",
+      "description": "Each note will blink a specific amount of times from 1 blink to 8 blinks, forming an order. Interact with each note in that order."
+    },
+    {
+      "id": "step-piano-1",
+      "title": "Return to Normal Nuketown and in the Green House. The notes will now appear on the wall in the same order. Interact with t…",
+      "locationIds": [
+        "piano"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-piano-1",
+      "description": "Return to Normal Nuketown and in the Green House. The notes will now appear on the wall in the same order. Interact with the piano to play the notes in the order seen on the wall. Note: the order is always 86756535."
+    },
+    {
+      "id": "step-destroyed-greenyard-destroyed-yellowyard-1",
+      "title": "Travel back to Destroyed Nuketown. Outside the map there will be three floating zombies in either Green House Backyard or …",
+      "locationIds": [
+        "destroyed-greenyard",
+        "destroyed-yellowyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-greenyard-destroyed-yellowyard-1",
+      "description": "Travel back to Destroyed Nuketown. Outside the map there will be three floating zombies in either Green House Backyard or Yellow House Backyard, kill all three zombies to free their souls."
+    },
+    {
+      "id": "step-destroyed-trinity-5",
+      "title": "The souls will now appear above the massive X on ground in Trinity Ave.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-5",
+      "description": "The souls will now appear above the massive X on ground in Trinity Ave."
+    },
+    {
+      "id": "step-normal-trinity-2",
+      "title": "Return to Trinity Ave. in Normal Nuketown and you'll see the Twins drawing a circle. A glowing ball will then appear in th…",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-2",
+      "description": "Return to Trinity Ave. in Normal Nuketown and you'll see the Twins drawing a circle. A glowing ball will then appear in the center."
+    },
+    {
+      "id": "step-ball-trial-normal-1",
+      "title": "Interact with the ball to start the trial.",
+      "locationIds": [
+        "ball-trial-normal"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-ball-trial-normal-1",
+      "description": "Interact with the ball to start the trial."
+    },
+    {
+      "id": "step-ball-trial-normal-2",
+      "title": "The ball will start bouncing and lifting up zombies in the air. You need to kill every zombie in the air before the ball h…",
+      "locationIds": [
+        "ball-trial-normal"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-ball-trial-normal-2",
+      "description": "The ball will start bouncing and lifting up zombies in the air. You need to kill every zombie in the air before the ball hits the ground."
+    },
+    {
+      "id": "step-ball-trial-normal-piano-2",
+      "title": "If done correctly, a glowing music sheet will appear at the center of the circle. With the Sundergat , kill zombies to fil…",
+      "locationIds": [
+        "ball-trial-normal",
+        "piano"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-ball-trial-normal-piano-2",
+      "description": "If done correctly, a glowing music sheet will appear at the center of the circle. With the Sundergat , kill zombies to fill the sheet with souls and escort it to the piano at Green House."
+    },
+    {
+      "id": "step-destroyed-pap-1",
+      "title": "While in Destroyed Nuketown, go to the Pack-a-Punch area in Trinity Ave.",
+      "locationIds": [
+        "destroyed-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-1",
+      "description": "While in Destroyed Nuketown, go to the Pack-a-Punch area in Trinity Ave."
+    },
+    {
+      "id": "step-goggles-2",
+      "title": "There will be a pole with a lot of speakers outside the map. Shoot the very top to drop the Goggles on the ground then use…",
+      "locationIds": [
+        "goggles"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-goggles-2",
+      "description": "There will be a pole with a lot of speakers outside the map. Shoot the very top to drop the Goggles on the ground then use Wisp Tea to bring the Goggles into the map to collect them."
+    },
+    {
+      "id": "step-headset-street-1",
+      "title": "Next to trash cans in Cul-De-Sac near the car at Green House",
+      "locationIds": [
+        "headset-street"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-headset-street-1",
+      "description": "Next to trash cans in Cul-De-Sac near the car at Green House"
+    },
+    {
+      "id": "step-headset-green-1",
+      "title": "The coat rack on the wall in the bedroom of Green House Upstairs",
+      "locationIds": [
+        "headset-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-headset-green-1",
+      "description": "The coat rack on the wall in the bedroom of Green House Upstairs"
+    },
+    {
+      "id": "step-headset-yellow-1",
+      "title": "In the hand of a headless mannequin next to the perk location in Yellow House Backyard",
+      "locationIds": [
+        "headset-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-headset-yellow-1",
+      "description": "In the hand of a headless mannequin next to the perk location in Yellow House Backyard"
+    },
+    {
+      "id": "step-toybox-1",
+      "title": "Travel back to Normal Nuketown and interact with the blue toy box against the crates near the chalk circle.",
+      "locationIds": [
+        "toybox"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-toybox-1",
+      "description": "Travel back to Normal Nuketown and interact with the blue toy box against the crates near the chalk circle."
+    },
+    {
+      "id": "step-destroyed-greenyard-4",
+      "title": "Return to Destroyed Nuketown and reach Green House Backyard where a massive X will appear on the ground.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-4",
+      "description": "Return to Destroyed Nuketown and reach Green House Backyard where a massive X will appear on the ground."
+    },
+    {
+      "id": "step-ball-crates-1",
+      "title": "On top of munition crates in Trinity Ave.",
+      "locationIds": [
+        "ball-crates"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-ball-crates-1",
+      "description": "On top of munition crates in Trinity Ave."
+    },
+    {
+      "id": "step-ball-roof-1",
+      "title": "On top of a house in Trinity Ave.",
+      "locationIds": [
+        "ball-roof"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-ball-roof-1",
+      "description": "On top of a house in Trinity Ave."
+    },
+    {
+      "id": "step-ball-yellow-1",
+      "title": "On top of the Yellow House mezzanine",
+      "locationIds": [
+        "ball-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-ball-yellow-1",
+      "description": "On top of the Yellow House mezzanine"
+    },
+    {
+      "id": "step-ball-crates-ball-roof-ball-yellow-destroyed-greenyard-normal-greenyard-2",
+      "title": "Shoot the red ball to drop it on the ground then shoot it to make it move all the way to the massive X which should make t…",
+      "locationIds": [
+        "ball-crates",
+        "ball-roof",
+        "ball-yellow",
+        "destroyed-greenyard",
+        "normal-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-ball-crates-ball-roof-ball-yellow-destroyed-greenyard-normal-greenyard-2",
+      "description": "Shoot the red ball to drop it on the ground then shoot it to make it move all the way to the massive X which should make the X glow."
+    },
+    {
+      "id": "step-normal-greenyard-1",
+      "title": "Teleport back to Normal Nuketown and return to Green House Backyard to find the Twins drawing a Four Square.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-1",
+      "description": "Teleport back to Normal Nuketown and return to Green House Backyard to find the Twins drawing a Four Square."
+    },
+    {
+      "id": "step-normal-greenyard-2",
+      "title": "The ball will spawn within the squares, interact with it to start the trial.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-2",
+      "description": "The ball will spawn within the squares, interact with it to start the trial."
+    },
+    {
+      "id": "step-normal-greenyard-3",
+      "title": "With your melee weapon make the red ball bounce into a square then into another one. Continue until the timer ends. Note: …",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-3",
+      "description": "With your melee weapon make the red ball bounce into a square then into another one. Continue until the timer ends. Note: the ball can only bounce once in a square before moving to the next."
+    },
+    {
+      "id": "step-normal-greenyard-toybox-2",
+      "title": "If done correctly, glowing pair of cymbals will appear above the Four Square. With the Sundergat , kill zombies to fill th…",
+      "locationIds": [
+        "normal-greenyard",
+        "toybox"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-greenyard-toybox-2",
+      "description": "If done correctly, glowing pair of cymbals will appear above the Four Square. With the Sundergat , kill zombies to fill the cymbals with souls and escort the to the toy box at Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-clock-2",
+      "title": "In Destroyed Nuketown, shoot at the crumbled clock to move both the white and red hands on 0.",
+      "locationIds": [
+        "destroyed-clock"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-clock-2",
+      "description": "In Destroyed Nuketown, shoot at the crumbled clock to move both the white and red hands on 0."
+    },
+    {
+      "id": "step-destroyed-clock-normal-clock-2",
+      "title": "Start to teleport back to Normal Nuketown, but just before the animation ends, shoot the red hand once.",
+      "locationIds": [
+        "destroyed-clock",
+        "normal-clock"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-clock-normal-clock-2",
+      "description": "Start to teleport back to Normal Nuketown, but just before the animation ends, shoot the red hand once."
+    },
+    {
+      "id": "step-piano-toybox-fireplace-swing-2",
+      "title": "This will trigger a scene with the orb moving to the piano turning into the Twins, then move to the Toy Box, then the fire…",
+      "locationIds": [
+        "piano",
+        "toybox",
+        "fireplace",
+        "swing"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-piano-toybox-fireplace-swing-2",
+      "description": "This will trigger a scene with the orb moving to the piano turning into the Twins, then move to the Toy Box, then the fireplace."
+    },
+    {
+      "id": "step-swing-3",
+      "title": "The Twins will finally appear at the swing in Yellow House Backyard with a yellow portal that will start the boss fight.",
+      "locationIds": [
+        "swing"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-swing-3",
+      "description": "The Twins will finally appear at the swing in Yellow House Backyard with a yellow portal that will start the boss fight."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-4",
+      "title": "The Dark Heart will spawn three massive pile of black goo around the map. One a Trinity Ave., one at Yellow House Backyard…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-4",
+      "description": "The Dark Heart will spawn three massive pile of black goo around the map. One a Trinity Ave., one at Yellow House Backyard and one at Green House Backyard."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-5",
+      "title": "Each pile of goo will have a cyst attached near it, kill zombies to fill each cyst with souls. If done correctly, the blac…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-5",
+      "description": "Each pile of goo will have a cyst attached near it, kill zombies to fill each cyst with souls. If done correctly, the black goo will disappear revealing an object (Piano, Music Box, Fireplace)"
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-6",
+      "title": "One of the three object will have a Concentration Field around it. Defend the field from zombies and enemies before they c…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-6",
+      "description": "One of the three object will have a Concentration Field around it. Defend the field from zombies and enemies before they can destroy it. Once it is done, the field will move to the next object."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-7",
+      "title": "Once all three objects are done, the Dark Heart will be damageable in glowing orange areas. The Heart will periodically co…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-7",
+      "description": "Once all three objects are done, the Dark Heart will be damageable in glowing orange areas. The Heart will periodically conjure meteors as well as fire tornadoes. The tornadoes can be redirected by throwing Molotovs in their paths."
+    },
+    {
+      "id": "step-normal-green-1",
+      "title": "Once a third of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power…",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-1",
+      "description": "Once a third of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-8",
+      "title": "The objects are again covered with black goo with a green orb floating above them. Kill all the zombies that spawn from th…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-8",
+      "description": "The objects are again covered with black goo with a green orb floating above them. Kill all the zombies that spawn from the green orb until the black goo disappears."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-9",
+      "title": "Once again, a Concentration Field will appear around one object and move to the others once successfully defended. While d…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-9",
+      "description": "Once again, a Concentration Field will appear around one object and move to the others once successfully defended. While defending, the Dark Heart may conjure meteors and fire tornadoes to attack the players. Repeat for all three objects to be able to damage the Dark Heart once more."
+    },
+    {
+      "id": "step-normal-green-2",
+      "title": "Similar to last phase, once two thirds of the Heart's health bar is depleted, it will go into immune state again, and a Ma…",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-2",
+      "description": "Similar to last phase, once two thirds of the Heart's health bar is depleted, it will go into immune state again, and a Max Ammo and Max Armor power-up will spawn in front of Green House."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-10",
+      "title": "The objects are again covered with black goo. A Tortured Zombie will appear in the middle of the map, bring it to one of t…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-10",
+      "description": "The objects are again covered with black goo. A Tortured Zombie will appear in the middle of the map, bring it to one of the objects and kill it to remove the goo. Note: Similar to the previous steps, the Tortured Zombie's health will gradually be drained when zombies are close by."
+    },
+    {
+      "id": "step-boss-trinity-boss-yellowyard-boss-greenyard-11",
+      "title": "Once again, a Concentration Field will appear around one object and move to the others once successfully defended. Similar…",
+      "locationIds": [
+        "boss-trinity",
+        "boss-yellowyard",
+        "boss-greenyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-boss-trinity-boss-yellowyard-boss-greenyard-11",
+      "description": "Once again, a Concentration Field will appear around one object and move to the others once successfully defended. Similar to the second phase, repeat for all three objects to be able to damage the Dark Heart once more."
+    },
+    {
+      "id": "step-normal-yellow-1",
+      "title": "Normal Yellow House, on a nightstand upstair.",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-1",
+      "description": "Normal Yellow House, on a nightstand upstair."
+    },
+    {
+      "id": "step-destroyed-trinity-6",
+      "title": "Under a truck in Destroyed Trinity Ave.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-6",
+      "description": "Under a truck in Destroyed Trinity Ave."
+    },
+    {
+      "id": "step-normal-trinity-3",
+      "title": "Near the Perk location at Normal Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-3",
+      "description": "Near the Perk location at Normal Trinity Ave."
+    },
+    {
+      "id": "step-normal-yellowyard-1",
+      "title": "Go to Yellow House Backyard",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-1",
+      "description": "Go to Yellow House Backyard"
+    },
+    {
+      "id": "step-destroyed-yellowyard-2",
+      "title": "Go to Destroyed Yellow House Backyard.",
+      "locationIds": [
+        "destroyed-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellowyard-2",
+      "description": "Go to Destroyed Yellow House Backyard."
+    },
+    {
+      "id": "step-destroyed-green-1",
+      "title": "Go to Destroyed Green House.",
+      "locationIds": [
+        "destroyed-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-green-1",
+      "description": "Go to Destroyed Green House."
+    },
+    {
+      "id": "step-destroyed-green-2",
+      "title": "Acquire the H 2 SO 4 Vial.",
+      "locationIds": [
+        "destroyed-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-green-2",
+      "description": "Acquire the H 2 SO 4 Vial."
+    },
+    {
+      "id": "step-normal-green-3",
+      "title": "Pour the acid on all the mannequins that can be found on Normal Nuketown. The Vial only contains 3 doses of acid, and need…",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-3",
+      "description": "Pour the acid on all the mannequins that can be found on Normal Nuketown. The Vial only contains 3 doses of acid, and needs to be refill in the Destroyed Green House kitchen sink."
+    },
+    {
+      "id": "step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-3",
+      "title": "If done correctly, the last mannequin that was dissolved will drop a Random Perk Power-Up when going back to Destroyed Nuk…",
+      "locationIds": [
+        "destroyed-culdesac",
+        "destroyed-green",
+        "destroyed-greenyard",
+        "destroyed-yellow",
+        "destroyed-yellowyard",
+        "destroyed-trinity"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-culdesac-destroyed-green-destroyed-greenyard-destroyed-yellow-3",
+      "description": "If done correctly, the last mannequin that was dissolved will drop a Random Perk Power-Up when going back to Destroyed Nuketown."
+    },
+    {
+      "id": "step-normal-greenup-1",
+      "title": "Once all the keys are collected, go to the bedroom in Normal Green House Upstairs and interact with the suitcase on the gr…",
+      "locationIds": [
+        "normal-greenup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenup-1",
+      "description": "Once all the keys are collected, go to the bedroom in Normal Green House Upstairs and interact with the suitcase on the ground."
+    },
+    {
+      "id": "step-normal-greenup-2",
+      "title": "If done correctly, the suitcase will open and offer some Salvage, Essence and a free Aether Tool.",
+      "locationIds": [
+        "normal-greenup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenup-2",
+      "description": "If done correctly, the suitcase will open and offer some Salvage, Essence and a free Aether Tool."
+    },
+    {
+      "id": "step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-3",
+      "title": "Build the Blundergat.",
+      "locationIds": [
+        "normal-yellowup",
+        "destroyed-yellowup",
+        "destroyed-green",
+        "destroyed-truck"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-3",
+      "description": "Build the Blundergat."
+    },
+    {
+      "id": "step-normal-yellow-2",
+      "title": "Travel to Normal Nuketown, interact with the stove in Yellow House to turn it on.",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-2",
+      "description": "Travel to Normal Nuketown, interact with the stove in Yellow House to turn it on."
+    },
+    {
+      "id": "step-normal-yellow-3",
+      "title": "Kill a zombie next to the stove to drop a piece of meat on the pan and throw a Molotov at the pan.",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-3",
+      "description": "Kill a zombie next to the stove to drop a piece of meat on the pan and throw a Molotov at the pan."
+    },
+    {
+      "id": "step-destroyed-yellow-1",
+      "title": "Return to Destroyed Nuketown, a mannequin will be sit at the table.",
+      "locationIds": [
+        "destroyed-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellow-1",
+      "description": "Return to Destroyed Nuketown, a mannequin will be sit at the table."
+    },
+    {
+      "id": "step-normal-yellow-4",
+      "title": "Teleport back and forth until a Bonus Point appears on the table.",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-4",
+      "description": "Teleport back and forth until a Bonus Point appears on the table."
+    },
+    {
+      "id": "step-normal-greenyard-4",
+      "title": "Return to Normal Nuketown and reach the bunker in Green House Backyard, the mannequin should be next to it. With Brain Rot…",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-4",
+      "description": "Return to Normal Nuketown and reach the bunker in Green House Backyard, the mannequin should be next to it. With Brain Rot or a Psych Grenade, turn a zombie to make it knock the bunker until the door opens. Note: several zombies might be needed."
+    },
+    {
+      "id": "step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-4",
+      "title": "Build the Blundergat.",
+      "locationIds": [
+        "normal-yellowup",
+        "destroyed-yellowup",
+        "destroyed-green",
+        "destroyed-truck"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-4",
+      "description": "Build the Blundergat."
+    },
+    {
+      "id": "step-normal-greenup-3",
+      "title": "Interact with the mannequin head with a mask found on the ground of Normal Green House Upstairs.",
+      "locationIds": [
+        "normal-greenup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenup-3",
+      "description": "Interact with the mannequin head with a mask found on the ground of Normal Green House Upstairs."
+    },
+    {
+      "id": "step-normal-greenyard-5",
+      "title": "Follow the head as it travels to the headless mannequin in Green House Backyard and kill zombies to fill the head with souls.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-5",
+      "description": "Follow the head as it travels to the headless mannequin in Green House Backyard and kill zombies to fill the head with souls."
+    },
+    {
+      "id": "step-normal-yellowgarage-1",
+      "title": "Once done, the head will move towards another headless mannequin in front of the Yellow House garage. Kill zombies to fill…",
+      "locationIds": [
+        "normal-yellowgarage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowgarage-1",
+      "description": "Once done, the head will move towards another headless mannequin in front of the Yellow House garage. Kill zombies to fill it with souls."
+    },
+    {
+      "id": "step-normal-yellowup-2",
+      "title": "The head will then move to Yellow House Upstairs and stops in front of another headless mannequin. Kill zombies to fill it…",
+      "locationIds": [
+        "normal-yellowup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowup-2",
+      "description": "The head will then move to Yellow House Upstairs and stops in front of another headless mannequin. Kill zombies to fill it with souls."
+    },
+    {
+      "id": "step-normal-yellowup-3",
+      "title": "If done correctly, the floating head will attach itself to the mannequin and the mannequin will start spinning before expl…",
+      "locationIds": [
+        "normal-yellowup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowup-3",
+      "description": "If done correctly, the floating head will attach itself to the mannequin and the mannequin will start spinning before exploding dropping high-tier loot."
+    },
+    {
+      "id": "step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-5",
+      "title": "Build the Blundergat.",
+      "locationIds": [
+        "normal-yellowup",
+        "destroyed-yellowup",
+        "destroyed-green",
+        "destroyed-truck"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-5",
+      "description": "Build the Blundergat."
+    },
+    {
+      "id": "step-destroyed-trinity-7",
+      "title": "Travel to Destroyed Nuketown and go to the Perk location in Trinity Ave., on the right side there will be a mannequin outs…",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-7",
+      "description": "Travel to Destroyed Nuketown and go to the Perk location in Trinity Ave., on the right side there will be a mannequin outside the map."
+    },
+    {
+      "id": "step-destroyed-trinity-8",
+      "title": "Driver seat of the truck at Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-8",
+      "description": "Driver seat of the truck at Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-pap-2",
+      "title": "Behind the fences on the left side of Pack-a-Punch in Trinity Ave.",
+      "locationIds": [
+        "normal-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-2",
+      "description": "Behind the fences on the left side of Pack-a-Punch in Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-greenyard-5",
+      "title": "In the wooden shed behind the Mystery Box in Green House Backyard.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-5",
+      "description": "In the wooden shed behind the Mystery Box in Green House Backyard."
+    },
+    {
+      "id": "step-destroyed-trinity-9",
+      "title": "At the top of the chimney of the left house in Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-9",
+      "description": "At the top of the chimney of the left house in Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-greenyard-6",
+      "title": "Once the Blundergat is built, a purple cyst will appear in Destroyed Green House Backyard, placing specific items in front…",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-6",
+      "description": "Once the Blundergat is built, a purple cyst will appear in Destroyed Green House Backyard, placing specific items in front of it to obtain loot and a specific free perk based on the items selected."
+    },
+    {
+      "id": "step-destroyed-trinity-10",
+      "title": "Head - In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-10",
+      "description": "Head - In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe."
+    },
+    {
+      "id": "step-destroyed-greenyard-7",
+      "title": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-7",
+      "description": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard."
+    },
+    {
+      "id": "step-destroyed-pap-3",
+      "title": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.",
+      "locationIds": [
+        "destroyed-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-3",
+      "description": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave."
+    },
+    {
+      "id": "step-normal-green-4",
+      "title": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-4",
+      "description": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin."
+    },
+    {
+      "id": "step-destroyed-greenyard-8",
+      "title": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Doppleghast called Zynvara will spawn.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-8",
+      "description": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Doppleghast called Zynvara will spawn."
+    },
+    {
+      "id": "step-destroyed-greenyard-9",
+      "title": "Once the HVT is killed, loot will drop on the ground including a Deadshot Daiquiri can and 1000 Salvage (before Round 15) …",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-9",
+      "description": "Once the HVT is killed, loot will drop on the ground including a Deadshot Daiquiri can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)"
+    },
+    {
+      "id": "step-normal-truck-2",
+      "title": "Battery - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.",
+      "locationIds": [
+        "normal-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-truck-2",
+      "description": "Battery - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located."
+    },
+    {
+      "id": "step-destroyed-greenyard-10",
+      "title": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-10",
+      "description": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard."
+    },
+    {
+      "id": "step-destroyed-pap-4",
+      "title": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.",
+      "locationIds": [
+        "destroyed-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-4",
+      "description": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave."
+    },
+    {
+      "id": "step-normal-green-5",
+      "title": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-5",
+      "description": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin."
+    },
+    {
+      "id": "step-destroyed-greenyard-11",
+      "title": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Mimic will spawn.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-11",
+      "description": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Mimic will spawn."
+    },
+    {
+      "id": "step-destroyed-greenyard-12",
+      "title": "Once the HVT is killed, loot will drop on the ground including an Elemental Pop can and 1000 Salvage (before Round 15) or …",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-12",
+      "description": "Once the HVT is killed, loot will drop on the ground including an Elemental Pop can and 1000 Salvage (before Round 15) or 2000 Salvage (after Round 15)"
+    },
+    {
+      "id": "step-normal-trinity-4",
+      "title": "Dog Collar - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-4",
+      "description": "Dog Collar - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-greenyard-13",
+      "title": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-13",
+      "description": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard."
+    },
+    {
+      "id": "step-normal-green-6",
+      "title": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-6",
+      "description": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin."
+    },
+    {
+      "id": "step-destroyed-greenyard-14",
+      "title": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Rad-Hound will spawn.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-14",
+      "description": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Rad-Hound will spawn."
+    },
+    {
+      "id": "step-destroyed-greenyard-15",
+      "title": "Once the HVT is killed, loot will drop on the ground including a Quick Revive can and 500 Salvage (before Round 15) or 100…",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-15",
+      "description": "Once the HVT is killed, loot will drop on the ground including a Quick Revive can and 500 Salvage (before Round 15) or 1000 Salvage (after Round 15)"
+    },
+    {
+      "id": "step-normal-yellowyard-2",
+      "title": "Bucket - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-2",
+      "description": "Bucket - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard."
+    },
+    {
+      "id": "step-destroyed-greenyard-16",
+      "title": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-16",
+      "description": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard."
+    },
+    {
+      "id": "step-normal-green-7",
+      "title": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-7",
+      "description": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin."
+    },
+    {
+      "id": "step-destroyed-greenyard-17",
+      "title": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, more HVT zombies will spawn.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-17",
+      "description": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, more HVT zombies will spawn."
+    },
+    {
+      "id": "step-destroyed-trinity-11",
+      "title": "Head - In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-11",
+      "description": "Head - In Destroyed Nuketown, open the Trinity Ave. garage with the RC-XD and pick up the head on the safe."
+    },
+    {
+      "id": "step-destroyed-greenyard-18",
+      "title": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard.",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-18",
+      "description": "Bone - In Destroyed Nuketown, on the ground near the fence behind the Perk location in Green House Backyard."
+    },
+    {
+      "id": "step-destroyed-pap-5",
+      "title": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave.",
+      "locationIds": [
+        "destroyed-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-5",
+      "description": "Guts - In Destroyed Nuketown, beneath a truck near Pack-a-Punch in Trinity Ave."
+    },
+    {
+      "id": "step-normal-green-8",
+      "title": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin.",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-8",
+      "description": "Ham - In Normal Nuketown, on the counter of the Green House kitchen next to a mannequin."
+    },
+    {
+      "id": "step-normal-trinity-5",
+      "title": "Dog Collar - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-5",
+      "description": "Dog Collar - In Normal Nuketown, between plants next to the garage door of the red house in Trinity Ave."
+    },
+    {
+      "id": "step-normal-truck-3",
+      "title": "Battery - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located.",
+      "locationIds": [
+        "normal-truck"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-truck-3",
+      "description": "Battery - In Normal Nuketown, inside the Truck Interior where the Blundergat workbench is located."
+    },
+    {
+      "id": "step-normal-yellowyard-3",
+      "title": "Bucket - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard.",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-3",
+      "description": "Bucket - In Normal Nuketown, next to the door between Yellow House Garage and Yellow House Backyard."
+    },
+    {
+      "id": "step-destroyed-greenyard-19",
+      "title": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Dippleghast, a HVT Mimic and a Rad-Hound wi…",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-19",
+      "description": "Kill zombies near the cyst to feed it with souls. Once the cyst is full, a HVT Dippleghast, a HVT Mimic and a Rad-Hound will spawn."
+    },
+    {
+      "id": "step-destroyed-pap-6",
+      "title": "Bonus Point : Inside the house debris on the left side of Pack-a-Punch in Destroyed Trinity Ave.",
+      "locationIds": [
+        "destroyed-pap"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-pap-6",
+      "description": "Bonus Point : Inside the house debris on the left side of Pack-a-Punch in Destroyed Trinity Ave."
+    },
+    {
+      "id": "step-normal-greenyard-6",
+      "title": "Insta-Kill : On top of the BBQ grill outside Normal Green House Backyard.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-6",
+      "description": "Insta-Kill : On top of the BBQ grill outside Normal Green House Backyard."
+    },
+    {
+      "id": "step-destroyed-culdesac-1",
+      "title": "Double Points : Behind fences on the right side of the houses at the back of Destroyed Cul-De-Sac.",
+      "locationIds": [
+        "destroyed-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-culdesac-1",
+      "description": "Double Points : Behind fences on the right side of the houses at the back of Destroyed Cul-De-Sac."
+    },
+    {
+      "id": "step-normal-greenyard-7",
+      "title": "Nuke : On top of the clock tower in Normal Nuketown from Normal Green House Backyard.",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-7",
+      "description": "Nuke : On top of the clock tower in Normal Nuketown from Normal Green House Backyard."
+    },
+    {
+      "id": "step-normal-greenup-4",
+      "title": "Full Power : Near the drawers opposite of the TV in Normal Green House Upstairs.",
+      "locationIds": [
+        "normal-greenup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenup-4",
+      "description": "Full Power : Near the drawers opposite of the TV in Normal Green House Upstairs."
+    },
+    {
+      "id": "step-destroyed-culdesac-2",
+      "title": "Max Armor : On a bench inside the yellow bus in Destroyed Cul-De-Sac",
+      "locationIds": [
+        "destroyed-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-culdesac-2",
+      "description": "Max Armor : On a bench inside the yellow bus in Destroyed Cul-De-Sac"
+    },
+    {
+      "id": "step-normal-yellow-5",
+      "title": "Max Ammo : On top of a generator next to the Yellow House in Normal Nuketown.",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-5",
+      "description": "Max Ammo : On top of a generator next to the Yellow House in Normal Nuketown."
+    },
+    {
+      "id": "step-destroyed-yellow-destroyed-culdesac-1",
+      "title": "Fire Sale : Top room of the Destroyed Yellow House when seen from the back of Cul-De-Sac. Only available after all the oth…",
+      "locationIds": [
+        "destroyed-yellow",
+        "destroyed-culdesac"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-yellow-destroyed-culdesac-1",
+      "description": "Fire Sale : Top room of the Destroyed Yellow House when seen from the back of Cul-De-Sac. Only available after all the others have been activated."
+    },
+    {
+      "id": "step-normal-yellowup-4",
+      "title": "Random Perk: On top of the cabinet behind the bunk bed in Normal Yellow House Upstairs. Only available after all the other…",
+      "locationIds": [
+        "normal-yellowup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowup-4",
+      "description": "Random Perk: On top of the cabinet behind the bunk bed in Normal Yellow House Upstairs. Only available after all the others have been activated."
+    },
+    {
+      "id": "step-normal-greenup-5",
+      "title": "Travel to Normal Nuketown and interact with the green portal in Green House Upstairs.",
+      "locationIds": [
+        "normal-greenup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenup-5",
+      "description": "Travel to Normal Nuketown and interact with the green portal in Green House Upstairs."
+    },
+    {
+      "id": "step-destroyed-green-destroyed-culdesac-1",
+      "title": "Throw a grenade inside the broken outside chimney of Destroyed Green House near Cul-De-Sac. This will drop the Dog Collar …",
+      "locationIds": [
+        "destroyed-green",
+        "destroyed-culdesac"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-destroyed-green-destroyed-culdesac-1",
+      "description": "Throw a grenade inside the broken outside chimney of Destroyed Green House near Cul-De-Sac. This will drop the Dog Collar of Notso."
+    },
+    {
+      "id": "step-normal-yellowyard-4",
+      "title": "Return to Normal Nuketown and turn a Rad-Hound using Brain Rot/Psych Grenade. If done correctly, the dog will start diggin…",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-4",
+      "description": "Return to Normal Nuketown and turn a Rad-Hound using Brain Rot/Psych Grenade. If done correctly, the dog will start digging in Yellow House Backyard. The dog will then stop and you can pick up the ball in its mouth."
+    },
+    {
+      "id": "step-normal-yellowyard-5",
+      "title": "Return to Normal Nuketown and interact with the yellow portal against the wall of Yellow House Backyard.",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-5",
+      "description": "Return to Normal Nuketown and interact with the yellow portal against the wall of Yellow House Backyard."
+    },
+    {
+      "id": "step-normal-yellow-destroyed-yellow-1",
+      "title": "Place Mister Peeks on the mailbox of Yellow House in both versions of Nuketown.",
+      "locationIds": [
+        "normal-yellow",
+        "destroyed-yellow"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-yellow-destroyed-yellow-1",
+      "description": "Place Mister Peeks on the mailbox of Yellow House in both versions of Nuketown."
+    },
+    {
+      "id": "step-normal-pap-destroyed-pap-1",
+      "title": "Pick the Ultra Knife found in the mailbox of either version of Nuketown which will now be opened. Doing so will spawn a HV…",
+      "locationIds": [
+        "normal-pap",
+        "destroyed-pap"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-pap-destroyed-pap-1",
+      "description": "Pick the Ultra Knife found in the mailbox of either version of Nuketown which will now be opened. Doing so will spawn a HVT Mimic. Kill the Mimic with the Knife, which can be Pack-a-Punched. Note: If you kill the Mimic with something else, it will eventually respawn the next round."
+    },
+    {
+      "id": "step-destroyed-green-3",
+      "title": "If done correctly, travel to Destroyed Nuketown and interact with the red portal that spawned in front of the Green House …",
+      "locationIds": [
+        "destroyed-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-green-3",
+      "description": "If done correctly, travel to Destroyed Nuketown and interact with the red portal that spawned in front of the Green House front balcony."
+    },
+    {
+      "id": "step-destroyed-culdesac-3",
+      "title": "Velox 5.7 — Destroyed Cul-De-Sac",
+      "locationIds": [
+        "destroyed-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-culdesac-3",
+      "description": "Velox 5.7 — Destroyed Cul-De-Sac"
+    },
+    {
+      "id": "step-destroyed-greenyard-20",
+      "title": "Razor 9mm — Destroyed Green House Backyard",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-20",
+      "description": "Razor 9mm — Destroyed Green House Backyard"
+    },
+    {
+      "id": "step-destroyed-yellowyard-3",
+      "title": "M10 Breacher — Destroyed Yellow House Backyard",
+      "locationIds": [
+        "destroyed-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellowyard-3",
+      "description": "M10 Breacher — Destroyed Yellow House Backyard"
+    },
+    {
+      "id": "step-normal-yellowyard-6",
+      "title": "Echo 12 — Normal Yellow House Backyard",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-6",
+      "description": "Echo 12 — Normal Yellow House Backyard"
+    },
+    {
+      "id": "step-normal-greenyard-8",
+      "title": "Dravec 45 — Normal Green House Backyard",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-8",
+      "description": "Dravec 45 — Normal Green House Backyard"
+    },
+    {
+      "id": "step-normal-culdesac-1",
+      "title": "CODA 9 — Normal Cul-De-Sac",
+      "locationIds": [
+        "normal-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-culdesac-1",
+      "description": "CODA 9 — Normal Cul-De-Sac"
+    },
+    {
+      "id": "step-normal-trinity-6",
+      "title": "Carbon 57 — Normal Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-6",
+      "description": "Carbon 57 — Normal Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-trinity-12",
+      "title": "M8A1 — Destroyed Trinity Ave.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-12",
+      "description": "M8A1 — Destroyed Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-culdesac-4",
+      "title": "Quick Revive — Destroyed Cul-De-Sac",
+      "locationIds": [
+        "destroyed-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-culdesac-4",
+      "description": "Quick Revive — Destroyed Cul-De-Sac"
+    },
+    {
+      "id": "step-destroyed-yellowyard-4",
+      "title": "Randomized Perk — Destroyed Yellow House Backyard",
+      "locationIds": [
+        "destroyed-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellowyard-4",
+      "description": "Randomized Perk — Destroyed Yellow House Backyard"
+    },
+    {
+      "id": "step-normal-yellowyard-7",
+      "title": "Randomized Perk — Normal Yellow House Backyard",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-7",
+      "description": "Randomized Perk — Normal Yellow House Backyard"
+    },
+    {
+      "id": "step-normal-yellow-6",
+      "title": "Randomized Perk — Normal Yellow House Downstairs",
+      "locationIds": [
+        "normal-yellow"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellow-6",
+      "description": "Randomized Perk — Normal Yellow House Downstairs"
+    },
+    {
+      "id": "step-destroyed-yellowup-1",
+      "title": "Randomized Perk — Destroyed Yellow House Upstairs",
+      "locationIds": [
+        "destroyed-yellowup"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-yellowup-1",
+      "description": "Randomized Perk — Destroyed Yellow House Upstairs"
+    },
+    {
+      "id": "step-normal-greenyard-9",
+      "title": "Randomized Perk — Normal Green House Backyard",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-9",
+      "description": "Randomized Perk — Normal Green House Backyard"
+    },
+    {
+      "id": "step-destroyed-greenyard-21",
+      "title": "Randomized Perk — Destroyed Green House Backyard",
+      "locationIds": [
+        "destroyed-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-greenyard-21",
+      "description": "Randomized Perk — Destroyed Green House Backyard"
+    },
+    {
+      "id": "step-normal-green-9",
+      "title": "Randomized Perk — Normal Green House Downstairs",
+      "locationIds": [
+        "normal-green"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-green-9",
+      "description": "Randomized Perk — Normal Green House Downstairs"
+    },
+    {
+      "id": "step-normal-culdesac-2",
+      "title": "Randomized Perk — Normal Cul-De-Sac",
+      "locationIds": [
+        "normal-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-culdesac-2",
+      "description": "Randomized Perk — Normal Cul-De-Sac"
+    },
+    {
+      "id": "step-normal-trinity-7",
+      "title": "Randomized Perk — Normal Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-7",
+      "description": "Randomized Perk — Normal Trinity Ave."
+    },
+    {
+      "id": "step-destroyed-trinity-13",
+      "title": "Der Wunderfizz — Destroyed Trinity Ave.",
+      "locationIds": [
+        "destroyed-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-destroyed-trinity-13",
+      "description": "Der Wunderfizz — Destroyed Trinity Ave."
+    },
+    {
+      "id": "step-normal-yellowyard-8",
+      "title": "Yellow House Backyard",
+      "locationIds": [
+        "normal-yellowyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-yellowyard-8",
+      "description": "Yellow House Backyard"
+    },
+    {
+      "id": "step-normal-greenyard-10",
+      "title": "Green House Backyard",
+      "locationIds": [
+        "normal-greenyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greenyard-10",
+      "description": "Green House Backyard"
+    },
+    {
+      "id": "step-normal-green-normal-yellowgarage-1",
+      "title": "Electro-Shock — Yellow House Garage; Green House",
+      "locationIds": [
+        "normal-green",
+        "normal-yellowgarage"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-normal-green-normal-yellowgarage-1",
+      "description": "Electro-Shock — Yellow House Garage; Green House"
+    },
+    {
+      "id": "step-normal-culdesac-3",
+      "title": "Cul-De-Sac",
+      "locationIds": [
+        "normal-culdesac"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-culdesac-3",
+      "description": "Cul-De-Sac"
+    },
+    {
+      "id": "step-normal-trinity-8",
+      "title": "Normal Trinity Ave.",
+      "locationIds": [
+        "normal-trinity"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-trinity-8",
+      "description": "Normal Trinity Ave."
+    },
+    {
+      "id": "step-normal-greengarage-1",
+      "title": "Green House Garage",
+      "locationIds": [
+        "normal-greengarage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-normal-greengarage-1",
+      "description": "Green House Garage"
+    },
+    {
+      "id": "cursed-mister-peeks",
+      "title": "Mister Peeks · Cursed-mode reward spawns",
+      "locationIds": [
+        "cursed-peeks-normal-north",
+        "cursed-peeks-normal-trinity",
+        "cursed-peeks-destroyed-north",
+        "cursed-peeks-destroyed-trinity"
+      ],
+      "kind": "candidates",
+      "description": "Possible Cursed-mode Mister Peeks egg-reward spawns. Check these places when he appears and shoot him to release a reward egg, which can contain perks and other loot. These are alternatives, not a required collection route.",
+      "guideAnchor": "wiki_cursed_mister_peeks"
+    },
+    {
+      "id": "locations-wall-buys-locations",
+      "title": "Wall-Buys locations",
+      "locationIds": [
+        "official-3728",
+        "official-3772"
+      ],
+      "guideAnchor": "wiki_wall_buys_locations"
+    },
+    {
+      "id": "locations-perks-locations",
+      "title": "Perks locations",
+      "locationIds": [
+        "official-3699",
+        "official-3700",
+        "official-3701",
+        "official-3702",
+        "official-3703",
+        "official-3742",
+        "official-3743",
+        "official-3744",
+        "official-3745",
+        "official-3746"
+      ],
+      "guideAnchor": "wiki_perks_locations"
+    },
+    {
+      "id": "locations-armor-vests-locations",
+      "title": "Armor Vests locations",
+      "locationIds": [
+        "normal-yellowyard",
+        "normal-greenyard"
+      ],
+      "guideAnchor": "wiki_armor_vests_locations"
+    },
+    {
+      "id": "locations-crafting-table-locations",
+      "title": "Crafting Table locations",
+      "locationIds": [
+        "normal-trinity",
+        "normal-greengarage"
+      ],
+      "guideAnchor": "wiki_crafting_table_locations"
+    },
+    {
+      "id": "locations-step-destroyed-yellowyard-1",
+      "title": "Blundergat locations",
+      "locationIds": [
+        "destroyed-yellowyard",
+        "destroyed-greengarage",
+        "destroyed-trinity",
+        "destroyed-greenyard"
+      ],
+      "guideAnchor": "guide-step-locations-step-destroyed-yellowyard-1"
+    },
+    {
+      "id": "locations-step-rcxd-pap-1",
+      "title": "The Twins Swing locations",
+      "locationIds": [
+        "rcxd-pap",
+        "rcxd-green",
+        "rcxd-yellow"
+      ],
+      "guideAnchor": "guide-step-locations-step-rcxd-pap-1"
+    },
+    {
+      "id": "locations-step-headset-street-1",
+      "title": "Toy Box and Four Square locations",
+      "locationIds": [
+        "headset-street",
+        "headset-green",
+        "headset-yellow"
+      ],
+      "guideAnchor": "guide-step-locations-step-headset-street-1"
+    },
+    {
+      "id": "locations-step-ball-crates-1",
+      "title": "Toy Box and Four Square locations",
+      "locationIds": [
+        "ball-crates",
+        "ball-roof",
+        "ball-yellow"
+      ],
+      "guideAnchor": "guide-step-locations-step-ball-crates-1"
+    },
+    {
+      "id": "locations-step-normal-yellow-1",
+      "title": "\"Come Back Down\" Secret Song locations",
+      "locationIds": [
+        "normal-yellow",
+        "destroyed-trinity",
+        "normal-trinity"
+      ],
+      "guideAnchor": "guide-step-locations-step-normal-yellow-1"
+    },
+    {
+      "id": "locations-step-destroyed-trinity-8",
+      "title": "Stalking mannequin · Normal Nuketown candidates",
+      "locationIds": [
+        "normal-trinity",
+        "normal-pap",
+        "normal-greenyard"
+      ],
+      "guideAnchor": "guide-step-locations-step-destroyed-trinity-8",
+      "kind": "candidates",
+      "description": "After looking at the mannequin in Destroyed Nuketown, return to Normal Nuketown and check the Trinity Avenue truck/chimney, fences beside Pack-a-Punch, and the Green House Backyard shed. Area highlights; only the spawned mannequin needs to be found."
+    },
+    {
+      "id": "locations-step-destroyed-trinity-10",
+      "title": "Purple Cyst (Free Loot and Perks) locations",
+      "locationIds": [
+        "destroyed-trinity",
+        "destroyed-greenyard",
+        "destroyed-pap",
+        "normal-green"
+      ],
+      "guideAnchor": "guide-step-locations-step-destroyed-trinity-10"
+    },
+    {
+      "id": "locations-step-normal-truck-2",
+      "title": "Purple Cyst (Free Loot and Perks) locations",
+      "locationIds": [
+        "normal-truck",
+        "destroyed-greenyard",
+        "destroyed-pap",
+        "normal-green"
+      ],
+      "guideAnchor": "guide-step-locations-step-normal-truck-2"
+    },
+    {
+      "id": "locations-step-normal-trinity-4",
+      "title": "Purple Cyst (Free Loot and Perks) locations",
+      "locationIds": [
+        "normal-trinity",
+        "destroyed-greenyard",
+        "normal-green"
+      ],
+      "guideAnchor": "guide-step-locations-step-normal-trinity-4"
+    },
+    {
+      "id": "locations-step-normal-yellowyard-2",
+      "title": "Purple Cyst (Free Loot and Perks) locations",
+      "locationIds": [
+        "normal-yellowyard",
+        "destroyed-greenyard",
+        "normal-green"
+      ],
+      "guideAnchor": "guide-step-locations-step-normal-yellowyard-2"
+    },
+    {
+      "id": "locations-step-destroyed-trinity-11",
+      "title": "Purple Cyst (Free Loot and Perks) locations",
+      "locationIds": [
+        "destroyed-trinity",
+        "destroyed-greenyard",
+        "destroyed-pap",
+        "normal-green",
+        "normal-trinity",
+        "normal-truck",
+        "normal-yellowyard"
+      ],
+      "guideAnchor": "guide-step-locations-step-destroyed-trinity-11"
+    },
+    {
+      "id": "locations-step-destroyed-pap-6",
+      "title": "Power-Up Statues locations",
+      "locationIds": [
+        "destroyed-pap",
+        "normal-greenyard",
+        "destroyed-culdesac",
+        "normal-greenup",
+        "normal-yellow",
+        "destroyed-yellow",
+        "normal-yellowup"
+      ],
+      "guideAnchor": "guide-step-locations-step-destroyed-pap-6"
+    }
+  ],
+  "quickLinks": {
+    "phase-1-ol-1": "blundergat",
+    "phase-1-ol-2": "twins-swing",
+    "phase-2-ol-1": "seeds-tree",
+    "phase-2-ol-2": "tree-fireplace",
+    "phase-2-ol-3": "hopscotch",
+    "phase-2-ol-4": "music-box",
+    "phase-3-ol-1": "piano-teacher",
+    "phase-3-ol-2": "notes-piano",
+    "phase-3-ol-3": "ball-trial",
+    "phase-4-ol-1": "goggles",
+    "phase-4-ol-2": "headset-toybox",
+    "phase-4-ol-3": "four-square",
+    "phase-4-ol-4": "cymbals",
+    "phase-5-ol-1": "clock",
+    "phase-5-ol-3": "twins-scenes",
+    "phase-6-ol-1": "dark-heart"
+  }
+}

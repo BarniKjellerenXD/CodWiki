@@ -1,0 +1,2549 @@
+{
+  "id": "totenreich",
+  "name": "Totenreich",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "Call of Duty: Zombies Guides — interactive map",
+      "url": "https://www.codzombiesguides.com/maps/totenreich/",
+      "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/totenreich/totenreich-eidskallen-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "image": "/maps/totenreich/overview.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "Full tactical overview. Room highlights indicate an area, while service pins use published marker coordinates. Interior floors can overlap."
+    },
+    {
+      "id": "boss-arena",
+      "label": "Dravakar’s Fall",
+      "image": "/maps/totenreich/boss-arena.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "Separate boss arena. The three Flammenfalle traps use published coordinates; the boss and attack targets move."
+    }
+  ],
+  "locations": [
+    {
+      "id": "eidskallen-landing",
+      "label": "Eidskallen Landing",
+      "layerId": "overview",
+      "x": 0.551,
+      "y": 0.805,
+      "category": "area",
+      "precision": "area",
+      "description": "Spawn region around Quick Revive and the Riese head.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "eidskallen-square",
+      "label": "Eidskallen Square",
+      "layerId": "overview",
+      "x": 0.585,
+      "y": 0.589,
+      "category": "area",
+      "precision": "area",
+      "description": "Village square around Stamin-Up and the routes to the landing and hall.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "dry-dock",
+      "label": "Dry Dock",
+      "layerId": "overview",
+      "x": 0.347,
+      "y": 0.601,
+      "category": "area",
+      "precision": "area",
+      "description": "Dock area around Speed Cola, PhD Flopper and Melee Macchiato. Search the boat and buildings described by the guide.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "titan-crane",
+      "label": "Titan Crane / Dry Dock",
+      "layerId": "overview",
+      "x": 0.316,
+      "y": 0.553,
+      "category": "area",
+      "precision": "area",
+      "description": "Crane room at the north end of Dry Dock. Use its timed button, then wall-jump to the ship bow for the chain links.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "machine-workshop",
+      "label": "Machine Workshop / Dry Dock",
+      "layerId": "overview",
+      "x": 0.299,
+      "y": 0.69,
+      "category": "area",
+      "precision": "area",
+      "description": "Upper room on the southwestern side of Dry Dock, reached by clearing the 02 Building stairs with Wunderbarrage. Contains the claw machine and upper gnome catwalk.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "floor": "Upper level of Dry Dock"
+    },
+    {
+      "id": "core-foundry",
+      "label": "Core Foundry",
+      "layerId": "overview",
+      "x": 0.278,
+      "y": 0.448,
+      "category": "area",
+      "precision": "area",
+      "description": "Western foundry rooms, near the VS Recon wall-buy. The ARC-XD vent leads across the water to the Genetic Lab; the Ascender reaches the radio console.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "genetic-lab",
+      "label": "Group 935 Genetic Lab",
+      "layerId": "overview",
+      "x": 0.393,
+      "y": 0.401,
+      "category": "area",
+      "precision": "area",
+      "description": "Lab on Fishery Island, opened by sending the ARC-XD across from Core Foundry. Enter from the Pack-a-Punch side for the jars, Necrospike and Uranium cell.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "floor": "Interior on Fishery Island"
+    },
+    {
+      "id": "war-factory",
+      "label": "War Factory",
+      "layerId": "overview",
+      "x": 0.193,
+      "y": 0.444,
+      "category": "area",
+      "precision": "area",
+      "description": "Western factory building next to Core Foundry. The crate sits near the Admin room entrance.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "storm-bridge",
+      "label": "Storm Bridge",
+      "layerId": "overview",
+      "x": 0.442,
+      "y": 0.294,
+      "category": "area",
+      "precision": "area",
+      "description": "Northern bridge between Tyr’s Foot and Tyr’s Shoulder. The Chilly Chunks truck and charged-core barrel are on this bridge.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "tyrs-foot",
+      "label": "Tyr’s Foot",
+      "layerId": "overview",
+      "x": 0.256,
+      "y": 0.313,
+      "category": "area",
+      "precision": "area",
+      "description": "Northwestern foot of the giant robot. Enter Tyr here, and search nearby for the note and Dravakar Shard.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "tyrs-head",
+      "label": "Tyr’s Head",
+      "layerId": "overview",
+      "x": 0.524,
+      "y": 0.15,
+      "category": "area",
+      "precision": "area",
+      "description": "Tyr’s interior is drawn separately as the small circle north of Storm Bridge. The transmitter and blinking lights are on the second floor; the console launches the boss encounter.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "floor": "Robot interior / second floor"
+    },
+    {
+      "id": "tyrs-shoulder",
+      "label": "Tyr’s Shoulder",
+      "layerId": "overview",
+      "x": 0.581,
+      "y": 0.28,
+      "category": "area",
+      "precision": "area",
+      "description": "Northeastern shoulder of the giant robot. Upper access to Tyr and a fishing spot.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "floor": "Upper robot platform"
+    },
+    {
+      "id": "fjord-road",
+      "label": "Fjord Road",
+      "layerId": "overview",
+      "x": 0.451,
+      "y": 0.753,
+      "category": "area",
+      "precision": "area",
+      "description": "Southern road connecting the landing to Dry Dock. Check the checkpoint near the Flammenfalle trap for the flak-round crate.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "fishery-island",
+      "label": "Fishery Island",
+      "layerId": "overview",
+      "x": 0.437,
+      "y": 0.423,
+      "category": "area",
+      "precision": "area",
+      "description": "Central island containing Juggernog and the Glocke Drop Pack-a-Punch landing.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "skallen-market",
+      "label": "Skallen Market",
+      "layerId": "overview",
+      "x": 0.637,
+      "y": 0.432,
+      "category": "area",
+      "precision": "area",
+      "description": "Market around Mule Kick. Place Chilly Chunks on the central table and search nearby houses for side-quest items.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "burial-grounds",
+      "label": "Burial Grounds",
+      "layerId": "overview",
+      "x": 0.701,
+      "y": 0.351,
+      "category": "area",
+      "precision": "area",
+      "description": "Northeastern burial region and shrine, beyond the church. Use the chain links at the door and match the constellations.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "stave-church",
+      "label": "Eidskallen Stave Church",
+      "layerId": "overview",
+      "x": 0.651,
+      "y": 0.348,
+      "category": "area",
+      "precision": "area",
+      "description": "Church just west of Burial Grounds, north of Skallen Market. Place the Sunstone on its central altar.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "blodheim-hall",
+      "label": "Blodheim Hall",
+      "layerId": "overview",
+      "x": 0.659,
+      "y": 0.553,
+      "category": "area",
+      "precision": "area",
+      "description": "Feasting hall around Vulture Aid. Its central bonfire, bear pelts and helmet displays serve several quests.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "lovens-antiquities",
+      "label": "Loven’s Antiquities",
+      "layerId": "overview",
+      "x": 0.523,
+      "y": 0.566,
+      "category": "area",
+      "precision": "area",
+      "description": "Antiquities shop in the northwestern part of Eidskallen Square. Search its shelves for headphones and the counter for the Kneehigh Helm.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "beacon-island",
+      "label": "Beacon Island",
+      "layerId": "overview",
+      "x": 0.778,
+      "y": 0.685,
+      "category": "area",
+      "precision": "area",
+      "description": "Southeastern island with the Lighthouse, arsenal, Wunderfizz and fishing access.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "lighthouse",
+      "label": "Lighthouse",
+      "layerId": "overview",
+      "x": 0.804,
+      "y": 0.735,
+      "category": "area",
+      "precision": "area",
+      "description": "Tower on Beacon Island. Jotunn Star is in the top chamber; the Crowbar is on an interior shelf.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "floor": "Multiple floors / top chamber"
+    },
+    {
+      "id": "czg-fishing-spot-1",
+      "label": "Fishing Spot 1",
+      "layerId": "overview",
+      "x": 0.529,
+      "y": 0.838,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-2",
+      "label": "Fishing Spot 2",
+      "layerId": "overview",
+      "x": 0.621,
+      "y": 0.75,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-3",
+      "label": "Fishing Spot 3",
+      "layerId": "overview",
+      "x": 0.71,
+      "y": 0.771,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-4",
+      "label": "Fishing Spot 4",
+      "layerId": "overview",
+      "x": 0.871,
+      "y": 0.674,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-5",
+      "label": "Fishing Spot 5",
+      "layerId": "overview",
+      "x": 0.637,
+      "y": 0.621,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-6",
+      "label": "Fishing Spot 6",
+      "layerId": "overview",
+      "x": 0.504,
+      "y": 0.542,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-7",
+      "label": "Fishing Spot 7",
+      "layerId": "overview",
+      "x": 0.406,
+      "y": 0.564,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-8",
+      "label": "Fishing Spot 8",
+      "layerId": "overview",
+      "x": 0.443,
+      "y": 0.384,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-9",
+      "label": "Fishing Spot 9",
+      "layerId": "overview",
+      "x": 0.288,
+      "y": 0.334,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-10",
+      "label": "Fishing Spot 10",
+      "layerId": "overview",
+      "x": 0.508,
+      "y": 0.426,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fishing-spot-11",
+      "label": "Fishing Spot 11",
+      "layerId": "overview",
+      "x": 0.565,
+      "y": 0.329,
+      "category": "quest",
+      "precision": "point",
+      "description": "Fishing Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-1",
+      "label": "Ammo Cache 1",
+      "layerId": "overview",
+      "x": 0.612,
+      "y": 0.797,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-2",
+      "label": "Ammo Cache 2",
+      "layerId": "overview",
+      "x": 0.442,
+      "y": 0.772,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-3",
+      "label": "Ammo Cache 3",
+      "layerId": "overview",
+      "x": 0.414,
+      "y": 0.582,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-4",
+      "label": "Ammo Cache 4",
+      "layerId": "overview",
+      "x": 0.583,
+      "y": 0.558,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-5",
+      "label": "Ammo Cache 5",
+      "layerId": "overview",
+      "x": 0.592,
+      "y": 0.394,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-6",
+      "label": "Ammo Cache 6",
+      "layerId": "overview",
+      "x": 0.472,
+      "y": 0.464,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-7",
+      "label": "Ammo Cache 7",
+      "layerId": "overview",
+      "x": 0.249,
+      "y": 0.482,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-8",
+      "label": "Ammo Cache 8",
+      "layerId": "overview",
+      "x": 0.369,
+      "y": 0.308,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-9",
+      "label": "Ammo Cache 9",
+      "layerId": "overview",
+      "x": 0.729,
+      "y": 0.661,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ammo-cache-10",
+      "label": "Ammo Cache 10",
+      "layerId": "overview",
+      "x": 0.87,
+      "y": 0.672,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-armor-wall-buy-1",
+      "label": "Armor Wall Buy 1",
+      "layerId": "overview",
+      "x": 0.587,
+      "y": 0.61,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-armor-wall-buy-2",
+      "label": "Armor Wall Buy 2",
+      "layerId": "overview",
+      "x": 0.354,
+      "y": 0.559,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-armor-wall-buy-3",
+      "label": "Armor Wall Buy 3",
+      "layerId": "overview",
+      "x": 0.771,
+      "y": 0.759,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-armor-wall-buy-4",
+      "label": "Armor Wall Buy 4",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.282,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-arsenal-1",
+      "label": "Arsenal 1",
+      "layerId": "overview",
+      "x": 0.49,
+      "y": 0.63,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-arsenal-2",
+      "label": "Arsenal 2",
+      "layerId": "overview",
+      "x": 0.763,
+      "y": 0.626,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-arsenal-3",
+      "label": "Arsenal 3",
+      "layerId": "overview",
+      "x": 0.196,
+      "y": 0.482,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-crafting-table-1",
+      "label": "Crafting Table 1",
+      "layerId": "overview",
+      "x": 0.329,
+      "y": 0.703,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-crafting-table-2",
+      "label": "Crafting Table 2",
+      "layerId": "overview",
+      "x": 0.786,
+      "y": 0.681,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-crafting-table-3",
+      "label": "Crafting Table 3",
+      "layerId": "overview",
+      "x": 0.635,
+      "y": 0.329,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-1",
+      "label": "Door Buy 1",
+      "layerId": "overview",
+      "x": 0.509,
+      "y": 0.755,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-2",
+      "label": "Door Buy 2",
+      "layerId": "overview",
+      "x": 0.542,
+      "y": 0.706,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-3",
+      "label": "Door Buy 3",
+      "layerId": "overview",
+      "x": 0.314,
+      "y": 0.659,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-4",
+      "label": "Door Buy 4",
+      "layerId": "overview",
+      "x": 0.282,
+      "y": 0.602,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-5",
+      "label": "Door Buy 5",
+      "layerId": "overview",
+      "x": 0.385,
+      "y": 0.548,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-6",
+      "label": "Door Buy 6",
+      "layerId": "overview",
+      "x": 0.401,
+      "y": 0.47,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-7",
+      "label": "Door Buy 7",
+      "layerId": "overview",
+      "x": 0.474,
+      "y": 0.489,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-8",
+      "label": "Door Buy 8",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.388,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-9",
+      "label": "Door Buy 9",
+      "layerId": "overview",
+      "x": 0.361,
+      "y": 0.397,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-10",
+      "label": "Door Buy 10",
+      "layerId": "overview",
+      "x": 0.227,
+      "y": 0.495,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-11",
+      "label": "Door Buy 11",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.43,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-12",
+      "label": "Door Buy 12",
+      "layerId": "overview",
+      "x": 0.232,
+      "y": 0.39,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-13",
+      "label": "Door Buy 13",
+      "layerId": "overview",
+      "x": 0.268,
+      "y": 0.346,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-14",
+      "label": "Door Buy 14",
+      "layerId": "overview",
+      "x": 0.494,
+      "y": 0.554,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-15",
+      "label": "Door Buy 15",
+      "layerId": "overview",
+      "x": 0.657,
+      "y": 0.573,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-16",
+      "label": "Door Buy 16",
+      "layerId": "overview",
+      "x": 0.603,
+      "y": 0.553,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-17",
+      "label": "Door Buy 17",
+      "layerId": "overview",
+      "x": 0.644,
+      "y": 0.532,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-18",
+      "label": "Door Buy 18",
+      "layerId": "overview",
+      "x": 0.651,
+      "y": 0.37,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-19",
+      "label": "Door Buy 19",
+      "layerId": "overview",
+      "x": 0.628,
+      "y": 0.347,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-20",
+      "label": "Door Buy 20",
+      "layerId": "overview",
+      "x": 0.674,
+      "y": 0.346,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-21",
+      "label": "Door Buy 21",
+      "layerId": "overview",
+      "x": 0.605,
+      "y": 0.333,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-22",
+      "label": "Door Buy 22",
+      "layerId": "overview",
+      "x": 0.764,
+      "y": 0.658,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-door-buy-23",
+      "label": "Door Buy 23",
+      "layerId": "overview",
+      "x": 0.754,
+      "y": 0.727,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-exfil-1",
+      "label": "Exfil 1",
+      "layerId": "overview",
+      "x": 0.543,
+      "y": 0.606,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-exfil-2",
+      "label": "Exfil 2",
+      "layerId": "overview",
+      "x": 0.512,
+      "y": 0.79,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-exfil-3",
+      "label": "Exfil 3",
+      "layerId": "overview",
+      "x": 0.472,
+      "y": 0.455,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-exfil-4",
+      "label": "Exfil 4",
+      "layerId": "overview",
+      "x": 0.807,
+      "y": 0.631,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-exfil-5",
+      "label": "Exfil 5",
+      "layerId": "overview",
+      "x": 0.22,
+      "y": 0.522,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-1",
+      "label": "Zipline 1",
+      "layerId": "overview",
+      "x": 0.612,
+      "y": 0.817,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Beacon Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-2",
+      "label": "Zipline 2",
+      "layerId": "overview",
+      "x": 0.692,
+      "y": 0.763,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Eidskallen Landing",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-3",
+      "label": "Zipline 3",
+      "layerId": "overview",
+      "x": 0.636,
+      "y": 0.64,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Beacon Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-4",
+      "label": "Zipline 4",
+      "layerId": "overview",
+      "x": 0.729,
+      "y": 0.654,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Eidskallen Square",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-5",
+      "label": "Zipline 5",
+      "layerId": "overview",
+      "x": 0.494,
+      "y": 0.553,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Fishery Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-6",
+      "label": "Zipline 6",
+      "layerId": "overview",
+      "x": 0.474,
+      "y": 0.487,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Eidskallen Square",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-7",
+      "label": "Zipline 7",
+      "layerId": "overview",
+      "x": 0.385,
+      "y": 0.547,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Fishery Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-8",
+      "label": "Zipline 8",
+      "layerId": "overview",
+      "x": 0.401,
+      "y": 0.468,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Dry Dock",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-9",
+      "label": "Zipline 9",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.387,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Skallen Market",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-10",
+      "label": "Zipline 10",
+      "layerId": "overview",
+      "x": 0.582,
+      "y": 0.395,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Fishery Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-11",
+      "label": "Zipline 11",
+      "layerId": "overview",
+      "x": 0.36,
+      "y": 0.396,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Core Foundry",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-12",
+      "label": "Zipline 12",
+      "layerId": "overview",
+      "x": 0.3,
+      "y": 0.445,
+      "category": "travel",
+      "precision": "point",
+      "description": "Travel to Fishery Island",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-13",
+      "label": "Zipline 13",
+      "layerId": "overview",
+      "x": 0.261,
+      "y": 0.283,
+      "category": "travel",
+      "precision": "point",
+      "description": "Enter Tyr's Head",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-fast-travel-14",
+      "label": "Zipline 14",
+      "layerId": "overview",
+      "x": 0.563,
+      "y": 0.248,
+      "category": "travel",
+      "precision": "point",
+      "description": "Enter Tyr's Head",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-1",
+      "label": "Gobblegum Machine 1",
+      "layerId": "overview",
+      "x": 0.516,
+      "y": 0.726,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-2",
+      "label": "Gobblegum Machine 2",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.716,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-3",
+      "label": "Gobblegum Machine 3",
+      "layerId": "overview",
+      "x": 0.654,
+      "y": 0.523,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-4",
+      "label": "Gobblegum Machine 4",
+      "layerId": "overview",
+      "x": 0.271,
+      "y": 0.673,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-5",
+      "label": "Gobblegum Machine 5",
+      "layerId": "overview",
+      "x": 0.556,
+      "y": 0.294,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-6",
+      "label": "Gobblegum Machine 6",
+      "layerId": "overview",
+      "x": 0.702,
+      "y": 0.395,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-7",
+      "label": "Gobblegum Machine 7",
+      "layerId": "overview",
+      "x": 0.376,
+      "y": 0.437,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-gobblegum-machine-8",
+      "label": "Gobblegum Machine 8",
+      "layerId": "overview",
+      "x": 0.231,
+      "y": 0.453,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-1",
+      "label": "Mystery Box Location 1",
+      "layerId": "overview",
+      "x": 0.517,
+      "y": 0.859,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-2",
+      "label": "Mystery Box Location 2",
+      "layerId": "overview",
+      "x": 0.347,
+      "y": 0.651,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-3",
+      "label": "Mystery Box Location 3",
+      "layerId": "overview",
+      "x": 0.665,
+      "y": 0.591,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-4",
+      "label": "Mystery Box Location 4",
+      "layerId": "overview",
+      "x": 0.809,
+      "y": 0.671,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-5",
+      "label": "Mystery Box Location 5",
+      "layerId": "overview",
+      "x": 0.7,
+      "y": 0.326,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-6",
+      "label": "Mystery Box Location 6",
+      "layerId": "overview",
+      "x": 0.404,
+      "y": 0.372,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mystery-box-7",
+      "label": "Mystery Box Location 7",
+      "layerId": "overview",
+      "x": 0.248,
+      "y": 0.444,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-pack-a-punch-1",
+      "label": "Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.426,
+      "y": 0.386,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Pack-a-Punch location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-1",
+      "label": "Power Door 1",
+      "layerId": "overview",
+      "x": 0.612,
+      "y": 0.818,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-2",
+      "label": "Power Door 2",
+      "layerId": "overview",
+      "x": 0.691,
+      "y": 0.764,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-3",
+      "label": "Power Door 3",
+      "layerId": "overview",
+      "x": 0.637,
+      "y": 0.64,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-4",
+      "label": "Power Door 4",
+      "layerId": "overview",
+      "x": 0.728,
+      "y": 0.654,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-5",
+      "label": "Power Door 5",
+      "layerId": "overview",
+      "x": 0.621,
+      "y": 0.488,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-6",
+      "label": "Power Door 6",
+      "layerId": "overview",
+      "x": 0.54,
+      "y": 0.267,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-7",
+      "label": "Power Door 7",
+      "layerId": "overview",
+      "x": 0.303,
+      "y": 0.304,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-power-door-8",
+      "label": "Power Door 8",
+      "layerId": "overview",
+      "x": 0.277,
+      "y": 0.536,
+      "category": "travel",
+      "precision": "point",
+      "description": "Power Door location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-rampage-inducer-1",
+      "label": "Rampage Inducer",
+      "layerId": "overview",
+      "x": 0.579,
+      "y": 0.841,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Rampage Inducer location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-trap-1",
+      "label": "Flammenfalle 1",
+      "layerId": "overview",
+      "x": 0.423,
+      "y": 0.734,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-trap-2",
+      "label": "Flammenfalle 2",
+      "layerId": "overview",
+      "x": 0.619,
+      "y": 0.598,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-trap-3",
+      "label": "Flammenfalle 3",
+      "layerId": "overview",
+      "x": 0.827,
+      "y": 0.702,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-trap-4",
+      "label": "Flammenfalle 4",
+      "layerId": "overview",
+      "x": 0.686,
+      "y": 0.357,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-trap-5",
+      "label": "Flammenfalle 5",
+      "layerId": "overview",
+      "x": 0.259,
+      "y": 0.385,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-deadshot-daiquiri-1",
+      "label": "Deadshot Daiquiri",
+      "layerId": "overview",
+      "x": 0.41,
+      "y": 0.301,
+      "category": "perk",
+      "precision": "point",
+      "description": "Deadshot Daiquiri location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-der-wunderfizz-1",
+      "label": "Der Wunderfizz",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.674,
+      "category": "perk",
+      "precision": "point",
+      "description": "Der Wunderfizz location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-double-tap-1",
+      "label": "Double Tap",
+      "layerId": "overview",
+      "x": 0.257,
+      "y": 0.354,
+      "category": "perk",
+      "precision": "point",
+      "description": "Double Tap location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-juggernog-1",
+      "label": "Juggernog",
+      "layerId": "overview",
+      "x": 0.479,
+      "y": 0.396,
+      "category": "perk",
+      "precision": "point",
+      "description": "Juggernog location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-melee-macchiato-1",
+      "label": "Melee Macchiato",
+      "layerId": "overview",
+      "x": 0.413,
+      "y": 0.677,
+      "category": "perk",
+      "precision": "point",
+      "description": "Melee Macchiato location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mule-kick-1",
+      "label": "Mule Kick",
+      "layerId": "overview",
+      "x": 0.653,
+      "y": 0.427,
+      "category": "perk",
+      "precision": "point",
+      "description": "Mule Kick location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-phd-flopper-1",
+      "label": "PHD Flopper",
+      "layerId": "overview",
+      "x": 0.392,
+      "y": 0.574,
+      "category": "perk",
+      "precision": "point",
+      "description": "PHD Flopper location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-quick-revive-1",
+      "label": "Quick Revive",
+      "layerId": "overview",
+      "x": 0.568,
+      "y": 0.799,
+      "category": "perk",
+      "precision": "point",
+      "description": "Quick Revive location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-speed-cola-1",
+      "label": "Speed Cola",
+      "layerId": "overview",
+      "x": 0.291,
+      "y": 0.633,
+      "category": "perk",
+      "precision": "point",
+      "description": "Speed Cola location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-stamin-up-1",
+      "label": "Stamin-Up",
+      "layerId": "overview",
+      "x": 0.602,
+      "y": 0.669,
+      "category": "perk",
+      "precision": "point",
+      "description": "Stamin-Up location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-vulture-aid-1",
+      "label": "Vulture Aid",
+      "layerId": "overview",
+      "x": 0.72,
+      "y": 0.553,
+      "category": "perk",
+      "precision": "point",
+      "description": "Vulture Aid location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-coda-9-1",
+      "label": "CODA 9",
+      "layerId": "overview",
+      "x": 0.545,
+      "y": 0.851,
+      "category": "weapon",
+      "precision": "point",
+      "description": "CODA 9 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-echo-12-1",
+      "label": "Echo 12",
+      "layerId": "overview",
+      "x": 0.529,
+      "y": 0.758,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Echo 12 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mxr-17-1",
+      "label": "MXR-17",
+      "layerId": "overview",
+      "x": 0.398,
+      "y": 0.442,
+      "category": "weapon",
+      "precision": "point",
+      "description": "MXR-17 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-peacekeeper-mk1-1",
+      "label": "Peacekeeper MK1",
+      "layerId": "overview",
+      "x": 0.63,
+      "y": 0.413,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Peacekeeper MK1 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-shadow-sk-1",
+      "label": "Shadow Sk",
+      "layerId": "overview",
+      "x": 0.605,
+      "y": 0.272,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Shadow Sk location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-vs-recon-1",
+      "label": "VS Recon",
+      "layerId": "overview",
+      "x": 0.251,
+      "y": 0.451,
+      "category": "weapon",
+      "precision": "point",
+      "description": "VS Recon location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-x9-maverick-1",
+      "label": "X9 Maverick",
+      "layerId": "overview",
+      "x": 0.297,
+      "y": 0.629,
+      "category": "weapon",
+      "precision": "point",
+      "description": "X9 Maverick location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-xm325-1",
+      "label": "XM325",
+      "layerId": "overview",
+      "x": 0.733,
+      "y": 0.687,
+      "category": "weapon",
+      "precision": "point",
+      "description": "XM325 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-m8a1-1",
+      "label": "M8A1",
+      "layerId": "overview",
+      "x": 0.672,
+      "y": 0.337,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M8A1 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-m10-breacher-1",
+      "label": "M10 Breacher",
+      "layerId": "overview",
+      "x": 0.653,
+      "y": 0.533,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M10 Breacher location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-rk-9-1",
+      "label": "RK-9",
+      "layerId": "overview",
+      "x": 0.391,
+      "y": 0.635,
+      "category": "weapon",
+      "precision": "point",
+      "description": "RK-9 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-mpc-25-1",
+      "label": "MPC-25",
+      "layerId": "overview",
+      "x": 0.537,
+      "y": 0.64,
+      "category": "weapon",
+      "precision": "point",
+      "description": "MPC-25 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-warden-308-1",
+      "label": "Warden 308",
+      "layerId": "overview",
+      "x": 0.292,
+      "y": 0.321,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Warden 308 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "czg-ds20-mirage-1",
+      "label": "DS20 Mirage",
+      "layerId": "overview",
+      "x": 0.227,
+      "y": 0.461,
+      "category": "weapon",
+      "precision": "point",
+      "description": "DS20 Mirage location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "boss-dravakars-fall-1",
+      "label": "Dravakar's Fall",
+      "layerId": "boss-arena",
+      "x": 0.5,
+      "y": 0.5,
+      "category": "area",
+      "precision": "area",
+      "description": "The separate Dravakar encounter arena.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "boss-trap-1",
+      "label": "Flammenfalle 1",
+      "layerId": "boss-arena",
+      "x": 0.439,
+      "y": 0.519,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle in the boss arena.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "boss-trap-2",
+      "label": "Flammenfalle 2",
+      "layerId": "boss-arena",
+      "x": 0.398,
+      "y": 0.208,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle in the boss arena.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "boss-trap-3",
+      "label": "Flammenfalle 3",
+      "layerId": "boss-arena",
+      "x": 0.406,
+      "y": 0.792,
+      "category": "trap",
+      "precision": "point",
+      "description": "Flammenfalle in the boss arena.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "boss-ammo-cache-1",
+      "label": "Ammo Cache",
+      "layerId": "boss-arena",
+      "x": 0.503,
+      "y": 0.483,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache in the boss arena.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+    },
+    {
+      "id": "cursed-mister-peeks-1",
+      "label": "Mister Peeks — Southwest of Fjord Road",
+      "layerId": "overview",
+      "x": 0.364,
+      "y": 0.856,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-2",
+      "label": "Mister Peeks — Eidskallen Landing",
+      "layerId": "overview",
+      "x": 0.539,
+      "y": 0.84,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-3",
+      "label": "Mister Peeks — Southeast of Eidskallen Square",
+      "layerId": "overview",
+      "x": 0.667,
+      "y": 0.639,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-4",
+      "label": "Mister Peeks — Blodheim Hall",
+      "layerId": "overview",
+      "x": 0.703,
+      "y": 0.552,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-5",
+      "label": "Mister Peeks — Eidskallen Stave Church",
+      "layerId": "overview",
+      "x": 0.641,
+      "y": 0.334,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-6",
+      "label": "Mister Peeks — Genetic Lab / Fishery Island",
+      "layerId": "overview",
+      "x": 0.404,
+      "y": 0.39,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-7",
+      "label": "Mister Peeks — Core Foundry / War Factory",
+      "layerId": "overview",
+      "x": 0.239,
+      "y": 0.481,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-8",
+      "label": "Mister Peeks — Dry Dock / Machine Workshop",
+      "layerId": "overview",
+      "x": 0.267,
+      "y": 0.636,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-9",
+      "label": "Mister Peeks — Lighthouse",
+      "layerId": "overview",
+      "x": 0.787,
+      "y": 0.726,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "state": "Cursed mode · possible spawn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "eidskallen-landing",
+      "title": "Eidskallen Landing",
+      "locationIds": [
+        "eidskallen-landing"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-place-the-atomkraft-core-on-pallets-next-to-quick-revive-then-turn-on-"
+    },
+    {
+      "id": "eidskallen-square",
+      "title": "Eidskallen Square",
+      "locationIds": [
+        "eidskallen-square"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bring-both-items-to-the-mount-on-the-wall-across-the-arsenal-in-eidska"
+    },
+    {
+      "id": "dry-dock",
+      "title": "Dry Dock",
+      "locationIds": [
+        "dry-dock"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-dry-dock-behind-the-boat-opposite-of-phd-flopper"
+    },
+    {
+      "id": "titan-crane",
+      "title": "Titan Crane / Dry Dock",
+      "locationIds": [
+        "titan-crane"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-chain-links-interact-with-the-button-in-titan-crane-to-lower-a-wooden-"
+    },
+    {
+      "id": "machine-workshop",
+      "title": "Machine Workshop / Dry Dock",
+      "locationIds": [
+        "machine-workshop"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-place-all-3-uraniums-inside-the-claw-machine-and-interact-with-it"
+    },
+    {
+      "id": "core-foundry",
+      "title": "Core Foundry",
+      "locationIds": [
+        "core-foundry"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-core-foundry-next-to-the-vs-recon-wall-buy"
+    },
+    {
+      "id": "genetic-lab",
+      "title": "Group 935 Genetic Lab entrance",
+      "locationIds": [
+        "genetic-lab"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-there-will-be-5-head-jars-marked-a-to-e-around-the-room-look-at-the-co"
+    },
+    {
+      "id": "war-factory",
+      "title": "War Factory",
+      "locationIds": [
+        "war-factory"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-war-factory-in-a-corner-near-the-admin-room"
+    },
+    {
+      "id": "storm-bridge",
+      "title": "Storm Bridge",
+      "locationIds": [
+        "storm-bridge"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-chilly-chunks-back-of-a-truck-next-to-deadshot-daiquiri-in-storm-bridg"
+    },
+    {
+      "id": "tyrs-foot",
+      "title": "Tyr’s Foot",
+      "locationIds": [
+        "tyrs-foot"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-next-to-a-search-light-on-top-of-a-concrete-building-far-outside-of-ty"
+    },
+    {
+      "id": "tyrs-head",
+      "title": "Tyr’s Head",
+      "locationIds": [
+        "tyrs-head"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-check-the-two-blinking-lights-inside-tyr-s-head-the-two-lights-will-bl"
+    },
+    {
+      "id": "tyrs-shoulder",
+      "title": "Tyr’s Shoulder",
+      "locationIds": [
+        "tyrs-shoulder"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-shadow-sk-tyr-s-shoulder"
+    },
+    {
+      "id": "fjord-road",
+      "title": "Fjord Road",
+      "locationIds": [
+        "fjord-road"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-fjord-road-next-to-the-flammefalle-trap"
+    },
+    {
+      "id": "fishery-island",
+      "title": "Fishery Island",
+      "locationIds": [
+        "fishery-island"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-if-done-correctly-a-yellow-portal-will-spawn-on-a-wall-behind-juggerno"
+    },
+    {
+      "id": "skallen-market",
+      "title": "Skallen Market",
+      "locationIds": [
+        "skallen-market"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-lantern-place-the-chilly-chunks-on-the-table-in-the-center-of-skallen-"
+    },
+    {
+      "id": "burial-grounds",
+      "title": "Burial Grounds",
+      "locationIds": [
+        "burial-grounds"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-reach-the-burial-grounds-and-interact-with-the-door-to-put-the-chain-l"
+    },
+    {
+      "id": "stave-church",
+      "title": "Eidskallen Stave Church",
+      "locationIds": [
+        "stave-church"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-place-the-sunstone-in-the-center-of-eidskallen-stave-church-and-use-th"
+    },
+    {
+      "id": "blodheim-hall",
+      "title": "Blodheim Hall",
+      "locationIds": [
+        "blodheim-hall"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bring-the-shard-inside-the-blodheim-hall-and-place-it-on-the-bonfire-l"
+    },
+    {
+      "id": "lovens-antiquities",
+      "title": "Loven’s Antiquities",
+      "locationIds": [
+        "lovens-antiquities"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bottom-of-a-shelf-next-to-a-plate-at-loven-s-antiquities"
+    },
+    {
+      "id": "beacon-island",
+      "title": "Beacon Island",
+      "locationIds": [
+        "beacon-island"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-get-the-fish-from-the-bucket-located-on-a-shelf-inside-the-shed-next-t"
+    },
+    {
+      "id": "lighthouse",
+      "title": "Lighthouse",
+      "locationIds": [
+        "lighthouse"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-once-astrid-is-near-the-lighthouse-repeat-the-energy-charging-process-"
+    },
+    {
+      "id": "jotunn-star",
+      "title": "Jotunn Star route",
+      "locationIds": [
+        "storm-bridge",
+        "skallen-market",
+        "titan-crane",
+        "burial-grounds",
+        "lighthouse"
+      ],
+      "kind": "sequence",
+      "description": "Collect Chilly Chunks, Lantern and Chains; complete the Burial Grounds shrine; escort Astrid and climb the Lighthouse.",
+      "guideAnchor": "wiki_jotunn_star"
+    },
+    {
+      "id": "crowbar-notes",
+      "title": "Crowbar and note candidates",
+      "locationIds": [
+        "lighthouse",
+        "dry-dock",
+        "tyrs-foot"
+      ],
+      "kind": "sequence",
+      "description": "Crowbar: Lighthouse shelf. Note candidates: Dry Dock button room or corpse by Tyr’s Foot.",
+      "guideAnchor": "wiki_wundersignal"
+    },
+    {
+      "id": "crates",
+      "title": "Flak round crate candidates",
+      "locationIds": [
+        "war-factory",
+        "dry-dock",
+        "core-foundry",
+        "fjord-road"
+      ],
+      "kind": "candidates",
+      "description": "Use the note to choose the crate code. Search the Admin corner, boat, VS Recon wall-buy and road trap landmarks; room centers do not identify individual crates.",
+      "guideAnchor": "wiki_wundersignal"
+    },
+    {
+      "id": "flak-shot",
+      "title": "Flak gun and Riese head",
+      "locationIds": [
+        "beacon-island",
+        "eidskallen-landing"
+      ],
+      "kind": "sequence",
+      "description": "Use the flak gun near the Lighthouse facing spawn, then recover the Transmitter from the Riese head at the landing.",
+      "guideAnchor": "guide-step-map-place-the-atomkraft-core-on-pallets-next-to-quick-revive-then-turn-on-"
+    },
+    {
+      "id": "transmitter",
+      "title": "Transmitter delivery",
+      "locationIds": [
+        "eidskallen-landing",
+        "tyrs-head"
+      ],
+      "kind": "sequence",
+      "description": "Collect from the Riese head, then place it inside Tyr’s head on the second floor.",
+      "guideAnchor": "guide-step-map-place-the-atomkraft-core-on-pallets-next-to-quick-revive-then-turn-on-"
+    },
+    {
+      "id": "radio-console",
+      "title": "Foundry radio console",
+      "locationIds": [
+        "core-foundry"
+      ],
+      "kind": "area",
+      "description": "Use a Molotov to unlock the Ascender. The Amplitude / Frequency console and controller are on the upper walkway.",
+      "guideAnchor": "guide-step-map-if-done-correctly-a-free-wunderbarrage-controller-will-spawn-in-the-ro"
+    },
+    {
+      "id": "fishing",
+      "title": "Fishing search areas",
+      "locationIds": [
+        "czg-fishing-spot-1",
+        "czg-fishing-spot-2",
+        "czg-fishing-spot-3",
+        "czg-fishing-spot-4",
+        "czg-fishing-spot-5",
+        "czg-fishing-spot-6",
+        "czg-fishing-spot-7",
+        "czg-fishing-spot-8",
+        "czg-fishing-spot-9",
+        "czg-fishing-spot-10",
+        "czg-fishing-spot-11",
+        "dry-dock",
+        "storm-bridge",
+        "fishery-island",
+        "beacon-island",
+        "blodheim-hall"
+      ],
+      "kind": "candidates",
+      "description": "Eleven published fishing spots, plus rod search areas. Check for the green fish; the Irradiated Ravager later roams and has no fixed pin.",
+      "guideAnchor": "wiki_fishing"
+    },
+    {
+      "id": "uranium-lab",
+      "title": "Genetic Lab Uranium",
+      "locationIds": [
+        "core-foundry",
+        "genetic-lab"
+      ],
+      "kind": "sequence",
+      "description": "ARC-XD vent approach, then the jar machine, Necrospike and locked cell in the interior lab.",
+      "guideAnchor": "wiki_atomkraft_core"
+    },
+    {
+      "id": "core-charge",
+      "title": "Charge the Atomkraft Core",
+      "locationIds": [
+        "eidskallen-landing",
+        "storm-bridge",
+        "tyrs-foot"
+      ],
+      "kind": "sequence",
+      "description": "Defend the pallets and generator near Quick Revive, carry the core to the Storm Bridge barrel, then collect the shard near Tyr’s Foot.",
+      "guideAnchor": "guide-step-map-place-the-atomkraft-core-on-pallets-next-to-quick-revive-then-turn-on-"
+    },
+    {
+      "id": "bonfire",
+      "title": "Blodheim Hall bonfire",
+      "locationIds": [
+        "blodheim-hall"
+      ],
+      "kind": "area",
+      "description": "Place the shard, light the central bonfire, and feed it zombies with a Disciple Injection.",
+      "guideAnchor": "guide-step-map-get-a-disciple-injection-and-throw-zombies-inside-the-bonfire-note-a-f"
+    },
+    {
+      "id": "sunstone",
+      "title": "Sunstone altar",
+      "locationIds": [
+        "stave-church"
+      ],
+      "kind": "area",
+      "description": "Place the Sunstone at the church center. Rune wood piles appear around the map and are not verified fixed pins.",
+      "guideAnchor": "wiki_vegvisir"
+    },
+    {
+      "id": "boss-launch",
+      "title": "Dravakar encounter launch",
+      "locationIds": [
+        "tyrs-head"
+      ],
+      "kind": "area",
+      "description": "Interact with Tyr’s Head console to travel to Dravakar’s Fall. Select the boss-arena layer for the encounter layout and traps.",
+      "guideAnchor": "wiki_dravakar_boss_fight"
+    },
+    {
+      "id": "song",
+      "title": "Headphone search areas",
+      "locationIds": [
+        "dry-dock",
+        "core-foundry",
+        "lovens-antiquities"
+      ],
+      "kind": "sequence",
+      "description": "Look on boxes near PhD, near Double Tap, and at the bottom of the Antiquities shelf beside a plate.",
+      "guideAnchor": "guide-step-map-dry-dock-behind-the-boat-opposite-of-phd-flopper"
+    },
+    {
+      "id": "gnomes",
+      "title": "Gnome statue search areas",
+      "locationIds": [
+        "machine-workshop",
+        "tyrs-foot",
+        "stave-church",
+        "lighthouse"
+      ],
+      "kind": "sequence",
+      "description": "Upper Workshop sheets, the distant search-light roof from Tyr’s Foot, church altar, and Lighthouse upper catwalk. These are viewpoint areas.",
+      "guideAnchor": "guide-step-map-shoot-four-gnome-statues-around-the-map-note-shooting-at-the-statues-s"
+    },
+    {
+      "id": "deer-heads",
+      "title": "Power Switch relic viewpoints",
+      "locationIds": [
+        "eidskallen-landing",
+        "burial-grounds",
+        "core-foundry",
+        "tyrs-foot",
+        "blodheim-hall"
+      ],
+      "kind": "sequence",
+      "description": "Observe the four outside-map structures from these areas, then use the matching bear pelts in Blodheim Hall. The outside structures themselves are not exact pins.",
+      "guideAnchor": "guide-step-map-place-the-atomkraft-core-on-pallets-next-to-quick-revive-then-turn-on-"
+    },
+    {
+      "id": "boss-arena",
+      "title": "Dravakar’s Fall",
+      "locationIds": [
+        "boss-dravakars-fall-1",
+        "boss-trap-1",
+        "boss-trap-2",
+        "boss-trap-3"
+      ],
+      "kind": "area",
+      "description": "The three traps counter freezing during the fight. Moving heads, weak spots and ice attacks are not fixed markers.",
+      "guideAnchor": "wiki_dravakar_boss_fight"
+    },
+    {
+      "id": "areas-dry-dock--tyrs-foot",
+      "title": "Dry Dock / Tyr’s Foot",
+      "locationIds": [
+        "dry-dock",
+        "tyrs-foot"
+      ],
+      "kind": "candidates",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-find-a-note-on-the-ground-in-either-dry-dock-in-the-room-with-the-inte"
+    },
+    {
+      "id": "areas-lighthouse--eidskallen-landing",
+      "title": "Lighthouse / Eidskallen Landing",
+      "locationIds": [
+        "lighthouse",
+        "eidskallen-landing"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-reach-the-flak-gun-near-the-lighthouse-facing-spawn-area-and-place-the"
+    },
+    {
+      "id": "areas-eidskallen-landing--tyrs-head",
+      "title": "Eidskallen Landing / Tyr’s Head",
+      "locationIds": [
+        "eidskallen-landing",
+        "tyrs-head"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-go-to-the-riese-robot-head-in-spawn-and-hold-interact-with-it-to-get-t"
+    },
+    {
+      "id": "areas-dry-dock--storm-bridge--fishery-island--beacon-island",
+      "title": "Dry Dock / Storm Bridge / Fishery Island / Beacon Island",
+      "locationIds": [
+        "dry-dock",
+        "storm-bridge",
+        "fishery-island",
+        "beacon-island"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-find-a-fishing-rod-dry-dock-storm-bridge-fishery-island-beacon-island"
+    },
+    {
+      "id": "areas-core-foundry--genetic-lab",
+      "title": "Core Foundry / Group 935 Genetic Lab",
+      "locationIds": [
+        "core-foundry",
+        "genetic-lab"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-get-an-arc-xd-and-melee-the-vent-near-stairs-and-zipline-in-core-found"
+    },
+    {
+      "id": "areas-dry-dock--machine-workshop",
+      "title": "Dry Dock / Machine Workshop / Dry Dock",
+      "locationIds": [
+        "dry-dock",
+        "machine-workshop"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-use-the-wunderbarrage-controller-to-clear-the-debris-on-the-stairs-out"
+    },
+    {
+      "id": "areas-storm-bridge--tyrs-foot",
+      "title": "Storm Bridge / Tyr’s Foot",
+      "locationIds": [
+        "storm-bridge",
+        "tyrs-foot"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-once-done-bring-the-charged-atomkraft-core-to-storm-bridge-and-place-i"
+    },
+    {
+      "id": "areas-blodheim-hall--dry-dock--fishery-island--storm-bridge--beacon-island",
+      "title": "Blodheim Hall / Dry Dock / Fishery Island / Storm Bridge / Beacon Island",
+      "locationIds": [
+        "blodheim-hall",
+        "dry-dock",
+        "fishery-island",
+        "storm-bridge",
+        "beacon-island"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-blodheim-hall-dry-dock-fishery-island-storm-bridge-beacon-island"
+    },
+    {
+      "id": "areas-eidskallen-landing--eidskallen-square--dry-dock--beacon-island--fishery-island--tyrs-foot--tyrs-shoulder",
+      "title": "Eidskallen Landing / Eidskallen Square / Dry Dock / Beacon Island / Fishery Island / Tyr’s Foot / Tyr’s Shoulder",
+      "locationIds": [
+        "eidskallen-landing",
+        "eidskallen-square",
+        "dry-dock",
+        "beacon-island",
+        "fishery-island",
+        "tyrs-foot",
+        "tyrs-shoulder"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-eidskallen-landing-x2-eidskallen-square-x2-dry-dock-beacon-island-x2-f"
+    },
+    {
+      "id": "areas-lighthouse--beacon-island",
+      "title": "Lighthouse / Beacon Island",
+      "locationIds": [
+        "lighthouse",
+        "beacon-island"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-shoot-at-4-mr-peeks-eggs-located-around-the-map-and-defeat-the-hvt-tha"
+    },
+    {
+      "id": "areas-tyrs-foot--storm-bridge",
+      "title": "Tyr’s Foot / Storm Bridge",
+      "locationIds": [
+        "tyrs-foot",
+        "storm-bridge"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-near-tyr-s-foot-outside-of-storm-bridge"
+    },
+    {
+      "id": "areas-skallen-market--blodheim-hall",
+      "title": "Skallen Market / Blodheim Hall",
+      "locationIds": [
+        "skallen-market",
+        "blodheim-hall"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-get-the-pot-located-on-the-ground-below-a-wooden-table-behind-mule-kic"
+    },
+    {
+      "id": "areas-blodheim-hall--lovens-antiquities--eidskallen-square",
+      "title": "Blodheim Hall / Loven’s Antiquities / Eidskallen Square",
+      "locationIds": [
+        "blodheim-hall",
+        "lovens-antiquities",
+        "eidskallen-square"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-get-2-items-and-place-them-inside-the-pot-in-blodheim-hall-the-beer-mu"
+    },
+    {
+      "id": "areas-fjord-road--beacon-island--eidskallen-square--core-foundry",
+      "title": "Fjord Road / Beacon Island / Eidskallen Square / Core Foundry",
+      "locationIds": [
+        "fjord-road",
+        "beacon-island",
+        "eidskallen-square",
+        "core-foundry"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-flammenfalle-fjord-road-beacon-island-eidskallen-square-core-foundry"
+    },
+    {
+      "id": "cursed-mister-peeks",
+      "title": "Mister Peeks — Cursed reward spawns",
+      "locationIds": [
+        "cursed-mister-peeks-1",
+        "cursed-mister-peeks-2",
+        "cursed-mister-peeks-3",
+        "cursed-mister-peeks-4",
+        "cursed-mister-peeks-5",
+        "cursed-mister-peeks-6",
+        "cursed-mister-peeks-7",
+        "cursed-mister-peeks-8",
+        "cursed-mister-peeks-9"
+      ],
+      "kind": "candidates",
+      "description": "In tiered Cursed runs, Mister Peeks can briefly appear at a possible spawn. Shoot him for an egg with rewards that can include perks. These pins are candidates, not guaranteed appearances.",
+      "guideAnchor": "wiki_cursed_mister_peeks"
+    },
+    {
+      "id": "locations-wall-buys-locations",
+      "title": "Wall-Buys locations",
+      "locationIds": [
+        "eidskallen-landing",
+        "dry-dock",
+        "core-foundry",
+        "war-factory",
+        "fishery-island",
+        "tyrs-foot",
+        "tyrs-shoulder",
+        "tyrs-head",
+        "stave-church",
+        "skallen-market",
+        "blodheim-hall",
+        "eidskallen-square",
+        "beacon-island"
+      ],
+      "guideAnchor": "wiki_wall_buys_locations"
+    },
+    {
+      "id": "locations-perks-locations",
+      "title": "Perks locations",
+      "locationIds": [
+        "czg-deadshot-daiquiri-1",
+        "czg-der-wunderfizz-1",
+        "czg-double-tap-1",
+        "czg-juggernog-1",
+        "czg-melee-macchiato-1",
+        "czg-mule-kick-1",
+        "czg-phd-flopper-1",
+        "czg-quick-revive-1",
+        "czg-speed-cola-1",
+        "czg-stamin-up-1",
+        "czg-vulture-aid-1"
+      ],
+      "guideAnchor": "wiki_perks_locations"
+    },
+    {
+      "id": "locations-armor-vests-locations",
+      "title": "Armor Vests locations",
+      "locationIds": [
+        "eidskallen-square",
+        "dry-dock"
+      ],
+      "guideAnchor": "wiki_armor_vests_locations"
+    },
+    {
+      "id": "locations-traps-locations",
+      "title": "Traps locations",
+      "locationIds": [
+        "fjord-road",
+        "beacon-island",
+        "eidskallen-square",
+        "core-foundry"
+      ],
+      "guideAnchor": "wiki_traps_locations"
+    },
+    {
+      "id": "locations-arsenal-locations",
+      "title": "Arsenal locations",
+      "locationIds": [
+        "eidskallen-square",
+        "beacon-island"
+      ],
+      "guideAnchor": "wiki_arsenal_locations"
+    },
+    {
+      "id": "locations-crafting-table-locations",
+      "title": "Crafting Table locations",
+      "locationIds": [
+        "dry-dock",
+        "stave-church"
+      ],
+      "guideAnchor": "wiki_crafting_table_locations"
+    },
+    {
+      "id": "locations-map-find-the-corresponding-crate-in-one-of-the-possible-spawn-loc",
+      "title": "Wundersignal locations",
+      "locationIds": [
+        "war-factory",
+        "dry-dock",
+        "core-foundry",
+        "fjord-road"
+      ],
+      "guideAnchor": "guide-step-map-find-the-corresponding-crate-in-one-of-the-possible-spawn-location-if-"
+    },
+    {
+      "id": "locations-dry-dock",
+      "title": "\"No One There\" Secret Song locations",
+      "locationIds": [
+        "dry-dock",
+        "core-foundry",
+        "lovens-antiquities"
+      ],
+      "guideAnchor": "guide-step-locations-dry-dock"
+    },
+    {
+      "id": "locations-map-shoot-four-gnome-statues-around-the-map-note-shooting-at-the-",
+      "title": "Helmets locations",
+      "locationIds": [
+        "machine-workshop",
+        "tyrs-foot",
+        "stave-church",
+        "lighthouse"
+      ],
+      "guideAnchor": "guide-step-map-shoot-four-gnome-statues-around-the-map-note-shooting-at-the-statues-s"
+    }
+  ],
+  "quickLinks": {
+    "phase-1-ol-1": "jotunn-star",
+    "phase-2-ol-1": "crowbar-notes",
+    "phase-2-ol-2": "crates",
+    "phase-2-ol-3": "flak-shot",
+    "phase-2-ol-4": "transmitter",
+    "phase-2-ol-6": "radio-console",
+    "phase-3-ol-1": "fishing",
+    "phase-3-ol-2": "uranium-lab",
+    "phase-3-ol-4": "machine-workshop",
+    "phase-3-ol-5": "core-charge",
+    "phase-4-ol-1": "bonfire",
+    "phase-4-ol-3": "sunstone",
+    "phase-4-ol-4": "boss-launch",
+    "phase-5-ol-1": "boss-arena"
+  }
+}

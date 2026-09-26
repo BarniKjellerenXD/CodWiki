@@ -1,0 +1,9 @@
+<script setup lang="ts">
+import { directions } from '~/utils/puzzles.mjs'
+const {state,change,undo,reset,canUndo,saveError}=usePuzzleState('planets')
+const names=['Mars','Saturn','Neptune']
+function set(i:number,value:string) {const slots=state.value.slots.slice(); slots[i]=value; change({slots})}
+</script>
+<template><div class="puzzle"><p>Copy each planet’s direction from the three sheets.</p><div class="p-grid"><label v-for="(name,i) in names" :key="name">{{ name }}<select :value="state.slots[i] || ''" @change="set(i,($event.target as HTMLSelectElement).value)"><option value="">Choose direction</option><option v-for="d in directions" :key="d">{{ d }}</option></select></label></div><div class="p-result" aria-live="polite"><div v-for="(name,i) in names" :key="name"><strong>{{ name }}:</strong> {{ state.slots[i] || 'Not recorded' }}</div></div><p class="p-muted">Use the compass below the Sun model to orient yourself. Shoot each planet into its recorded direction; planets can share a direction.</p><div class="compass" role="img" aria-label="Compass with north at the top"><div v-for="d in ['NW','N','NE','W','Sun','E','SW','S','SE']" :key="d"><b>{{ d }}</b><small v-for="(name,i) in names" v-show="state.slots[i]===d" :key="name">{{ name }}</small></div></div><details><summary>Sheet locations</summary><p>Luminarium desk · Machina Astralis table · Archive of Orbis large table.</p></details><PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="reset" /></div></template>
+
+<style scoped>.compass{display:grid;grid-template-columns:repeat(3,1fr);max-width:320px;margin:1rem auto;gap:.3rem}.compass>div{min-height:58px;border:1px solid var(--wp-line);border-radius:6px;text-align:center;padding:.3rem}.compass small{display:block;font-size:.75rem;color:var(--wp-gold)}</style>

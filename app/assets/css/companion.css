@@ -1,0 +1,24 @@
+.companion-label { color:var(--gold); font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.12em; }
+.companion-muted { color:var(--muted); line-height:1.7; }
+.companion-button { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; min-height:44px; padding:.6rem .95rem; border:1px solid var(--line-strong); border-radius:var(--radius-sm); background:var(--surface-2); color:var(--text); font:inherit; font-size:.86rem; cursor:pointer; text-decoration:none; }
+.companion-button:hover { border-color:var(--gold); color:var(--gold-bright); }
+.companion-button.primary, .companion-button[aria-pressed="true"] { background:var(--gold); border-color:var(--gold); color:var(--on-gold); }
+.companion-button.subtle { background:transparent; border-color:transparent; color:var(--gold-bright); }
+:where(button, a, input, select, summary):focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+.companion-confirm { border:1px solid var(--gold-border); background:var(--gold-dim); padding:1rem; border-radius:var(--radius); margin:1rem 0; }
+.companion-confirm p { margin:0 0 .7rem; }
+.companion-confirm button + button { margin-left:.5rem; }
+.guide-article .guide-cover { width:100%; max-height:190px; object-fit:cover; border-radius:var(--radius); margin-bottom:1rem; }
+.guide-article .legacy-anchor { display:block; scroll-margin-top:6rem; }
+.tool-nav { display:flex; justify-content:space-between; flex-wrap:wrap; gap:.7rem; }
+.tool-page .howto summary { cursor:pointer; color:var(--gold-bright); min-height:32px; font-weight:600; }
+.tool-page .howto[open] summary { margin-bottom:.6rem; }
+.tool-page .ingcard .nm, .tool-page .ingcount, .tool-page .sub strong, .tool-page .unused b { color:var(--text); }
+.tool-page .ingcard { border-color:var(--line-strong); }
+.tool-page :where(button,[role="button"]) { min-height:44px; }
+.guide-article .cheat-grid, .guide-article .quest-grid { display:none !important; }
+.guide-article :where(h1,h2,h3) { scroll-margin-top:6rem; }
+@media(max-width:600px) { .guide-article :where(h1,h2,h3), .quest-phase { scroll-margin-top:8rem !important; } }
+:root[data-font="relaxed"] .step-copy { font-size:1.14rem; }
+:root[data-font="compact"] .step-copy { font-size:.94rem; }
+@media (prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; } }

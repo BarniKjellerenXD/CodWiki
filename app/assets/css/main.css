@@ -1,0 +1,814 @@
+/*
+ * CodWiki design system
+ * ------------------------------------------------------------------
+ * Direction: neutral charcoal with warm gold accents.
+ *  - Distinct charcoal surfaces, soft white text, and clear neutral borders.
+ *  - A single gold accent instead of the old cyan->fuchsia gradients.
+ *  - Flat panels and hairline borders: no backdrop blur, no glow.
+ *  - Body copy bumped to 17px with a taller line height for readability.
+ */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #111214;
+  --bg-accent: #17191c;
+  --surface: #1c1e22;
+  --surface-2: #26292e;
+  --surface-3: #30343a;
+
+  /* Lines */
+  --line: #383c43;
+  --line-strong: #50555e;
+
+  /* Text */
+  --text: #f2f2f0;
+  --muted: #b4b7bd;
+  --faint: #979ca5;
+
+  /* Brand */
+  --gold: #ddb363;
+  --gold-bright: #edc984;
+  --gold-dim: rgba(221, 179, 99, 0.10);
+  --gold-border: rgba(221, 179, 99, 0.38);
+  --on-gold: #1b1409;
+
+  /* Semantic accents (muted to fit the palette) */
+  --green: #7fb47a;
+  --red: #c9766a;
+
+  /* Shape */
+  --radius: 14px;
+  --radius-sm: 9px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.9);
+  --shadow-lg: 0 24px 60px -30px rgba(0, 0, 0, 0.95);
+
+  --content-width: 72rem;
+}
+
+/* --------------------------------------------------------------------------
+   Compatibility aliases
+   The tool pages (ToolShell.vue) were written before the shared theme existed.
+   They define --wp-* style variables locally; map them onto the active theme
+   so tools follow the selected theme too.
+   -------------------------------------------------------------------------- */
+:root {
+  --wp-bg: var(--bg);
+  --wp-surface: var(--surface);
+  --wp-surface-2: var(--surface-2);
+  --wp-surface-3: var(--surface-3);
+  --wp-line: var(--line);
+  --wp-line-strong: var(--line-strong);
+  --wp-text: var(--text);
+  --wp-muted: var(--muted);
+  --wp-faint: var(--faint);
+  --wp-gold: var(--gold);
+  --wp-gold-bright: var(--gold-bright);
+  --wp-gold-dim: var(--gold-dim);
+  --wp-gold-border: var(--gold-border);
+  --wp-on-gold: var(--on-gold);
+  --wp-orange: var(--orange);
+}
+
+/* ==========================================================================
+   Theme engine
+   Themes only swap the palette tokens above. Components read the tokens, so
+   every page and tool inherits a theme automatically.
+
+   Themes:
+     archive  — neutral charcoal + gold (default)
+     midnight — cool blue graphite
+     forest   — deep moss green
+     ember    — dark maroon
+     paper    — light parchment (also flips color-scheme to light)
+   ========================================================================== */
+
+:root[data-theme="archive"] {
+  color-scheme: dark;
+  --bg: #111214;
+  --bg-accent: #17191c;
+  --surface: #1c1e22;
+  --surface-2: #26292e;
+  --surface-3: #30343a;
+  --line: #383c43;
+  --line-strong: #50555e;
+  --text: #f2f2f0;
+  --muted: #b4b7bd;
+  --faint: #979ca5;
+  --gold: #ddb363;
+  --gold-bright: #edc984;
+  --gold-dim: rgba(221, 179, 99, 0.10);
+  --gold-border: rgba(221, 179, 99, 0.38);
+  --on-gold: #1b1409;
+  --green: #7fb47a;
+  --red: #c9766a;
+  --orange: #c98a4b;
+}
+
+:root[data-theme="midnight"] {
+  color-scheme: dark;
+  --bg: #0e131c;
+  --bg-accent: #121a26;
+  --surface: #151c27;
+  --surface-2: #1b2432;
+  --surface-3: #232e3f;
+  --line: #273343;
+  --line-strong: #35465c;
+  --text: #e4ebf3;
+  --muted: #a3b2c4;
+  --faint: #78889c;
+  --gold: #5aa6e0;
+  --gold-bright: #82c2f0;
+  --gold-dim: rgba(90, 166, 224, 0.14);
+  --gold-border: rgba(90, 166, 224, 0.34);
+  --on-gold: #071622;
+  --green: #74b287;
+  --red: #cf7f7a;
+  --orange: #d09a5e;
+}
+
+:root[data-theme="forest"] {
+  color-scheme: dark;
+  --bg: #0f1512;
+  --bg-accent: #131b16;
+  --surface: #161e19;
+  --surface-2: #1d2820;
+  --surface-3: #26332a;
+  --line: #28352c;
+  --line-strong: #3a4c3f;
+  --text: #e6efe4;
+  --muted: #a9bcaa;
+  --faint: #7e9280;
+  --gold: #c9a94a;
+  --gold-bright: #e0c76c;
+  --gold-dim: rgba(201, 169, 74, 0.14);
+  --gold-border: rgba(201, 169, 74, 0.34);
+  --on-gold: #141a0f;
+  --green: #88c07f;
+  --red: #c97f6f;
+  --orange: #c99a5a;
+}
+
+:root[data-theme="ember"] {
+  color-scheme: dark;
+  --bg: #170f0f;
+  --bg-accent: #1d1414;
+  --surface: #201616;
+  --surface-2: #2a1d1d;
+  --surface-3: #352525;
+  --line: #3a2a29;
+  --line-strong: #513a38;
+  --text: #f0e4dd;
+  --muted: #c0a79d;
+  --faint: #947d73;
+  --gold: #e08a4c;
+  --gold-bright: #f2a86e;
+  --gold-dim: rgba(224, 138, 76, 0.15);
+  --gold-border: rgba(224, 138, 76, 0.35);
+  --on-gold: #1c0f06;
+  --green: #85b087;
+  --red: #d3716a;
+  --orange: #d9873f;
+}
+
+:root[data-theme="paper"] {
+  color-scheme: light;
+  --bg: #f4efe4;
+  --bg-accent: #efe7d8;
+  --surface: #fbf8f1;
+  --surface-2: #f2ebdd;
+  --surface-3: #e8dfcd;
+  --line: #ddd2bd;
+  --line-strong: #c8b99e;
+  --text: #2a241c;
+  --muted: #6d6355;
+  --faint: #948a7a;
+  --gold: #ad7f22;
+  --gold-bright: #8c6517;
+  --gold-dim: rgba(173, 127, 34, 0.12);
+  --gold-border: rgba(173, 127, 34, 0.32);
+  --on-gold: #fffaf0;
+  --green: #4f8a57;
+  --red: #b0503f;
+  --orange: #b06a2a;
+}
+
+/* Paper theme light-mode adjustments */
+:root[data-theme="paper"] body {
+  background-image: radial-gradient(1100px 520px at 50% -280px, var(--bg-accent), transparent 70%);
+}
+
+:root[data-theme="paper"] .prose {
+  color: #3a332a;
+}
+
+:root[data-theme="paper"] .prose strong,
+:root[data-theme="paper"] .prose b {
+  color: #211b14;
+}
+
+:root[data-theme="paper"] .prose img {
+  box-shadow: 0 8px 24px -14px rgba(60, 48, 32, 0.55);
+}
+
+:root[data-theme="paper"] .prose code {
+  color: #2a241c;
+}
+
+:root[data-theme="paper"] .prose pre {
+  background: #efe7d8;
+}
+
+:root[data-theme="paper"] .prose tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+
+/* ---------------------------------------------------------------- Base ---- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  background-image: radial-gradient(1100px 520px at 50% -280px, var(--bg-accent), transparent 70%);
+  background-repeat: no-repeat;
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--gold-bright);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(212, 162, 74, 0.28);
+  color: #fff8ec;
+}
+
+/* Scrollbars (kept subtle, warm) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 999px;
+}
+
+/* --------------------------------------------------------------- Buttons -- */
+
+.btn-primary,
+.btn-ghost,
+.btn-mini {
+  font: inherit;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--on-gold);
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+}
+
+.btn-primary:hover {
+  background: var(--gold-bright);
+}
+
+.btn-ghost {
+  background: var(--surface-2);
+  border-color: var(--line);
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.6rem 1.1rem;
+}
+
+.btn-ghost:hover {
+  background: var(--surface-3);
+  border-color: var(--line-strong);
+}
+
+.btn-mini {
+  background: var(--surface-2);
+  border-color: var(--line);
+  color: var(--muted);
+  padding: 0.3rem 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.btn-mini:hover {
+  background: var(--surface-3);
+  color: var(--text);
+}
+
+/* --------------------------------------------------------------- Surface -- */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.divider {
+  height: 1px;
+  border: 0;
+  background: var(--line);
+}
+
+/* ---------------------------------------------------------------- Forms --- */
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+select,
+textarea {
+  background: var(--bg-accent);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 0.6rem 0.8rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+input::placeholder {
+  color: var(--faint);
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--gold-border);
+  background: var(--surface);
+}
+
+input[type="checkbox"] {
+  accent-color: var(--gold);
+}
+
+/* ==========================================================================
+   Article typography (.prose)
+   Applies to both converted guide markup and Reddit wiki HTML.
+   ========================================================================== */
+
+.prose {
+  color: #ddd4c4;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  max-width: 100%;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--text);
+  scroll-margin-top: 6rem;
+}
+
+.prose h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 2.4rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.prose h2 {
+  font-size: 1.4rem;
+  font-weight: 650;
+  margin: 2.2rem 0 0.85rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--gold);
+}
+
+.prose h3 {
+  font-size: 1.12rem;
+  font-weight: 650;
+  margin: 1.7rem 0 0.6rem;
+  color: #e7dcc9;
+}
+
+.prose h4 {
+  font-size: 1rem;
+  font-weight: 650;
+  margin: 1.3rem 0 0.5rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prose p {
+  margin: 0.9rem 0;
+}
+
+.prose strong,
+.prose b {
+  color: #f2ead9;
+  font-weight: 650;
+}
+
+.prose em {
+  color: #e4dac6;
+}
+
+.prose a {
+  color: var(--gold-bright);
+  text-decoration: underline;
+  text-decoration-color: rgba(212, 162, 74, 0.45);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  color: var(--gold);
+  text-decoration-color: var(--gold);
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.9rem 0;
+  padding-left: 1.4rem;
+}
+
+.prose ul {
+  list-style: disc;
+}
+
+.prose ol {
+  list-style: decimal;
+}
+
+.prose li {
+  margin: 0.4rem 0;
+  padding-left: 0.2rem;
+}
+
+.prose li::marker {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin: 0.4rem 0;
+}
+
+.prose hr {
+  border: 0;
+  height: 1px;
+  background: var(--line);
+  margin: 2rem 0;
+}
+
+.prose blockquote {
+  margin: 1.2rem 0;
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  border-left: 3px solid var(--line-strong);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.prose img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  cursor: zoom-in;
+  margin: 1.2rem 0;
+}
+
+/* Inline images (e.g. a screenshot inside a list item) must flow with the
+   text instead of being forced into a block. */
+.prose li img,
+.prose p img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Float helpers carried over from the converted guide markup. Without these
+   the floats collapse to zero height and leave a large blank gap at the end
+   of a guide.
+   Note: floats live inside the reading column, whose right edge is the
+   article's natural "wall". Text wraps against that edge instead of a fixed
+   pixel width, so the empty space scales with the layout. */
+.prose .table-container {
+  clear: both;
+}
+
+.prose .wiki-img-with-wrap {
+  max-width: 46%;
+}
+
+.prose .wiki-img-right {
+  float: right;
+  margin: 0.4rem 0 1rem 1.25rem;
+}
+
+.prose .wiki-img-left {
+  float: left;
+  margin: 0.4rem 1.25rem 1rem 0;
+}
+
+.prose .wiki-img-none,
+.prose .wiki-img-no-wrap {
+  max-width: 100%;
+}
+
+/* Keep floated figures from escaping the article: clear after the last
+   block-level element so no trailing whitespace is left behind. */
+.prose::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.prose code {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.12rem 0.36rem;
+  font-size: 0.9em;
+  color: #eadfc7;
+}
+
+.prose pre {
+  background: #100e0b;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  margin: 1.2rem 0;
+}
+
+.prose pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* Tables */
+.prose .table-container {
+  width: 100%;
+  margin: 1.4rem 0;
+  overflow-x: auto;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4rem 0;
+  font-size: 0.95rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.prose .table-container table {
+  margin: 0;
+}
+
+/* Fixed-width tables from the wiki should not stretch every column across
+   the whole reading column; keep them at their authored size and let the
+   container scroll if needed. */
+@media (min-width: 768px) {
+  .prose table[style*="table-layout: fixed"] {
+    width: auto !important;
+  }
+}
+
+.prose thead th {
+  background: var(--surface-2);
+  color: var(--text);
+  font-weight: 650;
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.prose td {
+  padding: 0.6rem 0.85rem;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.prose th,
+.prose td {
+  border-left: 0;
+  border-right: 0;
+}
+
+/* Foldables */
+.prose details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.2rem 0.9rem;
+  margin: 1rem 0;
+}
+
+.prose summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--gold-bright);
+  padding: 0.6rem 0;
+}
+
+/* --------------------------------------------------------------- Utility -- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Legacy remaps
+   The first template used cyan/fuchsia + glass utility classes on Nuxt pages.
+   These overrides retarget those class names to the warm palette so markup can
+   stay untouched while the look is consistent.
+   -------------------------------------------------------------------------- */
+
+.bg-slate-900 {
+  background-color: var(--bg) !important;
+}
+
+.text-slate-100 {
+  color: var(--text) !important;
+}
+
+.text-slate-200,
+.text-slate-300 {
+  color: var(--muted) !important;
+}
+
+/* Neutralise glassmorphism utilities wherever they are still used. */
+.backdrop-blur-xl,
+.backdrop-blur-2xl,
+.backdrop-blur-md {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.bg-white\/10 {
+  background-color: var(--surface) !important;
+}
+
+.bg-white\/15,
+.bg-white\/20,
+.bg-white\/5 {
+  background-color: var(--surface-2) !important;
+}
+
+.border-white\/10,
+.border-white\/20,
+.border-white\/6 {
+  border-color: var(--line) !important;
+}
+
+/* Old bright accents -> gold */
+.text-cyan-200,
+.text-cyan-300,
+.text-cyan-400 {
+  color: var(--gold-bright) !important;
+}
+
+.bg-cyan-500 {
+  background-color: var(--gold) !important;
+}
+
+.hover\:bg-cyan-400:hover {
+  background-color: var(--gold-bright) !important;
+}
+
+.text-slate-900 {
+  color: var(--on-gold) !important;
+}
+
+.from-cyan-500\/10,
+.to-fuchsia-600\/10,
+.shadow-cyan-500\/10 {
+  --tw-gradient-from: transparent;
+  --tw-gradient-to: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Reading preferences (set from the settings panel)
+   -------------------------------------------------------------------------- */
+
+/* Font scale */
+:root[data-font="compact"] .prose {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+:root[data-font="relaxed"] .prose {
+  font-size: 1.14rem;
+  line-height: 1.85;
+}
+
+/* Wide layout: use the space on large monitors */
+:root.is-wide .guide-grid,
+:root.is-wide .wiki,
+:root.is-wide .guide-page > .guide-grid {
+  max-width: 100rem;
+}
+
+/* ------------------------------------------------------------- Responsive -- */
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1.03rem;
+    line-height: 1.72;
+  }
+
+  .prose h1 {
+    font-size: 1.6rem;
+  }
+
+  .prose h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

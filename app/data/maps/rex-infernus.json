@@ -1,0 +1,2342 @@
+{
+  "id": "rex-infernus",
+  "name": "Rex Infernus",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "Call of Duty: Zombies Guides — interactive map",
+      "url": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/rex-infernus/rex-infernus-main-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "image": "/maps/rex-infernus/overview.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "Full tactical overview. Room highlights indicate an area, while service pins use published marker coordinates. Interior floors can overlap."
+    }
+  ],
+  "locations": [
+    {
+      "id": "her-house",
+      "label": "Her House",
+      "layerId": "overview",
+      "x": 0.581,
+      "y": 0.709,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "nexus-forge",
+      "label": "Nexus Forge",
+      "layerId": "overview",
+      "x": 0.578,
+      "y": 0.495,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "veytharion-sanctuary",
+      "label": "Veytharion Sanctuary",
+      "layerId": "overview",
+      "x": 0.348,
+      "y": 0.278,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "veytharion-main-chamber",
+      "label": "Veytharion Main Chamber",
+      "layerId": "overview",
+      "x": 0.393,
+      "y": 0.321,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "veytharion-entrance",
+      "label": "Veytharion Entrance",
+      "layerId": "overview",
+      "x": 0.435,
+      "y": 0.364,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "veytharion-passage",
+      "label": "Veytharion Passage",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.407,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "aranea-insula",
+      "label": "Aranea Insula",
+      "layerId": "overview",
+      "x": 0.607,
+      "y": 0.225,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "dravakar-sanctuary",
+      "label": "Dravakar Sanctuary",
+      "layerId": "overview",
+      "x": 0.816,
+      "y": 0.258,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "dravakar-main-chamber",
+      "label": "Dravakar Main Chamber",
+      "layerId": "overview",
+      "x": 0.737,
+      "y": 0.338,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "dravakar-passage",
+      "label": "Dravakar Passage",
+      "layerId": "overview",
+      "x": 0.648,
+      "y": 0.439,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "ruinas-insula",
+      "label": "Ruinas Insula",
+      "layerId": "overview",
+      "x": 0.856,
+      "y": 0.401,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "caltheris-passage",
+      "label": "Caltheris Passage",
+      "layerId": "overview",
+      "x": 0.675,
+      "y": 0.56,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "caltheris-entrance",
+      "label": "Caltheris Entrance",
+      "layerId": "overview",
+      "x": 0.774,
+      "y": 0.556,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "caltheris-main-chamber",
+      "label": "Caltheris Main Chamber",
+      "layerId": "overview",
+      "x": 0.837,
+      "y": 0.555,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "spira-insula",
+      "label": "Spira Insula",
+      "layerId": "overview",
+      "x": 0.228,
+      "y": 0.407,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "nyxara-sanctuary",
+      "label": "Nyxara Sanctuary",
+      "layerId": "overview",
+      "x": 0.165,
+      "y": 0.605,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "nyxara-main-chamber",
+      "label": "Nyxara Main Chamber",
+      "layerId": "overview",
+      "x": 0.276,
+      "y": 0.598,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "nyxara-passage",
+      "label": "Nyxara Passage",
+      "layerId": "overview",
+      "x": 0.473,
+      "y": 0.576,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "nexus-core",
+      "label": "Nexus Core",
+      "layerId": "overview",
+      "x": 0.577,
+      "y": 0.546,
+      "category": "area",
+      "precision": "area",
+      "description": "Lower part of the Nexus beneath the Forge platform, near the published Deadshot pin. Descend for the pull switch and boss circles; this is an area highlight.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "floor": "Lower level beneath Nexus Forge"
+    },
+    {
+      "id": "nyxara-inner-sanctum",
+      "label": "Nyxara Inner Sanctum entrance",
+      "layerId": "overview",
+      "x": 0.171,
+      "y": 0.659,
+      "category": "area",
+      "precision": "area",
+      "description": "Inner sanctum of Nyxara. Eat the fruit here to reach the separate forest. The forest itself is not drawn.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "floor": "Interior beyond Nyxara Sanctuary"
+    },
+    {
+      "id": "dravakar-inner-sanctum",
+      "label": "Dravakar Inner Sanctum entrance",
+      "layerId": "overview",
+      "x": 0.805,
+      "y": 0.251,
+      "category": "area",
+      "precision": "area",
+      "description": "Enter beneath the central pillar after the lever puzzle in Dravakar Sanctuary. The inner anvil and shields have no separately surveyed room label; this marks the sanctuary approach.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "floor": "Interior beneath Dravakar Sanctuary"
+    },
+    {
+      "id": "dravakar-entrance",
+      "label": "Dravakar Entrance approach",
+      "layerId": "overview",
+      "x": 0.684,
+      "y": 0.388,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "floor": "Entrance / upper platform"
+    },
+    {
+      "id": "nyxara-entrance",
+      "label": "Nyxara Entrance approach",
+      "layerId": "overview",
+      "x": 0.372,
+      "y": 0.599,
+      "category": "area",
+      "precision": "area",
+      "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-1",
+      "label": "Dig Spot 1",
+      "layerId": "overview",
+      "x": 0.842,
+      "y": 0.424,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-2",
+      "label": "Dig Spot 2",
+      "layerId": "overview",
+      "x": 0.828,
+      "y": 0.409,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-3",
+      "label": "Dig Spot 3",
+      "layerId": "overview",
+      "x": 0.857,
+      "y": 0.392,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-4",
+      "label": "Dig Spot 4",
+      "layerId": "overview",
+      "x": 0.616,
+      "y": 0.276,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-5",
+      "label": "Dig Spot 5",
+      "layerId": "overview",
+      "x": 0.651,
+      "y": 0.202,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-6",
+      "label": "Dig Spot 6",
+      "layerId": "overview",
+      "x": 0.565,
+      "y": 0.179,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-7",
+      "label": "Dig Spot 7",
+      "layerId": "overview",
+      "x": 0.255,
+      "y": 0.368,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-8",
+      "label": "Dig Spot 8",
+      "layerId": "overview",
+      "x": 0.207,
+      "y": 0.444,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-9",
+      "label": "Dig Spot 9",
+      "layerId": "overview",
+      "x": 0.209,
+      "y": 0.418,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-10",
+      "label": "Dig Spot 10",
+      "layerId": "overview",
+      "x": 0.475,
+      "y": 0.541,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dig-spot-11",
+      "label": "Dig Spot 11",
+      "layerId": "overview",
+      "x": 0.626,
+      "y": 0.43,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Dig Spot location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-1",
+      "label": "Void Claw Pedestal 1",
+      "layerId": "overview",
+      "x": 0.576,
+      "y": 0.572,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-2",
+      "label": "Void Claw Pedestal 2",
+      "layerId": "overview",
+      "x": 0.239,
+      "y": 0.598,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-3",
+      "label": "Void Claw Pedestal 3",
+      "layerId": "overview",
+      "x": 0.836,
+      "y": 0.554,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-4",
+      "label": "Void Claw Pedestal 4",
+      "layerId": "overview",
+      "x": 0.825,
+      "y": 0.467,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-5",
+      "label": "Void Claw Pedestal 5",
+      "layerId": "overview",
+      "x": 0.815,
+      "y": 0.396,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-6",
+      "label": "Void Claw Pedestal 6",
+      "layerId": "overview",
+      "x": 0.761,
+      "y": 0.394,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-7",
+      "label": "Void Claw Pedestal 7",
+      "layerId": "overview",
+      "x": 0.778,
+      "y": 0.294,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-8",
+      "label": "Void Claw Pedestal 8",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.234,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-9",
+      "label": "Void Claw Pedestal 9",
+      "layerId": "overview",
+      "x": 0.666,
+      "y": 0.225,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-10",
+      "label": "Void Claw Pedestal 10",
+      "layerId": "overview",
+      "x": 0.427,
+      "y": 0.182,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-11",
+      "label": "Void Claw Pedestal 11",
+      "layerId": "overview",
+      "x": 0.349,
+      "y": 0.277,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-12",
+      "label": "Void Claw Pedestal 12",
+      "layerId": "overview",
+      "x": 0.309,
+      "y": 0.335,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-13",
+      "label": "Void Claw Pedestal 13",
+      "layerId": "overview",
+      "x": 0.259,
+      "y": 0.376,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-14",
+      "label": "Void Claw Pedestal 14",
+      "layerId": "overview",
+      "x": 0.577,
+      "y": 0.435,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-void-claw-pedestal-15",
+      "label": "Void Claw Pedestal 15",
+      "layerId": "overview",
+      "x": 0.525,
+      "y": 0.328,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Void Claw Pedestal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-1",
+      "label": "Ammo Cache 1",
+      "layerId": "overview",
+      "x": 0.636,
+      "y": 0.543,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-2",
+      "label": "Ammo Cache 2",
+      "layerId": "overview",
+      "x": 0.514,
+      "y": 0.499,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-3",
+      "label": "Ammo Cache 3",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.521,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-4",
+      "label": "Ammo Cache 4",
+      "layerId": "overview",
+      "x": 0.846,
+      "y": 0.391,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-5",
+      "label": "Ammo Cache 5",
+      "layerId": "overview",
+      "x": 0.737,
+      "y": 0.385,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-6",
+      "label": "Ammo Cache 6",
+      "layerId": "overview",
+      "x": 0.813,
+      "y": 0.3,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-7",
+      "label": "Ammo Cache 7",
+      "layerId": "overview",
+      "x": 0.587,
+      "y": 0.168,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-8",
+      "label": "Ammo Cache 8",
+      "layerId": "overview",
+      "x": 0.419,
+      "y": 0.308,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-9",
+      "label": "Ammo Cache 9",
+      "layerId": "overview",
+      "x": 0.239,
+      "y": 0.384,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-10",
+      "label": "Ammo Cache 10",
+      "layerId": "overview",
+      "x": 0.273,
+      "y": 0.567,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ammo-cache-11",
+      "label": "Ammo Cache 11",
+      "layerId": "overview",
+      "x": 0.486,
+      "y": 0.554,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-armor-wall-buy-1",
+      "label": "Armor Wall Buy 1",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.487,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-armor-wall-buy-2",
+      "label": "Armor Wall Buy 2",
+      "layerId": "overview",
+      "x": 0.781,
+      "y": 0.218,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-armor-wall-buy-3",
+      "label": "Armor Wall Buy 3",
+      "layerId": "overview",
+      "x": 0.361,
+      "y": 0.25,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-armor-wall-buy-4",
+      "label": "Armor Wall Buy 4",
+      "layerId": "overview",
+      "x": 0.205,
+      "y": 0.572,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-arsenal-1",
+      "label": "Arsenal 1",
+      "layerId": "overview",
+      "x": 0.869,
+      "y": 0.602,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-arsenal-2",
+      "label": "Arsenal 2",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.197,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-arsenal-3",
+      "label": "Arsenal 3",
+      "layerId": "overview",
+      "x": 0.386,
+      "y": 0.352,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-arsenal-4",
+      "label": "Arsenal 4",
+      "layerId": "overview",
+      "x": 0.139,
+      "y": 0.617,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Arsenal location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-crafting-table-1",
+      "label": "Crafting Table 1",
+      "layerId": "overview",
+      "x": 0.838,
+      "y": 0.607,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-crafting-table-2",
+      "label": "Crafting Table 2",
+      "layerId": "overview",
+      "x": 0.419,
+      "y": 0.268,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-crafting-table-3",
+      "label": "Crafting Table 3",
+      "layerId": "overview",
+      "x": 0.714,
+      "y": 0.311,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Crafting Table location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-1",
+      "label": "Door Buy 1",
+      "layerId": "overview",
+      "x": 0.58,
+      "y": 0.701,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-2",
+      "label": "Door Buy 2",
+      "layerId": "overview",
+      "x": 0.569,
+      "y": 0.704,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-3",
+      "label": "Door Buy 3",
+      "layerId": "overview",
+      "x": 0.573,
+      "y": 0.72,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-4",
+      "label": "Door Buy 4",
+      "layerId": "overview",
+      "x": 0.596,
+      "y": 0.713,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-5",
+      "label": "Door Buy 5",
+      "layerId": "overview",
+      "x": 0.499,
+      "y": 0.559,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-6",
+      "label": "Door Buy 6",
+      "layerId": "overview",
+      "x": 0.382,
+      "y": 0.599,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-7",
+      "label": "Door Buy 7",
+      "layerId": "overview",
+      "x": 0.218,
+      "y": 0.599,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-8",
+      "label": "Door Buy 8",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.553,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-9",
+      "label": "Door Buy 9",
+      "layerId": "overview",
+      "x": 0.653,
+      "y": 0.56,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-10",
+      "label": "Door Buy 10",
+      "layerId": "overview",
+      "x": 0.748,
+      "y": 0.556,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-11",
+      "label": "Door Buy 11",
+      "layerId": "overview",
+      "x": 0.835,
+      "y": 0.485,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-12",
+      "label": "Door Buy 12",
+      "layerId": "overview",
+      "x": 0.639,
+      "y": 0.449,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-13",
+      "label": "Door Buy 13",
+      "layerId": "overview",
+      "x": 0.672,
+      "y": 0.4,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-14",
+      "label": "Door Buy 14",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.309,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-15",
+      "label": "Door Buy 15",
+      "layerId": "overview",
+      "x": 0.701,
+      "y": 0.323,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-16",
+      "label": "Door Buy 16",
+      "layerId": "overview",
+      "x": 0.797,
+      "y": 0.342,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-17",
+      "label": "Door Buy 17",
+      "layerId": "overview",
+      "x": 0.73,
+      "y": 0.277,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-18",
+      "label": "Door Buy 18",
+      "layerId": "overview",
+      "x": 0.77,
+      "y": 0.228,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-19",
+      "label": "Door Buy 19",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.45,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-20",
+      "label": "Door Buy 20",
+      "layerId": "overview",
+      "x": 0.448,
+      "y": 0.377,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-21",
+      "label": "Door Buy 21",
+      "layerId": "overview",
+      "x": 0.377,
+      "y": 0.306,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-22",
+      "label": "Door Buy 22",
+      "layerId": "overview",
+      "x": 0.327,
+      "y": 0.3,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-door-buy-23",
+      "label": "Door Buy 23",
+      "layerId": "overview",
+      "x": 0.417,
+      "y": 0.21,
+      "category": "travel",
+      "precision": "point",
+      "description": "Door Buy location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-exfil-1",
+      "label": "Exfil 1",
+      "layerId": "overview",
+      "x": 0.646,
+      "y": 0.505,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-exfil-2",
+      "label": "Exfil 2",
+      "layerId": "overview",
+      "x": 0.849,
+      "y": 0.367,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-exfil-3",
+      "label": "Exfil 3",
+      "layerId": "overview",
+      "x": 0.625,
+      "y": 0.169,
+      "category": "travel",
+      "precision": "point",
+      "description": "Exfil location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-1",
+      "label": "Gobblegum Machine 1",
+      "layerId": "overview",
+      "x": 0.607,
+      "y": 0.723,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-2",
+      "label": "Gobblegum Machine 2",
+      "layerId": "overview",
+      "x": 0.617,
+      "y": 0.566,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-3",
+      "label": "Gobblegum Machine 3",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.592,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-4",
+      "label": "Gobblegum Machine 4",
+      "layerId": "overview",
+      "x": 0.263,
+      "y": 0.63,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-5",
+      "label": "Gobblegum Machine 5",
+      "layerId": "overview",
+      "x": 0.398,
+      "y": 0.295,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-6",
+      "label": "Gobblegum Machine 6",
+      "layerId": "overview",
+      "x": 0.627,
+      "y": 0.225,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-7",
+      "label": "Gobblegum Machine 7",
+      "layerId": "overview",
+      "x": 0.831,
+      "y": 0.315,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-gobblegum-machine-8",
+      "label": "Gobblegum Machine 8",
+      "layerId": "overview",
+      "x": 0.833,
+      "y": 0.372,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Gobblegum Machine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-1",
+      "label": "Mystery Box Location 1",
+      "layerId": "overview",
+      "x": 0.509,
+      "y": 0.493,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-2",
+      "label": "Mystery Box Location 2",
+      "layerId": "overview",
+      "x": 0.606,
+      "y": 0.287,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-3",
+      "label": "Mystery Box Location 3",
+      "layerId": "overview",
+      "x": 0.223,
+      "y": 0.578,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-4",
+      "label": "Mystery Box Location 4",
+      "layerId": "overview",
+      "x": 0.884,
+      "y": 0.424,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-5",
+      "label": "Mystery Box Location 5",
+      "layerId": "overview",
+      "x": 0.785,
+      "y": 0.584,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-6",
+      "label": "Mystery Box Location 6",
+      "layerId": "overview",
+      "x": 0.767,
+      "y": 0.355,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-7",
+      "label": "Mystery Box Location 7",
+      "layerId": "overview",
+      "x": 0.32,
+      "y": 0.275,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mystery-box-8",
+      "label": "Mystery Box Location 8",
+      "layerId": "overview",
+      "x": 0.206,
+      "y": 0.385,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Mystery Box Location location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-pack-a-punch-1",
+      "label": "Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.577,
+      "y": 0.503,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Pack-a-Punch location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-rampage-inducer-1",
+      "label": "Rampage Inducer",
+      "layerId": "overview",
+      "x": 0.528,
+      "y": 0.566,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Rampage Inducer location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-trap-1",
+      "label": "Titan Trap 1",
+      "layerId": "overview",
+      "x": 0.679,
+      "y": 0.547,
+      "category": "trap",
+      "precision": "point",
+      "description": "Titan Trap location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-trap-2",
+      "label": "Titan Trap 2",
+      "layerId": "overview",
+      "x": 0.457,
+      "y": 0.422,
+      "category": "trap",
+      "precision": "point",
+      "description": "Titan Trap location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-quick-revive-1",
+      "label": "Quick Revive",
+      "layerId": "overview",
+      "x": 0.61,
+      "y": 0.691,
+      "category": "perk",
+      "precision": "point",
+      "description": "Quick Revive location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-deadshot-daiquiri-1",
+      "label": "Deadshot Daiquiri",
+      "layerId": "overview",
+      "x": 0.576,
+      "y": 0.559,
+      "category": "perk",
+      "precision": "point",
+      "description": "Deadshot Daiquiri location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-stamin-up-1",
+      "label": "Stamin-Up",
+      "layerId": "overview",
+      "x": 0.419,
+      "y": 0.641,
+      "category": "perk",
+      "precision": "point",
+      "description": "Stamin-Up location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-double-tap-1",
+      "label": "Double Tap",
+      "layerId": "overview",
+      "x": 0.223,
+      "y": 0.619,
+      "category": "perk",
+      "precision": "point",
+      "description": "Double Tap location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-juggernog-1",
+      "label": "Juggernog",
+      "layerId": "overview",
+      "x": 0.233,
+      "y": 0.355,
+      "category": "perk",
+      "precision": "point",
+      "description": "Juggernog location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mule-kick-1",
+      "label": "Mule Kick",
+      "layerId": "overview",
+      "x": 0.359,
+      "y": 0.208,
+      "category": "perk",
+      "precision": "point",
+      "description": "Mule Kick location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-widows-wine-1",
+      "label": "Widow's Wine",
+      "layerId": "overview",
+      "x": 0.589,
+      "y": 0.226,
+      "category": "perk",
+      "precision": "point",
+      "description": "Widow's Wine location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-vulture-aid-1",
+      "label": "Vulture Aid",
+      "layerId": "overview",
+      "x": 0.511,
+      "y": 0.359,
+      "category": "perk",
+      "precision": "point",
+      "description": "Vulture Aid location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-death-perception-1",
+      "label": "Death Perception",
+      "layerId": "overview",
+      "x": 0.691,
+      "y": 0.308,
+      "category": "perk",
+      "precision": "point",
+      "description": "Death Perception location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-phd-flopper-1",
+      "label": "PHD Flopper",
+      "layerId": "overview",
+      "x": 0.881,
+      "y": 0.377,
+      "category": "perk",
+      "precision": "point",
+      "description": "PHD Flopper location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-speed-cola-1",
+      "label": "Speed Cola",
+      "layerId": "overview",
+      "x": 0.672,
+      "y": 0.424,
+      "category": "perk",
+      "precision": "point",
+      "description": "Speed Cola location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-elemental-pop-1",
+      "label": "Elemental Pop",
+      "layerId": "overview",
+      "x": 0.869,
+      "y": 0.509,
+      "category": "perk",
+      "precision": "point",
+      "description": "Elemental Pop location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-wisp-tea-1",
+      "label": "Wisp Tea",
+      "layerId": "overview",
+      "x": 0.752,
+      "y": 0.596,
+      "category": "perk",
+      "precision": "point",
+      "description": "Wisp Tea location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-der-wunderfizz-1",
+      "label": "Der Wunderfizz",
+      "layerId": "overview",
+      "x": 0.577,
+      "y": 0.457,
+      "category": "perk",
+      "precision": "point",
+      "description": "Der Wunderfizz location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ak-27-1",
+      "label": "AK-27",
+      "layerId": "overview",
+      "x": 0.766,
+      "y": 0.381,
+      "category": "weapon",
+      "precision": "point",
+      "description": "AK-27 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-akita-1",
+      "label": "Akita",
+      "layerId": "overview",
+      "x": 0.365,
+      "y": 0.331,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Akita location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-coda-9-1",
+      "label": "CODA 9",
+      "layerId": "overview",
+      "x": 0.558,
+      "y": 0.699,
+      "category": "weapon",
+      "precision": "point",
+      "description": "CODA 9 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-dravec-45-1",
+      "label": "Dravec 45",
+      "layerId": "overview",
+      "x": 0.616,
+      "y": 0.419,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Dravec 45 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ds20-mirage-1",
+      "label": "DS20 Mirage",
+      "layerId": "overview",
+      "x": 0.243,
+      "y": 0.413,
+      "category": "weapon",
+      "precision": "point",
+      "description": "DS20 Mirage location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-echo-12-1",
+      "label": "Echo 12",
+      "layerId": "overview",
+      "x": 0.423,
+      "y": 0.555,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Echo 12 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-m10-breacher-1",
+      "label": "M10 Breacher",
+      "layerId": "overview",
+      "x": 0.752,
+      "y": 0.528,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M10 Breacher location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-m15-mod-0-1",
+      "label": "M15 Mod 0",
+      "layerId": "overview",
+      "x": 0.861,
+      "y": 0.384,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M15 Mod 0 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-m34-novaline-1",
+      "label": "M34 Novaline",
+      "layerId": "overview",
+      "x": 0.766,
+      "y": 0.266,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M34 Novaline location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-m8a1-1",
+      "label": "M8A1",
+      "layerId": "overview",
+      "x": 0.514,
+      "y": 0.397,
+      "category": "weapon",
+      "precision": "point",
+      "description": "M8A1 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-mk-78-1",
+      "label": "MK.78",
+      "layerId": "overview",
+      "x": 0.64,
+      "y": 0.505,
+      "category": "weapon",
+      "precision": "point",
+      "description": "MK.78 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-peacekeeper-mk1-1",
+      "label": "Peacekeeper MK1",
+      "layerId": "overview",
+      "x": 0.347,
+      "y": 0.556,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Peacekeeper MK1 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-ryden-45k-1",
+      "label": "Ryden 45K",
+      "layerId": "overview",
+      "x": 0.512,
+      "y": 0.538,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Ryden 45K location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-shadow-sk-1",
+      "label": "Shadow Sk",
+      "layerId": "overview",
+      "x": 0.429,
+      "y": 0.246,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Shadow Sk location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-vs-recon-1",
+      "label": "VS Recon",
+      "layerId": "overview",
+      "x": 0.141,
+      "y": 0.643,
+      "category": "weapon",
+      "precision": "point",
+      "description": "VS Recon location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-warden-308-1",
+      "label": "Warden 308",
+      "layerId": "overview",
+      "x": 0.598,
+      "y": 0.688,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Warden 308 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-x9-maverick-1",
+      "label": "X9 Maverick",
+      "layerId": "overview",
+      "x": 0.781,
+      "y": 0.563,
+      "category": "weapon",
+      "precision": "point",
+      "description": "X9 Maverick location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-xm325-1",
+      "label": "XM325",
+      "layerId": "overview",
+      "x": 0.577,
+      "y": 0.215,
+      "category": "weapon",
+      "precision": "point",
+      "description": "XM325 location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "czg-xr3-ion-1",
+      "label": "XR-3 Ion",
+      "layerId": "overview",
+      "x": 0.644,
+      "y": 0.252,
+      "category": "weapon",
+      "precision": "point",
+      "description": "XR-3 Ion location from the published interactive map.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+    },
+    {
+      "id": "cursed-mister-peeks-1",
+      "label": "Mister Peeks — Dravakar Entrance",
+      "layerId": "overview",
+      "x": 0.677,
+      "y": 0.412,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-2",
+      "label": "Mister Peeks — Nyxara Entrance",
+      "layerId": "overview",
+      "x": 0.384,
+      "y": 0.58,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-3",
+      "label": "Mister Peeks — Aranea Insula",
+      "layerId": "overview",
+      "x": 0.642,
+      "y": 0.211,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-4",
+      "label": "Mister Peeks — West of Veytharion Main Chamber",
+      "layerId": "overview",
+      "x": 0.299,
+      "y": 0.327,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-5",
+      "label": "Mister Peeks — West of Nyxara Sanctuary",
+      "layerId": "overview",
+      "x": 0.094,
+      "y": 0.601,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-mister-peeks-6",
+      "label": "Mister Peeks — Dravakar Main Chamber",
+      "layerId": "overview",
+      "x": 0.769,
+      "y": 0.391,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "state": "Cursed mode · possible spawn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "her-house",
+      "title": "Her House",
+      "locationIds": [
+        "her-house"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-in-the-subsequent-rounds-four-blue-symbols-will-appear-on-her-house"
+    },
+    {
+      "id": "nexus-forge",
+      "title": "Nexus Forge",
+      "locationIds": [
+        "nexus-forge"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-activate-the-pack-a-punch-machine-in-nexus-forge"
+    },
+    {
+      "id": "veytharion-sanctuary",
+      "title": "Veytharion Sanctuary",
+      "locationIds": [
+        "veytharion-sanctuary"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-travel-to-veytharion-s-sanctuary-and-acquire-four-cubes-to-bring-into-"
+    },
+    {
+      "id": "veytharion-main-chamber",
+      "title": "Veytharion Main Chamber",
+      "locationIds": [
+        "veytharion-main-chamber"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-one-cube-is-located-on-a-pillar-in-the-veytharion-main-chamber-next-to"
+    },
+    {
+      "id": "veytharion-entrance",
+      "title": "Veytharion Entrance",
+      "locationIds": [
+        "veytharion-entrance"
+      ],
+      "kind": "area"
+    },
+    {
+      "id": "veytharion-passage",
+      "title": "Veytharion Passage",
+      "locationIds": [
+        "veytharion-passage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-a-specific-symbol-will-float-around-the-zombie-and-that-symbol-will-ma-2"
+    },
+    {
+      "id": "aranea-insula",
+      "title": "Aranea Insula",
+      "locationIds": [
+        "aranea-insula"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-a-part-is-located-floating-over-an-edge-below-the-main-ground-and-a-pl"
+    },
+    {
+      "id": "dravakar-sanctuary",
+      "title": "Dravakar Sanctuary",
+      "locationIds": [
+        "dravakar-sanctuary"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-travel-to-dravakar-sanctuary-and-interact-with-the-blue-writing-on-the"
+    },
+    {
+      "id": "dravakar-main-chamber",
+      "title": "Dravakar Main Chamber",
+      "locationIds": [
+        "dravakar-main-chamber"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bring-the-blacksmith-s-hammer-to-the-cauldron-in-dravakar-main-chamber"
+    },
+    {
+      "id": "dravakar-passage",
+      "title": "Dravakar Passage",
+      "locationIds": [
+        "dravakar-passage"
+      ],
+      "kind": "area"
+    },
+    {
+      "id": "ruinas-insula",
+      "title": "Ruinas Insula",
+      "locationIds": [
+        "ruinas-insula"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-outside-of-ruinas-insula-behind-the-wall-behind-the-mystery-box-locati"
+    },
+    {
+      "id": "caltheris-passage",
+      "title": "Caltheris Passage",
+      "locationIds": [
+        "caltheris-passage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-a-specific-symbol-will-float-around-the-zombie-and-that-symbol-will-ma"
+    },
+    {
+      "id": "caltheris-entrance",
+      "title": "Caltheris Entrance",
+      "locationIds": [
+        "caltheris-entrance"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-purchase-the-m10-breacher-from-caltheris-entrance"
+    },
+    {
+      "id": "caltheris-main-chamber",
+      "title": "Caltheris Main Chamber",
+      "locationIds": [
+        "caltheris-main-chamber"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-travel-to-the-bottom-part-of-caltheris-main-chamber-and-find-the-four-"
+    },
+    {
+      "id": "spira-insula",
+      "title": "Spira Insula",
+      "locationIds": [
+        "spira-insula"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-a-part-is-located-on-top-of-a-rock-pillar-above-juggernog-in-front-of-"
+    },
+    {
+      "id": "nyxara-sanctuary",
+      "title": "Nyxara Sanctuary",
+      "locationIds": [
+        "nyxara-sanctuary"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-interact-with-one-of-the-cauldrons-to-obtain-the-astral-flame-quickly-"
+    },
+    {
+      "id": "nyxara-main-chamber",
+      "title": "Nyxara Main Chamber",
+      "locationIds": [
+        "nyxara-main-chamber"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bring-the-ancient-scroll-to-the-cauldron-in-nyxara-main-chamber-then-l"
+    },
+    {
+      "id": "nyxara-passage",
+      "title": "Nyxara Passage",
+      "locationIds": [
+        "nyxara-passage"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-bonus-point-inside-the-structure-outside-the-map-on-the-right-side-of-"
+    },
+    {
+      "id": "nexus-core",
+      "title": "Nexus Core",
+      "locationIds": [
+        "nexus-core"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-while-the-surge-is-happening-quickly-travel-down-the-nexus-core-and-in"
+    },
+    {
+      "id": "nyxara-inner-sanctum",
+      "title": "Nyxara Inner Sanctum entrance",
+      "locationIds": [
+        "nyxara-inner-sanctum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-if-done-correctly-you-will-spawn-into-a-forest-where-you-need-to-find-"
+    },
+    {
+      "id": "dravakar-inner-sanctum",
+      "title": "Dravakar Inner Sanctum entrance",
+      "locationIds": [
+        "dravakar-inner-sanctum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-use-void-claw-to-enter-dravakar-inner-sanctum-and-interact-with-the-an"
+    },
+    {
+      "id": "dravakar-entrance",
+      "title": "Dravakar Entrance approach",
+      "locationIds": [
+        "dravakar-entrance"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-travel-to-dravakar-entrance-and-climb-to-the-platform-at-the-top-of-th"
+    },
+    {
+      "id": "nyxara-entrance",
+      "title": "Nyxara Entrance approach",
+      "locationIds": [
+        "nyxara-entrance"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-map-interact-with-mr-peeks-to-start-a-grappling-hook-parkour-course-cross-"
+    },
+    {
+      "id": "wardens-blight-route",
+      "title": "Void Claw and Warden’s Blight route",
+      "locationIds": [
+        "nexus-forge",
+        "dravakar-entrance",
+        "nyxara-sanctuary",
+        "nyxara-main-chamber",
+        "nyxara-inner-sanctum",
+        "dravakar-sanctuary",
+        "dravakar-inner-sanctum"
+      ],
+      "kind": "sequence",
+      "description": "Use Pack-a-Punch, recover the Fracture and follow the temple route. The three body locations in the separate forest are not positions on this overview.",
+      "guideAnchor": "wiki_warden.27s_blight"
+    },
+    {
+      "id": "talon",
+      "title": "Her House and Void Talon",
+      "locationIds": [
+        "nexus-forge",
+        "her-house",
+        "czg-void-claw-pedestal-1"
+      ],
+      "kind": "sequence",
+      "description": "Shoot the basketball and symbols from the Forge, then complete Exfil to return to Her House. The Eye is in the upstairs bathroom; empower a Void Claw pedestal afterwards.",
+      "guideAnchor": "wiki_void_talon_upgrade"
+    },
+    {
+      "id": "cubes",
+      "title": "Swirling Pool cubes",
+      "locationIds": [
+        "veytharion-main-chamber",
+        "veytharion-sanctuary"
+      ],
+      "kind": "sequence",
+      "description": "One cube is on the GobbleGum pillar; two are at the Mule Kick windows; one is near the Void Claw pedestal. Area guidance does not distinguish the two window heights.",
+      "guideAnchor": "wiki_uncover_the_swirling_pool"
+    },
+    {
+      "id": "forge-restart",
+      "title": "Restart the Nexus Forge",
+      "locationIds": [
+        "nexus-forge",
+        "nexus-core"
+      ],
+      "kind": "sequence",
+      "description": "Free the three pillar switches and six panels, remove webs, surge the Forge, then use the ground switch next to Deadshot on the lower level.",
+      "guideAnchor": "wiki_restart_the_nexus_forge"
+    },
+    {
+      "id": "temples",
+      "title": "Temple cleansing rooms",
+      "locationIds": [
+        "dravakar-main-chamber",
+        "nyxara-main-chamber",
+        "caltheris-main-chamber",
+        "veytharion-main-chamber"
+      ],
+      "kind": "sequence",
+      "description": "Align the Nexus pillars toward each temple before its cauldron, tile, reflector and visage steps. These are room highlights, not exact wall or tile positions.",
+      "guideAnchor": "wiki_cleanse_the_temples"
+    },
+    {
+      "id": "titan-traps",
+      "title": "Temple cauldrons and Titan Traps",
+      "locationIds": [
+        "dravakar-main-chamber",
+        "nyxara-main-chamber",
+        "caltheris-main-chamber",
+        "veytharion-main-chamber",
+        "caltheris-passage",
+        "veytharion-passage"
+      ],
+      "kind": "sequence",
+      "description": "Dravakar and Caltheris use the Caltheris Passage trap; Nyxara and Veytharion use the Veytharion Passage trap.",
+      "guideAnchor": "wiki_cleanse_the_temples"
+    },
+    {
+      "id": "temple-items",
+      "title": "Temple quest-item areas",
+      "locationIds": [
+        "dravakar-inner-sanctum",
+        "nyxara-inner-sanctum",
+        "caltheris-main-chamber",
+        "spira-insula",
+        "ruinas-insula",
+        "aranea-insula"
+      ],
+      "kind": "candidates",
+      "description": "Hammer: Dravakar shields; Scroll: the forest reached from Nyxara; Thread: purple orbs (Caltheris can supply more); Sash: one of the three islands during rain.",
+      "guideAnchor": "wiki_cleanse_the_temples"
+    },
+    {
+      "id": "woven-sash",
+      "title": "Woven Sash candidates",
+      "locationIds": [
+        "spira-insula",
+        "ruinas-insula",
+        "aranea-insula"
+      ],
+      "kind": "candidates",
+      "description": "Check outside the islands during rain: after the second Spira platform, behind the Ruinas Mystery Box wall, or below the Aranea approach from Veytharion.",
+      "guideAnchor": "guide-step-map-a-part-is-located-floating-over-an-edge-below-the-main-ground-and-a-pl"
+    },
+    {
+      "id": "boss-start",
+      "title": "Warden boss encounter entrance",
+      "locationIds": [
+        "nexus-core"
+      ],
+      "kind": "area",
+      "description": "Stand in the Nexus Core circles to start. The later boss arena and intermediate room are separate destinations and are not plotted.",
+      "guideAnchor": "wiki_warden_boss_fight"
+    },
+    {
+      "id": "void-claw-pedestals",
+      "title": "Void Claw pedestals",
+      "locationIds": [
+        "czg-void-claw-pedestal-1",
+        "czg-void-claw-pedestal-2",
+        "czg-void-claw-pedestal-3",
+        "czg-void-claw-pedestal-4",
+        "czg-void-claw-pedestal-5",
+        "czg-void-claw-pedestal-6",
+        "czg-void-claw-pedestal-7",
+        "czg-void-claw-pedestal-8",
+        "czg-void-claw-pedestal-9",
+        "czg-void-claw-pedestal-10",
+        "czg-void-claw-pedestal-11",
+        "czg-void-claw-pedestal-12",
+        "czg-void-claw-pedestal-13",
+        "czg-void-claw-pedestal-14",
+        "czg-void-claw-pedestal-15"
+      ],
+      "kind": "candidates",
+      "description": "Published pedestal locations. The Eye of the Forge can empower a pedestal to provide Void Talon.",
+      "guideAnchor": "wiki_void_talon_upgrade"
+    },
+    {
+      "id": "dig-spots",
+      "title": "Dig spots",
+      "locationIds": [
+        "czg-dig-spot-1",
+        "czg-dig-spot-2",
+        "czg-dig-spot-3",
+        "czg-dig-spot-4",
+        "czg-dig-spot-5",
+        "czg-dig-spot-6",
+        "czg-dig-spot-7",
+        "czg-dig-spot-8",
+        "czg-dig-spot-9",
+        "czg-dig-spot-10",
+        "czg-dig-spot-11"
+      ],
+      "kind": "candidates",
+      "description": "Published dig spots. The cassette is a random reward, so check multiple spots.",
+      "guideAnchor": "guide-step-map-with-the-void-claw-open-the-various-dig-spots-until-one-of-them-drops-"
+    },
+    {
+      "id": "areas-nexus-forge--her-house",
+      "title": "Nexus Forge / Her House",
+      "locationIds": [
+        "nexus-forge",
+        "her-house"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-from-the-nexus-forge-look-at-her-house-and-shoot-at-the-basketball-loc"
+    },
+    {
+      "id": "areas-nyxara-main-chamber--nyxara-inner-sanctum",
+      "title": "Nyxara Main Chamber / Nyxara Inner Sanctum entrance",
+      "locationIds": [
+        "nyxara-main-chamber",
+        "nyxara-inner-sanctum"
+      ],
+      "kind": "candidates",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-an-orb-will-start-bouncing-around-the-room-using-the-void-claw-change-"
+    },
+    {
+      "id": "areas-nexus-forge--nexus-core",
+      "title": "Nexus Forge / Nexus Core",
+      "locationIds": [
+        "nexus-forge",
+        "nexus-core"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-with-the-void-talon-free-the-three-pull-switchs-located-on-the-pillars"
+    },
+    {
+      "id": "areas-dravakar-main-chamber--dravakar-sanctuary",
+      "title": "Dravakar Main Chamber / Dravakar Sanctuary",
+      "locationIds": [
+        "dravakar-main-chamber",
+        "dravakar-sanctuary"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-shoot-at-the-reflector-with-a-charged-shot-of-the-warden-s-blight-to-l"
+    },
+    {
+      "id": "areas-spira-insula--nyxara-sanctuary",
+      "title": "Spira Insula / Nyxara Sanctuary",
+      "locationIds": [
+        "spira-insula",
+        "nyxara-sanctuary"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-outside-of-spira-insula-after-the-second-platform-when-coming-from-nyx"
+    },
+    {
+      "id": "areas-her-house--nyxara-passage",
+      "title": "Her House / Nyxara Passage",
+      "locationIds": [
+        "her-house",
+        "nyxara-passage"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-bonus-point-inside-the-structure-outside-the-map-on-the-right-side-of-"
+    },
+    {
+      "id": "areas-her-house--caltheris-passage",
+      "title": "Her House / Caltheris Passage",
+      "locationIds": [
+        "her-house",
+        "caltheris-passage"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-double-points-in-the-structure-outside-the-map-behind-her-house-when-l"
+    },
+    {
+      "id": "areas-caltheris-passage--veytharion-passage",
+      "title": "Caltheris Passage / Veytharion Passage",
+      "locationIds": [
+        "caltheris-passage",
+        "veytharion-passage"
+      ],
+      "kind": "sequence",
+      "description": "Area guidance for the locations named in this step. Follow its instructions for the exact object and any floor requirement.",
+      "guideAnchor": "guide-step-map-titan-trap-caltheris-passage-veytharion-passage"
+    },
+    {
+      "id": "cursed-mister-peeks",
+      "title": "Mister Peeks — Cursed reward spawns",
+      "locationIds": [
+        "cursed-mister-peeks-1",
+        "cursed-mister-peeks-2",
+        "cursed-mister-peeks-3",
+        "cursed-mister-peeks-4",
+        "cursed-mister-peeks-5",
+        "cursed-mister-peeks-6"
+      ],
+      "kind": "candidates",
+      "description": "In tiered Cursed runs, Mister Peeks can briefly appear at a possible spawn. Shoot him for an egg with rewards that can include perks. These pins are candidates, not guaranteed appearances.",
+      "guideAnchor": "wiki_cursed_mister_peeks"
+    },
+    {
+      "id": "locations-perks-locations",
+      "title": "Perks locations",
+      "locationIds": [
+        "czg-quick-revive-1",
+        "czg-deadshot-daiquiri-1",
+        "czg-stamin-up-1",
+        "czg-double-tap-1",
+        "czg-juggernog-1",
+        "czg-mule-kick-1",
+        "czg-widows-wine-1",
+        "czg-vulture-aid-1",
+        "czg-death-perception-1",
+        "czg-phd-flopper-1",
+        "czg-speed-cola-1",
+        "czg-elemental-pop-1",
+        "czg-wisp-tea-1",
+        "czg-der-wunderfizz-1"
+      ],
+      "guideAnchor": "wiki_perks_locations"
+    },
+    {
+      "id": "locations-armor-vests-locations",
+      "title": "Armor Vests locations",
+      "locationIds": [
+        "nyxara-sanctuary",
+        "veytharion-sanctuary",
+        "dravakar-sanctuary",
+        "caltheris-main-chamber"
+      ],
+      "guideAnchor": "wiki_armor_vests_locations"
+    },
+    {
+      "id": "locations-arsenal-locations",
+      "title": "Arsenal locations",
+      "locationIds": [
+        "nyxara-sanctuary",
+        "veytharion-main-chamber",
+        "dravakar-sanctuary",
+        "caltheris-main-chamber"
+      ],
+      "guideAnchor": "wiki_arsenal_locations"
+    },
+    {
+      "id": "locations-crafting-table-locations",
+      "title": "Crafting Table locations",
+      "locationIds": [
+        "veytharion-sanctuary",
+        "dravakar-main-chamber",
+        "caltheris-main-chamber"
+      ],
+      "guideAnchor": "wiki_crafting_table_locations"
+    },
+    {
+      "id": "locations-areas-spira-insula--nyxara-sanctuary",
+      "title": "Veytharion locations",
+      "locationIds": [
+        "spira-insula",
+        "nyxara-sanctuary",
+        "ruinas-insula",
+        "veytharion-sanctuary",
+        "aranea-insula"
+      ],
+      "guideAnchor": "guide-step-locations-areas-spira-insula--nyxara-sanctuary"
+    },
+    {
+      "id": "locations-her-house",
+      "title": "Astronaut Helmet Mask (Longer-lasting Void Claw) locations",
+      "locationIds": [
+        "her-house",
+        "ruinas-insula",
+        "aranea-insula",
+        "spira-insula",
+        "nexus-forge",
+        "caltheris-passage"
+      ],
+      "guideAnchor": "guide-step-locations-her-house"
+    },
+    {
+      "id": "locations-areas-her-house--nyxara-passage",
+      "title": "Power-Up Statues locations",
+      "locationIds": [
+        "her-house",
+        "nyxara-passage",
+        "nyxara-entrance",
+        "caltheris-passage",
+        "caltheris-main-chamber",
+        "veytharion-main-chamber",
+        "dravakar-entrance",
+        "spira-insula",
+        "aranea-insula"
+      ],
+      "guideAnchor": "guide-step-locations-areas-her-house--nyxara-passage"
+    },
+    {
+      "id": "song-headphones",
+      "title": "All We Are — song headphones",
+      "locationIds": [
+        "nyxara-main-chamber",
+        "ruinas-insula",
+        "aranea-insula"
+      ],
+      "guideAnchor": "guide-step-song-headphones"
+    }
+  ],
+  "quickLinks": {
+    "setup-claw": "wardens-blight-route",
+    "setup-blight": "dravakar-sanctuary",
+    "setup-talon": "talon",
+    "phase-1-ol-1": "cubes",
+    "phase-2-ol-1": "forge-restart",
+    "phase-2-ol-3": "forge-restart",
+    "phase-3-ol-1": "temples",
+    "phase-3-ol-3": "temples",
+    "phase-3-ol-2": "titan-traps",
+    "phase-3-ul-1": "temple-items",
+    "phase-4-ol-1": "boss-start"
+  }
+}

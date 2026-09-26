@@ -1,0 +1,124 @@
+// One-off migration script: converts public/guides/*.html into Vue content components.
+// Run: node scripts/convert-guides.mjs
+import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { join } from 'node:path'
+
+const root = process.cwd()
+const srcDir = join(root, 'public', 'guides')
+const outDir = join(root, 'app', 'components', 'guide')
+const guides = [
+  'ashes-of-the-damned',
+  'astra-malorum',
+  'kowakujo',
+  'paradox-junction',
+  'rex-infernus',
+  'totenreich',
+]
+
+// These components have since become maintained source files. Check every
+// destination before writing anything so an old HTML export cannot erase map
+// bindings or partially regenerate the guides before reaching a protected file.
+const protectedGuides = guides.filter(slug => {
+  const destination = join(outDir, `${slug}.vue`)
+  return existsSync(destination) && /<ShowOnMap\b/.test(readFileSync(destination, 'utf8'))
+})
+if (protectedGuides.length) {
+  console.error(
+    'Guide conversion refused: existing Vue guides contain ShowOnMap bindings.\n' +
+    'Edit app/components/guide/*.vue directly and preserve their map targets and step anchors.\n' +
+    'The public/guides HTML files are older migration inputs; no components were changed.\n' +
+    `Protected guides: ${protectedGuides.join(', ')}`
+  )
+  process.exit(1)
+}
+
+mkdirSync(outDir, { recursive: true })
+
+// Convert /tools/foo.html anchors into NuxtLink-friendly plain links (keep href, add styling hook)
+function transformHtml(raw, slug) {
+  let html = raw
+
+  // Extract only the .md.wiki blocks (ashes has Reddit chrome around them)
+  const blocks = []
+  const re = /<div class="md wiki">([\s\S]*?)(?=<div class="md wiki">|$)/g
+  let m
+  while ((m = re.exec(html)) !== null) {
+    // Drop trailing Reddit chrome (widgets script etc.) captured inside a block.
+    // Only chrome — an inline <script> would be mid-content and must NOT truncate it.
+    let inner = m[1].replace(/<script[^>]*(?:src=|nonce)[^>]*>[\s\S]*$/, '')
+    // Drop trailing <hr> + the block's own closing </div>
+    inner = inner.replace(/(?:\s|<\/div>|<hr>)*$/, '')
+    // The content may end with a `</div>` that closed the .md.wiki wrapper;
+    // remove one trailing close, then rebalance if content itself is short one.
+    inner = inner.replace(/\s*<\/div>\s*$/, '')
+    // Fix unbalanced divs (Reddit exports are occasionally malformed)
+    const opens = (inner.match(/<div[ >]/g) || []).length
+    const closes = (inner.match(/<\/div>/g) || []).length
+    if (closes > opens) inner += '</div>'.repeat(closes - opens)
+    if (opens > closes) inner += '</div>'.repeat(opens - closes)
+    blocks.push(inner)
+  }
+  if (blocks.length) html = blocks.join('\n')
+
+  // Strip embedded style blocks (moved into GuideArticle / per-page styles)
+  html = html.replace(/<style>[\s\S]*?<\/style>/g, '')
+
+  // Strip Reddit widgets script (chrome) — inline scripts are handled separately
+  html = html.replace(/<script[^>]*(?:src=|nonce)[^>]*>\s*<\/script>/g, '')
+
+  // Drop the Reddit TOC block if present (we render our own sidebar)
+  html = html.replace(/<div class="toc">[\s\S]*?<\/div>\s*<\/div>/g, '')
+
+  // SC markers
+  html = html.replace(/<!--\s*SC_(OFF|ON)\s*-->/g, '')
+
+  // Drop inline scripts (interactive helpers are replaced by Vue components below)
+  html = html.replace(/<script>[\s\S]*?<\/script>/g, '')
+
+  // Internal tool links: /tools/x.html -> /tools/x (now Vue routes)
+  html = html.replace(/href="\/tools\/([\w-]+)\.html"/g, 'href="/tools/$1"')
+
+  // Replace the ashes pigpen helper block with the Vue component
+  if (slug === 'ashes-of-the-damned') {
+    html = html.replace(
+      /<div class="pigpen-helper">[\s\S]*?<\/div>\s*\n<\/div>/,
+      '<PigpenHelper />'
+    )
+    // Stray `</li>` from the Reddit export (the helper <li> was split into raw HTML)
+    html = html.replace('shooting the red button.</li>\r\n</li>', 'shooting the red button.</li>')
+    html = html.replace('shooting the red button.</li>\n</li>', 'shooting the red button.</li>')
+  }
+
+
+  // Replace Astra's two JS-driven helpers with Vue components
+  if (slug === 'astra-malorum') {
+    html = html.replace(
+      /<div class="book-helper" id="wiki_bust_book_helper">[\s\S]*?<p id="bust-output">[\s\S]*?<\/p>\s*<\/div>/,
+      '<AstraBustHelper />'
+    )
+    html = html.replace(
+      /<div class="planet-helper" id="wiki_planet_code_helper">[\s\S]*?<div class="planet-actions">[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/,
+      '<AstraPlanetCodeHelper />\n</div>'
+    )
+  }
+
+  // In-page anchors already target ids that exist in content
+  return html.trim()
+}
+
+// Escape Vue template delimiters that would break compilation
+function escapeVue(html) {
+  return html.replace(/\{\{/g, '\\{{')
+}
+
+for (const slug of guides) {
+  const raw = readFileSync(join(srcDir, `${slug}.html`), 'utf8')
+  const body = escapeVue(transformHtml(raw, slug))
+  const comp = `<!-- AUTO-GENERATED by scripts/convert-guides.mjs from public/guides/${slug}.html -->
+<template>
+${body}
+</template>
+`
+  writeFileSync(join(outDir, `${slug}.vue`), comp, 'utf8')
+  console.log(`wrote app/components/guide/${slug}.vue (${body.length} chars)`)
+}

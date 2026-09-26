@@ -1,0 +1,2509 @@
+{
+  "id": "astra-malorum",
+  "name": "Astra Malorum",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "Call of Duty official tactical map",
+      "url": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+    },
+    {
+      "name": "Astra Malorum quest reference",
+      "url": "https://codzombiesguides.com/main-quests/black-ops-7/astra-malorum/",
+      "note": "Mars pylon and final-pylon screenshots verify the temple and four distant pylons face one another. Schematic coordinates are illustrative, not surveyed."
+    },
+    {
+      "name": "Astra Malorum community tactical map",
+      "url": "https://codzombiesguides.com/maps/astra-malorum/",
+      "note": "Mars arena artwork and portal/service coordinates. Quest markers remain approximate areas. Artwork © Activision. Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Overview",
+      "image": "/maps/astra-malorum/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "note": "Top-down overview. Room highlights are approximate; consult each marker for floor and landmark details."
+    },
+    {
+      "id": "mars",
+      "label": "Mars",
+      "image": "/maps/astra-malorum/mars.webp",
+      "width": 2048,
+      "height": 2048,
+      "note": "Mars arena overview. Temple/portal is on the left. The right-side device in the guide is toward the bottom when facing away from the temple. Quest areas are approximate; elevation is not shown."
+    },
+    {
+      "id": "pylon-order",
+      "label": "Mars · pylon order diagram",
+      "image": "/maps/astra-malorum/mars-schematic.svg",
+      "width": 1200,
+      "height": 900,
+      "note": "Schematic, not to scale. Face away from the temple towards the four distant pylons (top of diagram) for left and right. The fifth pylon is above the temple behind you. Elevation and precise pillar positions are not shown."
+    }
+  ],
+  "locations": [
+    {
+      "id": "official-1797",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.51513671875,
+      "y": 0.77197265625,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1798",
+      "label": "Wall Buy (Jäger 45)",
+      "layerId": "overview",
+      "x": 0.46240234375,
+      "y": 0.765380859375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1799",
+      "label": "Quick Revive",
+      "layerId": "overview",
+      "x": 0.480224609375,
+      "y": 0.737060546875,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1800",
+      "label": "GobbleGum Machine",
+      "layerId": "overview",
+      "x": 0.409912109375,
+      "y": 0.69091796875,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1801",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.3916015625,
+      "y": 0.730712890625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1803",
+      "label": "Jugger-Nog",
+      "layerId": "overview",
+      "x": 0.374755859375,
+      "y": 0.535400390625,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1804",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.40283203125,
+      "y": 0.50537109375,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1805",
+      "label": "Arsenal",
+      "layerId": "overview",
+      "x": 0.26708984375,
+      "y": 0.4912109375,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1806",
+      "label": "Wall Buy (M34 Novaline)",
+      "layerId": "overview",
+      "x": 0.396240234375,
+      "y": 0.55224609375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1807",
+      "label": "Stellar Dissector Trap",
+      "layerId": "overview",
+      "x": 0.33349609375,
+      "y": 0.53955078125,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1808",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.337890625,
+      "y": 0.469482421875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1810",
+      "label": "Wall Buy (Carbon 57)",
+      "layerId": "overview",
+      "x": 0.517822265625,
+      "y": 0.63134765625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1811",
+      "label": "Speed Cola",
+      "layerId": "overview",
+      "x": 0.54150390625,
+      "y": 0.62939453125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1812",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.5390625,
+      "y": 0.5927734375,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1813",
+      "label": "Crafting Table",
+      "layerId": "overview",
+      "x": 0.498291015625,
+      "y": 0.56884765625,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1814",
+      "label": "Exfil",
+      "layerId": "overview",
+      "x": 0.496337890625,
+      "y": 0.6982421875,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1815",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.5107421875,
+      "y": 0.632568359375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1817",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.54443359375,
+      "y": 0.4921875,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1818",
+      "label": "Exfil",
+      "layerId": "overview",
+      "x": 0.496337890625,
+      "y": 0.39306640625,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1819",
+      "label": "Apogee Annihilator Trap",
+      "layerId": "overview",
+      "x": 0.55517578125,
+      "y": 0.3525390625,
+      "category": "trap",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1820",
+      "label": "Armor Vest",
+      "layerId": "overview",
+      "x": 0.548583984375,
+      "y": 0.33251953125,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1821",
+      "label": "Wall Buy (XM325)",
+      "layerId": "overview",
+      "x": 0.599853515625,
+      "y": 0.411865234375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1822",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.5849609375,
+      "y": 0.473876953125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1823",
+      "label": "GobbleGum Machine",
+      "layerId": "overview",
+      "x": 0.62841796875,
+      "y": 0.26123046875,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1825",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.717529296875,
+      "y": 0.555419921875,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1826",
+      "label": "Arsenal",
+      "layerId": "overview",
+      "x": 0.698486328125,
+      "y": 0.513671875,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1827",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.708740234375,
+      "y": 0.461181640625,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1828",
+      "label": "Armor Vest",
+      "layerId": "overview",
+      "x": 0.806884765625,
+      "y": 0.50341796875,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1829",
+      "label": "Wall Buy (Akita)",
+      "layerId": "overview",
+      "x": 0.841796875,
+      "y": 0.520751953125,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1830",
+      "label": "Stamin-Up",
+      "layerId": "overview",
+      "x": 0.832763671875,
+      "y": 0.406494140625,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1831",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.77099609375,
+      "y": 0.544921875,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1832",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.352294921875,
+      "y": 0.26171875,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1833",
+      "label": "Wall Buy (Shadow SK)",
+      "layerId": "overview",
+      "x": 0.43115234375,
+      "y": 0.2900390625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1834",
+      "label": "Mystery Box",
+      "layerId": "overview",
+      "x": 0.49072265625,
+      "y": 0.211181640625,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1835",
+      "label": "Wisp Tea",
+      "layerId": "overview",
+      "x": 0.44482421875,
+      "y": 0.184814453125,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1836",
+      "label": "Armor Vest",
+      "layerId": "overview",
+      "x": 0.46484375,
+      "y": 0.1552734375,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1837",
+      "label": "Crafting Table",
+      "layerId": "overview",
+      "x": 0.55224609375,
+      "y": 0.147216796875,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1838",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.787109375,
+      "y": 0.267822265625,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1839",
+      "label": "Mule Kick",
+      "layerId": "overview",
+      "x": 0.737548828125,
+      "y": 0.255615234375,
+      "category": "perk",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1840",
+      "label": "Exfil",
+      "layerId": "overview",
+      "x": 0.69970703125,
+      "y": 0.18994140625,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1842",
+      "label": "Pack-A-Punch",
+      "layerId": "overview",
+      "x": 0.627685546875,
+      "y": 0.149169921875,
+      "category": "upgrade",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1843",
+      "label": "Wall Buy (X9 Maverick)",
+      "layerId": "overview",
+      "x": 0.65625,
+      "y": 0.2255859375,
+      "category": "weapon",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1844",
+      "label": "Fast Travel",
+      "layerId": "overview",
+      "x": 0.711181640625,
+      "y": 0.15478515625,
+      "category": "travel",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "official-1845",
+      "label": "Ammo Cache",
+      "layerId": "overview",
+      "x": 0.6357421875,
+      "y": 0.085205078125,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "crash",
+      "label": "Crash Site",
+      "layerId": "overview",
+      "x": 0.507080078125,
+      "y": 0.82861328125,
+      "category": "area",
+      "precision": "area",
+      "description": "Ol' Tessie and the starting area.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "luminarium",
+      "label": "The Luminarium",
+      "layerId": "overview",
+      "x": 0.341796875,
+      "y": 0.5048828125,
+      "category": "area",
+      "precision": "area",
+      "description": "Brain jar, planet page, gramophone, grandfather clock and Stellar Dissector room. Area highlight; inspect the described table, shelves or doorway.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "museum",
+      "label": "Museum Infinitum",
+      "layerId": "overview",
+      "x": 0.476806640625,
+      "y": 0.61181640625,
+      "category": "area",
+      "precision": "area",
+      "description": "Rock Saw display, rocket-thruster trap, records, Twins cabinets and chandelier puzzle. The highlight identifies the room, not an individual display.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "courtyard",
+      "label": "Stargazer's Courtyard",
+      "layerId": "overview",
+      "x": 0.55029296875,
+      "y": 0.388427734375,
+      "category": "area",
+      "precision": "area",
+      "description": "Central outdoor courtyard between the museum and the Observatory Dome.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "machina",
+      "label": "Machina Astralis",
+      "layerId": "overview",
+      "x": 0.735107421875,
+      "y": 0.493408203125,
+      "category": "area",
+      "precision": "area",
+      "description": "Main circular building: Perfusion Machine and portal defense. Upper-level model and terminal locations have separate markers.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "floor": "Ground / middle floor"
+    },
+    {
+      "id": "machina-upper",
+      "label": "Machina Astralis · upper level",
+      "layerId": "overview",
+      "x": 0.781,
+      "y": 0.496,
+      "category": "quest",
+      "precision": "area",
+      "description": "Climb to the upper level for the planet model and four-digit terminal. Overview uses the same building footprint for all floors.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "floor": "Upper floor"
+    },
+    {
+      "id": "cryopod",
+      "label": "Machina Astralis · cryopod room",
+      "layerId": "overview",
+      "x": 0.7,
+      "y": 0.595,
+      "category": "quest",
+      "precision": "area",
+      "description": "Side room on the route towards Scholar's Way: open the cryopod and collect the brain. Approximate room highlight; room is not separately labelled in the official atlas.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "floor": "Lower side room"
+    },
+    {
+      "id": "archive",
+      "label": "Archive of Orbis",
+      "layerId": "overview",
+      "x": 0.798,
+      "y": 0.409,
+      "category": "area",
+      "precision": "area",
+      "description": "Library adjoining Machina Astralis, near Stamin-Up. Busts, bookshelves, planet page and Neptune ladder are in this room.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "dome",
+      "label": "Observatory Dome",
+      "layerId": "overview",
+      "x": 0.621826171875,
+      "y": 0.193359375,
+      "category": "area",
+      "precision": "area",
+      "description": "Telescope, organ and lift terminal. The precise valve and terminal positions are not marked; search the room using the step instructions.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "rim",
+      "label": "Abyssal Rim",
+      "layerId": "overview",
+      "x": 0.438,
+      "y": 0.277,
+      "category": "area",
+      "precision": "area",
+      "description": "Outer path from the Luminarium towards the Observatory Dome, including the lower Ammo Cache area and the route past Wisp Tea.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "veilwalk",
+      "label": "The Veilwalk",
+      "layerId": "overview",
+      "x": 0.77,
+      "y": 0.309,
+      "category": "area",
+      "precision": "area",
+      "description": "Outer walkway east of the Observatory Dome, continuing to Machina Astralis.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "scholar",
+      "label": "Scholar's Way",
+      "layerId": "overview",
+      "x": 0.655,
+      "y": 0.602,
+      "category": "area",
+      "precision": "area",
+      "description": "Passage between Museum Infinitum and the side room of Machina Astralis.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-center",
+      "label": "Mars · central arena",
+      "layerId": "mars",
+      "x": 0.5,
+      "y": 0.5,
+      "category": "quest",
+      "precision": "area",
+      "description": "Pick up the brain jar here. Arena pillars, gut piles and the moving Ascendant Eye are represented as an area; their exact positions are not surveyed.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "floor": "Arena platform"
+    },
+    {
+      "id": "mars-machine",
+      "label": "Mars · machine above the stairs",
+      "layerId": "mars",
+      "x": 0.273,
+      "y": 0.5,
+      "category": "quest",
+      "precision": "area",
+      "description": "Place the brain jar in the machine, create the return portal, play music and start Caltheris. Temple area near the community-map portal coordinate.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "floor": "Temple / top of stairs"
+    },
+    {
+      "id": "mars-eye",
+      "label": "Mars · right-side device / Tesla coil",
+      "layerId": "mars",
+      "x": 0.594,
+      "y": 0.647,
+      "category": "quest",
+      "precision": "area",
+      "description": "Place the Ascendant Eye in the device on the right, facing the distant pylons away from the temple. This is the southern arena corner on the top-down map. Approximate device area.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-left",
+      "label": "Mars · opposite Tesla coil",
+      "layerId": "mars",
+      "x": 0.605,
+      "y": 0.345,
+      "category": "quest",
+      "precision": "area",
+      "description": "Opposite arena corner used during the boss sequence. Approximate area; look for the charged coil during the fight.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-back-right",
+      "label": "Pylon 1 · back right",
+      "layerId": "pylon-order",
+      "x": 0.73,
+      "y": 0.14,
+      "category": "quest",
+      "precision": "area",
+      "description": "First off-map pylon in the Ascendant Eye sequence. Relative position only.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-back-left",
+      "label": "Pylon 2 · back left",
+      "layerId": "pylon-order",
+      "x": 0.27,
+      "y": 0.14,
+      "category": "quest",
+      "precision": "area",
+      "description": "Second off-map pylon in the Ascendant Eye sequence. Relative position only.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-front-right",
+      "label": "Pylon 3 · front right",
+      "layerId": "pylon-order",
+      "x": 0.8,
+      "y": 0.29,
+      "category": "quest",
+      "precision": "area",
+      "description": "Third off-map pylon in the Ascendant Eye sequence. Relative position only.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-front-left",
+      "label": "Pylon 4 · front left",
+      "layerId": "pylon-order",
+      "x": 0.2,
+      "y": 0.29,
+      "category": "quest",
+      "precision": "area",
+      "description": "Fourth off-map pylon in the Ascendant Eye sequence. Relative position only.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-temple",
+      "label": "Pylon 5 · above the temple machine",
+      "layerId": "pylon-order",
+      "x": 0.5,
+      "y": 0.88,
+      "category": "quest",
+      "precision": "area",
+      "description": "Turn back towards the temple and shoot the pylon above it last, then repeatedly to keep the music playing while collecting the Ascendant Eye. Height is not shown.",
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+    },
+    {
+      "id": "mars-ammo",
+      "label": "Mars · Ammo Cache",
+      "layerId": "mars",
+      "x": 0.531,
+      "y": 0.399,
+      "category": "ammo",
+      "precision": "point",
+      "description": "Ammo Cache position from the community tactical map.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/"
+    },
+    {
+      "id": "mars-armor",
+      "label": "Mars · Armor Wall Buy",
+      "layerId": "mars",
+      "x": 0.317,
+      "y": 0.546,
+      "category": "equipment",
+      "precision": "point",
+      "description": "Armor Wall Buy position from the community tactical map.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/"
+    },
+    {
+      "id": "cursed-peeks-crash",
+      "label": "Mister Peeks — Crash Site",
+      "layerId": "overview",
+      "x": 0.499937,
+      "y": 0.896949,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-museum-southeast",
+      "label": "Mister Peeks — Museum Infinitum · southeast exterior",
+      "layerId": "overview",
+      "x": 0.615737,
+      "y": 0.696229,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-museum-east",
+      "label": "Mister Peeks — Museum Infinitum · east side",
+      "layerId": "overview",
+      "x": 0.611105,
+      "y": 0.657629,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-museum-west",
+      "label": "Mister Peeks — Museum Infinitum · west side",
+      "layerId": "overview",
+      "x": 0.445897,
+      "y": 0.636013,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-machina",
+      "label": "Mister Peeks — Machina Astralis · north side",
+      "layerId": "overview",
+      "x": 0.819545,
+      "y": 0.453821,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-rim",
+      "label": "Mister Peeks — Abyssal Rim",
+      "layerId": "overview",
+      "x": 0.384137,
+      "y": 0.188253,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-dome",
+      "label": "Mister Peeks — Observatory Dome",
+      "layerId": "overview",
+      "x": 0.626545,
+      "y": 0.138845,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    },
+    {
+      "id": "cursed-peeks-mars",
+      "label": "Mister Peeks — Mars · temple stairs",
+      "layerId": "mars",
+      "x": 0.316,
+      "y": 0.521,
+      "category": "perk",
+      "perkType": "mister-peeks",
+      "precision": "point",
+      "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "state": "Cursed mode · possible spawn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "lgm-traps",
+      "title": "LGM-1 · three trap rooms",
+      "locationIds": [
+        "museum",
+        "luminarium",
+        "dome"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-museum-luminarium-dome-1"
+    },
+    {
+      "id": "dome-terminal",
+      "title": "Observatory Dome · terminal and lift",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-7"
+    },
+    {
+      "id": "cryopod",
+      "title": "Thurston’s cryopod",
+      "locationIds": [
+        "cryopod"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-cryopod-1"
+    },
+    {
+      "id": "saw-brain",
+      "title": "Rock Saw → cryopod",
+      "locationIds": [
+        "museum",
+        "cryopod"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-museum-cryopod-1"
+    },
+    {
+      "id": "brain-defense",
+      "title": "The Luminarium · defend the brain",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-3"
+    },
+    {
+      "id": "portal-machine",
+      "title": "Machina Astralis · portal machine",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-1"
+    },
+    {
+      "id": "telescope",
+      "title": "Observatory Dome · telescope and organ",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-8"
+    },
+    {
+      "id": "machina-code",
+      "title": "Machina Astralis · upper-level terminal",
+      "locationIds": [
+        "machina-upper"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-upper-2"
+    },
+    {
+      "id": "books",
+      "title": "Archive of Orbis · books and busts",
+      "locationIds": [
+        "archive"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-archive-1"
+    },
+    {
+      "id": "neptune",
+      "title": "Neptune model → planet display",
+      "locationIds": [
+        "archive",
+        "machina-upper"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-archive-machina-upper-1"
+    },
+    {
+      "id": "planet-pages",
+      "title": "Three planet pages",
+      "locationIds": [
+        "luminarium",
+        "machina-upper",
+        "archive"
+      ],
+      "kind": "sequence",
+      "description": "All three rooms contain a page; the Machina page is upstairs behind the code terminal. These are room highlights, not exact desk pins.",
+      "guideAnchor": "guide-step-luminarium-machina-upper-archive-1"
+    },
+    {
+      "id": "planet-model",
+      "title": "Machina Astralis · planet display",
+      "locationIds": [
+        "machina-upper"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-upper-1"
+    },
+    {
+      "id": "mars-portal",
+      "title": "Portal defense → Mars",
+      "locationIds": [
+        "machina",
+        "mars-center"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-machina-mars-center-1"
+    },
+    {
+      "id": "mars-brain",
+      "title": "Mars · brain jar → temple machine",
+      "locationIds": [
+        "mars-center",
+        "mars-machine"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-center-mars-machine-1"
+    },
+    {
+      "id": "mars-pylons",
+      "title": "Ascendant Eye · pylon order",
+      "locationIds": [
+        "mars-back-right",
+        "mars-back-left",
+        "mars-front-right",
+        "mars-front-left",
+        "mars-temple"
+      ],
+      "kind": "sequence",
+      "description": "Face the distant pylons away from the temple: back right, back left, front right, front left. Then turn back to shoot above the temple. Relative, unscaled schematic.",
+      "guideAnchor": "guide-step-mars-back-right-mars-back-left-mars-front-right-mars-front-left-mars-tem-1"
+    },
+    {
+      "id": "mars-eye",
+      "title": "Mars · place the Ascendant Eye",
+      "locationIds": [
+        "mars-eye"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-eye-mars-center-1"
+    },
+    {
+      "id": "mars-pillars",
+      "title": "Mars · five arena pillars",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "description": "The five exact pillar positions are not surveyed. Search the pillars around the arena and use the organ symbols for the interaction order.",
+      "guideAnchor": "guide-step-mars-eye-mars-center-1"
+    },
+    {
+      "id": "mars-boss",
+      "title": "Mars · Caltheris control machine",
+      "locationIds": [
+        "mars-machine"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-machine-2"
+    },
+    {
+      "id": "mars-coils",
+      "title": "Caltheris · coils and control machine",
+      "locationIds": [
+        "mars-eye",
+        "mars-left",
+        "mars-machine"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-eye-mars-left-mars-machine-1"
+    },
+    {
+      "id": "mars-arena",
+      "title": "Mars · Caltheris arena",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-eye-mars-machine-1"
+    },
+    {
+      "id": "step-crash-1",
+      "title": "Equipped with a Pack-a-Punched gun, shoot the gearbox of Ol' Tessie in Crash Site to collect the Car Battery.",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-1",
+      "description": "Equipped with a Pack-a-Punched gun, shoot the gearbox of Ol' Tessie in Crash Site to collect the Car Battery."
+    },
+    {
+      "id": "step-museum-1",
+      "title": "Place the Absolute Zero Shard inside the rocket thrusters in Museum Infinitum. If done correctly, a countdown will be hear…",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-1",
+      "description": "Place the Absolute Zero Shard inside the rocket thrusters in Museum Infinitum. If done correctly, a countdown will be heard. Activate the trap and bring O.S.C.A.R. to the rocket thrusters to kill it."
+    },
+    {
+      "id": "step-luminarium-1",
+      "title": "Place the Damaged Drone, Car Battery and Aberrant Wiring inside the trap at the Luminarium to enable the Electro-Volt Proj…",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-1",
+      "description": "Place the Damaged Drone, Car Battery and Aberrant Wiring inside the trap at the Luminarium to enable the Electro-Volt Projector. Bring O.S.C.A.R. inside the room and interact with the trap to kill it. Players have to hold O.S.C.A.R. within the room until it overheats and explodes. Purple-eyed zombies will also spawn during this step."
+    },
+    {
+      "id": "step-dome-1",
+      "title": "Two are located above the telescope.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-1",
+      "description": "Two are located above the telescope."
+    },
+    {
+      "id": "step-dome-2",
+      "title": "Two are located under the telescope.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-2",
+      "description": "Two are located under the telescope."
+    },
+    {
+      "id": "step-dome-3",
+      "title": "Three are located on the walls inside the room.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-3",
+      "description": "Three are located on the walls inside the room."
+    },
+    {
+      "id": "step-dome-4",
+      "title": "One is located on a pillar behind a sparking box.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-4",
+      "description": "One is located on a pillar behind a sparking box."
+    },
+    {
+      "id": "step-dome-5",
+      "title": "One is located in the small room when coming from Machina Astralis",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-5",
+      "description": "One is located in the small room when coming from Machina Astralis"
+    },
+    {
+      "id": "step-dome-6",
+      "title": "Bring O.S.C.A.R. beneath the telescope and interact with the organ in front of the Pack-a-Punch machine. A screen will app…",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-6",
+      "description": "Bring O.S.C.A.R. beneath the telescope and interact with the organ in front of the Pack-a-Punch machine. A screen will appear and you'll need to place the cursor on the Sun to activate the trap. Make sure O.S.C.A.R. stays within the laser beam to kill it."
+    },
+    {
+      "id": "step-luminarium-2",
+      "title": "The Stellar Dissector can be found next to the trap in Luminarium",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-2",
+      "description": "The Stellar Dissector can be found next to the trap in Luminarium"
+    },
+    {
+      "id": "step-museum-luminarium-dome-1",
+      "title": "Acquire the LGM-1 (see Key Features for the full trap sequence).",
+      "locationIds": [
+        "museum",
+        "luminarium",
+        "dome"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-museum-luminarium-dome-1",
+      "description": "Acquire the LGM-1 (see Key Features for the full trap sequence)."
+    },
+    {
+      "id": "step-dome-7",
+      "title": "Travel to the Observatory Dome and enter the 3-digit code into the terminal. If done correctly, a lift will drop down next…",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-7",
+      "description": "Travel to the Observatory Dome and enter the 3-digit code into the terminal. If done correctly, a lift will drop down next to the Pack-a-Punch."
+    },
+    {
+      "id": "step-cryopod-1",
+      "title": "Retrieve the key from the corpse on the lift, then travel to Machina Astralis and interact with the cryopod located in the…",
+      "locationIds": [
+        "cryopod"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-cryopod-1",
+      "description": "Retrieve the key from the corpse on the lift, then travel to Machina Astralis and interact with the cryopod located in the adjacent room leading to Scholar's Way. The pod will open, revealing Dr. Thurston's corpse. Note that this will summon O.S.C.A.R. and spawn several zombies to your location."
+    },
+    {
+      "id": "step-museum-cryopod-1",
+      "title": "Travel to Museum Infinitum and find the Rock Saw located behind a glass display; shoot the glass to pick it up. Return to …",
+      "locationIds": [
+        "museum",
+        "cryopod"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-museum-cryopod-1",
+      "description": "Travel to Museum Infinitum and find the Rock Saw located behind a glass display; shoot the glass to pick it up. Return to the cryopod and interact with the corpse to collect Thurston's brain. You can pick up the Rock Saw before Step 4. Once the cryopod is opened, hold interact on Thurston's head to collect his brain — you will be immune to damage during the process."
+    },
+    {
+      "id": "step-luminarium-3",
+      "title": "Travel to The Luminarium and interact with the brain jar on the table to replace the monkey brain with Thurston's brain. I…",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-3",
+      "description": "Travel to The Luminarium and interact with the brain jar on the table to replace the monkey brain with Thurston's brain. Interact once more, and this will trigger a short lockdown where you need to defend the brain."
+    },
+    {
+      "id": "step-machina-1",
+      "title": "Pick the brain jar up and place it in the machine near the portal in Machina Astralis. Holding the jar will slow you down.…",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-1",
+      "description": "Pick the brain jar up and place it in the machine near the portal in Machina Astralis. Holding the jar will slow you down. Hold interact on the machine to connect the jar to it. If done correctly, the machine will power up and display a list of book titles on the left screen (9 possible titles)."
+    },
+    {
+      "id": "step-archive-1",
+      "title": "Go to the Archive of Orbis. Inside the room there are three busts, each with a set of 3 bookshelves beside it. Interacting…",
+      "locationIds": [
+        "archive"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-archive-1",
+      "description": "Go to the Archive of Orbis. Inside the room there are three busts, each with a set of 3 bookshelves beside it. Interacting with each bookshelf displays one of the book titles. Find the book titles shown by the machine, then as fast as possible , interact with each bust as many times as the number of matching titles found in its set of shelves. Example: if the machine shows The Black Veil, Echoes of Andromeda, Witchlight Codex, Silence at Singularity, interact with bust 1 once, bust 2 once, bust 3 twice."
+    },
+    {
+      "id": "step-archive-machina-upper-1",
+      "title": "If done correctly, a panel will open above the ladder in the room. Climb it to retrieve the Neptune model and place it in …",
+      "locationIds": [
+        "archive",
+        "machina-upper"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-archive-machina-upper-1",
+      "description": "If done correctly, a panel will open above the ladder in the room. Climb it to retrieve the Neptune model and place it in the display at the top of Machina Astralis."
+    },
+    {
+      "id": "step-luminarium-machina-upper-archive-1",
+      "title": "Find three pages around the map; each page shows a random planet (e.g. Mars) and a random direction (e.g. NE): one on a ta…",
+      "locationIds": [
+        "luminarium",
+        "machina-upper",
+        "archive"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-luminarium-machina-upper-archive-1",
+      "description": "Find three pages around the map; each page shows a random planet (e.g. Mars) and a random direction (e.g. NE): one on a table in The Luminarium (same room as the Stellar Dissector trap), one on a desk in Machina Astralis, one on the large table in Archive of Orbis."
+    },
+    {
+      "id": "step-machina-upper-1",
+      "title": "Shoot the corresponding planets (Mars, Saturn, Neptune) on the model display to align each in the direction from the notes…",
+      "locationIds": [
+        "machina-upper"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-upper-1",
+      "description": "Shoot the corresponding planets (Mars, Saturn, Neptune) on the model display to align each in the direction from the notes. The compass showing the directions is below the Sun model."
+    },
+    {
+      "id": "step-dome-8",
+      "title": "Travel to the Observatory Dome and interact with the telescope. Look for Mars and note its declination (DEC) — this corres…",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-8",
+      "description": "Travel to the Observatory Dome and interact with the telescope. Look for Mars and note its declination (DEC) — this corresponds to a 4-digit code."
+    },
+    {
+      "id": "step-machina-upper-2",
+      "title": "On the second floor of Machina Astralis, enter the code into the machine. If done correctly, Thurston will acknowledge the…",
+      "locationIds": [
+        "machina-upper"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-upper-2",
+      "description": "On the second floor of Machina Astralis, enter the code into the machine. If done correctly, Thurston will acknowledge the successful code input."
+    },
+    {
+      "id": "step-machina-mars-center-1",
+      "title": "Interact with the machine to reboot the portal. This spawns O.S.C.A.R., who constantly launches flying saucers at the port…",
+      "locationIds": [
+        "machina",
+        "mars-center"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-machina-mars-center-1",
+      "description": "Interact with the machine to reboot the portal. This spawns O.S.C.A.R., who constantly launches flying saucers at the portal to damage it. Destroy the saucers and defend the portal until it finishes rebooting — if it takes too much damage before the timer runs out, the step fails. If done correctly, you will be teleported to Mars automatically."
+    },
+    {
+      "id": "step-mars-center-mars-machine-1",
+      "title": "While on Mars, pick up Thurston's brain jar in the center of the arena and place it in the machine at the top of the stair…",
+      "locationIds": [
+        "mars-center",
+        "mars-machine"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-center-mars-machine-1",
+      "description": "While on Mars, pick up Thurston's brain jar in the center of the arena and place it in the machine at the top of the stairs. Interact with it to create a portal. (Step 6 of the cheat sheet can be done as you create the portal.)"
+    },
+    {
+      "id": "step-mars-machine-1",
+      "title": "Interact with the machine to play music (once per round). When the music plays, the Ascendant Eye will be seen flying near…",
+      "locationIds": [
+        "mars-machine"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-machine-1",
+      "description": "Interact with the machine to play music (once per round). When the music plays, the Ascendant Eye will be seen flying near the giant head outside the map."
+    },
+    {
+      "id": "step-mars-back-right-mars-back-left-mars-front-right-mars-front-left-mars-tem-1",
+      "title": "Shoot the four pylons outside the map in order: Back Right, Back Left, Front Right, Front Left , then the pylon above the …",
+      "locationIds": [
+        "mars-back-right",
+        "mars-back-left",
+        "mars-front-right",
+        "mars-front-left",
+        "mars-temple"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-back-right-mars-back-left-mars-front-right-mars-front-left-mars-tem-1",
+      "description": "Shoot the four pylons outside the map in order: Back Right, Back Left, Front Right, Front Left , then the pylon above the machine on top of the temple to bring the Ascendant Eye into the arena. Shooting the temple pylon repeatedly keeps the music playing, forcing the Ascendant Eye to stay."
+    },
+    {
+      "id": "step-mars-center-1",
+      "title": "Wait for the Ascendant Eye to fly low in the arena, then jump and interact to grab it. Easier with low gravity enabled.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-1",
+      "description": "Wait for the Ascendant Eye to fly low in the arena, then jump and interact to grab it. Easier with low gravity enabled."
+    },
+    {
+      "id": "step-mars-eye-mars-center-1",
+      "title": "Place the Ascendant Eye in the device on the right side of the arena. With the LGM-1, shoot the antennas on the five pilla…",
+      "locationIds": [
+        "mars-eye",
+        "mars-center"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-eye-mars-center-1",
+      "description": "Place the Ascendant Eye in the device on the right side of the arena. With the LGM-1, shoot the antennas on the five pillars around the arena — each plays a note and displays a symbol on its pillar."
+    },
+    {
+      "id": "step-dome-9",
+      "title": "Back in the Observatory Dome, interact with the organ. The screen on the right displays the five symbols in order, with on…",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-9",
+      "description": "Back in the Observatory Dome, interact with the organ. The screen on the right displays the five symbols in order, with one hidden behind distorted wave lines. This step can be done immediately after unlocking Pack-a-Punch."
+    },
+    {
+      "id": "step-mars-center-2",
+      "title": "Return to Mars and interact with the pillars in the order shown on the organ's screen, inserting the missing symbol where …",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-2",
+      "description": "Return to Mars and interact with the pillars in the order shown on the organ's screen, inserting the missing symbol where indicated. If done correctly, the screen brightens and a quote from Thurston plays."
+    },
+    {
+      "id": "step-mars-machine-2",
+      "title": "Interact with the machine at the top of the stairs to start the fight against Caltheris .",
+      "locationIds": [
+        "mars-machine"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-machine-2",
+      "description": "Interact with the machine at the top of the stairs to start the fight against Caltheris ."
+    },
+    {
+      "id": "step-mars-eye-mars-machine-1",
+      "title": "Phase 1 — Kill zombies while dodging Caltheris's lasers to charge the Tesla coil on the right side of the arena. Once full…",
+      "locationIds": [
+        "mars-eye",
+        "mars-machine"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-eye-mars-machine-1",
+      "description": "Phase 1 — Kill zombies while dodging Caltheris's lasers to charge the Tesla coil on the right side of the arena. Once fully charged, interact with the machine at the top of the stairs to fire a beam, instantly draining 1/3 of her health bar. Repeat two more times. After each successful attack, Caltheris gains a new attack: meteors covering an area in flames, or toxic gas on the lower area (draining health to exactly 175 HP) while summoning toxic zombies."
+    },
+    {
+      "id": "step-mars-eye-mars-left-mars-machine-1",
+      "title": "Kill zombies while dodging lasers to charge the Tesla coil on the right side of the arena.",
+      "locationIds": [
+        "mars-eye",
+        "mars-left",
+        "mars-machine"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-eye-mars-left-mars-machine-1",
+      "description": "Kill zombies while dodging lasers to charge the Tesla coil on the right side of the arena."
+    },
+    {
+      "id": "step-mars-machine-4",
+      "title": "Once charged, interact with the machine at the top of the stairs to fire a beam that drains 1/3 of her health bar .",
+      "locationIds": [
+        "mars-machine"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-machine-4",
+      "description": "Once charged, interact with the machine at the top of the stairs to fire a beam that drains 1/3 of her health bar ."
+    },
+    {
+      "id": "step-luminarium-5",
+      "title": "At the bottom shelf, left of the exit door in Luminarium",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-5",
+      "description": "At the bottom shelf, left of the exit door in Luminarium"
+    },
+    {
+      "id": "step-machina-3",
+      "title": "On a display case in Machina Astralis",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-3",
+      "description": "On a display case in Machina Astralis"
+    },
+    {
+      "id": "step-mars-center-5",
+      "title": "On the ground next to a wall in Mars",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-5",
+      "description": "On the ground next to a wall in Mars"
+    },
+    {
+      "id": "step-machina-4",
+      "title": "Inside a wooden box in Machina Astralis in a box on the middle floor",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-4",
+      "description": "Inside a wooden box in Machina Astralis in a box on the middle floor"
+    },
+    {
+      "id": "step-luminarium-6",
+      "title": "At the top of a bookshelf in the Luminarium",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-6",
+      "description": "At the top of a bookshelf in the Luminarium"
+    },
+    {
+      "id": "step-museum-2",
+      "title": "On a wooden sil above a zombie spawner in the Museum",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-2",
+      "description": "On a wooden sil above a zombie spawner in the Museum"
+    },
+    {
+      "id": "step-luminarium-7",
+      "title": "Bring the records to gramophone in the Luminarium and it will play the Game Over song from Alpha Omega.",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-7",
+      "description": "Bring the records to gramophone in the Luminarium and it will play the Game Over song from Alpha Omega."
+    },
+    {
+      "id": "step-luminarium-rim-1",
+      "title": "At the bottom of the bookshelf, left of the door in The Luminarium going to Abyssal Rim.",
+      "locationIds": [
+        "luminarium",
+        "rim"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-luminarium-rim-1",
+      "description": "At the bottom of the bookshelf, left of the door in The Luminarium going to Abyssal Rim."
+    },
+    {
+      "id": "step-machina-5",
+      "title": "In a display case in Machina Astralis.",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-5",
+      "description": "In a display case in Machina Astralis."
+    },
+    {
+      "id": "step-dome-13",
+      "title": "On a chair in Observatory Dome.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-13",
+      "description": "On a chair in Observatory Dome."
+    },
+    {
+      "id": "step-rim-1",
+      "title": "Travel to the lower part of Abyssal Rim, and throw a Molotov Cocktail on the ground near the Ammo Cache. This will create …",
+      "locationIds": [
+        "rim"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rim-1",
+      "description": "Travel to the lower part of Abyssal Rim, and throw a Molotov Cocktail on the ground near the Ammo Cache. This will create fiery footprints forming a trail. Throw additional Molotov Cocktails and follow the footprints until they reach an inaccessible cave."
+    },
+    {
+      "id": "step-luminarium-crash-1",
+      "title": "In the courtyard between Crash Site and The Luminarium.",
+      "locationIds": [
+        "luminarium",
+        "crash"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-luminarium-crash-1",
+      "description": "In the courtyard between Crash Site and The Luminarium."
+    },
+    {
+      "id": "step-museum-3",
+      "title": "In one of the displays in Museum Infinitum.",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-3",
+      "description": "In one of the displays in Museum Infinitum."
+    },
+    {
+      "id": "step-courtyard-1",
+      "title": "In a zombie spawn hole next to the Ammo Cache in Stargazer's Courtyard.",
+      "locationIds": [
+        "courtyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-courtyard-1",
+      "description": "In a zombie spawn hole next to the Ammo Cache in Stargazer's Courtyard."
+    },
+    {
+      "id": "step-machina-courtyard-1",
+      "title": "In a display case in Machina Astralis on the left side when coming from Stargazer's Courtyard.",
+      "locationIds": [
+        "machina",
+        "courtyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-machina-courtyard-1",
+      "description": "In a display case in Machina Astralis on the left side when coming from Stargazer's Courtyard."
+    },
+    {
+      "id": "step-archive-veilwalk-1",
+      "title": "In a corner behind the brick wall in The Veilwalk on the right side when coming from Archive of Orbis.",
+      "locationIds": [
+        "archive",
+        "veilwalk"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-archive-veilwalk-1",
+      "description": "In a corner behind the brick wall in The Veilwalk on the right side when coming from Archive of Orbis."
+    },
+    {
+      "id": "step-machina-6",
+      "title": "Once all the skulls are collected, place them on the cabinet with the large mirror in Machina Astralis.",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-6",
+      "description": "Once all the skulls are collected, place them on the cabinet with the large mirror in Machina Astralis."
+    },
+    {
+      "id": "step-machina-archive-1",
+      "title": "Archive of Orbis (near Stamin-Up): The record can be found inside a wooden box in the middle floor of Machina Astralis. Wh…",
+      "locationIds": [
+        "machina",
+        "archive"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-machina-archive-1",
+      "description": "Archive of Orbis (near Stamin-Up): The record can be found inside a wooden box in the middle floor of Machina Astralis. While the song is playing, kill 5 zombies with equipment. Once the music stops, Equipment and a Mystery Perk can will drop."
+    },
+    {
+      "id": "step-luminarium-8",
+      "title": "The Luminarium (near Mr Peeks headphone): The record can be found at the top of a bookshelf, next to one of the grandfathe…",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-8",
+      "description": "The Luminarium (near Mr Peeks headphone): The record can be found at the top of a bookshelf, next to one of the grandfather clocks. While the song is playing, kill 15 zombies with Field Upgrades. Once the music stops, Essence and a Mystery Perk can will drop."
+    },
+    {
+      "id": "step-museum-4",
+      "title": "Museum Infinitum (near Speed Cola): The record can be found on the capital of the wooden pillar above a zombie window. Whi…",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-4",
+      "description": "Museum Infinitum (near Speed Cola): The record can be found on the capital of the wooden pillar above a zombie window. While the song is playing, kill 5 zombies with melee weapons. Once the music stops, Salvage and a Mystery Perk can will drop."
+    },
+    {
+      "id": "step-museum-5",
+      "title": "During a special round, travel to Museum Infinitum and interact with the left-most display cabinet beneath the painting of…",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-5",
+      "description": "During a special round, travel to Museum Infinitum and interact with the left-most display cabinet beneath the painting of a mansion/castle."
+    },
+    {
+      "id": "step-museum-6",
+      "title": "During the next rounds, weird noises will play from one of the displays in the museum, one per round and four times in tot…",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-6",
+      "description": "During the next rounds, weird noises will play from one of the displays in the museum, one per round and four times in total. Interact with each display."
+    },
+    {
+      "id": "step-crash-2",
+      "title": "Crash Site: Behind Ol' Tessie.",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-2",
+      "description": "Crash Site: Behind Ol' Tessie."
+    },
+    {
+      "id": "step-luminarium-rim-2",
+      "title": "The Luminarium: Inside the Stellar Dissector or in a corner outside on the Abyssal Rim side.",
+      "locationIds": [
+        "luminarium",
+        "rim"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-luminarium-rim-2",
+      "description": "The Luminarium: Inside the Stellar Dissector or in a corner outside on the Abyssal Rim side."
+    },
+    {
+      "id": "step-rim-2",
+      "title": "Abyssal Rim: Next to Wisp Tea.",
+      "locationIds": [
+        "rim"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rim-2",
+      "description": "Abyssal Rim: Next to Wisp Tea."
+    },
+    {
+      "id": "step-dome-14",
+      "title": "Observatory Dome: In a corner near the X9 Maverick wall-buy.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-14",
+      "description": "Observatory Dome: In a corner near the X9 Maverick wall-buy."
+    },
+    {
+      "id": "step-dome-veilwalk-1",
+      "title": "The Veilwalk: Next to the door leading to Observatory Dome.",
+      "locationIds": [
+        "dome",
+        "veilwalk"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-dome-veilwalk-1",
+      "description": "The Veilwalk: Next to the door leading to Observatory Dome."
+    },
+    {
+      "id": "step-machina-upper-scholar-1",
+      "title": "Machina Astralis: On the upper floor or in a corner near the door leading to Scholar's Way.",
+      "locationIds": [
+        "machina-upper",
+        "scholar"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-machina-upper-scholar-1",
+      "description": "Machina Astralis: On the upper floor or in a corner near the door leading to Scholar's Way."
+    },
+    {
+      "id": "step-museum-scholar-1",
+      "title": "Museum Infinitum: In a corner near the door leading to Scholar's Way.",
+      "locationIds": [
+        "museum",
+        "scholar"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-museum-scholar-1",
+      "description": "Museum Infinitum: In a corner near the door leading to Scholar's Way."
+    },
+    {
+      "id": "step-luminarium-9",
+      "title": "One in The Luminarium, next to the bookshelves.",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-9",
+      "description": "One in The Luminarium, next to the bookshelves."
+    },
+    {
+      "id": "step-museum-7",
+      "title": "One in Museum Infinitum, near Speed Cola.",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-7",
+      "description": "One in Museum Infinitum, near Speed Cola."
+    },
+    {
+      "id": "step-machina-7",
+      "title": "Two in Machina Astralis: one on the bottom floor, one on the middle floor.",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-7",
+      "description": "Two in Machina Astralis: one on the bottom floor, one on the middle floor."
+    },
+    {
+      "id": "step-archive-3",
+      "title": "One in Archive of Orbis, next to Stamin-Up.",
+      "locationIds": [
+        "archive"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-archive-3",
+      "description": "One in Archive of Orbis, next to Stamin-Up."
+    },
+    {
+      "id": "step-crash-3",
+      "title": "Two in Crash Site.",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-3",
+      "description": "Two in Crash Site."
+    },
+    {
+      "id": "step-luminarium-10",
+      "title": "Three in the courtyard in front of The Luminarium.",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-10",
+      "description": "Three in the courtyard in front of The Luminarium."
+    },
+    {
+      "id": "step-luminarium-11",
+      "title": "Two in the back of The Luminarium.",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-11",
+      "description": "Two in the back of The Luminarium."
+    },
+    {
+      "id": "step-scholar-1",
+      "title": "Two in Scholar's Way.",
+      "locationIds": [
+        "scholar"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-scholar-1",
+      "description": "Two in Scholar's Way."
+    },
+    {
+      "id": "step-official-1835-1",
+      "title": "In the area near Wisp Tea machine, an asteroid can be located nearby. Throw a grenade at the asteroid so that its explosio…",
+      "locationIds": [
+        "official-1835"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1835-1",
+      "description": "In the area near Wisp Tea machine, an asteroid can be located nearby. Throw a grenade at the asteroid so that its explosion will knock the asteroid closer to you."
+    },
+    {
+      "id": "step-crash-4",
+      "title": "Sprint and wall jump to the left side of the asteroid. If done correctly, you will float into space and travel back to the…",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-4",
+      "description": "Sprint and wall jump to the left side of the asteroid. If done correctly, you will float into space and travel back to the Crash Site. As you travel, the DG-2 Turret will spawn; interact with it as you pass to grab it. While you travel a new mix of \"Pareidolia\" by Brian Tuey will play."
+    },
+    {
+      "id": "step-crash-5",
+      "title": "Once back at the Crash Site, install the turret onto Ol' Tessie. The turret can be used freely and is effective against O.…",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-5",
+      "description": "Once back at the Crash Site, install the turret onto Ol' Tessie. The turret can be used freely and is effective against O.S.C.A.R."
+    },
+    {
+      "id": "step-mars-center-6",
+      "title": "Reach Mars and activate the portal.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-6",
+      "description": "Reach Mars and activate the portal."
+    },
+    {
+      "id": "step-mars-center-7",
+      "title": "Aim at the giant statue head on the right side of the stairs, when viewed from the portal entrance.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-7",
+      "description": "Aim at the giant statue head on the right side of the stairs, when viewed from the portal entrance."
+    },
+    {
+      "id": "step-dome-15",
+      "title": "Move the telescope as part of the steps to unlock the LGM-1.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-15",
+      "description": "Move the telescope as part of the steps to unlock the LGM-1."
+    },
+    {
+      "id": "step-dome-16",
+      "title": "Interact with the binoculars on the left side of the organ and bring the cursor to the small-sized skull located at RA 2h …",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-16",
+      "description": "Interact with the binoculars on the left side of the organ and bring the cursor to the small-sized skull located at RA 2h 23m and DEC 42° 21'."
+    },
+    {
+      "id": "step-dome-17",
+      "title": "If done correctly, a short skull jumpscare should be triggered before forcing you out of the screen. The skull is gone aft…",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-17",
+      "description": "If done correctly, a short skull jumpscare should be triggered before forcing you out of the screen. The skull is gone afterwards."
+    },
+    {
+      "id": "step-archive-dome-luminarium-1",
+      "title": "Around the map, there will be three doorways with a light bulb above them: The Luminarium (near the brain jar), Observator…",
+      "locationIds": [
+        "archive",
+        "dome",
+        "luminarium"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-archive-dome-luminarium-1",
+      "description": "Around the map, there will be three doorways with a light bulb above them: The Luminarium (near the brain jar), Observatory Dome (near the room with the portal), and Archive of Orbis (next to the portal room)."
+    },
+    {
+      "id": "step-dome-courtyard-1",
+      "title": "Once all three are done, look for the green portal outside between Observatory Dome and Stargazer's Courtyard.",
+      "locationIds": [
+        "dome",
+        "courtyard"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-dome-courtyard-1",
+      "description": "Once all three are done, look for the green portal outside between Observatory Dome and Stargazer's Courtyard."
+    },
+    {
+      "id": "step-dome-18",
+      "title": "Travel to Observatory Dome and interact with the green portal to start the Relic Trial.",
+      "locationIds": [
+        "dome"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-dome-18",
+      "description": "Travel to Observatory Dome and interact with the green portal to start the Relic Trial."
+    },
+    {
+      "id": "step-archive-4",
+      "title": "Travel to Archive of Orbis and interact with the yellow portal to start the Relic Trial.",
+      "locationIds": [
+        "archive"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-archive-4",
+      "description": "Travel to Archive of Orbis and interact with the yellow portal to start the Relic Trial."
+    },
+    {
+      "id": "step-mars-center-8",
+      "title": "Open the portal to Mars and reach Round 40.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-8",
+      "description": "Open the portal to Mars and reach Round 40."
+    },
+    {
+      "id": "step-mars-center-9",
+      "title": "Place a C4 on each of the three gut piles found on the central platform on Mars.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-9",
+      "description": "Place a C4 on each of the three gut piles found on the central platform on Mars."
+    },
+    {
+      "id": "step-mars-center-10",
+      "title": "Gather a group of zombies in the middle of the platform and detonate the C4. If done correctly, Mr Peeks will be heard lau…",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-10",
+      "description": "Gather a group of zombies in the middle of the platform and detonate the C4. If done correctly, Mr Peeks will be heard laughing."
+    },
+    {
+      "id": "step-cryopod-3",
+      "title": "Travel to the side room of Machina Astralis and interact with the yellow portal to start the Relic Trial.",
+      "locationIds": [
+        "cryopod"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-cryopod-3",
+      "description": "Travel to the side room of Machina Astralis and interact with the yellow portal to start the Relic Trial."
+    },
+    {
+      "id": "step-mars-center-11",
+      "title": "Open the portal to Mars and reach Round 60.",
+      "locationIds": [
+        "mars-center"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mars-center-11",
+      "description": "Open the portal to Mars and reach Round 60."
+    },
+    {
+      "id": "step-mars-machine-cryopod-1",
+      "title": "Get a Mangler Cannon and travel to Mars. Shoot the portal with the Mangler Cannon, then teleport back to Machina Astralis.",
+      "locationIds": [
+        "mars-machine",
+        "cryopod"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mars-machine-cryopod-1",
+      "description": "Get a Mangler Cannon and travel to Mars. Shoot the portal with the Mangler Cannon, then teleport back to Machina Astralis."
+    },
+    {
+      "id": "step-cryopod-4",
+      "title": "After a few seconds, the shot from the Mangler Cannon will leave the portal going towards Archive of Orbis. You need to ga…",
+      "locationIds": [
+        "cryopod"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-cryopod-4",
+      "description": "After a few seconds, the shot from the Mangler Cannon will leave the portal going towards Archive of Orbis. You need to gather a group of zombies inside the red circle on the ground near the portal, using Decoys for example."
+    },
+    {
+      "id": "step-crash-6",
+      "title": "If enough zombies were killed, a red portal will appear on a wall at Crash Site. Interact with it to start the Relic Trial.",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-6",
+      "description": "If enough zombies were killed, a red portal will appear on a wall at Crash Site. Interact with it to start the Relic Trial."
+    },
+    {
+      "id": "step-crash-museum-1",
+      "title": "Get Energy Mine and trigger a mine next to Ol' Tessie. If done correctly, the headlights will flash three times signaling …",
+      "locationIds": [
+        "crash",
+        "museum"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-crash-museum-1",
+      "description": "Get Energy Mine and trigger a mine next to Ol' Tessie. If done correctly, the headlights will flash three times signaling the start of a sequence. Afterwards each of the headlights and brake lights will light up. This will be the order for the chandeliers in Museum Infinitum."
+    },
+    {
+      "id": "step-museum-8",
+      "title": "The two chandeliers near the doorway to Stargazer's Courtyard are the headlights, while the two chandeliers near the doorw…",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-8",
+      "description": "The two chandeliers near the doorway to Stargazer's Courtyard are the headlights, while the two chandeliers near the doorway to Crash Site are the brake lights."
+    },
+    {
+      "id": "step-museum-9",
+      "title": "Wall jump to reach the chandeliers to put out the candles, in the order shown by Ol' Tessie.",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-9",
+      "description": "Wall jump to reach the chandeliers to put out the candles, in the order shown by Ol' Tessie."
+    },
+    {
+      "id": "step-crash-7",
+      "title": "Travel to Crash Site and interact with the red portal to start the Relic Trial.",
+      "locationIds": [
+        "crash"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-crash-7",
+      "description": "Travel to Crash Site and interact with the red portal to start the Relic Trial."
+    },
+    {
+      "id": "step-official-1798-1",
+      "title": "Jäger 45 Crash Site",
+      "locationIds": [
+        "official-1798"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1798-1",
+      "description": "Jäger 45 Crash Site"
+    },
+    {
+      "id": "step-official-1806-1",
+      "title": "M34 Novaline The Luminarium",
+      "locationIds": [
+        "official-1806"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1806-1",
+      "description": "M34 Novaline The Luminarium"
+    },
+    {
+      "id": "step-official-1810-1",
+      "title": "Carbon 57 Museum Infinitum",
+      "locationIds": [
+        "official-1810"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1810-1",
+      "description": "Carbon 57 Museum Infinitum"
+    },
+    {
+      "id": "step-official-1829-1",
+      "title": "Akita Machina Astralis",
+      "locationIds": [
+        "official-1829"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1829-1",
+      "description": "Akita Machina Astralis"
+    },
+    {
+      "id": "step-official-1833-1",
+      "title": "Shadow SK Abyssal Rim",
+      "locationIds": [
+        "official-1833"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1833-1",
+      "description": "Shadow SK Abyssal Rim"
+    },
+    {
+      "id": "step-official-1821-1",
+      "title": "XM325 Stargazer's Courtyard",
+      "locationIds": [
+        "official-1821"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1821-1",
+      "description": "XM325 Stargazer's Courtyard"
+    },
+    {
+      "id": "step-official-1843-1",
+      "title": "X9 Maverick Observatory Dome",
+      "locationIds": [
+        "official-1843"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1843-1",
+      "description": "X9 Maverick Observatory Dome"
+    },
+    {
+      "id": "step-official-1803-1",
+      "title": "Juggernog The Luminarium",
+      "locationIds": [
+        "official-1803"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1803-1",
+      "description": "Juggernog The Luminarium"
+    },
+    {
+      "id": "step-official-1799-1",
+      "title": "Quick Revive Crash Site",
+      "locationIds": [
+        "official-1799"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1799-1",
+      "description": "Quick Revive Crash Site"
+    },
+    {
+      "id": "step-official-1839-1",
+      "title": "Mule Kick The Veilwalk",
+      "locationIds": [
+        "official-1839"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1839-1",
+      "description": "Mule Kick The Veilwalk"
+    },
+    {
+      "id": "step-official-1835-2",
+      "title": "Wisp Tea Abyssal Rim",
+      "locationIds": [
+        "official-1835"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1835-2",
+      "description": "Wisp Tea Abyssal Rim"
+    },
+    {
+      "id": "step-official-1811-1",
+      "title": "Speed Cola Museum Infinitum",
+      "locationIds": [
+        "official-1811"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1811-1",
+      "description": "Speed Cola Museum Infinitum"
+    },
+    {
+      "id": "step-official-1830-1",
+      "title": "Stamin-Up Archive of Orbis",
+      "locationIds": [
+        "official-1830"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-official-1830-1",
+      "description": "Stamin-Up Archive of Orbis"
+    },
+    {
+      "id": "step-courtyard-2",
+      "title": "Der Wunderfizz Stargazer's Courtyard",
+      "locationIds": [
+        "courtyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-courtyard-2",
+      "description": "Der Wunderfizz Stargazer's Courtyard"
+    },
+    {
+      "id": "step-machina-8",
+      "title": "Machina Astralis",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-8",
+      "description": "Machina Astralis"
+    },
+    {
+      "id": "step-rim-3",
+      "title": "Abyssal Rim",
+      "locationIds": [
+        "rim"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rim-3",
+      "description": "Abyssal Rim"
+    },
+    {
+      "id": "step-courtyard-3",
+      "title": "Stargazer's Courtyard",
+      "locationIds": [
+        "courtyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-courtyard-3",
+      "description": "Stargazer's Courtyard"
+    },
+    {
+      "id": "step-luminarium-12",
+      "title": "Stellar Dissector — The Luminarium",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-12",
+      "description": "Stellar Dissector — The Luminarium"
+    },
+    {
+      "id": "step-courtyard-4",
+      "title": "Apogee Annihilator — Stargazer's Courtyard",
+      "locationIds": [
+        "courtyard"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-courtyard-4",
+      "description": "Apogee Annihilator — Stargazer's Courtyard"
+    },
+    {
+      "id": "step-luminarium-13",
+      "title": "The Luminarium",
+      "locationIds": [
+        "luminarium"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-luminarium-13",
+      "description": "The Luminarium"
+    },
+    {
+      "id": "step-machina-9",
+      "title": "Machina Astralis",
+      "locationIds": [
+        "machina"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-machina-9",
+      "description": "Machina Astralis"
+    },
+    {
+      "id": "step-museum-10",
+      "title": "Museum Infinitum",
+      "locationIds": [
+        "museum"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-museum-10",
+      "description": "Museum Infinitum"
+    },
+    {
+      "id": "step-rim-4",
+      "title": "Abyssal Rim",
+      "locationIds": [
+        "rim"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-rim-4",
+      "description": "Abyssal Rim"
+    },
+    {
+      "id": "cursed-mister-peeks",
+      "title": "Mister Peeks · Cursed-mode reward spawns",
+      "locationIds": [
+        "cursed-peeks-crash",
+        "cursed-peeks-museum-southeast",
+        "cursed-peeks-museum-east",
+        "cursed-peeks-museum-west",
+        "cursed-peeks-machina",
+        "cursed-peeks-rim",
+        "cursed-peeks-dome",
+        "cursed-peeks-mars"
+      ],
+      "kind": "candidates",
+      "description": "Possible Cursed-mode Mister Peeks egg-reward spawns. Check these places when he appears and shoot him to release a reward egg, which can contain perks and other loot. These are alternatives, not a required collection route.",
+      "guideAnchor": "wiki_cursed_mister_peeks"
+    },
+    {
+      "id": "locations-wall-2-buys-locations",
+      "title": "Wall-Buys locations",
+      "locationIds": [
+        "official-1798",
+        "official-1806",
+        "official-1810",
+        "official-1821",
+        "official-1829",
+        "official-1833",
+        "official-1843"
+      ],
+      "guideAnchor": "wiki_wall.2Dbuys_locations"
+    },
+    {
+      "id": "locations-perks-locations",
+      "title": "Perks locations",
+      "locationIds": [
+        "official-1799",
+        "official-1803",
+        "official-1811",
+        "official-1830",
+        "official-1835",
+        "official-1839"
+      ],
+      "guideAnchor": "wiki_perks_locations"
+    },
+    {
+      "id": "locations-armor-vests-locations",
+      "title": "Armor Vests locations",
+      "locationIds": [
+        "machina",
+        "rim",
+        "courtyard"
+      ],
+      "guideAnchor": "wiki_armor_vests_locations"
+    },
+    {
+      "id": "locations-traps-locations",
+      "title": "Traps locations",
+      "locationIds": [
+        "luminarium",
+        "courtyard"
+      ],
+      "guideAnchor": "wiki_traps_locations"
+    },
+    {
+      "id": "locations-arsenal-locations",
+      "title": "Arsenal locations",
+      "locationIds": [
+        "luminarium",
+        "machina"
+      ],
+      "guideAnchor": "wiki_arsenal_locations"
+    },
+    {
+      "id": "locations-crafting-table-locations",
+      "title": "Crafting Table locations",
+      "locationIds": [
+        "museum",
+        "rim"
+      ],
+      "guideAnchor": "wiki_crafting_table_locations"
+    },
+    {
+      "id": "locations-step-dome-1",
+      "title": "LGM-1 locations",
+      "locationIds": [
+        "dome"
+      ],
+      "guideAnchor": "guide-step-locations-step-dome-1"
+    },
+    {
+      "id": "locations-step-luminarium-5",
+      "title": "Secret song locations",
+      "locationIds": [
+        "luminarium",
+        "machina",
+        "mars-center"
+      ],
+      "guideAnchor": "guide-step-locations-step-luminarium-5"
+    },
+    {
+      "id": "locations-step-machina-4",
+      "title": "Alpha Omega Game Over Song locations",
+      "locationIds": [
+        "machina",
+        "luminarium",
+        "museum"
+      ],
+      "guideAnchor": "guide-step-locations-step-machina-4"
+    },
+    {
+      "id": "locations-step-luminarium-rim-1",
+      "title": "\"Magic\" Secret Song locations",
+      "locationIds": [
+        "luminarium",
+        "rim",
+        "machina",
+        "dome"
+      ],
+      "guideAnchor": "guide-step-locations-step-luminarium-rim-1"
+    },
+    {
+      "id": "locations-step-luminarium-crash-1",
+      "title": "The Five Skulls (Free Random Perk) locations",
+      "locationIds": [
+        "luminarium",
+        "crash",
+        "museum",
+        "courtyard",
+        "machina",
+        "archive",
+        "veilwalk"
+      ],
+      "guideAnchor": "guide-step-locations-step-luminarium-crash-1"
+    },
+    {
+      "id": "locations-step-machina-archive-1",
+      "title": "Gramophones Challenges (Free Mystery Perks) locations",
+      "locationIds": [
+        "machina",
+        "archive",
+        "luminarium",
+        "museum"
+      ],
+      "guideAnchor": "guide-step-locations-step-machina-archive-1"
+    },
+    {
+      "id": "locations-step-crash-2",
+      "title": "The Twins (Free Cryo Freeze and loot) locations",
+      "locationIds": [
+        "crash",
+        "luminarium",
+        "rim",
+        "dome",
+        "veilwalk",
+        "machina-upper",
+        "scholar",
+        "museum"
+      ],
+      "guideAnchor": "guide-step-locations-step-crash-2"
+    },
+    {
+      "id": "locations-step-luminarium-9",
+      "title": "Time Dilation locations",
+      "locationIds": [
+        "luminarium",
+        "museum",
+        "machina",
+        "archive"
+      ],
+      "guideAnchor": "guide-step-locations-step-luminarium-9"
+    },
+    {
+      "id": "locations-step-crash-3",
+      "title": "Wisp Orbs (Free Ray Gun) locations",
+      "locationIds": [
+        "crash",
+        "luminarium",
+        "scholar"
+      ],
+      "guideAnchor": "guide-step-locations-step-crash-3"
+    }
+  ],
+  "quickLinks": {
+    "phase-1-ol-1": "lgm-traps",
+    "phase-1-ol-3": "dome-terminal",
+    "phase-1-ol-4": "cryopod",
+    "phase-1-ol-5": "saw-brain",
+    "phase-1-ol-6": "brain-defense",
+    "phase-1-ol-7": "portal-machine",
+    "phase-2-ol-1": "telescope",
+    "phase-2-ol-2": "machina-code",
+    "phase-2-ol-3": "books",
+    "phase-2-ol-4": "neptune",
+    "phase-2-ol-5": "planet-pages",
+    "phase-2-ol-6": "planet-model",
+    "phase-2-ol-7": "mars-portal",
+    "phase-3-ol-1": "mars-brain",
+    "phase-3-ol-2": "mars-pylons",
+    "phase-3-ol-3": "mars-eye",
+    "phase-3-ol-4": "mars-pillars",
+    "phase-3-ol-5": "telescope",
+    "phase-3-ol-6": "mars-pillars",
+    "phase-3-ol-7": "mars-boss",
+    "boss-coils": "mars-coils"
+  }
+}
