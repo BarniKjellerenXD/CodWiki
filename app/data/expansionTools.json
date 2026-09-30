@@ -2472,66 +2472,353 @@
   {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
-    "name": "Power House symbol notebook",
-    "help": "After the Simon rounds, record the three steady lights (ignore flashing lights). Keep each generator symbol, number and replacement monitor symbol together.",
+    "name": "Power House visual companion",
+    "help": "Record the Simon sequence, select the three steady-light symbols, then record each replacement from the Model Industries monitors. No fixed translation is assumed.",
     "fields": [
       {
+        "id": "source-0",
+        "label": "Steady symbol 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "target-0",
+        "label": "Replacement 1",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "done-0",
+        "label": "Lever 1 pulled",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "source-1",
+        "label": "Steady symbol 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "target-1",
+        "label": "Replacement 2",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "done-1",
+        "label": "Lever 2 pulled",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "source-2",
+        "label": "Steady symbol 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "target-2",
+        "label": "Replacement 3",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "done-2",
+        "label": "Lever 3 pulled",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "slot-0",
+        "label": "Simon position 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "Simon position 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "Simon position 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "slot-3",
+        "label": "Simon position 4",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "slot-4",
+        "label": "Simon position 5",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "id": "panel-0",
+        "label": "Panel 1 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
+        "id": "panel-1",
+        "label": "Panel 2 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
+        "id": "panel-2",
+        "label": "Panel 3 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
+        "id": "panel-3",
+        "label": "Panel 4 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
+        "id": "panel-4",
+        "label": "Panel 5 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
+        "id": "panel-5",
+        "label": "Panel 6 name",
+        "options": null,
+        "maxLength": 24
+      },
+      {
         "id": "generator-0",
-        "label": "Generator 1: symbol",
+        "label": "Previous generator note 1",
         "options": null,
         "maxLength": 80
       },
       {
         "id": "number-0",
-        "label": "Generator 1: number",
+        "label": "Previous number note 1",
         "options": null,
         "maxLength": 3
       },
       {
         "id": "monitor-0",
-        "label": "Generator 1: new monitor symbol",
+        "label": "Previous monitor note 1",
         "options": null,
         "maxLength": 80
       },
       {
         "id": "generator-1",
-        "label": "Generator 2: symbol",
+        "label": "Previous generator note 2",
         "options": null,
         "maxLength": 80
       },
       {
         "id": "number-1",
-        "label": "Generator 2: number",
+        "label": "Previous number note 2",
         "options": null,
         "maxLength": 3
       },
       {
         "id": "monitor-1",
-        "label": "Generator 2: new monitor symbol",
+        "label": "Previous monitor note 2",
         "options": null,
         "maxLength": 80
       },
       {
         "id": "generator-2",
-        "label": "Generator 3: symbol",
+        "label": "Previous generator note 3",
         "options": null,
         "maxLength": 80
       },
       {
         "id": "number-2",
-        "label": "Generator 3: number",
+        "label": "Previous number note 3",
         "options": null,
         "maxLength": 3
       },
       {
         "id": "monitor-2",
-        "label": "Generator 3: new monitor symbol",
+        "label": "Previous monitor note 3",
         "options": null,
         "maxLength": 80
       }
     ],
     "version": 1,
-    "kind": "recorder"
+    "kind": "recorder",
+    "evaluate": "blood-powerhouse"
+  },
+  {
+    "id": "bo4-blood-trials",
+    "map": "bo4-blood-of-the-dead",
+    "name": "Kronorium & five-trial tracker",
+    "help": "Read a fresh book code for each assignment. Check a trial only after collecting its red stone. Changing the code does not clear completed trials.",
+    "fields": [
+      {
+        "id": "code",
+        "label": "Current Kronorium code",
+        "options": null,
+        "maxLength": 3,
+        "pattern": "^\\d{3}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "assignment",
+        "label": "Current lighthouse assignment",
+        "options": [
+          "Docks",
+          "Power House",
+          "Showers",
+          "New Industries",
+          "Michigan Avenue"
+        ]
+      },
+      {
+        "id": "check-0",
+        "label": "Docks: stone collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "Power House: stone collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "Showers: stone collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "New Industries: stone collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Michigan Avenue: stone collected",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder",
+    "evaluate": "blood-trials"
+  },
+  {
+    "id": "bo4-blood-skulls",
+    "map": "bo4-blood-of-the-dead",
+    "name": "Free Blundergat skull tracker",
+    "help": "Use the shield to see each skull and the Retriever to collect it. When all five are collected, check the Warden’s Office desk.",
+    "fields": [
+      {
+        "id": "check-0",
+        "label": "West Grounds — outside Model Industries stairs",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "C-D Street — cell toilet",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "Roof — crate near Pack-a-Punch",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "Docks — wooden pillar",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Eagle Plaza — power pole",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "tracker"
   },
   {
     "id": "bo4-ancient-hands",

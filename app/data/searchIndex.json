@@ -2824,43 +2824,163 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-blood-of-the-dead:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#wiki_key_features",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-blood-of-the-dead:details-setup",
-    "name": "Key Features: shield and prison access",
+    "name": "Power, shield & quest equipment",
     "map": "bo4-blood-of-the-dead",
     "kind": "Section",
     "route": "/guides/bo4-blood-of-the-dead#details-setup",
     "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-blood-of-the-dead:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#wiki_main_quest",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-blood-of-the-dead:details-birds",
-    "name": "Bird hunt and Kronorium",
+    "name": "Find the bird & recover the Kronorium",
     "map": "bo4-blood-of-the-dead",
     "kind": "Section",
     "route": "/guides/bo4-blood-of-the-dead#details-birds",
     "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
-    "id": "bo4-blood-of-the-dead:details-morse",
-    "name": "Docks Morse challenge",
-    "map": "bo4-blood-of-the-dead",
-    "kind": "Section",
-    "route": "/guides/bo4-blood-of-the-dead#details-morse",
-    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
-  },
-  {
     "id": "bo4-blood-of-the-dead:details-challenges",
-    "name": "Power House and remaining challenges",
+    "name": "Power House — Simon, symbols & levers",
     "map": "bo4-blood-of-the-dead",
     "kind": "Section",
     "route": "/guides/bo4-blood-of-the-dead#details-challenges",
     "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-blood-of-the-dead:details-morse",
+    "name": "Docks — Morse code & spirit escort",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-morse",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-showers",
+    "name": "Showers — banjo defense",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-showers",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-new-industries",
+    "name": "New Industries — drain & trap the ghost",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-new-industries",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-michigan",
+    "name": "Michigan Avenue — protect the escort",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-michigan",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-blood-of-the-dead:details-finale",
-    "name": "Warden finale",
+    "name": "Prison escape & the Warden",
     "map": "bo4-blood-of-the-dead",
     "kind": "Section",
     "route": "/guides/bo4-blood-of-the-dead#details-finale",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#wiki_side_quests",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-blundergat",
+    "name": "Free Blundergat — five skulls",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-blundergat",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-magmagat",
+    "name": "Magmagat — fireplace & barrel run",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-magmagat",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-acidgat",
+    "name": "Acidgat — an alternative upgrade",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-acidgat",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-monkeys",
+    "name": "Free Monkey Bombs",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-monkeys",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-shield-upgrade",
+    "name": "Attuned Shield & free charges",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-shield-upgrade",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-spork",
+    "name": "Golden Spork",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-spork",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-redeemer",
+    "name": "Hell’s Redeemer",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-redeemer",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-scalpel",
+    "name": "Golden Scalpel & Sporknife",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-scalpel",
+    "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:details-secrets",
+    "name": "Music, power-ups & small secrets",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo4-blood-of-the-dead#details-secrets",
     "keywords": "Blood of the Dead bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -2873,7 +2993,7 @@
   },
   {
     "id": "bo4-blood-of-the-dead:quick-setup",
-    "name": "Key Features: shield and prison access",
+    "name": "Power, shield & quest equipment",
     "map": "bo4-blood-of-the-dead",
     "kind": "Quick parts",
     "route": "/guides/bo4-blood-of-the-dead#quick-setup",
@@ -2881,31 +3001,55 @@
   },
   {
     "id": "bo4-blood-of-the-dead:quick-birds",
-    "name": "Bird hunt and Kronorium",
+    "name": "Find the bird & recover the Kronorium",
     "map": "bo4-blood-of-the-dead",
     "kind": "Quick parts",
     "route": "/guides/bo4-blood-of-the-dead#quick-birds",
     "keywords": "Blood of the Dead main quest checklist"
   },
   {
-    "id": "bo4-blood-of-the-dead:quick-morse",
-    "name": "Docks Morse challenge",
-    "map": "bo4-blood-of-the-dead",
-    "kind": "Quick parts",
-    "route": "/guides/bo4-blood-of-the-dead#quick-morse",
-    "keywords": "Blood of the Dead main quest checklist"
-  },
-  {
     "id": "bo4-blood-of-the-dead:quick-challenges",
-    "name": "Power House and remaining challenges",
+    "name": "Power House — Simon, symbols & levers",
     "map": "bo4-blood-of-the-dead",
     "kind": "Quick parts",
     "route": "/guides/bo4-blood-of-the-dead#quick-challenges",
     "keywords": "Blood of the Dead main quest checklist"
   },
   {
+    "id": "bo4-blood-of-the-dead:quick-morse",
+    "name": "Docks — Morse code & spirit escort",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-blood-of-the-dead#quick-morse",
+    "keywords": "Blood of the Dead main quest checklist"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:quick-showers",
+    "name": "Showers — banjo defense",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-blood-of-the-dead#quick-showers",
+    "keywords": "Blood of the Dead main quest checklist"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:quick-new-industries",
+    "name": "New Industries — drain & trap the ghost",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-blood-of-the-dead#quick-new-industries",
+    "keywords": "Blood of the Dead main quest checklist"
+  },
+  {
+    "id": "bo4-blood-of-the-dead:quick-michigan",
+    "name": "Michigan Avenue — protect the escort",
+    "map": "bo4-blood-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-blood-of-the-dead#quick-michigan",
+    "keywords": "Blood of the Dead main quest checklist"
+  },
+  {
     "id": "bo4-blood-of-the-dead:quick-finale",
-    "name": "Warden finale",
+    "name": "Prison escape & the Warden",
     "map": "bo4-blood-of-the-dead",
     "kind": "Quick parts",
     "route": "/guides/bo4-blood-of-the-dead#quick-finale",
@@ -4784,8 +4928,24 @@
   {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
-    "name": "Power House symbol notebook",
+    "name": "Power House visual companion",
     "route": "/tools/bo4-blood-powerhouse",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
+  },
+  {
+    "id": "bo4-blood-trials",
+    "map": "bo4-blood-of-the-dead",
+    "name": "Kronorium & five-trial tracker",
+    "route": "/tools/bo4-blood-trials",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
+  },
+  {
+    "id": "bo4-blood-skulls",
+    "map": "bo4-blood-of-the-dead",
+    "name": "Free Blundergat skull tracker",
+    "route": "/tools/bo4-blood-skulls",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
   },

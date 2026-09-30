@@ -1,5 +1,6 @@
 import expansionTools from '../data/expansionTools.json' with { type: 'json' }
 import references from '../data/expansionReferences.json' with { type: 'json' }
+import { powerHouseResult } from './bloodOfTheDead.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -42,6 +43,12 @@ export function evaluateTool(id, raw) {
   const tool = toolDefinitions[id]
   if (!tool) return invalid('Unknown helper.')
   const state = normalizeTool(id, raw)
+  if (tool.evaluate === 'blood-powerhouse') return powerHouseResult(state)
+  if (tool.evaluate === 'blood-trials') {
+    if (state.code && !/^\d{3}$/.test(state.code)) return invalid('The Kronorium code must contain three digits, including any leading zero.')
+    const count = [0,1,2,3,4].filter(i => state[`check-${i}`]).length
+    return ready([...(state.code ? [`Citadel code: ${state.code}`] : []), ...(state.assignment ? [`Assignment: ${state.assignment}`] : []), count === 5 ? 'All five stones recorded. Return to the lab map.' : 'Return to the book after each trial; a failed trial needs a fresh code next round.'], `${count} / 5 stones collected`)
+  }
   if (tool.evaluate === 'rushmore') {
     const code = rushmoreCodes.find(row => `${row[0]} · ${row[1]} · ${row[2]}` === state.bonus)
     return code ? ready([`${code[1]} — ${code[2]}`, 'Activate Rushmore first. Only one bonus code per round; main quest codes are separate.'], code[0]) : waiting('Choose a bonus effect. Your quest-code notes remain saved below.')

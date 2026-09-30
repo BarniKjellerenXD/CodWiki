@@ -22,3 +22,7 @@
 :root[data-font="relaxed"] .step-copy { font-size:1.14rem; }
 :root[data-font="compact"] .step-copy { font-size:.94rem; }
 @media (prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; } }
+
+/* Expansion guides can opt into illustrated introductions and practical notes. */
+.expansion-cover{display:block;width:100%;height:clamp(150px,24vw,280px);object-fit:cover;border-radius:var(--radius);margin-bottom:1rem}
+.guide-article .guide-callout{padding:.8rem 1rem;border-left:3px solid var(--wp-gold);background:var(--wp-surface-2);font-size:.9rem;line-height:1.65}

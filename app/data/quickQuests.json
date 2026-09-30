@@ -1769,80 +1769,77 @@
   "bo4-blood-of-the-dead": [
     {
       "id": "setup",
-      "title": "Key Features: shield and prison access",
+      "title": "Power, shield & quest equipment",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Turn on both power switches, build the Spectral Shield and unlock Pack-a-Punch using its spirit blast. Feed the three dog heads to obtain Hell’s Retriever."
+          "html": "Both power switches on; shield built; Pack-a-Punch open; Retriever collected."
+        },
+        {
+          "id": "setup-spoon",
+          "html": "Read Office code → Citadel pad → Docks crane → Retriever the skeleton → collect Spoon."
+        },
+        {
+          "id": "setup-monkeys",
+          "html": "Get Monkey Bombs; save one for the Warden’s wall."
         },
         {
           "id": "setup-2",
-          "html": "Obtain the Blundergat/Magmagat and spoon as needed for the quest route. Open the Warden’s hidden room using the required weapon/Brutus interaction."
+          "html": "Spoon-scratch upstairs wall; lure Brutus to a Monkey Bomb to open the Ritual Room."
         },
         {
           "id": "setup-3",
-          "html": "Start the main quest sequence, collect the Kronorium and follow the spectral clues."
+          "html": "Place stone in lab map; interact with the Kronorium to release the bird."
         }
       ]
     },
     {
       "id": "birds",
-      "title": "Bird hunt and Kronorium",
+      "title": "Find the bird & recover the Kronorium",
       "detail": "details-birds",
       "steps": [
         {
           "id": "birds-1",
-          "html": "Use the shield to find and blast the hidden bird through its successive round-gated appearances. Search again after each successful stage."
+          "html": "Find and blast the bird on three separate rounds."
         },
         {
           "id": "birds-2",
-          "html": "For the final bird stage, use the Zombie Blood route and code 872 as directed; collect the dropped quest item."
+          "html": "Final bird: locate orb → 872 Zombie Blood → reveal with shield → Retriever → pick up book."
         },
         {
           "id": "birds-3",
-          "html": "Read the Kronorium and use its clue to activate the next challenge location. Do not assume a fixed challenge order."
-        }
-      ]
-    },
-    {
-      "id": "morse",
-      "title": "Docks Morse challenge",
-      "detail": "details-morse",
-      "steps": [
-        {
-          "id": "morse-1",
-          "html": "View the three buoys through the shield from Gondola, Recreation Yard and Model Industries. Each buoy gives a Morse digit."
-        },
-        {
-          "id": "morse-2",
-          "html": "Decode and sum the three digits, then enter the sum as decimal Morse at the challenge input. A space in the helper separates digits; it is not another pulse."
-        },
-        {
-          "id": "morse-3",
-          "html": "Finish the spectral escort/actions for the challenge before returning to the Kronorium.",
+          "html": "Read book code; enter it at Citadel; find and blast the lighthouse-marked portal.",
           "tools": [
-            "bo4-blood-morse"
+            "bo4-blood-trials"
           ]
         }
       ]
     },
     {
       "id": "challenges",
-      "title": "Power House and remaining challenges",
+      "title": "Power House — Simon, symbols & levers",
       "detail": "details-challenges",
       "steps": [
         {
           "id": "challenges-1",
-          "html": "Power House: complete the Simon rounds, identify the three steady generator lights and record their symbols/numbers. Match each number to its monitor and record the replacement symbol."
+          "html": "Building 64: finish five Simon rounds; record only the three steady-light symbols."
+        },
+        {
+          "id": "powerhouse-card",
+          "html": "Take punch card to Model Industries; interact with your three matching monitors."
+        },
+        {
+          "id": "powerhouse-levers",
+          "html": "Blast the spirit at each of the three observed replacement-symbol levers; take the stone."
         },
         {
           "id": "challenges-2",
-          "html": "Complete the assigned New Industries, Showers and Citadel challenges using their spectral targets and escort/defense requirements. Re-read the Kronorium after each completed branch."
+          "html": "Finish whichever branch the book assigned; return for a new code."
         },
         {
           "id": "challenges-3",
-          "html": "Keep the shield charged for spirit interactions. A notebook entry records a clue; it does not mean the challenge is finished.",
+          "html": "Keep shield charges available; mark trials complete only after collecting their stones.",
           "tools": [
             "bo4-blood-powerhouse"
           ]
@@ -1850,21 +1847,92 @@
       ]
     },
     {
+      "id": "morse",
+      "title": "Docks — Morse code & spirit escort",
+      "detail": "details-morse",
+      "steps": [
+        {
+          "id": "morse-1",
+          "html": "Read the shield-visible buoy at Gondola, Recreation Yard and Model Industries."
+        },
+        {
+          "id": "morse-2",
+          "html": "Add the three digits; enter the total at Sally Port as one or two Morse digits."
+        },
+        {
+          "id": "morse-3",
+          "html": "Infirmary: reveal and blast ghost, feed nearby kills, escort to Docks, collect stone.",
+          "tools": [
+            "bo4-blood-morse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "showers",
+      "title": "Showers — banjo defense",
+      "detail": "details-showers",
+      "steps": [
+        {
+          "id": "showers-banjo",
+          "html": "Take the banjo; stay in the blue circle and collect kills."
+        },
+        {
+          "id": "showers-return",
+          "html": "Return and retake banjo between circles; collect the stone after the final return."
+        }
+      ]
+    },
+    {
+      "id": "new-industries",
+      "title": "New Industries — drain & trap the ghost",
+      "detail": "details-new-industries",
+      "steps": [
+        {
+          "id": "industries-reveal",
+          "html": "Library: reveal ghost; alternate Spirit Blasts and key drains while following it."
+        },
+        {
+          "id": "industries-trap",
+          "html": "Make ghost fully red; activate blade trap before it arrives; take the stone."
+        }
+      ]
+    },
+    {
+      "id": "michigan",
+      "title": "Michigan Avenue — protect the escort",
+      "detail": "details-michigan",
+      "steps": [
+        {
+          "id": "michigan-reveal",
+          "html": "Cafeteria: spawn, reveal and blast the spirit; regroup with it."
+        },
+        {
+          "id": "michigan-escort",
+          "html": "Protect the spirit to Michigan Avenue; collect the stone."
+        }
+      ]
+    },
+    {
       "id": "finale",
-      "title": "Warden finale",
+      "title": "Prison escape & the Warden",
       "detail": "details-finale",
       "steps": [
         {
           "id": "finale-1",
-          "html": "After all challenge branches, complete the Warden’s room and prison escape sequence. Regroup and resupply before the final arena."
+          "html": "Place five stones; Key into corpse; gather at chair; escape cells and recover equipment."
+        },
+        {
+          "id": "finale-door",
+          "html": "Place final lab orb; resupply; all players activate the arena entrance."
         },
         {
           "id": "finale-2",
-          "html": "Use shield/spirit interactions to expose the boss sequence, clear supporting enemies and damage the vulnerable target when the arena allows it."
+          "html": "Three cycles: survive → enter red safe zone → shoot orbs → blast central orb."
         },
         {
           "id": "finale-3",
-          "html": "Follow the final character interaction to complete the ending."
+          "html": "Complete Richtofen’s chair/crystal sequence, then finish the giant Warden."
         }
       ]
     }

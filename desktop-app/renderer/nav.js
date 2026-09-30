@@ -571,8 +571,32 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Blood of the Dead",
-    "label": "Power House symbol notebook",
+    "label": "Power House visual companion",
     "url": "/tools/bo4-blood-powerhouse",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-blood-trials",
+    "map": "bo4-blood-of-the-dead",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Blood of the Dead",
+    "label": "Kronorium & five-trial tracker",
+    "url": "/tools/bo4-blood-trials",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-blood-skulls",
+    "map": "bo4-blood-of-the-dead",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Blood of the Dead",
+    "label": "Free Blundergat skull tracker",
+    "url": "/tools/bo4-blood-skulls",
     "accel": null,
     "icon": "↗"
   },

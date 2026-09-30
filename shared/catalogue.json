@@ -138,7 +138,7 @@
       "id": "bo4-blood-of-the-dead",
       "name": "Blood of the Dead",
       "route": "/guides/bo4-blood-of-the-dead",
-      "image": "",
+      "image": "/images/blood-of-the-dead/cover.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -665,9 +665,23 @@
     {
       "id": "bo4-blood-powerhouse",
       "map": "bo4-blood-of-the-dead",
-      "name": "Power House symbol notebook",
+      "name": "Power House visual companion",
       "route": "/tools/bo4-blood-powerhouse",
       "kind": "recorder"
+    },
+    {
+      "id": "bo4-blood-trials",
+      "map": "bo4-blood-of-the-dead",
+      "name": "Kronorium & five-trial tracker",
+      "route": "/tools/bo4-blood-trials",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-blood-skulls",
+      "map": "bo4-blood-of-the-dead",
+      "name": "Free Blundergat skull tracker",
+      "route": "/tools/bo4-blood-skulls",
+      "kind": "tracker"
     },
     {
       "id": "bo4-ancient-hands",
