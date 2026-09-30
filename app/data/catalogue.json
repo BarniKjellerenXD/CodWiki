@@ -5,42 +5,324 @@
       "name": "Ashes of the Damned",
       "image": "/images/ashes-thumb.jpg",
       "route": "/guides/ashes-of-the-damned",
-      "shortcut": "Ctrl+2"
+      "shortcut": "Ctrl+2",
+      "gameId": "bo7",
+      "interactiveMap": true
     },
     {
       "id": "astra-malorum",
       "name": "Astra Malorum",
       "image": "/images/astra-thumb.jpg",
       "route": "/guides/astra-malorum",
-      "shortcut": "Ctrl+3"
+      "shortcut": "Ctrl+3",
+      "gameId": "bo7",
+      "interactiveMap": true
     },
     {
       "id": "paradox-junction",
       "name": "Paradox Junction",
       "image": "/images/paradox-thumb.jpg",
       "route": "/guides/paradox-junction",
-      "shortcut": "Ctrl+4"
+      "shortcut": "Ctrl+4",
+      "gameId": "bo7",
+      "interactiveMap": true
     },
     {
       "id": "totenreich",
       "name": "Totenreich",
       "image": "/images/totenreich-thumb.jpg",
       "route": "/guides/totenreich",
-      "shortcut": "Ctrl+5"
+      "shortcut": "Ctrl+5",
+      "gameId": "bo7",
+      "interactiveMap": true
     },
     {
       "id": "kowakujo",
       "name": "Kowakujō",
       "image": "/images/kowakujo-thumb.jpg",
       "route": "/guides/kowakujo",
-      "shortcut": "Ctrl+6"
+      "shortcut": "Ctrl+6",
+      "gameId": "bo7",
+      "interactiveMap": true
     },
     {
       "id": "rex-infernus",
       "name": "Rex Infernus",
       "image": "/images/rex-infernus-thumb.jpg",
       "route": "/guides/rex-infernus",
-      "shortcut": "Ctrl+1"
+      "shortcut": "Ctrl+1",
+      "gameId": "bo7",
+      "interactiveMap": true
+    },
+    {
+      "id": "cw-mauer-der-toten",
+      "name": "Mauer der Toten",
+      "route": "/guides/cw-mauer-der-toten",
+      "image": "",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-origins",
+      "name": "Origins",
+      "route": "/guides/bo3-origins",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-dead-of-the-night",
+      "name": "Dead of the Night",
+      "route": "/guides/bo4-dead-of-the-night",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-der-eisendrache",
+      "name": "Der Eisendrache",
+      "route": "/guides/bo3-der-eisendrache",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-gorod-krovi",
+      "name": "Gorod Krovi",
+      "route": "/guides/bo3-gorod-krovi",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-firebase-z",
+      "name": "Firebase Z",
+      "route": "/guides/cw-firebase-z",
+      "image": "",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-ix",
+      "name": "IX",
+      "route": "/guides/bo4-ix",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-voyage-of-despair",
+      "name": "Voyage of Despair",
+      "route": "/guides/bo4-voyage-of-despair",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-blood-of-the-dead",
+      "name": "Blood of the Dead",
+      "route": "/guides/bo4-blood-of-the-dead",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-die-maschine",
+      "name": "Die Maschine",
+      "route": "/guides/cw-die-maschine",
+      "image": "",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-forsaken",
+      "name": "Forsaken",
+      "route": "/guides/cw-forsaken",
+      "image": "",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-shadows-of-evil",
+      "name": "Shadows of Evil",
+      "route": "/guides/bo3-shadows-of-evil",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-zetsubou-no-shima",
+      "name": "Zetsubou No Shima",
+      "route": "/guides/bo3-zetsubou-no-shima",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-revelations",
+      "name": "Revelations",
+      "route": "/guides/bo3-revelations",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-ancient-evil",
+      "name": "Ancient Evil",
+      "route": "/guides/bo4-ancient-evil",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-alpha-omega",
+      "name": "Alpha Omega",
+      "route": "/guides/bo4-alpha-omega",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo4-tag-der-toten",
+      "name": "Tag der Toten",
+      "route": "/guides/bo4-tag-der-toten",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-the-giant",
+      "name": "The Giant",
+      "route": "/guides/bo3-the-giant",
+      "image": "",
+      "gameId": "bo3",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo4-classified",
+      "name": "Classified",
+      "route": "/guides/bo4-classified",
+      "image": "",
+      "gameId": "bo4",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-ascension",
+      "name": "Ascension",
+      "route": "/guides/bo3-ascension",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-shangri-la",
+      "name": "Shangri-La",
+      "route": "/guides/bo3-shangri-la",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-moon",
+      "name": "Moon",
+      "route": "/guides/bo3-moon",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "route": "/guides/bo3-nacht-der-untoten",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo3-verruckt",
+      "name": "Verrückt",
+      "route": "/guides/bo3-verruckt",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo3-shi-no-numa",
+      "name": "Shi No Numa",
+      "route": "/guides/bo3-shi-no-numa",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo3-kino-der-toten",
+      "name": "Kino der Toten",
+      "route": "/guides/bo3-kino-der-toten",
+      "image": "",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "cw-outbreak",
+      "name": "Outbreak",
+      "route": "/guides/cw-outbreak",
+      "image": "",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Mode setup"
     }
   ],
   "tools": [
@@ -141,6 +423,348 @@
       "map": "paradox-junction",
       "route": "/tools/paradox-note-order",
       "shortcut": "Ctrl+Alt+1"
+    },
+    {
+      "id": "cw-mauer-safe",
+      "map": "cw-mauer-der-toten",
+      "name": "CRBR-S safe code",
+      "route": "/tools/cw-mauer-safe",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-dead-of-the-night-zodiac",
+      "map": "bo4-dead-of-the-night",
+      "name": "Zodiac scratch calculator",
+      "route": "/tools/bo4-dead-of-the-night-zodiac",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-dead-of-the-night-alistair",
+      "map": "bo4-dead-of-the-night",
+      "name": "Alistair symbol notebook",
+      "route": "/tools/bo4-dead-of-the-night-alistair",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-gorod-valves",
+      "map": "bo3-gorod-krovi",
+      "name": "Valve solver",
+      "route": "/tools/bo3-gorod-valves",
+      "kind": "solver"
+    },
+    {
+      "id": "bo3-gorod-bombs",
+      "map": "bo3-gorod-krovi",
+      "name": "Bomb order recorder",
+      "route": "/tools/bo3-gorod-bombs",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-blood-morse",
+      "map": "bo4-blood-of-the-dead",
+      "name": "Buoy Morse calculator",
+      "route": "/tools/bo4-blood-morse",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-classified-codes",
+      "map": "bo4-classified",
+      "name": "Project Skadi codes",
+      "route": "/tools/bo4-classified-codes",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-alpha-clocks",
+      "map": "bo4-alpha-omega",
+      "name": "Rushmore clock clues",
+      "route": "/tools/bo4-alpha-clocks",
+      "kind": "solver"
+    },
+    {
+      "id": "cw-firebase-darts",
+      "map": "cw-firebase-z",
+      "name": "RAI K-84 dartboard",
+      "route": "/tools/cw-firebase-darts",
+      "kind": "solver"
+    },
+    {
+      "id": "cw-firebase-memories",
+      "map": "cw-firebase-z",
+      "name": "Mimic memory tracker",
+      "route": "/tools/cw-firebase-memories",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-shadows-glyphs",
+      "map": "bo3-shadows-of-evil",
+      "name": "Train glyph notebook",
+      "route": "/tools/bo3-shadows-glyphs",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-shadows-roles",
+      "map": "bo3-shadows-of-evil",
+      "name": "Finale player assignments",
+      "route": "/tools/bo3-shadows-roles",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-de-void",
+      "map": "bo3-der-eisendrache",
+      "name": "Void Bow name and glyph notebook",
+      "route": "/tools/bo3-de-void",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-de-terminals",
+      "map": "bo3-der-eisendrache",
+      "name": "Terminal symbol boards",
+      "route": "/tools/bo3-de-terminals",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-de-bows",
+      "map": "bo3-der-eisendrache",
+      "name": "Bow upgrade tracker",
+      "route": "/tools/bo3-de-bows",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-zetsubou-plants",
+      "map": "bo3-zetsubou-no-shima",
+      "name": "Plant growth log",
+      "route": "/tools/bo3-zetsubou-plants",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-zetsubou-upgrades",
+      "map": "bo3-zetsubou-no-shima",
+      "name": "Equipment and cog tracker",
+      "route": "/tools/bo3-zetsubou-upgrades",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-revelations-runes",
+      "map": "bo3-revelations",
+      "name": "Kronorium rune order",
+      "route": "/tools/bo3-revelations-runes",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-revelations-collections",
+      "map": "bo3-revelations",
+      "name": "Quest collection tracker",
+      "route": "/tools/bo3-revelations-collections",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-giant-secrets",
+      "map": "bo3-the-giant",
+      "name": "Setup and secrets",
+      "route": "/tools/bo3-giant-secrets",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-nacht-secrets",
+      "map": "bo3-nacht-der-untoten",
+      "name": "Samantha secret tracker",
+      "route": "/tools/bo3-nacht-secrets",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-verruckt-setup",
+      "map": "bo3-verruckt",
+      "name": "Spawn-side setup reference",
+      "route": "/tools/bo3-verruckt-setup",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-shi-perks",
+      "map": "bo3-shi-no-numa",
+      "name": "Hut perk notebook",
+      "route": "/tools/bo3-shi-perks",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-kino-knocks",
+      "map": "bo3-kino-der-toten",
+      "name": "Samantha knock recorder",
+      "route": "/tools/bo3-kino-knocks",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-ascension-luna",
+      "map": "bo3-ascension",
+      "name": "LUNA route and assignments",
+      "route": "/tools/bo3-ascension-luna",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-shang-tiles",
+      "map": "bo3-shangri-la",
+      "name": "Matching tile notebook",
+      "route": "/tools/bo3-shang-tiles",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-moon-simon",
+      "map": "bo3-moon",
+      "name": "Samantha Says sequence",
+      "route": "/tools/bo3-moon-simon",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-origins-staffs",
+      "map": "bo3-origins",
+      "name": "Staff upgrade tracker",
+      "route": "/tools/bo3-origins-staffs",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo3-origins-ice",
+      "map": "bo3-origins",
+      "name": "Ice staff symbol decoder",
+      "route": "/tools/bo3-origins-ice",
+      "kind": "solver"
+    },
+    {
+      "id": "bo3-origins-fire",
+      "map": "bo3-origins",
+      "name": "Fire staff torch decoder",
+      "route": "/tools/bo3-origins-fire",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-ix-ra",
+      "map": "bo4-ix",
+      "name": "Ra enemy order",
+      "route": "/tools/bo4-ix-ra",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-ix-danu",
+      "map": "bo4-ix",
+      "name": "Danu preparation tracker",
+      "route": "/tools/bo4-ix-danu",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo4-voyage-clocks",
+      "map": "bo4-voyage-of-despair",
+      "name": "Elemental clock notebook",
+      "route": "/tools/bo4-voyage-clocks",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-voyage-sky",
+      "map": "bo4-voyage-of-despair",
+      "name": "Celestial order recorder",
+      "route": "/tools/bo4-voyage-sky",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-blood-powerhouse",
+      "map": "bo4-blood-of-the-dead",
+      "name": "Power House symbol notebook",
+      "route": "/tools/bo4-blood-powerhouse",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-ancient-hands",
+      "map": "bo4-ancient-evil",
+      "name": "Hand progression",
+      "route": "/tools/bo4-ancient-hands",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo4-ancient-theater",
+      "map": "bo4-ancient-evil",
+      "name": "Theater hand assignments",
+      "route": "/tools/bo4-ancient-theater",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-alpha-rushmore",
+      "map": "bo4-alpha-omega",
+      "name": "Rushmore codes and quest notes",
+      "route": "/tools/bo4-alpha-rushmore",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-tag-riddles",
+      "map": "bo4-tag-der-toten",
+      "name": "Offering and Seal riddle lookup",
+      "route": "/tools/bo4-tag-riddles",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-tag-challenges",
+      "map": "bo4-tag-der-toten",
+      "name": "Challenge and charge tracker",
+      "route": "/tools/bo4-tag-challenges",
+      "kind": "tracker"
+    },
+    {
+      "id": "cw-die-variants",
+      "map": "cw-die-maschine",
+      "name": "D.I.E. variant tracker",
+      "route": "/tools/cw-die-variants",
+      "kind": "tracker"
+    },
+    {
+      "id": "cw-forsaken-neutralizer",
+      "map": "cw-forsaken",
+      "name": "Neutralizer preparation",
+      "route": "/tools/cw-forsaken-neutralizer",
+      "kind": "tracker"
+    },
+    {
+      "id": "cw-outbreak-launch",
+      "map": "cw-outbreak",
+      "name": "Launch order notebook",
+      "route": "/tools/cw-outbreak-launch",
+      "kind": "recorder"
+    },
+    {
+      "id": "cw-outbreak-regions",
+      "map": "cw-outbreak",
+      "name": "Quest region reference",
+      "route": "/tools/cw-outbreak-regions",
+      "kind": "reference"
+    }
+  ],
+  "games": [
+    {
+      "id": "bo7",
+      "name": "Black Ops 7"
+    },
+    {
+      "id": "cw",
+      "name": "Black Ops Cold War"
+    },
+    {
+      "id": "bo4",
+      "name": "Black Ops 4"
+    },
+    {
+      "id": "bo3",
+      "name": "Black Ops 3"
+    }
+  ],
+  "guides": [
+    {
+      "id": "cw-outbreak-ravenov",
+      "map": "cw-outbreak",
+      "gameId": "cw",
+      "name": "Outbreak: Ravenov Implications",
+      "route": "/guides/cw-outbreak-ravenov"
+    },
+    {
+      "id": "cw-outbreak-excision",
+      "map": "cw-outbreak",
+      "gameId": "cw",
+      "name": "Outbreak: Operation Excision",
+      "route": "/guides/cw-outbreak-excision"
     }
   ]
 }

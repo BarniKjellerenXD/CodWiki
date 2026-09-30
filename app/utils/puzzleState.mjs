@@ -1,9 +1,11 @@
 import { ingredients,rocketWords,directions,temples } from './puzzles.mjs'
+import { toolDefinitions, normalizeTool } from './expansionTools.mjs'
 const int=(v,min,max,fallback=null)=>Number.isInteger(v)&&v>=min&&v<=max?v:fallback
 const one=(v,values,fallback=null)=>values.includes(v)?v:fallback
 const fixed=(v,length,clean)=>Array.from({length},(_,i)=>clean(Array.isArray(v)?v[i]:undefined,i))
 const unique=(v,min,max,length)=>Array.isArray(v)?[...new Set(v.filter(n=>Number.isInteger(n)&&n>=min&&n<=max))].slice(0,length):[]
 export function sanitizePuzzleState(id, input) {
+  if (toolDefinitions[id]) return normalizeTool(id, input)
   const v=input&&typeof input==='object'?input:{}
   switch(id) {
     case 'serum': return {slots:fixed(v.slots,3,n=>one(n,ingredients.map(i=>i.id)))}

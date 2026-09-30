@@ -12,7 +12,9 @@ import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/c
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const readJson = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'))
-const catalogue = readJson('shared/catalogue.json')
+const fullCatalogue = readJson('shared/catalogue.json')
+const catalogue = { ...fullCatalogue, maps: fullCatalogue.maps.filter(map => map.interactiveMap) }
+assert.equal(catalogue.maps.length, 6, 'All six existing BO7 map datasets remain required')
 const quests = readJson('app/data/quickQuests.json')
 const validId = /^[a-z0-9-]+$/
 const attribute = (node, name) => node.props?.find(prop => prop.type === 6 && prop.name === name)?.value?.content

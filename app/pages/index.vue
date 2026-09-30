@@ -6,11 +6,27 @@ import { searchCatalogue } from '~/utils/companion.mjs'
 const query = ref('')
 const selected = ref(0)
 const toolMap = ref('all')
+const toolGame = ref('all')
+const games = catalogue.games
+const closedGames = ref<string[]>([])
+const groupsLoaded = ref(false)
+onMounted(() => {
+  try { const saved = JSON.parse(localStorage.getItem('codwiki-game-groups') || '[]'); if (Array.isArray(saved)) closedGames.value = saved.filter(id => games.some(game => game.id === id)) } catch {}
+  nextTick(() => { groupsLoaded.value = true })
+})
+function saveGroup(id: string, event: Event) {
+  if (!groupsLoaded.value) return
+  const open = (event.target as HTMLDetailsElement).open
+  closedGames.value = [...closedGames.value.filter(value => value !== id), ...(open ? [] : [id])]
+  try { localStorage.setItem('codwiki-game-groups', JSON.stringify(closedGames.value)) } catch {}
+}
+const gameMaps = (id:string) => catalogue.maps.filter(map => map.gameId === id)
 const { progress, run } = useProgress()
 const results = computed(() => searchCatalogue(searchIndex, query.value).slice(0,30))
 const last = computed(() => progress.value.last)
 const continueUrl = computed(() => last.value ? last.value.route + (last.value.section ? '#'+encodeURIComponent(last.value.section) : '') : '/')
-const filteredTools = computed(() => catalogue.tools.filter(t=>toolMap.value==='all'||t.map===toolMap.value))
+const filteredTools = computed(() => catalogue.tools.filter(t=>(toolMap.value==='all'||t.map===toolMap.value) && (toolGame.value==='all'||catalogue.maps.find(m=>m.id===t.map)?.gameId===toolGame.value)))
+watch(toolGame,()=>{toolMap.value='all'})
 function mapName(id:string) { return catalogue.maps.find(m=>m.id===id)?.name || 'Black Ops 7' }
 function count(id:string) {
   if (id === 'bo7-super-easter-egg') return `${Object.entries(progress.value.toys).filter(([key,done])=>key!=='rex' && done).length} / 5 toys extracted${progress.value.toys.rex ? ' · Warden placed' : ''}`
@@ -22,7 +38,7 @@ function count(id:string) {
 function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
 function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
 watch(query,()=>{selected.value=0})
-useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Map guides, saved quest checklists and puzzle solvers for Black Ops 7 Zombies.'})
+useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guides, saved quest checklists and puzzle tools for Black Ops 7, Cold War, Black Ops 4 and Black Ops 3.'})
 </script>
 
 <template>
@@ -35,14 +51,20 @@ useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Map guides, s
       <div v-if="query" id="search-results" class="search-results"><p v-if="!results.length" class="companion-muted">No matches for “{{ query }}”. Try a map, quest or tool name.</p><NuxtLink v-for="(item,i) in results" :id="`result-${i}`" :key="item.id" :to="item.route" :class="{selected:i===selected}" @mouseenter="selected=i"><div><strong>{{ item.name }}</strong><small>{{ mapName(item.map) }}</small></div><span>{{ item.kind }} ↗</span></NuxtLink></div>
     </section>
     <template v-if="!query">
-      <div class="section-head"><div><h2>Black Ops 7</h2><span class="era-tagline">Choose a map and pick up your quest</span></div><a class="companion-button subtle" href="#tools">Browse tools ↓</a></div>
-      <NuxtLink to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
-      <div class="guide-grid"><NuxtLink v-for="map in catalogue.maps" :key="map.id" :to="map.route" class="guide-card"><div class="guide-thumb"><img :src="map.image" alt="" loading="lazy" /></div><div class="guide-body"><h3>{{ map.name }}</h3><p>{{ count(map.id) }}</p><span class="map-card-action">Open guide →</span></div></NuxtLink></div>
-      <section id="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2>Puzzle tools</h2></div><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div></section>
+      <details v-for="game in games" :key="game.id" class="game-section" :open="!closedGames.includes(game.id)" @toggle="saveGroup(game.id, $event)">
+        <summary><h2>{{ game.name }}</h2><span>{{ gameMaps(game.id).length }} maps <span aria-hidden="true">⌄</span></span></summary>
+        <NuxtLink v-if="game.id==='bo7'" to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
+        <template v-for="group in game.id==='bo3' ? ['', 'chronicles'] : ['']" :key="group">
+          <h3 v-if="game.id==='bo3'" class="map-group-name">{{ group==='chronicles' ? 'Zombies Chronicles' : 'Original maps' }}</h3>
+          <div class="guide-grid"><NuxtLink v-for="map in gameMaps(game.id).filter(m=>(m.group || '')===group)" :key="map.id" :to="map.route" class="guide-card"><div v-if="map.image" class="guide-thumb"><img :src="map.image" alt="" loading="lazy" /></div><div class="guide-body"><span v-if="!map.image" class="map-edition">{{ group==='chronicles' ? 'Zombies Chronicles' : game.name }}</span><h3>{{ map.name }}</h3><p>{{ count(map.id) }}</p><small>{{ catalogue.tools.filter(t=>t.map===map.id).length }} tools</small><span class="map-card-action">Open guide →</span></div></NuxtLink></div>
+        </template>
+      </details>
+      <section id="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2>Puzzle tools</h2></div><label>Game <select v-model="toolGame"><option value="all">All games</option><option v-for="game in games" :key="game.id" :value="game.id">{{ game.name }}</option></select></label><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>(toolGame==='all'||m.gameId===toolGame)&&catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div></section>
     </template>
   </main>
 </template>
 <style scoped>
+.game-section{margin:2rem 0}.game-section>summary{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);margin-bottom:1rem;cursor:pointer;list-style:none}.game-section>summary h2{font-size:1.3rem;margin:0}.game-section>summary>span{color:var(--muted);font-size:.8rem}.game-section>summary::-webkit-details-marker{display:none}.map-group-name{font-size:.85rem;color:var(--gold);margin:1.2rem 0 .75rem}.map-edition{display:block;color:var(--gold);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}.guide-body small{display:block;color:var(--muted);margin-top:.5rem}
 .super-quest {
   display: flex;
   align-items: center;

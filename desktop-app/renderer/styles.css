@@ -187,3 +187,8 @@ webview { flex: 1; width: 100%; background: var(--bg); }
 input[type="checkbox"] { accent-color: var(--gold); }
 @media (max-width: 1100px) { #sidebar { width: 236px; min-width: 236px; } .sp-body { padding: 0 22px 24px; } .sp-head { padding: 24px 22px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } #progress { width: 100%; opacity: .7; } }
+
+.nav-game > summary { cursor:pointer; color:var(--gold, #ddb363); padding:14px 10px 8px; font-weight:650; font-size:12px; }
+.nav-map > summary { cursor:pointer; }
+.nav-map { margin-left:6px; }
+.nav-game[hidden], .nav-map[hidden], .nav-item[hidden] { display:none; }

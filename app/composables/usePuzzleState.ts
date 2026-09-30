@@ -1,8 +1,9 @@
 import { sanitizePuzzleState, migratePuzzleState, legacyPuzzleKeys } from '~/utils/puzzleState.mjs'
+import { toolDefinitions } from '~/utils/expansionTools.mjs'
 
 // Shared within this Nuxt app (including inline/full-page helpers), isolated per SSR request.
 export function usePuzzleState(id: string) {
-  const version = ['rings', 'murder', 'house'].includes(id) ? 3 : 2
+  const version = toolDefinitions[id]?.version || (['rings', 'murder', 'house'].includes(id) ? 3 : 2)
   const state = useState<any>(`puzzle-${id}-v${version}`, () => sanitizePuzzleState(id, {}))
   const ready = useState(`puzzle-${id}-ready`, () => false)
   const history = useState<any[]>(`puzzle-${id}-history`, () => [])

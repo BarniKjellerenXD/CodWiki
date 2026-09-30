@@ -22,10 +22,9 @@ let errorPageShown = false
 function filterSidebar() {
  const q = document.getElementById('nav-search').value.trim().toLowerCase()
  for(const item of navEl.querySelectorAll('.nav-item')) item.hidden = !!q && !item.textContent.toLowerCase().includes(q) && !item.dataset.map.toLowerCase().includes(q) && !item.dataset.url.includes(q)
- for(const label of navEl.querySelectorAll('.nav-label')) {
-  let next=label.nextElementSibling, shown=false
-  while(next && !next.classList.contains('nav-label')) { if(!next.hidden) shown=true; next=next.nextElementSibling }
-  label.hidden=!shown
+ for(const group of navEl.querySelectorAll('.nav-map, .nav-game')) {
+  group.hidden = !Array.from(group.querySelectorAll('.nav-item')).some(item=>!item.hidden)
+  if(q && !group.hidden) group.open = true
  }
 }
 document.getElementById('nav-search').addEventListener('input',filterSidebar)
@@ -52,7 +51,7 @@ function makeItem (item) {
   el.className = 'nav-item nav-' + item.kind
   if (item.id === 'bo7-super-easter-egg') el.classList.add('quest')
   el.dataset.url = item.url
-  el.dataset.map = item.section
+  el.dataset.map = (item.gameName || '') + ' ' + item.section
   el.setAttribute('aria-label', item.section + ': ' + item.label)
   if (item.thumb && item.id !== 'bo7-super-easter-egg') {
     const img = document.createElement('img')
@@ -90,12 +89,30 @@ function makeItem (item) {
 
 function buildSidebar () {
   navEl.innerHTML = ''
+  const gameGroups = new Map()
   for (const group of effectiveGroups()) {
-    const lab = document.createElement('h2')
+    let game = gameGroups.get(group.game)
+    if(!game) {
+      game = document.createElement('details')
+      game.className = 'nav-game'
+      game.open = localStorage.getItem('cw-nav-game-'+group.game) !== 'false'
+      const title = document.createElement('summary')
+      title.textContent = group.gameName
+      game.appendChild(title)
+      game.addEventListener('toggle',()=>{ if(!document.getElementById('nav-search').value.trim()) localStorage.setItem('cw-nav-game-'+group.game,String(game.open)) })
+      gameGroups.set(group.game,game)
+      navEl.appendChild(game)
+    }
+    const map = document.createElement('details')
+    map.className = 'nav-map'
+    map.open = localStorage.getItem('cw-nav-map-'+group.id) !== 'false'
+    map.addEventListener('toggle',()=>{ if(!document.getElementById('nav-search').value.trim()) localStorage.setItem('cw-nav-map-'+group.id,String(map.open)) })
+    const lab = document.createElement('summary')
     lab.className = 'nav-label'
     lab.textContent = group.name
-    navEl.appendChild(lab)
-    for (const item of group.items) navEl.appendChild(makeItem(item))
+    map.appendChild(lab)
+    for (const item of group.items) map.appendChild(makeItem(item))
+    game.appendChild(map)
   }
   filterSidebar()
   setActive(webview.src || lastSiteUrl)
@@ -123,6 +140,8 @@ function setActive (url) {
     if (active) {
       const changed = el.getAttribute('aria-current') !== 'page'
       el.setAttribute('aria-current', 'page')
+      let parent = el.parentElement
+      while(parent && parent !== navEl) { if(parent.tagName==='DETAILS') parent.open=true; parent=parent.parentElement }
       if (changed && !el.hidden) el.scrollIntoView({ block: 'nearest' })
     }
     else el.removeAttribute('aria-current')

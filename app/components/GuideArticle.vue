@@ -8,7 +8,7 @@
             <NuxtLink class="guide-back" to="/">← Maps & tools</NuxtLink>
           </header>
           <div class="guide-toolbar">
-            <div class="reading-switch" role="group" aria-label="Guide view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button><button class="companion-button" :aria-pressed="view === 'map'" @click="switchView('map')">Map</button></div>
+            <div class="reading-switch" role="group" aria-label="Guide view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button><button v-if="hasMap" class="companion-button" :aria-pressed="view === 'map'" @click="switchView('map')">Map</button></div>
             <button v-if="view !== 'map'" class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
             <button class="companion-button subtle" @click="confirmReset = !confirmReset">Start new run</button>
           </div>
@@ -16,7 +16,8 @@
           <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
           <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
-          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
+          <div v-if="$slots.intro" class="guide-introduction"><slot name="intro" /></div>
+          <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
           <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /></article>
           <section v-if="mapActivated" v-show="view === 'map'" ref="mapRef" class="guide-map-view" aria-label="Interactive map" tabindex="-1">
             <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" />
@@ -39,17 +40,19 @@ import quickMapIndex from '~/data/mapQuickLinks.json'
 import { GUIDE_MAP_NAVIGATION } from '~/utils/mapContext'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readReaderContext } from '~/utils/mapNavigation.mjs'
 export interface GuideTocItem { id: string; text: string; level: number }
-const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string }>()
+const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string }>()
 useSeoMeta({ title: () => `${props.title} · CodWiki`, description: () => `Quest checklist, complete walkthrough and puzzle tools for ${props.title}.` })
 const route = useRoute()
 const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
+const parentMap = catalogue.guides?.find(g => g.id === mapId)?.map || mapId
+const hasMap = catalogue.maps.find(m => m.id === parentMap)?.interactiveMap === true
 const { run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
 const phases = (quickQuests as Record<string, any[]>)[mapId] || []
 const quickMapLinks = (quickMapIndex as Record<string, Record<string, string>>)[mapId] || {}
 const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(mapId)
-const mapTools = catalogue.tools.filter(t => t.map === mapId)
+const mapTools = catalogue.tools.filter(t => t.map === parentMap)
 const view = ref('quick')
 const active = ref('')
 const mobileOpen = ref(false)
@@ -72,7 +75,7 @@ const lightboxAlt = ref('')
 const pinnedToc = computed(() => pins.value.map(id => [...toc.value,...phases.map(p=>({id:'quick-'+p.id,text:p.title,level:2}))].find(t=>t.id===id)).filter(Boolean))
 const shortcuts = computed(() => toc.value.filter(t => t.level===1 && /Main Quest|Key Features|Side Quests|Relics/.test(t.text)).map(t=>({...t, text:t.text==='Key Features'?'Setup':t.text})))
 const groups = computed(() => {
-  if (view.value === 'quick') return [{ id:'quick-'+phases[0]?.id, text:'Main quest', items:phases.map(p=>({id:'quick-'+p.id,text:p.title})) }, ...shortcuts.value.filter(t=>!/Main Quest/.test(t.text)).map(t=>({...t,items:[]})), ...(mapTools.length?[{id:'map-tools',text:'Tools',items:[]}]:[])]
+  if (view.value === 'quick') return [{ id:'quick-'+phases[0]?.id, text:props.questLabel || 'Main quest', items:phases.map(p=>({id:'quick-'+p.id,text:p.title})) }, ...shortcuts.value.filter(t=>!/Main Quest/.test(t.text)).map(t=>({...t,items:[]})), ...(mapTools.length?[{id:'map-tools',text:'Tools',items:[]}]:[])]
   const result: any[] = []
   for (const item of toc.value) {
     if (item.level===1 || !result.length) result.push({...item,items:[]})
@@ -110,6 +113,7 @@ function captureReading(source?: HTMLElement) {
   save()
 }
 function showOnMap(target = '', source?: HTMLElement) {
+  if (!hasMap) return
   captureReading(source)
   scrollTo(mapAnchor(target))
 }
@@ -154,6 +158,7 @@ function switchView(next:string) {
 }
 async function scrollTo(id?:string, updateUrl=true) {
   if(!id) return
+  if (!hasMap && mapTargetFromAnchor(id) !== null) id = 'quick-'+phases[0]?.id
   const version = ++navigationVersion
   const legacy = phases.find(p=>p.legacy===id && p.legacy!==p.detail)
   if(legacy) id='quick-'+legacy.id

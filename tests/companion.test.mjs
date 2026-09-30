@@ -55,11 +55,11 @@ test('every map has unique stable step IDs and a real detailed reference', () =>
 })
 test('catalogue links and generated desktop shortcuts stay in sync', () => {
   const nav = require('../desktop-app/renderer/nav.js')
-  assert.equal(nav.length, catalogue.maps.length + catalogue.tools.length)
+  assert.equal(nav.length, catalogue.maps.length + catalogue.tools.length + catalogue.guides.length)
   assert.ok(!nav.some(n=>n.id==='bo7-super-easter-egg'))
   for(const item of [...catalogue.maps,...catalogue.tools]) assert.ok(fs.existsSync(`app/pages${item.route}.vue`), item.route)
-  for(const map of catalogue.maps) assert.ok(fs.existsSync('public'+map.image))
-  assert.equal(new Set(nav.map(n=>n.accel)).size, nav.length)
+  for(const map of catalogue.maps.filter(map=>map.image)) assert.ok(fs.existsSync('public'+map.image))
+  const assigned=nav.filter(n=>n.accel); assert.equal(new Set(assigned.map(n=>n.accel)).size, assigned.length)
 })
 test('new desktop entries appear without losing saved ordering or removed entry handling', () => {
   const entries=[{id:'ashes'},{id:'rex'},{id:'new-tool'}]
@@ -100,11 +100,14 @@ test('desktop tool shortcuts accept shifted digits and require the exact modifie
 test('legacy flat sidebar order becomes one category per map with its guide first', () => {
   const nav = require('../desktop-app/renderer/nav.js')
   const guides = nav.filter(item => item.kind === 'guide').reverse()
-  const tools = nav.filter(item => item.kind === 'tool').reverse()
+  const tools = nav.filter(item => item.kind !== 'guide').reverse()
   const order = [...guides, ...tools].map(item => item.id)
   const groups = groupNavigation(nav, [...order, 'removed-entry', order[0]])
   assert.equal(groups.length, catalogue.maps.length)
-  assert.deepEqual(groups.map(group => group.id), guides.map(item => item.id))
+  assert.deepEqual([...new Set(groups.map(group => group.game))], ['bo7', 'cw', 'bo4', 'bo3'])
+  for (const game of catalogue.games) {
+    assert.deepEqual(groups.filter(group => group.game === game.id).map(group => group.id), guides.filter(item => item.game === game.id).map(item => item.id))
+  }
   assert.equal(groups.flatMap(group => group.items).length, nav.length)
   for (const group of groups) {
     assert.equal(group.items[0].kind, 'guide')
@@ -130,6 +133,6 @@ test('generated section anchors match IDs created by the guide reader', () => {
     const anchors=new Set()
     const walk=n=>{ const id=attr(n,'id'); if(id) anchors.add(id); if(/^h[123]$/.test(n.tag)&&!id) anchors.add(n.tag+'-'+plain(n).toLowerCase().replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-'));n.children?.forEach(walk) }
     walk(parse(fs.readFileSync(`app/components/guide/${map.id}.vue`,'utf8')))
-    for(const entry of index.filter(e=>e.map===map.id&&e.kind==='Section')) assert.ok(anchors.has(entry.route.split('#')[1]),entry.route)
+    for(const entry of index.filter(e=>e.route.split('#')[0]===map.route&&e.kind==='Section')) assert.ok(anchors.has(entry.route.split('#')[1]),entry.route)
   }
 })

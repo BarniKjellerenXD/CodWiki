@@ -1,7 +1,7 @@
 import type { RouterConfig } from '@nuxt/schema'
 import catalogue from './data/catalogue.json'
 
-const mapGuides = new Set(catalogue.maps.map(map => map.route))
+const mapGuides = new Set([...catalogue.maps, ...catalogue.guides].map(map => map.route))
 
 export default {
   scrollBehavior(to, from, savedPosition) {

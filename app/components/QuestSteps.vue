@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { partStatus } from '~/utils/companion.mjs'
-const props = defineProps<{ mapId: string, phases: any[], completed: string[], hideCompleted?: boolean, mapLinks?: Record<string, string> }>()
+const props = defineProps<{ mapId: string, phases: any[], completed: string[], hideCompleted?: boolean, mapLinks?: Record<string, string>, label?: string }>()
 const emit = defineEmits<{ toggle: [steps: any[]], details: [anchor: string], visit: [anchor: string], hide: [value: boolean] }>()
 const expanded = ref<Record<string, boolean>>({})
 const status = (phase: any) => partStatus(props.completed, phase.steps)
@@ -19,8 +19,8 @@ function setHide(value: boolean) { expanded.value = {}; emit('hide', value) }
 defineExpose({ reveal })
 </script>
 <template>
-  <section class="quest-steps" aria-label="Main quest parts">
-    <div class="quest-progress"><h2>Main quest</h2><span>{{ count }} / {{ phases.length }} parts</span></div>
+  <section class="quest-steps" :aria-label="`${label || 'Main quest'} parts`">
+    <div class="quest-progress"><h2>{{ label || 'Main quest' }}</h2><span>{{ count }} / {{ phases.length }} parts</span></div>
     <progress :value="count" :max="phases.length" :aria-label="`${count} of ${phases.length} parts complete`" />
     <div class="quest-options"><span>One optional check per part.</span><label><input type="checkbox" :checked="hideCompleted" @change="setHide(($event.target as HTMLInputElement).checked)"> Hide completed parts</label></div>
     <section v-for="(phase, i) in phases" :id="`quick-${phase.id}`" :key="phase.id" class="quest-phase" :class="{ completed: status(phase) === 'complete' }" :aria-labelledby="`phase-heading-${phase.id}`">
