@@ -842,66 +842,66 @@
   "cw-mauer-der-toten": [
     {
       "id": "setup",
-      "title": "Key Features: power and Pack-a-Punch",
+      "title": "Power and Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Follow the objective markers down to the subway power switch. Activate it to start the fuse objective."
+          "html": "Open the route from rooftops to subway Power Room; try the power switch."
         },
         {
           "id": "setup-2",
-          "html": "Kill the marked Tempests, collect both electrical fuses and return them to the power panel. Turn on power again."
+          "html": "Kill marked Tempests → collect both fuses → install → switch power on."
         },
         {
           "id": "setup-3",
-          "html": "Reach Pack-a-Punch at Checkpoint Charlie. Approach it to begin the Disciple encounter, defeat the enemies and use the machine once the barrier clears."
+          "html": "Checkpoint Charlie Disciple encounter → Pack-a-Punch → Brain Rot for Hotel 305."
         }
       ]
     },
     {
       "id": "klaus",
-      "title": "Build and upgrade Klaus",
+      "title": "Klaus — hands, battery, blacklight and first upgrade",
       "detail": "details-klaus",
       "steps": [
         {
           "id": "klaus-1",
-          "html": "Apply Brain Rot to a weapon and turn a zombie inside Hotel Room 305. Let it break the barricaded door, then take the robotic hands from the body."
+          "html": "Brain Rot a zombie in Hotel 305 → let it open bedroom → collect hands."
         },
         {
           "id": "klaus-2",
-          "html": "Collect the battery dropped by the Krasny Soldat that appears from round 10 onward. Install battery and hands on Klaus in the Safe House and take his remote."
+          "html": "Round-10 Krasny Soldat battery + hands → Safe House Klaus → take remote."
         },
         {
           "id": "klaus-3",
-          "html": "Command Klaus to break the locker in the Switch Control Room and collect the blacklight. Search the debris piles around the Death Strip for the microwave dish and attach it to the upgrade station in the Garment Factory."
+          "html": "Klaus opens Switch Control locker → Blacklight. Death Strip dig piles → dish → Garment Factory."
         },
         {
           "id": "klaus-4",
-          "html": "Let Klaus get kills until the upgrade station is ready, command him into it and defend the upgrade. Further cosmetic upgrades are separate from the upgrade needed for the quest."
+          "html": "Let Klaus earn kills → green station monitor → send him in → defend first upgrade."
         }
       ]
     },
     {
       "id": "safe",
-      "title": "Free CRBR-S and secret lab",
+      "title": "Free CRBR-S and the hidden laboratory",
       "detail": "details-safe",
       "steps": [
         {
           "id": "safe-1",
-          "html": "Use the blacklight in the Garment Factory, Service Passage and Grocery Store. Each clue has a printed position (1–3) and a hidden two-digit value. Record the value under its printed position, not the order you found it."
+          "html": "Blacklight numbers: dial 1 Garment Factory → dial 2 Service Passage → dial 3 Grocery Store."
         },
         {
           "id": "safe-2",
-          "html": "Return to the safe in Hotel Room 305 and enter the three values in printed order. Collect the CRBR-S. A CRBR-S obtained from trials or the box can also be used."
+          "html": "Hotel 305 safe → enter three room values → collect CRBR-S."
         },
         {
           "id": "safe-3",
-          "html": "Obtain the Blazer mod dropped by enemies while using the CRBR-S. Command Klaus to break the wall at Sewer Access, then use the Blazer to melt the metal door behind it."
+          "html": "Klaus breaks Sewer Access brick wall → CRBR-S Blazer melts metal → enter lab."
         },
         {
           "id": "safe-4",
-          "html": "Enter the Secret Lab. Wait for the protective field to clear on the following round, then shoot the canister device with the CRBR-S to release the empty canisters.",
+          "html": "Clear the lab Tormentor round → collect three canisters → shoot lure dispenser.",
           "tools": [
             "cw-mauer-safe"
           ]
@@ -910,77 +910,77 @@
     },
     {
       "id": "canisters",
-      "title": "Fill the conversion unit",
+      "title": "Three harvesters and Klaus’s hacking headgear",
       "detail": "details-canisters",
       "steps": [
         {
           "id": "canisters-1",
-          "html": "Shoot the essence-trap dispenser in the Secret Lab with the CRBR-S and collect an Endstation Lure. Place an empty canister at an essence harvester around the map."
+          "html": "Find active harvester → insert canister → throw lure → kill Tempests beside it."
         },
         {
           "id": "canisters-2",
-          "html": "Throw the lure beside the harvester and kill the summoned Tempests near it. When charged, carry the canister back to the conversion unit in the lab. Repeat until all three canisters are installed."
+          "html": "Return each filled canister to the lab; repeat for all three active harvesters."
         },
         {
           "id": "canisters-3",
-          "html": "Build Klaus’s hacking headgear from the antenna on the Apartment Rooftop, the electronics in the Radio Store and the boards in the station ticket machines, using the CRBR-S to reveal the components. Install them on Klaus."
+          "html": "CRBR-S: rooftop antenna / Ghost Station electronics / store radios → install headgear on Klaus."
         }
       ]
     },
     {
       "id": "train",
-      "title": "Stop the train",
+      "title": "Stop the train and recover the warhead",
       "detail": "details-train",
       "steps": [
         {
           "id": "train-1",
-          "html": "Deploy upgraded Klaus. Use the railway switch in the Switch Control Room, then command Klaus onto the track furthest from Mule Kick."
+          "html": "Upgraded Klaus → Railway Switch → command onto far track from Mule Kick."
         },
         {
           "id": "train-2",
-          "html": "When Klaus stops the train, enter it and collect the bomb and Rico’s keycard. If the attempt fails, the railway switch can only be tried again next round."
+          "html": "Stopped train: collect Rico’s Keycard AND Bomb, then get out."
         },
         {
           "id": "train-3",
-          "html": "Install the warhead at the conversion unit. Use the keycard at the computer and browse files until the Disruptor Satellite option becomes available."
+          "html": "Install Bomb → keycard at Safe House computer → browse to satellite connection."
         }
       ]
     },
     {
       "id": "uranium",
-      "title": "Two uranium cycles",
+      "title": "Uranium collision — two timed cycles",
       "detail": "details-uranium",
       "steps": [
         {
           "id": "uranium-1",
-          "html": "Activate the satellite to spawn the HVT Megaton. Defeat its split forms and collect both uranium rocks. The HUD timer is the authoritative time limit."
+          "html": "Satellite → marked Megaton + splits → two uranium rocks; watch the live countdown."
         },
         {
           "id": "uranium-2",
-          "html": "Craft a uranium device from each rock at a marked workbench. Place one at the Destroyed Penthouse zipline and the other at the Korber Rooftops end; activate the collision."
+          "html": "Craft two devices → opposite Penthouse/Korber zipline ends → collect collision drop."
         },
         {
           "id": "uranium-3",
-          "html": "Collect the cleansed rock from East Berlin Streets and place it in the lab warhead. Advance a round and repeat the satellite/uranium sequence for a second rock."
+          "html": "First cleansed piece into warhead → next satellite cycle → make second cleansed piece."
         },
         {
           "id": "uranium-4",
-          "html": "Finish upgrading, replenish armor and ammunition, and coordinate the team before depositing the second cleansed rock: this starts Valentina."
+          "html": "Prepare everyone BEFORE the second cleansed uranium deposit."
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Valentina and final defense",
+      "title": "Valentina and Klaus’s final walk",
       "detail": "details-finale",
       "steps": [
         {
           "id": "finale-1",
-          "html": "Break Valentina’s shield, then damage her exposed health. Kill the floating zombies she uses to heal. Take cover when the screen signals her wipe attack."
+          "html": "Shield → health; cover from blue wipe, kill healing zombies, resupply between arenas."
         },
         {
           "id": "finale-2",
-          "html": "Use the pauses between arena moves to repair and resupply. After defeating her, defend Klaus while he carries the warhead into the portal."
+          "html": "After Valentina, protect Klaus carrying the Bomb into the portal."
         }
       ]
     }
@@ -1487,24 +1487,24 @@
   "cw-firebase-z": [
     {
       "id": "setup",
-      "title": "Key Features: reactors and RAI K-84",
+      "title": "Three reactors, Pack-a-Punch and the RAI K-84",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Speak to Ravenov, reach the rooftop teleporter and enter the outpost. Activate and defend all three Aether Reactors to restore power and Pack-a-Punch in the village."
+          "html": "Ravenov → rooftop portal → defend all three reactors → village Pack-a-Punch."
         },
         {
           "id": "setup-2",
-          "html": "For the free RAI K-84, collect the blueprint and Kuhlklay’s eye, scan it in the Weapons Lab and take the locker key. Search the Barracks lockers and defeat spawned Mimics for the barrel."
+          "html": "Blueprint → Scorched Defense eye → retina scanner key → Barracks lockers → Mimic barrel."
         },
         {
           "id": "setup-3",
-          "html": "Record the three sectors shown by the Weapons Lab computer. Shoot their matching numbers on the village dartboard, then the bullseye, to release the component."
+          "html": "Watch three computer stops → match sectors below → shoot board numbers in order → bullseye."
         },
         {
           "id": "setup-4",
-          "html": "Collect the Mangler power cell, charge it in the Weapons Lab through the required round progression, and assemble the RAI K-84.",
+          "html": "Mangler cell → Weapons Lab charger → wait for pickup prompt → build RAI K-84.",
           "tools": [
             "cw-firebase-darts"
           ]
@@ -1513,84 +1513,81 @@
     },
     {
       "id": "serum",
-      "title": "Serum and memory trap",
+      "title": "Ravenov’s badge and Peck’s truth serum",
       "detail": "details-serum",
       "steps": [
         {
           "id": "serum-1",
-          "html": "Speak with Peck and Ravenov. Use Ravenov’s badge to open the lockers in Equipment Storage, Engineering and the Colonel’s Office."
+          "html": "Peck → Ravenov badge → compounds from Equipment Storage, Engineering and Colonel’s Office."
         },
         {
           "id": "serum-2",
-          "html": "Combine their compounds in the Field Hospital mixer, survive the Hellhounds, collect the delivery device and attach it to the OPC air conditioner."
+          "html": "Mix in Field Hospital → kill Hellhounds → collect delivery system → OPC air conditioner."
         },
         {
           "id": "serum-3",
-          "html": "Speak with Peck again, then obtain an Essence Trap at the Data Center Memory Transference Station."
+          "html": "Finish Peck dialogue → upstairs Data Center station → take Essence Trap."
         }
       ]
     },
     {
       "id": "memories",
-      "title": "Accepted Mimic memories",
+      "title": "Mimic memories — recognize the correct spawns",
       "detail": "details-memories",
       "steps": [
         {
           "id": "memories-1",
-          "html": "Find Mimics disguised as loot, weaken one and trap it at low health. Return the trap to the memory station and listen to the result."
+          "html": "Find disguised-loot Mimic → weaken → trap at close range → return to Data Center in three minutes."
         },
         {
           "id": "memories-2",
-          "html": "Repeat until Sokolov, Brahms and Zhabin have been accepted. Record accepted names, not the number of traps used."
+          "html": "Accept Sokolov, Brahms and Zhabin; a rejected memory is not progress."
         },
         {
           "id": "memories-3",
-          "html": "Collect the floppy disk and insert it at Planning Offices. Follow the dialogue to acquire the Aethermeter and take the shovel from Scorched Defense.",
-          "tools": [
-            "cw-firebase-memories"
-          ]
+          "html": "Disk → Planning Offices → enter OPC → Peck dialogue → Aethermeter locker + Scorched Defense shovel."
         }
       ]
     },
     {
       "id": "crystals",
-      "title": "Three Aether crystals",
+      "title": "Three crystal tests — visual differences and recovery",
       "detail": "details-crystals",
       "steps": [
         {
           "id": "crystals-1",
-          "html": "Open Lot: dig the container and inspect the copies. Choose the one without black particles; a wrong choice spawns Mimics and requires a later-round retry."
+          "html": "Open Lot: dig → inspect copies → choose the container without black particles."
         },
         {
           "id": "crystals-2",
-          "html": "Jungle Defense: dig the container, survive inside its dome and collect the crystal when the defense ends."
+          "html": "Jungle Defense: dig → survive inside dome → collect container."
         },
         {
           "id": "crystals-3",
-          "html": "Barracks: dig the container near Field Hospital. Stop the moving container with the RAI K-84 alternate fire, then approach and collect it."
+          "html": "Barracks: locate moving container → RAI K-84 slowing orb → collect before it moves."
         },
         {
           "id": "crystals-4",
-          "html": "Install the three crystals at the reactors and return to the OPC."
+          "html": "Install crystals at all three reactors → return to OPC → wait for satellite instruction."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Satellite and Orda",
+      "title": "Align the satellite and defeat Orda",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Use the Planning Offices computer to inspect the satellites. Select the Requiem satellite indicated by a question mark."
+          "html": "Planning Offices: select the “?” satellite and confirm alignment."
         },
         {
           "id": "boss-2",
-          "html": "Prepare the team before the final OPC interaction, which leads into the boss sequence."
+          "html": "Resupply → OPC terminal starts the finale."
         },
         {
           "id": "boss-3",
-          "html": "Damage Orda, target its exposed critical area and keep distance from its slam. Replenish ammunition and survive until it falls."
+          "html": "Shoot Orda’s glowing mouth, avoid its slam, clear adds and use village resupply."
         }
       ]
     }
@@ -2011,62 +2008,62 @@
   "cw-die-maschine": [
     {
       "id": "setup",
-      "title": "Key Features: power and D.I.E.",
+      "title": "Power, Pack-a-Punch and the free D.I.E.",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Reach the Particle Accelerator, switch on power and activate both terminals. Enter the anomaly, retrieve the machine part through the Dark Aether tunnel and assemble Pack-a-Punch."
+          "html": "Power → both terminals → anomaly → marked Aether Tunnel → Machine Part → build Pack-a-Punch."
         },
         {
           "id": "setup-2",
-          "html": "Kill a Megaton and its split forms to obtain the keycard. Use it at Weapons Lab to acquire the D.I.E. remote, then activate the device in Nacht’s living room."
+          "html": "Megaton splits → Keycard → Weapons Lab remote → charge Living Room suction trap."
         },
         {
           "id": "setup-3",
-          "html": "Feed zombies into the suction trap, discharge it when full and collect the D.I.E. Shockwave."
+          "html": "Discharge trap → take D.I.E.; primary blasts, alternate fire sucks."
         }
       ]
     },
     {
       "id": "scope",
-      "title": "Aetherscope and diary",
+      "title": "Aetherscope, diary and three reflections",
       "detail": "details-scope",
       "steps": [
         {
           "id": "scope-1",
-          "html": "Collect the Aetherscope components from the Dark Aether spawn locations at Yard, Crash Site and Particle Accelerator. They appear in a sequence, so revisit locations if the next part is absent."
+          "html": "Dark Aether: Yard stairs / plane cockpit / accelerator tunnel → build scope behind Pack-a-Punch."
         },
         {
           "id": "scope-2",
-          "html": "Build the Aetherscope and use the correct anomaly to enter the Medical Bay diary sequence. Collect the diary and give it to the three spectral anomalies."
+          "html": "Medical Bay portal → diary → give it to Medical Bay, Control Room, workbench reflections."
         },
         {
           "id": "scope-3",
-          "html": "Return and enter the password at the Medical Bay computer."
+          "html": "Normal world: activate Medical Bay computer; unlock chamber and upgrade portals."
         }
       ]
     },
     {
       "id": "variants",
-      "title": "Four D.I.E. variants",
+      "title": "All four D.I.E. upgrades — exact routes",
       "detail": "details-variants",
       "steps": [
         {
           "id": "variants-1",
-          "html": "Cryo-Emitter: collect the flask and fill it using the tree’s fungus after a Megaton attack, then use it on the frozen weapon crate."
+          "html": "Cryo: knock down Penthouse box → flask → Megaton-hit Pond fungus → filled flask → Medical Bay crate."
         },
         {
           "id": "variants-2",
-          "html": "Nova-5: suck up the canister, place it at the gas station in Weapons Lab and kill a Plaguehound nearby. Take the filled canister to the weapon crate and release the gas."
+          "html": "Nova-5: suck in Mezzanine canister → Weapons Lab unit + Plaguehound → Crash Site crate → melee."
         },
         {
           "id": "variants-3",
-          "html": "Thermophasic: use the appropriate Dark Aether route to obtain the fuse and activate the cutting station, then collect the weapon upgrade."
+          "html": "Fire: Pond portal → fuse under floating plane → Weapons Lab cutter → Pond truck crate."
         },
         {
           "id": "variants-4",
-          "html": "Electrobolt: draw energy from each of the three Dark Aether crystals and discharge it into the weapon crate. Track all variants before the chamber step.",
+          "html": "Electric: lower accelerator portal → suck one crystal → shoot crate; repeat for Crash Site, Pond and Penthouse.",
           "tools": [
             "cw-die-variants"
           ]
@@ -2075,39 +2072,39 @@
     },
     {
       "id": "chamber",
-      "title": "Containment chamber and wrench",
+      "title": "Charge the chamber and reconstruct Orlov",
       "detail": "details-chamber",
       "steps": [
         {
           "id": "chamber-1",
-          "html": "Shoot each chamber arm with its matching D.I.E. variant. Complete the next spectral interaction and collect the Dark Aether wrench."
+          "html": "Shoot the four matching chamber ports; each correct arm retracts."
         },
         {
           "id": "chamber-2",
-          "html": "Use the wrench on the tank in Yard, clear its occupant and use an explosive on the hatch to fire the tank. Retrieve the decontamination agent and install it at Medical Bay."
+          "html": "Walkway reflection → wrench → tank ×3 → hatch zombie + grenade → carry Agent to Medical Bay."
         },
         {
           "id": "chamber-3",
-          "html": "Lure both halves of a split Megaton beneath the chamber, then activate the computer to complete containment."
+          "html": "Capture both living Megaton halves → all players upstairs → computer → survive."
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Orlov defense and escape",
+      "title": "Orlov defense and the escape route",
       "detail": "details-finale",
       "steps": [
         {
           "id": "finale-1",
-          "html": "Finish the final Dark Aether interaction and collect the photograph only after the team is ready for the final encounter."
+          "html": "Finish supplies → Nacht reflection → pick up family photo to start finale."
         },
         {
           "id": "finale-2",
-          "html": "Protect Orlov while he works on the accelerator. Keep the paths clear and maintain armor/ammunition during each defense stage."
+          "html": "Defend Orlov at three systems; clear enemies off him so his work resumes."
         },
         {
           "id": "finale-3",
-          "html": "After power is shut down, follow the escape route while avoiding the lethal energy barriers and reach the extraction helicopter."
+          "html": "Escape: Weapons Lab → Control Room → Tunnel → Crash Site → Pond helicopter."
         }
       ]
     }
@@ -2115,76 +2112,96 @@
   "cw-forsaken": [
     {
       "id": "setup",
-      "title": "Key Features: access and Chrysalax",
+      "title": "Leave Staging Area and lift the lockdown",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Follow the teleporter repair objectives through the facility, defeat the Abomination blocking progress and reach the Observation Tower to unlock Pack-a-Punch."
+          "html": "Start teleporter → leave Staging Area → collect four marked repair parts."
         },
         {
           "id": "setup-2",
-          "html": "Press the quest button in the Observation Tower. For a free Chrysalax, collect an Energetic Geode by having an Abomination beam a crystal, the defended crystal at Jim’s Donuts, and a Tempered Crystal Heart from a Tormentor killed with a flamethrower."
+          "html": "Repair portal → bunker → Abomination → tower lockdown switch → separate quest button."
         },
         {
           "id": "setup-3",
-          "html": "Place the three items in the Particle Accelerator tub, then supply nearby melee kills and collect Chrysalax. Box and trial acquisition also work."
+          "html": "Get Chrysalax by reward or build; neutralizer side components can be prepared meanwhile."
+        }
+      ]
+    },
+    {
+      "id": "chrysalax",
+      "title": "Build the Chrysalax — three crystals and melee souls",
+      "detail": "details-chrysalax",
+      "steps": [
+        {
+          "id": "chrysalax-heart",
+          "html": "Flamethrower kills a Tormentor → collect Tempered Crystal Heart."
+        },
+        {
+          "id": "chrysalax-geode",
+          "html": "Abomination beam hits small Dark Aether crystal → collect Energetic Geode."
+        },
+        {
+          "id": "chrysalax-core",
+          "html": "Jim’s Donuts crystal → clear hounds, Tempests and Mimics → collect core."
+        },
+        {
+          "id": "chrysalax-build",
+          "html": "Three crystals into accelerator basin → ten nearby melee kills → collect Chrysalax."
         }
       ]
     },
     {
       "id": "parts",
-      "title": "Neutralizer components",
+      "title": "Aetherium Neutralizer — fuel, shards, monitor and housing",
       "detail": "details-parts",
       "steps": [
         {
           "id": "parts-1",
-          "html": "At Fuel Processing, coordinate the tank buttons with the players in the match. Survive the lockdown and collect the fuel tank; a failed lockdown can be retried next round."
+          "html": "All players activate tank controls together → survive Fuel Processing lockdown → collect tank."
         },
         {
           "id": "parts-2",
-          "html": "At Staging Area, Amplifier and Storage Zone 5 Rooftops, shoot each growth’s orbiting orbs. Break the growth with Chrysalax, throw its shard into an Abomination’s mouth and kill it for the catalyzed shard."
+          "html": "Each growth: shoot three orbs → axe crystal → shard into Abomination mouth → red tail → kill + collect."
         },
         {
           "id": "parts-3",
-          "html": "Use Dead Wire by the Grand Prix arcade machine, activate its ARC-XD, drive through the TV Store vent and detonate by the shelves. Return as a player to collect the monitoring device."
+          "html": "Dead Wire by Arcade Grand Prix → pay 2,000 → ARC-XD through TV Store vent → detonate behind shelf → collect monitor."
         },
         {
           "id": "parts-4",
-          "html": "Lure an Abomination charge into the Board Room housing unit to knock it from the ceiling. Collect it and assemble the neutralizer on Main Street.",
-          "tools": [
-            "cw-forsaken-neutralizer"
-          ]
+          "html": "Board Room: Abomination charges wall below housing → collect → build at Main Street bench."
         }
       ]
     },
     {
       "id": "escort",
-      "title": "Neutralizer escort",
+      "title": "Neutralizer escort and the final supply stop",
       "detail": "details-escort",
       "steps": [
         {
           "id": "escort-1",
-          "html": "Resupply before activation. Stay inside the protective field while escorting the neutralizer through the dangerous area."
+          "html": "Activate when ready → stay inside bubble → collect orange route crystals → refuel."
         },
         {
           "id": "escort-2",
-          "html": "When fuel is needed, collect catalyzed shards from the surrounding crystals and deposit them. Continue to the Containment Door and interact to enter the boss arena."
+          "html": "At Containment Door, make final purchases before accepting the boss encounter."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "The Forsaken",
+      "title": "The Forsaken — expose, charge and fire",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Kill enemies beneath Maxis to fill her essence and charge a laser cannon. Break the boss’s exposed armor/shield at the active body part."
+          "html": "Break shoulder armor → souls beneath Samantha → cannon into weak point; repeat shoulders, abdomen, head."
         },
         {
           "id": "boss-2",
-          "html": "Use a charged cannon on the vulnerable body part. Repeat through shoulders, lower torso and head until all damage stages are complete."
+          "html": "Avoid slam, frost and tracking attacks; finish the weak points and allow the scripted ending."
         }
       ]
     }
@@ -3376,20 +3393,20 @@
   "cw-outbreak": [
     {
       "id": "setup",
-      "title": "Key Features: region preparation",
+      "title": "Region preparation and how Outbreak works",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Use the first two world tiers to build armor, weapon rarity, Pack-a-Punch and perks. Complete optional objectives only while the team can safely manage the difficulty."
+          "html": "Tiers 1–2: armor, rarity, Pack-a-Punch, perks and supplies before the quest."
         },
         {
           "id": "setup-2",
-          "html": "Begin the chosen main-quest route from world tier 3 onward. Ordinary radio side events can look similar to the Ravenov quest radio; use its dialogue and quest reward to distinguish them."
+          "html": "Tier 3+: Maxis quest radio for Legion, or red rifts for Operation Excision."
         },
         {
           "id": "setup-3",
-          "html": "Quest locations differ by region. Ruka lacks a slide projector, and Sanatorium lacks the initial Excision red rift. Do not search indefinitely for an unavailable objective.",
+          "html": "Use the region finder; no projector in Ruka and no starting red rift in Sanatorium.",
           "tools": [
             "cw-outbreak-regions"
           ]
@@ -3398,16 +3415,16 @@
     },
     {
       "id": "quests",
-      "title": "Choose your main quest",
+      "title": "Choose a story quest",
       "detail": "details-quests",
       "steps": [
         {
           "id": "quests-1",
-          "html": "Ravenov Implications follows Maxis’s radio contact, monkeys and projector into the Ruka missile bunker and Legion."
+          "html": "Ravenov Implications / Inversiya: radio → projector → Ruka bunker → Legion."
         },
         {
           "id": "quests-2",
-          "html": "Operation Excision follows red rifts and Ravenov’s contact into Sanatorium’s rover escort and Orda exfil. Open its separate guide to keep the two runs independent."
+          "html": "Operation Excision: red rifts → Sanatorium rover → Orda → helicopter."
         }
       ]
     }
@@ -3415,35 +3432,20 @@
   "cw-outbreak-ravenov": [
     {
       "id": "radio",
-      "title": "Radio and Maxis contact",
+      "title": "World tier 3 — Maxis radio and amplifiers",
       "detail": "details-radio",
       "steps": [
         {
+          "id": "radio-prep",
+          "html": "Prepare in tiers 1–2; search the quest radio from world tier 3."
+        },
+        {
           "id": "radio-1",
-          "html": "Find the main-quest radio and clear its enemy wave. Listen to its signal and tune the three nearby amplifiers to match it; clear interference waves if triggered."
+          "html": "Activate quest radio → clear enemies → match all three amplifiers to its signal."
         },
         {
           "id": "radio-2",
-          "html": "Return to the radio and collect the beacon device. Complete the region objective, use the beacon to contact Maxis and warp onward."
-        }
-      ]
-    },
-    {
-      "id": "slides",
-      "title": "Monkeys and projector",
-      "detail": "details-slides",
-      "steps": [
-        {
-          "id": "slides-1",
-          "html": "Search the next region’s monkey locations. Shoot the monkey carrying the marked quest clue and collect its microfilm slides."
-        },
-        {
-          "id": "slides-2",
-          "html": "Take the slides to a projector and interact through its dialogue. If the slides were found on Ruka, warp to another region for a projector."
-        },
-        {
-          "id": "slides-3",
-          "html": "After the projector instruction is complete, the next warp takes you to Ruka. Enter the missile silo elevator and lift the lockdown from Silo A.",
+          "html": "Radio device → finish region objective → beacon Respond to Maxis → warp.",
           "tools": [
             "cw-outbreak-regions"
           ]
@@ -3451,40 +3453,59 @@
       ]
     },
     {
+      "id": "slides",
+      "title": "Microfilm, projector and the forced Ruka warp",
+      "detail": "details-slides",
+      "steps": [
+        {
+          "id": "slides-1",
+          "html": "Next region: find marked monkey → shoot → collect microfilm; Ruka needs another warp."
+        },
+        {
+          "id": "slides-2",
+          "html": "Projector: play all three sequences → prepare → next warp forces Ruka."
+        },
+        {
+          "id": "slides-3",
+          "html": "Forced Ruka → final supplies → silo elevator → Silo A “Lift the Lockdown”."
+        }
+      ]
+    },
+    {
       "id": "keys",
-      "title": "Three launch keys",
+      "title": "Three launch keys — monkey, canister and Mimic",
       "detail": "details-keys",
       "steps": [
         {
           "id": "keys-1",
-          "html": "Silo A: collect the Essence Trap from the dead-end tunnel, locate the monkey in a wall vent and place the trap nearby. Retreat so it returns, trigger the capture and collect the key."
+          "html": "A: tunnel trap → glowing monkey vent → place trap → retreat → trigger → key."
         },
         {
           "id": "keys-2",
-          "html": "Silo B: purge the harvesting unit, shoot crystals and collect 20 chunks in the shared inventory. Deposit them, clear the enemies and take the canister. Use its field upgrade by the Silo D jellyfish to enter and collect a key."
+          "html": "B: 20 crystals → charge canister → D jellyfish stairs → canister pulse → collect key inside."
         },
         {
           "id": "keys-3",
-          "html": "At the corridor toward inaccessible Silo C, interact with the body to spawn the HVT Mimic. Defeat it and collect the remaining key."
+          "html": "Hub: clear Mimics → interact with Silo C corridor body → kill red HVT → take key."
         }
       ]
     },
     {
       "id": "launch",
-      "title": "Launch consoles and Legion",
+      "title": "Read the console lights and defeat Legion",
       "detail": "details-launch",
       "steps": [
         {
           "id": "launch-1",
-          "html": "The accessible launch consoles are A, B and D. Determine their random order using the acceptance/rejection feedback. Record only observations from the current valid attempt."
+          "html": "Read A/B/D small lights: left = first, middle = second, right = third; insert in that order."
         },
         {
           "id": "launch-2",
-          "html": "After all keys are accepted, leave through the upper central exit. The Legion encounter has a nine-minute timer."
+          "html": "Accepted sequence → central hub stairs → surface Legion fight; watch the live countdown."
         },
         {
           "id": "launch-3",
-          "html": "Break Legion’s chest armor to expose its three orbs, then focus one orb during each opening. Repeat until all three are destroyed.",
+          "html": "Break chest → destroy one exposed orb → repeat until all three orbs are gone.",
           "tools": [
             "cw-outbreak-launch"
           ]
@@ -3495,20 +3516,20 @@
   "cw-outbreak-excision": [
     {
       "id": "rifts",
-      "title": "Rifts and Ravenov contact",
+      "title": "World tier 3 — red-rift chain and Ravenov contact",
       "detail": "details-rifts",
       "steps": [
         {
           "id": "rifts-1",
-          "html": "Enter the red rift in the starting quest region. While falling, parachute into each subsequent rift until a beam drops to the ground."
+          "html": "Tier 3+: enter ground red rift → steer through successive sky rifts → follow falling beam."
         },
         {
           "id": "rifts-2",
-          "html": "Collect the beacon listening device at the beam’s landing point. If the starting region is Sanatorium, warp onward to find a rift."
+          "html": "Collect listening device at beam landing; Sanatorium has no starting rift."
         },
         {
           "id": "rifts-3",
-          "html": "Complete the region objective and select Respond at the beacon to contact Ravenov and warp to Sanatorium.",
+          "html": "Complete objective → beacon Respond to Ravenov → warp to Sanatorium.",
           "tools": [
             "cw-outbreak-regions"
           ]
@@ -3517,39 +3538,39 @@
     },
     {
       "id": "rover",
-      "title": "Crash site and modified rover",
+      "title": "Sanatorium — helicopter, red orb and Aether Bunny",
       "detail": "details-rover",
       "steps": [
         {
           "id": "rover-1",
-          "html": "Approach the crashed helicopter in Carved Hills, defeat its enemy wave and play the recording inside."
+          "html": "Northwest Carved Hills helicopter → clear wave → play crash recording."
         },
         {
           "id": "rover-2",
-          "html": "Find the red Aethereal Orb and shoot it along its route until it reaches the neutralizer rover on the bridge."
+          "html": "Find red orb → shoot from behind to push it toward central bridge rover."
         },
         {
           "id": "rover-3",
-          "html": "Find the broken Mystery Box with the Aether Bunny. Interact, survive the defense and collect the bunny, replacing your field upgrade. Install it on the rover."
+          "html": "Broken box bunny → defend → carry to rover → install → listen to dropped recording."
         }
       ]
     },
     {
       "id": "exfil",
-      "title": "Escort and Orda exfil",
+      "title": "Escort, rooftop recording and Orda exfil",
       "detail": "details-exfil",
       "steps": [
         {
           "id": "exfil-1",
-          "html": "Activate the modified rover and remain in its safe field while escorting it to Monument Walk."
+          "html": "Final supplies → activate rover → escort inside safe bubble to Monument Walk."
         },
         {
           "id": "exfil-2",
-          "html": "Reach the monument rooftop and play the recording to begin the final narrative. Prepare for the six-minute exfil timer."
+          "html": "Monument roof → play recording → immediately travel to East Gardens exfil."
         },
         {
           "id": "exfil-3",
-          "html": "Travel to East Gardens and eliminate the hostiles, including Orda, to finish the quest."
+          "html": "East Gardens: defeat Orda and remaining hostiles → board helicopter before timeout."
         }
       ]
     }

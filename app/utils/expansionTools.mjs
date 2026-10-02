@@ -4,6 +4,7 @@ import { powerHouseResult } from './bloodOfTheDead.mjs'
 import { voyageClockResult, voyageOutletResult, voyageSkyResult } from './voyage.mjs'
 import { alphaClockRoute, alphaFinalCode, alphaRooms, tagRiddleLocations } from './bo4AlphaTag.mjs'
 import { evaluateNightClassified } from './nightClassified.mjs'
+import { dartboardNumbers } from './coldWar.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -38,7 +39,7 @@ export function valveRoutes(start, end) {
   return routes
 }
 export const morseDigits = ['-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
-export const dartNumbers = [20, 1, 18, 4, 13, 6, 10, 15, 2, 17, 3, 19, 7, 16, 8, 11, 14, 9, 12, 5]
+export const dartNumbers = dartboardNumbers
 const waiting = message => ({ status: 'waiting', message, lines: [] })
 const invalid = message => ({ status: 'invalid', message, lines: [] })
 const ready = (lines, message = 'Recorded result') => ({ status: 'ready', message, lines })

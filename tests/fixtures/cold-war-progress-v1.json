@@ -1,0 +1,168 @@
+{
+  "cw-mauer-der-toten": {
+    "setup": [
+      "setup-1",
+      "setup-2",
+      "setup-3"
+    ],
+    "klaus": [
+      "klaus-1",
+      "klaus-2",
+      "klaus-3",
+      "klaus-4"
+    ],
+    "safe": [
+      "safe-1",
+      "safe-2",
+      "safe-3",
+      "safe-4"
+    ],
+    "canisters": [
+      "canisters-1",
+      "canisters-2",
+      "canisters-3"
+    ],
+    "train": [
+      "train-1",
+      "train-2",
+      "train-3"
+    ],
+    "uranium": [
+      "uranium-1",
+      "uranium-2",
+      "uranium-3",
+      "uranium-4"
+    ],
+    "finale": [
+      "finale-1",
+      "finale-2"
+    ]
+  },
+  "cw-firebase-z": {
+    "setup": [
+      "setup-1",
+      "setup-2",
+      "setup-3",
+      "setup-4"
+    ],
+    "serum": [
+      "serum-1",
+      "serum-2",
+      "serum-3"
+    ],
+    "memories": [
+      "memories-1",
+      "memories-2",
+      "memories-3"
+    ],
+    "crystals": [
+      "crystals-1",
+      "crystals-2",
+      "crystals-3",
+      "crystals-4"
+    ],
+    "boss": [
+      "boss-1",
+      "boss-2",
+      "boss-3"
+    ]
+  },
+  "cw-die-maschine": {
+    "setup": [
+      "setup-1",
+      "setup-2",
+      "setup-3"
+    ],
+    "scope": [
+      "scope-1",
+      "scope-2",
+      "scope-3"
+    ],
+    "variants": [
+      "variants-1",
+      "variants-2",
+      "variants-3",
+      "variants-4"
+    ],
+    "chamber": [
+      "chamber-1",
+      "chamber-2",
+      "chamber-3"
+    ],
+    "finale": [
+      "finale-1",
+      "finale-2",
+      "finale-3"
+    ]
+  },
+  "cw-forsaken": {
+    "setup": [
+      "setup-1",
+      "setup-2",
+      "setup-3"
+    ],
+    "parts": [
+      "parts-1",
+      "parts-2",
+      "parts-3",
+      "parts-4"
+    ],
+    "escort": [
+      "escort-1",
+      "escort-2"
+    ],
+    "boss": [
+      "boss-1",
+      "boss-2"
+    ]
+  },
+  "cw-outbreak": {
+    "setup": [
+      "setup-1",
+      "setup-2",
+      "setup-3"
+    ],
+    "quests": [
+      "quests-1",
+      "quests-2"
+    ]
+  },
+  "cw-outbreak-ravenov": {
+    "radio": [
+      "radio-1",
+      "radio-2"
+    ],
+    "slides": [
+      "slides-1",
+      "slides-2",
+      "slides-3"
+    ],
+    "keys": [
+      "keys-1",
+      "keys-2",
+      "keys-3"
+    ],
+    "launch": [
+      "launch-1",
+      "launch-2",
+      "launch-3"
+    ]
+  },
+  "cw-outbreak-excision": {
+    "rifts": [
+      "rifts-1",
+      "rifts-2",
+      "rifts-3"
+    ],
+    "rover": [
+      "rover-1",
+      "rover-2",
+      "rover-3"
+    ],
+    "exfil": [
+      "exfil-1",
+      "exfil-2",
+      "exfil-3"
+    ]
+  }
+}

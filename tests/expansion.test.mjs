@@ -96,7 +96,7 @@ test('launch notebook filters actual observations and flags contradictions', () 
 
 test('new tool state discards unknown keys and wrong types without losing valid observations', () => {
   assert.deepEqual(normalizeTool('cw-mauer-safe',{'slot-0':'09','slot-1':9,'slot-2':null,answer:'fake'}),{'slot-0':'09','slot-1':'','slot-2':''})
-  assert.equal(normalizeTool('cw-firebase-memories',{'check-0':'true'})['check-0'],false)
+  assert.equal(normalizeTool('cw-die-variants',{'check-0':'true'})['check-0'],false)
   assert.equal(evaluateTool('bo3-shang-tiles',{'tile-0-0':'Sun','tile-1-8':' sun '}).lines[0],'Side A 1 ↔ Side B 9: Sun')
 })
 

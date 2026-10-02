@@ -1,40 +1,5 @@
 [
   {
-    "id": "cw-mauer-safe",
-    "map": "cw-mauer-der-toten",
-    "name": "CRBR-S safe code",
-    "help": "Use the printed clue number (1–3), not the order you visited the rooms. Search Garment Factory, Service Passage and Grocery Store with the blacklight. Enter each two-digit value.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Printed clue 1",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "slot-1",
-        "label": "Printed clue 2",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "slot-2",
-        "label": "Printed clue 3",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "ordered"
-  },
-  {
     "id": "bo3-gorod-valves",
     "map": "bo3-gorod-krovi",
     "name": "Valve solver",
@@ -183,124 +148,6 @@
     "version": 1,
     "kind": "solver",
     "evaluate": "morse"
-  },
-  {
-    "id": "cw-firebase-darts",
-    "map": "cw-firebase-z",
-    "name": "RAI K-84 dartboard",
-    "help": "Select the three sectors observed on the computer, reading clockwise from the top sector (20). Shoot the resulting numbers on the dartboard, then the bullseye.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Observed sector 1",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20"
-        ]
-      },
-      {
-        "id": "slot-1",
-        "label": "Observed sector 2",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20"
-        ]
-      },
-      {
-        "id": "slot-2",
-        "label": "Observed sector 3",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12",
-          "13",
-          "14",
-          "15",
-          "16",
-          "17",
-          "18",
-          "19",
-          "20"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "solver",
-    "evaluate": "darts",
-    "visual": "dartboard"
-  },
-  {
-    "id": "cw-firebase-memories",
-    "map": "cw-firebase-z",
-    "name": "Mimic memory tracker",
-    "help": "Mark a name only after the Memory Transference Station accepts that memory. An ordinary Mimic capture does not count.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Sokolov accepted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Brahms accepted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Zhabin accepted",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
   },
   {
     "id": "bo3-shadows-glyphs",
@@ -2053,259 +1900,6 @@
     "version": 1,
     "kind": "recorder",
     "evaluate": "blood-powerhouse"
-  },
-  {
-    "id": "cw-die-variants",
-    "map": "cw-die-maschine",
-    "name": "D.I.E. variant tracker",
-    "help": "The base weapon can come from its free quest, trials or the box. Crafting shortcuts do not replace Aetherscope and diary prerequisites for the main quest.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Base D.I.E. acquired",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Aetherscope built",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Diary / anomalies completed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Cryo-Emitter acquired",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Nova-5 acquired",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Thermophasic acquired",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Electrobolt acquired",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "cw-forsaken-neutralizer",
-    "map": "cw-forsaken",
-    "name": "Neutralizer preparation",
-    "help": "Activate Fuel Processing with the players in your match, survive its lockdown and collect the tank. For each growth, shoot orbiting orbs, break it with Chrysalax and feed the shard to an Abomination before collecting the catalyzed shard.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Chrysalax acquired",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Fuel tank collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Staging Area: orbs",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Staging Area: catalyzed shard",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Amplifier: orbs",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Amplifier: catalyzed shard",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Storage Zone 5: orbs",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Storage Zone 5: catalyzed shard",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "Monitoring device",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Housing unit",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Neutralizer assembled",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "cw-outbreak-launch",
-    "map": "cw-outbreak",
-    "name": "Launch order notebook",
-    "help": "The consoles are A, B and D. Record confirmed accepted positions, or a console rejected at a particular position. Only record a later rejection after the earlier positions were accepted in that attempt.",
-    "fields": [
-      {
-        "id": "first",
-        "label": "Accepted first console",
-        "options": [
-          "A",
-          "B",
-          "D"
-        ]
-      },
-      {
-        "id": "second",
-        "label": "Accepted second console",
-        "options": [
-          "A",
-          "B",
-          "D"
-        ]
-      },
-      {
-        "id": "third",
-        "label": "Accepted third console",
-        "options": [
-          "A",
-          "B",
-          "D"
-        ]
-      },
-      {
-        "id": "reject-0-A",
-        "label": "Position 1: A rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-0-B",
-        "label": "Position 1: B rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-0-D",
-        "label": "Position 1: D rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-1-A",
-        "label": "Position 2: A rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-1-B",
-        "label": "Position 2: B rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-1-D",
-        "label": "Position 2: D rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-2-A",
-        "label": "Position 3: A rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-2-B",
-        "label": "Position 3: B rejected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "reject-2-D",
-        "label": "Position 3: D rejected",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "launch"
-  },
-  {
-    "id": "cw-outbreak-regions",
-    "map": "cw-outbreak",
-    "name": "Quest region reference",
-    "help": "Choose the quest and your current region. Region availability differs by objective; check the linked location guide before warping.",
-    "fields": [
-      {
-        "id": "quest",
-        "label": "Quest",
-        "options": [
-          "Ravenov Implications",
-          "Operation Excision"
-        ]
-      },
-      {
-        "id": "region",
-        "label": "Region",
-        "options": [
-          "Alpine",
-          "Armada",
-          "Collateral",
-          "Duga",
-          "Golova",
-          "Ruka",
-          "Sanatorium",
-          "Zoo"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "reference",
-    "evaluate": "regions"
   },
   {
     "version": 1,
@@ -4850,5 +4444,614 @@
         "type": "check"
       }
     ]
+  },
+  {
+    "id": "cw-die-variants",
+    "map": "cw-die-maschine",
+    "name": "D.I.E. port and upgrade reference",
+    "help": "Match the chamber port to its real photograph. Reveal its weapon, upgrade route and prerequisites.",
+    "kind": "reference",
+    "fields": [
+      {
+        "id": "variant",
+        "label": "Chamber port / weapon",
+        "options": [
+          "cryo",
+          "nova",
+          "fire",
+          "electric"
+        ]
+      },
+      {
+        "id": "check-0",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-5",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-6",
+        "label": "Previous upgrade confirmation",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "cw-firebase-darts",
+    "map": "cw-firebase-z",
+    "name": "RAI K-84 visual dartboard",
+    "help": "Tap the computer’s three stopped sectors in order. Get the real dartboard numbers and final bullseye.",
+    "kind": "solver",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "Computer stop 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "Computer stop 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "Computer stop 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
+      }
+    ],
+    "version": 1,
+    "evaluate": "darts"
+  },
+  {
+    "id": "cw-mauer-safe",
+    "map": "cw-mauer-der-toten",
+    "name": "CRBR-S safe and blacklight locations",
+    "help": "Find each number with the nine clue photographs. Keep the three values in fixed room order.",
+    "kind": "recorder",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "Garment Factory",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "slot-1",
+        "label": "Service Passage",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "slot-2",
+        "label": "Grocery Store",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      }
+    ],
+    "version": 1,
+    "evaluate": "ordered"
+  },
+  {
+    "id": "cw-forsaken-tvs",
+    "map": "cw-forsaken",
+    "name": "Perkaholic TV sequence",
+    "help": "Record the real colored screens for each 4, 8 and 12-flash stage, then follow your order one shot at a time.",
+    "kind": "recorder",
+    "fields": [
+      {
+        "id": "stage",
+        "label": "Sequence length",
+        "options": [
+          "4",
+          "8",
+          "12"
+        ]
+      },
+      {
+        "id": "tv-4-0",
+        "label": "Stage 4: flash 1",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-4-1",
+        "label": "Stage 4: flash 2",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-4-2",
+        "label": "Stage 4: flash 3",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-4-3",
+        "label": "Stage 4: flash 4",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-0",
+        "label": "Stage 8: flash 1",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-1",
+        "label": "Stage 8: flash 2",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-2",
+        "label": "Stage 8: flash 3",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-3",
+        "label": "Stage 8: flash 4",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-4",
+        "label": "Stage 8: flash 5",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-5",
+        "label": "Stage 8: flash 6",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-6",
+        "label": "Stage 8: flash 7",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-8-7",
+        "label": "Stage 8: flash 8",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-0",
+        "label": "Stage 12: flash 1",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-1",
+        "label": "Stage 12: flash 2",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-2",
+        "label": "Stage 12: flash 3",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-3",
+        "label": "Stage 12: flash 4",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-4",
+        "label": "Stage 12: flash 5",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-5",
+        "label": "Stage 12: flash 6",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-6",
+        "label": "Stage 12: flash 7",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-7",
+        "label": "Stage 12: flash 8",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-8",
+        "label": "Stage 12: flash 9",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-9",
+        "label": "Stage 12: flash 10",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-10",
+        "label": "Stage 12: flash 11",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      },
+      {
+        "id": "tv-12-11",
+        "label": "Stage 12: flash 12",
+        "options": [
+          "Blue",
+          "Green",
+          "Red",
+          "Orange"
+        ]
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "cw-outbreak-regions",
+    "map": "cw-outbreak",
+    "name": "Outbreak quest location finder",
+    "help": "Choose your quest, region and objective for annotated maps, object photographs and availability checks.",
+    "kind": "reference",
+    "fields": [
+      {
+        "id": "quest",
+        "label": "Quest",
+        "options": [
+          "Ravenov Implications",
+          "Operation Excision"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Current region",
+        "options": [
+          "Alpine",
+          "Armada",
+          "Collateral",
+          "Duga",
+          "Golova",
+          "Ruka",
+          "Sanatorium",
+          "Zoo"
+        ]
+      },
+      {
+        "id": "stage",
+        "label": "Objective",
+        "options": [
+          "Radio",
+          "Monkeys",
+          "Projector",
+          "Red rift",
+          "Sanatorium rover",
+          "Zoo mask",
+          "D.I.E. upgrade"
+        ]
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "cw-outbreak-launch",
+    "map": "cw-outbreak",
+    "name": "Outbreak launch-light solver",
+    "help": "Read the three small indicator lights below each A, B and D key switch. Green left is first, middle second, right third.",
+    "kind": "solver",
+    "fields": [
+      {
+        "id": "light-A",
+        "label": "Silo A: green light position",
+        "options": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "light-B",
+        "label": "Silo B: green light position",
+        "options": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "light-D",
+        "label": "Silo D: green light position",
+        "options": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "first",
+        "label": "Previously accepted position 1",
+        "options": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "id": "second",
+        "label": "Previously accepted position 2",
+        "options": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "id": "third",
+        "label": "Previously accepted position 3",
+        "options": [
+          "A",
+          "B",
+          "D"
+        ]
+      },
+      {
+        "id": "reject-0-A",
+        "label": "Previously rejected: position 1, A",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-0-B",
+        "label": "Previously rejected: position 1, B",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-0-D",
+        "label": "Previously rejected: position 1, D",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-1-A",
+        "label": "Previously rejected: position 2, A",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-1-B",
+        "label": "Previously rejected: position 2, B",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-1-D",
+        "label": "Previously rejected: position 2, D",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-2-A",
+        "label": "Previously rejected: position 3, A",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-2-B",
+        "label": "Previously rejected: position 3, B",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "reject-2-D",
+        "label": "Previously rejected: position 3, D",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "evaluate": "launch"
   }
 ]

@@ -1,6 +1,8 @@
 // These activities belong in the guide. Keep old bookmarks useful without
 // instantiating a retired helper or touching its saved browser observations.
 export const retiredTools = {
+  'cw-firebase-memories': '/guides/cw-firebase-z#details-memories',
+  'cw-forsaken-neutralizer': '/guides/cw-forsaken#details-parts',
   'bo4-blood-trials': '/guides/bo4-blood-of-the-dead#details-birds',
   'bo4-blood-skulls': '/guides/bo4-blood-of-the-dead#details-blundergat',
   'bo4-ix-danu': '/guides/bo4-ix#details-danu',

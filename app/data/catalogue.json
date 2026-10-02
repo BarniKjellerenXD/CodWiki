@@ -115,14 +115,54 @@
       "questLabel": "Main quest"
     },
     {
-      "id": "cw-mauer-der-toten",
-      "name": "Mauer der Toten",
-      "route": "/guides/cw-mauer-der-toten",
-      "image": "",
+      "id": "cw-die-maschine",
+      "name": "Die Maschine",
+      "route": "/guides/cw-die-maschine",
+      "image": "/images/cw-die-maschine/scope_crashsite.webp",
       "gameId": "cw",
       "group": "",
       "interactiveMap": false,
       "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-firebase-z",
+      "name": "Firebase Z",
+      "route": "/guides/cw-firebase-z",
+      "image": "/images/cw-firebase-z/mimic_motorpool.webp",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-mauer-der-toten",
+      "name": "Mauer der Toten",
+      "route": "/guides/cw-mauer-der-toten",
+      "image": "/images/cw-mauer-der-toten/klaus_on_tracks.webp",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-forsaken",
+      "name": "Forsaken",
+      "route": "/guides/cw-forsaken",
+      "image": "/images/cw-forsaken/largecrystal_spawn.webp",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "cw-outbreak",
+      "name": "Outbreak",
+      "route": "/guides/cw-outbreak",
+      "image": "/images/cw-outbreak/ritual_site.webp",
+      "gameId": "cw",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and quest selection"
     },
     {
       "id": "bo3-origins",
@@ -165,16 +205,6 @@
       "questLabel": "Main quest"
     },
     {
-      "id": "cw-firebase-z",
-      "name": "Firebase Z",
-      "route": "/guides/cw-firebase-z",
-      "image": "",
-      "gameId": "cw",
-      "group": "",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
       "id": "bo4-ix",
       "name": "IX",
       "route": "/guides/bo4-ix",
@@ -200,26 +230,6 @@
       "route": "/guides/bo4-blood-of-the-dead",
       "image": "/images/blood-of-the-dead/cover.webp",
       "gameId": "bo4",
-      "group": "",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
-      "id": "cw-die-maschine",
-      "name": "Die Maschine",
-      "route": "/guides/cw-die-maschine",
-      "image": "",
-      "gameId": "cw",
-      "group": "",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
-      "id": "cw-forsaken",
-      "name": "Forsaken",
-      "route": "/guides/cw-forsaken",
-      "image": "",
-      "gameId": "cw",
       "group": "",
       "interactiveMap": false,
       "questLabel": "Main quest"
@@ -373,16 +383,6 @@
       "group": "chronicles",
       "interactiveMap": false,
       "questLabel": "Setup and secrets"
-    },
-    {
-      "id": "cw-outbreak",
-      "name": "Outbreak",
-      "route": "/guides/cw-outbreak",
-      "image": "",
-      "gameId": "cw",
-      "group": "",
-      "interactiveMap": false,
-      "questLabel": "Mode setup"
     }
   ],
   "tools": [
@@ -485,13 +485,6 @@
       "shortcut": "Ctrl+Alt+1"
     },
     {
-      "id": "cw-mauer-safe",
-      "map": "cw-mauer-der-toten",
-      "name": "CRBR-S safe code",
-      "route": "/tools/cw-mauer-safe",
-      "kind": "recorder"
-    },
-    {
       "id": "bo3-gorod-valves",
       "map": "bo3-gorod-krovi",
       "name": "Valve solver",
@@ -511,20 +504,6 @@
       "name": "Buoy Morse calculator",
       "route": "/tools/bo4-blood-morse",
       "kind": "solver"
-    },
-    {
-      "id": "cw-firebase-darts",
-      "map": "cw-firebase-z",
-      "name": "RAI K-84 dartboard",
-      "route": "/tools/cw-firebase-darts",
-      "kind": "solver"
-    },
-    {
-      "id": "cw-firebase-memories",
-      "map": "cw-firebase-z",
-      "name": "Mimic memory tracker",
-      "route": "/tools/cw-firebase-memories",
-      "kind": "tracker"
     },
     {
       "id": "bo3-shadows-glyphs",
@@ -674,34 +653,6 @@
       "kind": "recorder"
     },
     {
-      "id": "cw-die-variants",
-      "map": "cw-die-maschine",
-      "name": "D.I.E. variant tracker",
-      "route": "/tools/cw-die-variants",
-      "kind": "tracker"
-    },
-    {
-      "id": "cw-forsaken-neutralizer",
-      "map": "cw-forsaken",
-      "name": "Neutralizer preparation",
-      "route": "/tools/cw-forsaken-neutralizer",
-      "kind": "tracker"
-    },
-    {
-      "id": "cw-outbreak-launch",
-      "map": "cw-outbreak",
-      "name": "Launch order notebook",
-      "route": "/tools/cw-outbreak-launch",
-      "kind": "recorder"
-    },
-    {
-      "id": "cw-outbreak-regions",
-      "map": "cw-outbreak",
-      "name": "Quest region reference",
-      "route": "/tools/cw-outbreak-regions",
-      "kind": "reference"
-    },
-    {
       "id": "bo4-voyage-clocks",
       "map": "bo4-voyage-of-despair",
       "name": "Clock symbols → lever settings",
@@ -846,6 +797,48 @@
       "map": "bo6-reckoning",
       "name": "S.A.M. archive order",
       "route": "/tools/bo6-reckoning-files",
+      "kind": "solver"
+    },
+    {
+      "id": "cw-die-variants",
+      "map": "cw-die-maschine",
+      "name": "D.I.E. port and upgrade reference",
+      "route": "/tools/cw-die-variants",
+      "kind": "reference"
+    },
+    {
+      "id": "cw-firebase-darts",
+      "map": "cw-firebase-z",
+      "name": "RAI K-84 visual dartboard",
+      "route": "/tools/cw-firebase-darts",
+      "kind": "solver"
+    },
+    {
+      "id": "cw-mauer-safe",
+      "map": "cw-mauer-der-toten",
+      "name": "CRBR-S safe and blacklight locations",
+      "route": "/tools/cw-mauer-safe",
+      "kind": "recorder"
+    },
+    {
+      "id": "cw-forsaken-tvs",
+      "map": "cw-forsaken",
+      "name": "Perkaholic TV sequence",
+      "route": "/tools/cw-forsaken-tvs",
+      "kind": "recorder"
+    },
+    {
+      "id": "cw-outbreak-regions",
+      "map": "cw-outbreak",
+      "name": "Outbreak quest location finder",
+      "route": "/tools/cw-outbreak-regions",
+      "kind": "reference"
+    },
+    {
+      "id": "cw-outbreak-launch",
+      "map": "cw-outbreak",
+      "name": "Outbreak launch-light solver",
+      "route": "/tools/cw-outbreak-launch",
       "kind": "solver"
     }
   ],

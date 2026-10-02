@@ -3328,6 +3328,342 @@
     "keywords": "Reckoning main quest checklist"
   },
   {
+    "id": "cw-die-maschine",
+    "name": "Die Maschine",
+    "map": "cw-die-maschine",
+    "kind": "Guide",
+    "route": "/guides/cw-die-maschine",
+    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:wiki_key_features",
+    "name": "Key Features",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#wiki_key_features",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-setup",
+    "name": "Power, Pack-a-Punch and the free D.I.E.",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-setup",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#wiki_main_quest",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-scope",
+    "name": "Aetherscope, diary and three reflections",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-scope",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-variants",
+    "name": "All four D.I.E. upgrades — exact routes",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-variants",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-chamber",
+    "name": "Charge the chamber and reconstruct Orlov",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-chamber",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-finale",
+    "name": "Orlov defense and the escape route",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-finale",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#wiki_side_quests",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-coffin",
+    "name": "Coffin dance — free Juggernog and a loot chest",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-coffin",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-legendary",
+    "name": "Free Legendary rarity — Medical Bay hand trap",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-legendary",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-music",
+    "name": "Alone — three cassette tapes",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-music",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-floating-zombies",
+    "name": "Floating zombies — scorestreak or jumpscare",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-floating-zombies",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-satellites",
+    "name": "Satellite dishes — free 1,500 Essence",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-satellites",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:details-intel",
+    "name": "Intel, extra reflections and the distant giant",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#details-intel",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:guide-sources",
+    "name": "Sources and review",
+    "map": "cw-die-maschine",
+    "kind": "Section",
+    "route": "/guides/cw-die-maschine#guide-sources",
+    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-die-maschine:quick-setup",
+    "name": "Power, Pack-a-Punch and the free D.I.E.",
+    "map": "cw-die-maschine",
+    "kind": "Quick parts",
+    "route": "/guides/cw-die-maschine#quick-setup",
+    "keywords": "Die Maschine main quest checklist"
+  },
+  {
+    "id": "cw-die-maschine:quick-scope",
+    "name": "Aetherscope, diary and three reflections",
+    "map": "cw-die-maschine",
+    "kind": "Quick parts",
+    "route": "/guides/cw-die-maschine#quick-scope",
+    "keywords": "Die Maschine main quest checklist"
+  },
+  {
+    "id": "cw-die-maschine:quick-variants",
+    "name": "All four D.I.E. upgrades — exact routes",
+    "map": "cw-die-maschine",
+    "kind": "Quick parts",
+    "route": "/guides/cw-die-maschine#quick-variants",
+    "keywords": "Die Maschine main quest checklist"
+  },
+  {
+    "id": "cw-die-maschine:quick-chamber",
+    "name": "Charge the chamber and reconstruct Orlov",
+    "map": "cw-die-maschine",
+    "kind": "Quick parts",
+    "route": "/guides/cw-die-maschine#quick-chamber",
+    "keywords": "Die Maschine main quest checklist"
+  },
+  {
+    "id": "cw-die-maschine:quick-finale",
+    "name": "Orlov defense and the escape route",
+    "map": "cw-die-maschine",
+    "kind": "Quick parts",
+    "route": "/guides/cw-die-maschine#quick-finale",
+    "keywords": "Die Maschine main quest checklist"
+  },
+  {
+    "id": "cw-firebase-z",
+    "name": "Firebase Z",
+    "map": "cw-firebase-z",
+    "kind": "Guide",
+    "route": "/guides/cw-firebase-z",
+    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:wiki_key_features",
+    "name": "Key Features",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#wiki_key_features",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-setup",
+    "name": "Three reactors, Pack-a-Punch and the RAI K-84",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-setup",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#wiki_main_quest",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-serum",
+    "name": "Ravenov’s badge and Peck’s truth serum",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-serum",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-memories",
+    "name": "Mimic memories — recognize the correct spawns",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-memories",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-crystals",
+    "name": "Three crystal tests — visual differences and recovery",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-crystals",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-boss",
+    "name": "Align the satellite and defeat Orda",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-boss",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#wiki_side_quests",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-bunny",
+    "name": "Bunny encounter — free Juggernog and loot",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-bunny",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-sergei",
+    "name": "Sergei’s head — free perk from the Colonel’s safe",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-sergei",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-monkeys",
+    "name": "Upgraded Monkey Bombs",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-monkeys",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-jump-pads",
+    "name": "Free jump pads — all six movement sequences",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-jump-pads",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-music",
+    "name": "Lost — three cassette tapes",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-music",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:details-assault-intel",
+    "name": "Assault waves and Intel",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#details-assault-intel",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:guide-sources",
+    "name": "Sources and review",
+    "map": "cw-firebase-z",
+    "kind": "Section",
+    "route": "/guides/cw-firebase-z#guide-sources",
+    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-firebase-z:quick-setup",
+    "name": "Three reactors, Pack-a-Punch and the RAI K-84",
+    "map": "cw-firebase-z",
+    "kind": "Quick parts",
+    "route": "/guides/cw-firebase-z#quick-setup",
+    "keywords": "Firebase Z main quest checklist"
+  },
+  {
+    "id": "cw-firebase-z:quick-serum",
+    "name": "Ravenov’s badge and Peck’s truth serum",
+    "map": "cw-firebase-z",
+    "kind": "Quick parts",
+    "route": "/guides/cw-firebase-z#quick-serum",
+    "keywords": "Firebase Z main quest checklist"
+  },
+  {
+    "id": "cw-firebase-z:quick-memories",
+    "name": "Mimic memories — recognize the correct spawns",
+    "map": "cw-firebase-z",
+    "kind": "Quick parts",
+    "route": "/guides/cw-firebase-z#quick-memories",
+    "keywords": "Firebase Z main quest checklist"
+  },
+  {
+    "id": "cw-firebase-z:quick-crystals",
+    "name": "Three crystal tests — visual differences and recovery",
+    "map": "cw-firebase-z",
+    "kind": "Quick parts",
+    "route": "/guides/cw-firebase-z#quick-crystals",
+    "keywords": "Firebase Z main quest checklist"
+  },
+  {
+    "id": "cw-firebase-z:quick-boss",
+    "name": "Align the satellite and defeat Orda",
+    "map": "cw-firebase-z",
+    "kind": "Quick parts",
+    "route": "/guides/cw-firebase-z#quick-boss",
+    "keywords": "Firebase Z main quest checklist"
+  },
+  {
     "id": "cw-mauer-der-toten",
     "name": "Mauer der Toten",
     "map": "cw-mauer-der-toten",
@@ -3336,16 +3672,32 @@
     "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
+    "id": "cw-mauer-der-toten:wiki_key_features",
+    "name": "Key Features",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#wiki_key_features",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
     "id": "cw-mauer-der-toten:details-setup",
-    "name": "Key Features: power and Pack-a-Punch",
+    "name": "Power and Pack-a-Punch",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-setup",
     "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
+    "id": "cw-mauer-der-toten:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#wiki_main_quest",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
     "id": "cw-mauer-der-toten:details-klaus",
-    "name": "Build and upgrade Klaus",
+    "name": "Klaus — hands, battery, blacklight and first upgrade",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-klaus",
@@ -3353,7 +3705,7 @@
   },
   {
     "id": "cw-mauer-der-toten:details-safe",
-    "name": "Free CRBR-S and secret lab",
+    "name": "Free CRBR-S and the hidden laboratory",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-safe",
@@ -3361,7 +3713,7 @@
   },
   {
     "id": "cw-mauer-der-toten:details-canisters",
-    "name": "Fill the conversion unit",
+    "name": "Three harvesters and Klaus’s hacking headgear",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-canisters",
@@ -3369,7 +3721,7 @@
   },
   {
     "id": "cw-mauer-der-toten:details-train",
-    "name": "Stop the train",
+    "name": "Stop the train and recover the warhead",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-train",
@@ -3377,7 +3729,7 @@
   },
   {
     "id": "cw-mauer-der-toten:details-uranium",
-    "name": "Two uranium cycles",
+    "name": "Uranium collision — two timed cycles",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-uranium",
@@ -3385,10 +3737,50 @@
   },
   {
     "id": "cw-mauer-der-toten:details-finale",
-    "name": "Valentina and final defense",
+    "name": "Valentina and Klaus’s final walk",
     "map": "cw-mauer-der-toten",
     "kind": "Section",
     "route": "/guides/cw-mauer-der-toten#details-finale",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-mauer-der-toten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#wiki_side_quests",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-mauer-der-toten:details-klaus-disks",
+    "name": "Optional Klaus upgrades — find the blacklight symbol",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#details-klaus-disks",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-mauer-der-toten:details-nightclub",
+    "name": "Mister Peeks’ nightclub — six rabbit parts",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#details-nightclub",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-mauer-der-toten:details-aether-tool",
+    "name": "Rooftop target course — free rarity upgrade",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#details-aether-tool",
+    "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-mauer-der-toten:details-music-loot",
+    "name": "Amoeba, sewer loot and Intel",
+    "map": "cw-mauer-der-toten",
+    "kind": "Section",
+    "route": "/guides/cw-mauer-der-toten#details-music-loot",
     "keywords": "Mauer der Toten cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
@@ -3401,7 +3793,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-setup",
-    "name": "Key Features: power and Pack-a-Punch",
+    "name": "Power and Pack-a-Punch",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-setup",
@@ -3409,7 +3801,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-klaus",
-    "name": "Build and upgrade Klaus",
+    "name": "Klaus — hands, battery, blacklight and first upgrade",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-klaus",
@@ -3417,7 +3809,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-safe",
-    "name": "Free CRBR-S and secret lab",
+    "name": "Free CRBR-S and the hidden laboratory",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-safe",
@@ -3425,7 +3817,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-canisters",
-    "name": "Fill the conversion unit",
+    "name": "Three harvesters and Klaus’s hacking headgear",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-canisters",
@@ -3433,7 +3825,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-train",
-    "name": "Stop the train",
+    "name": "Stop the train and recover the warhead",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-train",
@@ -3441,7 +3833,7 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-uranium",
-    "name": "Two uranium cycles",
+    "name": "Uranium collision — two timed cycles",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-uranium",
@@ -3449,11 +3841,283 @@
   },
   {
     "id": "cw-mauer-der-toten:quick-finale",
-    "name": "Valentina and final defense",
+    "name": "Valentina and Klaus’s final walk",
     "map": "cw-mauer-der-toten",
     "kind": "Quick parts",
     "route": "/guides/cw-mauer-der-toten#quick-finale",
     "keywords": "Mauer der Toten main quest checklist"
+  },
+  {
+    "id": "cw-forsaken",
+    "name": "Forsaken",
+    "map": "cw-forsaken",
+    "kind": "Guide",
+    "route": "/guides/cw-forsaken",
+    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:wiki_key_features",
+    "name": "Key Features",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#wiki_key_features",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-setup",
+    "name": "Leave Staging Area and lift the lockdown",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-setup",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#wiki_main_quest",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-chrysalax",
+    "name": "Build the Chrysalax — three crystals and melee souls",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-chrysalax",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-parts",
+    "name": "Aetherium Neutralizer — fuel, shards, monitor and housing",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-parts",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-escort",
+    "name": "Neutralizer escort and the final supply stop",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-escort",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-boss",
+    "name": "The Forsaken — expose, charge and fire",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-boss",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#wiki_side_quests",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-perkaholic",
+    "name": "Free all-perks quest — VHS, TVs and Tombstone",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-perkaholic",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-pizza",
+    "name": "Ronald Raygun’s pizza deliveries",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-pizza",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-bubby",
+    "name": "Samantha’s Ballad — PhD landings and Bubby defense",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-bubby",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-arcade",
+    "name": "Arcade games, racing and the free token",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-arcade",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-weapon-challenges",
+    "name": "Free weapon rarity — pistol, sniper and SMG courses",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-weapon-challenges",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:details-intel",
+    "name": "Optional Intel",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#details-intel",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:guide-sources",
+    "name": "Sources and review",
+    "map": "cw-forsaken",
+    "kind": "Section",
+    "route": "/guides/cw-forsaken#guide-sources",
+    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-forsaken:quick-setup",
+    "name": "Leave Staging Area and lift the lockdown",
+    "map": "cw-forsaken",
+    "kind": "Quick parts",
+    "route": "/guides/cw-forsaken#quick-setup",
+    "keywords": "Forsaken main quest checklist"
+  },
+  {
+    "id": "cw-forsaken:quick-chrysalax",
+    "name": "Build the Chrysalax — three crystals and melee souls",
+    "map": "cw-forsaken",
+    "kind": "Quick parts",
+    "route": "/guides/cw-forsaken#quick-chrysalax",
+    "keywords": "Forsaken main quest checklist"
+  },
+  {
+    "id": "cw-forsaken:quick-parts",
+    "name": "Aetherium Neutralizer — fuel, shards, monitor and housing",
+    "map": "cw-forsaken",
+    "kind": "Quick parts",
+    "route": "/guides/cw-forsaken#quick-parts",
+    "keywords": "Forsaken main quest checklist"
+  },
+  {
+    "id": "cw-forsaken:quick-escort",
+    "name": "Neutralizer escort and the final supply stop",
+    "map": "cw-forsaken",
+    "kind": "Quick parts",
+    "route": "/guides/cw-forsaken#quick-escort",
+    "keywords": "Forsaken main quest checklist"
+  },
+  {
+    "id": "cw-forsaken:quick-boss",
+    "name": "The Forsaken — expose, charge and fire",
+    "map": "cw-forsaken",
+    "kind": "Quick parts",
+    "route": "/guides/cw-forsaken#quick-boss",
+    "keywords": "Forsaken main quest checklist"
+  },
+  {
+    "id": "cw-outbreak",
+    "name": "Outbreak",
+    "map": "cw-outbreak",
+    "kind": "Guide",
+    "route": "/guides/cw-outbreak",
+    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:wiki_key_features",
+    "name": "Key Features",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#wiki_key_features",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-setup",
+    "name": "Region preparation and how Outbreak works",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-setup",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:wiki_main_quests",
+    "name": "Main Quests",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#wiki_main_quests",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-quests",
+    "name": "Choose a story quest",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-quests",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#wiki_side_quests",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-die-upgrades",
+    "name": "D.I.E. elemental crates — four region-specific upgrades",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-die-upgrades",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-pact",
+    "name": "The Pact — permanent starting-weapon rarity",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-pact",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-world-events",
+    "name": "World events — what to do and when to use them",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-world-events",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:details-secrets",
+    "name": "Hidden loot, radios, fishing and movement tricks",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#details-secrets",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:guide-sources",
+    "name": "Sources and review",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak#guide-sources",
+    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak:quick-setup",
+    "name": "Region preparation and how Outbreak works",
+    "map": "cw-outbreak",
+    "kind": "Quick parts",
+    "route": "/guides/cw-outbreak#quick-setup",
+    "keywords": "Outbreak main quest checklist"
+  },
+  {
+    "id": "cw-outbreak:quick-quests",
+    "name": "Choose a story quest",
+    "map": "cw-outbreak",
+    "kind": "Quick parts",
+    "route": "/guides/cw-outbreak#quick-quests",
+    "keywords": "Outbreak main quest checklist"
   },
   {
     "id": "bo3-origins",
@@ -3902,102 +4566,6 @@
     "kind": "Quick parts",
     "route": "/guides/bo3-gorod-krovi#quick-boss",
     "keywords": "Gorod Krovi main quest checklist"
-  },
-  {
-    "id": "cw-firebase-z",
-    "name": "Firebase Z",
-    "map": "cw-firebase-z",
-    "kind": "Guide",
-    "route": "/guides/cw-firebase-z",
-    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:details-setup",
-    "name": "Key Features: reactors and RAI K-84",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#details-setup",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:details-serum",
-    "name": "Serum and memory trap",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#details-serum",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:details-memories",
-    "name": "Accepted Mimic memories",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#details-memories",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:details-crystals",
-    "name": "Three Aether crystals",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#details-crystals",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:details-boss",
-    "name": "Satellite and Orda",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#details-boss",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:guide-sources",
-    "name": "Sources and review",
-    "map": "cw-firebase-z",
-    "kind": "Section",
-    "route": "/guides/cw-firebase-z#guide-sources",
-    "keywords": "Firebase Z cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-firebase-z:quick-setup",
-    "name": "Key Features: reactors and RAI K-84",
-    "map": "cw-firebase-z",
-    "kind": "Quick parts",
-    "route": "/guides/cw-firebase-z#quick-setup",
-    "keywords": "Firebase Z main quest checklist"
-  },
-  {
-    "id": "cw-firebase-z:quick-serum",
-    "name": "Serum and memory trap",
-    "map": "cw-firebase-z",
-    "kind": "Quick parts",
-    "route": "/guides/cw-firebase-z#quick-serum",
-    "keywords": "Firebase Z main quest checklist"
-  },
-  {
-    "id": "cw-firebase-z:quick-memories",
-    "name": "Accepted Mimic memories",
-    "map": "cw-firebase-z",
-    "kind": "Quick parts",
-    "route": "/guides/cw-firebase-z#quick-memories",
-    "keywords": "Firebase Z main quest checklist"
-  },
-  {
-    "id": "cw-firebase-z:quick-crystals",
-    "name": "Three Aether crystals",
-    "map": "cw-firebase-z",
-    "kind": "Quick parts",
-    "route": "/guides/cw-firebase-z#quick-crystals",
-    "keywords": "Firebase Z main quest checklist"
-  },
-  {
-    "id": "cw-firebase-z:quick-boss",
-    "name": "Satellite and Orda",
-    "map": "cw-firebase-z",
-    "kind": "Quick parts",
-    "route": "/guides/cw-firebase-z#quick-boss",
-    "keywords": "Firebase Z main quest checklist"
   },
   {
     "id": "bo4-ix",
@@ -4534,182 +5102,6 @@
     "kind": "Quick parts",
     "route": "/guides/bo4-blood-of-the-dead#quick-finale",
     "keywords": "Blood of the Dead main quest checklist"
-  },
-  {
-    "id": "cw-die-maschine",
-    "name": "Die Maschine",
-    "map": "cw-die-maschine",
-    "kind": "Guide",
-    "route": "/guides/cw-die-maschine",
-    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:details-setup",
-    "name": "Key Features: power and D.I.E.",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#details-setup",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:details-scope",
-    "name": "Aetherscope and diary",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#details-scope",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:details-variants",
-    "name": "Four D.I.E. variants",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#details-variants",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:details-chamber",
-    "name": "Containment chamber and wrench",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#details-chamber",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:details-finale",
-    "name": "Orlov defense and escape",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#details-finale",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:guide-sources",
-    "name": "Sources and review",
-    "map": "cw-die-maschine",
-    "kind": "Section",
-    "route": "/guides/cw-die-maschine#guide-sources",
-    "keywords": "Die Maschine cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-die-maschine:quick-setup",
-    "name": "Key Features: power and D.I.E.",
-    "map": "cw-die-maschine",
-    "kind": "Quick parts",
-    "route": "/guides/cw-die-maschine#quick-setup",
-    "keywords": "Die Maschine main quest checklist"
-  },
-  {
-    "id": "cw-die-maschine:quick-scope",
-    "name": "Aetherscope and diary",
-    "map": "cw-die-maschine",
-    "kind": "Quick parts",
-    "route": "/guides/cw-die-maschine#quick-scope",
-    "keywords": "Die Maschine main quest checklist"
-  },
-  {
-    "id": "cw-die-maschine:quick-variants",
-    "name": "Four D.I.E. variants",
-    "map": "cw-die-maschine",
-    "kind": "Quick parts",
-    "route": "/guides/cw-die-maschine#quick-variants",
-    "keywords": "Die Maschine main quest checklist"
-  },
-  {
-    "id": "cw-die-maschine:quick-chamber",
-    "name": "Containment chamber and wrench",
-    "map": "cw-die-maschine",
-    "kind": "Quick parts",
-    "route": "/guides/cw-die-maschine#quick-chamber",
-    "keywords": "Die Maschine main quest checklist"
-  },
-  {
-    "id": "cw-die-maschine:quick-finale",
-    "name": "Orlov defense and escape",
-    "map": "cw-die-maschine",
-    "kind": "Quick parts",
-    "route": "/guides/cw-die-maschine#quick-finale",
-    "keywords": "Die Maschine main quest checklist"
-  },
-  {
-    "id": "cw-forsaken",
-    "name": "Forsaken",
-    "map": "cw-forsaken",
-    "kind": "Guide",
-    "route": "/guides/cw-forsaken",
-    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:details-setup",
-    "name": "Key Features: access and Chrysalax",
-    "map": "cw-forsaken",
-    "kind": "Section",
-    "route": "/guides/cw-forsaken#details-setup",
-    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:details-parts",
-    "name": "Neutralizer components",
-    "map": "cw-forsaken",
-    "kind": "Section",
-    "route": "/guides/cw-forsaken#details-parts",
-    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:details-escort",
-    "name": "Neutralizer escort",
-    "map": "cw-forsaken",
-    "kind": "Section",
-    "route": "/guides/cw-forsaken#details-escort",
-    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:details-boss",
-    "name": "The Forsaken",
-    "map": "cw-forsaken",
-    "kind": "Section",
-    "route": "/guides/cw-forsaken#details-boss",
-    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:guide-sources",
-    "name": "Sources and review",
-    "map": "cw-forsaken",
-    "kind": "Section",
-    "route": "/guides/cw-forsaken#guide-sources",
-    "keywords": "Forsaken cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-forsaken:quick-setup",
-    "name": "Key Features: access and Chrysalax",
-    "map": "cw-forsaken",
-    "kind": "Quick parts",
-    "route": "/guides/cw-forsaken#quick-setup",
-    "keywords": "Forsaken main quest checklist"
-  },
-  {
-    "id": "cw-forsaken:quick-parts",
-    "name": "Neutralizer components",
-    "map": "cw-forsaken",
-    "kind": "Quick parts",
-    "route": "/guides/cw-forsaken#quick-parts",
-    "keywords": "Forsaken main quest checklist"
-  },
-  {
-    "id": "cw-forsaken:quick-escort",
-    "name": "Neutralizer escort",
-    "map": "cw-forsaken",
-    "kind": "Quick parts",
-    "route": "/guides/cw-forsaken#quick-escort",
-    "keywords": "Forsaken main quest checklist"
-  },
-  {
-    "id": "cw-forsaken:quick-boss",
-    "name": "The Forsaken",
-    "map": "cw-forsaken",
-    "kind": "Quick parts",
-    "route": "/guides/cw-forsaken#quick-boss",
-    "keywords": "Forsaken main quest checklist"
   },
   {
     "id": "bo3-shadows-of-evil",
@@ -6144,54 +6536,6 @@
     "keywords": "Kino der Toten main quest checklist"
   },
   {
-    "id": "cw-outbreak",
-    "name": "Outbreak",
-    "map": "cw-outbreak",
-    "kind": "Guide",
-    "route": "/guides/cw-outbreak",
-    "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-outbreak:details-setup",
-    "name": "Key Features: region preparation",
-    "map": "cw-outbreak",
-    "kind": "Section",
-    "route": "/guides/cw-outbreak#details-setup",
-    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-outbreak:details-quests",
-    "name": "Choose your main quest",
-    "map": "cw-outbreak",
-    "kind": "Section",
-    "route": "/guides/cw-outbreak#details-quests",
-    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-outbreak:guide-sources",
-    "name": "Sources and review",
-    "map": "cw-outbreak",
-    "kind": "Section",
-    "route": "/guides/cw-outbreak#guide-sources",
-    "keywords": "Outbreak cw Black Ops Cold War zombies  main quest easter egg"
-  },
-  {
-    "id": "cw-outbreak:quick-setup",
-    "name": "Key Features: region preparation",
-    "map": "cw-outbreak",
-    "kind": "Quick parts",
-    "route": "/guides/cw-outbreak#quick-setup",
-    "keywords": "Outbreak main quest checklist"
-  },
-  {
-    "id": "cw-outbreak:quick-quests",
-    "name": "Choose your main quest",
-    "map": "cw-outbreak",
-    "kind": "Quick parts",
-    "route": "/guides/cw-outbreak#quick-quests",
-    "keywords": "Outbreak main quest checklist"
-  },
-  {
     "id": "cw-outbreak-ravenov",
     "name": "Outbreak: Ravenov Implications",
     "map": "cw-outbreak",
@@ -6200,8 +6544,16 @@
     "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
+    "id": "cw-outbreak-ravenov:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-ravenov#wiki_main_quest",
+    "keywords": "Outbreak: Ravenov Implications cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
     "id": "cw-outbreak-ravenov:details-radio",
-    "name": "Radio and Maxis contact",
+    "name": "World tier 3 — Maxis radio and amplifiers",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-ravenov#details-radio",
@@ -6209,7 +6561,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:details-slides",
-    "name": "Monkeys and projector",
+    "name": "Microfilm, projector and the forced Ruka warp",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-ravenov#details-slides",
@@ -6217,7 +6569,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:details-keys",
-    "name": "Three launch keys",
+    "name": "Three launch keys — monkey, canister and Mimic",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-ravenov#details-keys",
@@ -6225,10 +6577,26 @@
   },
   {
     "id": "cw-outbreak-ravenov:details-launch",
-    "name": "Launch consoles and Legion",
+    "name": "Read the console lights and defeat Legion",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-ravenov#details-launch",
+    "keywords": "Outbreak: Ravenov Implications cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak-ravenov:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-ravenov#wiki_side_quests",
+    "keywords": "Outbreak: Ravenov Implications cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak-ravenov:details-optional-prep",
+    "name": "Optional preparation before entering the bunker",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-ravenov#details-optional-prep",
     "keywords": "Outbreak: Ravenov Implications cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
@@ -6241,7 +6609,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:quick-radio",
-    "name": "Radio and Maxis contact",
+    "name": "World tier 3 — Maxis radio and amplifiers",
     "map": "cw-outbreak-ravenov",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-ravenov#quick-radio",
@@ -6249,7 +6617,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:quick-slides",
-    "name": "Monkeys and projector",
+    "name": "Microfilm, projector and the forced Ruka warp",
     "map": "cw-outbreak-ravenov",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-ravenov#quick-slides",
@@ -6257,7 +6625,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:quick-keys",
-    "name": "Three launch keys",
+    "name": "Three launch keys — monkey, canister and Mimic",
     "map": "cw-outbreak-ravenov",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-ravenov#quick-keys",
@@ -6265,7 +6633,7 @@
   },
   {
     "id": "cw-outbreak-ravenov:quick-launch",
-    "name": "Launch consoles and Legion",
+    "name": "Read the console lights and defeat Legion",
     "map": "cw-outbreak-ravenov",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-ravenov#quick-launch",
@@ -6280,8 +6648,16 @@
     "keywords": "cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
+    "id": "cw-outbreak-excision:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-excision#wiki_main_quest",
+    "keywords": "Outbreak: Operation Excision cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
     "id": "cw-outbreak-excision:details-rifts",
-    "name": "Rifts and Ravenov contact",
+    "name": "World tier 3 — red-rift chain and Ravenov contact",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-excision#details-rifts",
@@ -6289,7 +6665,7 @@
   },
   {
     "id": "cw-outbreak-excision:details-rover",
-    "name": "Crash site and modified rover",
+    "name": "Sanatorium — helicopter, red orb and Aether Bunny",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-excision#details-rover",
@@ -6297,10 +6673,26 @@
   },
   {
     "id": "cw-outbreak-excision:details-exfil",
-    "name": "Escort and Orda exfil",
+    "name": "Escort, rooftop recording and Orda exfil",
     "map": "cw-outbreak",
     "kind": "Section",
     "route": "/guides/cw-outbreak-excision#details-exfil",
+    "keywords": "Outbreak: Operation Excision cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak-excision:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-excision#wiki_side_quests",
+    "keywords": "Outbreak: Operation Excision cw Black Ops Cold War zombies  main quest easter egg"
+  },
+  {
+    "id": "cw-outbreak-excision:details-optional-prep",
+    "name": "Optional rewards before the rover",
+    "map": "cw-outbreak",
+    "kind": "Section",
+    "route": "/guides/cw-outbreak-excision#details-optional-prep",
     "keywords": "Outbreak: Operation Excision cw Black Ops Cold War zombies  main quest easter egg"
   },
   {
@@ -6313,7 +6705,7 @@
   },
   {
     "id": "cw-outbreak-excision:quick-rifts",
-    "name": "Rifts and Ravenov contact",
+    "name": "World tier 3 — red-rift chain and Ravenov contact",
     "map": "cw-outbreak-excision",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-excision#quick-rifts",
@@ -6321,7 +6713,7 @@
   },
   {
     "id": "cw-outbreak-excision:quick-rover",
-    "name": "Crash site and modified rover",
+    "name": "Sanatorium — helicopter, red orb and Aether Bunny",
     "map": "cw-outbreak-excision",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-excision#quick-rover",
@@ -6329,7 +6721,7 @@
   },
   {
     "id": "cw-outbreak-excision:quick-exfil",
-    "name": "Escort and Orda exfil",
+    "name": "Escort, rooftop recording and Orda exfil",
     "map": "cw-outbreak-excision",
     "kind": "Quick parts",
     "route": "/guides/cw-outbreak-excision#quick-exfil",
@@ -6462,14 +6854,6 @@
     "keywords": "bo7 Black Ops 7 Paradox Junction solver tracker"
   },
   {
-    "id": "cw-mauer-safe",
-    "map": "cw-mauer-der-toten",
-    "name": "CRBR-S safe code",
-    "route": "/tools/cw-mauer-safe",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Mauer der Toten solver tracker"
-  },
-  {
     "id": "bo3-gorod-valves",
     "map": "bo3-gorod-krovi",
     "name": "Valve solver",
@@ -6492,22 +6876,6 @@
     "route": "/tools/bo4-blood-morse",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
-  },
-  {
-    "id": "cw-firebase-darts",
-    "map": "cw-firebase-z",
-    "name": "RAI K-84 dartboard",
-    "route": "/tools/cw-firebase-darts",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Firebase Z solver tracker"
-  },
-  {
-    "id": "cw-firebase-memories",
-    "map": "cw-firebase-z",
-    "name": "Mimic memory tracker",
-    "route": "/tools/cw-firebase-memories",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Firebase Z solver tracker"
   },
   {
     "id": "bo3-shadows-glyphs",
@@ -6678,38 +7046,6 @@
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
   },
   {
-    "id": "cw-die-variants",
-    "map": "cw-die-maschine",
-    "name": "D.I.E. variant tracker",
-    "route": "/tools/cw-die-variants",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Die Maschine solver tracker"
-  },
-  {
-    "id": "cw-forsaken-neutralizer",
-    "map": "cw-forsaken",
-    "name": "Neutralizer preparation",
-    "route": "/tools/cw-forsaken-neutralizer",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Forsaken solver tracker"
-  },
-  {
-    "id": "cw-outbreak-launch",
-    "map": "cw-outbreak",
-    "name": "Launch order notebook",
-    "route": "/tools/cw-outbreak-launch",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Outbreak solver tracker"
-  },
-  {
-    "id": "cw-outbreak-regions",
-    "map": "cw-outbreak",
-    "name": "Quest region reference",
-    "route": "/tools/cw-outbreak-regions",
-    "kind": "Tool",
-    "keywords": "cw Black Ops Cold War Outbreak solver tracker"
-  },
-  {
     "id": "bo4-voyage-clocks",
     "map": "bo4-voyage-of-despair",
     "name": "Clock symbols → lever settings",
@@ -6876,6 +7212,54 @@
     "route": "/tools/bo6-reckoning-files",
     "kind": "Tool",
     "keywords": "bo6 Black Ops 6 Reckoning solver tracker"
+  },
+  {
+    "id": "cw-die-variants",
+    "map": "cw-die-maschine",
+    "name": "D.I.E. port and upgrade reference",
+    "route": "/tools/cw-die-variants",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Die Maschine solver tracker"
+  },
+  {
+    "id": "cw-firebase-darts",
+    "map": "cw-firebase-z",
+    "name": "RAI K-84 visual dartboard",
+    "route": "/tools/cw-firebase-darts",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Firebase Z solver tracker"
+  },
+  {
+    "id": "cw-mauer-safe",
+    "map": "cw-mauer-der-toten",
+    "name": "CRBR-S safe and blacklight locations",
+    "route": "/tools/cw-mauer-safe",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Mauer der Toten solver tracker"
+  },
+  {
+    "id": "cw-forsaken-tvs",
+    "map": "cw-forsaken",
+    "name": "Perkaholic TV sequence",
+    "route": "/tools/cw-forsaken-tvs",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Forsaken solver tracker"
+  },
+  {
+    "id": "cw-outbreak-regions",
+    "map": "cw-outbreak",
+    "name": "Outbreak quest location finder",
+    "route": "/tools/cw-outbreak-regions",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Outbreak solver tracker"
+  },
+  {
+    "id": "cw-outbreak-launch",
+    "map": "cw-outbreak",
+    "name": "Outbreak launch-light solver",
+    "route": "/tools/cw-outbreak-launch",
+    "kind": "Tool",
+    "keywords": "cw Black Ops Cold War Outbreak solver tracker"
   },
   {
     "id": "super-ee",
