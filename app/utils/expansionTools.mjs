@@ -74,8 +74,9 @@ export function evaluateTool(id, raw) {
   const fields = tool.fields.filter(f => f.type !== 'check')
   for (const field of fields) if (state[field.id] && field.pattern && !new RegExp(field.pattern).test(state[field.id])) return invalid(`Check ${field.label}. ${field.inputmode === 'numeric' ? 'Use the requested number of digits.' : 'Use the format described above.'}`)
   if (tool.kind === 'tracker') {
-    const completed = tool.fields.filter(f => state[f.id]).length
-    return ready([`${completed} / ${tool.fields.length} confirmed`], 'Your progress')
+    const confirmations = tool.fields.filter(f => f.type === 'check')
+    const completed = confirmations.filter(f => state[f.id] === true).length
+    return ready([`${completed} / ${confirmations.length} confirmed`], 'Your progress')
   }
   if (tool.evaluate === 'fire') {
     const values=fireValues.filter(value=>state[`fire-${value}`])

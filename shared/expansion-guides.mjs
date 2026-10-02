@@ -3,14 +3,16 @@ import { guides as nightGuides } from './bo4-night-classified.mjs'
 import { guides as chaosGuides } from './bo4-ix-ancient.mjs'
 import { bloodOfTheDead } from './blood-of-the-dead.mjs'
 import { voyage } from './bo4-voyage.mjs'
+import { bo6Guides } from './bo6-guides.mjs'
 // Original concise walkthroughs adapted from the linked research sources.
 // Stable phase/step IDs are generated from the explicit keys, never from prose.
 const reddit = slug => `https://www.reddit.com/r/CODZombies/wiki/${slug}/`
 const tracker = slug => `https://tracker.gg/cold-war/articles/black-ops-cold-war-zombies-${slug}`
 const phase = (id, title, steps, tools = []) => ({ id, title, steps: steps.map((step, i) => typeof step === 'string' ? { id: `${id}-${i + 1}`, text: step } : { id: `${id}-${i + 1}`, ...step }), tools })
 const guide = (id, gameId, name, intro, phases, sources, extra = {}) => ({ id, gameId, name, intro, phases, sources, reviewed: '2026-09-30', ...extra })
-export const games = [{ id: 'bo7', name: 'Black Ops 7' }, { id: 'cw', name: 'Black Ops Cold War' }, { id: 'bo4', name: 'Black Ops 4' }, { id: 'bo3', name: 'Black Ops 3' }]
+export const games = [{ id: 'bo7', name: 'Black Ops 7' }, { id: 'bo6', name: 'Black Ops 6' }, { id: 'cw', name: 'Black Ops Cold War' }, { id: 'bo4', name: 'Black Ops 4' }, { id: 'bo3', name: 'Black Ops 3' }]
 export const expansionGuides = [
+  ...bo6Guides,
   guide('cw-mauer-der-toten', 'cw', 'Mauer der Toten', 'A solo or co-op quest. Prepare Klaus, a CRBR-S and your loadout before the uranium stages; placing the second cleansed uranium starts the boss encounter.', [
     phase('setup', 'Key Features: power and Pack-a-Punch', [
       'Follow the objective markers down to the subway power switch. Activate it to start the fuse objective.',

@@ -1,0 +1,794 @@
+[
+  {
+    "source": "https://codzombiesguides.com/maps/citadelle-des-morts.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-des-morts.webp",
+    "alt": "Citadelle des Morts",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-krafft-wooden-door.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-krafft-wooden-door.webp",
+    "alt": "Gabriel Krafft Wooden Door",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-secret-room.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-secret-room.webp",
+    "alt": "Alchemical Lab",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-stamp.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-stamp.webp",
+    "alt": "Stamp",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-dragon-statue.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-dragon-statue.webp",
+    "alt": "Dragon Statue",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-village-rampart-brazier.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-village-rampart-brazier.webp",
+    "alt": "Village Ramparts - left of the lion cannon",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-town-square-brazier.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-town-square-brazier.webp",
+    "alt": "Town Square - in the Southeast corner",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-nature-path-brazier.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-nature-path-brazier.webp",
+    "alt": "Nature Path - in front of the door leading to the Town Square",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-first-lightning-rod.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-first-lightning-rod.webp",
+    "alt": "Hilltop Lightning Rod",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-second-lightning-rod.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-second-lightning-rod.webp",
+    "alt": "Upper Village Lightning Rod Fuse Box",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-final-lightning-rod.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-final-lightning-rod.webp",
+    "alt": "Killing a Zombie in the Dungeon",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-lightning-rod-vase.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-lightning-rod-vase.webp",
+    "alt": "Lightning Rod Vase",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-lions-jaw-bone-trophy.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-lions-jaw-bone-trophy.webp",
+    "alt": "Lions Jaw Bone Trophy",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-rune-wheel.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-rune-wheel.webp",
+    "alt": "Rune Wheel",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-raven-sword-cypher.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-raven-sword-cypher.webp",
+    "alt": "Raven Sword Cheatsheet",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-dark-portal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-dark-portal.webp",
+    "alt": "Dark Portal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-lion-door.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-lion-door.webp",
+    "alt": "Lion Door",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-lion-pedestal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-lion-pedestal.webp",
+    "alt": "Sword Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-first-wooden-pyre.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-first-wooden-pyre.webp",
+    "alt": "Village Ramparts - just above the main castle door",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-second-wooden-pyre.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-second-wooden-pyre.webp",
+    "alt": "Hillside Ramparts - above the door leading to the Courtyard",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-final-wooden-pyre.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-final-wooden-pyre.webp",
+    "alt": "Village Ramparts - on a hill left of the Oil Trap",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-fire-ritual-circle.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-fire-ritual-circle.webp",
+    "alt": "Fire Ritual",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-ottos-horseshoe.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-ottos-horseshoe.webp",
+    "alt": "Otto&#x27;s Horseshoe",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-electric-ritual.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-electric-ritual.webp",
+    "alt": "Electric Ritual",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-raven.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-raven.webp",
+    "alt": "Raven",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-dark-ritual.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-dark-ritual.webp",
+    "alt": "Dark Ritual",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-first-crystal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-first-crystal.webp",
+    "alt": "Red Crystal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-arsenal-crystal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-arsenal-crystal.webp",
+    "alt": "Red Crystal above the Arsenal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-paladins-brooch.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-paladins-brooch.webp",
+    "alt": "Paladin&#x27;s Brooch",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-symbol-board.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-symbol-board.webp",
+    "alt": "Symbol Board",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-symbol-vase.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-symbol-vase.webp",
+    "alt": "Symbol Vase",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-page-fragment.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-page-fragment.webp",
+    "alt": "Page Fragment",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-book-pages.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-book-pages.webp",
+    "alt": "Restored Book Pages",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-animal-symbol-wall.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-animal-symbol-wall.webp",
+    "alt": "Animal Symbol Wall",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-pages-puzzle-skip.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-pages-puzzle-skip.webp",
+    "alt": "Pages Order",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-glowing-knight.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-glowing-knight.webp",
+    "alt": "Glowing Knight",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-light-orb-pedestal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-light-orb-pedestal.webp",
+    "alt": "Light Challenge Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-light-orb.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-light-orb.webp",
+    "alt": "Light Orb",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-fire-orb-pedestal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-fire-orb-pedestal.webp",
+    "alt": "Fire Challenge Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-electric-orb-pedestal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-electric-orb-pedestal.webp",
+    "alt": "Electric Challenge Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-dark-orb-pedestal.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-dark-orb-pedestal.webp",
+    "alt": "Shadow Challenge Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-guardian-key.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-guardian-key.webp",
+    "alt": "Guardian Key",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-boss-fight.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-boss-fight.webp",
+    "alt": "Boss Fight Entrance",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-fireball-attack.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-fireball-attack.webp",
+    "alt": "Fireball Attack",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-leaping-hammer-attack.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-leaping-hammer-attack.webp",
+    "alt": "Leaping Hammer Attack",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-phase-1.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-phase-1.webp",
+    "alt": "Phase 1",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-amulet.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-amulet.webp",
+    "alt": "Amulet",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/citadelle-des-morts/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/maps/the-tomb.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb.webp",
+    "alt": "The Tomb",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-monocle.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-monocle.webp",
+    "alt": "Monocle",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-catacombs-lantern.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-catacombs-lantern.webp",
+    "alt": "Dark Aether Lantern",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-head-piece.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-head-piece.webp",
+    "alt": "Head Piece",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-tombs-illuminated-symbols.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-tombs-illuminated-symbols.webp",
+    "alt": "Tombs Lantern",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-staff-piece.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-staff-piece.webp",
+    "alt": "Staff Piece",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-construct-staff.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-construct-staff.webp",
+    "alt": "Dark Aether Structure",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-temple-lantern.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-temple-lantern.webp",
+    "alt": "Subterranean Temple Lantern Ideal Location",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-ossuary-lantern.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-ossuary-lantern.webp",
+    "alt": "Ossuary Lantern Ideal Location",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-symbol-rock.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-symbol-rock.webp",
+    "alt": "Rock with a Symbol",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-symbols.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-symbols.webp",
+    "alt": "Symbols",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-blocked-door-with-symbols.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-blocked-door-with-symbols.webp",
+    "alt": "Blocked Gateway",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-purple-orb.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-purple-orb.webp",
+    "alt": "Purple Orb",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-ulls-arrow.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-ulls-arrow.webp",
+    "alt": "Ull&#x27;s Arrow Upgrade",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-aether-vermin-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-aether-vermin-statue.webp",
+    "alt": "Vermin Statue in Dark Aether Nexus",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-vermin-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-vermin-statue.webp",
+    "alt": "Vermin Statue in Dig Site",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-parasite-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-parasite-statue.webp",
+    "alt": "Parasite Statue in Shrine of the Hierophants",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-parasite-orb.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-parasite-orb.webp",
+    "alt": "Parasite Orb",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-doppleghast-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-doppleghast-statue.webp",
+    "alt": "Doppleghast Statue in Ossuary",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-amalgam-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-amalgam-statue.webp",
+    "alt": "Amalgam Statue in Deep Excavation",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-pedestal.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-pedestal.webp",
+    "alt": "Pedestal",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-boss-fight.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-boss-fight.webp",
+    "alt": "Begin boss fight",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-boss-attack.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-boss-attack.webp",
+    "alt": "Phase 1 Attack",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-phase-1.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-phase-1.webp",
+    "alt": "Phase 1",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-phase-3-artifact.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-phase-3-artifact.webp",
+    "alt": "Phase 3 Artifact Zombie",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-phase-6-artifact.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-phase-6-artifact.webp",
+    "alt": "Phase 6 Artifact Zombie",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-phase-6.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-phase-6.webp",
+    "alt": "Phase 6",
+    "guide": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-first-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-first-vase.webp",
+    "alt": "Above the Rampage Inducer on the Scaffolding",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-second-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-second-vase.webp",
+    "alt": "Above the door leading to the Neolithic Catacombs",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-third-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-third-vase.webp",
+    "alt": "Above the Dark Aether Nexus portal",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-fourth-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-fourth-vase.webp",
+    "alt": "On a ledge right of the doorway leading to the Shrine of the Hierophants",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-fifth-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-fifth-vase.webp",
+    "alt": "Near the ceiling inside one of the windows above Stamin-Up",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-sixth-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-sixth-vase.webp",
+    "alt": "Above the Dark Aether Nexus portal",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-seventh-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-seventh-vase.webp",
+    "alt": "On the ledge of the hole in the ceiling where the light is beaming through",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-eigth-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-eigth-vase.webp",
+    "alt": "A little off the map, left of Quick Revive",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-ninth-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-ninth-vase.webp",
+    "alt": "Behind the Mystery Box location when looking through the zombie spawn",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-self-res-final-vase.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-self-res-final-vase.webp",
+    "alt": "Above the left-side doorway when entering from the Neolithic Catacombs",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-self-revive/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-golden-armor-first-wooden-box.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-golden-armor-first-wooden-box.webp",
+    "alt": "Wooden Box next to Juggernog",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/golden-armor/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-golden-armor-second-wooden-box.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-golden-armor-second-wooden-box.webp",
+    "alt": "Wooden Box left of the green Dark Aether Nexus portal",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/golden-armor/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-golden-armor-first-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-golden-armor-first-statue.webp",
+    "alt": "Statue near the blue Dark Aether Nexus portal",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/golden-armor/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-golden-armor-second-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-golden-armor-second-statue.webp",
+    "alt": "Statue near PHD Flopper",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/golden-armor/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-golden-armor.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-golden-armor.webp",
+    "alt": "Golden Armor Wall Buy",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/golden-armor/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-ray-gun-dig-spot.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-ray-gun-dig-spot.webp",
+    "alt": "Dig Spot",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-ray-gun/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-ray-gun-ancient-gem.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-ray-gun-ancient-gem.webp",
+    "alt": "Ancient Gem",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-ray-gun/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/the-tomb/the-tomb-free-ray-gun-ancient-statue.webp",
+    "file": "public/images/bo6-the-tomb/the-tomb-free-ray-gun-ancient-statue.webp",
+    "alt": "Ancient Statue",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/the-tomb/free-ray-gun/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-wishing-well.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-wishing-well.webp",
+    "alt": "Wishing Well",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/citadelle-des-morts/wishing-well/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "source": "https://codzombiesguides.com/content/citadelle-des-morts/citadelle-raven-free-perk.webp",
+    "file": "public/images/bo6-citadelle-des-morts/citadelle-raven-free-perk.webp",
+    "alt": "Raven Free Perk",
+    "guide": "https://codzombiesguides.com/side-quests/black-ops-6/citadelle-des-morts/raven-free-perk/",
+    "credit": "COD Zombies Guides and credited community contributors; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo6-citadelle-des-morts/trophy-ram.jpg",
+    "source": "https://www.destructoid.com/wp-content/uploads/2024/12/horn-bo6-zombies.jpg?resize=200%2C200",
+    "alt": "Horn",
+    "guide": "https://www.destructoid.com/how-to-unlock-the-raven-balmung-sword-in-black-ops-6-zombies/",
+    "credit": "Kristina Ebanez / Destructoid; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo6-citadelle-des-morts/trophy-bird.jpg",
+    "source": "https://www.destructoid.com/wp-content/uploads/2024/12/two-raven-skulls-bo6-zombies.jpg?resize=200%2C200",
+    "alt": "Two raven skulls",
+    "guide": "https://www.destructoid.com/how-to-unlock-the-raven-balmung-sword-in-black-ops-6-zombies/",
+    "credit": "Kristina Ebanez / Destructoid; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo6-citadelle-des-morts/trophy-fish.jpg",
+    "source": "https://www.destructoid.com/wp-content/uploads/2024/12/rock-with-fish-bo6-zombies.jpg?resize=200%2C200",
+    "alt": "Rock with fish",
+    "guide": "https://www.destructoid.com/how-to-unlock-the-raven-balmung-sword-in-black-ops-6-zombies/",
+    "credit": "Kristina Ebanez / Destructoid; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo6-citadelle-des-morts/trophy-scorpion.jpg",
+    "source": "https://www.destructoid.com/wp-content/uploads/2024/12/rock-with-scorpion-bo6-zombies_28d40f.jpg?resize=200%2C200",
+    "alt": "Rock with Scorpion",
+    "guide": "https://www.destructoid.com/how-to-unlock-the-raven-balmung-sword-in-black-ops-6-zombies/",
+    "credit": "Kristina Ebanez / Destructoid; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo6-citadelle-des-morts/trophy-lion.jpg",
+    "source": "https://www.destructoid.com/wp-content/uploads/2024/12/jaw-bo6-zombies.jpg?resize=200%2C200",
+    "alt": "Jaw",
+    "guide": "https://www.destructoid.com/how-to-unlock-the-raven-balmung-sword-in-black-ops-6-zombies/",
+    "credit": "Kristina Ebanez / Destructoid; gameplay by Activision / Treyarch",
+    "reviewed": "2026-10-02"
+  }
+]

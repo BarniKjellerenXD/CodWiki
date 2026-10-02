@@ -26,3 +26,4 @@ logs
 # App build artifacts
 .codwiki
 .npm-cache/
+.impeccable/review/

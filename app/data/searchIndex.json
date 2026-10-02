@@ -2016,6 +2016,1318 @@
     "keywords": "Rex Infernus main quest checklist"
   },
   {
+    "id": "bo6-liberty-falls",
+    "name": "Liberty Falls",
+    "map": "bo6-liberty-falls",
+    "kind": "Guide",
+    "route": "/guides/bo6-liberty-falls",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#wiki_key_features",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-setup",
+    "name": "Open the town & prepare your route",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-setup",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#wiki_main_quest",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-jet-gun",
+    "name": "Build the Thrustodyne M23 / Jet Gun",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-jet-gun",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-ltg",
+    "name": "Collect all three LTG parts",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-ltg",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-first-capture",
+    "name": "First capture — Riverside to Pump & Pay",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-first-capture",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-strauss",
+    "name": "Strauss Counter — calibrate three projectors",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-strauss",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-second-capture",
+    "name": "Second capture — Cemetery to Hill Street",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-second-capture",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-finale",
+    "name": "Church finale — three waves",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-finale",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#wiki_side_quests",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-aetherella",
+    "name": "Aetherella — all nine figures",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-aetherella",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-vault",
+    "name": "Savings & Loan vault — three notes in order",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-vault",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-bowling",
+    "name": "Mister Peeks bowling — shoes & repeat games",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-bowling",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-free-perk",
+    "name": "Free Deadshot, Aether Tool & quick loot",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-free-perk",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-music",
+    "name": "Songs, dancing zombies & blood-pool rewards",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-music",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-powerups",
+    "name": "Hidden free power-ups — save them for useful moments",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-powerups",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:details-map-reference",
+    "name": "Map reference — perks, upgrades & travel",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#details-map-reference",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-liberty-falls",
+    "kind": "Section",
+    "route": "/guides/bo6-liberty-falls#guide-sources",
+    "keywords": "Liberty Falls bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-setup",
+    "name": "Open the town & prepare your route",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-setup",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-jet-gun",
+    "name": "Build the Thrustodyne M23 / Jet Gun",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-jet-gun",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-ltg",
+    "name": "Collect all three LTG parts",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-ltg",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-first-capture",
+    "name": "First capture — Riverside to Pump & Pay",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-first-capture",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-strauss",
+    "name": "Strauss Counter — calibrate three projectors",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-strauss",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-second-capture",
+    "name": "Second capture — Cemetery to Hill Street",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-second-capture",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-liberty-falls:quick-finale",
+    "name": "Church finale — three waves",
+    "map": "bo6-liberty-falls",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-liberty-falls#quick-finale",
+    "keywords": "Liberty Falls main quest checklist"
+  },
+  {
+    "id": "bo6-terminus",
+    "name": "Terminus",
+    "map": "bo6-terminus",
+    "kind": "Guide",
+    "route": "/guides/bo6-terminus",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#wiki_key_features",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-power",
+    "name": "Three AMP defenses & Pack-a-Punch",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-power",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#wiki_main_quest",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-beamsmasher",
+    "name": "Open the Research Office & collect the EMF Fob",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-beamsmasher",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-lab-code",
+    "name": "Laptop symbols → three terminal entries",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-lab-code",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-island-orbs",
+    "name": "Three island orbs & AMP Munition",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-island-orbs",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-hard-drive",
+    "name": "Damaged Tentacle Trap & Nathan’s code",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-hard-drive",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-nathan",
+    "name": "Defeat Nathan & recover the keycard",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-nathan",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-network",
+    "name": "Shipwreck lockdown & two Node Connectors",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-network",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-hacking",
+    "name": "Prepare once, then hack buoys & defuse bombs",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-hacking",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-patient-13",
+    "name": "Patient 13 — weak points, cover & three phases",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-patient-13",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#wiki_side_quests",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-talisman",
+    "name": "Captain’s treasure & Cursed Talisman",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-talisman",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-stuffy",
+    "name": "Mega Stuffy — six plush toys",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-stuffy",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-free-perks",
+    "name": "Three free-perk routes & the rebreather",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-free-perks",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-crab-race",
+    "name": "Whack-a-Crab & toy-boat racing",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-crab-race",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-fish",
+    "name": "Cooking, Peck’s refund & the fish perk reward",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-fish",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-meteor",
+    "name": "Meteor, music & small secrets",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-meteor",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-term-powerups",
+    "name": "Hidden power-ups & the final Fire Sale",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-term-powerups",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:details-term-reference",
+    "name": "Map reference — perks, transport & upgrades",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#details-term-reference",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-terminus",
+    "kind": "Section",
+    "route": "/guides/bo6-terminus#guide-sources",
+    "keywords": "Terminus bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-terminus:quick-power",
+    "name": "Three AMP defenses & Pack-a-Punch",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-power",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-beamsmasher",
+    "name": "Open the Research Office & collect the EMF Fob",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-beamsmasher",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-lab-code",
+    "name": "Laptop symbols → three terminal entries",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-lab-code",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-island-orbs",
+    "name": "Three island orbs & AMP Munition",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-island-orbs",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-hard-drive",
+    "name": "Damaged Tentacle Trap & Nathan’s code",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-hard-drive",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-nathan",
+    "name": "Defeat Nathan & recover the keycard",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-nathan",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-network",
+    "name": "Shipwreck lockdown & two Node Connectors",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-network",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-hacking",
+    "name": "Prepare once, then hack buoys & defuse bombs",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-hacking",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-terminus:quick-patient-13",
+    "name": "Patient 13 — weak points, cover & three phases",
+    "map": "bo6-terminus",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-terminus#quick-patient-13",
+    "keywords": "Terminus main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts",
+    "name": "Citadelle des Morts",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Guide",
+    "route": "/guides/bo6-citadelle-des-morts",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#wiki_key_features",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-setup",
+    "name": "Open the castle, Pack-a-Punch & Krafft",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-setup",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#wiki_main_quest",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-dragon",
+    "name": "Caliburn — Dragon’s Fire",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-dragon",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-stag",
+    "name": "Durendal — Stag of the Storms",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-stag",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-raven",
+    "name": "Balmung — Raven’s Shadow",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-raven",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-lion",
+    "name": "Solais — Lion of Light",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-lion",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-incantations",
+    "name": "Four ritual items → four incantations",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-incantations",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-book",
+    "name": "Tavern bottles, four pages & Point of Power traps",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-book",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-knights",
+    "name": "Salute the knights & charge the Mystic Orb",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-knights",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-guardian",
+    "name": "Guardian key, arena preparation & boss",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-guardian",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#wiki_side_quests",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-side-perks",
+    "name": "Free perks — bartender, Peeks, raven & rune lockdown",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-side-perks",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-rat-king",
+    "name": "Rat King — cheese and all ten rats",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-rat-king",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-chess-fire",
+    "name": "Chess guardian & fireplace protector",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-chess-fire",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-cannon-well",
+    "name": "Cannon repair, bell tower & wishing well",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-cannon-well",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-maya-music",
+    "name": "Maya’s revenge, two songs & pool-table essence",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-maya-music",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-powerups",
+    "name": "All eight hidden power-ups",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-powerups",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:details-map-reference",
+    "name": "Useful map services & travel",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#details-map-reference",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Section",
+    "route": "/guides/bo6-citadelle-des-morts#guide-sources",
+    "keywords": "Citadelle des Morts bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-setup",
+    "name": "Open the castle, Pack-a-Punch & Krafft",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-setup",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-dragon",
+    "name": "Caliburn — Dragon’s Fire",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-dragon",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-stag",
+    "name": "Durendal — Stag of the Storms",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-stag",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-raven",
+    "name": "Balmung — Raven’s Shadow",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-raven",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-lion",
+    "name": "Solais — Lion of Light",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-lion",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-incantations",
+    "name": "Four ritual items → four incantations",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-incantations",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-book",
+    "name": "Tavern bottles, four pages & Point of Power traps",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-book",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-knights",
+    "name": "Salute the knights & charge the Mystic Orb",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-knights",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-citadelle-des-morts:quick-guardian",
+    "name": "Guardian key, arena preparation & boss",
+    "map": "bo6-citadelle-des-morts",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-citadelle-des-morts#quick-guardian",
+    "keywords": "Citadelle des Morts main quest checklist"
+  },
+  {
+    "id": "bo6-the-tomb",
+    "name": "The Tomb",
+    "map": "bo6-the-tomb",
+    "kind": "Guide",
+    "route": "/guides/bo6-the-tomb",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#wiki_key_features",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-nexus",
+    "name": "Enter the Nexus & prepare for the Staff",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-nexus",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#wiki_main_quest",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-staff",
+    "name": "Monocle, two constellations & Staff defense",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-staff",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-upgrade",
+    "name": "Ull’s Arrow — lantern sprint, three glyphs & escort",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-upgrade",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-trials",
+    "name": "The four statue trials & fragile return charges",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-trials",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-sentinel",
+    "name": "Sentinel Artifact — damage windows, HVTs & final burst",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-sentinel",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#wiki_side_quests",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-gold-armor",
+    "name": "Golden Armor — both Blood Sacrifices",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-gold-armor",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-digging",
+    "name": "All four shovels, dig loot & free Ray Gun",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-digging",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-vases",
+    "name": "Ten vases — free Self-Revive & Light Mend",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-vases",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-free-upgrades",
+    "name": "Free rarity tool, Pack-a-Punch crystal & ammo mods",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-free-upgrades",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-tomb-secrets",
+    "name": "Zombie soldiers, jumpscare & two songs",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-tomb-secrets",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-tomb-powerups",
+    "name": "All eight hidden power-ups",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-tomb-powerups",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:details-tomb-services",
+    "name": "Map services & travel reminders",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#details-tomb-services",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-the-tomb",
+    "kind": "Section",
+    "route": "/guides/bo6-the-tomb#guide-sources",
+    "keywords": "The Tomb bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-the-tomb:quick-nexus",
+    "name": "Enter the Nexus & prepare for the Staff",
+    "map": "bo6-the-tomb",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-the-tomb#quick-nexus",
+    "keywords": "The Tomb main quest checklist"
+  },
+  {
+    "id": "bo6-the-tomb:quick-staff",
+    "name": "Monocle, two constellations & Staff defense",
+    "map": "bo6-the-tomb",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-the-tomb#quick-staff",
+    "keywords": "The Tomb main quest checklist"
+  },
+  {
+    "id": "bo6-the-tomb:quick-upgrade",
+    "name": "Ull’s Arrow — lantern sprint, three glyphs & escort",
+    "map": "bo6-the-tomb",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-the-tomb#quick-upgrade",
+    "keywords": "The Tomb main quest checklist"
+  },
+  {
+    "id": "bo6-the-tomb:quick-trials",
+    "name": "The four statue trials & fragile return charges",
+    "map": "bo6-the-tomb",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-the-tomb#quick-trials",
+    "keywords": "The Tomb main quest checklist"
+  },
+  {
+    "id": "bo6-the-tomb:quick-sentinel",
+    "name": "Sentinel Artifact — damage windows, HVTs & final burst",
+    "map": "bo6-the-tomb",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-the-tomb#quick-sentinel",
+    "keywords": "The Tomb main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil",
+    "name": "Shattered Veil",
+    "map": "bo6-shattered-veil",
+    "kind": "Guide",
+    "route": "/guides/bo6-shattered-veil",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#wiki_key_features",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-setup",
+    "name": "Repair the elevator & prepare your route",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-setup",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#wiki_main_quest",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-mark-ii",
+    "name": "The free Mark II & Nursery cipher",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-mark-ii",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-canisters",
+    "name": "Three empty canisters",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-canisters",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-wraith-fire",
+    "name": "Mark II-W & the Distillery spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-wraith-fire",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-preservation",
+    "name": "Mark II-P & the Banquet Hall spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-preservation",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-rot-blight",
+    "name": "Mark II-R & the Library spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-rot-blight",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-z-rex",
+    "name": "Z-Rex — four phases",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-z-rex",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#wiki_side_quests",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-wunderwaffe",
+    "name": "Free Wunderwaffe DG-2",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-wunderwaffe",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-donut",
+    "name": "Donut companion & bell perk",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-donut",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-marine",
+    "name": "Marine SP upgrade wall",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-marine",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-laser",
+    "name": "S.A.M. L4Z3R.EXE trap",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-laser",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-fog",
+    "name": "Fog Rolling In — Vermin experiment",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-fog",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-secrets",
+    "name": "Sleepwalking, thermal ghost & music",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-secrets",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:details-power-ups",
+    "name": "Eight hidden power-ups",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#details-power-ups",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-shattered-veil",
+    "kind": "Section",
+    "route": "/guides/bo6-shattered-veil#guide-sources",
+    "keywords": "Shattered Veil bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-setup",
+    "name": "Repair the elevator & prepare your route",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-setup",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-mark-ii",
+    "name": "The free Mark II & Nursery cipher",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-mark-ii",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-canisters",
+    "name": "Three empty canisters",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-canisters",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-wraith-fire",
+    "name": "Mark II-W & the Distillery spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-wraith-fire",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-preservation",
+    "name": "Mark II-P & the Banquet Hall spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-preservation",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-rot-blight",
+    "name": "Mark II-R & the Library spirit",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-rot-blight",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-shattered-veil:quick-z-rex",
+    "name": "Z-Rex — four phases",
+    "map": "bo6-shattered-veil",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-shattered-veil#quick-z-rex",
+    "keywords": "Shattered Veil main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning",
+    "name": "Reckoning",
+    "map": "bo6-reckoning",
+    "kind": "Guide",
+    "route": "/guides/bo6-reckoning",
+    "keywords": "bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#wiki_key_features",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-setup",
+    "name": "Power, Pack-a-Punch & early collection",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-setup",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#wiki_main_quest",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-fowler",
+    "name": "DNA, Fowler & Teleportation Lab access",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-fowler",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-gorgofex",
+    "name": "Grow the Gorgofex",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-gorgofex",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-klaus",
+    "name": "Build Franken-Klaus & let him work",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-klaus",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-files",
+    "name": "Four S.A.M. files → chronological code",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-files",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-brain",
+    "name": "Timed brain delivery & portal crystal removal",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-brain",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-head",
+    "name": "Cleanse & feed Mortimer’s head",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-head",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-portal",
+    "name": "Four vacuum captures & the last lockdown",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-portal",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-tower-three",
+    "name": "Tower 3 ascent & both boss endings",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-tower-three",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#wiki_side_quests",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-gorgofex-upgrades",
+    "name": "Choose Gorgofex C or N",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-gorgofex-upgrades",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-aether-blade",
+    "name": "Paintings & the Aether Blade safe",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-aether-blade",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-companions",
+    "name": "Aetherella & upgraded C.A.S.T.E.R. turrets",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-companions",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-free-rewards",
+    "name": "Perks, Self-Revive & shooting rewards",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-free-rewards",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-loot-music",
+    "name": "Trash loot, vending, songs & small secrets",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-loot-music",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:details-power-ups",
+    "name": "Eight hidden power-ups",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#details-power-ups",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:guide-sources",
+    "name": "Sources and review",
+    "map": "bo6-reckoning",
+    "kind": "Section",
+    "route": "/guides/bo6-reckoning#guide-sources",
+    "keywords": "Reckoning bo6 Black Ops 6 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo6-reckoning:quick-setup",
+    "name": "Power, Pack-a-Punch & early collection",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-setup",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-fowler",
+    "name": "DNA, Fowler & Teleportation Lab access",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-fowler",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-gorgofex",
+    "name": "Grow the Gorgofex",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-gorgofex",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-klaus",
+    "name": "Build Franken-Klaus & let him work",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-klaus",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-files",
+    "name": "Four S.A.M. files → chronological code",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-files",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-brain",
+    "name": "Timed brain delivery & portal crystal removal",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-brain",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-head",
+    "name": "Cleanse & feed Mortimer’s head",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-head",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-portal",
+    "name": "Four vacuum captures & the last lockdown",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-portal",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
+    "id": "bo6-reckoning:quick-tower-three",
+    "name": "Tower 3 ascent & both boss endings",
+    "map": "bo6-reckoning",
+    "kind": "Quick parts",
+    "route": "/guides/bo6-reckoning#quick-tower-three",
+    "keywords": "Reckoning main quest checklist"
+  },
+  {
     "id": "cw-mauer-der-toten",
     "name": "Mauer der Toten",
     "map": "cw-mauer-der-toten",
@@ -5540,6 +6852,118 @@
     "route": "/tools/bo4-tag-challenges",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
+  },
+  {
+    "id": "bo6-terminus-lab",
+    "map": "bo6-terminus",
+    "name": "Beamsmasher visual lab solver",
+    "route": "/tools/bo6-terminus-lab",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Terminus solver tracker"
+  },
+  {
+    "id": "bo6-liberty-strauss",
+    "map": "bo6-liberty-falls",
+    "name": "Strauss Counter & projector helper",
+    "route": "/tools/bo6-liberty-strauss",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
+  },
+  {
+    "id": "bo6-liberty-aetherella",
+    "map": "bo6-liberty-falls",
+    "name": "Aetherella photo checklist",
+    "route": "/tools/bo6-liberty-aetherella",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
+  },
+  {
+    "id": "bo6-liberty-vault",
+    "map": "bo6-liberty-falls",
+    "name": "Bank vault code recorder",
+    "route": "/tools/bo6-liberty-vault",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
+  },
+  {
+    "id": "bo6-terminus-nathan",
+    "map": "bo6-terminus",
+    "name": "Nathan’s chamber code recorder",
+    "route": "/tools/bo6-terminus-nathan",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Terminus solver tracker"
+  },
+  {
+    "id": "bo6-citadelle-raven",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Raven sword — visual ring solution",
+    "route": "/tools/bo6-citadelle-raven",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Citadelle des Morts solver tracker"
+  },
+  {
+    "id": "bo6-citadelle-symbols",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Tavern runes & book trap sequence",
+    "route": "/tools/bo6-citadelle-symbols",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Citadelle des Morts solver tracker"
+  },
+  {
+    "id": "bo6-citadelle-knights",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Knight order & four orb trials",
+    "route": "/tools/bo6-citadelle-knights",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Citadelle des Morts solver tracker"
+  },
+  {
+    "id": "bo6-tomb-symbols",
+    "map": "bo6-the-tomb",
+    "name": "Ice Staff — rock glyphs to gateway",
+    "route": "/tools/bo6-tomb-symbols",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
+  },
+  {
+    "id": "bo6-tomb-trials",
+    "map": "bo6-the-tomb",
+    "name": "Four statue trials — defense & return",
+    "route": "/tools/bo6-tomb-trials",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
+  },
+  {
+    "id": "bo6-tomb-vases",
+    "map": "bo6-the-tomb",
+    "name": "Ten vase location checklist",
+    "route": "/tools/bo6-tomb-vases",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
+  },
+  {
+    "id": "bo6-shattered-cipher",
+    "map": "bo6-shattered-veil",
+    "name": "Nursery cipher decoder",
+    "route": "/tools/bo6-shattered-cipher",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Shattered Veil solver tracker"
+  },
+  {
+    "id": "bo6-reckoning-element",
+    "map": "bo6-reckoning",
+    "name": "Gorgofex monitor code",
+    "route": "/tools/bo6-reckoning-element",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Reckoning solver tracker"
+  },
+  {
+    "id": "bo6-reckoning-files",
+    "map": "bo6-reckoning",
+    "name": "S.A.M. archive order",
+    "route": "/tools/bo6-reckoning-files",
+    "kind": "Tool",
+    "keywords": "bo6 Black Ops 6 Reckoning solver tracker"
   },
   {
     "id": "super-ee",

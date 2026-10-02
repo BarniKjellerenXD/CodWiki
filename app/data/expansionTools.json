@@ -4427,5 +4427,1055 @@
     ],
     "version": 1,
     "kind": "tracker"
+  },
+  {
+    "id": "bo6-terminus-lab",
+    "map": "bo6-terminus",
+    "name": "Beamsmasher visual lab solver",
+    "help": "Match the three X/Y/Z notes to verified symbol images. The helper shows the three terminal entries and every calculation, including the final absolute value.",
+    "fields": [
+      {
+        "id": "x",
+        "label": "X symbol",
+        "options": [
+          "0",
+          "10",
+          "11",
+          "20",
+          "21",
+          "22"
+        ]
+      },
+      {
+        "id": "y",
+        "label": "Y symbol",
+        "options": [
+          "0",
+          "10",
+          "11",
+          "20",
+          "21",
+          "22"
+        ]
+      },
+      {
+        "id": "z",
+        "label": "Z symbol",
+        "options": [
+          "0",
+          "10",
+          "11",
+          "20",
+          "21",
+          "22"
+        ]
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "custom": true,
+    "reference": "https://www.codzombiesguides.com/main-quests/black-ops-6/terminus/"
+  },
+  {
+    "id": "bo6-liberty-strauss",
+    "map": "bo6-liberty-falls",
+    "name": "Strauss Counter & projector helper",
+    "help": "Record the counter reading at each photographed projector. See the correct lamp color, then confirm the setting in game. Changing a reading clears its confirmation.",
+    "fields": [
+      {
+        "id": "hill",
+        "label": "Hilltop Stairs: counter reading",
+        "options": [
+          "red",
+          "yellow",
+          "green"
+        ]
+      },
+      {
+        "id": "hill-done",
+        "label": "Hilltop Stairs: set in game",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "yard",
+        "label": "Groundskeeper’s Yard: counter reading",
+        "options": [
+          "red",
+          "yellow",
+          "green"
+        ]
+      },
+      {
+        "id": "yard-done",
+        "label": "Groundskeeper’s Yard: set in game",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "roof",
+        "label": "Yummy Freeze rooftop: counter reading",
+        "options": [
+          "red",
+          "yellow",
+          "green"
+        ]
+      },
+      {
+        "id": "roof-done",
+        "label": "Yummy Freeze rooftop: set in game",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "custom": true,
+    "reference": "https://www.codzombiesguides.com/main-quests/black-ops-6/liberty-falls/"
+  },
+  {
+    "id": "bo6-liberty-aetherella",
+    "map": "bo6-liberty-falls",
+    "name": "Aetherella photo checklist",
+    "help": "All nine Jet Gun sightlines, including the rooftop figures. Save each pickup and plan the final figure: collecting number nine transforms you immediately.",
+    "fields": [
+      {
+        "id": "comic-table",
+        "label": "Olly’s Comics · entrance table",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "comic-perk",
+        "label": "Olly’s Comics · Quick Revive",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "comic-window",
+        "label": "Olly’s Comics · boarded window",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "comic-trap",
+        "label": "Olly’s Comics · statue display",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "hill",
+        "label": "Hill Street · air conditioner",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "church",
+        "label": "Church · front window",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "lanes",
+        "label": "Liberty Lanes · sign",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "roof",
+        "label": "Fast Forward · rooftop",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "motel",
+        "label": "Motor Lodge · motel sign",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "tracker",
+    "custom": true,
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/liberty-falls/"
+  },
+  {
+    "id": "bo6-liberty-vault",
+    "map": "bo6-liberty-falls",
+    "name": "Bank vault code recorder",
+    "help": "Read each note in your match. Enter Bank → Comics → Bowling at the vault; keep both digits, including a leading zero.",
+    "fields": [
+      {
+        "id": "bank",
+        "label": "1 · Savings & Loan reception desk",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "comics",
+        "label": "2 · Under Olly’s Comics counter",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "bowling",
+        "label": "3 · Bowling snack counter, under ice bucket",
+        "options": null,
+        "pattern": "^\\d{2}$",
+        "maxLength": 2,
+        "inputmode": "numeric"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder",
+    "evaluate": "ordered",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/liberty-falls/"
+  },
+  {
+    "id": "bo6-terminus-nathan",
+    "map": "bo6-terminus",
+    "name": "Nathan’s chamber code recorder",
+    "help": "Read the short clock hand, then the playing card, then the Days Since Last Injury sign. These three digits are separate from the Beamsmasher equations.",
+    "fields": [
+      {
+        "id": "clock",
+        "label": "1 · Interrogation clock hour",
+        "options": null,
+        "pattern": "^\\d$",
+        "maxLength": 1,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "card",
+        "label": "2 · Mess Hall playing card",
+        "options": null,
+        "pattern": "^\\d$",
+        "maxLength": 1,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "injury",
+        "label": "3 · Engineering injury sign",
+        "options": null,
+        "pattern": "^\\d$",
+        "maxLength": 1,
+        "inputmode": "numeric"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder",
+    "evaluate": "ordered",
+    "reference": "https://www.codzombiesguides.com/main-quests/black-ops-6/terminus/"
+  },
+  {
+    "id": "bo6-citadelle-raven",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Raven sword — visual ring solution",
+    "help": "Choose your actual antiquity and see the exact element and zodiac images to align at the bottom pointer. Track all three orb portals afterward.",
+    "fields": [
+      {
+        "id": "trophy",
+        "label": "Antiquity",
+        "options": [
+          "ram",
+          "lion",
+          "bird",
+          "fish",
+          "scorpion"
+        ]
+      },
+      {
+        "id": "portal-0",
+        "label": "Portal 1 complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "portal-1",
+        "label": "Portal 2 complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "portal-2",
+        "label": "Portal 3 complete",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "custom": true,
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/citadelle-des-morts/"
+  },
+  {
+    "id": "bo6-citadelle-symbols",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Tavern runes & book trap sequence",
+    "help": "Record six bottle runes using actual screenshot glyphs. Switch to four book pages to match trap eyes and save their observed locations.",
+    "fields": [
+      {
+        "id": "mode",
+        "label": "Puzzle stage",
+        "options": [
+          "vases",
+          "traps"
+        ]
+      },
+      {
+        "id": "vase-active",
+        "label": "Selected bottle",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "id": "page-active",
+        "label": "Selected page",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "vase-0",
+        "label": "Bottle 1",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "vase-1",
+        "label": "Bottle 2",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "vase-2",
+        "label": "Bottle 3",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "vase-3",
+        "label": "Bottle 4",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "vase-4",
+        "label": "Bottle 5",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "vase-5",
+        "label": "Bottle 6",
+        "options": [
+          "rune-1",
+          "rune-2",
+          "rune-3",
+          "rune-4",
+          "rune-5",
+          "rune-6",
+          "rune-7",
+          "rune-8",
+          "rune-9",
+          "rune-10",
+          "rune-11",
+          "rune-12",
+          "rune-13",
+          "rune-14",
+          "rune-15",
+          "rune-16",
+          "rune-17",
+          "rune-18",
+          "rune-19",
+          "rune-20"
+        ]
+      },
+      {
+        "id": "page-0",
+        "label": "Page 1",
+        "options": [
+          "eye-ring",
+          "eye",
+          "eight-rays",
+          "four-rays"
+        ]
+      },
+      {
+        "id": "page-1",
+        "label": "Page 2",
+        "options": [
+          "eye-ring",
+          "eye",
+          "eight-rays",
+          "four-rays"
+        ]
+      },
+      {
+        "id": "page-2",
+        "label": "Page 3",
+        "options": [
+          "eye-ring",
+          "eye",
+          "eight-rays",
+          "four-rays"
+        ]
+      },
+      {
+        "id": "page-3",
+        "label": "Page 4",
+        "options": [
+          "eye-ring",
+          "eye",
+          "eight-rays",
+          "four-rays"
+        ]
+      },
+      {
+        "id": "location-0",
+        "label": "Trap 1",
+        "options": [
+          "Village Ascent",
+          "Hilltop / Nature Path",
+          "Courtyard",
+          "Dungeon",
+          "Undercroft",
+          "Sitting Rooms"
+        ]
+      },
+      {
+        "id": "location-1",
+        "label": "Trap 2",
+        "options": [
+          "Village Ascent",
+          "Hilltop / Nature Path",
+          "Courtyard",
+          "Dungeon",
+          "Undercroft",
+          "Sitting Rooms"
+        ]
+      },
+      {
+        "id": "location-2",
+        "label": "Trap 3",
+        "options": [
+          "Village Ascent",
+          "Hilltop / Nature Path",
+          "Courtyard",
+          "Dungeon",
+          "Undercroft",
+          "Sitting Rooms"
+        ]
+      },
+      {
+        "id": "location-3",
+        "label": "Trap 4",
+        "options": [
+          "Village Ascent",
+          "Hilltop / Nature Path",
+          "Courtyard",
+          "Dungeon",
+          "Undercroft",
+          "Sitting Rooms"
+        ]
+      },
+      {
+        "id": "vase-done-0",
+        "label": "Rune 1 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-done-1",
+        "label": "Rune 2 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-done-2",
+        "label": "Rune 3 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-done-3",
+        "label": "Rune 4 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-done-4",
+        "label": "Rune 5 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-done-5",
+        "label": "Rune 6 accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "page-done-0",
+        "label": "Page 1 dimmed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "page-done-1",
+        "label": "Page 2 dimmed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "page-done-2",
+        "label": "Page 3 dimmed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "page-done-3",
+        "label": "Page 4 dimmed",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder",
+    "custom": true,
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/citadelle-des-morts/"
+  },
+  {
+    "id": "bo6-citadelle-knights",
+    "map": "bo6-citadelle-des-morts",
+    "name": "Knight order & four orb trials",
+    "help": "Record animals in Roman-numeral order. At each knight: matching sword equipped → matching incantation → inspect. Confirm orb trials only after retrieving the charged orb.",
+    "fields": [
+      {
+        "id": "knight-0",
+        "label": "Knight 1",
+        "options": [
+          "Dragon · Caliburn + Fire",
+          "Stag · Durendal + Electric",
+          "Raven · Balmung + Dark",
+          "Lion · Solais + Light"
+        ]
+      },
+      {
+        "id": "knight-1",
+        "label": "Knight 2",
+        "options": [
+          "Dragon · Caliburn + Fire",
+          "Stag · Durendal + Electric",
+          "Raven · Balmung + Dark",
+          "Lion · Solais + Light"
+        ]
+      },
+      {
+        "id": "knight-2",
+        "label": "Knight 3",
+        "options": [
+          "Dragon · Caliburn + Fire",
+          "Stag · Durendal + Electric",
+          "Raven · Balmung + Dark",
+          "Lion · Solais + Light"
+        ]
+      },
+      {
+        "id": "knight-3",
+        "label": "Knight 4",
+        "options": [
+          "Dragon · Caliburn + Fire",
+          "Stag · Durendal + Electric",
+          "Raven · Balmung + Dark",
+          "Lion · Solais + Light"
+        ]
+      },
+      {
+        "id": "salute-0",
+        "label": "Knight 1 saluted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "salute-1",
+        "label": "Knight 2 saluted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "salute-2",
+        "label": "Knight 3 saluted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "salute-3",
+        "label": "Knight 4 saluted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "orb-0",
+        "label": "Courtyard fire trial complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "orb-1",
+        "label": "Town Square electric trial complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "orb-2",
+        "label": "Undercroft shadow trial complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "orb-3",
+        "label": "Dining Hall light trial complete",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder"
+  },
+  {
+    "id": "bo6-tomb-symbols",
+    "map": "bo6-the-tomb",
+    "name": "Ice Staff — rock glyphs to gateway",
+    "help": "Select the three photographed rock glyphs in your match. See the matching gateway positions, verify the safe entrance and keep the escort instructions close.",
+    "fields": [
+      {
+        "id": "rock-1",
+        "label": "Forked zigzag",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-2",
+        "label": "Branch with diamond",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-3",
+        "label": "Loop with top and side marks",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-4",
+        "label": "Tall hourglass",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-5",
+        "label": "Peaked zigzag",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-6",
+        "label": "Bent hook with diamond",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-7",
+        "label": "Layered downward triangle",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rock-8",
+        "label": "Crossed hourglass",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "custom": true,
+    "reference": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/"
+  },
+  {
+    "id": "bo6-tomb-trials",
+    "map": "bo6-the-tomb",
+    "name": "Four statue trials — defense & return",
+    "help": "Each defense and its fragile return delivery are separate. Confirm the return only when the Nexus statue accepts the charge. If damaged on return, recollect at the outside statue.",
+    "fields": [
+      {
+        "id": "defense-0",
+        "label": "Vermin · Dig Site: defense finished",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "return-0",
+        "label": "Vermin · Dig Site: deposited back in Nexus",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "defense-1",
+        "label": "Parasite · Shrine of the Hierophants: defense finished",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "return-1",
+        "label": "Parasite · Shrine of the Hierophants: deposited back in Nexus",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "defense-2",
+        "label": "Doppelghast · Ossuary: defense finished",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "return-2",
+        "label": "Doppelghast · Ossuary: deposited back in Nexus",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "defense-3",
+        "label": "Amalgam · Deep Excavation: defense finished",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "return-3",
+        "label": "Amalgam · Deep Excavation: deposited back in Nexus",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "portal",
+        "label": "Open return gateway",
+        "options": [
+          "Blue · Dig Site",
+          "Yellow · Shrine of the Hierophants",
+          "Green · Ossuary",
+          "Red · Subterranean Temple"
+        ]
+      }
+    ],
+    "version": 1,
+    "kind": "tracker"
+  },
+  {
+    "id": "bo6-tomb-vases",
+    "map": "bo6-the-tomb",
+    "name": "Ten vase location checklist",
+    "help": "Keep track of the ten photographed quest vases. The final one releases Self-Revive and Light Mend; the guide contains a screenshot for every location.",
+    "fields": [
+      {
+        "id": "vase-0",
+        "label": "Dig Site — Scaffolding above the Rampage Inducer",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-1",
+        "label": "Dig Site — Above the Neolithic Catacombs doorway",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-2",
+        "label": "Roman Mausoleum / Dig Site — Above the blue Nexus gateway",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-3",
+        "label": "Tombs — Ledge right of the Shrine of the Hierophants doorway",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-4",
+        "label": "Shrine of the Hierophants — High window above Stamin-Up",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-5",
+        "label": "Subterranean Temple — Above the red Nexus gateway",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-6",
+        "label": "Subterranean Temple — Rim of the ceiling opening with the shaft of light",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-7",
+        "label": "Deep Excavation — Distant rock ledge left of Quick Revive",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-8",
+        "label": "Neolithic Catacombs — Beyond the zombie window behind the Mystery Box",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "vase-9",
+        "label": "Ossuary — Above the left doorway when entering from Catacombs",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "tracker"
+  },
+  {
+    "id": "bo6-shattered-cipher",
+    "map": "bo6-shattered-veil",
+    "name": "Nursery cipher decoder",
+    "kind": "solver",
+    "custom": true,
+    "version": 1,
+    "help": "Choose the printed protocol and copy its complete letter clusters from your current board. See every letter-to-count conversion before entering the cell code.",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/shattered-veil/",
+    "fields": [
+      {
+        "id": "word",
+        "label": "Fax protocol",
+        "options": [
+          "CRAB",
+          "YETI",
+          "MOTH",
+          "WORM"
+        ]
+      },
+      {
+        "id": "group-0",
+        "label": "Top left cluster",
+        "maxLength": 20
+      },
+      {
+        "id": "group-1",
+        "label": "Top middle cluster",
+        "maxLength": 20
+      },
+      {
+        "id": "group-2",
+        "label": "Top right cluster",
+        "maxLength": 20
+      },
+      {
+        "id": "group-3",
+        "label": "Bottom left cluster",
+        "maxLength": 20
+      },
+      {
+        "id": "group-4",
+        "label": "Bottom middle cluster",
+        "maxLength": 20
+      },
+      {
+        "id": "group-5",
+        "label": "Bottom right cluster",
+        "maxLength": 20
+      }
+    ]
+  },
+  {
+    "id": "bo6-reckoning-element",
+    "map": "bo6-reckoning",
+    "name": "Gorgofex monitor code",
+    "kind": "solver",
+    "custom": true,
+    "version": 1,
+    "help": "Record the ordered monitor words, or just their initials. Confirm whether one or two monitors are active; the helper returns the atomic number with its required leading zeros.",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/reckoning/",
+    "fields": [
+      {
+        "id": "screens",
+        "label": "Active word monitors",
+        "options": [
+          "One word",
+          "Two words"
+        ]
+      },
+      {
+        "id": "first",
+        "label": "Deadshot monitor",
+        "maxLength": 30
+      },
+      {
+        "id": "second",
+        "label": "Family-tank monitor",
+        "maxLength": 30
+      }
+    ]
+  },
+  {
+    "id": "bo6-reckoning-files",
+    "map": "bo6-reckoning",
+    "name": "S.A.M. archive order",
+    "kind": "solver",
+    "custom": true,
+    "version": 1,
+    "help": "Select exactly the four belongings in this match’s folders. See their real reference photos, chronological order and the resulting four-digit computer code.",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/reckoning/",
+    "fields": [
+      {
+        "id": "badge",
+        "label": "BND Badge",
+        "type": "check"
+      },
+      {
+        "id": "collar",
+        "label": "Notso’s Collar",
+        "type": "check"
+      },
+      {
+        "id": "scarf",
+        "label": "Scarf",
+        "type": "check"
+      },
+      {
+        "id": "watch",
+        "label": "Wristwatch",
+        "type": "check"
+      },
+      {
+        "id": "goggles",
+        "label": "Combat Goggles",
+        "type": "check"
+      },
+      {
+        "id": "katana",
+        "label": "Katana",
+        "type": "check"
+      }
+    ]
   }
 ]

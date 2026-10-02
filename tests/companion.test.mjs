@@ -104,7 +104,7 @@ test('legacy flat sidebar order becomes one category per map with its guide firs
   const order = [...guides, ...tools].map(item => item.id)
   const groups = groupNavigation(nav, [...order, 'removed-entry', order[0]])
   assert.equal(groups.length, catalogue.maps.length)
-  assert.deepEqual([...new Set(groups.map(group => group.game))], ['bo7', 'cw', 'bo4', 'bo3'])
+  assert.deepEqual([...new Set(groups.map(group => group.game))], ['bo7', 'bo6', 'cw', 'bo4', 'bo3'])
   for (const game of catalogue.games) {
     assert.deepEqual(groups.filter(group => group.game === game.id).map(group => group.id), guides.filter(item => item.game === game.id).map(item => item.id))
   }

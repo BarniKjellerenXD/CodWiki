@@ -1,7 +1,7 @@
 <template>
   <div class="tool-page" :class="{ 'tool-page-wide': wide }">
     <div class="wrap">
-      <div class="tool-nav"><NuxtLink class="backlink" :to="returnTo">← Back to the {{ mapName }} guide</NuxtLink><NuxtLink class="backlink" to="/#tools">All tools</NuxtLink></div>
+      <div class="tool-nav"><NuxtLink class="backlink" :to="returnTo">← Back to {{ mapName }} guide</NuxtLink><NuxtLink class="backlink" to="/#tools">All tools</NuxtLink></div>
 
       <div class="glass">
         <h1><span class="map">{{ mapName }}</span> <slot name="title" /></h1>

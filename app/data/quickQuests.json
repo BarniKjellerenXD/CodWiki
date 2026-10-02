@@ -3565,5 +3565,908 @@
         }
       ]
     }
+  ],
+  "bo6-liberty-falls": [
+    {
+      "id": "setup",
+      "title": "Open the town & prepare your route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-open",
+          "html": "Open church → Pack-a-Punch → interact with the S.D.G. on the right wall."
+        },
+        {
+          "id": "setup-kit",
+          "html": "Bring armor, an upgraded damage weapon and distractions for stationary objectives."
+        }
+      ]
+    },
+    {
+      "id": "jet-gun",
+      "title": "Build the Thrustodyne M23 / Jet Gun",
+      "detail": "details-jet-gun",
+      "steps": [
+        {
+          "id": "jet-valve",
+          "html": "Flower-shop valve → Liberty Lanes wall panel → hold interact → collect pressure gauge."
+        },
+        {
+          "id": "jet-brake",
+          "html": "Kill Cemetery Groundskeeper → take key → unlock yard toolshed → collect handbrake."
+        },
+        {
+          "id": "jet-wire",
+          "html": "Mangler blast opens Radio House → search floor piles → collect electrical wires."
+        },
+        {
+          "id": "jet-build",
+          "html": "All three parts → upstairs Motor Lodge workbench → build Jet Gun."
+        }
+      ]
+    },
+    {
+      "id": "ltg",
+      "title": "Collect all three LTG parts",
+      "detail": "details-ltg",
+      "steps": [
+        {
+          "id": "ltg-parts",
+          "html": "Vacuum LTG parts: Comics ceiling / Buzz’s Cuts upper window / church balcony."
+        },
+        {
+          "id": "ltg-build",
+          "html": "Craft LTG on The Alamo bank roof; open your church return route."
+        }
+      ]
+    },
+    {
+      "id": "first-capture",
+      "title": "First capture — Riverside to Pump & Pay",
+      "detail": "details-first-capture",
+      "steps": [
+        {
+          "id": "capture-place",
+          "html": "Carry S.D.G. canister to the Pump &amp; Pay trap; drop beside one ground emitter."
+        },
+        {
+          "id": "capture-defend",
+          "html": "Defend Riverside portal → weaken the named HVT → lure it to the canister."
+        },
+        {
+          "id": "capture-kill",
+          "html": "Kill HVT in active field beside canister → pick up charge → return to S.D.G. within 90 seconds."
+        }
+      ]
+    },
+    {
+      "id": "strauss",
+      "title": "Strauss Counter — calibrate three projectors",
+      "detail": "details-strauss",
+      "steps": [
+        {
+          "id": "strauss-read",
+          "html": "Read each projector with Counter; Red → Green, Green → Red, Yellow → Yellow."
+        },
+        {
+          "id": "strauss-canister",
+          "html": "Three beams meet at Pump &amp; Pay → collect second canister → retrieve Riverside LTG.",
+          "tools": [
+            "bo6-liberty-strauss"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-capture",
+      "title": "Second capture — Cemetery to Hill Street",
+      "detail": "details-second-capture",
+      "steps": [
+        {
+          "id": "capture-two",
+          "html": "Hill Street canister → Cemetery LTG defense → weaken, lure and capture the second HVT."
+        },
+        {
+          "id": "capture-return",
+          "html": "Return charged canister before timeout; resupply before the church finale."
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "Church finale — three waves",
+      "detail": "details-finale",
+      "steps": [
+        {
+          "id": "finale-ready",
+          "html": "Restock armor, ammo and equipment → all players accept the S.D.G. encounter."
+        },
+        {
+          "id": "finale-waves",
+          "html": "Wave 1 → Max Armor. Wave 2 → HVT Mangler → Max Ammo."
+        },
+        {
+          "id": "finale-finish",
+          "html": "Final wave → kill HVT Abomination → scripted down → ending."
+        }
+      ]
+    }
+  ],
+  "bo6-terminus": [
+    {
+      "id": "power",
+      "title": "Three AMP defenses & Pack-a-Punch",
+      "detail": "details-power",
+      "steps": [
+        {
+          "id": "power-amps",
+          "html": "Defend AMPs in Guard Station → Living Quarters → Bio Lab."
+        },
+        {
+          "id": "power-pap",
+          "html": "Raise submerged Bio Lab lift → Pack-a-Punch → equip Dead Wire for the free Beamsmasher."
+        }
+      ]
+    },
+    {
+      "id": "beamsmasher",
+      "title": "Open the Research Office & collect the EMF Fob",
+      "detail": "details-beamsmasher",
+      "steps": [
+        {
+          "id": "beam-boxes",
+          "html": "Dead Wire: lift window box → left wall → upper landing → Living Quarters → Rec Yard."
+        },
+        {
+          "id": "beam-fob",
+          "html": "Research Office pinned zombie → EMF Fob → Sea Tower case → Resonator onto lab terminal."
+        }
+      ]
+    },
+    {
+      "id": "lab-code",
+      "title": "Laptop symbols → three terminal entries",
+      "detail": "details-lab-code",
+      "steps": [
+        {
+          "id": "lab-laptops",
+          "html": "Activate Docks, Storage and Communications laptops; return to terminal for X/Y/Z notes."
+        },
+        {
+          "id": "lab-calculate",
+          "html": "Enter 2X+11 → 2Z+Y−5 → absolute value of Y+Z−X."
+        },
+        {
+          "id": "lab-wait",
+          "html": "Wait for scan completion → retrieve Resonator → boat to Castle Rock Island.",
+          "tools": [
+            "bo6-terminus-lab"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "island-orbs",
+      "title": "Three island orbs & AMP Munition",
+      "detail": "details-island-orbs",
+      "steps": [
+        {
+          "id": "island-blue",
+          "html": "Castle Rock: kill orb-marked blue zombies → carry their energy into the large orb."
+        },
+        {
+          "id": "island-repeat",
+          "html": "Pick up Resonator between stages: Castle Rock blue → Crab green → Temple purple → AMP Munition → craft."
+        }
+      ]
+    },
+    {
+      "id": "hard-drive",
+      "title": "Damaged Tentacle Trap & Nathan’s code",
+      "detail": "details-hard-drive",
+      "steps": [
+        {
+          "id": "hard-drive-trap",
+          "html": "Find damaged Tentacle Trap → activate and beam it → Hard Drive → Peck."
+        },
+        {
+          "id": "nathan-code",
+          "html": "Nathan code: clock hour → Mess Hall playing card → Engineering injury sign.",
+          "tools": [
+            "bo6-terminus-nathan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nathan",
+      "title": "Defeat Nathan & recover the keycard",
+      "detail": "details-nathan",
+      "steps": [
+        {
+          "id": "nathan-fight",
+          "html": "All players hold valves → defeat Nathan while circling the lab."
+        },
+        {
+          "id": "nathan-keycard",
+          "html": "Collect underwater Janus Keycard → Communications green-text computer."
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "title": "Shipwreck lockdown & two Node Connectors",
+      "detail": "details-network",
+      "steps": [
+        {
+          "id": "network-lockdown",
+          "html": "Shipwreck underside ladder → collect connector → survive lockdown."
+        },
+        {
+          "id": "network-install",
+          "html": "Repair the two empty endpoints among Docks / Sea Caves / Crab Island → collect Hacking Device."
+        }
+      ]
+    },
+    {
+      "id": "hacking",
+      "title": "Prepare once, then hack buoys & defuse bombs",
+      "detail": "details-hacking",
+      "steps": [
+        {
+          "id": "hack-prepare",
+          "html": "Resupply and stage a boat before the first buoy; bomb timer follows immediately."
+        },
+        {
+          "id": "hack-buoys",
+          "html": "Hack all three sea buoys within the two-minute sequence."
+        },
+        {
+          "id": "hack-bombs",
+          "html": "Bio Lab: defuse two lower bombs and one upper bomb before the five-minute match-ending timer."
+        }
+      ]
+    },
+    {
+      "id": "patient-13",
+      "title": "Patient 13 — weak points, cover & three phases",
+      "detail": "details-patient-13",
+      "steps": [
+        {
+          "id": "patient-ready",
+          "html": "Bombs safe → finish upgrades and ammo budget → all players accept Patient 13 entrance."
+        },
+        {
+          "id": "patient-one",
+          "html": "Phase 1: red shoulders; dodge slams/sweeps and clear specials."
+        },
+        {
+          "id": "patient-two",
+          "html": "Intermission: clear threats and refill. Phase 2: arm weak points, then glowing mouth."
+        },
+        {
+          "id": "patient-three",
+          "html": "Phase 3: blue charge means hide or dive; avoid tongue; shoot glowing eyes/active weak points."
+        }
+      ]
+    }
+  ],
+  "bo6-citadelle-des-morts": [
+    {
+      "id": "setup",
+      "title": "Open the castle, Pack-a-Punch & Krafft",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "castle-open",
+          "html": "Cannon opens castle → Oubliette crate locks → Doppelghast crystal → Pack-a-Punch."
+        },
+        {
+          "id": "castle-krafft",
+          "html": "Speak to Krafft in Dungeon; open Alchemical Lab; prepare armor and Melee Macchiato."
+        },
+        {
+          "id": "castle-stamps",
+          "html": "Round 10 onward: four Stamps → Dragon, Stag, Raven and Lion swords."
+        }
+      ]
+    },
+    {
+      "id": "dragon",
+      "title": "Caliburn — Dragon’s Fire",
+      "detail": "details-dragon",
+      "steps": [
+        {
+          "id": "dragon-flames",
+          "html": "Dragon statue → carry all three brazier flames home → collect Caliburn."
+        }
+      ]
+    },
+    {
+      "id": "stag",
+      "title": "Durendal — Stag of the Storms",
+      "detail": "details-stag",
+      "steps": [
+        {
+          "id": "stag-rods",
+          "html": "Rods: Deadshot ground pickup; Dead Wire box near Speed Cola; Dungeon zombie with Stag sword."
+        },
+        {
+          "id": "stag-storm",
+          "html": "Storm vase: charge sword → melee vase, three times → insert sword → Durendal."
+        }
+      ]
+    },
+    {
+      "id": "raven",
+      "title": "Balmung — Raven’s Shadow",
+      "detail": "details-raven",
+      "steps": [
+        {
+          "id": "raven-trophy",
+          "html": "Alchemical Lab antiquity + Raven sword → Tavern Cellar rune wheel."
+        },
+        {
+          "id": "raven-wheel",
+          "html": "Align the correct element and zodiac at six o’clock; confirm."
+        },
+        {
+          "id": "raven-orbs",
+          "html": "Guide three orbs into each of three portals → return to wheel → Balmung.",
+          "tools": [
+            "bo6-citadelle-raven"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lion",
+      "title": "Solais — Lion of Light",
+      "detail": "details-lion",
+      "steps": [
+        {
+          "id": "lion-door",
+          "html": "Four gold Parasite melee charges → four strikes on the lion door → enter."
+        },
+        {
+          "id": "lion-pedestal",
+          "html": "Pedestal displays target → shoot matching floating symbol; repeat four times → Solais."
+        }
+      ]
+    },
+    {
+      "id": "incantations",
+      "title": "Four ritual items → four incantations",
+      "detail": "details-incantations",
+      "steps": [
+        {
+          "id": "incantation-rule",
+          "html": "Item → correct ritual circle → nearby kills → matching sword opens chest."
+        },
+        {
+          "id": "incantation-fire",
+          "html": "Light three high pyres → kill spawned enemies → Ankh to Courtyard → Fire Incantation."
+        },
+        {
+          "id": "incantation-electric",
+          "html": "Stable horseshoe → ride cannon → retrieve horseshoe under storm cloud → Town Square ritual."
+        },
+        {
+          "id": "incantation-dark",
+          "html": "Shoot slide raven → shoot flying raven → talon to Undercroft ritual → Dark Incantation."
+        },
+        {
+          "id": "incantation-light",
+          "html": "Align red crystal beams → collect brooch from lab bust → Dining Hall ritual → Light Incantation."
+        }
+      ]
+    },
+    {
+      "id": "book",
+      "title": "Tavern bottles, four pages & Point of Power traps",
+      "detail": "details-book",
+      "steps": [
+        {
+          "id": "bottles",
+          "html": "Melee Macchiato wall → record bottle runes I–VI → shoot matching sequence."
+        },
+        {
+          "id": "book-pages",
+          "html": "Four Sitting Rooms page fragments → restore the Undercroft book."
+        },
+        {
+          "id": "book-traps",
+          "html": "Match and finish four traps in book order; confirm each page dims."
+        },
+        {
+          "id": "book-shortcut",
+          "html": "Optional repeat-run shortcut: read page spawn groups before collecting them.",
+          "tools": [
+            "bo6-citadelle-symbols"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knights",
+      "title": "Salute the knights & charge the Mystic Orb",
+      "detail": "details-knights",
+      "steps": [
+        {
+          "id": "knights-salute",
+          "html": "Read I–IV animal order → matching sword + incantation + inspect → take Mystic Orb."
+        },
+        {
+          "id": "orb-fire",
+          "html": "Courtyard orb: fire kills → retrieve charged orb."
+        },
+        {
+          "id": "orb-electric",
+          "html": "Town Square orb: electric kills → retrieve orb."
+        },
+        {
+          "id": "orb-dark",
+          "html": "Undercroft orb: shadow kills → retrieve orb."
+        },
+        {
+          "id": "orb-light",
+          "html": "Dining Hall orb: run through green light orbs → retrieve completed orb.",
+          "tools": [
+            "bo6-citadelle-knights"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardian",
+      "title": "Guardian key, arena preparation & boss",
+      "detail": "details-guardian",
+      "steps": [
+        {
+          "id": "guardian-key",
+          "html": "Charged orb → Secret Study → recording → Guardian Key; resupply before committing."
+        },
+        {
+          "id": "guardian-start",
+          "html": "Town Square statue key → break armor → focus glowing weak points."
+        },
+        {
+          "id": "guardian-survive",
+          "html": "Avoid red landing circles and lava; use immune phases to clear enemies and resupply."
+        },
+        {
+          "id": "guardian-end",
+          "html": "Defeat all three phases → collect amulet → ending."
+        }
+      ]
+    }
+  ],
+  "bo6-the-tomb": [
+    {
+      "id": "nexus",
+      "title": "Enter the Nexus & prepare for the Staff",
+      "detail": "details-nexus",
+      "steps": [
+        {
+          "id": "tomb-open",
+          "html": "Dig Site → Subterranean Temple pedestal → open and enter Dark Aether Nexus."
+        },
+        {
+          "id": "tomb-prep",
+          "html": "Prepare armor/bullet damage; learn blue spawn, yellow Shrine, green Ossuary and red Temple portals."
+        }
+      ]
+    },
+    {
+      "id": "staff",
+      "title": "Monocle, two constellations & Staff defense",
+      "detail": "details-staff",
+      "steps": [
+        {
+          "id": "staff-monocle",
+          "html": "Round 8 Shock Mimic → collect Monocle; enter Nexus before puzzles."
+        },
+        {
+          "id": "staff-bull",
+          "html": "Tombs lantern faces bull → shoot I–VIII → five-wave defense → Staff piece."
+        },
+        {
+          "id": "staff-archer",
+          "html": "Catacombs lantern by Crafting Table → shoot I–X → five-wave defense → Head Piece."
+        },
+        {
+          "id": "staff-build",
+          "html": "Nexus central altar → protect forming Staff → collect Staff of Ice."
+        }
+      ]
+    },
+    {
+      "id": "upgrade",
+      "title": "Ull’s Arrow — lantern sprint, three glyphs & escort",
+      "detail": "details-upgrade",
+      "steps": [
+        {
+          "id": "upgrade-lanterns",
+          "html": "Position three lanterns → freeze all three within ten seconds → listen for confirmation."
+        },
+        {
+          "id": "upgrade-rocks",
+          "html": "Staff-shoot three marked Nexus rocks; record all three glyphs."
+        },
+        {
+          "id": "upgrade-door",
+          "html": "Outside Nexus: find blocked gateway → shoot your three glyphs → check ground symbols."
+        },
+        {
+          "id": "upgrade-escort",
+          "html": "All players follow and feed the orb → central altar interaction → Ull’s Arrow.",
+          "tools": [
+            "bo6-tomb-symbols"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trials",
+      "title": "The four statue trials & fragile return charges",
+      "detail": "details-trials",
+      "steps": [
+        {
+          "id": "trials-rule",
+          "html": "Healing shot on Nexus statue → matching outside trial → carry charge back → deposit."
+        },
+        {
+          "id": "trial-vermin",
+          "html": "Vermin: Nexus → Dig Site defense → safe return → Nexus Vermin deposit."
+        },
+        {
+          "id": "trial-parasite",
+          "html": "Parasite: Shrine trial → kill purple Parasites, collect and deposit orbs → return charge."
+        },
+        {
+          "id": "trial-doppelghast",
+          "html": "Doppelghast: Ossuary defense; avoid spike circles → carry charge home."
+        },
+        {
+          "id": "trial-amalgam",
+          "html": "Amalgam: Deep Excavation; kill shield-tether zombies → finish HVT → return charge."
+        },
+        {
+          "id": "trials-retry",
+          "html": "Lost return charge? Recollect at outside statue and retry delivery; confirm each beam.",
+          "tools": [
+            "bo6-tomb-trials"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentinel",
+      "title": "Sentinel Artifact — damage windows, HVTs & final burst",
+      "detail": "details-sentinel",
+      "steps": [
+        {
+          "id": "sentinel-prep",
+          "html": "Four statue beams → bridge; prepare PaP III legendary bullet weapon and survival supplies."
+        },
+        {
+          "id": "sentinel-beams",
+          "html": "Orange/spinning = evade. Purple/stationary = focus bullet damage."
+        },
+        {
+          "id": "sentinel-hvts",
+          "html": "Kill the orange-artifact carrier → shoot dropped artifact; ignore the pale decoy."
+        },
+        {
+          "id": "sentinel-finish",
+          "html": "Final bell → shoot artifact at back wall immediately → finish health bar → ending."
+        }
+      ]
+    }
+  ],
+  "bo6-shattered-veil": [
+    {
+      "id": "setup",
+      "title": "Repair the elevator & prepare your route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "sv-elevator",
+          "html": "Library zombie → Fuse; Director’s computer → Circuit Board; repair Banquet Hall elevator."
+        },
+        {
+          "id": "sv-gear",
+          "html": "Equip Aether Shroud; reserve Brain Rot, a Kazimir, Combat Axes and an explosive."
+        }
+      ]
+    },
+    {
+      "id": "mark-ii",
+      "title": "The free Mark II & Nursery cipher",
+      "detail": "details-mark-ii",
+      "steps": [
+        {
+          "id": "sv-floppy",
+          "html": "Round 10+: Lab Technician → disk → East Foyer computer → printed protocol."
+        },
+        {
+          "id": "sv-cipher",
+          "html": "Count each protocol letter’s full cluster → cell keypad → Doppelghast arm → Armory Mark II.",
+          "tools": [
+            "bo6-shattered-cipher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canisters",
+      "title": "Three empty canisters",
+      "detail": "details-canisters",
+      "steps": [
+        {
+          "id": "sv-canister-crystals",
+          "html": "Base Mark II → four blue-crystal locations → collect one empty canister."
+        },
+        {
+          "id": "sv-canister-kazimir",
+          "html": "Kazimir in front of the Rear Patio window → collect extracted canister."
+        },
+        {
+          "id": "sv-canister-gas",
+          "html": "Read tube letter → axe the closed feed valve and matching A/B valve → explode filled tube."
+        }
+      ]
+    },
+    {
+      "id": "wraith-fire",
+      "title": "Mark II-W & the Distillery spirit",
+      "detail": "details-wraith-fire",
+      "steps": [
+        {
+          "id": "sv-w-charge",
+          "html": "Henge: beam then charge three rocks → defend siphon → Supply Depot Mark II-W."
+        },
+        {
+          "id": "sv-w-portal",
+          "html": "Banquet Hall Sconce → Juggernog lamp sequence → Distillery computer → W kills → enter painting."
+        },
+        {
+          "id": "sv-w-flask",
+          "html": "Study Bell → Overlook bar → Brain Rot zombie + ring → Flask → Distillery ritual."
+        },
+        {
+          "id": "sv-w-ritual",
+          "html": "W breaks the Mangler shield; defeat it and reclaim the Sentinel Artifact."
+        }
+      ]
+    },
+    {
+      "id": "preservation",
+      "title": "Mark II-P & the Banquet Hall spirit",
+      "detail": "details-preservation",
+      "steps": [
+        {
+          "id": "sv-p-charge",
+          "html": "Janus crates → Essence Bomb; two fountain Reflectors → bomb armor-side rubble → Serpent Mound."
+        },
+        {
+          "id": "sv-p-mirrors",
+          "html": "Reflect beam → strike source crystal → kill statue; repeat three times → Director’s Mark II-P."
+        },
+        {
+          "id": "sv-p-chalices",
+          "html": "P kills → Banquet painting → Elixir → Bottlery, Overlook and Garden Pond chalices."
+        },
+        {
+          "id": "sv-p-safe",
+          "html": "Wall pairs left to right → West Hallways safe → Antler → P ritual → reclaim Artifact."
+        }
+      ]
+    },
+    {
+      "id": "rot-blight",
+      "title": "Mark II-R & the Library spirit",
+      "detail": "details-rot-blight",
+      "steps": [
+        {
+          "id": "sv-r-seeds",
+          "html": "Burn/explode outdoor growths → collect four seeds."
+        },
+        {
+          "id": "sv-r-charge",
+          "html": "Conservatory: four seed defenses → Toxic Canister → Garden Pond R → Library portal."
+        },
+        {
+          "id": "sv-r-items",
+          "html": "Aether Shroud → collect Audio Log, Ledger and ID Badge."
+        },
+        {
+          "id": "sv-r-books",
+          "html": "Three glowing books in confirmed order → Inspection Report → R ritual → reclaim Artifact."
+        }
+      ]
+    },
+    {
+      "id": "z-rex",
+      "title": "Z-Rex — four phases",
+      "detail": "details-z-rex",
+      "steps": [
+        {
+          "id": "sv-boss-ready",
+          "html": "All three Artifacts reclaimed → upgrade, refill and activate S.A.M.’s console."
+        },
+        {
+          "id": "sv-boss-fight",
+          "html": "Use walls, avoid poison, kill adds for ammo; punish glowing eyes/flanks and safe mouth openings."
+        },
+        {
+          "id": "sv-boss-final",
+          "html": "Later phases: brief damage windows, move around walls, preserve an escape; finish Z-Rex."
+        }
+      ]
+    }
+  ],
+  "bo6-reckoning": [
+    {
+      "id": "setup",
+      "title": "Power, Pack-a-Punch & early collection",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "rec-power",
+          "html": "Executive Office snow globe → Sublevel 10 accelerator → break all crystals → Pack-a-Punch."
+        },
+        {
+          "id": "rec-early",
+          "html": "Save dropped Klaus arms; keep an explosive; plan Melee Macchiato and the spawn bucket."
+        }
+      ]
+    },
+    {
+      "id": "fowler",
+      "title": "DNA, Fowler & Teleportation Lab access",
+      "detail": "details-fowler",
+      "steps": [
+        {
+          "id": "rec-dna",
+          "html": "Geneticist keycard → Test Area fridge DNA; take the Lab’s syringe."
+        },
+        {
+          "id": "rec-fowler",
+          "html": "Beam knocks body down → draw blood → Syringe back → defeat Fowler → special Injection."
+        },
+        {
+          "id": "rec-scan",
+          "html": "Fowler Injection at Containment scanner → access Teleportation Lab."
+        }
+      ]
+    },
+    {
+      "id": "gorgofex",
+      "title": "Grow the Gorgofex",
+      "detail": "details-gorgofex",
+      "steps": [
+        {
+          "id": "rec-element",
+          "html": "Deadshot initial + family-tank initial → element atomic number → three-digit keypad."
+        },
+        {
+          "id": "rec-cyst",
+          "html": "Cyst absorbs 3 Vermin then 3 zombies → collect → drain 3 yellow Flora."
+        },
+        {
+          "id": "rec-surge",
+          "html": "Activate four surge terminals quickly → break Uber Klaus shoulders → lure onto energized panel."
+        },
+        {
+          "id": "rec-forge",
+          "html": "Defeat possessed robot and core → Cyst into orb → Gorgofex.",
+          "tools": [
+            "bo6-reckoning-element"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "klaus",
+      "title": "Build Franken-Klaus & let him work",
+      "detail": "details-klaus",
+      "steps": [
+        {
+          "id": "rec-parts",
+          "html": "Two robot arms + two Android Assembly legs → install on hanging Franken-Klaus."
+        },
+        {
+          "id": "rec-klaus-power",
+          "html": "Uber Klaus electricity → Franken-Klaus terminal → next round → finish S.A.M. trial → Teleportation Lab."
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "title": "Four S.A.M. files → chronological code",
+      "detail": "details-files",
+      "steps": [
+        {
+          "id": "rec-files",
+          "html": "Find four folders → sort dates oldest to newest → read their four file numbers."
+        },
+        {
+          "id": "rec-file-code",
+          "html": "Enter chronological file code at Teleportation Lab computer.",
+          "tools": [
+            "bo6-reckoning-files"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brain",
+      "title": "Timed brain delivery & portal crystal removal",
+      "detail": "details-brain",
+      "steps": [
+        {
+          "id": "rec-brain",
+          "html": "Melee Macchiato brain container → carry quickly to chamber beside Klaus."
+        },
+        {
+          "id": "rec-orb",
+          "html": "Boost accelerator → Gorgofex kills on 5 Quantum Vermin → absorb orb → charged portal shot."
+        }
+      ]
+    },
+    {
+      "id": "head",
+      "title": "Cleanse & feed Mortimer’s head",
+      "detail": "details-head",
+      "steps": [
+        {
+          "id": "rec-head",
+          "html": "Charged shot at Core wall opening → head → bucket under sprinkler → explosive smoke detector."
+        },
+        {
+          "id": "rec-head-feed",
+          "html": "Wash head → collect souls until purple → install in portal → confirm fungal growth."
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Four vacuum captures & the last lockdown",
+      "detail": "details-portal",
+      "steps": [
+        {
+          "id": "rec-vacuum",
+          "html": "Janus containers → special devices → capture and collect 4 floating purple objects."
+        },
+        {
+          "id": "rec-lockdown",
+          "html": "Insert 4 captures → start defense → turn each active red lever green until complete."
+        },
+        {
+          "id": "rec-final-prep",
+          "html": "Resupply before Tower 3. Help Richtofen → fight S.A.M.; help S.A.M. → fight Richtofen."
+        }
+      ]
+    },
+    {
+      "id": "tower-three",
+      "title": "Tower 3 ascent & both boss endings",
+      "detail": "details-tower-three",
+      "steps": [
+        {
+          "id": "rec-ascent",
+          "html": "Attune and choose → Vault 1 three soul canisters → Vault 2 all crystals → roof."
+        },
+        {
+          "id": "rec-sam",
+          "html": "S.A.M.: dodge beam → break glowing vents → red eye damage; complete intermission trials."
+        },
+        {
+          "id": "rec-richtofen",
+          "html": "Richtofen: shoulders → exposed core/head; then cover, smoke/Shroud and dodge jetpack attacks."
+        }
+      ]
+    }
   ]
 }

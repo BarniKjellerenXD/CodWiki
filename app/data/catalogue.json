@@ -55,6 +55,66 @@
       "interactiveMap": true
     },
     {
+      "id": "bo6-liberty-falls",
+      "name": "Liberty Falls",
+      "route": "/guides/bo6-liberty-falls",
+      "image": "/images/bo6-liberty-falls/liberty-falls.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo6-terminus",
+      "name": "Terminus",
+      "route": "/guides/bo6-terminus",
+      "image": "/images/bo6-terminus/terminus.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo6-citadelle-des-morts",
+      "name": "Citadelle des Morts",
+      "route": "/guides/bo6-citadelle-des-morts",
+      "image": "/images/bo6-citadelle-des-morts/citadelle-des-morts.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo6-the-tomb",
+      "name": "The Tomb",
+      "route": "/guides/bo6-the-tomb",
+      "image": "/images/bo6-the-tomb/the-tomb.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo6-shattered-veil",
+      "name": "Shattered Veil",
+      "route": "/guides/bo6-shattered-veil",
+      "image": "/images/bo6-shattered-veil/shattered-veil.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo6-reckoning",
+      "name": "Reckoning",
+      "route": "/guides/bo6-reckoning",
+      "image": "/images/bo6-reckoning/reckoning.webp",
+      "gameId": "bo6",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
       "id": "cw-mauer-der-toten",
       "name": "Mauer der Toten",
       "route": "/guides/cw-mauer-der-toten",
@@ -766,12 +826,114 @@
       "name": "Tag quest stage & charge tracker",
       "route": "/tools/bo4-tag-challenges",
       "kind": "tracker"
+    },
+    {
+      "id": "bo6-terminus-lab",
+      "map": "bo6-terminus",
+      "name": "Beamsmasher visual lab solver",
+      "route": "/tools/bo6-terminus-lab",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-liberty-strauss",
+      "map": "bo6-liberty-falls",
+      "name": "Strauss Counter & projector helper",
+      "route": "/tools/bo6-liberty-strauss",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-liberty-aetherella",
+      "map": "bo6-liberty-falls",
+      "name": "Aetherella photo checklist",
+      "route": "/tools/bo6-liberty-aetherella",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo6-liberty-vault",
+      "map": "bo6-liberty-falls",
+      "name": "Bank vault code recorder",
+      "route": "/tools/bo6-liberty-vault",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo6-terminus-nathan",
+      "map": "bo6-terminus",
+      "name": "Nathan’s chamber code recorder",
+      "route": "/tools/bo6-terminus-nathan",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo6-citadelle-raven",
+      "map": "bo6-citadelle-des-morts",
+      "name": "Raven sword — visual ring solution",
+      "route": "/tools/bo6-citadelle-raven",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-citadelle-symbols",
+      "map": "bo6-citadelle-des-morts",
+      "name": "Tavern runes & book trap sequence",
+      "route": "/tools/bo6-citadelle-symbols",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo6-citadelle-knights",
+      "map": "bo6-citadelle-des-morts",
+      "name": "Knight order & four orb trials",
+      "route": "/tools/bo6-citadelle-knights",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo6-tomb-symbols",
+      "map": "bo6-the-tomb",
+      "name": "Ice Staff — rock glyphs to gateway",
+      "route": "/tools/bo6-tomb-symbols",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-tomb-trials",
+      "map": "bo6-the-tomb",
+      "name": "Four statue trials — defense & return",
+      "route": "/tools/bo6-tomb-trials",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo6-tomb-vases",
+      "map": "bo6-the-tomb",
+      "name": "Ten vase location checklist",
+      "route": "/tools/bo6-tomb-vases",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo6-shattered-cipher",
+      "map": "bo6-shattered-veil",
+      "name": "Nursery cipher decoder",
+      "route": "/tools/bo6-shattered-cipher",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-reckoning-element",
+      "map": "bo6-reckoning",
+      "name": "Gorgofex monitor code",
+      "route": "/tools/bo6-reckoning-element",
+      "kind": "solver"
+    },
+    {
+      "id": "bo6-reckoning-files",
+      "map": "bo6-reckoning",
+      "name": "S.A.M. archive order",
+      "route": "/tools/bo6-reckoning-files",
+      "kind": "solver"
     }
   ],
   "games": [
     {
       "id": "bo7",
       "name": "Black Ops 7"
+    },
+    {
+      "id": "bo6",
+      "name": "Black Ops 6"
     },
     {
       "id": "cw",

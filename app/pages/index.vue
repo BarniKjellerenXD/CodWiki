@@ -38,7 +38,7 @@ function count(id:string) {
 function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
 function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
 watch(query,()=>{selected.value=0})
-useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guides, saved quest checklists and puzzle tools for Black Ops 7, Cold War, Black Ops 4 and Black Ops 3.'})
+useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guides, saved quest checklists and puzzle tools for Black Ops 7, Black Ops 6, Cold War, Black Ops 4 and Black Ops 3.'})
 </script>
 
 <template>
