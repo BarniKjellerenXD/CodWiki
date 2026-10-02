@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { evaluateTool, morseDigits } from '~/utils/expansionTools.mjs'
 import { bloodSymbols } from '~/utils/bloodOfTheDead.mjs'
+import { steadySimonPanels } from '~/utils/bloodSimon.mjs'
 const props = defineProps<{ tool: string }>()
 const { state, change, undo, reset, canUndo, saveError } = usePuzzleState(props.tool)
 const isMorse = props.tool === 'bo4-blood-morse'
 const result = computed(() => evaluateTool(props.tool, state.value))
 const confirmReset = ref(false)
+const showSymbols = computed(() => state.value['powerhouse-stage']==='symbols')
+const rememberedPanels = computed(() => steadySimonPanels(state.value))
 const cursor = ref(0)
 const activeRow = ref(0)
 const activeKind = ref<'source' | 'target'>('source')
@@ -28,12 +31,6 @@ const answerGroups = computed(() => isMorse && result.value.status==='ready' ? r
 const pulses = computed(() => answerGroups.value.flatMap((group:string,digit:number)=>[...group].map((pulse,index)=>({pulse,digit,index}))))
 watch(() => JSON.stringify(state.value), () => { cursor.value=0 })
 const hasLegacy = computed(() => [0,1,2].some(i=>state.value[`generator-${i}`] || state.value[`number-${i}`] || state.value[`monitor-${i}`]))
-const sequence = computed(() => Array.from({length:5},(_,i)=>state.value[`slot-${i}`]).filter(Boolean))
-function appendPanel(panel:string) {
-  const index=Array.from({length:5},(_,i)=>i).find(i=>!state.value[`slot-${i}`])
-  if(index!==undefined) update(`slot-${index}`,panel)
-}
-function clearSequence() { change({...state.value,...Object.fromEntries(Array.from({length:5},(_,i)=>[`slot-${i}`,'']))}) }
 function chooseSymbol(symbol:string) {
   const next={...state.value,[activeKey.value]:symbol,[`done-${activeRow.value}`]:false}
   // A new source observation invalidates its old translation, but never other rows.
@@ -76,15 +73,12 @@ const pickerId = useId()
       <details><summary>Show all ten Morse digits</summary><div class="morse-reference"><span v-for="(code,i) in morseDigits" :key="code"><b>{{ i }}</b> <code>{{ code }}</code></span></div></details>
     </template>
     <template v-else>
-      <p class="eyebrow">Power House · visual companion</p>
-      <p>Finish the Simon rounds in Building 64, then record the three steady lights. At Model Industries, interact with each matching monitor and save the replacement it actually shows.</p>
-      <details class="simon"><summary>1. Simon sequence recorder</summary>
-        <p>Assign these six buttons to the panels in your own viewing order. Optional names like “door” or “back left” help you remember. Tap buttons in the order the panels flash; repeat that sequence in-game.</p>
-        <div class="panel-grid"><div v-for="i in 6" :key="i"><label>Panel {{ i }} name<input :value="state[`panel-${i-1}`]" :aria-label="`Panel ${i} name`" maxlength="24" :placeholder="`Panel ${i}`" @input="input($event,`panel-${i-1}`)" /></label><button :disabled="sequence.length===5" @click="appendPanel(String(i))">Record {{ state[`panel-${i-1}`] || `panel ${i}` }}</button></div></div>
-        <ol v-if="sequence.length" class="sequence" aria-live="polite"><li v-for="(panel,i) in sequence" :key="i">{{ i+1 }}. {{ state[`panel-${Number(panel)-1}`] || `Panel ${panel}` }}</li></ol><p v-else class="muted">No flashes recorded for this round.</p>
-        <div class="actions"><button :disabled="!sequence.length" @click="clearSequence">Clear sequence for next round</button></div><p class="muted">Repeat for all five Simon rounds. Clearing this sequence keeps your panel names and symbol observations.</p>
-      </details>
-      <h3>2. Pair your observed symbols</h3>
+      <div class="actions"><button :aria-pressed="!showSymbols" @click="update('powerhouse-stage','simon')">Simon Says room</button><button :aria-pressed="showSymbols" @click="update('powerhouse-stage','symbols')">Symbols & levers</button></div>
+      <PuzzleBloodSimon v-if="!showSymbols" :state="state" @change="change" @symbols="update('powerhouse-stage','symbols')" />
+      <template v-else>
+      <h3>Pair your observed symbols</h3>
+      <div v-if="rememberedPanels.length" class="remembered-panels"><strong>Your steady-light positions</strong><ul><li v-for="panel in rememberedPanels" :key="panel.id"><b>{{ panel.id }}</b> · {{ panel.name }}</li></ul><p class="muted">Read the symbol at each remembered position. Map letters identify locations only.</p></div>
+      <p>After Simon Says, read the symbols beside the three steady lights. Collect the punchcard and take it to Model Industries. Interact with each matching monitor and record the replacement it actually shows.</p>
       <p class="notice">The numbers and letters name the pictures. They are <strong>not fixed translations</strong>: 1 does not automatically mean A. Select a slot below, then choose its picture.</p>
       <div class="pair-table">
         <div v-for="i in 3" :key="i" class="pair-row">
@@ -92,13 +86,13 @@ const pickerId = useId()
           <button :aria-pressed="activeRow===i-1 && activeKind==='source'" :aria-controls="pickerId" :aria-label="`Select steady symbol ${i}`" @click="selectCell(i-1,'source')"><span>Building 64</span><PuzzleBloodSymbol v-if="state[`source-${i-1}`]" :symbol="state[`source-${i-1}`]" /><span v-else class="unknown">?</span><b>{{ state[`source-${i-1}`] || 'Choose symbol' }}</b></button>
           <span class="arrow" aria-hidden="true">→</span>
           <button :aria-pressed="activeRow===i-1 && activeKind==='target'" :aria-controls="pickerId" :aria-label="`Select replacement symbol ${i}`" @click="selectCell(i-1,'target')"><span>Monitor → lever</span><PuzzleBloodSymbol v-if="state[`target-${i-1}`]" :symbol="state[`target-${i-1}`]" /><span v-else class="unknown">?</span><b>{{ state[`target-${i-1}`] || 'Choose replacement' }}</b></button>
-          <label class="lever-check"><input type="checkbox" :checked="state[`done-${i-1}`]" :disabled="result.status!=='ready'" @change="update(`done-${i-1}`,($event.target as HTMLInputElement).checked)" />Lever pulled</label>
         </div>
       </div>
       <div :id="pickerId" class="symbol-picker"><p aria-live="polite"><strong>Choosing {{ activeKind==='source' ? 'steady-light' : 'replacement' }} symbol {{ activeRow+1 }}</strong></p><div class="symbol-grid"><button v-for="symbol in symbolChoices" :key="symbol" :aria-label="`Choose ${symbol}: ${bloodSymbols[symbol].name}`" :aria-pressed="state[activeKey]===symbol" @click="chooseSymbol(symbol)"><PuzzleBloodSymbol :symbol="symbol" /><b>{{ symbol }}</b><small>{{ bloodSymbols[symbol].name }}</small></button></div><button class="clear-slot" @click="chooseSymbol('')">Clear selected slot</button></div>
-      <div class="result" :class="result.status" role="status" aria-live="polite"><strong>{{ result.message }}</strong><template v-if="result.status==='ready'"><p>At the Power House, Spirit Blast the ghost as it attempts to pull each of these levers.</p><div class="lever-targets"><div v-for="i in 3" :key="i"><PuzzleBloodSymbol :symbol="state[`target-${i-1}`]" /><b>{{ state[`target-${i-1}`] }} {{ state[`done-${i-1}`] ? '✓' : '' }}</b></div></div><p>Collect the red stone after all three successful pulls.</p></template></div>
+      <div class="result" :class="result.status" role="status" aria-live="polite"><strong>{{ result.message }}</strong><template v-if="result.status==='ready'"><p>At the Power House, Spirit Blast the ghost as it attempts to pull each of these levers.</p><div class="lever-targets"><div v-for="i in 3" :key="i"><PuzzleBloodSymbol :symbol="state[`target-${i-1}`]" /><b>{{ state[`target-${i-1}`] }}</b></div></div><p>Collect the red stone after all three successful pulls.</p></template></div>
       <details v-if="hasLegacy"><summary>Your previous text notes</summary><p v-for="i in 3" :key="i">{{ i }}: {{ state[`generator-${i-1}`] }} · {{ state[`number-${i-1}`] }} → {{ state[`monitor-${i-1}`] }}</p><p class="muted">These notes are kept for reference. Use the picture slots to record your current run.</p></details>
       <a href="https://i.imgur.com/7nSaj1u.png" target="_blank" rel="noopener noreferrer">Original r/CODZombies symbol sheet ↗</a>
+      </template>
     </template>
     <div class="actions state-actions"><button :disabled="!canUndo" @click="undo">Undo last change</button><button @click="confirmReset=!confirmReset">Reset helper</button></div>
     <div v-if="confirmReset" class="result"><p>Clear this helper’s observations? Other tools and guide progress stay saved.</p><div class="actions"><button @click="reset();confirmReset=false">Clear observations</button><button @click="confirmReset=false">Keep observations</button></div></div>
@@ -108,4 +102,8 @@ const pickerId = useId()
 </template>
 <style scoped>
 .blood-tool{color:var(--text);line-height:1.65;min-width:0}.blood-tool p{margin:.7rem 0}.eyebrow{font-size:.73rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}.blood-tool button,.blood-tool input{font:inherit}.blood-tool button{min-height:44px;padding:.55rem .8rem;border:1px solid var(--line);border-radius:7px;background:var(--surface-2);color:var(--text);cursor:pointer}.blood-tool button:hover:not(:disabled),.blood-tool button[aria-pressed=true]{border-color:var(--gold);background:var(--gold-dim)}.blood-tool button:disabled{opacity:.45;cursor:default}.blood-tool :focus-visible{outline:2px solid var(--gold);outline-offset:3px}.blood-tool input:not([type=checkbox]){width:100%;min-height:44px;padding:.55rem .7rem;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--text)}.blood-tool label{display:block;font-size:.85rem}.blood-tool label input{display:block;margin-top:.35rem}.buoy-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,235px),1fr));gap:1rem;margin:1rem 0}.buoy-card{padding:1rem;border:1px solid var(--line);border-radius:10px;background:var(--surface-2)}.buoy-card :deep(.guide-illustrations){display:block}.buoy-card :deep(figcaption){font-size:.75rem}.actions{display:flex;gap:.5rem;flex-wrap:wrap}.pulse-input{margin-top:.7rem}.pulse-input button{flex:1;padding:.4rem}.decoded{font-weight:700;color:var(--gold)}.result,.notice,.symbol-picker{padding:1rem;border:1px solid var(--line);border-radius:9px;background:var(--surface-2);margin:1rem 0}.result{border-left:3px solid var(--gold)}.result.invalid{border-left-color:#ed8b63}.answer{font-size:clamp(1.3rem,4vw,2rem);color:var(--gold)}.answer-groups{display:flex;gap:1.5rem;flex-wrap:wrap}.pulse-strip{display:flex;gap:.35rem;margin-top:.4rem}.pulse-strip>span{display:flex;flex-direction:column;align-items:center;padding:.35rem .45rem;border:1px solid var(--line);border-radius:6px;min-width:38px}.pulse-strip b{font-size:1.25rem}.pulse-strip small{font-size:.62rem}.pulse-strip .current{border-color:var(--gold);background:var(--gold-dim)}.pulse-strip .entered{opacity:.4}.current-pulse{font-weight:700}.muted{font-size:.8rem;color:var(--muted)}.morse-reference{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.6rem;margin:1rem 0}.morse-reference span{padding:.4rem;border:1px solid var(--line);border-radius:5px}.morse-reference code{letter-spacing:.15em;margin-left:.5rem}.blood-tool summary{cursor:pointer;color:var(--gold);min-height:44px;padding:.6rem 0}.blood-tool a{color:var(--gold);font-size:.8rem}.panel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem}.panel-grid button{width:100%;margin-top:.35rem}.sequence{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0}.sequence li{border:1px solid var(--gold);border-radius:6px;padding:.4rem .65rem}.pair-row{display:grid;grid-template-columns:20px 1fr 20px 1fr;gap:.5rem;align-items:center;margin-bottom:.9rem}.pair-row>button{display:flex;align-items:center;flex-direction:column;gap:.4rem;padding:.7rem .35rem}.pair-row>button>span:first-child{font-size:.72rem}.pair-row>button>b{font-size:.8rem}.pair-number{color:var(--gold);font-weight:700}.unknown{display:grid;place-items:center;width:64px;height:76px;border:1px dashed var(--line);border-radius:6px;font-size:2rem;color:var(--muted)}.pair-row .lever-check{grid-column:2/-1;display:flex;flex-direction:row;align-items:center;gap:.5rem;min-height:44px}.lever-check input{margin:0;width:19px;height:19px;accent-color:var(--gold)}.symbol-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem}.symbol-grid button{display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:.6rem .2rem}.symbol-grid small{font-size:.66rem;line-height:1.4;max-width:100px}.clear-slot{margin-top:.75rem}.lever-targets{display:flex;gap:1.5rem;margin:1rem 0}.lever-targets>div{display:flex;flex-direction:column;align-items:center;gap:.35rem}.state-actions{margin-top:1.5rem}@media(min-width:760px){.pair-row{grid-template-columns:24px 1fr 25px 1fr 110px}.pair-row .lever-check{grid-column:auto}.symbol-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+</style>
+<style scoped>
+.remembered-panels{margin:1rem 0;padding:.8rem 1rem;border-left:3px solid var(--gold);background:var(--surface-2)}.remembered-panels ul{list-style:none;padding:0;margin:.5rem 0}.remembered-panels b{color:var(--gold)}
+@media(min-width:760px){.pair-row{grid-template-columns:24px 1fr 25px 1fr}}
 </style>

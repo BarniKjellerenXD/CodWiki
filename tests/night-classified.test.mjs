@@ -20,19 +20,22 @@ test('stake maps tree sequence to observed stone locations, not fixed locations'
   assert.equal(solveStake({...state,'stone-3':'down-bar'}).status,'invalid')
   assert.equal(solveStake({...state,'tree-2':''}).status,'waiting')
 })
-test('Skadi preserves zeros and never confuses collection with accepted input',()=>{
+test('Skadi preserves zeros and produces the same code route regardless of old progress flags',()=>{
   const state={'slot-0':'0042','slot-1':'1000','slot-2':'9876','slot-3':'0000'}
   assert.equal(skadiResult(state).entries[0].code,'0042')
-  assert.match(skadiResult(state).message,/Next: enter 0042/)
-  assert.equal(skadiResult({...state,'accepted-1':true}).status,'invalid')
+  assert.equal(skadiResult(state).status,'ready')
+  assert.deepEqual(skadiResult(state).entries.map(entry=>entry.name),['Shi No Numa','Der Riese','Shangri-La','Kino der Toten'])
+  assert.deepEqual(skadiResult({...state,'accepted-1':true}),skadiResult(state))
   assert.equal(skadiResult({...state,'slot-0':'42'}).status,'invalid')
+  assert.equal(skadiResult({...state,'slot-0':''}).status,'waiting')
   const accepted={...state,...Object.fromEntries([0,1,2,3].map(i=>[`accepted-${i}`,true])),rounds:'3'}
-  assert.match(skadiResult(accepted).message,/collect the case/)
+  assert.deepEqual(skadiResult(accepted),skadiResult(state))
   const changed=updateSkadiCode(accepted,1,'0007')
+  assert.equal(changed['slot-1'],'0007')
   assert.equal(changed['accepted-0'],true)
-  assert.equal(changed['accepted-1'],false)
-  assert.equal(changed['accepted-3'],false)
-  assert.equal(changed.rounds,'0')
+  assert.equal(changed['accepted-1'],true)
+  assert.equal(changed['accepted-3'],true)
+  assert.equal(changed.rounds,'3')
 })
 test('all specialized tools have declared persisted observation fields',()=>{
   assert.equal(guides.length,2)

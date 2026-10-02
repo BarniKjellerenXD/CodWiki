@@ -265,30 +265,6 @@ const NAV = [
     "icon": "↗"
   },
   {
-    "id": "bo6-liberty-aetherella",
-    "map": "bo6-liberty-falls",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "Liberty Falls",
-    "label": "Aetherella photo checklist",
-    "url": "/tools/bo6-liberty-aetherella",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo6-liberty-vault",
-    "map": "bo6-liberty-falls",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "Liberty Falls",
-    "label": "Bank vault code recorder",
-    "url": "/tools/bo6-liberty-vault",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
     "id": "bo6-terminus",
     "map": "bo6-terminus",
     "game": "bo6",
@@ -309,18 +285,6 @@ const NAV = [
     "section": "Terminus",
     "label": "Beamsmasher visual lab solver",
     "url": "/tools/bo6-terminus-lab",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo6-terminus-nathan",
-    "map": "bo6-terminus",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "Terminus",
-    "label": "Nathan’s chamber code recorder",
-    "url": "/tools/bo6-terminus-nathan",
     "accel": null,
     "icon": "↗"
   },
@@ -361,18 +325,6 @@ const NAV = [
     "icon": "↗"
   },
   {
-    "id": "bo6-citadelle-knights",
-    "map": "bo6-citadelle-des-morts",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "Citadelle des Morts",
-    "label": "Knight order & four orb trials",
-    "url": "/tools/bo6-citadelle-knights",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
     "id": "bo6-the-tomb",
     "map": "bo6-the-tomb",
     "game": "bo6",
@@ -393,30 +345,6 @@ const NAV = [
     "section": "The Tomb",
     "label": "Ice Staff — rock glyphs to gateway",
     "url": "/tools/bo6-tomb-symbols",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo6-tomb-trials",
-    "map": "bo6-the-tomb",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "The Tomb",
-    "label": "Four statue trials — defense & return",
-    "url": "/tools/bo6-tomb-trials",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo6-tomb-vases",
-    "map": "bo6-the-tomb",
-    "game": "bo6",
-    "gameName": "Black Ops 6",
-    "kind": "tool",
-    "section": "The Tomb",
-    "label": "Ten vase location checklist",
-    "url": "/tools/bo6-tomb-vases",
     "accel": null,
     "icon": "↗"
   },
@@ -745,18 +673,6 @@ const NAV = [
     "icon": "↗"
   },
   {
-    "id": "bo4-ix-danu",
-    "map": "bo4-ix",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "IX",
-    "label": "Danu preparation & full-round log",
-    "url": "/tools/bo4-ix-danu",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
     "id": "bo4-voyage-of-despair",
     "map": "bo4-voyage-of-despair",
     "game": "bo4",
@@ -787,7 +703,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Voyage of Despair",
-    "label": "Elemental outlets & trial route",
+    "label": "Element → outlet route",
     "url": "/tools/bo4-voyage-outlets",
     "accel": null,
     "icon": "↗"
@@ -835,32 +751,8 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Blood of the Dead",
-    "label": "Power House visual companion",
+    "label": "Simon Says room map & symbol matcher",
     "url": "/tools/bo4-blood-powerhouse",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo4-blood-trials",
-    "map": "bo4-blood-of-the-dead",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "Blood of the Dead",
-    "label": "Kronorium & five-trial tracker",
-    "url": "/tools/bo4-blood-trials",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo4-blood-skulls",
-    "map": "bo4-blood-of-the-dead",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "Blood of the Dead",
-    "label": "Free Blundergat skull tracker",
-    "url": "/tools/bo4-blood-skulls",
     "accel": null,
     "icon": "↗"
   },
@@ -1039,7 +931,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Ancient Evil",
-    "label": "Oracle location finder & hand routes",
+    "label": "Oracle hand location finder",
     "url": "/tools/bo4-ancient-hands",
     "accel": null,
     "icon": "↗"
@@ -1053,18 +945,6 @@ const NAV = [
     "section": "Ancient Evil",
     "label": "Eternal Flame tribute calculator",
     "url": "/tools/bo4-ancient-tribute",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo4-ancient-theater",
-    "map": "bo4-ancient-evil",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "Ancient Evil",
-    "label": "Theater assignments & attack cues",
-    "url": "/tools/bo4-ancient-theater",
     "accel": null,
     "icon": "↗"
   },
@@ -1099,7 +979,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Alpha Omega",
-    "label": "Rushmore codes & experiment notes",
+    "label": "Rushmore code reference & observations",
     "url": "/tools/bo4-alpha-rushmore",
     "accel": null,
     "icon": "↗"
@@ -1125,18 +1005,6 @@ const NAV = [
     "section": "Tag der Toten",
     "label": "Offering & Seal photo finder",
     "url": "/tools/bo4-tag-riddles",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "bo4-tag-challenges",
-    "map": "bo4-tag-der-toten",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "Tag der Toten",
-    "label": "Tag quest stage & charge tracker",
-    "url": "/tools/bo4-tag-challenges",
     "accel": null,
     "icon": "↗"
   },
@@ -1183,7 +1051,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Classified",
-    "label": "Project Skadi pictured codes & survival",
+    "label": "Project Skadi photo codes",
     "url": "/tools/bo4-classified-codes",
     "accel": null,
     "icon": "↗"

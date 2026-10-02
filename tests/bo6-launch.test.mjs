@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
-import {terminusSymbols,terminusLabResult,straussSetting,straussRoute,aetherellaFigures,aetherellaProgress} from '../app/utils/bo6Launch.mjs'
+import {terminusSymbols,terminusLabResult,straussSetting,straussRoute,aetherellaFigures} from '../app/utils/bo6Launch.mjs'
 import {guides,tools} from '../shared/bo6-launch.mjs'
 
 test('Terminus does not fabricate a code before all observations exist',()=>{
@@ -29,18 +29,27 @@ test('every reference-symbol combination has a bounded result or explicit confli
  }
  assert.equal(ready,210);assert.equal(invalid,6)
 })
-test('Strauss inverse rule and confirmations remain tied to an observed location',()=>{
+test('Strauss derives each lamp from its local reading, independent of legacy confirmations',()=>{
  assert.equal(straussSetting('red'),'green');assert.equal(straussSetting('green'),'red');assert.equal(straussSetting('yellow'),'yellow');assert.equal(straussSetting(''),null)
  const route=straussRoute({hill:'red','hill-done':true,'yard-done':true,roof:'yellow'})
- assert.equal(route[0].target,'green');assert.equal(route[0].done,true)
- assert.equal(route[1].target,null);assert.equal(route[1].done,false)
- assert.equal(route[2].target,'yellow');assert.equal(route[2].done,false)
+ assert.equal(route[0].target,'green')
+ assert.equal(route[1].target,null)
+ assert.equal(route[2].target,'yellow')
+ assert.deepEqual(route,straussRoute({hill:'red',roof:'yellow'}))
 })
-test('Aetherella counts all nine distinct confirmed pickups without accepting truthy junk',()=>{
+test('Aetherella guide preserves all nine photographed sightlines after retiring the tracker',()=>{
  assert.equal(aetherellaFigures.length,9)
  assert.equal(new Set(aetherellaFigures.map(p=>p.id)).size,9)
- assert.deepEqual(aetherellaProgress({[aetherellaFigures[0].id]:'yes'}),{collected:0,remaining:9,complete:false})
- assert.deepEqual(aetherellaProgress(Object.fromEntries(aetherellaFigures.map(p=>[p.id,true]))),{collected:9,remaining:0,complete:true})
+ const phase=guides.find(g=>g.id==='bo6-liberty-falls').sidePhases.find(p=>p.id==='aetherella')
+ assert.ok(phase.steps.some(s=>s.id==='aetherella-route'))
+ assert.deepEqual(phase.tools,[])
+ for(const figure of aetherellaFigures){
+  const step=phase.steps.find(s=>s.id===`aetherella-${figure.id}`)
+  assert.ok(step.text.includes(figure.location),figure.id)
+  assert.equal(step.images[0].src,figure.image)
+  assert.ok(step.images[0].alt.includes(figure.name))
+ }
+ assert.ok(!tools.some(t=>['bo6-liberty-aetherella','bo6-liberty-vault','bo6-terminus-nathan'].includes(t.id)))
 })
 test('launch guides have complete authored structure and resolvable tools and illustrated landmarks',()=>{
  const toolIds=new Set(tools.map(t=>t.id))

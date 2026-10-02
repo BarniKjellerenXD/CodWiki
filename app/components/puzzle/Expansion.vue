@@ -25,7 +25,7 @@ function chooseSector(index: number) { update(`slot-${activeDart.value}`, String
       </div>
     </div>
     <div v-if="definition.visual !== 'ice'" class="observation-grid">
-      <label v-for="field in definition.fields" :key="field.id" :class="{ 'check-field': field.type === 'check' }">
+      <label v-for="field in definition.fields.filter((field:any) => !field.hidden)" :key="field.id" :class="{ 'check-field': field.type === 'check' }">
         <input v-if="field.type === 'check'" type="checkbox" :checked="state[field.id]" @change="update(field.id, ($event.target as HTMLInputElement).checked)">
         <span>{{ field.label }}</span>
         <PuzzleOriginsGlyph v-if="field.glyph !== undefined" :value="field.glyph" :label="field.label" />

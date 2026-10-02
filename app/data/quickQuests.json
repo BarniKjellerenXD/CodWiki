@@ -1642,10 +1642,7 @@
         },
         {
           "id": "danu-3",
-          "html": "Whole team on blue cracks → destroy red growth floor by floor → return teleport.",
-          "tools": [
-            "bo4-ix-danu"
-          ]
+          "html": "Whole team on blue cracks → destroy red growth floor by floor → return teleport."
         }
       ]
     },
@@ -1886,10 +1883,7 @@
         },
         {
           "id": "birds-3",
-          "html": "Read book code; enter it at Citadel; find and blast the lighthouse-marked portal.",
-          "tools": [
-            "bo4-blood-trials"
-          ]
+          "html": "Read book code; enter it at Citadel; find and blast the lighthouse-marked portal."
         }
       ]
     },
@@ -1900,7 +1894,7 @@
       "steps": [
         {
           "id": "challenges-1",
-          "html": "Building 64: finish five Simon rounds; record only the three steady-light symbols."
+          "html": "Building 64: finish five fresh Simon sequences; record only the three steady-light symbols."
         },
         {
           "id": "powerhouse-card",
@@ -2561,10 +2555,7 @@
         },
         {
           "id": "theater-2",
-          "html": "Own-color circle; stands = normal shot; floor = charged shot; grayscale = return home.",
-          "tools": [
-            "bo4-ancient-theater"
-          ]
+          "html": "Own-color circle; stands = normal shot; floor = charged shot; grayscale = return home."
         }
       ]
     },
@@ -2837,10 +2828,7 @@
         },
         {
           "id": "charges-orbs",
-          "html": "Third ritual stays in Artifact Storage → final Sunken Path Music Box → collect Seal.",
-          "tools": [
-            "bo4-tag-challenges"
-          ]
+          "html": "Third ritual stays in Artifact Storage → final Sunken Path Music Box → collect Seal."
         }
       ]
     },
@@ -3771,10 +3759,7 @@
         },
         {
           "id": "nathan-code",
-          "html": "Nathan code: clock hour → Mess Hall playing card → Engineering injury sign.",
-          "tools": [
-            "bo6-terminus-nathan"
-          ]
+          "html": "Nathan code: clock hour → Mess Hall playing card → Engineering injury sign."
         }
       ]
     },
@@ -4010,10 +3995,7 @@
         },
         {
           "id": "orb-light",
-          "html": "Dining Hall orb: run through green light orbs → retrieve completed orb.",
-          "tools": [
-            "bo6-citadelle-knights"
-          ]
+          "html": "Dining Hall orb: run through green light orbs → retrieve completed orb."
         }
       ]
     },
@@ -4133,10 +4115,7 @@
         },
         {
           "id": "trials-retry",
-          "html": "Lost return charge? Recollect at outside statue and retry delivery; confirm each beam.",
-          "tools": [
-            "bo6-tomb-trials"
-          ]
+          "html": "Lost return charge? Recollect at outside statue and retry delivery; confirm each beam."
         }
       ]
     },

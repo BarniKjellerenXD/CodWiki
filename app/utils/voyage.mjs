@@ -57,15 +57,8 @@ export function voyageClockResult(state) {
 export function voyageOutletResult(state) {
   const locations=outletOrder.map((_,i)=>state[`outlet-${i}`]).filter(Boolean)
   if(new Set(locations).size!==locations.length) return result('invalid','Two elements cannot use the same active outlet. Recheck its effect.')
-  for(let i=0;i<4;i++) {
-    if((state[`ready-${i}`]||state[`done-${i}`])&&!state[`outlet-${i}`]) return result('invalid',`Record the ${outletOrder[i]} outlet location first.`)
-    if(state[`done-${i}`]&&!state[`ready-${i}`]) return result('invalid',`Confirm the ${outletOrder[i]} circle before its trial.`)
-    if(state[`done-${i}`]&&outletOrder.slice(0,i).some((_,j)=>!state[`done-${j}`])) return result('invalid','Trials must finish Poison → Water → Electric → Fire. Correct the skipped entry.')
-  }
-  const next=outletOrder.findIndex((_,i)=>!state[`done-${i}`])
-  if(next===-1) return result('ready','All four trial artifacts recorded.',['Equip the Decayed Kraken and go to the Turbine Room pipes.'])
-  const element=outletOrder[next]
-  return result('ready',`Next trial: ${element}`,state[`ready-${next}`]?[`Gather all players at ${state[`outlet-${next}`]}, hold interact, clear the trial and collect its artifact.`]:[`Create the ${element} circle${state[`outlet-${next}`]?` at ${state[`outlet-${next}`]}`:''} with a matching Catalyst kill. One circle per round.`])
+  const route=outletOrder.map((element,i)=>`${i+1}. ${element}: ${state[`outlet-${i}`] || 'location not recorded'}`)
+  return result(locations.length===4?'ready':'waiting',locations.length===4?'Your trial route':'Record the four elemental outlet locations.',route)
 }
 export function voyageSkyResult(state) {
   const names=voyagePlanets.map(p=>p.name)

@@ -83,7 +83,7 @@ test('photographic crop coordinates stay within credited source images',()=>{
 
 test('guide and helper data retain complete references and unique progress keys',()=>{
  const toolIds=new Set(tools.map(row=>row.id))
- assert.equal(tools.length,6)
+ assert.deepEqual(tools.map(tool=>tool.id),['bo6-citadelle-raven','bo6-citadelle-symbols','bo6-tomb-symbols'])
  assert.equal(tombVases.length,10)
  for(const guide of guides){
   assert.match(guide.intro,/Standard mode/)

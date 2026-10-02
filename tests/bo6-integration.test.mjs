@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
 import { bo6Guides, bo6Tools } from '../shared/bo6-guides.mjs'
-import { normalizeTool, evaluateTool } from '../app/utils/expansionTools.mjs'
+import { normalizeTool } from '../app/utils/expansionTools.mjs'
 import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/companion.mjs'
 
 const root = new URL('../', import.meta.url)
@@ -12,15 +12,6 @@ const catalogue = read('shared/catalogue.json')
 const quick = read('app/data/quickQuests.json')
 const search = read('app/data/searchIndex.json')
 const expected = ['bo6-liberty-falls', 'bo6-terminus', 'bo6-citadelle-des-morts', 'bo6-the-tomb', 'bo6-shattered-veil', 'bo6-reckoning']
-
-test('Tomb trial progress counts completed actions, not a recorded return gateway', () => {
-  const tool = bo6Tools.find(t => t.id === 'bo6-tomb-trials')
-  const portal = {portal: 'Blue · Dig Site'}
-  assert.deepEqual(evaluateTool(tool.id, portal).lines, ['0 / 8 confirmed'])
-  const finished = Object.fromEntries(tool.fields.filter(f => f.type === 'check').map(f => [f.id, true]))
-  assert.deepEqual(evaluateTool(tool.id, finished).lines, ['8 / 8 confirmed'])
-  assert.deepEqual(evaluateTool(tool.id, {...finished, ...portal}).lines, ['8 / 8 confirmed'])
-})
 
 test('every BO6 map exposes its complete guide, saved checklist, side quests and tools in the catalogue', () => {
   assert.deepEqual(bo6Guides.map(g => g.id), expected)

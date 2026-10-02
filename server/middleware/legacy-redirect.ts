@@ -1,5 +1,6 @@
 // Legacy URL redirects: the old site served static .html files from /public.
 // These now live as Vue routes without the extension.
+import { retiredToolDestination } from '../../shared/retired-tools.mjs'
 const GUIDE_SLUGS = [
   'ashes-of-the-damned',
   'astra-malorum',
@@ -27,6 +28,8 @@ const TOOL_SLUGS = [
 
 export default defineEventHandler((event) => {
   const path = getRequestURL(event).pathname
+  const destination = retiredToolDestination(path)
+  if (destination) return sendRedirect(event, destination, 301)
   const match = path.match(/^\/(guides|tools)\/([\w-]+)\.html$/)
   if (match) {
     const [, dir, slug] = match

@@ -10,7 +10,7 @@ test('Power House requires observed replacements and does not infer a fixed tran
   const result=evaluateTool('bo4-blood-powerhouse',observed)
   assert.equal(result.status,'ready')
   assert.deepEqual(result.lines, ['1 → F — Spirit Blast at this lever','3 → B — Spirit Blast at this lever','6 → D — Spirit Blast at this lever'])
-  assert.equal(evaluateTool('bo4-blood-powerhouse',{...observed,'done-1':true}).message,'1 / 3 levers confirmed')
+  assert.deepEqual(evaluateTool('bo4-blood-powerhouse',{...observed,'done-1':true}),result)
   assert.equal(evaluateTool('bo4-blood-powerhouse',{...observed,'source-2':'1'}).status,'invalid')
   assert.equal(evaluateTool('bo4-blood-powerhouse',{...observed,'target-2':'F'}).status,'invalid')
   assert.equal(evaluateTool('bo4-blood-powerhouse',{...observed,'target-2':'Z'}).status,'waiting')
@@ -23,15 +23,6 @@ test('existing Power House notes survive alongside the new symbol slots', () => 
   assert.equal(next['slot-0'],'6')
   assert.equal(next['panel-5'],'near door')
   assert.equal(evaluateTool('bo4-blood-powerhouse',old).status,'waiting')
-})
-
-test('trial progress counts stones only and preserves leading zeros in book codes', () => {
-  const state={code:'007',assignment:'Docks','check-0':true}
-  assert.equal(evaluateTool('bo4-blood-trials',state).message,'1 / 5 stones collected')
-  assert.equal(evaluateTool('bo4-blood-trials',state).lines[0],'Citadel code: 007')
-  assert.equal(evaluateTool('bo4-blood-trials',{...state,code:'7'}).status,'invalid')
-  assert.equal(evaluateTool('bo4-blood-trials',{...state,code:'xyz'}).status,'invalid')
-  assert.equal(evaluateTool('bo4-blood-trials',{...state,...Object.fromEntries([0,1,2,3,4].map(i=>[`check-${i}`,true]))}).message,'5 / 5 stones collected')
 })
 
 test('guide retains saved quest IDs, keeps side projects out of the main run and ships all images', () => {

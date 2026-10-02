@@ -30,21 +30,15 @@ export function solveStake(state) {
 }
 
 export function skadiResult(state) {
-  const entries=skadiPictures.map((picture,i)=>({...picture,code:state[`slot-${i}`]||'',accepted:state[`accepted-${i}`]===true,index:i}))
+  const entries=skadiPictures.map((picture,i)=>({...picture,code:state[`slot-${i}`]||'',index:i}))
   if(entries.some(entry=>entry.code&&!/^\d{4}$/.test(entry.code))) return result('invalid','Each photograph has exactly four digits. Keep leading zeroes.',entries)
-  if(entries.some((entry,i)=>entry.accepted&&(!entry.code||entries.slice(0,i).some(previous=>!previous.accepted)))) return result('invalid','Acceptance must follow the shown order, with a valid code in every accepted slot.',entries)
   if(entries.some(entry=>!entry.code)) return result('waiting','Collect all four pictured codes; the screenshots show examples only.',entries)
-  const next=entries.find(entry=>!entry.accepted)
-  if(next) return result('ready',`Next: enter ${next.code} from ${next.name}; confirm only after the green acceptance light.`,entries)
-  const rounds=Number(state.rounds||0)
-  return result('ready',rounds===3?'Three full rounds recorded. Check the cleared area left of Pack-a-Punch and collect the case reward.':`Wait for PROJECT SKADI RETRIEVED, then stay at Groom Lake together. ${rounds} / 3 full rounds recorded.`,entries)
+  return result('ready','Enter these four codes in the pictured order. Wait for the green acceptance light after each code.',entries)
 }
 
 export function updateSkadiCode(state,index,value) {
-  const next={...state,[`slot-${index}`]:value,rounds:'0'}
-  // Changing a submitted clue invalidates it and every later acceptance.
-  for(let i=index;i<4;i++) next[`accepted-${i}`]=false
-  return next
+  // Older progress fields are preserved for compatibility, but never affect the code route.
+  return {...state,[`slot-${index}`]:value}
 }
 
 // Shared evaluator adapter for catalogue previews/tests; the component renders the entries as visuals.

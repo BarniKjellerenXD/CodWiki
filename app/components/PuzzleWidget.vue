@@ -25,7 +25,7 @@ const widgets:Record<string,any>={"ashes-serum":PuzzleSerum,"ashes-rocket-launch
   <AlphaTag v-else-if="['bo4-alpha-clocks','bo4-tag-riddles'].includes(tool)" :key="tool" :tool="tool" />
   <NightClassified v-else-if="['bo4-dead-of-the-night-zodiac','bo4-dead-of-the-night-alistair','bo4-dead-of-the-night-stake','bo4-classified-codes'].includes(tool)" :key="tool" :tool="tool" />
   <Bo6TerminusLab v-else-if="tool === 'bo6-terminus-lab'" :key="tool" :tool="tool" />
-  <Bo6LibertyFalls v-else-if="['bo6-liberty-strauss','bo6-liberty-aetherella'].includes(tool)" :key="tool" :tool="tool" />
+  <Bo6LibertyFalls v-else-if="tool === 'bo6-liberty-strauss'" :key="tool" :tool="tool" />
   <CastleTomb v-else-if="['bo6-citadelle-raven','bo6-citadelle-symbols','bo6-tomb-symbols'].includes(tool)" :key="tool" :tool="tool" />
   <Bo6Dlc v-else-if="['bo6-shattered-cipher','bo6-reckoning-element','bo6-reckoning-files'].includes(tool)" :key="tool" :tool="tool" />
   <Expansion v-else-if="toolDefinitions[tool]" :key="tool" :tool="tool" />

@@ -1,2 +1,5 @@
-<!-- Generated from shared/expansion-tools.mjs. -->
-<template><PuzzlePage tool="bo4-blood-skulls" /></template>
+<!-- Generated compatibility route; this activity now lives in the guide. -->
+<script setup>
+await navigateTo("/guides/bo4-blood-of-the-dead#details-blundergat", { redirectCode: 301, replace: true })
+</script>
+<template><p><NuxtLink to="/guides/bo4-blood-of-the-dead#details-blundergat">Open this section in the map guide</NuxtLink></p></template>

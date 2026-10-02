@@ -1683,9 +1683,132 @@
   {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
-    "name": "Power House visual companion",
-    "help": "Record the Simon sequence, select the three steady-light symbols, then record each replacement from the Model Industries monitors. No fixed translation is assumed.",
+    "name": "Simon Says room map & symbol matcher",
+    "help": "Tap the flashing Building 64 panels on the room map. Remember the final steady lights, then match their observed monitor replacements.",
     "fields": [
+      {
+        "id": "powerhouse-stage",
+        "label": "Helper stage",
+        "options": [
+          "simon",
+          "symbols"
+        ]
+      },
+      {
+        "id": "simon-view",
+        "label": "Map observation",
+        "options": [
+          "flashes",
+          "steady"
+        ]
+      },
+      {
+        "id": "simon-round",
+        "label": "Simon round",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "id": "simon-map-0",
+        "label": "Spatial flash 1",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "simon-map-1",
+        "label": "Spatial flash 2",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "simon-map-2",
+        "label": "Spatial flash 3",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "simon-map-3",
+        "label": "Spatial flash 4",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "simon-map-4",
+        "label": "Spatial flash 5",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      },
+      {
+        "id": "simon-steady-A",
+        "label": "Steady light at map position A",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "simon-steady-B",
+        "label": "Steady light at map position B",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "simon-steady-C",
+        "label": "Steady light at map position C",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "simon-steady-D",
+        "label": "Steady light at map position D",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "simon-steady-E",
+        "label": "Steady light at map position E",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "simon-steady-F",
+        "label": "Steady light at map position F",
+        "options": null,
+        "type": "check"
+      },
       {
         "id": "source-0",
         "label": "Steady symbol 1",
@@ -1930,106 +2053,6 @@
     "version": 1,
     "kind": "recorder",
     "evaluate": "blood-powerhouse"
-  },
-  {
-    "id": "bo4-blood-trials",
-    "map": "bo4-blood-of-the-dead",
-    "name": "Kronorium & five-trial tracker",
-    "help": "Read a fresh book code for each assignment. Check a trial only after collecting its red stone. Changing the code does not clear completed trials.",
-    "fields": [
-      {
-        "id": "code",
-        "label": "Current Kronorium code",
-        "options": null,
-        "maxLength": 3,
-        "pattern": "^\\d{3}$",
-        "inputmode": "numeric"
-      },
-      {
-        "id": "assignment",
-        "label": "Current lighthouse assignment",
-        "options": [
-          "Docks",
-          "Power House",
-          "Showers",
-          "New Industries",
-          "Michigan Avenue"
-        ]
-      },
-      {
-        "id": "check-0",
-        "label": "Docks: stone collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Power House: stone collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Showers: stone collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "New Industries: stone collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Michigan Avenue: stone collected",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "blood-trials"
-  },
-  {
-    "id": "bo4-blood-skulls",
-    "map": "bo4-blood-of-the-dead",
-    "name": "Free Blundergat skull tracker",
-    "help": "Use the shield to see each skull and the Retriever to collect it. When all five are collected, check the Warden’s Office desk.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "West Grounds — outside Model Industries stairs",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "C-D Street — cell toilet",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Roof — crate near Pack-a-Punch",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Docks — wooden pillar",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Eagle Plaza — power pole",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
   },
   {
     "id": "cw-die-variants",
@@ -2655,10 +2678,10 @@
     "version": 1,
     "id": "bo4-voyage-outlets",
     "map": "bo4-voyage-of-despair",
-    "name": "Elemental outlets & trial route",
-    "kind": "tracker",
+    "name": "Element → outlet route",
+    "kind": "recorder",
     "evaluate": "voyage-outlets",
-    "help": "Record each active outlet and create one circle per round. Complete the trials Poison → Water → Electric → Fire.",
+    "help": "Record which location sparks with each element. The pictured route puts your randomized outlets in the required trial order: Poison → Water → Electric → Fire.",
     "fields": [
       {
         "id": "outlet-0",
@@ -2761,8 +2784,24 @@
     "name": "Planet order & orb route",
     "kind": "solver",
     "evaluate": "voyage-sky",
-    "help": "Activate the nine symbols, record the model’s eight bodies and leave Sun last. Each card shows the next orb destination.",
+    "help": "Record the Cargo Hold model’s eight flashing bodies and leave Sun last. Use the photographed destinations to follow your randomized order, one orb at a time.",
     "fields": [
+      {
+        "id": "route-position",
+        "label": "Shown destination",
+        "type": "text",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
       {
         "id": "slot-0",
         "label": "Display 1",
@@ -3092,136 +3131,10 @@
     "reference": "https://www.reddit.com/r/CODZombies/wiki/ix/"
   },
   {
-    "id": "bo4-ix-danu",
-    "map": "bo4-ix",
-    "name": "Danu preparation & full-round log",
-    "help": "Keep the three waits separate: burn wood, mix fertilizer, then wait after planting at Danu. The item’s actual appearance confirms readiness. A partial placement round and a special round may not advance the wait.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Wood collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Wood placed in cauldron",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "First full burn round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Second full burn round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Ash confirmed / collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Skull ground",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Dung collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Fertilizer mixed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "First full waiting round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Second full waiting round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Fertilizer ready / collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "Fertilizer placed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-12",
-        "label": "Firebomb activation complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "wood-round",
-        "label": "wood: placed during round",
-        "options": null,
-        "maxLength": 3,
-        "inputmode": "numeric",
-        "pattern": "^\\d{1,3}$"
-      },
-      {
-        "id": "mix-round",
-        "label": "mix: placed during round",
-        "options": null,
-        "maxLength": 3,
-        "inputmode": "numeric",
-        "pattern": "^\\d{1,3}$"
-      },
-      {
-        "id": "plant-round",
-        "label": "plant: placed during round",
-        "options": null,
-        "maxLength": 3,
-        "inputmode": "numeric",
-        "pattern": "^\\d{1,3}$"
-      },
-      {
-        "id": "current-round",
-        "label": "Current round",
-        "options": null,
-        "maxLength": 3,
-        "inputmode": "numeric",
-        "pattern": "^\\d{1,3}$"
-      },
-      {
-        "id": "planted-ready",
-        "label": "Fertilizer emits green smoke",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
     "id": "bo4-ancient-hands",
     "map": "bo4-ancient-evil",
-    "name": "Oracle location finder & hand routes",
-    "help": "Choose the Oracle’s phrase to see the actual hiding-place screenshot. Track hand stages and the three upgrade pickups independently; Exalted is optional for the main quest.",
+    "name": "Oracle hand location finder",
+    "help": "Search the Oracle’s phrase to find the exact landmark and its photograph. Select the matching clue while travelling to the hand.",
     "fields": [
       {
         "id": "clue",
@@ -3450,68 +3363,6 @@
     "version": 1,
     "kind": "solver",
     "reference": "https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide"
-  },
-  {
-    "id": "bo4-ancient-theater",
-    "map": "bo4-ancient-evil",
-    "name": "Theater assignments & attack cues",
-    "help": "Give each player a Redeemed hand. Stand on your own color. Targets in the stands require normal shots; floor targets require charged shots. Return home on the grayscale cue.",
-    "fields": [
-      {
-        "id": "hand-0",
-        "label": "Gaia: player",
-        "options": null,
-        "maxLength": 40
-      },
-      {
-        "id": "hand-1",
-        "label": "Hemera: player",
-        "options": null,
-        "maxLength": 40
-      },
-      {
-        "id": "hand-2",
-        "label": "Charon: player",
-        "options": null,
-        "maxLength": 40
-      },
-      {
-        "id": "hand-3",
-        "label": "Ouranos: player",
-        "options": null,
-        "maxLength": 40
-      },
-      {
-        "id": "performance-0",
-        "label": "Successful performance 1",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "performance-1",
-        "label": "Successful performance 2",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "performance-2",
-        "label": "Successful performance 3",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "cue",
-        "label": "Current target position",
-        "options": [
-          "Stands",
-          "Floor",
-          "Grayscale",
-          "No matching circle"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "reference"
   },
   {
     "id": "bo4-dead-of-the-night-alistair",
@@ -3927,8 +3778,8 @@
   {
     "id": "bo4-classified-codes",
     "map": "bo4-classified",
-    "name": "Project Skadi pictured codes & survival",
-    "help": "Record each code by its photograph. The required order is fixed: Shi No Numa, Der Riese, Shangri-La, Kino. Confirm entries only after the machine accepts them; count three full uninterrupted Groom Lake rounds separately.",
+    "name": "Project Skadi photo codes",
+    "help": "Save the four codes from your match beside their identifying photographs. The entry strip keeps them in the required order: Shi No Numa, Der Riese, Shangri-La, Kino.",
     "fields": [
       {
         "id": "slot-0",
@@ -4108,7 +3959,7 @@
   {
     "id": "bo4-alpha-rushmore",
     "map": "bo4-alpha-omega",
-    "name": "Rushmore codes & experiment notes",
+    "name": "Rushmore code reference & observations",
     "help": "Record all personnel codes before entering 7626 → Sawyer → McCain → Pernell. Painting codes are a later, separate batch. Optional bonus codes have their own limits.",
     "fields": [
       {
@@ -4199,7 +4050,8 @@
         "id": "purpose-0",
         "label": "Extra code 1: purpose",
         "options": null,
-        "maxLength": 80
+        "maxLength": 80,
+        "hidden": true
       },
       {
         "id": "code-0",
@@ -4207,13 +4059,15 @@
         "options": null,
         "pattern": "^\\d{4}$",
         "maxLength": 4,
-        "inputmode": "numeric"
+        "inputmode": "numeric",
+        "hidden": true
       },
       {
         "id": "purpose-1",
         "label": "Extra code 2: purpose",
         "options": null,
-        "maxLength": 80
+        "maxLength": 80,
+        "hidden": true
       },
       {
         "id": "code-1",
@@ -4221,13 +4075,15 @@
         "options": null,
         "pattern": "^\\d{4}$",
         "maxLength": 4,
-        "inputmode": "numeric"
+        "inputmode": "numeric",
+        "hidden": true
       },
       {
         "id": "purpose-2",
         "label": "Extra code 3: purpose",
         "options": null,
-        "maxLength": 80
+        "maxLength": 80,
+        "hidden": true
       },
       {
         "id": "code-2",
@@ -4235,13 +4091,15 @@
         "options": null,
         "pattern": "^\\d{4}$",
         "maxLength": 4,
-        "inputmode": "numeric"
+        "inputmode": "numeric",
+        "hidden": true
       },
       {
         "id": "purpose-3",
         "label": "Extra code 4: purpose",
         "options": null,
-        "maxLength": 80
+        "maxLength": 80,
+        "hidden": true
       },
       {
         "id": "code-3",
@@ -4249,7 +4107,8 @@
         "options": null,
         "pattern": "^\\d{4}$",
         "maxLength": 4,
-        "inputmode": "numeric"
+        "inputmode": "numeric",
+        "hidden": true
       }
     ],
     "version": 1,
@@ -4317,118 +4176,6 @@
     "reference": "https://www.reddit.com/r/CODZombies/wiki/tag-der-toten/"
   },
   {
-    "id": "bo4-tag-challenges",
-    "map": "bo4-tag-der-toten",
-    "name": "Tag quest stage & charge tracker",
-    "help": "Track complete totems, the three distinct orb rituals and actual machine locations. Confirm a machine only when it returns the charged Seal.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "First full three-challenge totem complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Second full three-challenge totem complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Offering 1 collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Offering 2 collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Offering 3 collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Seal collected from safe",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Hot and cold soapstones installed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "All three generators powered / Shard collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "Lighthouse lockdown complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Beach Pack-a-Punch charge",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Lagoon Pack-a-Punch charge",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "Sunken Path Pack-a-Punch charge",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-12",
-        "label": "Boathouse Pack-a-Punch charge",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-13",
-        "label": "Golden Iceberg charge",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "ritual-0",
-        "label": "First roaming-orb ritual and campfire",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "ritual-1",
-        "label": "Second roaming-orb ritual and campfire",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "ritual-2",
-        "label": "Third room-only orb ritual and campfire",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
     "id": "bo6-terminus-lab",
     "map": "bo6-terminus",
     "name": "Beamsmasher visual lab solver",
@@ -4480,7 +4227,7 @@
     "id": "bo6-liberty-strauss",
     "map": "bo6-liberty-falls",
     "name": "Strauss Counter & projector helper",
-    "help": "Record the counter reading at each photographed projector. See the correct lamp color, then confirm the setting in game. Changing a reading clears its confirmation.",
+    "help": "Choose the counter reading at each photographed projector to see its required lamp color. Read each location separately; the projector color is the inverse of the counter.",
     "fields": [
       {
         "id": "hill",
@@ -4534,148 +4281,10 @@
     "reference": "https://www.codzombiesguides.com/main-quests/black-ops-6/liberty-falls/"
   },
   {
-    "id": "bo6-liberty-aetherella",
-    "map": "bo6-liberty-falls",
-    "name": "Aetherella photo checklist",
-    "help": "All nine Jet Gun sightlines, including the rooftop figures. Save each pickup and plan the final figure: collecting number nine transforms you immediately.",
-    "fields": [
-      {
-        "id": "comic-table",
-        "label": "Olly’s Comics · entrance table",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "comic-perk",
-        "label": "Olly’s Comics · Quick Revive",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "comic-window",
-        "label": "Olly’s Comics · boarded window",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "comic-trap",
-        "label": "Olly’s Comics · statue display",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "hill",
-        "label": "Hill Street · air conditioner",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "church",
-        "label": "Church · front window",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "lanes",
-        "label": "Liberty Lanes · sign",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "roof",
-        "label": "Fast Forward · rooftop",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "motel",
-        "label": "Motor Lodge · motel sign",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker",
-    "custom": true,
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/liberty-falls/"
-  },
-  {
-    "id": "bo6-liberty-vault",
-    "map": "bo6-liberty-falls",
-    "name": "Bank vault code recorder",
-    "help": "Read each note in your match. Enter Bank → Comics → Bowling at the vault; keep both digits, including a leading zero.",
-    "fields": [
-      {
-        "id": "bank",
-        "label": "1 · Savings & Loan reception desk",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "comics",
-        "label": "2 · Under Olly’s Comics counter",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "bowling",
-        "label": "3 · Bowling snack counter, under ice bucket",
-        "options": null,
-        "pattern": "^\\d{2}$",
-        "maxLength": 2,
-        "inputmode": "numeric"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "ordered",
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/liberty-falls/"
-  },
-  {
-    "id": "bo6-terminus-nathan",
-    "map": "bo6-terminus",
-    "name": "Nathan’s chamber code recorder",
-    "help": "Read the short clock hand, then the playing card, then the Days Since Last Injury sign. These three digits are separate from the Beamsmasher equations.",
-    "fields": [
-      {
-        "id": "clock",
-        "label": "1 · Interrogation clock hour",
-        "options": null,
-        "pattern": "^\\d$",
-        "maxLength": 1,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "card",
-        "label": "2 · Mess Hall playing card",
-        "options": null,
-        "pattern": "^\\d$",
-        "maxLength": 1,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "injury",
-        "label": "3 · Engineering injury sign",
-        "options": null,
-        "pattern": "^\\d$",
-        "maxLength": 1,
-        "inputmode": "numeric"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "ordered",
-    "reference": "https://www.codzombiesguides.com/main-quests/black-ops-6/terminus/"
-  },
-  {
     "id": "bo6-citadelle-raven",
     "map": "bo6-citadelle-des-morts",
     "name": "Raven sword — visual ring solution",
-    "help": "Choose your actual antiquity and see the exact element and zodiac images to align at the bottom pointer. Track all three orb portals afterward.",
+    "help": "Choose your actual antiquity and see the exact element and zodiac images to align at the bottom pointer.",
     "fields": [
       {
         "id": "trophy",
@@ -5059,104 +4668,6 @@
     "reference": "https://www.reddit.com/r/CODZombies/wiki/citadelle-des-morts/"
   },
   {
-    "id": "bo6-citadelle-knights",
-    "map": "bo6-citadelle-des-morts",
-    "name": "Knight order & four orb trials",
-    "help": "Record animals in Roman-numeral order. At each knight: matching sword equipped → matching incantation → inspect. Confirm orb trials only after retrieving the charged orb.",
-    "fields": [
-      {
-        "id": "knight-0",
-        "label": "Knight 1",
-        "options": [
-          "Dragon · Caliburn + Fire",
-          "Stag · Durendal + Electric",
-          "Raven · Balmung + Dark",
-          "Lion · Solais + Light"
-        ]
-      },
-      {
-        "id": "knight-1",
-        "label": "Knight 2",
-        "options": [
-          "Dragon · Caliburn + Fire",
-          "Stag · Durendal + Electric",
-          "Raven · Balmung + Dark",
-          "Lion · Solais + Light"
-        ]
-      },
-      {
-        "id": "knight-2",
-        "label": "Knight 3",
-        "options": [
-          "Dragon · Caliburn + Fire",
-          "Stag · Durendal + Electric",
-          "Raven · Balmung + Dark",
-          "Lion · Solais + Light"
-        ]
-      },
-      {
-        "id": "knight-3",
-        "label": "Knight 4",
-        "options": [
-          "Dragon · Caliburn + Fire",
-          "Stag · Durendal + Electric",
-          "Raven · Balmung + Dark",
-          "Lion · Solais + Light"
-        ]
-      },
-      {
-        "id": "salute-0",
-        "label": "Knight 1 saluted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "salute-1",
-        "label": "Knight 2 saluted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "salute-2",
-        "label": "Knight 3 saluted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "salute-3",
-        "label": "Knight 4 saluted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "orb-0",
-        "label": "Courtyard fire trial complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "orb-1",
-        "label": "Town Square electric trial complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "orb-2",
-        "label": "Undercroft shadow trial complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "orb-3",
-        "label": "Dining Hall light trial complete",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder"
-  },
-  {
     "id": "bo6-tomb-symbols",
     "map": "bo6-the-tomb",
     "name": "Ice Staff — rock glyphs to gateway",
@@ -5215,144 +4726,6 @@
     "kind": "solver",
     "custom": true,
     "reference": "https://codzombiesguides.com/main-quests/black-ops-6/the-tomb/"
-  },
-  {
-    "id": "bo6-tomb-trials",
-    "map": "bo6-the-tomb",
-    "name": "Four statue trials — defense & return",
-    "help": "Each defense and its fragile return delivery are separate. Confirm the return only when the Nexus statue accepts the charge. If damaged on return, recollect at the outside statue.",
-    "fields": [
-      {
-        "id": "defense-0",
-        "label": "Vermin · Dig Site: defense finished",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "return-0",
-        "label": "Vermin · Dig Site: deposited back in Nexus",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "defense-1",
-        "label": "Parasite · Shrine of the Hierophants: defense finished",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "return-1",
-        "label": "Parasite · Shrine of the Hierophants: deposited back in Nexus",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "defense-2",
-        "label": "Doppelghast · Ossuary: defense finished",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "return-2",
-        "label": "Doppelghast · Ossuary: deposited back in Nexus",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "defense-3",
-        "label": "Amalgam · Deep Excavation: defense finished",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "return-3",
-        "label": "Amalgam · Deep Excavation: deposited back in Nexus",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "portal",
-        "label": "Open return gateway",
-        "options": [
-          "Blue · Dig Site",
-          "Yellow · Shrine of the Hierophants",
-          "Green · Ossuary",
-          "Red · Subterranean Temple"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "bo6-tomb-vases",
-    "map": "bo6-the-tomb",
-    "name": "Ten vase location checklist",
-    "help": "Keep track of the ten photographed quest vases. The final one releases Self-Revive and Light Mend; the guide contains a screenshot for every location.",
-    "fields": [
-      {
-        "id": "vase-0",
-        "label": "Dig Site — Scaffolding above the Rampage Inducer",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-1",
-        "label": "Dig Site — Above the Neolithic Catacombs doorway",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-2",
-        "label": "Roman Mausoleum / Dig Site — Above the blue Nexus gateway",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-3",
-        "label": "Tombs — Ledge right of the Shrine of the Hierophants doorway",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-4",
-        "label": "Shrine of the Hierophants — High window above Stamin-Up",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-5",
-        "label": "Subterranean Temple — Above the red Nexus gateway",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-6",
-        "label": "Subterranean Temple — Rim of the ceiling opening with the shaft of light",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-7",
-        "label": "Deep Excavation — Distant rock ledge left of Quick Revive",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-8",
-        "label": "Neolithic Catacombs — Beyond the zombie window behind the Mystery Box",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "vase-9",
-        "label": "Ossuary — Above the left doorway when entering from Catacombs",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
   },
   {
     "id": "bo6-shattered-cipher",

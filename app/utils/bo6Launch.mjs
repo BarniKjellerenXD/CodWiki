@@ -24,7 +24,7 @@ export const straussProjectors=[
 ]
 export const straussReadings=[{value:'red',name:'Red · High'},{value:'yellow',name:'Yellow · Medium'},{value:'green',name:'Green · Low'}]
 export function straussSetting(reading) { return ({red:'green',yellow:'yellow',green:'red'})[reading]||null }
-export function straussRoute(state={}) {return straussProjectors.map(p=>({...p,reading:straussReadings.find(r=>r.value===state[p.id])?.name||'',target:straussSetting(state[p.id]),done:state[`${p.id}-done`]===true&&!!straussSetting(state[p.id])}))}
+export function straussRoute(state={}) {return straussProjectors.map(p=>({...p,reading:straussReadings.find(r=>r.value===state[p.id])?.name||'',target:straussSetting(state[p.id])}))}
 export const aetherellaFigures=[
   {id:'comic-table',name:'Olly’s Comics · entrance table',location:'Inside the shop, on the table just right of the door.',image:'aetherella-1.jpeg'},
   {id:'comic-perk',name:'Olly’s Comics · Quick Revive',location:'Look up at the shelf above Quick Revive.',image:'aetherella-2.png'},
@@ -36,4 +36,3 @@ export const aetherellaFigures=[
   {id:'roof',name:'Fast Forward · rooftop',location:'Drop from The Alamo to Yummy Freeze’s roof; aim across to the figure between the air-conditioning units on Fast Forward.',image:'aetherella-8.jpeg'},
   {id:'motel',name:'Motor Lodge · motel sign',location:'Stand beside the motel and aim up at the figure on the ledge of the red MOTEL sign.',image:'aetherella-9.jpeg'}
 ].map(p=>({...p,image:`/images/bo6-liberty-falls/${p.image}`}))
-export function aetherellaProgress(state={}) {const collected=aetherellaFigures.filter(p=>state[p.id]===true).length;return {collected,remaining:9-collected,complete:collected===9}}

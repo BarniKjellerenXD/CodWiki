@@ -3,6 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { games, expansionGuides } from '../shared/expansion-guides.mjs'
 import { expansionTools } from '../shared/expansion-tools.mjs'
+import { retiredTools } from '../shared/retired-tools.mjs'
 import * as references from '../shared/expansion-references.mjs'
 const root = fileURLToPath(new URL('../', import.meta.url))
 const read = name => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'))
@@ -37,4 +38,8 @@ for (const guide of expansionGuides) {
   write(`app/pages/guides/${guide.id}.vue`, `<!-- Generated from shared/expansion-guides.mjs. -->\n<script setup>\nimport Content from '~/components/guide/${guide.id}.vue'\n</script>\n<template><GuideArticle title="${escape(guide.name)}" map-name="${escape(game.name)}${guide.group === 'chronicles' ? ' · Zombies Chronicles' : ''}" storage-key="guide-pins-${guide.id}" quest-label="${escape(guide.questLabel || 'Main quest')}"><template #intro>${guide.image ? `<img class="expansion-cover" src="${escape(guide.image)}" alt="${escape(guide.name)} artwork" width="1200" height="400" fetchpriority="high" />` : ''}<p>${escape(guide.intro)}</p>${parent}${links}</template><Content /></GuideArticle></template>\n`)
 }
 for (const tool of expansionTools) write(`app/pages/tools/${tool.id}.vue`, `<!-- Generated from shared/expansion-tools.mjs. -->\n<template><PuzzlePage tool="${tool.id}" /></template>\n`)
+for (const [id, destination] of Object.entries(retiredTools)) {
+  if (expansionTools.some(tool => tool.id === id)) throw new Error(`Retired tool is still active: ${id}`)
+  write(`app/pages/tools/${id}.vue`, `<!-- Generated compatibility route; this activity now lives in the guide. -->\n<script setup>\nawait navigateTo(${JSON.stringify(destination)}, { redirectCode: 301, replace: true })\n</script>\n<template><p><NuxtLink to="${escape(destination)}">Open this section in the map guide</NuxtLink></p></template>\n`)
+}
 write('app/data/quickQuests.json', json(quests))

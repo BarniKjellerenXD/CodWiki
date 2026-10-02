@@ -74,11 +74,23 @@ test('authored guides have real local images, valid own tools and unique saved p
   for(const tool of tools)assert.equal(new Set(tool.fields.map(field=>field.id)).size,tool.fields.length,tool.id)
 })
 
-test('Tag machine tracker names four normal machines separately from Golden and three rituals',()=>{
-  const tracker=tools.find(tool=>tool.id==='bo4-tag-challenges')
-  const fields=Object.fromEntries(tracker.fields.map(field=>[field.id,field.label]))
-  for(const [id,place] of [['check-9','Beach'],['check-10','Lagoon'],['check-11','Sunken Path'],['check-12','Boathouse'],['check-13','Golden']])assert.ok(fields[id].includes(place))
-  assert.ok(fields['ritual-0'].includes('First'))
-  assert.ok(fields['ritual-1'].includes('Second'))
-  assert.ok(fields['ritual-2'].includes('Third'))
+test('Tag charge instructions stay in the guide after retiring its duplicate tracker',()=>{
+  assert.ok(!tools.some(tool=>tool.id==='bo4-tag-challenges'))
+  const guide=guides.find(guide=>guide.id==='bo4-tag-der-toten')
+  const charges=guide.phases.find(phase=>phase.id==='charges')
+  const text=charges.steps.map(step=>`${step.text} ${step.note||''}`).join(' ')
+  for(const place of ['Beach','Lagoon','Sunken Path','Boathouse','Golden Iceberg'])assert.ok(text.includes(place))
+  assert.equal(charges.tools.length,0)
+})
+
+test('Rushmore hides old generic fields while preserving their saved-state declarations',()=>{
+  const fields=tools.find(tool=>tool.id==='bo4-alpha-rushmore').fields
+  const visible=fields.filter(field=>!field.hidden)
+  assert.equal(visible.length,7)
+  for(let i=0;i<4;i++) {
+    assert.equal(fields.find(field=>field.id===`purpose-${i}`).hidden,true)
+    assert.equal(fields.find(field=>field.id===`code-${i}`).hidden,true)
+  }
+  assert.ok(visible.some(field=>field.id==='personnel-0'))
+  assert.ok(visible.some(field=>field.id==='painting-2'))
 })

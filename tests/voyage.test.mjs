@@ -32,14 +32,16 @@ test('old mislabelled clock observations survive but never become inferred Air/E
   assert.equal(evaluateTool('bo4-voyage-clocks',old).status,'waiting')
 })
 
-test('outlet creation order is independent of mandatory trial order',()=>{
+test('outlet observations create the fixed trial route without consulting old progress flags',()=>{
   const fire={'outlet-3':'Dining Hall','ready-3':true}
-  assert.match(evaluateTool('bo4-voyage-outlets',fire).message,/Poison/)
-  assert.equal(evaluateTool('bo4-voyage-outlets',{...fire,'done-3':true}).status,'invalid')
+  assert.equal(evaluateTool('bo4-voyage-outlets',fire).status,'waiting')
+  assert.match(evaluateTool('bo4-voyage-outlets',fire).lines[3],/Fire: Dining Hall/)
+  assert.deepEqual(evaluateTool('bo4-voyage-outlets',{...fire,'done-3':true}),evaluateTool('bo4-voyage-outlets',fire))
   assert.equal(evaluateTool('bo4-voyage-outlets',{...fire,'outlet-0':'Dining Hall'}).status,'invalid')
-  assert.equal(evaluateTool('bo4-voyage-outlets',{'done-0':true,'outlet-0':'Aft Decks'}).status,'invalid')
+  assert.equal(evaluateTool('bo4-voyage-outlets',{'done-0':true,'outlet-0':'Aft Decks'}).status,'waiting')
   const done=Object.fromEntries(outletLocations.slice(0,4).flatMap((r,i)=>[[`outlet-${i}`,r.name],[`ready-${i}`,true],[`done-${i}`,true]]))
-  assert.match(evaluateTool('bo4-voyage-outlets',done).lines[0],/Decayed Kraken/)
+  assert.equal(evaluateTool('bo4-voyage-outlets',done).status,'ready')
+  assert.deepEqual(evaluateTool('bo4-voyage-outlets',done).lines,outletLocations.slice(0,4).map((r,i)=>`${i+1}. ${['Poison','Water','Electric','Fire'][i]}: ${r.name}`))
   assert.equal(normalizeTool('bo4-voyage-outlets',{'ready-0':'true'})['ready-0'],false)
 })
 
@@ -52,6 +54,8 @@ test('planet route rejects sequence gaps and duplicates, fixes Sun last and reta
   assert.equal(evaluateTool('bo4-voyage-sky',{...state,'slot-3':'Mercury'}).status,'invalid')
   assert.equal(evaluateTool('bo4-voyage-sky',{...state,'slot-8':'Venus'}).status,'invalid')
   assert.equal(normalizeTool('bo4-voyage-sky',{'found-Neptune':true,'orb-0':true})['found-Neptune'],true)
+  assert.equal(normalizeTool('bo4-voyage-sky',{'route-position':'8'})['route-position'],'8')
+  assert.equal(normalizeTool('bo4-voyage-sky',{'route-position':'9'})['route-position'],'')
 })
 
 test('Voyage preserves original progress IDs and ships every referenced location image',()=>{

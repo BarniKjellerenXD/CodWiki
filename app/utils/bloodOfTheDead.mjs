@@ -20,5 +20,5 @@ export function powerHouseResult(state) {
     if (new Set(recorded).size !== recorded.length) return { status:'invalid', message:`A ${key === 'source' ? 'steady-light' : 'replacement'} symbol is repeated. Recheck the observations.`, lines:[] }
   }
   if(rows.some(row=>!row.source || !row.target)) return {status:'waiting',message:'Record three steady-light symbols and their observed monitor replacements.',lines:[]}
-  return {status:'ready',message:`${rows.filter(row=>row.done).length} / 3 levers confirmed`,lines:rows.map(row=>`${row.source} → ${row.target}${row.done ? ' — pulled' : ' — Spirit Blast at this lever'}`)}
+  return {status:'ready',message:'Your observed lever symbols',lines:rows.map(row=>`${row.source} → ${row.target} — Spirit Blast at this lever`)}
 }

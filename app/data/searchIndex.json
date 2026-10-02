@@ -6672,24 +6672,8 @@
   {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
-    "name": "Power House visual companion",
+    "name": "Simon Says room map & symbol matcher",
     "route": "/tools/bo4-blood-powerhouse",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
-  },
-  {
-    "id": "bo4-blood-trials",
-    "map": "bo4-blood-of-the-dead",
-    "name": "Kronorium & five-trial tracker",
-    "route": "/tools/bo4-blood-trials",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
-  },
-  {
-    "id": "bo4-blood-skulls",
-    "map": "bo4-blood-of-the-dead",
-    "name": "Free Blundergat skull tracker",
-    "route": "/tools/bo4-blood-skulls",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
   },
@@ -6736,7 +6720,7 @@
   {
     "id": "bo4-voyage-outlets",
     "map": "bo4-voyage-of-despair",
-    "name": "Elemental outlets & trial route",
+    "name": "Element → outlet route",
     "route": "/tools/bo4-voyage-outlets",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
@@ -6758,17 +6742,9 @@
     "keywords": "bo4 Black Ops 4 IX solver tracker"
   },
   {
-    "id": "bo4-ix-danu",
-    "map": "bo4-ix",
-    "name": "Danu preparation & full-round log",
-    "route": "/tools/bo4-ix-danu",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 IX solver tracker"
-  },
-  {
     "id": "bo4-ancient-hands",
     "map": "bo4-ancient-evil",
-    "name": "Oracle location finder & hand routes",
+    "name": "Oracle hand location finder",
     "route": "/tools/bo4-ancient-hands",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
@@ -6778,14 +6754,6 @@
     "map": "bo4-ancient-evil",
     "name": "Eternal Flame tribute calculator",
     "route": "/tools/bo4-ancient-tribute",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
-  },
-  {
-    "id": "bo4-ancient-theater",
-    "map": "bo4-ancient-evil",
-    "name": "Theater assignments & attack cues",
-    "route": "/tools/bo4-ancient-theater",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
   },
@@ -6816,7 +6784,7 @@
   {
     "id": "bo4-classified-codes",
     "map": "bo4-classified",
-    "name": "Project Skadi pictured codes & survival",
+    "name": "Project Skadi photo codes",
     "route": "/tools/bo4-classified-codes",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Classified solver tracker"
@@ -6832,7 +6800,7 @@
   {
     "id": "bo4-alpha-rushmore",
     "map": "bo4-alpha-omega",
-    "name": "Rushmore codes & experiment notes",
+    "name": "Rushmore code reference & observations",
     "route": "/tools/bo4-alpha-rushmore",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Alpha Omega solver tracker"
@@ -6842,14 +6810,6 @@
     "map": "bo4-tag-der-toten",
     "name": "Offering & Seal photo finder",
     "route": "/tools/bo4-tag-riddles",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
-  },
-  {
-    "id": "bo4-tag-challenges",
-    "map": "bo4-tag-der-toten",
-    "name": "Tag quest stage & charge tracker",
-    "route": "/tools/bo4-tag-challenges",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
   },
@@ -6870,30 +6830,6 @@
     "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
   },
   {
-    "id": "bo6-liberty-aetherella",
-    "map": "bo6-liberty-falls",
-    "name": "Aetherella photo checklist",
-    "route": "/tools/bo6-liberty-aetherella",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
-  },
-  {
-    "id": "bo6-liberty-vault",
-    "map": "bo6-liberty-falls",
-    "name": "Bank vault code recorder",
-    "route": "/tools/bo6-liberty-vault",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 Liberty Falls solver tracker"
-  },
-  {
-    "id": "bo6-terminus-nathan",
-    "map": "bo6-terminus",
-    "name": "Nathan’s chamber code recorder",
-    "route": "/tools/bo6-terminus-nathan",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 Terminus solver tracker"
-  },
-  {
     "id": "bo6-citadelle-raven",
     "map": "bo6-citadelle-des-morts",
     "name": "Raven sword — visual ring solution",
@@ -6910,34 +6846,10 @@
     "keywords": "bo6 Black Ops 6 Citadelle des Morts solver tracker"
   },
   {
-    "id": "bo6-citadelle-knights",
-    "map": "bo6-citadelle-des-morts",
-    "name": "Knight order & four orb trials",
-    "route": "/tools/bo6-citadelle-knights",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 Citadelle des Morts solver tracker"
-  },
-  {
     "id": "bo6-tomb-symbols",
     "map": "bo6-the-tomb",
     "name": "Ice Staff — rock glyphs to gateway",
     "route": "/tools/bo6-tomb-symbols",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
-  },
-  {
-    "id": "bo6-tomb-trials",
-    "map": "bo6-the-tomb",
-    "name": "Four statue trials — defense & return",
-    "route": "/tools/bo6-tomb-trials",
-    "kind": "Tool",
-    "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
-  },
-  {
-    "id": "bo6-tomb-vases",
-    "map": "bo6-the-tomb",
-    "name": "Ten vase location checklist",
-    "route": "/tools/bo6-tomb-vases",
     "kind": "Tool",
     "keywords": "bo6 Black Ops 6 The Tomb solver tracker"
   },

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { raSymbols, dormantHands, hands, danuStages, danuWait, tributeResult } from '~/utils/chaosTools.mjs'
+import { raSymbols, dormantHands, tributeResult } from '~/utils/chaosTools.mjs'
 import RaGlyph from './RaGlyph.vue'
 const props = defineProps<{ tool: string }>()
 const { state, change, undo, reset, canUndo, saveError } = usePuzzleState(props.tool)
@@ -11,13 +11,7 @@ const clue = computed(() => dormantHands.find(item => item.clue === state.value.
 const tribute = computed(() => tributeResult(state.value))
 const completeSequence = computed(() => [0, 1, 2, 3].every(i => state.value[`slot-${i}`]))
 const nextTarget = computed(() => [0, 1, 2, 3].find(i => !state.value[`done-${i}`]))
-const danuChecks = [
-  [{id:'check-0',label:'Wood collected'},{id:'check-1',label:'Wood placed over cauldron'},{id:'check-4',label:'Charred wood collected'}],
-  [{id:'check-5',label:'Bone meal collected'},{id:'check-6',label:'Dung collected'},{id:'check-7',label:'All ingredients mixed'},{id:'check-10',label:'Ready fertilizer collected'}],
-  [{id:'check-11',label:'Fertilizer planted'},{id:'planted-ready',label:'Green smoke visible'},{id:'check-12',label:'Fire Bomb caused blue cracks'}]
-]
 const rewardTiers = [{id:'common',name:'Common',value:'0.5'}, {id:'rare',name:'Rare',value:'1'}, {id:'legendary',name:'Legendary',value:'4'}, {id:'epic',name:'Epic',value:'6'}]
-const attackCues:Record<string,string> = { Stands: 'Use a NORMAL shot at your colored zombies in the stands.', Floor: 'Use a CHARGED shot at your colored zombies on the floor.', Grayscale: 'Return to your HOME circle at the entrance.', 'No matching circle': 'Stay on your HOME circle until your hand is called.' }
 function update(key:string, value:string|boolean) { change({ ...state.value, [key]:value }) }
 function input(event:Event, key:string) { update(key, (event.target as HTMLInputElement).value) }
 function chooseGlyph(name:string) {
@@ -69,21 +63,6 @@ function resetAll() { reset(); activeSlot.value = 0; confirmReset.value = false 
       <p class="p-muted">Glyph chart: <a href="https://www.reddit.com/r/CODZombies/wiki/ix/" target="_blank" rel="noopener noreferrer">r/CODZombies IX community guide</a>.</p>
     </template>
 
-    <template v-else-if="tool === 'bo4-ix-danu'">
-      <p class="eyebrow">Three separate waits · trust the visual readiness cue</p>
-      <label class="round-input">Current round<input type="text" inputmode="numeric" maxlength="3" :value="state['current-round']" placeholder="e.g. 15" @input="input($event,'current-round')" /></label>
-      <div class="danu-grid">
-        <section v-for="(stage,index) in danuStages" :key="stage.id" class="chaos-card">
-          <h3>{{ index+1 }}. {{ stage.title }}</h3><p class="p-muted">{{ stage.location }}</p>
-          <label>Placed during round<input type="text" inputmode="numeric" maxlength="3" :value="state[`${stage.id}-round`]" placeholder="Round" @input="input($event,`${stage.id}-round`)" /></label>
-          <p class="wait-cue" aria-live="polite">{{ danuWait(stage.id,state[`${stage.id}-round`],state['current-round']) }}</p>
-          <label v-for="item in danuChecks[index]" :key="item.id" class="check-line"><input type="checkbox" :checked="state[item.id]" @change="update(item.id,!state[item.id])" />{{ item.label }}</label>
-        </section>
-      </div>
-      <p class="p-result">After the blue cracks appear, gather every player on them for about 15 seconds. In the defense, destroy the red tree growth and move upstairs when each floor opens.</p>
-      <p class="p-muted">The round estimate excludes your partial placement round. Special rounds and the bowl’s readiness can vary; no checkbox here advances the game.</p>
-    </template>
-
     <template v-else-if="tool === 'bo4-ancient-hands'">
       <p class="eyebrow">Find a Dormant Hand from the Oracle’s clue</p>
       <label>Search a word from the clue<input v-model="search" type="search" placeholder="e.g. serpent, fountain, purple" /></label>
@@ -91,16 +70,8 @@ function resetAll() { reset(); activeSlot.value = 0; confirmReset.value = false 
       <p v-if="!clueChoices.length" class="p-muted">No matching clue. Try a shorter word or clear the search.</p>
       <div v-if="clue" class="clue-result" aria-live="polite"><strong>{{ clue.location }}</strong><p>Melee the purple-glowing object, then pick up the hand. Any Dormant Hand can be used at any god’s shrine.</p><GuideIllustrations :images="[{src:clue.image,alt:clue.location}]" /></div>
       <p v-else class="p-muted">Enable subtitles and listen near the Oracle in the Temple of Apollo. She repeats a clue until that hand is found.</p>
-      <div class="hands-grid">
-        <section v-for="(hand,i) in hands" :key="hand.name" class="chaos-card hand-card" :style="{'--hand-color':hand.color}">
-          <h3><span class="color-dot" aria-hidden="true"></span>{{ hand.name }}</h3><p class="p-muted">{{ hand.shrine }}</p>
-          <p class="hand-requirement">{{ hand.need }}</p>
-          <div class="stage-checks"><label v-for="(stage,j) in ['Fallen','Redeemed','Exalted']" :key="stage" class="check-line"><input type="checkbox" :checked="state[`check-${i*3+j}`]" @change="update(`check-${i*3+j}`,!state[`check-${i*3+j}`])" />{{ stage }}</label></div>
-          <details><summary>Redeemed route and pickup checklist</summary><p>{{ hand.action }}</p><label v-for="(task,j) in hand.tasks" :key="task" class="check-line"><input type="checkbox" :checked="state[`part-${i}-${j}`]" @change="update(`part-${i}-${j}`,!state[`part-${i}-${j}`])" />{{ task }}</label></details>
-          <p class="p-muted">Optional Exalted shrine charge: {{ hand.catalyst }} Catalyst.</p>
-        </section>
-      </div>
-      <p class="p-muted">Location screenshots: <a href="https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide" target="_blank" rel="noopener noreferrer">mmmrkennedy’s Ancient Evil guide</a>. Exalted is optional; every player needs a Redeemed hand for theater.</p>
+      <p class="p-muted">Any Dormant Hand can be taken to any god’s shrine. <NuxtLink to="/guides/bo4-ancient-evil#details-hands">Open the hand upgrade instructions →</NuxtLink></p>
+      <p class="p-muted">Location screenshots: <a href="https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide" target="_blank" rel="noopener noreferrer">mmmrkennedy’s Ancient Evil guide</a>.</p>
     </template>
 
     <template v-else-if="tool === 'bo4-ancient-tribute'">
@@ -111,15 +82,6 @@ function resetAll() { reset(); activeSlot.value = 0; confirmReset.value = false 
       </div>
       <div class="p-result" role="status" aria-live="polite"><strong v-if="tribute.status==='ready'">{{ tribute.earned }} / {{ tribute.required }} tribute points</strong><p>{{ tribute.message }}</p><p v-if="tribute.status==='ready'">{{ tribute.suggestion }}</p></div>
       <p class="p-muted">Solo shortcut: one Epic + one Legendary = 10 points. Claim at the Temple pillars; unclaimed tiers do not count.</p>
-    </template>
-
-    <template v-else-if="tool === 'bo4-ancient-theater'">
-      <p class="eyebrow">Assign Redeemed hands before stepping onto the home circles</p>
-      <div class="assignment-grid"><label v-for="(hand,i) in hands" :key="hand.name" class="chaos-card" :style="{'--hand-color':hand.color}"><strong><span class="color-dot" aria-hidden="true"></span>{{ hand.name }}</strong><input type="text" maxlength="40" :value="state[`hand-${i}`]" placeholder="Player name / unused" @input="input($event,`hand-${i}`)" /></label></div>
-      <p>What cue do you see?</p><div class="cue-buttons"><button v-for="(_,cue) in attackCues" :key="cue" type="button" :aria-pressed="state.cue === cue" @click="update('cue',String(cue))">{{ cue }}</button></div>
-      <div class="p-result" role="status" aria-live="polite">{{ attackCues[state.cue] || 'Stand on your hand’s matching color. Wait for your stage circle to appear.' }}</div>
-      <div class="performance-checks"><label v-for="i in 3" :key="i" class="check-line"><input type="checkbox" :checked="state[`performance-${i-1}`]" @change="update(`performance-${i-1}`,!state[`performance-${i-1}`])" />Performance {{ i }} successful</label></div>
-      <p class="p-muted">Only mark in-game successes. Final white flash and rewards confirm completion. If ejected after failure, advance a round and retry.</p>
     </template>
 
     <PuzzleActions :can-undo="canUndo" :save-error="saveError" @undo="undo" @reset="confirmReset=true" />
