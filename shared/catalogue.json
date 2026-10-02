@@ -78,7 +78,7 @@
       "id": "bo4-dead-of-the-night",
       "name": "Dead of the Night",
       "route": "/guides/bo4-dead-of-the-night",
-      "image": "",
+      "image": "/images/bo4-dead-of-the-night/dial.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -118,7 +118,7 @@
       "id": "bo4-ix",
       "name": "IX",
       "route": "/guides/bo4-ix",
-      "image": "",
+      "image": "/images/bo4-ix/cover.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -128,7 +128,7 @@
       "id": "bo4-voyage-of-despair",
       "name": "Voyage of Despair",
       "route": "/guides/bo4-voyage-of-despair",
-      "image": "",
+      "image": "/images/bo4-voyage-of-despair/cover.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -198,7 +198,7 @@
       "id": "bo4-ancient-evil",
       "name": "Ancient Evil",
       "route": "/guides/bo4-ancient-evil",
-      "image": "",
+      "image": "/images/bo4-ancient-evil/cover.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -208,7 +208,7 @@
       "id": "bo4-alpha-omega",
       "name": "Alpha Omega",
       "route": "/guides/bo4-alpha-omega",
-      "image": "",
+      "image": "/images/bo4-alpha-omega/alpha-omega.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -218,7 +218,7 @@
       "id": "bo4-tag-der-toten",
       "name": "Tag der Toten",
       "route": "/guides/bo4-tag-der-toten",
-      "image": "",
+      "image": "/images/bo4-tag-der-toten/tag-der-toten.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -238,7 +238,7 @@
       "id": "bo4-classified",
       "name": "Classified",
       "route": "/guides/bo4-classified",
-      "image": "",
+      "image": "/images/bo4-classified/american_paintings.webp",
       "gameId": "bo4",
       "group": "",
       "interactiveMap": false,
@@ -432,20 +432,6 @@
       "kind": "recorder"
     },
     {
-      "id": "bo4-dead-of-the-night-zodiac",
-      "map": "bo4-dead-of-the-night",
-      "name": "Zodiac scratch calculator",
-      "route": "/tools/bo4-dead-of-the-night-zodiac",
-      "kind": "solver"
-    },
-    {
-      "id": "bo4-dead-of-the-night-alistair",
-      "map": "bo4-dead-of-the-night",
-      "name": "Alistair symbol notebook",
-      "route": "/tools/bo4-dead-of-the-night-alistair",
-      "kind": "recorder"
-    },
-    {
       "id": "bo3-gorod-valves",
       "map": "bo3-gorod-krovi",
       "name": "Valve solver",
@@ -464,20 +450,6 @@
       "map": "bo4-blood-of-the-dead",
       "name": "Buoy Morse calculator",
       "route": "/tools/bo4-blood-morse",
-      "kind": "solver"
-    },
-    {
-      "id": "bo4-classified-codes",
-      "map": "bo4-classified",
-      "name": "Project Skadi codes",
-      "route": "/tools/bo4-classified-codes",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo4-alpha-clocks",
-      "map": "bo4-alpha-omega",
-      "name": "Rushmore clock clues",
-      "route": "/tools/bo4-alpha-clocks",
       "kind": "solver"
     },
     {
@@ -635,34 +607,6 @@
       "kind": "solver"
     },
     {
-      "id": "bo4-ix-ra",
-      "map": "bo4-ix",
-      "name": "Ra enemy order",
-      "route": "/tools/bo4-ix-ra",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo4-ix-danu",
-      "map": "bo4-ix",
-      "name": "Danu preparation tracker",
-      "route": "/tools/bo4-ix-danu",
-      "kind": "tracker"
-    },
-    {
-      "id": "bo4-voyage-clocks",
-      "map": "bo4-voyage-of-despair",
-      "name": "Elemental clock notebook",
-      "route": "/tools/bo4-voyage-clocks",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo4-voyage-sky",
-      "map": "bo4-voyage-of-despair",
-      "name": "Celestial order recorder",
-      "route": "/tools/bo4-voyage-sky",
-      "kind": "recorder"
-    },
-    {
       "id": "bo4-blood-powerhouse",
       "map": "bo4-blood-of-the-dead",
       "name": "Power House visual companion",
@@ -681,41 +625,6 @@
       "map": "bo4-blood-of-the-dead",
       "name": "Free Blundergat skull tracker",
       "route": "/tools/bo4-blood-skulls",
-      "kind": "tracker"
-    },
-    {
-      "id": "bo4-ancient-hands",
-      "map": "bo4-ancient-evil",
-      "name": "Hand progression",
-      "route": "/tools/bo4-ancient-hands",
-      "kind": "tracker"
-    },
-    {
-      "id": "bo4-ancient-theater",
-      "map": "bo4-ancient-evil",
-      "name": "Theater hand assignments",
-      "route": "/tools/bo4-ancient-theater",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo4-alpha-rushmore",
-      "map": "bo4-alpha-omega",
-      "name": "Rushmore codes and quest notes",
-      "route": "/tools/bo4-alpha-rushmore",
-      "kind": "reference"
-    },
-    {
-      "id": "bo4-tag-riddles",
-      "map": "bo4-tag-der-toten",
-      "name": "Offering and Seal riddle lookup",
-      "route": "/tools/bo4-tag-riddles",
-      "kind": "reference"
-    },
-    {
-      "id": "bo4-tag-challenges",
-      "map": "bo4-tag-der-toten",
-      "name": "Challenge and charge tracker",
-      "route": "/tools/bo4-tag-challenges",
       "kind": "tracker"
     },
     {
@@ -745,6 +654,118 @@
       "name": "Quest region reference",
       "route": "/tools/cw-outbreak-regions",
       "kind": "reference"
+    },
+    {
+      "id": "bo4-voyage-clocks",
+      "map": "bo4-voyage-of-despair",
+      "name": "Clock symbols → lever settings",
+      "route": "/tools/bo4-voyage-clocks",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-voyage-outlets",
+      "map": "bo4-voyage-of-despair",
+      "name": "Elemental outlets & trial route",
+      "route": "/tools/bo4-voyage-outlets",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo4-voyage-sky",
+      "map": "bo4-voyage-of-despair",
+      "name": "Planet order & orb route",
+      "route": "/tools/bo4-voyage-sky",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-ix-ra",
+      "map": "bo4-ix",
+      "name": "Ra visual kill order",
+      "route": "/tools/bo4-ix-ra",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-ix-danu",
+      "map": "bo4-ix",
+      "name": "Danu preparation & full-round log",
+      "route": "/tools/bo4-ix-danu",
+      "kind": "tracker"
+    },
+    {
+      "id": "bo4-ancient-hands",
+      "map": "bo4-ancient-evil",
+      "name": "Oracle location finder & hand routes",
+      "route": "/tools/bo4-ancient-hands",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-ancient-tribute",
+      "map": "bo4-ancient-evil",
+      "name": "Eternal Flame tribute calculator",
+      "route": "/tools/bo4-ancient-tribute",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-ancient-theater",
+      "map": "bo4-ancient-evil",
+      "name": "Theater assignments & attack cues",
+      "route": "/tools/bo4-ancient-theater",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-dead-of-the-night-alistair",
+      "map": "bo4-dead-of-the-night",
+      "name": "Alistair’s visual lock",
+      "route": "/tools/bo4-dead-of-the-night-alistair",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-dead-of-the-night-zodiac",
+      "map": "bo4-dead-of-the-night",
+      "name": "Visual zodiac & scratch solver",
+      "route": "/tools/bo4-dead-of-the-night-zodiac",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-dead-of-the-night-stake",
+      "map": "bo4-dead-of-the-night",
+      "name": "Stake Knife shape-to-location solver",
+      "route": "/tools/bo4-dead-of-the-night-stake",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-classified-codes",
+      "map": "bo4-classified",
+      "name": "Project Skadi pictured codes & survival",
+      "route": "/tools/bo4-classified-codes",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo4-alpha-clocks",
+      "map": "bo4-alpha-omega",
+      "name": "Rushmore visual clock route",
+      "route": "/tools/bo4-alpha-clocks",
+      "kind": "solver"
+    },
+    {
+      "id": "bo4-alpha-rushmore",
+      "map": "bo4-alpha-omega",
+      "name": "Rushmore codes & experiment notes",
+      "route": "/tools/bo4-alpha-rushmore",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-tag-riddles",
+      "map": "bo4-tag-der-toten",
+      "name": "Offering & Seal photo finder",
+      "route": "/tools/bo4-tag-riddles",
+      "kind": "reference"
+    },
+    {
+      "id": "bo4-tag-challenges",
+      "map": "bo4-tag-der-toten",
+      "name": "Tag quest stage & charge tracker",
+      "route": "/tools/bo4-tag-challenges",
+      "kind": "tracker"
     }
   ],
   "games": [

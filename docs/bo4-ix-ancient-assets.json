@@ -1,0 +1,525 @@
+[
+  {
+    "file": "public/images/bo4-ix/skull_with_blue_symbol_example.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/skull_locations/skull_with_blue_symbol_example.webp",
+    "caption": "Skull with a blue symbol on it",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/pyres.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/pyres.webp",
+    "caption": "Pyres",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/wood_on_ground.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/wood_on_ground.webp",
+    "caption": "piece of wood will pop off onto the ground",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/poop.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/poop.webp",
+    "caption": "poop",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/bowl.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/bowl.webp",
+    "caption": "Bowl",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/blue_cracks.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/blue_cracks.webp",
+    "caption": "blue cracks",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/danu_tunnel_aim_here.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/channel_the_flood/blue_symbols/danu_tunnel_aim_here.webp",
+    "caption": "here",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/the_pit_aim_here.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/channel_the_flood/blue_symbols/the_pit_aim_here.webp",
+    "caption": "middle of the symbol",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/the_crypts_aim_here.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/channel_the_flood/blue_symbols/the_crypts_aim_here.webp",
+    "caption": "bottom left curve",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/chaos_of_the_treasuries.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/chaos_of_the_treasuries.webp",
+    "caption": "Intersection of Treasuries - Inside Chaos Crystal",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/purple_blossoms.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/purple_blossoms.webp",
+    "caption": "Intersection of Treasuries - At the base of the stairs, right of Auger DMR wallbuy",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/barque_of_gold.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/barque_of_gold.webp",
+    "caption": "Stoa of Athenians - Right of the Boat",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/shieldbearers_fountain.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/shieldbearers_fountain.webp",
+    "caption": "Stoa of the Athenians - In a vase on the fountain",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/generals_column.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/generals_column.webp",
+    "caption": "Spartan Monument - At the base of the pillar, down the stairs from the 'Stoa of the Athenians'",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/fallen_statesman.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/fallen_statesman.webp",
+    "caption": "Spartan Monument - At the top of the stairs, near the Zeus Perk Status",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/watchful_gaze_of_zeus.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/watchful_gaze_of_zeus.webp",
+    "caption": "Spartan Monument - Next to the Zeus Perk Statue",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/golden_taurus.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/golden_taurus.webp",
+    "caption": "Spartan Monument - Near the Gaia shrine",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/arrow_splits_the_road.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/arrow_splits_the_road.webp",
+    "caption": "Intersection of Treasuries - Below Giant Arrow",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/sorrow_flows_beneath.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/sorrow_flows_beneath.webp",
+    "caption": "River of Sorrow - Top of stairs",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/sorrow_washes_over.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/sorrow_washes_over.webp",
+    "caption": "River of Sorrow - Left of the Odin Perk Statue",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/wheel_of_water.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/wheel_of_water.webp",
+    "caption": "Cliff Ruins - Left of the fire in the Forge room",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/workbench_of_hephaestus.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/workbench_of_hephaestus.webp",
+    "caption": "Cliff Ruins - In the Forge room, on a table",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/serpent_snared_the_eagle.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/serpent_snared_the_eagle.webp",
+    "caption": "Cliff Ruins - Left of the cage in the Cliff Side",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/broken_bridge.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/broken_bridge.webp",
+    "caption": "Cliff Ruins - Bridge to the Center of the World",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/shrine_of_wind_and_sky.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/shrine_of_wind_and_sky.webp",
+    "caption": "Center of the World - Pile of Rocks to the left of the Ouranos shrine",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/top_of_the_center.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/top_of_the_center.webp",
+    "caption": "Center of the World - Below the Fast Travel portal",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/chaos_of_venom.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/chaos_of_venom.webp",
+    "caption": "Python Pass - Near the Venom Trap activation pedestal, in a crystal",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/mighty_titan_points.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/mighty_titan_points.webp",
+    "caption": "Python Pass - To the left of the Titan wallbuy, in a crystal",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/steps_of_flesh_and_bone.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/dormant_hand/steps_of_flesh_and_bone.webp",
+    "caption": "Python Pass - Near the Charon shrine",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/bathhouse_mirror.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/bathhouse_mirror.webp",
+    "caption": "Angled Mirror",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/bathhouse_bowl.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/bathhouse_bowl.webp",
+    "caption": "Bowl Locations",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/upper_road_mirror.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/upper_road_mirror.webp",
+    "caption": "Angled Mirror",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/upper_road_bowl.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/upper_road_bowl.webp",
+    "caption": "Bowl Locations",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/temple_mirror.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/temple_mirror.webp",
+    "caption": "Angled Mirror",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/temple_bowl.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/hemera/redeemed/temple_bowl.webp",
+    "caption": "Bowl Locations",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/tree_auger.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/gaia/redeemed/tree_auger.webp",
+    "caption": "Intersection of Treasuries - Left of the Auger DMR wallbuy",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/tree_stoa.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/gaia/redeemed/tree_stoa.webp",
+    "caption": "Stoa of Athenians - Behind the Mozu wallbuy, on the other side of the wall",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/tree_mog12.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/god_hand_weapons/gaia/redeemed/tree_mog12.webp",
+    "caption": "Temple Terrace - Right of the MOG 12 wallbuy",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/oil_upper_road.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/ignite_the_beacons/oil_upper_road.webp",
+    "caption": "Upper Road - On a rock, on the path down to the river",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/oil_intersections_of_treasuries.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/ignite_the_beacons/oil_intersections_of_treasuries.webp",
+    "caption": "Intersections of Treasuries - At the top of the stairs, left of the Mozu wallbuy",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/oil_spartan_monument.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/ignite_the_beacons/oil_spartan_monument.webp",
+    "caption": "Spartan Monument - On the landing, down the stairs from 'Stoa of the Athenians'",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/gears_example.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/align_the_citizens/gears_example.webp",
+    "caption": "Set of Gears",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/gears_intersection_2.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/align_the_citizens/gears_intersection_2.webp",
+    "caption": "Intersections of Treasuries - Outside the map, left of the Auger DMR wallbuy",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/gears_intersection_1.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/align_the_citizens/gears_intersection_1.webp",
+    "caption": "Intersections of Treasuries - Right of the Mozu wallbuy, on the entrance to the 'Stoa of the Athenians'",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/gears_spartan_monument.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/align_the_citizens/gears_spartan_monument.webp",
+    "caption": "Spartan Monument - On the landing, down the stairs from 'Stoa of the Athenians'",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/where_to_throw.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/align_the_citizens/where_to_throw.webp",
+    "caption": "this area",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/root_1.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/root_1.webp",
+    "caption": "Glowing Root",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/golden_pole.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/golden_pole.webp",
+    "caption": "Golden Pole",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/ankh.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/ankh.webp",
+    "caption": "Ankh",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/gold_sundial.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/gold_sundial.webp",
+    "caption": "Gold Sundial",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/glowing_line.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/glowing_line.webp",
+    "caption": "Glowing Line",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/scepter_of_ra.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/scepter_and_sundial/scepter_of_ra.webp",
+    "caption": "Scepter of Ra",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/home_circle.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/hit_your_marks/home_circle.webp",
+    "caption": "glowing circles",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/blue_symbol.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ancient_evil/pictures/main_ee/cleanse_the_center/blue_symbol.webp",
+    "caption": "blue glowing symbol",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/ra-symbols.png",
+    "source": "https://i.imgur.com/kx47Mns.png",
+    "credit": "r/CODZombies IX wiki",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/door-order.png",
+    "source": "https://i.imgur.com/pyvaliT.png",
+    "credit": "r/CODZombies Ancient Evil wiki",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/grinder1.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/grinder1.webp",
+    "caption": "Location 1",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/grinder2.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/grinder2.webp",
+    "caption": "Location 2",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/grinder3.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/purge_the_blight/grinder3.webp",
+    "caption": "Location 3",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/arena.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/arena.webp",
+    "caption": "Arena",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/danu_altar_room.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/danu_altar_room.webp",
+    "caption": "Danu Altar Room",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/ra_tower_burial_chamber.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/ra_tower_burial_chamber.webp",
+    "caption": "Ra Tower: Burial Chamber",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/danu_tunnel.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/danu_tunnel.webp",
+    "caption": "Danu Tunnel",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/flooded_crypt.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/flooded_crypt.webp",
+    "caption": "Flooded Crypt",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/temple.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/temple.webp",
+    "caption": "Temple (Near Swordfish wallbuy)",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/the_pit.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/the_pit.webp",
+    "caption": "The Pit",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/odin_zeus_temple_entrance.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/odin_zeus_temple_entrance.webp",
+    "caption": "Odin-Zeus Temple Entrance",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/odin_zeus_bridge.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/answer_the_dawn/bull_symbols/odin_zeus_bridge.webp",
+    "caption": "Wall near the bridge between Zeus and Odin",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/odin_tunnel_pole.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/summon_the_storm/odin_tunnel_pole.webp",
+    "caption": "Odin Tunnel",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/cursed_room_pole.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/summon_the_storm/cursed_room_pole.webp",
+    "caption": "Cursed Room",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/danu_tunnel_pole.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/summon_the_storm/danu_tunnel_pole.webp",
+    "caption": "Danu Tunnel",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/collapsed_tunnel_pole.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/summon_the_storm/collapsed_tunnel_pole.webp",
+    "caption": "The Collapsed Tunnel",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/metal_plate.webp",
+    "source": "https://mmmrkennedy.com/games/BO4/ix/pictures/main_ee/channel_the_flood/metal_plate.webp",
+    "caption": "Metal Plate",
+    "credit": "mmmrkennedy",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ix/cover.webp",
+    "source": "https://www.codzombiesguides.com/maps/ix.webp",
+    "caption": "IX map cover",
+    "credit": "COD Zombies Guides / Activision / Treyarch",
+    "retrieved": "2026-10-02"
+  },
+  {
+    "file": "public/images/bo4-ancient-evil/cover.webp",
+    "source": "https://www.codzombiesguides.com/maps/ancient-evil.webp",
+    "caption": "Ancient Evil map cover",
+    "credit": "COD Zombies Guides / Activision / Treyarch",
+    "retrieved": "2026-10-02"
+  }
+]

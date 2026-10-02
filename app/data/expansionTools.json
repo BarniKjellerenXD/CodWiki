@@ -35,250 +35,6 @@
     "evaluate": "ordered"
   },
   {
-    "id": "bo4-dead-of-the-night-zodiac",
-    "map": "bo4-dead-of-the-night",
-    "name": "Zodiac scratch calculator",
-    "help": "For each room record its zodiac sign and all three scratch counts. A confirmed zero is different from an unread clue. Enter telescope signs from the lowest total to the highest. A failed attempt rerolls clues: reset and collect them again.",
-    "fields": [
-      {
-        "id": "sign-0",
-        "label": "Room 1: zodiac",
-        "options": [
-          "Aries",
-          "Taurus",
-          "Gemini",
-          "Cancer",
-          "Leo",
-          "Virgo",
-          "Libra",
-          "Scorpio",
-          "Sagittarius",
-          "Capricorn",
-          "Aquarius",
-          "Pisces"
-        ]
-      },
-      {
-        "id": "count-0-0",
-        "label": "Room 1: scratch group 1",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-0-1",
-        "label": "Room 1: scratch group 2",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-0-2",
-        "label": "Room 1: scratch group 3",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "sign-1",
-        "label": "Room 2: zodiac",
-        "options": [
-          "Aries",
-          "Taurus",
-          "Gemini",
-          "Cancer",
-          "Leo",
-          "Virgo",
-          "Libra",
-          "Scorpio",
-          "Sagittarius",
-          "Capricorn",
-          "Aquarius",
-          "Pisces"
-        ]
-      },
-      {
-        "id": "count-1-0",
-        "label": "Room 2: scratch group 1",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-1-1",
-        "label": "Room 2: scratch group 2",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-1-2",
-        "label": "Room 2: scratch group 3",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "sign-2",
-        "label": "Room 3: zodiac",
-        "options": [
-          "Aries",
-          "Taurus",
-          "Gemini",
-          "Cancer",
-          "Leo",
-          "Virgo",
-          "Libra",
-          "Scorpio",
-          "Sagittarius",
-          "Capricorn",
-          "Aquarius",
-          "Pisces"
-        ]
-      },
-      {
-        "id": "count-2-0",
-        "label": "Room 3: scratch group 1",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-2-1",
-        "label": "Room 3: scratch group 2",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "count-2-2",
-        "label": "Room 3: scratch group 3",
-        "options": [
-          "0",
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "solver",
-    "evaluate": "zodiac"
-  },
-  {
-    "id": "bo4-dead-of-the-night-alistair",
-    "map": "bo4-dead-of-the-night",
-    "name": "Alistair symbol notebook",
-    "help": "Describe the observed glyph beside each colour. Keep the colour labels attached when entering the library lock. This notebook does not infer unseen glyphs.",
-    "fields": [
-      {
-        "id": "blue",
-        "label": "Blue",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "green",
-        "label": "Green",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "yellow",
-        "label": "Yellow",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "red",
-        "label": "Red",
-        "options": null,
-        "maxLength": 80
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "labelled"
-  },
-  {
     "id": "bo3-gorod-valves",
     "map": "bo3-gorod-krovi",
     "name": "Valve solver",
@@ -427,95 +183,6 @@
     "version": 1,
     "kind": "solver",
     "evaluate": "morse"
-  },
-  {
-    "id": "bo4-classified-codes",
-    "map": "bo4-classified",
-    "name": "Project Skadi codes",
-    "help": "Record the four-digit code against its picture. The required input order is already shown below; collection order does not matter.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Shi No Numa",
-        "options": null,
-        "maxLength": 4,
-        "pattern": "^\\d{4}$",
-        "inputmode": "numeric"
-      },
-      {
-        "id": "slot-1",
-        "label": "Der Riese",
-        "options": null,
-        "maxLength": 4,
-        "pattern": "^\\d{4}$",
-        "inputmode": "numeric"
-      },
-      {
-        "id": "slot-2",
-        "label": "Shangri-La",
-        "options": null,
-        "maxLength": 4,
-        "pattern": "^\\d{4}$",
-        "inputmode": "numeric"
-      },
-      {
-        "id": "slot-3",
-        "label": "Kino der Toten",
-        "options": null,
-        "maxLength": 4,
-        "pattern": "^\\d{4}$",
-        "inputmode": "numeric"
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "labelled"
-  },
-  {
-    "id": "bo4-alpha-clocks",
-    "map": "bo4-alpha-omega",
-    "name": "Rushmore clock clues",
-    "help": "Enter five TV clues as a letter A–F followed by HHMM, for example A0115. Set those clocks, then read the remaining clock yourself. Its time is not calculated from these clues.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "TV clue 1",
-        "options": null,
-        "maxLength": 5,
-        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
-      },
-      {
-        "id": "slot-1",
-        "label": "TV clue 2",
-        "options": null,
-        "maxLength": 5,
-        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
-      },
-      {
-        "id": "slot-2",
-        "label": "TV clue 3",
-        "options": null,
-        "maxLength": 5,
-        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
-      },
-      {
-        "id": "slot-3",
-        "label": "TV clue 4",
-        "options": null,
-        "maxLength": 5,
-        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
-      },
-      {
-        "id": "slot-4",
-        "label": "TV clue 5",
-        "options": null,
-        "maxLength": 5,
-        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
-      }
-    ],
-    "version": 1,
-    "kind": "solver",
-    "evaluate": "alpha-clocks"
   },
   {
     "id": "cw-firebase-darts",
@@ -2014,462 +1681,6 @@
     "reference": "https://www.reddit.com/r/CODZombies/wiki/origins/#wiki_staff_of_fire"
   },
   {
-    "id": "bo4-ix-ra",
-    "map": "bo4-ix",
-    "name": "Ra enemy order",
-    "help": "Record the enemies represented by the four obelisk symbols, in order. Kill the required special enemies in that order; use the guide’s symbol chart to identify them. Clear the sequence for the next display.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Enemy 1",
-        "options": [
-          "Gladiator",
-          "Brawler",
-          "Tiger",
-          "Blightfather",
-          "Fire catalyst",
-          "Water catalyst",
-          "Electric catalyst",
-          "Poison catalyst"
-        ]
-      },
-      {
-        "id": "slot-1",
-        "label": "Enemy 2",
-        "options": [
-          "Gladiator",
-          "Brawler",
-          "Tiger",
-          "Blightfather",
-          "Fire catalyst",
-          "Water catalyst",
-          "Electric catalyst",
-          "Poison catalyst"
-        ]
-      },
-      {
-        "id": "slot-2",
-        "label": "Enemy 3",
-        "options": [
-          "Gladiator",
-          "Brawler",
-          "Tiger",
-          "Blightfather",
-          "Fire catalyst",
-          "Water catalyst",
-          "Electric catalyst",
-          "Poison catalyst"
-        ]
-      },
-      {
-        "id": "slot-3",
-        "label": "Enemy 4",
-        "options": [
-          "Gladiator",
-          "Brawler",
-          "Tiger",
-          "Blightfather",
-          "Fire catalyst",
-          "Water catalyst",
-          "Electric catalyst",
-          "Poison catalyst"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "ordered"
-  },
-  {
-    "id": "bo4-ix-danu",
-    "map": "bo4-ix",
-    "name": "Danu preparation tracker",
-    "help": "Track full completed rounds, not merely the round number when you placed an item. Check the item visually before confirming readiness.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Wood collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Wood placed in cauldron",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "First full burn round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Second full burn round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Ash confirmed / collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Skull ground",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Dung collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Fertilizer mixed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "First full waiting round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Second full waiting round complete",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Fertilizer ready / collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "Fertilizer placed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-12",
-        "label": "Firebomb activation complete",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "bo4-voyage-clocks",
-    "map": "bo4-voyage-of-despair",
-    "name": "Elemental clock notebook",
-    "help": "Record the four changed clocks by their associated element. Match the minute controls at the bridge and hour controls at Engine Room/Poop Deck using the guide diagrams. Outputs are target times, not guessed rotation counts.",
-    "fields": [
-      {
-        "id": "hour-0",
-        "label": "Fire: hour",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
-        ]
-      },
-      {
-        "id": "minute-0",
-        "label": "Fire: minute",
-        "options": [
-          "00",
-          "05",
-          "10",
-          "15",
-          "20",
-          "25",
-          "30",
-          "35",
-          "40",
-          "45",
-          "50",
-          "55"
-        ]
-      },
-      {
-        "id": "hour-1",
-        "label": "Water: hour",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
-        ]
-      },
-      {
-        "id": "minute-1",
-        "label": "Water: minute",
-        "options": [
-          "00",
-          "05",
-          "10",
-          "15",
-          "20",
-          "25",
-          "30",
-          "35",
-          "40",
-          "45",
-          "50",
-          "55"
-        ]
-      },
-      {
-        "id": "hour-2",
-        "label": "Electric: hour",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
-        ]
-      },
-      {
-        "id": "minute-2",
-        "label": "Electric: minute",
-        "options": [
-          "00",
-          "05",
-          "10",
-          "15",
-          "20",
-          "25",
-          "30",
-          "35",
-          "40",
-          "45",
-          "50",
-          "55"
-        ]
-      },
-      {
-        "id": "hour-3",
-        "label": "Poison: hour",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
-        ]
-      },
-      {
-        "id": "minute-3",
-        "label": "Poison: minute",
-        "options": [
-          "00",
-          "05",
-          "10",
-          "15",
-          "20",
-          "25",
-          "30",
-          "35",
-          "40",
-          "45",
-          "50",
-          "55"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "clocks"
-  },
-  {
-    "id": "bo4-voyage-sky",
-    "map": "bo4-voyage-of-despair",
-    "name": "Celestial order recorder",
-    "help": "Record the celestial sequence shown in your match. Match each symbol to its location using the guide. The Sun is handled at the final stage.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Celestial body 1",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-1",
-        "label": "Celestial body 2",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-2",
-        "label": "Celestial body 3",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-3",
-        "label": "Celestial body 4",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-4",
-        "label": "Celestial body 5",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-5",
-        "label": "Celestial body 6",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-6",
-        "label": "Celestial body 7",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-7",
-        "label": "Celestial body 8",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      },
-      {
-        "id": "slot-8",
-        "label": "Celestial body 9",
-        "options": [
-          "Mercury",
-          "Venus",
-          "Moon",
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Uranus",
-          "Neptune",
-          "Sun"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "sky"
-  },
-  {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
     "name": "Power House visual companion",
@@ -2821,364 +2032,6 @@
     "kind": "tracker"
   },
   {
-    "id": "bo4-ancient-hands",
-    "map": "bo4-ancient-evil",
-    "name": "Hand progression",
-    "help": "Track Fallen, Redeemed and Exalted stages separately. Exalted upgrades are optional unless the selected objective specifically requires them.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Gaia: Fallen",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Gaia: Redeemed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Gaia: Exalted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Hemera: Fallen",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Hemera: Redeemed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Hemera: Exalted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Charon: Fallen",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Charon: Redeemed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "Charon: Exalted",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Ouranos: Fallen",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Ouranos: Redeemed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "Ouranos: Exalted",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "bo4-ancient-theater",
-    "map": "bo4-ancient-evil",
-    "name": "Theater hand assignments",
-    "help": "Assign each player’s hand before entering the theater. Respond to the matching hand cue during the performance; this helper does not automate live timing.",
-    "fields": [
-      {
-        "id": "hand-0",
-        "label": "Gaia: player",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "hand-1",
-        "label": "Hemera: player",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "hand-2",
-        "label": "Charon: player",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "hand-3",
-        "label": "Ouranos: player",
-        "options": null,
-        "maxLength": 80
-      }
-    ],
-    "version": 1,
-    "kind": "recorder"
-  },
-  {
-    "id": "bo4-alpha-rushmore",
-    "map": "bo4-alpha-omega",
-    "name": "Rushmore codes and quest notes",
-    "help": "Search bonus effects and keep your match-specific quest codes below. Enter only a code whose effect you intend to use; optional bonus codes and quest codes have different conditions.",
-    "fields": [
-      {
-        "id": "bonus",
-        "label": "Bonus effect",
-        "options": [
-          "Easy · 3279 · Slow zombies for five minutes.",
-          "Noob · 6662 · Slow zombies for five minutes.",
-          "Brew · 2739 · Half-price Brew.",
-          "Soda · 7632 · Half-price Soda.",
-          "Cola · 2652 · Half-price Cola.",
-          "Pack · 7225 · Bonfire Sale pickup.",
-          "Time · 8463 · Freeze zombies for 30 seconds.",
-          "Boom · 2666 · Spawns a live grenade.",
-          "Nuke · 6853 · Nuke pickup.",
-          "Door · 3667 · One random unopened door becomes free.",
-          "Love · 5683 · Love dialogue.",
-          "Quiz · 1841 · Quiz dialogue; no answer input.",
-          "Joke · 5653 · Joke dialogue.",
-          "Song · 7664 · Play the hidden song.",
-          "Tedd · 8333 · Activate T.E.D.D. in Diner.",
-          "Duck · 3825 · Melee makes duck sounds.",
-          "Guns · 4867 · All players change weapons every ten seconds for five minutes.",
-          "Bank · 2265 · Give each player 1,000 points.",
-          "Rave · 7283 · Party in Beds.",
-          "Vent · 8368 · Frustration dialogue.",
-          "Shed · 7433 · Open the Yellow House backyard shed.",
-          "Life · 5433 · Life dialogue.",
-          "Puke · 7853 · Melee makes zombies vomit.",
-          "Fall · 3255 · Looking at zombies knocks them over.",
-          "Ugly · 8459 · Compliment dialogue.",
-          "Hero · 4376 · Refill specialist charge.",
-          "Yawn · 9296 · Boredom dialogue.",
-          "Warp · 9277 · Random teleport.",
-          "Club · 2582 · Disco in Beds.",
-          "Grav · 4728 · Kills float upward for 25 minutes."
-        ]
-      },
-      {
-        "id": "purpose-0",
-        "label": "Code 1: purpose",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "code-0",
-        "label": "Code 1: digits",
-        "options": null,
-        "pattern": "^\\d{4}$",
-        "maxLength": 4,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "purpose-1",
-        "label": "Code 2: purpose",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "code-1",
-        "label": "Code 2: digits",
-        "options": null,
-        "pattern": "^\\d{4}$",
-        "maxLength": 4,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "purpose-2",
-        "label": "Code 3: purpose",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "code-2",
-        "label": "Code 3: digits",
-        "options": null,
-        "pattern": "^\\d{4}$",
-        "maxLength": 4,
-        "inputmode": "numeric"
-      },
-      {
-        "id": "purpose-3",
-        "label": "Code 4: purpose",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "code-3",
-        "label": "Code 4: digits",
-        "options": null,
-        "pattern": "^\\d{4}$",
-        "maxLength": 4,
-        "inputmode": "numeric"
-      }
-    ],
-    "version": 1,
-    "kind": "reference",
-    "evaluate": "rushmore",
-    "searchable": true,
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/alpha-omega/#wiki_rushmore_secret_codes"
-  },
-  {
-    "id": "bo4-tag-riddles",
-    "map": "bo4-tag-der-toten",
-    "name": "Offering and Seal riddle lookup",
-    "help": "Search for words from the clue, then choose the exact offering or Seal riddle. Search does not automatically choose a result.",
-    "fields": [
-      {
-        "id": "clue",
-        "label": "Observed riddle",
-        "options": [
-          "Offering: Where one mysteries",
-          "Offering: Where preservation freezes",
-          "Offering: Where crows roost",
-          "Offering: Where bounded slept",
-          "Offering: Where bread breaks",
-          "Offering: Where earth crumbles",
-          "Offering: Where falls freeze",
-          "Offering: Where feet slip",
-          "Offering: Where filth cleanses",
-          "Offering: Where fire sinks",
-          "Offering: Where helixes peak",
-          "Offering: Where lightning aims",
-          "Offering: Where lines berth",
-          "Offering: Where lungs close",
-          "Offering: Where madness sleeps",
-          "Offering: Where mountains throw",
-          "Offering: Where north is found",
-          "Offering: Where power ends",
-          "Offering: Where hidden burns",
-          "Offering: Where thirst dawns",
-          "Seal: Where humans suffer",
-          "Seal: Inside an icy hall",
-          "Seal: Where Aether was gathered",
-          "Seal: Where cages hang"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "reference",
-    "evaluate": "riddle",
-    "searchable": true,
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/tag-der-toten/"
-  },
-  {
-    "id": "bo4-tag-challenges",
-    "map": "bo4-tag-der-toten",
-    "name": "Challenge and charge tracker",
-    "help": "Keep the quest’s required challenge rewards separate from completing every optional challenge for a weapon reward.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "First Hermit challenge reward",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Second Hermit challenge reward",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Offering 1",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Offering 2",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Offering 3",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Seal collected",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Soapstones heated and cooled",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Generators powered",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "Lighthouse lockdown",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "PaP charge 1",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "PaP charge 2",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "PaP charge 3",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-12",
-        "label": "PaP charge 4",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-13",
-        "label": "Golden PaP charge",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
     "id": "cw-die-variants",
     "map": "cw-die-maschine",
     "name": "D.I.E. variant tracker",
@@ -3430,5 +2283,2149 @@
     "version": 1,
     "kind": "reference",
     "evaluate": "regions"
+  },
+  {
+    "version": 1,
+    "id": "bo4-voyage-clocks",
+    "map": "bo4-voyage-of-despair",
+    "name": "Clock symbols → lever settings",
+    "kind": "solver",
+    "evaluate": "voyage-clocks",
+    "help": "Match the drawn triangle to its clock. Get exact minute/hour controls and target pointers.",
+    "fields": [
+      {
+        "id": "fire-hour",
+        "label": "fire: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "fire-minute",
+        "label": "fire: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "fire-room",
+        "label": "fire: clock room",
+        "type": "text",
+        "options": [
+          "Mail Rooms",
+          "Bridge",
+          "Upper Grand Staircase",
+          "1st Class Lounge",
+          "Galley",
+          "3rd Class Berths"
+        ]
+      },
+      {
+        "id": "water-hour",
+        "label": "water: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "water-minute",
+        "label": "water: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "water-room",
+        "label": "water: clock room",
+        "type": "text",
+        "options": [
+          "Mail Rooms",
+          "Bridge",
+          "Upper Grand Staircase",
+          "1st Class Lounge",
+          "Galley",
+          "3rd Class Berths"
+        ]
+      },
+      {
+        "id": "air-hour",
+        "label": "air: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "air-minute",
+        "label": "air: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "air-room",
+        "label": "air: clock room",
+        "type": "text",
+        "options": [
+          "Mail Rooms",
+          "Bridge",
+          "Upper Grand Staircase",
+          "1st Class Lounge",
+          "Galley",
+          "3rd Class Berths"
+        ]
+      },
+      {
+        "id": "earth-hour",
+        "label": "earth: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "earth-minute",
+        "label": "earth: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "earth-room",
+        "label": "earth: clock room",
+        "type": "text",
+        "options": [
+          "Mail Rooms",
+          "Bridge",
+          "Upper Grand Staircase",
+          "1st Class Lounge",
+          "Galley",
+          "3rd Class Berths"
+        ]
+      },
+      {
+        "id": "hour-0",
+        "label": "Previous note 1: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "minute-0",
+        "label": "Previous note 1: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "hour-1",
+        "label": "Previous note 2: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "minute-1",
+        "label": "Previous note 2: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "hour-2",
+        "label": "Previous note 3: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "minute-2",
+        "label": "Previous note 3: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      },
+      {
+        "id": "hour-3",
+        "label": "Previous note 4: hour",
+        "type": "text",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "minute-3",
+        "label": "Previous note 4: minute",
+        "type": "text",
+        "options": [
+          "00",
+          "05",
+          "10",
+          "15",
+          "20",
+          "25",
+          "30",
+          "35",
+          "40",
+          "45",
+          "50",
+          "55"
+        ]
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "bo4-voyage-outlets",
+    "map": "bo4-voyage-of-despair",
+    "name": "Elemental outlets & trial route",
+    "kind": "tracker",
+    "evaluate": "voyage-outlets",
+    "help": "Record each active outlet and create one circle per round. Complete the trials Poison → Water → Electric → Fire.",
+    "fields": [
+      {
+        "id": "outlet-0",
+        "label": "Poison: location",
+        "type": "text",
+        "options": [
+          "Upper Grand Staircase",
+          "State Rooms",
+          "Dining Hall",
+          "Aft Decks",
+          "3rd Class Berths",
+          "1st Class Lounge"
+        ]
+      },
+      {
+        "id": "ready-0",
+        "label": "Poison: circle created",
+        "type": "check"
+      },
+      {
+        "id": "done-0",
+        "label": "Poison: artifact collected",
+        "type": "check"
+      },
+      {
+        "id": "outlet-1",
+        "label": "Water: location",
+        "type": "text",
+        "options": [
+          "Upper Grand Staircase",
+          "State Rooms",
+          "Dining Hall",
+          "Aft Decks",
+          "3rd Class Berths",
+          "1st Class Lounge"
+        ]
+      },
+      {
+        "id": "ready-1",
+        "label": "Water: circle created",
+        "type": "check"
+      },
+      {
+        "id": "done-1",
+        "label": "Water: artifact collected",
+        "type": "check"
+      },
+      {
+        "id": "outlet-2",
+        "label": "Electric: location",
+        "type": "text",
+        "options": [
+          "Upper Grand Staircase",
+          "State Rooms",
+          "Dining Hall",
+          "Aft Decks",
+          "3rd Class Berths",
+          "1st Class Lounge"
+        ]
+      },
+      {
+        "id": "ready-2",
+        "label": "Electric: circle created",
+        "type": "check"
+      },
+      {
+        "id": "done-2",
+        "label": "Electric: artifact collected",
+        "type": "check"
+      },
+      {
+        "id": "outlet-3",
+        "label": "Fire: location",
+        "type": "text",
+        "options": [
+          "Upper Grand Staircase",
+          "State Rooms",
+          "Dining Hall",
+          "Aft Decks",
+          "3rd Class Berths",
+          "1st Class Lounge"
+        ]
+      },
+      {
+        "id": "ready-3",
+        "label": "Fire: circle created",
+        "type": "check"
+      },
+      {
+        "id": "done-3",
+        "label": "Fire: artifact collected",
+        "type": "check"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "id": "bo4-voyage-sky",
+    "map": "bo4-voyage-of-despair",
+    "name": "Planet order & orb route",
+    "kind": "solver",
+    "evaluate": "voyage-sky",
+    "help": "Activate the nine symbols, record the model’s eight bodies and leave Sun last. Each card shows the next orb destination.",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "Display 1",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "Display 2",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "Display 3",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-3",
+        "label": "Display 4",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-4",
+        "label": "Display 5",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-5",
+        "label": "Display 6",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-6",
+        "label": "Display 7",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-7",
+        "label": "Display 8",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "slot-8",
+        "label": "Display 9",
+        "type": "text",
+        "options": [
+          "Mercury",
+          "Venus",
+          "Moon",
+          "Mars",
+          "Jupiter",
+          "Saturn",
+          "Uranus",
+          "Neptune",
+          "Sun"
+        ]
+      },
+      {
+        "id": "found-Mercury",
+        "label": "Mercury: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Venus",
+        "label": "Venus: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Moon",
+        "label": "Moon: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Mars",
+        "label": "Mars: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Jupiter",
+        "label": "Jupiter: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Saturn",
+        "label": "Saturn: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Uranus",
+        "label": "Uranus: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Neptune",
+        "label": "Neptune: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "found-Sun",
+        "label": "Sun: symbol activated",
+        "type": "check"
+      },
+      {
+        "id": "orb-0",
+        "label": "Orb 1: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-1",
+        "label": "Orb 2: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-2",
+        "label": "Orb 3: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-3",
+        "label": "Orb 4: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-4",
+        "label": "Orb 5: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-5",
+        "label": "Orb 6: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-6",
+        "label": "Orb 7: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-7",
+        "label": "Orb 8: collected",
+        "type": "check"
+      },
+      {
+        "id": "orb-8",
+        "label": "Orb 9: collected",
+        "type": "check"
+      }
+    ]
+  },
+  {
+    "id": "bo4-ix-ra",
+    "map": "bo4-ix",
+    "name": "Ra visual kill order",
+    "help": "Tap the actual glyphs as they flash on the obelisk. The ordered cards show which enemy to kill next. Record a fresh display for each attempt; ordinary zombies are not sequence targets.",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "Obelisk symbol 1",
+        "options": [
+          "Tiger",
+          "Gladiator",
+          "Brawler",
+          "Blightfather",
+          "Fire catalyst",
+          "Water catalyst",
+          "Poison catalyst",
+          "Electric catalyst"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "Obelisk symbol 2",
+        "options": [
+          "Tiger",
+          "Gladiator",
+          "Brawler",
+          "Blightfather",
+          "Fire catalyst",
+          "Water catalyst",
+          "Poison catalyst",
+          "Electric catalyst"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "Obelisk symbol 3",
+        "options": [
+          "Tiger",
+          "Gladiator",
+          "Brawler",
+          "Blightfather",
+          "Fire catalyst",
+          "Water catalyst",
+          "Poison catalyst",
+          "Electric catalyst"
+        ]
+      },
+      {
+        "id": "slot-3",
+        "label": "Obelisk symbol 4",
+        "options": [
+          "Tiger",
+          "Gladiator",
+          "Brawler",
+          "Blightfather",
+          "Fire catalyst",
+          "Water catalyst",
+          "Poison catalyst",
+          "Electric catalyst"
+        ]
+      },
+      {
+        "id": "done-0",
+        "label": "Target 1 killed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-1",
+        "label": "Target 2 killed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-2",
+        "label": "Target 3 killed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-3",
+        "label": "Target 4 killed",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "recorder",
+    "evaluate": "ordered",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/ix/"
+  },
+  {
+    "id": "bo4-ix-danu",
+    "map": "bo4-ix",
+    "name": "Danu preparation & full-round log",
+    "help": "Keep the three waits separate: burn wood, mix fertilizer, then wait after planting at Danu. The item’s actual appearance confirms readiness. A partial placement round and a special round may not advance the wait.",
+    "fields": [
+      {
+        "id": "check-0",
+        "label": "Wood collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "Wood placed in cauldron",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "First full burn round complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "Second full burn round complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Ash confirmed / collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-5",
+        "label": "Skull ground",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-6",
+        "label": "Dung collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-7",
+        "label": "Fertilizer mixed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-8",
+        "label": "First full waiting round complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-9",
+        "label": "Second full waiting round complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-10",
+        "label": "Fertilizer ready / collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-11",
+        "label": "Fertilizer placed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-12",
+        "label": "Firebomb activation complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "wood-round",
+        "label": "wood: placed during round",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "mix-round",
+        "label": "mix: placed during round",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "plant-round",
+        "label": "plant: placed during round",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "current-round",
+        "label": "Current round",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "planted-ready",
+        "label": "Fertilizer emits green smoke",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "tracker"
+  },
+  {
+    "id": "bo4-ancient-hands",
+    "map": "bo4-ancient-evil",
+    "name": "Oracle location finder & hand routes",
+    "help": "Choose the Oracle’s phrase to see the actual hiding-place screenshot. Track hand stages and the three upgrade pickups independently; Exalted is optional for the main quest.",
+    "fields": [
+      {
+        "id": "clue",
+        "label": "Oracle phrase",
+        "options": [
+          "Chaos of the Treasuries",
+          "Near the Purple Blossoms",
+          "Barque of Gold",
+          "The Shieldbearer’s Fountain",
+          "General’s Column",
+          "Fallen Statesman",
+          "Beneath the Watchful Gaze of Zeus",
+          "Golden Taurus",
+          "Where the Arrow Splits the Road",
+          "Where Sorrow Flows Beneath",
+          "Where Sorrow Washes Over",
+          "Wheel of Water",
+          "Workbench of Hephaestus",
+          "Where the Serpent Snared the Eagle",
+          "On the Broken Bridge",
+          "Shrine of Wind and Sky",
+          "Top of the Center of the World",
+          "Chaos of Venom",
+          "Where the Mighty Titan Points",
+          "Steps of Flesh and Bone"
+        ]
+      },
+      {
+        "id": "check-0",
+        "label": "Gaia: Fallen",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "Gaia: Redeemed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "Gaia: Exalted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "Hemera: Fallen",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Hemera: Redeemed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-5",
+        "label": "Hemera: Exalted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-6",
+        "label": "Charon: Fallen",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-7",
+        "label": "Charon: Redeemed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-8",
+        "label": "Charon: Exalted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-9",
+        "label": "Ouranos: Fallen",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-10",
+        "label": "Ouranos: Redeemed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-11",
+        "label": "Ouranos: Exalted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-0-0",
+        "label": "Hand 1: upgrade pickup 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-0-1",
+        "label": "Hand 1: upgrade pickup 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-0-2",
+        "label": "Hand 1: upgrade pickup 3",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-1-0",
+        "label": "Hand 2: upgrade pickup 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-1-1",
+        "label": "Hand 2: upgrade pickup 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-1-2",
+        "label": "Hand 2: upgrade pickup 3",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-2-0",
+        "label": "Hand 3: upgrade pickup 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-2-1",
+        "label": "Hand 3: upgrade pickup 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-2-2",
+        "label": "Hand 3: upgrade pickup 3",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-3-0",
+        "label": "Hand 4: upgrade pickup 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-3-1",
+        "label": "Hand 4: upgrade pickup 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "part-3-2",
+        "label": "Hand 4: upgrade pickup 3",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "reference",
+    "reference": "https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide"
+  },
+  {
+    "id": "bo4-ancient-tribute",
+    "map": "bo4-ancient-evil",
+    "name": "Eternal Flame tribute calculator",
+    "help": "Enter claimed reward counts across the whole team. A tier still waiting at the pillars is not claimed. The flame needs 9 points for every player in the match.",
+    "fields": [
+      {
+        "id": "players",
+        "label": "Players",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "id": "common",
+        "label": "common: rewards claimed",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "rare",
+        "label": "rare: rewards claimed",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "legendary",
+        "label": "legendary: rewards claimed",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      },
+      {
+        "id": "epic",
+        "label": "epic: rewards claimed",
+        "options": null,
+        "maxLength": 3,
+        "inputmode": "numeric",
+        "pattern": "^\\d{1,3}$"
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "reference": "https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide"
+  },
+  {
+    "id": "bo4-ancient-theater",
+    "map": "bo4-ancient-evil",
+    "name": "Theater assignments & attack cues",
+    "help": "Give each player a Redeemed hand. Stand on your own color. Targets in the stands require normal shots; floor targets require charged shots. Return home on the grayscale cue.",
+    "fields": [
+      {
+        "id": "hand-0",
+        "label": "Gaia: player",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "hand-1",
+        "label": "Hemera: player",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "hand-2",
+        "label": "Charon: player",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "hand-3",
+        "label": "Ouranos: player",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "performance-0",
+        "label": "Successful performance 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "performance-1",
+        "label": "Successful performance 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "performance-2",
+        "label": "Successful performance 3",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "cue",
+        "label": "Current target position",
+        "options": [
+          "Stands",
+          "Floor",
+          "Grayscale",
+          "No matching circle"
+        ]
+      }
+    ],
+    "version": 1,
+    "kind": "reference"
+  },
+  {
+    "id": "bo4-dead-of-the-night-alistair",
+    "map": "bo4-dead-of-the-night",
+    "name": "Alistair’s visual lock",
+    "help": "Select the observed shape under each color. The enlarged glyphs are taken from actual gameplay screenshots; their display color is only a reference. Match shape and your recorded color at the Library case.",
+    "fields": [
+      {
+        "id": "blue",
+        "label": "Blue: previous note",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "shape-blue",
+        "label": "Blue: shape",
+        "options": [
+          "glyph-1",
+          "glyph-2",
+          "glyph-3",
+          "glyph-4"
+        ]
+      },
+      {
+        "id": "green",
+        "label": "Green: previous note",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "shape-green",
+        "label": "Green: shape",
+        "options": [
+          "glyph-1",
+          "glyph-2",
+          "glyph-3",
+          "glyph-4"
+        ]
+      },
+      {
+        "id": "yellow",
+        "label": "Yellow: previous note",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "shape-yellow",
+        "label": "Yellow: shape",
+        "options": [
+          "glyph-1",
+          "glyph-2",
+          "glyph-3",
+          "glyph-4"
+        ]
+      },
+      {
+        "id": "red",
+        "label": "Red: previous note",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "shape-red",
+        "label": "Red: shape",
+        "options": [
+          "glyph-1",
+          "glyph-2",
+          "glyph-3",
+          "glyph-4"
+        ]
+      }
+    ],
+    "kind": "recorder",
+    "version": 1
+  },
+  {
+    "id": "bo4-dead-of-the-night-zodiac",
+    "map": "bo4-dead-of-the-night",
+    "name": "Visual zodiac & scratch solver",
+    "help": "Choose the three shapes you actually see, record all three scratch groups in each area, and receive the telescope entry order. Blank means unread; zero means inspected and absent. Clear and reread clues after a failed input.",
+    "fields": [
+      {
+        "id": "room-0",
+        "label": "Clue 1: room",
+        "options": [
+          "Entrance Hall",
+          "Billiards Room",
+          "Library",
+          "Main Hall",
+          "Wine Cellar",
+          "Dining Room",
+          "Trophy / Bedroom"
+        ]
+      },
+      {
+        "id": "sign-0",
+        "label": "Clue 1: sign",
+        "options": [
+          "Aries",
+          "Taurus",
+          "Gemini",
+          "Cancer",
+          "Leo",
+          "Virgo",
+          "Libra",
+          "Scorpio",
+          "Sagittarius",
+          "Capricorn",
+          "Aquarius",
+          "Pisces"
+        ]
+      },
+      {
+        "id": "count-0-0",
+        "label": "Clue 1: scratch group 1",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-0-1",
+        "label": "Clue 1: scratch group 2",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-0-2",
+        "label": "Clue 1: scratch group 3",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "room-1",
+        "label": "Clue 2: room",
+        "options": [
+          "Entrance Hall",
+          "Billiards Room",
+          "Library",
+          "Main Hall",
+          "Wine Cellar",
+          "Dining Room",
+          "Trophy / Bedroom"
+        ]
+      },
+      {
+        "id": "sign-1",
+        "label": "Clue 2: sign",
+        "options": [
+          "Aries",
+          "Taurus",
+          "Gemini",
+          "Cancer",
+          "Leo",
+          "Virgo",
+          "Libra",
+          "Scorpio",
+          "Sagittarius",
+          "Capricorn",
+          "Aquarius",
+          "Pisces"
+        ]
+      },
+      {
+        "id": "count-1-0",
+        "label": "Clue 2: scratch group 1",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-1-1",
+        "label": "Clue 2: scratch group 2",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-1-2",
+        "label": "Clue 2: scratch group 3",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "room-2",
+        "label": "Clue 3: room",
+        "options": [
+          "Entrance Hall",
+          "Billiards Room",
+          "Library",
+          "Main Hall",
+          "Wine Cellar",
+          "Dining Room",
+          "Trophy / Bedroom"
+        ]
+      },
+      {
+        "id": "sign-2",
+        "label": "Clue 3: sign",
+        "options": [
+          "Aries",
+          "Taurus",
+          "Gemini",
+          "Cancer",
+          "Leo",
+          "Virgo",
+          "Libra",
+          "Scorpio",
+          "Sagittarius",
+          "Capricorn",
+          "Aquarius",
+          "Pisces"
+        ]
+      },
+      {
+        "id": "count-2-0",
+        "label": "Clue 3: scratch group 1",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-2-1",
+        "label": "Clue 3: scratch group 2",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "count-2-2",
+        "label": "Clue 3: scratch group 3",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      }
+    ],
+    "kind": "solver",
+    "version": 1
+  },
+  {
+    "id": "bo4-dead-of-the-night-stake",
+    "map": "bo4-dead-of-the-night",
+    "name": "Stake Knife shape-to-location solver",
+    "help": "Record the tree shapes left to right while facing the lantern. Then record the shape visible at each Gardens stone. The helper gives the shooting route only after both observations contain all four different shapes.",
+    "fields": [
+      {
+        "id": "tree-0",
+        "label": "Tree 1",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "tree-1",
+        "label": "Tree 2",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "tree-2",
+        "label": "Tree 3",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "tree-3",
+        "label": "Tree 4",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "stone-0",
+        "label": "Gazebo",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "stone-1",
+        "label": "Behind Vapr",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "stone-2",
+        "label": "Fountain by perk",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      },
+      {
+        "id": "stone-3",
+        "label": "Railing by barrier",
+        "options": [
+          "down-bar",
+          "up-bar",
+          "down",
+          "up"
+        ]
+      }
+    ],
+    "kind": "solver",
+    "version": 1
+  },
+  {
+    "id": "bo4-classified-codes",
+    "map": "bo4-classified",
+    "name": "Project Skadi pictured codes & survival",
+    "help": "Record each code by its photograph. The required order is fixed: Shi No Numa, Der Riese, Shangri-La, Kino. Confirm entries only after the machine accepts them; count three full uninterrupted Groom Lake rounds separately.",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "Shi No Numa",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "accepted-0",
+        "label": "Shi No Numa: machine accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "slot-1",
+        "label": "Der Riese",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "accepted-1",
+        "label": "Der Riese: machine accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "slot-2",
+        "label": "Shangri-La",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "accepted-2",
+        "label": "Shangri-La: machine accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "slot-3",
+        "label": "Kino der Toten",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "accepted-3",
+        "label": "Kino der Toten: machine accepted",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "rounds",
+        "label": "Full Groom Lake rounds",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "kind": "recorder",
+    "version": 1
+  },
+  {
+    "id": "bo4-alpha-clocks",
+    "map": "bo4-alpha-omega",
+    "name": "Rushmore visual clock route",
+    "help": "Record the five TV clues in broadcast order. See each target clock face and room, then identify the unassigned clock and convert its observed time to Rushmore’s four-digit code.",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "TV clue 1",
+        "options": null,
+        "maxLength": 5,
+        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
+      },
+      {
+        "id": "slot-1",
+        "label": "TV clue 2",
+        "options": null,
+        "maxLength": 5,
+        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
+      },
+      {
+        "id": "slot-2",
+        "label": "TV clue 3",
+        "options": null,
+        "maxLength": 5,
+        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
+      },
+      {
+        "id": "slot-3",
+        "label": "TV clue 4",
+        "options": null,
+        "maxLength": 5,
+        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
+      },
+      {
+        "id": "slot-4",
+        "label": "TV clue 5",
+        "options": null,
+        "maxLength": 5,
+        "pattern": "^[A-Fa-f](0[1-9]|1[0-2])(00|15|30|45)$"
+      },
+      {
+        "id": "done-0",
+        "label": "Clock 1 set",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-1",
+        "label": "Clock 2 set",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-2",
+        "label": "Clock 3 set",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-3",
+        "label": "Clock 4 set",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "done-4",
+        "label": "Clock 5 set",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "final-hour",
+        "label": "Remaining clock: hour",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "final-minute",
+        "label": "Remaining clock: minute",
+        "options": [
+          "00",
+          "15",
+          "30",
+          "45"
+        ]
+      }
+    ],
+    "version": 1,
+    "kind": "solver",
+    "evaluate": "alpha-clocks",
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/alpha-omega/"
+  },
+  {
+    "id": "bo4-alpha-rushmore",
+    "map": "bo4-alpha-omega",
+    "name": "Rushmore codes & experiment notes",
+    "help": "Record all personnel codes before entering 7626 → Sawyer → McCain → Pernell. Painting codes are a later, separate batch. Optional bonus codes have their own limits.",
+    "fields": [
+      {
+        "id": "bonus",
+        "label": "Optional bonus effect",
+        "options": [
+          "Easy · 3279 · Slow zombies for five minutes.",
+          "Noob · 6662 · Slow zombies for five minutes.",
+          "Brew · 2739 · Half-price Brew.",
+          "Soda · 7632 · Half-price Soda.",
+          "Cola · 2652 · Half-price Cola.",
+          "Pack · 7225 · Bonfire Sale pickup.",
+          "Time · 8463 · Freeze zombies for 30 seconds.",
+          "Boom · 2666 · Spawns a live grenade.",
+          "Nuke · 6853 · Nuke pickup.",
+          "Door · 3667 · One random unopened door becomes free.",
+          "Love · 5683 · Love dialogue.",
+          "Quiz · 1841 · Quiz dialogue; no answer input.",
+          "Joke · 5653 · Joke dialogue.",
+          "Song · 7664 · Play the hidden song.",
+          "Tedd · 8333 · Activate T.E.D.D. in Diner.",
+          "Duck · 3825 · Melee makes duck sounds.",
+          "Guns · 4867 · All players change weapons every ten seconds for five minutes.",
+          "Bank · 2265 · Give each player 1,000 points.",
+          "Rave · 7283 · Party in Beds.",
+          "Vent · 8368 · Frustration dialogue.",
+          "Shed · 7433 · Open the Yellow House backyard shed.",
+          "Life · 5433 · Life dialogue.",
+          "Puke · 7853 · Melee makes zombies vomit.",
+          "Fall · 3255 · Looking at zombies knocks them over.",
+          "Ugly · 8459 · Compliment dialogue.",
+          "Hero · 4376 · Refill specialist charge.",
+          "Yawn · 9296 · Boredom dialogue.",
+          "Warp · 9277 · Random teleport.",
+          "Club · 2582 · Disco in Beds.",
+          "Grav · 4728 · Kills float upward for 25 minutes."
+        ]
+      },
+      {
+        "id": "personnel-0",
+        "label": "Sawyer — APD Interrogation",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "personnel-1",
+        "label": "McCain — APD Control papers",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "personnel-2",
+        "label": "Pernell — Yellow House locked desk",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "painting-0",
+        "label": "Painting: Green House Upstairs",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "painting-1",
+        "label": "Painting: Lounge",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "painting-2",
+        "label": "Painting: Beds",
+        "options": null,
+        "maxLength": 4,
+        "pattern": "^\\d{4}$",
+        "inputmode": "numeric"
+      },
+      {
+        "id": "purpose-0",
+        "label": "Extra code 1: purpose",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "code-0",
+        "label": "Extra code 1: digits",
+        "options": null,
+        "pattern": "^\\d{4}$",
+        "maxLength": 4,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "purpose-1",
+        "label": "Extra code 2: purpose",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "code-1",
+        "label": "Extra code 2: digits",
+        "options": null,
+        "pattern": "^\\d{4}$",
+        "maxLength": 4,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "purpose-2",
+        "label": "Extra code 3: purpose",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "code-2",
+        "label": "Extra code 3: digits",
+        "options": null,
+        "pattern": "^\\d{4}$",
+        "maxLength": 4,
+        "inputmode": "numeric"
+      },
+      {
+        "id": "purpose-3",
+        "label": "Extra code 4: purpose",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "code-3",
+        "label": "Extra code 4: digits",
+        "options": null,
+        "pattern": "^\\d{4}$",
+        "maxLength": 4,
+        "inputmode": "numeric"
+      }
+    ],
+    "version": 1,
+    "kind": "reference",
+    "evaluate": "rushmore",
+    "searchable": true,
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/alpha-omega/"
+  },
+  {
+    "id": "bo4-tag-riddles",
+    "map": "bo4-tag-der-toten",
+    "name": "Offering & Seal photo finder",
+    "help": "Search a few words from the spoken clue, choose Offering or Seal, then select the matching photo. Each result gives the exact landmark and action. Your selected clue stays saved.",
+    "fields": [
+      {
+        "id": "clue",
+        "label": "Observed riddle",
+        "options": [
+          "Offering: Where one mysteries",
+          "Offering: Where preservation freezes",
+          "Offering: Where crows roost",
+          "Offering: Where bounded slept",
+          "Offering: Where bread breaks",
+          "Offering: Where earth crumbles",
+          "Offering: Where falls freeze",
+          "Offering: Where feet slip",
+          "Offering: Where filth cleanses",
+          "Offering: Where fire sinks",
+          "Offering: Where helixes peak",
+          "Offering: Where lightning aims",
+          "Offering: Where lines berth",
+          "Offering: Where lungs close",
+          "Offering: Where madness sleeps",
+          "Offering: Where mountains throw",
+          "Offering: Where north is found",
+          "Offering: Where power ends",
+          "Offering: Where hidden burns",
+          "Offering: Where thirst dawns",
+          "Seal: Where humans suffer",
+          "Seal: Inside an icy hall",
+          "Seal: Where Aether was gathered",
+          "Seal: Where cages hang"
+        ]
+      },
+      {
+        "id": "search",
+        "label": "Search clues or rooms",
+        "options": null,
+        "maxLength": 80
+      },
+      {
+        "id": "kind",
+        "label": "Clue type",
+        "options": [
+          "All",
+          "Offering",
+          "Seal"
+        ]
+      }
+    ],
+    "version": 1,
+    "kind": "reference",
+    "evaluate": "riddle",
+    "searchable": true,
+    "reference": "https://www.reddit.com/r/CODZombies/wiki/tag-der-toten/"
+  },
+  {
+    "id": "bo4-tag-challenges",
+    "map": "bo4-tag-der-toten",
+    "name": "Tag quest stage & charge tracker",
+    "help": "Track complete totems, the three distinct orb rituals and actual machine locations. Confirm a machine only when it returns the charged Seal.",
+    "fields": [
+      {
+        "id": "check-0",
+        "label": "First full three-challenge totem complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "Second full three-challenge totem complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "Offering 1 collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "Offering 2 collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-4",
+        "label": "Offering 3 collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-5",
+        "label": "Seal collected from safe",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-6",
+        "label": "Hot and cold soapstones installed",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-7",
+        "label": "All three generators powered / Shard collected",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-8",
+        "label": "Lighthouse lockdown complete",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-9",
+        "label": "Beach Pack-a-Punch charge",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-10",
+        "label": "Lagoon Pack-a-Punch charge",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-11",
+        "label": "Sunken Path Pack-a-Punch charge",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-12",
+        "label": "Boathouse Pack-a-Punch charge",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-13",
+        "label": "Golden Iceberg charge",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "ritual-0",
+        "label": "First roaming-orb ritual and campfire",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "ritual-1",
+        "label": "Second roaming-orb ritual and campfire",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "ritual-2",
+        "label": "Third room-only orb ritual and campfire",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "version": 1,
+    "kind": "tracker"
   }
 ]

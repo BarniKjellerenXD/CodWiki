@@ -2264,8 +2264,16 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-dead-of-the-night:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#wiki_key_features",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-dead-of-the-night:details-setup",
-    "name": "Key Features: Sentinel and Pack-a-Punch",
+    "name": "Sentinel, shield & the three tuning forks",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-setup",
@@ -2273,15 +2281,23 @@
   },
   {
     "id": "bo4-dead-of-the-night:details-weapons",
-    "name": "Silver bullets and Alistair upgrades",
+    "name": "Silver bullets → Folly → Chaos Theory → Annihilator",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-weapons",
     "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-dead-of-the-night:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#wiki_main_quest",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-dead-of-the-night:details-telescope",
-    "name": "Telescope and zodiac",
+    "name": "Telescope — beams, visual zodiac & electric shields",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-telescope",
@@ -2289,7 +2305,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:details-knights",
-    "name": "Knight branch",
+    "name": "Knights — three fireplace runs & forest triangle",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-knights",
@@ -2297,7 +2313,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:details-effigy",
-    "name": "Effigy branch",
+    "name": "Effigy — 1912 grave & the ghost escort",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-effigy",
@@ -2305,10 +2321,42 @@
   },
   {
     "id": "bo4-dead-of-the-night:details-boss",
-    "name": "Werewolf encounter",
+    "name": "Werewolf boss — reveal, trap & damage the chest",
     "map": "bo4-dead-of-the-night",
     "kind": "Section",
     "route": "/guides/bo4-dead-of-the-night#details-boss",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-dead-of-the-night:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#wiki_side_quests",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-dead-of-the-night:details-stake",
+    "name": "Stake Knife — visual tree order & vampire charge",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#details-stake",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-dead-of-the-night:details-impaler",
+    "name": "Savage Impaler — candles, jewelry & crypt defense",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#details-impaler",
+    "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-dead-of-the-night:details-secrets",
+    "name": "Music & three reward rooms",
+    "map": "bo4-dead-of-the-night",
+    "kind": "Section",
+    "route": "/guides/bo4-dead-of-the-night#details-secrets",
     "keywords": "Dead of the Night bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -2321,7 +2369,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-setup",
-    "name": "Key Features: Sentinel and Pack-a-Punch",
+    "name": "Sentinel, shield & the three tuning forks",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-setup",
@@ -2329,7 +2377,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-weapons",
-    "name": "Silver bullets and Alistair upgrades",
+    "name": "Silver bullets → Folly → Chaos Theory → Annihilator",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-weapons",
@@ -2337,7 +2385,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-telescope",
-    "name": "Telescope and zodiac",
+    "name": "Telescope — beams, visual zodiac & electric shields",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-telescope",
@@ -2345,7 +2393,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-knights",
-    "name": "Knight branch",
+    "name": "Knights — three fireplace runs & forest triangle",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-knights",
@@ -2353,7 +2401,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-effigy",
-    "name": "Effigy branch",
+    "name": "Effigy — 1912 grave & the ghost escort",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-effigy",
@@ -2361,7 +2409,7 @@
   },
   {
     "id": "bo4-dead-of-the-night:quick-boss",
-    "name": "Werewolf encounter",
+    "name": "Werewolf boss — reveal, trap & damage the chest",
     "map": "bo4-dead-of-the-night",
     "kind": "Quick parts",
     "route": "/guides/bo4-dead-of-the-night#quick-boss",
@@ -2648,16 +2696,32 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ix:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-ix",
+    "kind": "Section",
+    "route": "/guides/bo4-ix#wiki_key_features",
+    "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ix:details-setup",
-    "name": "Key Features: champions and equipment",
+    "name": "Open the towers, Pack-a-Punch & shield",
     "map": "bo4-ix",
     "kind": "Section",
     "route": "/guides/bo4-ix#details-setup",
     "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ix:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-ix",
+    "kind": "Section",
+    "route": "/guides/bo4-ix#wiki_main_quest",
+    "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ix:details-danu",
-    "name": "Danu preparation",
+    "name": "Danu — skull, fertilizer & tree defense",
     "map": "bo4-ix",
     "kind": "Section",
     "route": "/guides/bo4-ix#details-danu",
@@ -2665,7 +2729,7 @@
   },
   {
     "id": "bo4-ix:details-ra",
-    "name": "Ra enemy sequence",
+    "name": "Ra — bull targets & the symbol kill order",
     "map": "bo4-ix",
     "kind": "Section",
     "route": "/guides/bo4-ix#details-ra",
@@ -2673,7 +2737,7 @@
   },
   {
     "id": "bo4-ix:details-zeus",
-    "name": "Zeus and Odin",
+    "name": "Zeus — raise rods & charge four circles",
     "map": "bo4-ix",
     "kind": "Section",
     "route": "/guides/bo4-ix#details-zeus",
@@ -2681,10 +2745,34 @@
   },
   {
     "id": "bo4-ix:details-boss",
-    "name": "Elephant bosses",
+    "name": "Fury & Wrath — both elephant fights",
     "map": "bo4-ix",
     "kind": "Section",
     "route": "/guides/bo4-ix#details-boss",
+    "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ix:details-orion",
+    "name": "Death of Orion — guaranteed weapon route",
+    "map": "bo4-ix",
+    "kind": "Section",
+    "route": "/guides/bo4-ix#details-orion",
+    "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ix:details-iron-bull",
+    "name": "Optional Iron Bull shield upgrade",
+    "map": "bo4-ix",
+    "kind": "Section",
+    "route": "/guides/bo4-ix#details-iron-bull",
+    "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ix:details-ix-secrets",
+    "name": "Optional music & Odin’s free perk",
+    "map": "bo4-ix",
+    "kind": "Section",
+    "route": "/guides/bo4-ix#details-ix-secrets",
     "keywords": "IX bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -2697,7 +2785,7 @@
   },
   {
     "id": "bo4-ix:quick-setup",
-    "name": "Key Features: champions and equipment",
+    "name": "Open the towers, Pack-a-Punch & shield",
     "map": "bo4-ix",
     "kind": "Quick parts",
     "route": "/guides/bo4-ix#quick-setup",
@@ -2705,7 +2793,7 @@
   },
   {
     "id": "bo4-ix:quick-danu",
-    "name": "Danu preparation",
+    "name": "Danu — skull, fertilizer & tree defense",
     "map": "bo4-ix",
     "kind": "Quick parts",
     "route": "/guides/bo4-ix#quick-danu",
@@ -2713,7 +2801,7 @@
   },
   {
     "id": "bo4-ix:quick-ra",
-    "name": "Ra enemy sequence",
+    "name": "Ra — bull targets & the symbol kill order",
     "map": "bo4-ix",
     "kind": "Quick parts",
     "route": "/guides/bo4-ix#quick-ra",
@@ -2721,7 +2809,7 @@
   },
   {
     "id": "bo4-ix:quick-zeus",
-    "name": "Zeus and Odin",
+    "name": "Zeus — raise rods & charge four circles",
     "map": "bo4-ix",
     "kind": "Quick parts",
     "route": "/guides/bo4-ix#quick-zeus",
@@ -2729,7 +2817,7 @@
   },
   {
     "id": "bo4-ix:quick-boss",
-    "name": "Elephant bosses",
+    "name": "Fury & Wrath — both elephant fights",
     "map": "bo4-ix",
     "kind": "Quick parts",
     "route": "/guides/bo4-ix#quick-boss",
@@ -2744,35 +2832,99 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-voyage-of-despair:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#wiki_key_features",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-voyage-of-despair:details-setup",
-    "name": "Key Features: Sentinel and equipment",
+    "name": "1 · Open the ship and prepare your equipment",
     "map": "bo4-voyage-of-despair",
     "kind": "Section",
     "route": "/guides/bo4-voyage-of-despair#details-setup",
     "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-voyage-of-despair:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#wiki_main_quest",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-voyage-of-despair:details-clocks",
-    "name": "Clocks and elemental outlets",
+    "name": "2 · Match four clock symbols to eight controls",
     "map": "bo4-voyage-of-despair",
     "kind": "Section",
     "route": "/guides/bo4-voyage-of-despair#details-clocks",
     "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-voyage-of-despair:details-outlets",
+    "name": "3 · Create circles, then clear four trials in order",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#details-outlets",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-voyage-of-despair:details-pipes",
-    "name": "Pipes and celestial sequence",
+    "name": "4 · Flood the Turbine Room and restore the artifact",
     "map": "bo4-voyage-of-despair",
     "kind": "Section",
     "route": "/guides/bo4-voyage-of-despair#details-pipes",
     "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-voyage-of-despair:details-planets",
+    "name": "5 · Activate nine symbols and follow the orb route",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#details-planets",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-voyage-of-despair:details-boss",
-    "name": "Freezing route and Eye",
+    "name": "6 · Ice sprint and the Eye of Odin",
     "map": "bo4-voyage-of-despair",
     "kind": "Section",
     "route": "/guides/bo4-voyage-of-despair#details-boss",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-voyage-of-despair:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#wiki_side_quests",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-voyage-of-despair:details-kraken",
+    "name": "Free Kraken · three chests and a final object",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#details-kraken",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-voyage-of-despair:details-distillery",
+    "name": "Distillation Kit · parts and elemental upgrades",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#details-distillery",
+    "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-voyage-of-despair:details-shield-upgrade",
+    "name": "Optional Svalinn Guard · stronger shield",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Section",
+    "route": "/guides/bo4-voyage-of-despair#details-shield-upgrade",
     "keywords": "Voyage of Despair bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -2785,7 +2937,7 @@
   },
   {
     "id": "bo4-voyage-of-despair:quick-setup",
-    "name": "Key Features: Sentinel and equipment",
+    "name": "1 · Open the ship and prepare your equipment",
     "map": "bo4-voyage-of-despair",
     "kind": "Quick parts",
     "route": "/guides/bo4-voyage-of-despair#quick-setup",
@@ -2793,23 +2945,39 @@
   },
   {
     "id": "bo4-voyage-of-despair:quick-clocks",
-    "name": "Clocks and elemental outlets",
+    "name": "2 · Match four clock symbols to eight controls",
     "map": "bo4-voyage-of-despair",
     "kind": "Quick parts",
     "route": "/guides/bo4-voyage-of-despair#quick-clocks",
     "keywords": "Voyage of Despair main quest checklist"
   },
   {
+    "id": "bo4-voyage-of-despair:quick-outlets",
+    "name": "3 · Create circles, then clear four trials in order",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-voyage-of-despair#quick-outlets",
+    "keywords": "Voyage of Despair main quest checklist"
+  },
+  {
     "id": "bo4-voyage-of-despair:quick-pipes",
-    "name": "Pipes and celestial sequence",
+    "name": "4 · Flood the Turbine Room and restore the artifact",
     "map": "bo4-voyage-of-despair",
     "kind": "Quick parts",
     "route": "/guides/bo4-voyage-of-despair#quick-pipes",
     "keywords": "Voyage of Despair main quest checklist"
   },
   {
+    "id": "bo4-voyage-of-despair:quick-planets",
+    "name": "5 · Activate nine symbols and follow the orb route",
+    "map": "bo4-voyage-of-despair",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-voyage-of-despair#quick-planets",
+    "keywords": "Voyage of Despair main quest checklist"
+  },
+  {
     "id": "bo4-voyage-of-despair:quick-boss",
-    "name": "Freezing route and Eye",
+    "name": "6 · Ice sprint and the Eye of Odin",
     "map": "bo4-voyage-of-despair",
     "kind": "Quick parts",
     "route": "/guides/bo4-voyage-of-despair#quick-boss",
@@ -3512,35 +3680,99 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ancient-evil:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#wiki_key_features",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ancient-evil:details-setup",
-    "name": "Key Features: Pegasus and hands",
+    "name": "Sentinel, Pegasus, shield & Pack-a-Punch",
     "map": "bo4-ancient-evil",
     "kind": "Section",
     "route": "/guides/bo4-ancient-evil#details-setup",
     "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ancient-evil:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#wiki_main_quest",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ancient-evil:details-flame",
-    "name": "Flame, statues and mechanisms",
+    "name": "Eternal Flame, statues & gears",
     "map": "bo4-ancient-evil",
     "kind": "Section",
     "route": "/guides/bo4-ancient-evil#details-flame",
     "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ancient-evil:details-roots",
+    "name": "Gaia’s roots, Ankh & Ra’s beam",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-roots",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ancient-evil:details-theater",
-    "name": "Sundial and theater",
+    "name": "Sundial timing & theater performance",
     "map": "bo4-ancient-evil",
     "kind": "Section",
     "route": "/guides/bo4-ancient-evil#details-theater",
     "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-ancient-evil:details-ballista",
+    "name": "Door sequence & the ballista",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-ballista",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-ancient-evil:details-boss",
-    "name": "Ballista and final arena",
+    "name": "Pegasus & Perseus — damage windows and safe islands",
     "map": "bo4-ancient-evil",
     "kind": "Section",
     "route": "/guides/bo4-ancient-evil#details-boss",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ancient-evil:details-hands",
+    "name": "The four hands — Fallen and Redeemed routes",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-hands",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ancient-evil:details-pegasus-strike",
+    "name": "Pegasus Strike — build the required equipment",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-pegasus-strike",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ancient-evil:details-exalted",
+    "name": "Optional Exalted hands — shared trials",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-exalted",
+    "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-ancient-evil:details-ancient-song",
+    "name": "Optional Stormbound music",
+    "map": "bo4-ancient-evil",
+    "kind": "Section",
+    "route": "/guides/bo4-ancient-evil#details-ancient-song",
     "keywords": "Ancient Evil bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -3553,7 +3785,7 @@
   },
   {
     "id": "bo4-ancient-evil:quick-setup",
-    "name": "Key Features: Pegasus and hands",
+    "name": "Sentinel, Pegasus, shield & Pack-a-Punch",
     "map": "bo4-ancient-evil",
     "kind": "Quick parts",
     "route": "/guides/bo4-ancient-evil#quick-setup",
@@ -3561,23 +3793,39 @@
   },
   {
     "id": "bo4-ancient-evil:quick-flame",
-    "name": "Flame, statues and mechanisms",
+    "name": "Eternal Flame, statues & gears",
     "map": "bo4-ancient-evil",
     "kind": "Quick parts",
     "route": "/guides/bo4-ancient-evil#quick-flame",
     "keywords": "Ancient Evil main quest checklist"
   },
   {
+    "id": "bo4-ancient-evil:quick-roots",
+    "name": "Gaia’s roots, Ankh & Ra’s beam",
+    "map": "bo4-ancient-evil",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-ancient-evil#quick-roots",
+    "keywords": "Ancient Evil main quest checklist"
+  },
+  {
     "id": "bo4-ancient-evil:quick-theater",
-    "name": "Sundial and theater",
+    "name": "Sundial timing & theater performance",
     "map": "bo4-ancient-evil",
     "kind": "Quick parts",
     "route": "/guides/bo4-ancient-evil#quick-theater",
     "keywords": "Ancient Evil main quest checklist"
   },
   {
+    "id": "bo4-ancient-evil:quick-ballista",
+    "name": "Door sequence & the ballista",
+    "map": "bo4-ancient-evil",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-ancient-evil#quick-ballista",
+    "keywords": "Ancient Evil main quest checklist"
+  },
+  {
     "id": "bo4-ancient-evil:quick-boss",
-    "name": "Ballista and final arena",
+    "name": "Pegasus & Perseus — damage windows and safe islands",
     "map": "bo4-ancient-evil",
     "kind": "Quick parts",
     "route": "/guides/bo4-ancient-evil#quick-boss",
@@ -3592,16 +3840,32 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-alpha-omega:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#wiki_key_features",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-alpha-omega:details-setup",
-    "name": "Key Features: ventilation and Rushmore",
+    "name": "Power, ventilation & equipment",
     "map": "bo4-alpha-omega",
     "kind": "Section",
     "route": "/guides/bo4-alpha-omega#details-setup",
     "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-alpha-omega:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#wiki_main_quest",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-alpha-omega:details-clocks",
-    "name": "TV clues and clock settings",
+    "name": "TV broadcast → five clocks → Rushmore code",
     "map": "bo4-alpha-omega",
     "kind": "Section",
     "route": "/guides/bo4-alpha-omega#details-clocks",
@@ -3609,26 +3873,98 @@
   },
   {
     "id": "bo4-alpha-omega:details-tasks",
-    "name": "Escort, cores and codes",
+    "name": "Red crawler, A.D.A.M. & Marlton’s canister",
     "map": "bo4-alpha-omega",
     "kind": "Section",
     "route": "/guides/bo4-alpha-omega#details-tasks",
     "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-alpha-omega:details-core",
+    "name": "Timed server delivery & three painting codes",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-core",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-power",
+    "name": "Restore the six bunker switches",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-power",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-mannequin",
+    "name": "Three mannequin defenses & elemental orb",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-mannequin",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-alpha-omega:details-finale",
-    "name": "Mannequin, orb and Avogadro",
+    "name": "Avogadro — charge, survive & contain",
     "map": "bo4-alpha-omega",
     "kind": "Section",
     "route": "/guides/bo4-alpha-omega#details-finale",
     "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-alpha-omega:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#wiki_side_quests",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-telepads",
+    "name": "Telepads — all three part searches",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-telepads",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-alpha-omega:details-extras",
-    "name": "Useful extras: Mark II variants",
+    "name": "Ray Gun Mark II — kit, frames & route choice",
     "map": "bo4-alpha-omega",
     "kind": "Section",
     "route": "/guides/bo4-alpha-omega#details-extras",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-mark-v",
+    "name": "II-V — Kill-a-Watt variant",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-mark-v",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-mark-x",
+    "name": "II-X — Cryofreeze variant",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-mark-x",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-mark-y",
+    "name": "II-Y — Brain Rot variant",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-mark-y",
+    "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-alpha-omega:details-mark-z",
+    "name": "II-Z — Fire Bomb variant",
+    "map": "bo4-alpha-omega",
+    "kind": "Section",
+    "route": "/guides/bo4-alpha-omega#details-mark-z",
     "keywords": "Alpha Omega bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -3641,7 +3977,7 @@
   },
   {
     "id": "bo4-alpha-omega:quick-setup",
-    "name": "Key Features: ventilation and Rushmore",
+    "name": "Power, ventilation & equipment",
     "map": "bo4-alpha-omega",
     "kind": "Quick parts",
     "route": "/guides/bo4-alpha-omega#quick-setup",
@@ -3649,7 +3985,7 @@
   },
   {
     "id": "bo4-alpha-omega:quick-clocks",
-    "name": "TV clues and clock settings",
+    "name": "TV broadcast → five clocks → Rushmore code",
     "map": "bo4-alpha-omega",
     "kind": "Quick parts",
     "route": "/guides/bo4-alpha-omega#quick-clocks",
@@ -3657,26 +3993,42 @@
   },
   {
     "id": "bo4-alpha-omega:quick-tasks",
-    "name": "Escort, cores and codes",
+    "name": "Red crawler, A.D.A.M. & Marlton’s canister",
     "map": "bo4-alpha-omega",
     "kind": "Quick parts",
     "route": "/guides/bo4-alpha-omega#quick-tasks",
     "keywords": "Alpha Omega main quest checklist"
   },
   {
-    "id": "bo4-alpha-omega:quick-finale",
-    "name": "Mannequin, orb and Avogadro",
+    "id": "bo4-alpha-omega:quick-core",
+    "name": "Timed server delivery & three painting codes",
     "map": "bo4-alpha-omega",
     "kind": "Quick parts",
-    "route": "/guides/bo4-alpha-omega#quick-finale",
+    "route": "/guides/bo4-alpha-omega#quick-core",
     "keywords": "Alpha Omega main quest checklist"
   },
   {
-    "id": "bo4-alpha-omega:quick-extras",
-    "name": "Useful extras: Mark II variants",
+    "id": "bo4-alpha-omega:quick-power",
+    "name": "Restore the six bunker switches",
     "map": "bo4-alpha-omega",
     "kind": "Quick parts",
-    "route": "/guides/bo4-alpha-omega#quick-extras",
+    "route": "/guides/bo4-alpha-omega#quick-power",
+    "keywords": "Alpha Omega main quest checklist"
+  },
+  {
+    "id": "bo4-alpha-omega:quick-mannequin",
+    "name": "Three mannequin defenses & elemental orb",
+    "map": "bo4-alpha-omega",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-alpha-omega#quick-mannequin",
+    "keywords": "Alpha Omega main quest checklist"
+  },
+  {
+    "id": "bo4-alpha-omega:quick-finale",
+    "name": "Avogadro — charge, survive & contain",
+    "map": "bo4-alpha-omega",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-alpha-omega#quick-finale",
     "keywords": "Alpha Omega main quest checklist"
   },
   {
@@ -3688,16 +4040,32 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-tag-der-toten:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#wiki_key_features",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-tag-der-toten:details-setup",
-    "name": "Key Features: transport and Pack-a-Punch",
+    "name": "Power, Pack-a-Punch & the facility route",
     "map": "bo4-tag-der-toten",
     "kind": "Section",
     "route": "/guides/bo4-tag-der-toten#details-setup",
     "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-tag-der-toten:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#wiki_main_quest",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-tag-der-toten:details-offerings",
-    "name": "Offerings and Seal",
+    "name": "Four dials, three offerings & the Seal safe",
     "map": "bo4-tag-der-toten",
     "kind": "Section",
     "route": "/guides/bo4-tag-der-toten#details-offerings",
@@ -3705,18 +4073,74 @@
   },
   {
     "id": "bo4-tag-der-toten:details-orbs",
-    "name": "Orbs, campfire and soapstones",
+    "name": "First orb ritual & campfire",
     "map": "bo4-tag-der-toten",
     "kind": "Section",
     "route": "/guides/bo4-tag-der-toten#details-orbs",
     "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-tag-der-toten:details-shard",
+    "name": "Hot/cold soapstones, fuse & Elemental Shard",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-shard",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:details-merge",
+    "name": "Second orb ritual & Lighthouse lockdown",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-merge",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:details-charges",
+    "name": "Four ordinary Pack-a-Punch charges & final ritual",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-charges",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-tag-der-toten:details-finale",
-    "name": "Lighthouse and final charges",
+    "name": "Golden charge, lava escort & ending",
     "map": "bo4-tag-der-toten",
     "kind": "Section",
     "route": "/guides/bo4-tag-der-toten#details-finale",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#wiki_side_quests",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:details-equipment",
+    "name": "Required equipment — guaranteed routes",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-equipment",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:details-totems",
+    "name": "Five challenge totems — choose two for the quest",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-totems",
+    "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-tag-der-toten:details-optional",
+    "name": "Optional survival equipment & weapon upgrades",
+    "map": "bo4-tag-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo4-tag-der-toten#details-optional",
     "keywords": "Tag der Toten bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -3729,7 +4153,7 @@
   },
   {
     "id": "bo4-tag-der-toten:quick-setup",
-    "name": "Key Features: transport and Pack-a-Punch",
+    "name": "Power, Pack-a-Punch & the facility route",
     "map": "bo4-tag-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo4-tag-der-toten#quick-setup",
@@ -3737,7 +4161,7 @@
   },
   {
     "id": "bo4-tag-der-toten:quick-offerings",
-    "name": "Offerings and Seal",
+    "name": "Four dials, three offerings & the Seal safe",
     "map": "bo4-tag-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo4-tag-der-toten#quick-offerings",
@@ -3745,15 +4169,39 @@
   },
   {
     "id": "bo4-tag-der-toten:quick-orbs",
-    "name": "Orbs, campfire and soapstones",
+    "name": "First orb ritual & campfire",
     "map": "bo4-tag-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo4-tag-der-toten#quick-orbs",
     "keywords": "Tag der Toten main quest checklist"
   },
   {
+    "id": "bo4-tag-der-toten:quick-shard",
+    "name": "Hot/cold soapstones, fuse & Elemental Shard",
+    "map": "bo4-tag-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-tag-der-toten#quick-shard",
+    "keywords": "Tag der Toten main quest checklist"
+  },
+  {
+    "id": "bo4-tag-der-toten:quick-merge",
+    "name": "Second orb ritual & Lighthouse lockdown",
+    "map": "bo4-tag-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-tag-der-toten#quick-merge",
+    "keywords": "Tag der Toten main quest checklist"
+  },
+  {
+    "id": "bo4-tag-der-toten:quick-charges",
+    "name": "Four ordinary Pack-a-Punch charges & final ritual",
+    "map": "bo4-tag-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo4-tag-der-toten#quick-charges",
+    "keywords": "Tag der Toten main quest checklist"
+  },
+  {
     "id": "bo4-tag-der-toten:quick-finale",
-    "name": "Lighthouse and final charges",
+    "name": "Golden charge, lava escort & ending",
     "map": "bo4-tag-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo4-tag-der-toten#quick-finale",
@@ -3832,27 +4280,75 @@
     "keywords": "bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-classified:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#wiki_key_features",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-classified:details-setup",
-    "name": "Key Features: power and DEFCON",
+    "name": "Power, shield & Pack-a-Punch at Groom Lake",
     "map": "bo4-classified",
     "kind": "Section",
     "route": "/guides/bo4-classified#details-setup",
     "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-classified:wiki_weapon_quest",
+    "name": "Weapon Quest",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#wiki_weapon_quest",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-classified:details-codes",
-    "name": "Project Skadi codes",
+    "name": "Project Skadi — reveal four pictured codes",
     "map": "bo4-classified",
     "kind": "Section",
     "route": "/guides/bo4-classified#details-codes",
     "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
+    "id": "bo4-classified:wiki_story_ending",
+    "name": "Story Ending",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#wiki_story_ending",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
     "id": "bo4-classified:details-ending",
-    "name": "Round-150 ending",
+    "name": "Round 150 — separate endurance ending",
     "map": "bo4-classified",
     "kind": "Section",
     "route": "/guides/bo4-classified#details-ending",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-classified:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#wiki_side_quests",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-classified:details-traps",
+    "name": "Electric traps & more Groom Lake space",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#details-traps",
+    "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
+  },
+  {
+    "id": "bo4-classified:details-secrets",
+    "name": "Songs, bonus enemies & audio",
+    "map": "bo4-classified",
+    "kind": "Section",
+    "route": "/guides/bo4-classified#details-secrets",
     "keywords": "Classified bo4 Black Ops 4 zombies  main quest easter egg"
   },
   {
@@ -3865,7 +4361,7 @@
   },
   {
     "id": "bo4-classified:quick-setup",
-    "name": "Key Features: power and DEFCON",
+    "name": "Power, shield & Pack-a-Punch at Groom Lake",
     "map": "bo4-classified",
     "kind": "Quick parts",
     "route": "/guides/bo4-classified#quick-setup",
@@ -3873,7 +4369,7 @@
   },
   {
     "id": "bo4-classified:quick-codes",
-    "name": "Project Skadi codes",
+    "name": "Project Skadi — reveal four pictured codes",
     "map": "bo4-classified",
     "kind": "Quick parts",
     "route": "/guides/bo4-classified#quick-codes",
@@ -3881,7 +4377,7 @@
   },
   {
     "id": "bo4-classified:quick-ending",
-    "name": "Round-150 ending",
+    "name": "Round 150 — separate endurance ending",
     "map": "bo4-classified",
     "kind": "Quick parts",
     "route": "/guides/bo4-classified#quick-ending",
@@ -4662,22 +5158,6 @@
     "keywords": "cw Black Ops Cold War Mauer der Toten solver tracker"
   },
   {
-    "id": "bo4-dead-of-the-night-zodiac",
-    "map": "bo4-dead-of-the-night",
-    "name": "Zodiac scratch calculator",
-    "route": "/tools/bo4-dead-of-the-night-zodiac",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Dead of the Night solver tracker"
-  },
-  {
-    "id": "bo4-dead-of-the-night-alistair",
-    "map": "bo4-dead-of-the-night",
-    "name": "Alistair symbol notebook",
-    "route": "/tools/bo4-dead-of-the-night-alistair",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Dead of the Night solver tracker"
-  },
-  {
     "id": "bo3-gorod-valves",
     "map": "bo3-gorod-krovi",
     "name": "Valve solver",
@@ -4700,22 +5180,6 @@
     "route": "/tools/bo4-blood-morse",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
-  },
-  {
-    "id": "bo4-classified-codes",
-    "map": "bo4-classified",
-    "name": "Project Skadi codes",
-    "route": "/tools/bo4-classified-codes",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Classified solver tracker"
-  },
-  {
-    "id": "bo4-alpha-clocks",
-    "map": "bo4-alpha-omega",
-    "name": "Rushmore clock clues",
-    "route": "/tools/bo4-alpha-clocks",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Alpha Omega solver tracker"
   },
   {
     "id": "cw-firebase-darts",
@@ -4894,38 +5358,6 @@
     "keywords": "bo3 Black Ops 3 Origins solver tracker"
   },
   {
-    "id": "bo4-ix-ra",
-    "map": "bo4-ix",
-    "name": "Ra enemy order",
-    "route": "/tools/bo4-ix-ra",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 IX solver tracker"
-  },
-  {
-    "id": "bo4-ix-danu",
-    "map": "bo4-ix",
-    "name": "Danu preparation tracker",
-    "route": "/tools/bo4-ix-danu",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 IX solver tracker"
-  },
-  {
-    "id": "bo4-voyage-clocks",
-    "map": "bo4-voyage-of-despair",
-    "name": "Elemental clock notebook",
-    "route": "/tools/bo4-voyage-clocks",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
-  },
-  {
-    "id": "bo4-voyage-sky",
-    "map": "bo4-voyage-of-despair",
-    "name": "Celestial order recorder",
-    "route": "/tools/bo4-voyage-sky",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
-  },
-  {
     "id": "bo4-blood-powerhouse",
     "map": "bo4-blood-of-the-dead",
     "name": "Power House visual companion",
@@ -4948,46 +5380,6 @@
     "route": "/tools/bo4-blood-skulls",
     "kind": "Tool",
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
-  },
-  {
-    "id": "bo4-ancient-hands",
-    "map": "bo4-ancient-evil",
-    "name": "Hand progression",
-    "route": "/tools/bo4-ancient-hands",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
-  },
-  {
-    "id": "bo4-ancient-theater",
-    "map": "bo4-ancient-evil",
-    "name": "Theater hand assignments",
-    "route": "/tools/bo4-ancient-theater",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
-  },
-  {
-    "id": "bo4-alpha-rushmore",
-    "map": "bo4-alpha-omega",
-    "name": "Rushmore codes and quest notes",
-    "route": "/tools/bo4-alpha-rushmore",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Alpha Omega solver tracker"
-  },
-  {
-    "id": "bo4-tag-riddles",
-    "map": "bo4-tag-der-toten",
-    "name": "Offering and Seal riddle lookup",
-    "route": "/tools/bo4-tag-riddles",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
-  },
-  {
-    "id": "bo4-tag-challenges",
-    "map": "bo4-tag-der-toten",
-    "name": "Challenge and charge tracker",
-    "route": "/tools/bo4-tag-challenges",
-    "kind": "Tool",
-    "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
   },
   {
     "id": "cw-die-variants",
@@ -5020,6 +5412,134 @@
     "route": "/tools/cw-outbreak-regions",
     "kind": "Tool",
     "keywords": "cw Black Ops Cold War Outbreak solver tracker"
+  },
+  {
+    "id": "bo4-voyage-clocks",
+    "map": "bo4-voyage-of-despair",
+    "name": "Clock symbols → lever settings",
+    "route": "/tools/bo4-voyage-clocks",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
+  },
+  {
+    "id": "bo4-voyage-outlets",
+    "map": "bo4-voyage-of-despair",
+    "name": "Elemental outlets & trial route",
+    "route": "/tools/bo4-voyage-outlets",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
+  },
+  {
+    "id": "bo4-voyage-sky",
+    "map": "bo4-voyage-of-despair",
+    "name": "Planet order & orb route",
+    "route": "/tools/bo4-voyage-sky",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Voyage of Despair solver tracker"
+  },
+  {
+    "id": "bo4-ix-ra",
+    "map": "bo4-ix",
+    "name": "Ra visual kill order",
+    "route": "/tools/bo4-ix-ra",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 IX solver tracker"
+  },
+  {
+    "id": "bo4-ix-danu",
+    "map": "bo4-ix",
+    "name": "Danu preparation & full-round log",
+    "route": "/tools/bo4-ix-danu",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 IX solver tracker"
+  },
+  {
+    "id": "bo4-ancient-hands",
+    "map": "bo4-ancient-evil",
+    "name": "Oracle location finder & hand routes",
+    "route": "/tools/bo4-ancient-hands",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
+  },
+  {
+    "id": "bo4-ancient-tribute",
+    "map": "bo4-ancient-evil",
+    "name": "Eternal Flame tribute calculator",
+    "route": "/tools/bo4-ancient-tribute",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
+  },
+  {
+    "id": "bo4-ancient-theater",
+    "map": "bo4-ancient-evil",
+    "name": "Theater assignments & attack cues",
+    "route": "/tools/bo4-ancient-theater",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Ancient Evil solver tracker"
+  },
+  {
+    "id": "bo4-dead-of-the-night-alistair",
+    "map": "bo4-dead-of-the-night",
+    "name": "Alistair’s visual lock",
+    "route": "/tools/bo4-dead-of-the-night-alistair",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Dead of the Night solver tracker"
+  },
+  {
+    "id": "bo4-dead-of-the-night-zodiac",
+    "map": "bo4-dead-of-the-night",
+    "name": "Visual zodiac & scratch solver",
+    "route": "/tools/bo4-dead-of-the-night-zodiac",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Dead of the Night solver tracker"
+  },
+  {
+    "id": "bo4-dead-of-the-night-stake",
+    "map": "bo4-dead-of-the-night",
+    "name": "Stake Knife shape-to-location solver",
+    "route": "/tools/bo4-dead-of-the-night-stake",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Dead of the Night solver tracker"
+  },
+  {
+    "id": "bo4-classified-codes",
+    "map": "bo4-classified",
+    "name": "Project Skadi pictured codes & survival",
+    "route": "/tools/bo4-classified-codes",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Classified solver tracker"
+  },
+  {
+    "id": "bo4-alpha-clocks",
+    "map": "bo4-alpha-omega",
+    "name": "Rushmore visual clock route",
+    "route": "/tools/bo4-alpha-clocks",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Alpha Omega solver tracker"
+  },
+  {
+    "id": "bo4-alpha-rushmore",
+    "map": "bo4-alpha-omega",
+    "name": "Rushmore codes & experiment notes",
+    "route": "/tools/bo4-alpha-rushmore",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Alpha Omega solver tracker"
+  },
+  {
+    "id": "bo4-tag-riddles",
+    "map": "bo4-tag-der-toten",
+    "name": "Offering & Seal photo finder",
+    "route": "/tools/bo4-tag-riddles",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
+  },
+  {
+    "id": "bo4-tag-challenges",
+    "map": "bo4-tag-der-toten",
+    "name": "Tag quest stage & charge tracker",
+    "route": "/tools/bo4-tag-challenges",
+    "kind": "Tool",
+    "keywords": "bo4 Black Ops 4 Tag der Toten solver tracker"
   },
   {
     "id": "super-ee",

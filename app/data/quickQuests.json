@@ -1129,55 +1129,59 @@
   "bo4-dead-of-the-night": [
     {
       "id": "setup",
-      "title": "Key Features: Sentinel and Pack-a-Punch",
+      "title": "Sentinel, shield & the three tuning forks",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate the Sentinel Artifact at the Grand Staircase. Find the three crystal/gazing-stone locations and charge them with nearby kills."
+          "html": "Sentinel on → expose and charge purple, green and blue stones."
         },
         {
           "id": "setup-2",
-          "html": "Look into each charged stone and identify its vision. Follow the corresponding clock defense, ghost escort or perk-machine enemy task to earn the tuning forks."
+          "html": "Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort."
+        },
+        {
+          "id": "setup-shield",
+          "html": "Three shield pieces → Smoking Room workbench."
         },
         {
           "id": "setup-3",
-          "html": "Use the tuning forks to clear the forest barrier, defeat the werewolf and reach Pack-a-Punch. Build the shield from its parts around the mansion."
+          "html": "Use three forks at Forest Terrace; kill the werewolf with silver if ready; reach Pack-a-Punch."
         }
       ]
     },
     {
       "id": "weapons",
-      "title": "Silver bullets and Alistair upgrades",
+      "title": "Silver bullets → Folly → Chaos Theory → Annihilator",
       "detail": "details-weapons",
       "steps": [
         {
           "id": "weapons-1",
-          "html": "Collect the silver objects and smelt them in the Wine Cellar, then combine the silver with the bullet ingredients at the Library workbench. Silver ammunition is important for werewolves."
+          "html": "Three silver objects → Wine Cellar; three powder ingredients → Library silver bullets."
         },
         {
           "id": "weapons-2",
-          "html": "Find the four colored glyphs around the grounds and mansion. Record each glyph under its color and set the Library lock to obtain Alistair’s Folly."
+          "html": "Record four colored shapes; set matching dials and interact with the Library case."
         },
         {
           "id": "weapons-3",
-          "html": "Obtain the upgrade ingredients, including the silver-bullet werewolf material and the hidden Library component, and craft Chaos Theory at the Greenhouse workbench."
+          "html": "Silver werewolf material → process; shield-bash Library shelf → blue part; craft Chaos Theory."
         },
         {
           "id": "weapons-4",
-          "html": "For Alistair’s Annihilator, shoot the orange Mausoleum lamps with Chaos Theory as they light in sequence. Kill the bat released by the final lamp and collect its material."
+          "html": "Follow four orange lamps; shoot the released bat; collect its material."
         },
         {
           "id": "weapons-5",
-          "html": "Kill vampires with Chaos Theory’s tornado charge and collect four bile drops. Interact with the red coffin in the cemetery, defeat the Crimson Nosferatu and collect its material."
+          "html": "Tornado-kill vampires → collect bile → red coffin → kill Crimson Nosferatu."
         },
         {
           "id": "weapons-6",
-          "html": "In the forest, look for three dirt mounds topped with blue mushrooms. Hit an enemy directly with the green charged shot near a mound so it digs; collect the part from the correct mound."
+          "html": "Green charged effect on enemy beside mushroom mound → let it dig → collect component."
         },
         {
           "id": "weapons-7",
-          "html": "Process the bat and Nosferatu materials separately in the Greenhouse machine, collecting each output. Build Alistair’s Annihilator at the rear workbench.",
+          "html": "Process both materials; use the right Laboratory bench for Alistair’s Annihilator.",
           "tools": [
             "bo4-dead-of-the-night-alistair"
           ]
@@ -1186,32 +1190,32 @@
     },
     {
       "id": "telescope",
-      "title": "Telescope and zodiac",
+      "title": "Telescope — beams, visual zodiac & electric shields",
       "detail": "details-telescope",
       "steps": [
         {
           "id": "telescope-1",
-          "html": "Revisit the three charged gazing stones after Pack-a-Punch. Their knight, circular-object and twig visions activate three independent quest branches."
+          "html": "Revisit the stones to activate all three branches."
         },
         {
           "id": "telescope-2",
-          "html": "Have all players shoot the rod above the Mausoleum together using silver bullets. At the North Atrium Bridge panel, align Atlas’s rings: middle wheel to green, left to blue, right to red; repeat until the beam links to the telescope."
+          "html": "Silver-shot rod together → Atlas wheels: middle/green, left/blue, right/red; repeat."
         },
         {
           "id": "telescope-3",
-          "html": "Find the three zodiac observations. Each room has a sign and three scratch groups. Record all counts, including confirmed zeros, then total each room."
+          "html": "Find three active sign areas; record all three scratch groups for each."
         },
         {
           "id": "telescope-4",
-          "html": "Enter the telescope signs from lowest scratch total to highest. If an entry fails, the clues reroll: clear the helper and collect all signs and scratches again."
+          "html": "Dial: lowest total → middle → highest; melee to submit each symbol."
         },
         {
           "id": "telescope-5",
-          "html": "With the shield out, hold interact at the dome crank until the roof opens, then shield-melee the crank to lock it. Activate the Greenhouse electric trap and have everyone run through it with shields out."
+          "html": "Shield out: turn dome crank fully, bash to lock; electrify shields; bash eyepiece together."
         },
         {
           "id": "telescope-6",
-          "html": "Bring the electrified shields upstairs and bash the telescope together. Interact with the revealed slab as a team, survive the lockdown and collect the slab.",
+          "html": "All interact with stone; survive lockdown; kill final werewolves; collect the stone.",
           "tools": [
             "bo4-dead-of-the-night-zodiac"
           ]
@@ -1220,70 +1224,74 @@
     },
     {
       "id": "knights",
-      "title": "Knight branch",
+      "title": "Knights — three fireplace runs & forest triangle",
       "detail": "details-knights",
       "steps": [
         {
           "id": "knights-1",
-          "html": "Install a fire core at the Library fire trap. Activate it and shoot its flames with a charged Annihilator shot to turn them blue. Run through with the shield out, then shield-melee the fireplaces in the required order."
+          "html": "Library blue fire → flaming shield → bash a whole fireplace sequence."
         },
         {
           "id": "knights-2",
-          "html": "First fireplace run: Smoking Room → Library fireplace right of trap → Library fireplace left of trap → Billiards Room. Collect the crystal at the final fireplace."
+          "html": "Smoking → Library right → Library left → Billiards; collect gem."
         },
         {
           "id": "knights-3",
-          "html": "Second run: Main Hall left → East Gallery → Main Hall right → West Gallery. Third run: Trophy Room → Master Bedroom → Music Room → Dining Room. Collect each run’s crystal."
+          "html": "Run 2: Mozu-side Hall → East → other Hall → West. Run 3: Trophy → Bedroom → Music → Dining."
         },
         {
           "id": "knights-4",
-          "html": "Interact with the knights at Main Hall, Greenhouse Terrace and Graveyard. Stay close while leading their crystals to matching colored ground circles in the forest."
+          "html": "Animate Main Hall, Gardens and Cemetery armor; escort each gem to its matching Forest circle."
         },
         {
           "id": "knights-5",
-          "html": "Kill zombies beside the ghost knights to move them toward Pack-a-Punch. Kill a werewolf inside their final triangle. Interact with the slab together, survive the lockdown and collect it."
+          "html": "Feed each knight twice → silver-kill werewolf inside triangle → lockdown → collect stone."
         }
       ]
     },
     {
       "id": "effigy",
-      "title": "Effigy branch",
+      "title": "Effigy — 1912 grave & the ghost escort",
       "detail": "details-effigy",
       "steps": [
         {
           "id": "effigy-1",
-          "html": "Shoot and collect five branches from the white birch trees shedding leaves in the graveyard. Build the effigy using the collected branches."
+          "html": "Shoot five birches with Annihilator; interact with every dropped branch."
         },
         {
           "id": "effigy-2",
-          "html": "Find the gravestone with death date 1912. The eligible player interacts to enter spirit mode. Ignite the ground before the effigy with the Annihilator’s fireball charge, then have that player interact with the burning effigy."
+          "html": "Matching player uses 1912 grave → fireball at effigy base → interact to enter ghost mode."
         },
         {
           "id": "effigy-3",
-          "html": "The player in afterlife searches the mansion for the female ghost, checking perk machines and barriers. Enemies still attack that player. Escort her back to the graveyard until she creates the flame column."
+          "html": "Find woman in ghost mode; escort to Cemetery; interact with her stone to exit."
         },
         {
           "id": "effigy-4",
-          "html": "Interact with the slab together, survive the defense and collect it. With all three slabs collected, use the forest door to enter the boss arena."
+          "html": "Exit ghost mode; start group lockdown; collect third stone; resupply."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Werewolf encounter",
+      "title": "Werewolf boss — reveal, trap & damage the chest",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "With all three branch slabs complete, replenish silver ammunition, armor and perks before starting the boss interaction."
+          "html": "Full shield, silver ammo, upgraded damage weapon; group at Forest boss door."
         },
         {
           "id": "boss-2",
-          "html": "Align the arena beams using the statues to reveal the target area. Lure the werewolf into the lit zone, then damage it during the vulnerable window."
+          "html": "Aim three statue beams into green square; lure boss inside; shoot glowing chest."
+        },
+        {
+          "id": "boss-wave",
+          "html": "Boss retreats → supplies → survive the mixed enemy wave."
         },
         {
           "id": "boss-3",
-          "html": "Survive the intervening enemy wave. In the final phase the target square starts invisible: rotate statues until their beams turn green, then lure the werewolf into the revealed trap and repeat damage windows."
+          "html": "Final stage: find hidden square using green beams; trap and damage until the ending."
         }
       ]
     }
@@ -1590,39 +1598,51 @@
   "bo4-ix": [
     {
       "id": "setup",
-      "title": "Key Features: champions and equipment",
+      "title": "Open the towers, Pack-a-Punch & shield",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate the four god-tower gongs, defeat their champions and place the heads at the Temple to unlock Pack-a-Punch."
+          "html": "Banner: complete three challenges. Ring four tower gongs; four heads into the Temple."
         },
         {
           "id": "setup-2",
-          "html": "Build the Brazen Bull shield. Complete the Death of Orion acquisition route or obtain the weapon from the box, then upgrade it to Serket’s Kiss."
+          "html": "Build the Brazen Bull in The Pit; get Death of Orion and upgrade it."
         },
         {
           "id": "setup-3",
-          "html": "Complete arena challenges and prepare a Firebomb weapon for the Danu activation."
+          "html": "Prepare Fire Bomb; begin the wood wait early. Save a bullet weapon for precision kills."
         }
       ]
     },
     {
       "id": "danu",
-      "title": "Danu preparation",
+      "title": "Danu — skull, fertilizer & tree defense",
       "detail": "details-danu",
       "steps": [
         {
           "id": "danu-1",
-          "html": "Obtain the special skull in the Temple and grind it using the wonder weapon. Collect wood from the pyre and dung from poor crowd affinity."
+          "html": "Find the blue-marked Temple skull → Specialist → Flooded Crypt grinder → collect bone meal."
+        },
+        {
+          "id": "danu-grinder-locations",
+          "html": "Flooded Crypt: locate the active grinder in one of these three recesses."
+        },
+        {
+          "id": "danu-wood",
+          "html": "Gladiator axe into a pyre → wood over Odin’s cauldron → wait and collect charcoal."
         },
         {
           "id": "danu-2",
-          "html": "Burn the wood in the cauldron, collect the ash when ready and mix the fertilizer ingredients. Track full waiting rounds and inspect the result before collection."
+          "html": "Collect dung at minimum affinity; mix all three ingredients in Zeus’s Bath House bowl."
+        },
+        {
+          "id": "danu-plant",
+          "html": "Plant between Danu’s trees; wait for green smoke; Fire Bomb a zombie on top."
         },
         {
           "id": "danu-3",
-          "html": "Place the fertilizer at Danu, use Firebomb at the required spot and complete the tree defense after the activation.",
+          "html": "Whole team on blue cracks → destroy red growth floor by floor → return teleport.",
           "tools": [
             "bo4-ix-danu"
           ]
@@ -1631,20 +1651,24 @@
     },
     {
       "id": "ra",
-      "title": "Ra enemy sequence",
+      "title": "Ra — bull targets & the symbol kill order",
       "detail": "details-ra",
       "steps": [
         {
           "id": "ra-1",
-          "html": "Find and shoot the four bull symbols using the shield, then kill the summoned champions to charge the obelisk."
+          "html": "Shield-shoot four bull targets; kill each summoned Gladiator."
+        },
+        {
+          "id": "ra-target-gallery",
+          "html": "Nine possible bull sightlines; only four are active in your match."
         },
         {
           "id": "ra-2",
-          "html": "Read the obelisk display and identify each enemy symbol. Kill the required special enemies in displayed order during the challenge; avoid accidentally killing a later target first."
+          "html": "Start at Ra’s obelisk; record four glyphs in the order they flash."
         },
         {
           "id": "ra-3",
-          "html": "Clear the recorder before the next sequence and repeat until Ra’s challenge is complete.",
+          "html": "Follow the four-target order twice; clear the recorder for each fresh display.",
           "tools": [
             "bo4-ix-ra"
           ]
@@ -1653,35 +1677,43 @@
     },
     {
       "id": "zeus",
-      "title": "Zeus and Odin",
+      "title": "Zeus — raise rods & charge four circles",
       "detail": "details-zeus",
       "steps": [
         {
           "id": "zeus-1",
-          "html": "Raise the required posts and charge them with Kill-O-Watt kills. Complete the arena challenge and return to the quest route."
+          "html": "Central stone → raise four underground rods → stunned Kill-O-Watt kills inside four circles."
+        },
+        {
+          "id": "zeus-rods",
+          "html": "Four rod positions: Odin Tunnel, Cursed Room, Danu Tunnel and Collapsed Tunnel."
         },
         {
           "id": "zeus-2",
-          "html": "Shoot the nine Odin symbols in their three alignment groups from the correct viewing positions, then complete the pit defense."
+          "html": "Align and shoot three groups: Danu Tunnel, The Pit and The Crypts."
+        },
+        {
+          "id": "odin-defense",
+          "html": "All players on The Pit’s rear grate → clear lockdown waves → collect key."
         },
         {
           "id": "zeus-3",
-          "html": "Resupply before interacting with the final quest portal."
+          "html": "Resupply before all players activate the red Arena portal."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Elephant bosses",
+      "title": "Fury & Wrath — both elephant fights",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Damage and break each elephant’s armor to expose vulnerable areas, then focus fire while avoiding charges and supporting enemies."
+          "html": "Clear the opening wave → break Fury’s red side-armor points → shoot its forehead."
         },
         {
           "id": "boss-2",
-          "html": "Defeat both elephants; the first kill is only the midpoint of the encounter."
+          "html": "Repeat the full armor and head cycle on Wrath; defeat both elephants."
         }
       ]
     }
@@ -1689,35 +1721,43 @@
   "bo4-voyage-of-despair": [
     {
       "id": "setup",
-      "title": "Key Features: Sentinel and equipment",
+      "title": "1 · Open the ship and prepare your equipment",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Reach the Poop Deck and activate the Sentinel Artifact. Activate the Pack-a-Punch pedestals around the ship and build the shield."
+          "html": "Activate Sentinel; touch all four Pack-a-Punch pedestals."
+        },
+        {
+          "id": "setup-shield",
+          "html": "Collect three shield parts and build at the Poop Deck."
+        },
+        {
+          "id": "setup-drain",
+          "html": "Drain both flooded sections."
         },
         {
           "id": "setup-2",
-          "html": "Obtain the Kraken and its upgrade components. Keep access to elemental ammunition for the later pipe step."
+          "html": "Kraken acquired; Distillation Kit built."
         }
       ]
     },
     {
       "id": "clocks",
-      "title": "Clocks and elemental outlets",
+      "title": "2 · Match four clock symbols to eight controls",
       "detail": "details-clocks",
       "steps": [
         {
           "id": "clocks-1",
-          "html": "Find the four clocks that changed from their default time and identify their nearby elemental symbols. Record each hour and minute under the matching element."
+          "html": "Record the four active glyphs and clock times."
         },
         {
           "id": "clocks-2",
-          "html": "Set the bridge minute controls and the Engine Room/Poop Deck hour controls to the observed target times, matching the control symbols shown in the source diagrams."
+          "html": "Bridge minutes → Engine Room Fire/Water hours → Poop Deck Air/Earth hours."
         },
         {
           "id": "clocks-3",
-          "html": "Locate the elemental outlets and perform their catalyst tasks in Poison → Water → Electric → Fire order. Finish the corresponding trials.",
+          "html": "Clocks locked; start the outlet hunt.",
           "tools": [
             "bo4-voyage-clocks"
           ]
@@ -1725,21 +1765,54 @@
       ]
     },
     {
+      "id": "outlets",
+      "title": "3 · Create circles, then clear four trials in order",
+      "detail": "details-outlets",
+      "steps": [
+        {
+          "id": "outlets-find",
+          "html": "Locate four active outlets and record their elements."
+        },
+        {
+          "id": "outlets-create",
+          "html": "Create one matching Catalyst circle per round."
+        },
+        {
+          "id": "outlets-trials",
+          "html": "Complete Poison, Water, Electric, Fire trials; collect every artifact.",
+          "tools": [
+            "bo4-voyage-outlets"
+          ]
+        }
+      ]
+    },
+    {
       "id": "pipes",
-      "title": "Pipes and celestial sequence",
+      "title": "4 · Flood the Turbine Room and restore the artifact",
       "detail": "details-pipes",
       "steps": [
         {
           "id": "pipes-1",
-          "html": "Use the poison Kraken to break the leaking pipes, then complete the artifact/Pack-a-Punch interaction that opens the next quest stage."
+          "html": "Poison Kraken: convert all nine steam leaks into water leaks."
         },
         {
+          "id": "pipes-artifact",
+          "html": "Pack-a-Punch the artifact at Turbine Room."
+        }
+      ]
+    },
+    {
+      "id": "planets",
+      "title": "5 · Activate nine symbols and follow the orb route",
+      "detail": "details-planets",
+      "steps": [
+        {
           "id": "pipes-2",
-          "html": "Locate the celestial symbols and record the displayed sequence. Use the map landmarks to identify which object to shoot and where its pickup appears."
+          "html": "Activate nine symbols, then watch the Cargo Hold model."
         },
         {
           "id": "pipes-3",
-          "html": "Collect the celestial pickups in order, handling the Sun at the final stage. Keep the current step visible before moving to the next location.",
+          "html": "Shoot → hold interact on each orb, in order; leave Sun until ready.",
           "tools": [
             "bo4-voyage-sky"
           ]
@@ -1748,20 +1821,24 @@
     },
     {
       "id": "boss",
-      "title": "Freezing route and Eye",
+      "title": "6 · Ice sprint and the Eye of Odin",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Complete the freezing escape route by clearing ice obstacles and reaching the destination within the in-game limit."
+          "html": "Everyone interacts with Sun orb → break ice → final Poop Deck block."
         },
         {
           "id": "boss-2",
-          "html": "Prepare equipment before the boss transition. Survive the Eye’s arena stages, use cover against its charged attacks and damage its exposed weak point."
+          "html": "Enter prepared; survive Poop Deck and Engine Room."
+        },
+        {
+          "id": "boss-staterooms",
+          "html": "State Rooms → Starboard Deck: damage pupil during beam windows."
         },
         {
           "id": "boss-3",
-          "html": "Continue through all location changes and the final damage stage."
+          "html": "Final arena: interrupt three charged wipe attacks."
         }
       ]
     }
@@ -2408,20 +2485,20 @@
   "bo4-ancient-evil": [
     {
       "id": "setup",
-      "title": "Key Features: Pegasus and hands",
+      "title": "Sentinel, Pegasus, shield & Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate the Sentinel Artifact, obtain the Golden Bridle and survive the Pegasus route into the second map area. Free the eagles and complete the Pack-a-Punch defense."
+          "html": "Amphitheater artifact → survive → collect bridle → kill Gegenees and take shield body."
         },
         {
           "id": "setup-2",
-          "html": "Build Apollo’s Will and locate dormant hands using the Oracle’s location hints. Bring each to its god shrine and complete its acquisition trial."
+          "html": "Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch."
         },
         {
           "id": "setup-3",
-          "html": "Upgrade the four hands to their required stages. Keep Gaia, Hemera, Charon and Ouranos progress separate.",
+          "html": "Oracle clue → pictured purple-glowing container → melee → hand → chosen shrine.",
           "tools": [
             "bo4-ancient-hands"
           ]
@@ -2430,35 +2507,61 @@
     },
     {
       "id": "flame",
-      "title": "Flame, statues and mechanisms",
+      "title": "Eternal Flame, statues & gears",
       "detail": "details-flame",
       "steps": [
         {
           "id": "flame-1",
-          "html": "Complete the challenge sequence needed to obtain the Eternal Flame. Use the shield and oil locations to carry out the flame step."
+          "html": "Claim enough tribute rewards for 9 points per player; confirm the blue Eternal Flame."
+        },
+        {
+          "id": "flame-oil",
+          "html": "Burning shield spear → ignite all three oil patches."
         },
         {
           "id": "flame-2",
-          "html": "Use Charon’s hand for the statue sequence and the shield for the cog interactions. Follow the quest’s revealed order rather than marking all statues by sight alone."
+          "html": "Stand in Charon’s blood pool at Zeus; single-shot the glowing-eyed statue, four times."
+        },
+        {
+          "id": "flame-gears",
+          "html": "Expose three cog sets → spear at contact → lock Stoa statues facing the crystal.",
+          "tools": [
+            "bo4-ancient-tribute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roots",
+      "title": "Gaia’s roots, Ankh & Ra’s beam",
+      "detail": "details-roots",
+      "steps": [
+        {
+          "id": "roots-gaia",
+          "html": "Gaia: one root → one shot through the pair → one shot through the group of three."
+        },
+        {
+          "id": "roots-ankh",
+          "html": "Gegenees shield blast frees Ankh → kill root Gegenees for pole → install pole in sundial."
         },
         {
           "id": "flame-3",
-          "html": "Obtain the Ankh and use Hemera with the Ra mechanism. Defend the beam sequence and collect the scepter."
+          "html": "Give Ra the Ankh and Redeemed Hemera; protect beam; return the revealed scepter."
         }
       ]
     },
     {
       "id": "theater",
-      "title": "Sundial and theater",
+      "title": "Sundial timing & theater performance",
       "detail": "details-theater",
       "steps": [
         {
           "id": "theater-1",
-          "html": "At the sundial, stop each rotating ring as its blue section passes beneath the beam. This is a live timing action, not a fixed numeric code."
+          "html": "Electric Catalyst on sundial → stop three blue marks under the light line."
         },
         {
           "id": "theater-2",
-          "html": "Assign players to their hands for the theater performance. Watch the active cue and respond with the matching hand during each round of the performance.",
+          "html": "Own-color circle; stands = normal shot; floor = charged shot; grayscale = return home.",
           "tools": [
             "bo4-ancient-theater"
           ]
@@ -2466,17 +2569,36 @@
       ]
     },
     {
+      "id": "ballista",
+      "title": "Door sequence & the ballista",
+      "detail": "details-ballista",
+      "steps": [
+        {
+          "id": "ballista-door",
+          "html": "Shoot the six numbered door panels in order; restart if the lights clear."
+        },
+        {
+          "id": "boss-1",
+          "html": "Pegasus Strike at blue mark → Ouranos turns ballista → burning spear through venom → melee ballista."
+        },
+        {
+          "id": "ballista-ready",
+          "html": "Resupply and charge Specialist before entering the portal behind Pack-a-Punch."
+        }
+      ]
+    },
+    {
       "id": "boss",
-      "title": "Ballista and final arena",
+      "title": "Pegasus & Perseus — damage windows and safe islands",
       "detail": "details-boss",
       "steps": [
         {
-          "id": "boss-1",
-          "html": "Complete the ballista sequence using the required Pegasus Strike, Ouranos and venom/fire interactions, then prepare the team before entering the final area."
+          "id": "boss-2",
+          "html": "Gunfire grounds Pegasus; orange glow means Specialist damage."
         },
         {
-          "id": "boss-2",
-          "html": "Damage Pegasus during the exposed windows while avoiding its attacks. Continue into the Perseus encounter and exploit its vulnerable windows until the ending."
+          "id": "boss-perseus",
+          "html": "Perseus teleports in → weapon damage → orange vulnerability → Specialist → collect key."
         }
       ]
     }
@@ -2484,88 +2606,127 @@
   "bo4-alpha-omega": [
     {
       "id": "setup",
-      "title": "Key Features: ventilation and Rushmore",
+      "title": "Power, ventilation & equipment",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Turn on power and complete the bunker ventilation lockdown. Clear the blocked vents to enable Pack-a-Punch."
+          "html": "Power House → Generators lockdown → repair four gassing vents → Pack-a-Punch in Beds."
+        },
+        {
+          "id": "setup-shield",
+          "html": "Collect shield parts in Cul-de-sac, Operations and Beds; build a Riot Shield."
         },
         {
           "id": "setup-2",
-          "html": "Activate Rushmore and obtain the required melee equipment for the TV clue route. Build the shield and prepare your weapon upgrades."
+          "html": "Next round: activate Rushmore; obtain Galvaknuckles, Telepads and a Brain Rot weapon."
         }
       ]
     },
     {
       "id": "clocks",
-      "title": "TV clues and clock settings",
+      "title": "TV broadcast → five clocks → Rushmore code",
       "detail": "details-clocks",
       "steps": [
         {
           "id": "clocks-1",
-          "html": "Activate the static televisions using Galvaknuckles and record each letter/time clue as A–F plus HHMM."
+          "html": "Galvaknuckle-kill by the active static TV; record all five letter/time clues in order."
         },
         {
           "id": "clocks-2",
-          "html": "Set the five indicated clocks: A Yellow House, B Green House, C Prisoner Holding, D Transfusion, E Operations, F APD Interrogation."
+          "html": "Set each target clock in broadcast order: interact for minutes; melee for hours."
         },
         {
           "id": "clocks-3",
-          "html": "Read the sixth, unassigned clock and enter its observed four-digit time into Rushmore. The helper cannot derive that final time from the other five.",
+          "html": "Interact with the remaining clock; read its final time and enter HHMM at Rushmore.",
           "tools": [
-            "bo4-alpha-clocks",
-            "bo4-alpha-rushmore"
+            "bo4-alpha-clocks"
           ]
         }
       ]
     },
     {
       "id": "tasks",
-      "title": "Escort, cores and codes",
+      "title": "Red crawler, A.D.A.M. & Marlton’s canister",
       "detail": "details-tasks",
       "steps": [
         {
           "id": "tasks-1",
-          "html": "Complete Rushmore’s Nova escort and ADAM/115-canister tasks. Return items and wait for confirmation before starting the next instruction."
+          "html": "Escort the red crawler alive to Transfusion Facility; return to Rushmore."
         },
+        {
+          "id": "adam-codes",
+          "html": "Enter 7626 → Sawyer → McCain → Pernell at Rushmore."
+        },
+        {
+          "id": "adam-canister",
+          "html": "A.D.A.M. from Storage → Marlton’s Diner stairs door → canister into Transfusion rack.",
+          "tools": [
+            "bo4-alpha-rushmore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "title": "Timed server delivery & three painting codes",
+      "detail": "details-core",
+      "steps": [
         {
           "id": "tasks-2",
-          "html": "Collect and install the power cores. Use Brain Rot for the picture/code sequence and record codes with their associated purpose."
+          "html": "Charge the Power House server with a Jolting Jack; teleport its core to Operations."
         },
         {
+          "id": "painting-codes",
+          "html": "Brain Rot the three paintings; record and enter every exposed four-digit code.",
+          "tools": [
+            "bo4-alpha-rushmore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "title": "Restore the six bunker switches",
+      "detail": "details-power",
+      "steps": [
+        {
           "id": "tasks-3",
-          "html": "Set the six bunker switches as directed: Diner, Beds and Generators up; Solitary, Storage and Lounge down."
+          "html": "UP: Diner / Beds / Generators. DOWN: Solitary / Storage / Lounge. Restore main power."
+        }
+      ]
+    },
+    {
+      "id": "mannequin",
+      "title": "Three mannequin defenses & elemental orb",
+      "detail": "details-mannequin",
+      "steps": [
+        {
+          "id": "finale-1",
+          "html": "Defend three sparking mannequins; collect both arms and the head."
+        },
+        {
+          "id": "mannequin-orb",
+          "html": "Repair A.D.A.M. in APD Interrogation; escort the orb from Yellow, Green or Beds."
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Mannequin, orb and Avogadro",
+      "title": "Avogadro — charge, survive & contain",
       "detail": "details-finale",
       "steps": [
         {
-          "id": "finale-1",
-          "html": "Complete the mannequin assembly and orb escort, then prepare for the bunker encounter. Maintain access between rooms and refresh armor/ammunition."
+          "id": "boss-start",
+          "html": "Resupply; all players activate APD Control; fill the first canister with mannequin kills."
+        },
+        {
+          "id": "boss-canisters",
+          "html": "Activate and fill backup canisters in Storage, Diner, Lounge and Beds; leave each charged room."
         },
         {
           "id": "finale-2",
-          "html": "Survive the soul-charge stages and lure the Avogadro through the final containment sequence. Complete Rushmore’s final interaction."
-        }
-      ]
-    },
-    {
-      "id": "extras",
-      "title": "Useful extras: Mark II variants",
-      "detail": "details-extras",
-      "steps": [
-        {
-          "id": "extras-1",
-          "html": "The four Ray Gun Mark II variants have separate frame, ammunition and charge tasks. Choose a variant based on your loadout before spending resources."
-        },
-        {
-          "id": "extras-2",
-          "html": "Optional Rushmore bonus codes have their own use limits. Do not treat a failed bonus redemption as a failed main-quest code."
+          "html": "Push the Avogadro into the APD with gunfire → terminal → collect Elemental Shard."
         }
       ]
     }
@@ -2573,80 +2734,132 @@
   "bo4-tag-der-toten": [
     {
       "id": "setup",
-      "title": "Key Features: transport and Pack-a-Punch",
+      "title": "Power, Pack-a-Punch & the facility route",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Restore power across the ship and facility routes, activate transport and unlock Pack-a-Punch access. Build the shield and prepare a strong weapon."
+          "html": "Docks + Bridge power → blue cave rock → Hermit at Lighthouse Level 4."
+        },
+        {
+          "id": "setup-cranks",
+          "html": "Stern crank → Sun Deck; Forecastle crank → Main Deck; collect Handle → Human Infusion power."
+        },
+        {
+          "id": "setup-shield",
+          "html": "Build shield from Docks, Frozen Crevasse/Lagoon and Lighthouse parts."
         },
         {
           "id": "setup-2",
-          "html": "Speak with the Hermit and complete the two required challenge-totem rewards. Return to him when the rewards are confirmed."
+          "html": "Finish two complete three-challenge totems, claim rewards, then collect the Hermit’s dials."
         }
       ]
     },
     {
       "id": "offerings",
-      "title": "Offerings and Seal",
+      "title": "Four dials, three offerings & the Seal safe",
       "detail": "details-offerings",
       "steps": [
         {
           "id": "offerings-1",
-          "html": "Complete the dial interaction, then listen to each offering riddle. Identify the landmark and collect its offering before requesting or completing the next clue."
+          "html": "Place and turn four dials until they ding; collect the three riddle offerings."
         },
         {
           "id": "offerings-2",
-          "html": "Use the separate Seal riddle to identify its safe. Obtain dynamite and open the correct target rather than treating it as another ordinary offering."
+          "html": "Use the Seal riddle → melee covering → dynamite safe → collect Seal."
         },
         {
           "id": "offerings-3",
-          "html": "Bring the quest items back through the Hermit sequence.",
+          "html": "Place Seal beneath the red orb in Artifact Storage; have a Music Box ready.",
           "tools": [
-            "bo4-tag-riddles",
-            "bo4-tag-challenges"
+            "bo4-tag-riddles"
           ]
         }
       ]
     },
     {
       "id": "orbs",
-      "title": "Orbs, campfire and soapstones",
+      "title": "First orb ritual & campfire",
       "detail": "details-orbs",
       "steps": [
         {
           "id": "orbs-1",
-          "html": "Follow the orb sequence, using snowballs/freezing interactions where required. Complete the campfire/music-box step and watch for the next success cue."
+          "html": "Release three orange orbs → snowball from a distance → shoot each frozen orb home."
         },
         {
+          "id": "orbs-return",
+          "html": "Freeze/shoot returned orbs → Seal to Sunken Path fire → Music Box → wait and collect."
+        }
+      ]
+    },
+    {
+      "id": "shard",
+      "title": "Hot/cold soapstones, fuse & Elemental Shard",
+      "detail": "details-shard",
+      "steps": [
+        {
           "id": "orbs-2",
-          "html": "Heat the soapstones and cool them through the correct route. Do not substitute immersion in water for the instructed cooling action."
+          "html": "Heat both stones at Boathouse → stay dry → one hot stone + one Decontamination-cooled stone into Human Infusion."
         },
         {
           "id": "orbs-3",
-          "html": "Obtain the fuse and charged Wunderwaffe battery, then complete the generator tasks."
+          "html": "Human Infusion fuse → Lighthouse Station box; Wunderwaffe-shoot both red tower batteries."
+        },
+        {
+          "id": "shard-generators",
+          "html": "Electric zombie kills at all three generators → open Lighthouse Station door → take Shard."
+        }
+      ]
+    },
+    {
+      "id": "merge",
+      "title": "Second orb ritual & Lighthouse lockdown",
+      "detail": "details-merge",
+      "steps": [
+        {
+          "id": "merge-orbs",
+          "html": "Repeat the three roaming orbs, their return and the Music Box campfire ritual."
+        },
+        {
+          "id": "finale-1",
+          "html": "Fully upgrade and resupply → give Seal to Hermit → survive Lighthouse lockdown → retrieve Seal."
+        }
+      ]
+    },
+    {
+      "id": "charges",
+      "title": "Four ordinary Pack-a-Punch charges & final ritual",
+      "detail": "details-charges",
+      "steps": [
+        {
+          "id": "finale-2",
+          "html": "Charge and retrieve Seal at Beach, Lagoon, Sunken Path and Boathouse."
+        },
+        {
+          "id": "charges-orbs",
+          "html": "Third ritual stays in Artifact Storage → final Sunken Path Music Box → collect Seal.",
+          "tools": [
+            "bo4-tag-challenges"
+          ]
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Lighthouse and final charges",
+      "title": "Golden charge, lava escort & ending",
       "detail": "details-finale",
       "steps": [
         {
-          "id": "finale-1",
-          "html": "Repeat the required orb/campfire sequence and survive the lighthouse lockdown. Replenish before beginning the final charging route."
-        },
-        {
-          "id": "finale-2",
-          "html": "Complete all four Pack-a-Punch charges and the Golden Pack-a-Punch stage. Track each separately."
+          "id": "golden-charge",
+          "html": "Sun Deck flinger → Golden Pack-a-Punch → charge Seal until the protective bubble appears."
         },
         {
           "id": "finale-3",
-          "html": "Stay with the final escort and finish the ending interaction after the charges are complete.",
-          "tools": [
-            "bo4-tag-challenges"
-          ]
+          "html": "Escort inside the bubble; charge it at stops; cross lava on rocks; survive the shrinking Human Infusion zone."
+        },
+        {
+          "id": "ending",
+          "html": "Collect device → give to Hermit → watch from Sun Deck → claim Agarthan Device on Forecastle."
         }
       ]
     }
@@ -2708,35 +2921,59 @@
   "bo4-classified": [
     {
       "id": "setup",
-      "title": "Key Features: power and DEFCON",
+      "title": "Power, shield & Pack-a-Punch at Groom Lake",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Open the Pentagon route to the laboratory and turn on power. Build the shield from the Offices, War Room and Labs part groups."
+          "html": "Offices → War Room → laboratories → power behind Soda; build shield."
+        },
+        {
+          "id": "classified-pad",
+          "html": "Pad in Main Offices + wires in Morgue + amplifier in Panic Room."
         },
         {
           "id": "setup-2",
-          "html": "Set the DEFCON switches and use the teleporter route to access Pack-a-Punch. Prepare an upgraded weapon for the code tasks."
+          "html": "Build and place amplifier on small pad; DEFCON 5 + central teleporter → Groom Lake."
         }
       ]
     },
     {
       "id": "codes",
-      "title": "Project Skadi codes",
+      "title": "Project Skadi — reveal four pictured codes",
       "detail": "details-codes",
       "steps": [
         {
+          "id": "classified-gear",
+          "html": "Prepare an explosive for the Labs clue and a Pack-a-Punched gun."
+        },
+        {
           "id": "codes-1",
-          "html": "Reveal each four-digit code through its picture/environment interaction. Record codes by picture: Shi No Numa, Der Riese, Shangri-La and Kino der Toten."
+          "html": "Record each four-digit code by picture; keep leading zeroes."
+        },
+        {
+          "id": "classified-der-riese",
+          "html": "War Room key → central Main Offices desk drawer → Der Riese code."
+        },
+        {
+          "id": "classified-shang",
+          "html": "Explosive behind Labs machinery → Shangri-La picture right of barrier."
+        },
+        {
+          "id": "classified-kino",
+          "html": "DEFCON: upper far → Server → upper near → lower; Server teleporter → static TV."
+        },
+        {
+          "id": "classified-shi",
+          "html": "Pack-a-Punched shots into nameplates: 1 → 3 → 2 → 4."
         },
         {
           "id": "codes-2",
-          "html": "Enter them in that exact picture order, regardless of where you found them. Preserve leading zeros."
+          "html": "Submit Shi No Numa → Der Riese → Shangri-La → Kino; green light confirms each."
         },
         {
           "id": "codes-3",
-          "html": "After the code sequence succeeds, complete the Groom Lake survival requirement: remain there through three full rounds without leaving, then collect the reward.",
+          "html": "Stay together at Groom Lake for three full rounds; open cleared-area case; take Winter’s Howl.",
           "tools": [
             "bo4-classified-codes"
           ]
@@ -2745,16 +2982,20 @@
     },
     {
       "id": "ending",
-      "title": "Round-150 ending",
+      "title": "Round 150 — separate endurance ending",
       "detail": "details-ending",
       "steps": [
         {
           "id": "ending-1",
-          "html": "The high-round ending requires reaching round 150 in the appropriate standard game conditions. Plan ammunition, shield replacement and trap use independently of Skadi."
+          "html": "Story target: finish round 149. Prepare shield-bench loadout before the long run."
+        },
+        {
+          "id": "classified-bench",
+          "html": "Shield raised at Weapon Testing bench; rotate Wraith Fire, Ragnaroks and shield gun."
         },
         {
           "id": "ending-2",
-          "html": "Do not mark this objective complete from a code entry or weapon reward. It is a separate endurance objective."
+          "html": "Survive to the transition into round 150 for the ending."
         }
       ]
     }

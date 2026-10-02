@@ -1,6 +1,9 @@
 import expansionTools from '../data/expansionTools.json' with { type: 'json' }
 import references from '../data/expansionReferences.json' with { type: 'json' }
 import { powerHouseResult } from './bloodOfTheDead.mjs'
+import { voyageClockResult, voyageOutletResult, voyageSkyResult } from './voyage.mjs'
+import { alphaClockRoute, alphaFinalCode, alphaRooms, tagRiddleLocations } from './bo4AlphaTag.mjs'
+import { evaluateNightClassified } from './nightClassified.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -43,6 +46,21 @@ export function evaluateTool(id, raw) {
   const tool = toolDefinitions[id]
   if (!tool) return invalid('Unknown helper.')
   const state = normalizeTool(id, raw)
+  if (['bo4-dead-of-the-night-zodiac','bo4-dead-of-the-night-alistair','bo4-dead-of-the-night-stake','bo4-classified-codes'].includes(id)) return evaluateNightClassified(id, state)
+  if (tool.evaluate === 'voyage-clocks') return voyageClockResult(state)
+  if (tool.evaluate === 'voyage-outlets') return voyageOutletResult(state)
+  if (tool.evaluate === 'voyage-sky') return voyageSkyResult(state)
+  if (tool.evaluate === 'alpha-clocks') {
+    const route = alphaClockRoute(state)
+    if (route.status === 'invalid') return invalid(route.message)
+    if (route.status === 'waiting') return waiting(route.message)
+    const finalCode = alphaFinalCode(state['final-hour'], state['final-minute'])
+    return ready([...route.clues.map(clue => `${clue.room}: ${clue.time}`), `Read the remaining clock in ${alphaRooms[route.remaining]}; enter its observed time as four digits.`, ...(finalCode ? [`Rushmore: ${finalCode}`] : [])], 'Clock settings')
+  }
+  if (tool.evaluate === 'riddle') {
+    const clue = tagRiddleLocations.find(row => row.key === state.clue)
+    return clue ? ready([`${clue.location} — ${clue.action}`], 'Clue location') : waiting('Choose the exact offering or Seal clue to see its location.')
+  }
   if (tool.evaluate === 'blood-powerhouse') return powerHouseResult(state)
   if (tool.evaluate === 'blood-trials') {
     if (state.code && !/^\d{3}$/.test(state.code)) return invalid('The Kronorium code must contain three digits, including any leading zero.')
@@ -90,7 +108,6 @@ export function evaluateTool(id, raw) {
   const values = fields.map(f => state[f.id])
   switch (tool.evaluate) {
     case 'ice': return ready([iceRuneLabels[iceLabels.indexOf(state.pattern)]], 'Shoot this ceiling glyph')
-    case 'riddle': return ready([tagRiddles.find(row=>row[0]===state.clue)[1]], 'Clue location')
     case 'sky': {
       if (new Set(values).size !== 9) return invalid('Each celestial body must appear exactly once.')
       if (values[8] !== 'Sun') return invalid('The Sun is the final stage. Recheck the sequence.')
@@ -116,13 +133,6 @@ export function evaluateTool(id, raw) {
       const sum = digits.reduce((a, b) => a + b, 0)
       return ready([`${digits.join(' + ')} = ${sum}`, [...String(sum)].map(d => morseDigits[Number(d)]).join(' ')], 'Morse answer — a space separates digits')
     }
-    case 'alpha-clocks': {
-      const roomNames = { A: 'Yellow House', B: 'Green House', C: 'Prisoner Holding', D: 'Transfusion Facility', E: 'Operations', F: 'APD Interrogation' }
-      if (new Set(values.map(v => v[0].toUpperCase())).size !== 5) return invalid('Record five different room letters.')
-      const unused = Object.keys(roomNames).find(letter => !values.some(v => v[0].toUpperCase() === letter))
-      return ready([...values.map(v => `${roomNames[v[0].toUpperCase()]}: ${v.slice(1, 3)}:${v.slice(3)}`), `Read the remaining clock in ${roomNames[unused]}; enter its observed time as four digits.`], 'Clock settings')
-    }
-    case 'clocks': return ready(['Fire', 'Water', 'Electric', 'Poison'].map((label, i) => `${label}: ${state[`hour-${i}`]}:${state[`minute-${i}`]}`), 'Observed target times')
     case 'darts': return ready([...values.map(v => String(dartNumbers[Number(v) - 1])), 'Bullseye'], 'Shoot in this order')
     case 'verruckt': return ready([state.side === 'Jugger-Nog side' ? 'Open the route upstairs from the Jugger-Nog side and work toward the power room.' : 'Open the route upstairs from Quick Revive and work toward the power room.', 'Switch on power to reconnect the two starting halves.'], 'Setup route')
     case 'regions': {

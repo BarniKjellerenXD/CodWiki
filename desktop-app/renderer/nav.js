@@ -325,26 +325,38 @@ const NAV = [
     "icon": "◇"
   },
   {
-    "id": "bo4-dead-of-the-night-zodiac",
-    "map": "bo4-dead-of-the-night",
-    "game": "bo4",
-    "gameName": "Black Ops 4",
-    "kind": "tool",
-    "section": "Dead of the Night",
-    "label": "Zodiac scratch calculator",
-    "url": "/tools/bo4-dead-of-the-night-zodiac",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
     "id": "bo4-dead-of-the-night-alistair",
     "map": "bo4-dead-of-the-night",
     "game": "bo4",
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Dead of the Night",
-    "label": "Alistair symbol notebook",
+    "label": "Alistair’s visual lock",
     "url": "/tools/bo4-dead-of-the-night-alistair",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-dead-of-the-night-zodiac",
+    "map": "bo4-dead-of-the-night",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Dead of the Night",
+    "label": "Visual zodiac & scratch solver",
+    "url": "/tools/bo4-dead-of-the-night-zodiac",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-dead-of-the-night-stake",
+    "map": "bo4-dead-of-the-night",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Dead of the Night",
+    "label": "Stake Knife shape-to-location solver",
+    "url": "/tools/bo4-dead-of-the-night-stake",
     "accel": null,
     "icon": "↗"
   },
@@ -487,7 +499,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "IX",
-    "label": "Ra enemy order",
+    "label": "Ra visual kill order",
     "url": "/tools/bo4-ix-ra",
     "accel": null,
     "icon": "↗"
@@ -499,7 +511,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "IX",
-    "label": "Danu preparation tracker",
+    "label": "Danu preparation & full-round log",
     "url": "/tools/bo4-ix-danu",
     "accel": null,
     "icon": "↗"
@@ -523,8 +535,20 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Voyage of Despair",
-    "label": "Elemental clock notebook",
+    "label": "Clock symbols → lever settings",
     "url": "/tools/bo4-voyage-clocks",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-voyage-outlets",
+    "map": "bo4-voyage-of-despair",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Voyage of Despair",
+    "label": "Elemental outlets & trial route",
+    "url": "/tools/bo4-voyage-outlets",
     "accel": null,
     "icon": "↗"
   },
@@ -535,7 +559,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Voyage of Despair",
-    "label": "Celestial order recorder",
+    "label": "Planet order & orb route",
     "url": "/tools/bo4-voyage-sky",
     "accel": null,
     "icon": "↗"
@@ -775,8 +799,20 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Ancient Evil",
-    "label": "Hand progression",
+    "label": "Oracle location finder & hand routes",
     "url": "/tools/bo4-ancient-hands",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
+    "id": "bo4-ancient-tribute",
+    "map": "bo4-ancient-evil",
+    "game": "bo4",
+    "gameName": "Black Ops 4",
+    "kind": "tool",
+    "section": "Ancient Evil",
+    "label": "Eternal Flame tribute calculator",
+    "url": "/tools/bo4-ancient-tribute",
     "accel": null,
     "icon": "↗"
   },
@@ -787,7 +823,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Ancient Evil",
-    "label": "Theater hand assignments",
+    "label": "Theater assignments & attack cues",
     "url": "/tools/bo4-ancient-theater",
     "accel": null,
     "icon": "↗"
@@ -811,7 +847,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Alpha Omega",
-    "label": "Rushmore clock clues",
+    "label": "Rushmore visual clock route",
     "url": "/tools/bo4-alpha-clocks",
     "accel": null,
     "icon": "↗"
@@ -823,7 +859,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Alpha Omega",
-    "label": "Rushmore codes and quest notes",
+    "label": "Rushmore codes & experiment notes",
     "url": "/tools/bo4-alpha-rushmore",
     "accel": null,
     "icon": "↗"
@@ -847,7 +883,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Tag der Toten",
-    "label": "Offering and Seal riddle lookup",
+    "label": "Offering & Seal photo finder",
     "url": "/tools/bo4-tag-riddles",
     "accel": null,
     "icon": "↗"
@@ -859,7 +895,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Tag der Toten",
-    "label": "Challenge and charge tracker",
+    "label": "Tag quest stage & charge tracker",
     "url": "/tools/bo4-tag-challenges",
     "accel": null,
     "icon": "↗"
@@ -907,7 +943,7 @@ const NAV = [
     "gameName": "Black Ops 4",
     "kind": "tool",
     "section": "Classified",
-    "label": "Project Skadi codes",
+    "label": "Project Skadi pictured codes & survival",
     "url": "/tools/bo4-classified-codes",
     "accel": null,
     "icon": "↗"
