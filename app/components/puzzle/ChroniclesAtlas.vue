@@ -1,7 +1,7 @@
 <script setup>
 import {locationAtlases} from '~/utils/chronicles.mjs'
-const props=defineProps({tool:String,state:Object});const emit=defineEmits(['change']);const uid=useId();const query=ref('')
-const atlas=computed(()=>locationAtlases[props.tool]);const group=computed(()=>atlas.value.groups.find(g=>g.id===props.state.collection)||atlas.value.groups[0])
+const props=defineProps({tool:String,state:Object,atlasOverride:Object});const emit=defineEmits(['change']);const uid=useId();const query=ref('')
+const atlas=computed(()=>props.atlasOverride||locationAtlases[props.tool]);const group=computed(()=>atlas.value.groups.find(g=>g.id===props.state.collection)||atlas.value.groups[0])
 const regions=computed(()=>[...new Set(group.value.locations.map(p=>p.region))])
 const region=computed(()=>regions.value.includes(props.state.region)?props.state.region:'')
 const locations=computed(()=>group.value.locations.filter(p=>(!region.value||p.region===region.value)&&`${p.alt} ${p.region}`.toLowerCase().includes(query.value.trim().toLowerCase())))

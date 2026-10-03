@@ -33,7 +33,7 @@ for (const tool of catalogue.tools) { const map=catalogue.maps.find(m=>m.id===to
 entries.push({ id: 'super-ee', name: 'Super Easter Egg', map: '', kind: 'Quest', route: '/guides/bo7-super-easter-egg', keywords: 'super ee toys warden exfil' })
 fs.writeFileSync('app/data/searchIndex.json', JSON.stringify(entries, null, 2) + '\n')
 const nav = catalogue.maps.flatMap(m => [
-  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, kind: 'guide', section: m.name, label: m.status === 'planned' ? 'Map entry · guide planned' : 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
+  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, ...(m.group==='survival'?{group:m.group}:{}), kind: 'guide', section: m.name, label: m.status === 'planned' ? 'Map entry · guide planned' : 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
   ...(catalogue.guides || []).filter(g=>g.map===m.id).map(g=>({ id:g.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'quest', section:m.name, label:g.name.replace('Outbreak: ', ''), url:g.route, accel:null, icon:'◇' })),
   ...catalogue.tools.filter(t=>t.map===m.id).map(t=>({ id:t.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'tool', section:m.name, label:t.name, url:t.route, accel:t.shortcut || null, icon:'↗' }))
 ])

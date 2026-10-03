@@ -1,0 +1,499 @@
+{
+  "classicAtlases": {
+    "bo1-cotd-locations": {
+      "map": "call-of-the-dead",
+      "section": "fuse",
+      "groups": [
+        {
+          "id": "fuse",
+          "name": "Fuse · 3 possible spawns",
+          "description": "Both routes. Search upstairs only after the crew asks for a fuse. Pick up the one that appears, then fit it into the box beside the downstairs door.",
+          "locations": [
+            {
+              "id": "main_ee/fuse_desk",
+              "src": "/images/classic/call-of-the-dead/main_ee/fuse_desk.webp",
+              "alt": "PhD Flopper Room - On the desk, left of the PhD machine",
+              "region": "PhD room"
+            },
+            {
+              "id": "main_ee/fuse_locker",
+              "src": "/images/classic/call-of-the-dead/main_ee/fuse_locker.webp",
+              "alt": "PhD Flopper Room - Left of the locker, in front of the PhD machine",
+              "region": "PhD room"
+            },
+            {
+              "id": "main_ee/fuse_table",
+              "src": "/images/classic/call-of-the-dead/main_ee/fuse_table.webp",
+              "alt": "PhD Flopper Room - On the table with the car batteries",
+              "region": "PhD room"
+            }
+          ],
+          "section": "fuse"
+        },
+        {
+          "id": "generators",
+          "name": "Generators · all 4",
+          "description": "Both routes. Explode each red light after inserting the fuse. These are fixed locations; each light must go out.",
+          "locations": [
+            {
+              "id": "main_ee/gen_door",
+              "src": "/images/classic/call-of-the-dead/main_ee/gen_door.webp",
+              "alt": "Lighthouse - Across from the Metal Door",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "main_ee/gen_mpl",
+              "src": "/images/classic/call-of-the-dead/main_ee/gen_mpl.webp",
+              "alt": "Ship Stern - In the water, outside the map, right of the MPL wallbuy",
+              "region": "Ship"
+            },
+            {
+              "id": "main_ee/gen_shortcut",
+              "src": "/images/classic/call-of-the-dead/main_ee/gen_shortcut.webp",
+              "alt": "In the shortcut from the ship to spawn",
+              "region": "Ship / Spawn"
+            },
+            {
+              "id": "main_ee/gen_stamin_up",
+              "src": "/images/classic/call-of-the-dead/main_ee/gen_stamin_up.webp",
+              "alt": "Behind the Lighthouse - Out the Zombie spawn window, left of the Stamin-Up machine",
+              "region": "Stamin-Up"
+            }
+          ],
+          "section": "generators"
+        },
+        {
+          "id": "vodka",
+          "name": "Vodka · 4 possible spawns",
+          "description": "Co-op only. One player stands below the bottle; another knifes it. A missed bottle breaks and respawns, so check the next spot before another catch.",
+          "locations": [
+            {
+              "id": "main_ee/bottle_below_the_box",
+              "src": "/images/classic/call-of-the-dead/main_ee/bottle_below_the_box.webp",
+              "alt": "Front of the Lighthouse - Railing on the stairs outside the PhD Flopper room",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "main_ee/bottle_box",
+              "src": "/images/classic/call-of-the-dead/main_ee/bottle_box.webp",
+              "alt": "Lighthouse front: high railing beside the Box spot, above the PhD stairs.",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "main_ee/bottle_mpl",
+              "src": "/images/classic/call-of-the-dead/main_ee/bottle_mpl.webp",
+              "alt": "Ship - Railing above and to the right of the MPL wallbuy",
+              "region": "Ship"
+            },
+            {
+              "id": "main_ee/bottle_shortcut",
+              "src": "/images/classic/call-of-the-dead/main_ee/bottle_shortcut.webp",
+              "alt": "Ship - Railing connecting the two sides of the broken ship",
+              "region": "Ship"
+            }
+          ],
+          "section": "vodka"
+        },
+        {
+          "id": "radios",
+          "name": "Quest radios · ordered 1–4",
+          "description": "Co-op only. Use the radios in the numbered order. If four presses fail, wait for the buzz to finish and restart at number 1.",
+          "locations": [
+            {
+              "id": "main_ee/radio_power",
+              "src": "/images/classic/call-of-the-dead/main_ee/radio_power.webp",
+              "alt": "1 · Below power: on the computer by the Box location.",
+              "region": "Ship"
+            },
+            {
+              "id": "main_ee/radio_staminup",
+              "src": "/images/classic/call-of-the-dead/main_ee/radio_staminup.webp",
+              "alt": "2 · Stamin-Up building: on the barrel.",
+              "region": "Stamin-Up"
+            },
+            {
+              "id": "main_ee/radio_crate",
+              "src": "/images/classic/call-of-the-dead/main_ee/radio_crate.webp",
+              "alt": "3 · Ship bow: inside the cargo crate by the zipline landing.",
+              "region": "Ship"
+            },
+            {
+              "id": "main_ee/radio_door",
+              "src": "/images/classic/call-of-the-dead/main_ee/radio_door.webp",
+              "alt": "4 · Quest-door room: on the cabinet below the stairs.",
+              "region": "Lighthouse"
+            }
+          ],
+          "section": "radios"
+        },
+        {
+          "id": "horns",
+          "name": "Foghorns · ordered 1–4",
+          "description": "Co-op only. Wait for the submarine to surface. The two lighthouse horns and two slide horns must be alternated in this order.",
+          "locations": [
+            {
+              "id": "main_ee/horn_lighthouse_1",
+              "src": "/images/classic/call-of-the-dead/main_ee/horn_lighthouse_1.webp",
+              "alt": "1 · Pool of water beside the lighthouse.",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "main_ee/horn_speed_cola_1",
+              "src": "/images/classic/call-of-the-dead/main_ee/horn_speed_cola_1.webp",
+              "alt": "2 · Slide exit: turn right into the water.",
+              "region": "Speed Cola slide"
+            },
+            {
+              "id": "main_ee/horn_lighthouse_2",
+              "src": "/images/classic/call-of-the-dead/main_ee/horn_lighthouse_2.webp",
+              "alt": "3 · Lighthouse wall, left of the building.",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "main_ee/horn_speed_cola_2",
+              "src": "/images/classic/call-of-the-dead/main_ee/horn_speed_cola_2.webp",
+              "alt": "4 · Behind the large rock on the slide-exit island.",
+              "region": "Speed Cola slide"
+            }
+          ],
+          "section": "horns"
+        },
+        {
+          "id": "pap",
+          "name": "Pack-a-Punch · 3 beam destinations",
+          "description": "Follow the current lighthouse beam. Only its active destination has the machine; upgrade promptly and collect your weapon.",
+          "locations": [
+            {
+              "id": "pap/pap_spawn",
+              "src": "/images/classic/call-of-the-dead/pap/pap_spawn.webp",
+              "alt": "Spawn - Right of Quick Revive",
+              "region": "Spawn"
+            },
+            {
+              "id": "pap/pap_behind_lighthouse",
+              "src": "/images/classic/call-of-the-dead/pap/pap_behind_lighthouse.webp",
+              "alt": "Behind the Lighthouse - In the water between the Lighthouse and the Stamin-Up machine.",
+              "region": "Lighthouse"
+            },
+            {
+              "id": "pap/pap_jug",
+              "src": "/images/classic/call-of-the-dead/pap/pap_jug.webp",
+              "alt": "Bow of the Ship - In the water, near the Juggernog machine",
+              "region": "Ship"
+            }
+          ],
+          "section": "setup"
+        }
+      ]
+    },
+    "bo1-shang-locations": {
+      "map": "shangri-la",
+      "section": "dials",
+      "groups": [
+        {
+          "id": "walls",
+          "name": "Twelve wall tiles",
+          "description": "During the wall-tile eclipse, melee each tile until it glows. These fixed wall tiles are separate from the random matching floor tiles. Filter by your route through the map.",
+          "locations": [
+            {
+              "id": "main_ee/tile_minecart_start",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_minecart_start.webp",
+              "alt": "Minecart Area - Left of the start of the Minecart",
+              "region": "Minecart"
+            },
+            {
+              "id": "main_ee/tile_below_dynamite",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_below_dynamite.webp",
+              "alt": "Minecart Area - Around the corner from the previous location toward Spawn",
+              "region": "Minecart"
+            },
+            {
+              "id": "main_ee/tile_minecart_spikes",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_minecart_spikes.webp",
+              "alt": "Minecart Area - On the wall by the spikes, between Spawn and the Minecart",
+              "region": "Minecart"
+            },
+            {
+              "id": "main_ee/tile_quick_machine_left",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_quick_machine_left.webp",
+              "alt": "Spawn Room - Left of the Quick Revive machine, on the other side of the wall",
+              "region": "Spawn"
+            },
+            {
+              "id": "main_ee/tile_quick_machine_right",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_quick_machine_right.webp",
+              "alt": "Spawn Room - Right of the Quick Revive machine, on the other side of the wall",
+              "region": "Spawn"
+            },
+            {
+              "id": "main_ee/tile_spikes_mud",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_spikes_mud.webp",
+              "alt": "Spawn Room - On the wall by the spikes, between Spawn and the Mud Room",
+              "region": "Mud Room"
+            },
+            {
+              "id": "main_ee/tile_pap_stairs",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_pap_stairs.webp",
+              "alt": "Spawn Room - Left of the stairs to the Pack-a-Punch Machine",
+              "region": "Spawn"
+            },
+            {
+              "id": "main_ee/tile_mud_water_slide",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_mud_water_slide.webp",
+              "alt": "Mud Room Area - Left of the dial closest to the Water Slide",
+              "region": "Mud Room"
+            },
+            {
+              "id": "main_ee/tile_pm63",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_pm63.webp",
+              "alt": "Mud Room Area - Left of the PM63 wallbuy",
+              "region": "Waterfall"
+            },
+            {
+              "id": "main_ee/tile_stakeout",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_stakeout.webp",
+              "alt": "Waterfall Area - Left of the Stakeout/ICR-1 wallbuy",
+              "region": "Waterfall"
+            },
+            {
+              "id": "main_ee/tile_stakeout_2",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_stakeout_2.webp",
+              "alt": "Waterfall Area - At the bottom of the stairs up to the Power room",
+              "region": "Waterfall"
+            },
+            {
+              "id": "main_ee/tile_power",
+              "src": "/images/chronicles/shangri-la/main_ee/tile_power.webp",
+              "alt": "Power Room - Left of the left power switch",
+              "region": "Power"
+            }
+          ],
+          "section": "dials"
+        },
+        {
+          "id": "dials",
+          "name": "Mud-room dial reference",
+          "description": "After the twelve wall tiles and distant teepee, enter a fresh eclipse. Enter Mud Room from Spawn and work clockwise starting on your left: 4, 3, 16, 1.",
+          "locations": [
+            {
+              "id": "main_ee/first_dial",
+              "src": "/images/chronicles/shangri-la/main_ee/first_dial.webp",
+              "alt": "dial on the left when coming from spawn",
+              "region": "Mud Room"
+            },
+            {
+              "id": "main_ee/shang_dials_cheat_sheet",
+              "src": "/images/chronicles/shangri-la/main_ee/shang_dials_cheat_sheet.webp",
+              "alt": "cheat sheet",
+              "region": "Mud Room"
+            }
+          ],
+          "section": "dials"
+        }
+      ]
+    },
+    "bo1-moon-labs": {
+      "map": "moon",
+      "section": "simon",
+      "groups": [
+        {
+          "id": "panels",
+          "name": "Timed green panel boxes",
+          "description": "After hacking the floor-2 starter button, find four green-lit boxes among these eight. The photos mark three boxes on floor 1, two on floor 2 and three on floor 3. Hack only the green ones in your match.",
+          "locations": [
+            {
+              "id": "moon-white-panel-boxes-first-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-first-floor.webp",
+              "alt": "Three on the first floor",
+              "region": "Laboratory"
+            },
+            {
+              "id": "moon-white-panel-boxes-second-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-second-floor.webp",
+              "alt": "Two on the second floor",
+              "region": "Laboratory"
+            },
+            {
+              "id": "moon-white-panel-boxes-third-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-third-floor.webp",
+              "alt": "Three on the third floor",
+              "region": "Laboratory"
+            }
+          ],
+          "section": "simon"
+        },
+        {
+          "id": "wall",
+          "name": "Start and finish at this wall",
+          "description": "Hack the far-left button to start. After the four green boxes, return and press all four buttons normally; the glowing wall confirms completion.",
+          "locations": [
+            {
+              "id": "moon-button-wall",
+              "src": "/images/chronicles/moon/moon-button-wall.webp",
+              "alt": "Button Wall",
+              "region": "Laboratory floor 2"
+            },
+            {
+              "id": "moon-glowing-button-wall",
+              "src": "/images/chronicles/moon/moon-glowing-button-wall.webp",
+              "alt": "Buttons glowing on button wall",
+              "region": "Laboratory floor 2"
+            }
+          ],
+          "section": "simon"
+        },
+        {
+          "id": "cable",
+          "name": "S-shaped cable reference",
+          "description": "Search all laboratory levels and the outside area near Mule Kick. These views identify the cable and outside area, not every possible spawn.",
+          "locations": [
+            {
+              "id": "moon-s-cable",
+              "src": "/images/chronicles/moon/moon-s-cable.webp",
+              "alt": "S shaped cable appearance (location in the image is stairs leading to the third floor of the lab)",
+              "region": "Laboratory / outside"
+            },
+            {
+              "id": "moon-s-cables-outside-spawn",
+              "src": "/images/chronicles/moon/moon-s-cables-outside-spawn.webp",
+              "alt": "S Cables Outside the Laboratory",
+              "region": "Laboratory / outside"
+            }
+          ],
+          "section": "device"
+        }
+      ]
+    }
+  },
+  "classicGongs": [
+    {
+      "id": "main_ee/gong_rope_bottom",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_bottom.webp",
+      "alt": "Rope Bridge Area - At the bottom of the bridge, near the Pack-a-Punch pressure plate",
+      "region": "Bridge bottom",
+      "name": "Bridge bottom",
+      "key": "gong-0"
+    },
+    {
+      "id": "main_ee/gong_rope_pm63_left",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_pm63_left.webp",
+      "alt": "Rope Bridge Area - At the top of the bridge, left of the PM63 wallbuy",
+      "region": "Bridge top · left",
+      "name": "Bridge top · left",
+      "key": "gong-1"
+    },
+    {
+      "id": "main_ee/gong_rope_pm63_right",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_pm63_right.webp",
+      "alt": "Rope Bridge Area - At the top of the bridge, right of the PM63 wallbuy",
+      "region": "Bridge top · right",
+      "name": "Bridge top · right",
+      "key": "gong-2"
+    },
+    {
+      "id": "main_ee/gong_mud_spikes",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_mud_spikes.webp",
+      "alt": "Mud Room Area - Just outside the Mud Room toward Spawn",
+      "region": "Mud Room exit",
+      "name": "Mud Room exit",
+      "key": "gong-3"
+    },
+    {
+      "id": "main_ee/gong_m14",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_m14.webp",
+      "alt": "Spawn Room - Left of the M14 wallbuy",
+      "region": "Spawn · M14",
+      "name": "Spawn · M14",
+      "key": "gong-4"
+    },
+    {
+      "id": "main_ee/gong_minecart_start",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_minecart_start.webp",
+      "alt": "Minecart Area - Left of the start of the Minecart",
+      "region": "Minecart start",
+      "name": "Minecart start",
+      "key": "gong-5"
+    },
+    {
+      "id": "main_ee/gong_down_the_slope",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_down_the_slope.webp",
+      "alt": "Minecart area: downhill from the cart, right of the zombie window.",
+      "region": "Minecart slope",
+      "name": "Minecart slope",
+      "key": "gong-6"
+    },
+    {
+      "id": "main_ee/gong_right_of_tunnel",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_right_of_tunnel.webp",
+      "alt": "Minecart Area - Right of the tunnel",
+      "region": "Tunnel entrance",
+      "name": "Tunnel entrance",
+      "key": "gong-7"
+    }
+  ],
+  "classicSections": {
+    "bo1-cotd-dials": "dials",
+    "bo1-shang-tiles": "tiles",
+    "bo1-shang-gongs": "stone",
+    "bo1-moon-simon": "simon",
+    "bo1-cotd-locations": "fuse",
+    "bo1-shang-locations": "dials",
+    "bo1-moon-labs": "simon"
+  },
+  "lighthouseDials": [
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "floor": "Top floor · 4",
+      "target": 2,
+      "affected": [
+        "Yellow",
+        "Orange"
+      ],
+      "src": "/images/classic/call-of-the-dead/main_ee/yellow.webp",
+      "alt": "Yellow dial on the top floor of the lighthouse.",
+      "region": "Lighthouse"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "floor": "Floor 3",
+      "target": 7,
+      "affected": [
+        "Yellow",
+        "Orange",
+        "Blue"
+      ],
+      "src": "/images/classic/call-of-the-dead/main_ee/orange.webp",
+      "alt": "Orange dial, one floor below Yellow.",
+      "region": "Lighthouse"
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "floor": "Floor 2",
+      "target": 4,
+      "affected": [
+        "Orange",
+        "Blue",
+        "Purple"
+      ],
+      "src": "/images/classic/call-of-the-dead/main_ee/blue.webp",
+      "alt": "Blue dial, one floor above the lighthouse base.",
+      "region": "Lighthouse"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "floor": "Bottom floor · 1",
+      "target": 6,
+      "affected": [
+        "Blue",
+        "Purple"
+      ],
+      "src": "/images/classic/call-of-the-dead/main_ee/purple.webp",
+      "alt": "Purple dial on the lowest lighthouse floor.",
+      "region": "Lighthouse"
+    }
+  ]
+}

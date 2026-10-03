@@ -8,9 +8,12 @@ import { sanitizePuzzleState } from '../app/utils/puzzleState.mjs'
 import { iceLabels, iceRuneLabels, tagRiddles } from '../shared/expansion-references.mjs'
 import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/companion.mjs'
 
-test('all 33 hubs, two Outbreak quests and every inline tool have valid associations', () => {
+test('all expansion hubs, two Outbreak quests and every inline tool have valid associations', () => {
   const hubs=expansionGuides.filter(g=>!g.parent)
-  assert.equal(hubs.length,33)
+  assert.equal(hubs.length,60)
+  assert.equal(hubs.filter(g=>g.gameId==='bo1').length,11)
+  assert.equal(hubs.filter(g=>g.gameId==='waw').length,4)
+  assert.equal(hubs.filter(g=>g.gameId==='bo2').length,12)
   assert.equal(hubs.filter(g=>g.gameId==='bo6').length,6)
   assert.equal(hubs.filter(g=>g.gameId==='bo3').length,14)
   assert.equal(hubs.filter(g=>g.gameId==='bo4').length,8)

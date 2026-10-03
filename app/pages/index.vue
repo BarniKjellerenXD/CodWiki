@@ -2,18 +2,38 @@
 import catalogue from '~/data/catalogue.json'
 import searchIndex from '~/data/searchIndex.json'
 import quickQuests from '~/data/quickQuests.json'
+import mapArtwork from '~/data/mapArtwork.json'
 import { searchCatalogue } from '~/utils/companion.mjs'
 const query = ref('')
 const selected = ref(0)
 const toolMap = ref('all')
 const toolGame = ref('all')
 const games = catalogue.games
+const router = useRouter()
 const closedGames = ref<string[]>([])
 const groupsLoaded = ref(false)
 onMounted(() => {
   try { const saved = JSON.parse(localStorage.getItem('codwiki-game-groups') || '[]'); if (Array.isArray(saved)) closedGames.value = saved.filter(id => games.some(game => game.id === id)) } catch {}
-  nextTick(() => { groupsLoaded.value = true })
+  nextTick(() => {
+    groupsLoaded.value = true
+    const hash = window.location.hash.slice(1)
+    if (hash.startsWith('game-') || hash === 'tools' || hash === 'top') jumpToGame(hash.replace(/^game-/, ''), false)
+  })
 })
+const artwork = (map: {id: string; image?: string}): {src:string; srcset?:string; position?:string} => (mapArtwork as Record<string, {src:string; srcset?:string; position?:string}>)[map.id] || {src:map.image || '',position:'50% 50%'}
+async function jumpToGame(id: string, animate = true) {
+  if (id !== 'top' && id !== 'tools' && !games.some(game => game.id === id)) return
+  query.value = ''
+  closedGames.value = closedGames.value.filter(value => value !== id)
+  await nextTick()
+  const anchor = id === 'top' || id === 'tools' ? id : `game-${id}`
+  const target = document.getElementById(anchor)
+  if (!target) return
+  await router.replace({ hash: `#${anchor}` })
+  target.scrollIntoView({behavior: animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'smooth' : 'instant', block:'start'})
+  const heading = target.querySelector<HTMLElement>('summary, h1, h2')
+  heading?.focus({preventScroll:true})
+}
 function saveGroup(id: string, event: Event) {
   if (!groupsLoaded.value) return
   const open = (event.target as HTMLDetailsElement).open
@@ -38,12 +58,15 @@ function count(id:string) {
 function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
 function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
 watch(query,()=>{selected.value=0})
-useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guides and puzzle tools from Black Ops 7 through Black Ops 3, plus map entries for Black Ops 2, Black Ops and World at War.'})
+useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Complete Zombies map guides, side Easter eggs and puzzle tools from Black Ops 7 to World at War.'})
 </script>
 
 <template>
-  <main class="home">
-    <header class="home-header"><span class="eyebrow">CodWiki · Call of Duty Zombies</span><h1>Ready for your next run?</h1><p class="lede">Your maps, quest progress and puzzle tools. All within reach.</p></header>
+  <main id="top" class="home">
+   <div class="home-layout">
+    <HomeGameNav :games="games" @jump="jumpToGame" />
+    <div class="home-content">
+    <header class="home-header"><span class="eyebrow">CodWiki · Call of Duty Zombies</span><h1 tabindex="-1">Ready for your next run?</h1><p class="lede">Your maps, quest progress and puzzle tools. All within reach.</p></header>
     <NuxtLink v-if="last" class="resume-card" :to="continueUrl"><div><span class="companion-label">Continue where you left off</span><h2>{{ last.title }}</h2><p>{{ count(last.route.split('/').pop()) }}</p></div><span aria-hidden="true">→</span></NuxtLink>
     <section class="search" aria-label="Search everything">
       <div class="search-row"><UiIcon name="search" class="search-icon" /><input v-model="query" type="search" placeholder="Search maps, quest steps and tools…" aria-label="Search maps, quest steps and tools" :aria-controls="query ? 'search-results' : undefined" :aria-activedescendant="query && results.length ? `result-${selected}` : undefined" @keydown.down.prevent="move(1)" @keydown.up.prevent="move(-1)" @keydown.enter.prevent="openSelected" @keydown.esc="query=''" /><button v-if="query" class="search-clear" aria-label="Clear search" @click="query=''"><UiIcon name="close" /></button></div>
@@ -51,19 +74,28 @@ useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guide
       <div v-if="query" id="search-results" class="search-results"><p v-if="!results.length" class="companion-muted">No matches for “{{ query }}”. Try a map, quest or tool name.</p><NuxtLink v-for="(item,i) in results" :id="`result-${i}`" :key="item.id" :to="item.route" :class="{selected:i===selected}" @mouseenter="selected=i"><div><strong>{{ item.name }}</strong><small>{{ mapName(item.map) }}</small></div><span>{{ item.kind }} ↗</span></NuxtLink></div>
     </section>
     <template v-if="!query">
-      <details v-for="game in games" :key="game.id" class="game-section" :open="!closedGames.includes(game.id)" @toggle="saveGroup(game.id, $event)">
+      <details v-for="game in games" :id="`game-${game.id}`" :key="game.id" :data-game-target="game.id" class="game-section" :open="!closedGames.includes(game.id)" @toggle="saveGroup(game.id, $event)">
         <summary><h2>{{ game.name }}</h2><span>{{ gameMaps(game.id).length }} maps <span aria-hidden="true">⌄</span></span></summary>
         <NuxtLink v-if="game.id==='bo7'" to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
-        <template v-for="group in game.id==='bo3' ? ['', 'chronicles'] : ['']" :key="group">
+        <component :is="group==='survival' ? 'details' : 'div'" v-for="group in game.id==='bo3' ? ['', 'chronicles'] : game.id==='bo2' ? ['', 'survival'] : ['']" :key="group" :class="{'survival-maps':group==='survival'}">
+          <summary v-if="group==='survival'"><span>Survival &amp; extra modes</span><small>{{ gameMaps(game.id).filter(m=>m.group==='survival').length }} maps</small><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary>
+          <p v-if="group==='survival'" class="survival-intro">Standalone Survival maps, Grief and Turned.</p>
           <h3 v-if="game.id==='bo3'" class="map-group-name">{{ group==='chronicles' ? 'Zombies Chronicles' : 'Original maps' }}</h3>
-          <div class="guide-grid"><NuxtLink v-for="map in gameMaps(game.id).filter(m=>(m.group || '')===group)" :key="map.id" :to="map.route" class="guide-card"><div v-if="map.image" class="guide-thumb"><img :src="map.image" alt="" loading="lazy" /></div><div class="guide-body"><span v-if="!map.image" class="map-edition">{{ group==='chronicles' ? 'Zombies Chronicles' : game.name }}</span><h3>{{ map.name }}</h3><p>{{ map.status==='planned' ? 'Guide planned' : count(map.id) }}</p><small v-if="map.status==='planned'">{{ map.edition }} · {{ map.mode }}</small><small v-else>{{ catalogue.tools.filter(t=>t.map===map.id).length }} tools</small><span class="map-card-action">{{ map.status==='planned' ? 'View map entry' : 'Open guide' }} →</span></div></NuxtLink></div>
-        </template>
+          <div class="guide-grid"><NuxtLink v-for="map in gameMaps(game.id).filter(m=>(m.group || '')===group)" :key="map.id" :to="map.route" class="guide-card"><div v-if="artwork(map).src" class="guide-thumb"><img :src="artwork(map).src" :srcset="artwork(map).srcset" sizes="(min-width: 1440px) 391px, (min-width: 1100px) calc((100vw - 268px) / 3), (min-width: 901px) calc((100vw - 88px) / 3), (min-width: 561px) calc((100vw - 68px) / 2), calc(100vw - 36px)" :style="{objectPosition:artwork(map).position || '50% 50%'}" alt="" width="960" height="540" loading="lazy" decoding="async" /></div><div class="guide-body"><span v-if="!artwork(map).src" class="map-edition">{{ group==='chronicles' ? 'Zombies Chronicles' : game.name }}</span><h3>{{ map.name }}</h3><p>{{ map.status==='planned' ? 'Guide planned' : count(map.id) }}</p><small v-if="map.status==='planned'">{{ map.edition }} · {{ map.mode }}</small><small v-else>{{ catalogue.tools.filter(t=>t.map===map.id).length }} tools</small><span class="map-card-action">{{ map.status==='planned' ? 'View map entry' : 'Open guide' }} →</span></div></NuxtLink></div>
+        </component>
       </details>
-      <section id="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2>Puzzle tools</h2></div><label>Game <select v-model="toolGame"><option value="all">All games</option><option v-for="game in games" :key="game.id" :value="game.id">{{ game.name }}</option></select></label><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>(toolGame==='all'||m.gameId===toolGame)&&catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div></section>
+      <section id="tools" data-game-target="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2 tabindex="-1">Puzzle tools</h2></div><label>Game <select v-model="toolGame"><option value="all">All games</option><option v-for="game in games" :key="game.id" :value="game.id">{{ game.name }}</option></select></label><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>(toolGame==='all'||m.gameId===toolGame)&&catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div></section>
     </template>
+    <details v-if="!query" class="artwork-credits"><summary>Map artwork credits</summary><p>Game artwork: Activision / Treyarch. Scenic images from <a href="https://www.callofduty.com/zombieschronicles" target="_blank" rel="noopener noreferrer">Call of Duty</a>, <a href="https://www.codzombieguides.com/" target="_blank" rel="noopener noreferrer">COD Zombie Guides / JokerAlex21</a> and <a href="https://www.zombacus.com/" target="_blank" rel="noopener noreferrer">Zombacus</a>. Shadows of Evil uses the supplied community reference. Some classic maps share scenic images with their remasters.</p></details>
+    </div>
+   </div>
   </main>
 </template>
 <style scoped>
+.home-layout{display:block}.home-content{min-width:0}.game-section,.tool-directory{scroll-margin-top:5.5rem}
+.artwork-credits{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;line-height:1.7}.artwork-credits summary{cursor:pointer}.artwork-credits a{color:var(--gold);text-underline-offset:.2em}
+@media(min-width:1100px){.home.home{max-width:1440px}.home-layout{display:grid;grid-template-columns:136px minmax(0,1fr);gap:2.75rem}.game-section{scroll-margin-top:2rem}}
+.survival-maps{margin-top:1.25rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.survival-maps>summary{display:flex;align-items:center;gap:.75rem;padding:1rem 0;cursor:pointer;list-style:none;color:var(--text);font-weight:600}.survival-maps>summary::-webkit-details-marker{display:none}.survival-maps>summary small{margin-left:auto;color:var(--muted);font-weight:400}.survival-maps>summary svg{color:var(--gold);transition:transform .16s ease}.survival-maps[open]>summary svg{transform:rotate(180deg)}.survival-maps>summary:hover{color:var(--gold)}.survival-maps>summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}.survival-intro{color:var(--muted);font-size:.875rem;margin:0 0 1rem}.survival-maps .guide-grid{margin-bottom:1.25rem}@media(prefers-reduced-motion:reduce){.survival-maps>summary svg{transition:none}}
 .game-section{margin:2rem 0}.game-section>summary{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);margin-bottom:1rem;cursor:pointer;list-style:none}.game-section>summary h2{font-size:1.3rem;margin:0}.game-section>summary>span{color:var(--muted);font-size:.8rem}.game-section>summary::-webkit-details-marker{display:none}.map-group-name{font-size:.85rem;color:var(--gold);margin:1.2rem 0 .75rem}.map-edition{display:block;color:var(--gold);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}.guide-body small{display:block;color:var(--muted);margin-top:.5rem}
 .super-quest {
   display: flex;
@@ -315,7 +347,7 @@ useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guide
 .search-results small { display:block; margin-top:.3rem; color:var(--muted); }
 .search-results a > span { color:var(--gold); font-size:.75rem; white-space:nowrap; align-self:center; }
 .map-card-action { display:block; color:var(--gold); font-size:.8rem; margin-top:.8rem; }
-.tool-directory { margin-top:3rem; scroll-margin-top:1.5rem; }
+.tool-directory { margin-top:3rem; scroll-margin-top:5.5rem; }
 .tool-directory .section-head { flex-wrap:wrap; gap:1rem; }
 .tool-directory label { color:var(--muted); font-size:.85rem; }
 .tool-directory select { margin-left:.5rem; border:1px solid var(--line); border-radius:var(--radius-sm); padding:.7rem; background:var(--surface); color:var(--text); max-width:100%; }
@@ -327,4 +359,5 @@ useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guide
 .tool-grid a > span:last-child { color:var(--gold); }
 @media(max-width:760px) { .tool-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:480px) { .tool-grid { grid-template-columns:1fr; } .home { padding-top:1.5rem; } .home-header { padding-right:2rem; } .search-results a { padding:.9rem; } }
+@media(min-width:1100px){.tool-directory{scroll-margin-top:2rem}}
 </style>

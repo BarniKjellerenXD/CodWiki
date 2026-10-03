@@ -3,7 +3,7 @@ import {iceSymbols,fireSymbols} from '~/utils/chronicles.mjs'
 import ChroniclesGlyph from './ChroniclesGlyph.vue'
 const props=defineProps({tool:String,state:Object})
 const emit=defineEmits(['change'])
-const ice=computed(()=>props.tool==='bo3-origins-ice')
+const ice=computed(()=>props.tool?.endsWith('-origins-ice'))
 const selected=computed(()=>iceSymbols.find(s=>s.label===props.state.pattern))
 const torches=computed(()=>fireSymbols.filter(s=>props.state[`fire-${s.id}`]))
 const instructions=computed(()=>ice.value?(selected.value?'Use the Ice Staff. Read the tablet again after the shot and select its new pattern.':'Choose the pattern you see on the tablet. Its matching ceiling rune will appear here.'):(torches.value.length===4?'Find these downstairs in Church. Shoot them with the Fire Staff quickly enough that all four burn together. Any order is fine.':'Select all four before using a result. The blood smear marks torch 4; it has no chalk numeral.'))

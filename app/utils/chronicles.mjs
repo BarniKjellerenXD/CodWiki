@@ -17,7 +17,7 @@ export function moonSequence(state){
  const entries=values.slice(0,last+1)
  return {entries,hasGap:entries.includes(''),positions:entries.map(v=>moonColours.indexOf(v)+1)}
 }
-export function gongResult(state){
- const correct=gongLocations.filter(g=>state[g.key]==='Correct'),wrong=gongLocations.filter(g=>state[g.key]==='Wrong')
+export function gongResult(state,locations=gongLocations){
+ const correct=locations.filter(g=>state[g.key]==='Correct'),wrong=locations.filter(g=>state[g.key]==='Wrong')
  return {correct,wrong,status:correct.length>4||wrong.length>4?'invalid':correct.length===4?'ready':'waiting'}
 }

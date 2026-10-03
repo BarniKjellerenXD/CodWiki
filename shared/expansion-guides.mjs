@@ -7,6 +7,8 @@ import { voyage } from './bo4-voyage.mjs'
 import { bo6Guides } from './bo6-guides.mjs'
 import { bo3Guides } from './bo3-guides.mjs'
 import { chroniclesGuides } from './chronicles-guides.mjs'
+import { bo2Guides } from './bo2-guides.mjs'
+import { classicGuides } from './classic-guides.mjs'
 // Original concise walkthroughs adapted from the linked research sources.
 // Stable phase/step IDs are generated from the explicit keys, never from prose.
 const reddit = slug => `https://www.reddit.com/r/CODZombies/wiki/${slug}/`
@@ -103,4 +105,4 @@ const baseGuides = [
     phase('secrets', 'Meteorites and Samantha knocks', ['Interact with the three meteorite fragments to activate the music secret.', 'For the Chronicles Samantha sequence, listen to the three groups of knocks and record each count. Repeat the observed pattern at the interaction point.', 'Continue the resulting doll sequence and collect its reward. Clear the knock recorder for a new attempt rather than appending an old pattern.'], ['bo3-kino-knocks'])
   ], [reddit('kino-der-toten')], { group: 'chronicles', questLabel: 'Setup and secrets' }),
 ]
-export const expansionGuides = [...baseGuides.filter(g => g.gameId !== 'bo3'), ...bo3Guides, ...chroniclesGuides]
+export const expansionGuides = [...baseGuides.filter(g => g.gameId !== 'bo3'), ...bo3Guides, ...chroniclesGuides, ...bo2Guides, ...classicGuides]

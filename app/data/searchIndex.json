@@ -7299,217 +7299,3169 @@
     "id": "bo2-tranzit",
     "name": "TranZit",
     "map": "bo2-tranzit",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-tranzit",
-    "keywords": "bo2 Black Ops 2 zombies  Green Run TranZit guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#wiki_key_features",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-setup",
+    "name": "First circuit: Turbine, power and perks",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-setup",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-pack-a-punch",
+    "name": "Open and build Pack-a-Punch",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-pack-a-punch",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-equipment",
+    "name": "Shield, traps, bus upgrades and the Jet Gun",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-equipment",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#wiki_main_quest",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-maxis",
+    "name": "Tower of Babble — Maxis route",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-maxis",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-richtofen",
+    "name": "Tower of Babble — Richtofen route",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-richtofen",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#wiki_side_quests",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-transport",
+    "name": "Fog travel and Denizen portals",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-transport",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-storage",
+    "name": "Bank, weapon fridge and persistent upgrades",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-storage",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-navcards",
+    "name": "Navcard table and the three-map connection",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-navcards",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:details-music",
+    "name": "Carrion, radios and hidden landmarks",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#details-music",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-tranzit",
+    "kind": "Section",
+    "route": "/guides/bo2-tranzit#guide-sources",
+    "keywords": "TranZit bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-tranzit:quick-setup",
+    "name": "First circuit: Turbine, power and perks",
+    "map": "bo2-tranzit",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-tranzit#quick-setup",
+    "keywords": "TranZit main quest checklist"
+  },
+  {
+    "id": "bo2-tranzit:quick-pack-a-punch",
+    "name": "Open and build Pack-a-Punch",
+    "map": "bo2-tranzit",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-tranzit#quick-pack-a-punch",
+    "keywords": "TranZit main quest checklist"
+  },
+  {
+    "id": "bo2-tranzit:quick-equipment",
+    "name": "Shield, traps, bus upgrades and the Jet Gun",
+    "map": "bo2-tranzit",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-tranzit#quick-equipment",
+    "keywords": "TranZit main quest checklist"
+  },
+  {
+    "id": "bo2-tranzit:quick-maxis",
+    "name": "Tower of Babble — Maxis route",
+    "map": "bo2-tranzit",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-tranzit#quick-maxis",
+    "keywords": "TranZit main quest checklist"
+  },
+  {
+    "id": "bo2-tranzit:quick-richtofen",
+    "name": "Tower of Babble — Richtofen route",
+    "map": "bo2-tranzit",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-tranzit#quick-richtofen",
+    "keywords": "TranZit main quest checklist"
   },
   {
     "id": "bo2-bus-depot",
     "name": "Bus Depot",
     "map": "bo2-bus-depot",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-bus-depot",
-    "keywords": "bo2 Black Ops 2 zombies  Green Run survival area Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#wiki_key_features",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:details-setup",
+    "name": "Open the forecourt and secure ammunition",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#details-setup",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:details-survive",
+    "name": "A repeatable survival route",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#details-survive",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#wiki_side_quests",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:details-scope",
+    "name": "Secrets and mode boundaries",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#details-scope",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-bus-depot",
+    "kind": "Section",
+    "route": "/guides/bo2-bus-depot#guide-sources",
+    "keywords": "Bus Depot bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-bus-depot:quick-setup",
+    "name": "Open the forecourt and secure ammunition",
+    "map": "bo2-bus-depot",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-bus-depot#quick-setup",
+    "keywords": "Bus Depot main quest checklist"
+  },
+  {
+    "id": "bo2-bus-depot:quick-survive",
+    "name": "A repeatable survival route",
+    "map": "bo2-bus-depot",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-bus-depot#quick-survive",
+    "keywords": "Bus Depot main quest checklist"
   },
   {
     "id": "bo2-town",
     "name": "Town",
     "map": "bo2-town",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-town",
-    "keywords": "bo2 Black Ops 2 zombies  Green Run survival area Survival / Grief guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#wiki_key_features",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:details-setup",
+    "name": "Perks, weapons and Pack-a-Punch",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#details-setup",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:details-survive",
+    "name": "Use the buildings as escape routes",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#details-survive",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:details-grief",
+    "name": "Town in Grief",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#details-grief",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#wiki_side_quests",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:details-tombstone",
+    "name": "Six perks with Tombstone — co-op Survival",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#details-tombstone",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:details-secrets",
+    "name": "Other secrets and shared locations",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#details-secrets",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-town",
+    "kind": "Section",
+    "route": "/guides/bo2-town#guide-sources",
+    "keywords": "Town bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-town:quick-setup",
+    "name": "Perks, weapons and Pack-a-Punch",
+    "map": "bo2-town",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-town#quick-setup",
+    "keywords": "Town main quest checklist"
+  },
+  {
+    "id": "bo2-town:quick-survive",
+    "name": "Use the buildings as escape routes",
+    "map": "bo2-town",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-town#quick-survive",
+    "keywords": "Town main quest checklist"
+  },
+  {
+    "id": "bo2-town:quick-grief",
+    "name": "Town in Grief",
+    "map": "bo2-town",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-town#quick-grief",
+    "keywords": "Town main quest checklist"
   },
   {
     "id": "bo2-farm",
     "name": "Farm",
     "map": "bo2-farm",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-farm",
-    "keywords": "bo2 Black Ops 2 zombies  Green Run survival area Survival / Grief guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#wiki_key_features",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:details-setup",
+    "name": "House, barn and four perks",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#details-setup",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:details-survive",
+    "name": "Control the yard",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#details-survive",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:details-grief",
+    "name": "Farm in Grief",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#details-grief",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#wiki_side_quests",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:details-secrets",
+    "name": "Mode boundaries",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#details-secrets",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-farm",
+    "kind": "Section",
+    "route": "/guides/bo2-farm#guide-sources",
+    "keywords": "Farm bo2 Black Ops 2 zombies survival  Survival / Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-farm:quick-setup",
+    "name": "House, barn and four perks",
+    "map": "bo2-farm",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-farm#quick-setup",
+    "keywords": "Farm main quest checklist"
+  },
+  {
+    "id": "bo2-farm:quick-survive",
+    "name": "Control the yard",
+    "map": "bo2-farm",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-farm#quick-survive",
+    "keywords": "Farm main quest checklist"
+  },
+  {
+    "id": "bo2-farm:quick-grief",
+    "name": "Farm in Grief",
+    "map": "bo2-farm",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-farm#quick-grief",
+    "keywords": "Farm main quest checklist"
   },
   {
     "id": "bo2-diner",
     "name": "Diner",
     "map": "bo2-diner",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-diner",
-    "keywords": "bo2 Black Ops 2 zombies  Green Run bonus mode Turned guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#wiki_key_features",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:details-turned",
+    "name": "Start the match and understand the roles",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#details-turned",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:details-weapons",
+    "name": "Reverse Gun Game and power-ups",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#details-weapons",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#wiki_side_quests",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:details-achievements",
+    "name": "All three Diner achievements",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#details-achievements",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-diner",
+    "kind": "Section",
+    "route": "/guides/bo2-diner#guide-sources",
+    "keywords": "Diner bo2 Black Ops 2 zombies survival  Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-diner:quick-turned",
+    "name": "Start the match and understand the roles",
+    "map": "bo2-diner",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-diner#quick-turned",
+    "keywords": "Diner main quest checklist"
+  },
+  {
+    "id": "bo2-diner:quick-weapons",
+    "name": "Reverse Gun Game and power-ups",
+    "map": "bo2-diner",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-diner#quick-weapons",
+    "keywords": "Diner main quest checklist"
   },
   {
     "id": "bo2-nuketown-zombies",
     "name": "Nuketown Zombies",
     "map": "bo2-nuketown-zombies",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-nuketown-zombies",
-    "keywords": "bo2 Black Ops 2 zombies  Bonus map Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#wiki_key_features",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:details-setup",
+    "name": "Survive until your perks arrive",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#details-setup",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:details-equipment",
+    "name": "Truck weapons and Galvaknuckles",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#details-equipment",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:details-survive",
+    "name": "Separate the yards in co-op",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#details-survive",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#wiki_side_quests",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:details-music",
+    "name": "Three hidden songs",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#details-music",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:details-story",
+    "name": "Marlton, radios and the round 25 change",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#details-story",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Section",
+    "route": "/guides/bo2-nuketown-zombies#guide-sources",
+    "keywords": "Nuketown Zombies bo2 Black Ops 2 zombies survival  Survival main quest easter egg"
+  },
+  {
+    "id": "bo2-nuketown-zombies:quick-setup",
+    "name": "Survive until your perks arrive",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-nuketown-zombies#quick-setup",
+    "keywords": "Nuketown Zombies main quest checklist"
+  },
+  {
+    "id": "bo2-nuketown-zombies:quick-equipment",
+    "name": "Truck weapons and Galvaknuckles",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-nuketown-zombies#quick-equipment",
+    "keywords": "Nuketown Zombies main quest checklist"
+  },
+  {
+    "id": "bo2-nuketown-zombies:quick-survive",
+    "name": "Separate the yards in co-op",
+    "map": "bo2-nuketown-zombies",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-nuketown-zombies#quick-survive",
+    "keywords": "Nuketown Zombies main quest checklist"
   },
   {
     "id": "bo2-die-rise",
     "name": "Die Rise",
     "map": "bo2-die-rise",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-die-rise",
-    "keywords": "bo2 Black Ops 2 zombies  Revolution Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#wiki_key_features",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-setup",
+    "name": "Power, elevators and a safe return route",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-setup",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-buildables",
+    "name": "Trample Steam and Sliquifier",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-buildables",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#wiki_main_quest",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-shared",
+    "name": "High Maintenance — shared opening",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-shared",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-maxis",
+    "name": "Maxis — Buddha room and lion launchers",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-maxis",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-richtofen",
+    "name": "Richtofen — Sliquifier and zombie launchers",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-richtofen",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-mahjong",
+    "name": "Both routes — decode the tiles and strike the tower",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-mahjong",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#wiki_side_quests",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-free-perks",
+    "name": "Jumping Jacks and free perk bottles",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-free-perks",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-navcards",
+    "name": "Rooftop Navcard table, bank and locker",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-navcards",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:details-music",
+    "name": "We All Fall Down and small secrets",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#details-music",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-die-rise",
+    "kind": "Section",
+    "route": "/guides/bo2-die-rise#guide-sources",
+    "keywords": "Die Rise bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-die-rise:quick-setup",
+    "name": "Power, elevators and a safe return route",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-setup",
+    "keywords": "Die Rise main quest checklist"
+  },
+  {
+    "id": "bo2-die-rise:quick-buildables",
+    "name": "Trample Steam and Sliquifier",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-buildables",
+    "keywords": "Die Rise main quest checklist"
+  },
+  {
+    "id": "bo2-die-rise:quick-shared",
+    "name": "High Maintenance — shared opening",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-shared",
+    "keywords": "Die Rise main quest checklist"
+  },
+  {
+    "id": "bo2-die-rise:quick-maxis",
+    "name": "Maxis — Buddha room and lion launchers",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-maxis",
+    "keywords": "Die Rise main quest checklist"
+  },
+  {
+    "id": "bo2-die-rise:quick-richtofen",
+    "name": "Richtofen — Sliquifier and zombie launchers",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-richtofen",
+    "keywords": "Die Rise main quest checklist"
+  },
+  {
+    "id": "bo2-die-rise:quick-mahjong",
+    "name": "Both routes — decode the tiles and strike the tower",
+    "map": "bo2-die-rise",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-die-rise#quick-mahjong",
+    "keywords": "Die Rise main quest checklist"
   },
   {
     "id": "bo2-mob-of-the-dead",
     "name": "Mob of the Dead",
     "map": "bo2-mob-of-the-dead",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-mob-of-the-dead",
-    "keywords": "bo2 Black Ops 2 zombies  Uprising Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#wiki_key_features",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-setup",
+    "name": "Afterlife, power and the Warden’s Key",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-setup",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-shield",
+    "name": "Build the Zombie Shield",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-shield",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-plane",
+    "name": "Five plane parts and Pack-a-Punch",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-plane",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-retriever",
+    "name": "Hell’s Retriever and the free Blundergat",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-retriever",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-acidgat",
+    "name": "Acid Gat and Vitriolic Withering",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-acidgat",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-spoon",
+    "name": "The spoon required by the main quest",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-spoon",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#wiki_main_quest",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-quest",
+    "name": "Pop Goes the Weasel — three cycles, codes and recordings",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-quest",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-finale",
+    "name": "The final flight and breaking the cycle",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-finale",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#wiki_side_quests",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-redeemer",
+    "name": "Upgrade to Hell’s Redeemer",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-redeemer",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-golden-spork",
+    "name": "Golden Spork upgrade",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-golden-spork",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:details-music",
+    "name": "Songs, Brutus code and the roof jumpscare",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#details-music",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo2-mob-of-the-dead#guide-sources",
+    "keywords": "Mob of the Dead bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-setup",
+    "name": "Afterlife, power and the Warden’s Key",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-setup",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-shield",
+    "name": "Build the Zombie Shield",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-shield",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-plane",
+    "name": "Five plane parts and Pack-a-Punch",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-plane",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-retriever",
+    "name": "Hell’s Retriever and the free Blundergat",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-retriever",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-acidgat",
+    "name": "Acid Gat and Vitriolic Withering",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-acidgat",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-spoon",
+    "name": "The spoon required by the main quest",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-spoon",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-quest",
+    "name": "Pop Goes the Weasel — three cycles, codes and recordings",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-quest",
+    "keywords": "Mob of the Dead main quest checklist"
+  },
+  {
+    "id": "bo2-mob-of-the-dead:quick-finale",
+    "name": "The final flight and breaking the cycle",
+    "map": "bo2-mob-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-mob-of-the-dead#quick-finale",
+    "keywords": "Mob of the Dead main quest checklist"
   },
   {
     "id": "bo2-cell-block",
     "name": "Cell Block",
     "map": "bo2-cell-block",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-cell-block",
-    "keywords": "bo2 Black Ops 2 zombies  Mob of the Dead bonus area Grief guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#wiki_key_features",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:details-setup",
+    "name": "An opening that survives without Jugger-Nog",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#details-setup",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:details-traps",
+    "name": "Traps, Box rooms and Brutus",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#details-traps",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:details-grief",
+    "name": "Win the round",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#details-grief",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#wiki_side_quests",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:details-cerberus",
+    "name": "Cerberus gives a pickup",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#details-cerberus",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-cell-block",
+    "kind": "Section",
+    "route": "/guides/bo2-cell-block#guide-sources",
+    "keywords": "Cell Block bo2 Black Ops 2 zombies survival  Grief main quest easter egg"
+  },
+  {
+    "id": "bo2-cell-block:quick-setup",
+    "name": "An opening that survives without Jugger-Nog",
+    "map": "bo2-cell-block",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-cell-block#quick-setup",
+    "keywords": "Cell Block main quest checklist"
+  },
+  {
+    "id": "bo2-cell-block:quick-traps",
+    "name": "Traps, Box rooms and Brutus",
+    "map": "bo2-cell-block",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-cell-block#quick-traps",
+    "keywords": "Cell Block main quest checklist"
+  },
+  {
+    "id": "bo2-cell-block:quick-grief",
+    "name": "Win the round",
+    "map": "bo2-cell-block",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-cell-block#quick-grief",
+    "keywords": "Cell Block main quest checklist"
   },
   {
     "id": "bo2-buried",
     "name": "Buried",
     "map": "bo2-buried",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-buried",
-    "keywords": "bo2 Black Ops 2 zombies  Vengeance Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#wiki_key_features",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-setup",
+    "name": "Arthur, weapon chalk and the town",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-setup",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-pack-a-punch",
+    "name": "Mansion, maze and Pack-a-Punch",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-pack-a-punch",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-equipment",
+    "name": "Buildables, Paralyzer and Time Bomb",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-equipment",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#wiki_main_quest",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-choose-route",
+    "name": "Mined Games — choose a route and charge the lantern",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-choose-route",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-cipher",
+    "name": "Read the three mine signs",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-cipher",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-richtofen-wisp",
+    "name": "Richtofen — wisp and Round Infinity",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-richtofen-wisp",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-levers",
+    "name": "Richtofen — solve the maze lever order",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-levers",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-maxis-wisp",
+    "name": "Maxis — escort the wisp twice",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-maxis-wisp",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-bells",
+    "name": "Maxis — the mansion’s nine-light bell puzzle",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-bells",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-sharpshooter",
+    "name": "Both routes — Make a Wish and shoot the targets",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-sharpshooter",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#wiki_side_quests",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-arthur",
+    "name": "Arthur’s candy jobs and the bank",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-arthur",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-free-perks",
+    "name": "Ghost rewards, double bottles and the piano",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-free-perks",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-persistent",
+    "name": "Hidden PhD and sniper point bonuses",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-persistent",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-music",
+    "name": "Always Running and the saloon piano",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-music",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:details-endgame",
+    "name": "Navcards and the optional Victis endgame",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#details-endgame",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-buried",
+    "kind": "Section",
+    "route": "/guides/bo2-buried#guide-sources",
+    "keywords": "Buried bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-buried:quick-setup",
+    "name": "Arthur, weapon chalk and the town",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-setup",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-pack-a-punch",
+    "name": "Mansion, maze and Pack-a-Punch",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-pack-a-punch",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-equipment",
+    "name": "Buildables, Paralyzer and Time Bomb",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-equipment",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-choose-route",
+    "name": "Mined Games — choose a route and charge the lantern",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-choose-route",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-cipher",
+    "name": "Read the three mine signs",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-cipher",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-richtofen-wisp",
+    "name": "Richtofen — wisp and Round Infinity",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-richtofen-wisp",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-levers",
+    "name": "Richtofen — solve the maze lever order",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-levers",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-maxis-wisp",
+    "name": "Maxis — escort the wisp twice",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-maxis-wisp",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-bells",
+    "name": "Maxis — the mansion’s nine-light bell puzzle",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-bells",
+    "keywords": "Buried main quest checklist"
+  },
+  {
+    "id": "bo2-buried:quick-sharpshooter",
+    "name": "Both routes — Make a Wish and shoot the targets",
+    "map": "bo2-buried",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-buried#quick-sharpshooter",
+    "keywords": "Buried main quest checklist"
   },
   {
     "id": "bo2-borough",
     "name": "Borough",
     "map": "bo2-borough",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-borough",
-    "keywords": "bo2 Black Ops 2 zombies  Buried bonus area Grief / Turned guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#wiki_key_features",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:details-setup",
+    "name": "Grief: set up in the town",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#details-setup",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:details-grief",
+    "name": "Grief: protect routes and revives",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#details-grief",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:details-turned",
+    "name": "Turned: the smaller street arena",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#details-turned",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#wiki_side_quests",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:details-secrets",
+    "name": "Which secrets belong to full Buried?",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#details-secrets",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-borough",
+    "kind": "Section",
+    "route": "/guides/bo2-borough#guide-sources",
+    "keywords": "Borough bo2 Black Ops 2 zombies survival  Grief / Turned main quest easter egg"
+  },
+  {
+    "id": "bo2-borough:quick-setup",
+    "name": "Grief: set up in the town",
+    "map": "bo2-borough",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-borough#quick-setup",
+    "keywords": "Borough main quest checklist"
+  },
+  {
+    "id": "bo2-borough:quick-grief",
+    "name": "Grief: protect routes and revives",
+    "map": "bo2-borough",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-borough#quick-grief",
+    "keywords": "Borough main quest checklist"
+  },
+  {
+    "id": "bo2-borough:quick-turned",
+    "name": "Turned: the smaller street arena",
+    "map": "bo2-borough",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-borough#quick-turned",
+    "keywords": "Borough main quest checklist"
   },
   {
     "id": "bo2-origins",
     "name": "Origins",
     "map": "bo2-origins",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/bo2-origins",
-    "keywords": "bo2 Black Ops 2 zombies  Apocalypse Survival guide planned map entry"
+    "keywords": "bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-kino-der-toten",
-    "name": "Kino der Toten",
-    "map": "bo1-kino-der-toten",
-    "kind": "Map entry",
-    "route": "/guides/bo1-kino-der-toten",
-    "keywords": "bo1 Black Ops zombies  Original Black Ops version Survival guide planned map entry"
+    "id": "bo2-origins:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#wiki_key_features",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-five",
-    "name": "“Five”",
-    "map": "bo1-five",
-    "kind": "Map entry",
-    "route": "/guides/bo1-five",
-    "keywords": "bo1 Black Ops zombies  Original Black Ops version Survival guide planned map entry"
+    "id": "bo2-origins:details-setup",
+    "name": "Generators, shovel, shield and gramophone",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-setup",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-ascension",
-    "name": "Ascension",
-    "map": "bo1-ascension",
-    "kind": "Map entry",
-    "route": "/guides/bo1-ascension",
-    "keywords": "bo1 Black Ops zombies  First Strike Survival guide planned map entry"
+    "id": "bo2-origins:details-staff-build",
+    "name": "Build the four staffs",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-staff-build",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-call-of-the-dead",
-    "name": "Call of the Dead",
-    "map": "bo1-call-of-the-dead",
-    "kind": "Map entry",
-    "route": "/guides/bo1-call-of-the-dead",
-    "keywords": "bo1 Black Ops zombies  Escalation Survival guide planned map entry"
+    "id": "bo2-origins:details-upgrades",
+    "name": "Complete the four elemental trials",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-upgrades",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-shangri-la",
-    "name": "Shangri-La",
-    "map": "bo1-shangri-la",
-    "kind": "Map entry",
-    "route": "/guides/bo1-shangri-la",
-    "keywords": "bo1 Black Ops zombies  Annihilation Survival guide planned map entry"
+    "id": "bo2-origins:details-equipment",
+    "name": "Thunder Fists, G-Strikes and the Maxis Drone",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-equipment",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-moon",
-    "name": "Moon",
-    "map": "bo1-moon",
-    "kind": "Map entry",
-    "route": "/guides/bo1-moon",
-    "keywords": "bo1 Black Ops zombies  Rezurrection Survival guide planned map entry"
+    "id": "bo2-origins:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#wiki_main_quest",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-nacht-der-untoten",
-    "name": "Nacht der Untoten",
-    "map": "bo1-nacht-der-untoten",
-    "kind": "Map entry",
-    "route": "/guides/bo1-nacht-der-untoten",
-    "keywords": "bo1 Black Ops zombies  Black Ops remaster · Rezurrection Survival guide planned map entry"
+    "id": "bo2-origins:details-seal",
+    "name": "Robot pedestals, Rain Fire and the Panzer wave",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-seal",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-verruckt",
-    "name": "Verrückt",
-    "map": "bo1-verruckt",
-    "kind": "Map entry",
-    "route": "/guides/bo1-verruckt",
-    "keywords": "bo1 Black Ops zombies  Black Ops remaster · Rezurrection Survival guide planned map entry"
+    "id": "bo2-origins:details-finale",
+    "name": "The hidden pilot, Iron Fists and the Crazy Place",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-finale",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-shi-no-numa",
-    "name": "Shi No Numa",
-    "map": "bo1-shi-no-numa",
-    "kind": "Map entry",
-    "route": "/guides/bo1-shi-no-numa",
-    "keywords": "bo1 Black Ops zombies  Black Ops remaster · Rezurrection Survival guide planned map entry"
+    "id": "bo2-origins:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#wiki_side_quests",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-der-riese",
-    "name": "Der Riese",
-    "map": "bo1-der-riese",
-    "kind": "Map entry",
-    "route": "/guides/bo1-der-riese",
-    "keywords": "bo1 Black Ops zombies  Black Ops remaster · Rezurrection Survival guide planned map entry"
+    "id": "bo2-origins:details-digging",
+    "name": "Golden Shovel, Golden Helmet and extra perk slots",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-digging",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
   },
   {
-    "id": "bo1-dead-ops-arcade",
-    "name": "Dead Ops Arcade",
-    "map": "bo1-dead-ops-arcade",
-    "kind": "Map entry",
-    "route": "/guides/bo1-dead-ops-arcade",
-    "keywords": "bo1 Black Ops zombies  Black Ops bonus mode Arcade guide planned map entry"
+    "id": "bo2-origins:details-free-blood",
+    "name": "Create a Zombie Blood drop",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-free-blood",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-origins:details-rewards",
+    "name": "Challenge chests and free Magna Collider",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-rewards",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-origins:details-music",
+    "name": "Three songs and the Church jumpscare",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#details-music",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-origins:guide-sources",
+    "name": "Sources and review",
+    "map": "bo2-origins",
+    "kind": "Section",
+    "route": "/guides/bo2-origins#guide-sources",
+    "keywords": "Origins bo2 Black Ops 2 zombies    main quest easter egg"
+  },
+  {
+    "id": "bo2-origins:quick-setup",
+    "name": "Generators, shovel, shield and gramophone",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-setup",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo2-origins:quick-staff-build",
+    "name": "Build the four staffs",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-staff-build",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo2-origins:quick-upgrades",
+    "name": "Complete the four elemental trials",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-upgrades",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo2-origins:quick-equipment",
+    "name": "Thunder Fists, G-Strikes and the Maxis Drone",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-equipment",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo2-origins:quick-seal",
+    "name": "Robot pedestals, Rain Fire and the Panzer wave",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-seal",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo2-origins:quick-finale",
+    "name": "The hidden pilot, Iron Fists and the Crazy Place",
+    "map": "bo2-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo2-origins#quick-finale",
+    "keywords": "Origins main quest checklist"
   },
   {
     "id": "waw-nacht-der-untoten",
     "name": "Nacht der Untoten",
     "map": "waw-nacht-der-untoten",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/waw-nacht-der-untoten",
-    "keywords": "waw World at War zombies  Original World at War version Survival guide planned map entry"
+    "keywords": "waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:wiki_key_features",
+    "name": "Key Features",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#wiki_key_features",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:details-setup",
+    "name": "Open the bunker and choose an escape route",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#details-setup",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:details-survival",
+    "name": "Move safely between the three rooms",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#details-survival",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#wiki_side_quests",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:details-radio",
+    "name": "Mystery Box radio",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#details-radio",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:guide-sources",
+    "name": "Sources and review",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/waw-nacht-der-untoten#guide-sources",
+    "keywords": "Nacht der Untoten waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-nacht-der-untoten:quick-setup",
+    "name": "Open the bunker and choose an escape route",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Quick parts",
+    "route": "/guides/waw-nacht-der-untoten#quick-setup",
+    "keywords": "Nacht der Untoten main quest checklist"
+  },
+  {
+    "id": "waw-nacht-der-untoten:quick-survival",
+    "name": "Move safely between the three rooms",
+    "map": "waw-nacht-der-untoten",
+    "kind": "Quick parts",
+    "route": "/guides/waw-nacht-der-untoten#quick-survival",
+    "keywords": "Nacht der Untoten main quest checklist"
   },
   {
     "id": "waw-verruckt",
     "name": "Verrückt",
     "map": "waw-verruckt",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/waw-verruckt",
-    "keywords": "waw World at War zombies  Original World at War version Survival guide planned map entry"
+    "keywords": "waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:wiki_key_features",
+    "name": "Key Features",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#wiki_key_features",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:details-setup",
+    "name": "Reconnect the split spawns",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#details-setup",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:details-traps",
+    "name": "Use the asylum’s traps without closing your escape",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#details-traps",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#wiki_side_quests",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:details-music",
+    "name": "Lullaby of a Deadman",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#details-music",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:details-atmosphere",
+    "name": "Dentist chair and courtyard fountain",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#details-atmosphere",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:guide-sources",
+    "name": "Sources and review",
+    "map": "waw-verruckt",
+    "kind": "Section",
+    "route": "/guides/waw-verruckt#guide-sources",
+    "keywords": "Verrückt waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-verruckt:quick-setup",
+    "name": "Reconnect the split spawns",
+    "map": "waw-verruckt",
+    "kind": "Quick parts",
+    "route": "/guides/waw-verruckt#quick-setup",
+    "keywords": "Verrückt main quest checklist"
+  },
+  {
+    "id": "waw-verruckt:quick-traps",
+    "name": "Use the asylum’s traps without closing your escape",
+    "map": "waw-verruckt",
+    "kind": "Quick parts",
+    "route": "/guides/waw-verruckt#quick-traps",
+    "keywords": "Verrückt main quest checklist"
   },
   {
     "id": "waw-shi-no-numa",
     "name": "Shi No Numa",
     "map": "waw-shi-no-numa",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/waw-shi-no-numa",
-    "keywords": "waw World at War zombies  Original World at War version Survival guide planned map entry"
+    "keywords": "waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:wiki_key_features",
+    "name": "Key Features",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#wiki_key_features",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:details-setup",
+    "name": "Open the four huts and locate your perks",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#details-setup",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:details-routes",
+    "name": "Flogger, electric traps and the Doctor’s zipline",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#details-routes",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#wiki_side_quests",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:details-music",
+    "name": "The One",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#details-music",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:details-story",
+    "name": "Starting-room radios and the Element 115 clues",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#details-story",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:guide-sources",
+    "name": "Sources and review",
+    "map": "waw-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/waw-shi-no-numa#guide-sources",
+    "keywords": "Shi No Numa waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-shi-no-numa:quick-setup",
+    "name": "Open the four huts and locate your perks",
+    "map": "waw-shi-no-numa",
+    "kind": "Quick parts",
+    "route": "/guides/waw-shi-no-numa#quick-setup",
+    "keywords": "Shi No Numa main quest checklist"
+  },
+  {
+    "id": "waw-shi-no-numa:quick-routes",
+    "name": "Flogger, electric traps and the Doctor’s zipline",
+    "map": "waw-shi-no-numa",
+    "kind": "Quick parts",
+    "route": "/guides/waw-shi-no-numa#quick-routes",
+    "keywords": "Shi No Numa main quest checklist"
   },
   {
     "id": "waw-der-riese",
     "name": "Der Riese",
     "map": "waw-der-riese",
-    "kind": "Map entry",
+    "kind": "Guide",
     "route": "/guides/waw-der-riese",
-    "keywords": "waw World at War zombies  Original World at War version Survival guide planned map entry"
+    "keywords": "waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:wiki_key_features",
+    "name": "Key Features",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#wiki_key_features",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:details-setup",
+    "name": "Power and the three teleporter routes",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#details-setup",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:details-equipment",
+    "name": "Wunderwaffe, Monkey Bombs and factory survival",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#details-equipment",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#wiki_side_quests",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:details-fly-trap",
+    "name": "Fly Trap: original three-target hunt",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#details-fly-trap",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:details-music",
+    "name": "Beauty of Annihilation",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#details-music",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:details-recordings",
+    "name": "Factory recordings and environmental secrets",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#details-recordings",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:guide-sources",
+    "name": "Sources and review",
+    "map": "waw-der-riese",
+    "kind": "Section",
+    "route": "/guides/waw-der-riese#guide-sources",
+    "keywords": "Der Riese waw World at War zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "waw-der-riese:quick-setup",
+    "name": "Power and the three teleporter routes",
+    "map": "waw-der-riese",
+    "kind": "Quick parts",
+    "route": "/guides/waw-der-riese#quick-setup",
+    "keywords": "Der Riese main quest checklist"
+  },
+  {
+    "id": "waw-der-riese:quick-equipment",
+    "name": "Wunderwaffe, Monkey Bombs and factory survival",
+    "map": "waw-der-riese",
+    "kind": "Quick parts",
+    "route": "/guides/waw-der-riese#quick-equipment",
+    "keywords": "Der Riese main quest checklist"
+  },
+  {
+    "id": "bo1-nacht-der-untoten",
+    "name": "Nacht der Untoten",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Guide",
+    "route": "/guides/bo1-nacht-der-untoten",
+    "keywords": "bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#wiki_key_features",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:details-setup",
+    "name": "Open the bunker and choose an escape route",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#details-setup",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:details-survival",
+    "name": "Move safely between the three rooms",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#details-survival",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#wiki_side_quests",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:details-radio",
+    "name": "Mystery Box radio",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#details-radio",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:details-undone",
+    "name": "Undone: the three outside barrels",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#details-undone",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo1-nacht-der-untoten#guide-sources",
+    "keywords": "Nacht der Untoten bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:quick-setup",
+    "name": "Open the bunker and choose an escape route",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-nacht-der-untoten#quick-setup",
+    "keywords": "Nacht der Untoten main quest checklist"
+  },
+  {
+    "id": "bo1-nacht-der-untoten:quick-survival",
+    "name": "Move safely between the three rooms",
+    "map": "bo1-nacht-der-untoten",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-nacht-der-untoten#quick-survival",
+    "keywords": "Nacht der Untoten main quest checklist"
+  },
+  {
+    "id": "bo1-verruckt",
+    "name": "Verrückt",
+    "map": "bo1-verruckt",
+    "kind": "Guide",
+    "route": "/guides/bo1-verruckt",
+    "keywords": "bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#wiki_key_features",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:details-setup",
+    "name": "Reconnect the split spawns",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#details-setup",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:details-traps",
+    "name": "Use the asylum’s traps without closing your escape",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#details-traps",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#wiki_side_quests",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:details-music",
+    "name": "Lullaby of a Deadman",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#details-music",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:details-atmosphere",
+    "name": "Dentist chair and courtyard fountain",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#details-atmosphere",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:details-radio",
+    "name": "BO1 campaign-music radio",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#details-radio",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo1-verruckt#guide-sources",
+    "keywords": "Verrückt bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-verruckt:quick-setup",
+    "name": "Reconnect the split spawns",
+    "map": "bo1-verruckt",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-verruckt#quick-setup",
+    "keywords": "Verrückt main quest checklist"
+  },
+  {
+    "id": "bo1-verruckt:quick-traps",
+    "name": "Use the asylum’s traps without closing your escape",
+    "map": "bo1-verruckt",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-verruckt#quick-traps",
+    "keywords": "Verrückt main quest checklist"
+  },
+  {
+    "id": "bo1-shi-no-numa",
+    "name": "Shi No Numa",
+    "map": "bo1-shi-no-numa",
+    "kind": "Guide",
+    "route": "/guides/bo1-shi-no-numa",
+    "keywords": "bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#wiki_key_features",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:details-setup",
+    "name": "Open the four huts and locate your perks",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#details-setup",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:details-routes",
+    "name": "Flogger, electric traps and the Doctor’s zipline",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#details-routes",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#wiki_side_quests",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:details-music",
+    "name": "The One",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#details-music",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:details-story",
+    "name": "Starting-room radios and the Element 115 clues",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#details-story",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo1-shi-no-numa#guide-sources",
+    "keywords": "Shi No Numa bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-shi-no-numa:quick-setup",
+    "name": "Open the four huts and locate your perks",
+    "map": "bo1-shi-no-numa",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shi-no-numa#quick-setup",
+    "keywords": "Shi No Numa main quest checklist"
+  },
+  {
+    "id": "bo1-shi-no-numa:quick-routes",
+    "name": "Flogger, electric traps and the Doctor’s zipline",
+    "map": "bo1-shi-no-numa",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shi-no-numa#quick-routes",
+    "keywords": "Shi No Numa main quest checklist"
+  },
+  {
+    "id": "bo1-der-riese",
+    "name": "Der Riese",
+    "map": "bo1-der-riese",
+    "kind": "Guide",
+    "route": "/guides/bo1-der-riese",
+    "keywords": "bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#wiki_key_features",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:details-setup",
+    "name": "Power and the three teleporter routes",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#details-setup",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:details-equipment",
+    "name": "Wunderwaffe, Monkey Bombs and factory survival",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#details-equipment",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#wiki_side_quests",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:details-fly-trap",
+    "name": "Fly Trap: original three-target hunt",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#details-fly-trap",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:details-music",
+    "name": "Beauty of Annihilation",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#details-music",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:details-recordings",
+    "name": "Factory recordings and environmental secrets",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#details-recordings",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-der-riese",
+    "kind": "Section",
+    "route": "/guides/bo1-der-riese#guide-sources",
+    "keywords": "Der Riese bo1 Black Ops zombies   Survival main quest easter egg"
+  },
+  {
+    "id": "bo1-der-riese:quick-setup",
+    "name": "Power and the three teleporter routes",
+    "map": "bo1-der-riese",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-der-riese#quick-setup",
+    "keywords": "Der Riese main quest checklist"
+  },
+  {
+    "id": "bo1-der-riese:quick-equipment",
+    "name": "Wunderwaffe, Monkey Bombs and factory survival",
+    "map": "bo1-der-riese",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-der-riese#quick-equipment",
+    "keywords": "Der Riese main quest checklist"
+  },
+  {
+    "id": "bo1-kino-der-toten",
+    "name": "Kino der Toten",
+    "map": "bo1-kino-der-toten",
+    "kind": "Guide",
+    "route": "/guides/bo1-kino-der-toten",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#wiki_key_features",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-setup",
+    "name": "Power and the stage route",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-setup",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-pap",
+    "name": "Link the teleporter and use Pack-a-Punch",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-pap",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-survival",
+    "name": "Traps, gas crawlers and dog rounds",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-survival",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#wiki_side_quests",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-music",
+    "name": "115: three meteor fragments",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-music",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-films",
+    "name": "Three film reels and the projector",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-films",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:details-extras",
+    "name": "Rocket model, radios and portraits",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#details-extras",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo1-kino-der-toten#guide-sources",
+    "keywords": "Kino der Toten bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-kino-der-toten:quick-setup",
+    "name": "Power and the stage route",
+    "map": "bo1-kino-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-kino-der-toten#quick-setup",
+    "keywords": "Kino der Toten main quest checklist"
+  },
+  {
+    "id": "bo1-kino-der-toten:quick-pap",
+    "name": "Link the teleporter and use Pack-a-Punch",
+    "map": "bo1-kino-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-kino-der-toten#quick-pap",
+    "keywords": "Kino der Toten main quest checklist"
+  },
+  {
+    "id": "bo1-kino-der-toten:quick-survival",
+    "name": "Traps, gas crawlers and dog rounds",
+    "map": "bo1-kino-der-toten",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-kino-der-toten#quick-survival",
+    "keywords": "Kino der Toten main quest checklist"
+  },
+  {
+    "id": "bo1-five",
+    "name": "Five",
+    "map": "bo1-five",
+    "kind": "Guide",
+    "route": "/guides/bo1-five",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#wiki_key_features",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:details-setup",
+    "name": "Reach the laboratories and switch on power",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#details-setup",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:details-pap",
+    "name": "DEFCON switches and the Panic Room",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#details-pap",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:details-thief",
+    "name": "Pentagon Thief and the Bonfire Sale",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#details-thief",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#wiki_side_quests",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:details-traps",
+    "name": "Repair the two electric traps",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#details-traps",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:details-music",
+    "name": "Won’t Back Down",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#details-music",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-five",
+    "kind": "Section",
+    "route": "/guides/bo1-five#guide-sources",
+    "keywords": "Five bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-five:quick-setup",
+    "name": "Reach the laboratories and switch on power",
+    "map": "bo1-five",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-five#quick-setup",
+    "keywords": "Five main quest checklist"
+  },
+  {
+    "id": "bo1-five:quick-pap",
+    "name": "DEFCON switches and the Panic Room",
+    "map": "bo1-five",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-five#quick-pap",
+    "keywords": "Five main quest checklist"
+  },
+  {
+    "id": "bo1-five:quick-thief",
+    "name": "Pentagon Thief and the Bonfire Sale",
+    "map": "bo1-five",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-five#quick-thief",
+    "keywords": "Five main quest checklist"
+  },
+  {
+    "id": "bo1-ascension",
+    "name": "Ascension",
+    "map": "bo1-ascension",
+    "kind": "Guide",
+    "route": "/guides/bo1-ascension",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#wiki_key_features",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-setup",
+    "name": "Power, landers and Pack-a-Punch",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-setup",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#wiki_main_quest",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-nodes",
+    "name": "Casimir Mechanism: activate the first three nodes",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-nodes",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-luna",
+    "name": "Spell LUNA with the lander",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-luna",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-orb",
+    "name": "Free Gersh",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-orb",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#wiki_side_quests",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-monkeys",
+    "name": "Space Monkeys and the launch bonus",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-monkeys",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-music",
+    "name": "Abracadavre and the character dolls",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-music",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:details-recordings",
+    "name": "Six story radios and the ringing telephones",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#details-recordings",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-ascension",
+    "kind": "Section",
+    "route": "/guides/bo1-ascension#guide-sources",
+    "keywords": "Ascension bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-ascension:quick-setup",
+    "name": "Power, landers and Pack-a-Punch",
+    "map": "bo1-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-ascension#quick-setup",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo1-ascension:quick-nodes",
+    "name": "Casimir Mechanism: activate the first three nodes",
+    "map": "bo1-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-ascension#quick-nodes",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo1-ascension:quick-luna",
+    "name": "Spell LUNA with the lander",
+    "map": "bo1-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-ascension#quick-luna",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo1-ascension:quick-orb",
+    "name": "Free Gersh",
+    "map": "bo1-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-ascension#quick-orb",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la",
+    "name": "Shangri-La",
+    "map": "bo1-shangri-la",
+    "kind": "Guide",
+    "route": "/guides/bo1-shangri-la",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#wiki_key_features",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-setup",
+    "name": "Power, Pack-a-Punch and the eclipse",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-setup",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#wiki_main_quest",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-tiles",
+    "name": "Crystal 1: match the twelve tile pairs",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-tiles",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-trials",
+    "name": "Crystals 2–4: slide, shrinking ball and gas",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-trials",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-holes",
+    "name": "Crystal 5: plug the four tunnel holes",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-holes",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-dials",
+    "name": "Crystal 6: wall tiles, teepee and mud-room dials",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-dials",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-stone",
+    "name": "Charge the crystals and claim the Focusing Stone",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-stone",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#wiki_side_quests",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-music-perks",
+    "name": "Pareidolia and monkey power-up cycling",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-music-perks",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-monkey-secret",
+    "name": "BO1 temple-monkey explosion",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-monkey-secret",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:details-explorer-audio",
+    "name": "Brock and Gary’s changing radio",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#details-explorer-audio",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo1-shangri-la#guide-sources",
+    "keywords": "Shangri-La bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-shangri-la:quick-setup",
+    "name": "Power, Pack-a-Punch and the eclipse",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-setup",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la:quick-tiles",
+    "name": "Crystal 1: match the twelve tile pairs",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-tiles",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la:quick-trials",
+    "name": "Crystals 2–4: slide, shrinking ball and gas",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-trials",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la:quick-holes",
+    "name": "Crystal 5: plug the four tunnel holes",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-holes",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la:quick-dials",
+    "name": "Crystal 6: wall tiles, teepee and mud-room dials",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-dials",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-shangri-la:quick-stone",
+    "name": "Charge the crystals and claim the Focusing Stone",
+    "map": "bo1-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-shangri-la#quick-stone",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo1-moon",
+    "name": "Moon",
+    "map": "bo1-moon",
+    "kind": "Guide",
+    "route": "/guides/bo1-moon",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#wiki_key_features",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-requirements",
+    "name": "Choose the solo milestone or the full co-op ending",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-requirements",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-setup",
+    "name": "Survive Area 51 and equip your P.E.S.",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-setup",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-hacker",
+    "name": "Find the Hacker and protect your air",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-hacker",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#wiki_main_quest",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-simon",
+    "name": "Samantha Says and the timed laboratory panels",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-simon",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-sphere",
+    "name": "Tunnel 6, the sphere and the first soul tube",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-sphere",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-device",
+    "name": "Bring back the plates and charge the Golden Rod",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-device",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-rockets",
+    "name": "Soul transfer and Earth’s destruction",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-rockets",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#wiki_side_quests",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-hacker-uses",
+    "name": "Useful Hacker interactions",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-hacker-uses",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-music",
+    "name": "Coming Home, electronic songs and Nightmare",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-music",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-survival",
+    "name": "Astronaut, gravity and the Biodome",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-survival",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:details-recordings",
+    "name": "Five radios and six audio reels",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#details-recordings",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-moon",
+    "kind": "Section",
+    "route": "/guides/bo1-moon#guide-sources",
+    "keywords": "Moon bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-moon:quick-requirements",
+    "name": "Choose the solo milestone or the full co-op ending",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-requirements",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-setup",
+    "name": "Survive Area 51 and equip your P.E.S.",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-setup",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-hacker",
+    "name": "Find the Hacker and protect your air",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-hacker",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-simon",
+    "name": "Samantha Says and the timed laboratory panels",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-simon",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-sphere",
+    "name": "Tunnel 6, the sphere and the first soul tube",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-sphere",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-device",
+    "name": "Bring back the plates and charge the Golden Rod",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-device",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-moon:quick-rockets",
+    "name": "Soul transfer and Earth’s destruction",
+    "map": "bo1-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-moon#quick-rockets",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead",
+    "name": "Call of the Dead",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Guide",
+    "route": "/guides/bo1-call-of-the-dead",
+    "keywords": "bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#wiki_key_features",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-setup",
+    "name": "Power, moving Pack-a-Punch and equipment",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-setup",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#wiki_main_quest",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-fuse",
+    "name": "Start the rescue and replace the fuse",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-fuse",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-generators",
+    "name": "Disable all four red generators",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-generators",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-vodka",
+    "name": "Co-op only: catch and deliver the vodka",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-vodka",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-radios",
+    "name": "Co-op only: play the four radios in order",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-radios",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-ship",
+    "name": "Both routes: set the ship controls",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-ship",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-horns",
+    "name": "Co-op only: answer the submarine’s foghorns",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-horns",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-dials",
+    "name": "Co-op only: solve the four linked lighthouse dials",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-dials",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-human",
+    "name": "Both routes: send the human up the beam",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-human",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#wiki_side_quests",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-george",
+    "name": "George Romero: calm him, defeat him or send him away",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-george",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-music",
+    "name": "Not Ready to Die",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-music",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:details-recordings",
+    "name": "Richtofen’s five diary radios",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#details-recordings",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Section",
+    "route": "/guides/bo1-call-of-the-dead#guide-sources",
+    "keywords": "Call of the Dead bo1 Black Ops zombies    main quest easter egg"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-setup",
+    "name": "Power, moving Pack-a-Punch and equipment",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-setup",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-fuse",
+    "name": "Start the rescue and replace the fuse",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-fuse",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-generators",
+    "name": "Disable all four red generators",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-generators",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-vodka",
+    "name": "Co-op only: catch and deliver the vodka",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-vodka",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-radios",
+    "name": "Co-op only: play the four radios in order",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-radios",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-ship",
+    "name": "Both routes: set the ship controls",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-ship",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-horns",
+    "name": "Co-op only: answer the submarine’s foghorns",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-horns",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-dials",
+    "name": "Co-op only: solve the four linked lighthouse dials",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-dials",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-call-of-the-dead:quick-human",
+    "name": "Both routes: send the human up the beam",
+    "map": "bo1-call-of-the-dead",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-call-of-the-dead#quick-human",
+    "keywords": "Call of the Dead main quest checklist"
+  },
+  {
+    "id": "bo1-dead-ops-arcade",
+    "name": "Dead Ops Arcade",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Guide",
+    "route": "/guides/bo1-dead-ops-arcade",
+    "keywords": "bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#wiki_key_features",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-unlock",
+    "name": "Unlock Dead Ops and learn the controls",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-unlock",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-economy",
+    "name": "Treasure, weapons and temporary protection",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-economy",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-fate",
+    "name": "Room of Fate: choose your permanent bonus",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-fate",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-arenas",
+    "name": "Read the arena as the rounds change",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-arenas",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-silverback",
+    "name": "Round 40: defeat the Cosmic Silverback",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-silverback",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#wiki_side_quests",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:details-bonuses",
+    "name": "Bonus rooms and small secrets",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#details-bonuses",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:guide-sources",
+    "name": "Sources and review",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Section",
+    "route": "/guides/bo1-dead-ops-arcade#guide-sources",
+    "keywords": "Dead Ops Arcade bo1 Black Ops zombies   Arcade main quest easter egg"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:quick-unlock",
+    "name": "Unlock Dead Ops and learn the controls",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-dead-ops-arcade#quick-unlock",
+    "keywords": "Dead Ops Arcade main quest checklist"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:quick-economy",
+    "name": "Treasure, weapons and temporary protection",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-dead-ops-arcade#quick-economy",
+    "keywords": "Dead Ops Arcade main quest checklist"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:quick-fate",
+    "name": "Room of Fate: choose your permanent bonus",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-dead-ops-arcade#quick-fate",
+    "keywords": "Dead Ops Arcade main quest checklist"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:quick-arenas",
+    "name": "Read the arena as the rounds change",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-dead-ops-arcade#quick-arenas",
+    "keywords": "Dead Ops Arcade main quest checklist"
+  },
+  {
+    "id": "bo1-dead-ops-arcade:quick-silverback",
+    "name": "Round 40: defeat the Cosmic Silverback",
+    "map": "bo1-dead-ops-arcade",
+    "kind": "Quick parts",
+    "route": "/guides/bo1-dead-ops-arcade#quick-silverback",
+    "keywords": "Dead Ops Arcade main quest checklist"
   },
   {
     "id": "cw-outbreak-ravenov",
@@ -8228,6 +11180,110 @@
     "route": "/tools/bo3-shang-gongs",
     "kind": "Tool",
     "keywords": "bo3 Black Ops 3 Shangri-La solver tracker"
+  },
+  {
+    "id": "bo2-die-rise-mahjong",
+    "map": "bo2-die-rise",
+    "name": "Mahjong tower order",
+    "route": "/tools/bo2-die-rise-mahjong",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Die Rise solver tracker"
+  },
+  {
+    "id": "bo2-buried-signs",
+    "map": "bo2-buried",
+    "name": "Mine sign cipher matcher",
+    "route": "/tools/bo2-buried-signs",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Buried solver tracker"
+  },
+  {
+    "id": "bo2-buried-levers",
+    "map": "bo2-buried",
+    "name": "Maze lever order solver",
+    "route": "/tools/bo2-buried-levers",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Buried solver tracker"
+  },
+  {
+    "id": "bo2-buried-bells",
+    "map": "bo2-buried",
+    "name": "Mansion bell callouts",
+    "route": "/tools/bo2-buried-bells",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Buried solver tracker"
+  },
+  {
+    "id": "bo2-origins-ice",
+    "map": "bo2-origins",
+    "name": "Ice staff symbol matcher",
+    "route": "/tools/bo2-origins-ice",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Origins solver tracker"
+  },
+  {
+    "id": "bo2-origins-fire",
+    "map": "bo2-origins",
+    "name": "Fire staff torch decoder",
+    "route": "/tools/bo2-origins-fire",
+    "kind": "Tool",
+    "keywords": "bo2 Black Ops 2 Origins solver tracker"
+  },
+  {
+    "id": "bo1-cotd-dials",
+    "map": "bo1-call-of-the-dead",
+    "name": "Lighthouse dial solver",
+    "route": "/tools/bo1-cotd-dials",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Call of the Dead solver tracker"
+  },
+  {
+    "id": "bo1-cotd-locations",
+    "map": "bo1-call-of-the-dead",
+    "name": "Quest item & location finder",
+    "route": "/tools/bo1-cotd-locations",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Call of the Dead solver tracker"
+  },
+  {
+    "id": "bo1-shang-locations",
+    "map": "bo1-shangri-la",
+    "name": "Wall tile & mud-dial finder",
+    "route": "/tools/bo1-shang-locations",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Shangri-La solver tracker"
+  },
+  {
+    "id": "bo1-moon-labs",
+    "map": "bo1-moon",
+    "name": "Hacker panel & cable finder",
+    "route": "/tools/bo1-moon-labs",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Moon solver tracker"
+  },
+  {
+    "id": "bo1-shang-tiles",
+    "map": "bo1-shangri-la",
+    "name": "Matching tile symbol notebook",
+    "route": "/tools/bo1-shang-tiles",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Shangri-La solver tracker"
+  },
+  {
+    "id": "bo1-shang-gongs",
+    "map": "bo1-shangri-la",
+    "name": "Gong locations & match notes",
+    "route": "/tools/bo1-shang-gongs",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Shangri-La solver tracker"
+  },
+  {
+    "id": "bo1-moon-simon",
+    "map": "bo1-moon",
+    "name": "Samantha Says sequence recorder",
+    "route": "/tools/bo1-moon-simon",
+    "kind": "Tool",
+    "keywords": "bo1 Black Ops Moon solver tracker"
   },
   {
     "id": "super-ee",

@@ -1,0 +1,708 @@
+{
+  "reviewed": "2026-10-03",
+  "credit": "Gameplay: Activision / Treyarch. Screenshots and charts: mmmrkennedy and the credited community sources. Original pixels preserved. Shared-layout photographs can depict another edition; instructions distinguish versions.",
+  "assets": [
+    {
+      "map": "nacht-der-untoten",
+      "id": "song_ee/barrel_back_corner",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_back_corner.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_back_corner.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window in back corner (window diagional from Mule Kick)",
+      "reused": true
+    },
+    {
+      "map": "nacht-der-untoten",
+      "id": "song_ee/barrel_mule_kick",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_mule_kick.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_mule_kick.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window closest to Mule Kick, beside the Truck",
+      "reused": true
+    },
+    {
+      "map": "nacht-der-untoten",
+      "id": "song_ee/barrel_stairs",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window beside stairs",
+      "reused": true
+    },
+    {
+      "map": "verruckt",
+      "id": "radio/radio_window",
+      "src": "/images/chronicles/verruckt/radio/radio_window.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/radio/radio_window.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Zombie spawn window",
+      "reused": true
+    },
+    {
+      "map": "verruckt",
+      "id": "radio/radio",
+      "src": "/images/chronicles/verruckt/radio/radio.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/radio/radio.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "radio on the desk",
+      "reused": true
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "george_romero/low_health_george",
+      "src": "/images/classic/call-of-the-dead/george_romero/low_health_george.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/george_romero/low_health_george.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "orange",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/beam_lighthouse_stairs",
+      "src": "/images/classic/call-of-the-dead/main_ee/beam_lighthouse_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/beam_lighthouse_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "beam in the middle of the Lighthouse stairs",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/blue",
+      "src": "/images/classic/call-of-the-dead/main_ee/blue.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/blue.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Blue",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/bottle_below_the_box",
+      "src": "/images/classic/call-of-the-dead/main_ee/bottle_below_the_box.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/bottle_below_the_box.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Front of the Lighthouse - Railing on the stairs outside the PhD Flopper room",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/bottle_box",
+      "src": "/images/classic/call-of-the-dead/main_ee/bottle_box.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/bottle_box.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Front of the Lighthouse - Railing above the previous location, by the Mystery Box location",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/bottle_example",
+      "src": "/images/classic/call-of-the-dead/main_ee/bottle_example.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/bottle_example.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "frozen vodka bottle",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/bottle_mpl",
+      "src": "/images/classic/call-of-the-dead/main_ee/bottle_mpl.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/bottle_mpl.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship - Railing above and to the right of the MPL wallbuy",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/bottle_shortcut",
+      "src": "/images/classic/call-of-the-dead/main_ee/bottle_shortcut.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/bottle_shortcut.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship - Railing connecting the two sides of the broken ship",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/downed_human",
+      "src": "/images/classic/call-of-the-dead/main_ee/downed_human.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/downed_human.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "downed state",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/electrical_box",
+      "src": "/images/classic/call-of-the-dead/main_ee/electrical_box.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/electrical_box.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "electrical box",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/fuse_desk",
+      "src": "/images/classic/call-of-the-dead/main_ee/fuse_desk.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/fuse_desk.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "PhD Flopper Room - On the desk, left of the PhD machine",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/fuse_locker",
+      "src": "/images/classic/call-of-the-dead/main_ee/fuse_locker.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/fuse_locker.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "PhD Flopper Room - Left of the locker, in front of the PhD machine",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/fuse_table",
+      "src": "/images/classic/call-of-the-dead/main_ee/fuse_table.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/fuse_table.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "PhD Flopper Room - On the table with the car batteries",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/gen_door",
+      "src": "/images/classic/call-of-the-dead/main_ee/gen_door.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/gen_door.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Lighthouse - Across from the Metal Door",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/gen_mpl",
+      "src": "/images/classic/call-of-the-dead/main_ee/gen_mpl.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/gen_mpl.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship Stern - In the water, outside the map, right of the MPL wallbuy",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/gen_shortcut",
+      "src": "/images/classic/call-of-the-dead/main_ee/gen_shortcut.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/gen_shortcut.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "In the shortcut from the ship to spawn",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/gen_stamin_up",
+      "src": "/images/classic/call-of-the-dead/main_ee/gen_stamin_up.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/gen_stamin_up.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Behind the Lighthouse - Out the Zombie spawn window, left of the Stamin-Up machine",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/golden_rod",
+      "src": "/images/classic/call-of-the-dead/main_ee/golden_rod.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/golden_rod.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Golden Rod",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/horn_lighthouse_1",
+      "src": "/images/classic/call-of-the-dead/main_ee/horn_lighthouse_1.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/horn_lighthouse_1.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "At the base of the Lighthouse, next to the pool of water",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/horn_lighthouse_2",
+      "src": "/images/classic/call-of-the-dead/main_ee/horn_lighthouse_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/horn_lighthouse_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "At the base of the Lighthouse, on the left hand side next to the building",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/horn_speed_cola_1",
+      "src": "/images/classic/call-of-the-dead/main_ee/horn_speed_cola_1.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/horn_speed_cola_1.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "After the slide to Speed Cola, around the corner to the right, in the water",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/horn_speed_cola_2",
+      "src": "/images/classic/call-of-the-dead/main_ee/horn_speed_cola_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/horn_speed_cola_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "After the slide to Speed Cola, behind the huge rock on the island",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/levers_post",
+      "src": "/images/classic/call-of-the-dead/main_ee/levers_post.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/levers_post.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "what it should look like",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/levers_pre",
+      "src": "/images/classic/call-of-the-dead/main_ee/levers_pre.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/levers_pre.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "device, right of the steering wheel",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/metal_door",
+      "src": "/images/classic/call-of-the-dead/main_ee/metal_door.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/metal_door.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Metal Door",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/orange",
+      "src": "/images/classic/call-of-the-dead/main_ee/orange.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/orange.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Orange",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/purple",
+      "src": "/images/classic/call-of-the-dead/main_ee/purple.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/purple.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Purple",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/radio_crate",
+      "src": "/images/classic/call-of-the-dead/main_ee/radio_crate.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/radio_crate.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship Bow - In a cargo crate, at the bottom of the Zipline from the top of the Lighthouse",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/radio_door",
+      "src": "/images/classic/call-of-the-dead/main_ee/radio_door.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/radio_door.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Metal Door Room - On a cabinet under the stairs, right of a Zombie spawn window",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/radio_power",
+      "src": "/images/classic/call-of-the-dead/main_ee/radio_power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/radio_power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship - On top of a computer, in front of the Mystery Box location under the power room",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/radio_staminup",
+      "src": "/images/classic/call-of-the-dead/main_ee/radio_staminup.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/radio_staminup.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Stamin-Up Room - On a barrel, right of a Zombie spawn",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/semtex",
+      "src": "/images/classic/call-of-the-dead/main_ee/semtex.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/semtex.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "wallbuy at the Bow of the ship",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/sub",
+      "src": "/images/classic/call-of-the-dead/main_ee/sub.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/sub.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "submarine",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/tube",
+      "src": "/images/classic/call-of-the-dead/main_ee/tube.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/tube.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "tube to the left of the Metal Door",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/wheel_post",
+      "src": "/images/classic/call-of-the-dead/main_ee/wheel_post.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/wheel_post.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "brown peg is in the bottom right position",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/wheel_pre",
+      "src": "/images/classic/call-of-the-dead/main_ee/wheel_pre.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/wheel_pre.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "steering wheel",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "main_ee/yellow",
+      "src": "/images/classic/call-of-the-dead/main_ee/yellow.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/main_ee/yellow.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Yellow",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "pap/pap_behind_lighthouse",
+      "src": "/images/classic/call-of-the-dead/pap/pap_behind_lighthouse.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/pap/pap_behind_lighthouse.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Behind the Lighthouse - In the water between the Lighthouse and the Stamin-Up machine.",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "pap/pap_jug",
+      "src": "/images/classic/call-of-the-dead/pap/pap_jug.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/pap/pap_jug.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Bow of the Ship - In the water, near the Juggernog machine",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "pap/pap_spawn",
+      "src": "/images/classic/call-of-the-dead/pap/pap_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/pap/pap_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Spawn - Right of Quick Revive",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "power/power_ship",
+      "src": "/images/classic/call-of-the-dead/power/power_ship.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/power/power_ship.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "broken ship",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "power/power_switch",
+      "src": "/images/classic/call-of-the-dead/power/power_switch.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/power/power_switch.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Power Switch",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "song_ee/rock_cafeteria",
+      "src": "/images/classic/call-of-the-dead/song_ee/rock_cafeteria.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/song_ee/rock_cafeteria.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Ship's Stern - On a bench in the ship's dining area (first room below the power room)",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "song_ee/rock_phd",
+      "src": "/images/classic/call-of-the-dead/song_ee/rock_phd.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/song_ee/rock_phd.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "PhD Flopper room - Underneath a small table",
+      "reused": false
+    },
+    {
+      "map": "call-of-the-dead",
+      "id": "song_ee/rock_spawn",
+      "src": "/images/classic/call-of-the-dead/song_ee/rock_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/pictures/song_ee/rock_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide",
+      "caption": "Spawn - On a barrel next to the water",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "main_ee/panel_zoomed_out",
+      "src": "/images/classic/der-riese/main_ee/panel_zoomed_out.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/main_ee/panel_zoomed_out.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "zoomed-out view",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "main_ee/panel",
+      "src": "/images/classic/der-riese/main_ee/panel.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/main_ee/panel.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "control panel",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "main_ee/toy_furnace_waw",
+      "src": "/images/classic/der-riese/main_ee/toy_furnace_waw.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/main_ee/toy_furnace_waw.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter B Thompson Room - In the furnace below the stairs",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "main_ee/toy_spawn_waw",
+      "src": "/images/classic/der-riese/main_ee/toy_spawn_waw.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/main_ee/toy_spawn_waw.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Spawn - In a broken window above the M1 Carbine wallbuy (toward Tele A)",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "main_ee/toy_tele_a_waw",
+      "src": "/images/classic/der-riese/main_ee/toy_tele_a_waw.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/main_ee/toy_tele_a_waw.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter A - In the bottom left cage, right of the M1897 Trench Gun wallbuy",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/clock",
+      "src": "/images/classic/der-riese/pap/clock.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/clock.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "clock will appear at the top left of your screen",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/mainframe",
+      "src": "/images/classic/der-riese/pap/mainframe.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/mainframe.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "mainframe",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/power_switch",
+      "src": "/images/classic/der-riese/pap/power_switch.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/power_switch.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Power Switch",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/tele_a",
+      "src": "/images/classic/der-riese/pap/tele_a.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/tele_a.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter A - Left of spawn",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/tele_b",
+      "src": "/images/classic/der-riese/pap/tele_b.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/tele_b.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter B - Right of spawn",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "pap/tele_c",
+      "src": "/images/classic/der-riese/pap/tele_c.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/pap/tele_c.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter C - Power Switch Area",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "song_ee/jar_shelf",
+      "src": "/images/classic/der-riese/song_ee/jar_shelf.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/song_ee/jar_shelf.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Animal Testing (left side) - On a shelf near the bottom of the stairs to Jug",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "song_ee/jar_stairs",
+      "src": "/images/classic/der-riese/song_ee/jar_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/song_ee/jar_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Animal Testing (left side) - Across from the previous locations, directly to the right of the stairs to Jug",
+      "reused": false
+    },
+    {
+      "map": "der-riese",
+      "id": "song_ee/jar_tele_b",
+      "src": "/images/classic/der-riese/song_ee/jar_tele_b.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/der_riese/pictures/song_ee/jar_tele_b.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide",
+      "caption": "Teleporter B - In the side room, right of the teleporter, on a table beside the chalkboard",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "pap/defcon_catwalk_close",
+      "src": "/images/classic/five/pap/defcon_catwalk_close.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/pap/defcon_catwalk_close.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "On the left when coming out of the first Elevator",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "pap/defcon_catwalk_far",
+      "src": "/images/classic/five/pap/defcon_catwalk_far.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/pap/defcon_catwalk_far.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "On the far side of the catwalk from the first Elevator",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "pap/defcon_jug",
+      "src": "/images/classic/five/pap/defcon_jug.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/pap/defcon_jug.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "Between the Juggernog and Mule Kick machine",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "pap/defcon_lower_elevator",
+      "src": "/images/classic/five/pap/defcon_lower_elevator.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/pap/defcon_lower_elevator.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "Left of the Elevator down to the lower level",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "pap/pap_machine",
+      "src": "/images/classic/five/pap/pap_machine.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/pap/pap_machine.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "Pack-a-Punch machine",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "power/power_room_outside",
+      "src": "/images/classic/five/power/power_room_outside.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/power/power_room_outside.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "room with the large \"3\" on the wall",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "power/power_switch",
+      "src": "/images/classic/five/power/power_switch.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/power/power_switch.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "in the Labs",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "song_ee/phone_panic_room",
+      "src": "/images/classic/five/song_ee/phone_panic_room.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/song_ee/phone_panic_room.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "In the Panic Room, on a table next to a barrier",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "song_ee/phone_power",
+      "src": "/images/classic/five/song_ee/phone_power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/song_ee/phone_power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "On the desk \"in front\" of the power switch",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "song_ee/phone_quick_revive",
+      "src": "/images/classic/five/song_ee/phone_quick_revive.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/song_ee/phone_quick_revive.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "On the table left of the Quick Revive machine",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "teleporters/teleporter",
+      "src": "/images/classic/five/teleporters/teleporter.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/teleporters/teleporter.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "teleporters",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "thief_round/bonfire_sale_powerup",
+      "src": "/images/classic/five/thief_round/bonfire_sale_powerup.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/thief_round/bonfire_sale_powerup.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "Bonfire Sale powerup",
+      "reused": false
+    },
+    {
+      "map": "five",
+      "id": "thief_round/pentagon_thief",
+      "src": "/images/classic/five/thief_round/pentagon_thief.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/five/pictures/thief_round/pentagon_thief.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/five/five_guide",
+      "caption": "Pentagon Thief",
+      "reused": false
+    },
+    {
+      "map": "dead-ops-arcade",
+      "id": "gameplay",
+      "src": "/images/classic/dead-ops-arcade/gameplay.jpg",
+      "remote": "https://imagenes.hobbyconsolas.com/files/image_1920_1080/uploads/imagenes/2023/04/25/6902b3bc912ef.jpeg",
+      "source": "https://www.hobbyconsolas.com/guias-trucos/call-duty-black-ops/call-duty-black-ops-juega-dead-ops-arcade-76730",
+      "caption": "Original Dead Ops Arcade: each player has a coloured HUD; a helicopter pickup provides a temporary damage and protection window.",
+      "reused": false
+    }
+  ]
+}

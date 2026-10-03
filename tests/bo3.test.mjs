@@ -110,8 +110,7 @@ test('old text observations and old checklists survive alongside new visual fiel
 test('symbol crops stay within their credited screenshots',()=>{
   for(const [glyphs,w,h] of [[shadowGlyphs,2560,1440],[voidGlyphs,1919,1078],[terminalGlyphs,2560,1440]])for(const g of glyphs){const[x,y,cw,ch]=g.box;assert.ok(x>=0&&y>=0&&cw>0&&ch>0&&x+cw<=w&&y+ch<=h,g.id)}
 })
-test('27 legacy map entries are discoverable and never expose fake tools or progress',()=>{
-  assert.equal(plannedMaps.length,27)
-  for(const m of plannedMaps){assert.equal(catalogue.maps.find(x=>x.id===m.id).status,'planned');assert.equal(quick[m.id],undefined);assert.equal(search.find(x=>x.id===m.id).kind,'Map entry');assert.ok(!catalogue.tools.some(t=>t.map===m.id))}
-  assert.deepEqual(['bo2','bo1','waw'].map(id=>plannedMaps.filter(m=>m.gameId===id).length),[12,11,4])
+test('all catalogued legacy maps now open authored guides',()=>{
+  assert.equal(plannedMaps.length,0)
+  for(const m of catalogue.maps.filter(m=>['bo2','bo1','waw'].includes(m.gameId))){assert.equal(m.status,undefined);assert.ok(quick[m.id]?.length);assert.equal(search.find(x=>x.id===m.id).kind,'Guide')}
 })

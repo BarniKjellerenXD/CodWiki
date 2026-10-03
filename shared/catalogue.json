@@ -386,327 +386,289 @@
     },
     {
       "id": "bo2-tranzit",
-      "gameId": "bo2",
       "name": "TranZit",
-      "edition": "Green Run",
-      "mode": "TranZit",
-      "status": "planned",
       "route": "/guides/bo2-tranzit",
+      "image": "/images/bo2/tranzit/tranzit.webp",
+      "gameId": "bo2",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "bo2-bus-depot",
-      "gameId": "bo2",
       "name": "Bus Depot",
-      "edition": "Green Run survival area",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-bus-depot",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/bus-depot/bus-depot.webp",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Survival setup",
+      "mode": "Survival"
     },
     {
       "id": "bo2-town",
-      "gameId": "bo2",
       "name": "Town",
-      "edition": "Green Run survival area",
-      "mode": "Survival / Grief",
-      "status": "planned",
       "route": "/guides/bo2-town",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/town/town.jpg",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Survival setup",
+      "mode": "Survival / Grief"
     },
     {
       "id": "bo2-farm",
-      "gameId": "bo2",
       "name": "Farm",
-      "edition": "Green Run survival area",
-      "mode": "Survival / Grief",
-      "status": "planned",
       "route": "/guides/bo2-farm",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/farm/farm.png",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Survival setup",
+      "mode": "Survival / Grief"
     },
     {
       "id": "bo2-diner",
-      "gameId": "bo2",
       "name": "Diner",
-      "edition": "Green Run bonus mode",
-      "mode": "Turned",
-      "status": "planned",
       "route": "/guides/bo2-diner",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/diner/diner.jpg",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Turned essentials",
+      "mode": "Turned"
     },
     {
       "id": "bo2-nuketown-zombies",
-      "gameId": "bo2",
       "name": "Nuketown Zombies",
-      "edition": "Bonus map",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-nuketown-zombies",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/nuketown-zombies/marlton_bunker/bunker.webp",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Survival setup",
+      "mode": "Survival"
     },
     {
       "id": "bo2-die-rise",
-      "gameId": "bo2",
       "name": "Die Rise",
-      "edition": "Revolution",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-die-rise",
+      "image": "/images/bo2/die-rise/die-rise.webp",
+      "gameId": "bo2",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "bo2-mob-of-the-dead",
-      "gameId": "bo2",
       "name": "Mob of the Dead",
-      "edition": "Uprising",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-mob-of-the-dead",
+      "image": "/images/bo2/mob-of-the-dead/mob-of-the-dead.webp",
+      "gameId": "bo2",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "bo2-cell-block",
-      "gameId": "bo2",
       "name": "Cell Block",
-      "edition": "Mob of the Dead bonus area",
-      "mode": "Grief",
-      "status": "planned",
       "route": "/guides/bo2-cell-block",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/mob-of-the-dead/hells_retriever/dog_b23r.webp",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Grief setup",
+      "mode": "Grief"
     },
     {
       "id": "bo2-buried",
-      "gameId": "bo2",
       "name": "Buried",
-      "edition": "Vengeance",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-buried",
+      "image": "/images/bo2/buried/buried.webp",
+      "gameId": "bo2",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "bo2-borough",
-      "gameId": "bo2",
       "name": "Borough",
-      "edition": "Buried bonus area",
-      "mode": "Grief / Turned",
-      "status": "planned",
       "route": "/guides/bo2-borough",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "image": "/images/bo2/borough/borough.jpg",
+      "gameId": "bo2",
+      "group": "survival",
+      "interactiveMap": false,
+      "questLabel": "Grief setup",
+      "mode": "Grief / Turned"
     },
     {
       "id": "bo2-origins",
-      "gameId": "bo2",
       "name": "Origins",
-      "edition": "Apocalypse",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/bo2-origins",
+      "image": "/images/chronicles/origins/origins.webp",
+      "gameId": "bo2",
       "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-kino-der-toten",
-      "gameId": "bo1",
-      "name": "Kino der Toten",
-      "edition": "Original Black Ops version",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-kino-der-toten",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-five",
-      "gameId": "bo1",
-      "name": "“Five”",
-      "edition": "Original Black Ops version",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-five",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-ascension",
-      "gameId": "bo1",
-      "name": "Ascension",
-      "edition": "First Strike",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-ascension",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-call-of-the-dead",
-      "gameId": "bo1",
-      "name": "Call of the Dead",
-      "edition": "Escalation",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-call-of-the-dead",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-shangri-la",
-      "gameId": "bo1",
-      "name": "Shangri-La",
-      "edition": "Annihilation",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-shangri-la",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-moon",
-      "gameId": "bo1",
-      "name": "Moon",
-      "edition": "Rezurrection",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-moon",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-nacht-der-untoten",
-      "gameId": "bo1",
-      "name": "Nacht der Untoten",
-      "edition": "Black Ops remaster · Rezurrection",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-nacht-der-untoten",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-verruckt",
-      "gameId": "bo1",
-      "name": "Verrückt",
-      "edition": "Black Ops remaster · Rezurrection",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-verruckt",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-shi-no-numa",
-      "gameId": "bo1",
-      "name": "Shi No Numa",
-      "edition": "Black Ops remaster · Rezurrection",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-shi-no-numa",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-der-riese",
-      "gameId": "bo1",
-      "name": "Der Riese",
-      "edition": "Black Ops remaster · Rezurrection",
-      "mode": "Survival",
-      "status": "planned",
-      "route": "/guides/bo1-der-riese",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
-    },
-    {
-      "id": "bo1-dead-ops-arcade",
-      "gameId": "bo1",
-      "name": "Dead Ops Arcade",
-      "edition": "Black Ops bonus mode",
-      "mode": "Arcade",
-      "status": "planned",
-      "route": "/guides/bo1-dead-ops-arcade",
-      "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "waw-nacht-der-untoten",
-      "gameId": "waw",
       "name": "Nacht der Untoten",
-      "edition": "Original World at War version",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/waw-nacht-der-untoten",
+      "image": "/images/chronicles/nacht-der-untoten/sniper_cabinet.webp",
+      "gameId": "waw",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
     },
     {
       "id": "waw-verruckt",
-      "gameId": "waw",
       "name": "Verrückt",
-      "edition": "Original World at War version",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/waw-verruckt",
+      "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
+      "gameId": "waw",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
     },
     {
       "id": "waw-shi-no-numa",
-      "gameId": "waw",
       "name": "Shi No Numa",
-      "edition": "Original World at War version",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/waw-shi-no-numa",
+      "image": "/images/chronicles/shi-no-numa/free_max_ammo/doll_bridge.webp",
+      "gameId": "waw",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
     },
     {
       "id": "waw-der-riese",
-      "gameId": "waw",
       "name": "Der Riese",
-      "edition": "Original World at War version",
-      "mode": "Survival",
-      "status": "planned",
       "route": "/guides/waw-der-riese",
+      "image": "/images/classic/der-riese/pap/mainframe.webp",
+      "gameId": "waw",
       "group": "",
-      "image": "",
-      "interactiveMap": false
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "route": "/guides/bo1-nacht-der-untoten",
+      "image": "/images/chronicles/nacht-der-untoten/sniper_cabinet.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-verruckt",
+      "name": "Verrückt",
+      "route": "/guides/bo1-verruckt",
+      "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-shi-no-numa",
+      "name": "Shi No Numa",
+      "route": "/guides/bo1-shi-no-numa",
+      "image": "/images/chronicles/shi-no-numa/free_max_ammo/doll_bridge.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-der-riese",
+      "name": "Der Riese",
+      "route": "/guides/bo1-der-riese",
+      "image": "/images/classic/der-riese/pap/mainframe.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets",
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "name": "Kino der Toten",
+      "route": "/guides/bo1-kino-der-toten",
+      "image": "/images/chronicles/kino-der-toten/power/power.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo1-five",
+      "name": "Five",
+      "route": "/guides/bo1-five",
+      "image": "/images/classic/five/power/power_room_outside.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo1-ascension",
+      "name": "Ascension",
+      "route": "/guides/bo1-ascension",
+      "image": "/images/chronicles/ascension/power/power_switch.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main Easter Egg"
+    },
+    {
+      "id": "bo1-shangri-la",
+      "name": "Shangri-La",
+      "route": "/guides/bo1-shangri-la",
+      "image": "/images/chronicles/shangri-la/power/power.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main Easter Egg"
+    },
+    {
+      "id": "bo1-moon",
+      "name": "Moon",
+      "route": "/guides/bo1-moon",
+      "image": "/images/chronicles/moon/moon.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main Easter Egg"
+    },
+    {
+      "id": "bo1-call-of-the-dead",
+      "name": "Call of the Dead",
+      "route": "/guides/bo1-call-of-the-dead",
+      "image": "/images/classic/call-of-the-dead/power/power_ship.webp",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Solo & co-op Easter Eggs"
+    },
+    {
+      "id": "bo1-dead-ops-arcade",
+      "name": "Dead Ops Arcade",
+      "route": "/guides/bo1-dead-ops-arcade",
+      "image": "/images/classic/dead-ops-arcade/gameplay.jpg",
+      "gameId": "bo1",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Arcade survival & secrets",
+      "mode": "Arcade"
     }
   ],
   "tools": [
@@ -1156,6 +1118,97 @@
       "map": "bo3-shangri-la",
       "name": "Gong locations & match notes",
       "route": "/tools/bo3-shang-gongs",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo2-die-rise-mahjong",
+      "map": "bo2-die-rise",
+      "name": "Mahjong tower order",
+      "route": "/tools/bo2-die-rise-mahjong",
+      "kind": "solver"
+    },
+    {
+      "id": "bo2-buried-signs",
+      "map": "bo2-buried",
+      "name": "Mine sign cipher matcher",
+      "route": "/tools/bo2-buried-signs",
+      "kind": "solver"
+    },
+    {
+      "id": "bo2-buried-levers",
+      "map": "bo2-buried",
+      "name": "Maze lever order solver",
+      "route": "/tools/bo2-buried-levers",
+      "kind": "solver"
+    },
+    {
+      "id": "bo2-buried-bells",
+      "map": "bo2-buried",
+      "name": "Mansion bell callouts",
+      "route": "/tools/bo2-buried-bells",
+      "kind": "reference"
+    },
+    {
+      "id": "bo2-origins-ice",
+      "map": "bo2-origins",
+      "name": "Ice staff symbol matcher",
+      "route": "/tools/bo2-origins-ice",
+      "kind": "solver"
+    },
+    {
+      "id": "bo2-origins-fire",
+      "map": "bo2-origins",
+      "name": "Fire staff torch decoder",
+      "route": "/tools/bo2-origins-fire",
+      "kind": "solver"
+    },
+    {
+      "id": "bo1-cotd-dials",
+      "map": "bo1-call-of-the-dead",
+      "name": "Lighthouse dial solver",
+      "route": "/tools/bo1-cotd-dials",
+      "kind": "solver"
+    },
+    {
+      "id": "bo1-cotd-locations",
+      "map": "bo1-call-of-the-dead",
+      "name": "Quest item & location finder",
+      "route": "/tools/bo1-cotd-locations",
+      "kind": "reference"
+    },
+    {
+      "id": "bo1-shang-locations",
+      "map": "bo1-shangri-la",
+      "name": "Wall tile & mud-dial finder",
+      "route": "/tools/bo1-shang-locations",
+      "kind": "reference"
+    },
+    {
+      "id": "bo1-moon-labs",
+      "map": "bo1-moon",
+      "name": "Hacker panel & cable finder",
+      "route": "/tools/bo1-moon-labs",
+      "kind": "reference"
+    },
+    {
+      "id": "bo1-shang-tiles",
+      "map": "bo1-shangri-la",
+      "name": "Matching tile symbol notebook",
+      "route": "/tools/bo1-shang-tiles",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo1-shang-gongs",
+      "map": "bo1-shangri-la",
+      "name": "Gong locations & match notes",
+      "route": "/tools/bo1-shang-gongs",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo1-moon-simon",
+      "map": "bo1-moon",
+      "name": "Samantha Says sequence recorder",
+      "route": "/tools/bo1-moon-simon",
       "kind": "recorder"
     }
   ],

@@ -1,0 +1,22 @@
+<script setup>
+import {leverColours,leverResult,validateLeverAttempt} from '~/utils/bo2.mjs'
+const props=defineProps({state:Object})
+const emit=defineEmits(['change'])
+const answer=computed(()=>leverResult(props.state))
+const current=computed(()=>[0,1,2,3].map(i=>props.state[`current-${i}`]||''))
+const feedback=computed(()=>[0,1,2,3].map(i=>props.state[`feedback-${i}`]||''))
+const error=computed(()=>validateLeverAttempt(current.value,feedback.value))
+const full=computed(()=>answer.value.trials.length>=24)
+const resultPanel=ref(null)
+const update=(key,value)=>emit('change',{...props.state,[key]:value})
+function useSuggestion(){if(!answer.value.suggestion)return;const next={...props.state};answer.value.suggestion.forEach((v,i)=>{next[`current-${i}`]=v;next[`feedback-${i}`]=''});emit('change',next)}
+function save(){if(error.value||full.value)return;const next={...props.state},a=Array.from({length:24},(_,i)=>i).find(i=>!next[`saved-${i}`]);next[`saved-${a}`]=true;current.value.forEach((v,i)=>{next[`trial-${a}-${i}`]=v;next[`spark-${a}-${i}`]=feedback.value[i];next[`current-${i}`]='';next[`feedback-${i}`]=''});emit('change',next);nextTick(()=>{resultPanel.value?.focus({preventScroll:true});resultPanel.value?.scrollIntoView({block:'start',behavior:'instant'})})}
+function remove(a){const next={...props.state,[`saved-${a}`]:false};for(let i=0;i<4;i++){next[`trial-${a}-${i}`]='';next[`spark-${a}-${i}`]=''}emit('change',next)}
+</script>
+<template>
+ <section ref="resultPanel" tabindex="-1" class="bo2-result bo2-lever-result" :class="answer.status" aria-live="polite" aria-atomic="true"><h3>{{answer.candidates.length===1?'The remaining order':'Next order to test'}}</h3><p>{{answer.message}}</p><ol v-if="answer.suggestion" class="bo2-order"><li v-for="(colour,i) in answer.suggestion" :key="colour" :class="`bo2-colour-${colour.toLowerCase()}`"><span>{{i+1}}</span><strong>{{colour}}</strong></li></ol><button v-if="answer.suggestion" type="button" @click="useSuggestion">Use this order in the form</button></section>
+ <fieldset><legend>What happened after the fourth pull?</legend><p class="chr-muted">Enter the order you actually pulled. For each colour, look for sparks after all four levers have been flipped. Leave uncertain feedback as Unknown.</p><div class="bo2-lever-editor"><div v-for="i in 4" :key="i" class="bo2-lever-row"><strong>{{i}}</strong><label>Lever colour<select :value="state[`current-${i-1}`]" :aria-label="`Pull ${i}: lever colour`" @change="update(`current-${i-1}`,$event.target.value)"><option value="">Choose colour…</option><option v-for="c in leverColours" :key="c">{{c}}</option></select></label><label>Feedback after all four<select :value="state[`feedback-${i-1}`]" :aria-label="`Pull ${i}: spark feedback`" @change="update(`feedback-${i-1}`,$event.target.value)"><option value="">Unknown</option><option value="spark">Sparked · correct position</option><option value="dark">Dark · wrong position</option></select></label></div></div><p v-if="error" class="chr-muted">{{error}}</p><p v-if="full" class="chr-status invalid">The 24 saved attempts are full. Remove an old attempt or reset for a new match.</p><button type="button" :disabled="!!error||full" @click="save">Save this test and narrow the order</button></fieldset>
+ <details :open="answer.status==='invalid'"><summary>Saved spark observations ({{answer.trials.length}})</summary><p v-if="!answer.trials.length">No tests saved yet. The solver starts with all 24 orders.</p><div v-for="trial in answer.trials" :key="trial.index" class="bo2-trial"><h3>Attempt {{trial.index+1}}</h3><ol><li v-for="(c,i) in trial.order" :key="i"><strong>{{c}}</strong> · {{trial.feedback[i]==='spark'?'sparked':trial.feedback[i]==='dark'?'dark':'unknown'}}</li></ol><button type="button" :aria-label="`Remove attempt ${trial.index+1}`" @click="remove(trial.index)">Remove this attempt</button></div></details>
+ <p class="chr-context">After an unsuccessful attempt, <strong>everyone leaves the maze</strong> to reset the levers. The suggestion uses your observations to reduce the possible orders; it does not read the game. If no order remains, remove the mistaken observation and record it again. Undo can restore a removed test.</p>
+ <details><summary>Where to find the levers</summary><GuideIllustrations :images="[{src:'/images/bo2/buried/maze.webp',alt:'The four coloured lever switches are attached to the hedge-maze gates.'}]"/></details>
+</template>

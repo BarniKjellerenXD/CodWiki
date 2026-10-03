@@ -7,6 +7,7 @@ function groupNavigation(entries, savedOrder = []) {
     id: guide.map,
     game: guide.game || 'bo7',
     gameName: guide.gameName || 'Black Ops 7',
+    group: guide.group || '',
     name: guide.section,
     items: [guide, ...ordered.filter(item => item.kind !== 'guide' && item.map === guide.map)]
   })).sort((a, b) => gameOrder.indexOf(a.game) - gameOrder.indexOf(b.game))

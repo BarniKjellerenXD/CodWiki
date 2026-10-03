@@ -22,7 +22,7 @@ let errorPageShown = false
 function filterSidebar() {
  const q = document.getElementById('nav-search').value.trim().toLowerCase()
  for(const item of navEl.querySelectorAll('.nav-item')) item.hidden = !!q && !item.textContent.toLowerCase().includes(q) && !item.dataset.map.toLowerCase().includes(q) && !item.dataset.url.includes(q)
- for(const group of navEl.querySelectorAll('.nav-map, .nav-game')) {
+ for(const group of navEl.querySelectorAll('.nav-map, .nav-subgroup, .nav-game')) {
   group.hidden = !Array.from(group.querySelectorAll('.nav-item')).some(item=>!item.hidden)
   if(q && !group.hidden) group.open = true
  }
@@ -90,6 +90,7 @@ function makeItem (item) {
 function buildSidebar () {
   navEl.innerHTML = ''
   const gameGroups = new Map()
+  const modeGroups = new Map()
   for (const group of effectiveGroups()) {
     let game = gameGroups.get(group.game)
     if(!game) {
@@ -112,7 +113,23 @@ function buildSidebar () {
     lab.textContent = group.name
     map.appendChild(lab)
     for (const item of group.items) map.appendChild(makeItem(item))
-    game.appendChild(map)
+    if(group.game==='bo2' && group.group==='survival') {
+      let modes=modeGroups.get(group.game)
+      if(!modes){
+        modes=document.createElement('details')
+        modes.className='nav-subgroup'
+        modes.open=localStorage.getItem('cw-nav-bo2-survival')==='true'
+        const title=document.createElement('summary')
+        title.textContent='Survival & extra modes'
+        modes.appendChild(title)
+        modes.addEventListener('toggle',()=>{if(!document.getElementById('nav-search').value.trim())localStorage.setItem('cw-nav-bo2-survival',String(modes.open))})
+        modeGroups.set(group.game,modes)
+        game.appendChild(modes)
+      }
+      modes.appendChild(map)
+    } else {
+      game.insertBefore(map,modeGroups.get(group.game)||null)
+    }
   }
   filterSidebar()
   setActive(webview.src || lastSiteUrl)

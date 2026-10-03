@@ -1,0 +1,196 @@
+{
+  "cw-die-maschine": {
+    "src": "/images/map-artwork/die-maschine.webp",
+    "srcset": "/images/map-artwork/die-maschine-480.webp 480w, /images/map-artwork/die-maschine.webp 960w",
+    "position": "50% 50%"
+  },
+  "cw-firebase-z": {
+    "src": "/images/map-artwork/firebase-z.webp",
+    "srcset": "/images/map-artwork/firebase-z-480.webp 480w, /images/map-artwork/firebase-z.webp 960w",
+    "position": "50% 50%"
+  },
+  "cw-mauer-der-toten": {
+    "src": "/images/map-artwork/mauer-der-toten.webp",
+    "srcset": "/images/map-artwork/mauer-der-toten-480.webp 480w, /images/map-artwork/mauer-der-toten.webp 960w",
+    "position": "50% 50%"
+  },
+  "cw-forsaken": {
+    "src": "/images/map-artwork/forsaken.webp",
+    "srcset": "/images/map-artwork/forsaken-480.webp 480w, /images/map-artwork/forsaken.webp 960w",
+    "position": "50% 50%"
+  },
+  "cw-outbreak": {
+    "src": "/images/map-artwork/outbreak.webp",
+    "srcset": "/images/map-artwork/outbreak-480.webp 480w, /images/map-artwork/outbreak.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-dead-of-the-night": {
+    "src": "/images/map-artwork/dead-of-the-night.webp",
+    "srcset": "/images/map-artwork/dead-of-the-night-480.webp 480w, /images/map-artwork/dead-of-the-night.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-ix": {
+    "src": "/images/map-artwork/ix.webp",
+    "srcset": "/images/map-artwork/ix-480.webp 480w, /images/map-artwork/ix.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-blood-of-the-dead": {
+    "src": "/images/map-artwork/blood-of-the-dead.webp",
+    "srcset": "/images/map-artwork/blood-of-the-dead-480.webp 480w, /images/map-artwork/blood-of-the-dead.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-ancient-evil": {
+    "src": "/images/map-artwork/ancient-evil.webp",
+    "srcset": "/images/map-artwork/ancient-evil-480.webp 480w, /images/map-artwork/ancient-evil.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-alpha-omega": {
+    "src": "/images/map-artwork/alpha-omega.webp",
+    "srcset": "/images/map-artwork/alpha-omega-480.webp 480w, /images/map-artwork/alpha-omega.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-tag-der-toten": {
+    "src": "/images/map-artwork/tag-der-toten.webp",
+    "srcset": "/images/map-artwork/tag-der-toten-480.webp 480w, /images/map-artwork/tag-der-toten.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo4-classified": {
+    "src": "/images/map-artwork/classified.webp",
+    "srcset": "/images/map-artwork/classified-480.webp 480w, /images/map-artwork/classified.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-shadows-of-evil": {
+    "src": "/images/map-artwork/shadows-of-evil.webp",
+    "srcset": "/images/map-artwork/shadows-of-evil-480.webp 480w, /images/map-artwork/shadows-of-evil.webp 860w",
+    "position": "50% 50%"
+  },
+  "bo3-der-eisendrache": {
+    "src": "/images/map-artwork/der-eisendrache.webp",
+    "srcset": "/images/map-artwork/der-eisendrache-480.webp 480w, /images/map-artwork/der-eisendrache.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-nacht-der-untoten": {
+    "src": "/images/map-artwork/nacht-der-untoten.webp",
+    "srcset": "/images/map-artwork/nacht-der-untoten-480.webp 480w, /images/map-artwork/nacht-der-untoten.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-nacht-der-untoten": {
+    "src": "/images/map-artwork/nacht-der-untoten.webp",
+    "srcset": "/images/map-artwork/nacht-der-untoten-480.webp 480w, /images/map-artwork/nacht-der-untoten.webp 960w",
+    "position": "50% 50%"
+  },
+  "waw-nacht-der-untoten": {
+    "src": "/images/map-artwork/nacht-der-untoten.webp",
+    "srcset": "/images/map-artwork/nacht-der-untoten-480.webp 480w, /images/map-artwork/nacht-der-untoten.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-verruckt": {
+    "src": "/images/map-artwork/verruckt.webp",
+    "srcset": "/images/map-artwork/verruckt-480.webp 480w, /images/map-artwork/verruckt.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-verruckt": {
+    "src": "/images/map-artwork/verruckt.webp",
+    "srcset": "/images/map-artwork/verruckt-480.webp 480w, /images/map-artwork/verruckt.webp 960w",
+    "position": "50% 50%"
+  },
+  "waw-verruckt": {
+    "src": "/images/map-artwork/verruckt.webp",
+    "srcset": "/images/map-artwork/verruckt-480.webp 480w, /images/map-artwork/verruckt.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-shi-no-numa": {
+    "src": "/images/map-artwork/shi-no-numa.webp",
+    "srcset": "/images/map-artwork/shi-no-numa-480.webp 480w, /images/map-artwork/shi-no-numa.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-shi-no-numa": {
+    "src": "/images/map-artwork/shi-no-numa.webp",
+    "srcset": "/images/map-artwork/shi-no-numa-480.webp 480w, /images/map-artwork/shi-no-numa.webp 960w",
+    "position": "50% 50%"
+  },
+  "waw-shi-no-numa": {
+    "src": "/images/map-artwork/shi-no-numa.webp",
+    "srcset": "/images/map-artwork/shi-no-numa-480.webp 480w, /images/map-artwork/shi-no-numa.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-kino-der-toten": {
+    "src": "/images/map-artwork/kino-der-toten.webp",
+    "srcset": "/images/map-artwork/kino-der-toten-480.webp 480w, /images/map-artwork/kino-der-toten.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-kino-der-toten": {
+    "src": "/images/map-artwork/kino-der-toten.webp",
+    "srcset": "/images/map-artwork/kino-der-toten-480.webp 480w, /images/map-artwork/kino-der-toten.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-ascension": {
+    "src": "/images/map-artwork/ascension-chronicles.webp",
+    "srcset": "/images/map-artwork/ascension-chronicles-480.webp 480w, /images/map-artwork/ascension-chronicles.webp 800w",
+    "position": "50% 50%"
+  },
+  "bo1-ascension": {
+    "src": "/images/map-artwork/ascension.webp",
+    "srcset": "/images/map-artwork/ascension-480.webp 480w, /images/map-artwork/ascension.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-shangri-la": {
+    "src": "/images/map-artwork/shangri-la.webp",
+    "srcset": "/images/map-artwork/shangri-la-480.webp 480w, /images/map-artwork/shangri-la.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-shangri-la": {
+    "src": "/images/map-artwork/shangri-la.webp",
+    "srcset": "/images/map-artwork/shangri-la-480.webp 480w, /images/map-artwork/shangri-la.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo3-origins": {
+    "src": "/images/map-artwork/origins.webp",
+    "srcset": "/images/map-artwork/origins-480.webp 480w, /images/map-artwork/origins.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo2-origins": {
+    "src": "/images/map-artwork/origins.webp",
+    "srcset": "/images/map-artwork/origins-480.webp 480w, /images/map-artwork/origins.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-five": {
+    "src": "/images/map-artwork/five.webp",
+    "srcset": "/images/map-artwork/five-480.webp 480w, /images/map-artwork/five.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-call-of-the-dead": {
+    "src": "/images/map-artwork/call-of-the-dead.webp",
+    "srcset": "/images/map-artwork/call-of-the-dead-480.webp 480w, /images/map-artwork/call-of-the-dead.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo1-der-riese": {
+    "src": "/images/map-artwork/der-riese.webp",
+    "srcset": "/images/map-artwork/der-riese-480.webp 480w, /images/map-artwork/der-riese.webp 960w",
+    "position": "50% 50%"
+  },
+  "waw-der-riese": {
+    "src": "/images/map-artwork/der-riese.webp",
+    "srcset": "/images/map-artwork/der-riese-480.webp 480w, /images/map-artwork/der-riese.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo2-nuketown-zombies": {
+    "src": "/images/map-artwork/nuketown-zombies.webp",
+    "srcset": "/images/map-artwork/nuketown-zombies-480.webp 480w, /images/map-artwork/nuketown-zombies.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo2-farm": {
+    "src": "/images/map-artwork/farm.webp",
+    "srcset": "/images/map-artwork/farm-480.webp 480w, /images/map-artwork/farm.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo2-diner": {
+    "src": "/images/map-artwork/diner.webp",
+    "srcset": "/images/map-artwork/diner-480.webp 480w, /images/map-artwork/diner.webp 960w",
+    "position": "50% 50%"
+  },
+  "bo2-cell-block": {
+    "src": "/images/bo2/mob-of-the-dead/mob-of-the-dead.webp",
+    "position": "50% 50%"
+  }
+}

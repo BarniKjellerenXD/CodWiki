@@ -5,6 +5,8 @@ import { voyageClockResult, voyageOutletResult, voyageSkyResult } from './voyage
 import { alphaClockRoute, alphaFinalCode, alphaRooms, tagRiddleLocations } from './bo4AlphaTag.mjs'
 import { evaluateNightClassified } from './nightClassified.mjs'
 import { dartboardNumbers } from './coldWar.mjs'
+import { mahjongResult, signResult, leverResult, bellResult } from './bo2.mjs'
+import { lighthouseResult } from './classic.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -47,6 +49,9 @@ export function evaluateTool(id, raw) {
   const tool = toolDefinitions[id]
   if (!tool) return invalid('Unknown helper.')
   const state = normalizeTool(id, raw)
+  if (tool.evaluate === 'lighthouse') return lighthouseResult(state)
+  const bo2Evaluators={'bo2-die-rise-mahjong':mahjongResult,'bo2-buried-signs':signResult,'bo2-buried-levers':leverResult,'bo2-buried-bells':bellResult}
+  if (bo2Evaluators[id]) return bo2Evaluators[id](state)
   if (['bo4-dead-of-the-night-zodiac','bo4-dead-of-the-night-alistair','bo4-dead-of-the-night-stake','bo4-classified-codes'].includes(id)) return evaluateNightClassified(id, state)
   if (tool.evaluate === 'voyage-clocks') return voyageClockResult(state)
   if (tool.evaluate === 'voyage-outlets') return voyageOutletResult(state)

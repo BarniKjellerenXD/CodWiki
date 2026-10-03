@@ -1,7 +1,7 @@
 <script setup>
 import {moonSequence,moonColours} from '~/utils/chronicles.mjs'
 const props=defineProps({tool:String,state:Object});const emit=defineEmits(['change']);const uid=useId();const edit=ref(-1)
-const moon=computed(()=>props.tool==='bo3-moon-simon');const sequence=computed(()=>moonSequence(props.state))
+const moon=computed(()=>props.tool.endsWith('-moon-simon'));const sequence=computed(()=>moonSequence(props.state))
 const target=computed(()=>edit.value>=0?edit.value:Array.from({length:16},(_,i)=>i).find(i=>!props.state[`slot-${i}`])??-1)
 const knocks=computed(()=>[0,1,2].map(i=>props.state[`slot-${i}`]))
 function set(key,value){emit('change',{...props.state,[key]:value})}
@@ -19,7 +19,7 @@ function nextPattern(){emit('change',{...props.state,round:String(Math.min(3,Num
    <p v-else-if="sequence.entries.length" class="chr-status ready">Press computers {{sequence.positions.join(' → ')}} from the left. Check this is the whole displayed sequence before entering it.</p>
   </section>
   <div class="chr-actions"><button v-if="edit>=0" type="button" @click="edit=-1">Continue recording</button><button type="button" :disabled="!sequence.entries.length" @click="set(`slot-${sequence.entries.length-1}`,'');edit=-1">Remove last flash</button><button type="button" :disabled="!sequence.entries.length" @click="newSequence">New sequence</button></div>
-  <details><summary>See the computer positions</summary><GuideIllustrations :images="[{src:'/images/chronicles/moon/moon-simon-says-computers.webp',alt:'Facing the computers: 1 Red, 2 Green, 3 Blue, 4 Yellow, from left to right.'}]"/><p>The old helper used a two-by-two screen layout. The game’s row is fixed; any older screen-layout notes are retained in storage but are not used to calculate this result.</p></details>
+  <details><summary>See the computer positions</summary><GuideIllustrations :images="[{src:'/images/chronicles/moon/moon-simon-says-computers.webp',alt:'Facing the computers: 1 Red, 2 Green, 3 Blue, 4 Yellow, from left to right.'}]"/><p v-if="tool==='bo3-moon-simon'">The old helper used a two-by-two screen layout. The game’s row is fixed; any older screen-layout notes are retained in storage but are not used to calculate this result.</p></details>
  </template>
  <template v-else>
   <GuideIllustrations :images="[{src:'/images/chronicles/kino-der-toten/free_max_ammo/blue_door.webp',alt:'Listen and reply at this blue Alley door.'}]"/>

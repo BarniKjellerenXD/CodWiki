@@ -4662,5 +4662,2164 @@
         }
       ]
     }
+  ],
+  "bo2-tranzit": [
+    {
+      "id": "setup",
+      "title": "First circuit: Turbine, power and perks",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-turbine",
+          "html": "Build a Turbine in Bus Depot; take one before boarding."
+        },
+        {
+          "id": "setup-route",
+          "html": "Follow the five-stop loop; buy a reliable wall weapon at Diner."
+        },
+        {
+          "id": "setup-power",
+          "html": "Build power in the white underground room; choose whether to leave it on."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Jugger-Nog is in Town; perk access follows the power supply."
+        }
+      ]
+    },
+    {
+      "id": "pack-a-punch",
+      "title": "Open and build Pack-a-Punch",
+      "detail": "details-pack-a-punch",
+      "steps": [
+        {
+          "id": "pap-door",
+          "html": "Power the lightning door at the Power Station with a fresh Turbine."
+        },
+        {
+          "id": "pap-bank",
+          "html": "Blast both bank vault doors; build Pack-a-Punch in the open basement."
+        },
+        {
+          "id": "pap-use",
+          "html": "Upgrade for 5,000; repeat the Turbine step if the basement closes."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Shield, traps, bus upgrades and the Jet Gun",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-shield",
+          "html": "Combine the garage door and diner trolley at the garage bench."
+        },
+        {
+          "id": "equipment-bus",
+          "html": "Search four Turbine rooms; reserve the hatch for Diner if you want Galvaknuckles."
+        },
+        {
+          "id": "equipment-traps",
+          "html": "Turret at Farm; Electric Trap at Power; both need a Turbine."
+        },
+        {
+          "id": "equipment-jet",
+          "html": "Build the Jet Gun from tunnel, Nacht, cabin and Power Station parts."
+        }
+      ]
+    },
+    {
+      "id": "maxis",
+      "title": "Tower of Babble — Maxis route",
+      "detail": "details-maxis",
+      "steps": [
+        {
+          "id": "maxis-ready",
+          "html": "Original, 2+ players, EMPs, two fresh Turbines; turn power off after Maxis speaks."
+        },
+        {
+          "id": "maxis-avogadro",
+          "html": "Lure the Avogadro under the powered pylon and EMP him on Maxis’s cue."
+        },
+        {
+          "id": "maxis-lamps",
+          "html": "Power two separate streetlamps; look for orange energy and the achievement."
+        }
+      ]
+    },
+    {
+      "id": "richtofen",
+      "title": "Tower of Babble — Richtofen route",
+      "detail": "details-richtofen",
+      "steps": [
+        {
+          "id": "richtofen-ready",
+          "html": "Power on; fully cool the Jet Gun, then break it while firing into the pylon."
+        },
+        {
+          "id": "richtofen-kills",
+          "html": "Earn explosive kills directly beneath the pylon until the dialogue changes."
+        },
+        {
+          "id": "richtofen-emps",
+          "html": "EMP four distinct green lamps together; use two portal hops for a two-player attempt."
+        },
+        {
+          "id": "richtofen-complete",
+          "html": "Blue tower energy confirms Richtofen’s completion."
+        }
+      ]
+    }
+  ],
+  "bo2-bus-depot": [
+    {
+      "id": "setup",
+      "title": "Open the forecourt and secure ammunition",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-door",
+          "html": "Earn 750 and open the depot exit."
+        },
+        {
+          "id": "setup-weapons",
+          "html": "Buy a refillable wall weapon; use the outside Box when safe."
+        },
+        {
+          "id": "setup-limits",
+          "html": "Plan around two-hit health and no solo revive."
+        }
+      ]
+    },
+    {
+      "id": "survive",
+      "title": "A repeatable survival route",
+      "detail": "details-survive",
+      "steps": [
+        {
+          "id": "survive-circle",
+          "html": "Circle the forecourt; widen the route for fresh spawns."
+        },
+        {
+          "id": "survive-fire",
+          "html": "Cross lava briefly and kill burning zombies at range."
+        },
+        {
+          "id": "survive-team",
+          "html": "Use one team route; draw zombies away before a revive."
+        }
+      ]
+    }
+  ],
+  "bo2-town": [
+    {
+      "id": "setup",
+      "title": "Perks, weapons and Pack-a-Punch",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-layout",
+          "html": "Open the Jugger-Nog building; use the MP5 and learn both upstairs exits."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Prioritize Jugger-Nog, then choose perks for your route and weapon."
+        },
+        {
+          "id": "setup-pap",
+          "html": "Upgrade for 5,000 in the street; keep the lava crossing short."
+        },
+        {
+          "id": "setup-box",
+          "html": "Check the bar or Double Tap corner for the Box; retain an ammo fallback."
+        }
+      ]
+    },
+    {
+      "id": "survive",
+      "title": "Use the buildings as escape routes",
+      "detail": "details-survive",
+      "steps": [
+        {
+          "id": "survive-route",
+          "html": "Train outside; drop from an upstairs opening when the stairs are blocked."
+        },
+        {
+          "id": "survive-lava",
+          "html": "Keep fire and explosive damage away from your feet."
+        },
+        {
+          "id": "survive-coop",
+          "html": "Call route changes and keep recovery money."
+        }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Town in Grief",
+      "detail": "details-grief",
+      "steps": [
+        {
+          "id": "grief-differences",
+          "html": "Guard the player using Pack-a-Punch; Tombstone is Survival-only."
+        },
+        {
+          "id": "grief-win",
+          "html": "Outlast the other team, then finish the round."
+        },
+        {
+          "id": "grief-drops",
+          "html": "Coordinate team pickups; use meat to redirect the horde."
+        },
+        {
+          "id": "grief-revive",
+          "html": "Cover the revive and keep one player free to escape."
+        }
+      ]
+    }
+  ],
+  "bo2-farm": [
+    {
+      "id": "setup",
+      "title": "House, barn and four perks",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-house",
+          "html": "Open the house; take MP5 and upstairs Jugger-Nog."
+        },
+        {
+          "id": "setup-barn",
+          "html": "Find Quick Revive outside and Double Tap in the barn."
+        },
+        {
+          "id": "setup-gear",
+          "html": "Keep refillable ammunition; no Pack-a-Punch is available."
+        }
+      ]
+    },
+    {
+      "id": "survive",
+      "title": "Control the yard",
+      "detail": "details-survive",
+      "steps": [
+        {
+          "id": "survive-yard",
+          "html": "Train around the yard; commit to a building only with a clear exit."
+        },
+        {
+          "id": "survive-coop",
+          "html": "Separate team routes and call out drops or revives."
+        },
+        {
+          "id": "survive-rebuild",
+          "html": "Rebuild with a wall gun and Jugger-Nog; the fridge does not store weapons here."
+        }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Farm in Grief",
+      "detail": "details-grief",
+      "steps": [
+        {
+          "id": "grief-layout",
+          "html": "Keep the balcony and barn exits usable."
+        },
+        {
+          "id": "grief-win",
+          "html": "Outlast the other team, then finish the round."
+        },
+        {
+          "id": "grief-drops",
+          "html": "Coordinate team pickups; use meat to redirect the horde."
+        },
+        {
+          "id": "grief-revive",
+          "html": "Cover the revive and keep one player free to escape."
+        }
+      ]
+    }
+  ],
+  "bo2-diner": [
+    {
+      "id": "turned",
+      "title": "Start the match and understand the roles",
+      "detail": "details-turned",
+      "steps": [
+        {
+          "id": "turned-cure",
+          "html": "Find the Cure; hold the human role to build score."
+        },
+        {
+          "id": "turned-human",
+          "html": "Move between shots and weapon changes; protect your reload."
+        },
+        {
+          "id": "turned-zombie",
+          "html": "Flank and attack during the human’s reload or weapon change."
+        }
+      ]
+    },
+    {
+      "id": "weapons",
+      "title": "Reverse Gun Game and power-ups",
+      "detail": "details-weapons",
+      "steps": [
+        {
+          "id": "weapons-order",
+          "html": "Executioner → M1216 → M27 → Chicom CQB → KAP-40 → M1911."
+        },
+        {
+          "id": "weapons-monkey",
+          "html": "Use a monkey to hide and reposition; collect its replacement after a kill."
+        }
+      ]
+    }
+  ],
+  "bo2-nuketown-zombies": [
+    {
+      "id": "setup",
+      "title": "Survive until your perks arrive",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-houses",
+          "html": "Open one house and yard; learn its upper-window escape."
+        },
+        {
+          "id": "setup-machines",
+          "html": "Watch incoming machine drops; plan around random perk order."
+        },
+        {
+          "id": "setup-priority",
+          "html": "Get reliable ammo first; prioritize Jugger-Nog when it lands."
+        },
+        {
+          "id": "setup-pap",
+          "html": "Upgrade when the machine arrives; the backyard shed is a separate reward."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Truck weapons and Galvaknuckles",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-truck",
+          "html": "Open the 3,000-point truck; melee the boxes to reveal Galvaknuckles."
+        },
+        {
+          "id": "equipment-ammo",
+          "html": "Keep an ammo fallback and money to recover from a down."
+        }
+      ]
+    },
+    {
+      "id": "survive",
+      "title": "Separate the yards in co-op",
+      "detail": "details-survive",
+      "steps": [
+        {
+          "id": "survive-yards",
+          "html": "Use a consistent yard loop; check ground spawns and the doorway."
+        },
+        {
+          "id": "survive-team",
+          "html": "Divide the yards and announce crossings or rescues."
+        }
+      ]
+    }
+  ],
+  "bo2-die-rise": [
+    {
+      "id": "setup",
+      "title": "Power, elevators and a safe return route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-power",
+          "html": "Reach the sewing-machine power room, turn on power and ride to the roof."
+        },
+        {
+          "id": "setup-elevators",
+          "html": "Wait for an elevator to stop before buying; step off before its top stop."
+        },
+        {
+          "id": "setup-key",
+          "html": "Use elevator keys carefully and retain a refillable weapon."
+        }
+      ]
+    },
+    {
+      "id": "buildables",
+      "title": "Trample Steam and Sliquifier",
+      "detail": "details-buildables",
+      "steps": [
+        {
+          "id": "build-trample",
+          "html": "Carry the four spawn/lobby parts to the Trample Steam bench."
+        },
+        {
+          "id": "build-sliq",
+          "html": "Find foot, canister, bottle and trigger around the power-building workshop."
+        },
+        {
+          "id": "build-sliq-use",
+          "html": "Use Sliquifier chains on open ground; keep puddles away from drops."
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "title": "High Maintenance — shared opening",
+      "detail": "details-shared",
+      "steps": [
+        {
+          "id": "quest-ready",
+          "html": "Four players; power, rooftop table, Trample Steams and branch equipment."
+        },
+        {
+          "id": "quest-elevators",
+          "html": "Stand on the four elevator-roof symbols together."
+        },
+        {
+          "id": "quest-floor",
+          "html": "Find the floor-symbol order by testing and watching which symbols stay lit."
+        },
+        {
+          "id": "quest-balls",
+          "html": "Sniper-shoot both dragon-mouth balls; choose Maxis or Richtofen."
+        }
+      ]
+    },
+    {
+      "id": "maxis",
+      "title": "Maxis — Buddha room and lion launchers",
+      "detail": "details-maxis",
+      "steps": [
+        {
+          "id": "maxis-buddha",
+          "html": "Earn the Buddha-room kills until Maxis’s reincarnation cue."
+        },
+        {
+          "id": "maxis-knife",
+          "html": "Fire the upgraded Ballistic Knife in the Buddha room; listen for acceptance."
+        },
+        {
+          "id": "maxis-launch",
+          "html": "Align the four lion launchers; launch both balls until the tower glows orange."
+        }
+      ]
+    },
+    {
+      "id": "richtofen",
+      "title": "Richtofen — Sliquifier and zombie launchers",
+      "detail": "details-richtofen",
+      "steps": [
+        {
+          "id": "richtofen-balls",
+          "html": "Sliquifier-shoot both spawn balls until they spin."
+        },
+        {
+          "id": "richtofen-launch",
+          "html": "Launch zombies from the four zombie symbols until the tower glows blue."
+        }
+      ]
+    },
+    {
+      "id": "mahjong",
+      "title": "Both routes — decode the tiles and strike the tower",
+      "detail": "details-mahjong",
+      "steps": [
+        {
+          "id": "mahjong-read",
+          "html": "Pair number and direction tiles by colour; use the visual decoder."
+        },
+        {
+          "id": "mahjong-locations",
+          "html": "Search all eleven possible tile positions for eight actual clues."
+        },
+        {
+          "id": "mahjong-strike",
+          "html": "Strike North/East/South/West legs in your decoded order with Galvaknuckles.",
+          "tools": [
+            "bo2-die-rise-mahjong"
+          ]
+        }
+      ]
+    }
+  ],
+  "bo2-mob-of-the-dead": [
+    {
+      "id": "setup",
+      "title": "Afterlife, power and the Warden’s Key",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-afterlife",
+          "html": "Use electrical boxes for Afterlife; shock meters and return before the timer ends."
+        },
+        {
+          "id": "setup-key",
+          "html": "Lower the hanging key in Afterlife and collect it as a human."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Power perks individually; prioritize Docks Jugger-Nog and the gondola."
+        },
+        {
+          "id": "setup-brutus",
+          "html": "Clear Brutus before shopping or reviving."
+        }
+      ]
+    },
+    {
+      "id": "shield",
+      "title": "Build the Zombie Shield",
+      "detail": "details-shield",
+      "steps": [
+        {
+          "id": "shield-parts",
+          "html": "Find a Docks trolley, Generator Room clamp and Citadel cell door."
+        },
+        {
+          "id": "shield-use",
+          "html": "Replace the shield at its bench when it breaks."
+        }
+      ]
+    },
+    {
+      "id": "plane",
+      "title": "Five plane parts and Pack-a-Punch",
+      "detail": "details-plane",
+      "steps": [
+        {
+          "id": "plane-roof",
+          "html": "Open the roof door in Afterlife."
+        },
+        {
+          "id": "plane-laundry",
+          "html": "Power and run the Showers washer; survive and take the uniforms."
+        },
+        {
+          "id": "plane-rigging",
+          "html": "Read the Afterlife staircase code, enter it and run for the opened rigging cage."
+        },
+        {
+          "id": "plane-engines",
+          "html": "Shock all three Generator Room generators; collect the Office engine."
+        },
+        {
+          "id": "plane-tanks",
+          "html": "Unlock the Docks cage; coordinate the two-player electrical gate."
+        },
+        {
+          "id": "plane-valve",
+          "html": "Take the Infirmary valve and finish the roof plane."
+        },
+        {
+          "id": "plane-bridge",
+          "html": "Upgrade on the bridge; return by electric chair and refuel for later flights."
+        }
+      ]
+    },
+    {
+      "id": "retriever",
+      "title": "Hell’s Retriever and the free Blundergat",
+      "detail": "details-retriever",
+      "steps": [
+        {
+          "id": "retriever-dogs",
+          "html": "Feed the three dogs one corpse at a time, then claim the Retriever."
+        },
+        {
+          "id": "blundergat-skulls",
+          "html": "Retriever-collect all five hidden skulls."
+        },
+        {
+          "id": "blundergat-claim",
+          "html": "Claim the desk Blundergat; the skull secret is required for the quest."
+        }
+      ]
+    },
+    {
+      "id": "acidgat",
+      "title": "Acid Gat and Vitriolic Withering",
+      "detail": "details-acidgat",
+      "steps": [
+        {
+          "id": "acid-parts",
+          "html": "Find Office motor, Cell Block case and Infirmary acid."
+        },
+        {
+          "id": "acid-upgrade",
+          "html": "Convert the Blundergat; upgrade to Vitriolic Withering on the bridge."
+        }
+      ]
+    },
+    {
+      "id": "spoon",
+      "title": "The spoon required by the main quest",
+      "detail": "details-spoon",
+      "steps": [
+        {
+          "id": "spoon-poster",
+          "html": "Remove the Office-cell poster; shock the spoon through its ghost passage."
+        },
+        {
+          "id": "spoon-pickup",
+          "html": "Retriever-collect the Cafeteria spoon."
+        }
+      ]
+    },
+    {
+      "id": "quest",
+      "title": "Pop Goes the Weasel — three cycles, codes and recordings",
+      "detail": "details-quest",
+      "steps": [
+        {
+          "id": "quest-ready",
+          "html": "2–4 players including Weasel; three bridge cycles plus skull and spoon secrets."
+        },
+        {
+          "id": "quest-codes",
+          "html": "Enter prisoner numbers 101, 872, 386 and 481."
+        },
+        {
+          "id": "quest-recordings",
+          "html": "Follow the five recordings from Citadel to the roof."
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "The final flight and breaking the cycle",
+      "detail": "details-finale",
+      "steps": [
+        {
+          "id": "finale-flight",
+          "html": "Board the final plane in Afterlife; revive at the bridge chairs."
+        },
+        {
+          "id": "finale-choice",
+          "html": "For the achievement, Weasel must kill the other prisoners; the match ends."
+        }
+      ]
+    }
+  ],
+  "bo2-cell-block": [
+    {
+      "id": "setup",
+      "title": "An opening that survives without Jugger-Nog",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-gun",
+          "html": "Buy the Cafeteria-side MP5; watch overhead arrivals."
+        },
+        {
+          "id": "setup-pap",
+          "html": "Open the upper Pack-a-Punch route; upgrade inside the prison."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Five perks: Double Tap, Speed Cola, Deadshot, PhD and Mule Kick."
+        },
+        {
+          "id": "setup-explosives",
+          "html": "Pair Mustang &amp; Sally with PhD before using close-range blasts."
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "title": "Traps, Box rooms and Brutus",
+      "detail": "details-traps",
+      "steps": [
+        {
+          "id": "traps-rooms",
+          "html": "Check trap switches before entering either Box room."
+        },
+        {
+          "id": "traps-brutus",
+          "html": "Clear Brutus with space to retreat; unlock machines only when safe."
+        },
+        {
+          "id": "traps-movement",
+          "html": "Use staged drops and clear the narrow Cell Walkway before entering."
+        }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Win the round",
+      "detail": "details-grief",
+      "steps": [
+        {
+          "id": "grief-win",
+          "html": "Outlast the other team, then finish the round."
+        },
+        {
+          "id": "grief-drops",
+          "html": "Coordinate team pickups; use meat to redirect the horde."
+        },
+        {
+          "id": "grief-revive",
+          "html": "Cover the revive and keep one player free to escape."
+        }
+      ]
+    }
+  ],
+  "bo2-buried": [
+    {
+      "id": "setup",
+      "title": "Arthur, weapon chalk and the town",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-drop",
+          "html": "Decide on the starting LSAT, then drop into town."
+        },
+        {
+          "id": "setup-arthur",
+          "html": "Free Arthur; stand opposite a barrier before giving him booze."
+        },
+        {
+          "id": "setup-chalk",
+          "html": "Move gunsmith chalk to question marks for weapons and setup points."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Open Jugger-Nog and Church; use Vulture Aid for the Richtofen wisp."
+        }
+      ]
+    },
+    {
+      "id": "pack-a-punch",
+      "title": "Mansion, maze and Pack-a-Punch",
+      "detail": "details-pack-a-punch",
+      "steps": [
+        {
+          "id": "pap-mansion",
+          "html": "Cross the mansion without letting ghosts touch you."
+        },
+        {
+          "id": "pap-maze",
+          "html": "Find the gazebo; descend carefully and upgrade for 5,000."
+        },
+        {
+          "id": "pap-return",
+          "html": "Prepare both fountains before using the maze’s return portal."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Buildables, Paralyzer and Time Bomb",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "store-parts",
+          "html": "Search both General Store floors and carry one part at a time."
+        },
+        {
+          "id": "buildables",
+          "html": "Use General Store parts at the town’s four benches."
+        },
+        {
+          "id": "resonator",
+          "html": "Power the Resonator with a Turbine; face it toward the orb or horde."
+        },
+        {
+          "id": "paralyzer",
+          "html": "Roll for quest equipment; coordinate every Time Bomb rewind."
+        }
+      ]
+    },
+    {
+      "id": "choose-route",
+      "title": "Mined Games — choose a route and charge the lantern",
+      "detail": "details-choose-route",
+      "steps": [
+        {
+          "id": "quest-requirements",
+          "html": "Choose Richtofen’s Guillotine or Maxis’s Gallows before spending shared parts."
+        },
+        {
+          "id": "quest-structure",
+          "html": "Build the chosen branch structure from its four parts."
+        },
+        {
+          "id": "quest-orbs",
+          "html": "Richtofen: whiten all orbs with Paralyzer. Maxis: destroy them with Resonator."
+        },
+        {
+          "id": "quest-lantern",
+          "html": "Knock down the lantern; charge it using the method for your chosen voice."
+        },
+        {
+          "id": "quest-roof",
+          "html": "Place the charged lantern on the gunsmith roof."
+        }
+      ]
+    },
+    {
+      "id": "cipher",
+      "title": "Read the three mine signs",
+      "detail": "details-cipher",
+      "steps": [
+        {
+          "id": "cipher-read",
+          "html": "Match three encoded lines to three distinct mine signs."
+        },
+        {
+          "id": "cipher-melee",
+          "html": "Melee the three decoded signs; prepare the wisp route before the final hit.",
+          "tools": [
+            "bo2-buried-signs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "richtofen-wisp",
+      "title": "Richtofen — wisp and Round Infinity",
+      "detail": "details-richtofen-wisp",
+      "steps": [
+        {
+          "id": "richtofen-wisp",
+          "html": "With Vulture Aid, touch every wisp hop quickly until it reaches the Guillotine."
+        },
+        {
+          "id": "richtofen-souls",
+          "html": "Kill five wisp-charged zombies by the Guillotine."
+        },
+        {
+          "id": "richtofen-infinity",
+          "html": "Rewind at the Guillotine with all four players; search bodies for the switch."
+        },
+        {
+          "id": "richtofen-switch",
+          "html": "Return from Round Infinity and install the switch."
+        }
+      ]
+    },
+    {
+      "id": "levers",
+      "title": "Richtofen — solve the maze lever order",
+      "detail": "details-levers",
+      "steps": [
+        {
+          "id": "lever-test",
+          "html": "Flip all four, then record which levers sparked."
+        },
+        {
+          "id": "lever-repeat",
+          "html": "Leave together to reset; use spark feedback to narrow the next order."
+        },
+        {
+          "id": "lever-finish",
+          "html": "All four sparks: move to the fountain finale.",
+          "tools": [
+            "bo2-buried-levers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maxis-wisp",
+      "title": "Maxis — escort the wisp twice",
+      "detail": "details-maxis-wisp",
+      "steps": [
+        {
+          "id": "maxis-prep",
+          "html": "Place a Time Bomb and prepare live zombies before spawning the wisp."
+        },
+        {
+          "id": "maxis-escort",
+          "html": "Feed the wisp live zombies, deliver it, rewind, then deliver it again."
+        }
+      ]
+    },
+    {
+      "id": "bells",
+      "title": "Maxis — the mansion’s nine-light bell puzzle",
+      "detail": "details-bells",
+      "steps": [
+        {
+          "id": "bells-calibrate",
+          "html": "Test each bell and map it to a row in its board column."
+        },
+        {
+          "id": "bells-locations",
+          "html": "Locate three bells in each of the three rooms."
+        },
+        {
+          "id": "bells-play",
+          "html": "Follow the live bulb one at a time; ring its mapped bell before the timeout.",
+          "tools": [
+            "bo2-buried-bells"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sharpshooter",
+      "title": "Both routes — Make a Wish and shoot the targets",
+      "detail": "details-sharpshooter",
+      "steps": [
+        {
+          "id": "targets-prep",
+          "html": "Assign the four lanes and reload before touching the fountain."
+        },
+        {
+          "id": "targets-fire",
+          "html": "Shoot every target; retry the whole challenge if any lane misses."
+        }
+      ]
+    }
+  ],
+  "bo2-borough": [
+    {
+      "id": "setup",
+      "title": "Grief: set up in the town",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-layout",
+          "html": "Find Pack-a-Punch outside by the Church and mansion."
+        },
+        {
+          "id": "setup-perks",
+          "html": "Use the town’s perks; Stamin-Up is outside by Courthouse/Church."
+        },
+        {
+          "id": "setup-buildables",
+          "html": "Find the three prebuilt devices; power the Resonator with a Turbine."
+        },
+        {
+          "id": "setup-weapons",
+          "html": "Use wall ammo first; the Paralyzer is a possible Box reward."
+        }
+      ]
+    },
+    {
+      "id": "grief",
+      "title": "Grief: protect routes and revives",
+      "detail": "details-grief",
+      "steps": [
+        {
+          "id": "grief-buildables",
+          "html": "Protect your devices and check Trample Steam landing space."
+        },
+        {
+          "id": "grief-win",
+          "html": "Outlast the other team, then finish the round."
+        },
+        {
+          "id": "grief-drops",
+          "html": "Coordinate team pickups; use meat to redirect the horde."
+        },
+        {
+          "id": "grief-revive",
+          "html": "Cover the revive and keep one player free to escape."
+        }
+      ]
+    },
+    {
+      "id": "turned",
+      "title": "Turned: the smaller street arena",
+      "detail": "details-turned",
+      "steps": [
+        {
+          "id": "turned-layout",
+          "html": "Use the street and General Store; the Grief route is closed."
+        },
+        {
+          "id": "turned-rules",
+          "html": "Take the human role and score; check Reverse Gun Game or Shotgun rules."
+        },
+        {
+          "id": "turned-tactics",
+          "html": "Flank through the store; use Diner for Diner-specific achievements."
+        }
+      ]
+    }
+  ],
+  "bo2-origins": [
+    {
+      "id": "setup",
+      "title": "Generators, shovel, shield and gramophone",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-1",
+          "html": "Power all six generators for Pack-a-Punch."
+        },
+        {
+          "id": "setup-2",
+          "html": "Take a shovel and collect the three shield parts."
+        },
+        {
+          "id": "setup-3",
+          "html": "Use the black record and gramophone to open the lower Excavation."
+        },
+        {
+          "id": "setup-4",
+          "html": "Use each coloured record at its matching tunnel."
+        }
+      ]
+    },
+    {
+      "id": "staff-build",
+      "title": "Build the four staffs",
+      "detail": "details-staff-build",
+      "steps": [
+        {
+          "id": "staff-build-1",
+          "html": "Ice: three snowy dig regions, blue Tank Station record, Ice crystal."
+        },
+        {
+          "id": "staff-build-2",
+          "html": "Fire: Generator 6, first Panzer, glowing plane; red record and Fire crystal."
+        },
+        {
+          "id": "staff-build-3",
+          "html": "Wind: enter all three robots; yellow Generator 5 record and Wind crystal."
+        },
+        {
+          "id": "staff-build-4",
+          "html": "Lightning: three tank jumps, purple Generator 4 record, Lightning crystal."
+        },
+        {
+          "id": "staff-build-5",
+          "html": "Assemble all four staffs at their Excavation pedestals."
+        }
+      ]
+    },
+    {
+      "id": "upgrades",
+      "title": "Complete the four elemental trials",
+      "detail": "details-upgrades",
+      "steps": [
+        {
+          "id": "upgrades-1",
+          "html": "Ice: match the tablet, then freeze and shatter three tombstones."
+        },
+        {
+          "id": "upgrades-2",
+          "html": "Fire: light four cauldrons, decode Church symbols, ignite four torches."
+        },
+        {
+          "id": "upgrades-3",
+          "html": "Wind: match the ceiling rings; blow three chimneys toward Excavation."
+        },
+        {
+          "id": "upgrades-4",
+          "html": "Lightning: play 136 / 357 / 246; set all seven electrical dials."
+        },
+        {
+          "id": "upgrades-5",
+          "html": "For each staff: align rings, shoot orb, charge in the Crazy Place.",
+          "tools": [
+            "bo2-origins-ice",
+            "bo2-origins-fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Thunder Fists, G-Strikes and the Maxis Drone",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-1",
+          "html": "Fill four footprint chests and collect Thunder Fists."
+        },
+        {
+          "id": "equipment-2",
+          "html": "Clean a tablet with melee kills, then carry it back without mud."
+        },
+        {
+          "id": "equipment-3",
+          "html": "Finish the tablet kills for G-Strikes and build the drone."
+        },
+        {
+          "id": "equipment-drone",
+          "html": "Collect the brain, rotor and frame; assemble the Maxis Drone."
+        }
+      ]
+    },
+    {
+      "id": "seal",
+      "title": "Robot pedestals, Rain Fire and the Panzer wave",
+      "detail": "details-seal",
+      "steps": [
+        {
+          "id": "seal-1",
+          "html": "Place Ice/Freya, Wind/Odin, Lightning/Thor, Fire/Excavation."
+        },
+        {
+          "id": "seal-2",
+          "html": "Press the robot button and quickly G-Strike the Generator 5 seal."
+        },
+        {
+          "id": "seal-3",
+          "html": "Send the drone into the opened seal and defeat the Panzers."
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "The hidden pilot, Iron Fists and the Crazy Place",
+      "detail": "details-finale",
+      "steps": [
+        {
+          "id": "finale-1",
+          "html": "In Zombie Blood, down the plane and kill its pilot; recover the drone."
+        },
+        {
+          "id": "finale-2",
+          "html": "Every player earns and collects an Iron Fist tablet."
+        },
+        {
+          "id": "finale-3",
+          "html": "Charge the rift; deploy the drone; interact together to end the match."
+        }
+      ]
+    }
+  ],
+  "waw-nacht-der-untoten": [
+    {
+      "id": "setup",
+      "title": "Open the bunker and choose an escape route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "nacht-help",
+          "html": "Open Help; decide which staircase to keep closed."
+        },
+        {
+          "id": "nacht-box",
+          "html": "Use the fixed Help-room Box for stronger weapons."
+        },
+        {
+          "id": "nacht-cabinet",
+          "html": "The upstairs cabinet sells the scoped Kar98k."
+        },
+        {
+          "id": "nacht-limits",
+          "html": "Know this edition’s equipment limits."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Move safely between the three rooms",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "nacht-windows",
+          "html": "Keep the stairs and the next doorway clear."
+        },
+        {
+          "id": "nacht-position",
+          "html": "Coordinate a hold or use the opened loop."
+        },
+        {
+          "id": "nacht-drops",
+          "html": "Collect drops when the route is clear."
+        }
+      ]
+    }
+  ],
+  "waw-verruckt": [
+    {
+      "id": "setup",
+      "title": "Reconnect the split spawns",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "verruckt-spawn",
+          "html": "Follow your spawn side upstairs toward power."
+        },
+        {
+          "id": "verruckt-power",
+          "html": "Turn on power; reconnect downstairs."
+        },
+        {
+          "id": "verruckt-perks",
+          "html": "Buy survival perks and learn the upper circuit."
+        },
+        {
+          "id": "verruckt-weapons",
+          "html": "Use the weapon pool for your edition."
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "title": "Use the asylum’s traps without closing your escape",
+      "detail": "details-traps",
+      "steps": [
+        {
+          "id": "verruckt-traps",
+          "html": "Lead the horde into an active electric doorway."
+        },
+        {
+          "id": "verruckt-route",
+          "html": "Plan your next doorway and wait out trap cooldowns."
+        }
+      ]
+    }
+  ],
+  "waw-shi-no-numa": [
+    {
+      "id": "setup",
+      "title": "Open the four huts and locate your perks",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "shi-open",
+          "html": "Open the main building and identify the four hut paths."
+        },
+        {
+          "id": "shi-perks",
+          "html": "Open huts to discover their random perks."
+        },
+        {
+          "id": "shi-box",
+          "html": "Use the Box for the Wunderwaffe or Ray Gun."
+        },
+        {
+          "id": "shi-dogs",
+          "html": "Survive the dogs and reload before Max Ammo."
+        }
+      ]
+    },
+    {
+      "id": "routes",
+      "title": "Flogger, electric traps and the Doctor’s zipline",
+      "detail": "details-routes",
+      "steps": [
+        {
+          "id": "shi-flogger",
+          "html": "Use the Flogger from the safe side."
+        },
+        {
+          "id": "shi-hut-traps",
+          "html": "Use hut traps and avoid getting pinned in water."
+        },
+        {
+          "id": "shi-zipline",
+          "html": "Keep the Doctor’s zipline ready for an escape."
+        }
+      ]
+    }
+  ],
+  "waw-der-riese": [
+    {
+      "id": "setup",
+      "title": "Power and the three teleporter routes",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "der-power",
+          "html": "Reach the rear courtyard and switch on power."
+        },
+        {
+          "id": "der-links",
+          "html": "Link A, B and C to the Spawn mainframe within each timer."
+        },
+        {
+          "id": "der-pap",
+          "html": "Link all three, then upgrade at Spawn."
+        },
+        {
+          "id": "der-perks",
+          "html": "Learn the perk circuit before starting the hunt."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Wunderwaffe, Monkey Bombs and factory survival",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "der-weapons",
+          "html": "Use wonder weapons at a safe distance."
+        },
+        {
+          "id": "der-survival",
+          "html": "Prepare a trap/teleporter escape before holding the catwalk."
+        },
+        {
+          "id": "der-dogs",
+          "html": "Reload before the dog-round Max Ammo."
+        }
+      ]
+    }
+  ],
+  "bo1-nacht-der-untoten": [
+    {
+      "id": "setup",
+      "title": "Open the bunker and choose an escape route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "nacht-help",
+          "html": "Open Help; decide which staircase to keep closed."
+        },
+        {
+          "id": "nacht-box",
+          "html": "Use the fixed Help-room Box for stronger weapons."
+        },
+        {
+          "id": "nacht-cabinet",
+          "html": "The upstairs cabinet sells the scoped Kar98k."
+        },
+        {
+          "id": "nacht-limits",
+          "html": "Know this edition’s equipment limits."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Move safely between the three rooms",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "nacht-windows",
+          "html": "Keep the stairs and the next doorway clear."
+        },
+        {
+          "id": "nacht-position",
+          "html": "Coordinate a hold or use the opened loop."
+        },
+        {
+          "id": "nacht-drops",
+          "html": "Collect drops when the route is clear."
+        }
+      ]
+    }
+  ],
+  "bo1-verruckt": [
+    {
+      "id": "setup",
+      "title": "Reconnect the split spawns",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "verruckt-spawn",
+          "html": "Follow your spawn side upstairs toward power."
+        },
+        {
+          "id": "verruckt-power",
+          "html": "Turn on power; reconnect downstairs."
+        },
+        {
+          "id": "verruckt-perks",
+          "html": "Buy survival perks and learn the upper circuit."
+        },
+        {
+          "id": "verruckt-weapons",
+          "html": "Use the weapon pool for your edition."
+        }
+      ]
+    },
+    {
+      "id": "traps",
+      "title": "Use the asylum’s traps without closing your escape",
+      "detail": "details-traps",
+      "steps": [
+        {
+          "id": "verruckt-traps",
+          "html": "Lead the horde into an active electric doorway."
+        },
+        {
+          "id": "verruckt-route",
+          "html": "Plan your next doorway and wait out trap cooldowns."
+        }
+      ]
+    }
+  ],
+  "bo1-shi-no-numa": [
+    {
+      "id": "setup",
+      "title": "Open the four huts and locate your perks",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "shi-open",
+          "html": "Open the main building and identify the four hut paths."
+        },
+        {
+          "id": "shi-perks",
+          "html": "Open huts to discover their random perks."
+        },
+        {
+          "id": "shi-box",
+          "html": "Use the Box for the Wunderwaffe or Ray Gun."
+        },
+        {
+          "id": "shi-dogs",
+          "html": "Survive the dogs and reload before Max Ammo."
+        }
+      ]
+    },
+    {
+      "id": "routes",
+      "title": "Flogger, electric traps and the Doctor’s zipline",
+      "detail": "details-routes",
+      "steps": [
+        {
+          "id": "shi-flogger",
+          "html": "Use the Flogger from the safe side."
+        },
+        {
+          "id": "shi-hut-traps",
+          "html": "Use hut traps and avoid getting pinned in water."
+        },
+        {
+          "id": "shi-zipline",
+          "html": "Keep the Doctor’s zipline ready for an escape."
+        }
+      ]
+    }
+  ],
+  "bo1-der-riese": [
+    {
+      "id": "setup",
+      "title": "Power and the three teleporter routes",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "der-power",
+          "html": "Reach the rear courtyard and switch on power."
+        },
+        {
+          "id": "der-links",
+          "html": "Link A, B and C to the Spawn mainframe within each timer."
+        },
+        {
+          "id": "der-pap",
+          "html": "Link all three, then upgrade at Spawn."
+        },
+        {
+          "id": "der-perks",
+          "html": "Learn the perk circuit before starting the hunt."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Wunderwaffe, Monkey Bombs and factory survival",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "der-weapons",
+          "html": "Use wonder weapons at a safe distance."
+        },
+        {
+          "id": "der-survival",
+          "html": "Prepare a trap/teleporter escape before holding the catwalk."
+        },
+        {
+          "id": "der-dogs",
+          "html": "Reload before the dog-round Max Ammo."
+        }
+      ]
+    }
+  ],
+  "bo1-kino-der-toten": [
+    {
+      "id": "setup",
+      "title": "Power and the stage route",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "kino-power",
+          "html": "Reach the stage and activate power."
+        },
+        {
+          "id": "kino-perks",
+          "html": "Buy Jugger-Nog and appropriate survival perks."
+        },
+        {
+          "id": "kino-kit",
+          "html": "Use a wall gun for points and the Thundergun for escapes."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Link the teleporter and use Pack-a-Punch",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "kino-link",
+          "html": "Link stage → lobby; activate the stage teleporter."
+        },
+        {
+          "id": "kino-upgrade",
+          "html": "Upgrade and collect the weapon before the booth timer ends."
+        },
+        {
+          "id": "kino-relink",
+          "html": "After cooldown, relink for each new trip."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Traps, gas crawlers and dog rounds",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "kino-traps",
+          "html": "Use traps with a clear retreat and warn teammates."
+        },
+        {
+          "id": "kino-nova",
+          "html": "Clear crawlers before their gas covers your escape."
+        },
+        {
+          "id": "kino-dogs",
+          "html": "Reload before taking the dog-round Max Ammo."
+        }
+      ]
+    }
+  ],
+  "bo1-five": [
+    {
+      "id": "setup",
+      "title": "Reach the laboratories and switch on power",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "five-power",
+          "html": "Ride through the War Room to Lab room 3 and switch on power."
+        },
+        {
+          "id": "five-teleport",
+          "html": "Learn the three floors and expect variable teleporter exits."
+        },
+        {
+          "id": "five-loadout",
+          "html": "Buy Jugger-Nog and prepare a strong Thief-round weapon."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "DEFCON switches and the Panic Room",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "five-defcon",
+          "html": "Flip all four switches; teleport at DEFCON 5."
+        },
+        {
+          "id": "five-upgrade",
+          "html": "Upgrade during the Panic Room window and retrieve your weapon."
+        }
+      ]
+    },
+    {
+      "id": "thief",
+      "title": "Pentagon Thief and the Bonfire Sale",
+      "detail": "details-thief",
+      "steps": [
+        {
+          "id": "five-thief",
+          "html": "Shoot the Thief while keeping your valuable weapon out of his reach."
+        },
+        {
+          "id": "five-thief-tactics",
+          "html": "Coordinate damage; recover stolen guns before he escapes."
+        },
+        {
+          "id": "five-bonfire",
+          "html": "No theft: Bonfire Sale. After theft: recover guns and take Fire Sale."
+        }
+      ]
+    }
+  ],
+  "bo1-ascension": [
+    {
+      "id": "setup",
+      "title": "Power, landers and Pack-a-Punch",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-1",
+          "html": "Turn on power and find the three landers."
+        },
+        {
+          "id": "setup-2",
+          "html": "Ride all three landers to spawn, launch the rocket, enter Pack-a-Punch."
+        }
+      ]
+    },
+    {
+      "id": "nodes",
+      "title": "Casimir Mechanism: activate the first three nodes",
+      "detail": "details-nodes",
+      "steps": [
+        {
+          "id": "nodes-1",
+          "html": "Gersh the generator, then activate the Stamin-Up television."
+        },
+        {
+          "id": "nodes-2",
+          "html": "Press the four perk-area buttons together during monkeys."
+        },
+        {
+          "id": "nodes-3",
+          "html": "Keep all four players on the rocket-pad plate until the clock finishes."
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "title": "Spell LUNA with the lander",
+      "detail": "details-luna",
+      "steps": [
+        {
+          "id": "luna-1",
+          "html": "Ride Spawn → Stamin → Spawn → Speed → Stamin."
+        },
+        {
+          "id": "luna-2",
+          "html": "Confirm all four module indicators."
+        }
+      ]
+    },
+    {
+      "id": "orb",
+      "title": "Free Gersh",
+      "detail": "details-orb",
+      "steps": [
+        {
+          "id": "orb-1",
+          "html": "Gersh the white light and concentrate upgraded weapons plus Matryoshkas."
+        },
+        {
+          "id": "orb-2",
+          "html": "Repeat if needed until Gersh is freed."
+        }
+      ]
+    }
+  ],
+  "bo1-shangri-la": [
+    {
+      "id": "setup",
+      "title": "Power, Pack-a-Punch and the eclipse",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-1",
+          "html": "Activate both power switches; stand on the raised Pack-a-Punch plates."
+        },
+        {
+          "id": "setup-2",
+          "html": "Use four players to trigger an eclipse before each trial."
+        }
+      ]
+    },
+    {
+      "id": "tiles",
+      "title": "Crystal 1: match the twelve tile pairs",
+      "detail": "details-tiles",
+      "steps": [
+        {
+          "id": "tiles-1",
+          "html": "Activate the brick button and assign one caller per tile area."
+        },
+        {
+          "id": "tiles-2",
+          "html": "Discover and stand on all twelve matching pairs.",
+          "tools": [
+            "bo1-shang-tiles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trials",
+      "title": "Crystals 2–4: slide, shrinking ball and gas",
+      "detail": "details-trials",
+      "steps": [
+        {
+          "id": "trials-1",
+          "html": "Three wait on the grate; the fourth uses the slide lever."
+        },
+        {
+          "id": "trials-2",
+          "html": "Explode, shrink and knife the slide crystal into the geyser."
+        },
+        {
+          "id": "trials-3",
+          "html": "Turn the valve four times; ignite all three leaks with a Napalm Zombie."
+        }
+      ]
+    },
+    {
+      "id": "holes",
+      "title": "Crystal 5: plug the four tunnel holes",
+      "detail": "details-holes",
+      "steps": [
+        {
+          "id": "holes-mines",
+          "html": "Plug all four tunnel holes with detonated Spikemores."
+        },
+        {
+          "id": "holes-brick",
+          "html": "Press the pool-wall brick."
+        }
+      ]
+    },
+    {
+      "id": "dials",
+      "title": "Crystal 6: wall tiles, teepee and mud-room dials",
+      "detail": "details-dials",
+      "steps": [
+        {
+          "id": "dials-tiles",
+          "html": "Melee the twelve wall tiles."
+        },
+        {
+          "id": "dials-teepee",
+          "html": "Explode the distant teepee, then enter another eclipse."
+        },
+        {
+          "id": "dials-code",
+          "html": "Set the mud-room dials clockwise to 4, 3, 16, 1.",
+          "tools": [
+            "bo1-shang-locations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone",
+      "title": "Charge the crystals and claim the Focusing Stone",
+      "detail": "details-stone",
+      "steps": [
+        {
+          "id": "stone-1",
+          "html": "Find and ring the four correct gongs during the eclipse."
+        },
+        {
+          "id": "stone-dynamite",
+          "html": "Shoot the geyser crystal and catch the dynamite."
+        },
+        {
+          "id": "stone-meteor",
+          "html": "Shoot the charged Mud Room crystal to shrink the meteor."
+        },
+        {
+          "id": "stone-2",
+          "html": "Give Brock the dynamite; return in daylight for the Focusing Stone.",
+          "tools": [
+            "bo1-shang-gongs"
+          ]
+        }
+      ]
+    }
+  ],
+  "bo1-moon": [
+    {
+      "id": "requirements",
+      "title": "Choose the solo milestone or the full co-op ending",
+      "detail": "details-requirements",
+      "steps": [
+        {
+          "id": "moon-requirements",
+          "html": "Check team size, Richtofen and the combined Vril Device."
+        }
+      ]
+    },
+    {
+      "id": "setup",
+      "title": "Survive Area 51 and equip your P.E.S.",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-1",
+          "html": "Escape Area 51, equip P.E.S., reach the MPD power switch."
+        },
+        {
+          "id": "setup-2",
+          "html": "Open the return teleporter and gather Wave Gun, Gersh and Q.E.D."
+        }
+      ]
+    },
+    {
+      "id": "hacker",
+      "title": "Find the Hacker and protect your air",
+      "detail": "details-hacker",
+      "steps": [
+        {
+          "id": "hacker-find",
+          "html": "Search the six laboratory Hacker spots."
+        },
+        {
+          "id": "hacker-excavators",
+          "html": "Allow the required Pi breach; stop other excavators when possible."
+        }
+      ]
+    },
+    {
+      "id": "simon",
+      "title": "Samantha Says and the timed laboratory panels",
+      "detail": "details-simon",
+      "steps": [
+        {
+          "id": "simon-1",
+          "html": "Repeat the first Samantha Says sequences."
+        },
+        {
+          "id": "simon-2",
+          "html": "Hack the starting button, then the four green panel boxes."
+        },
+        {
+          "id": "simon-3",
+          "html": "Press all four wall buttons and confirm they light.",
+          "tools": [
+            "bo1-moon-simon",
+            "bo1-moon-labs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sphere",
+      "title": "Tunnel 6, the sphere and the first soul tube",
+      "detail": "details-sphere",
+      "steps": [
+        {
+          "id": "sphere-1",
+          "html": "After Pi breaches, retract it and move the Tunnel 6 sphere."
+        },
+        {
+          "id": "sphere-2",
+          "html": "Wave Gun the satellite sphere, then escort it through Tunnel 11."
+        },
+        {
+          "id": "sphere-3",
+          "html": "Fill the first tube and open the MPD."
+        }
+      ]
+    },
+    {
+      "id": "device",
+      "title": "Bring back the plates and charge the Golden Rod",
+      "detail": "details-device",
+      "steps": [
+        {
+          "id": "device-plates",
+          "html": "Grenade and Gersh the Area 51 plates onto the pad."
+        },
+        {
+          "id": "device-qed",
+          "html": "Q.E.D. the plates beside Quick Revive."
+        },
+        {
+          "id": "device-cable",
+          "html": "Find and connect the S-shaped cable."
+        },
+        {
+          "id": "device-charge",
+          "html": "Richtofen charges and retrieves the Vril Device."
+        }
+      ]
+    },
+    {
+      "id": "rockets",
+      "title": "Soul transfer and Earth’s destruction",
+      "detail": "details-rockets",
+      "steps": [
+        {
+          "id": "rockets-1",
+          "html": "Fill four tubes, perform the body swap and Q.E.D. the sphere."
+        },
+        {
+          "id": "rockets-2",
+          "html": "Complete three final computer games, then Gersh the sphere."
+        }
+      ]
+    }
+  ],
+  "bo1-call-of-the-dead": [
+    {
+      "id": "setup",
+      "title": "Power, moving Pack-a-Punch and equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "cotd-power",
+          "html": "Climb the ship to the control-room power switch."
+        },
+        {
+          "id": "cotd-pap",
+          "html": "Follow the beam to the active Pack-a-Punch."
+        },
+        {
+          "id": "cotd-kit",
+          "html": "Keep a V-R11; buy Jugger-Nog and suitable damage equipment."
+        },
+        {
+          "id": "cotd-transport",
+          "html": "Use the one-way ziplines or flinger; avoid lingering in water."
+        },
+        {
+          "id": "cotd-route",
+          "html": "Solo: skip the co-op-only phases. Co-op: complete every phase."
+        }
+      ]
+    },
+    {
+      "id": "fuse",
+      "title": "Start the rescue and replace the fuse",
+      "detail": "details-fuse",
+      "steps": [
+        {
+          "id": "cotd-door",
+          "html": "Knife the annex metal door and hear the fuse request."
+        },
+        {
+          "id": "cotd-fuse",
+          "html": "Find the upstairs fuse and insert it beside the door.",
+          "tools": [
+            "bo1-cotd-locations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generators",
+      "title": "Disable all four red generators",
+      "detail": "details-generators",
+      "steps": [
+        {
+          "id": "cotd-generators",
+          "html": "Explode the four generators; report back to the door.",
+          "tools": [
+            "bo1-cotd-locations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vodka",
+      "title": "Co-op only: catch and deliver the vodka",
+      "detail": "details-vodka",
+      "steps": [
+        {
+          "id": "cotd-vodka",
+          "html": "Find the frozen bottle; one player knives while another catches."
+        },
+        {
+          "id": "cotd-vodka-tube",
+          "html": "Send the vodka through the left-hand tube.",
+          "tools": [
+            "bo1-cotd-locations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radios",
+      "title": "Co-op only: play the four radios in order",
+      "detail": "details-radios",
+      "steps": [
+        {
+          "id": "cotd-radios",
+          "html": "Play Power → Stamin-Up → cargo crate → door-room radios.",
+          "tools": [
+            "bo1-cotd-locations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ship",
+      "title": "Both routes: set the ship controls",
+      "detail": "details-ship",
+      "steps": [
+        {
+          "id": "cotd-ship",
+          "html": "Wheel twice right; left lever once; middle untouched; right three times."
+        },
+        {
+          "id": "cotd-sub",
+          "html": "Solo: go to the beam. Co-op: answer the submarine."
+        }
+      ]
+    },
+    {
+      "id": "horns",
+      "title": "Co-op only: answer the submarine’s foghorns",
+      "detail": "details-horns",
+      "steps": [
+        {
+          "id": "cotd-horns",
+          "html": "Sound pool → slide exit → lighthouse wall → slide rock."
+        },
+        {
+          "id": "cotd-horn-retry",
+          "html": "After a failure, wait for the submarine and retry the full order."
+        }
+      ]
+    },
+    {
+      "id": "dials",
+      "title": "Co-op only: solve the four linked lighthouse dials",
+      "detail": "details-dials",
+      "steps": [
+        {
+          "id": "cotd-dials",
+          "html": "Read all four digits; use the solver to reach 2–7–4–6."
+        },
+        {
+          "id": "cotd-dial-confirm",
+          "html": "Confirm 2, 7, 4, 6 and the green lighthouse beam.",
+          "tools": [
+            "bo1-cotd-dials"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "human",
+      "title": "Both routes: send the human up the beam",
+      "detail": "details-human",
+      "steps": [
+        {
+          "id": "cotd-human",
+          "html": "V-R11 a zombie; down the human as it rises through the beam."
+        },
+        {
+          "id": "cotd-rod",
+          "html": "Deliver the Golden Rod and knife the sparking fuse box."
+        },
+        {
+          "id": "cotd-reward",
+          "html": "Collect the Wunderwaffe; confirm your route’s achievement."
+        }
+      ]
+    }
+  ],
+  "bo1-dead-ops-arcade": [
+    {
+      "id": "unlock",
+      "title": "Unlock Dead Ops and learn the controls",
+      "detail": "details-unlock",
+      "steps": [
+        {
+          "id": "doa-unlock",
+          "html": "Break free, use the rear terminal and enter DOA."
+        },
+        {
+          "id": "doa-controls",
+          "html": "Move and aim independently; learn Boost and Nuke."
+        },
+        {
+          "id": "doa-hud",
+          "html": "Watch your character and use an escape before contact."
+        }
+      ]
+    },
+    {
+      "id": "economy",
+      "title": "Treasure, weapons and temporary protection",
+      "detail": "details-economy",
+      "steps": [
+        {
+          "id": "doa-score",
+          "html": "Build your multiplier safely to earn extra lives."
+        },
+        {
+          "id": "doa-weapons",
+          "html": "Use the weapon suited to the next wave."
+        },
+        {
+          "id": "doa-support",
+          "html": "Share supporting pickups and exploit vehicle protection."
+        },
+        {
+          "id": "doa-revive",
+          "html": "Survive co-op revival timers; enter Fate together."
+        }
+      ]
+    },
+    {
+      "id": "fate",
+      "title": "Room of Fate: choose your permanent bonus",
+      "detail": "details-fate",
+      "steps": [
+        {
+          "id": "doa-fate-entry",
+          "html": "Choose an observed exit and wait for its Fate reward."
+        },
+        {
+          "id": "doa-fate-options",
+          "html": "Choose from the four permanent bonuses."
+        },
+        {
+          "id": "doa-fate-arrows",
+          "html": "Solo arrow order: gem → gun → chicken → lightning."
+        }
+      ]
+    },
+    {
+      "id": "arenas",
+      "title": "Read the arena as the rounds change",
+      "detail": "details-arenas",
+      "steps": [
+        {
+          "id": "doa-early",
+          "html": "Stay away from spawn doors and preserve an exit."
+        },
+        {
+          "id": "doa-caves",
+          "html": "Use boosts early in cramped arenas; watch moving hazards."
+        },
+        {
+          "id": "doa-late",
+          "html": "Watch landing enemies and move before a hold collapses."
+        },
+        {
+          "id": "doa-specials",
+          "html": "Adapt the route for the special enemy wave."
+        }
+      ]
+    },
+    {
+      "id": "silverback",
+      "title": "Round 40: defeat the Cosmic Silverback",
+      "detail": "details-silverback",
+      "steps": [
+        {
+          "id": "doa-boss",
+          "html": "Damage the Silverback and dodge sideways from its rush."
+        },
+        {
+          "id": "doa-adds",
+          "html": "Clear the adds and use vehicle/explosive damage windows."
+        },
+        {
+          "id": "doa-after",
+          "html": "After victory, continue into the harder round cycle."
+        }
+      ]
+    }
   ]
 }

@@ -10,6 +10,8 @@ Use recognizable gameplay images and symbol references with source credits. Expl
 
 The app uses its established charcoal-and-gold guide and tool components, with responsive layouts, visible keyboard focus, readable text and images that can be enlarged. New content extends that system. Guidance must stay useful on a phone while a match is in progress.
 
+The homepage makes the full catalogue easy to reach through a sticky game navigation rail on wide screens and a compact game selector on phones. Covers should invite players into a recognizable map with atmospheric game imagery. Keep cover artwork independent of instructional guide images; record its sources in [the homepage artwork manifest](docs/home-artwork.json).
+
 Content draws on multiple community sources, explicitly distinguishes game versions where mechanics differ and identifies review limits. Website checks and source review are not an in-game playthrough.
 
 The current expansion's scope, chosen helpers and validation are recorded in [the Zombies Chronicles plan](docs/chronicles-plan.md).

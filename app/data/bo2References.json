@@ -1,0 +1,244 @@
+{
+  "bellRooms": [
+    {
+      "name": "Candy Store",
+      "bells": [
+        "Square table by wall",
+        "Two-pot table by couch barrier",
+        "Chair by stair doorway"
+      ]
+    },
+    {
+      "name": "Barn",
+      "bells": [
+        "Hay bale by wall opening",
+        "Hay bale by railing gap",
+        "Hay bale near jail drop"
+      ]
+    },
+    {
+      "name": "Courthouse",
+      "bells": [
+        "Corner inside entrance",
+        "Judge’s bench",
+        "Table right of judge’s bench"
+      ]
+    }
+  ],
+  "leverColours": [
+    "Red",
+    "Green",
+    "Blue",
+    "Yellow"
+  ],
+  "mahjongColours": [
+    "Red",
+    "Green",
+    "Blue",
+    "Black"
+  ],
+  "mahjongLocations": [
+    {
+      "id": "corner-of-the-pylon-tile-spawn",
+      "src": "/images/bo2/die-rise/corner-of-the-pylon-tile-spawn.webp",
+      "alt": "corner of the pylon tile spawn"
+    },
+    {
+      "id": "dropdown-shaft-below-the-galvanknuckles-tile-spawn",
+      "src": "/images/bo2/die-rise/dropdown-shaft-below-the-galvanknuckles-tile-spawn.webp",
+      "alt": "dropdown shaft below the galvanknuckles tile spawn"
+    },
+    {
+      "id": "in-the-kitchen-on-the-counter-near-the-mp5-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-kitchen-on-the-counter-near-the-mp5-tile-spawn.webp",
+      "alt": "in the kitchen on the counter near the mp5 tile spawn"
+    },
+    {
+      "id": "in-the-power-switch-room-near-a-sowing-table-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-power-switch-room-near-a-sowing-table-tile-spawn.webp",
+      "alt": "in the power switch room near a sowing table tile spawn"
+    },
+    {
+      "id": "in-the-spawn-buildilng-on-the-desk-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-spawn-buildilng-on-the-desk-tile-spawn.webp",
+      "alt": "in the spawn buildilng on the desk tile spawn"
+    },
+    {
+      "id": "in-the-spawn-building-bottom-of-the-escalators-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-spawn-building-bottom-of-the-escalators-tile-spawn.webp",
+      "alt": "in the spawn building bottom of the escalators tile spawn"
+    },
+    {
+      "id": "in-the-spawn-buildling-at-the-broken-stairs-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-spawn-buildling-at-the-broken-stairs-tile-spawn.webp",
+      "alt": "in the spawn buildling at the broken stairs tile spawn"
+    },
+    {
+      "id": "in-the-upside-down-building-on-the-couch-tile-spawn",
+      "src": "/images/bo2/die-rise/in-the-upside-down-building-on-the-couch-tile-spawn.webp",
+      "alt": "in the upside down building on the couch tile spawn"
+    },
+    {
+      "id": "on-the-roof-inside-of-the-mystery-box-room-on-a-chair-tile-spawn",
+      "src": "/images/bo2/die-rise/on-the-roof-inside-of-the-mystery-box-room-on-a-chair-tile-spawn.webp",
+      "alt": "on the roof inside of the mystery box room on a chair tile spawn"
+    },
+    {
+      "id": "on-the-shelf-near-the-ak74-u-wall-buy-tile-spawn",
+      "src": "/images/bo2/die-rise/on-the-shelf-near-the-ak74-u-wall-buy-tile-spawn.webp",
+      "alt": "on the shelf near the ak74 u wall buy tile spawn"
+    },
+    {
+      "id": "second-floor-of-the-budda-room-near-the-teddy-bear-tile-spawn",
+      "src": "/images/bo2/die-rise/second-floor-of-the-budda-room-near-the-teddy-bear-tile-spawn.webp",
+      "alt": "second floor of the budda room near the teddy bear tile spawn"
+    }
+  ],
+  "mahjongTiles": [
+    {
+      "id": "number-1",
+      "label": "1 · bird",
+      "box": [
+        108,
+        414,
+        96,
+        148
+      ]
+    },
+    {
+      "id": "number-2",
+      "label": "2 · two bamboo",
+      "box": [
+        237,
+        414,
+        99,
+        148
+      ]
+    },
+    {
+      "id": "number-3",
+      "label": "3 · three bamboo",
+      "box": [
+        367,
+        414,
+        99,
+        148
+      ]
+    },
+    {
+      "id": "number-4",
+      "label": "4 · four bamboo",
+      "box": [
+        495,
+        414,
+        100,
+        148
+      ]
+    },
+    {
+      "id": "direction-North",
+      "label": "North",
+      "box": [
+        826,
+        411,
+        98,
+        148
+      ]
+    },
+    {
+      "id": "direction-East",
+      "label": "East",
+      "box": [
+        697,
+        411,
+        98,
+        148
+      ]
+    },
+    {
+      "id": "direction-South",
+      "label": "South",
+      "box": [
+        957,
+        411,
+        98,
+        148
+      ]
+    },
+    {
+      "id": "direction-West",
+      "label": "West",
+      "box": [
+        1084,
+        411,
+        100,
+        148
+      ]
+    }
+  ],
+  "mineSigns": [
+    {
+      "id": "dry",
+      "name": "Dry Gulcher Shaft",
+      "label": "U, then open-right box",
+      "box": [
+        208,
+        70,
+        278,
+        120
+      ]
+    },
+    {
+      "id": "bone",
+      "name": "Bone Orchard Vein",
+      "label": "Lower-right corner, then square",
+      "box": [
+        232,
+        309,
+        263,
+        115
+      ]
+    },
+    {
+      "id": "lunger",
+      "name": "Lunger Undermines",
+      "label": "Open-left box, then top-right corner",
+      "box": [
+        275,
+        558,
+        248,
+        108
+      ]
+    },
+    {
+      "id": "ground",
+      "name": "Ground Biter Pits",
+      "label": "Lower-left corner, then open-right box",
+      "box": [
+        242,
+        804,
+        260,
+        113
+      ]
+    },
+    {
+      "id": "consumption",
+      "name": "Consumption Cross",
+      "label": "Lower-right corner, then square; red stroke shifted",
+      "box": [
+        227,
+        1045,
+        238,
+        112
+      ]
+    }
+  ],
+  "toolSections": {
+    "bo2-die-rise-mahjong": "mahjong",
+    "bo2-buried-signs": "cipher",
+    "bo2-buried-levers": "levers",
+    "bo2-buried-bells": "bells",
+    "bo2-origins-ice": "upgrades",
+    "bo2-origins-fire": "upgrades"
+  }
+}

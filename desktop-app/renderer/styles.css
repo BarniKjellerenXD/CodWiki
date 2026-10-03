@@ -192,3 +192,5 @@ input[type="checkbox"] { accent-color: var(--gold); }
 .nav-map > summary { cursor:pointer; }
 .nav-map { margin-left:6px; }
 .nav-game[hidden], .nav-map[hidden], .nav-item[hidden] { display:none; }
+
+.nav-subgroup{margin:6px 0 8px;border-top:1px solid var(--line)}.nav-subgroup>summary{padding:12px 8px;color:var(--muted);font-size:12px;cursor:pointer}.nav-subgroup>summary:hover{color:var(--text)}.nav-subgroup>summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}.nav-subgroup[hidden]{display:none}
