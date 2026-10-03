@@ -4,7 +4,7 @@ Prepared 3 October 2026. This plan is for the maintainer and anyone implementing
 
 The aim is to help players find the guides and tools that already exist, while keeping CodWiki useful during a match and manageable as a personal project. Preserve the current homepage, direct map links, reading views and images. Concentrate on accurate page metadata, reliable discovery, honest attribution and a small amount of maintenance.
 
-**Status:** Local implementation and checks are complete; see [verification and deployment notes](search-visibility-verification.md). Google account verification and Search Console setup were removed from scope at the maintainer's request. Production responses and Google's indexing decisions must be distinguished from local checks.
+**Status:** Implemented, deployed through Vercel and checked against the public domain on 3 October 2026; see [verification and deployment notes](search-visibility-verification.md). Google account verification and Search Console setup were removed from scope at the maintainer's request. Successful production checks do not establish Google's indexing or ranking decisions.
 
 ## Decisions that guide the work
 

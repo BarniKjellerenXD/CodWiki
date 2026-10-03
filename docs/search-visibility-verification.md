@@ -42,9 +42,13 @@ These are functional and visual smoke checks. They do not establish field Core W
 
 ## Deployment and public discovery
 
-The maintainer confirmed that GitHub pushes trigger Vercel deployment. GitHub reported a successful Vercel deployment for the preceding `master` commit. Local implementation and verification are complete; the public deployment check is pending for this revision.
+The maintainer confirmed that GitHub pushes trigger Vercel deployment. Implementation commit [`0ffbc6e`](https://github.com/BarniKjellerenXD/CodWiki/commit/0ffbc6ec7ee9e5a30570a2e4dd25f6cd710b9112) was pushed to `master`. GitHub's Vercel check reported success for [this deployment](https://vercel.com/barnikjellerenxds-projects/cod-wiki/GB1r9LKNzQXu3VgUDYKQNWpZ6n1x).
 
-After deployment, run:
+The complete HTTP suite then passed against `https://codzmwiki.com`: all 177 catalogue pages, 147 sitemap destinations, metadata, internal discovery, query canonicals, initial guide HTML, legacy redirects, 404 handling and wiki exclusion. The public Reddit viewer returned 502 with `noindex`; successful upstream Reddit availability remains outside the verified results. The HTTP domain redirects to HTTPS with 308. The `www` hostname did not resolve during the check; all generated links use the working apex domain.
+
+The existing local development server was also restarted after its configuration reload stalled, and it serves the updated homepage successfully.
+
+To repeat the public checks, run:
 
 ```bash
 npm run check:seo -- https://codzmwiki.com
