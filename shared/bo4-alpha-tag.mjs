@@ -7,7 +7,7 @@ const a = (name, alt) => img('alpha-omega',name,alt)
 const t = (name, alt) => img('tag-der-toten',name,alt)
 const step = (id,text,quick,extra={}) => ({id,text,quick,...extra})
 const phase = (id,title,steps,extra={}) => ({id,title,steps,tools:[],...extra})
-const reviewNote = 'Original walkthrough researched against the linked community guides on 2026-10-02. Gameplay screenshots are credited to COD Zombies Guides and its listed community contributors; select an image to enlarge it. This revision has not yet been verified in a complete in-game run.'
+const reviewNote = 'Walkthrough adapted from the linked community guides, with AI-assisted source checks on 2026-10-02. Gameplay screenshots are credited to COD Zombies Guides and its listed community contributors; select an image to enlarge it. This revision has not yet been verified in a complete in-game run.'
 
 export const guides = [
   {

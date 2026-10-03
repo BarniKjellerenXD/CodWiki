@@ -8,5 +8,5 @@ export const guide = (map, name, intro, cover, phases, sidePhases, sources) => (
   id: `bo3-${map}`, gameId: 'bo3', name, intro,
   image: `/images/bo3-${map}/${cover}.webp`, phases, sidePhases, sources,
   reviewed: '2026-10-03',
-  reviewNote: 'Original instructions cross-checked against Reddit community guides and the illustrated references below on 3 October 2026. Gameplay images: mmmrkennedy, COD Zombies Guides and their credited community creators; game: Activision / Treyarch. Symbols and sequences marked as observations must come from your match. Source and software checks do not replace an in-game playthrough.'
+  reviewNote: 'Instructions adapted from Reddit community guides and the illustrated references below, with AI-assisted source checks on 3 October 2026. Gameplay images: mmmrkennedy, COD Zombies Guides and their credited community creators; game: Activision / Treyarch. Symbols and sequences marked as observations must come from your match. Source and software checks do not replace an in-game playthrough.'
 })

@@ -4,15 +4,28 @@ Source of truth for **codzmwiki.com** (Nuxt 4 site) and the **CodWiki Desktop** 
 
 [Download the Windows app](https://github.com/BarniKjellerenXD/CodWiki/releases/latest) as an installer or portable ZIP. The website also links to the latest release beneath its homepage introduction.
 
+## About this project and its sources
+
+CodWiki is a personal, **vibe-coded project built with AI assistance**. It started as something for my own use, and I'm sharing it in case someone else finds it useful.
+
+Most of the guide content comes from [r/CODZombies](https://www.reddit.com/r/CODZombies/wiki/index/) and other community guides, walkthroughs and references. It has been collected, adapted and organized into this site's guides, checklists and tools. The original discoveries, research, writing and images come from their respective contributors; I don't claim that work as my own.
+
+The guides and repository contain source links, review notes and image credits, including the records in `docs/` and the image source manifests. Please preserve those credits when contributing. Missing credits, corrections and source updates are welcome.
+
+Not every walkthrough or puzzle has been verified in-game, and there may be mistakes or outdated instructions. Passing code tests or checking a written source does not mean a guide has been personally tested from start to finish. This is a hobby project, with no promise that every guide is complete or up to date.
+
+The [search visibility plan](docs/search-visibility-plan.md) describes how to help people find the existing site while preserving its navigation, layout and purpose.
+
 ## Layout
 
 ```
 app/            Nuxt 4 site source (pages, components, styles)
   pages/guides/ one .vue per guide (including separate Outbreak quests)
   pages/tools/  one .vue per solver, recorder, tracker or reference
-  pages/wiki/   wiki viewer SPA
+  pages/wiki/   community wiki viewer (excluded from search indexing)
   components/   GuideArticle, ToolShell, content + helper components, RunChecklist, ImageLightbox, WikiViewer
 public/         static assets only (images/, fonts/, favicon) + tools/ and map artwork under maps/
+server/routes/  sitemap.xml and robots.txt, using the configured public origin
 desktop-app/    CodWiki Desktop (Electron, Windows) — releases via GitHub Actions (desktop-v*)
 ```
 
@@ -28,6 +41,14 @@ node .output/server/index.mjs
 Stack: Nuxt 4 + Vue 3 + Tailwind (v3 config with the gold/orange palette remap — class names stay cyan/fuchsia for history, colors are brand gold/orange; **no blue**).
 
 Everything is Vue: guide content lives in `app/components/guide/*.vue` (rendered server-side via `GuideArticle`), and each tool is a reactive Vue page in `app/pages/tools/` sharing `ToolShell`. Old `/tools/*.html` and `/guides/*.html` URLs 301-redirect via `server/middleware/legacy-redirect.ts`.
+
+## Search visibility
+
+The existing pages supply titles, descriptions, canonical URLs and sharing metadata through `shared/seo.mjs` and `app/composables/usePageSeo.ts`. Page-specific summaries live in `shared/seo-overrides.mjs`. The sitemap includes authored guides and active tools; planned entries and the Reddit wiki viewer remain accessible with `noindex`. Adding an authored guide through the normal catalogue workflow updates its metadata and sitemap eligibility together.
+
+The public origin defaults to `https://codzmwiki.com`. Set `NUXT_PUBLIC_SITE_URL` to an HTTP(S) origin when deploying to a different domain; canonicals, sitemap, robots and homepage site-name schema use the same value. No Google account verification or analytics is configured. Crawlers can discover the sitemap through `/robots.txt` and guides through existing links.
+
+After starting the production server, run `npm run check:seo -- http://127.0.0.1:3000`. After deployment, run `npm run check:seo -- https://codzmwiki.com`. If the configured canonical origin differs from the default, pass it as the second argument. These are read-only HTTP checks of metadata, crawlable links, indexing rules and redirects; they do not prove that Google has indexed or ranked a page. See [verification and deployment notes](docs/search-visibility-verification.md).
 
 ## Desktop app
 

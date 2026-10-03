@@ -6,7 +6,7 @@ const s = (name,alt) => img('shattered-veil',name,alt)
 const r = (name,alt) => img('reckoning',name,alt)
 const step = (id,text,quick,extra={}) => ({id,text,quick,...extra})
 const phase = (id,title,steps,extra={}) => ({id,title,steps,tools:[],...extra})
-const reviewNote = 'Original route synthesis reviewed on 2026-10-02 against community research and illustrated walkthroughs. Screenshots credit COD Zombies Guides and r/CODZombies contributors; game imagery belongs to Activision / Treyarch. Match clues take precedence over example images. This revision has not been verified in a complete in-game run.'
+const reviewNote = 'Route adapted from community research and illustrated walkthroughs, with AI-assisted source checks on 2026-10-02. Screenshots credit COD Zombies Guides and r/CODZombies contributors; game imagery belongs to Activision / Treyarch. Match clues take precedence over example images. This revision has not been verified in a complete in-game run.'
 
 export const guides = [
   {

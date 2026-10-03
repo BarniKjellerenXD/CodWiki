@@ -1,11 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { DEFAULT_SITE_URL } from './shared/seo.mjs'
+
 export default defineNuxtConfig({
   app: { head: { htmlAttrs: { lang: 'en' }, title: 'CodWiki · Zombies companion' } },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  // Keep local shared redirects in Nitro's bundle (Windows dev builds otherwise
+  // Keep local shared helpers in Nitro's bundle (Windows dev builds otherwise
   // rebase this external import outside the checkout).
-  nitro: { externals: { inline: [/shared[\\/]retired-tools\.mjs/] } },
+  nitro: { externals: { inline: [/shared[\\/](?:retired-tools|seo(?:-overrides)?)\.mjs/] } },
   css: ['~/assets/css/main.css', '~/assets/css/companion.css', '~/assets/css/puzzles.css'],
   modules: [
     '@nuxt/fonts',
@@ -29,6 +31,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
+      siteUrl: DEFAULT_SITE_URL,
       redditBase: process.env.REDDIT_API_BASE_URL || 'https://www.reddit.com'
     }
   },

@@ -6,7 +6,7 @@ const l=(name,alt)=>img('liberty-falls',name,alt)
 const t=(name,alt)=>img('terminus',name,alt)
 const step=(id,text,quick,extra={})=>({id,text,quick,...extra})
 const phase=(id,title,steps,extra={})=>({id,title,steps,tools:[],...extra})
-const reviewNote='Original walkthrough cross-checked against community and illustrated guides on 2026-10-02. Use Standard mode for the full set of side quests. Screenshots are credited to COD Zombies Guides and the r/CODZombies community wiki; local source manifests record each image. This revision has not yet been verified in a complete in-game run.'
+const reviewNote='Walkthrough adapted from community and illustrated guides, with AI-assisted source checks on 2026-10-02. Use Standard mode for the full set of side quests. Screenshots are credited to COD Zombies Guides and the r/CODZombies community wiki; local source manifests record each image. This revision has not yet been verified in a complete in-game run.'
 export const guides=[
 {
  id:'bo6-liberty-falls',gameId:'bo6',name:'Liberty Falls',reviewed:'2026-10-02',image:'/images/bo6-liberty-falls/liberty-falls.webp',reviewNote,

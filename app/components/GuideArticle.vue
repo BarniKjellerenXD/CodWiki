@@ -18,7 +18,7 @@
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
           <div v-if="$slots.intro" class="guide-introduction"><slot name="intro" /></div>
           <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
-          <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /></article>
+          <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /><GuideSourceNote :map-id="mapId" /></article>
           <section v-if="mapActivated" v-show="view === 'map'" ref="mapRef" class="guide-map-view" aria-label="Interactive map" tabindex="-1">
             <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" />
             <div v-else class="guide-map-loading"><p v-if="mapLoading" role="status">Loading {{ title }} map…</p><p v-else role="alert">{{ mapError }}</p><button v-if="mapError" class="companion-button" @click="loadMap">Try again</button><button class="companion-button" @click="returnToStep">Back to guide</button></div>
@@ -41,7 +41,6 @@ import { GUIDE_MAP_NAVIGATION } from '~/utils/mapContext'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readReaderContext } from '~/utils/mapNavigation.mjs'
 export interface GuideTocItem { id: string; text: string; level: number }
 const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string }>()
-useSeoMeta({ title: () => `${props.title} · CodWiki`, description: () => `Quest checklist, complete walkthrough and puzzle tools for ${props.title}.` })
 const route = useRoute()
 const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!

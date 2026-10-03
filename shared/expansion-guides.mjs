@@ -10,7 +10,7 @@ import { chroniclesGuides } from './chronicles-guides.mjs'
 import { bo2Guides } from './bo2-guides.mjs'
 import { classicGuides } from './classic-guides.mjs'
 export { games } from './games.mjs'
-// Original concise walkthroughs adapted from the linked research sources.
+// Concise walkthroughs adapted from the linked community sources with AI assistance.
 // Stable phase/step IDs are generated from the explicit keys, never from prose.
 const reddit = slug => `https://www.reddit.com/r/CODZombies/wiki/${slug}/`
 const phase = (id, title, steps, tools = []) => ({ id, title, steps: steps.map((step, i) => typeof step === 'string' ? { id: `${id}-${i + 1}`, text: step } : { id: `${id}-${i + 1}`, ...step }), tools })

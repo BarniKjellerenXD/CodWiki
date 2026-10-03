@@ -18,6 +18,8 @@
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 
+usePageSeo()
+
 const showTop = ref(false)
 
 function handleScroll() {

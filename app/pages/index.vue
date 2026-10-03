@@ -62,7 +62,6 @@ function count(id:string) {
 function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
 function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
 watch(query,()=>{selected.value=0})
-useSeoMeta({title:'CodWiki · Your Zombies companion',description:'Zombies guides and puzzle tools from Black Ops 7 to World at War, with planned map entries for Infinite Warfare, WWII, Advanced Warfare, Vanguard and Modern Warfare III.'})
 </script>
 
 <template>

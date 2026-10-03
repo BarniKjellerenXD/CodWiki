@@ -18,16 +18,12 @@
 </template>
 
 <script setup lang="ts">
-import catalogue from '~/data/catalogue.json'
 const props = defineProps<{
   mapName: string
   backTo: string
   wide?: boolean
 }>()
 const { run } = useProgress()
-const route = useRoute()
-const toolTitle = catalogue.tools.find(tool => tool.route === route.path.replace(/\/$/, ''))?.name || 'Puzzle tool'
-useSeoMeta({ title: `${toolTitle} · ${props.mapName} · CodWiki` })
 const returnTo = computed(() => {
   const id = props.backTo.split('/').pop()!
   const section = run(id).section

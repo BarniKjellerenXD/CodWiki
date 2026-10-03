@@ -19,7 +19,6 @@ onMounted(() => {
 })
 onBeforeUnmount(()=>observer?.disconnect())
 
-useSeoMeta({ title: 'BO7 Super Easter Egg · Cod Wiki', description: 'All five BO7 toy box quests and the Rex Infernus Warden walkthrough, with equipment, step-by-step instructions and map guide links.' })
 </script>
 
 <template>

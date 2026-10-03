@@ -4,7 +4,6 @@ const props=defineProps({id:{type:String,required:true}})
 const map=computed(()=>catalogue.maps.find(m=>m.id===props.id))
 const game=computed(()=>catalogue.games.find(g=>g.id===map.value.gameId))
 const siblings=computed(()=>catalogue.maps.filter(m=>m.gameId===map.value.gameId && m.id!==props.id))
-useSeoMeta({title:()=>`${map.value.name} · ${game.value.name} · CodWiki`,description:()=>`${map.value.name} in ${game.value.name}. Guide planned. ${map.value.description || ''}`})
 </script>
 <template>
   <main class="map-entry">

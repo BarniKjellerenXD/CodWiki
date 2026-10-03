@@ -11,7 +11,8 @@
     "predev": "node scripts/generate-catalogue.mjs",
     "prebuild": "node scripts/generate-catalogue.mjs",
     "pregenerate": "node scripts/generate-catalogue.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.12.1",

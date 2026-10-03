@@ -6,7 +6,7 @@ const c=(name,alt)=>({src:`/images/bo6-citadelle-des-morts/citadelle-${name}.web
 const t=(name,alt)=>({src:`/images/bo6-the-tomb/the-tomb-${name}.webp`,alt})
 const s=(id,text,quick,extra={})=>({id,text,quick,...extra})
 const p=(id,title,steps,extra={})=>({id,title,steps,tools:[],...extra})
-const reviewNote='Original walkthrough researched against the linked community, illustrated and specialist guides on 2026-10-02. Gameplay screenshots and reference sheets are credited to COD Zombies Guides and its listed contributors; Raven antiquity photographs are by Kristina Ebanez / Destructoid. Game imagery belongs to Activision / Treyarch. Select an image to enlarge it. Source research is complete; this revision has not been verified in a full in-game run.'
+const reviewNote='Walkthrough adapted from the linked community, illustrated and specialist guides, with AI-assisted source checks on 2026-10-02. Gameplay screenshots and reference sheets are credited to COD Zombies Guides and its listed contributors; Raven antiquity photographs are by Kristina Ebanez / Destructoid. Game imagery belongs to Activision / Treyarch. Select an image to enlarge it. This revision has not been verified in a full in-game run.'
 export const guides=[
  {
   id:'bo6-citadelle-des-morts',gameId:'bo6',name:'Citadelle des Morts',reviewed:'2026-10-02',image:'/images/bo6-citadelle-des-morts/citadelle-des-morts.webp',reviewNote,
