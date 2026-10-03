@@ -97,13 +97,11 @@ export function evaluateTool(id, raw) {
     return lines.length ? ready(lines, 'Observed matches') : waiting('Record the same symbol label on both sides to find a match.')
   }
   if (tool.evaluate === 'moon') {
-    const screens=[0,1,2,3].map(i=>state[`screen-${i}`])
-    if(screens.some(s=>!s)) return waiting('Record the colour at all four screen positions.')
-    if(new Set(screens).size!==4) return invalid('Each screen colour must occupy one position. Recheck the layout.')
+    const screens=['Red','Green','Blue','Yellow']
     const values = Array.from({length:16},(_,i)=>state[`slot-${i}`]); const last = values.findLastIndex(Boolean)
     if (last < 0) return waiting('Record the first display.')
     if (values.slice(0, last + 1).some(v => !v)) return invalid('Fill the gap in the sequence before using it.')
-    return ready(values.slice(0, last + 1).map((v, i) => `${i + 1}. ${['Top left','Top right','Bottom left','Bottom right'][screens.indexOf(v)]} (${v})`))
+    return ready(values.slice(0, last + 1).map((v, i) => `${i + 1}. Computer ${screens.indexOf(v)+1} from the left (${v})`))
   }
   if (!tool.evaluate) return waiting('Your observations are saved on this device.')
   if (fields.some(f => !state[f.id].trim())) return waiting('Complete every observation to show the result.')

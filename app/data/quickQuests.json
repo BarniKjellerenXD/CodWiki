@@ -988,24 +988,27 @@
   "bo3-origins": [
     {
       "id": "setup",
-      "title": "Key Features: generators and equipment",
+      "title": "Generators, shovel, shield and gramophone",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate the six generators by staying within their capture areas and defeating the attacking templars. All six must be powered to use Pack-a-Punch."
+          "html": "Power all six generators for Pack-a-Punch."
         },
         {
           "id": "setup-2",
-          "html": "Collect shield parts around the generator routes and build it at a workbench. Take a shovel from a starting location and dig marked sites for equipment."
+          "html": "Take a shovel and collect the three shield parts."
         },
         {
           "id": "setup-3",
-          "html": "Collect the gramophone in the excavation and the black record near the mound. Place the gramophone to open the lower excavation, then retrieve it for the elemental tunnels."
+          "html": "Use the black record and gramophone to open the lower Excavation."
         },
         {
           "id": "setup-4",
-          "html": "Each staff needs its colored record, three parts and the crystal from its matching Crazy Place portal. Leave the portal open until you return, then recover the gramophone."
+          "html": "Use each coloured record at its matching tunnel.",
+          "tools": [
+            "bo3-origins-locations"
+          ]
         }
       ]
     },
@@ -1016,112 +1019,115 @@
       "steps": [
         {
           "id": "staff-build-1",
-          "html": "Ice: dig glowing excavation sites while it is snowing, searching the spawn, middle and church regions for its three parts. Take the blue record from the Tank Station area and obtain the ice crystal through the church tunnel."
+          "html": "Ice: three snowy dig regions, blue Tank Station record, Ice crystal."
         },
         {
           "id": "staff-build-2",
-          "html": "Fire: collect the part dropped by a Panzer, shoot down the glowing plane and collect its drop, and take the Generator 6 reward part. Find the red record around the church and obtain the fire crystal."
+          "html": "Fire: Generator 6, first Panzer, glowing plane; red record and Fire crystal."
         },
         {
           "id": "staff-build-3",
-          "html": "Wind: enter each giant robot through its lit foot by shooting the panel before it steps down. Collect one part inside each robot, find the yellow record around Generator 5 and obtain the wind crystal."
+          "html": "Wind: enter all three robots; yellow Generator 5 record and Wind crystal."
         },
         {
           "id": "staff-build-4",
-          "html": "Lightning: use the tank to reach all three elevated part locations; plan the jump before riding past each platform. Find the purple record near Generator 4 and obtain the lightning crystal."
+          "html": "Lightning: three tank jumps, purple Generator 4 record, Lightning crystal."
         },
         {
           "id": "staff-build-5",
-          "html": "Return to the excavation pedestals and build each staff. Collect its crystal before trying to assemble it."
+          "html": "Assemble all four staffs at their Excavation pedestals."
         }
       ]
     },
     {
       "id": "upgrades",
-      "title": "Upgrade all four staffs",
+      "title": "Complete the four elemental trials",
       "detail": "details-upgrades",
       "steps": [
         {
           "id": "upgrades-1",
-          "html": "Ice: match each shown tablet to its ceiling symbol in the Crazy Place. Use the linked source chart when identifying shapes. Back on the map, freeze the three tombstones, then break each with a bullet weapon."
+          "html": "Ice: match the tablet, then freeze and shatter three tombstones."
         },
         {
           "id": "upgrades-2",
-          "html": "Fire: kill zombies on the Crazy Place grates with the staff until the cauldrons light. Decode the glowing church symbols into torch numbers and light the corresponding torches with the fire staff."
+          "html": "Fire: light four cauldrons, decode Church symbols, ignite four torches."
         },
         {
           "id": "upgrades-3",
-          "html": "Wind: set the Crazy Place rings to the wind pattern shown in the reference guide, then redirect the three smoking stone balls toward the excavation with the staff."
+          "html": "Wind: match the ceiling rings; blow three chimneys toward Excavation."
         },
         {
           "id": "upgrades-4",
-          "html": "Lightning: number the seven lower keyboard triangles from left to right. Shoot 1–3–6, wait for the sparks to clear, then 3–5–7, wait, then 2–4–6. Ignore the upper row. Rotate the sparking electrical panel switches around the map until they stop sparking."
+          "html": "Lightning: play 136 / 357 / 246; set all seven electrical dials."
         },
         {
           "id": "upgrades-5",
-          "html": "For each staff, align the excavation rings to its color, shoot the orb beneath them, then place the staff in its Crazy Place pedestal and feed it kills until charged. Retrieve the upgraded staff.",
+          "html": "For each staff: align rings, shoot orb, charge in the Crazy Place.",
           "tools": [
             "bo3-origins-ice",
-            "bo3-origins-fire",
-            "bo3-origins-staffs"
+            "bo3-origins-fire"
           ]
         }
       ]
     },
     {
       "id": "equipment",
-      "title": "Thunder Fists, G-Strikes and drone",
+      "title": "Thunder Fists, G-Strikes and the Maxis Drone",
       "detail": "details-equipment",
       "steps": [
         {
           "id": "equipment-1",
-          "html": "Fill all four soul chests in the robot footprints without letting a robot reset an unfinished chest. Collect the Thunder Fists from a reward chest."
+          "html": "Fill four footprint chests and collect Thunder Fists."
         },
         {
           "id": "equipment-2",
-          "html": "Take a tablet from the Tank Station to the church water basin. Earn nearby melee kills to clean it, then carry it back without touching mud. If it becomes dirty, return to the basin and try again."
+          "html": "Clean a tablet with melee kills, then carry it back without mud."
         },
         {
           "id": "equipment-3",
-          "html": "Place the clean tablet back in the Tank Station and earn the required melee kills to unlock G-Strikes. Build the Maxis Drone from its three parts."
+          "html": "Finish the tablet kills for G-Strikes and build the drone."
+        },
+        {
+          "id": "equipment-drone",
+          "html": "Collect the brain, rotor and frame; assemble the Maxis Drone."
         }
       ]
     },
     {
       "id": "seal",
-      "title": "Robot pedestals and the seal",
+      "title": "Robot pedestals, Rain Fire and the Panzer wave",
       "detail": "details-seal",
       "steps": [
         {
           "id": "seal-1",
-          "html": "Place upgraded staffs in the quest pedestals: ice in the church robot, wind in the middle robot, lightning in the spawn robot, and fire in the excavation."
+          "html": "Place Ice/Freya, Wind/Odin, Lightning/Thor, Fire/Excavation."
         },
         {
           "id": "seal-2",
-          "html": "After the placement step completes, retrieve the staffs. Press a robot’s red button and quickly throw a G-Strike onto the sealed ground near Generator 5. In co-op, assign the button and throw to separate players."
+          "html": "Press the robot button and quickly G-Strike the Generator 5 seal."
         },
         {
           "id": "seal-3",
-          "html": "Once the seal opens, deploy the Maxis Drone into it. Defeat the spawned Panzers before continuing."
+          "html": "Send the drone into the opened seal and defeat the Panzers."
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Pilot and Crazy Place finale",
+      "title": "The hidden pilot, Iron Fists and the Crazy Place",
       "detail": "details-finale",
       "steps": [
         {
           "id": "finale-1",
-          "html": "Use Zombie Blood to see and shoot the glowing plane, then locate and kill its pilot while the effect is active. Collect the drone it drops."
+          "html": "In Zombie Blood, down the plane and kill its pilot; recover the drone."
         },
         {
           "id": "finale-2",
-          "html": "In the lower excavation, use melee attacks on the special smoke-trailing zombies until the upgraded-fist tablet appears; collect it."
+          "html": "Every player earns and collects an Iron Fist tablet."
         },
         {
           "id": "finale-3",
-          "html": "Place all four upgraded staffs in the Crazy Place and feed the final soul requirement. When the portal opens, deploy the upgraded Maxis Drone and use the final interaction to finish the quest."
+          "html": "Charge the rift; deploy the drone; interact together to end the match."
         }
       ]
     }
@@ -3090,68 +3096,65 @@
   "bo3-ascension": [
     {
       "id": "setup",
-      "title": "Key Features: landers and rocket",
+      "title": "Power, landers and Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Turn on power and use all three lunar lander stations. Launch the rocket to reach Pack-a-Punch."
+          "html": "Turn on power and find the three landers."
         },
         {
           "id": "setup-2",
-          "html": "Prepare Gersh Devices, Matryoshka Dolls and upgraded high-damage weapons for the final orb stage. Coordinate equipment across the team."
+          "html": "Ride all three landers to spawn, launch the rocket, enter Pack-a-Punch."
         }
       ]
     },
     {
       "id": "nodes",
-      "title": "First three Casimir nodes",
+      "title": "Casimir Mechanism: activate the first three nodes",
       "detail": "details-nodes",
       "steps": [
         {
           "id": "nodes-1",
-          "html": "Throw a Gersh Device at the generator outside the playable area near the PhD/Widow’s Wine side, then activate the monitor by the Stamin-Up lander."
+          "html": "Gersh the generator, then activate the Stamin-Up television."
         },
         {
           "id": "nodes-2",
-          "html": "During a monkey round, assign all four players to the four perk-area buttons and press them together."
+          "html": "Press the four perk-area buttons together during monkeys."
         },
         {
           "id": "nodes-3",
-          "html": "With Pack-a-Punch open, stand together on the platform beneath the rocket for one full clock rotation without leaving it."
+          "html": "Keep all four players on the rocket-pad plate until the clock finishes."
         }
       ]
     },
     {
       "id": "luna",
-      "title": "LUNA lander route",
+      "title": "Spell LUNA with the lander",
       "detail": "details-luna",
       "steps": [
         {
           "id": "luna-1",
-          "html": "Keep one rider aboard while teammates call the lander: Spawn → Stamin-Up, Stamin-Up → Spawn, Spawn → Speed Cola, Speed Cola → Stamin-Up."
+          "html": "Ride Spawn → Stamin → Spawn → Speed → Stamin."
         },
         {
           "id": "luna-2",
-          "html": "Collect the letters along those flights to spell LUNA and activate the fourth node.",
-          "tools": [
-            "bo3-ascension-luna"
-          ]
+          "html": "Confirm all four module indicators."
         }
       ]
     },
     {
       "id": "orb",
-      "title": "Final orb",
+      "title": "Free Gersh",
       "detail": "details-orb",
       "steps": [
         {
           "id": "orb-1",
-          "html": "At the Casimir device near Stamin-Up, use a Gersh Device at the glowing orb and apply the required explosive/wonder-weapon damage as a team."
+          "html": "Gersh the white light and concentrate upgraded weapons plus Matryoshkas."
         },
         {
           "id": "orb-2",
-          "html": "Continue until the orb rises and the quest confirmation plays. This quest has its own reward rather than a conventional boss arena."
+          "html": "Repeat if needed until Gersh is freed."
         }
       ]
     }
@@ -3159,31 +3162,31 @@
   "bo3-shangri-la": [
     {
       "id": "setup",
-      "title": "Key Features: power and Eclipse",
+      "title": "Power, Pack-a-Punch and the eclipse",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate both underground power switches. Coordinate the pressure plates for Pack-a-Punch access and obtain the 31-79 JGb215."
+          "html": "Activate both power switches; stand on the raised Pack-a-Punch plates."
         },
         {
           "id": "setup-2",
-          "html": "Assign players to the four spawn buttons and press them together to enter Eclipse. Re-enter Eclipse for stages that require it."
+          "html": "Use four players to trigger an eclipse before each trial."
         }
       ]
     },
     {
       "id": "tiles",
-      "title": "Tile matching and water slide",
+      "title": "Crystal 1: match the twelve tile pairs",
       "detail": "details-tiles",
       "steps": [
         {
           "id": "tiles-1",
-          "html": "Divide the tile areas between players. Reveal symbols, record positions on both sides and step on matching pairs in coordination."
+          "html": "Activate the brick button and assign one caller per tile area."
         },
         {
           "id": "tiles-2",
-          "html": "For the water-slide sequence, arrange three players at the bottom while the final player completes the lever/slide interaction. Confirm the step succeeds before moving on.",
+          "html": "Discover and stand on all twelve matching pairs.",
           "tools": [
             "bo3-shang-tiles"
           ]
@@ -3192,35 +3195,80 @@
     },
     {
       "id": "trials",
-      "title": "Meteor, Napalm and dials",
+      "title": "Crystals 2–4: slide, shrinking ball and gas",
       "detail": "details-trials",
       "steps": [
         {
           "id": "trials-1",
-          "html": "Use the baby gun and slide route for the meteor step. Complete the Napalm zombie gas-leak route without killing the required zombie too early."
+          "html": "Three wait on the grate; the fourth uses the slide lever."
         },
         {
           "id": "trials-2",
-          "html": "Use Spikemores for the tunnel-hole step, then complete the stone-symbol and mud-dial interactions using their reference patterns."
+          "html": "Explode, shrink and knife the slide crystal into the geyser."
         },
         {
           "id": "trials-3",
-          "html": "Listen to the gongs and identify the correct resonance before the focusing-stone interaction."
+          "html": "Turn the valve four times; ignite all three leaks with a Napalm Zombie."
+        }
+      ]
+    },
+    {
+      "id": "holes",
+      "title": "Crystal 5: plug the four tunnel holes",
+      "detail": "details-holes",
+      "steps": [
+        {
+          "id": "holes-mines",
+          "html": "Plug all four tunnel holes with detonated Trip Mines."
+        },
+        {
+          "id": "holes-brick",
+          "html": "Press the pool-wall brick."
+        }
+      ]
+    },
+    {
+      "id": "dials",
+      "title": "Crystal 6: wall tiles, teepee and mud-room dials",
+      "detail": "details-dials",
+      "steps": [
+        {
+          "id": "dials-tiles",
+          "html": "Melee the twelve wall tiles."
+        },
+        {
+          "id": "dials-teepee",
+          "html": "Explode the distant teepee, then enter another eclipse."
+        },
+        {
+          "id": "dials-code",
+          "html": "Set the mud-room dials clockwise to 4, 3, 16, 1."
         }
       ]
     },
     {
       "id": "stone",
-      "title": "Focusing stone",
+      "title": "Charge the crystals and claim the Focusing Stone",
       "detail": "details-stone",
       "steps": [
         {
           "id": "stone-1",
-          "html": "Complete the final Eclipse actions and open the route to the focusing stone. Coordinate the team’s positioning before collecting it."
+          "html": "Find and ring the four correct gongs during the eclipse."
+        },
+        {
+          "id": "stone-dynamite",
+          "html": "Shoot the geyser crystal and catch the dynamite."
+        },
+        {
+          "id": "stone-meteor",
+          "html": "Shoot the charged Mud Room crystal to shrink the meteor."
         },
         {
           "id": "stone-2",
-          "html": "A player’s reward and any repeated run for additional rewards should be tracked separately; reset only the relevant quest checklist."
+          "html": "Give Brock the dynamite; return in daylight for the Focusing Stone.",
+          "tools": [
+            "bo3-shang-gongs"
+          ]
         }
       ]
     }
@@ -3228,75 +3276,111 @@
   "bo3-moon": [
     {
       "id": "setup",
-      "title": "Key Features: oxygen and equipment",
+      "title": "Survive Area 51 and equip your P.E.S.",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Escape Area 51 to the Moon, collect a PES and restore power. Use the Hacker carefully: without a PES you need breathable areas."
+          "html": "Escape Area 51, equip P.E.S., reach the MPD power switch."
         },
         {
           "id": "setup-2",
-          "html": "Prepare the Wave Gun, Gersh Devices and QEDs as the quest requires. Keep access to Tunnel 6 for the sphere stage."
+          "html": "Open the return teleporter and gather Wave Gun, Gersh and Q.E.D."
+        }
+      ]
+    },
+    {
+      "id": "hacker",
+      "title": "Find the Hacker and protect your air",
+      "detail": "details-hacker",
+      "steps": [
+        {
+          "id": "hacker-find",
+          "html": "Search the six laboratory Hacker spots."
+        },
+        {
+          "id": "hacker-excavators",
+          "html": "Allow the required Pi breach; stop other excavators when possible."
         }
       ]
     },
     {
       "id": "simon",
-      "title": "Samantha Says and terminals",
+      "title": "Samantha Says and the timed laboratory panels",
       "detail": "details-simon",
       "steps": [
         {
           "id": "simon-1",
-          "html": "Complete the first Samantha Says sequence at the four screens by repeating each display in order."
+          "html": "Repeat the first Samantha Says sequences."
         },
         {
           "id": "simon-2",
-          "html": "Use the Hacker for the laboratory terminal/button stage and finish its timed interactions."
+          "html": "Hack the starting button, then the four green panel boxes."
         },
         {
           "id": "simon-3",
-          "html": "Wait for Excavator Pi to breach Tunnel 6, then stop the excavator with the Hacker when the quest’s tunnel condition has been satisfied.",
+          "html": "Press all four wall buttons and confirm they light.",
           "tools": [
-            "bo3-moon-simon"
+            "bo3-moon-simon",
+            "bo3-moon-labs"
           ]
         }
       ]
     },
     {
       "id": "sphere",
-      "title": "Sphere and MPD",
+      "title": "Tunnel 6, the sphere and the first soul tube",
       "detail": "details-sphere",
       "steps": [
         {
           "id": "sphere-1",
-          "html": "Follow the sphere through Tunnel 6, using the appropriate weapon interactions and Wave Gun satellite shot to move it onward."
+          "html": "After Pi breaches, retract it and move the Tunnel 6 sphere."
         },
         {
           "id": "sphere-2",
-          "html": "Guide the sphere into the MPD, then fill the required soul stage to open the chamber."
+          "html": "Wave Gun the satellite sphere, then escort it through Tunnel 11."
         },
         {
           "id": "sphere-3",
-          "html": "Return to Area 51 for the plates. Use the Gersh/QED interactions to move them into place and find the cable for the Vril device/computer sequence."
+          "html": "Fill the first tube and open the MPD."
+        }
+      ]
+    },
+    {
+      "id": "device",
+      "title": "Bring back the plates and charge the Golden Rod",
+      "detail": "details-device",
+      "steps": [
+        {
+          "id": "device-plates",
+          "html": "Grenade and Gersh the Area 51 plates onto the pad."
+        },
+        {
+          "id": "device-qed",
+          "html": "Q.E.D. the plates beside Quick Revive."
+        },
+        {
+          "id": "device-cable",
+          "html": "Find and connect the S-shaped cable."
+        },
+        {
+          "id": "device-charge",
+          "html": "Richtofen charges and retrieves the Vril Device."
         }
       ]
     },
     {
       "id": "rockets",
-      "title": "Canisters and rockets",
+      "title": "Soul transfer and Earth’s destruction",
       "detail": "details-rockets",
       "steps": [
         {
           "id": "rockets-1",
-          "html": "Complete the device/computer stage and fill the four soul canisters. Keep the team supplied while moving between the charge areas."
+          "html": "Fill four tubes, perform the body swap and Q.E.D. the sphere."
         },
         {
           "id": "rockets-2",
-          "html": "Repeat the later Samantha Says sequences, clearing the helper for each attempt. Finish the final sphere/device interactions to launch the rockets.",
-          "tools": [
-            "bo3-moon-simon"
-          ]
+          "html": "Complete three final computer games, then Gersh the sphere."
         }
       ]
     }
@@ -3304,31 +3388,35 @@
   "bo3-nacht-der-untoten": [
     {
       "id": "setup",
-      "title": "Key Features: rooms and equipment",
+      "title": "Get equipped and learn the two floors",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Choose which staircase and Help-room routes to open based on the team’s training space. Leaving a route closed changes how zombies reach the upper floor."
+          "html": "Open Help and an upstairs route."
         },
         {
           "id": "setup-2",
-          "html": "Use the Mystery Box and Wunderfizz for equipment. The scoped cabinet weapon and perk options differ from the original World at War version."
+          "html": "Locate the Box, Mule Kick and upstairs Wunderfizz."
         }
       ]
     },
     {
       "id": "samantha",
-      "title": "Samantha secret",
+      "title": "Samantha: four buttons, then five hidden dolls",
       "detail": "details-samantha",
       "steps": [
         {
           "id": "samantha-1",
-          "html": "Find and activate the four small Samantha buttons around the map. Listen for the success cue, then interact with the starting doll."
+          "html": "Press all four hidden buttons."
         },
         {
           "id": "samantha-2",
-          "html": "Shoot the appearing dolls through the sequence, following their sound and sightlines. Collect the reward after completion.",
+          "html": "Start at RK5; shoot five active dolls."
+        },
+        {
+          "id": "samantha-reward",
+          "html": "Return to RK5 and claim the reward.",
           "tools": [
             "bo3-nacht-secrets"
           ]
@@ -3337,16 +3425,20 @@
     },
     {
       "id": "extras",
-      "title": "Useful extras",
+      "title": "Undone and the radio",
       "detail": "details-extras",
       "steps": [
         {
+          "id": "extras-barrels",
+          "html": "Destroy all 30 outside barrels for Undone."
+        },
+        {
           "id": "extras-1",
-          "html": "The radio is a separate music interaction. Keep it separate from the Samantha buttons and do not expect it to unlock a main quest."
+          "html": "Use the Box-room radio to cycle music."
         },
         {
           "id": "extras-2",
-          "html": "Use the source’s images for small button and doll sightlines; the helper tracks completed stages, not unseen target positions."
+          "html": "Use the photographs to identify each search location."
         }
       ]
     }
@@ -3354,38 +3446,46 @@
   "bo3-verruckt": [
     {
       "id": "setup",
-      "title": "Key Features: split spawns",
+      "title": "Reconnect the spawn sides and turn on power",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Identify whether you started on the Jugger-Nog or Quick Revive side. Open that side’s upstairs route toward the power room."
+          "html": "Follow your spawn-side route upstairs."
         },
         {
           "id": "setup-2",
-          "html": "Turn on power to reconnect the starting halves. Coordinate purchases so both sides retain enough space and ammunition."
+          "html": "Turn on power and reunite the team."
         },
         {
           "id": "setup-3",
-          "html": "Use the map’s traps and BO3 equipment options. Do not apply the original version’s Mystery Box contents automatically.",
-          "tools": [
-            "bo3-verruckt-setup"
-          ]
+          "html": "Buy perks and establish a safe circuit."
         }
       ]
     },
     {
       "id": "secrets",
-      "title": "Samantha and music secrets",
+      "title": "Toilet codes and Samantha’s Sorrow",
       "detail": "details-secrets",
       "steps": [
         {
-          "id": "secrets-1",
-          "html": "Perform the toilet interaction sequence to start the Chronicles Samantha secret, then follow the doll sequence and collect its reward."
+          "id": "secrets-2",
+          "html": "Flush the left toilet three times for the song."
         },
         {
-          "id": "secrets-2",
-          "html": "Use the toilet/music interaction separately when playing the map’s song. Listen for the cue before repeating an interaction."
+          "id": "secrets-1",
+          "html": "Enter right 9, centre 3, left 5; start at Wunderfizz."
+        },
+        {
+          "id": "secrets-hunt",
+          "html": "Find five dolls using the location finder."
+        },
+        {
+          "id": "secrets-reward",
+          "html": "Return to Wunderfizz and collect the reward.",
+          "tools": [
+            "bo3-verruckt-dolls"
+          ]
         }
       ]
     }
@@ -3393,20 +3493,20 @@
   "bo3-shi-no-numa": [
     {
       "id": "setup",
-      "title": "Key Features: huts and perks",
+      "title": "Open the huts and find your perks",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Open the central route and choose a hut to explore. Record the perk revealed at each hut; locations are randomized between matches."
+          "html": "Open the main building and hut paths."
         },
         {
           "id": "setup-2",
-          "html": "Use the Flogger and avoid becoming trapped in the slowing water. Keep an escape route when opening a new hut."
+          "html": "Discover the four random hut perks."
         },
         {
           "id": "setup-3",
-          "html": "Obtain the Wunderwaffe from the BO3 weapon pool if desired; there is no Vanguard-style build quest here.",
+          "html": "Keep your starting pistol for the pan secret.",
           "tools": [
             "bo3-shi-perks"
           ]
@@ -3415,16 +3515,24 @@
     },
     {
       "id": "secrets",
-      "title": "Samantha and telephone secrets",
+      "title": "The One and the Fishing Hut doll hunt",
       "detail": "details-secrets",
       "steps": [
         {
-          "id": "secrets-1",
-          "html": "Shoot the four pans for the Chronicles Samantha activation, then follow the bridge/doll sequence and collect the reward."
+          "id": "secrets-2",
+          "html": "Use the Comm Room telephone three times."
         },
         {
-          "id": "secrets-2",
-          "html": "Interact with the telephone for the map’s music secret. This is independent of hut perk assignments."
+          "id": "secrets-1",
+          "html": "Shoot the four silver-banded pans with your starting pistol."
+        },
+        {
+          "id": "secrets-dolls",
+          "html": "Start at the Fishing Hut doll and shoot the bridge targets."
+        },
+        {
+          "id": "secrets-finish",
+          "html": "Return to the starter doll for the reward."
         }
       ]
     }
@@ -3432,39 +3540,43 @@
   "bo3-kino-der-toten": [
     {
       "id": "setup",
-      "title": "Key Features: stage and teleporter",
+      "title": "Power and Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Open a route from the lobby to the stage and switch on power. Link the teleporter at the stage and then the mainframe in the lobby."
+          "html": "Reach the stage and switch on power."
+        },
+        {
+          "id": "setup-link",
+          "html": "Link the stage teleporter to the lobby pad."
         },
         {
           "id": "setup-2",
-          "html": "Use the linked teleporter for the Pack-a-Punch room. Watch the return timing and finish purchases before being moved onward."
+          "html": "Teleport, upgrade and retrieve your weapon before returning."
         },
         {
           "id": "setup-3",
-          "html": "Collect film reels from the intermission rooms and use the projector when available."
+          "html": "Collect intermission-room film reels and play them upstairs."
         }
       ]
     },
     {
       "id": "secrets",
-      "title": "Meteorites and Samantha knocks",
+      "title": "115, film reels and Samantha knocks",
       "detail": "details-secrets",
       "steps": [
         {
           "id": "secrets-1",
-          "html": "Interact with the three meteorite fragments to activate the music secret."
+          "html": "Find all three 115 meteor fragments."
         },
         {
           "id": "secrets-2",
-          "html": "For the Chronicles Samantha sequence, listen to the three groups of knocks and record each count. Repeat the observed pattern at the interaction point."
+          "html": "Repeat three knock patterns, listening anew each time."
         },
         {
           "id": "secrets-3",
-          "html": "Continue the resulting doll sequence and collect its reward. Clear the knock recorder for a new attempt rather than appending an old pattern.",
+          "html": "Complete the stage doll hunt and collect its reward.",
           "tools": [
             "bo3-kino-knocks"
           ]

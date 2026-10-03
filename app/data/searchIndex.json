@@ -6376,358 +6376,6 @@
     "keywords": "Revelations main quest checklist"
   },
   {
-    "id": "bo3-origins",
-    "name": "Origins",
-    "map": "bo3-origins",
-    "kind": "Guide",
-    "route": "/guides/bo3-origins",
-    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-setup",
-    "name": "Key Features: generators and equipment",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-setup",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-staff-build",
-    "name": "Build the four staffs",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-staff-build",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-upgrades",
-    "name": "Upgrade all four staffs",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-upgrades",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-equipment",
-    "name": "Thunder Fists, G-Strikes and drone",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-equipment",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-seal",
-    "name": "Robot pedestals and the seal",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-seal",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:details-finale",
-    "name": "Pilot and Crazy Place finale",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#details-finale",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:guide-sources",
-    "name": "Sources and review",
-    "map": "bo3-origins",
-    "kind": "Section",
-    "route": "/guides/bo3-origins#guide-sources",
-    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-origins:quick-setup",
-    "name": "Key Features: generators and equipment",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-setup",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-origins:quick-staff-build",
-    "name": "Build the four staffs",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-staff-build",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-origins:quick-upgrades",
-    "name": "Upgrade all four staffs",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-upgrades",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-origins:quick-equipment",
-    "name": "Thunder Fists, G-Strikes and drone",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-equipment",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-origins:quick-seal",
-    "name": "Robot pedestals and the seal",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-seal",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-origins:quick-finale",
-    "name": "Pilot and Crazy Place finale",
-    "map": "bo3-origins",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-origins#quick-finale",
-    "keywords": "Origins main quest checklist"
-  },
-  {
-    "id": "bo3-ascension",
-    "name": "Ascension",
-    "map": "bo3-ascension",
-    "kind": "Guide",
-    "route": "/guides/bo3-ascension",
-    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:details-setup",
-    "name": "Key Features: landers and rocket",
-    "map": "bo3-ascension",
-    "kind": "Section",
-    "route": "/guides/bo3-ascension#details-setup",
-    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:details-nodes",
-    "name": "First three Casimir nodes",
-    "map": "bo3-ascension",
-    "kind": "Section",
-    "route": "/guides/bo3-ascension#details-nodes",
-    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:details-luna",
-    "name": "LUNA lander route",
-    "map": "bo3-ascension",
-    "kind": "Section",
-    "route": "/guides/bo3-ascension#details-luna",
-    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:details-orb",
-    "name": "Final orb",
-    "map": "bo3-ascension",
-    "kind": "Section",
-    "route": "/guides/bo3-ascension#details-orb",
-    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:guide-sources",
-    "name": "Sources and review",
-    "map": "bo3-ascension",
-    "kind": "Section",
-    "route": "/guides/bo3-ascension#guide-sources",
-    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-ascension:quick-setup",
-    "name": "Key Features: landers and rocket",
-    "map": "bo3-ascension",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-ascension#quick-setup",
-    "keywords": "Ascension main quest checklist"
-  },
-  {
-    "id": "bo3-ascension:quick-nodes",
-    "name": "First three Casimir nodes",
-    "map": "bo3-ascension",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-ascension#quick-nodes",
-    "keywords": "Ascension main quest checklist"
-  },
-  {
-    "id": "bo3-ascension:quick-luna",
-    "name": "LUNA lander route",
-    "map": "bo3-ascension",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-ascension#quick-luna",
-    "keywords": "Ascension main quest checklist"
-  },
-  {
-    "id": "bo3-ascension:quick-orb",
-    "name": "Final orb",
-    "map": "bo3-ascension",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-ascension#quick-orb",
-    "keywords": "Ascension main quest checklist"
-  },
-  {
-    "id": "bo3-shangri-la",
-    "name": "Shangri-La",
-    "map": "bo3-shangri-la",
-    "kind": "Guide",
-    "route": "/guides/bo3-shangri-la",
-    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:details-setup",
-    "name": "Key Features: power and Eclipse",
-    "map": "bo3-shangri-la",
-    "kind": "Section",
-    "route": "/guides/bo3-shangri-la#details-setup",
-    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:details-tiles",
-    "name": "Tile matching and water slide",
-    "map": "bo3-shangri-la",
-    "kind": "Section",
-    "route": "/guides/bo3-shangri-la#details-tiles",
-    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:details-trials",
-    "name": "Meteor, Napalm and dials",
-    "map": "bo3-shangri-la",
-    "kind": "Section",
-    "route": "/guides/bo3-shangri-la#details-trials",
-    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:details-stone",
-    "name": "Focusing stone",
-    "map": "bo3-shangri-la",
-    "kind": "Section",
-    "route": "/guides/bo3-shangri-la#details-stone",
-    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:guide-sources",
-    "name": "Sources and review",
-    "map": "bo3-shangri-la",
-    "kind": "Section",
-    "route": "/guides/bo3-shangri-la#guide-sources",
-    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-shangri-la:quick-setup",
-    "name": "Key Features: power and Eclipse",
-    "map": "bo3-shangri-la",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-shangri-la#quick-setup",
-    "keywords": "Shangri-La main quest checklist"
-  },
-  {
-    "id": "bo3-shangri-la:quick-tiles",
-    "name": "Tile matching and water slide",
-    "map": "bo3-shangri-la",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-shangri-la#quick-tiles",
-    "keywords": "Shangri-La main quest checklist"
-  },
-  {
-    "id": "bo3-shangri-la:quick-trials",
-    "name": "Meteor, Napalm and dials",
-    "map": "bo3-shangri-la",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-shangri-la#quick-trials",
-    "keywords": "Shangri-La main quest checklist"
-  },
-  {
-    "id": "bo3-shangri-la:quick-stone",
-    "name": "Focusing stone",
-    "map": "bo3-shangri-la",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-shangri-la#quick-stone",
-    "keywords": "Shangri-La main quest checklist"
-  },
-  {
-    "id": "bo3-moon",
-    "name": "Moon",
-    "map": "bo3-moon",
-    "kind": "Guide",
-    "route": "/guides/bo3-moon",
-    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:details-setup",
-    "name": "Key Features: oxygen and equipment",
-    "map": "bo3-moon",
-    "kind": "Section",
-    "route": "/guides/bo3-moon#details-setup",
-    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:details-simon",
-    "name": "Samantha Says and terminals",
-    "map": "bo3-moon",
-    "kind": "Section",
-    "route": "/guides/bo3-moon#details-simon",
-    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:details-sphere",
-    "name": "Sphere and MPD",
-    "map": "bo3-moon",
-    "kind": "Section",
-    "route": "/guides/bo3-moon#details-sphere",
-    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:details-rockets",
-    "name": "Canisters and rockets",
-    "map": "bo3-moon",
-    "kind": "Section",
-    "route": "/guides/bo3-moon#details-rockets",
-    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:guide-sources",
-    "name": "Sources and review",
-    "map": "bo3-moon",
-    "kind": "Section",
-    "route": "/guides/bo3-moon#guide-sources",
-    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
-  },
-  {
-    "id": "bo3-moon:quick-setup",
-    "name": "Key Features: oxygen and equipment",
-    "map": "bo3-moon",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-moon#quick-setup",
-    "keywords": "Moon main quest checklist"
-  },
-  {
-    "id": "bo3-moon:quick-simon",
-    "name": "Samantha Says and terminals",
-    "map": "bo3-moon",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-moon#quick-simon",
-    "keywords": "Moon main quest checklist"
-  },
-  {
-    "id": "bo3-moon:quick-sphere",
-    "name": "Sphere and MPD",
-    "map": "bo3-moon",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-moon#quick-sphere",
-    "keywords": "Moon main quest checklist"
-  },
-  {
-    "id": "bo3-moon:quick-rockets",
-    "name": "Canisters and rockets",
-    "map": "bo3-moon",
-    "kind": "Quick parts",
-    "route": "/guides/bo3-moon#quick-rockets",
-    "keywords": "Moon main quest checklist"
-  },
-  {
     "id": "bo3-nacht-der-untoten",
     "name": "Nacht der Untoten",
     "map": "bo3-nacht-der-untoten",
@@ -6736,16 +6384,32 @@
     "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-nacht-der-untoten:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo3-nacht-der-untoten#wiki_key_features",
+    "keywords": "Nacht der Untoten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-nacht-der-untoten:details-setup",
-    "name": "Key Features: rooms and equipment",
+    "name": "Get equipped and learn the two floors",
     "map": "bo3-nacht-der-untoten",
     "kind": "Section",
     "route": "/guides/bo3-nacht-der-untoten#details-setup",
     "keywords": "Nacht der Untoten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-nacht-der-untoten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-nacht-der-untoten",
+    "kind": "Section",
+    "route": "/guides/bo3-nacht-der-untoten#wiki_side_quests",
+    "keywords": "Nacht der Untoten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-nacht-der-untoten:details-samantha",
-    "name": "Samantha secret",
+    "name": "Samantha: four buttons, then five hidden dolls",
     "map": "bo3-nacht-der-untoten",
     "kind": "Section",
     "route": "/guides/bo3-nacht-der-untoten#details-samantha",
@@ -6753,7 +6417,7 @@
   },
   {
     "id": "bo3-nacht-der-untoten:details-extras",
-    "name": "Useful extras",
+    "name": "Undone and the radio",
     "map": "bo3-nacht-der-untoten",
     "kind": "Section",
     "route": "/guides/bo3-nacht-der-untoten#details-extras",
@@ -6769,7 +6433,7 @@
   },
   {
     "id": "bo3-nacht-der-untoten:quick-setup",
-    "name": "Key Features: rooms and equipment",
+    "name": "Get equipped and learn the two floors",
     "map": "bo3-nacht-der-untoten",
     "kind": "Quick parts",
     "route": "/guides/bo3-nacht-der-untoten#quick-setup",
@@ -6777,7 +6441,7 @@
   },
   {
     "id": "bo3-nacht-der-untoten:quick-samantha",
-    "name": "Samantha secret",
+    "name": "Samantha: four buttons, then five hidden dolls",
     "map": "bo3-nacht-der-untoten",
     "kind": "Quick parts",
     "route": "/guides/bo3-nacht-der-untoten#quick-samantha",
@@ -6785,7 +6449,7 @@
   },
   {
     "id": "bo3-nacht-der-untoten:quick-extras",
-    "name": "Useful extras",
+    "name": "Undone and the radio",
     "map": "bo3-nacht-der-untoten",
     "kind": "Quick parts",
     "route": "/guides/bo3-nacht-der-untoten#quick-extras",
@@ -6800,19 +6464,43 @@
     "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-verruckt:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo3-verruckt#wiki_key_features",
+    "keywords": "Verrückt bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-verruckt:details-setup",
-    "name": "Key Features: split spawns",
+    "name": "Reconnect the spawn sides and turn on power",
     "map": "bo3-verruckt",
     "kind": "Section",
     "route": "/guides/bo3-verruckt#details-setup",
     "keywords": "Verrückt bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-verruckt:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo3-verruckt#wiki_side_quests",
+    "keywords": "Verrückt bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-verruckt:details-secrets",
-    "name": "Samantha and music secrets",
+    "name": "Toilet codes and Samantha’s Sorrow",
     "map": "bo3-verruckt",
     "kind": "Section",
     "route": "/guides/bo3-verruckt#details-secrets",
+    "keywords": "Verrückt bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-verruckt:details-atmosphere",
+    "name": "Dentist chair and courtyard fountain",
+    "map": "bo3-verruckt",
+    "kind": "Section",
+    "route": "/guides/bo3-verruckt#details-atmosphere",
     "keywords": "Verrückt bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
@@ -6825,7 +6513,7 @@
   },
   {
     "id": "bo3-verruckt:quick-setup",
-    "name": "Key Features: split spawns",
+    "name": "Reconnect the spawn sides and turn on power",
     "map": "bo3-verruckt",
     "kind": "Quick parts",
     "route": "/guides/bo3-verruckt#quick-setup",
@@ -6833,7 +6521,7 @@
   },
   {
     "id": "bo3-verruckt:quick-secrets",
-    "name": "Samantha and music secrets",
+    "name": "Toilet codes and Samantha’s Sorrow",
     "map": "bo3-verruckt",
     "kind": "Quick parts",
     "route": "/guides/bo3-verruckt#quick-secrets",
@@ -6848,16 +6536,32 @@
     "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-shi-no-numa:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo3-shi-no-numa#wiki_key_features",
+    "keywords": "Shi No Numa bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-shi-no-numa:details-setup",
-    "name": "Key Features: huts and perks",
+    "name": "Open the huts and find your perks",
     "map": "bo3-shi-no-numa",
     "kind": "Section",
     "route": "/guides/bo3-shi-no-numa#details-setup",
     "keywords": "Shi No Numa bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-shi-no-numa:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-shi-no-numa",
+    "kind": "Section",
+    "route": "/guides/bo3-shi-no-numa#wiki_side_quests",
+    "keywords": "Shi No Numa bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-shi-no-numa:details-secrets",
-    "name": "Samantha and telephone secrets",
+    "name": "The One and the Fishing Hut doll hunt",
     "map": "bo3-shi-no-numa",
     "kind": "Section",
     "route": "/guides/bo3-shi-no-numa#details-secrets",
@@ -6873,7 +6577,7 @@
   },
   {
     "id": "bo3-shi-no-numa:quick-setup",
-    "name": "Key Features: huts and perks",
+    "name": "Open the huts and find your perks",
     "map": "bo3-shi-no-numa",
     "kind": "Quick parts",
     "route": "/guides/bo3-shi-no-numa#quick-setup",
@@ -6881,7 +6585,7 @@
   },
   {
     "id": "bo3-shi-no-numa:quick-secrets",
-    "name": "Samantha and telephone secrets",
+    "name": "The One and the Fishing Hut doll hunt",
     "map": "bo3-shi-no-numa",
     "kind": "Quick parts",
     "route": "/guides/bo3-shi-no-numa#quick-secrets",
@@ -6896,19 +6600,51 @@
     "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-kino-der-toten:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo3-kino-der-toten#wiki_key_features",
+    "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-kino-der-toten:details-setup",
-    "name": "Key Features: stage and teleporter",
+    "name": "Power and Pack-a-Punch",
     "map": "bo3-kino-der-toten",
     "kind": "Section",
     "route": "/guides/bo3-kino-der-toten#details-setup",
     "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
+    "id": "bo3-kino-der-toten:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo3-kino-der-toten#wiki_side_quests",
+    "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
     "id": "bo3-kino-der-toten:details-secrets",
-    "name": "Meteorites and Samantha knocks",
+    "name": "115, film reels and Samantha knocks",
     "map": "bo3-kino-der-toten",
     "kind": "Section",
     "route": "/guides/bo3-kino-der-toten#details-secrets",
+    "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-kino-der-toten:details-samantha",
+    "name": "Find the five active dolls",
+    "map": "bo3-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo3-kino-der-toten#details-samantha",
+    "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-kino-der-toten:details-rocket",
+    "name": "Launch the model rocket",
+    "map": "bo3-kino-der-toten",
+    "kind": "Section",
+    "route": "/guides/bo3-kino-der-toten#details-rocket",
     "keywords": "Kino der Toten bo3 Black Ops 3 zombies chronicles   main quest easter egg"
   },
   {
@@ -6921,7 +6657,7 @@
   },
   {
     "id": "bo3-kino-der-toten:quick-setup",
-    "name": "Key Features: stage and teleporter",
+    "name": "Power and Pack-a-Punch",
     "map": "bo3-kino-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo3-kino-der-toten#quick-setup",
@@ -6929,11 +6665,635 @@
   },
   {
     "id": "bo3-kino-der-toten:quick-secrets",
-    "name": "Meteorites and Samantha knocks",
+    "name": "115, film reels and Samantha knocks",
     "map": "bo3-kino-der-toten",
     "kind": "Quick parts",
     "route": "/guides/bo3-kino-der-toten#quick-secrets",
     "keywords": "Kino der Toten main quest checklist"
+  },
+  {
+    "id": "bo3-ascension",
+    "name": "Ascension",
+    "map": "bo3-ascension",
+    "kind": "Guide",
+    "route": "/guides/bo3-ascension",
+    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#wiki_key_features",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-setup",
+    "name": "Power, landers and Pack-a-Punch",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-setup",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#wiki_main_quest",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-nodes",
+    "name": "Casimir Mechanism: activate the first three nodes",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-nodes",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-luna",
+    "name": "Spell LUNA with the lander",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-luna",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-orb",
+    "name": "Free Gersh",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-orb",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#wiki_side_quests",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-monkeys",
+    "name": "Space Monkeys and the launch bonus",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-monkeys",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-samantha",
+    "name": "Samantha: capture three dolls, shoot five in order",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-samantha",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:details-music",
+    "name": "Abracadavre and the character dolls",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#details-music",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:guide-sources",
+    "name": "Sources and review",
+    "map": "bo3-ascension",
+    "kind": "Section",
+    "route": "/guides/bo3-ascension#guide-sources",
+    "keywords": "Ascension bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-ascension:quick-setup",
+    "name": "Power, landers and Pack-a-Punch",
+    "map": "bo3-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-ascension#quick-setup",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo3-ascension:quick-nodes",
+    "name": "Casimir Mechanism: activate the first three nodes",
+    "map": "bo3-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-ascension#quick-nodes",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo3-ascension:quick-luna",
+    "name": "Spell LUNA with the lander",
+    "map": "bo3-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-ascension#quick-luna",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo3-ascension:quick-orb",
+    "name": "Free Gersh",
+    "map": "bo3-ascension",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-ascension#quick-orb",
+    "keywords": "Ascension main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la",
+    "name": "Shangri-La",
+    "map": "bo3-shangri-la",
+    "kind": "Guide",
+    "route": "/guides/bo3-shangri-la",
+    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#wiki_key_features",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-setup",
+    "name": "Power, Pack-a-Punch and the eclipse",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-setup",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#wiki_main_quest",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-tiles",
+    "name": "Crystal 1: match the twelve tile pairs",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-tiles",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-trials",
+    "name": "Crystals 2–4: slide, shrinking ball and gas",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-trials",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-holes",
+    "name": "Crystal 5: plug the four tunnel holes",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-holes",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-dials",
+    "name": "Crystal 6: wall tiles, teepee and mud-room dials",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-dials",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-stone",
+    "name": "Charge the crystals and claim the Focusing Stone",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-stone",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#wiki_side_quests",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-samantha",
+    "name": "Samantha’s Sorrow and Max Ammo",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-samantha",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:details-music-perks",
+    "name": "Pareidolia and monkey power-up cycling",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#details-music-perks",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:guide-sources",
+    "name": "Sources and review",
+    "map": "bo3-shangri-la",
+    "kind": "Section",
+    "route": "/guides/bo3-shangri-la#guide-sources",
+    "keywords": "Shangri-La bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-shangri-la:quick-setup",
+    "name": "Power, Pack-a-Punch and the eclipse",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-setup",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la:quick-tiles",
+    "name": "Crystal 1: match the twelve tile pairs",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-tiles",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la:quick-trials",
+    "name": "Crystals 2–4: slide, shrinking ball and gas",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-trials",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la:quick-holes",
+    "name": "Crystal 5: plug the four tunnel holes",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-holes",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la:quick-dials",
+    "name": "Crystal 6: wall tiles, teepee and mud-room dials",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-dials",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-shangri-la:quick-stone",
+    "name": "Charge the crystals and claim the Focusing Stone",
+    "map": "bo3-shangri-la",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-shangri-la#quick-stone",
+    "keywords": "Shangri-La main quest checklist"
+  },
+  {
+    "id": "bo3-moon",
+    "name": "Moon",
+    "map": "bo3-moon",
+    "kind": "Guide",
+    "route": "/guides/bo3-moon",
+    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#wiki_key_features",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-setup",
+    "name": "Survive Area 51 and equip your P.E.S.",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-setup",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-hacker",
+    "name": "Find the Hacker and protect your air",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-hacker",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#wiki_main_quest",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-simon",
+    "name": "Samantha Says and the timed laboratory panels",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-simon",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-sphere",
+    "name": "Tunnel 6, the sphere and the first soul tube",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-sphere",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-device",
+    "name": "Bring back the plates and charge the Golden Rod",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-device",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-rockets",
+    "name": "Soul transfer and Earth’s destruction",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-rockets",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#wiki_side_quests",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-hacker-uses",
+    "name": "Useful Hacker interactions",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-hacker-uses",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-samantha",
+    "name": "Samantha side quest: the fifteen speaker presses",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-samantha",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-space-dog",
+    "name": "Space Dog",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-space-dog",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:details-music",
+    "name": "Coming Home, electronic songs and Nightmare",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#details-music",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:guide-sources",
+    "name": "Sources and review",
+    "map": "bo3-moon",
+    "kind": "Section",
+    "route": "/guides/bo3-moon#guide-sources",
+    "keywords": "Moon bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-moon:quick-setup",
+    "name": "Survive Area 51 and equip your P.E.S.",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-setup",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-moon:quick-hacker",
+    "name": "Find the Hacker and protect your air",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-hacker",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-moon:quick-simon",
+    "name": "Samantha Says and the timed laboratory panels",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-simon",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-moon:quick-sphere",
+    "name": "Tunnel 6, the sphere and the first soul tube",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-sphere",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-moon:quick-device",
+    "name": "Bring back the plates and charge the Golden Rod",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-device",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-moon:quick-rockets",
+    "name": "Soul transfer and Earth’s destruction",
+    "map": "bo3-moon",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-moon#quick-rockets",
+    "keywords": "Moon main quest checklist"
+  },
+  {
+    "id": "bo3-origins",
+    "name": "Origins",
+    "map": "bo3-origins",
+    "kind": "Guide",
+    "route": "/guides/bo3-origins",
+    "keywords": "bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:wiki_key_features",
+    "name": "Key Features",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#wiki_key_features",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-setup",
+    "name": "Generators, shovel, shield and gramophone",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-setup",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-staff-build",
+    "name": "Build the four staffs",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-staff-build",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-upgrades",
+    "name": "Complete the four elemental trials",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-upgrades",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-equipment",
+    "name": "Thunder Fists, G-Strikes and the Maxis Drone",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-equipment",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#wiki_main_quest",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-seal",
+    "name": "Robot pedestals, Rain Fire and the Panzer wave",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-seal",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-finale",
+    "name": "The hidden pilot, Iron Fists and the Crazy Place",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-finale",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#wiki_side_quests",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-digging",
+    "name": "Golden Shovel, Golden Helmet and extra perk slots",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-digging",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-free-blood",
+    "name": "Create a Zombie Blood drop",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-free-blood",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-rewards",
+    "name": "Challenge chests and free Magna Collider",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-rewards",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-samantha",
+    "name": "Remember Forever: the Chronicles doll secret",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-samantha",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:details-music",
+    "name": "Three songs and the Church jumpscare",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#details-music",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:guide-sources",
+    "name": "Sources and review",
+    "map": "bo3-origins",
+    "kind": "Section",
+    "route": "/guides/bo3-origins#guide-sources",
+    "keywords": "Origins bo3 Black Ops 3 zombies chronicles   main quest easter egg"
+  },
+  {
+    "id": "bo3-origins:quick-setup",
+    "name": "Generators, shovel, shield and gramophone",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-setup",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo3-origins:quick-staff-build",
+    "name": "Build the four staffs",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-staff-build",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo3-origins:quick-upgrades",
+    "name": "Complete the four elemental trials",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-upgrades",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo3-origins:quick-equipment",
+    "name": "Thunder Fists, G-Strikes and the Maxis Drone",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-equipment",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo3-origins:quick-seal",
+    "name": "Robot pedestals, Rain Fire and the Panzer wave",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-seal",
+    "keywords": "Origins main quest checklist"
+  },
+  {
+    "id": "bo3-origins:quick-finale",
+    "name": "The hidden pilot, Iron Fists and the Crazy Place",
+    "map": "bo3-origins",
+    "kind": "Quick parts",
+    "route": "/guides/bo3-origins#quick-finale",
+    "keywords": "Origins main quest checklist"
   },
   {
     "id": "bo2-tranzit",
@@ -7478,84 +7838,12 @@
     "keywords": "bo4 Black Ops 4 Blood of the Dead solver tracker"
   },
   {
-    "id": "bo3-nacht-secrets",
-    "map": "bo3-nacht-der-untoten",
-    "name": "Samantha secret tracker",
-    "route": "/tools/bo3-nacht-secrets",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Nacht der Untoten solver tracker"
-  },
-  {
-    "id": "bo3-verruckt-setup",
-    "map": "bo3-verruckt",
-    "name": "Spawn-side setup reference",
-    "route": "/tools/bo3-verruckt-setup",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Verrückt solver tracker"
-  },
-  {
     "id": "bo3-shi-perks",
     "map": "bo3-shi-no-numa",
     "name": "Hut perk notebook",
     "route": "/tools/bo3-shi-perks",
     "kind": "Tool",
     "keywords": "bo3 Black Ops 3 Shi No Numa solver tracker"
-  },
-  {
-    "id": "bo3-kino-knocks",
-    "map": "bo3-kino-der-toten",
-    "name": "Samantha knock recorder",
-    "route": "/tools/bo3-kino-knocks",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Kino der Toten solver tracker"
-  },
-  {
-    "id": "bo3-ascension-luna",
-    "map": "bo3-ascension",
-    "name": "LUNA route and assignments",
-    "route": "/tools/bo3-ascension-luna",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Ascension solver tracker"
-  },
-  {
-    "id": "bo3-shang-tiles",
-    "map": "bo3-shangri-la",
-    "name": "Matching tile notebook",
-    "route": "/tools/bo3-shang-tiles",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Shangri-La solver tracker"
-  },
-  {
-    "id": "bo3-moon-simon",
-    "map": "bo3-moon",
-    "name": "Samantha Says sequence",
-    "route": "/tools/bo3-moon-simon",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Moon solver tracker"
-  },
-  {
-    "id": "bo3-origins-staffs",
-    "map": "bo3-origins",
-    "name": "Staff upgrade tracker",
-    "route": "/tools/bo3-origins-staffs",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Origins solver tracker"
-  },
-  {
-    "id": "bo3-origins-ice",
-    "map": "bo3-origins",
-    "name": "Ice staff symbol decoder",
-    "route": "/tools/bo3-origins-ice",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Origins solver tracker"
-  },
-  {
-    "id": "bo3-origins-fire",
-    "map": "bo3-origins",
-    "name": "Fire staff torch decoder",
-    "route": "/tools/bo3-origins-fire",
-    "kind": "Tool",
-    "keywords": "bo3 Black Ops 3 Origins solver tracker"
   },
   {
     "id": "bo4-blood-powerhouse",
@@ -7844,6 +8132,102 @@
     "route": "/tools/bo3-revelations-collections",
     "kind": "Tool",
     "keywords": "bo3 Black Ops 3 Revelations solver tracker"
+  },
+  {
+    "id": "bo3-nacht-secrets",
+    "map": "bo3-nacht-der-untoten",
+    "name": "Samantha buttons & doll finder",
+    "route": "/tools/bo3-nacht-secrets",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Nacht der Untoten solver tracker"
+  },
+  {
+    "id": "bo3-verruckt-dolls",
+    "map": "bo3-verruckt",
+    "name": "Samantha doll location finder",
+    "route": "/tools/bo3-verruckt-dolls",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Verrückt solver tracker"
+  },
+  {
+    "id": "bo3-kino-dolls",
+    "map": "bo3-kino-der-toten",
+    "name": "Samantha doll location finder",
+    "route": "/tools/bo3-kino-dolls",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Kino der Toten solver tracker"
+  },
+  {
+    "id": "bo3-ascension-dolls",
+    "map": "bo3-ascension",
+    "name": "Samantha captures & target order",
+    "route": "/tools/bo3-ascension-dolls",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Ascension solver tracker"
+  },
+  {
+    "id": "bo3-moon-labs",
+    "map": "bo3-moon",
+    "name": "Hacker panel & cable finder",
+    "route": "/tools/bo3-moon-labs",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Moon solver tracker"
+  },
+  {
+    "id": "bo3-origins-locations",
+    "map": "bo3-origins",
+    "name": "Staff parts & secret locations",
+    "route": "/tools/bo3-origins-locations",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Origins solver tracker"
+  },
+  {
+    "id": "bo3-origins-ice",
+    "map": "bo3-origins",
+    "name": "Ice staff symbol matcher",
+    "route": "/tools/bo3-origins-ice",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Origins solver tracker"
+  },
+  {
+    "id": "bo3-origins-fire",
+    "map": "bo3-origins",
+    "name": "Fire staff torch decoder",
+    "route": "/tools/bo3-origins-fire",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Origins solver tracker"
+  },
+  {
+    "id": "bo3-moon-simon",
+    "map": "bo3-moon",
+    "name": "Samantha Says sequence recorder",
+    "route": "/tools/bo3-moon-simon",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Moon solver tracker"
+  },
+  {
+    "id": "bo3-kino-knocks",
+    "map": "bo3-kino-der-toten",
+    "name": "Alley knock recorder",
+    "route": "/tools/bo3-kino-knocks",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Kino der Toten solver tracker"
+  },
+  {
+    "id": "bo3-shang-tiles",
+    "map": "bo3-shangri-la",
+    "name": "Matching tile symbol notebook",
+    "route": "/tools/bo3-shang-tiles",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Shangri-La solver tracker"
+  },
+  {
+    "id": "bo3-shang-gongs",
+    "map": "bo3-shangri-la",
+    "name": "Gong locations & match notes",
+    "route": "/tools/bo3-shang-gongs",
+    "kind": "Tool",
+    "keywords": "bo3 Black Ops 3 Shangri-La solver tracker"
   },
   {
     "id": "super-ee",

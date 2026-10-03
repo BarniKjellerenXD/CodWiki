@@ -32,59 +32,6 @@
     "evaluate": "morse"
   },
   {
-    "id": "bo3-nacht-secrets",
-    "map": "bo3-nacht-der-untoten",
-    "name": "Samantha secret tracker",
-    "help": "This is the Zombies Chronicles version. There is no normal power or Pack-a-Punch quest on this map.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Four Samantha buttons activated",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Starting doll interacted with",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Doll sequence completed",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Reward collected",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "bo3-verruckt-setup",
-    "map": "bo3-verruckt",
-    "name": "Spawn-side setup reference",
-    "help": "Choose your starting side. Both routes meet at power; teammates can initially be separated.",
-    "fields": [
-      {
-        "id": "side",
-        "label": "Starting side",
-        "options": [
-          "Jugger-Nog side",
-          "Quick Revive side"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "reference",
-    "evaluate": "verruckt"
-  },
-  {
     "id": "bo3-shi-perks",
     "map": "bo3-shi-no-numa",
     "name": "Hut perk notebook",
@@ -133,661 +80,6 @@
     ],
     "version": 1,
     "kind": "recorder"
-  },
-  {
-    "id": "bo3-kino-knocks",
-    "map": "bo3-kino-der-toten",
-    "name": "Samantha knock recorder",
-    "help": "Count the knocks in each of the three groups. Enter the observed counts and use them when repeating the sequence. This is a manual recorder, not audio recognition.",
-    "fields": [
-      {
-        "id": "slot-0",
-        "label": "Knock group 1",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "slot-1",
-        "label": "Knock group 2",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      },
-      {
-        "id": "slot-2",
-        "label": "Knock group 3",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "ordered"
-  },
-  {
-    "id": "bo3-ascension-luna",
-    "map": "bo3-ascension",
-    "name": "LUNA route and assignments",
-    "help": "Four players are required. Ride Spawn → Stamin-Up, Stamin-Up → Spawn, Spawn → Speed Cola, Speed Cola → Stamin-Up. A teammate calls the lander at each destination.",
-    "fields": [
-      {
-        "id": "role-0",
-        "label": "Lander rider",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "role-1",
-        "label": "Stamin-Up caller",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "role-2",
-        "label": "Spawn caller",
-        "options": null,
-        "maxLength": 80
-      },
-      {
-        "id": "role-3",
-        "label": "Speed Cola caller",
-        "options": null,
-        "maxLength": 80
-      }
-    ],
-    "version": 1,
-    "kind": "reference"
-  },
-  {
-    "id": "bo3-shang-tiles",
-    "map": "bo3-shangri-la",
-    "name": "Matching tile notebook",
-    "help": "Number tiles consistently on each side. Describe revealed symbols using the same label for matching glyphs. Only matches you have observed are shown.",
-    "fields": [
-      {
-        "id": "tile-0-0",
-        "label": "Side A tile 1",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-1",
-        "label": "Side A tile 2",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-2",
-        "label": "Side A tile 3",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-3",
-        "label": "Side A tile 4",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-4",
-        "label": "Side A tile 5",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-5",
-        "label": "Side A tile 6",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-6",
-        "label": "Side A tile 7",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-7",
-        "label": "Side A tile 8",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-8",
-        "label": "Side A tile 9",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-9",
-        "label": "Side A tile 10",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-10",
-        "label": "Side A tile 11",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-0-11",
-        "label": "Side A tile 12",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-0",
-        "label": "Side B tile 1",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-1",
-        "label": "Side B tile 2",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-2",
-        "label": "Side B tile 3",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-3",
-        "label": "Side B tile 4",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-4",
-        "label": "Side B tile 5",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-5",
-        "label": "Side B tile 6",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-6",
-        "label": "Side B tile 7",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-7",
-        "label": "Side B tile 8",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-8",
-        "label": "Side B tile 9",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-9",
-        "label": "Side B tile 10",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-10",
-        "label": "Side B tile 11",
-        "options": null,
-        "maxLength": 30
-      },
-      {
-        "id": "tile-1-11",
-        "label": "Side B tile 12",
-        "options": null,
-        "maxLength": 30
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "tiles"
-  },
-  {
-    "id": "bo3-moon-simon",
-    "map": "bo3-moon",
-    "name": "Samantha Says sequence",
-    "help": "First record the colour at each screen position. Then record the flashing colours in order. The result gives the positions to press. Clear the sequence for each new attempt.",
-    "fields": [
-      {
-        "id": "screen-0",
-        "label": "Top left: colour",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "screen-1",
-        "label": "Top right: colour",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "screen-2",
-        "label": "Bottom left: colour",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "screen-3",
-        "label": "Bottom right: colour",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-0",
-        "label": "Display 1",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-1",
-        "label": "Display 2",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-2",
-        "label": "Display 3",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-3",
-        "label": "Display 4",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-4",
-        "label": "Display 5",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-5",
-        "label": "Display 6",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-6",
-        "label": "Display 7",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-7",
-        "label": "Display 8",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-8",
-        "label": "Display 9",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-9",
-        "label": "Display 10",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-10",
-        "label": "Display 11",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-11",
-        "label": "Display 12",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-12",
-        "label": "Display 13",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-13",
-        "label": "Display 14",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-14",
-        "label": "Display 15",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      },
-      {
-        "id": "slot-15",
-        "label": "Display 16",
-        "options": [
-          "Red",
-          "Green",
-          "Blue",
-          "Yellow"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "recorder",
-    "evaluate": "moon"
-  },
-  {
-    "id": "bo3-origins-staffs",
-    "map": "bo3-origins",
-    "name": "Staff upgrade tracker",
-    "help": "Each staff needs its record, three parts and elemental crystal before building. Complete its elemental puzzle, align the excavation rings, shoot the orb and charge the staff in the Crazy Place.",
-    "fields": [
-      {
-        "id": "check-0",
-        "label": "Ice built",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-1",
-        "label": "Ice puzzle",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-2",
-        "label": "Ice rings / orb",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-3",
-        "label": "Ice charged",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-4",
-        "label": "Fire built",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-5",
-        "label": "Fire puzzle",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-6",
-        "label": "Fire rings / orb",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-7",
-        "label": "Fire charged",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-8",
-        "label": "Wind built",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-9",
-        "label": "Wind puzzle",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-10",
-        "label": "Wind rings / orb",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-11",
-        "label": "Wind charged",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-12",
-        "label": "Lightning built",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-13",
-        "label": "Lightning puzzle",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-14",
-        "label": "Lightning rings / orb",
-        "options": null,
-        "type": "check"
-      },
-      {
-        "id": "check-15",
-        "label": "Lightning charged",
-        "options": null,
-        "type": "check"
-      }
-    ],
-    "version": 1,
-    "kind": "tracker"
-  },
-  {
-    "id": "bo3-origins-ice",
-    "map": "bo3-origins",
-    "name": "Ice staff symbol decoder",
-    "help": "Select the dot pattern currently on the tablet. Shoot the matching ceiling glyph shown below, then record the next tablet. A hollow circle is zero, a single dot is one and a vertical pair is two; read groups left to right.",
-    "fields": [
-      {
-        "id": "pattern",
-        "label": "Tablet pattern",
-        "options": [
-          "Hollow circle",
-          "One dot",
-          "Two stacked dots",
-          "Dot · hollow",
-          "Dot · dot",
-          "Dot · two stacked dots",
-          "Two stacked dots · hollow",
-          "Two stacked dots · dot",
-          "Two stacked dots · two stacked dots",
-          "Dot · hollow · hollow",
-          "Dot · hollow · dot",
-          "Dot · hollow · two stacked dots"
-        ]
-      }
-    ],
-    "version": 1,
-    "kind": "solver",
-    "evaluate": "ice",
-    "visual": "ice",
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/origins/#wiki_staff_of_ice"
-  },
-  {
-    "id": "bo3-origins-fire",
-    "map": "bo3-origins",
-    "name": "Fire staff torch decoder",
-    "help": "Select the four glowing church patterns. Light the corresponding basement torches promptly with the fire staff. Torch 4 is marked by blood instead of a chalk numeral.",
-    "fields": [
-      {
-        "id": "fire-11",
-        "label": "Glowing pattern 102",
-        "options": null,
-        "type": "check",
-        "glyph": 11
-      },
-      {
-        "id": "fire-5",
-        "label": "Glowing pattern 12",
-        "options": null,
-        "type": "check",
-        "glyph": 5
-      },
-      {
-        "id": "fire-9",
-        "label": "Glowing pattern 100",
-        "options": null,
-        "type": "check",
-        "glyph": 9
-      },
-      {
-        "id": "fire-7",
-        "label": "Glowing pattern 21",
-        "options": null,
-        "type": "check",
-        "glyph": 7
-      },
-      {
-        "id": "fire-6",
-        "label": "Glowing pattern 20",
-        "options": null,
-        "type": "check",
-        "glyph": 6
-      },
-      {
-        "id": "fire-3",
-        "label": "Glowing pattern 10",
-        "options": null,
-        "type": "check",
-        "glyph": 3
-      },
-      {
-        "id": "fire-4",
-        "label": "Glowing pattern 11",
-        "options": null,
-        "type": "check",
-        "glyph": 4
-      }
-    ],
-    "version": 1,
-    "kind": "solver",
-    "evaluate": "fire",
-    "visual": "fire",
-    "reference": "https://www.reddit.com/r/CODZombies/wiki/origins/#wiki_staff_of_fire"
   },
   {
     "id": "bo4-blood-powerhouse",
@@ -5068,5 +4360,1471 @@
     "kind": "reference",
     "version": 1,
     "ui": "bo3"
+  },
+  {
+    "id": "bo3-nacht-secrets",
+    "map": "bo3-nacht-der-untoten",
+    "name": "Samantha buttons & doll finder",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "dolls",
+          "buttons"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Ground Floor",
+          "Second Floor"
+        ]
+      },
+      {
+        "id": "check-0",
+        "label": "check 1",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-1",
+        "label": "check 2",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-2",
+        "label": "check 3",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "check-3",
+        "label": "check 4",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-verruckt-dolls",
+    "map": "bo3-verruckt",
+    "name": "Samantha doll location finder",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "dolls"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Courtyard",
+          "Kitchen",
+          "Speed Cola Room",
+          "Mule Kick Room",
+          "Quick Revive Spawn Room",
+          "Juggernog Spawn Room",
+          "Double Tap Hallway",
+          "Wunderfizz Room",
+          "Power Room"
+        ]
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-kino-dolls",
+    "map": "bo3-kino-der-toten",
+    "name": "Samantha doll location finder",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "dolls"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Theatre Area",
+          "Stage"
+        ]
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-ascension-dolls",
+    "map": "bo3-ascension",
+    "name": "Samantha captures & target order",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "capture",
+          "shoot"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Capture targets",
+          "Ordered targets"
+        ]
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-moon-labs",
+    "map": "bo3-moon",
+    "name": "Hacker panel & cable finder",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "panels",
+          "wall",
+          "cable"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Laboratory",
+          "Laboratory floor 2",
+          "Laboratory / outside"
+        ]
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-origins-locations",
+    "map": "bo3-origins",
+    "name": "Staff parts & secret locations",
+    "help": "Choose the step you are working on, narrow the locations and select any photograph to enlarge it.",
+    "fields": [
+      {
+        "id": "collection",
+        "label": "Current collection",
+        "options": [
+          "records",
+          "lightning",
+          "ice",
+          "wind",
+          "drone",
+          "blood",
+          "red-digs",
+          "shield"
+        ]
+      },
+      {
+        "id": "region",
+        "label": "Area",
+        "options": [
+          "Black record / gramophone",
+          "Wind · Generator 5",
+          "Ice · Tank Station",
+          "Lightning · Generator 4",
+          "Fire · Church",
+          "Tank route",
+          "Middle / Generator 2",
+          "Middle / Church",
+          "Brain · Spawn",
+          "Rotor · Excavation",
+          "Frame · Church",
+          "Middle",
+          "Whole map"
+        ]
+      }
+    ],
+    "kind": "reference",
+    "version": 1,
+    "ui": "chronicles"
+  },
+  {
+    "id": "bo3-origins-ice",
+    "map": "bo3-origins",
+    "name": "Ice staff symbol matcher",
+    "help": "Select the pattern on the blue tablet. Shoot the matching ceiling rune with the Ice Staff, then read the next tablet.",
+    "fields": [
+      {
+        "id": "pattern",
+        "label": "Tablet pattern",
+        "options": [
+          "Hollow circle",
+          "One dot",
+          "Two stacked dots",
+          "Dot · hollow",
+          "Dot · dot",
+          "Dot · two stacked dots",
+          "Two stacked dots · hollow",
+          "Two stacked dots · dot",
+          "Two stacked dots · two stacked dots",
+          "Dot · hollow · hollow",
+          "Dot · hollow · dot",
+          "Dot · hollow · two stacked dots"
+        ]
+      }
+    ],
+    "kind": "solver",
+    "version": 1,
+    "ui": "chronicles",
+    "evaluate": "ice"
+  },
+  {
+    "id": "bo3-origins-fire",
+    "map": "bo3-origins",
+    "name": "Fire staff torch decoder",
+    "help": "After lighting the Crazy Place cauldrons, select the four glowing church patterns. The result tells you which basement torches to shoot.",
+    "fields": [
+      {
+        "id": "fire-11",
+        "label": "Glowing pattern 102",
+        "options": null,
+        "type": "check",
+        "glyph": 11
+      },
+      {
+        "id": "fire-5",
+        "label": "Glowing pattern 12",
+        "options": null,
+        "type": "check",
+        "glyph": 5
+      },
+      {
+        "id": "fire-9",
+        "label": "Glowing pattern 100",
+        "options": null,
+        "type": "check",
+        "glyph": 9
+      },
+      {
+        "id": "fire-7",
+        "label": "Glowing pattern 21",
+        "options": null,
+        "type": "check",
+        "glyph": 7
+      },
+      {
+        "id": "fire-6",
+        "label": "Glowing pattern 20",
+        "options": null,
+        "type": "check",
+        "glyph": 6
+      },
+      {
+        "id": "fire-3",
+        "label": "Glowing pattern 10",
+        "options": null,
+        "type": "check",
+        "glyph": 3
+      },
+      {
+        "id": "fire-4",
+        "label": "Glowing pattern 11",
+        "options": null,
+        "type": "check",
+        "glyph": 4
+      }
+    ],
+    "kind": "solver",
+    "version": 1,
+    "ui": "chronicles",
+    "evaluate": "fire"
+  },
+  {
+    "id": "bo3-moon-simon",
+    "map": "bo3-moon",
+    "name": "Samantha Says sequence recorder",
+    "help": "Facing the four outside computers, their order is Red, Green, Blue, Yellow from left to right. Tap what flashes, then use the numbered result in-game.",
+    "fields": [
+      {
+        "id": "screen-0",
+        "label": "screen 1",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "screen-1",
+        "label": "screen 2",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "screen-2",
+        "label": "screen 3",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "screen-3",
+        "label": "screen 4",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-0",
+        "label": "slot 1",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "slot 2",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "slot 3",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-3",
+        "label": "slot 4",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-4",
+        "label": "slot 5",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-5",
+        "label": "slot 6",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-6",
+        "label": "slot 7",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-7",
+        "label": "slot 8",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-8",
+        "label": "slot 9",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-9",
+        "label": "slot 10",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-10",
+        "label": "slot 11",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-11",
+        "label": "slot 12",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-12",
+        "label": "slot 13",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-13",
+        "label": "slot 14",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-14",
+        "label": "slot 15",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "slot-15",
+        "label": "slot 16",
+        "options": [
+          "Red",
+          "Green",
+          "Blue",
+          "Yellow"
+        ]
+      },
+      {
+        "id": "stage",
+        "label": "Quest stage",
+        "options": [
+          "First game",
+          "Final three games"
+        ]
+      }
+    ],
+    "kind": "recorder",
+    "version": 1,
+    "ui": "chronicles",
+    "evaluate": "moon"
+  },
+  {
+    "id": "bo3-kino-knocks",
+    "map": "bo3-kino-der-toten",
+    "name": "Alley knock recorder",
+    "help": "Listen to three groups at the blue Alley door. Record their counts, repeat them with melee hits, then listen for a new pattern. You must answer three different patterns.",
+    "fields": [
+      {
+        "id": "slot-0",
+        "label": "slot 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "slot-1",
+        "label": "slot 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "slot-2",
+        "label": "slot 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
+      },
+      {
+        "id": "round",
+        "label": "Pattern being answered",
+        "options": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "kind": "recorder",
+    "version": 1,
+    "ui": "chronicles",
+    "evaluate": "ordered"
+  },
+  {
+    "id": "bo3-shang-tiles",
+    "map": "bo3-shangri-la",
+    "name": "Matching tile symbol notebook",
+    "help": "Record the symbols revealed by your floor tiles. Give tiles your own landmark names so teammates can find the same pair; their positions change each match.",
+    "fields": [
+      {
+        "id": "tile-0-0",
+        "label": "tile-0 1",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-1",
+        "label": "tile-0 2",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-2",
+        "label": "tile-0 3",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-3",
+        "label": "tile-0 4",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-4",
+        "label": "tile-0 5",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-5",
+        "label": "tile-0 6",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-6",
+        "label": "tile-0 7",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-7",
+        "label": "tile-0 8",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-8",
+        "label": "tile-0 9",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-9",
+        "label": "tile-0 10",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-10",
+        "label": "tile-0 11",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-0-11",
+        "label": "tile-0 12",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-0",
+        "label": "tile-1 1",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-1",
+        "label": "tile-1 2",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-2",
+        "label": "tile-1 3",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-3",
+        "label": "tile-1 4",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-4",
+        "label": "tile-1 5",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-5",
+        "label": "tile-1 6",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-6",
+        "label": "tile-1 7",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-7",
+        "label": "tile-1 8",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-8",
+        "label": "tile-1 9",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-9",
+        "label": "tile-1 10",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-10",
+        "label": "tile-1 11",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "tile-1-11",
+        "label": "tile-1 12",
+        "options": null,
+        "maxLength": 30
+      },
+      {
+        "id": "symbol-0-0",
+        "label": "symbol-0 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-1",
+        "label": "symbol-0 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-2",
+        "label": "symbol-0 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-3",
+        "label": "symbol-0 4",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-4",
+        "label": "symbol-0 5",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-5",
+        "label": "symbol-0 6",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-6",
+        "label": "symbol-0 7",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-7",
+        "label": "symbol-0 8",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-8",
+        "label": "symbol-0 9",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-9",
+        "label": "symbol-0 10",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-10",
+        "label": "symbol-0 11",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-0-11",
+        "label": "symbol-0 12",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-0",
+        "label": "symbol-1 1",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-1",
+        "label": "symbol-1 2",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-2",
+        "label": "symbol-1 3",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-3",
+        "label": "symbol-1 4",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-4",
+        "label": "symbol-1 5",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-5",
+        "label": "symbol-1 6",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-6",
+        "label": "symbol-1 7",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-7",
+        "label": "symbol-1 8",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-8",
+        "label": "symbol-1 9",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-9",
+        "label": "symbol-1 10",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-10",
+        "label": "symbol-1 11",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "symbol-1-11",
+        "label": "symbol-1 12",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        ]
+      },
+      {
+        "id": "place-0-0",
+        "label": "place-0 1",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-1",
+        "label": "place-0 2",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-2",
+        "label": "place-0 3",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-3",
+        "label": "place-0 4",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-4",
+        "label": "place-0 5",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-5",
+        "label": "place-0 6",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-6",
+        "label": "place-0 7",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-7",
+        "label": "place-0 8",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-8",
+        "label": "place-0 9",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-9",
+        "label": "place-0 10",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-10",
+        "label": "place-0 11",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-0-11",
+        "label": "place-0 12",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-0",
+        "label": "place-1 1",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-1",
+        "label": "place-1 2",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-2",
+        "label": "place-1 3",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-3",
+        "label": "place-1 4",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-4",
+        "label": "place-1 5",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-5",
+        "label": "place-1 6",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-6",
+        "label": "place-1 7",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-7",
+        "label": "place-1 8",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-8",
+        "label": "place-1 9",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-9",
+        "label": "place-1 10",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-10",
+        "label": "place-1 11",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "place-1-11",
+        "label": "place-1 12",
+        "options": null,
+        "maxLength": 40
+      },
+      {
+        "id": "matched-1",
+        "label": "Pair 1 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-2",
+        "label": "Pair 2 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-3",
+        "label": "Pair 3 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-4",
+        "label": "Pair 4 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-5",
+        "label": "Pair 5 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-6",
+        "label": "Pair 6 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-7",
+        "label": "Pair 7 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-8",
+        "label": "Pair 8 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-9",
+        "label": "Pair 9 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-10",
+        "label": "Pair 10 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-11",
+        "label": "Pair 11 disappeared",
+        "options": null,
+        "type": "check"
+      },
+      {
+        "id": "matched-12",
+        "label": "Pair 12 disappeared",
+        "options": null,
+        "type": "check"
+      }
+    ],
+    "kind": "recorder",
+    "version": 1,
+    "ui": "chronicles",
+    "evaluate": "tiles"
+  },
+  {
+    "id": "bo3-shang-gongs",
+    "map": "bo3-shangri-la",
+    "name": "Gong locations & match notes",
+    "help": "Test the eight photographed gongs and record the four that do not turn the crystals red. Wrong gongs reset the ringing, not which four are correct.",
+    "fields": [
+      {
+        "id": "gong-0",
+        "label": "Bridge bottom",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-1",
+        "label": "Bridge top · left",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-2",
+        "label": "Bridge top · right",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-3",
+        "label": "Mud Room exit",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-4",
+        "label": "Spawn · Sheiva",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-5",
+        "label": "Minecart start",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-6",
+        "label": "Minecart slope",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      },
+      {
+        "id": "gong-7",
+        "label": "Tunnel entrance",
+        "options": [
+          "Correct",
+          "Wrong"
+        ]
+      }
+    ],
+    "kind": "recorder",
+    "version": 1,
+    "ui": "chronicles"
   }
 ]

@@ -1,0 +1,250 @@
+[
+  {
+    "id": "bo3-origins",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2",
+          "setup-3",
+          "setup-4"
+        ]
+      },
+      {
+        "id": "staff-build",
+        "steps": [
+          "staff-build-1",
+          "staff-build-2",
+          "staff-build-3",
+          "staff-build-4",
+          "staff-build-5"
+        ]
+      },
+      {
+        "id": "upgrades",
+        "steps": [
+          "upgrades-1",
+          "upgrades-2",
+          "upgrades-3",
+          "upgrades-4",
+          "upgrades-5"
+        ]
+      },
+      {
+        "id": "equipment",
+        "steps": [
+          "equipment-1",
+          "equipment-2",
+          "equipment-3"
+        ]
+      },
+      {
+        "id": "seal",
+        "steps": [
+          "seal-1",
+          "seal-2",
+          "seal-3"
+        ]
+      },
+      {
+        "id": "finale",
+        "steps": [
+          "finale-1",
+          "finale-2",
+          "finale-3"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-ascension",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2"
+        ]
+      },
+      {
+        "id": "nodes",
+        "steps": [
+          "nodes-1",
+          "nodes-2",
+          "nodes-3"
+        ]
+      },
+      {
+        "id": "luna",
+        "steps": [
+          "luna-1",
+          "luna-2"
+        ]
+      },
+      {
+        "id": "orb",
+        "steps": [
+          "orb-1",
+          "orb-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-shangri-la",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2"
+        ]
+      },
+      {
+        "id": "tiles",
+        "steps": [
+          "tiles-1",
+          "tiles-2"
+        ]
+      },
+      {
+        "id": "trials",
+        "steps": [
+          "trials-1",
+          "trials-2",
+          "trials-3"
+        ]
+      },
+      {
+        "id": "stone",
+        "steps": [
+          "stone-1",
+          "stone-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-moon",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2"
+        ]
+      },
+      {
+        "id": "simon",
+        "steps": [
+          "simon-1",
+          "simon-2",
+          "simon-3"
+        ]
+      },
+      {
+        "id": "sphere",
+        "steps": [
+          "sphere-1",
+          "sphere-2",
+          "sphere-3"
+        ]
+      },
+      {
+        "id": "rockets",
+        "steps": [
+          "rockets-1",
+          "rockets-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-nacht-der-untoten",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2"
+        ]
+      },
+      {
+        "id": "samantha",
+        "steps": [
+          "samantha-1",
+          "samantha-2"
+        ]
+      },
+      {
+        "id": "extras",
+        "steps": [
+          "extras-1",
+          "extras-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-verruckt",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2",
+          "setup-3"
+        ]
+      },
+      {
+        "id": "secrets",
+        "steps": [
+          "secrets-1",
+          "secrets-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-shi-no-numa",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2",
+          "setup-3"
+        ]
+      },
+      {
+        "id": "secrets",
+        "steps": [
+          "secrets-1",
+          "secrets-2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bo3-kino-der-toten",
+    "phases": [
+      {
+        "id": "setup",
+        "steps": [
+          "setup-1",
+          "setup-2",
+          "setup-3"
+        ]
+      },
+      {
+        "id": "secrets",
+        "steps": [
+          "secrets-1",
+          "secrets-2",
+          "secrets-3"
+        ]
+      }
+    ]
+  }
+]

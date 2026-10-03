@@ -1,6 +1,9 @@
 // These activities belong in the guide. Keep old bookmarks useful without
 // instantiating a retired helper or touching its saved browser observations.
 export const retiredTools = {
+  'bo3-verruckt-setup': '/guides/bo3-verruckt#details-setup',
+  'bo3-ascension-luna': '/guides/bo3-ascension#details-luna',
+  'bo3-origins-staffs': '/guides/bo3-origins#details-staff-build',
   'bo3-de-bows': '/guides/bo3-der-eisendrache#details-bows',
   'bo3-shadows-roles': '/guides/bo3-shadows-of-evil#details-finale',
   'bo3-zetsubou-upgrades': '/guides/bo3-zetsubou-no-shima#details-equipment',

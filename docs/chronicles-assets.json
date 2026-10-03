@@ -1,0 +1,2190 @@
+{
+  "reviewed": "2026-10-03",
+  "credit": "Gameplay: Activision / Treyarch. Screenshots and reference charts: credited source authors. Original image pixels are preserved with embedded source metadata; some shared-layout references depict the original releases.",
+  "assets": [
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/sniper_cabinet.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/sniper_cabinet.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "cabinet on the second floor"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/radio.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/radio.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "radio on the table"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window beside stairs"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_back_corner.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_back_corner.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window in back corner (window diagional from Mule Kick)"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/song_ee/barrel_mule_kick.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/song_ee/barrel_mule_kick.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Outside window closest to Mule Kick, beside the Truck"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_mule.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/button_mule.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - On the side of a pillar, left of Mule Kick"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_shelf.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/button_shelf.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - Under the shelf at the bottom of the stairs in the Mystery Box Room"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_cabinet.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/button_cabinet.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Second Floor - In the Wunderfizz room, on the other side of the room, on the wall across from the Zombie spawn window"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/button_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Second Floor - On the ceiling above the stairs in spawn"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/sam_doll_rk5.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/sam_doll_rk5.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "floor in front of the RK5 wallbuy"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_fence.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_fence.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - On a fence post out the window diagonal from Mule Kick"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_pond.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_pond.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - In the pond, out the window across from the RK5 wallbuy"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_generator.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_generator.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Second Floor - Next to a power generator, out the window at the top of the spawn room stairs"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_truck.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_truck.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - On top of a truck, outside the window right of the Sheiva wallbuy"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_tank.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_tank.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - On the end of the tank's barrel, out the window next to Mule Kick"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_telephone_pole.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_telephone_pole.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Second Floor - On top of a telephone pole, out the broken wall near the Cabinet"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_wunderfizz.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_wunderfizz.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Second Floor - In the hole in the ceiling, the left of the Wunderfizz"
+    },
+    {
+      "map": "nacht-der-untoten",
+      "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_mule.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/pictures/free_max_ammo/doll_mule.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/nacht_der_untoten/nacht_der_untoten_guide",
+      "caption": "Ground Floor - In the hole in the ceiling in front of Mule Kick (Stand in front of Mule Kick and jump)"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/song_ee/toilet.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/song_ee/toilet.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "left-most toilet"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/radio/radio.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/radio/radio.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "radio on the desk"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/radio/radio_window.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/radio/radio_window.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Zombie spawn window"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/sam_doll.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/sam_doll.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "ground to the left of the Wunderfizz machine"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/fountain.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Courtyard - On top of the bloody fountain in the middle of the map"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/kitchen.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/kitchen.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Kitchen - In a pot"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/speed_cola.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/speed_cola.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Speed Cola Room - Out the Zombie spawn barrier, on the railing"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/flaming.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/flaming.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Mule Kick Room - Up the stairs from Mule Kick, on the flaming hole in the ceiling, hanging from the horizontal support pillar"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/mule_hanging_barrier.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/mule_hanging_barrier.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Mule Kick Room - Hanging from the ceiling inside a barrier"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/quick_room.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/quick_room.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Quick Revive Spawn Room - In the open mortuary cabinet"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/dentist.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/dentist.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Juggernog Spawn Room - On the dentist chair"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/double_tap.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/double_tap.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Double Tap Hallway - On top of a mannequin at the top of the stairs from spawn"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/toilet_doll.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/toilet_doll.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Wunderfizz Room - In the right-most toilet"
+    },
+    {
+      "map": "verruckt",
+      "src": "/images/chronicles/verruckt/free_max_ammo/power_room.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/verruckt/pictures/free_max_ammo/power_room.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide",
+      "caption": "Power Room - On the floor in the barrier down the stairs"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/song_ee/phone.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/song_ee/phone.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "phone"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/plate_1.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/plate_1.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "Plate 1"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/plate_2.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/plate_2.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "Plate 2"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/plate_3.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/plate_3.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "Plate 3"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/plate_4.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/plate_4.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "Plate 4"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/doll.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/doll.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "Samantha Doll"
+    },
+    {
+      "map": "shi-no-numa",
+      "src": "/images/chronicles/shi-no-numa/free_max_ammo/doll_bridge.webp",
+      "remote": "https://mmmrkennedy.com/games/WAW/shi_no_numa/pictures/free_max_ammo/doll_bridge.webp",
+      "source": "https://mmmrkennedy.com/games/WAW/shi_no_numa/shi_no_numa_guide",
+      "caption": "bridge outside the Fishing Hut"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/power/power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/power/power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "on the stage"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/pap/mainframe.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/pap/mainframe.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "teleporter mainframe on the stage"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/pap/teleporter_pad.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/pap/teleporter_pad.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "teleporter pad in the spawn room"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/song_ee/rock_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/song_ee/rock_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Spawn Room - In a jar near a Zombie barrier, \"below\" the stairs closest to Quick Revive"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/song_ee/rock_dressing_room.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/song_ee/rock_dressing_room.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Dressing Room - On a stand by some mannequins, behind the MP5K/KN-44 wallbuy"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/song_ee/rock_alley.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/song_ee/rock_alley.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Upstairs Alley Room - On a shelf with the letters, right of a zombie spawn"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/film_reels/projector.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/film_reels/projector.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Projector in the Pack-a-Punch room"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/rocket_launch/mannequins.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/rocket_launch/mannequins.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "two mannequins"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/rocket_launch/rocket.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/rocket_launch/rocket.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Rocket model"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/blue_door.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/blue_door.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "blue door in the Alley"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_init_loc.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_init_loc.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Samantha Doll"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_zombie_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_zombie_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On a seat in a zombie spawn, on the Juggernog side"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_theatre_jug.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_theatre_jug.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On top of a seat, right of Juggernog"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_projector_room.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_projector_room.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On window sill of the Projector room"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_chandelier.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_chandelier.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - Hanging below the large \"orb\", below the main chandelier (above the turret)"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_theatre_front_row.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_theatre_front_row.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On a seat in the first row on the right side"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_teleporter.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_teleporter.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - Down the stairs from the teleporter, in front of some canisters"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_balcony_above_init.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_balcony_above_init.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On the broken part of the balcony above the initial doll location"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_light.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_light.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Theatre Area - On the light on the upper viewing area, left of the projector window"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_stage_metal_platform.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_stage_metal_platform.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Stage - On the metal platform with the ladder, above the door to the dressing room"
+    },
+    {
+      "map": "kino-der-toten",
+      "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_fake_wall.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/kino_der_toten/pictures/free_max_ammo/doll_fake_wall.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide",
+      "caption": "Stage - Behind the fake wall prop near the Wunderfizz"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/power/power_switch.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/power/power_switch.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Power Switch"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/station_phd.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/station_phd.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "PhD Flopper - On the right when coming from spawn, on the way to Power"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/lander_control_panel.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/lander_control_panel.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "control panel"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/rocket_icon.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/rocket_icon.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "rocket icon"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/station_staminup.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/station_staminup.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Stamin Up - On the left when coming from spawn, at the back of that path"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/station_speed_cola.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/station_speed_cola.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Speed Cola - In the buildings past the power switch, toward the rocket"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/rocket_launch_button.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/rocket_launch_button.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "button beside the power switch"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/pap/pap_room.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/pap/pap_room.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "side room, below where the rocket was"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/gersh_generator.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/gersh_generator.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "sparking generator"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/tv.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/tv.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "TV"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/rocket_module.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/rocket_module.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "crashed rocket module"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/button_example.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/button_example.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "buttons"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/jug_button.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/jug_button.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Juggernog - In front of the machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/phd_button.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/phd_button.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "PhD Flopper/Widow's Wine - Left of the machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/speed_cola_button.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/speed_cola_button.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Speed Cola - On the otherside of the doorway, to the right of the machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/staminup_button.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/staminup_button.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Stamin-Up - On the wall just to the left of the machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/pressure_plate.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/pressure_plate.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "pressure plate (circular area)"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/clock.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/clock.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "clock on the wall"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/letter_in_sky.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/letter_in_sky.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "letters"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/main_ee/white_orb.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/main_ee/white_orb.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "white orb on the ground"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/song_ee/bear_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/song_ee/bear_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Spawn Room - On the upper level, left of the Olympia/RK5 wallbuy"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/song_ee/bear_speed_cola.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/song_ee/bear_speed_cola.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Speed Cola Lander Station - On top of the wall, left of the hallway between the station and Speed Cola"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/song_ee/bear_staminup.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/song_ee/bear_staminup.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Stamin-up Lander Station - Behind the fence, left of the lander when facing the station"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/ultimis_dolls/takeo.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/ultimis_dolls/takeo.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Takeo - Next to the Widow's Wine/PhD Flopper perk machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/ultimis_dolls/richtofen.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/ultimis_dolls/richtofen.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Richtofen - On a desk on the floor above Juggernog"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/ultimis_dolls/nikolai.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/ultimis_dolls/nikolai.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Nikolai - On the machine left of Speed Cola"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/ultimis_dolls/dempsey.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/ultimis_dolls/dempsey.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Dempsey - Next to the Claymore/Trip Mine wallbuy in the Stamin Up lander station area"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_pap.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_pap.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Samantha Doll can be found on a pipe"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_widows_wine.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_widows_wine.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Samantha Doll on the railing"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_widows_wine_zoomed.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_widows_wine_zoomed.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Zoomed in"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/stand_here.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/stand_here.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Stand here"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/aim_here.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/aim_here.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Aim here"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_stamin_up.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_stamin_up.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Samantha Doll on the large beam"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_bush.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_bush.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Samantha Doll in the bush"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_bush_zoomed_out.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_bush_zoomed_out.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Samantha Doll"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_1.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_1.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "On the debris right of the Kuda wallbuy"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "On a metal barrel next to the Wunderfizz machine"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_3.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_3.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Underneath the other large beam (kind of above the Gobblegum machine) near Stamin-up"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_4.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_4.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "On the ground in front of the broken rocket module in front of the Stamin Up Lander Station"
+    },
+    {
+      "map": "ascension",
+      "src": "/images/chronicles/ascension/free_max_ammo/doll_5.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/ascension/pictures/free_max_ammo/doll_5.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/ascension/ascension_guide",
+      "caption": "Directly above the previous location"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/power/power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/power/power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "mine room"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/pap_statue.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/pap_statue.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "statues with four sections each"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/pressure_plate.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/pressure_plate.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "pressure plate"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/statue_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/statue_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - In front of the Quick Revive machine"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/statue_rope_bridge.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/statue_rope_bridge.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the bottom of the Rope Bridge"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/statue_power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/statue_power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Power Room - Between the two power switches"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/statue_tunnel.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/statue_tunnel.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area Tunnel - Halfway through the tunnel leading to the underground area"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/pap_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/pap_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "stairs in front of Quick Revive"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/pap_machine.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/pap_machine.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Pack-a-Punch machine at the top"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/pap/stone_circles.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/pap/stone_circles.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Stone \"circles\""
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/buttons_to_enter_eclipse.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/buttons_to_enter_eclipse.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "buttons in each of the corners around Quick Revive"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/horizontal_pillar.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/horizontal_pillar.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "horizontal pillar"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/button_mpl.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/button_mpl.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "button on the brick structure"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tiles_minecart.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tiles_minecart.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "mine cart area"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tiles_rope_bridge.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tiles_rope_bridge.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "around the rope bridge"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/shangri_la_symbols.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/shangri_la_symbols.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "cheat sheet"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_1.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_1.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the structure with the button"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/slide_grate.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/slide_grate.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "metal grate at the bottom of the water slide"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/water_slide_lever.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/water_slide_lever.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "lever on the right side"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the Geyser near the Minecart start"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/ball_above_slide.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/ball_above_slide.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "crystal ball above the water slide"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/ball_in_geyser.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/ball_in_geyser.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "geyser at the bottom of the slide"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_3.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_3.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the Spikes between the minecart area and Spawn"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/valve.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/valve.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "valve in the tunnel"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/pipe_leaking_gas.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/pipe_leaking_gas.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "leaking gas"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gas_pipe_valve.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gas_pipe_valve.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Side Tunnel - Right of the valve"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gas_pipe_mystery_box.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gas_pipe_mystery_box.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Side Tunnel - Above the Mystery Box locations, in the room with the AK-74u/Kuda wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gas_pipe_m16.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gas_pipe_m16.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Side Underground - Above the M16/KN-44 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gas_lever.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gas_lever.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "lever beside the valve"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_4.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_4.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the Zombie spawn near the Minecart start"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/spikemore.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/spikemore.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spikemores/Trip Mines from the wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/hole.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/hole.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "holes in the wall"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/brick_to_push.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/brick_to_push.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "brick on the wall in the pool"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_5.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_5.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the Mud room on the Rope Bridge side"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_minecart_start.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_minecart_start.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Left of the start of the Minecart"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_below_dynamite.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_below_dynamite.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Around the corner from the previous location toward Spawn"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_minecart_spikes.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_minecart_spikes.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - On the wall by the spikes, between Spawn and the Minecart"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_quick_machine_left.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_quick_machine_left.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Left of the Quick Revive machine, on the other side of the wall"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_quick_machine_right.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_quick_machine_right.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Right of the Quick Revive machine, on the other side of the wall"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_spikes_mud.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_spikes_mud.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - On the wall by the spikes, between Spawn and the Mud Room"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_pap_stairs.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_pap_stairs.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Left of the stairs to the Pack-a-Punch Machine"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_mud_water_slide.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_mud_water_slide.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Mud Room Area - Left of the dial closest to the Water Slide"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_pm63.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_pm63.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Mud Room Area - Left of the PM63/L-CAR 9 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_stakeout.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_stakeout.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Waterfall Area - Left of the Stakeout/ICR-1 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_stakeout_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_stakeout_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Waterfall Area - At the bottom of the stairs up to the Power room"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/tile_power.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/tile_power.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Power Room - Left of the left power switch"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/teepee.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/teepee.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "teepee"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/first_dial.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/first_dial.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "dial on the left when coming from spawn"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/shang_dials_cheat_sheet.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/shang_dials_cheat_sheet.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "cheat sheet"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_ball_6.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_ball_6.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "above the Mud room, behind the Olympia wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystals_red.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystals_red.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "flashes the Crystals red"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_bottom.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_rope_bottom.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the bottom of the bridge, near the Pack-a-Punch pressure plate"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_pm63_left.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_rope_pm63_left.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the top of the bridge, left of the PM63/L-CAR 9 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_rope_pm63_right.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_rope_pm63_right.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the top of the bridge, right of the PM63/L-CAR 9 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_mud_spikes.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_mud_spikes.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Mud Room Area - Just outside the Mud Room toward Spawn"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_m14.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_m14.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Left of the M14/Sheiva wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_minecart_start.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_minecart_start.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Left of the start of the Minecart"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_down_the_slope.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_down_the_slope.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Down the slope from the previous location, right of the Zombie spawn window"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/gong_right_of_tunnel.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/gong_right_of_tunnel.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Right of the tunnel"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/glowing_crystals.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/glowing_crystals.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "yellow/gold"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_with_dynamite.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_with_dynamite.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Crystal above the Geyser"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/dynamite.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/dynamite.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "dynamite"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/crystal_to_shoot.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/crystal_to_shoot.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Crystal above the Mud room"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/big_meteor.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/big_meteor.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "giant meteor above the PAP machine"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/wall_with_hole.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/wall_with_hole.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "brick wall with some holes"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/main_ee/stone_on_altar.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/main_ee/stone_on_altar.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Focusing Stone will be atop an altar"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/song_ee/meteor_spawn.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/song_ee/meteor_spawn.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Right of the Spikes to the Minecart area"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/song_ee/meteor_spawn_bo3.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/song_ee/meteor_spawn_bo3.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "BO3 Location"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/song_ee/meteor_underground.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/song_ee/meteor_underground.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Side Underground - In the room with the minecart tracks, by the Barbed Wire, left of the Zombie spawn window"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/song_ee/meteor_rope_bridge.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/song_ee/meteor_rope_bridge.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the top of the Rope Bridge, on the left when facing the Waterfall"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_bottom.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_rope_bottom.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the bottom of the bridge, near the Pack-a-Punch pressure plate"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_lcar9_left.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_rope_lcar9_left.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the top of the bridge, left of the L-CAR 9 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_lcar9_right.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_rope_lcar9_right.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Rope Bridge Area - At the top of the bridge, right of the L-CAR 9 wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_mud_spikes.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_mud_spikes.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Mud Room Area - Just outside the Mud Room toward Spawn"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_shieva.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_shieva.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Spawn Room - Left of the Sheiva wallbuy"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_minecart_start.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_minecart_start.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Left of the start of the Minecart"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_down_the_slope.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_down_the_slope.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Down the slope from the previous location, right of the Zombie spawn window"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_right_of_tunnel.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/gong_right_of_tunnel.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Right of the tunnel"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/wall_with_pans.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/wall_with_pans.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "wall with five metal pans"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_laying_down.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_laying_down.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Samantha doll will spawn by a Danger sign"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_1.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_1.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Minecart Area - Hanging from the first cross beam at the start of the Minecart tunnel"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_2.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_2.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Power Room - Hanging from a lantern in the Minecart Tunnel, above/behind and to the left of the Mystery Box location"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_2_zoomed_out.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_2_zoomed_out.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Zoomed Out"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_3.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_3.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Power Room - Hanging from the first cross beam in the Minecart tunnel leading out of the Power Room"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_3_zoomed_out.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_3_zoomed_out.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Zoomed Out"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_4.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_4.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Waterfall - Hanging from the last cross beam of the Minecart tunnel"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_5.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_5.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "Waterfall - On top of the wall at the base of the waterfall"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/doll_standing.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/free_max_ammo/doll_standing.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "standing"
+    },
+    {
+      "map": "shangri-la",
+      "src": "/images/chronicles/shangri-la/explode_monkeys/tile_to_stand_on.webp",
+      "remote": "https://mmmrkennedy.com/games/BO1/shangri_la/pictures/explode_monkeys/tile_to_stand_on.webp",
+      "source": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide",
+      "caption": "this tile"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins.webp",
+      "remote": "https://www.codzombiesguides.com/maps/origins.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Origins"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-black-disc-engine-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-black-disc-engine-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Against an engine, left of the ramp leading to the Excavation Site"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-black-disc-wall-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-black-disc-wall-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Against a stone, atop a small wodden wall near the pathway to the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-black-disc-wheelbarrow-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-black-disc-wheelbarrow-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In a wheelbarrow, left of the Pack-a-Punch machine"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-gramophone-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-gramophone-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Gramophone Spawn"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-giant-yellow-light.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-giant-yellow-light.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Yellow light on the bottom of the foot"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-staff-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-staff-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Staff Part"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-disc-lightning-tunnel-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-disc-lightning-tunnel-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On a table to the left when entering the Lightning Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-disc-boxes-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-disc-boxes-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the wooden boxes just outside the lightning tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-disc-stamin-up-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-disc-stamin-up-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the wall to the right of Stamin-Up"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-tunnel.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-tunnel.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-portal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-portal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Portal to The Crazy Place"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-crystal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-crystal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Crystal"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-hall-of-the-ancients.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-hall-of-the-ancients.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Hall of the Ancients"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-gen-2-and-3-ice-staff-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-gen-2-and-3-ice-staff-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Staff Part in Generator 2 and 3"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-gen-4-and-5-ice-staff-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-gen-4-and-5-ice-staff-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Staff Part in Generator 4 and 5"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-church-and-gen-6-ice-staff-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-church-and-gen-6-ice-staff-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Staff Part in Church and Generator 6"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-disc-near-back-exit.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-disc-near-back-exit.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the shelf near the back entrance"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-disc-near-mystery-box.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-disc-near-mystery-box.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the shelf right of the Mystery Box"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-disc-table-near-entrnace.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-disc-table-near-entrnace.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the table near the entrance"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-tunnel.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-tunnel.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-portal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-portal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Portal to The Crazy Place"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-crystal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-crystal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Crystal"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-1-jump.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-1-jump.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wooden Staircase on the way to Generator 2"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-1.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-1.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Staff Part in the Giant Footprint"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-2-jump.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-2-jump.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wooden scaffolding linked to the Excavation Site on the way to the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-2.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-2.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Staff Part at the end of the path"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-3-jump.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-3-jump.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Dirt path just before the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-part-3.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-part-3.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Staff Part in the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-disc-chariot-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-disc-chariot-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the chariot between Generator 4 and the Wind Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-disc-table-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-disc-table-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On a wooden table to the right of the Wunderfizz machine"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-disc-tunnel-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-disc-tunnel-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On a engine right of the Wind Tunnel Portal"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-tunnel.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-tunnel.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Lightning Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-portal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-portal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Lightning Portal to The Crazy Place"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-crystal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-crystal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Lightning Crystal"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-staff-glowing-plane.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-staff-glowing-plane.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Glowing Shooting down a glowing plane with a bullet weapon"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-staff-part-between-gen-4-and-excavation.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-staff-part-between-gen-4-and-excavation.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Staff Part dropped from the glowing plane"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-staff-gen-6-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-staff-gen-6-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Powering Generator 6, the part will be in the reward chest next to the generator"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-staff-panzer-part.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-staff-panzer-part.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Killing the Round 8 Panzersoldat"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-disc-benches-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-disc-benches-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the benches near the upper floor window"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-disc-gen-6-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-disc-gen-6-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On a box right of the Generator 6 sign"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-disc-tank-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-disc-tank-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On some boxes between the Tank and the staircase"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-tunnel.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-tunnel.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-portal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-portal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Portal to The Crazy Place"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-crystal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-crystal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Crystal"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-circles.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-circles.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Stone Disc"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-puzzle.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-puzzle.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Puzzle"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-chimney-near-tank-path.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-chimney-near-tank-path.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Outside the map, left of the Tank path when returning to the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-chimney-near-gen-5.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-chimney-near-gen-5.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Outside the window to the left of Stamin-Up"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-chimney-near-gen-4.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-chimney-near-gen-4.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Near Generator 4 between the generator and the Wind Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-floating-tiles.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-floating-tiles.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Puzzle"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-symbol-tile.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-symbol-tile.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Symbol Tile"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-cipher-key.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-cipher-key.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Cipher Key"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-tombstone-near-excavation.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-tombstone-near-excavation.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Near the footprint opposite the MP40 (BO2)/KN-44 (BO3) wall buy"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-tombstone-near-gen-4.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-tombstone-near-gen-4.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "To the right of the MP40 (BO2)/KN-44 (BO3) wall buy"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-tombstone-near-gen-2.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-tombstone-near-gen-2.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Near Gen 2, outside the map next to the destroyed Giant"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-puzzle.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-puzzle.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Lightning Puzzle"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-panel.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-panel.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Panel with dial you have to turn"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-dials.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-dials.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Panel dial locations and positions"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-jars.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-jars.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Jars and metal grates"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-puzzle.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-puzzle.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Puzzle"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-puzzle-cipher.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-puzzle-cipher.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Puzzle Cipher Key"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-underground-levers.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-underground-levers.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Four underground levers"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-colored-ball.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-colored-ball.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Colored ball"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-staff-podium.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-staff-podium.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Staff podium"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-wind-staff-pedestal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-wind-staff-pedestal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Wind Staff Pedestal inside Odins Head (Middle Giant)"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-ice-staff-pedestal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-ice-staff-pedestal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Ice Staff Pedestal inside Freys Head (Church Giant)"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-lightning-staff-pedestal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-lightning-staff-pedestal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Lightning Staff Pedestal inside Thor Head (Spawn Giant)"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-fire-staff-pedestal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-fire-staff-pedestal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Fire Staff Pedestal inside the Hall of the Ancients"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-stone-tablet-table.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-stone-tablet-table.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Table with Stone Tablets near Gen 2"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-stone-tablet-basin.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-stone-tablet-basin.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Basin in upper floor of Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-g-strikes.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-g-strikes.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "G-Strikes"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-alarm-button.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-alarm-button.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Red Button inside the Giant"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-rain-fire-seal.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-rain-fire-seal.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Seal outside the map near Gen 5"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-brain.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-brain.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Maxis Brain on the spawn table"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-rotor-first-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-rotor-first-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In a corner left of the Pack-a-Punch machine"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-rotor-second-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-rotor-second-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In a corner near the Gramophone spawn"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-rotor-final-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-rotor-final-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On a crate next to a lantern on a wooden platform"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-frame-first-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-frame-first-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the left mud path from the church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-frame-second-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-frame-second-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "On the right mud path from the church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-maxis-drone-frame-final-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-maxis-drone-frame-final-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Near an engine at the bottom of the Ice Tunnel"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-pilot-maxis-drone.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-pilot-maxis-drone.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Pilot Maxis Drone"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-flaming-chariot-opposite-mp40.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-flaming-chariot-opposite-mp40.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Opposite the MP40 wall buy"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-flaming-chariot-near-gen-4.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-flaming-chariot-near-gen-4.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Odins right footprint just before Generator 4"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-flaming-chariot-near-stamin-up.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-flaming-chariot-near-stamin-up.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Right side of the left path leading to Generator 5"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-mist-templar-zombie.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-mist-templar-zombie.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Templar Zombie with a light mist around their fists"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-stone-tablet-power-up.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-stone-tablet-power-up.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Stone Tablet Power-Up"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-gen-4-soul-chest.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-gen-4-soul-chest.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In Odins right footprint near Generator 4"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-gen-5-soul-chest.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-gen-5-soul-chest.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In Odins right footprint near Generator 5"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-church-soul-chest.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-church-soul-chest.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In Freyas left footprint near the Church"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-excavation-site-soul-chest.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-excavation-site-soul-chest.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "In Odins left footprint near the Excavation Site"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-raise-hell.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-raise-hell.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Raise Hell"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/origins-freedom.webp",
+      "remote": "https://www.codzombiesguides.com/content/origins/origins-freedom.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/",
+      "caption": "Freedom"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon.webp",
+      "remote": "https://www.codzombiesguides.com/maps/moon.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Moon"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-simon-says-computers.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-simon-says-computers.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Simon Says Computers"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-button-wall.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-button-wall.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Button Wall"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-white-panel-boxes-first-floor.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-white-panel-boxes-first-floor.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Three on the first floor"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-white-panel-boxes-second-floor.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-white-panel-boxes-second-floor.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Two on the second floor"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-white-panel-boxes-third-floor.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-white-panel-boxes-third-floor.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Three on the third floor"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-glowing-button-wall.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-glowing-button-wall.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Buttons glowing on button wall"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-excavator-pi-breaching-tunnel-6.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-excavator-pi-breaching-tunnel-6.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Excavator Pi breaching Tunnel 6"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-vril-sphere.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-vril-sphere.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Vril Sphere"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-satellite-dish-above-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-satellite-dish-above-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Satellite Dish Above Spawn"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-vril-sphere-entering-vril-interface.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-vril-sphere-entering-vril-interface.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Vril Sphere entering Vril Interface"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-power-switch-next-to-mpd.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-power-switch-next-to-mpd.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Power Switch Next to M.P.D."
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-hex-plates-shelf.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-hex-plates-shelf.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Hexagonal Plates on Shelf"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-hex-plates-near-quick-revive.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-hex-plates-near-quick-revive.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Hexagonal Plates near Quick Revive"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-computer-in-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-computer-in-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Computer in Spawn"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-s-cables-outside-spawn.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-s-cables-outside-spawn.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "S Cables Outside the Laboratory"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-s-cable.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-s-cable.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "S shaped cable appearance (location in the image is stairs leading to the third floor of the lab)"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-s-cable-connected-to-machine.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-s-cable-connected-to-machine.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "S shaped cable connected to computer"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-vril-device-glowing.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-vril-device-glowing.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Vril Device fully powered"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-filled-soul-containers.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-filled-soul-containers.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Filled Souls Containers"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-vril-sphere-next-to-computers.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-vril-sphere-next-to-computers.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Vril Sphere next to computers"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/moon-earth-destroyed.webp",
+      "remote": "https://www.codzombiesguides.com/content/moon/moon-earth-destroyed.webp",
+      "source": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/",
+      "caption": "Earth Destroyed"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/samantha-code.jpg",
+      "remote": "https://i.imgur.com/EVK1YsP.jpg",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/moon/",
+      "caption": "Power-room speaker order for the Samantha side quest"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/hacker-reference.png",
+      "remote": "https://i.imgur.com/FsPAYxi.png",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/moon/",
+      "caption": "Hacker reference"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/samantha-ring.jpg",
+      "remote": "https://i.imgur.com/3eqVOJc.jpg",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/origins/",
+      "caption": "Staff positions for the Samantha ring secret"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/red-dig-map.png",
+      "remote": "https://www.glitchingqueen.com/uploads/8/7/2/1/87212810/published/map_2.png?1494490506=",
+      "source": "https://www.glitchingqueen.com/origins.html",
+      "caption": "Glitching Queen: all sixteen red dig-site locations"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/shield-locations.jpg",
+      "remote": "https://www.glitchingqueen.com/uploads/8/7/2/1/87212810/shieldd_orig.jpg",
+      "source": "https://www.glitchingqueen.com/origins.html",
+      "caption": "Glitching Queen: all nine shield-part locations"
+    },
+    {
+      "map": "origins",
+      "src": "/images/chronicles/origins/drone-discs.jpg",
+      "remote": "https://www.glitchingqueen.com/uploads/8/7/2/1/87212810/m8o8_orig.jpg",
+      "source": "https://www.glitchingqueen.com/origins.html",
+      "caption": "Glitching Queen: four discs for the free Magna Collider"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/space-dog-toy.png",
+      "remote": "https://i.imgur.com/hUkkStL.png",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/moon/",
+      "caption": "Space Dog: toy by the Area 51 truck tyre"
+    },
+    {
+      "map": "moon",
+      "src": "/images/chronicles/moon/space-dog-teddy.png",
+      "remote": "https://i.imgur.com/LAB644z.png",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/moon/",
+      "caption": "Space Dog: teddy on the Biodome ledge"
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import { retiredTools } from '../shared/retired-tools.mjs'
 import { plannedMaps } from '../shared/planned-maps.mjs'
 import * as references from '../shared/expansion-references.mjs'
 import * as bo3References from '../shared/bo3-references.mjs'
+import * as chroniclesReferences from '../shared/chronicles-references.mjs'
 const root = fileURLToPath(new URL('../', import.meta.url))
 const read = name => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'))
 const write = (name, value) => { const target=path.join(root,name); if(!fs.existsSync(target) || fs.readFileSync(target,'utf8')!==value) fs.writeFileSync(target,value) }
@@ -14,6 +15,7 @@ const json = value => JSON.stringify(value, null, 2) + '\n'
 write('app/data/expansionTools.json', json(expansionTools))
 write('app/data/expansionReferences.json', json(references))
 write('app/data/bo3References.json', json(bo3References))
+write('app/data/chroniclesReferences.json', json(chroniclesReferences))
 const escape = text => String(text).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;')
 const sourceName = url => {
   const host = new URL(url).hostname.replace(/^www\./, '')

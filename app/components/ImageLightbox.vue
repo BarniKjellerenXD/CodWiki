@@ -1,12 +1,12 @@
 <template>
-  <div class="lightbox" @keydown="onKeydown" tabindex="0" ref="overlayRef">
+  <dialog class="lightbox" aria-modal="true" :aria-label="alt || 'Image reference'" @keydown="onKeydown" @cancel.prevent="close" tabindex="-1" ref="overlayRef">
     <div class="lightbox-inner" @click.self="close">
       <div class="lightbox-toolbar">
-        <button class="lb-btn" @click="zoom(0.25)">+</button>
-        <button class="lb-btn" @click="zoom(-0.25)">-</button>
-        <button class="lb-btn" @click="reset">Reset</button>
+        <button type="button" class="lb-btn" aria-label="Zoom in" @click="zoom(0.25)">+</button>
+        <button type="button" class="lb-btn" aria-label="Zoom out" @click="zoom(-0.25)">-</button>
+        <button type="button" class="lb-btn" @click="reset">Reset</button>
         <a class="lb-btn" :href="src" target="_blank" rel="noopener noreferrer">Open</a>
-        <button class="lb-btn" @click="close">Close</button>
+        <button type="button" class="lb-btn" @click="close">Close</button>
       </div>
 
       <div
@@ -38,7 +38,7 @@
         Scroll to zoom · Drag to pan · Esc to close
       </div>
     </div>
-  </div>
+  </dialog>
 </template>
 
 <script setup lang="ts">
@@ -47,7 +47,7 @@ import { ref, onMounted, onUnmounted, watch } from 'vue'
 const props = defineProps<{ src: string; alt?: string }>()
 const emit = defineEmits<{ (e: 'close'): void }>()
 
-const overlayRef = ref<HTMLElement | null>(null)
+const overlayRef = ref<HTMLDialogElement | null>(null)
 const viewportRef = ref<HTMLElement | null>(null)
 const imgRef = ref<HTMLImageElement | null>(null)
 
@@ -57,8 +57,12 @@ const translateY = ref(0)
 const isDragging = ref(false)
 const lastX = ref(0)
 const lastY = ref(0)
+let invokingElement: HTMLElement | null = null
+let bodyOverflow = ''
+let rootOverflow = ''
 
 function close() {
+  overlayRef.value?.close()
   emit('close')
 }
 
@@ -103,7 +107,25 @@ function onPointerUp(e: PointerEvent) {
 }
 
 function onKeydown(e: KeyboardEvent) {
-  if (e.key === 'Escape') return close()
+  if (e.key === 'Tab') {
+    const controls = overlayRef.value?.querySelectorAll<HTMLElement>('button:not([disabled]), a[href]')
+    if (!controls?.length) return
+    const first = controls[0]
+    const last = controls[controls.length - 1]
+    if (e.shiftKey && (document.activeElement === first || document.activeElement === overlayRef.value)) {
+      e.preventDefault()
+      last.focus()
+    } else if (!e.shiftKey && (document.activeElement === last || document.activeElement === overlayRef.value)) {
+      e.preventDefault()
+      first.focus()
+    }
+    return
+  }
+  if (e.key === 'Escape') {
+    e.preventDefault()
+    return close()
+  }
+  if (['+', '-', '0', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) e.preventDefault()
   if (e.key === '+') return zoom(0.25)
   if (e.key === '-') return zoom(-0.25)
   if (e.key === '0') return reset()
@@ -114,12 +136,20 @@ function onKeydown(e: KeyboardEvent) {
 }
 
 onMounted(() => {
-  // Focus overlay to receive keyboard events
+  invokingElement = document.activeElement instanceof HTMLElement ? document.activeElement : null
+  bodyOverflow = document.body.style.overflow
+  rootOverflow = document.documentElement.style.overflow
+  document.body.style.overflow = 'hidden'
+  document.documentElement.style.overflow = 'hidden'
+  // Native modal top layer makes the rest of the document inert, including settings.
+  overlayRef.value?.showModal()
   overlayRef.value?.focus()
 })
 
 onUnmounted(() => {
-  // no global listeners to remove
+  document.body.style.overflow = bodyOverflow
+  document.documentElement.style.overflow = rootOverflow
+  if (invokingElement?.isConnected) invokingElement.focus({ preventScroll: true })
 })
 
 watch(() => props.src, () => {
@@ -131,7 +161,15 @@ watch(() => props.src, () => {
 .lightbox {
   position: fixed;
   inset: 0;
-  z-index: 50;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 100;
+  color: var(--text);
   background: rgba(10, 8, 6, 0.88);
 }
 
@@ -171,19 +209,28 @@ watch(() => props.src, () => {
   color: var(--gold-bright);
 }
 
+.lb-btn:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
 .lightbox-viewport {
   position: absolute;
-  inset: 0;
+  inset: 4.5rem 1rem;
   z-index: 10;
   overflow: hidden;
-  select-none: none;
+  user-select: none;
+  display: grid;
+  place-items: center;
   touch-action: none;
 }
 
 .lightbox-img {
   display: block;
   margin: auto;
-  max-width: none;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   will-change: transform;
 }
 

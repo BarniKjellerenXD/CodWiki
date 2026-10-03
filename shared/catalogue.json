@@ -305,50 +305,10 @@
       "questLabel": "Main quest"
     },
     {
-      "id": "bo3-origins",
-      "name": "Origins",
-      "route": "/guides/bo3-origins",
-      "image": "",
-      "gameId": "bo3",
-      "group": "chronicles",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
-      "id": "bo3-ascension",
-      "name": "Ascension",
-      "route": "/guides/bo3-ascension",
-      "image": "",
-      "gameId": "bo3",
-      "group": "chronicles",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
-      "id": "bo3-shangri-la",
-      "name": "Shangri-La",
-      "route": "/guides/bo3-shangri-la",
-      "image": "",
-      "gameId": "bo3",
-      "group": "chronicles",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
-      "id": "bo3-moon",
-      "name": "Moon",
-      "route": "/guides/bo3-moon",
-      "image": "",
-      "gameId": "bo3",
-      "group": "chronicles",
-      "interactiveMap": false,
-      "questLabel": "Main quest"
-    },
-    {
       "id": "bo3-nacht-der-untoten",
       "name": "Nacht der Untoten",
       "route": "/guides/bo3-nacht-der-untoten",
-      "image": "",
+      "image": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_mule.webp",
       "gameId": "bo3",
       "group": "chronicles",
       "interactiveMap": false,
@@ -358,7 +318,7 @@
       "id": "bo3-verruckt",
       "name": "Verrückt",
       "route": "/guides/bo3-verruckt",
-      "image": "",
+      "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
       "gameId": "bo3",
       "group": "chronicles",
       "interactiveMap": false,
@@ -368,7 +328,7 @@
       "id": "bo3-shi-no-numa",
       "name": "Shi No Numa",
       "route": "/guides/bo3-shi-no-numa",
-      "image": "",
+      "image": "/images/chronicles/shi-no-numa/free_max_ammo/doll_bridge.webp",
       "gameId": "bo3",
       "group": "chronicles",
       "interactiveMap": false,
@@ -378,11 +338,51 @@
       "id": "bo3-kino-der-toten",
       "name": "Kino der Toten",
       "route": "/guides/bo3-kino-der-toten",
-      "image": "",
+      "image": "/images/chronicles/kino-der-toten/power/power.webp",
       "gameId": "bo3",
       "group": "chronicles",
       "interactiveMap": false,
       "questLabel": "Setup and secrets"
+    },
+    {
+      "id": "bo3-ascension",
+      "name": "Ascension",
+      "route": "/guides/bo3-ascension",
+      "image": "/images/chronicles/ascension/power/power_switch.webp",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-shangri-la",
+      "name": "Shangri-La",
+      "route": "/guides/bo3-shangri-la",
+      "image": "/images/chronicles/shangri-la/power/power.webp",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-moon",
+      "name": "Moon",
+      "route": "/guides/bo3-moon",
+      "image": "/images/chronicles/moon/moon.webp",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
+    },
+    {
+      "id": "bo3-origins",
+      "name": "Origins",
+      "route": "/guides/bo3-origins",
+      "image": "/images/chronicles/origins/origins.webp",
+      "gameId": "bo3",
+      "group": "chronicles",
+      "interactiveMap": false,
+      "questLabel": "Main quest"
     },
     {
       "id": "bo2-tranzit",
@@ -816,74 +816,11 @@
       "kind": "solver"
     },
     {
-      "id": "bo3-nacht-secrets",
-      "map": "bo3-nacht-der-untoten",
-      "name": "Samantha secret tracker",
-      "route": "/tools/bo3-nacht-secrets",
-      "kind": "tracker"
-    },
-    {
-      "id": "bo3-verruckt-setup",
-      "map": "bo3-verruckt",
-      "name": "Spawn-side setup reference",
-      "route": "/tools/bo3-verruckt-setup",
-      "kind": "reference"
-    },
-    {
       "id": "bo3-shi-perks",
       "map": "bo3-shi-no-numa",
       "name": "Hut perk notebook",
       "route": "/tools/bo3-shi-perks",
       "kind": "recorder"
-    },
-    {
-      "id": "bo3-kino-knocks",
-      "map": "bo3-kino-der-toten",
-      "name": "Samantha knock recorder",
-      "route": "/tools/bo3-kino-knocks",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo3-ascension-luna",
-      "map": "bo3-ascension",
-      "name": "LUNA route and assignments",
-      "route": "/tools/bo3-ascension-luna",
-      "kind": "reference"
-    },
-    {
-      "id": "bo3-shang-tiles",
-      "map": "bo3-shangri-la",
-      "name": "Matching tile notebook",
-      "route": "/tools/bo3-shang-tiles",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo3-moon-simon",
-      "map": "bo3-moon",
-      "name": "Samantha Says sequence",
-      "route": "/tools/bo3-moon-simon",
-      "kind": "recorder"
-    },
-    {
-      "id": "bo3-origins-staffs",
-      "map": "bo3-origins",
-      "name": "Staff upgrade tracker",
-      "route": "/tools/bo3-origins-staffs",
-      "kind": "tracker"
-    },
-    {
-      "id": "bo3-origins-ice",
-      "map": "bo3-origins",
-      "name": "Ice staff symbol decoder",
-      "route": "/tools/bo3-origins-ice",
-      "kind": "solver"
-    },
-    {
-      "id": "bo3-origins-fire",
-      "map": "bo3-origins",
-      "name": "Fire staff torch decoder",
-      "route": "/tools/bo3-origins-fire",
-      "kind": "solver"
     },
     {
       "id": "bo4-blood-powerhouse",
@@ -1136,6 +1073,90 @@
       "name": "Egg, rune, bone & relic finder",
       "route": "/tools/bo3-revelations-collections",
       "kind": "reference"
+    },
+    {
+      "id": "bo3-nacht-secrets",
+      "map": "bo3-nacht-der-untoten",
+      "name": "Samantha buttons & doll finder",
+      "route": "/tools/bo3-nacht-secrets",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-verruckt-dolls",
+      "map": "bo3-verruckt",
+      "name": "Samantha doll location finder",
+      "route": "/tools/bo3-verruckt-dolls",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-kino-dolls",
+      "map": "bo3-kino-der-toten",
+      "name": "Samantha doll location finder",
+      "route": "/tools/bo3-kino-dolls",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-ascension-dolls",
+      "map": "bo3-ascension",
+      "name": "Samantha captures & target order",
+      "route": "/tools/bo3-ascension-dolls",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-moon-labs",
+      "map": "bo3-moon",
+      "name": "Hacker panel & cable finder",
+      "route": "/tools/bo3-moon-labs",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-origins-locations",
+      "map": "bo3-origins",
+      "name": "Staff parts & secret locations",
+      "route": "/tools/bo3-origins-locations",
+      "kind": "reference"
+    },
+    {
+      "id": "bo3-origins-ice",
+      "map": "bo3-origins",
+      "name": "Ice staff symbol matcher",
+      "route": "/tools/bo3-origins-ice",
+      "kind": "solver"
+    },
+    {
+      "id": "bo3-origins-fire",
+      "map": "bo3-origins",
+      "name": "Fire staff torch decoder",
+      "route": "/tools/bo3-origins-fire",
+      "kind": "solver"
+    },
+    {
+      "id": "bo3-moon-simon",
+      "map": "bo3-moon",
+      "name": "Samantha Says sequence recorder",
+      "route": "/tools/bo3-moon-simon",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-kino-knocks",
+      "map": "bo3-kino-der-toten",
+      "name": "Alley knock recorder",
+      "route": "/tools/bo3-kino-knocks",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-shang-tiles",
+      "map": "bo3-shangri-la",
+      "name": "Matching tile symbol notebook",
+      "route": "/tools/bo3-shang-tiles",
+      "kind": "recorder"
+    },
+    {
+      "id": "bo3-shang-gongs",
+      "map": "bo3-shangri-la",
+      "name": "Gong locations & match notes",
+      "route": "/tools/bo3-shang-gongs",
+      "kind": "recorder"
     }
   ],
   "games": [

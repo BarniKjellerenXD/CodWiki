@@ -1,0 +1,1170 @@
+{
+  "fireSymbols": [
+    {
+      "id": "11",
+      "value": 11,
+      "label": "Dot · hollow · two stacked dots",
+      "box": [
+        5,
+        5,
+        245,
+        250
+      ]
+    },
+    {
+      "id": "5",
+      "value": 5,
+      "label": "Dot · two stacked dots",
+      "box": [
+        270,
+        5,
+        214,
+        250
+      ]
+    },
+    {
+      "id": "9",
+      "value": 9,
+      "label": "Dot · hollow · hollow",
+      "box": [
+        500,
+        5,
+        257,
+        250
+      ]
+    },
+    {
+      "id": "7",
+      "value": 7,
+      "label": "Two stacked dots · dot",
+      "box": [
+        777,
+        5,
+        227,
+        250
+      ]
+    },
+    {
+      "id": "6",
+      "value": 6,
+      "label": "Two stacked dots · hollow",
+      "box": [
+        1025,
+        5,
+        226,
+        250
+      ]
+    },
+    {
+      "id": "3",
+      "value": 3,
+      "label": "Dot · hollow",
+      "box": [
+        1275,
+        5,
+        247,
+        250
+      ]
+    },
+    {
+      "id": "4",
+      "value": 4,
+      "label": "Two side-by-side dots",
+      "box": [
+        1540,
+        5,
+        245,
+        250
+      ]
+    }
+  ],
+  "gongLocations": [
+    {
+      "id": "free_max_ammo/gong_rope_bottom",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_bottom.webp",
+      "alt": "Rope Bridge Area - At the bottom of the bridge, near the Pack-a-Punch pressure plate",
+      "key": "gong-0",
+      "name": "Bridge bottom"
+    },
+    {
+      "id": "free_max_ammo/gong_rope_lcar9_left",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_lcar9_left.webp",
+      "alt": "Rope Bridge Area - At the top of the bridge, left of the L-CAR 9 wallbuy",
+      "key": "gong-1",
+      "name": "Bridge top · left"
+    },
+    {
+      "id": "free_max_ammo/gong_rope_lcar9_right",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_rope_lcar9_right.webp",
+      "alt": "Rope Bridge Area - At the top of the bridge, right of the L-CAR 9 wallbuy",
+      "key": "gong-2",
+      "name": "Bridge top · right"
+    },
+    {
+      "id": "free_max_ammo/gong_mud_spikes",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_mud_spikes.webp",
+      "alt": "Mud Room Area - Just outside the Mud Room toward Spawn",
+      "key": "gong-3",
+      "name": "Mud Room exit"
+    },
+    {
+      "id": "free_max_ammo/gong_shieva",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_shieva.webp",
+      "alt": "Spawn Room - Left of the Sheiva wallbuy",
+      "key": "gong-4",
+      "name": "Spawn · Sheiva"
+    },
+    {
+      "id": "free_max_ammo/gong_minecart_start",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_minecart_start.webp",
+      "alt": "Minecart Area - Left of the start of the Minecart",
+      "key": "gong-5",
+      "name": "Minecart start"
+    },
+    {
+      "id": "free_max_ammo/gong_down_the_slope",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_down_the_slope.webp",
+      "alt": "Minecart Area - Down the slope from the previous location, right of the Zombie spawn window",
+      "key": "gong-6",
+      "name": "Minecart slope"
+    },
+    {
+      "id": "free_max_ammo/gong_right_of_tunnel",
+      "src": "/images/chronicles/shangri-la/free_max_ammo/gong_right_of_tunnel.webp",
+      "alt": "Minecart Area - Right of the tunnel",
+      "key": "gong-7",
+      "name": "Tunnel entrance"
+    }
+  ],
+  "iceSymbols": [
+    {
+      "id": "0",
+      "label": "Hollow circle",
+      "rune": "Downward triangle",
+      "input": [
+        20,
+        12,
+        260,
+        252
+      ],
+      "output": [
+        305,
+        12,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "1",
+      "label": "One dot",
+      "rune": "Vertical stem",
+      "input": [
+        20,
+        287,
+        260,
+        252
+      ],
+      "output": [
+        305,
+        287,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "2",
+      "label": "Two stacked dots",
+      "rune": "L-shaped stem",
+      "input": [
+        20,
+        562,
+        260,
+        252
+      ],
+      "output": [
+        305,
+        562,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "3",
+      "label": "Dot · hollow",
+      "rune": "Stem with two right branches",
+      "input": [
+        20,
+        837,
+        260,
+        252
+      ],
+      "output": [
+        305,
+        837,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "4",
+      "label": "Dot · dot",
+      "rune": "Vertical stem + triangle",
+      "input": [
+        613,
+        12,
+        260,
+        252
+      ],
+      "output": [
+        898,
+        12,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "5",
+      "label": "Dot · two stacked dots",
+      "rune": "Two vertical stems",
+      "input": [
+        613,
+        287,
+        260,
+        252
+      ],
+      "output": [
+        898,
+        287,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "6",
+      "label": "Two stacked dots · hollow",
+      "rune": "Vertical stem + L",
+      "input": [
+        613,
+        562,
+        260,
+        252
+      ],
+      "output": [
+        898,
+        562,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "7",
+      "label": "Two stacked dots · dot",
+      "rune": "Vertical stem + double-branch stem",
+      "input": [
+        613,
+        837,
+        260,
+        252
+      ],
+      "output": [
+        898,
+        837,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "8",
+      "label": "Two stacked dots · two stacked dots",
+      "rune": "L + triangle",
+      "input": [
+        1206,
+        12,
+        260,
+        252
+      ],
+      "output": [
+        1491,
+        12,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "9",
+      "label": "Dot · hollow · hollow",
+      "rune": "L + vertical stem",
+      "input": [
+        1206,
+        287,
+        260,
+        252
+      ],
+      "output": [
+        1491,
+        287,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "10",
+      "label": "Dot · hollow · dot",
+      "rune": "Two L shapes",
+      "input": [
+        1206,
+        562,
+        260,
+        252
+      ],
+      "output": [
+        1491,
+        562,
+        265,
+        252
+      ]
+    },
+    {
+      "id": "11",
+      "label": "Dot · hollow · two stacked dots",
+      "rune": "L + double-branch stem",
+      "input": [
+        1206,
+        837,
+        260,
+        252
+      ],
+      "output": [
+        1491,
+        837,
+        265,
+        252
+      ]
+    }
+  ],
+  "locationAtlases": {
+    "bo3-nacht-secrets": {
+      "map": "nacht-der-untoten",
+      "section": "samantha",
+      "groups": [
+        {
+          "id": "dolls",
+          "name": "Active doll locations",
+          "description": "Five targets appear one at a time from these eight spots. Follow nearby music; a timeout means restarting at the RK5 doll.",
+          "locations": [
+            {
+              "id": "free_max_ammo/doll_fence",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_fence.webp",
+              "alt": "Ground Floor - On a fence post out the window diagonal from Mule Kick",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_pond",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_pond.webp",
+              "alt": "Ground Floor - In the pond, out the window across from the RK5 wallbuy",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_generator",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_generator.webp",
+              "alt": "Second Floor - Next to a power generator, out the window at the top of the spawn room stairs",
+              "region": "Second Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_truck",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_truck.webp",
+              "alt": "Ground Floor - On top of a truck, outside the window right of the Sheiva wallbuy",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_tank",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_tank.webp",
+              "alt": "Ground Floor - On the end of the tank's barrel, out the window next to Mule Kick",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_telephone_pole",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_telephone_pole.webp",
+              "alt": "Second Floor - On top of a telephone pole, out the broken wall near the Cabinet",
+              "region": "Second Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_wunderfizz",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_wunderfizz.webp",
+              "alt": "Second Floor - In the hole in the ceiling, the left of the Wunderfizz",
+              "region": "Second Floor"
+            },
+            {
+              "id": "free_max_ammo/doll_mule",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/doll_mule.webp",
+              "alt": "Ground Floor - In the hole in the ceiling in front of Mule Kick (Stand in front of Mule Kick and jump)",
+              "region": "Ground Floor"
+            }
+          ]
+        },
+        {
+          "id": "buttons",
+          "name": "Four starting buttons",
+          "description": "Interact with all four, then start the hunt at the doll in front of the RK5.",
+          "locations": [
+            {
+              "id": "free_max_ammo/button_mule",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_mule.webp",
+              "alt": "Ground Floor - On the side of a pillar, left of Mule Kick",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/button_shelf",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_shelf.webp",
+              "alt": "Ground Floor - Under the shelf at the bottom of the stairs in the Mystery Box Room",
+              "region": "Ground Floor"
+            },
+            {
+              "id": "free_max_ammo/button_cabinet",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_cabinet.webp",
+              "alt": "Second Floor - In the Wunderfizz room, on the other side of the room, on the wall across from the Zombie spawn window",
+              "region": "Second Floor"
+            },
+            {
+              "id": "free_max_ammo/button_stairs",
+              "src": "/images/chronicles/nacht-der-untoten/free_max_ammo/button_stairs.webp",
+              "alt": "Second Floor - On the ceiling above the stairs in spawn",
+              "region": "Second Floor"
+            }
+          ]
+        }
+      ]
+    },
+    "bo3-verruckt-dolls": {
+      "map": "verruckt",
+      "section": "secrets",
+      "groups": [
+        {
+          "id": "dolls",
+          "name": "Ten possible doll locations",
+          "description": "After right/centre/left toilet counts 9/3/5, start at Wunderfizz. Shoot five active targets, one at a time. If you hear the failure laugh, restart at that same starter doll.",
+          "locations": [
+            {
+              "id": "free_max_ammo/fountain",
+              "src": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
+              "alt": "Courtyard - On top of the bloody fountain in the middle of the map",
+              "region": "Courtyard"
+            },
+            {
+              "id": "free_max_ammo/kitchen",
+              "src": "/images/chronicles/verruckt/free_max_ammo/kitchen.webp",
+              "alt": "Kitchen - In a pot",
+              "region": "Kitchen"
+            },
+            {
+              "id": "free_max_ammo/speed_cola",
+              "src": "/images/chronicles/verruckt/free_max_ammo/speed_cola.webp",
+              "alt": "Speed Cola Room - Out the Zombie spawn barrier, on the railing",
+              "region": "Speed Cola Room"
+            },
+            {
+              "id": "free_max_ammo/flaming",
+              "src": "/images/chronicles/verruckt/free_max_ammo/flaming.webp",
+              "alt": "Mule Kick Room - Up the stairs from Mule Kick, on the flaming hole in the ceiling, hanging from the horizontal support pillar",
+              "region": "Mule Kick Room"
+            },
+            {
+              "id": "free_max_ammo/mule_hanging_barrier",
+              "src": "/images/chronicles/verruckt/free_max_ammo/mule_hanging_barrier.webp",
+              "alt": "Mule Kick Room - Hanging from the ceiling inside a barrier",
+              "region": "Mule Kick Room"
+            },
+            {
+              "id": "free_max_ammo/quick_room",
+              "src": "/images/chronicles/verruckt/free_max_ammo/quick_room.webp",
+              "alt": "Quick Revive Spawn Room - In the open mortuary cabinet",
+              "region": "Quick Revive Spawn Room"
+            },
+            {
+              "id": "free_max_ammo/dentist",
+              "src": "/images/chronicles/verruckt/free_max_ammo/dentist.webp",
+              "alt": "Juggernog Spawn Room - On the dentist chair",
+              "region": "Juggernog Spawn Room"
+            },
+            {
+              "id": "free_max_ammo/double_tap",
+              "src": "/images/chronicles/verruckt/free_max_ammo/double_tap.webp",
+              "alt": "Double Tap Hallway - On top of a mannequin at the top of the stairs from spawn",
+              "region": "Double Tap Hallway"
+            },
+            {
+              "id": "free_max_ammo/toilet_doll",
+              "src": "/images/chronicles/verruckt/free_max_ammo/toilet_doll.webp",
+              "alt": "Wunderfizz Room - In the right-most toilet",
+              "region": "Wunderfizz Room"
+            },
+            {
+              "id": "free_max_ammo/power_room",
+              "src": "/images/chronicles/verruckt/free_max_ammo/power_room.webp",
+              "alt": "Power Room - On the floor in the barrier down the stairs",
+              "region": "Power Room"
+            }
+          ]
+        }
+      ]
+    },
+    "bo3-kino-dolls": {
+      "map": "kino-der-toten",
+      "section": "samantha",
+      "groups": [
+        {
+          "id": "dolls",
+          "name": "Ten possible doll locations",
+          "description": "First answer three different Alley knock patterns, then interact with the stage doll. Five targets appear one at a time. Return to the starter doll to claim the reward or restart a failed hunt.",
+          "locations": [
+            {
+              "id": "free_max_ammo/doll_zombie_spawn",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_zombie_spawn.webp",
+              "alt": "Theatre Area - On a seat in a zombie spawn, on the Juggernog side",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_theatre_jug",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_theatre_jug.webp",
+              "alt": "Theatre Area - On top of a seat, right of Juggernog",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_projector_room",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_projector_room.webp",
+              "alt": "Theatre Area - On window sill of the Projector room",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_chandelier",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_chandelier.webp",
+              "alt": "Theatre Area - Hanging below the large \"orb\", below the main chandelier (above the turret)",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_theatre_front_row",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_theatre_front_row.webp",
+              "alt": "Theatre Area - On a seat in the first row on the right side",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_teleporter",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_teleporter.webp",
+              "alt": "Theatre Area - Down the stairs from the teleporter, in front of some canisters",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_balcony_above_init",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_balcony_above_init.webp",
+              "alt": "Theatre Area - On the broken part of the balcony above the initial doll location",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_light",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_light.webp",
+              "alt": "Theatre Area - On the light on the upper viewing area, left of the projector window",
+              "region": "Theatre Area"
+            },
+            {
+              "id": "free_max_ammo/doll_stage_metal_platform",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_stage_metal_platform.webp",
+              "alt": "Stage - On the metal platform with the ladder, above the door to the dressing room",
+              "region": "Stage"
+            },
+            {
+              "id": "free_max_ammo/doll_fake_wall",
+              "src": "/images/chronicles/kino-der-toten/free_max_ammo/doll_fake_wall.webp",
+              "alt": "Stage - Behind the fake wall prop near the Wunderfizz",
+              "region": "Stage"
+            }
+          ]
+        }
+      ]
+    },
+    "bo3-ascension-dolls": {
+      "map": "ascension",
+      "section": "samantha",
+      "groups": [
+        {
+          "id": "capture",
+          "name": "Capture with Gersh",
+          "description": "Unlock Pack-a-Punch. Pull each of these three dolls into a Gersh Device. The extra wide/close views help line up the Widow’s Wine throw.",
+          "locations": [
+            {
+              "id": "free_max_ammo/doll_pap",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_pap.webp",
+              "alt": "Samantha Doll can be found on a pipe",
+              "region": "Capture targets"
+            },
+            {
+              "id": "free_max_ammo/doll_widows_wine",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_widows_wine.webp",
+              "alt": "Samantha Doll on the railing",
+              "region": "Capture targets"
+            },
+            {
+              "id": "free_max_ammo/doll_widows_wine_zoomed",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_widows_wine_zoomed.webp",
+              "alt": "Zoomed in",
+              "region": "Capture targets"
+            },
+            {
+              "id": "free_max_ammo/stand_here",
+              "src": "/images/chronicles/ascension/free_max_ammo/stand_here.webp",
+              "alt": "Stand here",
+              "region": "Capture targets"
+            },
+            {
+              "id": "free_max_ammo/aim_here",
+              "src": "/images/chronicles/ascension/free_max_ammo/aim_here.webp",
+              "alt": "Aim here",
+              "region": "Capture targets"
+            },
+            {
+              "id": "free_max_ammo/doll_stamin_up",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_stamin_up.webp",
+              "alt": "Samantha Doll on the large beam",
+              "region": "Capture targets"
+            }
+          ]
+        },
+        {
+          "id": "shoot",
+          "name": "Shoot in this order",
+          "description": "Start at the bush behind the Pack-a-Punch Box spot. Shoot targets 1–5 in the order below, then return to the bush doll.",
+          "locations": [
+            {
+              "id": "free_max_ammo/doll_1",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_1.webp",
+              "alt": "On the debris right of the Kuda wallbuy",
+              "region": "Ordered targets"
+            },
+            {
+              "id": "free_max_ammo/doll_2",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_2.webp",
+              "alt": "On a metal barrel next to the Wunderfizz machine",
+              "region": "Ordered targets"
+            },
+            {
+              "id": "free_max_ammo/doll_3",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_3.webp",
+              "alt": "Underneath the other large beam (kind of above the Gobblegum machine) near Stamin-up",
+              "region": "Ordered targets"
+            },
+            {
+              "id": "free_max_ammo/doll_4",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_4.webp",
+              "alt": "On the ground in front of the broken rocket module in front of the Stamin Up Lander Station",
+              "region": "Ordered targets"
+            },
+            {
+              "id": "free_max_ammo/doll_5",
+              "src": "/images/chronicles/ascension/free_max_ammo/doll_5.webp",
+              "alt": "Directly above the previous location",
+              "region": "Ordered targets"
+            }
+          ]
+        }
+      ]
+    },
+    "bo3-moon-labs": {
+      "map": "moon",
+      "section": "simon",
+      "groups": [
+        {
+          "id": "panels",
+          "name": "Timed green panel boxes",
+          "description": "After hacking the floor-2 starter button, find four green-lit boxes among these eight. The photos mark three boxes on floor 1, two on floor 2 and three on floor 3. Hack only the green ones in your match.",
+          "locations": [
+            {
+              "id": "moon-white-panel-boxes-first-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-first-floor.webp",
+              "alt": "Three on the first floor",
+              "region": "Laboratory"
+            },
+            {
+              "id": "moon-white-panel-boxes-second-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-second-floor.webp",
+              "alt": "Two on the second floor",
+              "region": "Laboratory"
+            },
+            {
+              "id": "moon-white-panel-boxes-third-floor",
+              "src": "/images/chronicles/moon/moon-white-panel-boxes-third-floor.webp",
+              "alt": "Three on the third floor",
+              "region": "Laboratory"
+            }
+          ]
+        },
+        {
+          "id": "wall",
+          "name": "Start and finish at this wall",
+          "description": "Hack the far-left button to start. After the four green boxes, return and press all four buttons normally; the glowing wall confirms completion.",
+          "locations": [
+            {
+              "id": "moon-button-wall",
+              "src": "/images/chronicles/moon/moon-button-wall.webp",
+              "alt": "Button Wall",
+              "region": "Laboratory floor 2"
+            },
+            {
+              "id": "moon-glowing-button-wall",
+              "src": "/images/chronicles/moon/moon-glowing-button-wall.webp",
+              "alt": "Buttons glowing on button wall",
+              "region": "Laboratory floor 2"
+            }
+          ]
+        },
+        {
+          "id": "cable",
+          "name": "S-shaped cable reference",
+          "description": "Search all laboratory levels and the outside area near Mule Kick. These views identify the cable and outside area, not every possible spawn.",
+          "locations": [
+            {
+              "id": "moon-s-cable",
+              "src": "/images/chronicles/moon/moon-s-cable.webp",
+              "alt": "S shaped cable appearance (location in the image is stairs leading to the third floor of the lab)",
+              "region": "Laboratory / outside"
+            },
+            {
+              "id": "moon-s-cables-outside-spawn",
+              "src": "/images/chronicles/moon/moon-s-cables-outside-spawn.webp",
+              "alt": "S Cables Outside the Laboratory",
+              "region": "Laboratory / outside"
+            }
+          ]
+        }
+      ]
+    },
+    "bo3-origins-locations": {
+      "map": "origins",
+      "section": "staff-build",
+      "groups": [
+        {
+          "id": "records",
+          "name": "Records and gramophone",
+          "description": "Choose an element in the area filter. Each coloured record has three possible locations; only one appears. Take the record and gramophone to its matching tunnel.",
+          "locations": [
+            {
+              "id": "origins-black-disc-engine-spawn",
+              "src": "/images/chronicles/origins/origins-black-disc-engine-spawn.webp",
+              "alt": "Against an engine, left of the ramp leading to the Excavation Site",
+              "region": "Black record / gramophone"
+            },
+            {
+              "id": "origins-black-disc-wall-spawn",
+              "src": "/images/chronicles/origins/origins-black-disc-wall-spawn.webp",
+              "alt": "Against a stone, atop a small wodden wall near the pathway to the Church",
+              "region": "Black record / gramophone"
+            },
+            {
+              "id": "origins-black-disc-wheelbarrow-spawn",
+              "src": "/images/chronicles/origins/origins-black-disc-wheelbarrow-spawn.webp",
+              "alt": "In a wheelbarrow, left of the Pack-a-Punch machine",
+              "region": "Black record / gramophone"
+            },
+            {
+              "id": "origins-gramophone-spawn",
+              "src": "/images/chronicles/origins/origins-gramophone-spawn.webp",
+              "alt": "Gramophone Spawn",
+              "region": "Black record / gramophone"
+            },
+            {
+              "id": "origins-wind-disc-lightning-tunnel-spawn",
+              "src": "/images/chronicles/origins/origins-wind-disc-lightning-tunnel-spawn.webp",
+              "alt": "On a table to the left when entering the Lightning Tunnel",
+              "region": "Wind · Generator 5"
+            },
+            {
+              "id": "origins-wind-disc-boxes-spawn",
+              "src": "/images/chronicles/origins/origins-wind-disc-boxes-spawn.webp",
+              "alt": "On the wooden boxes just outside the lightning tunnel",
+              "region": "Wind · Generator 5"
+            },
+            {
+              "id": "origins-wind-disc-stamin-up-spawn",
+              "src": "/images/chronicles/origins/origins-wind-disc-stamin-up-spawn.webp",
+              "alt": "On the wall to the right of Stamin-Up",
+              "region": "Wind · Generator 5"
+            },
+            {
+              "id": "origins-ice-disc-near-back-exit",
+              "src": "/images/chronicles/origins/origins-ice-disc-near-back-exit.webp",
+              "alt": "On the shelf near the back entrance",
+              "region": "Ice · Tank Station"
+            },
+            {
+              "id": "origins-ice-disc-near-mystery-box",
+              "src": "/images/chronicles/origins/origins-ice-disc-near-mystery-box.webp",
+              "alt": "On the shelf right of the Mystery Box",
+              "region": "Ice · Tank Station"
+            },
+            {
+              "id": "origins-ice-disc-table-near-entrnace",
+              "src": "/images/chronicles/origins/origins-ice-disc-table-near-entrnace.webp",
+              "alt": "On the table near the entrance",
+              "region": "Ice · Tank Station"
+            },
+            {
+              "id": "origins-lightning-disc-chariot-spawn",
+              "src": "/images/chronicles/origins/origins-lightning-disc-chariot-spawn.webp",
+              "alt": "On the chariot between Generator 4 and the Wind Tunnel",
+              "region": "Lightning · Generator 4"
+            },
+            {
+              "id": "origins-lightning-disc-table-spawn",
+              "src": "/images/chronicles/origins/origins-lightning-disc-table-spawn.webp",
+              "alt": "On a wooden table to the right of the Wunderfizz machine",
+              "region": "Lightning · Generator 4"
+            },
+            {
+              "id": "origins-lightning-disc-tunnel-spawn",
+              "src": "/images/chronicles/origins/origins-lightning-disc-tunnel-spawn.webp",
+              "alt": "On a engine right of the Wind Tunnel Portal",
+              "region": "Lightning · Generator 4"
+            },
+            {
+              "id": "origins-fire-disc-benches-spawn",
+              "src": "/images/chronicles/origins/origins-fire-disc-benches-spawn.webp",
+              "alt": "On the benches near the upper floor window",
+              "region": "Fire · Church"
+            },
+            {
+              "id": "origins-fire-disc-gen-6-spawn",
+              "src": "/images/chronicles/origins/origins-fire-disc-gen-6-spawn.webp",
+              "alt": "On a box right of the Generator 6 sign",
+              "region": "Fire · Church"
+            },
+            {
+              "id": "origins-fire-disc-tank-spawn",
+              "src": "/images/chronicles/origins/origins-fire-disc-tank-spawn.webp",
+              "alt": "On some boxes between the Tank and the staircase",
+              "region": "Fire · Church"
+            }
+          ]
+        },
+        {
+          "id": "lightning",
+          "name": "Lightning tank jumps",
+          "description": "The first jump is on the Church → Tank Station trip. The second and third are on the return trip. Use extra rides rather than rushing an unsafe jump.",
+          "locations": [
+            {
+              "id": "origins-lightning-part-1-jump",
+              "src": "/images/chronicles/origins/origins-lightning-part-1-jump.webp",
+              "alt": "Wooden Staircase on the way to Generator 2",
+              "region": "Tank route"
+            },
+            {
+              "id": "origins-lightning-part-1",
+              "src": "/images/chronicles/origins/origins-lightning-part-1.webp",
+              "alt": "Staff Part in the Giant Footprint",
+              "region": "Tank route"
+            },
+            {
+              "id": "origins-lightning-part-2-jump",
+              "src": "/images/chronicles/origins/origins-lightning-part-2-jump.webp",
+              "alt": "Wooden scaffolding linked to the Excavation Site on the way to the Church",
+              "region": "Tank route"
+            },
+            {
+              "id": "origins-lightning-part-2",
+              "src": "/images/chronicles/origins/origins-lightning-part-2.webp",
+              "alt": "Staff Part at the end of the path",
+              "region": "Tank route"
+            },
+            {
+              "id": "origins-lightning-part-3-jump",
+              "src": "/images/chronicles/origins/origins-lightning-part-3-jump.webp",
+              "alt": "Dirt path just before the Church",
+              "region": "Tank route"
+            },
+            {
+              "id": "origins-lightning-part-3",
+              "src": "/images/chronicles/origins/origins-lightning-part-3.webp",
+              "alt": "Staff Part in the Church",
+              "region": "Tank route"
+            }
+          ]
+        },
+        {
+          "id": "ice",
+          "name": "Ice tombstones",
+          "description": "Complete the Crazy Place Ice puzzle first. Freeze each stone with Ice, then shatter it with a bullet weapon.",
+          "locations": [
+            {
+              "id": "origins-ice-tombstone-near-excavation",
+              "src": "/images/chronicles/origins/origins-ice-tombstone-near-excavation.webp",
+              "alt": "Near the footprint opposite the MP40 (BO2)/KN-44 (BO3) wall buy",
+              "region": "Middle / Generator 2"
+            },
+            {
+              "id": "origins-ice-tombstone-near-gen-4",
+              "src": "/images/chronicles/origins/origins-ice-tombstone-near-gen-4.webp",
+              "alt": "To the right of the MP40 (BO2)/KN-44 (BO3) wall buy",
+              "region": "Middle / Generator 2"
+            },
+            {
+              "id": "origins-ice-tombstone-near-gen-2",
+              "src": "/images/chronicles/origins/origins-ice-tombstone-near-gen-2.webp",
+              "alt": "Near Gen 2, outside the map next to the destroyed Giant",
+              "region": "Middle / Generator 2"
+            }
+          ]
+        },
+        {
+          "id": "wind",
+          "name": "Wind chimneys",
+          "description": "After the ceiling puzzle, blow each chimney’s smoke toward Excavation with the Wind Staff.",
+          "locations": [
+            {
+              "id": "origins-wind-chimney-near-tank-path",
+              "src": "/images/chronicles/origins/origins-wind-chimney-near-tank-path.webp",
+              "alt": "Outside the map, left of the Tank path when returning to the Church",
+              "region": "Middle / Church"
+            },
+            {
+              "id": "origins-wind-chimney-near-gen-5",
+              "src": "/images/chronicles/origins/origins-wind-chimney-near-gen-5.webp",
+              "alt": "Outside the window to the left of Stamin-Up",
+              "region": "Middle / Church"
+            },
+            {
+              "id": "origins-wind-chimney-near-gen-4",
+              "src": "/images/chronicles/origins/origins-wind-chimney-near-gen-4.webp",
+              "alt": "Near Generator 4 between the generator and the Wind Tunnel",
+              "region": "Middle / Church"
+            }
+          ]
+        },
+        {
+          "id": "drone",
+          "name": "Maxis Drone parts",
+          "description": "The brain is fixed in Spawn; rotor and frame each have three possible spawns. Collect one of each type and assemble at a workbench.",
+          "locations": [
+            {
+              "id": "origins-maxis-drone-brain",
+              "src": "/images/chronicles/origins/origins-maxis-drone-brain.webp",
+              "alt": "Maxis Brain on the spawn table",
+              "region": "Brain · Spawn"
+            },
+            {
+              "id": "origins-maxis-drone-rotor-first-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-rotor-first-spawn.webp",
+              "alt": "In a corner left of the Pack-a-Punch machine",
+              "region": "Rotor · Excavation"
+            },
+            {
+              "id": "origins-maxis-drone-rotor-second-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-rotor-second-spawn.webp",
+              "alt": "In a corner near the Gramophone spawn",
+              "region": "Rotor · Excavation"
+            },
+            {
+              "id": "origins-maxis-drone-rotor-final-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-rotor-final-spawn.webp",
+              "alt": "On a crate next to a lantern on a wooden platform",
+              "region": "Rotor · Excavation"
+            },
+            {
+              "id": "origins-maxis-drone-frame-first-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-frame-first-spawn.webp",
+              "alt": "On the left mud path from the church",
+              "region": "Frame · Church"
+            },
+            {
+              "id": "origins-maxis-drone-frame-second-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-frame-second-spawn.webp",
+              "alt": "On the right mud path from the church",
+              "region": "Frame · Church"
+            },
+            {
+              "id": "origins-maxis-drone-frame-final-spawn",
+              "src": "/images/chronicles/origins/origins-maxis-drone-frame-final-spawn.webp",
+              "alt": "Near an engine at the bottom of the Ice Tunnel",
+              "region": "Frame · Church"
+            }
+          ]
+        },
+        {
+          "id": "blood",
+          "name": "Zombie Blood carts",
+          "description": "Extinguish all three burning carts with Ice, then collect the Zombie Blood beside Pack-a-Punch. Available once per round when the carts are burning.",
+          "locations": [
+            {
+              "id": "origins-flaming-chariot-opposite-mp40",
+              "src": "/images/chronicles/origins/origins-flaming-chariot-opposite-mp40.webp",
+              "alt": "Opposite the MP40 wall buy",
+              "region": "Middle"
+            },
+            {
+              "id": "origins-flaming-chariot-near-gen-4",
+              "src": "/images/chronicles/origins/origins-flaming-chariot-near-gen-4.webp",
+              "alt": "Odins right footprint just before Generator 4",
+              "region": "Middle"
+            },
+            {
+              "id": "origins-flaming-chariot-near-stamin-up",
+              "src": "/images/chronicles/origins/origins-flaming-chariot-near-stamin-up.webp",
+              "alt": "Right side of the left path leading to Generator 5",
+              "region": "Middle"
+            }
+          ]
+        },
+        {
+          "id": "red-digs",
+          "name": "Sixteen red dig sites",
+          "description": "You need the Golden Shovel and active Zombie Blood. Look for the active glowing pile at these marked spots. An empty bottle adds a perk slot; buy the perk afterwards.",
+          "locations": [
+            {
+              "id": "red-dig-map",
+              "src": "/images/chronicles/origins/red-dig-map.png",
+              "alt": "Glitching Queen: all sixteen red dig-site locations",
+              "region": "Whole map"
+            }
+          ]
+        },
+        {
+          "id": "shield",
+          "name": "All shield-part spawns",
+          "description": "Find one piece in each of the three regions shown on the chart, then assemble at a workbench. Select the chart to enlarge it.",
+          "locations": [
+            {
+              "id": "shield-locations",
+              "src": "/images/chronicles/origins/shield-locations.jpg",
+              "alt": "Glitching Queen: all nine shield-part locations",
+              "region": "Whole map"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "moonColours": [
+    "Red",
+    "Green",
+    "Blue",
+    "Yellow"
+  ],
+  "tileSymbols": [
+    {
+      "id": "1",
+      "label": "Circle with cross",
+      "box": [
+        20,
+        0,
+        135,
+        130
+      ]
+    },
+    {
+      "id": "2",
+      "label": "Double cross",
+      "box": [
+        177,
+        0,
+        135,
+        130
+      ]
+    },
+    {
+      "id": "3",
+      "label": "Diamond",
+      "box": [
+        334,
+        0,
+        135,
+        130
+      ]
+    },
+    {
+      "id": "4",
+      "label": "Eight-spoke star",
+      "box": [
+        491,
+        0,
+        135,
+        130
+      ]
+    },
+    {
+      "id": "5",
+      "label": "Crescent",
+      "box": [
+        20,
+        190,
+        135,
+        125
+      ]
+    },
+    {
+      "id": "6",
+      "label": "Circle with bar",
+      "box": [
+        177,
+        190,
+        135,
+        125
+      ]
+    },
+    {
+      "id": "7",
+      "label": "Circle with dot",
+      "box": [
+        334,
+        190,
+        135,
+        125
+      ]
+    },
+    {
+      "id": "8",
+      "label": "Three dots",
+      "box": [
+        491,
+        190,
+        135,
+        125
+      ]
+    },
+    {
+      "id": "9",
+      "label": "Triangle",
+      "box": [
+        20,
+        380,
+        135,
+        118
+      ]
+    },
+    {
+      "id": "10",
+      "label": "D shape",
+      "box": [
+        177,
+        380,
+        135,
+        118
+      ]
+    },
+    {
+      "id": "11",
+      "label": "Tall cross",
+      "box": [
+        334,
+        380,
+        135,
+        118
+      ]
+    },
+    {
+      "id": "12",
+      "label": "Crossed curves",
+      "box": [
+        491,
+        380,
+        135,
+        118
+      ]
+    }
+  ]
+}
