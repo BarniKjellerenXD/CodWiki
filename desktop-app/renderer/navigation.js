@@ -2,7 +2,7 @@
 function groupNavigation(entries, savedOrder = []) {
   const byId = new Map(entries.map(item => [item.id, item]))
   const ordered = [...new Set([...savedOrder, ...byId.keys()])].map(id => byId.get(id)).filter(Boolean)
-  const gameOrder = ['bo7', 'bo6', 'cw', 'bo4', 'bo3']
+  const gameOrder = ['bo7', 'bo6', 'cw', 'bo4', 'bo3', 'bo2', 'bo1', 'waw']
   return ordered.filter(item => item.kind === 'guide').map(guide => ({
     id: guide.map,
     game: guide.game || 'bo7',

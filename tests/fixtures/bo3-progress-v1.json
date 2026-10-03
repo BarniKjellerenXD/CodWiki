@@ -1,0 +1,219 @@
+{
+  "bo3-shadows-of-evil": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2",
+        "setup-3",
+        "setup-4"
+      ]
+    },
+    {
+      "id": "swords",
+      "steps": [
+        "swords-1",
+        "swords-2",
+        "swords-3"
+      ]
+    },
+    {
+      "id": "flags",
+      "steps": [
+        "flags-1",
+        "flags-2",
+        "flags-3"
+      ]
+    },
+    {
+      "id": "finale",
+      "steps": [
+        "finale-1",
+        "finale-2",
+        "finale-3"
+      ]
+    }
+  ],
+  "bo3-the-giant": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2"
+      ]
+    },
+    {
+      "id": "flytrap",
+      "steps": [
+        "flytrap-1",
+        "flytrap-2",
+        "flytrap-3"
+      ]
+    },
+    {
+      "id": "perk",
+      "steps": [
+        "perk-1",
+        "perk-2"
+      ]
+    }
+  ],
+  "bo3-der-eisendrache": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2",
+        "setup-3"
+      ]
+    },
+    {
+      "id": "bows",
+      "steps": [
+        "bows-1",
+        "bows-2",
+        "bows-3",
+        "bows-4"
+      ]
+    },
+    {
+      "id": "time",
+      "steps": [
+        "time-1",
+        "time-2",
+        "time-3"
+      ]
+    },
+    {
+      "id": "keeper",
+      "steps": [
+        "keeper-1",
+        "keeper-2",
+        "keeper-3"
+      ]
+    },
+    {
+      "id": "boss",
+      "steps": [
+        "boss-1",
+        "boss-2"
+      ]
+    }
+  ],
+  "bo3-zetsubou-no-shima": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2",
+        "setup-3"
+      ]
+    },
+    {
+      "id": "equipment",
+      "steps": [
+        "equipment-1",
+        "equipment-2",
+        "equipment-3"
+      ]
+    },
+    {
+      "id": "plants",
+      "steps": [
+        "plants-1",
+        "plants-2",
+        "plants-3"
+      ]
+    },
+    {
+      "id": "cogs",
+      "steps": [
+        "cogs-1",
+        "cogs-2",
+        "cogs-3"
+      ]
+    },
+    {
+      "id": "boss",
+      "steps": [
+        "boss-1",
+        "boss-2"
+      ]
+    }
+  ],
+  "bo3-gorod-krovi": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2",
+        "setup-3"
+      ]
+    },
+    {
+      "id": "valves",
+      "steps": [
+        "valves-1",
+        "valves-2",
+        "valves-3"
+      ]
+    },
+    {
+      "id": "trophies",
+      "steps": [
+        "trophies-1",
+        "trophies-2",
+        "trophies-3"
+      ]
+    },
+    {
+      "id": "boss",
+      "steps": [
+        "boss-1",
+        "boss-2",
+        "boss-3"
+      ]
+    }
+  ],
+  "bo3-revelations": [
+    {
+      "id": "setup",
+      "steps": [
+        "setup-1",
+        "setup-2",
+        "setup-3"
+      ]
+    },
+    {
+      "id": "reels",
+      "steps": [
+        "reels-1",
+        "reels-2",
+        "reels-3"
+      ]
+    },
+    {
+      "id": "eggs",
+      "steps": [
+        "eggs-1",
+        "eggs-2",
+        "eggs-3"
+      ]
+    },
+    {
+      "id": "key",
+      "steps": [
+        "key-1",
+        "key-2",
+        "key-3"
+      ]
+    },
+    {
+      "id": "boss",
+      "steps": [
+        "boss-1",
+        "boss-2"
+      ]
+    }
+  ]
+}

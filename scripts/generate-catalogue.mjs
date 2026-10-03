@@ -14,8 +14,8 @@ const attr = (n, name) => n.props?.find(p => p.name === name)?.value?.content ||
 const text = (n, clean = false) => clean && /g-tag|g-chev/.test(attr(n, 'class')) ? '' : n.type === 2 ? n.content : (n.children || []).map(c => text(c, clean)).join('')
 for (const map of [...catalogue.maps, ...(catalogue.guides || [])]) {
   const game = catalogue.games.find(game => game.id === map.gameId)
-  const keywords = `${game.id} ${game.name} zombies ${map.group || ''} main quest easter egg`
-  entries.push({ id: map.id, name: map.name, map: map.map || map.id, kind: 'Guide', route: map.route, keywords })
+  const keywords = `${game.id} ${game.name} zombies ${map.group || ''} ${map.edition || ''} ${map.mode || ''} ${map.status === 'planned' ? 'guide planned map entry' : 'main quest easter egg'}`
+  entries.push({ id: map.id, name: map.name, map: map.map || map.id, kind: map.status === 'planned' ? 'Map entry' : 'Guide', route: map.route, keywords })
   const root = parse(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'))
   const walk = (n, quick = false) => {
     quick ||= /\b(cheat-grid|quest-grid)\b/.test(attr(n, 'class'))
@@ -33,7 +33,7 @@ for (const tool of catalogue.tools) { const map=catalogue.maps.find(m=>m.id===to
 entries.push({ id: 'super-ee', name: 'Super Easter Egg', map: '', kind: 'Quest', route: '/guides/bo7-super-easter-egg', keywords: 'super ee toys warden exfil' })
 fs.writeFileSync('app/data/searchIndex.json', JSON.stringify(entries, null, 2) + '\n')
 const nav = catalogue.maps.flatMap(m => [
-  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, kind: 'guide', section: m.name, label: 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
+  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, kind: 'guide', section: m.name, label: m.status === 'planned' ? 'Map entry · guide planned' : 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
   ...(catalogue.guides || []).filter(g=>g.map===m.id).map(g=>({ id:g.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'quest', section:m.name, label:g.name.replace('Outbreak: ', ''), url:g.route, accel:null, icon:'◇' })),
   ...catalogue.tools.filter(t=>t.map===m.id).map(t=>({ id:t.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'tool', section:m.name, label:t.name, url:t.route, accel:t.shortcut || null, icon:'↗' }))
 ])

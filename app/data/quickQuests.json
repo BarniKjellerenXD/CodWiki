@@ -1299,66 +1299,62 @@
   "bo3-der-eisendrache": [
     {
       "id": "setup",
-      "title": "Key Features: power and equipment",
+      "title": "Power, Pack-a-Punch, dragons and Ragnarok DG-4",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Open the route to power and turn it on. Activate the courtyard anti-gravity plates and collect shield parts while opening the castle."
+          "html": "Power → activate four pyramid plates → open Wundersphere landing pads."
         },
         {
           "id": "setup-2",
-          "html": "Interact with the scattered Pack-a-Punch components to assemble the machine. Feed each of the three stone dragons one zombie at a time until it stops eating."
+          "html": "Assemble Pack-a-Punch; feed courtyard, Church and Undercroft dragons → collect base bow."
         },
         {
           "id": "setup-3",
-          "html": "Collect Wrath of the Ancients from the knight’s tomb. Gather the Ragnarok DG-4 components from the Panzer, launch-pad drop and rocket-test event."
+          "html": "Collect Panzer, Death Ray and rocket-test parts → build Ragnarok DG-4 and shield."
         }
       ]
     },
     {
       "id": "bows",
-      "title": "Bow upgrades",
+      "title": "Choose your required bows",
       "detail": "details-bows",
       "steps": [
         {
           "id": "bows-1",
-          "html": "Choose the required upgrade branches. Lightning uses the weather vane, bonfires, wall-running symbols and electrified shots; Wolf follows its paintings, flag, skull and spirit wolf."
+          "html": "Solo/ranked: prepare the required player-count bows. Unranked/offline: all four."
         },
         {
           "id": "bows-2",
-          "html": "Fire uses the clock-tower symbol, rocket-site rock, aerial circle shots and its fireplace route. Void uses the trophy-room floor, skulls, crawlers and spoken names."
+          "html": "Choose and complete each needed elemental branch."
         },
         {
           "id": "bows-3",
-          "html": "For Void, record the three spoken names, then the glyph each corresponding knight reveals. Do not assume a fixed name-to-glyph mapping."
+          "html": "Void: hear names → inspect matching knights → record their actual glyphs."
         },
         {
           "id": "bows-4",
-          "html": "Complete each branch’s charged soul chest and collect the upgraded bow.",
-          "tools": [
-            "bo3-de-bows",
-            "bo3-de-void"
-          ]
+          "html": "Reforged arrow → matching pyramid chest → souls → exchange the base bow."
         }
       ]
     },
     {
       "id": "time",
-      "title": "Wisps, time travel and safe",
+      "title": "Wisps, first time travel and the safe code",
       "detail": "details-time",
       "steps": [
         {
           "id": "time-1",
-          "html": "Start the teleporter wisp sequence with the unupgraded bow. Use an upgraded bow to shoot each active electrical object before the attempt expires; a failed sequence needs a fresh attempt."
+          "html": "Base bow: teleporter prongs → upgraded bow: four active wisps."
         },
         {
           "id": "time-2",
-          "html": "Teleport to the past and record the safe combination. Collect the required quest items before returning."
+          "html": "Purple teleporter → collect fuses + canister → record safe symbols top to bottom."
         },
         {
           "id": "time-3",
-          "html": "Set the Death Ray to Protect, enter the observed safe code at the terminal and retrieve the safe contents. Install the fuses and complete the station symbol challenges.",
+          "html": "Fuses → Protect → safe code → collect disk/coils → install both coils → Destroy.",
           "tools": [
             "bo3-de-terminals"
           ]
@@ -1367,35 +1363,39 @@
     },
     {
       "id": "keeper",
-      "title": "Keeper and boss preparation",
+      "title": "Terminal memory, second time travel and Keeper circles",
       "detail": "details-keeper",
       "steps": [
         {
           "id": "keeper-1",
-          "html": "Complete the terminal/Death Ray sequence to bring down the pod and collect the tablet. Repeat the time-travel step when required to obtain the remaining quest item."
+          "html": "Solve both terminal boards → press the green Death Ray button → crash the pod."
+        },
+        {
+          "id": "keeper-second-trip",
+          "html": "Second trip: use machine → collect tablet; collect golden rod from the crash."
         },
         {
           "id": "keeper-2",
-          "html": "Place the tablet and follow the keeper. Feed its circles with the bow element indicated for that location. Keep the correct bow available to its player."
+          "html": "Follow Keeper → stand inside each circle → use its indicated bow; place tablet at Double Tap."
         },
         {
           "id": "keeper-3",
-          "html": "When the keeper returns and the pyramid stage is ready, gather the team with charged Ragnarok DG-4s, upgraded weapons and ammunition."
+          "html": "Fit the canister → resupply → every player plants charged Ragnaroks on a separate plate."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Keeper boss and ending",
+      "title": "Keeper boss and the final terminal",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Use Ragnarok DG-4 at the arena center during the keeper’s electrical charge to expose it. Shoot the vulnerable chest and survive the Panzer waves between damage phases."
+          "html": "Central charge → plant Ragnaroks → shoot glowing chest; use pillars against the wipe attack."
         },
         {
           "id": "boss-2",
-          "html": "Repeat the opening and damage cycles. After returning to the castle, collect and use the Summoning Key at the terminal to complete the ending."
+          "html": "Return → collect Summoning Key → Clock Tower terminal → ending."
         }
       ]
     }
@@ -1403,39 +1403,58 @@
   "bo3-gorod-krovi": [
     {
       "id": "setup",
-      "title": "Key Features: dragon access",
+      "title": "Power, dragon travel and Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Turn on power and collect the three colored code cylinders from enemy drops. Insert each in its matching terminal and defend the dropped Groph module."
+          "html": "Power → three colored cylinders → defend three modules → collect their circuits."
         },
         {
           "id": "setup-2",
-          "html": "Collect each module’s part and install the dragon control. Ride the dragon to the hatchery to access Pack-a-Punch and complete the lockdown."
+          "html": "Install circuits in Operations Bunker → dragon ride → Hatchery Pack-a-Punch."
         },
         {
           "id": "setup-3",
-          "html": "Build the Dragon Shield. Obtain and incubate the dragon egg, complete its challenges, then charge it at the hatchery to receive the Gauntlet of Siegfried."
+          "html": "Collect three shield pieces → build in Operations Bunker."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Dragon Strike and Gauntlet of Siegfried",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-1",
+          "html": "All players activate Hatchery crystal → survive four waves → collect Dragon Strike."
+        },
+        {
+          "id": "equipment-2",
+          "html": "Collect egg → heat in dragon fire → cool → napalm, penetration and melee trials."
+        },
+        {
+          "id": "equipment-3",
+          "html": "Incubate and defend egg → cool → collect → claim Gauntlet at spawn."
         }
       ]
     },
     {
       "id": "valves",
-      "title": "Generator and valve network",
+      "title": "Airflow valves and SOPHIA’s password",
       "detail": "details-valves",
       "steps": [
         {
           "id": "valves-1",
-          "html": "Use a Valkyrie electrical attack to power the generator. Identify the valve with the green light and the valve containing the master cylinder."
+          "html": "Power Hatchery generator → find green-light room and pink-cylinder room."
         },
         {
           "id": "valves-2",
-          "html": "Enter those two rooms in the valve solver. Set the five connecting valves to its output and collect the cylinder at the endpoint."
+          "html": "Use the calculated five settings → collect cylinder at the unchanged endpoint."
         },
         {
           "id": "valves-3",
-          "html": "Take the master cylinder to SOPHIA and enter KRONOS when prompted.",
+          "html": "Insert cylinder → spell KRONOS top to bottom → submit.",
           "tools": [
             "bo3-gorod-valves"
           ]
@@ -1444,20 +1463,51 @@
     },
     {
       "id": "trophies",
-      "title": "Trophies and SOPHIA challenges",
+      "title": "Collect and install all six trophies",
       "detail": "details-trophies",
       "steps": [
         {
           "id": "trophies-1",
-          "html": "Collect all six challenge trophies using the map’s shield, equipment and environmental interactions, then place them at the command terminal."
+          "html": "Statue hand + shield-blasted pipe + Supply Depot laser trap."
         },
         {
           "id": "trophies-2",
-          "html": "Activate each challenge and follow its specific objective: escorts must reach their destination, defense targets must survive and collection tasks need their items returned."
+          "html": "Dragon Strike puddle + Gauntlet-punch safe + sewer red light / Hatchery toilet."
         },
         {
           "id": "trophies-3",
-          "html": "For the bomb challenge, record every displayed location before leaving the screen. Defuse all six in exactly that order; a wrong interaction can end the run.",
+          "html": "Install trophies → activate monitor → complete five random challenges, then download."
+        }
+      ]
+    },
+    {
+      "id": "challenges",
+      "title": "The six SOPHIA challenges",
+      "detail": "details-challenges",
+      "steps": [
+        {
+          "id": "challenges-bombs",
+          "html": "Bombs: record the six real flashes → defuse exactly in that order."
+        },
+        {
+          "id": "challenges-gersh",
+          "html": "Gersh: find yellow orb → Pack-a-Punched damage → listen → follow and repeat."
+        },
+        {
+          "id": "challenges-valkyrie",
+          "html": "Escort green-eyed drone from spawn to SOPHIA without damaging it."
+        },
+        {
+          "id": "challenges-mangler",
+          "html": "Find green-eyed Mangler → maintain its attention → lure it to Dragon Command."
+        },
+        {
+          "id": "challenges-pod",
+          "html": "Protect distant module → send whelp for cargo → return cargo to SOPHIA."
+        },
+        {
+          "id": "challenges-download",
+          "html": "Take keycard → Hatchery computer / lockdown → retrieve downloaded card → SOPHIA.",
           "tools": [
             "bo3-gorod-bombs"
           ]
@@ -1466,20 +1516,20 @@
     },
     {
       "id": "boss",
-      "title": "Power core and final fights",
+      "title": "Deliver the power core and fight the dragon / Nikolai",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "After all challenges, obtain the power core and deliver it to Nikolai using the Gauntlet dragon. Gather the team at the final entrance."
+          "html": "Whelp delivers core to Nikolai → SOPHIA leaves → all players enter grate → arena button."
         },
         {
           "id": "boss-2",
-          "html": "Fight the dragon by damaging exposed weak spots between attacks. Then damage the weak points of Nikolai’s mech as they become available."
+          "html": "Dragon: survive fire → shoot each exposed orange weak point → repeat."
         },
         {
           "id": "boss-3",
-          "html": "Finish the final interaction after the mech is defeated. Do not assume the dragon fight alone completes the quest."
+          "html": "Nikolai: destroy four exposed outer weak points → central core → ending."
         }
       ]
     }
@@ -2209,43 +2259,43 @@
   "bo3-shadows-of-evil": [
     {
       "id": "setup",
-      "title": "Key Features: rituals and Pack-a-Punch",
+      "title": "Beast routes, rituals and Pack-a-Punch",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Use Beast mode to open each district’s ritual route: shock electrical boxes, break marked doors/crates and grapple to elevated entrances before the transformation ends."
+          "html": "Beast mode: shock power boxes, break crates and grapple to ritual entrances."
         },
         {
           "id": "setup-2",
-          "html": "Collect the Summoning Key and the four character ritual items. Complete the corresponding rituals at Easy Street, the Canal burlesque area, Waterfront boxing gym and Footlight theater."
+          "html": "Pen → Nero; badge → Ruby Rabbit; belt → Boxing Gym; toupee → Burlesque. Collect all four Gateworms."
         },
         {
           "id": "setup-3",
-          "html": "Take the four gateworms through the rift, place them around the underground ritual room and survive its final ritual to unlock Pack-a-Punch."
+          "html": "Open a rift → place four Gateworms → complete the underground ritual → Pack-a-Punch."
         },
         {
           "id": "setup-4",
-          "html": "Build the shield and prepare a strong weapon. The Apothicon Servant requires its three match drops; recommended GobbleGums are optional loadout choices."
+          "html": "Build the three-district shield, get perks and upgrade a bullet weapon."
         }
       ]
     },
     {
       "id": "swords",
-      "title": "Apothicon sword and upgrade",
+      "title": "Train glyphs, Apothicon Sword and Keeper upgrade",
       "detail": "details-swords",
       "steps": [
         {
           "id": "swords-1",
-          "html": "Ride the tram routes and look through the windows for the three red glyphs. Record them, then enter Beast mode and activate the corresponding symbols on the underground wall."
+          "html": "Record three train glyphs → shock those shapes on the underground wall."
         },
         {
           "id": "swords-2",
-          "html": "Take the egg and place it at each of the four statues. Fill each placement with nearby kills, return it to the wall and collect the sword."
+          "html": "Charge your egg at the four statues → return it → take the sword."
         },
         {
           "id": "swords-3",
-          "html": "Visit your character’s ritual location for the Arch-Ovum. Complete its summoning-circle encounters across successive rounds, then return to exchange for the upgraded sword.",
+          "html": "Your character’s Keeper → four street circles over four rounds → upgraded sword.",
           "tools": [
             "bo3-shadows-glyphs"
           ]
@@ -2254,42 +2304,39 @@
     },
     {
       "id": "flags",
-      "title": "Book and flag defenses",
+      "title": "Four flag routes and Keeper hand-ins",
       "detail": "details-flags",
       "steps": [
         {
           "id": "flags-1",
-          "html": "After the swords are ready, activate the book in Nero’s room and obtain the flag. Place it at the indicated defense locations."
+          "html": "Float Nero’s book → pick up the flag near Widow’s Wine."
         },
         {
           "id": "flags-2",
-          "html": "Protect the flag from incoming enemies and Shadowman attacks. Pick it up when charged and carry it onward, completing each route before returning it to the appropriate ritual keeper."
+          "html": "Defend both lightning patches, then deliver the charged flag to that district’s Keeper."
         },
         {
           "id": "flags-3",
-          "html": "Repeat the available flag routes, respecting their round progression, until the keepers are ready."
+          "html": "Complete one district per round until all four Keepers move underground."
         }
       ]
     },
     {
       "id": "finale",
-      "title": "Shadowman and four-player finale",
+      "title": "Capture the Shadowman, then coordinate the four-player ending",
       "detail": "details-finale",
       "steps": [
         {
           "id": "finale-1",
-          "html": "Activate the keepers in the underground ritual chamber. Damage the Shadowman through the vulnerable phases and trap him at the ritual table."
+          "html": "Activate four Keepers → shoot the exposed Shadowman to the table → interact to trap him."
         },
         {
           "id": "finale-2",
-          "html": "Assign three players to the tram stations and one to the central junction. Coordinate Beast-mode electrical interactions, tram movement and keeper shocks for the final gateworm stage."
+          "html": "Three station players + one Junction player; one station player calls the train as a human."
         },
         {
           "id": "finale-3",
-          "html": "Confirm the final quest reward rather than treating the earlier Shadowman encounter as the complete four-player ending.",
-          "tools": [
-            "bo3-shadows-roles"
-          ]
+          "html": "Keep rails and Keepers charged through the train impact; wait for the ending cutscene."
         }
       ]
     }
@@ -2297,61 +2344,77 @@
   "bo3-zetsubou-no-shima": [
     {
       "id": "setup",
-      "title": "Key Features: permanent power",
+      "title": "Permanent power, Pack-a-Punch and protection",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Collect a bucket and water. Fill the temporary generators in Labs A and B, then open the bunker while both are active."
+          "html": "Bucket → water both labs → bunker → clear underwater turbine → permanent power."
         },
         {
           "id": "setup-2",
-          "html": "Enter the flooded power room, clear the obstruction and survive the underwater lockdown to activate permanent power. Watch oxygen while fighting."
+          "html": "Power vent + cocoon + underwater tunnel parts → repair three drainage valves → Pack-a-Punch."
         },
         {
           "id": "setup-3",
-          "html": "Drain the three Pack-a-Punch areas and collect the machine parts. Build the shield and gas mask from their spawn groups."
+          "html": "Build shield from Lab A, Lab B and artillery parts; build a mask from propeller, green pool and dock parts."
+        }
+      ]
+    },
+    {
+      "id": "skull",
+      "title": "Skull of Nan Sapwe and personal trials",
+      "detail": "details-skull",
+      "steps": [
+        {
+          "id": "skull-1",
+          "html": "Match each skull’s actual markings to one of four altars."
+        },
+        {
+          "id": "skull-2",
+          "html": "Defend and return four skulls → downstairs Keeper ritual → collect Skull."
+        },
+        {
+          "id": "skull-3",
+          "html": "Every player completes three trials → hold shield in the platform’s lightning."
         }
       ]
     },
     {
       "id": "equipment",
-      "title": "Skull, KT-4 and Masamune",
+      "title": "KT-4 and Masamune",
       "detail": "details-equipment",
       "steps": [
         {
           "id": "equipment-1",
-          "html": "Match the four skull symbols to their ritual locations and charge each skull with kills. Return them and survive the ritual to obtain the Skull of Nan Sapwe."
+          "html": "Scientist vial + caged-spider venom + deep underwater plant → KT-4."
         },
         {
           "id": "equipment-2",
-          "html": "Collect the KT-4 ingredients from the laboratory spider cage, special zombie and underwater plant route, then build the weapon."
+          "html": "Mesmerize purple-pool poster → reveal elevator wall and underwater planter."
         },
         {
           "id": "equipment-3",
-          "html": "Complete the trials and Masamune upgrade requirements. Use the skull to reveal hidden quest surfaces and the electrified shield where specified.",
-          "tools": [
-            "bo3-zetsubou-upgrades"
-          ]
+          "html": "Spider tooth + electrified-cage vial + rainbow plant → Masamune."
         }
       ]
     },
     {
       "id": "plants",
-      "title": "Plant rewards and artillery shell",
+      "title": "Grow the flak shell and shoot down the plane",
       "detail": "details-plants",
       "steps": [
         {
           "id": "plants-1",
-          "html": "Plant a seed and water it once per growth round. Record its treatment; use KT-4 fertilization for recipes that require it."
+          "html": "Plant → blue water + KT-4 on three consecutive rounds."
         },
         {
           "id": "plants-2",
-          "html": "For the artillery task, grow the required reward plant and collect the shell if it appears. If it does not, plant and grow another attempt."
+          "html": "Harvest on the following round → collect shell or grow another batch."
         },
         {
           "id": "plants-3",
-          "html": "Load the shell into the anti-aircraft gun and shoot the passing plane at the correct moment. Collect the dropped cog.",
+          "html": "Load cannon → shoot passing plane → collect smoking cog at one of three sites.",
           "tools": [
             "bo3-zetsubou-plants"
           ]
@@ -2360,35 +2423,35 @@
     },
     {
       "id": "cogs",
-      "title": "Elevator cogs",
+      "title": "Recover the three elevator cogs",
       "detail": "details-cogs",
       "steps": [
         {
           "id": "cogs-1",
-          "html": "Use Anywhere But Here after revealing its hidden room to collect one cog. This quest route requires that GobbleGum interaction."
+          "html": "Reveal mechanism → Anywhere But Here → collect secret-room cog."
         },
         {
           "id": "cogs-2",
-          "html": "Obtain the zipline cog using the electrified-shield sequence. Solo uses the timed dismount route; co-op can have a teammate electrify the zipline."
+          "html": "Electrified zipline → release over the small dock → collect cog."
         },
         {
           "id": "cogs-3",
-          "html": "Install all three cogs at the elevator. Prepare Masamune, shield, mask and ammunition before descending."
+          "html": "Insert all three cogs → prepare Masamune, protection and ammunition."
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Boss room",
+      "title": "Repair the elevator and defeat the boss",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Survive the enemies and wait for the boss’s vulnerable spores to open. Shoot the active spores with Masamune."
+          "html": "Insert three cogs → resupply → elevator → cut orange vines with Masamune."
         },
         {
           "id": "boss-2",
-          "html": "Repeat through the exposed growths, keeping oxygen, space and ammunition available until the final interaction."
+          "html": "Survive between openings → Masamune the orange weak points → ending."
         }
       ]
     }
@@ -2396,39 +2459,77 @@
   "bo3-revelations": [
     {
       "id": "setup",
-      "title": "Key Features: engines and equipment",
+      "title": "Corruption engines, Pack-a-Punch and the shield",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Activate the four corruption engines and use Nacht’s control to stun the giant Apothicon. Enter it and shoot the stomach’s yellow sacs to release Pack-a-Punch."
+          "html": "Gravestones 2 → 3 → 1 → 4; complete all four corruption engines."
         },
         {
           "id": "setup-2",
-          "html": "Build the shield and Keeper Protector. Obtain Lil Arnies and the Apothicon Servant, then complete their required upgrades."
+          "html": "Trap Apothicon at Nacht → enter mouth → shoot three heart tubes → Pack-a-Punch."
         },
         {
           "id": "setup-3",
-          "html": "Shoot the opening gravestones in order 2, 3, 1, 4 to begin the main quest."
+          "html": "Origins + low-gravity Der Eisendrache + Verrückt parts → Nacht shield bench."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Keeper Protector and upgraded Apothicon Servant",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-keeper",
+          "html": "Collect skull, crystal and flag → build Keeper altar."
+        },
+        {
+          "id": "equipment-servant",
+          "html": "Box Servant → absorb five blue sky rocks → Pack-a-Punch; obtain Arnies and an upgraded bullet gun."
         }
       ]
     },
     {
       "id": "reels",
-      "title": "Keeper, Arnies and bones",
+      "title": "Three audio reels: Keeper, Arnies and bones",
       "detail": "details-reels",
       "steps": [
         {
           "id": "reels-1",
-          "html": "Find the special stone at a jump pad and summon the Keeper Protector there. Protect its ritual, collect the reel and play it at the appropriate recorder."
+          "html": "Pointed jump-pad rock → Keeper ritual → defend → play reel at Nacht."
         },
         {
           "id": "reels-2",
-          "html": "Complete the Lil Arnies hole groups inside the Apothicon and defeat the resulting enemies. Collect and play the next reel."
+          "html": "Arnies into nine holes in three batches → clear each Margwa wave → play reel at Kino."
         },
         {
           "id": "reels-3",
-          "html": "Reveal the six bones around the map, then collect them with the upgraded Apothicon Servant. Reveal Sophia’s skeleton at Nacht, collect the reel and play it at the Origins mound.",
+          "html": "Release six bones with upgraded bullets → absorb each with upgraded Servant."
+        },
+        {
+          "id": "reels-bones-finish",
+          "html": "Nacht bone pile → Servant twice → play third reel at Origins."
+        }
+      ]
+    },
+    {
+      "id": "eggs",
+      "title": "SOPHIA, Kronorium, four eggs and gateworms",
+      "detail": "details-eggs",
+      "steps": [
+        {
+          "id": "eggs-1",
+          "html": "Four turret beams → reflector rocks → SOPHIA → Kino teleporter → bedroom book → stage podium."
+        },
+        {
+          "id": "eggs-2",
+          "html": "Find egg → acid-pool incubator → owner supplies souls → collect gateworm."
+        },
+        {
+          "id": "eggs-3",
+          "html": "Follow gateworm beeps → interact at the source → collect rune; repeat for all four.",
           "tools": [
             "bo3-revelations-collections"
           ]
@@ -2436,59 +2537,43 @@
       ]
     },
     {
-      "id": "eggs",
-      "title": "Sophia, eggs and runes",
-      "detail": "details-eggs",
-      "steps": [
-        {
-          "id": "eggs-1",
-          "html": "Aim each corruption turret at the reflecting rock until its beam locks toward Sophia. Interact with her and escort her to Kino’s teleporter."
-        },
-        {
-          "id": "eggs-2",
-          "html": "Teleport with the team to Samantha’s room and collect the Kronorium. Find the four orange eggs; only one is visible on the map at a time."
-        },
-        {
-          "id": "eggs-3",
-          "html": "Charge eggs in the Apothicon pool. The collecting player must supply the souls. Use each hatched gateworm’s sonar to find its placement and obtain a rune."
-        }
-      ]
-    },
-    {
       "id": "key",
-      "title": "Kronorium sequence and Summoning Key",
+      "title": "Kronorium sequence, four arenas and seven relics",
       "detail": "details-key",
       "steps": [
         {
           "id": "key-1",
-          "html": "Stand on the four runes at Kino to reach the arena. Read the Kronorium’s rune order and activate the floating symbols in that order."
+          "html": "Projection-room circle → read four book runes → enter exact order at cycling symbol."
         },
         {
           "id": "key-2",
-          "html": "Survive the challenge waves and collect the Summoning Key. Hit the required targets in Shangri-La, Nacht, Verrückt, Mob, Origins, Der Eisendrache and Kino."
+          "html": "Survive all four terrain / Margwa phases → collect Summoning Key."
         },
         {
           "id": "key-3",
-          "html": "Return through the Kino teleporter when the targets are complete.",
+          "html": "Key hits seven photographed relics → confirm every hit → return to Kino.",
           "tools": [
-            "bo3-revelations-runes",
-            "bo3-revelations-collections"
+            "bo3-revelations-runes"
           ]
         }
       ]
     },
     {
       "id": "boss",
-      "title": "Shadowman finale",
+      "title": "Shadowman and the ending",
       "detail": "details-boss",
       "steps": [
         {
           "id": "boss-1",
-          "html": "Charge the Summoning Key at an arena pedestal, then throw it to Sophia to break the Shadowman’s shield."
+          "html": "Final teleporter → pedestal → charge key → throw at SOPHIA."
         },
         {
           "id": "boss-2",
-          "html": "Damage the Shadowman into the Apothicon’s mouth and interact with the Kronorium. Repeat the charge cycle if the damage window is missed."
+          "html": "Shoot Shadowman into statue mouth → use Kronorium → ending ends the match."
+        },
+        {
+          "id": "boss-3",
+          "html": "Super rewards: check actual BO3 quest-completion icons before the final run."
         }
       ]
     }
@@ -2872,53 +2957,50 @@
   "bo3-the-giant": [
     {
       "id": "setup",
-      "title": "Key Features: teleporter links",
+      "title": "Power and all three teleporter links",
       "detail": "details-setup",
       "steps": [
         {
           "id": "setup-1",
-          "html": "Open the route to the power switch and activate it. At each of the three teleporters, start linking and return to the mainframe at spawn within the displayed time."
+          "html": "Open the rear courtyard → power switch below the catwalk."
         },
         {
           "id": "setup-2",
-          "html": "Link all three to open Pack-a-Punch. Upgrade a weapon before starting Fly Trap."
+          "html": "Link every teleporter back to spawn → Pack-a-Punch a weapon."
         }
       ]
     },
     {
       "id": "flytrap",
-      "title": "Fly Trap and Annihilator",
+      "title": "Fly Trap: activate the beacon and earn the Annihilator",
       "detail": "details-flytrap",
       "steps": [
         {
           "id": "flytrap-1",
-          "html": "From the starting area, use a Pack-a-Punched weapon to shoot the control panel outside the map and start the Fly Trap audio."
+          "html": "Shoot the distant control panel with a Pack-a-Punched weapon."
         },
         {
           "id": "flytrap-2",
-          "html": "Find and shoot the three hidden toy targets: the furnace area, the teleporter-side vat area and the elevated exterior ledge. Use the source images for the precise sightlines."
+          "html": "Shoot the furnace monkey, high balcony bear and bear in the liquid vat."
         },
         {
           "id": "flytrap-3",
-          "html": "After the final confirmation, collect the Annihilator from its furnace reward location."
+          "html": "Claim the Annihilator from the furnace to finish Fly Trap."
         }
       ]
     },
     {
       "id": "perk",
-      "title": "Hidden perk",
+      "title": "Optional hidden sixth perk",
       "detail": "details-perk",
       "steps": [
         {
           "id": "perk-1",
-          "html": "Obtain Monkey Bombs and use them for the three teleporter interactions. Complete the associated control activations."
+          "html": "Teleport a live Monkey Bomb from each of the three teleporters."
         },
         {
           "id": "perk-2",
-          "html": "Activate the final mainframe control to reveal the hidden perk. Keep these interactions separate from the initial Pack-a-Punch links.",
-          "tools": [
-            "bo3-giant-secrets"
-          ]
+          "html": "Three green lamps → mainframe button → buy the revealed Stamin-Up or Deadshot."
         }
       ]
     }

@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   app: { head: { htmlAttrs: { lang: 'en' }, title: 'CodWiki · Zombies companion' } },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  // Keep local shared redirects in Nitro's bundle (Windows dev builds otherwise
+  // rebase this external import outside the checkout).
+  nitro: { externals: { inline: [/shared[\\/]retired-tools\.mjs/] } },
   css: ['~/assets/css/main.css', '~/assets/css/companion.css', '~/assets/css/puzzles.css'],
   modules: [
     '@nuxt/fonts',

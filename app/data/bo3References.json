@@ -1,0 +1,620 @@
+{
+  "bombLocations": {
+    "Armory": "Ground floor, beside Wunderfizz.",
+    "Department Store": "Ground floor, behind the stairs.",
+    "Dragon Command": "Left balcony, beside the Mystery Box location.",
+    "Supply Depot": "Ground-floor wall near the entrance.",
+    "Infirmary": "Beside the brick column at the Operations Bunker stairs.",
+    "Tank Factory": "To the left of the GobbleGum machine."
+  },
+  "collectionActions": {
+    "egg": "After placing the Kronorium on Kino’s podium, find an egg, take it to an acid-pool incubator inside the Apothicon and supply its souls yourself. Carry the hatched gateworm to hunt a rune.",
+    "rune": "Carry a gateworm. Follow its beeps and interact where they are fastest, then collect the revealed rune. One rune is recovered in each region.",
+    "bone": "Shoot the stone with a Pack-a-Punched bullet weapon to release a bone, then absorb the floating bone with the upgraded Apothicon Servant.",
+    "relic": "After the four trial arenas, throw the Summoning Key at the target. A successful hit gives an audio/visual cue. Retrieve the key before moving on."
+  },
+  "plantPlanter": {
+    "src": "/images/bo3-zetsubou-no-shima/zns-planting-ring.jpg",
+    "alt": "An ordinary circular stone planter with a grown pod. Find an empty ring like this to plant your seed."
+  },
+  "plantRecipes": {
+    "flak": {
+      "name": "Anti-aircraft shell",
+      "water": [
+        "Blue",
+        "Blue",
+        "Blue"
+      ],
+      "shots": true,
+      "purpose": "Main quest: load this shell into the artillery cannon to shoot down the plane and recover an elevator cog.",
+      "needs": "A seed, a bucket of blue water, and KT-4 or Masamune.",
+      "place": "Any ordinary circular stone planter.",
+      "result": "Harvest for a chance at a flak shell. Grow several plants in parallel; another reward is possible.",
+      "link": {
+        "anchor": "plants",
+        "label": "Shell and plane step"
+      }
+    },
+    "fruit": {
+      "name": "Fruit / eat-a-fruit trial",
+      "water": [
+        "Blue",
+        "Green",
+        "Purple"
+      ],
+      "shots": false,
+      "purpose": "Use this if your personal trial asks you to eat a fruit. Fruit can also give a bonus perk or make you vomit.",
+      "needs": "A seed and a bucket. Visit each of the three coloured pools over three rounds.",
+      "place": "Any ordinary circular stone planter.",
+      "result": "Three different colours, in any order, give a chance of fruit. If another plant grows, start again with a new seed.",
+      "link": {
+        "anchor": "skull",
+        "label": "Personal trials and the Skull"
+      }
+    },
+    "holder": {
+      "name": "Hold a zombie alive",
+      "water": [
+        "Green",
+        "Green",
+        "Green"
+      ],
+      "shots": false,
+      "purpose": "Optional: keep a zombie occupied while you work on other steps. Avoid shooting the zombie held by the plant.",
+      "needs": "A seed and a bucket of green water.",
+      "place": "Any ordinary circular stone planter.",
+      "result": "A mature green plant can catch and hold a nearby zombie. Return to check on it while doing other steps."
+    },
+    "killer": {
+      "name": "Killing plant",
+      "water": [
+        "Purple",
+        "Purple",
+        "Purple"
+      ],
+      "shots": false,
+      "purpose": "Optional: grow a plant that attacks nearby zombies. Keep it away from the last zombie if you need to save the round.",
+      "needs": "A seed and a bucket of purple water.",
+      "place": "Any ordinary circular stone planter.",
+      "result": "The mature purple plant attacks nearby zombies. Leave it in place to do its work."
+    },
+    "imprint": {
+      "name": "Imprint / saved loadout",
+      "water": [
+        "Blue",
+        "Blue",
+        "Blue"
+      ],
+      "shots": true,
+      "purpose": "Optional: an imprint plant can save your current equipment and perks and restore that snapshot after you die.",
+      "needs": "A seed, a bucket and KT-4 or Masamune. Blue is a simple repeatable route; green or purple water can also work.",
+      "place": "Any ordinary circular stone planter.",
+      "result": "An imprint is a chance reward. If one grows, interact with it to save your loadout before you need the revive.",
+      "link": {
+        "anchor": "gardening",
+        "label": "Imprints and other plant rewards"
+      }
+    },
+    "masamune": {
+      "name": "Masamune quest plant",
+      "water": [
+        "Rainbow",
+        "Rainbow",
+        "Rainbow"
+      ],
+      "shots": false,
+      "purpose": "KT-4 upgrade: grow the underwater ingredient needed to build Masamune.",
+      "needs": "A seed, a bucket and the Skull of Nan Sapwe. First Mesmerize the torn poster beside the purple pool, then the hidden wall in the deep underwater cave.",
+      "place": "Secret planter behind that hidden wall, in the deepest cave where you found the original KT-4 plant. An ordinary planter will not grow this ingredient.",
+      "result": "Harvest the quest ingredient on the fourth round from the revealed underwater planter.",
+      "link": {
+        "anchor": "equipment",
+        "label": "KT-4, Masamune and the hidden planter"
+      }
+    }
+  },
+  "plantSupplies": [
+    {
+      "name": "A bucket",
+      "image": {
+        "src": "/images/bo3-zetsubou-no-shima/zns-bucket-icon.png",
+        "alt": "The metal bucket inventory icon."
+      },
+      "instruction": "Pick one up at spawn, either lab or the bunker. Hold interact at a water pool to fill it; check the colour in your inventory."
+    },
+    {
+      "name": "A seed",
+      "image": {
+        "src": "/images/bo3-zetsubou-no-shima/zns-seed-icon.png",
+        "alt": "The spiky seed dropped by zombies."
+      },
+      "instruction": "Kill zombies until one drops a seed, then collect it. At an empty circular stone planter, interact to plant the seed."
+    }
+  ],
+  "plantWaters": {
+    "Blue": {
+      "location": "Behind Lab A · near the spider cave",
+      "directions": [
+        "Go behind Lab A to the pool beside the webbed entrance to the giant spider cave.",
+        "With a bucket, hold interact at the pool. Check that the bucket icon turns blue."
+      ],
+      "images": [
+        {
+          "src": "/images/bo3-zetsubou-no-shima/zns-blue-water.webp",
+          "alt": "Blue water: the pool behind Lab A, beside the webbed cave entrance."
+        }
+      ]
+    },
+    "Green": {
+      "location": "Below Lab B · beside the sewer exit",
+      "directions": [
+        "Look below and behind Lab B, close to where the sewer slide comes out. The pool sits under the wooden shelter.",
+        "Hold interact at the pool with your bucket. Check that the bucket icon turns green."
+      ],
+      "images": [
+        {
+          "src": "/images/bo3-zetsubou-no-shima/zns-green-water.jpg",
+          "alt": "Green water: the pool under the wooden shelter below Lab B."
+        }
+      ]
+    },
+    "Purple": {
+      "location": "Inside the bunker · spider cocoon room",
+      "directions": [
+        "Enter the bunker and take the door to the right of the central Pack-a-Punch area into the room full of hanging cocoons.",
+        "Find the purple pool near the torn poster. Hold interact with your bucket and check its colour."
+      ],
+      "images": [
+        {
+          "src": "/images/bo3-zetsubou-no-shima/zns-purple-water.jpg",
+          "alt": "Purple water: the glowing pool in the bunker’s spider cocoon room."
+        }
+      ]
+    },
+    "Rainbow": {
+      "location": "Sewer slide · lower bunker → Lab B",
+      "directions": [
+        "Bring a bucket and 500 points to the sewer entrance near the KT-4 workbenches in the lower bunker, opposite Mule Kick.",
+        "Ride toward Lab B. Hold interact as you pass the glowing Element 115 rock on the right, circled in the photo. The collection window is brief.",
+        "Check that your bucket now shows Rainbow water. If it did not change, ride again and adjust your timing. An ordinary bucket works."
+      ],
+      "images": [
+        {
+          "src": "/images/bo3-zetsubou-no-shima/zns-sewer-pipe-fast-travel.webp",
+          "alt": "Start at this sewer entrance in the lower bunker and travel toward Lab B."
+        },
+        {
+          "src": "/images/bo3-zetsubou-no-shima/zns-rainbow-water-rock.jpg",
+          "alt": "Collect while passing the rock circled on the right. This is a timed pickup during the sewer ride."
+        }
+      ]
+    }
+  },
+  "revelationLocations": {
+    "egg": [
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Fire pit at the foot of the Shangri-La stairs.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-egg-first-spawn.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Window just left of Stamin-Up.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-egg-second-spawn.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Trash can left of the stairs to the Shangri-La jump pad.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-egg-third-spawn.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Barrel by spawn’s jump pad toward Origins.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-egg-final-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Floor along the Bowie Knife path.",
+        "src": "/images/bo3-revelations/revelations-kino-egg-first-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Corner of Kino’s upper balcony, right of the stage.",
+        "src": "/images/bo3-revelations/revelations-kino-egg-second-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Bucket to the right of Wunderfizz in the connecting tunnel.",
+        "src": "/images/bo3-revelations/revelations-kino-egg-third-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "At the feet of the Primis statues.",
+        "src": "/images/bo3-revelations/revelations-kino-egg-final-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Left of the path into the building.",
+        "src": "/images/bo3-revelations/revelations-verruckt-egg-first-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Blue-lit debris above the Speed Cola stairs.",
+        "src": "/images/bo3-revelations/revelations-verruckt-egg-second-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Between the green test-subject tanks.",
+        "src": "/images/bo3-revelations/revelations-verruckt-egg-third-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Right side near Wunderfizz and the chairs.",
+        "src": "/images/bo3-revelations/revelations-verruckt-egg-final-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Cells before the corruption engine.",
+        "src": "/images/bo3-revelations/revelations-motd-egg-first-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Near the KN-44 in the connecting area.",
+        "src": "/images/bo3-revelations/revelations-motd-egg-second-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Left of Wunderfizz on the excavation mound.",
+        "src": "/images/bo3-revelations/revelations-motd-egg-third-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Rocks left of the Vesper, near the Keeper altar.",
+        "src": "/images/bo3-revelations/revelations-motd-egg-final-spawn.webp"
+      }
+    ],
+    "rune": [
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Ground by the jump pad toward Origins.",
+        "src": "/images/bo3-revelations/revelations-spawn-rune-first-spawn.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Left of Quick Revive.",
+        "src": "/images/bo3-revelations/revelations-spawn-rune-second-spawn.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Ground near the jump pad toward Shangri-La.",
+        "src": "/images/bo3-revelations/revelations-spawn-rune-final-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Panel next to Stamin-Up in Shangri-La.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-rune-first-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "By the Primis statues.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-rune-second-spawn.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "A pressure plate by the pyramid.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-rune-final-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Fence in the old power room.",
+        "src": "/images/bo3-revelations/revelations-verruckt-rune-first-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Right of the test-subject tanks.",
+        "src": "/images/bo3-revelations/revelations-verruckt-rune-second-spawn.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Path toward the Kino jump pad.",
+        "src": "/images/bo3-revelations/revelations-verruckt-rune-final-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Fallen board at the cafeteria entrance.",
+        "src": "/images/bo3-revelations/revelations-motd-rune-first-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Near the Generator 3 doorway.",
+        "src": "/images/bo3-revelations/revelations-motd-rune-second-spawn.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Opposite the KN-44, beneath the lamp.",
+        "src": "/images/bo3-revelations/revelations-motd-rune-final-spawn.webp"
+      }
+    ],
+    "bone": [
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Broken church window at spawn.",
+        "src": "/images/bo3-revelations/revelations-spawn-bone.webp"
+      },
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Stonework above Stamin-Up.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-bone.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Outside the map near the giant robot footprint.",
+        "src": "/images/bo3-revelations/revelations-origins-bone.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Third wall of the exterior free-perk wall-run route.",
+        "src": "/images/bo3-revelations/revelations-der-eisendrache-bone.webp"
+      },
+      {
+        "region": "Nacht",
+        "text": "Wall above the Der Eisendrache portal.",
+        "src": "/images/bo3-revelations/revelations-nacht-bone.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "Rock beside the waterfall.",
+        "src": "/images/bo3-revelations/revelations-verruckt-bone.webp"
+      }
+    ],
+    "relic": [
+      {
+        "region": "Spawn / Shangri-La",
+        "text": "Convergence crystal in the palm tree left of the temple.",
+        "src": "/images/bo3-revelations/revelations-shangri-la-relic.webp"
+      },
+      {
+        "region": "Verrückt",
+        "text": "MG42 on the fountain outside the building.",
+        "src": "/images/bo3-revelations/revelations-verruckt-relic.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Poster in the cell beside the corruption-engine area.",
+        "src": "/images/bo3-revelations/revelations-motd-relic.webp"
+      },
+      {
+        "region": "Nacht",
+        "text": "Red barrel outside the window by the spawn portal.",
+        "src": "/images/bo3-revelations/revelations-nacht-relic.webp"
+      },
+      {
+        "region": "Origins / Mob",
+        "text": "Tombstone on scaffolding left of Wunderfizz at the mound.",
+        "src": "/images/bo3-revelations/revelations-origins-relic.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Clock above the pyramid area.",
+        "src": "/images/bo3-revelations/revelations-der-eisendrache-relic.webp"
+      },
+      {
+        "region": "Kino / Der Eisendrache",
+        "text": "Radio on the chandelier above Kino’s seating.",
+        "src": "/images/bo3-revelations/revelations-kino-relic.webp"
+      }
+    ]
+  },
+  "rooms": [
+    "Armory",
+    "Department Store",
+    "Dragon Command",
+    "Supply Depot",
+    "Infirmary",
+    "Tank Factory"
+  ],
+  "shadowGlyphs": [
+    {
+      "id": "s1",
+      "label": "Lower-left star",
+      "box": [
+        1140,
+        755,
+        82,
+        80
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "Left fork",
+      "box": [
+        1140,
+        692,
+        82,
+        74
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "Left middle glyph",
+      "box": [
+        1155,
+        622,
+        80,
+        74
+      ]
+    },
+    {
+      "id": "s4",
+      "label": "Upper-left glyph",
+      "box": [
+        1195,
+        574,
+        75,
+        76
+      ]
+    },
+    {
+      "id": "s5",
+      "label": "Top glyph",
+      "box": [
+        1244,
+        545,
+        80,
+        78
+      ]
+    },
+    {
+      "id": "s6",
+      "label": "Upper-right glyph",
+      "box": [
+        1290,
+        573,
+        83,
+        75
+      ]
+    },
+    {
+      "id": "s7",
+      "label": "Right middle glyph",
+      "box": [
+        1324,
+        622,
+        82,
+        73
+      ]
+    },
+    {
+      "id": "s8",
+      "label": "Right fork",
+      "box": [
+        1335,
+        687,
+        83,
+        76
+      ]
+    },
+    {
+      "id": "s9",
+      "label": "Lower-right glyph",
+      "box": [
+        1335,
+        746,
+        84,
+        76
+      ]
+    }
+  ],
+  "terminalGlyphs": [
+    {
+      "id": "circle",
+      "label": "Circle",
+      "box": [
+        1165,
+        662,
+        50,
+        56
+      ]
+    },
+    {
+      "id": "bolt",
+      "label": "Lightning bolt",
+      "box": [
+        1234,
+        662,
+        50,
+        56
+      ]
+    },
+    {
+      "id": "d",
+      "label": "D shape",
+      "box": [
+        1332,
+        662,
+        50,
+        56
+      ]
+    },
+    {
+      "id": "rocket",
+      "label": "Rocket",
+      "box": [
+        1400,
+        662,
+        50,
+        56
+      ]
+    }
+  ],
+  "voidGlyphs": [
+    {
+      "id": "ribbon",
+      "label": "Ribbon",
+      "box": [
+        1608,
+        10,
+        238,
+        160
+      ]
+    },
+    {
+      "id": "claw",
+      "label": "Claw",
+      "box": [
+        1618,
+        180,
+        185,
+        191
+      ]
+    },
+    {
+      "id": "spikes",
+      "label": "Spikes",
+      "box": [
+        1610,
+        376,
+        207,
+        164
+      ]
+    },
+    {
+      "id": "arms",
+      "label": "Arms",
+      "box": [
+        1573,
+        538,
+        218,
+        176
+      ]
+    },
+    {
+      "id": "tears",
+      "label": "Tears",
+      "box": [
+        1572,
+        719,
+        252,
+        170
+      ]
+    },
+    {
+      "id": "moon",
+      "label": "Moon",
+      "box": [
+        1588,
+        891,
+        219,
+        180
+      ]
+    }
+  ],
+  "voidNames": [
+    "Heart",
+    "Door",
+    "Griffon",
+    "Stag",
+    "Horn",
+    "Crown"
+  ]
+}

@@ -46,6 +46,11 @@ test('malformed or obsolete progress recovers without preventing navigation', ()
 test('every map has unique stable step IDs and a real detailed reference', () => {
   for (const map of catalogue.maps) {
     const phases = quests[map.id]
+    if (map.status === 'planned') {
+      assert.equal(phases, undefined, `${map.id} must not imply an authored walkthrough`)
+      assert.match(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'), /MapEntry/)
+      continue
+    }
     assert.ok(phases.length, map.id)
     const source = fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8')
     const allIds = phases.flatMap(p=>p.steps.map(s=>s.id))
@@ -104,14 +109,14 @@ test('legacy flat sidebar order becomes one category per map with its guide firs
   const order = [...guides, ...tools].map(item => item.id)
   const groups = groupNavigation(nav, [...order, 'removed-entry', order[0]])
   assert.equal(groups.length, catalogue.maps.length)
-  assert.deepEqual([...new Set(groups.map(group => group.game))], ['bo7', 'bo6', 'cw', 'bo4', 'bo3'])
+  assert.deepEqual([...new Set(groups.map(group => group.game))], catalogue.games.map(game=>game.id))
   for (const game of catalogue.games) {
     assert.deepEqual(groups.filter(group => group.game === game.id).map(group => group.id), guides.filter(item => item.game === game.id).map(item => item.id))
   }
   assert.equal(groups.flatMap(group => group.items).length, nav.length)
   for (const group of groups) {
     assert.equal(group.items[0].kind, 'guide')
-    assert.equal(group.items[0].label, 'Guide')
+    assert.equal(group.items[0].label, catalogue.maps.find(map=>map.id===group.id).status === 'planned' ? 'Map entry · guide planned' : 'Guide')
     assert.ok(group.items.every(item => item.map === group.id))
     assert.deepEqual(group.items.slice(1).map(item => item.id), tools.filter(item => item.map === group.id).map(item => item.id))
   }
