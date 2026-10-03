@@ -669,6 +669,446 @@
       "interactiveMap": false,
       "questLabel": "Arcade survival & secrets",
       "mode": "Arcade"
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "gameId": "iw",
+      "name": "Zombies in Spaceland",
+      "route": "/guides/iw-zombies-in-spaceland",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Launch map",
+      "description": "The opening chapter of Infinite Warfare Zombies, set in a 1980s theme park."
+    },
+    {
+      "id": "iw-rave-in-the-redwoods",
+      "gameId": "iw",
+      "name": "Rave in the Redwoods",
+      "route": "/guides/iw-rave-in-the-redwoods",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Sabotage",
+      "description": "The second film in Willard Wyler’s Zombies story."
+    },
+    {
+      "id": "iw-shaolin-shuffle",
+      "gameId": "iw",
+      "name": "Shaolin Shuffle",
+      "route": "/guides/iw-shaolin-shuffle",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Continuum",
+      "description": "Infinite Warfare’s kung-fu Zombies chapter."
+    },
+    {
+      "id": "iw-attack-of-the-radioactive-thing",
+      "gameId": "iw",
+      "name": "Attack of the Radioactive Thing",
+      "route": "/guides/iw-attack-of-the-radioactive-thing",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Absolution",
+      "description": "The monster-movie chapter of Infinite Warfare Zombies."
+    },
+    {
+      "id": "iw-the-beast-from-beyond",
+      "gameId": "iw",
+      "name": "The Beast from Beyond",
+      "route": "/guides/iw-the-beast-from-beyond",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Retribution",
+      "description": "The final Infinite Warfare Zombies map. Future coverage will include the map quest and the Director’s Cut finale.",
+      "aliases": [
+        "Mephistopheles",
+        "Directors Cut",
+        "super easter egg"
+      ]
+    },
+    {
+      "id": "ww2-the-final-reich",
+      "gameId": "ww2",
+      "name": "The Final Reich",
+      "route": "/guides/ww2-the-final-reich",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Launch map",
+      "description": "WWII’s opening story map. The guided and hardcore quest routes will share this entry."
+    },
+    {
+      "id": "ww2-groesten-haus",
+      "gameId": "ww2",
+      "name": "Gröesten Haus",
+      "route": "/guides/ww2-groesten-haus",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Survival",
+      "edition": "Bonus map",
+      "description": "The compact survival map from WWII’s Zombies prologue.",
+      "aliases": [
+        "Groesten Haus",
+        "Grosten Haus",
+        "Prologue"
+      ]
+    },
+    {
+      "id": "ww2-the-darkest-shore",
+      "gameId": "ww2",
+      "name": "The Darkest Shore",
+      "route": "/guides/ww2-the-darkest-shore",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "The Resistance",
+      "description": "The first DLC chapter of WWII Zombies."
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "gameId": "ww2",
+      "name": "The Shadowed Throne",
+      "route": "/guides/ww2-the-shadowed-throne",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "The War Machine",
+      "description": "The Berlin chapter of WWII Zombies."
+    },
+    {
+      "id": "ww2-the-frozen-dawn",
+      "gameId": "ww2",
+      "name": "The Frozen Dawn",
+      "route": "/guides/ww2-the-frozen-dawn",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Shadow War",
+      "description": "The final story map in WWII Zombies."
+    },
+    {
+      "id": "ww2-into-the-storm",
+      "gameId": "ww2",
+      "name": "Into the Storm",
+      "route": "/guides/ww2-into-the-storm",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "tortured-path",
+      "mode": "Objective-based chapter",
+      "edition": "The Tortured Path · Chapter 1",
+      "description": "The first chapter of The Tortured Path. Bodega Cervantes is the separate survival version of this setting.",
+      "aliases": [
+        "Bodega Cervantes"
+      ]
+    },
+    {
+      "id": "ww2-across-the-depths",
+      "gameId": "ww2",
+      "name": "Across the Depths",
+      "route": "/guides/ww2-across-the-depths",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "tortured-path",
+      "mode": "Objective-based chapter",
+      "edition": "The Tortured Path · Chapter 2",
+      "description": "The second chapter of The Tortured Path. U.S.S. Mount Olympus is the separate survival version of this setting.",
+      "aliases": [
+        "USS Mount Olympus"
+      ]
+    },
+    {
+      "id": "ww2-beneath-the-ice",
+      "gameId": "ww2",
+      "name": "Beneath the Ice",
+      "route": "/guides/ww2-beneath-the-ice",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "tortured-path",
+      "mode": "Objective-based chapter",
+      "edition": "The Tortured Path · Chapter 3",
+      "description": "The third chapter of The Tortured Path. Altar of Blood is the separate survival version of this setting.",
+      "aliases": [
+        "Altar of Blood"
+      ]
+    },
+    {
+      "id": "ww2-bodega-cervantes",
+      "gameId": "ww2",
+      "name": "Bodega Cervantes",
+      "route": "/guides/ww2-bodega-cervantes",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "survival",
+      "mode": "Survival",
+      "edition": "The Tortured Path",
+      "description": "Round-based survival in the setting of Into the Storm; the chapter’s timed objectives use a separate entry.",
+      "aliases": [
+        "Into the Storm"
+      ]
+    },
+    {
+      "id": "ww2-uss-mount-olympus",
+      "gameId": "ww2",
+      "name": "U.S.S. Mount Olympus",
+      "route": "/guides/ww2-uss-mount-olympus",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "survival",
+      "mode": "Survival",
+      "edition": "The Tortured Path",
+      "description": "Round-based survival in the setting of Across the Depths.",
+      "aliases": [
+        "USS Mount Olympus",
+        "Across the Depths"
+      ]
+    },
+    {
+      "id": "ww2-altar-of-blood",
+      "gameId": "ww2",
+      "name": "Altar of Blood",
+      "route": "/guides/ww2-altar-of-blood",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "survival",
+      "mode": "Survival",
+      "edition": "The Tortured Path",
+      "description": "Round-based survival in the setting of Beneath the Ice.",
+      "aliases": [
+        "Beneath the Ice"
+      ]
+    },
+    {
+      "id": "aw-outbreak",
+      "gameId": "aw",
+      "name": "Outbreak",
+      "route": "/guides/aw-outbreak",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Exo Zombies",
+      "edition": "Havoc",
+      "description": "Advanced Warfare’s first Exo Zombies map. This is a different experience from Cold War’s Outbreak."
+    },
+    {
+      "id": "aw-infection",
+      "gameId": "aw",
+      "name": "Infection",
+      "route": "/guides/aw-infection",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Exo Zombies",
+      "edition": "Ascendance",
+      "description": "The Burger Town chapter of Exo Zombies.",
+      "aliases": [
+        "Burger Town"
+      ]
+    },
+    {
+      "id": "aw-carrier",
+      "gameId": "aw",
+      "name": "Carrier",
+      "route": "/guides/aw-carrier",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Exo Zombies",
+      "edition": "Supremacy",
+      "description": "The third chapter of Exo Zombies, aboard an Atlas carrier."
+    },
+    {
+      "id": "aw-descent",
+      "gameId": "aw",
+      "name": "Descent",
+      "route": "/guides/aw-descent",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Exo Zombies",
+      "edition": "Reckoning",
+      "description": "The final Exo Zombies chapter, set at the underwater Trident Retreat."
+    },
+    {
+      "id": "vanguard-der-anfang",
+      "gameId": "vanguard",
+      "name": "Der Anfang",
+      "route": "/guides/vanguard-der-anfang",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Objective-based Zombies",
+      "edition": "Launch map",
+      "description": "Vanguard’s opening Zombies experience, with a Stalingrad hub and portal objectives."
+    },
+    {
+      "id": "vanguard-terra-maledicta",
+      "gameId": "vanguard",
+      "name": "Terra Maledicta",
+      "route": "/guides/vanguard-terra-maledicta",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Objective-based Zombies",
+      "edition": "Season 2",
+      "description": "Vanguard’s second objective-based Zombies experience."
+    },
+    {
+      "id": "vanguard-shi-no-numa",
+      "gameId": "vanguard",
+      "name": "Shi No Numa",
+      "route": "/guides/vanguard-shi-no-numa",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Season 4",
+      "description": "The Vanguard reimagining, with its own quest and mechanics. World at War, Black Ops and Chronicles have separate guides."
+    },
+    {
+      "id": "vanguard-the-archon",
+      "gameId": "vanguard",
+      "name": "The Archon",
+      "route": "/guides/vanguard-the-archon",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Round-based Zombies",
+      "edition": "Season 5",
+      "description": "The final Vanguard Zombies map and confrontation with Kortifex."
+    },
+    {
+      "id": "mw3-urzikstan",
+      "gameId": "mw3",
+      "name": "Urzikstan",
+      "route": "/guides/mw3-urzikstan",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "",
+      "mode": "Open-world Zombies",
+      "edition": "Operation Deadbolt",
+      "description": "The main Modern Warfare Zombies deployment zone. Future coverage will cover setup, contracts and story missions."
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "gameId": "mw3",
+      "name": "Dark Aether · Season 1",
+      "route": "/guides/mw3-dark-aether-season-1",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "rifts",
+      "mode": "Dark Aether Rift",
+      "edition": "Season 1",
+      "description": "The first Dark Aether destination, including the Bad Signal story mission and its repeatable rift.",
+      "aliases": [
+        "Bad Signal",
+        "Al Bagra Fortress"
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "gameId": "mw3",
+      "name": "Dark Aether · Season 2",
+      "route": "/guides/mw3-dark-aether-season-2",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "rifts",
+      "mode": "Dark Aether Rift",
+      "edition": "Season 2 Reloaded",
+      "description": "The second Dark Aether destination, associated with the Countermeasures story mission.",
+      "aliases": [
+        "Countermeasures",
+        "Said City",
+        "Sa’id City"
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "gameId": "mw3",
+      "name": "Dark Aether · Season 3",
+      "route": "/guides/mw3-dark-aether-season-3",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "rifts",
+      "mode": "Dark Aether Rift",
+      "edition": "Season 3 Reloaded",
+      "description": "The third Dark Aether destination, associated with the Union story mission.",
+      "aliases": [
+        "Union",
+        "Zarqwa Hydroelectric"
+      ]
+    },
+    {
+      "id": "mw3-unstable-rift",
+      "gameId": "mw3",
+      "name": "Unstable Rift",
+      "route": "/guides/mw3-unstable-rift",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "rifts",
+      "mode": "Wave-based challenge",
+      "edition": "Season 4 Reloaded",
+      "description": "The separate wave-based rift challenge introduced in Season 4 Reloaded."
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "gameId": "mw3",
+      "name": "Dark Aether · Season 5",
+      "route": "/guides/mw3-dark-aether-season-5",
+      "status": "planned",
+      "interactiveMap": false,
+      "image": "",
+      "group": "rifts",
+      "mode": "Dark Aether Rift",
+      "edition": "Season 5 Reloaded",
+      "description": "The final Dark Aether destination, associated with the Ascension story mission.",
+      "aliases": [
+        "Ascension",
+        "Entity",
+        "Highrise"
+      ]
     }
   ],
   "tools": [
@@ -1215,35 +1655,109 @@
   "games": [
     {
       "id": "bo7",
-      "name": "Black Ops 7"
+      "name": "Black Ops 7",
+      "shortName": "BO7",
+      "aliases": [
+        "Black Ops VII"
+      ]
     },
     {
       "id": "bo6",
-      "name": "Black Ops 6"
+      "name": "Black Ops 6",
+      "shortName": "BO6",
+      "aliases": [
+        "Black Ops VI"
+      ]
     },
     {
       "id": "cw",
-      "name": "Black Ops Cold War"
+      "name": "Black Ops Cold War",
+      "shortName": "Cold War",
+      "aliases": [
+        "BOCW"
+      ]
     },
     {
       "id": "bo4",
-      "name": "Black Ops 4"
+      "name": "Black Ops 4",
+      "shortName": "BO4",
+      "aliases": [
+        "Black Ops IV"
+      ]
     },
     {
       "id": "bo3",
-      "name": "Black Ops 3"
+      "name": "Black Ops 3",
+      "shortName": "BO3",
+      "aliases": [
+        "Black Ops III"
+      ]
     },
     {
       "id": "bo2",
-      "name": "Black Ops 2"
+      "name": "Black Ops 2",
+      "shortName": "BO2",
+      "aliases": [
+        "Black Ops II"
+      ]
     },
     {
       "id": "bo1",
-      "name": "Black Ops"
+      "name": "Black Ops",
+      "shortName": "BO1",
+      "aliases": [
+        "Black Ops 1"
+      ]
     },
     {
       "id": "waw",
-      "name": "World at War"
+      "name": "World at War",
+      "shortName": "WaW",
+      "aliases": []
+    },
+    {
+      "id": "iw",
+      "name": "Infinite Warfare",
+      "shortName": "IW",
+      "aliases": []
+    },
+    {
+      "id": "ww2",
+      "name": "WWII",
+      "shortName": "WWII",
+      "aliases": [
+        "WW2",
+        "World War II",
+        "World War 2"
+      ]
+    },
+    {
+      "id": "aw",
+      "name": "Advanced Warfare",
+      "shortName": "AW",
+      "aliases": [
+        "Exo Zombies"
+      ]
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "shortName": "Vanguard",
+      "aliases": [
+        "VG"
+      ]
+    },
+    {
+      "id": "mw3",
+      "name": "Modern Warfare III (2023)",
+      "shortName": "MWIII",
+      "aliases": [
+        "MW3",
+        "MWIII",
+        "MWZ",
+        "Modern Warfare 3",
+        "Operation Deadbolt"
+      ]
     }
   ],
   "guides": [

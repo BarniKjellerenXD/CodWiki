@@ -1,6 +1,8 @@
 # CodWiki
 
-Source of truth for **codguides.wolden.eu** (Nuxt 4 site) and the **CodWiki Desktop** Windows app.
+Source of truth for **codzmwiki.com** (Nuxt 4 site) and the **CodWiki Desktop** Windows app.
+
+[Download the Windows app](https://github.com/BarniKjellerenXD/CodWiki/releases/latest) as an installer or portable ZIP. The website also links to the latest release beneath its homepage introduction.
 
 ## Layout
 
@@ -37,7 +39,7 @@ The homepage searches map guides, detailed sections, quick quest parts and the t
 
 Progress is stored locally in `codwiki-progress-v1`. Starting a new run clears only that map's checkboxes; pins, reading preferences, other maps, tools and extracted toys remain saved. Website and desktop browser profiles keep their own progress; there is no account or cloud sync.
 
-`shared/catalogue.json` is the source for map/tool names, routes and desktop shortcut defaults. `node scripts/generate-catalogue.mjs` generates the website catalogue, search index, desktop navigation and desktop theme tokens. It runs automatically before development and builds. Edit quick quest summaries in `app/data/quickQuests.json`; keep step IDs stable so saved progress survives content edits. Full walkthroughs remain in `app/components/guide/`.
+`shared/catalogue.json` supplies map/tool names, routes and desktop shortcut defaults. Game names, display order and aliases are authored in `shared/games.mjs`; planned map entries live in `shared/planned-maps.mjs`. `node scripts/generate-catalogue.mjs` refreshes the shared catalogue from the authored expansion modules and generates the website catalogue, search index, desktop navigation and desktop theme tokens. It runs automatically before development and builds. Edit quick quest summaries in `app/data/quickQuests.json`; keep step IDs stable so saved progress survives content edits. Full walkthroughs remain in `app/components/guide/`.
 
 Map data lives in `app/data/maps/`; local artwork is in `public/maps/`. The catalogue generator also updates the small quick-step map-link registry. Edit full-guide map buttons and stable anchors in the Vue components; the old one-off HTML converter refuses to overwrite mapped guides. See [interactive map maintenance and verification](docs/interactive-map-verification.md) for the data contract, sources and precision limits.
 
@@ -45,7 +47,11 @@ Run `npm test` for puzzle rules, search, saved progress, reset isolation, guide/
 
 ## Multi-game content
 
-BO7, BO6, Cold War, BO4 and BO3 share the game → map → guide/tools catalogue. BO6 includes all six round-based maps, from Liberty Falls and Terminus through Reckoning. BO3 separates original maps from Zombies Chronicles; Outbreak has two independent quest routes. BO2, Black Ops and World at War have 27 edition-specific map/mode entries, explicitly marked as planned without fabricated walkthroughs or progress. The desktop sidebar uses collapsible game/map groups and retains existing shortcut assignments. New entries have no default shortcut.
+The library covers thirteen games with 66 authored map/mode entries and 30 planned entries. BO7, BO6, Cold War, BO4, BO3, BO2, Black Ops and World at War have authored guides. BO6 includes all six round-based maps, from Liberty Falls and Terminus through Reckoning. BO3 separates original maps from Zombies Chronicles; BO2 groups Survival and extra modes separately; Outbreak has two independent quest routes.
+
+Infinite Warfare (5 entries), WWII (11 maps and modes), Advanced Warfare (4), Vanguard (4) and Modern Warfare III (2023; 6 destinations) have searchable map entries marked **Guide planned**. WWII distinguishes The Tortured Path story chapters from their survival maps; MWIII covers Urzikstan, four seasonal Dark Aether destinations and the Unstable Rift. These entries provide edition and mode context, with no walkthroughs, puzzle tools, artwork or progress invented for them. Modern Warfare III means the 2023 Zombies game; MW3 2011 Survival is outside this expansion.
+
+The website keeps its sticky game rail on wide screens and compact game selector on phones. Planned games use compact text rows, and the game rail scrolls independently on short screens. The desktop sidebar remembers one selected game, shows its map list and reveals a map's tools when expanded. A map with one destination opens directly. Global search crosses games and matches aliases and accents; clearing it restores the selected game's list. Restored pages, guide links and shortcuts select the matching game automatically. Existing labels, hidden entries, ordering, shortcut assignments and progress remain compatible; new entries have no default shortcut. See [game library scope and verification](docs/game-library-plan.md).
 
 Author expansion guides in `shared/expansion-guides.mjs`, tool definitions in `shared/expansion-tools.mjs`, and reviewed lookup facts in `shared/expansion-references.mjs`. `scripts/generate-expansion.mjs` is run by the catalogue generator and emits the Vue pages, detailed guide components and quick-step data. Do not edit those generated expansion files directly. Existing BO7 content remains authored in its original files. Keep guide, phase, step and tool IDs stable when improving prose.
 
@@ -53,7 +59,7 @@ New tools share the existing versioned state and undo/reset behavior. Calculatio
 
 BO4 guides include illustrated setup, main quests, equipment branches and boss instructions. Their authored modules are `shared/blood-of-the-dead.mjs` and `shared/bo4-*.mjs`; specialized tools share saved state between inline and full-page views. See `docs/bo4-guide-redesign.md` and the per-map research files for sources, choices and validation. Full in-game walkthrough verification remains outstanding.
 
-All six original BO3 maps have illustrated setup, full quest routes, equipment upgrades and side Easter eggs. Author them in `shared/bo3-*.mjs`; `shared/bo3-guides.mjs` aggregates the maps, `bo3-tools.mjs` defines eight contextual helpers, and `bo3-references.mjs` holds photographed glyph crops and location data. The generator emits `app/data/bo3References.json`; the UI and pure rules use `app/utils/bo3.mjs`. Existing version-1 observations and quest IDs remain compatible. `shared/planned-maps.mjs` owns the older-game entries. See [BO3 choices and scope](docs/bo3-guide-plan.md), [research and verification](docs/bo3-research-verification.md), and [image provenance](docs/bo3-assets.json). Zombies Chronicles retains its earlier coverage.
+All six original BO3 maps have illustrated setup, full quest routes, equipment upgrades and side Easter eggs. Author them in `shared/bo3-*.mjs`; `shared/bo3-guides.mjs` aggregates the maps, `bo3-tools.mjs` defines eight contextual helpers, and `bo3-references.mjs` holds photographed glyph crops and location data. The generator emits `app/data/bo3References.json`; the UI and pure rules use `app/utils/bo3.mjs`. Existing version-1 observations and quest IDs remain compatible. See [BO3 choices and scope](docs/bo3-guide-plan.md), [research and verification](docs/bo3-research-verification.md), and [image provenance](docs/bo3-assets.json). Zombies Chronicles retains its earlier coverage.
 
 BO6 guides are authored in `shared/bo6-launch.mjs`, `shared/bo6-castle-tomb.mjs` and `shared/bo6-dlc.mjs`, aggregated by `shared/bo6-guides.mjs`. They include illustrated equipment and quest instructions, optional Easter eggs and contextual puzzle tools. Calculators use pure helpers in `app/utils/bo6*.mjs`; custom widgets live in `app/components/puzzle/` and use the existing versioned saved-state system. See `docs/bo6-guide-plan.md`, the three `docs/bo6-*-research.md` files and asset manifests for design choices, source reconciliation and screenshot credits. Add new observations to each tool’s declared `fields` so saved-state sanitization retains them. Run the catalogue generator after changing authored data; do not edit the generated BO6 Vue pages or JSON directly.
 

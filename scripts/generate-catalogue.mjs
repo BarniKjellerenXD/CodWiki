@@ -14,7 +14,7 @@ const attr = (n, name) => n.props?.find(p => p.name === name)?.value?.content ||
 const text = (n, clean = false) => clean && /g-tag|g-chev/.test(attr(n, 'class')) ? '' : n.type === 2 ? n.content : (n.children || []).map(c => text(c, clean)).join('')
 for (const map of [...catalogue.maps, ...(catalogue.guides || [])]) {
   const game = catalogue.games.find(game => game.id === map.gameId)
-  const keywords = `${game.id} ${game.name} zombies ${map.group || ''} ${map.edition || ''} ${map.mode || ''} ${map.status === 'planned' ? 'guide planned map entry' : 'main quest easter egg'}`
+  const keywords = `${game.id} ${game.name} ${(game.aliases || []).join(' ')} zombies ${(map.aliases || []).join(' ')} ${map.group || ''} ${map.edition || ''} ${map.mode || ''} ${map.status === 'planned' ? 'guide planned map entry' : 'main quest easter egg'}`
   entries.push({ id: map.id, name: map.name, map: map.map || map.id, kind: map.status === 'planned' ? 'Map entry' : 'Guide', route: map.route, keywords })
   const root = parse(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'))
   const walk = (n, quick = false) => {
@@ -33,11 +33,12 @@ for (const tool of catalogue.tools) { const map=catalogue.maps.find(m=>m.id===to
 entries.push({ id: 'super-ee', name: 'Super Easter Egg', map: '', kind: 'Quest', route: '/guides/bo7-super-easter-egg', keywords: 'super ee toys warden exfil' })
 fs.writeFileSync('app/data/searchIndex.json', JSON.stringify(entries, null, 2) + '\n')
 const nav = catalogue.maps.flatMap(m => [
-  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, ...(m.group==='survival'?{group:m.group}:{}), kind: 'guide', section: m.name, label: m.status === 'planned' ? 'Map entry · guide planned' : 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
+  { id: m.id, map: m.id, game: m.gameId, gameName: catalogue.games.find(g=>g.id===m.gameId).name, group: m.group || '', status: m.status || 'available', keywords: [...(catalogue.games.find(g=>g.id===m.gameId).aliases || []), ...(m.aliases || []), m.edition || '', m.mode || ''].join(' '), kind: 'guide', section: m.name, label: m.status === 'planned' ? 'Map entry · guide planned' : 'Guide', url: m.route, accel: m.shortcut || null, icon: '◇' },
   ...(catalogue.guides || []).filter(g=>g.map===m.id).map(g=>({ id:g.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'quest', section:m.name, label:g.name.replace('Outbreak: ', ''), url:g.route, accel:null, icon:'◇' })),
   ...catalogue.tools.filter(t=>t.map===m.id).map(t=>({ id:t.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'tool', section:m.name, label:t.name, url:t.route, accel:t.shortcut || null, icon:'↗' }))
 ])
-fs.writeFileSync('desktop-app/renderer/nav.js', `// Generated from shared/catalogue.json; run node scripts/generate-catalogue.mjs.\nconst NAV = ${JSON.stringify(nav,null,2)}\nconst SYSTEM_ACTIONS = ${JSON.stringify(actions,null,2)}\nif (typeof window !== 'undefined') { window.NAV = NAV; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\nif (typeof module !== 'undefined') { module.exports = NAV; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\n`)
+const navGames = catalogue.games.map(game => ({ ...game, planned: catalogue.maps.filter(map => map.gameId === game.id).every(map => map.status === 'planned') }))
+fs.writeFileSync('desktop-app/renderer/nav.js', `// Generated from shared/catalogue.json; run node scripts/generate-catalogue.mjs.\nconst NAV = ${JSON.stringify(nav,null,2)}\nconst NAV_GAMES = ${JSON.stringify(navGames,null,2)}\nconst SYSTEM_ACTIONS = ${JSON.stringify(actions,null,2)}\nif (typeof window !== 'undefined') { window.NAV = NAV; window.NAV_GAMES = NAV_GAMES; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\nif (typeof module !== 'undefined') { module.exports = NAV; module.exports.games = NAV_GAMES; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\n`)
 console.log(`Generated ${entries.length} search entries and ${nav.length} desktop shortcuts.`)
 const css = fs.readFileSync('app/assets/css/main.css', 'utf8')
 fs.writeFileSync('desktop-app/renderer/themes.css', '/* Generated from the website theme tokens. */\n' + [...css.matchAll(/:root\[data-theme="[^"]+"\] \{[^}]+\}/g)].map(m=>m[0]).join('\n') + '\n')

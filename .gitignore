@@ -27,3 +27,7 @@ logs
 .codwiki
 .npm-cache/
 .impeccable/review/
+
+# Local repository backup and sync conflict copies
+.git-native-old/
+*Name clash*

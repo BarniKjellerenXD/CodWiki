@@ -8,13 +8,22 @@
   const selZoom = document.getElementById('sp-zoom')
   const chkRestore = document.getElementById('sp-restore')
   const btnReset = document.getElementById('sp-reset-shortcuts')
+  const gameFilter = document.getElementById('sp-game')
+  for (const game of window.NAV_GAMES) {
+    const option = document.createElement('option')
+    option.value = game.id
+    option.textContent = game.name
+    gameFilter.appendChild(option)
+  }
+  gameFilter.addEventListener('change', () => { renderShortcuts(); renderNavList() })
 
   let settings = null
+  let labelsChanged = false
   let capturing = null // actionId being recorded
   let captureHandler = null
 
   const allActions = () => [
-    ...window.NAV.filter((n) => !n.external).map((n) => ({ id: 'nav:' + n.id, label: n.label, group: n.section, navItem: n })),
+    ...window.NAV.filter((n) => !n.external && (gameFilter.value === 'all' || n.game === gameFilter.value)).map((n) => ({ id: 'nav:' + n.id, label: n.label, group: n.gameName + ' · ' + n.section, navItem: n })),
     ...window.SYSTEM_ACTIONS.map((s) => ({ id: s.id, label: s.label, group: 'App' }))
   ]
 
@@ -122,11 +131,12 @@
     const ordered = window.groupNavigation(window.NAV, settings.order).flatMap(group => group.items)
     let map = null
     ordered.forEach((item, idx) => {
+      if (gameFilter.value !== 'all' && item.game !== gameFilter.value) return
       if (item.map !== map) {
         map = item.map
         const heading = document.createElement('div')
         heading.className = 'sp-group'
-        heading.textContent = item.section
+        heading.textContent = item.gameName + ' · ' + item.section
         navListEl.appendChild(heading)
       }
       const row = document.createElement('div')
@@ -134,20 +144,20 @@
       const up = document.createElement('button')
       up.className = 'sp-btn icon'
       up.textContent = '↑'
-      up.setAttribute('aria-label', 'Move ' + item.label + ' up')
+      up.setAttribute('aria-label', 'Move ' + item.section + ': ' + item.label + ' up')
       up.disabled = item.kind === 'guide' || ordered[idx - 1]?.kind !== 'tool' || ordered[idx - 1]?.map !== item.map
       up.addEventListener('click', () => move(idx, -1))
       const down = document.createElement('button')
       down.className = 'sp-btn icon'
       down.textContent = '↓'
-      down.setAttribute('aria-label', 'Move ' + item.label + ' down')
+      down.setAttribute('aria-label', 'Move ' + item.section + ': ' + item.label + ' down')
       down.disabled = item.kind === 'guide' || ordered[idx + 1]?.map !== item.map
       down.addEventListener('click', () => move(idx, 1))
       const chk = document.createElement('input')
       chk.type = 'checkbox'
       chk.checked = !settings.hidden.includes(item.id)
       chk.title = 'Show in sidebar'
-      chk.setAttribute('aria-label', 'Show ' + item.label + ' in sidebar')
+      chk.setAttribute('aria-label', 'Show ' + item.section + ': ' + item.label + ' in sidebar')
       chk.addEventListener('change', () => {
         if (chk.checked) settings.hidden = settings.hidden.filter((h) => h !== item.id)
         else settings.hidden = [...settings.hidden, item.id]
@@ -160,15 +170,16 @@
       const inp = document.createElement('input')
       inp.type = 'text'
       inp.className = 'sp-nav-label'
-      inp.setAttribute('aria-label', 'Label for ' + item.label)
+      inp.setAttribute('aria-label', 'Label for ' + item.section + ': ' + item.label)
       inp.value = settings.labels[item.id] !== undefined ? settings.labels[item.id] : item.label
       inp.placeholder = item.label
-      inp.addEventListener('change', () => {
+      inp.addEventListener('input', () => {
         const v = inp.value.trim()
         if (v && v !== item.label) settings.labels[item.id] = v
         else delete settings.labels[item.id]
-        persist()
+        labelsChanged = true
       })
+      inp.addEventListener('change', persist)
       row.append(up, down, chk, icon, inp)
       navListEl.appendChild(row)
     })
@@ -187,6 +198,7 @@
   }
 
   function persist () {
+    labelsChanged = false
     window.cw.saveSettings({
       shortcuts: settings.shortcuts,
       order: settings.order,
@@ -210,6 +222,7 @@
     btnClose.focus()
   }
   function close () {
+    if (labelsChanged) persist()
     stopCapture()
     panel.hidden = true
     btnSettings.setAttribute('aria-expanded', 'false')
@@ -228,6 +241,7 @@
     tab.addEventListener('click', () => {
       document.querySelectorAll('.sp-tab').forEach((t) => t.classList.toggle('active', t === tab))
       document.querySelectorAll('.sp-tab-page').forEach((p) => { p.hidden = p.dataset.page !== tab.dataset.tab })
+      gameFilter.parentElement.hidden = tab.dataset.tab === 'general'
     })
   })
 

@@ -9,12 +9,12 @@ import { bo3Guides } from './bo3-guides.mjs'
 import { chroniclesGuides } from './chronicles-guides.mjs'
 import { bo2Guides } from './bo2-guides.mjs'
 import { classicGuides } from './classic-guides.mjs'
+export { games } from './games.mjs'
 // Original concise walkthroughs adapted from the linked research sources.
 // Stable phase/step IDs are generated from the explicit keys, never from prose.
 const reddit = slug => `https://www.reddit.com/r/CODZombies/wiki/${slug}/`
 const phase = (id, title, steps, tools = []) => ({ id, title, steps: steps.map((step, i) => typeof step === 'string' ? { id: `${id}-${i + 1}`, text: step } : { id: `${id}-${i + 1}`, ...step }), tools })
 const guide = (id, gameId, name, intro, phases, sources, extra = {}) => ({ id, gameId, name, intro, phases, sources, reviewed: '2026-09-30', ...extra })
-export const games = [{ id: 'bo7', name: 'Black Ops 7' }, { id: 'bo6', name: 'Black Ops 6' }, { id: 'cw', name: 'Black Ops Cold War' }, { id: 'bo4', name: 'Black Ops 4' }, { id: 'bo3', name: 'Black Ops 3' }, { id:'bo2', name:'Black Ops 2' }, { id:'bo1', name:'Black Ops' }, { id:'waw', name:'World at War' }]
 const baseGuides = [
   ...bo6Guides,
   ...coldWarGuides,

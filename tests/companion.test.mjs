@@ -126,10 +126,10 @@ test('legacy flat sidebar order becomes one category per map with its guide firs
 })
 test('desktop preview is loopback-only and packaged builds use production', () => {
   assert.equal(siteForDevelopment('http://127.0.0.1:3000/path',false),'http://127.0.0.1:3000')
-  assert.equal(siteForDevelopment('http://127.0.0.1:3000',true),'https://codguides.wolden.eu')
+  assert.equal(siteForDevelopment('http://127.0.0.1:3000',true),'https://codzmwiki.com')
   assert.throws(()=>siteForDevelopment('http://example.com',false))
-  assert.equal(isInternal('https://codguides.wolden.eu.evil.test', 'https://codguides.wolden.eu'), false)
-  assert.equal(isInternal('https://codguides.wolden.eu/tools/ashes-serum#one', 'https://codguides.wolden.eu'), true)
+  assert.equal(isInternal('https://codzmwiki.com.evil.test', 'https://codzmwiki.com'), false)
+  assert.equal(isInternal('https://codzmwiki.com/tools/ashes-serum#one', 'https://codzmwiki.com'), true)
 })
 test('generated section anchors match IDs created by the guide reader', () => {
   const attr=(n,key)=>n.props?.find(p=>p.name===key)?.value?.content || ''

@@ -12,7 +12,15 @@
         <img src="../build/icon.png" alt="">
         <div><span>Cod Wiki</span><small>Zombies companion</small></div>
       </div>
-      <label class="sidebar-search"><span>Find a map or tool</span><input id="nav-search" type="search" placeholder="Search shortcuts…"></label>
+      <div class="game-picker">
+        <label for="nav-game">Game</label>
+        <select id="nav-game" aria-describedby="nav-game-info"></select>
+        <p id="nav-game-info"></p>
+      </div>
+      <label class="sidebar-search" for="nav-search">Search all games</label>
+      <div class="sidebar-search-field"><input id="nav-search" type="search" placeholder="Map or tool name…" aria-describedby="nav-search-status" aria-controls="nav"><button id="nav-search-clear" type="button" hidden aria-label="Clear search">Clear</button></div>
+      <p id="nav-search-status" class="nav-search-status" role="status"></p>
+      <p id="nav-empty" class="nav-empty" hidden></p>
       <nav id="nav" aria-label="Guides and tools"></nav>
       <div id="sidebar-footer">
         <button id="open-browser" type="button">Open in browser ↗</button>
@@ -29,7 +37,7 @@
           <button id="btn-home" title="Home (Ctrl+H)" aria-label="Home">⌂</button>
           <button id="btn-settings" title="Settings (Ctrl+,)" aria-label="Settings" aria-expanded="false" aria-controls="settings-panel">⚙</button>
         </div>
-        <div id="address" class="no-drag">codguides.wolden.eu</div>
+        <div id="address" class="no-drag">codzmwiki.com</div>
       </div>
       <div id="progress"></div>
       <webview id="webview" src="about:blank"></webview>
@@ -40,6 +48,7 @@
           <button id="sp-close" class="no-drag" title="Close (Esc)" aria-label="Close settings">✕</button>
         </div>
         <div class="sp-body no-drag">
+          <label class="sp-game-filter" for="sp-game">Filter by game <select id="sp-game"><option value="all">All games</option></select></label>
           <div class="sp-tabs no-drag">
             <button class="sp-tab active" data-tab="shortcuts">Shortcuts</button>
             <button class="sp-tab" data-tab="sidebar">Sidebar</button>

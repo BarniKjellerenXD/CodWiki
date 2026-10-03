@@ -1,4 +1,4 @@
-const PRODUCTION_SITE = 'https://codguides.wolden.eu'
+const PRODUCTION_SITE = 'https://codzmwiki.com'
 function siteForDevelopment(value, packaged) {
   if (!value || packaged) return PRODUCTION_SITE
   const url = new URL(value)

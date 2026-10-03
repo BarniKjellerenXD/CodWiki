@@ -19,15 +19,53 @@ address.textContent = SITE_HOST
 let errorPageShown = false
 
 /* ---------- companion navigation ---------- */
-function filterSidebar() {
- const q = document.getElementById('nav-search').value.trim().toLowerCase()
- for(const item of navEl.querySelectorAll('.nav-item')) item.hidden = !!q && !item.textContent.toLowerCase().includes(q) && !item.dataset.map.toLowerCase().includes(q) && !item.dataset.url.includes(q)
- for(const group of navEl.querySelectorAll('.nav-map, .nav-subgroup, .nav-game')) {
-  group.hidden = !Array.from(group.querySelectorAll('.nav-item')).some(item=>!item.hidden)
-  if(q && !group.hidden) group.open = true
- }
+const { filterNavigation, navigationForRoute, resolveNavigationGame } = window.CW_NAVIGATION
+const gameSelect = document.getElementById('nav-game')
+const searchInput = document.getElementById('nav-search')
+const searchClear = document.getElementById('nav-search-clear')
+const searchStatus = document.getElementById('nav-search-status')
+const emptyNav = document.getElementById('nav-empty')
+const startUrl = settings?.restoreLastPage !== false && isSite(lastSiteUrl) ? lastSiteUrl : SITE + '/'
+let selectedGame = resolveNavigationGame(window.NAV, localStorage.getItem('cw-nav-selected-game'), startUrl)
+let activeItem = navigationForRoute(window.NAV, startUrl)
+
+for (const planned of [false, true]) {
+  const group = document.createElement('optgroup')
+  group.label = planned ? 'Guides planned' : 'Guides available'
+  for (const game of window.NAV_GAMES.filter(game => game.planned === planned)) {
+    const option = document.createElement('option')
+    option.value = game.id
+    option.textContent = game.name
+    group.appendChild(option)
+  }
+  if (group.children.length) gameSelect.appendChild(group)
 }
-document.getElementById('nav-search').addEventListener('input',filterSidebar)
+gameSelect.value = selectedGame
+function selectGame(id) {
+  selectedGame = id
+  gameSelect.value = id
+  localStorage.setItem('cw-nav-selected-game', id)
+}
+gameSelect.addEventListener('change', () => {
+  selectGame(gameSelect.value)
+  searchInput.value = ''
+  buildSidebar()
+  navEl.scrollTop = 0
+})
+function clearSearch() {
+  searchInput.value = ''
+  buildSidebar()
+  searchInput.focus()
+}
+searchInput.addEventListener('input', buildSidebar)
+searchInput.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && searchInput.value) { event.preventDefault(); clearSearch() }
+  if (event.key === 'Enter' && searchInput.value.trim()) {
+    const first = navEl.querySelector('.nav-item')
+    if (first) { event.preventDefault(); first.click() }
+  }
+})
+searchClear.addEventListener('click', clearSearch)
 const collapse = document.getElementById('btn-sidebar')
 function setCollapsed(value) { document.body.classList.toggle('sidebar-collapsed',value); collapse.setAttribute('aria-expanded',String(!value)); localStorage.setItem('cw-sidebar-collapsed',String(value)) }
 collapse.addEventListener('click',()=>setCollapsed(!document.body.classList.contains('sidebar-collapsed')))
@@ -35,134 +73,139 @@ setCollapsed(localStorage.getItem('cw-sidebar-collapsed')==='true')
 webview.addEventListener('ipc-message',event=>{
  if(event.channel==='cw-theme' && ['archive','midnight','forest','ember','paper'].includes(event.args[0]) && isSite(webview.getURL())) document.documentElement.dataset.theme=event.args[0]
 })
-/* ---------- build sidebar (settings-aware) ---------- */
+
+/* Saved custom labels, visibility and tool order remain authoritative. */
 function effectiveGroups () {
-  const hidden = (settings && Array.isArray(settings.hidden)) ? settings.hidden : []
-  const labels = (settings && settings.labels) || {}
+  const hidden = Array.isArray(settings?.hidden) ? settings.hidden : []
+  const labels = settings?.labels || {}
   return window.groupNavigation(window.NAV, settings?.order || []).map(group => ({
     ...group,
     items: group.items.filter(item => !hidden.includes(item.id)).map(item => ({ ...item, label: labels[item.id] || item.label }))
   })).filter(group => group.items.length)
 }
 
-function makeItem (item) {
+function chevron() {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+  svg.setAttribute('viewBox', '0 0 24 24')
+  svg.setAttribute('aria-hidden', 'true')
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+  path.setAttribute('d', 'm9 5 7 7-7 7')
+  svg.appendChild(path)
+  return svg
+}
+
+function makeItem(item, direct = false) {
   const el = document.createElement('button')
   el.type = 'button'
-  el.className = 'nav-item nav-' + item.kind
-  if (item.id === 'bo7-super-easter-egg') el.classList.add('quest')
+  el.className = 'nav-item nav-' + item.kind + (direct ? ' nav-direct' : '')
+  el.dataset.id = item.id
+  el.dataset.navFocus = 'item:' + item.id
   el.dataset.url = item.url
-  el.dataset.map = (item.gameName || '') + ' ' + item.section
-  el.setAttribute('aria-label', item.section + ': ' + item.label)
-  if (item.thumb && item.id !== 'bo7-super-easter-egg') {
-    const img = document.createElement('img')
-    img.className = 'thumb'
-    img.alt = ''
-    img.src = SITE + item.thumb
-    img.addEventListener('error', () => {
-      const s = document.createElement('span')
-      s.className = 'ico'
-      s.textContent = item.icon
-      img.replaceWith(s)
-    })
-    el.appendChild(img)
-  } else {
-    const s = document.createElement('span')
-    s.className = 'ico'
-    s.textContent = item.icon
-    el.appendChild(s)
-  }
+  const active = item.id === activeItem?.id
+  el.classList.toggle('active', active)
+  if (active) el.setAttribute('aria-current', 'page')
+  el.setAttribute('aria-label', item.gameName + ': ' + item.section + ': ' + item.label)
+  const copy = document.createElement('span')
+  copy.className = 'nav-item-copy'
   const label = document.createElement('span')
-  label.textContent = item.label
-  el.appendChild(label)
-  if (item.external) {
-    const ext = document.createElement('span')
-    ext.className = 'ext'
-    ext.textContent = '↗'
-    el.appendChild(ext)
+  label.textContent = direct ? item.section : item.label
+  copy.appendChild(label)
+  if (direct) {
+    const detail = document.createElement('small')
+    detail.textContent = item.status === 'planned'
+      ? (item.label === 'Map entry · guide planned' ? 'Guide planned' : item.label + ' · Guide planned')
+      : item.label === 'Guide' ? 'Open guide' : item.label
+    copy.appendChild(detail)
   }
-  el.addEventListener('click', () => {
-    if (item.external) window.cw.openExternal(item.url)
-    else webview.loadURL(SITE + item.url)
-  })
+  el.append(copy, chevron())
+  el.addEventListener('click', () => webview.loadURL(SITE + item.url))
   return el
 }
 
-function buildSidebar () {
-  navEl.innerHTML = ''
-  const gameGroups = new Map()
-  const modeGroups = new Map()
-  for (const group of effectiveGroups()) {
-    let game = gameGroups.get(group.game)
-    if(!game) {
-      game = document.createElement('details')
-      game.className = 'nav-game'
-      game.open = localStorage.getItem('cw-nav-game-'+group.game) !== 'false'
-      const title = document.createElement('summary')
-      title.textContent = group.gameName
-      game.appendChild(title)
-      game.addEventListener('toggle',()=>{ if(!document.getElementById('nav-search').value.trim()) localStorage.setItem('cw-nav-game-'+group.game,String(game.open)) })
-      gameGroups.set(group.game,game)
-      navEl.appendChild(game)
+const subgroupNames = {
+  chronicles: 'Zombies Chronicles',
+  survival: 'Survival & extra modes',
+  'tortured-path': 'The Tortured Path',
+  rifts: 'Dark Aether & rifts',
+}
+function buildSidebar() {
+  const focusKey = navEl.contains(document.activeElement) ? document.activeElement.dataset.navFocus : null
+  navEl.replaceChildren()
+  const query = searchInput.value.trim()
+  const allGroups = effectiveGroups()
+  const groups = filterNavigation(allGroups, selectedGame, query)
+  const maps = window.NAV.filter(item => item.game === selectedGame && item.kind === 'guide')
+  const planned = maps.filter(map => map.status === 'planned').length
+  const tools = window.NAV.filter(item => item.game === selectedGame && item.kind === 'tool').length
+  const units = selectedGame === 'mw3' ? 'destinations' : selectedGame === 'ww2' ? 'maps & modes' : 'maps'
+  document.getElementById('nav-game-info').textContent = `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
+  searchClear.hidden = !searchInput.value
+  searchStatus.textContent = query ? `${groups.reduce((count, group) => count + group.items.length, 0)} results across all games` : ''
+  emptyNav.hidden = groups.length > 0
+  emptyNav.textContent = query ? 'No matches. Try a map, game or tool name.' : 'All entries for this game are hidden. Show them in Settings → Sidebar.'
+  let lastGame = ''
+  let lastGroup = null
+  for (const group of groups) {
+    if (query && group.game !== lastGame) {
+      const heading = document.createElement('h2')
+      heading.className = 'nav-search-game'
+      heading.textContent = group.gameName
+      navEl.appendChild(heading)
+      lastGame = group.game
+      lastGroup = null
+    }
+    if (!query && group.group !== lastGroup) {
+      const title = subgroupNames[group.group] || (group.game === 'bo3' ? 'Original maps' : '')
+      if (title) {
+        const heading = document.createElement('h2')
+        heading.className = 'nav-subgroup-title'
+        heading.textContent = title
+        navEl.appendChild(heading)
+      }
+      lastGroup = group.group
+    }
+    if (group.items.length === 1 && group.items[0].kind === 'guide') {
+      navEl.appendChild(makeItem(group.items[0], true))
+      continue
     }
     const map = document.createElement('details')
     map.className = 'nav-map'
-    map.open = localStorage.getItem('cw-nav-map-'+group.id) !== 'false'
-    map.addEventListener('toggle',()=>{ if(!document.getElementById('nav-search').value.trim()) localStorage.setItem('cw-nav-map-'+group.id,String(map.open)) })
-    const lab = document.createElement('summary')
-    lab.className = 'nav-label'
-    lab.textContent = group.name
-    map.appendChild(lab)
+    map.open = !!query || group.items.some(item => item.id === activeItem?.id) || localStorage.getItem('cw-nav-map-' + group.id) === 'true'
+    map.addEventListener('toggle', () => {
+      if (map.isConnected && !searchInput.value.trim()) localStorage.setItem('cw-nav-map-' + group.id, String(map.open))
+    })
+    const label = document.createElement('summary')
+    label.className = 'nav-label'
+    label.dataset.navFocus = 'map:' + group.id
+    const name = document.createElement('span')
+    name.textContent = group.name
+    label.append(name, chevron())
+    map.appendChild(label)
     for (const item of group.items) map.appendChild(makeItem(item))
-    if(group.game==='bo2' && group.group==='survival') {
-      let modes=modeGroups.get(group.game)
-      if(!modes){
-        modes=document.createElement('details')
-        modes.className='nav-subgroup'
-        modes.open=localStorage.getItem('cw-nav-bo2-survival')==='true'
-        const title=document.createElement('summary')
-        title.textContent='Survival & extra modes'
-        modes.appendChild(title)
-        modes.addEventListener('toggle',()=>{if(!document.getElementById('nav-search').value.trim())localStorage.setItem('cw-nav-bo2-survival',String(modes.open))})
-        modeGroups.set(group.game,modes)
-        game.appendChild(modes)
-      }
-      modes.appendChild(map)
-    } else {
-      game.insertBefore(map,modeGroups.get(group.game)||null)
-    }
+    navEl.appendChild(map)
   }
-  filterSidebar()
-  setActive(webview.src || lastSiteUrl)
+  if (focusKey) {
+    Array.from(navEl.querySelectorAll('[data-nav-focus]'))
+      .find(element => element.dataset.navFocus === focusKey)?.focus({ preventScroll: true })
+  }
 }
 buildSidebar()
-
-window.cw.onSettingsChanged((s) => {
+window.cw.onSettingsChanged(s => {
   settings = s
   window.CW_SETTINGS = s
   buildSidebar()
 })
 
-/* ---------- helpers ---------- */
-function setActive (url) {
+/* Route changes from web links, back/forward and shortcuts reveal their game. */
+function setActive(url) {
   if (!isSite(url)) return
-  let path = new URL(url).pathname.replace(/\/$/, '') || '/'
-  const q = path.indexOf('?')
-  if (q !== -1) path = path.slice(0, q)
-  if (path === '' || path === '/') path = '/'
-  const items = navEl.querySelectorAll('.nav-item')
-  items.forEach((el) => {
-    const u = el.dataset.url
-    const active = u !== undefined && (SITE + u === SITE + path || (u !== '/' && path.startsWith(u)))
-    el.classList.toggle('active', active)
-    if (active) {
-      const changed = el.getAttribute('aria-current') !== 'page'
-      el.setAttribute('aria-current', 'page')
-      let parent = el.parentElement
-      while(parent && parent !== navEl) { if(parent.tagName==='DETAILS') parent.open=true; parent=parent.parentElement }
-      if (changed && !el.hidden) el.scrollIntoView({ block: 'nearest' })
-    }
-    else el.removeAttribute('aria-current')
-  })
+  activeItem = navigationForRoute(window.NAV, url)
+  if (activeItem) {
+    selectGame(activeItem.game)
+    searchInput.value = ''
+  }
+  buildSidebar()
+  navEl.querySelector('[aria-current="page"]')?.scrollIntoView({ block: 'nearest' })
 }
 
 function updateButtons () {

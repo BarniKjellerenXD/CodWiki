@@ -111,6 +111,6 @@ test('symbol crops stay within their credited screenshots',()=>{
   for(const [glyphs,w,h] of [[shadowGlyphs,2560,1440],[voidGlyphs,1919,1078],[terminalGlyphs,2560,1440]])for(const g of glyphs){const[x,y,cw,ch]=g.box;assert.ok(x>=0&&y>=0&&cw>0&&ch>0&&x+cw<=w&&y+ch<=h,g.id)}
 })
 test('all catalogued legacy maps now open authored guides',()=>{
-  assert.equal(plannedMaps.length,0)
+  assert.equal(plannedMaps.filter(map=>['bo3','bo2','bo1','waw'].includes(map.gameId)).length,0)
   for(const m of catalogue.maps.filter(m=>['bo2','bo1','waw'].includes(m.gameId))){assert.equal(m.status,undefined);assert.ok(quick[m.id]?.length);assert.equal(search.find(x=>x.id===m.id).kind,'Guide')}
 })

@@ -16,7 +16,7 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8'))
 const full=g=>[...g.phases,...g.sidePhases]
 
 test('all fifteen classic entries have complete authored routes, side secrets and generated discovery',()=>{
- assert.equal(classicGuides.length,15);assert.equal(plannedMaps.length,0)
+ assert.equal(classicGuides.length,15);assert.equal(plannedMaps.filter(map=>['bo1','waw'].includes(map.gameId)).length,0)
  assert.equal(classicGuides.filter(g=>g.gameId==='bo1').length,11)
  assert.equal(classicGuides.filter(g=>g.gameId==='waw').length,4)
  const catalogue=read('app/data/catalogue.json'),search=read('app/data/searchIndex.json'),quick=read('app/data/quickQuests.json')
