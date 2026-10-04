@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   nitro: { externals: { inline: [/shared[\\/](?:retired-tools|seo(?:-overrides)?)\.mjs/] } },
   css: ['~/assets/css/main.css', '~/assets/css/companion.css', '~/assets/css/puzzles.css'],
   modules: [
+    '@vercel/analytics/nuxt',
     '@nuxt/fonts',
     '@nuxt/hints',
     '@nuxt/icon',

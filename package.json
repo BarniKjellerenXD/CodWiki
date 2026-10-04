@@ -19,6 +19,7 @@
     "@nuxt/hints": "^1.0.0-alpha.2",
     "@nuxt/icon": "^2.1.0",
     "@nuxtjs/tailwindcss": "^6.14.0",
+    "@vercel/analytics": "^2.0.1",
     "leaflet": "^1.9.4",
     "nuxt": "^4.2.1",
     "nuxt-api-party": "^3.4.2",
