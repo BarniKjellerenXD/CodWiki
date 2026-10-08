@@ -1,12 +1,13 @@
-// Catalogue entries only. Do not create quest progress or tools until authored.
-// Scope and sources: docs/game-library-plan.md.
+// Edition and alias seeds retained from the original planning registry.
+// Availability, guide content and progress come from the authored guide modules.
 const entry = (gameId, slug, name, mode, edition, description, extra = {}) => ({
   id: `${gameId}-${slug}`, gameId, name, route: `/guides/${gameId}-${slug}`,
   status: 'planned', interactiveMap: false, image: '', group: '',
   mode, edition, description, ...extra,
 })
 
-export const plannedMaps = [
+// Edition and search metadata retained when these destinations became authored.
+export const remainingMapMetadata = [
   entry('iw', 'zombies-in-spaceland', 'Zombies in Spaceland', 'Round-based Zombies', 'Launch map', 'The opening chapter of Infinite Warfare Zombies, set in a 1980s theme park.'),
   entry('iw', 'rave-in-the-redwoods', 'Rave in the Redwoods', 'Round-based Zombies', 'Sabotage', 'The second film in Willard Wyler’s Zombies story.'),
   entry('iw', 'shaolin-shuffle', 'Shaolin Shuffle', 'Round-based Zombies', 'Continuum', 'Infinite Warfare’s kung-fu Zombies chapter.'),
@@ -42,3 +43,4 @@ export const plannedMaps = [
   entry('mw3', 'unstable-rift', 'Unstable Rift', 'Wave-based challenge', 'Season 4 Reloaded', 'The separate wave-based rift challenge introduced in Season 4 Reloaded.', { group: 'rifts' }),
   entry('mw3', 'dark-aether-season-5', 'Dark Aether · Season 5', 'Dark Aether Rift', 'Season 5 Reloaded', 'The final Dark Aether destination, associated with the Ascension story mission.', { group: 'rifts', aliases: ['Ascension', 'Entity', 'Highrise'] }),
 ]
+export const plannedMaps = []

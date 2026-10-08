@@ -7,6 +7,11 @@ import { evaluateNightClassified } from './nightClassified.mjs'
 import { dartboardNumbers } from './coldWar.mjs'
 import { mahjongResult, signResult, leverResult, bellResult } from './bo2.mjs'
 import { lighthouseResult } from './classic.mjs'
+import { evaluateIW } from './iw.mjs'
+import { evaluateWW2 } from './ww2.mjs'
+import { evaluateAW } from './aw.mjs'
+import { evaluateVanguard } from './vanguard.mjs'
+import { evaluateMW3 } from './mw3.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -49,6 +54,13 @@ export function evaluateTool(id, raw) {
   const tool = toolDefinitions[id]
   if (!tool) return invalid('Unknown helper.')
   const state = normalizeTool(id, raw)
+  if (tool.evaluate === 'remaining') {
+    for (const evaluate of [evaluateIW, evaluateWW2, evaluateAW, evaluateVanguard, evaluateMW3]) {
+      const result = evaluate(id, state, tool)
+      if (result) return result
+    }
+    return invalid('This helper has no registered puzzle evaluator.')
+  }
   if (tool.evaluate === 'lighthouse') return lighthouseResult(state)
   const bo2Evaluators={'bo2-die-rise-mahjong':mahjongResult,'bo2-buried-signs':signResult,'bo2-buried-levers':leverResult,'bo2-buried-bells':bellResult}
   if (bo2Evaluators[id]) return bo2Evaluators[id](state)

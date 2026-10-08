@@ -7,6 +7,7 @@ const ChaosHands = defineAsyncComponent(() => import('./puzzle/ChaosHands.vue'))
 const AlphaTag = defineAsyncComponent(() => import('./puzzle/AlphaTag.vue'))
 const NightClassified = defineAsyncComponent(() => import('./puzzle/NightClassified.vue'))
 const Expansion = defineAsyncComponent(() => import('./puzzle/Expansion.vue'))
+const Remaining = defineAsyncComponent(() => import('./puzzle/Remaining.vue'))
 const Bo6TerminusLab = defineAsyncComponent(() => import('./puzzle/Bo6TerminusLab.vue'))
 const Bo6LibertyFalls = defineAsyncComponent(() => import('./puzzle/Bo6LibertyFalls.vue'))
 const CastleTomb = defineAsyncComponent(() => import('./puzzle/CastleTomb.vue'))
@@ -38,6 +39,7 @@ const widgets:Record<string,any>={"ashes-serum":PuzzleSerum,"ashes-rocket-launch
   <Chronicles v-else-if="toolDefinitions[tool]?.ui === 'chronicles'" :key="tool" :tool="tool" />
   <BlackOpsTwo v-else-if="toolDefinitions[tool]?.ui === 'bo2'" :key="tool" :tool="tool" />
   <Classic v-else-if="toolDefinitions[tool]?.ui === 'classic'" :key="tool" :tool="tool" />
+  <Remaining v-else-if="toolDefinitions[tool]?.widget === 'remaining'" :key="tool" :tool="tool" />
   <Expansion v-else-if="toolDefinitions[tool]" :key="tool" :tool="tool" />
 </template>
 

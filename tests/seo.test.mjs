@@ -62,7 +62,8 @@ test('planned entries, proxies, redirects and unknown paths never inherit guide 
 
 test('publishing a planned guide updates head eligibility and sitemap together', () => {
   const updated = structuredClone(catalogue)
-  const map = updated.maps.find(map => map.status === 'planned')
+  const map = { id: 'future-test-map', gameId: 'mw3', name: 'Future test map', route: '/guides/future-test-map', status: 'planned' }
+  updated.maps.push(map)
   assert.equal(resolvePageSeo(updated, map.route).indexable, false)
   delete map.status
   assert.equal(resolvePageSeo(updated, map.route).indexable, true)

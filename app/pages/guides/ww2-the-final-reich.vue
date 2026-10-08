@@ -1,5 +1,5 @@
-<!-- Generated from shared/planned-maps.mjs. -->
+<!-- Generated from shared/expansion-guides.mjs. -->
 <script setup>
 import Content from '~/components/guide/ww2-the-final-reich.vue'
 </script>
-<template><Content /></template>
+<template><GuideArticle title="The Final Reich" map-name="WWII" storage-key="guide-pins-ww2-the-final-reich" quest-label="Main quest" :branches='[{&quot;id&quot;:&quot;casual&quot;,&quot;label&quot;:&quot;Casual · Fireworks&quot;,&quot;description&quot;:&quot;Common setup, hands, first voice and Panzermörder.&quot;},{&quot;id&quot;:&quot;hardcore&quot;,&quot;label&quot;:&quot;Hardcore · Dark Reunion&quot;,&quot;description&quot;:&quot;All four Tesla upgrades, Red Talon, record/second voices, Rabenherz and Klaus ending.&quot;}]'><template #intro><img class="expansion-cover" src="/images/remaining/asset-0169.webp" alt="The Final Reich artwork" width="1200" height="400" fetchpriority="high" /><p>Restore Mittelburg’s power, forge the Tesla Gun and defeat the Panzermörder. Choose Casual for Fireworks or Hardcore for Dark Reunion: the extra Tesla, sword and record routes must be finished before taking the final hilt.</p></template><Content /></GuideArticle></template>

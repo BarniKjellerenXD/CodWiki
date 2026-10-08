@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-08",
+  "status": "complete-local-implementation",
+  "coverage": {
+    "games": { "iw": 5, "ww2": 11, "aw": 4, "vanguard": 4, "mw3": 6 },
+    "guides": 30,
+    "phases": 328,
+    "steps": 795,
+    "newTools": 31,
+    "selectedReferenceImages": 1222,
+    "decodedResearchImages": 1408
+  },
+  "softwareVerification": {
+    "automatedTests": { "passed": 241, "failed": 0 },
+    "productionBuild": "passed",
+    "newProductionRoutes": { "passed": 61, "failed": 0 },
+    "browserRuntimeExceptions": 0,
+    "browserFlows": [
+      "Photographed portal lookup, invalid triplet and undo",
+      "Morse leading zero, reload persistence and shared inline/full-page state",
+      "WWII radio decimal-preserving result",
+      "Locked rune observations, archived attempt and retained landmarks",
+      "Repeated Simon flashes, exact slot numbering and scoped reset",
+      "Branch deep links, Elder-only route filtering and permanent milestones",
+      "Associated checkbox label measured at least 44px; native label click toggles and locks fields"
+    ],
+    "seo": { "status": "passed", "indexablePages": 208, "plannedPages": 0 },
+    "researchPackIntegrity": "passed"
+  },
+  "interfaceReview": {
+    "requiredViewports": [360, 768, 1440],
+    "validatedCaptures": 7,
+    "initialDisposition": "fix",
+    "materialFinding": "Checkbox label touch target below intended 44px",
+    "correction": "Associated label has min-height 44px and vertical centering",
+    "verdictDisposition": "ship",
+    "verdictScope": "The listed touch-target correction was scored resolved. This verdict pass was not a new full-surface review.",
+    "documentation": "Incumbent system preserved; target-size item resolved"
+  },
+  "remainingValidation": [
+    "Complete live solo/co-op gameplay acceptance",
+    "Replacement or publication clearance for third-party images",
+    "Optional calibrated interactive map coordinates",
+    "Shadowed Throne raven placement currently includes direct video demonstrations",
+    "Archon complete photographic ground-rune chart and additional MWZ boss-stage photographs"
+  ],
+  "deployment": "Not deployed; local production preview only"
+}

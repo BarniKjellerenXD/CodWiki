@@ -1,5 +1,5 @@
-<!-- Generated from shared/planned-maps.mjs. -->
+<!-- Generated from shared/expansion-guides.mjs. -->
 <script setup>
 import Content from '~/components/guide/iw-attack-of-the-radioactive-thing.vue'
 </script>
-<template><Content /></template>
+<template><GuideArticle title="Attack of the Radioactive Thing" map-name="Infinite Warfare" storage-key="guide-pins-iw-attack-of-the-radioactive-thing" quest-label="Main quest"><template #intro><img class="expansion-cover" src="/images/remaining/asset-1464.webp" alt="Attack of the Radioactive Thing artwork" width="1200" height="400" fetchpriority="high" /><p>Infinite Warfare’s original Zombies mode. Scene, symbol, colour and code observations come from your current match. Director’s Cut changes equipment access and ending rewards; its account unlocks are separate from a new map run. Assemble the body, open the garage, build the bomb and produce the radio-confirmed chemical. Life-ray order, pressure-gauge values, chemistry calculations and the belly bomb code are separate observations. Prepare those records before the irreversible beach departure.</p></template><Content /></GuideArticle></template>

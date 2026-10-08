@@ -1,5 +1,5 @@
-<!-- Generated from shared/planned-maps.mjs. -->
+<!-- Generated from shared/expansion-guides.mjs. -->
 <script setup>
 import Content from '~/components/guide/iw-rave-in-the-redwoods.vue'
 </script>
-<template><Content /></template>
+<template><GuideArticle title="Rave in the Redwoods" map-name="Infinite Warfare" storage-key="guide-pins-iw-rave-in-the-redwoods" quest-label="Main quest"><template #intro><img class="expansion-cover" src="/images/remaining/asset-1008.webp" alt="Rave in the Redwoods artwork" width="1200" height="400" fetchpriority="high" /><p>Infinite Warfare’s original Zombies mode. Scene, symbol, colour and code observations come from your current match. Director’s Cut changes equipment access and ending rewards; its account unlocks are separate from a new map run. Repair the boat/projector, complete two dismemberment photos and a headshot skull, then enter Turtle Island’s Super Slasher arena. Rave Vision is a consumable view state; the late-round roaming Slasher differs from the killable ritual versions.</p></template><Content /></GuideArticle></template>

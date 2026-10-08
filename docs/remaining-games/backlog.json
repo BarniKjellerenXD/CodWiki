@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-07",
+  "ordering": "Implementation risk, not demand or estimated hours",
+  "tasks": [
+    {
+      "id": "foundation",
+      "milestone": 1,
+      "title": "Register evidence, constructors, pure helpers and state contracts",
+      "dependsOn": [],
+      "deliverables": [
+        "Source/reference registry",
+        "Shared sequence/Morse/rotation primitives",
+        "Observation versus completion states",
+        "No duplicate planned/authored catalogue entries"
+      ]
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "milestone": 2,
+      "title": "Complete Zombies in Spaceland (iw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "iw-zombies-in-spaceland",
+      "brief": "infinite-warfare.md#zombies-in-spaceland",
+      "toolIds": [
+        "iw-spaceland-speakers"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "milestone": 2,
+      "title": "Complete The Shadowed Throne (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-the-shadowed-throne",
+      "brief": "wwii.md#the-shadowed-throne",
+      "toolIds": [
+        "ww2-shadowed-radio",
+        "ww2-shadowed-statues",
+        "ww2-shadowed-safe",
+        "ww2-shadowed-axe"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "aw-descent",
+      "milestone": 2,
+      "title": "Complete Descent (aw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "aw-descent",
+      "brief": "advanced-warfare.md#descent",
+      "toolIds": [
+        "aw-descent-simon",
+        "aw-descent-numbers"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "iw-rave-in-the-redwoods",
+      "milestone": 3,
+      "title": "Complete Rave in the Redwoods (iw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "iw-rave-in-the-redwoods",
+      "brief": "infinite-warfare.md#rave-in-the-redwoods",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "iw-shaolin-shuffle",
+      "milestone": 3,
+      "title": "Complete Shaolin Shuffle (iw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "iw-shaolin-shuffle",
+      "brief": "infinite-warfare.md#shaolin-shuffle",
+      "toolIds": [
+        "iw-shaolin-morse",
+        "iw-shaolin-word"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "iw-attack-of-the-radioactive-thing",
+      "milestone": 3,
+      "title": "Complete Attack of the Radioactive Thing (iw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "iw-attack-of-the-radioactive-thing",
+      "brief": "infinite-warfare.md#attack-of-the-radioactive-thing",
+      "toolIds": [
+        "iw-attack-chemistry",
+        "iw-attack-codes"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "iw-the-beast-from-beyond",
+      "milestone": 3,
+      "title": "Complete The Beast from Beyond (iw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "iw-the-beast-from-beyond",
+      "brief": "infinite-warfare.md#the-beast-from-beyond",
+      "toolIds": [
+        "iw-beast-disks",
+        "iw-beast-handles",
+        "iw-beast-queens"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-the-final-reich",
+      "milestone": 4,
+      "title": "Complete The Final Reich (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-the-final-reich",
+      "brief": "wwii.md#the-final-reich",
+      "toolIds": [
+        "ww2-final-reich-grid",
+        "ww2-final-reich-voice"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-groesten-haus",
+      "milestone": 4,
+      "title": "Complete Gröesten Haus (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-groesten-haus",
+      "brief": "wwii.md#groesten-haus",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-the-darkest-shore",
+      "milestone": 4,
+      "title": "Complete The Darkest Shore (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-the-darkest-shore",
+      "brief": "wwii.md#the-darkest-shore",
+      "toolIds": [
+        "ww2-darkest-artillery"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-the-frozen-dawn",
+      "milestone": 4,
+      "title": "Complete The Frozen Dawn (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-the-frozen-dawn",
+      "brief": "wwii.md#the-frozen-dawn",
+      "toolIds": [
+        "ww2-frozen-hammer",
+        "ww2-frozen-shield",
+        "ww2-frozen-orrery"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-into-the-storm",
+      "milestone": 4,
+      "title": "Complete Into the Storm (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-into-the-storm",
+      "brief": "wwii.md#into-the-storm",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-across-the-depths",
+      "milestone": 4,
+      "title": "Complete Across the Depths (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-across-the-depths",
+      "brief": "wwii.md#across-the-depths",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-beneath-the-ice",
+      "milestone": 4,
+      "title": "Complete Beneath the Ice (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-beneath-the-ice",
+      "brief": "wwii.md#beneath-the-ice",
+      "toolIds": [
+        "ww2-tortured-runes"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-bodega-cervantes",
+      "milestone": 4,
+      "title": "Complete Bodega Cervantes (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-bodega-cervantes",
+      "brief": "wwii.md#tortured-path-survival-versions",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-uss-mount-olympus",
+      "milestone": 4,
+      "title": "Complete U.S.S. Mount Olympus (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-uss-mount-olympus",
+      "brief": "wwii.md#tortured-path-survival-versions",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "ww2-altar-of-blood",
+      "milestone": 4,
+      "title": "Complete Altar of Blood (ww2)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "ww2-altar-of-blood",
+      "brief": "wwii.md#tortured-path-survival-versions",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "aw-outbreak",
+      "milestone": 5,
+      "title": "Complete Outbreak (aw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "aw-outbreak",
+      "brief": "advanced-warfare.md#outbreak",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "aw-infection",
+      "milestone": 5,
+      "title": "Complete Infection (aw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "aw-infection",
+      "brief": "advanced-warfare.md#infection",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "aw-carrier",
+      "milestone": 5,
+      "title": "Complete Carrier (aw)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "aw-carrier",
+      "brief": "advanced-warfare.md#carrier",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "vanguard-der-anfang",
+      "milestone": 6,
+      "title": "Complete Der Anfang (vanguard)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "vanguard-der-anfang",
+      "brief": "vanguard.md#der-anfang",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "vanguard-terra-maledicta",
+      "milestone": 6,
+      "title": "Complete Terra Maledicta (vanguard)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "vanguard-terra-maledicta",
+      "brief": "vanguard.md#terra-maledicta",
+      "toolIds": [
+        "vanguard-terra-pages"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "vanguard-shi-no-numa",
+      "milestone": 6,
+      "title": "Complete Shi No Numa (vanguard)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "vanguard-shi-no-numa",
+      "brief": "vanguard.md#shi-no-numa",
+      "toolIds": [
+        "vanguard-shi-no-numa-cipher"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "vanguard-the-archon",
+      "milestone": 6,
+      "title": "Complete The Archon (vanguard)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "vanguard-the-archon",
+      "brief": "vanguard.md#the-archon",
+      "toolIds": [
+        "vanguard-archon-runes"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-urzikstan",
+      "milestone": 7,
+      "title": "Complete Urzikstan (mw3)",
+      "dependsOn": [
+        "foundation"
+      ],
+      "mapId": "mw3-urzikstan",
+      "brief": "modern-warfare-iii.md#urzikstan",
+      "toolIds": [
+        "mw3-rune-portals",
+        "mw3-red-worm-usbs",
+        "mw3-dark-aether-reference"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "milestone": 7,
+      "title": "Complete Dark Aether · Season 1 (mw3)",
+      "dependsOn": [
+        "foundation",
+        "mw3-urzikstan"
+      ],
+      "mapId": "mw3-dark-aether-season-1",
+      "brief": "modern-warfare-iii.md#dark-aether--season-1--al-bagra-fortress",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "milestone": 7,
+      "title": "Complete Dark Aether · Season 2 (mw3)",
+      "dependsOn": [
+        "foundation",
+        "mw3-urzikstan"
+      ],
+      "mapId": "mw3-dark-aether-season-2",
+      "brief": "modern-warfare-iii.md#dark-aether--season-2--said-city",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "milestone": 7,
+      "title": "Complete Dark Aether · Season 3 (mw3)",
+      "dependsOn": [
+        "foundation",
+        "mw3-urzikstan"
+      ],
+      "mapId": "mw3-dark-aether-season-3",
+      "brief": "modern-warfare-iii.md#dark-aether--season-3--zarqwa-hydroelectric",
+      "toolIds": [
+        "mw3-union-runes"
+      ],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-unstable-rift",
+      "milestone": 7,
+      "title": "Complete Unstable Rift (mw3)",
+      "dependsOn": [
+        "foundation",
+        "mw3-urzikstan"
+      ],
+      "mapId": "mw3-unstable-rift",
+      "brief": "modern-warfare-iii.md#unstable-rift",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "milestone": 7,
+      "title": "Complete Dark Aether · Season 5 (mw3)",
+      "dependsOn": [
+        "foundation",
+        "mw3-urzikstan"
+      ],
+      "mapId": "mw3-dark-aether-season-5",
+      "brief": "modern-warfare-iii.md#dark-aether--season-5--highrise",
+      "toolIds": [],
+      "acceptanceReference": "implementation-plan.md#map-acceptance-checklist"
+    },
+    {
+      "id": "maps-and-optional",
+      "milestone": 8,
+      "title": "Calibrated map layers and optional helpers",
+      "dependsOn": [
+        "iw-zombies-in-spaceland",
+        "iw-rave-in-the-redwoods",
+        "iw-shaolin-shuffle",
+        "iw-attack-of-the-radioactive-thing",
+        "iw-the-beast-from-beyond",
+        "ww2-the-final-reich",
+        "ww2-groesten-haus",
+        "ww2-the-darkest-shore",
+        "ww2-the-shadowed-throne",
+        "ww2-the-frozen-dawn",
+        "ww2-into-the-storm",
+        "ww2-across-the-depths",
+        "ww2-beneath-the-ice",
+        "ww2-bodega-cervantes",
+        "ww2-uss-mount-olympus",
+        "ww2-altar-of-blood",
+        "aw-outbreak",
+        "aw-infection",
+        "aw-carrier",
+        "aw-descent",
+        "vanguard-der-anfang",
+        "vanguard-terra-maledicta",
+        "vanguard-shi-no-numa",
+        "vanguard-the-archon",
+        "mw3-urzikstan",
+        "mw3-dark-aether-season-1",
+        "mw3-dark-aether-season-2",
+        "mw3-dark-aether-season-3",
+        "mw3-unstable-rift",
+        "mw3-dark-aether-season-5"
+      ],
+      "toolIds": [
+        "iw-spaceland-souvenirs",
+        "ww2-shadowed-hangman",
+        "iw-attack-skull-hop"
+      ],
+      "deliverables": [
+        "Reviewed map projections and pins",
+        "Optional helpers after their guide is usable",
+        "Production artwork selected and cleared"
+      ]
+    }
+  ]
+}

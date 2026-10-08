@@ -6821,5 +6821,4770 @@
         }
       ]
     }
+  ],
+  "iw-zombies-in-spaceland": [
+    {
+      "id": "setup",
+      "title": "Open the park and projector room",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-power",
+          "html": "Enable all five power switches."
+        },
+        {
+          "id": "setup-portals",
+          "html": "Use four regional portals, then the Cosmic Way projector gateway."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Prepare equipment and a Weapon of Rock route",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-loadout",
+          "html": "Prepare defence equipment and save the chosen wonder-weapon coins."
+        },
+        {
+          "id": "equipment-cores",
+          "html": "Release the UFOs; charge a trap, then its UFO with Arcane Core kills."
+        },
+        {
+          "id": "equipment-teeth",
+          "html": "Break/replace the gator teeth, then shoot the matching crystal target.",
+          "tools": [
+            "iw-spaceland-souvenirs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seticom",
+      "title": "Collect and obtain the SETI-COM",
+      "detail": "details-seticom",
+      "steps": [
+        {
+          "id": "seticom-calculator",
+          "html": "Find the calculator at one of three sites."
+        },
+        {
+          "id": "seticom-boombox",
+          "html": "Find the quest boombox."
+        },
+        {
+          "id": "seticom-umbrella",
+          "html": "Find the umbrella; wait for the next-round UFO event."
+        },
+        {
+          "id": "seticom-hoff",
+          "html": "Receive the device from Hasselhoff."
+        }
+      ]
+    },
+    {
+      "id": "defences",
+      "title": "Complete three device defences",
+      "detail": "details-defences",
+      "steps": [
+        {
+          "id": "defences-placements",
+          "html": "Find the shaking placement prompt."
+        },
+        {
+          "id": "defences-defend",
+          "html": "Defend 60 / 90 / 120 seconds; recover the device after each success."
+        },
+        {
+          "id": "defences-return",
+          "html": "Wait a full round, return the SETI-COM and take four speakers."
+        }
+      ]
+    },
+    {
+      "id": "speakers",
+      "title": "Place and record the speaker layout",
+      "detail": "details-speakers",
+      "steps": [
+        {
+          "id": "speakers-place",
+          "html": "Place speakers on three symbols and at the gateway; prepare before activation."
+        },
+        {
+          "id": "speakers-layout",
+          "html": "Record this match’s four unique speaker colours.",
+          "tools": [
+            "iw-spaceland-speakers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ufo-sequences",
+      "title": "Repeat three UFO colour sequences",
+      "detail": "details-ufo-sequences",
+      "steps": [
+        {
+          "id": "ufo-sequences-repeat",
+          "html": "Repeat the UFO’s flashes three times."
+        },
+        {
+          "id": "ufo-sequences-retry",
+          "html": "Missed display: observe again. Wrong input: clear the Brute and retry.",
+          "tools": [
+            "iw-spaceland-speakers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aliens",
+      "title": "Break the alien backpack fuses",
+      "detail": "details-aliens",
+      "steps": [
+        {
+          "id": "aliens-collar",
+          "html": "Shoot the glowing alien neck collar."
+        },
+        {
+          "id": "aliens-fuse-melee",
+          "html": "During kneeling windows melee the backpack fuse; finish all aliens."
+        }
+      ]
+    },
+    {
+      "id": "fuses",
+      "title": "Upgrade the projector and Weapon of Rock",
+      "detail": "details-fuses",
+      "steps": [
+        {
+          "id": "fuses-projector-fuses",
+          "html": "Install alien fuses and Pack-a-Punch a Weapon of Rock."
+        }
+      ]
+    },
+    {
+      "id": "laser",
+      "title": "Destroy the overhead UFO and claim the ending",
+      "detail": "details-laser",
+      "steps": [
+        {
+          "id": "laser-nodes",
+          "html": "Light four ring nodes; time the fifth to hit the UFO."
+        },
+        {
+          "id": "laser-soul-key",
+          "html": "Collect the Soul Key; Director’s Cut also grants the talisman."
+        }
+      ]
+    }
+  ],
+  "iw-rave-in-the-redwoods": [
+    {
+      "id": "setup",
+      "title": "Power and boat repair",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-power",
+          "html": "Basement power; collect handle, engine and propeller."
+        },
+        {
+          "id": "setup-vision",
+          "html": "Use a pouch at a fire; fairies extend Rave Vision."
+        }
+      ]
+    },
+    {
+      "id": "projector",
+      "title": "Repair the island projector",
+      "detail": "details-projector",
+      "steps": [
+        {
+          "id": "projector-reels",
+          "html": "Dock reel → boat → rear cabin reel → projector."
+        },
+        {
+          "id": "projector-kevin",
+          "html": "Speak to Kevin and prepare a controlled limb-damage weapon."
+        }
+      ]
+    },
+    {
+      "id": "bows",
+      "title": "Obtain and upgrade Vlad",
+      "detail": "details-bows",
+      "steps": [
+        {
+          "id": "bows-vlad",
+          "html": "Three hot-dog deer glyphs in Rave Vision; unlock Vlad."
+        },
+        {
+          "id": "bows-statue",
+          "html": "Choose a statue; charge it on the Rave speakers."
+        },
+        {
+          "id": "bows-ritual",
+          "html": "Unupgraded Vlad souls at the matching large animal statue."
+        }
+      ]
+    },
+    {
+      "id": "photo-arms",
+      "title": "First photograph · remove arms",
+      "detail": "details-photo-arms",
+      "steps": [
+        {
+          "id": "photo-arms-photo",
+          "html": "Burning Man photo; Thunderbird ritual: remove ten arms."
+        },
+        {
+          "id": "photo-arms-slasher",
+          "html": "Interact with the glowing photo, kill the ritual Slasher and return to Kevin."
+        }
+      ]
+    },
+    {
+      "id": "photo-legs",
+      "title": "Second photograph · remove legs",
+      "detail": "details-photo-legs",
+      "steps": [
+        {
+          "id": "photo-legs-photo",
+          "html": "Lodge photo; Quickies ritual: remove ten legs."
+        },
+        {
+          "id": "photo-legs-slasher",
+          "html": "Glowing photo → ritual Slasher → completed photo → Kevin."
+        }
+      ]
+    },
+    {
+      "id": "skull",
+      "title": "Skull ritual · ten headshots",
+      "detail": "details-skull",
+      "steps": [
+        {
+          "id": "skull-pickup",
+          "html": "Basement skull; beach ritual: ten headshots."
+        },
+        {
+          "id": "skull-complete",
+          "html": "Glowing skull → ritual Slasher → completed skull; prepare for departure."
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "title": "Arm the lodge and board together",
+      "detail": "details-departure",
+      "steps": [
+        {
+          "id": "departure-buttons",
+          "html": "Use the unlit basement buttons together."
+        },
+        {
+          "id": "departure-boat",
+          "html": "Board the arena boat together."
+        }
+      ]
+    },
+    {
+      "id": "super-slasher",
+      "title": "Super Slasher ritual cycles",
+      "detail": "details-super-slasher",
+      "steps": [
+        {
+          "id": "super-slasher-skulls",
+          "html": "Charge every skull, lure the boss into the circle, shoot the glowing torso."
+        },
+        {
+          "id": "super-slasher-symbols",
+          "html": "Shoot body symbols; shelter in a green-circle rock position."
+        },
+        {
+          "id": "super-slasher-finish",
+          "html": "Complete three cycles; final damage; collect Soul Key and applicable talisman."
+        }
+      ]
+    }
+  ],
+  "iw-shaolin-shuffle": [
+    {
+      "id": "setup",
+      "title": "Power, projector and Shurikens",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-power",
+          "html": "Four power switches; flyer, sewer coin and film reel."
+        },
+        {
+          "id": "setup-projector",
+          "html": "Open the Pink Cat projector; Pam on Scene 5; fifteen Chi melee kills."
+        }
+      ]
+    },
+    {
+      "id": "rats",
+      "title": "Follow the rat and earn the key",
+      "detail": "details-rats",
+      "steps": [
+        {
+          "id": "rats-release",
+          "html": "Talk to Pam; release/follow the rat through six cages."
+        },
+        {
+          "id": "rats-key",
+          "html": "Circle souls → ninjas → gold key."
+        }
+      ]
+    },
+    {
+      "id": "soulkey",
+      "title": "Open the locker and shoot the four fixed symbols",
+      "detail": "details-soulkey",
+      "steps": [
+        {
+          "id": "soulkey-locker",
+          "html": "Locker → Dojo left → bathroom second → Park first → Park second."
+        }
+      ]
+    },
+    {
+      "id": "eye",
+      "title": "Collect the eye and find six orange symbols",
+      "detail": "details-eye",
+      "steps": [
+        {
+          "id": "eye-rat-king",
+          "html": "Dojo Rat King fight → eye → Pam."
+        },
+        {
+          "id": "eye-hunt",
+          "html": "Eye-scan and shoot six successive active orange symbols."
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "title": "Decode the phone and choose the poster",
+      "detail": "details-phone",
+      "steps": [
+        {
+          "id": "phone-listen",
+          "html": "Listen through the complete phone message; decode three digits."
+        },
+        {
+          "id": "phone-poster",
+          "html": "Match the Film Registration number, not poster artwork.",
+          "tools": [
+            "iw-shaolin-morse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "word",
+      "title": "Complete the rooftop word",
+      "detail": "details-word",
+      "steps": [
+        {
+          "id": "word-spotlight",
+          "html": "Spotlight poster → explosive X → ninja wave."
+        },
+        {
+          "id": "word-letters",
+          "html": "Filter all candidates; shoot confirmed next glyphs; reset only the current word."
+        },
+        {
+          "id": "word-complete",
+          "html": "Word completion gong → RPR Rat King marker.",
+          "tools": [
+            "iw-shaolin-word"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brain",
+      "title": "Take the brain and start the heart route",
+      "detail": "details-brain",
+      "steps": [
+        {
+          "id": "brain-brain",
+          "html": "Defeat the second Rat King; take brain; Pam; three marked round starts."
+        },
+        {
+          "id": "brain-lockdown",
+          "html": "Complete the street lockdown and take the turnstile piece."
+        }
+      ]
+    },
+    {
+      "id": "turnstile",
+      "title": "Repair the subway and complete the circles",
+      "detail": "details-turnstile",
+      "steps": [
+        {
+          "id": "turnstile-gate",
+          "html": "Repair Spawn turnstile; shoot the ladder-window glyph."
+        },
+        {
+          "id": "turnstile-circles",
+          "html": "Feed successive circle sites until the gong."
+        }
+      ]
+    },
+    {
+      "id": "disco",
+      "title": "Transfer the disco ball ten times",
+      "detail": "details-disco",
+      "steps": [
+        {
+          "id": "disco-dj",
+          "html": "DJ booth → ten disco-ball transfers with a receiver on the floor."
+        },
+        {
+          "id": "disco-retry",
+          "html": "No receiver / round ends: start a new ten-transfer chain."
+        }
+      ]
+    },
+    {
+      "id": "heart",
+      "title": "Third Rat King and final preparation",
+      "detail": "details-heart",
+      "steps": [
+        {
+          "id": "heart-heart",
+          "html": "Pink Cat Rat King → heart → Pam."
+        },
+        {
+          "id": "heart-prepare",
+          "html": "Enter the sewer with enough bullet ammunition for the eye glyphs."
+        }
+      ]
+    },
+    {
+      "id": "finale",
+      "title": "Complete the three organ challenges",
+      "detail": "details-finale",
+      "steps": [
+        {
+          "id": "finale-damage",
+          "html": "Damage until retreat; choose organ + center symbol."
+        },
+        {
+          "id": "finale-eye-challenge",
+          "html": "Eye: revealed glyphs. Brain: protect blue-eyed allies. Heart: clear all acid puddles."
+        },
+        {
+          "id": "finale-finish",
+          "html": "Challenge → ammo → damage → next organ; after three kill and collect the key."
+        }
+      ]
+    }
+  ],
+  "iw-attack-of-the-radioactive-thing": [
+    {
+      "id": "setup",
+      "title": "Power and Elvira’s projector",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-power",
+          "html": "Beach switch handle → Power Station; Parlour book → Elvira."
+        },
+        {
+          "id": "setup-vial",
+          "html": "Cleaver-fill vial; summon Elvira; lead her to the projector portal."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Required tools and Seismic Wave Generator",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "equipment-crowbar",
+          "html": "Crowbar, cleaver and repaired Market freezer trap."
+        },
+        {
+          "id": "equipment-seismic",
+          "html": "Four Parlour/playground parts → Seismic Wave Generator."
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "title": "Assemble six body parts and three mirrors",
+      "detail": "details-body",
+      "steps": [
+        {
+          "id": "body-head-torso",
+          "html": "Alternate projector exit: RV head. Freezer trap + crowbar: torso."
+        },
+        {
+          "id": "body-arms",
+          "html": "RV firepit arm; Seismic pulses raise the beach arm."
+        },
+        {
+          "id": "body-legs",
+          "html": "Radioactive cleaver kill: left leg. Tree grenade: right leg."
+        },
+        {
+          "id": "body-mirrors",
+          "html": "Elvira / bathroom / white-car mirrors; fit body and mirrors at Spawn."
+        }
+      ]
+    },
+    {
+      "id": "life-ray",
+      "title": "Read the reels, activate life and reverse death",
+      "detail": "details-life-ray",
+      "steps": [
+        {
+          "id": "life-ray-punch-card",
+          "html": "Parlour punch card; read TV Studio reels, floor reel third."
+        },
+        {
+          "id": "life-ray-life",
+          "html": "Enter the five-digit order at lit-number timing; activate life ray."
+        },
+        {
+          "id": "life-ray-death",
+          "html": "Reverse only the life-ray order; death ray → key → garage.",
+          "tools": [
+            "iw-attack-codes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nuke",
+      "title": "Build chemistry equipment and bomb",
+      "detail": "details-nuke",
+      "steps": [
+        {
+          "id": "nuke-chemistry-parts",
+          "html": "Tube, gauge and screen → chemistry table."
+        },
+        {
+          "id": "nuke-bomb-parts",
+          "html": "Red car, beach stream and TV fence parts → garage bomb."
+        }
+      ]
+    },
+    {
+      "id": "safe",
+      "title": "Set pressure gauges and save the bomb code",
+      "detail": "details-safe",
+      "steps": [
+        {
+          "id": "safe-desk",
+          "html": "Read four desk values; stop four gauges with the crowbar."
+        },
+        {
+          "id": "safe-bomb-code",
+          "html": "Open safe; save the four-digit belly bomb code.",
+          "tools": [
+            "iw-attack-codes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "o-and-filter",
+      "title": "Determine O and the reaction filter",
+      "detail": "details-o-and-filter",
+      "steps": [
+        {
+          "id": "o-and-filter-m",
+          "html": "Read M; check all four O markers in Red, Green and Blue."
+        },
+        {
+          "id": "o-and-filter-o",
+          "html": "O equal in all colours; M × O; compare with observed TV bands.",
+          "tools": [
+            "iw-attack-chemistry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radio",
+      "title": "Identify the positively endorsed final compound",
+      "detail": "details-radio",
+      "steps": [
+        {
+          "id": "radio-battery",
+          "html": "Battery → two radio sites; listen to the effectiveness recordings."
+        },
+        {
+          "id": "radio-chemical",
+          "html": "Record the affirmative chemical; do not use a negative/crude-solution line.",
+          "tools": [
+            "iw-attack-chemistry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "title": "Make the complete dependency route",
+      "detail": "details-chemistry",
+      "steps": [
+        {
+          "id": "chemistry-diamonds",
+          "html": "Read needed top/left diamonds in the required filter."
+        },
+        {
+          "id": "chemistry-route",
+          "html": "Follow only the selected compound’s intermediate reactions."
+        },
+        {
+          "id": "chemistry-calculate",
+          "html": "Each reaction: sum top/left values − O once; confirm successful output."
+        },
+        {
+          "id": "chemistry-load",
+          "html": "Load the accepted final compound into the nuke.",
+          "tools": [
+            "iw-attack-chemistry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "title": "Charge and enter the beach arena",
+      "detail": "details-departure",
+      "steps": [
+        {
+          "id": "departure-prepare",
+          "html": "Resupply; save bomb code; synchronize nuke charge and departure."
+        }
+      ]
+    },
+    {
+      "id": "crogzilla",
+      "title": "Escort, chest damage, acid and belly code",
+      "detail": "details-crogzilla",
+      "steps": [
+        {
+          "id": "crogzilla-escort",
+          "html": "Escort the bomb; shoot eggs; avoid raised-claw slams."
+        },
+        {
+          "id": "crogzilla-chest",
+          "html": "Death-ray exposed chest; after confirmed hit, Spartan also works."
+        },
+        {
+          "id": "crogzilla-lasers",
+          "html": "Survive acid; all players cross lasers and interact with the cart."
+        },
+        {
+          "id": "crogzilla-belly",
+          "html": "Every player enters the saved bomb code; failure repeats the obstacle cycle.",
+          "tools": [
+            "iw-attack-codes"
+          ]
+        }
+      ]
+    }
+  ],
+  "iw-the-beast-from-beyond": [
+    {
+      "id": "directors-cut-preparation",
+      "title": "Director’s Cut · account prerequisites",
+      "detail": "details-directors-cut-preparation",
+      "branches": [
+        "directors-cut"
+      ],
+      "stateScope": "account",
+      "steps": [
+        {
+          "id": "directors-cut-preparation-soul-keys",
+          "html": "Five ordinary Soul Keys → new match → projector Soul Jar → Director’s Cut."
+        },
+        {
+          "id": "directors-cut-preparation-talismans",
+          "html": "Collect the first four DC talismans; finish Beast in DC for Mephistopheles."
+        },
+        {
+          "id": "directors-cut-preparation-loadout",
+          "html": "Prepare damage, ammo and Entangler; optional cards remain optional."
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "title": "Retrieve N31L’s head and restore power",
+      "detail": "details-power",
+      "steps": [
+        {
+          "id": "power-head",
+          "html": "Ops hole ledge → N31L head → Spawn wall slot."
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "title": "Reach the theater and repair the bridge",
+      "detail": "details-bridge",
+      "steps": [
+        {
+          "id": "bridge-theatre",
+          "html": "Cargo catwalk button opens theater; activate its return portal symbols."
+        },
+        {
+          "id": "bridge-scrap",
+          "html": "Three scrap pieces → Exterior bridge → projector portal."
+        }
+      ]
+    },
+    {
+      "id": "entangler",
+      "title": "Earn the Entangler through Skullbreaker’s first two skulls",
+      "detail": "details-entangler",
+      "steps": [
+        {
+          "id": "entangler-power-box",
+          "html": "Grenade the active power box, then shoot its skull."
+        },
+        {
+          "id": "entangler-lockdown",
+          "html": "Cargo X lockdown; stay in circles; jump into the raised skull; take Entangler."
+        }
+      ]
+    },
+    {
+      "id": "disks",
+      "title": "Recover four symbols and insert them in order",
+      "detail": "details-disks",
+      "steps": [
+        {
+          "id": "disks-first-two",
+          "html": "First Phantom disk and snowy projector-pillar disk."
+        },
+        {
+          "id": "disks-vent",
+          "html": "Entangle the red-room disk into the smoking vent; find its exit."
+        },
+        {
+          "id": "disks-helmet",
+          "html": "Space helmet → active Medical monitor → table disk."
+        },
+        {
+          "id": "disks-order",
+          "html": "Match four glyphs; insert left-to-right; reobserve after a rejection.",
+          "tools": [
+            "iw-beast-disks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handles",
+      "title": "Move the button and hack N31L’s board",
+      "detail": "details-handles",
+      "steps": [
+        {
+          "id": "handles-button",
+          "html": "Theater button → concession poster → Medical desk button."
+        },
+        {
+          "id": "handles-snapshot",
+          "html": "Freeze initial horizontals, flip that set, then reobserve until all vertical.",
+          "tools": [
+            "iw-beast-handles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escort",
+      "title": "Carry and install the hacked head",
+      "detail": "details-escort",
+      "steps": [
+        {
+          "id": "escort-carry",
+          "html": "Carry hacked N31L; point his gaze at blocked doors; re-hack after expiry."
+        },
+        {
+          "id": "escort-install",
+          "html": "Install at the projector computer; resupply before arena interaction."
+        }
+      ]
+    },
+    {
+      "id": "cryptids",
+      "title": "Survive the portals and terminal countdown",
+      "detail": "details-cryptids",
+      "steps": [
+        {
+          "id": "cryptids-rhinos",
+          "html": "Four Rhinos → portal waves; keep the ammo/crate routes open."
+        },
+        {
+          "id": "cryptids-terminals",
+          "html": "Switch off all three monitors before they reactivate."
+        },
+        {
+          "id": "cryptids-countdown",
+          "html": "Displayed 99 countdown → scrambled/sparking terminal → interact."
+        }
+      ]
+    },
+    {
+      "id": "mammoths",
+      "title": "Defeat both Mammoths and confirm the ending",
+      "detail": "details-mammoths",
+      "steps": [
+        {
+          "id": "mammoths-fight",
+          "html": "Kill both Mammoths while preserving safe routes through their blue fire."
+        },
+        {
+          "id": "mammoths-ending",
+          "html": "Ordinary: automatic quest reward. Qualified Director’s Cut: Mephistopheles next."
+        }
+      ]
+    },
+    {
+      "id": "meph-rituals",
+      "title": "Mephistopheles · five rituals and eclipse waves",
+      "detail": "details-meph-rituals",
+      "branches": [
+        "directors-cut"
+      ],
+      "steps": [
+        {
+          "id": "meph-rituals-circle",
+          "html": "Charge circle → Entangler souls → exposed-symbol damage."
+        },
+        {
+          "id": "meph-rituals-eclipse",
+          "html": "Eclipse enemies → meteor-wall cover → next ritual; five rituals total."
+        },
+        {
+          "id": "meph-rituals-talismans",
+          "html": "Final charge → activate all five talisman lasers → central final damage."
+        }
+      ]
+    },
+    {
+      "id": "meph-attack-cues",
+      "title": "Mephistopheles · read attacks and claim rewards",
+      "detail": "details-meph-attack-cues",
+      "branches": [
+        "directors-cut"
+      ],
+      "steps": [
+        {
+          "id": "meph-attack-cues-fire-and-skeletons",
+          "html": "Aiming hand: dodge lane. Raised arms: clear bodies/wall. Black center: leave lane."
+        },
+        {
+          "id": "meph-attack-cues-slam-and-breath",
+          "html": "Center slam / mouth breath / wall clap / huge meteor / tornado: read cue and evade."
+        },
+        {
+          "id": "meph-attack-cues-reward",
+          "html": "Live finale rewards unlock Wyler; complete his Spaceland ending separately."
+        }
+      ]
+    }
+  ],
+  "ww2-the-final-reich": [
+    {
+      "id": "setup",
+      "title": "Gas valves, bunker power and Salt Mine",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "setup-valves",
+          "html": "Hold all three gas valves to green."
+        },
+        {
+          "id": "setup-pilot",
+          "html": "Pilot Light → underground generator → open Bunker."
+        },
+        {
+          "id": "setup-switches",
+          "html": "Activate both timed switches → open Salt Mine."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Unlock Ubersprengen",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "pap-button",
+          "html": "Sewers button → three pipe rides and side-room buttons."
+        },
+        {
+          "id": "pap-upgrade",
+          "html": "Three buttons lower the cage → upgrade weapons."
+        }
+      ]
+    },
+    {
+      "id": "tesla",
+      "title": "Charge and escort the Tesla device",
+      "detail": "details-tesla",
+      "steps": [
+        {
+          "id": "tesla-crank",
+          "html": "Command Room crank → charge Emperor’s Chamber circle."
+        },
+        {
+          "id": "tesla-lab",
+          "html": "Escort to Laboratory → charge stops → collect first part."
+        },
+        {
+          "id": "tesla-morgue",
+          "html": "Escort to Morgue → second part → defeat Brenner."
+        },
+        {
+          "id": "tesla-build",
+          "html": "Fit both parts → claim Tesla Gun."
+        }
+      ]
+    },
+    {
+      "id": "right-hand",
+      "title": "Power grid and lightning rods",
+      "detail": "details-right-hand",
+      "steps": [
+        {
+          "id": "grid-read",
+          "html": "Read four colours → set boxes 1–4 in fixed location order."
+        },
+        {
+          "id": "rod-centre",
+          "html": "Defend the centre lightning rod; retry after a failed reset."
+        },
+        {
+          "id": "rod-outer",
+          "html": "Defend both outer rods → activate Right Hand.",
+          "tools": [
+            "ww2-final-reich-grid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "left-hand",
+      "title": "Deliver three Zeppelin batteries",
+      "detail": "details-left-hand",
+      "steps": [
+        {
+          "id": "zeppelin-drop",
+          "html": "Shoot a lit Zeppelin generator down."
+        },
+        {
+          "id": "zeppelin-charge",
+          "html": "Charge generator → carry battery to Left Hand."
+        },
+        {
+          "id": "zeppelin-three",
+          "html": "Deliver three batteries; re-shoot the recalled third generator."
+        }
+      ]
+    },
+    {
+      "id": "voice-of-god",
+      "title": "Match painting numerals to the bird dials",
+      "detail": "details-voice-of-god",
+      "steps": [
+        {
+          "id": "voice-read",
+          "html": "Brenner head → read four bird/numeral pairs."
+        },
+        {
+          "id": "voice-input",
+          "html": "Match by bird → set four dials → press red button.",
+          "tools": [
+            "ww2-final-reich-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bloodthirst",
+      "title": "Hardcore: Bloodthirst / red Tesla",
+      "detail": "details-bloodthirst",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "blood-lamps",
+          "html": "Tesla first lamp → bullet-shoot moving spark → collect battery."
+        },
+        {
+          "id": "blood-charge",
+          "html": "Three successful Pest groups in the spike trap."
+        },
+        {
+          "id": "blood-machine",
+          "html": "Morgue left slot → defend machine → red Tesla."
+        }
+      ]
+    },
+    {
+      "id": "reaper",
+      "title": "Hardcore: Reaper / orange Tesla",
+      "detail": "details-reaper",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "reaper-battery",
+          "html": "Wustling charge breaks Sewers door → fit battery."
+        },
+        {
+          "id": "reaper-charge",
+          "html": "Two trap uses, each killing a pair of Bombers."
+        },
+        {
+          "id": "reaper-machine",
+          "html": "Morgue right slot → defend → orange Tesla."
+        }
+      ]
+    },
+    {
+      "id": "hurricane",
+      "title": "Hardcore: Hurricane / purple Tesla",
+      "detail": "details-hurricane",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "hurricane-battery",
+          "html": "Bomber opens Lab stair door → fit electrical-trap battery."
+        },
+        {
+          "id": "hurricane-charge",
+          "html": "Two paired Wustling electrical-trap charges."
+        },
+        {
+          "id": "hurricane-machine",
+          "html": "Laboratory right slot → defend → purple Tesla."
+        }
+      ]
+    },
+    {
+      "id": "midnight",
+      "title": "Hardcore: Midnight / green Tesla",
+      "detail": "details-midnight",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "midnight-battery",
+          "html": "Scan Courtyard statue → Tesla battery → fit charger."
+        },
+        {
+          "id": "midnight-charge",
+          "html": "Charge Courtyard battery with one grouped S-Mine kill cycle."
+        },
+        {
+          "id": "midnight-machine",
+          "html": "Laboratory left slot → defend → green Tesla."
+        }
+      ]
+    },
+    {
+      "id": "red-talon",
+      "title": "Hardcore: Red Talon fingerprint safes",
+      "detail": "details-red-talon",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "talon-coils",
+          "html": "Two power switches → Command Room switch → Tesla coils."
+        },
+        {
+          "id": "talon-safes",
+          "html": "Scan both safes → align fingerprints → collect two coin halves."
+        },
+        {
+          "id": "talon-claim",
+          "html": "Two coin halves → statue opening → Red Talon."
+        }
+      ]
+    },
+    {
+      "id": "keepsakes",
+      "title": "Hardcore: keepsakes, record and water wheel",
+      "detail": "details-keepsakes",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "keepsake-collect",
+          "html": "Find and shoot one red, yellow and green keepsake."
+        },
+        {
+          "id": "keepsake-codes",
+          "html": "Read coloured machine numbers → set matching keepsake clocks."
+        },
+        {
+          "id": "keepsake-record",
+          "html": "Lock all three clock settings → retrieve record."
+        },
+        {
+          "id": "keepsake-wheel",
+          "html": "Weather-vane direction → yellow button → water-wheel coils."
+        }
+      ]
+    },
+    {
+      "id": "second-voices",
+      "title": "Hardcore: charge the record and read green flashes",
+      "detail": "details-second-voices",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "record-charge",
+          "html": "Record in Pub → Red Talon kills within one song play."
+        },
+        {
+          "id": "record-flashes",
+          "html": "Record four green groups → enter them in pictured bird order.",
+          "tools": [
+            "ww2-final-reich-voice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rabenherz",
+      "title": "Hardcore: claim the gem before the hilt",
+      "detail": "details-rabenherz",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "gem-chandelier",
+          "html": "Four upgraded Tesla shots at chandelier → Rabenherz."
+        }
+      ]
+    },
+    {
+      "id": "casual-hilt",
+      "title": "Casual: enter the boss arena",
+      "detail": "details-casual-hilt",
+      "branches": [
+        "casual"
+      ],
+      "steps": [
+        {
+          "id": "casual-hilt-take",
+          "html": "Prepare → Tesla hilt orb → take hilt."
+        }
+      ]
+    },
+    {
+      "id": "hardcore-hilt",
+      "title": "Hardcore: enter after all extra requirements",
+      "detail": "details-hardcore-hilt",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "hardcore-hilt-take",
+          "html": "Rabenherz complete → Tesla orb → take hilt."
+        }
+      ]
+    },
+    {
+      "id": "panzermorder",
+      "title": "Panzermörder: attach three charged batteries",
+      "detail": "details-panzermorder",
+      "steps": [
+        {
+          "id": "boss-battery",
+          "html": "Shoot lit generator → charge fallen device → battery."
+        },
+        {
+          "id": "boss-attach",
+          "html": "Stun boss by battery → carry and attach while kneeling."
+        },
+        {
+          "id": "boss-repeat",
+          "html": "Attach three charged batteries total."
+        }
+      ]
+    },
+    {
+      "id": "escort-klaus",
+      "title": "Hardcore ending: follow Klaus",
+      "detail": "details-escort-klaus",
+      "branches": [
+        "hardcore"
+      ],
+      "steps": [
+        {
+          "id": "klaus-follow",
+          "html": "Follow Klaus to Pilot Trap → final dialogue and explosion."
+        }
+      ]
+    }
+  ],
+  "ww2-groesten-haus": [
+    {
+      "id": "setup",
+      "title": "Open the upstairs route and prepare",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "haus-open",
+          "html": "Open stairs → armour and random Blitz → confirm edition."
+        }
+      ]
+    },
+    {
+      "id": "lanterns",
+      "title": "Shoot all ten lanterns",
+      "detail": "details-lanterns",
+      "steps": [
+        {
+          "id": "lantern-1",
+          "html": "Downstairs: hanging at the MP-40 staircase bottom"
+        },
+        {
+          "id": "lantern-2",
+          "html": "Downstairs exterior: truck hood through MP-40 window"
+        },
+        {
+          "id": "lantern-3",
+          "html": "Downstairs: support column right of MP-40"
+        },
+        {
+          "id": "lantern-4",
+          "html": "Kitchen: bottom of its staircase"
+        },
+        {
+          "id": "lantern-5",
+          "html": "Kitchen: above its table"
+        },
+        {
+          "id": "lantern-6",
+          "html": "Kitchen exterior: metal cart by wood stack"
+        },
+        {
+          "id": "lantern-7",
+          "html": "Upstairs: top of MP-40 staircase"
+        },
+        {
+          "id": "lantern-8",
+          "html": "Upstairs: across from random Blitz"
+        },
+        {
+          "id": "lantern-9",
+          "html": "Upstairs: chair left of Combat Shotgun"
+        },
+        {
+          "id": "lantern-10",
+          "html": "Upstairs: desk opposite Combat Shotgun"
+        }
+      ]
+    },
+    {
+      "id": "upgraded-box",
+      "title": "Enable Pack-a-Punched Mystery Box weapons",
+      "detail": "details-upgraded-box",
+      "steps": [
+        {
+          "id": "haus-jack",
+          "html": "Jack-in-the-Box explosion at the beam’s metal square."
+        },
+        {
+          "id": "haus-piano",
+          "html": "Pay piano 10,000 Jolts → upgraded box weapons."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Maintain a route and ammunition reserve",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "haus-survive",
+          "html": "Stock armour and ammo; keep a clear stair escape."
+        }
+      ]
+    }
+  ],
+  "ww2-the-darkest-shore": [
+    {
+      "id": "setup",
+      "title": "Island power, minecarts and fog",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "shore-power",
+          "html": "U-Boat power → Artillery minecart power."
+        },
+        {
+          "id": "shore-fog",
+          "html": "Fog warning: listen for hostile Meuchlers and keep moving."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Collect all three minecart batteries",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "shore-routes",
+          "html": "Collect battery on each of the three cart connections."
+        },
+        {
+          "id": "shore-pap-fit",
+          "html": "Three cart batteries → Bunker 3 machine → Pack-a-Punch."
+        }
+      ]
+    },
+    {
+      "id": "ripsaw",
+      "title": "Build Ripsaw and give it ranged fire",
+      "detail": "details-ripsaw",
+      "steps": [
+        {
+          "id": "ripsaw-parts",
+          "html": "Blade + one handle → U-Boat bench → buy Ripsaw."
+        },
+        {
+          "id": "ripsaw-spine",
+          "html": "Heavy melee + interact → charged spine → bench."
+        },
+        {
+          "id": "ripsaw-charge",
+          "html": "25 nearby kills → buy ranged Ripsaw."
+        }
+      ]
+    },
+    {
+      "id": "corpse-gate",
+      "title": "Corpse head, gas valves and fighter planes",
+      "detail": "details-corpse-gate",
+      "steps": [
+        {
+          "id": "corpse-head",
+          "html": "Ripsaw hanging head → corpse gate → nearby kills."
+        },
+        {
+          "id": "corpse-valves",
+          "html": "Turn each gas valve only during its safe fire window."
+        },
+        {
+          "id": "corpse-open",
+          "html": "Open Freezer → kill Brenner → AA guns destroy fighter planes."
+        }
+      ]
+    },
+    {
+      "id": "monk",
+      "title": "Secret room and three Sons of Nerthus",
+      "detail": "details-monk",
+      "steps": [
+        {
+          "id": "monk-enter",
+          "html": "Bomber breaks tunnel wall → Monk Head → Freezer left machine."
+        },
+        {
+          "id": "son-aa",
+          "html": "Overlook AA gun → marked rock → Beach statue."
+        },
+        {
+          "id": "son-zombie",
+          "html": "Normal spine → defend friendly Beach runner → statue."
+        },
+        {
+          "id": "son-moss",
+          "html": "Moss-rock Son + other two Sons → ancient door."
+        }
+      ]
+    },
+    {
+      "id": "ritual-meuchler",
+      "title": "Meuchler sacrifice: find the friendly target three times",
+      "detail": "details-ritual-meuchler",
+      "steps": [
+        {
+          "id": "meuchler-start",
+          "html": "Charged Meuchler spine → friendly fog hunt."
+        },
+        {
+          "id": "meuchler-find",
+          "html": "Find and shoot three hiding locations; protect the target."
+        },
+        {
+          "id": "meuchler-head",
+          "html": "All players in secret room → kill Meuchler → head."
+        }
+      ]
+    },
+    {
+      "id": "ritual-wustling",
+      "title": "Wustling sacrifice: correct perk order",
+      "detail": "details-ritual-wustling",
+      "steps": [
+        {
+          "id": "wustling-start",
+          "html": "Charged Wustling spine → control its lure target."
+        },
+        {
+          "id": "wustling-perks",
+          "html": "Double Tap → Melee → Stamin-Up → Quick Revive."
+        },
+        {
+          "id": "wustling-head",
+          "html": "Wustling exits hole → all players secret room → head."
+        }
+      ]
+    },
+    {
+      "id": "ritual-pest",
+      "title": "Pest sacrifice: five coil ricochets",
+      "detail": "details-ritual-pest",
+      "steps": [
+        {
+          "id": "pest-panels",
+          "html": "Open seven electrical panels → charged Pest spine."
+        },
+        {
+          "id": "pest-charge-1",
+          "html": "Charge 1: M1928 Pest → blue outer coil."
+        },
+        {
+          "id": "pest-charge-2",
+          "html": "Charge 2: walkway Pest → cart-side yellow coil."
+        },
+        {
+          "id": "pest-charge-3",
+          "html": "Charge 3: Bluffs-door Pest → blue coil above door."
+        },
+        {
+          "id": "pest-charge-4",
+          "html": "Charge 4: STG-44 Pest → M1941 yellow coil."
+        },
+        {
+          "id": "pest-charge-5",
+          "html": "Charge 5: propeller walkway Pest → power yellow coil."
+        },
+        {
+          "id": "pest-head",
+          "html": "Five charges → secret-room Pest fight → head."
+        }
+      ]
+    },
+    {
+      "id": "rituals",
+      "title": "Fit four heads and claim Pommel",
+      "detail": "details-rituals",
+      "steps": [
+        {
+          "id": "heads-fit",
+          "html": "Three ritual heads + Monk Head → four hooks → blood charge."
+        },
+        {
+          "id": "pommel-take",
+          "html": "Take Pommel; keep it through radio unlock."
+        }
+      ]
+    },
+    {
+      "id": "artillery",
+      "title": "Escort Bomber, repair radio and sink two ships",
+      "detail": "details-artillery",
+      "steps": [
+        {
+          "id": "artillery-bomber",
+          "html": "Freezer right machine → defend Bomber to cannon."
+        },
+        {
+          "id": "artillery-ammo",
+          "html": "Charge cannon battery → reserve shots."
+        },
+        {
+          "id": "artillery-radio",
+          "html": "Two radio parts → repair Overlook radio."
+        },
+        {
+          "id": "artillery-ships",
+          "html": "Match ship position → elevation/angle → sink both ships.",
+          "tools": [
+            "ww2-darkest-artillery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "title": "Pommel unlock and final radio commitment",
+      "detail": "details-departure",
+      "steps": [
+        {
+          "id": "radio-pommel",
+          "html": "Pommel at radio → gear up before final interaction."
+        },
+        {
+          "id": "radio-commit",
+          "html": "All players interact with radio together."
+        }
+      ]
+    },
+    {
+      "id": "meistermeuchlers",
+      "title": "Four consecutive Meistermeuchler arenas",
+      "detail": "details-meistermeuchlers",
+      "steps": [
+        {
+          "id": "shore-boss-1",
+          "html": "Beach: four knockouts, one at a time → cart."
+        },
+        {
+          "id": "shore-boss-2",
+          "html": "U-Boat: two at once, fire floor → restock → cart."
+        },
+        {
+          "id": "shore-boss-3",
+          "html": "Bunkers: three at once → last armour purchase → cart."
+        },
+        {
+          "id": "shore-boss-4",
+          "html": "Final Beach: kill all four permanently."
+        }
+      ]
+    }
+  ],
+  "ww2-the-shadowed-throne": [
+    {
+      "id": "wunderbuss",
+      "title": "Contact the Russians and build Wunderbuss",
+      "detail": "details-wunderbuss",
+      "steps": [
+        {
+          "id": "throne-radio",
+          "html": "Pinned region + radio code → left/right frequencies."
+        },
+        {
+          "id": "throne-flare",
+          "html": "Plaza box flare → melee Sizzler → Geistbolt."
+        },
+        {
+          "id": "throne-battery",
+          "html": "Find battery → open build gate → remove battery → build Wunderbuss."
+        },
+        {
+          "id": "throne-exit",
+          "html": "Charge gate generator to escape; siphon enemies for ammo.",
+          "tools": [
+            "ww2-shadowed-radio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Expose and charge both elevator panels",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "throne-panels",
+          "html": "Grenade-open both spawn-building panels."
+        },
+        {
+          "id": "throne-pap",
+          "html": "Wunderbuss charge both panels → lowered elevator → PaP."
+        }
+      ]
+    },
+    {
+      "id": "smuggler",
+      "title": "Smuggler’s Bat / Nachtmahr",
+      "detail": "details-smuggler",
+      "steps": [
+        {
+          "id": "smuggler-code",
+          "html": "Register frequencies + observed ammo type → Smuggler radio."
+        },
+        {
+          "id": "smuggler-arm",
+          "html": "Give the matching weapon class at Plaza sewer."
+        },
+        {
+          "id": "smuggler-pay",
+          "html": "After round wait → Main Street sewer → 1,500 Jolts."
+        },
+        {
+          "id": "smuggler-bat",
+          "html": "Melee wooden door three times → collect Bat."
+        }
+      ]
+    },
+    {
+      "id": "dancers-dagger",
+      "title": "Dancer’s Dagger / Perchta",
+      "detail": "details-dancers-dagger",
+      "steps": [
+        {
+          "id": "dagger-projector",
+          "html": "Painting + shot-down reel → Wunderbuss projector."
+        },
+        {
+          "id": "dagger-clowns",
+          "html": "Count and confirm four active clowns in order."
+        },
+        {
+          "id": "dagger-safe",
+          "html": "Reset clockwise ×3 → CW / CCW / CW / CCW → Dagger.",
+          "tools": [
+            "ww2-shadowed-safe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nazi-axe",
+      "title": "Nazi Axe / Holda",
+      "detail": "details-nazi-axe",
+      "steps": [
+        {
+          "id": "axe-frequencies",
+          "html": "Etched frequencies → radio → two Morse digits."
+        },
+        {
+          "id": "axe-bowl",
+          "html": "Magnifying glass + decoded map clue → bowl → Museum scale."
+        },
+        {
+          "id": "axe-head",
+          "html": "Sizzler melee at Armour → buy Armour/head → bowl charge → Axe.",
+          "tools": [
+            "ww2-shadowed-axe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refuge",
+      "title": "Place weapons and charge Barbarossa’s Refuge",
+      "detail": "details-refuge",
+      "steps": [
+        {
+          "id": "refuge-weapons",
+          "html": "Three melee weapons → 20 zombies / 10 Sizzlers / 10 Pests."
+        },
+        {
+          "id": "refuge-lock",
+          "html": "Internal anchor to yellow → Refuge locks for statue puzzle."
+        }
+      ]
+    },
+    {
+      "id": "raven-statues",
+      "title": "Four statue walls and the Blade",
+      "detail": "details-raven-statues",
+      "steps": [
+        {
+          "id": "statues-solve",
+          "html": "Walls 1–4 counterclockwise → record facing → follow shot route."
+        },
+        {
+          "id": "statues-ravens",
+          "html": "Collect four ravens → correct base mounts → green cue → Blade."
+        },
+        {
+          "id": "statues-exit",
+          "html": "Blade into stair-top slot → reopen Refuge.",
+          "tools": [
+            "ww2-shadowed-statues"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anchors",
+      "title": "Lower the Zeppelin pod",
+      "detail": "details-anchors",
+      "steps": [
+        {
+          "id": "anchors-charge",
+          "html": "Charge three external anchors; keep Plaza method consistent."
+        },
+        {
+          "id": "anchors-pod",
+          "html": "Lowered Main Street pod → upgrade/restock squad."
+        }
+      ]
+    },
+    {
+      "id": "zeppelin",
+      "title": "Board together and charge the cable",
+      "detail": "details-zeppelin",
+      "steps": [
+        {
+          "id": "zeppelin-enter",
+          "html": "All players in pod → Wunderbuss cable together."
+        }
+      ]
+    },
+    {
+      "id": "power-routing",
+      "title": "Route power and open all five gates",
+      "detail": "details-power-routing",
+      "steps": [
+        {
+          "id": "power-nodes",
+          "html": "Use terminals’ green connections to move power ball."
+        },
+        {
+          "id": "power-gates",
+          "html": "Open every gate first → deliver ball to Straub room."
+        }
+      ]
+    },
+    {
+      "id": "stadtjager",
+      "title": "Use the three different damage windows",
+      "detail": "details-stadtjager",
+      "steps": [
+        {
+          "id": "stadtjager-1",
+          "html": "Phase 1: damage orange chest engine during charge."
+        },
+        {
+          "id": "stadtjager-2",
+          "html": "Phase 2: damage during Geistbolt throw."
+        },
+        {
+          "id": "stadtjager-3",
+          "html": "Phase 3: electrify boss gas cloud → return to pod."
+        }
+      ]
+    }
+  ],
+  "ww2-into-the-storm": [
+    {
+      "id": "setup",
+      "title": "Story edition, lobby continuity and PaP schedule",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "edition",
+          "html": "Story edition: keep the same lobby between chapters."
+        },
+        {
+          "id": "battery-schedule",
+          "html": "Story PaP batteries: waves 1 / 4 / 7."
+        },
+        {
+          "id": "objective-schedule",
+          "html": "Complete HUD objectives; use wave-3/6/9 supplies and prepare for wave 10."
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "title": "Waves 1–3: body parts, ropes and rods",
+      "detail": "details-body",
+      "steps": [
+        {
+          "id": "body-rope",
+          "html": "Wave 1: shoot tree rope; collect six body parts."
+        },
+        {
+          "id": "body-head-torso",
+          "html": "Find one head and one torso from their candidate sets."
+        },
+        {
+          "id": "body-arms",
+          "html": "Find two arms."
+        },
+        {
+          "id": "body-legs",
+          "html": "Find two legs."
+        },
+        {
+          "id": "river-rope",
+          "html": "Wave 2 river rope → wave 3 two supply-pod rods."
+        }
+      ]
+    },
+    {
+      "id": "windmill",
+      "title": "Wave 5: Wustling club and exact blade alignment",
+      "detail": "details-windmill",
+      "steps": [
+        {
+          "id": "windmill-club",
+          "html": "Wave 5: Wustling charges another → collect club."
+        },
+        {
+          "id": "windmill-mount",
+          "html": "Stop longest blade bottom → mount body → stop body blade top."
+        }
+      ]
+    },
+    {
+      "id": "escort",
+      "title": "Waves 6–7: charge the fallen body and protect its route",
+      "detail": "details-escort",
+      "steps": [
+        {
+          "id": "body-charge",
+          "html": "Wave 6: nearby kills strengthen fallen zombie."
+        },
+        {
+          "id": "body-protect",
+          "html": "Wave 7: defend zombie to broken-house fireplace."
+        }
+      ]
+    },
+    {
+      "id": "hilt",
+      "title": "Wave 8: charge its battery before allowing death",
+      "detail": "details-hilt",
+      "steps": [
+        {
+          "id": "hilt-battery",
+          "html": "Wave 8: carried battery green first → then allow escort death."
+        },
+        {
+          "id": "hilt-claim",
+          "html": "Green battery → cellar generator → Hilt."
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "title": "Wave 10: Raketenbrenner and next-chapter lobby",
+      "detail": "details-extraction",
+      "steps": [
+        {
+          "id": "storm-boss",
+          "html": "Red airstrike circle → remove boss shield → damage."
+        },
+        {
+          "id": "storm-next",
+          "html": "Same returned lobby → Across the Depths."
+        }
+      ]
+    }
+  ],
+  "ww2-across-the-depths": [
+    {
+      "id": "setup",
+      "title": "Story edition, lobby continuity and PaP schedule",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "edition",
+          "html": "Story edition: keep the same lobby between chapters."
+        },
+        {
+          "id": "battery-schedule",
+          "html": "Story PaP batteries: waves 1 / 4 / 7."
+        },
+        {
+          "id": "objective-schedule",
+          "html": "Complete HUD objectives; use wave-3/6/9 supplies and prepare for wave 10."
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "title": "Wave 1: every player enters battery vision",
+      "detail": "details-vision",
+      "steps": [
+        {
+          "id": "vision-enter",
+          "html": "Wave 1: every player uses Barracks vision battery."
+        }
+      ]
+    },
+    {
+      "id": "fish",
+      "title": "Wave 2: shoot nine fish and gather at Jeep",
+      "detail": "details-fish",
+      "steps": [
+        {
+          "id": "fish-nine",
+          "html": "Wave 2: shoot all nine fish in vision."
+        },
+        {
+          "id": "fish-jeep",
+          "html": "All fish → lower-deck Jeep → end wave 2."
+        }
+      ]
+    },
+    {
+      "id": "batteries",
+      "title": "Waves 3–8: three new quest batteries",
+      "detail": "details-batteries",
+      "steps": [
+        {
+          "id": "herring-first",
+          "html": "Waves 3–4: buy 3,000-Jolt battery → red-floor station charge."
+        },
+        {
+          "id": "herring-second",
+          "html": "Waves 4–5: new battery → Barracks station."
+        },
+        {
+          "id": "herring-last",
+          "html": "Prepare equipment → final station before wave 8 ends."
+        }
+      ]
+    },
+    {
+      "id": "islands",
+      "title": "Clear three memory islands and cross carefully",
+      "detail": "details-islands",
+      "steps": [
+        {
+          "id": "islands-clear",
+          "html": "Reich → Shore → Throne islands; clear enemies before crossing."
+        }
+      ]
+    },
+    {
+      "id": "cups",
+      "title": "Track the fish through three cup rounds",
+      "detail": "details-cups",
+      "steps": [
+        {
+          "id": "cups-track",
+          "html": "Observe fish cup → follow shuffle → shoot after stop ×3."
+        }
+      ]
+    },
+    {
+      "id": "pommel",
+      "title": "Claim Pommel after returning to the ship",
+      "detail": "details-pommel",
+      "steps": [
+        {
+          "id": "pommel-claim",
+          "html": "Return to ship → crate Pommel → finish normal objectives."
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "title": "Wave 10: Stadtjäger and next-chapter lobby",
+      "detail": "details-extraction",
+      "steps": [
+        {
+          "id": "depths-boss",
+          "html": "Wave-10 Stadtjäger health → same lobby → Beneath the Ice."
+        }
+      ]
+    }
+  ],
+  "ww2-beneath-the-ice": [
+    {
+      "id": "setup",
+      "title": "Story edition, lobby continuity and PaP schedule",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "edition",
+          "html": "Story edition: keep the same lobby between chapters."
+        },
+        {
+          "id": "battery-schedule",
+          "html": "Story PaP batteries: waves 1 / 4 / 7."
+        },
+        {
+          "id": "objective-schedule",
+          "html": "Complete HUD objectives; use wave-3/6/9 supplies and prepare for wave 10."
+        }
+      ]
+    },
+    {
+      "id": "rune-wall",
+      "title": "Waves 1–2: battery vision and first rune code",
+      "detail": "details-rune-wall",
+      "steps": [
+        {
+          "id": "rune-battery",
+          "html": "Wave 1 break Forge battery → wave 2 vision."
+        },
+        {
+          "id": "rune-observe",
+          "html": "Find fresh rune sequence in vision → record stage 1."
+        },
+        {
+          "id": "rune-input",
+          "html": "Enter observed wall sequence; reset wrong entry before retry.",
+          "tools": [
+            "ww2-tortured-runes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hilt",
+      "title": "Wave 3: mount the Hilt",
+      "detail": "details-hilt",
+      "steps": [
+        {
+          "id": "ice-hilt",
+          "html": "Wave 3 Hilt crate → Forge Hilt bowl."
+        }
+      ]
+    },
+    {
+      "id": "flares",
+      "title": "Wave 4: five bowls and the second code",
+      "detail": "details-flares",
+      "steps": [
+        {
+          "id": "ice-flares",
+          "html": "Wave 4: four face bowls → Stamin-Up ground bowl."
+        },
+        {
+          "id": "ice-second",
+          "html": "Insert flare rune → fresh stage-2 code → enter wall.",
+          "tools": [
+            "ww2-tortured-runes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pommel",
+      "title": "Wave 5: mount Pommel",
+      "detail": "details-pommel",
+      "steps": [
+        {
+          "id": "ice-pommel",
+          "html": "Wave 5 Pommel crate → Forge Pommel bowl."
+        }
+      ]
+    },
+    {
+      "id": "sacrifices",
+      "title": "Wave 5: all players on stones and the third code",
+      "detail": "details-sacrifices",
+      "steps": [
+        {
+          "id": "ice-stones",
+          "html": "All players simultaneously on stones → kills → completion audio."
+        },
+        {
+          "id": "ice-third",
+          "html": "Pool rune → fresh stage-3 code → enter wall.",
+          "tools": [
+            "ww2-tortured-runes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blade",
+      "title": "Wave 6: mount Blade",
+      "detail": "details-blade",
+      "steps": [
+        {
+          "id": "ice-blade",
+          "html": "Wave 6 Blade crate → Forge Blade bowl."
+        }
+      ]
+    },
+    {
+      "id": "forge",
+      "title": "Assemble the Sword of Barbarossa",
+      "detail": "details-forge",
+      "steps": [
+        {
+          "id": "ice-forge",
+          "html": "Hilt + Pommel + Blade → Forge → claim Sword."
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "title": "Wave 10: Guardian and campaign ending",
+      "detail": "details-extraction",
+      "steps": [
+        {
+          "id": "ice-guardian",
+          "html": "Guardian damage; shoot hanging statues to stop healing."
+        },
+        {
+          "id": "ice-complete",
+          "html": "Complete ordinary ending after forging → campaign rewards."
+        }
+      ]
+    }
+  ],
+  "ww2-bodega-cervantes": [
+    {
+      "id": "setup",
+      "title": "Survival edition and equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "survival-edition",
+          "html": "Survival edition: batteries 1 / 5 / 10; no story extraction."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Three survival batteries: waves 1, 5 and 10",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "survival-batteries",
+          "html": "Charge all three survival batteries at waves 1 / 5 / 10."
+        }
+      ]
+    },
+    {
+      "id": "pap-upgrade",
+      "title": "Sixteen-duck gallery for the PaP fuse",
+      "detail": "details-pap-upgrade",
+      "steps": [
+        {
+          "id": "bodega-duck",
+          "html": "Shoot starter duck → hit all sixteen rising ducks."
+        },
+        {
+          "id": "bodega-fuse",
+          "html": "Pick up dropped fuse → special-weapon PaP enabled."
+        }
+      ]
+    },
+    {
+      "id": "sword",
+      "title": "Sword unlock: seven 1,750-Jolt payments",
+      "detail": "details-sword",
+      "steps": [
+        {
+          "id": "sword-prerequisite",
+          "html": "Campaign Sword unlock first; save 12,250 Jolts."
+        },
+        {
+          "id": "sword-site-1",
+          "html": "Pay 1,750: wine rack left of Speed Cola."
+        },
+        {
+          "id": "sword-site-2",
+          "html": "Pay 1,750: grass left of dead cow."
+        },
+        {
+          "id": "sword-site-3",
+          "html": "Pay 1,750: rubble right of blue truck."
+        },
+        {
+          "id": "sword-site-4",
+          "html": "Pay 1,750: barrels left of exterior cellar stairs."
+        },
+        {
+          "id": "sword-site-5",
+          "html": "Pay 1,750: box right of the painting truck in front of Windmill."
+        },
+        {
+          "id": "sword-site-6",
+          "html": "Pay 1,750: bucket right of Windmill gears."
+        },
+        {
+          "id": "sword-site-7",
+          "html": "Pay 1,750: rubble in front of broken-house Armour."
+        },
+        {
+          "id": "sword-down",
+          "html": "Seven paid runes → glowing-ring intentional down → Sword."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Maintain armour, ammunition and a retreat route",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "survival-loop",
+          "html": "Restock before pressure; keep a clear retreat route."
+        }
+      ]
+    }
+  ],
+  "ww2-uss-mount-olympus": [
+    {
+      "id": "setup",
+      "title": "Survival edition and equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "survival-edition",
+          "html": "Survival edition: batteries 1 / 5 / 10; no story extraction."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Three survival batteries: waves 1, 5 and 10",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "survival-batteries",
+          "html": "Charge all three survival batteries at waves 1 / 5 / 10."
+        }
+      ]
+    },
+    {
+      "id": "pap-upgrade",
+      "title": "Six valves for the PaP fuse",
+      "detail": "details-pap-upgrade",
+      "steps": [
+        {
+          "id": "olympus-valve-1",
+          "html": "Valve 1: across from Pack-a-Punch."
+        },
+        {
+          "id": "olympus-valve-2",
+          "html": "Valve 2: across from Double Tap."
+        },
+        {
+          "id": "olympus-valve-3",
+          "html": "Valve 3: right of Projector screen."
+        },
+        {
+          "id": "olympus-valve-4",
+          "html": "Valve 4: left of Cafeteria-to-upper-deck stairs."
+        },
+        {
+          "id": "olympus-valve-5",
+          "html": "Valve 5: small Cafeteria–Barracks room."
+        },
+        {
+          "id": "olympus-valve-6",
+          "html": "Valve 6: same small room left of bed-room stairs."
+        },
+        {
+          "id": "olympus-fuse",
+          "html": "Six valves → PaP-room fuse → special upgrades."
+        }
+      ]
+    },
+    {
+      "id": "sword",
+      "title": "Sword unlock: seven 1,750-Jolt payments",
+      "detail": "details-sword",
+      "steps": [
+        {
+          "id": "sword-prerequisite",
+          "html": "Campaign Sword unlock first; save 12,250 Jolts."
+        },
+        {
+          "id": "sword-site-1",
+          "html": "Pay 1,750: life jacket on floor before Quick Revive."
+        },
+        {
+          "id": "sword-site-2",
+          "html": "Pay 1,750: boxes right of Grease Gun."
+        },
+        {
+          "id": "sword-site-3",
+          "html": "Pay 1,750: lower-deck beam left of Mystery Box."
+        },
+        {
+          "id": "sword-site-4",
+          "html": "Pay 1,750: lower-deck rope pile near Mystery Box."
+        },
+        {
+          "id": "sword-site-5",
+          "html": "Pay 1,750: bucket right of Projector screen."
+        },
+        {
+          "id": "sword-site-6",
+          "html": "Pay 1,750: connecting-room wall drawer; drop Jolts on floor before it."
+        },
+        {
+          "id": "sword-site-7",
+          "html": "Pay 1,750: under the bed right of Pack-a-Punch."
+        },
+        {
+          "id": "sword-down",
+          "html": "Seven paid runes → glowing-ring intentional down → Sword."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Maintain armour, ammunition and a retreat route",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "survival-loop",
+          "html": "Restock before pressure; keep a clear retreat route."
+        }
+      ]
+    }
+  ],
+  "ww2-altar-of-blood": [
+    {
+      "id": "setup",
+      "title": "Survival edition and equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "survival-edition",
+          "html": "Survival edition: batteries 1 / 5 / 10; no story extraction."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Three survival batteries: waves 1, 5 and 10",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "survival-batteries",
+          "html": "Charge all three survival batteries at waves 1 / 5 / 10."
+        }
+      ]
+    },
+    {
+      "id": "pap-upgrade",
+      "title": "Fixed wall-rune fuse sequence",
+      "detail": "details-pap-upgrade",
+      "steps": [
+        {
+          "id": "altar-code",
+          "html": "Shoot photographed fixed rune order for the survival fuse."
+        },
+        {
+          "id": "altar-fuse",
+          "html": "Stamin-Up wall opening → collect special-upgrade fuse."
+        }
+      ]
+    },
+    {
+      "id": "sword",
+      "title": "Four sacrifice stones and three Forge bowls",
+      "detail": "details-sword",
+      "steps": [
+        {
+          "id": "altar-prerequisite",
+          "html": "Campaign Sword prerequisite; seven payments = 12,250 Jolts."
+        },
+        {
+          "id": "altar-stone-1",
+          "html": "Pay 1,750: Spawn floor stone."
+        },
+        {
+          "id": "altar-stone-2",
+          "html": "Pay 1,750: left-side stone above Stamin-Up stairs."
+        },
+        {
+          "id": "altar-stone-3",
+          "html": "Pay 1,750: Rune Room floor stone."
+        },
+        {
+          "id": "altar-stone-4",
+          "html": "Pay 1,750: right-side stone above PaP stairs."
+        },
+        {
+          "id": "altar-bowls",
+          "html": "Pay all three Forge bowls → glowing Forge ring."
+        },
+        {
+          "id": "altar-down",
+          "html": "Glowing Forge ring → intentional down → Sword."
+        }
+      ]
+    },
+    {
+      "id": "kontrollgranates",
+      "title": "Five Klaus symbols for turned-zombie grenades",
+      "detail": "details-kontrollgranates",
+      "steps": [
+        {
+          "id": "altar-jacks",
+          "html": "Jack explosions at all five Klaus symbols."
+        },
+        {
+          "id": "altar-grenades",
+          "html": "Earthquake → stair crate → Kontrollgranates."
+        }
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Maintain armour, ammunition and a retreat route",
+      "detail": "details-survival",
+      "steps": [
+        {
+          "id": "survival-loop",
+          "html": "Restock before pressure; keep a clear retreat route."
+        }
+      ]
+    }
+  ],
+  "ww2-the-frozen-dawn": [
+    {
+      "id": "setup",
+      "title": "Charge the Crash Site door plate",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "thule-open",
+          "html": "Five Crash Site plate kills → enter Thule."
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "title": "Stone switch and three Thulian Transports",
+      "detail": "details-pap",
+      "steps": [
+        {
+          "id": "pap-stone",
+          "html": "Passage wall stone red → enable PaP detour."
+        },
+        {
+          "id": "pap-transports",
+          "html": "Ride Passage, Crash Site and Blood Altar transports."
+        }
+      ]
+    },
+    {
+      "id": "scythe",
+      "title": "Thulian Scythe and Fang of An’heist",
+      "detail": "details-scythe",
+      "steps": [
+        {
+          "id": "scythe-shrine",
+          "html": "Phylactery shrine → survive event → Scythe."
+        },
+        {
+          "id": "scythe-materials",
+          "html": "Scythe Corpse Eater kill + Crash Site wire → altar."
+        },
+        {
+          "id": "scythe-forge",
+          "html": "15 altar kills → wait two full rounds → transport trial."
+        },
+        {
+          "id": "scythe-use",
+          "html": "Red-glowing Corpse Eater kill → one Scythe survival charge."
+        }
+      ]
+    },
+    {
+      "id": "hammer",
+      "title": "Thulian Hammer: runes, base pillars and prone approach",
+      "detail": "details-hammer",
+      "steps": [
+        {
+          "id": "hammer-bowl",
+          "html": "Crash Site battery → Overlook bowl → charge purple."
+        },
+        {
+          "id": "hammer-stones",
+          "html": "Four stones → stop bloodfalls → read runes left to right."
+        },
+        {
+          "id": "hammer-runes",
+          "html": "Bloodfall rune order → one matching ground kill per symbol."
+        },
+        {
+          "id": "hammer-pillars",
+          "html": "Four pillars → all blocks face original Hammer bowl."
+        },
+        {
+          "id": "hammer-guide",
+          "html": "Prone approach → guide moving Hammer → collect at Overlook.",
+          "tools": [
+            "ww2-frozen-hammer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hammer-upgrade",
+      "title": "Fist of Tal’rek: electrical relay and apparatus",
+      "detail": "details-hammer-upgrade",
+      "steps": [
+        {
+          "id": "hammer-relay",
+          "html": "Crash Site → Ice Caves → Morgue electrical relay."
+        },
+        {
+          "id": "hammer-doorway",
+          "html": "Electrified Hammer kill in Phylactery’s Morgue doorway."
+        },
+        {
+          "id": "hammer-special",
+          "html": "Charged special enemy → Hammer kill → apparatus rune."
+        },
+        {
+          "id": "hammer-apparatus",
+          "html": "Three apparatus stages using their own instruction plate."
+        },
+        {
+          "id": "hammer-trial",
+          "html": "Hold Hammer → invisible path → Stormraven trial."
+        }
+      ]
+    },
+    {
+      "id": "shield",
+      "title": "Thulian Shield: three blood pools",
+      "detail": "details-shield",
+      "steps": [
+        {
+          "id": "shield-pools",
+          "html": "Fill Ice/Morgue pools → Morgue stone → Overlook pool."
+        },
+        {
+          "id": "shield-wustling",
+          "html": "Kill Blood Altar Shield Wustling → take Shield."
+        }
+      ]
+    },
+    {
+      "id": "shield-upgrade",
+      "title": "Roar of Sang’Ket: activated pool order and radio",
+      "detail": "details-shield-upgrade",
+      "steps": [
+        {
+          "id": "shield-patterns",
+          "html": "Charged Corpse Eater in each smoking pool → record three patterns."
+        },
+        {
+          "id": "shield-radio",
+          "html": "Radio + speaker → pattern 1/kill → pattern 2/kill → pattern 3/kill."
+        },
+        {
+          "id": "shield-trial",
+          "html": "Rapid pattern flashing → hold Shield and intentional pool down → trial.",
+          "tools": [
+            "ww2-frozen-shield"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flail",
+      "title": "Broken Flail: books, gears and observed orb stops",
+      "detail": "details-flail",
+      "steps": [
+        {
+          "id": "flail-books",
+          "html": "Two observed books → Archives pedestal → Cypher Room."
+        },
+        {
+          "id": "flail-gears",
+          "html": "Three gears → Gearworks → kill charge."
+        },
+        {
+          "id": "flail-orbs",
+          "html": "Read wall targets → stop red first → green/purple → sound cues."
+        },
+        {
+          "id": "flail-take",
+          "html": "Three correct orb stops → Broken Flail and teleport orb.",
+          "tools": [
+            "ww2-frozen-orrery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flail-upgrade",
+      "title": "Talon of Lu’roth: three stones and constellations",
+      "detail": "details-flail-upgrade",
+      "steps": [
+        {
+          "id": "flail-room",
+          "html": "Teleport above Orrery → three kills at right stone."
+        },
+        {
+          "id": "flail-constellation",
+          "html": "Flail ADS → find new constellation → trace its stars."
+        },
+        {
+          "id": "flail-three",
+          "html": "Right → middle → last constellation → glowing orb trial."
+        }
+      ]
+    },
+    {
+      "id": "kingfall",
+      "title": "Place every upgraded weapon and enter the arena",
+      "detail": "details-kingfall",
+      "steps": [
+        {
+          "id": "kingfall-place",
+          "html": "All four upgraded weapons → Ice Caves mounts; Shield on floor."
+        },
+        {
+          "id": "kingfall-enter",
+          "html": "Restock → all players new Ice Caves transport."
+        }
+      ]
+    },
+    {
+      "id": "god-king",
+      "title": "God King: blood plates, weapon counters and final shot",
+      "detail": "details-god-king",
+      "steps": [
+        {
+          "id": "god-king-loop",
+          "html": "Damage → blood drain → disable three plates → stagger damage."
+        },
+        {
+          "id": "god-king-wipe",
+          "html": "Elevated wipe → pillar cover or Shield block."
+        },
+        {
+          "id": "god-king-shields",
+          "html": "Purple zombie shields → thrown Hammer."
+        },
+        {
+          "id": "god-king-fire",
+          "html": "Fire wall → Flail teleport past it → stun throne boss."
+        },
+        {
+          "id": "god-king-finish",
+          "html": "After cutscene: shoot throne boss dead before final wipe."
+        }
+      ]
+    }
+  ],
+  "aw-outbreak": [
+    {
+      "id": "setup",
+      "title": "Open the facility and collect Exo equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "outbreak-open",
+          "html": "Open the facility, activate equipment power and collect an Exo Suit."
+        },
+        {
+          "id": "outbreak-prepare",
+          "html": "Prepare an infection escape route and keep access to the printer."
+        }
+      ]
+    },
+    {
+      "id": "black-box",
+      "title": "Authorize the Black Box",
+      "detail": "details-black-box",
+      "steps": [
+        {
+          "id": "outbreak-box",
+          "html": "Collect the Black Box beside the crashed Warbird."
+        },
+        {
+          "id": "outbreak-box-terminal",
+          "html": "Install it at the Morgue terminal; wait for Angie."
+        }
+      ]
+    },
+    {
+      "id": "lilith-card",
+      "title": "Lilith’s printer card",
+      "detail": "details-lilith-card",
+      "steps": [
+        {
+          "id": "outbreak-lilith-em1",
+          "html": "Fire EM1 at the printer while buying; collect Lilith’s card."
+        }
+      ]
+    },
+    {
+      "id": "decker-card",
+      "title": "Decker’s incinerator card",
+      "detail": "details-decker-card",
+      "steps": [
+        {
+          "id": "outbreak-decker-chute",
+          "html": "Solo: buy, stay out, let close, buy again and enter. Co-op: enter two different chutes together."
+        },
+        {
+          "id": "outbreak-decker-floor",
+          "html": "Shoot the incinerator floor and collect Decker’s card before ejection."
+        }
+      ]
+    },
+    {
+      "id": "oz-card",
+      "title": "Oz’s holding-cell card",
+      "detail": "details-oz-card",
+      "steps": [
+        {
+          "id": "outbreak-oz-bar",
+          "html": "Shoot away the bar beneath the middle holding cell."
+        },
+        {
+          "id": "outbreak-oz-slam",
+          "html": "All players: slam the outer cell together and collect Oz’s card."
+        }
+      ]
+    },
+    {
+      "id": "kahn-card",
+      "title": "Kahn’s infected-keypad card",
+      "detail": "details-kahn-card",
+      "steps": [
+        {
+          "id": "outbreak-kahn-infect",
+          "html": "While infected, use all four Administration keypads without cleansing."
+        },
+        {
+          "id": "outbreak-kahn-collect",
+          "html": "Collect Kahn’s card from the opened checkpoint window."
+        }
+      ]
+    },
+    {
+      "id": "clearance",
+      "title": "Bring every player to clearance 49",
+      "detail": "details-clearance",
+      "steps": [
+        {
+          "id": "outbreak-farm-cards",
+          "html": "Collect dropped cards until every player’s badge shows 49."
+        },
+        {
+          "id": "outbreak-level-terminal",
+          "html": "At 49 for the whole squad, use the Morgue terminal."
+        }
+      ]
+    },
+    {
+      "id": "readers",
+      "title": "Use each character’s personal reader",
+      "detail": "details-readers",
+      "steps": [
+        {
+          "id": "outbreak-personal-readers",
+          "html": "Each player scans their own character’s reader and reaches 50."
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "title": "Synchronize extraction",
+      "detail": "details-extraction",
+      "steps": [
+        {
+          "id": "outbreak-reauthorize",
+          "html": "Reauthorize at Morgue; all players use the Exo station together."
+        },
+        {
+          "id": "outbreak-outro",
+          "html": "Return to spawn for the ending; standard completion unlocks Mk 25."
+        }
+      ]
+    }
+  ],
+  "aw-infection": [
+    {
+      "id": "setup",
+      "title": "Open Burger Town and locate decontamination",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "infection-exo",
+          "html": "Get the sewer Exo Suit and open all four districts."
+        },
+        {
+          "id": "infection-rounds",
+          "html": "Handle round objectives separately from MEAT IS MURDER."
+        }
+      ]
+    },
+    {
+      "id": "pan",
+      "title": "Find the pan and open the sewer chamber",
+      "detail": "details-pan",
+      "steps": [
+        {
+          "id": "infection-pan-pickup",
+          "html": "Exo-boost from the spawn crate to the golden roof pan."
+        },
+        {
+          "id": "infection-valves",
+          "html": "Turn four orange sewer valves; enter the waterfall passage."
+        },
+        {
+          "id": "infection-pan-altar",
+          "html": "Place the pan on the chamber altar."
+        }
+      ]
+    },
+    {
+      "id": "blood",
+      "title": "Season the pan",
+      "detail": "details-blood",
+      "steps": [
+        {
+          "id": "infection-pan-blood",
+          "html": "Fill the pan with lower-room kills; put it on the Burger Town stove."
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "title": "Gather, cook and assemble the burger",
+      "detail": "details-burger",
+      "steps": [
+        {
+          "id": "infection-meat",
+          "html": "Deposit one meat piece from each of the four districts, one at a time."
+        },
+        {
+          "id": "infection-cook",
+          "html": "Cook all four meat pieces with the Magnetron until the ding."
+        },
+        {
+          "id": "infection-bun",
+          "html": "Collect an employee-zombie bun; assemble and pick up the burger."
+        }
+      ]
+    },
+    {
+      "id": "cleanse",
+      "title": "Cleanse the burger and feed Bubby",
+      "detail": "details-cleanse",
+      "steps": [
+        {
+          "id": "infection-cleanse-burger",
+          "html": "Decontaminate with the burger; feed Bubby and listen for the battery request."
+        }
+      ]
+    },
+    {
+      "id": "battery",
+      "title": "Charge Bubby’s battery",
+      "detail": "details-battery",
+      "steps": [
+        {
+          "id": "infection-battery-screen",
+          "html": "Use the Bubby schematic, then take the timed battery from the other Command Center."
+        },
+        {
+          "id": "infection-charge-battery",
+          "html": "Defend the Value Voltage charger; give the red charged battery to Bubby."
+        }
+      ]
+    },
+    {
+      "id": "rocket",
+      "title": "Authorize the Burger Town rocket",
+      "detail": "details-rocket",
+      "steps": [
+        {
+          "id": "infection-key",
+          "html": "Take Bubby’s key and trigger Access Denied inside the rooftop burger."
+        },
+        {
+          "id": "infection-arm",
+          "html": "Shoot the Insta-Gator while it holds a zombie; collect the arm."
+        },
+        {
+          "id": "infection-fingerprint",
+          "html": "Scan the arm upstairs at spawn; install the red tablet in the rooftop burger."
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "title": "Return the blue tablet",
+      "detail": "details-finish",
+      "steps": [
+        {
+          "id": "infection-blue-tablet",
+          "html": "Collect the blue tablet beneath the burger screen and give it to Bubby."
+        }
+      ]
+    }
+  ],
+  "aw-carrier": [
+    {
+      "id": "setup",
+      "title": "Open the carrier and prepare equipment",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "carrier-setup",
+          "html": "Open the required decks and buy Armory Teleport Grenades."
+        }
+      ]
+    },
+    {
+      "id": "hidden-generator",
+      "title": "Power both disposal machines",
+      "detail": "details-hidden-generator",
+      "steps": [
+        {
+          "id": "carrier-chompy",
+          "html": "Teleport into Chompy’s open room and activate its generator."
+        },
+        {
+          "id": "carrier-disposals",
+          "html": "Confirm Weapon Disposal and the Armory Grenade Disposal are powered."
+        }
+      ]
+    },
+    {
+      "id": "fishing",
+      "title": "Build the Gun Deck fishing rod",
+      "detail": "details-fishing",
+      "steps": [
+        {
+          "id": "carrier-rod-parts",
+          "html": "Submit distinct weapons; install reel, line and hook as each is received."
+        },
+        {
+          "id": "carrier-fish",
+          "html": "Use the completed rod for the shovel; keep the bottle for the maze."
+        }
+      ]
+    },
+    {
+      "id": "tablet-1",
+      "title": "Tablet 1: grenade-icon rows",
+      "detail": "details-tablet-1",
+      "steps": [
+        {
+          "id": "carrier-cycle-icons",
+          "html": "Start the icon cycle with a Teleport Grenade; use Contact Grenades on the required icons."
+        },
+        {
+          "id": "carrier-icon-rows",
+          "html": "Complete the 2-, 4- and 6-icon rows, checking each green light."
+        },
+        {
+          "id": "carrier-tablet1-deposit",
+          "html": "Collect tablet 1 and deposit it at the Gun Deck vault."
+        }
+      ]
+    },
+    {
+      "id": "tablet-2",
+      "title": "Tablet 2: drunk laser maze",
+      "detail": "details-tablet-2",
+      "steps": [
+        {
+          "id": "carrier-maze-ready",
+          "html": "Open the complete route, drink the bottle and activate the Cargo Deck keypad."
+        },
+        {
+          "id": "carrier-maze-cross",
+          "html": "Cross all four areas without laser contact; take and deposit tablet 2."
+        }
+      ]
+    },
+    {
+      "id": "tablet-3",
+      "title": "Tablet 3: repair Bio Lab and dig the island",
+      "detail": "details-tablet-3",
+      "steps": [
+        {
+          "id": "carrier-telefrags",
+          "html": "Install 20 telefrag pieces individually at the Bio Lab teleporter."
+        },
+        {
+          "id": "carrier-island",
+          "html": "Fish a shovel, dig up island tablet 3 and deposit it; retry after cooldown if needed."
+        }
+      ]
+    },
+    {
+      "id": "tablet-4",
+      "title": "Tablet 4: Captain DJ’s eye scanner",
+      "detail": "details-tablet-4",
+      "steps": [
+        {
+          "id": "carrier-locker",
+          "html": "Inspect Captain DJ’s locker; shoot its empty drone for the lever."
+        },
+        {
+          "id": "carrier-cage",
+          "html": "Install the lever; lure the shark with grate kills and ride the activated cage."
+        },
+        {
+          "id": "carrier-eye",
+          "html": "Collect the eye from the attacking shark; open the locker and deposit tablet 4."
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "Plant the final C4",
+      "detail": "details-ending",
+      "steps": [
+        {
+          "id": "carrier-c4",
+          "html": "Obtain Weapon Disposal C4 and plant it at the vault to end the match."
+        }
+      ]
+    }
+  ],
+  "aw-descent": [
+    {
+      "id": "setup",
+      "title": "Prepare the resort and scheduled encounters",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "descent-exo",
+          "html": "Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator."
+        },
+        {
+          "id": "descent-boss-gates",
+          "html": "Prepare for Oz at rounds 5, 12/13 and 20; resume Reunion afterward."
+        }
+      ]
+    },
+    {
+      "id": "secret-room",
+      "title": "Open Tidal Generator’s secret room",
+      "detail": "details-secret-room",
+      "steps": [
+        {
+          "id": "descent-valves",
+          "html": "Turn all three staircase valve lamps blue."
+        },
+        {
+          "id": "descent-denied",
+          "html": "Use the exposed terminal twice until Angie denies access."
+        }
+      ]
+    },
+    {
+      "id": "reroute",
+      "title": "Depressurize and reroute underwater power",
+      "detail": "details-reroute",
+      "steps": [
+        {
+          "id": "descent-door",
+          "html": "Depressurize the Lounge door and obtain a Goliath suit."
+        },
+        {
+          "id": "descent-switch",
+          "html": "Use Goliath to reach the underwater switch; turn it blue and return."
+        }
+      ]
+    },
+    {
+      "id": "drones",
+      "title": "Destroy five empty challenge drones",
+      "detail": "details-drones",
+      "steps": [
+        {
+          "id": "descent-drone-challenge",
+          "html": "Destroy five empty drones in one challenge round without escape or early round end."
+        }
+      ]
+    },
+    {
+      "id": "capacitor",
+      "title": "Charge Galleria’s capacitor",
+      "detail": "details-capacitor",
+      "steps": [
+        {
+          "id": "descent-charge",
+          "html": "Absorb electrical hits by the capacitor until its display reaches 100%."
+        }
+      ]
+    },
+    {
+      "id": "contact-round",
+      "title": "Complete the Contact Grenade round",
+      "detail": "details-contact-round",
+      "steps": [
+        {
+          "id": "descent-contact",
+          "html": "Finish the granted Contact Grenade challenge round."
+        }
+      ]
+    },
+    {
+      "id": "jumping",
+      "title": "Finish the platforms and movement round",
+      "detail": "details-jumping",
+      "steps": [
+        {
+          "id": "descent-platforms",
+          "html": "Reach the end of all nine spawn platform patterns."
+        },
+        {
+          "id": "descent-moving-points",
+          "html": "Survive the movement-drains-points round without exhausting your reserve."
+        }
+      ]
+    },
+    {
+      "id": "simon",
+      "title": "Reception Simon Says",
+      "detail": "details-simon",
+      "steps": [
+        {
+          "id": "descent-simon-start",
+          "html": "Record the four-screen layout, replay each flash sequence and wait for the success tone."
+        },
+        {
+          "id": "descent-friendly-fire",
+          "html": "Finish the friendly-fire round without a friendly-fire down.",
+          "tools": [
+            "aw-descent-simon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "number-panel",
+      "title": "Match Tidal Generator’s number rows",
+      "detail": "details-number-panel",
+      "steps": [
+        {
+          "id": "descent-digits",
+          "html": "Match target/current digits using slam hits, jumps, purchases and kills."
+        },
+        {
+          "id": "descent-coupling",
+          "html": "After slams reread all digits; adjust purchases/kills, then jumps last."
+        },
+        {
+          "id": "descent-mahem",
+          "html": "Complete the granted Mk 25 MAHEM challenge round.",
+          "tools": [
+            "aw-descent-numbers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "memories",
+      "title": "Enter Oz’s memories and complete Reunion",
+      "detail": "details-memories",
+      "steps": [
+        {
+          "id": "descent-red-blue",
+          "html": "Use the terminal through its red, then blue machine states."
+        },
+        {
+          "id": "descent-memory-waves",
+          "html": "Survive both Outbreak-memory waves; Reunion completes and unlocks Double Feature."
+        }
+      ]
+    }
+  ],
+  "vanguard-der-anfang": [
+    {
+      "id": "systems",
+      "title": "Prepare the Stalingrad objective hub",
+      "detail": "details-systems",
+      "steps": [
+        {
+          "id": "anfang-objectives",
+          "html": "Complete district portals to open the hub and earn Sacrificial Hearts."
+        },
+        {
+          "id": "anfang-pap",
+          "html": "Use hub Pack-a-Punch; buy ammo effects through Covenants."
+        },
+        {
+          "id": "anfang-perks",
+          "html": "Take the free first tier at each fountain, then upgrade useful perks."
+        },
+        {
+          "id": "anfang-hearts",
+          "html": "Spend Hearts on current Covenant offers or artifact upgrades."
+        },
+        {
+          "id": "anfang-artifacts",
+          "html": "Choose escape, crowd control or held-area damage to suit your objective."
+        },
+        {
+          "id": "anfang-crafting",
+          "html": "Use salvage for armour/equipment; keep Hearts and Essence separate."
+        }
+      ]
+    },
+    {
+      "id": "command-post",
+      "title": "Open Command Post and Von List’s Office",
+      "detail": "details-command-post",
+      "steps": [
+        {
+          "id": "anfang-east",
+          "html": "Open Panzer Column East, then Store, and enter the upper Office."
+        }
+      ]
+    },
+    {
+      "id": "void",
+      "title": "Return from the Office’s Void portal",
+      "detail": "details-void",
+      "steps": [
+        {
+          "id": "anfang-void-enter",
+          "html": "Enter Office Void, survive three rounds and return near Flinger Gate."
+        },
+        {
+          "id": "anfang-void-return",
+          "html": "Let the return scene finish before following Krafft’s dialogue."
+        }
+      ]
+    },
+    {
+      "id": "kraft",
+      "title": "Speak through Command Post’s marked door",
+      "detail": "details-kraft",
+      "steps": [
+        {
+          "id": "anfang-kraft-door",
+          "html": "Use the marked white Command Post door and let the conversation finish."
+        }
+      ]
+    },
+    {
+      "id": "apartments",
+      "title": "Activate the Apartments rune and final portal event",
+      "detail": "details-apartments",
+      "steps": [
+        {
+          "id": "anfang-apartments-rune",
+          "html": "Open Apartments and interact with its upstairs ritual rune."
+        },
+        {
+          "id": "anfang-final-portal",
+          "html": "Return to Command Post’s green portal and finish the final dialogue."
+        }
+      ]
+    }
+  ],
+  "vanguard-terra-maledicta": [
+    {
+      "id": "setup",
+      "title": "Open the Eastern Desert objective hub",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "terra-setup",
+          "html": "Complete portals to open Merchant Road, both Springs and Debris Field."
+        },
+        {
+          "id": "terra-shovel",
+          "html": "Optional digs: find a shovel at one of the four hub pickup areas."
+        }
+      ]
+    },
+    {
+      "id": "decimator",
+      "title": "Begin freeing the Decimator Shield",
+      "detail": "details-decimator",
+      "steps": [
+        {
+          "id": "terra-shield-talk",
+          "html": "Speak to the Merchant Road shield; use the Tents rune by Demonic Frenzy."
+        },
+        {
+          "id": "terra-augmentor-enter",
+          "html": "Enter the Tents portal and finish the Augmentor objective."
+        }
+      ]
+    },
+    {
+      "id": "augmentor",
+      "title": "Destroy the four hub crystals",
+      "detail": "details-augmentor",
+      "steps": [
+        {
+          "id": "terra-crystals",
+          "html": "Destroy the East Spring, West Spring and two Temple crystals."
+        }
+      ]
+    },
+    {
+      "id": "sacrifice",
+      "title": "Finish Sacrifice and collect the shield",
+      "detail": "details-sacrifice",
+      "steps": [
+        {
+          "id": "terra-second-rune",
+          "html": "Return to the shield; use Bazaar’s rune below Diabolical Damage."
+        },
+        {
+          "id": "terra-sacrifice",
+          "html": "Complete Sacrifice; return and collect the released Decimator Shield."
+        }
+      ]
+    },
+    {
+      "id": "tome-page",
+      "title": "Enter Debris Field’s Void route",
+      "detail": "details-tome-page",
+      "steps": [
+        {
+          "id": "terra-debris-portal",
+          "html": "Use Debris Field’s Venomous Vigor rune and enter its Void portal."
+        }
+      ]
+    },
+    {
+      "id": "arms",
+      "title": "Break the four Tome Page seals",
+      "detail": "details-arms",
+      "steps": [
+        {
+          "id": "terra-sealing-arms",
+          "html": "Follow the Tome Page’s four beams and Decimator-slam each sealing arm."
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "Take the Tome Page and return",
+      "detail": "details-ending",
+      "steps": [
+        {
+          "id": "terra-tome-reward",
+          "html": "Collect the released Tome Page and use the portal to its right."
+        }
+      ]
+    }
+  ],
+  "vanguard-shi-no-numa": [
+    {
+      "id": "setup",
+      "title": "Open the swamp and weapon routes",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "vshi-open",
+          "html": "Open the required huts, Doctor’s Quarters and Dig Site."
+        }
+      ]
+    },
+    {
+      "id": "wunderwaffe",
+      "title": "Build or obtain the Wunderwaffe DG-2",
+      "detail": "details-wunderwaffe",
+      "steps": [
+        {
+          "id": "vshi-barrel",
+          "html": "Fishing Hut barrel → Comms tower defense → barrel and first tube."
+        },
+        {
+          "id": "vshi-fuse",
+          "html": "Fit the Comms fuse into Storage’s broken trap and charge tube 2 with trap kills."
+        },
+        {
+          "id": "vshi-zaballa-tube",
+          "html": "Bait Zaballa’s mines onto the Excavation Tesla coil; take tube 3."
+        },
+        {
+          "id": "vshi-craft",
+          "html": "Craft at Storage, or obtain the Wunderwaffe from the box; prepare it for the ceremony."
+        }
+      ]
+    },
+    {
+      "id": "monolith",
+      "title": "Clear the monolith and read the three papers",
+      "detail": "details-monolith",
+      "steps": [
+        {
+          "id": "vshi-vines",
+          "html": "Explode three Boom-Schreiers beside the monolith to remove its vines."
+        },
+        {
+          "id": "vshi-wheels",
+          "html": "Collect Dormitory, Doctor’s Quarters and Dig Site wheel parts; install them."
+        },
+        {
+          "id": "vshi-papers",
+          "html": "Read the Excavation, Dig Site and Comms paper glyphs."
+        },
+        {
+          "id": "vshi-translate",
+          "html": "Translate the papers, align their wheel markings at the top and lock the monolith.",
+          "tools": [
+            "vanguard-shi-no-numa-cipher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "souls",
+      "title": "Complete the Wunderwaffe ceremony",
+      "detail": "details-souls",
+      "steps": [
+        {
+          "id": "vshi-ceremony",
+          "html": "All players start the stones; Wunderwaffe-kill blue-mist enemies near the shrine."
+        }
+      ]
+    },
+    {
+      "id": "blood",
+      "title": "Fill and drink the blood fountain",
+      "detail": "details-blood",
+      "steps": [
+        {
+          "id": "vshi-flogger-blood",
+          "html": "Flogger-kill zombies to fill the fountain; drink for clue vision."
+        }
+      ]
+    },
+    {
+      "id": "mirror-parts",
+      "title": "Find both mirror fragments in vision",
+      "detail": "details-mirror-parts",
+      "steps": [
+        {
+          "id": "vshi-map-x",
+          "html": "In blood vision, read War Room’s X and shoot down that hut’s mirror fragment."
+        },
+        {
+          "id": "vshi-red-orb",
+          "html": "Activate the red orb and recover the fragment at its endpoint."
+        }
+      ]
+    },
+    {
+      "id": "orbs",
+      "title": "Restore the mirror and return blue orbs",
+      "detail": "details-orbs",
+      "steps": [
+        {
+          "id": "vshi-place-mirror",
+          "html": "Place both mirror pieces; activate and follow each blue orb’s three-shot route."
+        }
+      ]
+    },
+    {
+      "id": "echo",
+      "title": "Defeat the Echo’s three masks",
+      "detail": "details-echo",
+      "steps": [
+        {
+          "id": "vshi-enter-echo",
+          "html": "Prepare, then all players use the returned blue orbs to summon Echo."
+        },
+        {
+          "id": "vshi-echo-loop",
+          "html": "Wunderwaffe-kill the marked enemies; damage Echo’s mask only inside the blue dome."
+        }
+      ]
+    },
+    {
+      "id": "mirror",
+      "title": "Collect the restored relic",
+      "detail": "details-mirror",
+      "steps": [
+        {
+          "id": "vshi-mirror-finish",
+          "html": "Destroy all three masks and collect the repaired mirror relic."
+        }
+      ]
+    }
+  ],
+  "vanguard-the-archon": [
+    {
+      "id": "setup",
+      "title": "Assemble Temple Pack-a-Punch",
+      "detail": "details-setup",
+      "steps": [
+        {
+          "id": "archon-pap-parts",
+          "html": "Collect Derailment rail-cart and Spike plane-wing parts; install at Temple."
+        },
+        {
+          "id": "archon-pap-souls",
+          "html": "Charge Temple Pack-a-Punch with its spawned ghost-zombie kills."
+        }
+      ]
+    },
+    {
+      "id": "relic",
+      "title": "Place the relic and survive the introduction",
+      "detail": "details-relic",
+      "steps": [
+        {
+          "id": "archon-relic-place",
+          "html": "Place the Temple relic and enter its new Dark Aether portal."
+        },
+        {
+          "id": "archon-intro-return",
+          "html": "Survive the Dark Aether introduction through its scripted return."
+        }
+      ]
+    },
+    {
+      "id": "shovel",
+      "title": "Collect a shovel and choose a trial",
+      "detail": "details-shovel",
+      "steps": [
+        {
+          "id": "archon-shovel",
+          "html": "Get a shovel; complete all three trials in your preferred order."
+        }
+      ]
+    },
+    {
+      "id": "mindfulness",
+      "title": "Trial of Mindfulness",
+      "detail": "details-mindfulness",
+      "steps": [
+        {
+          "id": "archon-mindfulness-orb",
+          "html": "Dig Merchant Road’s red orb; record and traverse its rune order."
+        },
+        {
+          "id": "archon-preparation-rounds",
+          "html": "Complete the 3-, 4- and 5-symbol preparations and their challenges."
+        },
+        {
+          "id": "archon-no-kill-capture",
+          "html": "Start the formal trial and capture its runes without zombie kills.",
+          "tools": [
+            "vanguard-archon-runes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resilience",
+      "title": "Trial of Resilience and Decimator Shield",
+      "detail": "details-resilience",
+      "steps": [
+        {
+          "id": "archon-resilience-orb",
+          "html": "Shoot Debris Field’s external crystals until the Resilience orb appears."
+        },
+        {
+          "id": "archon-cursed-items",
+          "html": "Return the Tents hat, upper Bazaar skull and dug-up Derailment femur."
+        },
+        {
+          "id": "archon-shield-pickup",
+          "html": "Collect the freed Decimator Shield after all three cursed deliveries."
+        },
+        {
+          "id": "archon-resilience-trial",
+          "html": "Destroy the three Syphoncores and deliver their Demon Blood to the fountain."
+        }
+      ]
+    },
+    {
+      "id": "sacrifice",
+      "title": "Trial of Sacrifice and Ring of Fire",
+      "detail": "details-sacrifice",
+      "steps": [
+        {
+          "id": "archon-torches",
+          "html": "Light all three Derailment torches together with Molotovs."
+        },
+        {
+          "id": "archon-sacrifice-weapon",
+          "html": "Surrender a spare packed weapon, survive armour loss and defeat the Uberkrieger."
+        },
+        {
+          "id": "archon-ring-of-fire",
+          "html": "Equip Ring of Fire; charge each trial obelisk with nearby kills while inside the Ring."
+        },
+        {
+          "id": "archon-sacrifice-complete",
+          "html": "Finish every charged obelisk and confirm the reward drops."
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "title": "Prepare for the final portal",
+      "detail": "details-departure",
+      "steps": [
+        {
+          "id": "archon-final-ready",
+          "html": "After all three trials, prepare the squad and enter the Temple boss portal."
+        }
+      ]
+    },
+    {
+      "id": "kortifex",
+      "title": "Defeat Kortifex’s three eyes",
+      "detail": "details-kortifex",
+      "steps": [
+        {
+          "id": "archon-eye-one",
+          "html": "Destroy the first upper eye and move to the next arena."
+        },
+        {
+          "id": "archon-convert-shards",
+          "html": "Ground crystal → red shard → purple pod → wait → blue shard."
+        },
+        {
+          "id": "archon-sky-pillars",
+          "html": "Use blue shards on sky pillars to expose and destroy the next eye."
+        },
+        {
+          "id": "archon-last-eye",
+          "html": "Repeat for the final eye; strike pillars to interrupt healing."
+        },
+        {
+          "id": "archon-ending",
+          "html": "After the final eye, receive the ending and quest rewards."
+        }
+      ]
+    }
+  ],
+  "mw3-urzikstan": [
+    {
+      "id": "deployment",
+      "title": "Plan this deployment",
+      "detail": "details-deployment",
+      "steps": [
+        {
+          "id": "mw3-loadout",
+          "html": "Select this deployment’s goal; distinguish consumed acquisitions from schematics."
+        },
+        {
+          "id": "mw3-threat",
+          "html": "Prepare rarity, Pack-a-Punch, armour, mask and revives for the chosen threat zone."
+        },
+        {
+          "id": "mw3-map-timer",
+          "html": "Use the in-game timer, storm boundary and current extraction markers."
+        },
+        {
+          "id": "mw3-field-upgrades",
+          "html": "Match the in-game field upgrade to survival, crowd control or squad recovery."
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Eight contract mechanics",
+      "detail": "details-contracts",
+      "steps": [
+        {
+          "id": "mw3-bounty",
+          "html": "Bounty: kill the marked HVT and collect its Reward Rift."
+        },
+        {
+          "id": "mw3-outlast",
+          "html": "Outlast: activate PND and stay in its marked zone until analysis finishes."
+        },
+        {
+          "id": "mw3-spores",
+          "html": "Spore Control: collect/place inhibitors, then shoot every exposed spore."
+        },
+        {
+          "id": "mw3-escort",
+          "html": "Escort: move with the ACV and protect its health through every stop."
+        },
+        {
+          "id": "mw3-cargo",
+          "html": "Deliver Cargo: retrieve the LTV and reach its marked drop-off intact."
+        },
+        {
+          "id": "mw3-stash",
+          "html": "Raid Weapon Stash: drill and defend the safe, then collect the loot."
+        },
+        {
+          "id": "mw3-extractors",
+          "html": "Aether Extractors: finish each uninterrupted shutdown interaction before time expires."
+        },
+        {
+          "id": "mw3-ground-station",
+          "html": "Defend Ground Station: gather seismic data, activate uplink and protect its upload."
+        }
+      ]
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment, keys and local facilities",
+      "detail": "details-equipment",
+      "steps": [
+        {
+          "id": "mw3-merc-keys",
+          "html": "Camp → Stronghold Keycard → stronghold safe → named fortress access."
+        },
+        {
+          "id": "mw3-warlords",
+          "html": "Check the active Warlord and matching fortress card; prepare for its drones, gas or traps."
+        },
+        {
+          "id": "mw3-nests",
+          "html": "Mask up; clear every nest/stronghold cyst for its cache rewards."
+        },
+        {
+          "id": "mw3-orbs",
+          "html": "Track a damaged Harvester Orb; finish it and collect its resources."
+        },
+        {
+          "id": "mw3-dogs",
+          "html": "Friendly dog: appropriate flesh amount; Dog Collar quest: flesh + Molotov, hostile hound."
+        },
+        {
+          "id": "mw3-ammo-mods",
+          "html": "Read the required mod effect and enemy type before farming a mission counter."
+        },
+        {
+          "id": "mw3-schematics",
+          "html": "Exfil plans for permanent crafting; distinguish consumables and weapon cases."
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "title": "Mission actions and the three Act finales",
+      "detail": "details-story",
+      "steps": [
+        {
+          "id": "mw3-mission-counters",
+          "html": "Follow the exact counted action and retain required items through exfil."
+        },
+        {
+          "id": "mw3-extraction-finale",
+          "html": "Extraction: named mission exfil → Jansen upload defense → helicopter escort/exfil."
+        },
+        {
+          "id": "mw3-shepherd-finale",
+          "html": "Shepherd: SAMs → deployment area → protect ACV → activate/defend final neutralizer test."
+        },
+        {
+          "id": "mw3-zakhaev-finale",
+          "html": "Defeat Zakhaev: clear stronghold → plant charge → defeat Orcus → finish the ending."
+        },
+        {
+          "id": "mw3-seasonal-story-links",
+          "html": "Use the matching later story guide; distinguish the three Worm encounters."
+        }
+      ]
+    },
+    {
+      "id": "rune-portals",
+      "title": "Rune entrances and destination codes",
+      "detail": "details-rune-portals",
+      "steps": [
+        {
+          "id": "mw3-rune-method",
+          "html": "Choose an exit code, shoot its three glyphs in order and pay the portal prompt."
+        },
+        {
+          "id": "mw3-rune-entry-atlas",
+          "html": "Use the photographed entrance atlas; select the destination independently."
+        },
+        {
+          "id": "mw3-rune-code-check",
+          "html": "Verify the entire ordered triplet and destination photograph before travel.",
+          "tools": [
+            "mw3-rune-portals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "red-worm",
+      "title": "Greylorm: photographs, USBs and storm battle",
+      "detail": "details-red-worm",
+      "steps": [
+        {
+          "id": "mw3-clue-walls",
+          "html": "Read four photographs from a current C1, H2, E8 or G7/G8 clue wall."
+        },
+        {
+          "id": "mw3-usb-collect",
+          "html": "Match the photos; collect and record actual Alpha/Bravo/Charlie/Delta drives."
+        },
+        {
+          "id": "mw3-worm-arena",
+          "html": "Locate paired ammo caches/refractors and prepare the current storm arena."
+        },
+        {
+          "id": "mw3-insert-usbs",
+          "html": "In the storm, install all four matching USBs and confirm the summoning cues."
+        },
+        {
+          "id": "mw3-greylorm-fight",
+          "html": "Attack weakpoints, shoot orbs, maintain mask/ammo and parachute after a swallow."
+        },
+        {
+          "id": "mw3-greylorm-reward",
+          "html": "Collect Greylorm’s plan reward and take the spawned exit.",
+          "tools": [
+            "mw3-red-worm-usbs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-quests",
+      "title": "Free perks, vault and seasonal routes",
+      "detail": "details-side-quests",
+      "steps": [
+        {
+          "id": "mw3-free-perks",
+          "html": "Use the eight landmark challenges below for their free-perk rewards."
+        },
+        {
+          "id": "mw3-vault-transmissions",
+          "html": "Send Pawn, Bishop, Rook and moving Knight transmissions to H7."
+        },
+        {
+          "id": "mw3-vault-open",
+          "html": "Check four registered pieces at H7; open the vault and defeat its King Mimic."
+        },
+        {
+          "id": "mw3-triangles",
+          "html": "Triangle: activate three runes, align the viewpoint and charge the ring."
+        },
+        {
+          "id": "mw3-blood-burner",
+          "html": "Find or summon Blood Burner; use the season-specific Key/Drum route."
+        },
+        {
+          "id": "mw3-portal-overview",
+          "html": "Use the seasonal reference for portal/reward goals and the stadium music route.",
+          "tools": [
+            "mw3-dark-aether-reference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exfil",
+      "title": "Extract and retain the useful rewards",
+      "detail": "details-exfil",
+      "steps": [
+        {
+          "id": "mw3-exfil-call",
+          "html": "Call the intended exfil, survive its wave and stay aboard until extraction."
+        },
+        {
+          "id": "mw3-exfil-items",
+          "html": "Retain required items through successful extraction; clear only the next deployment’s observations."
+        }
+      ]
+    }
+  ],
+  "mw3-dark-aether-season-1": [
+    {
+      "id": "preparation",
+      "title": "Choose entry and prepare your deployment",
+      "detail": "details-preparation",
+      "steps": [
+        {
+          "id": "mw1-goal",
+          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+        },
+        {
+          "id": "mw1-loadout",
+          "html": "Upgrade damage and armour; carry revives, crowd control and free rucksack slots."
+        },
+        {
+          "id": "mw1-sigils",
+          "html": "Repeat visits: triangular Sigil = ordinary; Elder Sigil = short schematic run."
+        },
+        {
+          "id": "mw1-inventory",
+          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
+          "tools": [
+            "mw3-dark-aether-reference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bad-signal",
+      "title": "Bad Signal: four seals and Gorm’gant",
+      "detail": "details-bad-signal",
+      "branches": [
+        "story",
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw1-bad-signal-entry",
+          "html": "Use the named Bad Signal story portal; skip if its gold Diary is already owned."
+        },
+        {
+          "id": "mw1-seals",
+          "html": "Activate and charge all four nearby-kill seals."
+        },
+        {
+          "id": "mw1-gormgant",
+          "html": "Approach the beach exit, defeat Gorm’gant’s weakpoints and parachute after a swallow."
+        },
+        {
+          "id": "mw1-diary",
+          "html": "Collect the gold Locked Diary and finish Bad Signal’s extraction."
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "title": "Acquire the three purple Urzikstan relics",
+      "detail": "details-relics",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw1-pill",
+          "html": "Brain Rot a cyst green, then interact for the purple Pill Bottle."
+        },
+        {
+          "id": "mw1-camera",
+          "html": "Destroy a Harvester Orb with Dead Wire and collect its purple Camera."
+        },
+        {
+          "id": "mw1-collar",
+          "html": "Flesh + Molotov in a doghouse → kill hostile Hellhound → purple Collar."
+        }
+      ]
+    },
+    {
+      "id": "attunement",
+      "title": "Upgrade each purple relic through its sky portal",
+      "detail": "details-attunement",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw1-attune-bottle",
+          "html": "Bottle: green sky portal → special bounty → gold Bottle."
+        },
+        {
+          "id": "mw1-attune-camera",
+          "html": "Camera: orange sky portal → special bounty → gold Camera."
+        },
+        {
+          "id": "mw1-attune-collar",
+          "html": "Collar: red sky portal → high-threat bounty → gold Collar."
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Establish personal Al Bagra portal access",
+      "detail": "details-portal",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw1-pedestals",
+          "html": "Island pedestals: Bottle/Brain Rot, Camera/Dead Wire, Collar/Napalm, Diary/Cryo."
+        },
+        {
+          "id": "mw1-gate-boss",
+          "html": "Defeat the ritual Mega Abomination and confirm permanent portal access."
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Repeat visits: three Mister Peeks contracts",
+      "detail": "details-contracts",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw1-contract-entry",
+          "html": "Enter the intended variant and locate all three Peeks starters and exits."
+        },
+        {
+          "id": "mw1-extractor-contract",
+          "html": "H4 Extractors starter: finish every timed shutdown panel."
+        },
+        {
+          "id": "mw1-escort-contract",
+          "html": "E4 Escort starter: protect the ACV through all anomaly stops."
+        },
+        {
+          "id": "mw1-outlast-contract",
+          "html": "E6 Outlast starter: remain in the fortress analysis room until complete."
+        },
+        {
+          "id": "mw1-contract-rewards",
+          "html": "Elder: finish 1/2/3 contracts for Dog Bone/Golden Armor/Aether Blade progression."
+        }
+      ]
+    },
+    {
+      "id": "locked-rooms",
+      "title": "Optional fortress keys and equipment rooms",
+      "detail": "details-locked-rooms",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw1-keys-officers",
+          "html": "Officers: gate ticket booth and excavator-route tower keys → upper Outlast walkway."
+        },
+        {
+          "id": "mw1-keys-munitions",
+          "html": "Munitions: B4 desk and floating-vehicle tower keys → E5 storeroom doors."
+        },
+        {
+          "id": "mw1-keys-barracks-antiquities",
+          "html": "Barracks: apartment table key. Antiquities: underground rope-bottom box key."
+        },
+        {
+          "id": "mw1-conditional-keys",
+          "html": "Check doghouse rubble and cleared courtyard nest; match the actual key label."
+        }
+      ]
+    },
+    {
+      "id": "exfil",
+      "title": "Use the appropriate exit and retain plans",
+      "detail": "details-exfil",
+      "steps": [
+        {
+          "id": "mw1-exfil",
+          "html": "Take the story exit or the roof/underground contract exit before time expires."
+        }
+      ]
+    }
+  ],
+  "mw3-dark-aether-season-2": [
+    {
+      "id": "preparation",
+      "title": "Choose entry and prepare your deployment",
+      "detail": "details-preparation",
+      "steps": [
+        {
+          "id": "mw2-goal",
+          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+        },
+        {
+          "id": "mw2-loadout",
+          "html": "Upgrade damage and armour; carry revives, crowd control and free rucksack slots."
+        },
+        {
+          "id": "mw2-sigils",
+          "html": "Repeat visits: triangular Sigil = ordinary; Elder Sigil = short schematic run."
+        },
+        {
+          "id": "mw2-inventory",
+          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
+          "tools": [
+            "mw3-dark-aether-reference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "countermeasures",
+      "title": "Countermeasures: story vehicle, mall and Krawvir",
+      "detail": "details-countermeasures",
+      "branches": [
+        "story",
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw2-mission-entry",
+          "html": "Enter named Countermeasures; its hidden offerings belong to the story version."
+        },
+        {
+          "id": "mw2-ship-detour",
+          "html": "Unlock detour: ship obelisk, fist kills in its circle, purple MMA Gloves."
+        },
+        {
+          "id": "mw2-soldiers-acv",
+          "html": "Meet the soldiers, advance the ACV and defeat its EMP Mimic blocker."
+        },
+        {
+          "id": "mw2-mirror-detour",
+          "html": "Unlock detour: riverbed circle, match each boundary element, purple Mirror."
+        },
+        {
+          "id": "mw2-mall",
+          "html": "Clear every mall cyst, regroup at the ACV and continue to the stadium."
+        },
+        {
+          "id": "mw2-target-detour",
+          "html": "Unlock detour: crossroads headshot obelisk → purple Target."
+        },
+        {
+          "id": "mw2-stadium-boss",
+          "html": "Finish stadium Outlast, defeat Krawvir and extract the gold Drum."
+        }
+      ]
+    },
+    {
+      "id": "relic-obelisks",
+      "title": "Check or recover missing story offerings",
+      "detail": "details-relic-obelisks",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw2-offering-check",
+          "html": "Check Gloves, Mirror, Target and gold Drum; replay only a missing story offering."
+        }
+      ]
+    },
+    {
+      "id": "attunement",
+      "title": "Upgrade Mirror, Gloves and Target in Urzikstan",
+      "detail": "details-attunement",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw2-gold-mirror",
+          "html": "I3 graveyard: offer Mirror, kill its matching-element spawn(s), collect gold."
+        },
+        {
+          "id": "mw2-gold-gloves",
+          "html": "F8 gym: offer Gloves, punch bags left→right, melee the marked zombie."
+        },
+        {
+          "id": "mw2-gold-target",
+          "html": "H8 range: offer Target, shoot eight targets, headshot the marked zombie."
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Unlock the Nahr hill portal once",
+      "detail": "details-portal",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw2-pedestals",
+          "html": "Place all four gold offerings at the Nahr hill/tower pedestals."
+        },
+        {
+          "id": "mw2-gate-mimic",
+          "html": "Defeat the gate EMP Mimic and confirm access; locate the actual Sigil prompt."
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Repeat visits: Bounty, Outlast and Extractors",
+      "detail": "details-contracts",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw2-bounty",
+          "html": "Northwest ship Bounty: kill its actual marked special and collect the rift."
+        },
+        {
+          "id": "mw2-outlast",
+          "html": "Restaurant Outlast: stay in its analysis zone until complete."
+        },
+        {
+          "id": "mw2-extractors",
+          "html": "Mall-roof Extractors: reach the roof and finish all marked shutdown panels."
+        },
+        {
+          "id": "mw2-random-rewards",
+          "html": "Elder rewards are random: Mags of Holding, Blood Burner Keys, V-R11."
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "title": "Optional stadium music and navigation",
+      "detail": "details-music",
+      "branches": [
+        "story",
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw2-song",
+          "html": "Activate the south opening, east-centre field and north announcer-booth stones."
+        },
+        {
+          "id": "mw2-wunderfizz",
+          "html": "Use tears to reach elevated Wunderfizz; check the current Pack-a-Punch marker."
+        }
+      ]
+    },
+    {
+      "id": "exfil",
+      "title": "Choose one of the four contract exits",
+      "detail": "details-exfil",
+      "steps": [
+        {
+          "id": "mw2-exits",
+          "html": "Take the mission exit or a repeat-visit I7/G4/D9/C6 exit before time expires."
+        }
+      ]
+    }
+  ],
+  "mw3-dark-aether-season-3": [
+    {
+      "id": "preparation",
+      "title": "Choose entry and prepare your deployment",
+      "detail": "details-preparation",
+      "steps": [
+        {
+          "id": "mw3s-goal",
+          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+        },
+        {
+          "id": "mw3s-loadout",
+          "html": "Upgrade damage and armour; carry revives, crowd control and free rucksack slots."
+        },
+        {
+          "id": "mw3s-sigils",
+          "html": "Repeat visits: triangular Sigil = ordinary; Elder Sigil = short schematic run."
+        },
+        {
+          "id": "mw3s-inventory",
+          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
+          "tools": [
+            "mw3-dark-aether-reference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "union",
+      "title": "Union: follow Ava and stop the two orbs",
+      "detail": "details-union",
+      "branches": [
+        "story",
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-union-entry",
+          "html": "Use named Union, follow Ava and locate its two marked orbs."
+        },
+        {
+          "id": "mw3s-orbs",
+          "html": "Shoot both orbs to their crystal sites and activate each crystal’s wisps."
+        }
+      ]
+    },
+    {
+      "id": "crystals",
+      "title": "Read and shoot both three-rune sequences",
+      "detail": "details-crystals",
+      "branches": [
+        "story",
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-crystal-a",
+          "html": "Crystal A: record three runes, find the signs by wisps/audio and shoot in order."
+        },
+        {
+          "id": "mw3s-crystal-b",
+          "html": "Crystal B: record its independent apartment-site rune order and break the red crystal."
+        },
+        {
+          "id": "mw3s-cleanse",
+          "html": "Return to Ava, cleanse three obelisks and activate the final boss obelisk."
+        },
+        {
+          "id": "mw3s-taoxla",
+          "html": "Kill Taoxla’s protective minions, then damage its head during vulnerability."
+        },
+        {
+          "id": "mw3s-giraffe-story",
+          "html": "Collect gold Giraffe, wake/escort Ava and finish the mission extraction.",
+          "tools": [
+            "mw3-union-runes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "title": "Collect the three purple Urzikstan relics",
+      "detail": "details-relics",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-laptop",
+          "html": "Friendly dog kills a mercenary Sergeant → purple Laptop With Stickers."
+        },
+        {
+          "id": "mw3s-journal",
+          "html": "Kill storm zombies until the Science Journal rift appears; keep mask protection."
+        },
+        {
+          "id": "mw3s-drawing",
+          "html": "I7 Zohoor Ranch: interact under the upstairs bed for the purple Drawing."
+        }
+      ]
+    },
+    {
+      "id": "attunement",
+      "title": "Perform each item’s Tier 3 summoning",
+      "detail": "details-attunement",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-attunement-rule",
+          "html": "For each relic: three runes → alignment viewpoint → item summoning → ring kills → HVT → gold."
+        },
+        {
+          "id": "mw3s-laptop-gold",
+          "html": "Laptop: northwest Palace alley; roof stairwell viewpoint; defeat its Mimic."
+        },
+        {
+          "id": "mw3s-drawing-gold",
+          "html": "Drawing: northeast broken Palace wall; wall-gap viewpoint; defeat its Mangler."
+        },
+        {
+          "id": "mw3s-journal-gold",
+          "html": "Journal: island-bridge triangle; Nahr arch viewpoint; defeat its Hellhound."
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Unlock the northwest island portal",
+      "detail": "details-portal",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-pedestals",
+          "html": "Place all four gold relics at the northwest island circle."
+        },
+        {
+          "id": "mw3s-gate-disciple",
+          "html": "Defeat the gate Disciple/minions and confirm permanent access."
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Three obelisks and carried temporary buffs",
+      "detail": "details-contracts",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-escort",
+          "html": "G6 roof Escort: carry Atomic Hunter and protect every ACV stop."
+        },
+        {
+          "id": "mw3s-outlast",
+          "html": "I3 Outlast: carry Numb Foot and finish analysis inside the zone."
+        },
+        {
+          "id": "mw3s-bounty",
+          "html": "F1 Bounty: carry Mind-Blowing Revelation and kill the marked HVT."
+        },
+        {
+          "id": "mw3s-buff-rewards",
+          "html": "Keep temporary buffs carried; Elder rewards are the three Season 3 schematic opportunities."
+        }
+      ]
+    },
+    {
+      "id": "gyanxi",
+      "title": "Optional Gyanxi and Smoke Signals blueprint",
+      "detail": "details-gyanxi",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw3s-gyanxi-gate",
+          "html": "Finish all three contracts in this visit before attempting Gyanxi."
+        },
+        {
+          "id": "mw3s-spores",
+          "html": "Destroy west, north and east island spores, then the central Rift Heart."
+        },
+        {
+          "id": "mw3s-gyanxi-fight",
+          "html": "Kill Gyanxi’s minions, damage the boss and confirm Smoke Signals before exiting."
+        }
+      ]
+    },
+    {
+      "id": "exfil",
+      "title": "Leave with the current rewards",
+      "detail": "details-exfil",
+      "steps": [
+        {
+          "id": "mw3s-exfil",
+          "html": "Take Ava’s story exit or the southeast island repeat-visit portal before time expires."
+        }
+      ]
+    }
+  ],
+  "mw3-unstable-rift": [
+    {
+      "id": "preparation",
+      "title": "Prepare for a five-phase combat commitment",
+      "detail": "details-preparation",
+      "steps": [
+        {
+          "id": "unstable-kit",
+          "html": "Prepare crowd control, boss damage, revives and the obelisks’ ammo mods."
+        },
+        {
+          "id": "unstable-run-type",
+          "html": "Treat entry as a five-phase arena commitment; follow the game’s phase counter."
+        }
+      ]
+    },
+    {
+      "id": "obelisks",
+      "title": "Complete three current ammo-mod obelisks",
+      "detail": "details-obelisks",
+      "steps": [
+        {
+          "id": "unstable-find-obelisks",
+          "html": "Find a live obelisk and read its required ammo-mod icon."
+        },
+        {
+          "id": "unstable-mod-rings",
+          "html": "Match each icon, kill within its ring and complete three altars."
+        }
+      ]
+    },
+    {
+      "id": "rift-entry",
+      "title": "Use the spawned public Rift",
+      "detail": "details-rift-entry",
+      "steps": [
+        {
+          "id": "unstable-public-rift",
+          "html": "Locate the live public Rift, regroup and confirm arena entry."
+        },
+        {
+          "id": "unstable-temporary-kit",
+          "html": "Check arena-granted temporary boosts; they are not permanent plans."
+        }
+      ]
+    },
+    {
+      "id": "phase-1",
+      "title": "Phase 1: establish the arena route",
+      "detail": "details-phase-1",
+      "steps": [
+        {
+          "id": "unstable-wave1",
+          "html": "Clear phase 1 and its ending HVT; resupply from the phase reward."
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "title": "Phase 2: maintain crowd control and resupply",
+      "detail": "details-phase-2",
+      "steps": [
+        {
+          "id": "unstable-wave2",
+          "html": "Maintain crowd control, defeat phase 2’s HVT and claim the resupply reward."
+        }
+      ]
+    },
+    {
+      "id": "phase-3",
+      "title": "Phase 3: balance specials with the wave",
+      "detail": "details-phase-3",
+      "steps": [
+        {
+          "id": "unstable-wave3",
+          "html": "Control the specials, kill phase 3’s marked HVT and prepare the squad again."
+        }
+      ]
+    },
+    {
+      "id": "phase-4",
+      "title": "Phase 4: preserve the final-fight reserve",
+      "detail": "details-phase-4",
+      "steps": [
+        {
+          "id": "unstable-wave4",
+          "html": "Survive phase 4, defeat its HVT and prepare everyone for the final phase."
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "title": "Phase 5: finish the final HVT",
+      "detail": "details-phase-5",
+      "steps": [
+        {
+          "id": "unstable-wave5",
+          "html": "Finish phase 5’s final boss and wait for the arena completion cue."
+        }
+      ]
+    },
+    {
+      "id": "rewards",
+      "title": "Claim Mark of the Survivor and leave",
+      "detail": "details-rewards",
+      "steps": [
+        {
+          "id": "unstable-reward",
+          "html": "Confirm the camo/cooldown reward and use the final red exit."
+        }
+      ]
+    }
+  ],
+  "mw3-dark-aether-season-5": [
+    {
+      "id": "preparation",
+      "title": "Choose entry and prepare your deployment",
+      "detail": "details-preparation",
+      "steps": [
+        {
+          "id": "mw5-goal",
+          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+        },
+        {
+          "id": "mw5-loadout",
+          "html": "Upgrade damage and armour; carry revives, crowd control and free rucksack slots."
+        },
+        {
+          "id": "mw5-sigils",
+          "html": "Repeat visits: triangular Sigil = ordinary; Elder Sigil = short schematic run."
+        },
+        {
+          "id": "mw5-inventory",
+          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
+          "tools": [
+            "mw3-dark-aether-reference"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ascension",
+      "title": "Ascension: weaken the Entity and finish its true ending",
+      "detail": "details-ascension",
+      "branches": [
+        "story",
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw5-ascension-entry",
+          "html": "Enter Ascension’s Opal Palace gazebo portal; skip a previously owned gold Peeks."
+        },
+        {
+          "id": "mw5-first-obelisk",
+          "html": "F6: send Gloves, Drum, Target and Mirror; charge Ava with nearby kills."
+        },
+        {
+          "id": "mw5-second-obelisk",
+          "html": "E5: send Journal, Giraffe, Drawing and Laptop; recover the scattered items."
+        },
+        {
+          "id": "mw5-tower-climb",
+          "html": "Ride the floating vehicles up the tower; break its north crystal and follow pads/Rifts."
+        },
+        {
+          "id": "mw5-entity-first",
+          "html": "Shoot body orbs, evade beams and clear tracking orbs; expect the fake ending."
+        },
+        {
+          "id": "mw5-entity-final",
+          "html": "Charge Ava near the current boss platform; destroy exposed orbs and escape lightning."
+        },
+        {
+          "id": "mw5-peeks-story",
+          "html": "Take gold Mr. Peeks from the true reward and use Ava’s exit."
+        }
+      ]
+    },
+    {
+      "id": "echo-relics",
+      "title": "Obtain the three purple Echo relics",
+      "detail": "details-echo-relics",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw5-echo-diary",
+          "html": "Cluster Specials at G6 and use blade bounces until the Echo Diary rift appears."
+        },
+        {
+          "id": "mw5-echo-drum",
+          "html": "Blood Burner: follow the F4/G4 white-arrow canal course for Echo Drum."
+        },
+        {
+          "id": "mw5-echo-giraffe",
+          "html": "With Sergeant’s Beret disguise, execute a mercenary from behind for Echo Giraffe."
+        }
+      ]
+    },
+    {
+      "id": "attunement",
+      "title": "Attune each Echo through its meteor event",
+      "detail": "details-attunement",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw5-diary-gold",
+          "html": "D2 eagle meteor → PhD → Popov chimney → dive onto Phoenix blue container."
+        },
+        {
+          "id": "mw5-drum-gold",
+          "html": "F7 Opera meteor: match green/blue/white/red enemies to Brain Rot/Dead Wire/Cryo/Napalm."
+        },
+        {
+          "id": "mw5-giraffe-gold",
+          "html": "F4 Nahr van meteor: Mega → EMP Mimic → Disciple/minions → gold Echo Giraffe."
+        }
+      ]
+    },
+    {
+      "id": "portal",
+      "title": "Complete the Opal Palace gold-relic ritual",
+      "detail": "details-portal",
+      "branches": [
+        "unlock"
+      ],
+      "steps": [
+        {
+          "id": "mw5-gold-pedestals",
+          "html": "Place gold Peeks and gold Echo Diary/Drum/Giraffe at the fountain pedestals."
+        },
+        {
+          "id": "mw5-gate-mega",
+          "html": "Defeat the fountain Mega Abomination and confirm personal access."
+        }
+      ]
+    },
+    {
+      "id": "contracts",
+      "title": "Navigate three floating contract starters",
+      "detail": "details-contracts",
+      "branches": [
+        "ordinary",
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw5-movement",
+          "html": "Use pads/Tears and gold beams; locate an exit before starting contracts."
+        },
+        {
+          "id": "mw5-outlast",
+          "html": "G2 north Highrise roof Outlast → ground-floor PND analysis."
+        },
+        {
+          "id": "mw5-spore-contract",
+          "html": "D3 floating-crane Spore Control: place inhibitors and destroy all marked spores."
+        },
+        {
+          "id": "mw5-escort",
+          "html": "E5 billboard Escort: protect the ACV through all four stops."
+        },
+        {
+          "id": "mw5-contract-rewards",
+          "html": "Elder opportunities: Disciple Bottle, Grenade Bandolier and Stash Increase."
+        }
+      ]
+    },
+    {
+      "id": "infinite-cosmos",
+      "title": "Optional Elder-only Infinite Cosmos blueprint",
+      "detail": "details-infinite-cosmos",
+      "branches": [
+        "elder"
+      ],
+      "steps": [
+        {
+          "id": "mw5-cosmos-spore",
+          "html": "Elder: inhibitor/shoot the hidden Highrise spore and collect R4D."
+        },
+        {
+          "id": "mw5-cosmos-skull",
+          "html": "Follow R4D arrows to the yellow glow stick; reveal/stow Damp Gold Skull."
+        },
+        {
+          "id": "mw5-cosmos-trade",
+          "html": "Trade the Skull at Golden Whale for the IT Thumb Drive."
+        },
+        {
+          "id": "mw5-cosmos-key",
+          "html": "Use the C3 second-floor computer; defeat Keyholder and collect Maintenance Tower Key."
+        },
+        {
+          "id": "mw5-cosmos-door",
+          "html": "Open the Highrise maintenance door; assemble the whole squad for the purple portal."
+        },
+        {
+          "id": "mw5-cosmos-echo",
+          "html": "Defeat Entity’s Echo in Elder and confirm the Infinite Cosmos unlock."
+        }
+      ]
+    },
+    {
+      "id": "exfil",
+      "title": "Use the story or contract exit",
+      "detail": "details-exfil",
+      "steps": [
+        {
+          "id": "mw5-exfil",
+          "html": "Take Ava’s story exit or a safe repeat-visit portal with your carried rewards."
+        }
+      ]
+    }
   ]
 }

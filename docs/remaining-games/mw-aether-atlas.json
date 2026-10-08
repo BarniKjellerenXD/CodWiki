@@ -1,0 +1,823 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-07",
+  "policy": "Source marker identities, grids and local screenshots; not live match data or licensed production artwork",
+  "maps": [
+    {
+      "season": "season-1",
+      "sourcePage": "https://wzhub.gg/map/dark-aether/mwz",
+      "projectionStatus": "Reference only; exact coordinate transfer to CodWiki is not calibrated",
+      "categories": [
+        {
+          "id": "locked_doors",
+          "name": "LOCKED DOORS",
+          "markers": 5
+        },
+        {
+          "id": "exfil",
+          "name": "exfil",
+          "markers": 2
+        },
+        {
+          "id": "ammo_depot",
+          "name": "Ammo Depot",
+          "markers": 3
+        },
+        {
+          "id": "keys",
+          "name": "Keys",
+          "markers": 7
+        },
+        {
+          "id": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "markers": 1
+        },
+        {
+          "id": "contracts",
+          "name": "Contracts",
+          "markers": 3
+        }
+      ],
+      "references": [
+        {
+          "id": "m2619",
+          "category": "locked_doors",
+          "name": "SOUTH AL BAGRA TOP FLOOR BEDROOM",
+          "sourceGrid": "H5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2619",
+          "assetIds": [
+            "wzhub-season-1-m2619-1"
+          ]
+        },
+        {
+          "id": "m2566",
+          "category": "locked_doors",
+          "name": "AL BAGRA OFFICERS QUARTERS",
+          "sourceGrid": "F5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2566",
+          "assetIds": [
+            "wzhub-season-1-m2566-1"
+          ]
+        },
+        {
+          "id": "m2621",
+          "category": "locked_doors",
+          "name": "AL BAGRA MUNITIONS STOREROOM",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2621",
+          "assetIds": [
+            "wzhub-season-1-m2621-1"
+          ]
+        },
+        {
+          "id": "m2567",
+          "category": "locked_doors",
+          "name": "A.B.F. ANTIQUITIES OFFICE KEY",
+          "sourceGrid": "F5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2567",
+          "assetIds": [
+            "wzhub-season-1-m2567-1"
+          ]
+        },
+        {
+          "id": "m2581",
+          "category": "locked_doors",
+          "name": "AL BAGRA BARRACK",
+          "sourceGrid": "G5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2581",
+          "assetIds": [
+            "wzhub-season-1-m2581-1"
+          ]
+        },
+        {
+          "id": "m2563",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "F5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2563",
+          "assetIds": [
+            "wzhub-season-1-m2563-1"
+          ]
+        },
+        {
+          "id": "m2577",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F6",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2577",
+          "assetIds": []
+        },
+        {
+          "id": "m2617",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "E4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2617",
+          "assetIds": [
+            "wzhub-season-1-m2617-1"
+          ]
+        },
+        {
+          "id": "m2569",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "C3",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2569",
+          "assetIds": []
+        },
+        {
+          "id": "m2578",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "H3",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2578",
+          "assetIds": []
+        },
+        {
+          "id": "m2580",
+          "category": "keys",
+          "name": "AL BAGRA OFFICERS QUARTERS KEY - WORN",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2580",
+          "assetIds": [
+            "wzhub-season-1-m2580-1"
+          ]
+        },
+        {
+          "id": "m2628",
+          "category": "keys",
+          "name": "AL BAGRA BARRACK KEY - WORN",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2628",
+          "assetIds": [
+            "wzhub-season-1-m2628-1"
+          ]
+        },
+        {
+          "id": "m2618",
+          "category": "keys",
+          "name": "AL BAGRA BARRACK KEY - WORN",
+          "sourceGrid": "H5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2618",
+          "assetIds": [
+            "wzhub-season-1-m2618-1"
+          ]
+        },
+        {
+          "id": "m2571",
+          "category": "keys",
+          "name": "A.B.F. ANTIQUITIES OFFICE KEY - WORN",
+          "sourceGrid": "F6",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2571",
+          "assetIds": [
+            "wzhub-season-1-m2571-1"
+          ]
+        },
+        {
+          "id": "m2622",
+          "category": "keys",
+          "name": "AL BAGRA MUNITIONS STOREROOM KEY - WORN",
+          "sourceGrid": "B4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2622",
+          "assetIds": [
+            "wzhub-season-1-m2622-1"
+          ]
+        },
+        {
+          "id": "m2612",
+          "category": "contracts",
+          "name": "AETHER EXTRACTORS CONTRACT",
+          "sourceGrid": "H4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2612",
+          "assetIds": [
+            "wzhub-season-1-m2612-1"
+          ]
+        },
+        {
+          "id": "m2629",
+          "category": "keys",
+          "name": "AL BAGRA MUNITIONS STOREROOM KEY - WORN",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2629",
+          "assetIds": [
+            "wzhub-season-1-m2629-1"
+          ]
+        },
+        {
+          "id": "m2613",
+          "category": "contracts",
+          "name": "Escort Contract",
+          "sourceGrid": "E4",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2613",
+          "assetIds": [
+            "wzhub-season-1-m2613-1"
+          ]
+        },
+        {
+          "id": "m2611",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "F5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2611",
+          "assetIds": [
+            "wzhub-season-1-m2611-1"
+          ]
+        },
+        {
+          "id": "m2630",
+          "category": "keys",
+          "name": "AL BAGRA OFFICERS QUARTERS KEY - WORN",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2630",
+          "assetIds": [
+            "wzhub-season-1-m2630-1"
+          ]
+        },
+        {
+          "id": "m2620",
+          "category": "contracts",
+          "name": "Outlast Contract",
+          "sourceGrid": "E6",
+          "page": "https://wzhub.gg/map/dark-aether/mwz?p=m2620",
+          "assetIds": [
+            "wzhub-season-1-m2620-1"
+          ]
+        }
+      ],
+      "sourceId": "wzhub-season-1"
+    },
+    {
+      "season": "season-2",
+      "sourcePage": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "projectionStatus": "Reference only; exact coordinate transfer to CodWiki is not calibrated",
+      "categories": [
+        {
+          "id": "exfil",
+          "name": "exfil",
+          "markers": 4
+        },
+        {
+          "id": "ammo_depot",
+          "name": "Ammo Depot",
+          "markers": 9
+        },
+        {
+          "id": "contracts",
+          "name": "Contracts",
+          "markers": 3
+        },
+        {
+          "id": "obelisk",
+          "name": "OBELISK",
+          "markers": 1
+        },
+        {
+          "id": "drum",
+          "name": "Drum",
+          "markers": 1
+        },
+        {
+          "id": "perforated_target",
+          "name": "Perforated Target",
+          "markers": 1
+        },
+        {
+          "id": "pristine_mirror",
+          "name": "Pristine Mirror",
+          "markers": 1
+        },
+        {
+          "id": "tattered_mma_gloves",
+          "name": "Tattered MMA Gloves",
+          "markers": 1
+        },
+        {
+          "id": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "markers": 3
+        }
+      ],
+      "references": [
+        {
+          "id": "m2924",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "I7",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2924",
+          "assetIds": []
+        },
+        {
+          "id": "m2919",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2919",
+          "assetIds": []
+        },
+        {
+          "id": "m2929",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "G4",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2929",
+          "assetIds": []
+        },
+        {
+          "id": "m2949",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "D9",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2949",
+          "assetIds": [
+            "wzhub-season-2-m2949-1"
+          ]
+        },
+        {
+          "id": "m2926",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "C6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2926",
+          "assetIds": []
+        },
+        {
+          "id": "m2920",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F5",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2920",
+          "assetIds": []
+        },
+        {
+          "id": "m2933",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F7",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2933",
+          "assetIds": []
+        },
+        {
+          "id": "m2921",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "I6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2921",
+          "assetIds": []
+        },
+        {
+          "id": "m2934",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "E6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2934",
+          "assetIds": []
+        },
+        {
+          "id": "m2922",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "I6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2922",
+          "assetIds": []
+        },
+        {
+          "id": "m2925",
+          "category": "contracts",
+          "name": "Contracts",
+          "sourceGrid": "I6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2925",
+          "assetIds": []
+        },
+        {
+          "id": "m2941",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "H6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2941",
+          "assetIds": [
+            "wzhub-season-2-m2941-1"
+          ]
+        },
+        {
+          "id": "m2945",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "B6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2945",
+          "assetIds": []
+        },
+        {
+          "id": "m2940",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "I6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2940",
+          "assetIds": []
+        },
+        {
+          "id": "m2927",
+          "category": "contracts",
+          "name": "Contracts",
+          "sourceGrid": "C5",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2927",
+          "assetIds": []
+        },
+        {
+          "id": "m2928",
+          "category": "contracts",
+          "name": "OUTLAST CONTRACT",
+          "sourceGrid": "E7",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2928",
+          "assetIds": [
+            "wzhub-season-2-m2928-1"
+          ]
+        },
+        {
+          "id": "m2935",
+          "category": "obelisk",
+          "name": "OBELISK",
+          "sourceGrid": null,
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2935",
+          "assetIds": []
+        },
+        {
+          "id": "m2936",
+          "category": "drum",
+          "name": "Drum",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2936",
+          "assetIds": []
+        },
+        {
+          "id": "m2938",
+          "category": "pristine_mirror",
+          "name": "Pristine Mirror",
+          "sourceGrid": "I8",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2938",
+          "assetIds": [
+            "wzhub-season-2-m2938-1"
+          ]
+        },
+        {
+          "id": "m2937",
+          "category": "perforated_target",
+          "name": "Perforated Target",
+          "sourceGrid": "E4",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2937",
+          "assetIds": [
+            "wzhub-season-2-m2937-1"
+          ]
+        },
+        {
+          "id": "m2939",
+          "category": "tattered_mma_gloves",
+          "name": "Tattered MMA Gloves",
+          "sourceGrid": "D5",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2939",
+          "assetIds": [
+            "wzhub-season-2-m2939-1",
+            "wzhub-season-2-m2939-2"
+          ]
+        },
+        {
+          "id": "m2947",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "I4",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2947",
+          "assetIds": []
+        },
+        {
+          "id": "m2948",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "E6",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2948",
+          "assetIds": [
+            "wzhub-season-2-m2948-1"
+          ]
+        },
+        {
+          "id": "m2942",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "H7",
+          "page": "https://wzhub.gg/map/dark-aether-s2r/mwz?p=m2942",
+          "assetIds": []
+        }
+      ],
+      "sourceId": "wzhub-season-2"
+    },
+    {
+      "season": "season-3",
+      "sourcePage": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "projectionStatus": "Reference only; exact coordinate transfer to CodWiki is not calibrated",
+      "categories": [
+        {
+          "id": "exfil",
+          "name": "exfil",
+          "markers": 1
+        },
+        {
+          "id": "ammo_depot",
+          "name": "Ammo Depot",
+          "markers": 5
+        },
+        {
+          "id": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "markers": 1
+        },
+        {
+          "id": "obelisk",
+          "name": "OBELISK",
+          "markers": 3
+        },
+        {
+          "id": "desciple_blueprint",
+          "name": "Disciple Blueprint",
+          "markers": 4
+        }
+      ],
+      "references": [
+        {
+          "id": "m3086",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F6",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3086",
+          "assetIds": []
+        },
+        {
+          "id": "m3096",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "E4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3096",
+          "assetIds": []
+        },
+        {
+          "id": "m3099",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "G2",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3099",
+          "assetIds": []
+        },
+        {
+          "id": "m3108",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "G5",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3108",
+          "assetIds": []
+        },
+        {
+          "id": "m3097",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3097",
+          "assetIds": []
+        },
+        {
+          "id": "m3105",
+          "category": "obelisk",
+          "name": "Escort Contract",
+          "sourceGrid": "F6",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3105",
+          "assetIds": []
+        },
+        {
+          "id": "m3100",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "E1",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3100",
+          "assetIds": []
+        },
+        {
+          "id": "m3103",
+          "category": "obelisk",
+          "name": "OUTLAST CONTRACT",
+          "sourceGrid": "I3",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3103",
+          "assetIds": []
+        },
+        {
+          "id": "m3092",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "G7",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3092",
+          "assetIds": [
+            "wzhub-season-3-m3092-1"
+          ]
+        },
+        {
+          "id": "m3106",
+          "category": "obelisk",
+          "name": "Bounty contract",
+          "sourceGrid": "F1",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3106",
+          "assetIds": []
+        },
+        {
+          "id": "m3107",
+          "category": "desciple_blueprint",
+          "name": "Spore Egg",
+          "sourceGrid": "D4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3107",
+          "assetIds": [
+            "wzhub-season-3-m3107-1"
+          ]
+        },
+        {
+          "id": "m3109",
+          "category": "desciple_blueprint",
+          "name": "Spore Egg",
+          "sourceGrid": "G4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3109",
+          "assetIds": []
+        },
+        {
+          "id": "m3110",
+          "category": "desciple_blueprint",
+          "name": "Spore Egg",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3110",
+          "assetIds": []
+        },
+        {
+          "id": "m3111",
+          "category": "desciple_blueprint",
+          "name": "Spore Egg",
+          "sourceGrid": "F4",
+          "page": "https://wzhub.gg/map/dark-aether-s3r/mwz?p=m3111",
+          "assetIds": []
+        }
+      ],
+      "sourceId": "wzhub-season-3"
+    },
+    {
+      "season": "season-5",
+      "sourcePage": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "projectionStatus": "Reference only; exact coordinate transfer to CodWiki is not calibrated",
+      "categories": [
+        {
+          "id": "ammo_depot",
+          "name": "Ammo Depot",
+          "markers": 5
+        },
+        {
+          "id": "locked_doors",
+          "name": "LOCKED DOORS",
+          "markers": 1
+        },
+        {
+          "id": "exfil",
+          "name": "exfil",
+          "markers": 2
+        },
+        {
+          "id": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "markers": 1
+        },
+        {
+          "id": "contracts",
+          "name": "Contracts",
+          "markers": 3
+        },
+        {
+          "id": "keys",
+          "name": "Keys",
+          "markers": 1
+        }
+      ],
+      "references": [
+        {
+          "id": "m3230",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "E3",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3230",
+          "assetIds": []
+        },
+        {
+          "id": "m3235",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "D3",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3235",
+          "assetIds": []
+        },
+        {
+          "id": "m3216",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3216",
+          "assetIds": []
+        },
+        {
+          "id": "m3225",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "G5",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3225",
+          "assetIds": []
+        },
+        {
+          "id": "m3226",
+          "category": "ammo_depot",
+          "name": "Ammo Depot",
+          "sourceGrid": "G4",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3226",
+          "assetIds": []
+        },
+        {
+          "id": "m3222",
+          "category": "contracts",
+          "name": "ESCORT",
+          "sourceGrid": "E5",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3222",
+          "assetIds": [
+            "wzhub-season-5-m3222-1"
+          ]
+        },
+        {
+          "id": "m3244",
+          "category": "locked_doors",
+          "name": "Post Office Warehouse - Locked Door",
+          "sourceGrid": "E7",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3244",
+          "assetIds": [
+            "wzhub-season-5-m3244-1"
+          ]
+        },
+        {
+          "id": "m3223",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "G4",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3223",
+          "assetIds": [
+            "wzhub-season-5-m3223-1",
+            "wzhub-season-5-m3223-2"
+          ]
+        },
+        {
+          "id": "m3241",
+          "category": "exfil",
+          "name": "exfil",
+          "sourceGrid": "E7",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3241",
+          "assetIds": [
+            "wzhub-season-5-m3241-1"
+          ]
+        },
+        {
+          "id": "m3218",
+          "category": "pack_a_punch_green",
+          "name": "Pack a Punch",
+          "sourceGrid": "E3",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3218",
+          "assetIds": []
+        },
+        {
+          "id": "m3238",
+          "category": "contracts",
+          "name": "SPORE CONTROL",
+          "sourceGrid": "D3",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3238",
+          "assetIds": [
+            "wzhub-season-5-m3238-1"
+          ]
+        },
+        {
+          "id": "m3237",
+          "category": "contracts",
+          "name": "OUTLAST",
+          "sourceGrid": "G2",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3237",
+          "assetIds": [
+            "wzhub-season-5-m3237-1"
+          ]
+        },
+        {
+          "id": "m3242",
+          "category": "keys",
+          "name": "Post Office Warehouse Key",
+          "sourceGrid": "G3",
+          "page": "https://wzhub.gg/map/dark-aether-s5r/mwz?p=m3242",
+          "assetIds": [
+            "wzhub-season-5-m3242-1"
+          ]
+        }
+      ],
+      "sourceId": "wzhub-season-5"
+    }
+  ]
+}

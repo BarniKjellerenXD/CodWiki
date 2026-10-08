@@ -1,0 +1,1953 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-07",
+  "status": "Research data for future implementation; source review does not mean gameplay verification",
+  "morseDigits": {
+    "0": "-----",
+    "1": ".----",
+    "2": "..---",
+    "3": "...--",
+    "4": "....-",
+    "5": ".....",
+    "6": "-....",
+    "7": "--...",
+    "8": "---..",
+    "9": "----."
+  },
+  "shaolinWords": {
+    "sourceIds": [
+      "kennedy-shaolin_shuffle_guide",
+      "reddit-shaolin-shuffle"
+    ],
+    "words": [
+      "ACTORS",
+      "AFTERLIFE",
+      "ANCESTOR",
+      "ARCADE",
+      "ARTHUR",
+      "AUDITION",
+      "BASEMENT",
+      "BEVERLYHILLS",
+      "BLACKCAT",
+      "BOAT",
+      "BREEDER",
+      "BROADWAY",
+      "BRUTE",
+      "BUMPERCARS",
+      "CHARMS",
+      "COMICBOOKS",
+      "CRANE",
+      "CRYPTID",
+      "DANCE",
+      "DAVIDARCHER",
+      "DEATH",
+      "DIRECTOR",
+      "DISCO",
+      "DRAGON",
+      "DRCROSS",
+      "FAIRIES",
+      "FORGEFREEZE",
+      "GEYSER",
+      "GHETTO",
+      "HARPOON",
+      "HIVES",
+      "INFERNO",
+      "KATANA",
+      "KEVINSMITH",
+      "KRAKEN",
+      "KUNGFU",
+      "LOSANGELES",
+      "MCINTOSH",
+      "MEMORIES",
+      "MEPHISTOPHELES",
+      "NEWYORK",
+      "NIGHTFALL",
+      "NUNCHUCKS",
+      "OBELISK",
+      "OCTONIAN",
+      "PAMGRIER",
+      "PINKCAT",
+      "PUNKS",
+      "RATKING",
+      "REALITYTV",
+      "REDWOODS",
+      "ROLLERCOASTER",
+      "ROLLERSKATES",
+      "SAMANTHA",
+      "SAVAGEMADETHIS",
+      "SHAOLIN",
+      "SHIELD",
+      "SHUFFLE",
+      "SIXTYMILLION",
+      "SLASHER",
+      "SLIDE",
+      "SNAKE",
+      "SPACELAND",
+      "STAFF",
+      "SUBWAY",
+      "TIGER",
+      "TREES",
+      "WEREWOLFPOETS",
+      "WINONAWYLER",
+      "YETIEYES",
+      "ZAPPER"
+    ]
+  },
+  "attackChemistry": {
+    "sourceIds": [
+      "reddit-attack-of-the-radioactive-thing",
+      "wellslogan-chemistry",
+      "kennedy-attack_of_the_radioactive_thing_guide",
+      "reference-chemistry-mechanics"
+    ],
+    "chartAssetId": "asset-1499",
+    "chartCreator": "RayPoopertonIII",
+    "formula": "sum(top + left for each placed ingredient) - O",
+    "context": "Read the ingredient diamonds in the confirmed reaction filter. Do not confuse compound crafting codes with their own diamond values.",
+    "rawIngredients": {
+      "vodka": {
+        "label": "Vodka",
+        "pickup": "Market alcohol shelving",
+        "board": "Spawn"
+      },
+      "pennies": {
+        "label": "Pennies",
+        "pickup": "Market cash register; use crowbar",
+        "board": "Market exterior"
+      },
+      "quarters": {
+        "label": "Quarters",
+        "pickup": "Payphones; use crowbar",
+        "board": "Market exterior"
+      },
+      "racing-fuel": {
+        "label": "Racing Fuel",
+        "pickup": "Gas Station",
+        "board": "Spawn"
+      },
+      "fat": {
+        "label": "Fat",
+        "pickup": "Frozen meat at Market; use cleaver",
+        "board": "Beach"
+      },
+      "paint": {
+        "label": "Paint",
+        "pickup": "Path near Racin' Stripes",
+        "board": "RV Park"
+      },
+      "detergent": {
+        "label": "Detergent",
+        "pickup": "Market shelving",
+        "board": "Spawn"
+      },
+      "drain-opener": {
+        "label": "Drain Opener",
+        "pickup": "RV Park restroom",
+        "board": "Market exterior"
+      },
+      "ice": {
+        "label": "Ice",
+        "pickup": "Ice machine; use crowbar",
+        "board": "RV Park"
+      },
+      "glass-cleaner": {
+        "label": "Glass Cleaner",
+        "pickup": "Market",
+        "board": "Market exterior"
+      },
+      "vinegar": {
+        "label": "Vinegar",
+        "pickup": "Market back room",
+        "board": "RV Park"
+      },
+      "baking-soda": {
+        "label": "Baking Soda",
+        "pickup": "Market shelving",
+        "board": "Spawn"
+      },
+      "wheel-cleaner": {
+        "label": "Wheel Cleaner",
+        "pickup": "Market",
+        "board": "Beach"
+      },
+      "motor-oil": {
+        "label": "Motor Oil",
+        "pickup": "Garage",
+        "board": "Beach"
+      },
+      "insect-repellent": {
+        "label": "Insect Repellent",
+        "pickup": "Spawn table",
+        "board": "Spawn"
+      },
+      "nail-polish-remover": {
+        "label": "Nail Polish Remover",
+        "pickup": "Motel Office",
+        "board": "Market exterior"
+      },
+      "plant-food": {
+        "label": "Plant Food",
+        "pickup": "Snack Shack",
+        "board": "RV Park"
+      }
+    },
+    "recipes": {
+      "acetaldehyde": {
+        "label": "Acetaldehyde",
+        "ingredients": [
+          "vodka",
+          "pennies"
+        ],
+        "board": "TV Station"
+      },
+      "formaldehyde": {
+        "label": "Formaldehyde",
+        "aliases": [
+          "Formeldahyde"
+        ],
+        "ingredients": [
+          "quarters",
+          "racing-fuel"
+        ],
+        "board": "Gas Station"
+      },
+      "hexamine": {
+        "label": "Hexamine",
+        "ingredients": [
+          "glass-cleaner",
+          "formaldehyde"
+        ],
+        "board": "Gas Station"
+      },
+      "aldehyde-sludge": {
+        "label": "Aldehyde Sludge",
+        "ingredients": [
+          "acetaldehyde",
+          "formaldehyde",
+          "detergent"
+        ],
+        "board": "Gas Station"
+      },
+      "methylbenzene": {
+        "label": "Methylbenzene",
+        "ingredients": [
+          "paint",
+          "detergent",
+          "drain-opener"
+        ],
+        "board": "TV Station"
+      },
+      "dinitro": {
+        "label": "Dinitro",
+        "ingredients": [
+          "detergent",
+          "baking-soda",
+          "vinegar",
+          "methylbenzene"
+        ],
+        "board": "Gas Station"
+      },
+      "glycerol": {
+        "label": "Glycerol",
+        "ingredients": [
+          "fat",
+          "vodka"
+        ],
+        "board": "TV Station"
+      },
+      "mixed-acid": {
+        "label": "Mixed Acid",
+        "ingredients": [
+          "ice",
+          "detergent",
+          "drain-opener"
+        ],
+        "board": "TV Station"
+      },
+      "nitrated-glycerol": {
+        "label": "Nitrated Glycerol Solution",
+        "ingredients": [
+          "glycerol",
+          "mixed-acid"
+        ],
+        "board": "TV Station"
+      },
+      "phenol": {
+        "label": "Phenol",
+        "ingredients": [
+          "wheel-cleaner",
+          "motor-oil",
+          "insect-repellent"
+        ],
+        "board": "Gas Station"
+      },
+      "phenolsulfonic-acid": {
+        "label": "Phenolsulfonic Acid",
+        "aliases": [
+          "Phenosulfonic Acid"
+        ],
+        "ingredients": [
+          "phenol",
+          "drain-opener"
+        ],
+        "board": "Gas Station"
+      },
+      "octa-hydro": {
+        "label": "Octa-hydro-2,5-nitro-3,4,7-para-zokine",
+        "ingredients": [
+          "hexamine",
+          "vinegar",
+          "detergent",
+          "plant-food"
+        ],
+        "final": true
+      },
+      "di-nitroxy": {
+        "label": "3,4-di-nitroxy-methyl-propane",
+        "ingredients": [
+          "aldehyde-sludge",
+          "nail-polish-remover"
+        ],
+        "final": true
+      },
+      "tetra-nitro-phenol": {
+        "label": "1,3,5-tera-nitra-phenol",
+        "aliases": [
+          "1,3,5 tera-nitro-phenol",
+          "1-3-5 tera-nitra phenol"
+        ],
+        "ingredients": [
+          "phenolsulfonic-acid",
+          "detergent"
+        ],
+        "final": true
+      },
+      "di-nitrobenzene": {
+        "label": "3-methyl-2,4-di-nitrobenzene",
+        "ingredients": [
+          "dinitro",
+          "racing-fuel"
+        ],
+        "final": true
+      },
+      "tetra-nitrite": {
+        "label": "2,4-propane-3,5-tetra-nitrite",
+        "ingredients": [
+          "nitrated-glycerol",
+          "baking-soda"
+        ],
+        "final": true
+      }
+    },
+    "diamondBoardLocations": [
+      {
+        "id": "spawn",
+        "location": "Spawn tent hallway"
+      },
+      {
+        "id": "tv",
+        "location": "Outside TV Studio, near Bang Bangs"
+      },
+      {
+        "id": "rv",
+        "location": "RV Park, beside the RV near Mule Munchies"
+      },
+      {
+        "id": "beach",
+        "location": "Beach below the path to RV Park"
+      },
+      {
+        "id": "garage",
+        "location": "Gas Station garage"
+      },
+      {
+        "id": "market",
+        "location": "Dirt path behind Market toward Power Station"
+      }
+    ],
+    "fixtures": [
+      {
+        "topLeftPairs": [
+          [
+            6,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "O": 4,
+        "expected": 11
+      },
+      {
+        "topLeftPairs": [
+          [
+            4,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "O": 8,
+        "expected": 14
+      }
+    ],
+    "boardCorrections": "Direct chart inspection and the original Wells Logan board list agree: Pennies/Quarters at Market rear; Dinitro/Phenol/Aldehyde Sludge at Gas Station/Garage. The recipe chart omits Sludge’s board letter, so use the separately reviewed board list.",
+    "boardKey": {
+      "S": "Spawn",
+      "M": "Market exterior / dumpster",
+      "G": "Gas Station / garage",
+      "B": "Beach",
+      "R": "RV Park",
+      "T": "TV Station"
+    }
+  },
+  "beastDisks": {
+    "sourceIds": [
+      "kennedy-the_beast_from_beyond_guide",
+      "reference-beast-floppy-mechanics"
+    ],
+    "direction": "Each numeric row is in the display/insertion order used by the source selector; do not reverse it using a different sheet.",
+    "symbolAssets": [
+      "asset-1851",
+      "asset-1852",
+      "asset-1853",
+      "asset-1854",
+      "asset-1855",
+      "asset-1856",
+      "asset-1857",
+      "asset-1858",
+      "asset-1859",
+      "asset-1860",
+      "asset-1861",
+      "asset-1862"
+    ],
+    "rows": [
+      [
+        1,
+        2,
+        3,
+        4,
+        0,
+        5
+      ],
+      [
+        6,
+        5,
+        8,
+        9,
+        7,
+        1
+      ],
+      [
+        9,
+        10,
+        7,
+        8,
+        6,
+        1
+      ],
+      [
+        9,
+        4,
+        3,
+        0,
+        5,
+        2
+      ],
+      [
+        1,
+        11,
+        3,
+        2,
+        0,
+        5
+      ],
+      [
+        4,
+        11,
+        0,
+        2,
+        5,
+        8
+      ]
+    ],
+    "selectionCount": 4,
+    "distinctRequired": true,
+    "ambiguityPolicy": "Evaluate every matching row. Return an ambiguous result if filtered orders differ."
+  },
+  "shadowedRadio": {
+    "sourceIds": [
+      "kennedy-the_shadowed_throne_guide"
+    ],
+    "referenceAssetId": "asset-0438",
+    "visualTranscription": "Reviewed against the downloaded church chart on 2026-10-07",
+    "series": [
+      "RS",
+      "TX",
+      "LS",
+      "ZX"
+    ],
+    "modelNumbers": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "regions": [
+      {
+        "name": "Ober-Havel",
+        "bands": [
+          "50.2",
+          "63.4",
+          "70.5",
+          "71.4"
+        ],
+        "frequencies": [
+          "5.5",
+          "19.2",
+          "55.0",
+          "60.2"
+        ]
+      },
+      {
+        "name": "Barnim",
+        "bands": [
+          "1.2",
+          "26.5",
+          "51.1",
+          "95.1"
+        ],
+        "frequencies": [
+          "27.9",
+          "34.1",
+          "44.6",
+          "50.1"
+        ]
+      },
+      {
+        "name": "Elbe-Elster",
+        "bands": [
+          "50.2",
+          "63.4",
+          "70.5",
+          "71.4"
+        ],
+        "frequencies": [
+          "70.2",
+          "78.6",
+          "90.6",
+          "93.0"
+        ]
+      },
+      {
+        "name": "Oder-Spree",
+        "bands": [
+          "24.1",
+          "34.2",
+          "44.7",
+          "51.2"
+        ],
+        "frequencies": [
+          "9.6",
+          "63.4",
+          "70.5",
+          "71.4"
+        ]
+      },
+      {
+        "name": "Prignitz",
+        "bands": [
+          "5.2",
+          "16.5",
+          "50.0",
+          "87.2"
+        ],
+        "frequencies": [
+          "25.1",
+          "29.5",
+          "54.2",
+          "99.0"
+        ]
+      },
+      {
+        "name": "Uckermark",
+        "bands": [
+          "12.2",
+          "25.6",
+          "29.2",
+          "82.1"
+        ],
+        "frequencies": [
+          "2.2",
+          "8.2",
+          "16.1",
+          "43.7"
+        ]
+      },
+      {
+        "name": "Teltow-Fläming",
+        "bands": [
+          "24.1",
+          "63.1",
+          "78.3",
+          "84.0"
+        ],
+        "frequencies": [
+          "21.6",
+          "30.2",
+          "57.0",
+          "60.0"
+        ]
+      },
+      {
+        "name": "Märkisch-Oderland",
+        "bands": [
+          "5.2",
+          "11.2",
+          "52.2",
+          "60.0"
+        ],
+        "frequencies": [
+          "22.2",
+          "27.3",
+          "35.7",
+          "49.4"
+        ]
+      },
+      {
+        "name": "Spree-Neiße",
+        "bands": [
+          "12.2",
+          "25.7",
+          "85.2",
+          "92.1"
+        ],
+        "frequencies": [
+          "10.0",
+          "17.1",
+          "30.2",
+          "45.1"
+        ]
+      },
+      {
+        "name": "Dahme-Spreewald",
+        "bands": [
+          "2.5",
+          "74.3",
+          "80.2",
+          "87.0"
+        ],
+        "frequencies": [
+          "86.2",
+          "90.0",
+          "94.9",
+          "98.1"
+        ]
+      }
+    ],
+    "fixture": {
+      "region": "Barnim",
+      "series": "TX",
+      "model": "3",
+      "left": "26.5",
+      "right": "50.1"
+    }
+  },
+  "shadowedStatues": {
+    "sourceIds": [
+      "reference-shadowed-statue-mechanics",
+      "kennedy-the_shadowed_throne_guide"
+    ],
+    "orientation": {
+      "up": 0,
+      "right": 1,
+      "down": 2,
+      "left": 3
+    },
+    "target": 2,
+    "rateVectors": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        3,
+        1,
+        2
+      ]
+    ],
+    "matrixRule": "A[row][column] = rateVectors[wall-1][row] when abs(row-column)<=1, otherwise 0",
+    "modulus": 4,
+    "actionCountPerControlRange": [
+      0,
+      3
+    ]
+  },
+  "frozenHammer": {
+    "sourceIds": [
+      "reference-frozen-hammer-mechanics",
+      "kennedy-the_frozen_dawn_guide"
+    ],
+    "orientation": {
+      "front": 0,
+      "right": 1,
+      "back": 2,
+      "left": 3
+    },
+    "target": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "cellOrder": [
+      "A-top",
+      "B",
+      "C",
+      "D-bottom"
+    ],
+    "matrix": [
+      [
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        2
+      ]
+    ],
+    "modulus": 4,
+    "fixture": {
+      "observed": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "shots": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "appliesTo": "Base hammer pillar puzzle, not the upgraded-hammer apparatus"
+  },
+  "shadowedHangman": {
+    "sourceIds": [
+      "kennedy-the_shadowed_throne_guide"
+    ],
+    "words": {
+      "DAMNATION": "Nuke",
+      "REAPER": "Insta-Kill",
+      "GEISTKRAFT": "Full Meter",
+      "FAMISHED": "Max Ammo",
+      "GLUTTONY": "Double Jolts",
+      "WONDER": "Tesla Gun and Ripsaw",
+      "THEJACKBOX": "Jack-in-the-Boxes"
+    }
+  },
+  "carrierGrenadeRows": {
+    "sourceIds": [
+      "original-carrier-tutorial",
+      "kennedy-carrier_guide"
+    ],
+    "rows": [
+      [
+        "Distraction Drone",
+        "Frag"
+      ],
+      [
+        "Explosive Drone",
+        "Distraction Drone",
+        "Explosive Drone",
+        "Frag"
+      ],
+      [
+        "Explosive Drone",
+        "Nano Swarm",
+        "Explosive Drone",
+        "Distraction Drone",
+        "Explosive Drone",
+        "Frag"
+      ]
+    ],
+    "instruction": "Throw Contact Grenades into the machine while the corresponding icon is displayed. These strings describe machine icons, not six separate wallbuys.",
+    "modernAlternative": "The modern source allows Nano Swarm in place of the final Frag icon; the baseline follows the original tutorial's Frag endpoint."
+  },
+  "descentNumbers": {
+    "sourceIds": [
+      "kennedy-descent_guide"
+    ],
+    "digits": [
+      {
+        "position": 1,
+        "event": "Zombies hit by Exo Slam",
+        "coupling": "May also change jumps and kills"
+      },
+      {
+        "position": 2,
+        "event": "Jumps"
+      },
+      {
+        "position": 3,
+        "event": "Wall purchases excluding ammunition"
+      },
+      {
+        "position": 4,
+        "event": "Zombie kills"
+      }
+    ],
+    "remainingEvents": "(target-current+10)%10, after confirming the observed one-unit event convention",
+    "recommendedOrder": [
+      "Slam hits",
+      "Re-observe all current digits",
+      "Wall purchases",
+      "Ordinary kills",
+      "Re-observe all current digits",
+      "Jumps"
+    ],
+    "fixture": {
+      "current": 8,
+      "target": 1,
+      "remaining": 3
+    }
+  },
+  "vanguardCipherPairs": {
+    "sourceIds": [
+      "kennedy-shi_no_numa_reborn_guide",
+      "czg-shi-no-numa"
+    ],
+    "referenceAssetId": "asset-0063",
+    "plateDimensions": [
+      640,
+      426
+    ],
+    "plateLayout": "Three columns, five rows. Each cell pairs the paper glyph on the left with the wheel glyph on the right.",
+    "pairs": [
+      {
+        "paper": "木",
+        "meaning": "wood",
+        "column": 0,
+        "row": 0
+      },
+      {
+        "paper": "火",
+        "meaning": "fire",
+        "column": 0,
+        "row": 1
+      },
+      {
+        "paper": "土",
+        "meaning": "earth",
+        "column": 0,
+        "row": 2
+      },
+      {
+        "paper": "美",
+        "meaning": "beauty",
+        "column": 0,
+        "row": 3
+      },
+      {
+        "paper": "雨",
+        "meaning": "rain",
+        "column": 0,
+        "row": 4
+      },
+      {
+        "paper": "日",
+        "meaning": "sun",
+        "column": 1,
+        "row": 0
+      },
+      {
+        "paper": "水",
+        "meaning": "water",
+        "column": 1,
+        "row": 1
+      },
+      {
+        "paper": "夜",
+        "meaning": "night",
+        "column": 1,
+        "row": 2
+      },
+      {
+        "paper": "風",
+        "meaning": "wind",
+        "column": 1,
+        "row": 3
+      },
+      {
+        "paper": "空",
+        "meaning": "sky",
+        "column": 1,
+        "row": 4
+      },
+      {
+        "paper": "月",
+        "meaning": "moon",
+        "column": 2,
+        "row": 0
+      },
+      {
+        "paper": "金",
+        "meaning": "gold",
+        "column": 2,
+        "row": 1
+      },
+      {
+        "paper": "花",
+        "meaning": "flower",
+        "column": 2,
+        "row": 2
+      },
+      {
+        "paper": "鳥",
+        "meaning": "bird",
+        "column": 2,
+        "row": 3
+      },
+      {
+        "paper": "心",
+        "meaning": "heart",
+        "column": 2,
+        "row": 4
+      }
+    ],
+    "outputPolicy": "Display the corresponding wheel glyph from the source plate. Do not substitute these semantic labels or Unicode paper characters for the actual wheel glyph."
+  },
+  "terraPages": {
+    "positions": [
+      "Top",
+      "Bottom",
+      "Left",
+      "Right"
+    ],
+    "permutations": 24,
+    "rule": "Accepted prefixes and rejected next choices are conditional on the observed prefix; wrong placements reset the in-game attempt.",
+    "sourceIds": [
+      "kennedy-terra_maledicta_guide",
+      "czg-terra"
+    ]
+  },
+  "archonMindfulness": {
+    "stageLengths": [
+      3,
+      4,
+      5
+    ],
+    "rule": "Record 3/4/5 player-assigned symbol labels and observed ground landmarks. Formal no-kill capture is separate.",
+    "sourceIds": [
+      "kennedy-the_archon_guide",
+      "original-archon-tutorial"
+    ],
+    "baseline": "Sequence recorder with manual symbol labels and optional ground notes",
+    "artworkEnhancement": "Photographic selectors require a captured complete atlas and checked ground overview; no fixed count or mapping is asserted."
+  },
+  "redWorm": {
+    "sourceIds": [
+      "mw-greylorm-gameranx",
+      "reddit-red-worm-chart"
+    ],
+    "driveIdentities": [
+      "Alpha",
+      "Bravo",
+      "Charlie",
+      "Delta"
+    ],
+    "candidateLocations": [
+      {
+        "id": "kotovo",
+        "grid": "C1",
+        "landmark": "Kotovo Blocks"
+      },
+      {
+        "id": "popov",
+        "grid": "F2/F3",
+        "landmark": "Between unfinished cooling towers at Popov Power"
+      },
+      {
+        "id": "zlatyev",
+        "grid": "I2",
+        "landmark": "Zlatyev Array hill overlooking Orlov Military Base"
+      },
+      {
+        "id": "condos",
+        "grid": "C4",
+        "landmark": "Al-Abboud Condos central square"
+      },
+      {
+        "id": "bathhouse",
+        "grid": "F4",
+        "landmark": "Southeast-facing corner of Nahr Bathhouse roof"
+      },
+      {
+        "id": "palace",
+        "grid": "F5",
+        "landmark": "Opal Palace beside the dome"
+      },
+      {
+        "id": "loading",
+        "grid": "G4",
+        "landmark": "Loading area near Opal Palace"
+      },
+      {
+        "id": "farms",
+        "grid": "I5",
+        "landmark": "Greenhouses at Hadiqa Farms"
+      },
+      {
+        "id": "zaravan",
+        "grid": "D6",
+        "landmark": "Crumbling Zaravan City building roof"
+      },
+      {
+        "id": "community",
+        "grid": "D8",
+        "landmark": "Urzikstan Community Center"
+      },
+      {
+        "id": "opera",
+        "grid": "F7",
+        "landmark": "Outside Shorok Opera House"
+      },
+      {
+        "id": "manor",
+        "grid": "H8",
+        "landmark": "Dock southeast of Shahin Manor"
+      }
+    ],
+    "clueRooms": [
+      {
+        "grid": "C1",
+        "landmark": "Kotovo warehouse second floor"
+      },
+      {
+        "grid": "H2",
+        "landmark": "Orlov Military Base warehouse"
+      },
+      {
+        "grid": "E8",
+        "landmark": "Urzikstan University dining room"
+      },
+      {
+        "grid": "G7/G8",
+        "landmark": "Unfinished Ah-Dahr Estates building"
+      }
+    ],
+    "bossSiteRule": "Find the paired ammunition caches and seismic refractors for this deployment. One source repeats I6/I6 for the farms site; do not derive precise pins from that typo.",
+    "driveLocationRule": "Observe each drive's identity when collected. Do not permanently assign Alpha/Bravo/Charlie/Delta to a candidate location.",
+    "chartAssetId": "reddit-red-worm-chart"
+  },
+  "mwRifts": [
+    {
+      "season": 1,
+      "mapId": "mw3-dark-aether-season-1",
+      "story": "Bad Signal",
+      "setting": "Al Bagra Fortress",
+      "relics": [
+        "Locked Diary",
+        "Pill Bottle",
+        "Surveillance Camera",
+        "Dog Collar"
+      ],
+      "goldAtStoryEnd": "Locked Diary",
+      "schematics": [
+        "Aether Blade",
+        "Dog Bone",
+        "Golden Armor Plate"
+      ]
+    },
+    {
+      "season": 2,
+      "mapId": "mw3-dark-aether-season-2",
+      "story": "Countermeasures",
+      "setting": "Sa'id City",
+      "relics": [
+        "Drum",
+        "Tattered MMA Gloves",
+        "Perforated Target",
+        "Pristine Mirror"
+      ],
+      "goldAtStoryEnd": "Drum",
+      "schematics": [
+        "Mags of Holding",
+        "Blood Burner Keys",
+        "V-R11"
+      ]
+    },
+    {
+      "season": 3,
+      "mapId": "mw3-dark-aether-season-3",
+      "story": "Union",
+      "setting": "Zarqwa Hydroelectric",
+      "relics": [
+        "Giraffe Toy",
+        "Laptop with Stickers",
+        "Imaginary Friend Drawing",
+        "Science Journal"
+      ],
+      "goldAtStoryEnd": "Giraffe Toy",
+      "schematics": [
+        "Dead Wire Detonators",
+        "Golden Mask Filter",
+        "Sergeant's Beret"
+      ]
+    },
+    {
+      "season": 5,
+      "mapId": "mw3-dark-aether-season-5",
+      "story": "Ascension",
+      "setting": "Al Mazrah City and Highrise",
+      "relics": [
+        "Mr. Peeks",
+        "Echo of Locked Diary",
+        "Echo of Drum",
+        "Echo of Giraffe Toy"
+      ],
+      "goldAtStoryEnd": "Mr. Peeks",
+      "schematics": [
+        "Disciple Bottle",
+        "Grenade Bandolier",
+        "Stash Increase"
+      ]
+    }
+  ],
+  "mwRiftVariants": {
+    "ordinary": {
+      "entry": "Triangular Sigil",
+      "rewardCategory": "Acquisitions and possible Elder Sigils",
+      "timerMinutes": 30
+    },
+    "elder": {
+      "entry": "Elder Sigil",
+      "rewardCategory": "Classified schematics according to destination",
+      "timerMinutes": 15
+    },
+    "historicalException": "Season 6 free ordinary entry was a temporary event; later player reports again require Sigils. Do not publish the launch event as the current default.",
+    "sourceIds": [
+      "reddit-s2-rift-guide",
+      "reddit-sigil-2026",
+      "mw-season6-official"
+    ]
+  },
+  "unstableRift": {
+    "mapId": "mw3-unstable-rift",
+    "phases": 5,
+    "entryRule": "Complete three spawned obelisks using their indicated ammo mods, then enter the marked public rift.",
+    "reward": "Mark of the Survivor camo and cooldown reset",
+    "spawnPolicy": "Possible obelisk sites are references; no guarantee of current spawn or exclusivity.",
+    "sourceIds": [
+      "mw-season4-official",
+      "reddit-unstable-rift",
+      "mw-unstable-charlieintel"
+    ]
+  },
+  "torturedPath": {
+    "storyBatteryWaves": [
+      1,
+      4,
+      7
+    ],
+    "survivalBatteryWaves": [
+      1,
+      5,
+      10
+    ],
+    "chapter3Codes": "Keep separate observations for each inserted-rune stage; old clues remain visible.",
+    "continuity": "The three story chapter quests must maintain the required lobby sequence; survival variants are separate entries.",
+    "sourceIds": [
+      "kennedy-the_tortured_path_guide",
+      "reddit-the-tortured-path"
+    ]
+  },
+  "queens": {
+    "boardSize": 8,
+    "unrestrictedSolutions": 92,
+    "exampleRowToColumn": [
+      0,
+      4,
+      7,
+      5,
+      2,
+      6,
+      1,
+      3
+    ],
+    "rule": "Preserve the preplaced queen, one queen per row and column, no shared diagonals.",
+    "sourceIds": [
+      "kennedy-the_beast_from_beyond_guide"
+    ]
+  },
+  "skullHop": {
+    "sourceIds": [
+      "original-skull-hop-reference",
+      "reference-skull-hop-mechanics",
+      "kennedy-attack_of_the_radioactive_thing_guide"
+    ],
+    "targetWords": [
+      "aldehydes",
+      "allomer",
+      "benzene",
+      "chlorination",
+      "ethers",
+      "ethyl",
+      "hydrogenation",
+      "neutrino",
+      "nitriles",
+      "oxidation",
+      "reduction",
+      "solvolysis",
+      "sublimation",
+      "zwitterion"
+    ],
+    "physicalOrder": "Left to right from Slappy Taffy toward Ice Cream Parlour",
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "maximumLength": 4,
+    "formula": "For physical symbol p=1..4 at sequence position j=0..3, add alphabetValue[p]+3*p*j. Sum, then wrap to 1..26; remainder zero is Z.",
+    "repetitionAllowed": true,
+    "totalSequences": 340,
+    "selectionPolicy": "Shortest sequence, then lexicographic physical-position order",
+    "fixture": {
+      "symbols": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "word": "BENZENE",
+      "expectedSequences": [
+        [
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "expectedDisplay": "2 · 11 · 23 · 113 · 11 · 23 · 11"
+    },
+    "referenceCorrections": [
+      "A modern reference omits the remainder-zero-to-Z conversion.",
+      "Original source dictionary has solvoysis; use the actual solvolysis target."
+    ],
+    "commitCue": "Shoot the rightmost top-row symbol after each target letter",
+    "resetCue": "Fill four bottom-row symbols; adding a fifth replaces the previous four."
+  },
+  "darkestArtillery": {
+    "sourceIds": [
+      "kennedy-the_darkest_shore_guide"
+    ],
+    "chartAssetId": "asset-0403",
+    "chartCreator": "NinjaNationGaming",
+    "coordinateSlots": [
+      "sign",
+      "digit",
+      "digit",
+      "sign",
+      "digit",
+      "digit"
+    ],
+    "controlOrder": {
+      "left": "elevation",
+      "right": "angle",
+      "middle": "fire"
+    },
+    "dialCandidates": [
+      "Beach Passage: spawn window halfway up stairs",
+      "Bluffs: beneath wood pile",
+      "U-Boat Pens: cell left of power",
+      "Bunker 1: right of AA gun beside Double Tap",
+      "Artillery Bunker: locker right of bunks",
+      "Artillery Bunker: cart outside BAR-side window"
+    ],
+    "fuseRule": "Dial position gives character order; each machine holds only one of the six characters. Preserve signed two-digit strings.",
+    "aimingReferencePairs": [
+      [
+        "+07",
+        "-50"
+      ],
+      [
+        "+08",
+        "-00"
+      ],
+      [
+        "+05",
+        "-30"
+      ],
+      [
+        "+06",
+        "+20"
+      ],
+      [
+        "+03",
+        "-50"
+      ],
+      [
+        "+03",
+        "-30"
+      ],
+      [
+        "+04",
+        "+25"
+      ],
+      [
+        "-00",
+        "-15"
+      ],
+      [
+        "-01",
+        "-00"
+      ],
+      [
+        "-02",
+        "-30"
+      ],
+      [
+        "-02",
+        "+40"
+      ]
+    ],
+    "note": "The image contains eleven illustrated aiming examples. Pair order follows the image labels; select by its pictured ship position. Fuse coordinates and ship aiming are independent."
+  },
+  "mwRunePortals": {
+    "sourceIds": [
+      "wzhub-urzikstan",
+      "reddit-rune-portals"
+    ],
+    "referenceProjection": "WZHUB local image-map projection; coordinates intentionally omitted pending calibration",
+    "entryCostReference": 1000,
+    "entrances": [
+      {
+        "id": "m2111",
+        "grid": "E1",
+        "assetIds": [
+          "wzhub-m2111-1"
+        ]
+      },
+      {
+        "id": "m2245",
+        "grid": "C1",
+        "assetIds": [
+          "wzhub-m2245-1"
+        ]
+      },
+      {
+        "id": "m2248",
+        "grid": "C5",
+        "assetIds": [
+          "wzhub-m2248-1"
+        ]
+      },
+      {
+        "id": "m2256",
+        "grid": "I2",
+        "assetIds": [
+          "wzhub-m2256-1"
+        ]
+      },
+      {
+        "id": "m2277",
+        "grid": "F2",
+        "assetIds": [
+          "wzhub-m2277-1"
+        ]
+      },
+      {
+        "id": "m2278",
+        "grid": "H2",
+        "assetIds": [
+          "wzhub-m2278-1"
+        ]
+      },
+      {
+        "id": "m2279",
+        "grid": "H5",
+        "assetIds": [
+          "wzhub-m2279-1"
+        ]
+      },
+      {
+        "id": "m2280",
+        "grid": "H8",
+        "assetIds": [
+          "wzhub-m2280-1"
+        ]
+      },
+      {
+        "id": "m2281",
+        "grid": "F8",
+        "assetIds": [
+          "wzhub-m2281-1"
+        ]
+      },
+      {
+        "id": "m2282",
+        "grid": "B4",
+        "assetIds": [
+          "wzhub-m2282-1"
+        ]
+      },
+      {
+        "id": "m2284",
+        "grid": "F5",
+        "assetIds": [
+          "wzhub-m2284-1"
+        ]
+      },
+      {
+        "id": "m2318",
+        "grid": "D1",
+        "assetIds": [
+          "wzhub-m2318-1"
+        ]
+      },
+      {
+        "id": "m2325",
+        "grid": "H8",
+        "assetIds": [
+          "wzhub-m2325-1"
+        ]
+      },
+      {
+        "id": "m2331",
+        "grid": "C3",
+        "assetIds": [
+          "wzhub-m2331-1"
+        ]
+      },
+      {
+        "id": "m2388",
+        "grid": "H4",
+        "assetIds": [
+          "wzhub-m2388-1"
+        ]
+      },
+      {
+        "id": "m2394",
+        "grid": "D6",
+        "assetIds": [
+          "wzhub-m2394-1"
+        ]
+      },
+      {
+        "id": "m2397",
+        "grid": "F6",
+        "assetIds": [
+          "wzhub-m2397-1"
+        ]
+      }
+    ],
+    "destinations": [
+      {
+        "id": "m2112",
+        "grid": "I6",
+        "codeAssetId": "wzhub-m2112-1",
+        "contextAssetId": "wzhub-m2112-2",
+        "glyphIds": [
+          "mwz-glyph-01",
+          "mwz-glyph-02",
+          "mwz-glyph-03"
+        ]
+      },
+      {
+        "id": "m2291",
+        "grid": "H6",
+        "codeAssetId": "wzhub-m2291-1",
+        "contextAssetId": "wzhub-m2291-2",
+        "glyphIds": [
+          "mwz-glyph-01",
+          "mwz-glyph-04",
+          "mwz-glyph-05"
+        ]
+      },
+      {
+        "id": "m2292",
+        "grid": "D6",
+        "codeAssetId": "wzhub-m2292-1",
+        "contextAssetId": "wzhub-m2292-2",
+        "glyphIds": [
+          "mwz-glyph-06",
+          "mwz-glyph-01",
+          "mwz-glyph-07"
+        ]
+      },
+      {
+        "id": "m2293",
+        "grid": "G5",
+        "codeAssetId": "wzhub-m2293-1",
+        "contextAssetId": "wzhub-m2293-2",
+        "glyphIds": [
+          "mwz-glyph-06",
+          "mwz-glyph-04",
+          "mwz-glyph-08"
+        ]
+      },
+      {
+        "id": "m2295",
+        "grid": "I3",
+        "codeAssetId": "wzhub-m2295-1",
+        "contextAssetId": "wzhub-m2295-2",
+        "glyphIds": [
+          "mwz-glyph-06",
+          "mwz-glyph-05",
+          "mwz-glyph-03"
+        ]
+      },
+      {
+        "id": "m2296",
+        "grid": "C2",
+        "codeAssetId": "wzhub-m2296-1",
+        "contextAssetId": "wzhub-m2296-2",
+        "glyphIds": [
+          "mwz-glyph-06",
+          "mwz-glyph-02",
+          "mwz-glyph-05"
+        ]
+      },
+      {
+        "id": "m2297",
+        "grid": "G4",
+        "codeAssetId": "wzhub-m2297-1",
+        "contextAssetId": "wzhub-m2297-2",
+        "glyphIds": [
+          "mwz-glyph-08",
+          "mwz-glyph-04",
+          "mwz-glyph-06"
+        ]
+      },
+      {
+        "id": "m2298",
+        "grid": "I4",
+        "codeAssetId": "wzhub-m2298-1",
+        "contextAssetId": "wzhub-m2298-2",
+        "glyphIds": [
+          "mwz-glyph-08",
+          "mwz-glyph-02",
+          "mwz-glyph-01"
+        ]
+      },
+      {
+        "id": "m2299",
+        "grid": "H7",
+        "codeAssetId": "wzhub-m2299-1",
+        "contextAssetId": "wzhub-m2299-2",
+        "glyphIds": [
+          "mwz-glyph-08",
+          "mwz-glyph-07",
+          "mwz-glyph-03"
+        ]
+      },
+      {
+        "id": "m2301",
+        "grid": "F7",
+        "codeAssetId": "wzhub-m2301-1",
+        "contextAssetId": "wzhub-m2301-2",
+        "glyphIds": [
+          "mwz-glyph-04",
+          "mwz-glyph-01",
+          "mwz-glyph-03"
+        ]
+      },
+      {
+        "id": "m2302",
+        "grid": "I1",
+        "codeAssetId": "wzhub-m2302-1",
+        "contextAssetId": "wzhub-m2302-2",
+        "glyphIds": [
+          "mwz-glyph-04",
+          "mwz-glyph-08",
+          "mwz-glyph-01"
+        ]
+      },
+      {
+        "id": "m2303",
+        "grid": "F2",
+        "codeAssetId": "wzhub-m2303-1",
+        "contextAssetId": "wzhub-m2303-2",
+        "glyphIds": [
+          "mwz-glyph-04",
+          "mwz-glyph-03",
+          "mwz-glyph-08"
+        ]
+      },
+      {
+        "id": "m2304",
+        "grid": "F7",
+        "codeAssetId": "wzhub-m2304-1",
+        "contextAssetId": "wzhub-m2304-2",
+        "glyphIds": [
+          "mwz-glyph-03",
+          "mwz-glyph-08",
+          "mwz-glyph-04"
+        ]
+      },
+      {
+        "id": "m2305",
+        "grid": "H2",
+        "codeAssetId": "wzhub-m2305-1",
+        "contextAssetId": "wzhub-m2305-2",
+        "glyphIds": [
+          "mwz-glyph-03",
+          "mwz-glyph-04",
+          "mwz-glyph-01"
+        ]
+      },
+      {
+        "id": "m2306",
+        "grid": "B7",
+        "codeAssetId": "wzhub-m2306-1",
+        "contextAssetId": "wzhub-m2306-2",
+        "glyphIds": [
+          "mwz-glyph-03",
+          "mwz-glyph-07",
+          "mwz-glyph-02"
+        ]
+      },
+      {
+        "id": "m2307",
+        "grid": "E5",
+        "codeAssetId": "wzhub-m2307-1",
+        "contextAssetId": "wzhub-m2307-2",
+        "glyphIds": [
+          "mwz-glyph-05",
+          "mwz-glyph-06",
+          "mwz-glyph-02"
+        ]
+      },
+      {
+        "id": "m2308",
+        "grid": "D2",
+        "codeAssetId": "wzhub-m2308-1",
+        "contextAssetId": "wzhub-m2308-2",
+        "glyphIds": [
+          "mwz-glyph-05",
+          "mwz-glyph-08",
+          "mwz-glyph-01"
+        ]
+      },
+      {
+        "id": "m2309",
+        "grid": "D8",
+        "codeAssetId": "wzhub-m2309-1",
+        "contextAssetId": "wzhub-m2309-2",
+        "glyphIds": [
+          "mwz-glyph-05",
+          "mwz-glyph-03",
+          "mwz-glyph-04"
+        ]
+      },
+      {
+        "id": "m2310",
+        "grid": "C5",
+        "codeAssetId": "wzhub-m2310-1",
+        "contextAssetId": "wzhub-m2310-2",
+        "glyphIds": [
+          "mwz-glyph-02",
+          "mwz-glyph-01",
+          "mwz-glyph-08"
+        ]
+      },
+      {
+        "id": "m2311",
+        "grid": "F2",
+        "codeAssetId": "wzhub-m2311-1",
+        "contextAssetId": "wzhub-m2311-2",
+        "glyphIds": [
+          "mwz-glyph-02",
+          "mwz-glyph-04",
+          "mwz-glyph-05"
+        ]
+      },
+      {
+        "id": "m2312",
+        "grid": "E4",
+        "codeAssetId": "wzhub-m2312-1",
+        "contextAssetId": "wzhub-m2312-2",
+        "glyphIds": [
+          "mwz-glyph-07",
+          "mwz-glyph-01",
+          "mwz-glyph-06"
+        ]
+      },
+      {
+        "id": "m2313",
+        "grid": "D5",
+        "codeAssetId": "wzhub-m2313-1",
+        "contextAssetId": "wzhub-m2313-2",
+        "glyphIds": [
+          "mwz-glyph-07",
+          "mwz-glyph-08",
+          "mwz-glyph-05"
+        ]
+      },
+      {
+        "id": "m2314",
+        "grid": "I7",
+        "codeAssetId": "wzhub-m2314-1",
+        "contextAssetId": "wzhub-m2314-2",
+        "glyphIds": [
+          "mwz-glyph-07",
+          "mwz-glyph-05",
+          "mwz-glyph-08"
+        ]
+      },
+      {
+        "id": "m2393",
+        "grid": "C4",
+        "codeAssetId": "wzhub-m2393-1",
+        "contextAssetId": "wzhub-m2393-2",
+        "glyphIds": [
+          "mwz-glyph-01",
+          "mwz-glyph-06",
+          "mwz-glyph-07"
+        ]
+      }
+    ],
+    "lookupPolicy": "Select a unique destination card to view its actual left-to-right three-glyph plate. A grid cell can contain multiple destinations.",
+    "glyphs": [
+      {
+        "id": "mwz-glyph-01",
+        "memoryLabel": "Curved crescent with dot",
+        "referenceAssetId": "wzhub-m2112-1",
+        "panelIndex": 0
+      },
+      {
+        "id": "mwz-glyph-02",
+        "memoryLabel": "Arch with dot above",
+        "referenceAssetId": "wzhub-m2112-1",
+        "panelIndex": 1
+      },
+      {
+        "id": "mwz-glyph-03",
+        "memoryLabel": "Angled stem with divided foot and two drops",
+        "referenceAssetId": "wzhub-m2112-1",
+        "panelIndex": 2
+      },
+      {
+        "id": "mwz-glyph-04",
+        "memoryLabel": "Key with pointed top",
+        "referenceAssetId": "wzhub-m2291-1",
+        "panelIndex": 1
+      },
+      {
+        "id": "mwz-glyph-05",
+        "memoryLabel": "Hourglass",
+        "referenceAssetId": "wzhub-m2291-1",
+        "panelIndex": 2
+      },
+      {
+        "id": "mwz-glyph-06",
+        "memoryLabel": "Capped downward triangle",
+        "referenceAssetId": "wzhub-m2292-1",
+        "panelIndex": 0
+      },
+      {
+        "id": "mwz-glyph-07",
+        "memoryLabel": "Wings with central stem and dot",
+        "referenceAssetId": "wzhub-m2292-1",
+        "panelIndex": 2
+      },
+      {
+        "id": "mwz-glyph-08",
+        "memoryLabel": "Zigzag with split legs",
+        "referenceAssetId": "wzhub-m2293-1",
+        "panelIndex": 2
+      }
+    ],
+    "panelDisplay": "Eight selectors may use the referenced image thirds (panelIndex 0..2). Keep the full plate available for comparison; memory labels never replace actual glyph shapes.",
+    "transcriptionStatus": "All 24 left-to-right triplets visually compared in the local contact sheet on 2026-10-07; source review, not an in-game playthrough.",
+    "fixture": {
+      "glyphIds": [
+        "mwz-glyph-01",
+        "mwz-glyph-02",
+        "mwz-glyph-03"
+      ],
+      "expectedDestination": "m2112",
+      "expectedGrid": "I6"
+    }
+  },
+  "wylerAlphabet": {
+    "sourceIds": [
+      "kennedy-shaolin_shuffle_guide",
+      "reference-skull-hop-mechanics"
+    ],
+    "glyphs": [
+      {
+        "letter": "A",
+        "assetId": "wyler-a"
+      },
+      {
+        "letter": "B",
+        "assetId": "wyler-b"
+      },
+      {
+        "letter": "C",
+        "assetId": "wyler-c"
+      },
+      {
+        "letter": "D",
+        "assetId": "wyler-d"
+      },
+      {
+        "letter": "E",
+        "assetId": "wyler-e"
+      },
+      {
+        "letter": "F",
+        "assetId": "wyler-f"
+      },
+      {
+        "letter": "G",
+        "assetId": "wyler-g"
+      },
+      {
+        "letter": "H",
+        "assetId": "wyler-h"
+      },
+      {
+        "letter": "I",
+        "assetId": "wyler-i"
+      },
+      {
+        "letter": "J",
+        "assetId": "wyler-j"
+      },
+      {
+        "letter": "K",
+        "assetId": "wyler-k"
+      },
+      {
+        "letter": "L",
+        "assetId": "wyler-l"
+      },
+      {
+        "letter": "M",
+        "assetId": "wyler-m"
+      },
+      {
+        "letter": "N",
+        "assetId": "wyler-n"
+      },
+      {
+        "letter": "O",
+        "assetId": "wyler-o"
+      },
+      {
+        "letter": "P",
+        "assetId": "wyler-p"
+      },
+      {
+        "letter": "Q",
+        "assetId": "wyler-q"
+      },
+      {
+        "letter": "R",
+        "assetId": "wyler-r"
+      },
+      {
+        "letter": "S",
+        "assetId": "wyler-s"
+      },
+      {
+        "letter": "T",
+        "assetId": "wyler-t"
+      },
+      {
+        "letter": "U",
+        "assetId": "wyler-u"
+      },
+      {
+        "letter": "V",
+        "assetId": "wyler-v"
+      },
+      {
+        "letter": "W",
+        "assetId": "wyler-w"
+      },
+      {
+        "letter": "X",
+        "assetId": "wyler-x"
+      },
+      {
+        "letter": "Y",
+        "assetId": "wyler-y"
+      },
+      {
+        "letter": "Z",
+        "assetId": "wyler-z"
+      }
+    ],
+    "appliesTo": [
+      "iw-shaolin-word",
+      "iw-attack-skull-hop"
+    ]
+  }
+}

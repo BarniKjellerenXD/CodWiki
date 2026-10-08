@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-07",
+  "tools": [
+    {
+      "id": "iw-spaceland-speakers",
+      "ownerMapId": "iw-zombies-in-spaceland",
+      "title": "Spaceland speakers",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#spaceland-speakers",
+      "phaseIds": [
+        "speakers"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-shaolin-morse",
+      "ownerMapId": "iw-shaolin-shuffle",
+      "title": "Shaolin Morse",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shaolin-morse",
+      "phaseIds": [
+        "phone"
+      ],
+      "datasetKeys": [
+        "morseDigits"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-shaolin-word",
+      "ownerMapId": "iw-shaolin-shuffle",
+      "title": "Shaolin rooftop word",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shaolin-rooftop-word",
+      "phaseIds": [
+        "word"
+      ],
+      "datasetKeys": [
+        "shaolinWords",
+        "wylerAlphabet"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-attack-chemistry",
+      "ownerMapId": "iw-attack-of-the-radioactive-thing",
+      "title": "Attack chemistry",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#attack-chemistry",
+      "phaseIds": [
+        "chemistry"
+      ],
+      "datasetKeys": [
+        "attackChemistry"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-attack-codes",
+      "ownerMapId": "iw-attack-of-the-radioactive-thing",
+      "title": "Attack code memory",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#attack-code-memory",
+      "phaseIds": [
+        "life-ray",
+        "safe",
+        "boss"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-beast-disks",
+      "ownerMapId": "iw-the-beast-from-beyond",
+      "title": "Beast disks",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#beast-disks",
+      "phaseIds": [
+        "disks"
+      ],
+      "datasetKeys": [
+        "beastDisks"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-beast-handles",
+      "ownerMapId": "iw-the-beast-from-beyond",
+      "title": "Beast handles",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#beast-handles",
+      "phaseIds": [
+        "handles"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-beast-queens",
+      "ownerMapId": "iw-the-beast-from-beyond",
+      "title": "Beast eight queens",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#beast-eight-queens",
+      "phaseIds": [
+        "skullbreaker"
+      ],
+      "datasetKeys": [
+        "queens"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-final-reich-grid",
+      "ownerMapId": "ww2-the-final-reich",
+      "title": "Final Reich power grid",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#final-reich-power-grid",
+      "phaseIds": [
+        "right-hand"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-final-reich-voice",
+      "ownerMapId": "ww2-the-final-reich",
+      "title": "Final Reich voices",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#final-reich-voices",
+      "phaseIds": [
+        "voice-of-god",
+        "second-voices"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-darkest-artillery",
+      "ownerMapId": "ww2-the-darkest-shore",
+      "title": "Darkest Shore artillery",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#darkest-shore-artillery",
+      "phaseIds": [
+        "ripsaw",
+        "artillery"
+      ],
+      "datasetKeys": [
+        "darkestArtillery"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-shadowed-radio",
+      "ownerMapId": "ww2-the-shadowed-throne",
+      "title": "Shadowed Throne radio",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shadowed-throne-radio",
+      "phaseIds": [
+        "wunderbuss"
+      ],
+      "datasetKeys": [
+        "shadowedRadio"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-shadowed-statues",
+      "ownerMapId": "ww2-the-shadowed-throne",
+      "title": "Shadowed Throne statues",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shadowed-throne-statues",
+      "phaseIds": [
+        "raven-statues"
+      ],
+      "datasetKeys": [
+        "shadowedStatues"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-shadowed-safe",
+      "ownerMapId": "ww2-the-shadowed-throne",
+      "title": "Shadowed Throne safe",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shadowed-throne-safe",
+      "phaseIds": [
+        "dancers-dagger"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-shadowed-axe",
+      "ownerMapId": "ww2-the-shadowed-throne",
+      "title": "Shadowed Throne axe",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shadowed-throne-axe",
+      "phaseIds": [
+        "nazi-axe"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-frozen-hammer",
+      "ownerMapId": "ww2-the-frozen-dawn",
+      "title": "Frozen Dawn hammer",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#frozen-dawn-hammer",
+      "phaseIds": [
+        "hammer"
+      ],
+      "datasetKeys": [
+        "frozenHammer"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-frozen-shield",
+      "ownerMapId": "ww2-the-frozen-dawn",
+      "title": "Frozen Dawn shield",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#frozen-dawn-shield",
+      "phaseIds": [
+        "shield-upgrade"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-frozen-orrery",
+      "ownerMapId": "ww2-the-frozen-dawn",
+      "title": "Frozen Dawn orrery",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#frozen-dawn-orrery",
+      "phaseIds": [
+        "flail"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-tortured-runes",
+      "ownerMapId": "ww2-beneath-the-ice",
+      "title": "Tortured Path runes",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#tortured-path-runes",
+      "phaseIds": [
+        "rune-wall"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "aw-descent-simon",
+      "ownerMapId": "aw-descent",
+      "title": "Descent Simon Says",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#descent-simon-says",
+      "phaseIds": [
+        "simon"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "aw-descent-numbers",
+      "ownerMapId": "aw-descent",
+      "title": "Descent number panel",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#descent-number-panel",
+      "phaseIds": [
+        "number-panel"
+      ],
+      "datasetKeys": [
+        "descentNumbers"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "vanguard-terra-pages",
+      "ownerMapId": "vanguard-terra-maledicta",
+      "title": "Terra page door",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#terra-page-door",
+      "phaseIds": [
+        "lost-pages"
+      ],
+      "datasetKeys": [
+        "terraPages"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "vanguard-shi-no-numa-cipher",
+      "ownerMapId": "vanguard-shi-no-numa",
+      "title": "Shi No Numa cipher",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#shi-no-numa-cipher",
+      "phaseIds": [
+        "monolith"
+      ],
+      "datasetKeys": [
+        "vanguardCipherPairs"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "vanguard-archon-runes",
+      "ownerMapId": "vanguard-the-archon",
+      "title": "Archon Mindfulness",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#archon-mindfulness",
+      "phaseIds": [
+        "mindfulness"
+      ],
+      "datasetKeys": [
+        "archonMindfulness"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "mw3-rune-portals",
+      "ownerMapId": "mw3-urzikstan",
+      "title": "Rune portals",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#rune-portals",
+      "phaseIds": [
+        "rune-portals"
+      ],
+      "datasetKeys": [
+        "mwRunePortals"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "mw3-red-worm-usbs",
+      "ownerMapId": "mw3-urzikstan",
+      "title": "Red Worm USBs",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#red-worm-usbs",
+      "phaseIds": [
+        "red-worm"
+      ],
+      "datasetKeys": [
+        "redWorm"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "mw3-dark-aether-reference",
+      "ownerMapId": "mw3-urzikstan",
+      "title": "Seasonal rift reference",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#seasonal-rift-reference",
+      "phaseIds": [],
+      "datasetKeys": [
+        "mwRifts",
+        "mwRiftVariants"
+      ],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "mw3-union-runes",
+      "ownerMapId": "mw3-dark-aether-season-3",
+      "title": "Union crystals",
+      "status": "selected-core",
+      "version": 1,
+      "spec": "tool-specs.md#union-crystals",
+      "phaseIds": [
+        "crystals"
+      ],
+      "datasetKeys": [],
+      "implementation": "Existing tool registry, pure game utility and shared persistent widget",
+      "resultStates": [
+        "waiting",
+        "invalid",
+        "ambiguous",
+        "ready",
+        "confirmed"
+      ],
+      "stateShape": "Declared flat fields; strings for codes; independent stage resets",
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-spaceland-souvenirs",
+      "ownerMapId": "iw-zombies-in-spaceland",
+      "title": "Souvenir recipe lookup",
+      "status": "optional-later",
+      "version": 1,
+      "spec": "tool-specs.md#optional-tools-ready-for-a-later-slice",
+      "phaseIds": [
+        "souvenirs"
+      ],
+      "datasetKeys": [],
+      "gameplayVerified": false
+    },
+    {
+      "id": "ww2-shadowed-hangman",
+      "ownerMapId": "ww2-the-shadowed-throne",
+      "title": "Hangman candidate filter",
+      "status": "optional-later",
+      "version": 1,
+      "spec": "tool-specs.md#optional-tools-ready-for-a-later-slice",
+      "phaseIds": [
+        "hangman"
+      ],
+      "datasetKeys": [
+        "shadowedHangman"
+      ],
+      "gameplayVerified": false
+    },
+    {
+      "id": "iw-attack-skull-hop",
+      "ownerMapId": "iw-attack-of-the-radioactive-thing",
+      "title": "Skull Hop word arithmetic",
+      "status": "optional-later",
+      "version": 1,
+      "spec": "tool-specs.md#optional-tools-ready-for-a-later-slice",
+      "phaseIds": [
+        "skull-hop"
+      ],
+      "datasetKeys": [
+        "skullHop",
+        "wylerAlphabet"
+      ],
+      "gameplayVerified": false
+    }
+  ]
+}

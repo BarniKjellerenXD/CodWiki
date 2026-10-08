@@ -1,0 +1,1100 @@
+{
+  "schemaVersion": 1,
+  "reviewed": "2026-10-07",
+  "policy": "Factual mechanics and original authoring synthesis; external application code is evidence, not code to copy. HTTP 200 is not sufficient proof that a useful article body was retrieved.",
+  "sources": [
+    {
+      "id": "kennedy-terra_maledicta_guide",
+      "url": "https://mmmrkennedy.com/games/VG/terra_maledicta/terra_maledicta_guide",
+      "title": "mmmrkennedy — Terra Maledicta",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-shi_no_numa_reborn_guide",
+      "url": "https://mmmrkennedy.com/games/VG/shi_no_numa_reborn/shi_no_numa_reborn_guide",
+      "title": "mmmrkennedy — Shi No Numa Reborn",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_archon_guide",
+      "url": "https://mmmrkennedy.com/games/VG/the_archon/the_archon_guide",
+      "title": "mmmrkennedy — The Archon",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_final_reich_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_final_reich/the_final_reich_guide",
+      "title": "mmmrkennedy — The Final Reich",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-groesten_haus_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/groesten_haus/groesten_haus_guide",
+      "title": "mmmrkennedy — Groesten Haus",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_darkest_shore_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_darkest_shore/the_darkest_shore_guide",
+      "title": "mmmrkennedy — The Darkest Shore",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_shadowed_throne_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_shadowed_throne/the_shadowed_throne_guide",
+      "title": "mmmrkennedy — The Shadowed Throne",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_shadowed_throne_solvers",
+      "url": "https://mmmrkennedy.com/games/WW2/the_shadowed_throne/the_shadowed_throne_solvers",
+      "title": "mmmrkennedy — All Solvers",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_tortured_path_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_tortured_path/the_tortured_path_guide",
+      "title": "mmmrkennedy — The Tortured Path",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-bodega_cervantes_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/bodega_cervantes_guide",
+      "title": "mmmrkennedy — Bodega Cervantes",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-uss_mount_olympus_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/uss_mount_olympus_guide",
+      "title": "mmmrkennedy — U.S.S. Mount Olympus",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-altar_of_blood_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/altar_of_blood_guide",
+      "title": "mmmrkennedy — Altar of Blood",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_frozen_dawn_guide",
+      "url": "https://mmmrkennedy.com/games/WW2/the_frozen_dawn/the_frozen_dawn_guide",
+      "title": "mmmrkennedy — The Frozen Dawn",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_frozen_dawn_solver",
+      "url": "https://mmmrkennedy.com/games/WW2/the_frozen_dawn/the_frozen_dawn_solver",
+      "title": "mmmrkennedy — Thulian Hammer Puzzle Solver",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-zombies_in_spaceland_guide",
+      "url": "https://mmmrkennedy.com/games/IW/zombies_in_spaceland/zombies_in_spaceland_guide",
+      "title": "mmmrkennedy — Zombies in Spaceland",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-rave_in_the_redwoods_guide",
+      "url": "https://mmmrkennedy.com/games/IW/rave_in_the_redwoods/rave_in_the_redwoods_guide",
+      "title": "mmmrkennedy — Rave in the Redwoods",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-shaolin_shuffle_guide",
+      "url": "https://mmmrkennedy.com/games/IW/shaolin_shuffle/shaolin_shuffle_guide",
+      "title": "mmmrkennedy — Shaolin Shuffle",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-shaolin_shuffle_solvers",
+      "url": "https://mmmrkennedy.com/games/IW/shaolin_shuffle/shaolin_shuffle_solvers",
+      "title": "mmmrkennedy — All Solvers",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-attack_of_the_radioactive_thing_guide",
+      "url": "https://mmmrkennedy.com/games/IW/attack_of_the_radioactive_thing/attack_of_the_radioactive_thing_guide",
+      "title": "mmmrkennedy — Attack of the Radioactive Thing",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-attack_solvers",
+      "url": "https://mmmrkennedy.com/games/IW/attack_of_the_radioactive_thing/attack_solvers",
+      "title": "mmmrkennedy — All Solvers",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-the_beast_from_beyond_guide",
+      "url": "https://mmmrkennedy.com/games/IW/the_beast_from_beyond/the_beast_from_beyond_guide",
+      "title": "mmmrkennedy — The Beast from Beyond",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-beast_solvers",
+      "url": "https://mmmrkennedy.com/games/IW/the_beast_from_beyond/beast_solvers",
+      "title": "mmmrkennedy — All Solvers",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-outbreak_AW_guide",
+      "url": "https://mmmrkennedy.com/games/AW/outbreak_AW/outbreak_AW_guide",
+      "title": "mmmrkennedy — Outbreak",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-infection_guide",
+      "url": "https://mmmrkennedy.com/games/AW/infection/infection_guide",
+      "title": "mmmrkennedy — Infection",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-carrier_guide",
+      "url": "https://mmmrkennedy.com/games/AW/carrier/carrier_guide",
+      "title": "mmmrkennedy — Carrier",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "kennedy-descent_guide",
+      "url": "https://mmmrkennedy.com/games/AW/descent/descent_guide",
+      "title": "mmmrkennedy — Descent",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public HTML body reviewed and linked image references extracted",
+      "httpStatus": 200
+    },
+    {
+      "id": "czg-spaceland",
+      "url": "https://codzombiesguides.com/main-quests/infinite-warfare/zombies-in-spaceland",
+      "title": "czg spaceland",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-rave",
+      "url": "https://codzombiesguides.com/main-quests/infinite-warfare/rave-in-the-redwoods",
+      "title": "czg rave",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-shaolin",
+      "url": "https://codzombiesguides.com/main-quests/infinite-warfare/shaolin-shuffle",
+      "title": "czg shaolin",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-attack",
+      "url": "https://codzombiesguides.com/main-quests/infinite-warfare/attack-of-the-radioactive-thing",
+      "title": "czg attack",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-beast",
+      "url": "https://codzombiesguides.com/main-quests/infinite-warfare/the-beast-from-beyond",
+      "title": "czg beast",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-der-anfang",
+      "url": "https://www.codzombieguides.com/der-anfang",
+      "title": "czg der anfang",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-terra",
+      "url": "https://www.codzombieguides.com/terra-maledicta",
+      "title": "czg terra",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-shi-no-numa",
+      "url": "https://www.codzombieguides.com/shi-no-numa",
+      "title": "czg shi no numa",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "czg-archon",
+      "url": "https://www.codzombieguides.com/the-archon",
+      "title": "czg archon",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-missions-official",
+      "url": "https://www.callofduty.com/guides/zombies/call-of-duty-guides-modern-warfare-zombies-missions-and-progression",
+      "title": "mw missions official",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-acquisitions-official",
+      "url": "https://www.callofduty.com/guides/zombies/call-of-duty-guides-modern-warfare-zombies-acquisitions",
+      "title": "mw acquisitions official",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-tactics-official",
+      "url": "https://www.callofduty.com/guides/zombies/call-of-duty-guide-modern-warfare-zombies-tactics",
+      "title": "mw tactics official",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-s2-countermeasures",
+      "url": "https://game8.co/games/MW3/archives/447194",
+      "title": "mw s2 countermeasures",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Browser search/open reviewed separately; cached HTTP body was insufficient",
+      "httpStatus": 202,
+      "cachedBodyUseful": false
+    },
+    {
+      "id": "mw-s3-gameranx",
+      "url": "https://gameranx.com/features/id/497546/article/modern-warfare-zombies-how-to-open-the-season-3-reloaded-dark-aether-rift/",
+      "title": "mw s3 gameranx",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-union-gameranx",
+      "url": "https://gameranx.com/features/id/497551/article/modern-warfare-zombies-how-to-complete-the-union-story-mission/",
+      "title": "mw union gameranx",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-greylorm-gameranx",
+      "url": "https://gameranx.com/features/id/485365/article/modern-warfare-3-zombies-secret-red-worm-boss-fight-greylorm-easter-egg-guide/",
+      "title": "mw greylorm gameranx",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Public body read; sidebar media excluded from delivered selection",
+      "httpStatus": 200,
+      "cachedBodyUseful": true
+    },
+    {
+      "id": "mw-infinite-cosmos",
+      "url": "https://detonated.com/mw3-zombies-infinite-cosmos-blueprint-easter-egg-guide-season-5-reloaded/",
+      "title": "mw infinite cosmos",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Browser search/open reviewed separately; cached HTTP body was insufficient",
+      "httpStatus": 200,
+      "cachedBodyUseful": false
+    },
+    {
+      "id": "reddit-zombies-in-spaceland",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/zombies-in-spaceland/",
+      "title": "r/CODZombies — zombies-in-spaceland",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-rave-in-the-redwoods",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/rave-in-the-redwoods/",
+      "title": "r/CODZombies — rave-in-the-redwoods",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-shaolin-shuffle",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/shaolin-shuffle/",
+      "title": "r/CODZombies — shaolin-shuffle",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-attack-of-the-radioactive-thing",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/attack-of-the-radioactive-thing/",
+      "title": "r/CODZombies — attack-of-the-radioactive-thing",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-beast-from-beyond",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-beast-from-beyond/",
+      "title": "r/CODZombies — the-beast-from-beyond",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-final-reich",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-final-reich/",
+      "title": "r/CODZombies — the-final-reich",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-groesten-haus",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/groesten-haus/",
+      "title": "r/CODZombies — groesten-haus",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-darkest-shore",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-darkest-shore/",
+      "title": "r/CODZombies — the-darkest-shore",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-shadowed-throne",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-shadowed-throne/",
+      "title": "r/CODZombies — the-shadowed-throne",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-frozen-dawn",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-frozen-dawn/",
+      "title": "r/CODZombies — the-frozen-dawn",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-the-tortured-path",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-tortured-path/",
+      "title": "r/CODZombies — the-tortured-path",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-outbreak",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/outbreak/",
+      "title": "r/CODZombies — outbreak",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Community walkthrough/reference reviewed",
+      "coverage": "walkthrough"
+    },
+    {
+      "id": "reddit-infection",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/infection/",
+      "title": "r/CODZombies — infection",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Coverage check only; incomplete/empty guide is not main-route evidence",
+      "coverage": "incomplete-or-unstarted"
+    },
+    {
+      "id": "reddit-carrier",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/carrier/",
+      "title": "r/CODZombies — carrier",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Coverage check only; incomplete/empty guide is not main-route evidence",
+      "coverage": "incomplete-or-unstarted"
+    },
+    {
+      "id": "reddit-descent",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/descent/",
+      "title": "r/CODZombies — descent",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-wiki",
+      "reviewMethod": "Coverage check only; incomplete/empty guide is not main-route evidence",
+      "coverage": "incomplete-or-unstarted"
+    },
+    {
+      "id": "wellslogan-chemistry",
+      "url": "https://wellslogan.com/aotrt/dist/",
+      "title": "Wells Logan — Attack chemistry reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reference-shadowed-statue-mechanics",
+      "url": "https://mmmrkennedy.com/react-solvers/assets/WW2StatueSolver-mZP_BOb0.js",
+      "title": "Public Shadowed Throne rotation mechanics",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "reference-frozen-hammer-mechanics",
+      "url": "https://mmmrkennedy.com/react-solvers/assets/WW2HammerPuzzleSolver-DkCUKaPr.js",
+      "title": "Public Frozen Dawn base pillar mechanics",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "reference-beast-floppy-mechanics",
+      "url": "https://mmmrkennedy.com/react-solvers/assets/IWBeastFloppySolver-D870afKo.js",
+      "title": "Public Beast disk row table",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "reference-skull-hop-mechanics",
+      "url": "https://mmmrkennedy.com/react-solvers/assets/IWGnSSkull4Solver-20nQqu4W.js",
+      "title": "Public Skull Hop reference and zero/Z defect",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "reference-chemistry-mechanics",
+      "url": "https://mmmrkennedy.com/react-solvers/assets/IWChemicalStepSolverV2-C_RdAMAi.js",
+      "title": "Public chemistry recipe aliases/reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "original-skull-hop-reference",
+      "url": "https://www.zombieslayamr.com/pages/aotrt/aotrt_spelling_bee.html",
+      "title": "ZombieslayaMR — original Skull Hop reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-tool",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "original-skull-hop-arithmetic",
+      "url": "https://www.zombieslayamr.com/pages/aotrt/aotrt_spelling_bee.js",
+      "title": "Original positive offsets and zero/Z conversion",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "reference-code",
+      "reviewMethod": "Published factual rule/table inspected; software must be independently implemented"
+    },
+    {
+      "id": "original-carrier-tutorial",
+      "url": "https://www.youtube.com/watch?v=Kw33B-41a_Y",
+      "title": "MrDalekJD — original Carrier walkthrough",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-tutorial",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "original-archon-tutorial",
+      "url": "https://www.youtube.com/watch?v=JA7Ihp-GtxU",
+      "title": "MrDalekJD — Archon walkthrough with chapters",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-tutorial",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "original-mwz-side-tutorial",
+      "url": "https://www.youtube.com/watch?v=4Fpj9WowYEo",
+      "title": "MrDalekJD — MWZ side quests with chapters",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-tutorial",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reddit-s2-rift-guide",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1btflqa/text_video_guide_to_mastering_the_season_2/",
+      "title": "RayPoopertonIII — Season 2 contracts/music",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-guide",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reddit-s2-unlock-guide",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1b9x24h/detailed_video_text_guide_to_unlocking_the_season/",
+      "title": "RayPoopertonIII — Countermeasures and relics",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-guide",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reddit-sigil-2026",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1wmdd9u/sigil_questuons/",
+      "title": "September 2026 Sigil reports",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "player-report",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "mw-season6-official",
+      "url": "https://www.callofduty.com/blog/2024/09/call-of-duty-modern-warfare-iii-warzone-wzm-season-6-haunting-returns-maps-modes-zombies-announcement",
+      "title": "Official Season 6 event announcement",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-announcement",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "mw-season4-official",
+      "url": "https://www.callofduty.com/blog/2024/06/call-of-duty-modern-warfare-iii-warzone-wzm-season-4-reloaded-maps-modes-zombies-announcement",
+      "title": "Official Unstable Rift introduction",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-announcement",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "mw-season5-official",
+      "url": "https://www.callofduty.com/uk/en/blog/2024/08/call-of-duty-modern-warfare-iii-warzone-wzm-season-5-reloaded-maps-modes-zombies-announcement",
+      "title": "Official Season 5 Reloaded introduction",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-announcement",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reddit-red-worm-chart",
+      "url": "https://www.reddit.com/r/CODZombies/comments/18yl0fd/my_red_worm_usb_location_cheat_sheet_in_case/",
+      "title": "spaz33g — Red Worm USB photo atlas",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-chart",
+      "reviewMethod": "Creator attribution and publicly linked chart/reference reviewed"
+    },
+    {
+      "id": "wzhub-urzikstan",
+      "url": "https://wzhub.gg/map/urzikstan/mwz",
+      "title": "WZHUB — Urzikstan map and public marker details",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "interactive-reference",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "wzhub-season-1",
+      "url": "https://wzhub.gg/map/dark-aether/mwz",
+      "title": "WZHUB — Al Bagra seasonal map",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "interactive-reference",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "wzhub-season-2",
+      "url": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "title": "WZHUB — Sa'id City seasonal map",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "interactive-reference",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "wzhub-season-3",
+      "url": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "title": "WZHUB — Zarqwa seasonal map",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "interactive-reference",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "wzhub-season-5",
+      "url": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "title": "WZHUB — Highrise seasonal map",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "interactive-reference",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "reddit-rune-portals",
+      "url": "https://www.reddit.com/r/CODZombies/comments/17uvwuc/mwz_rune_portals_guide/",
+      "title": "Espioth — original MWZ portal chart",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-chart",
+      "reviewMethod": "Creator attribution and publicly linked chart/reference reviewed"
+    },
+    {
+      "id": "reddit-unstable-rift",
+      "url": "https://www.reddit.com/r/CODZombies/comments/1dpzk3c",
+      "title": "Unstable Rift discovery discussion",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-discussion",
+      "reviewMethod": "Indexed discussion excerpt reviewed; full browser fetch unavailable"
+    },
+    {
+      "id": "mw-unstable-charlieintel",
+      "url": "https://www.charlieintel.com/call-of-duty/how-to-complete-mw3-zombies-unstable-rift-easter-egg-unlock-mark-of-the-survivor-camo-330822/",
+      "title": "Unstable Rift completion guide",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "archon-ground-chart",
+      "url": "https://www.reddit.com/r/CODZombies/comments/wwu3e9/cheat_sheet_image_for_the_trial_of_mindfulness/",
+      "title": "Myst3ryo — Mindfulness reference linked by Charlie INTEL",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "creator-chart",
+      "reviewMethod": "Reference discovered in an independent guide; original pixels not retrieved",
+      "imageAvailable": false
+    },
+    {
+      "id": "archon-gamepur",
+      "url": "https://www.gamepur.com/guides/the-archon-main-easter-egg-quest-guide-in-call-of-duty-vanguard-zombies",
+      "title": "John Hansen — illustrated Archon walkthrough",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "illustrated-guide",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "mw-smoke-signals",
+      "url": "https://gameranx.com/features/id/498663/article/cod-zombies-smoke-signals-blueprint/",
+      "title": "Matt Villei — Gyanxi and Smoke Signals",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Relevant public walkthrough/report reviewed"
+    },
+    {
+      "id": "source-3a6088fb6efe",
+      "url": "https://www.reddit.com/r/CODZombies/comments/l2l72v/the_ultimate_iw_easter_egg_guides_mephistopheles/",
+      "title": "detailed remastered finale guide",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-7a3ed117de09",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3617365373",
+      "title": "Mephistopheles practice guide",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-a85f54653a08",
+      "url": "https://margwa.net/beast-from-beyond",
+      "title": "written encounter reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-436c0343a742",
+      "url": "https://www.callofduty.com/ar/blog/archives/the-new-nazi-zombies-dlc-puts-a-three-part-spin-on-the-epic-adventure",
+      "title": "official introduction",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "official-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-6055861ecc63",
+      "url": "https://www.reddit.com/r/CODZombies/comments/2u0yhn/text_guide_solo_outbreak_easter_eggachievement/",
+      "title": "original solo walkthrough",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-b106307af21d",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=403315764",
+      "title": "2015 Steam guide",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-2393b76b5734",
+      "url": "https://www.reddit.com/r/CODZombies/comments/30wwdi/infection_easter_egg_thread_spoilers/",
+      "title": "original discovery thread",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-2d592025c9c9",
+      "url": "https://callofduty.fandom.com/wiki/MEAT_IS_MURDER",
+      "title": "quest reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-a1da24c170fb",
+      "url": "https://www.reddit.com/r/CODZombies/comments/3878ck/carrier_easter_egg_thread_spoilers/",
+      "title": "original discovery thread",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-85ab54780033",
+      "url": "https://www.escapistmagazine.com/sink-the-carrier-in-advanced-warfare-with-our-full-easter-egg-guide/",
+      "title": "written 2015 walkthrough",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-048076cfaf38",
+      "url": "https://www.charlieintel.com/call-of-duty-vanguard/how-to-complete-vanguard-zombies-the-archon-easter-egg-main-quest-guide-194570/",
+      "title": "independent written walkthrough",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-61ce30dea3b5",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1w1j0fm/completed_all_3_acts_whats_next/",
+      "title": "community seasonal access explanation",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-3e0850cdc317",
+      "url": "https://www.gameskinny.com/tips/mw3-zombies-shepherd-mission-walkthrough-how-to-deploy-to-neutralizer-test-site/",
+      "title": "Shepherd route",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-ea00df64fd68",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1876jam",
+      "title": "Shepherd original solo discussion",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-568276891481",
+      "url": "https://game8.co/games/MW3/archives/435168",
+      "title": "Zakhaev objective reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-ef5f641ee18c",
+      "url": "https://www.reddit.com/r/MWZombies/comments/1fpd73g/act_missions_and_the_changes_since_the_latest/",
+      "title": "this player report",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-194c03de8111",
+      "url": "https://www.gamepur.com/guides/all-free-perks-in-cod-mw3-zombies",
+      "title": "the illustrated perk reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-fbbfaa263666",
+      "url": "https://www.gamerevolution.com/guides/954826-mw3-zombies-easter-egg-solve-chessboard-puzzle-open-vault-unlock-modern-warfare",
+      "title": "chessboard route",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-640dd48c514b",
+      "url": "https://www.reddit.com/r/MWZombies/comments/17sgzcn",
+      "title": "original discovery",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "community-reference",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-b76789667b71",
+      "url": "https://gameranx.com/features/id/484752/article/modern-warfare-3-zombies-how-to-enter-the-dark-aether-rift-act-4-boss-fight-easter-egg-and-schematics-guide/",
+      "title": "mission/relic route",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-ae7c92205846",
+      "url": "https://gameranx.com/features/id/485266/article/modern-warfare-3-zombies-how-to-open-the-dark-aether-locked-doors-all-dark-aether-key-locations/",
+      "title": "locked-room key locations",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-770054b95594",
+      "url": "https://www.gamespot.com/articles/call-of-duty-mw3-zombies-how-to-unlock-season-2-dark-aether-rifts-and-new-schematics/1100-6521677/",
+      "title": "independent unlock overview",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-5429b7b85849",
+      "url": "https://detonated.com/mw3-zombies-secret-dark-aether-boss-fight-free-smoke-signals-blueprint-unlock-season-3-reloaded-quest/",
+      "title": "independent boss discovery",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-8ed6ea149c40",
+      "url": "https://primagames.com/featured/modern-warfare-zombies-mwz-unstable-rift-guide-how-to-unlock-locations-and-all-easter-eggs",
+      "title": "written unlock reference",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-f14d7b94beee",
+      "url": "https://gameranx.com/features/id/506621/article/modern-warfare-zombies-how-to-complete-the-final-story-mission-ascension-story-mission-walkthrough/",
+      "title": "Ascension story route",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    },
+    {
+      "id": "source-9665c0f35567",
+      "url": "https://gameranx.com/features/id/506654/article/modern-warfare-zombies-how-to-get-all-4-relics-and-enter-the-final-dark-aether-rift/",
+      "title": "relic route",
+      "reviewed": "2026-10-07",
+      "reviewScope": "Public source evidence; no in-game playthrough",
+      "type": "walkthrough",
+      "reviewMethod": "Referenced evidence in the authored brief; consult that brief for the exact scope"
+    }
+  ]
+}

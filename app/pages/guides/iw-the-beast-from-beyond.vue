@@ -1,5 +1,5 @@
-<!-- Generated from shared/planned-maps.mjs. -->
+<!-- Generated from shared/expansion-guides.mjs. -->
 <script setup>
 import Content from '~/components/guide/iw-the-beast-from-beyond.vue'
 </script>
-<template><Content /></template>
+<template><GuideArticle title="The Beast from Beyond" map-name="Infinite Warfare" storage-key="guide-pins-iw-the-beast-from-beyond" quest-label="Main quest" :branches='[{&quot;id&quot;:&quot;standard&quot;,&quot;label&quot;:&quot;Standard quest&quot;,&quot;description&quot;:&quot;Restore N31L and defeat both Mammoths for the ordinary quest reward.&quot;},{&quot;id&quot;:&quot;directors-cut&quot;,&quot;label&quot;:&quot;Director’s Cut finale&quot;,&quot;description&quot;:&quot;Includes the separate account gates and Mephistopheles after the Beast encounter.&quot;}]'><template #intro><img class="expansion-cover" src="/images/remaining/asset-1561.webp" alt="The Beast from Beyond artwork" width="1200" height="400" fetchpriority="high" /><p>Infinite Warfare’s original Zombies mode. Scene, symbol, colour and code observations come from your current match. Director’s Cut changes equipment access and ending rewards; its account unlocks are separate from a new map run. Restore N31L, recover four coded disks, hack the handle board and install him in the projector. Survive the cryptid arena and both Mammoths. Select the separate Director’s Cut branch for account preparation and the Mephistopheles finale.</p></template><Content /></GuideArticle></template>

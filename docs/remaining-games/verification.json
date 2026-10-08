@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "checked": "2026-10-07",
+  "scope": "Research consistency and independent mathematics; no website build or gameplay verification",
+  "status": "passed",
+  "counts": {
+    "games": 5,
+    "maps": 30,
+    "plannedPhases": 238,
+    "coreTools": 28,
+    "optionalTools": 3,
+    "sources": 113,
+    "imageReferences": 2114,
+    "localImages": 1408,
+    "imageBytes": 545786013,
+    "decodedImages": 1408
+  },
+  "checks": [
+    {
+      "name": "Shadowed Throne rotation state enumeration",
+      "walls": [
+        {
+          "states": 64,
+          "solvable": 64,
+          "unreachable": 0,
+          "maxActions": 9
+        },
+        {
+          "states": 256,
+          "solvable": 128,
+          "unreachable": 128,
+          "maxActions": 10
+        },
+        {
+          "states": 256,
+          "solvable": 64,
+          "unreachable": 192,
+          "maxActions": 6
+        },
+        {
+          "states": 256,
+          "solvable": 128,
+          "unreachable": 128,
+          "maxActions": 8
+        }
+      ]
+    },
+    {
+      "name": "Frozen Dawn base hammer enumeration",
+      "states": 256,
+      "solvable": 256,
+      "unreachable": 0,
+      "maxActions": 12
+    },
+    {
+      "name": "Eight queens",
+      "solutions": 92,
+      "fixedCellCounts": [
+        [
+          4,
+          8,
+          16,
+          18,
+          18,
+          16,
+          8,
+          4
+        ],
+        [
+          8,
+          16,
+          14,
+          8,
+          8,
+          14,
+          16,
+          8
+        ],
+        [
+          16,
+          14,
+          4,
+          12,
+          12,
+          4,
+          14,
+          16
+        ],
+        [
+          18,
+          8,
+          12,
+          8,
+          8,
+          12,
+          8,
+          18
+        ],
+        [
+          18,
+          8,
+          12,
+          8,
+          8,
+          12,
+          8,
+          18
+        ],
+        [
+          16,
+          14,
+          4,
+          12,
+          12,
+          4,
+          14,
+          16
+        ],
+        [
+          8,
+          16,
+          14,
+          8,
+          8,
+          14,
+          16,
+          8
+        ],
+        [
+          4,
+          8,
+          16,
+          18,
+          18,
+          16,
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "Beast distinct four-symbol selections",
+      "subsets": 495,
+      "impossible": 422,
+      "ambiguous": 13,
+      "uniqueOrder": 60
+    },
+    {
+      "name": "Recipe graph and arithmetic",
+      "rawIngredients": 17,
+      "recipes": 16,
+      "finalRoutes": {
+        "octa-hydro": [
+          "formaldehyde",
+          "hexamine",
+          "octa-hydro"
+        ],
+        "di-nitroxy": [
+          "acetaldehyde",
+          "formaldehyde",
+          "aldehyde-sludge",
+          "di-nitroxy"
+        ],
+        "tetra-nitro-phenol": [
+          "phenol",
+          "phenolsulfonic-acid",
+          "tetra-nitro-phenol"
+        ],
+        "di-nitrobenzene": [
+          "methylbenzene",
+          "dinitro",
+          "di-nitrobenzene"
+        ],
+        "tetra-nitrite": [
+          "glycerol",
+          "mixed-acid",
+          "nitrated-glycerol",
+          "tetra-nitrite"
+        ]
+      }
+    },
+    {
+      "name": "Morse and word inventory",
+      "morseDigits": 10,
+      "shaolinWords": 71
+    },
+    {
+      "name": "Skull Hop original-rule fixture",
+      "enumerated": 340,
+      "word": "BENZENE",
+      "sequences": [
+        [
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Vanguard and MWZ reference inventories",
+      "vanguardPairs": 15,
+      "portalEntrances": 17,
+      "portalDestinations": 24,
+      "portalGlyphs": 8,
+      "redWormCandidates": 12,
+      "riftSets": 4
+    }
+  ],
+  "errors": [],
+  "remainingPublicationWork": [
+    "Capture or clear production artwork and confirm captions",
+    "In-game acceptance for solo/co-op, edition, gates and success cues",
+    "Optional map projection/coordinate calibration"
+  ]
+}

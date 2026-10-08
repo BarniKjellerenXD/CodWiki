@@ -10,7 +10,7 @@ import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/c
 
 test('all expansion hubs, two Outbreak quests and every inline tool have valid associations', () => {
   const hubs=expansionGuides.filter(g=>!g.parent)
-  assert.equal(hubs.length,60)
+  assert.equal(hubs.length,90)
   assert.equal(hubs.filter(g=>g.gameId==='bo1').length,11)
   assert.equal(hubs.filter(g=>g.gameId==='waw').length,4)
   assert.equal(hubs.filter(g=>g.gameId==='bo2').length,12)
@@ -23,7 +23,7 @@ test('all expansion hubs, two Outbreak quests and every inline tool have valid a
   for(const guide of expansionGuides) {
     const ids=guide.phases.flatMap(p=>p.steps.map(s=>s.id))
     assert.equal(new Set(ids).size,ids.length,guide.id)
-    for(const phase of guide.phases) for(const tool of phase.tools) assert.ok(expansionTools.some(t=>t.id===tool && t.map===(guide.parent || guide.id)),`${guide.id}: ${tool}`)
+    for(const phase of guide.phases) for(const tool of phase.tools) assert.ok(expansionTools.some(t=>t.id===tool && (t.map===(guide.parent || guide.id) || t.sharedMaps?.includes(guide.id))),`${guide.id}: ${tool}`)
     assert.ok(guide.sources.every(url=>url.startsWith('https://')))
   }
   for(const tool of expansionTools) {

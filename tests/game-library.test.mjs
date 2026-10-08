@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import { createRequire } from 'node:module'
-import { plannedMaps } from '../shared/planned-maps.mjs'
+import { plannedMaps, remainingMapMetadata } from '../shared/planned-maps.mjs'
 import { games } from '../shared/games.mjs'
 import { searchCatalogue } from '../app/utils/companion.mjs'
 const require = createRequire(import.meta.url)
@@ -15,22 +15,22 @@ const search = read('app/data/searchIndex.json')
 const quests = read('app/data/quickQuests.json')
 const groups = groupNavigation(nav)
 
-test('all major additional Zombies maps and modes have honest, generated entry routes', () => {
-  assert.deepEqual(Object.fromEntries(['iw','ww2','aw','vanguard','mw3'].map(id => [id, plannedMaps.filter(map => map.gameId === id).length])), { iw:5, ww2:11, aw:4, vanguard:4, mw3:6 })
+test('all 30 additional Zombies destinations have authored, generated guides', () => {
+  assert.equal(plannedMaps.length, 0)
+  assert.deepEqual(Object.fromEntries(['iw','ww2','aw','vanguard','mw3'].map(id => [id, remainingMapMetadata.filter(map => map.gameId === id).length])), { iw:5, ww2:11, aw:4, vanguard:4, mw3:6 })
   assert.equal(new Set(catalogue.maps.map(map => map.id)).size, catalogue.maps.length)
   assert.equal(new Set(catalogue.maps.map(map => map.route)).size, catalogue.maps.length)
   assert.deepEqual(catalogue, read('app/data/catalogue.json'))
   assert.deepEqual(nav.games.map(game => game.id), games.map(game => game.id))
-  for (const map of plannedMaps) {
+  for (const map of remainingMapMetadata) {
     assert.ok(games.some(game => game.id === map.gameId), map.id)
-    assert.equal(map.status, 'planned')
-    assert.equal(map.interactiveMap, false)
-    assert.equal(quests[map.id], undefined)
-    assert.ok(!catalogue.tools.some(tool => tool.map === map.id))
+    assert.notEqual(catalogue.maps.find(entry => entry.id === map.id).status, 'planned')
+    assert.equal(catalogue.maps.find(entry => entry.id === map.id).interactiveMap, false)
+    assert.ok(quests[map.id]?.length > 0, map.id)
     assert.match(fs.readFileSync(`app/pages${map.route}.vue`, 'utf8'), /<Content/)
-    assert.match(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'), /<MapEntry/)
-    assert.equal(search.find(entry => entry.id === map.id)?.kind, 'Map entry')
-    assert.equal(nav.find(entry => entry.id === map.id)?.status, 'planned')
+    assert.doesNotMatch(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'), /<MapEntry/)
+    assert.equal(search.find(entry => entry.id === map.id)?.kind, 'Guide')
+    assert.notEqual(nav.find(entry => entry.id === map.id)?.status, 'planned')
     assert.equal(nav.find(entry => entry.id === map.id)?.accel, null)
   }
 })

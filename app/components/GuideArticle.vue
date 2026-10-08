@@ -7,6 +7,7 @@
             <div class="guide-heading"><span class="guide-map">{{ mapName }}</span><h1 class="guide-title">{{ title }}</h1></div>
             <NuxtLink class="guide-back" to="/">← Maps & tools</NuxtLink>
           </header>
+          <div v-if="branches?.length" class="guide-branch"><label :for="branchInputId">Quest route <select :id="branchInputId" aria-label="Quest route" :value="selectedBranch" @change="chooseBranch(($event.target as HTMLSelectElement).value)"><option v-for="branch in branches" :key="branch.id" :value="branch.id">{{ branch.label }}</option></select></label><p>{{ branches.find(branch => branch.id === selectedBranch)?.description }}</p><p class="companion-muted">Each route keeps its own checkboxes. Switching routes preserves your observations.</p></div>
           <div class="guide-toolbar">
             <div class="reading-switch" role="group" aria-label="Guide view"><button class="companion-button" :aria-pressed="view === 'quick'" @click="switchView('quick')">Quick Parts</button><button class="companion-button" :aria-pressed="view === 'full'" @click="switchView('full')">Full Details</button><button v-if="hasMap" class="companion-button" :aria-pressed="view === 'map'" @click="switchView('map')">Map</button></div>
             <button v-if="view !== 'map'" class="companion-button mobile-sections" :aria-expanded="mobileOpen" :aria-controls="mobileOpen ? 'mobile-contents' : undefined" @click="mobileOpen = !mobileOpen">Sections {{ mobileOpen ? '−' : '+' }}</button>
@@ -14,7 +15,7 @@
           </div>
           <div v-if="mobileOpen" id="mobile-contents" class="mobile-contents"><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /></div>
           <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
-          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its quest checkboxes. Your pins, reading settings and Super EE toys stay saved.</p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
+          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its run checkboxes. Account milestones, tool observations, pins and reading settings stay saved. Use each tool’s reset when starting new observations.</p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
           <div v-if="$slots.intro" class="guide-introduction"><slot name="intro" /></div>
           <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
@@ -34,13 +35,14 @@
 
 <script setup lang="ts">
 import { togglePart } from '~/utils/companion.mjs'
+import { visibleGuidePhases, branchForGuideAnchor } from '~/utils/guideBranches.mjs'
 import catalogue from '~/data/catalogue.json'
 import quickQuests from '~/data/quickQuests.json'
 import quickMapIndex from '~/data/mapQuickLinks.json'
 import { GUIDE_MAP_NAVIGATION } from '~/utils/mapContext'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readReaderContext } from '~/utils/mapNavigation.mjs'
 export interface GuideTocItem { id: string; text: string; level: number }
-const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string }>()
+const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string, branches?: { id:string, label:string, description:string }[] }>()
 const route = useRoute()
 const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
@@ -48,7 +50,11 @@ const parentMap = catalogue.guides?.find(g => g.id === mapId)?.map || mapId
 const hasMap = catalogue.maps.find(m => m.id === parentMap)?.interactiveMap === true
 const { run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
-const phases = (quickQuests as Record<string, any[]>)[mapId] || []
+const allPhases = (quickQuests as Record<string, any[]>)[mapId] || []
+const branchInputId = useId()
+const selectedBranch = ref(props.branches?.some(branch => branch.id === route.query.branch) ? String(route.query.branch) : props.branches?.[0]?.id || '')
+provide('guide-branch', selectedBranch)
+const phases = computed(() => visibleGuidePhases(allPhases, selectedBranch.value))
 const quickMapLinks = (quickMapIndex as Record<string, Record<string, string>>)[mapId] || {}
 const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(mapId)
 const mapTools = catalogue.tools.filter(t => t.map === parentMap)
@@ -71,10 +77,10 @@ const toc = ref<GuideTocItem[]>([])
 const pins = ref<string[]>([])
 const lightboxSrc = ref<string | null>(null)
 const lightboxAlt = ref('')
-const pinnedToc = computed(() => pins.value.map(id => [...toc.value,...phases.map(p=>({id:'quick-'+p.id,text:p.title,level:2}))].find(t=>t.id===id)).filter(Boolean))
+const pinnedToc = computed(() => pins.value.map(id => [...toc.value,...phases.value.map(p=>({id:'quick-'+p.id,text:p.title,level:2}))].find(t=>t.id===id)).filter(Boolean))
 const shortcuts = computed(() => toc.value.filter(t => t.level===1 && /Main Quest|Key Features|Side Quests|Relics/.test(t.text)).map(t=>({...t, text:t.text==='Key Features'?'Setup':t.text})))
 const groups = computed(() => {
-  if (view.value === 'quick') return [{ id:'quick-'+phases[0]?.id, text:props.questLabel || 'Main quest', items:phases.map(p=>({id:'quick-'+p.id,text:p.title})) }, ...shortcuts.value.filter(t=>!/Main Quest/.test(t.text)).map(t=>({...t,items:[]})), ...(mapTools.length?[{id:'map-tools',text:'Tools',items:[]}]:[])]
+  if (view.value === 'quick') return [{ id:'quick-'+phases.value[0]?.id, text:props.questLabel || 'Main quest', items:phases.value.map(p=>({id:'quick-'+p.id,text:p.title})) }, ...shortcuts.value.filter(t=>!/Main Quest/.test(t.text)).map(t=>({...t,items:[]})), ...(mapTools.length?[{id:'map-tools',text:'Tools',items:[]}]:[])]
   const result: any[] = []
   for (const item of toc.value) {
     if (item.level===1 || !result.length) result.push({...item,items:[]})
@@ -85,7 +91,7 @@ const groups = computed(() => {
 })
 function slugify(text:string) { return text.toLowerCase().replace(/[^a-z0-9\s-]/g,'').trim().replace(/\s+/g,'-') }
 function buildTocAndIds(root:HTMLElement) {
-  toc.value = Array.from(root.querySelectorAll('h1,h2,h3')).filter(h => !h.closest('.puzzle')).map(h => {
+  toc.value = Array.from(root.querySelectorAll('h1,h2,h3')).filter(h => !h.closest('.puzzle') && (h.closest<HTMLElement>('[data-guide-branches]')?.style.display !== 'none')).map(h => {
     const original = h.textContent?.trim() || ''
     if (!h.id) h.id = h.tagName.toLowerCase()+'-'+slugify(original)
     const copy = h.cloneNode(true) as HTMLElement
@@ -106,7 +112,7 @@ function remember(id:string) { active.value=id; visit(mapId,props.title,id,view.
 function captureReading(source?: HTMLElement) {
   if (view.value === 'map') return
   const element = source?.closest<HTMLElement>('[data-guide-step], [id^="guide-step-"], li[id], p[id], .quest-phase[id]')
-  const section = element?.id || active.value || (view.value === 'quick' ? 'quick-'+phases[0]?.id : shortcuts.value[0]?.id || '')
+  const section = element?.id || active.value || (view.value === 'quick' ? 'quick-'+phases.value[0]?.id : shortcuts.value[0]?.id || '')
   current.value.reader = { view: view.value, section }
   mapReturn.value = { view: view.value, section, scrollY: window.scrollY, focus: source }
   save()
@@ -119,17 +125,21 @@ function showOnMap(target = '', source?: HTMLElement) {
 provide(GUIDE_MAP_NAVIGATION, { open: showOnMap })
 function selectMapTarget(target: string) { scrollTo(mapAnchor(target)) }
 function startNewRun() {
+  const accountSteps = new Set(allPhases.filter(phase => phase.stateScope === 'account').flatMap(phase => phase.steps.map((step:any) => step.id)))
+  const accountDone = current.value.done.filter((id:string) => accountSteps.has(id))
   reset(mapId)
+  current.value.done = accountDone
+  save()
   confirmReset.value = false
   mapReturn.value = null
   selectedMapTarget.value = ''
-  scrollTo('quick-'+phases[0]?.id)
+  scrollTo('quick-'+phases.value[0]?.id)
 }
 async function returnToStep() {
   const savedReader = readReaderContext(current.value)
   if (mapReturn.value && (mapReturn.value.view !== savedReader.view || mapReturn.value.section !== savedReader.section)) mapReturn.value = null
   const reader = mapReturn.value || savedReader
-  const section = reader.section || (reader.view === 'full' ? shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id : 'quick-'+phases[0]?.id)
+  const section = reader.section || (reader.view === 'full' ? shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id : 'quick-'+phases.value[0]?.id)
   await scrollTo(section)
   await nextTick()
   // Finish after the router's hash scrolling so returning to a small inline
@@ -151,21 +161,26 @@ function switchView(next:string) {
   const headings = element ? Array.from(articleRef.value?.querySelectorAll<HTMLElement>('h1,h2,h3') || [])
     .filter(heading => !heading.closest('.puzzle, .cheat-grid, .quest-grid') && (heading === element || !!(heading.compareDocumentPosition(element) & Node.DOCUMENT_POSITION_FOLLOWING)))
     .map(heading => ({ id: heading.id, level: Number(heading.tagName[1]) })) : []
-  const phase=phaseForAnchor(phases, previous, headings)
-  const target=phase?(next==='quick'?'quick-'+phase.id:phase.detail):(next==='quick'?'quick-'+phases[0]?.id:shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id)
+  const phase=phaseForAnchor(phases.value, previous, headings)
+  const target=phase?(next==='quick'?'quick-'+phase.id:phase.detail):(next==='quick'?'quick-'+phases.value[0]?.id:shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id)
   if(target) scrollTo(target)
 }
 async function scrollTo(id?:string, updateUrl=true) {
   if(!id) return
-  if (!hasMap && mapTargetFromAnchor(id) !== null) id = 'quick-'+phases[0]?.id
+  const branch = branchForGuideAnchor(allPhases, id, selectedBranch.value)
+  const sectionBranches = document.getElementById(id)?.closest<HTMLElement>('[data-guide-branches]')?.dataset.guideBranches?.split(',')
+  if (branch !== selectedBranch.value) selectedBranch.value = branch
+  else if (sectionBranches?.length && !sectionBranches.includes(selectedBranch.value)) selectedBranch.value = sectionBranches[0]!
+  await nextTick()
+  if (!hasMap && mapTargetFromAnchor(id) !== null) id = 'quick-'+phases.value[0]?.id
   const version = ++navigationVersion
-  const legacy = phases.find(p=>p.legacy===id && p.legacy!==p.detail)
+  const legacy = phases.value.find(p=>p.legacy===id && p.legacy!==p.detail)
   if(legacy) id='quick-'+legacy.id
-  if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases[0]?.id
+  if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases.value[0]?.id
   const hash = '#'+encodeURIComponent(id)
   if(updateUrl && decodeGuideHash(route.hash) !== id) {
     ignoreHash = hash
-    try { await router.push({ path: route.path, query: route.query, hash }) } finally { ignoreHash = null }
+    try { await router.push({ path: route.path, query: props.branches?.length ? { ...route.query, branch: selectedBranch.value } : route.query, hash }) } finally { ignoreHash = null }
     if (version !== navigationVersion) return
   }
   mobileOpen.value=false
@@ -244,6 +259,7 @@ function trackPosition() {
 }
 onMounted(async()=>{
   init(); view.value=current.value.view; loadPins()
+  if (props.branches?.length && !route.query.branch) try { const saved = localStorage.getItem(`guide-branch-${mapId}`); if (props.branches.some(branch => branch.id === saved)) selectedBranch.value = saved! } catch {}
   await nextTick()
   if(articleRef.value) buildTocAndIds(articleRef.value)
   articleRef.value?.querySelectorAll<HTMLInputElement>('.g-cb').forEach(input=>{
@@ -253,7 +269,7 @@ onMounted(async()=>{
   mounted=true
   const anchor=route.hash?decodeGuideHash(route.hash):current.value.section || (view.value==='map'?'map':'')
   if(anchor) await scrollTo(anchor,false)
-  else remember(view.value==='quick'?'quick-'+phases[0]?.id:'')
+  else remember(view.value==='quick'?'quick-'+phases.value[0]?.id:'')
   if (!mounted) return
   window.addEventListener('scroll',trackPosition,{passive:true})
 })
@@ -261,8 +277,20 @@ watch(()=>route.hash,hash=>{
   if(!mounted || (ignoreHash !== null && decodeGuideHash(hash)===decodeGuideHash(ignoreHash))) return
   const anchor=decodeGuideHash(hash)
   if(anchor) scrollTo(anchor,false)
-  else scrollTo('quick-'+phases[0]?.id,false)
+  else scrollTo('quick-'+phases.value[0]?.id,false)
 })
+watch(selectedBranch, async branch => {
+  await nextTick()
+  if (articleRef.value) buildTocAndIds(articleRef.value)
+  if (!mounted) return
+  try { localStorage.setItem(`guide-branch-${mapId}`, branch) } catch {}
+})
+async function chooseBranch(branch:string) {
+  if (!props.branches?.some(item => item.id === branch)) return
+  selectedBranch.value = branch
+  await router.replace({ path: route.path, query: { ...route.query, branch }, hash: '' })
+}
+watch(() => route.query.branch, branch => { if (props.branches?.some(item => item.id === branch)) selectedBranch.value = String(branch) })
 onBeforeUnmount(()=>{ mounted=false; navigationVersion++; window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer); cancelAnimationFrame(returnFrame) })
 defineExpose({scrollTo})
 </script>
@@ -1167,6 +1195,7 @@ defineExpose({scrollTo})
 
 <style scoped>
 .guide-toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:.6rem; position:sticky; top:0; z-index:15; background:var(--surface); padding:.75rem 0; border-bottom:1px solid var(--line); }
+.guide-branch{margin:1rem 0}.guide-branch label{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}.guide-branch select{min-height:44px;padding:.65rem;border:1px solid var(--line);border-radius:6px;background:var(--surface-2);color:var(--text)}.guide-branch p{font-size:.9rem;line-height:1.6;margin:.6rem 0}.guide-branch select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .reading-switch { display:flex; gap:.3rem; }
 .guide-grid.showing-map { grid-template-columns:minmax(0,1fr); }
 .guide-map-view { margin-top:.85rem; scroll-margin-top:5.5rem; outline:none; }

@@ -672,68 +672,63 @@
     },
     {
       "id": "iw-zombies-in-spaceland",
-      "gameId": "iw",
       "name": "Zombies in Spaceland",
       "route": "/guides/iw-zombies-in-spaceland",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0808.webp",
+      "gameId": "iw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Launch map",
-      "description": "The opening chapter of Infinite Warfare Zombies, set in a 1980s theme park."
+      "edition": "Launch map"
     },
     {
       "id": "iw-rave-in-the-redwoods",
-      "gameId": "iw",
       "name": "Rave in the Redwoods",
       "route": "/guides/iw-rave-in-the-redwoods",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1008.webp",
+      "gameId": "iw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Sabotage",
-      "description": "The second film in Willard Wyler’s Zombies story."
+      "edition": "Sabotage"
     },
     {
       "id": "iw-shaolin-shuffle",
-      "gameId": "iw",
       "name": "Shaolin Shuffle",
       "route": "/guides/iw-shaolin-shuffle",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1243.webp",
+      "gameId": "iw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Continuum",
-      "description": "Infinite Warfare’s kung-fu Zombies chapter."
+      "edition": "Continuum"
     },
     {
       "id": "iw-attack-of-the-radioactive-thing",
-      "gameId": "iw",
       "name": "Attack of the Radioactive Thing",
       "route": "/guides/iw-attack-of-the-radioactive-thing",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1464.webp",
+      "gameId": "iw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Absolution",
-      "description": "The monster-movie chapter of Infinite Warfare Zombies."
+      "edition": "Absolution"
     },
     {
       "id": "iw-the-beast-from-beyond",
-      "gameId": "iw",
       "name": "The Beast from Beyond",
       "route": "/guides/iw-the-beast-from-beyond",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1561.webp",
+      "gameId": "iw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
       "edition": "Retribution",
-      "description": "The final Infinite Warfare Zombies map. Future coverage will include the map quest and the Director’s Cut finale.",
       "aliases": [
         "Mephistopheles",
         "Directors Cut",
@@ -742,29 +737,27 @@
     },
     {
       "id": "ww2-the-final-reich",
-      "gameId": "ww2",
       "name": "The Final Reich",
       "route": "/guides/ww2-the-final-reich",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0169.webp",
+      "gameId": "ww2",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Launch map",
-      "description": "WWII’s opening story map. The guided and hardcore quest routes will share this entry."
+      "edition": "Launch map"
     },
     {
       "id": "ww2-groesten-haus",
-      "gameId": "ww2",
-      "name": "Gröesten Haus",
+      "name": "Groesten Haus",
       "route": "/guides/ww2-groesten-haus",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0297.webp",
+      "gameId": "ww2",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Survival",
       "edition": "Bonus map",
-      "description": "The compact survival map from WWII’s Zombies prologue.",
       "aliases": [
         "Groesten Haus",
         "Grosten Haus",
@@ -773,119 +766,99 @@
     },
     {
       "id": "ww2-the-darkest-shore",
-      "gameId": "ww2",
       "name": "The Darkest Shore",
       "route": "/guides/ww2-the-darkest-shore",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0398.webp",
+      "gameId": "ww2",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "The Resistance",
-      "description": "The first DLC chapter of WWII Zombies."
+      "edition": "The Resistance"
     },
     {
       "id": "ww2-the-shadowed-throne",
-      "gameId": "ww2",
       "name": "The Shadowed Throne",
       "route": "/guides/ww2-the-shadowed-throne",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
-      "group": "",
-      "mode": "Round-based Zombies",
-      "edition": "The War Machine",
-      "description": "The Berlin chapter of WWII Zombies."
-    },
-    {
-      "id": "ww2-the-frozen-dawn",
+      "image": "/images/remaining/asset-0445.webp",
       "gameId": "ww2",
-      "name": "The Frozen Dawn",
-      "route": "/guides/ww2-the-frozen-dawn",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
       "mode": "Round-based Zombies",
-      "edition": "Shadow War",
-      "description": "The final story map in WWII Zombies."
+      "edition": "The War Machine"
     },
     {
       "id": "ww2-into-the-storm",
-      "gameId": "ww2",
       "name": "Into the Storm",
       "route": "/guides/ww2-into-the-storm",
-      "status": "planned",
+      "image": "/images/remaining/asset-0573.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "tortured-path",
+      "questLabel": "Main quest",
       "mode": "Objective-based chapter",
-      "edition": "The Tortured Path · Chapter 1",
-      "description": "The first chapter of The Tortured Path. Bodega Cervantes is the separate survival version of this setting.",
+      "edition": "Tortured Path story chapter",
       "aliases": [
         "Bodega Cervantes"
       ]
     },
     {
       "id": "ww2-across-the-depths",
-      "gameId": "ww2",
       "name": "Across the Depths",
       "route": "/guides/ww2-across-the-depths",
-      "status": "planned",
+      "image": "/images/remaining/asset-0597.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "tortured-path",
+      "questLabel": "Main quest",
       "mode": "Objective-based chapter",
-      "edition": "The Tortured Path · Chapter 2",
-      "description": "The second chapter of The Tortured Path. U.S.S. Mount Olympus is the separate survival version of this setting.",
+      "edition": "Tortured Path story chapter",
       "aliases": [
         "USS Mount Olympus"
       ]
     },
     {
       "id": "ww2-beneath-the-ice",
-      "gameId": "ww2",
       "name": "Beneath the Ice",
       "route": "/guides/ww2-beneath-the-ice",
-      "status": "planned",
+      "image": "/images/remaining/asset-0614.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "tortured-path",
+      "questLabel": "Main quest",
       "mode": "Objective-based chapter",
-      "edition": "The Tortured Path · Chapter 3",
-      "description": "The third chapter of The Tortured Path. Altar of Blood is the separate survival version of this setting.",
+      "edition": "Tortured Path story chapter",
       "aliases": [
         "Altar of Blood"
       ]
     },
     {
       "id": "ww2-bodega-cervantes",
-      "gameId": "ww2",
       "name": "Bodega Cervantes",
       "route": "/guides/ww2-bodega-cervantes",
-      "status": "planned",
+      "image": "/images/remaining/asset-0633.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "survival",
+      "questLabel": "Main quest",
       "mode": "Survival",
-      "edition": "The Tortured Path",
-      "description": "Round-based survival in the setting of Into the Storm; the chapter’s timed objectives use a separate entry.",
+      "edition": "Tortured Path survival",
       "aliases": [
         "Into the Storm"
       ]
     },
     {
       "id": "ww2-uss-mount-olympus",
-      "gameId": "ww2",
       "name": "U.S.S. Mount Olympus",
       "route": "/guides/ww2-uss-mount-olympus",
-      "status": "planned",
+      "image": "/images/remaining/asset-0648.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "survival",
+      "questLabel": "Main quest",
       "mode": "Survival",
-      "edition": "The Tortured Path",
-      "description": "Round-based survival in the setting of Across the Depths.",
+      "edition": "Tortured Path survival",
       "aliases": [
         "USS Mount Olympus",
         "Across the Depths"
@@ -893,221 +866,226 @@
     },
     {
       "id": "ww2-altar-of-blood",
-      "gameId": "ww2",
       "name": "Altar of Blood",
       "route": "/guides/ww2-altar-of-blood",
-      "status": "planned",
+      "image": "/images/remaining/asset-0663.webp",
+      "gameId": "ww2",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "survival",
+      "questLabel": "Main quest",
       "mode": "Survival",
-      "edition": "The Tortured Path",
-      "description": "Round-based survival in the setting of Beneath the Ice.",
+      "edition": "Tortured Path survival",
       "aliases": [
         "Beneath the Ice"
       ]
     },
     {
+      "id": "ww2-the-frozen-dawn",
+      "name": "The Frozen Dawn",
+      "route": "/guides/ww2-the-frozen-dawn",
+      "image": "/images/remaining/asset-0747.webp",
+      "gameId": "ww2",
+      "group": "",
+      "interactiveMap": false,
+      "questLabel": "Main quest",
+      "mode": "Round-based Zombies",
+      "edition": "Shadow War"
+    },
+    {
       "id": "aw-outbreak",
-      "gameId": "aw",
       "name": "Outbreak",
       "route": "/guides/aw-outbreak",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1693.webp",
+      "gameId": "aw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Game Over, Man!",
       "mode": "Exo Zombies",
-      "edition": "Havoc",
-      "description": "Advanced Warfare’s first Exo Zombies map. This is a different experience from Cold War’s Outbreak."
+      "edition": "Havoc"
     },
     {
       "id": "aw-infection",
-      "gameId": "aw",
       "name": "Infection",
       "route": "/guides/aw-infection",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1762.webp",
+      "gameId": "aw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "MEAT IS MURDER",
       "mode": "Exo Zombies",
       "edition": "Ascendance",
-      "description": "The Burger Town chapter of Exo Zombies.",
       "aliases": [
         "Burger Town"
       ]
     },
     {
       "id": "aw-carrier",
-      "gameId": "aw",
       "name": "Carrier",
       "route": "/guides/aw-carrier",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1790.webp",
+      "gameId": "aw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Flotsam & Jetsam",
       "mode": "Exo Zombies",
-      "edition": "Supremacy",
-      "description": "The third chapter of Exo Zombies, aboard an Atlas carrier."
+      "edition": "Supremacy"
     },
     {
       "id": "aw-descent",
-      "gameId": "aw",
       "name": "Descent",
       "route": "/guides/aw-descent",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-1841.webp",
+      "gameId": "aw",
       "group": "",
+      "interactiveMap": false,
+      "questLabel": "Reunion",
       "mode": "Exo Zombies",
-      "edition": "Reckoning",
-      "description": "The final Exo Zombies chapter, set at the underwater Trident Retreat."
+      "edition": "Reckoning"
     },
     {
       "id": "vanguard-der-anfang",
-      "gameId": "vanguard",
       "name": "Der Anfang",
       "route": "/guides/vanguard-der-anfang",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/extra-czg-der-anfang-01.jpg",
+      "gameId": "vanguard",
       "group": "",
-      "mode": "Objective-based Zombies",
-      "edition": "Launch map",
-      "description": "Vanguard’s opening Zombies experience, with a Stalingrad hub and portal objectives."
+      "interactiveMap": false,
+      "questLabel": "Office story progression",
+      "mode": "Objective-based",
+      "edition": "Launch map"
     },
     {
       "id": "vanguard-terra-maledicta",
-      "gameId": "vanguard",
       "name": "Terra Maledicta",
       "route": "/guides/vanguard-terra-maledicta",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0002.webp",
+      "gameId": "vanguard",
       "group": "",
-      "mode": "Objective-based Zombies",
-      "edition": "Season 2",
-      "description": "Vanguard’s second objective-based Zombies experience."
+      "interactiveMap": false,
+      "questLabel": "Decimator and Tome Page",
+      "mode": "Objective-based",
+      "edition": "Season 2"
     },
     {
       "id": "vanguard-shi-no-numa",
-      "gameId": "vanguard",
       "name": "Shi No Numa",
       "route": "/guides/vanguard-shi-no-numa",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/asset-0056.webp",
+      "gameId": "vanguard",
       "group": "",
-      "mode": "Round-based Zombies",
+      "interactiveMap": false,
+      "questLabel": "Mirror and Echo",
+      "mode": "Round-based",
       "edition": "Season 4",
-      "description": "The Vanguard reimagining, with its own quest and mechanics. World at War, Black Ops and Chronicles have separate guides."
+      "aliases": [
+        "Shi No Numa Reborn",
+        "SNN"
+      ]
     },
     {
       "id": "vanguard-the-archon",
-      "gameId": "vanguard",
       "name": "The Archon",
       "route": "/guides/vanguard-the-archon",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/extra-czg-archon-01.jpg",
+      "gameId": "vanguard",
       "group": "",
-      "mode": "Round-based Zombies",
-      "edition": "Season 5",
-      "description": "The final Vanguard Zombies map and confrontation with Kortifex."
+      "interactiveMap": false,
+      "questLabel": "Trials and Kortifex",
+      "mode": "Round-based",
+      "edition": "Season 5"
     },
     {
       "id": "mw3-urzikstan",
-      "gameId": "mw3",
       "name": "Urzikstan",
       "route": "/guides/mw3-urzikstan",
-      "status": "planned",
-      "interactiveMap": false,
-      "image": "",
+      "image": "/images/remaining/extra-mw-tactics-official-01.jpg",
+      "gameId": "mw3",
       "group": "",
-      "mode": "Open-world Zombies",
-      "edition": "Operation Deadbolt",
-      "description": "The main Modern Warfare Zombies deployment zone. Future coverage will cover setup, contracts and story missions."
+      "interactiveMap": false,
+      "questLabel": "Deployment activities",
+      "mode": "Open-world deployment",
+      "edition": "Modern Warfare III (2023)",
+      "aliases": [
+        "MWZ",
+        "Operation Deadbolt"
+      ]
     },
     {
       "id": "mw3-dark-aether-season-1",
-      "gameId": "mw3",
-      "name": "Dark Aether · Season 1",
+      "name": "Dark Aether — Season 1",
       "route": "/guides/mw3-dark-aether-season-1",
-      "status": "planned",
+      "image": "/images/remaining/wzhub-season-1-m2611-1.jpg",
+      "gameId": "mw3",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "rifts",
-      "mode": "Dark Aether Rift",
-      "edition": "Season 1",
-      "description": "The first Dark Aether destination, including the Bad Signal story mission and its repeatable rift.",
+      "questLabel": "Bad Signal / Al Bagra routes",
+      "mode": "Dark Aether",
+      "edition": "Modern Warfare III (2023)",
       "aliases": [
-        "Bad Signal",
-        "Al Bagra Fortress"
+        "Al Bagra Fortress",
+        "Bad Signal"
       ]
     },
     {
       "id": "mw3-dark-aether-season-2",
-      "gameId": "mw3",
-      "name": "Dark Aether · Season 2",
+      "name": "Dark Aether — Season 2",
       "route": "/guides/mw3-dark-aether-season-2",
-      "status": "planned",
+      "image": "/images/remaining/wzhub-season-2-m2939-1.jpg",
+      "gameId": "mw3",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "rifts",
-      "mode": "Dark Aether Rift",
-      "edition": "Season 2 Reloaded",
-      "description": "The second Dark Aether destination, associated with the Countermeasures story mission.",
+      "questLabel": "Countermeasures / Sa’id routes",
+      "mode": "Dark Aether",
+      "edition": "Modern Warfare III (2023)",
       "aliases": [
-        "Countermeasures",
+        "Sa’id City",
         "Said City",
-        "Sa’id City"
+        "Countermeasures"
       ]
     },
     {
       "id": "mw3-dark-aether-season-3",
-      "gameId": "mw3",
-      "name": "Dark Aether · Season 3",
+      "name": "Dark Aether — Season 3",
       "route": "/guides/mw3-dark-aether-season-3",
-      "status": "planned",
+      "image": "/images/remaining/wzhub-season-3-m3092-1.jpg",
+      "gameId": "mw3",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "rifts",
-      "mode": "Dark Aether Rift",
-      "edition": "Season 3 Reloaded",
-      "description": "The third Dark Aether destination, associated with the Union story mission.",
+      "questLabel": "Union / Zarqwa routes",
+      "mode": "Dark Aether",
+      "edition": "Modern Warfare III (2023)",
       "aliases": [
-        "Union",
-        "Zarqwa Hydroelectric"
+        "Zarqwa Hydroelectric",
+        "Union"
       ]
     },
     {
       "id": "mw3-unstable-rift",
-      "gameId": "mw3",
       "name": "Unstable Rift",
       "route": "/guides/mw3-unstable-rift",
-      "status": "planned",
+      "image": "/images/remaining/wzhub-m3267-1.jpg",
+      "gameId": "mw3",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "rifts",
-      "mode": "Wave-based challenge",
-      "edition": "Season 4 Reloaded",
-      "description": "The separate wave-based rift challenge introduced in Season 4 Reloaded."
+      "questLabel": "Unstable Rift challenge",
+      "mode": "Five-phase arena",
+      "edition": "Modern Warfare III (2023)"
     },
     {
       "id": "mw3-dark-aether-season-5",
-      "gameId": "mw3",
-      "name": "Dark Aether · Season 5",
+      "name": "Dark Aether — Season 5",
       "route": "/guides/mw3-dark-aether-season-5",
-      "status": "planned",
+      "image": "/images/remaining/mw-s5-story-01.jpg",
+      "gameId": "mw3",
+      "group": "",
       "interactiveMap": false,
-      "image": "",
-      "group": "rifts",
-      "mode": "Dark Aether Rift",
-      "edition": "Season 5 Reloaded",
-      "description": "The final Dark Aether destination, associated with the Ascension story mission.",
+      "questLabel": "Ascension / Highrise routes",
+      "mode": "Dark Aether",
+      "edition": "Modern Warfare III (2023)",
       "aliases": [
-        "Ascension",
-        "Entity",
-        "Highrise"
+        "Highrise",
+        "Al Mazrah City",
+        "Ascension"
       ]
     }
   ],
@@ -1649,6 +1627,223 @@
       "map": "bo1-moon",
       "name": "Samantha Says sequence recorder",
       "route": "/tools/bo1-moon-simon",
+      "kind": "recorder"
+    },
+    {
+      "id": "iw-spaceland-speakers",
+      "map": "iw-zombies-in-spaceland",
+      "name": "Spaceland speaker sequence",
+      "route": "/tools/iw-spaceland-speakers",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-spaceland-souvenirs",
+      "map": "iw-zombies-in-spaceland",
+      "name": "Souvenir recipe lookup",
+      "route": "/tools/iw-spaceland-souvenirs",
+      "kind": "reference"
+    },
+    {
+      "id": "iw-shaolin-morse",
+      "map": "iw-shaolin-shuffle",
+      "name": "Nightmare Summer phone Morse",
+      "route": "/tools/iw-shaolin-morse",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-shaolin-word",
+      "map": "iw-shaolin-shuffle",
+      "name": "Rooftop word candidates",
+      "route": "/tools/iw-shaolin-word",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-attack-chemistry",
+      "map": "iw-attack-of-the-radioactive-thing",
+      "name": "Radioactive Thing chemistry",
+      "route": "/tools/iw-attack-chemistry",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-attack-codes",
+      "map": "iw-attack-of-the-radioactive-thing",
+      "name": "Life ray, pressure and bomb memory",
+      "route": "/tools/iw-attack-codes",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-attack-skull-hop",
+      "map": "iw-attack-of-the-radioactive-thing",
+      "name": "Skull Hop spelling solver",
+      "route": "/tools/iw-attack-skull-hop",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-beast-disks",
+      "map": "iw-the-beast-from-beyond",
+      "name": "N31L disk order",
+      "route": "/tools/iw-beast-disks",
+      "kind": "solver"
+    },
+    {
+      "id": "iw-beast-handles",
+      "map": "iw-the-beast-from-beyond",
+      "name": "N31L handle snapshots",
+      "route": "/tools/iw-beast-handles",
+      "kind": "recorder"
+    },
+    {
+      "id": "iw-beast-queens",
+      "map": "iw-the-beast-from-beyond",
+      "name": "Skullbreaker eight queens",
+      "route": "/tools/iw-beast-queens",
+      "kind": "solver"
+    },
+    {
+      "id": "ww2-final-reich-grid",
+      "map": "ww2-the-final-reich",
+      "name": "Power-grid route",
+      "route": "/tools/ww2-final-reich-grid",
+      "kind": "lookup"
+    },
+    {
+      "id": "ww2-final-reich-voice",
+      "map": "ww2-the-final-reich",
+      "name": "Bird numerals & second voices",
+      "route": "/tools/ww2-final-reich-voice",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-darkest-artillery",
+      "map": "ww2-the-darkest-shore",
+      "name": "Cannon coordinates & destroyer chart",
+      "route": "/tools/ww2-darkest-artillery",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-shadowed-radio",
+      "map": "ww2-the-shadowed-throne",
+      "name": "Church radio-frequency lookup",
+      "route": "/tools/ww2-shadowed-radio",
+      "kind": "lookup"
+    },
+    {
+      "id": "ww2-shadowed-statues",
+      "map": "ww2-the-shadowed-throne",
+      "name": "Raven statue wall solver",
+      "route": "/tools/ww2-shadowed-statues",
+      "kind": "solver"
+    },
+    {
+      "id": "ww2-shadowed-safe",
+      "map": "ww2-the-shadowed-throne",
+      "name": "Clown counts → safe directions",
+      "route": "/tools/ww2-shadowed-safe",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-shadowed-axe",
+      "map": "ww2-the-shadowed-throne",
+      "name": "Axe Morse decoder & map",
+      "route": "/tools/ww2-shadowed-axe",
+      "kind": "solver"
+    },
+    {
+      "id": "ww2-frozen-hammer",
+      "map": "ww2-the-frozen-dawn",
+      "name": "Base Hammer pillar solver",
+      "route": "/tools/ww2-frozen-hammer",
+      "kind": "solver"
+    },
+    {
+      "id": "ww2-frozen-shield",
+      "map": "ww2-the-frozen-dawn",
+      "name": "Shield pool pattern memory",
+      "route": "/tools/ww2-frozen-shield",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-frozen-orrery",
+      "map": "ww2-the-frozen-dawn",
+      "name": "Orrery target memory",
+      "route": "/tools/ww2-frozen-orrery",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-tortured-runes",
+      "map": "ww2-beneath-the-ice",
+      "name": "Three-stage rune code memory",
+      "route": "/tools/ww2-tortured-runes",
+      "kind": "recorder"
+    },
+    {
+      "id": "ww2-shadowed-hangman",
+      "map": "ww2-the-shadowed-throne",
+      "name": "Cabaret Hangman candidates",
+      "route": "/tools/ww2-shadowed-hangman",
+      "kind": "solver"
+    },
+    {
+      "id": "aw-descent-simon",
+      "map": "aw-descent",
+      "name": "Reception Simon Says",
+      "route": "/tools/aw-descent-simon",
+      "kind": "recorder"
+    },
+    {
+      "id": "aw-descent-numbers",
+      "map": "aw-descent",
+      "name": "Number panel action planner",
+      "route": "/tools/aw-descent-numbers",
+      "kind": "solver"
+    },
+    {
+      "id": "vanguard-terra-pages",
+      "map": "vanguard-terra-maledicta",
+      "name": "Lost Tome page order",
+      "route": "/tools/vanguard-terra-pages",
+      "kind": "solver"
+    },
+    {
+      "id": "vanguard-shi-no-numa-cipher",
+      "map": "vanguard-shi-no-numa",
+      "name": "Monolith paper translator",
+      "route": "/tools/vanguard-shi-no-numa-cipher",
+      "kind": "reference"
+    },
+    {
+      "id": "vanguard-archon-runes",
+      "map": "vanguard-the-archon",
+      "name": "Mindfulness rune sequence",
+      "route": "/tools/vanguard-archon-runes",
+      "kind": "recorder"
+    },
+    {
+      "id": "mw3-rune-portals",
+      "map": "mw3-urzikstan",
+      "name": "Rune portal destination codes",
+      "route": "/tools/mw3-rune-portals",
+      "kind": "lookup"
+    },
+    {
+      "id": "mw3-red-worm-usbs",
+      "map": "mw3-urzikstan",
+      "name": "Red Worm USB records",
+      "route": "/tools/mw3-red-worm-usbs",
+      "kind": "recorder"
+    },
+    {
+      "id": "mw3-dark-aether-reference",
+      "map": "mw3-urzikstan",
+      "name": "Dark Aether entry and rewards",
+      "route": "/tools/mw3-dark-aether-reference",
+      "kind": "reference"
+    },
+    {
+      "id": "mw3-union-runes",
+      "map": "mw3-dark-aether-season-3",
+      "name": "Union crystal rune records",
+      "route": "/tools/mw3-union-runes",
       "kind": "recorder"
     }
   ],

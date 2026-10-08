@@ -105,4 +105,9 @@ const baseGuides = [
     phase('secrets', 'Meteorites and Samantha knocks', ['Interact with the three meteorite fragments to activate the music secret.', 'For the Chronicles Samantha sequence, listen to the three groups of knocks and record each count. Repeat the observed pattern at the interaction point.', 'Continue the resulting doll sequence and collect its reward. Clear the knock recorder for a new attempt rather than appending an old pattern.'], ['bo3-kino-knocks'])
   ], [reddit('kino-der-toten')], { group: 'chronicles', questLabel: 'Setup and secrets' }),
 ]
-export const expansionGuides = [...baseGuides.filter(g => g.gameId !== 'bo3'), ...bo3Guides, ...chroniclesGuides, ...bo2Guides, ...classicGuides]
+export const expansionGuides = [...baseGuides.filter(g => g.gameId !== 'bo3'), ...bo3Guides, ...chroniclesGuides, ...bo2Guides, ...classicGuides, ...iwGuides, ...ww2Guides, ...awGuides, ...vanguardGuides, ...mw3Guides]
+import { iwGuides } from './iw-guides.mjs'
+import { ww2Guides } from './ww2-guides.mjs'
+import { awGuides } from './aw-guides.mjs'
+import { vanguardGuides } from './vanguard-guides.mjs'
+import { mw3Guides } from './mw3-guides.mjs'
