@@ -38,6 +38,9 @@ jobs:
       - name: Install deps
         run: npm ci
       - name: Check native Electron behavior
+        env:
+          DEBUG: pw:browser
+          ELECTRON_ENABLE_LOGGING: "1"
         run: npm run test:native
       - name: Build installer + portable zip
         run: npm run dist:win
