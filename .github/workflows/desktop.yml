@@ -3,10 +3,13 @@ name: CodWiki Desktop (Windows)
 on:
   workflow_dispatch:
   push:
+    branches: [master]
     paths:
       - "desktop-app/**"
       - "shared/**"
       - "scripts/generate-catalogue.mjs"
+      - "scripts/verify-desktop.mjs"
+      - "tests/desktop-catalogue.test.mjs"
       - ".github/workflows/desktop.yml"
 
 permissions:
@@ -34,6 +37,8 @@ jobs:
         run: npm test
       - name: Install deps
         run: npm ci
+      - name: Check native Electron behavior
+        run: npm run test:native
       - name: Build installer + portable zip
         run: npm run dist:win
       - name: Publish release

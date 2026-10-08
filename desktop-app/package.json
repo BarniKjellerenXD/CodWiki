@@ -1,20 +1,22 @@
 {
   "name": "codwiki-desktop",
   "productName": "CodWiki",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "COD Zombies Wiki - desktop app for codzmwiki.com",
   "main": "main.js",
   "author": "BarniKjellerenXD",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
+    "test:native": "node ../scripts/verify-desktop.mjs",
     "dist:win": "electron-builder --win nsis zip --x64",
     "prestart": "node ../scripts/generate-catalogue.mjs",
     "predist:win": "node ../scripts/generate-catalogue.mjs"
   },
   "devDependencies": {
     "electron": "44.0.0",
-    "electron-builder": "26.15.3"
+    "electron-builder": "26.15.3",
+    "playwright": "1.62.1"
   },
   "build": {
     "appId": "eu.wolden.codguides",
@@ -29,6 +31,8 @@
       "build/icon.ico",
       "build/icon.png",
       "runtime.js",
+      "catalogue.js",
+      "updates.js",
       "webview-preload.js"
     ],
     "win": {

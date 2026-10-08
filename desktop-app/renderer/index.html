@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; frame-src https://codzmwiki.com http://127.0.0.1:* http://localhost:* http://[::1]:* data: about:">
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="themes.css">
   <title>CodWiki</title>
 </head>
@@ -25,6 +26,7 @@
       <div id="sidebar-footer">
         <button id="open-browser" type="button">Open in browser ↗</button>
         <span id="app-version"></span>
+        <span id="library-state" role="status">Included library</span>
       </div>
     </aside>
     <main id="content">
@@ -40,7 +42,7 @@
         <div id="address" class="no-drag">codzmwiki.com</div>
       </div>
       <div id="progress"></div>
-      <webview id="webview" src="about:blank"></webview>
+      <webview id="webview" src="about:blank" allowpopups></webview>
 
       <div id="settings-panel" hidden>
         <div class="sp-head drag">
@@ -84,6 +86,18 @@
               <input type="checkbox" id="sp-restore">
             </div>
             <p class="sp-hint">Settings are saved instantly and survive app updates.</p>
+            <section class="sp-update-section" aria-labelledby="sp-library-heading">
+              <h3 id="sp-library-heading">Guide library</h3>
+              <p id="sp-library-status" role="status">Using the included guide list.</p>
+              <p class="sp-hint">The guide list refreshes when the app starts and when you return to it. Your current page and saved observations stay in place. A saved list is available if the update check fails.</p>
+              <button id="sp-library-refresh" type="button" class="sp-btn">Check for guide updates</button>
+            </section>
+            <section class="sp-update-section" aria-labelledby="sp-app-update-heading">
+              <h3 id="sp-app-update-heading">Desktop app updates</h3>
+              <p id="sp-app-update-status" role="status">Check whether a newer Windows app is available.</p>
+              <div class="sp-update-actions"><button id="sp-app-update-check" type="button" class="sp-btn">Check for app updates</button><button id="sp-app-update-download" type="button" class="sp-ghost">Open Windows downloads</button></div>
+              <p class="sp-hint">App updates use the official GitHub release page. Download the installer to update your app; guides and tools update from the website.</p>
+            </section>
           </section>
         </div>
       </div>

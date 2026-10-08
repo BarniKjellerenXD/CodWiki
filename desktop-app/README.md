@@ -18,6 +18,8 @@ near-black/gold theme matching the site.
 - Offline-friendly error page with retry when the site can't be reached
 - Reading themes follow the website; app settings manage shortcuts, sidebar and zoom
 - Saved custom labels, tool ordering, hidden items and shortcut bindings survive updates. Older flat ordering is grouped by map automatically.
+- The guide library refreshes from the website at startup and when the app regains focus (at most once every 15 minutes). Settings → General also offers a manual refresh. A validated saved list and the included list provide fallbacks when a check fails.
+- Settings → General can check the latest official Windows release and open its installer/portable downloads.
 
 ## Development
 ```
@@ -39,22 +41,27 @@ website is deployed. Progress on localhost is separate from production progress.
 The webview keeps its existing persistent browser session and has no access to
 the host's settings or filesystem APIs.
 
-Navigation and theme files are generated from the repository's shared catalogue
-and website theme tokens before `npm start` and `npm run dist:win`.
+Navigation, the public `/desktop-catalogue.json` endpoint and theme files are
+generated from the repository's shared catalogue and website theme tokens before
+`npm start` and `npm run dist:win`.
 
 ## Current game library
 
-The shared library contains 66 authored map/mode entries across BO7, BO6, Cold
-War, BO4, BO3, BO2, Black Ops and World at War, plus 30 entries marked **Guide
-planned**: Infinite Warfare (5), WWII (11 maps and modes), Advanced Warfare (4),
-Vanguard (4) and Modern Warfare III (2023; 6 destinations). Planned entries open
-working map pages with edition and mode context. Walkthroughs, tools and progress
-have not been added for those entries, and they have no default shortcuts.
+The included library contains 96 authored maps, modes and destinations across
+13 games, 108 tools and two child quests. Infinite Warfare, WWII, Advanced Warfare,
+Vanguard and Modern Warfare III now contribute 30 complete guides and 31 puzzle
+tools. New tools can be assigned shortcuts in App settings; existing bindings
+retain their meanings.
 
-Game metadata and aliases are authored in `../shared/games.mjs`; planned entries
-are authored in `../shared/planned-maps.mjs`. Run the repository's catalogue
-generator after changes. See [game library scope and verification](../docs/game-library-plan.md)
-for the map/mode distinctions, compatibility checks and validation limits.
+Game metadata and aliases are authored in `../shared/games.mjs`. Run the catalogue
+generator after changes. The desktop reads only validated navigation metadata
+from its own website; it does not download executable app code. A library refresh
+preserves the current page, observations, custom labels and shortcuts.
+
+See [desktop 1.6 implementation and verification](../docs/desktop-1.6-plan.md)
+and [the detailed guide research](../docs/remaining-games/README.md).
+Guides, images and solvers still load from the website and require a connection.
+The saved library is a navigation fallback, not an offline copy of the guides.
 
 ## 1.4.0 guide and tool update (historical)
 
@@ -74,6 +81,29 @@ npm run dist:win
 Output in `dist/`: NSIS installer (`CodWiki Setup <ver>.exe`) with Start Menu and
 desktop shortcuts, plus a portable Windows ZIP. CI regenerates the shared
 catalogue and runs compatibility tests before packaging and publishing.
+
+The existing GitHub workflow publishes `desktop-v<version>` whenever desktop
+sources change. Increase the package and lockfile versions for a new release.
+The same Git push updates the website through its existing Vercel integration.
+
+For native integration verification, run from this directory:
+
+```powershell
+npm run test:native
+```
+
+The check uses a hidden Electron window, a loopback fixture server and a new
+isolated profile. It exercises real IPC, shortcuts, refresh/recovery and saved
+browser state without using your installed app's data.
+
+To check a packaged executable against the live site, run from the repository root:
+
+```powershell
+node scripts/verify-desktop-live.mjs 'path/to/CodWiki.exe'
+```
+
+This also uses an isolated profile and verifies a live MWZ solver and the
+official GitHub update check.
 
 ## Build on other OS (portable zip, no exe icon/metadata editing)
 ```

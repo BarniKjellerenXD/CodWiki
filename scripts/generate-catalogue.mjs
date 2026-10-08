@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import { parse } from '@vue/compiler-dom'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import desktopCatalogue from '../desktop-app/catalogue.js'
 import './generate-map-links.mjs'
 import './generate-expansion.mjs'
 process.chdir(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'))
@@ -38,6 +39,7 @@ const nav = catalogue.maps.flatMap(m => [
   ...catalogue.tools.filter(t=>t.map===m.id).map(t=>({ id:t.id, map:m.id, game:m.gameId, gameName:catalogue.games.find(g=>g.id===m.gameId).name, kind:'tool', section:m.name, label:t.name, url:t.route, accel:t.shortcut || null, icon:'↗' }))
 ])
 const navGames = catalogue.games.map(game => ({ ...game, planned: catalogue.maps.filter(map => map.gameId === game.id).every(map => map.status === 'planned') }))
+fs.writeFileSync('public/desktop-catalogue.json', JSON.stringify(desktopCatalogue.createCatalogueManifest(nav, navGames), null, 2) + '\n')
 fs.writeFileSync('desktop-app/renderer/nav.js', `// Generated from shared/catalogue.json; run node scripts/generate-catalogue.mjs.\nconst NAV = ${JSON.stringify(nav,null,2)}\nconst NAV_GAMES = ${JSON.stringify(navGames,null,2)}\nconst SYSTEM_ACTIONS = ${JSON.stringify(actions,null,2)}\nif (typeof window !== 'undefined') { window.NAV = NAV; window.NAV_GAMES = NAV_GAMES; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\nif (typeof module !== 'undefined') { module.exports = NAV; module.exports.games = NAV_GAMES; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS }\n`)
 console.log(`Generated ${entries.length} search entries and ${nav.length} desktop shortcuts.`)
 const css = fs.readFileSync('app/assets/css/main.css', 'utf8')

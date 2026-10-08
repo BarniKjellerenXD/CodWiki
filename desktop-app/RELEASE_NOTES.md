@@ -1,5 +1,19 @@
 # CodWiki Desktop release notes
 
+## v1.6.0
+
+- All 13 games are available in the desktop library: 96 maps, modes and destinations, 108 tools and two child quests. The 30 guides previously marked planned now include walkthroughs and 31 new puzzle tools across Infinite Warfare, WWII, Advanced Warfare, Vanguard and Modern Warfare III.
+- The guide list updates automatically from codzmwiki.com when the app starts or regains focus. Settings → General provides a manual check and explains whether the app is using the live, saved or included list. Failed checks retain the last usable library.
+- Refreshing the library keeps your current page, puzzle observations, selected game, search and custom navigation settings. App identity and browser-profile storage stay compatible with v1.5.
+- Custom shortcuts for tools without a default binding now survive restarts. Reset all to defaults also clears those custom bindings correctly.
+- Settings → General checks the latest official GitHub Windows release and opens its download page. Use the Setup executable to update the installed app, or extract the portable ZIP.
+- Connection recovery retries the puzzle page that failed. Same-site links stay in the app and external references open in the system browser.
+- Website content stays isolated from native app settings and filesystem access. Library updates validate their version, destinations, associations and size before saving or applying them.
+
+Validated with 254 passing automated tests, nine native Electron integration groups, a packaged-app live solver/update check, normal/minimum-window interface review, a Nuxt production build and Windows installer/ZIP packaging.
+
+Guides and images load from the website; the saved navigation list does not make the full site available offline. See [the options, implementation plan and verification record](https://github.com/BarniKjellerenXD/CodWiki/blob/master/docs/desktop-1.6-plan.md).
+
 ## v1.5.0
 
 - The app now loads https://codzmwiki.com. Website progress and reading preferences are stored per origin and do not automatically transfer from the former domain; app shortcut and sidebar settings retain their existing storage.

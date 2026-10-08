@@ -9,12 +9,18 @@
   const chkRestore = document.getElementById('sp-restore')
   const btnReset = document.getElementById('sp-reset-shortcuts')
   const gameFilter = document.getElementById('sp-game')
+  function populateGameFilter() {
+  const selected = gameFilter.value || 'all'
+  gameFilter.replaceChildren(new Option('All games', 'all'))
   for (const game of window.NAV_GAMES) {
     const option = document.createElement('option')
     option.value = game.id
     option.textContent = game.name
     gameFilter.appendChild(option)
   }
+  gameFilter.value = Array.from(gameFilter.options).some(option => option.value === selected) ? selected : 'all'
+  }
+  populateGameFilter()
   gameFilter.addEventListener('change', () => { renderShortcuts(); renderNavList() })
 
   let settings = null
@@ -254,9 +260,8 @@
     persist()
   })
   btnReset.addEventListener('click', async () => {
-    const fresh = await window.cw.getSettings() // refetch
     const defaults = {}
-    for (const it of window.NAV) if (it.accel) defaults['nav:' + it.id] = it.accel
+    for (const it of window.NAV) defaults['nav:' + it.id] = it.accel || null
     for (const s of window.SYSTEM_ACTIONS) defaults[s.id] = s.accel
     settings.shortcuts = defaults
     persist()
@@ -267,7 +272,47 @@
     if (!panel.hidden) close()
     else open()
   })
-  window.cw.onSettingsChanged((s) => { settings = s })
+  window.cw.onSettingsChanged((s) => {
+    // A library refresh must not replace a label while it is being edited.
+    const editingLabels = labelsChanged ? settings.labels : null
+    settings = editingLabels ? { ...s, labels: editingLabels } : s
+    if (!panel.hidden && !capturing && !labelsChanged) { renderShortcuts(); renderNavList() }
+  })
+  const libraryStatus = document.getElementById('sp-library-status')
+  const refreshLibrary = document.getElementById('sp-library-refresh')
+  function showLibrary(snapshot) {
+    const catalogue = snapshot.catalogue
+    const counts = `${catalogue.games.length} games, ${catalogue.entries.filter(entry => entry.kind === 'guide').length} maps and destinations, ${catalogue.entries.filter(entry => entry.kind === 'tool').length} tools.`
+    const source = snapshot.source === 'live' ? (snapshot.state === 'current' || snapshot.state === 'save-failed' ? 'Latest guide list loaded.' : 'Using the last loaded guide list.') : snapshot.source === 'saved' ? 'Using the last saved guide list.' : 'Using the guide list included in this app.'
+    const condition = snapshot.state === 'offline' ? ' Could not check for new guides. Try again when the site is available.' : snapshot.state === 'unsupported' ? ' The latest list needs a newer app. Open Windows downloads below.' : snapshot.state === 'save-failed' ? ' This guide list could not be saved for the next start.' : ''
+    libraryStatus.textContent = source + ' ' + counts + condition
+  }
+  document.addEventListener('cw-library-applied', event => {
+    showLibrary(event.detail)
+    populateGameFilter()
+    if (settings && !panel.hidden && !capturing && !labelsChanged) { renderShortcuts(); renderNavList() }
+  })
+  refreshLibrary.addEventListener('click', async () => {
+    refreshLibrary.disabled = true
+    libraryStatus.textContent = 'Checking the latest guide list…'
+    try { showLibrary(await window.cw.refreshLibrary()) } catch { libraryStatus.textContent = 'Could not check for new guides. Keep using the current list and try again.' }
+    finally { refreshLibrary.disabled = false }
+  })
+  const updateStatus = document.getElementById('sp-app-update-status')
+  const checkUpdate = document.getElementById('sp-app-update-check')
+  let updateUrl = 'https://github.com/BarniKjellerenXD/CodWiki/releases/latest'
+  function showUpdate(update) {
+    updateUrl = update.url
+    updateStatus.textContent = update.state === 'available' ? `CodWiki ${update.latestVersion} is available. You have ${update.currentVersion}. Open Windows downloads to update.` : update.state === 'current' ? `CodWiki ${update.currentVersion} is up to date.` : update.state === 'unavailable' ? 'Could not check for app updates. Try again or open the official Windows downloads.' : 'Check whether a newer Windows app is available.'
+  }
+  window.cw.getUpdate().then(showUpdate).catch(() => {})
+  checkUpdate.addEventListener('click', async () => {
+    checkUpdate.disabled = true
+    updateStatus.textContent = 'Checking the latest Windows release…'
+    try { showUpdate(await window.cw.checkUpdate()) } catch { updateStatus.textContent = 'Could not check for app updates. Open the official Windows downloads.' }
+    finally { checkUpdate.disabled = false }
+  })
+  document.getElementById('sp-app-update-download').addEventListener('click', () => window.cw.openExternal(updateUrl))
 
   // load initial settings; keep a reference for app.js
   window.cw.getSettings().then((s) => {

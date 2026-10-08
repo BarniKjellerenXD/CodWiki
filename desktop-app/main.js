@@ -1,14 +1,19 @@
-const { app, BrowserWindow, Menu, shell, ipcMain, webContents } = require('electron')
+const { app, BrowserWindow, Menu, shell, ipcMain, webContents, net } = require('electron')
 const path = require('path')
 const fs = require('fs')
 
-const { siteForDevelopment, isInternal, mergeOrder, mergeShortcuts, matchAccel } = require('./runtime')
+const { siteForDevelopment, isInternal, isExternalUrl, migrateSettings, matchAccel } = require('./runtime')
+const { createCatalogueManifest, createCatalogueManager } = require('./catalogue')
+const { createUpdateChecker } = require('./updates')
 const SITE = siteForDevelopment(process.env.CW_SITE_URL, app.isPackaged)
 const HOME = SITE + '/'
-const nav = require('./renderer/nav.js')
-const SYSTEM_ACTIONS = nav.SYSTEM_ACTIONS || []
+const bundledNav = require('./renderer/nav.js')
+let nav = bundledNav
+const SYSTEM_ACTIONS = bundledNav.SYSTEM_ACTIONS || []
+let library = null, updates = null
 
 const isTest = !!process.env.CW_TEST
+if (isTest && process.env.CW_TEST_USER_DATA) app.setPath('userData', path.resolve(process.env.CW_TEST_USER_DATA))
 if (process.platform === 'linux' && (isTest || (typeof process.getuid === 'function' && process.getuid() === 0))) {
   app.commandLine.appendSwitch('no-sandbox')
 }
@@ -24,18 +29,7 @@ let win = null
 const webviews = new Map() // hostWebContents id -> webview webContents
 
 /* ---------------- settings ---------------- */
-const DEFAULT_SETTINGS = {
-  shortcuts: {},
-  order: nav.map((it) => it.id),
-  hidden: [],
-  labels: {},
-  startZoom: 0, // Electron zoom level (0 = 100%)
-  restoreLastPage: true
-}
-for (const it of nav) if (it.accel) DEFAULT_SETTINGS.shortcuts['nav:' + it.id] = it.accel
-for (const sa of SYSTEM_ACTIONS) DEFAULT_SETTINGS.shortcuts[sa.id] = sa.accel
-
-let settings = JSON.parse(JSON.stringify(DEFAULT_SETTINGS))
+let settings = migrateSettings({}, nav, SYSTEM_ACTIONS)
 function settingsPath () {
   try { return path.join(app.getPath('userData'), 'codwiki-settings.json') } catch (_) { return null }
 }
@@ -44,17 +38,16 @@ function loadSettings () {
   if (!p || !fs.existsSync(p)) return
   try {
     const raw = JSON.parse(fs.readFileSync(p, 'utf8'))
-    settings = {
-      ...JSON.parse(JSON.stringify(DEFAULT_SETTINGS)),
-      ...raw,
-      shortcuts: mergeShortcuts(DEFAULT_SETTINGS.shortcuts, raw.shortcuts),
-      order: mergeOrder(raw.order, nav),
-      hidden: Array.isArray(raw.hidden) ? raw.hidden : [],
-      labels: raw.labels && typeof raw.labels === 'object' ? raw.labels : {}
-    }
+    settings = migrateSettings(raw, nav, SYSTEM_ACTIONS)
   } catch (err) {
     console.error('settings load failed:', err.message)
   }
+}
+function applyLibrary(snapshot) {
+  nav = snapshot.catalogue.entries
+  settings = migrateSettings(settings, nav, SYSTEM_ACTIONS)
+  for (const wc of webContents.getAllWebContents()) if (wc.getType() === 'window') wc.send('cw:library-changed', snapshot)
+  saveSettings({})
 }
 function saveSettings (next) {
   settings = {
@@ -74,6 +67,7 @@ function saveSettings (next) {
   }
   // live-broadcast to every renderer (sidebar rebuild etc.)
   for (const wc of webContents.getAllWebContents()) {
+    if (wc.getType() !== 'window') continue
     try { wc.send('cw:settings-changed', settings) } catch (_) {}
   }
 }
@@ -84,12 +78,12 @@ function dispatchAction (actionId, target) {
     const id = actionId.slice(4)
     const it = nav.find((n) => n.id === id)
     if (!it) return false
-    if (it.external) shell.openExternal(it.url)
-    else target.loadURL(SITE + it.url)
+    if (it.external && isExternalUrl(it.url)) shell.openExternal(it.url)
+    else target.loadURL(SITE + it.url).catch(() => {})
     return true
   }
   switch (actionId) {
-    case 'sys-home': target.loadURL(HOME); return true
+    case 'sys-home': target.loadURL(HOME).catch(() => {}); return true
     case 'sys-reload': target.reload(); return true
     case 'sys-back': if (target.canGoBack()) target.goBack(); return true
     case 'sys-forward': if (target.canGoForward()) target.goForward(); return true
@@ -125,8 +119,8 @@ function allowed (url) {
 
 // navigate in place for same-site, system browser for anything else
 function openUrl (target, url) {
-  if (allowed(url)) target.loadURL(url)
-  else shell.openExternal(url)
+  if (allowed(url)) target.loadURL(url).catch(() => {})
+  else if (isExternalUrl(url)) shell.openExternal(url)
 }
 
 function zoom (target, delta) {
@@ -136,12 +130,6 @@ function zoom (target, delta) {
 
 app.on('web-contents-created', (e, wc) => {
   if (wc.getType() === 'webview') {
-    const host = wc.hostWebContents
-    if (host) webviews.set(host.id, wc)
-    wc.on('did-attach-webview', () => {
-      const z = Number(settings.startZoom) || 0
-      if (z) wc.setZoomLevel(z)
-    })
     wc.setWindowOpenHandler(({ url }) => {
       openUrl(wc, url)
       return { action: 'deny' }
@@ -149,13 +137,13 @@ app.on('web-contents-created', (e, wc) => {
     wc.on('will-navigate', (ev, url) => {
       if (!allowed(url)) {
         ev.preventDefault()
-        shell.openExternal(url)
+        if (isExternalUrl(url)) shell.openExternal(url)
       }
     })
     wc.on('context-menu', (ev, params) => {
       const items = []
       if (params.linkURL) {
-        items.push({ label: 'Open Link in Browser', click: () => shell.openExternal(params.linkURL) })
+        if (isExternalUrl(params.linkURL)) items.push({ label: 'Open Link in Browser', click: () => shell.openExternal(params.linkURL) })
         items.push({ label: 'Copy Link Address', click: () => require('electron').clipboard.writeText(params.linkURL) })
         items.push({ type: 'separator' })
       }
@@ -198,7 +186,11 @@ function createWindow () {
       : {}),
     webPreferences: {
       webviewTag: true,
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true,
+      sandbox: true,
+      ...(isTest ? { backgroundThrottling: false } : {})
     }
   })
   win.loadFile(path.join(__dirname, 'renderer', 'index.html'))
@@ -209,19 +201,37 @@ function createWindow () {
     preferences.contextIsolation = true
     preferences.sandbox = true
   })
-  win.once('ready-to-show', () => win.show())
+  win.webContents.on('did-attach-webview', (event, guest) => {
+    const hostId = win.webContents.id
+    webviews.set(hostId, guest)
+    guest.setZoomLevel(Number(settings.startZoom) || 0)
+    guest.once('destroyed', () => { if (webviews.get(hostId) === guest) webviews.delete(hostId) })
+  })
+  win.webContents.on('will-navigate', event => event.preventDefault())
+  win.webContents.setWindowOpenHandler(({ url }) => { if (isExternalUrl(url)) shell.openExternal(url); return { action: 'deny' } })
+  win.once('ready-to-show', () => { if (!isTest || process.env.CW_TEST_SHOW === '1') win.show() })
+  win.on('focus', () => { if (library) void library.refresh() })
   win.on('closed', () => { win = null })
 }
 
-ipcMain.handle('cw:runtime', () => ({ site: SITE, version: app.getVersion() }))
+function hostOnly(event) {
+  if (!win || event.sender !== win.webContents || (event.senderFrame && event.senderFrame !== win.webContents.mainFrame)) throw new Error('Untrusted IPC sender')
+}
+ipcMain.handle('cw:runtime', event => { hostOnly(event); return { site: SITE, version: app.getVersion() } })
 ipcMain.handle('cw:open-external', (e, url) => {
-  if (/^https?:\/\//i.test(url)) shell.openExternal(url)
+  hostOnly(e)
+  if (isExternalUrl(url)) shell.openExternal(url)
 })
-ipcMain.handle('cw:get-settings', () => settings)
+ipcMain.handle('cw:get-settings', event => { hostOnly(event); return settings })
 ipcMain.handle('cw:set-settings', (e, patch) => {
+  hostOnly(e)
   saveSettings(patch || {})
   return settings
 })
+ipcMain.handle('cw:get-library', event => { hostOnly(event); return library.get() })
+ipcMain.handle('cw:refresh-library', event => { hostOnly(event); return library.refresh(true) })
+ipcMain.handle('cw:get-update', event => { hostOnly(event); return updates.get() })
+ipcMain.handle('cw:check-update', event => { hostOnly(event); return updates.check(true) })
 
 const gotLock = app.requestSingleInstanceLock()
 if (!gotLock) {
@@ -235,9 +245,13 @@ if (!gotLock) {
     }
   })
   app.whenReady().then(() => {
+    library = createCatalogueManager({ bundled: createCatalogueManifest(bundledNav, bundledNav.games), site: SITE, cachePath: path.join(app.getPath('userData'), 'codwiki-library-v1.json'), fetchResponse: (url, options) => net.fetch(url, options), onChange: applyLibrary })
+    nav = library.get().catalogue.entries
+    updates = createUpdateChecker({ version: app.getVersion(), fetchResponse: (url, options) => net.fetch(url, options) })
     loadSettings()
     createWindow()
-    if (isTest) runTestTour()
+    void library.refresh()
+    if (process.env.CW_TEST_TOUR === '1') runTestTour()
   })
 }
 

@@ -6,7 +6,20 @@ function siteForDevelopment(value, packaged) {
   return url.origin
 }
 function isInternal(url, site) {
-  try { return new URL(url).origin === site } catch { return false }
+  try { const parsed = new URL(url); return parsed.origin === site && !parsed.username && !parsed.password } catch { return false }
+}
+function isExternalUrl(url) {
+  try { const parsed = new URL(url); return ['http:', 'https:'].includes(parsed.protocol) && !parsed.username && !parsed.password } catch { return false }
+}
+function navigationDefaults(entries, actions) {
+  const shortcuts = Object.fromEntries(entries.map(entry => ['nav:' + entry.id, entry.accel || null]))
+  for (const action of actions) shortcuts[action.id] = action.accel || null
+  return { shortcuts, order: entries.map(entry => entry.id), hidden: [], labels: {}, startZoom: 0, restoreLastPage: true }
+}
+function migrateSettings(raw, entries, actions) {
+  const saved = raw && typeof raw === 'object' && !Array.isArray(raw) ? raw : {}
+  const defaults = navigationDefaults(entries, actions)
+  return { ...defaults, ...saved, shortcuts: mergeShortcuts(defaults.shortcuts, saved.shortcuts), order: mergeOrder(saved.order, entries), hidden: Array.isArray(saved.hidden) ? saved.hidden.filter(id => typeof id === 'string') : [], labels: saved.labels && typeof saved.labels === 'object' && !Array.isArray(saved.labels) ? saved.labels : {} }
 }
 function mergeOrder(order, entries) {
   const ids = entries.map(item => item.id)
@@ -45,4 +58,4 @@ function matchAccel(accel, input) {
     !!input.alt === mods.has('alt') && !!input.shift === mods.has('shift') &&
     !!input.meta === (mods.has('meta') || mods.has('cmd') || mods.has('super'))
 }
-module.exports = { PRODUCTION_SITE, siteForDevelopment, isInternal, mergeOrder, mergeShortcuts, matchAccel }
+module.exports = { PRODUCTION_SITE, siteForDevelopment, isInternal, isExternalUrl, navigationDefaults, migrateSettings, mergeOrder, mergeShortcuts, matchAccel }

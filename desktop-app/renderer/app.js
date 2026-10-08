@@ -17,6 +17,11 @@ function isSite(url) { try { return new URL(url).origin === SITE } catch { retur
 document.getElementById('app-version').textContent = 'v' + runtime.version
 address.textContent = SITE_HOST
 let errorPageShown = false
+function navigate(url) {
+  if (isSite(url)) lastSiteUrl = url
+  errorPageShown = false
+  webview.loadURL(url).catch(() => {}) // did-fail-load provides the recovery UI.
+}
 
 /* ---------- companion navigation ---------- */
 const { filterNavigation, navigationForRoute, resolveNavigationGame } = window.CW_NAVIGATION
@@ -29,6 +34,8 @@ const startUrl = settings?.restoreLastPage !== false && isSite(lastSiteUrl) ? la
 let selectedGame = resolveNavigationGame(window.NAV, localStorage.getItem('cw-nav-selected-game'), startUrl)
 let activeItem = navigationForRoute(window.NAV, startUrl)
 
+function populateGames() {
+gameSelect.replaceChildren()
 for (const planned of [false, true]) {
   const group = document.createElement('optgroup')
   group.label = planned ? 'Guides planned' : 'Guides available'
@@ -41,6 +48,8 @@ for (const planned of [false, true]) {
   if (group.children.length) gameSelect.appendChild(group)
 }
 gameSelect.value = selectedGame
+}
+populateGames()
 function selectGame(id) {
   selectedGame = id
   gameSelect.value = id
@@ -118,7 +127,7 @@ function makeItem(item, direct = false) {
     copy.appendChild(detail)
   }
   el.append(copy, chevron())
-  el.addEventListener('click', () => webview.loadURL(SITE + item.url))
+  el.addEventListener('click', () => navigate(SITE + item.url))
   return el
 }
 
@@ -190,6 +199,22 @@ function buildSidebar() {
   }
 }
 buildSidebar()
+function applyCatalogue(snapshot) {
+  const { catalogue } = snapshot
+  if (window.CW_LIBRARY?.catalogue.revision !== catalogue.revision) {
+    window.NAV.splice(0, window.NAV.length, ...catalogue.entries)
+    window.NAV_GAMES.splice(0, window.NAV_GAMES.length, ...catalogue.games)
+    if (!window.NAV_GAMES.some(game => game.id === selectedGame)) selectedGame = resolveNavigationGame(window.NAV, null, lastSiteUrl)
+    activeItem = navigationForRoute(window.NAV, lastSiteUrl)
+    populateGames()
+    buildSidebar()
+  }
+  window.CW_LIBRARY = snapshot
+  document.getElementById('library-state').textContent = snapshot.source === 'live' ? (snapshot.state === 'current' ? 'Library current' : 'Last loaded library') : snapshot.source === 'saved' ? 'Saved library' : 'Included library'
+  document.dispatchEvent(new CustomEvent('cw-library-applied', { detail: snapshot }))
+}
+window.cw.onLibraryChanged(applyCatalogue)
+applyCatalogue(await window.cw.getLibrary())
 window.cw.onSettingsChanged(s => {
   settings = s
   window.CW_SETTINGS = s
@@ -221,13 +246,14 @@ function showError (desc) {
     '<div style="font-size:36px;color:#ddb363">↗</div>' +
     '<h1 style="font-size:24px;margin:16px 0 10px">Can\'t reach Cod Wiki</h1>' +
     '<p style="color:#b4b7bd;margin:0 0 24px">' + message.innerHTML + '</p>' +
-    '<a href="' + SITE + '/" style="background:#ddb363;color:#1b1409;padding:10px 22px;border-radius:9px;text-decoration:none;font-weight:600">Retry</a>' +
+    '<a href="' + new URL(isSite(lastSiteUrl) ? lastSiteUrl : SITE + '/').href.replaceAll('&','&amp;').replaceAll('"','&quot;') + '" style="background:#ddb363;color:#1b1409;padding:10px 22px;border-radius:9px;text-decoration:none;font-weight:600">Retry this page</a>' +
     '</body></html>'
-  webview.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(html))
+  webview.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(html)).catch(() => {})
 }
 
 /* ---------- webview events ---------- */
 webview.addEventListener('did-start-loading', () => { progress.style.display = 'block' })
+webview.addEventListener('will-navigate', event => { if (isSite(event.url)) lastSiteUrl = event.url })
 webview.addEventListener('did-stop-loading', () => { progress.style.display = 'none' })
 
 function syncNavigation(e) {
@@ -248,6 +274,7 @@ webview.addEventListener('did-navigate-in-page', syncNavigation)
 
 webview.addEventListener('did-fail-load', (e) => {
   if (e.isMainFrame && e.errorCode !== -3 && !errorPageShown) {
+    if (isSite(e.validatedURL)) lastSiteUrl = e.validatedURL
     showError(e.errorDescription || 'Network error')
   }
 })
@@ -260,7 +287,7 @@ webview.addEventListener('page-title-updated', (e) => {
 btnBack.addEventListener('click', () => { if (webview.canGoBack()) webview.goBack() })
 btnFwd.addEventListener('click', () => { if (webview.canGoForward()) webview.goForward() })
 document.getElementById('btn-reload').addEventListener('click', () => webview.reload())
-document.getElementById('btn-home').addEventListener('click', () => webview.loadURL(SITE + '/'))
+document.getElementById('btn-home').addEventListener('click', () => navigate(SITE + '/'))
 document.getElementById('open-browser').addEventListener('click', () => window.cw.openExternal(lastSiteUrl))
 
 /* ---------- restore last page ---------- */
