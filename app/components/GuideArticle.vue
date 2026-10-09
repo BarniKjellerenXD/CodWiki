@@ -14,8 +14,8 @@
             <button class="companion-button subtle" @click="confirmReset = !confirmReset">Start new run</button>
           </div>
           <div v-if="mobileOpen" id="mobile-contents" class="mobile-contents"><GuideContents :groups="groups" :pins="pinnedToc" :active="active" :closed="current.groups" @go="scrollTo" @pin="togglePin" @group="toggleGroup" /></div>
-          <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
-          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its run checkboxes. Account milestones, tool observations, pins and reading settings stay saved. Use each tool’s reset when starting new observations.</p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
+          <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in sectionLinks?.length ? sectionLinks : shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
+          <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its run checkboxes. <template v-if="defaultView === 'full'">Pins and reading settings stay saved.</template><template v-else>Account milestones, tool observations, pins and reading settings stay saved. Use each tool’s reset when starting new observations.</template></p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
           <div v-if="$slots.intro" class="guide-introduction"><slot name="intro" /></div>
           <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
@@ -42,13 +42,13 @@ import quickMapIndex from '~/data/mapQuickLinks.json'
 import { GUIDE_MAP_NAVIGATION } from '~/utils/mapContext'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readReaderContext } from '~/utils/mapNavigation.mjs'
 export interface GuideTocItem { id: string; text: string; level: number }
-const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string, branches?: { id:string, label:string, description:string }[] }>()
+const props = defineProps<{ title:string, mapName?:string, storageKey:string, defaultPins?:string[], bannerText?:string, bannerTarget?:string, bannerLabel?:string, questLabel?:string, defaultView?: 'quick' | 'full', sectionLinks?: { id:string, text:string }[], branches?: { id:string, label:string, description:string }[] }>()
 const route = useRoute()
 const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
 const parentMap = catalogue.guides?.find(g => g.id === mapId)?.map || mapId
 const hasMap = catalogue.maps.find(m => m.id === parentMap)?.interactiveMap === true
-const { run, visit, save, reset, init, saveError } = useProgress()
+const { progress, run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
 const allPhases = (quickQuests as Record<string, any[]>)[mapId] || []
 const branchInputId = useId()
@@ -58,7 +58,7 @@ const phases = computed(() => visibleGuidePhases(allPhases, selectedBranch.value
 const quickMapLinks = (quickMapIndex as Record<string, Record<string, string>>)[mapId] || {}
 const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(mapId)
 const mapTools = catalogue.tools.filter(t => t.map === parentMap)
-const view = ref('quick')
+const view = ref<string>(props.defaultView || 'quick')
 const active = ref('')
 const mobileOpen = ref(false)
 const confirmReset = ref(false)
@@ -258,7 +258,10 @@ function trackPosition() {
   },180)
 }
 onMounted(async()=>{
-  init(); view.value=current.value.view; loadPins()
+  init()
+  const saved = progress.value.runs[mapId]
+  view.value = saved?.reader || saved?.section || saved?.done?.length ? saved.view : props.defaultView || 'quick'
+  loadPins()
   if (props.branches?.length && !route.query.branch) try { const saved = localStorage.getItem(`guide-branch-${mapId}`); if (props.branches.some(branch => branch.id === saved)) selectedBranch.value = saved! } catch {}
   await nextTick()
   if(articleRef.value) buildTocAndIds(articleRef.value)
@@ -277,7 +280,7 @@ watch(()=>route.hash,hash=>{
   if(!mounted || (ignoreHash !== null && decodeGuideHash(hash)===decodeGuideHash(ignoreHash))) return
   const anchor=decodeGuideHash(hash)
   if(anchor) scrollTo(anchor,false)
-  else scrollTo('quick-'+phases.value[0]?.id,false)
+  else scrollTo(props.defaultView === 'full' ? phases.value[0]?.detail : 'quick-'+phases.value[0]?.id,false)
 })
 watch(selectedBranch, async branch => {
   await nextTick()

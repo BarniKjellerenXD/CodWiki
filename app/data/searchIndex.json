@@ -15365,7 +15365,7 @@
     "map": "mw3-urzikstan",
     "kind": "Guide",
     "route": "/guides/mw3-urzikstan",
-    "keywords": "mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:wiki_key_features",
@@ -15373,7 +15373,7 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#wiki_key_features",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-deployment",
@@ -15381,7 +15381,143 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-deployment",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:wiki_main_quest",
+    "name": "Main Quest",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#wiki_main_quest",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-dark-aether-portals",
+    "name": "Unlock the seasonal Dark Aether portals",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-dark-aether-portals",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-red-worm",
+    "name": "Red Worm boss fight — Greylorm",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-red-worm",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:wiki_side_quests",
+    "name": "Side Quests",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#wiki_side_quests",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-side-quests",
+    "name": "Free perk Easter eggs",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-side-quests",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-juggernog",
+    "name": "Jugger-Nog — campsite fire",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-juggernog",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-speed-cola",
+    "name": "Speed Cola — eagle ramp",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-speed-cola",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-death-perception",
+    "name": "Death Perception — parachute rings",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-death-perception",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-deadshot",
+    "name": "Deadshot Daiquiri — church grenade",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-deadshot",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-phd",
+    "name": "PhD Flopper — manor pool dive",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-phd",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-quick-revive",
+    "name": "Quick Revive — highway race",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-quick-revive",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-staminup",
+    "name": "Stamin-Up — stairwell sprint",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-staminup",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-free-tombstone",
+    "name": "Tombstone — crane sightline",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-free-tombstone",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-vault",
+    "name": "Chessboard vault — four transmissions",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-vault",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-triangles",
+    "name": "Purple triangle rituals",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-triangles",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:details-other-side-quests",
+    "name": "Other Urzikstan activities",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#details-other-side-quests",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+  },
+  {
+    "id": "mw3-urzikstan:wiki_deployment_reference",
+    "name": "Deployment Reference",
+    "map": "mw3-urzikstan",
+    "kind": "Section",
+    "route": "/guides/mw3-urzikstan#wiki_deployment_reference",
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-contracts",
@@ -15389,7 +15525,7 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-contracts",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-equipment",
@@ -15397,7 +15533,7 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-equipment",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-story",
@@ -15405,31 +15541,15 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-story",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-rune-portals",
-    "name": "Rune entrances and destination codes",
+    "name": "Local rune-doorway travel",
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-rune-portals",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
-  },
-  {
-    "id": "mw3-urzikstan:details-red-worm",
-    "name": "Greylorm: photographs, USBs and storm battle",
-    "map": "mw3-urzikstan",
-    "kind": "Section",
-    "route": "/guides/mw3-urzikstan#details-red-worm",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
-  },
-  {
-    "id": "mw3-urzikstan:details-side-quests",
-    "name": "Free perks, vault and seasonal routes",
-    "map": "mw3-urzikstan",
-    "kind": "Section",
-    "route": "/guides/mw3-urzikstan#details-side-quests",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:details-exfil",
@@ -15437,7 +15557,7 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#details-exfil",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:guide-sources",
@@ -15445,7 +15565,7 @@
     "map": "mw3-urzikstan",
     "kind": "Section",
     "route": "/guides/mw3-urzikstan#guide-sources",
-    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt  Modern Warfare III (2023) Open-world deployment main quest easter egg"
+    "keywords": "Urzikstan mw3 Modern Warfare III (2023) MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt zombies MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals  Modern Warfare III (2023) Open-world deployment main quest easter egg"
   },
   {
     "id": "mw3-urzikstan:quick-deployment",
@@ -15453,6 +15573,118 @@
     "map": "mw3-urzikstan",
     "kind": "Quick parts",
     "route": "/guides/mw3-urzikstan#quick-deployment",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-dark-aether-portals",
+    "name": "Unlock the seasonal Dark Aether portals",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-dark-aether-portals",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-red-worm",
+    "name": "Red Worm boss fight — Greylorm",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-red-worm",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-side-quests",
+    "name": "Free perk Easter eggs",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-side-quests",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-juggernog",
+    "name": "Jugger-Nog — campsite fire",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-juggernog",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-speed-cola",
+    "name": "Speed Cola — eagle ramp",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-speed-cola",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-death-perception",
+    "name": "Death Perception — parachute rings",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-death-perception",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-deadshot",
+    "name": "Deadshot Daiquiri — church grenade",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-deadshot",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-phd",
+    "name": "PhD Flopper — manor pool dive",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-phd",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-quick-revive",
+    "name": "Quick Revive — highway race",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-quick-revive",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-staminup",
+    "name": "Stamin-Up — stairwell sprint",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-staminup",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-free-tombstone",
+    "name": "Tombstone — crane sightline",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-free-tombstone",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-vault",
+    "name": "Chessboard vault — four transmissions",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-vault",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-triangles",
+    "name": "Purple triangle rituals",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-triangles",
+    "keywords": "Urzikstan main quest checklist"
+  },
+  {
+    "id": "mw3-urzikstan:quick-other-side-quests",
+    "name": "Other Urzikstan activities",
+    "map": "mw3-urzikstan",
+    "kind": "Quick parts",
+    "route": "/guides/mw3-urzikstan#quick-other-side-quests",
     "keywords": "Urzikstan main quest checklist"
   },
   {
@@ -15481,26 +15713,10 @@
   },
   {
     "id": "mw3-urzikstan:quick-rune-portals",
-    "name": "Rune entrances and destination codes",
+    "name": "Local rune-doorway travel",
     "map": "mw3-urzikstan",
     "kind": "Quick parts",
     "route": "/guides/mw3-urzikstan#quick-rune-portals",
-    "keywords": "Urzikstan main quest checklist"
-  },
-  {
-    "id": "mw3-urzikstan:quick-red-worm",
-    "name": "Greylorm: photographs, USBs and storm battle",
-    "map": "mw3-urzikstan",
-    "kind": "Quick parts",
-    "route": "/guides/mw3-urzikstan#quick-red-worm",
-    "keywords": "Urzikstan main quest checklist"
-  },
-  {
-    "id": "mw3-urzikstan:quick-side-quests",
-    "name": "Free perks, vault and seasonal routes",
-    "map": "mw3-urzikstan",
-    "kind": "Quick parts",
-    "route": "/guides/mw3-urzikstan#quick-side-quests",
     "keywords": "Urzikstan main quest checklist"
   },
   {
@@ -15529,7 +15745,7 @@
   },
   {
     "id": "mw3-dark-aether-season-1:details-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-1",
     "kind": "Section",
     "route": "/guides/mw3-dark-aether-season-1#details-preparation",
@@ -15609,7 +15825,7 @@
   },
   {
     "id": "mw3-dark-aether-season-1:quick-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-1",
     "kind": "Quick parts",
     "route": "/guides/mw3-dark-aether-season-1#quick-preparation",
@@ -15689,7 +15905,7 @@
   },
   {
     "id": "mw3-dark-aether-season-2:details-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-2",
     "kind": "Section",
     "route": "/guides/mw3-dark-aether-season-2#details-preparation",
@@ -15769,7 +15985,7 @@
   },
   {
     "id": "mw3-dark-aether-season-2:quick-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-2",
     "kind": "Quick parts",
     "route": "/guides/mw3-dark-aether-season-2#quick-preparation",
@@ -15849,7 +16065,7 @@
   },
   {
     "id": "mw3-dark-aether-season-3:details-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-3",
     "kind": "Section",
     "route": "/guides/mw3-dark-aether-season-3#details-preparation",
@@ -15937,7 +16153,7 @@
   },
   {
     "id": "mw3-dark-aether-season-3:quick-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-3",
     "kind": "Quick parts",
     "route": "/guides/mw3-dark-aether-season-3#quick-preparation",
@@ -16201,7 +16417,7 @@
   },
   {
     "id": "mw3-dark-aether-season-5:details-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-5",
     "kind": "Section",
     "route": "/guides/mw3-dark-aether-season-5#details-preparation",
@@ -16281,7 +16497,7 @@
   },
   {
     "id": "mw3-dark-aether-season-5:quick-preparation",
-    "name": "Choose entry and prepare your deployment",
+    "name": "Before you enter",
     "map": "mw3-dark-aether-season-5",
     "kind": "Quick parts",
     "route": "/guides/mw3-dark-aether-season-5#quick-preparation",
@@ -17380,38 +17596,6 @@
     "route": "/tools/vanguard-archon-runes",
     "kind": "Tool",
     "keywords": "vanguard Vanguard The Archon solver tracker"
-  },
-  {
-    "id": "mw3-rune-portals",
-    "map": "mw3-urzikstan",
-    "name": "Rune portal destination codes",
-    "route": "/tools/mw3-rune-portals",
-    "kind": "Tool",
-    "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
-  },
-  {
-    "id": "mw3-red-worm-usbs",
-    "map": "mw3-urzikstan",
-    "name": "Red Worm USB records",
-    "route": "/tools/mw3-red-worm-usbs",
-    "kind": "Tool",
-    "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
-  },
-  {
-    "id": "mw3-dark-aether-reference",
-    "map": "mw3-urzikstan",
-    "name": "Dark Aether entry and rewards",
-    "route": "/tools/mw3-dark-aether-reference",
-    "kind": "Tool",
-    "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
-  },
-  {
-    "id": "mw3-union-runes",
-    "map": "mw3-dark-aether-season-3",
-    "name": "Union crystal rune records",
-    "route": "/tools/mw3-union-runes",
-    "kind": "Tool",
-    "keywords": "mw3 Modern Warfare III (2023) Dark Aether — Season 3 solver tracker"
   },
   {
     "id": "super-ee",

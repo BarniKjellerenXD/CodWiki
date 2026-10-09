@@ -2629,49 +2629,13 @@ const NAV = [
     "gameName": "Modern Warfare III (2023)",
     "group": "",
     "status": "available",
-    "keywords": "MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt MWZ Operation Deadbolt Modern Warfare III (2023) Open-world deployment",
+    "keywords": "MW3 MWIII MWZ Modern Warfare 3 Operation Deadbolt MWZ Operation Deadbolt Red Worm Greylorm free perks chess vault Dark Aether portals Modern Warfare III (2023) Open-world deployment",
     "kind": "guide",
     "section": "Urzikstan",
     "label": "Guide",
     "url": "/guides/mw3-urzikstan",
     "accel": null,
     "icon": "◇"
-  },
-  {
-    "id": "mw3-rune-portals",
-    "map": "mw3-urzikstan",
-    "game": "mw3",
-    "gameName": "Modern Warfare III (2023)",
-    "kind": "tool",
-    "section": "Urzikstan",
-    "label": "Rune portal destination codes",
-    "url": "/tools/mw3-rune-portals",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "mw3-red-worm-usbs",
-    "map": "mw3-urzikstan",
-    "game": "mw3",
-    "gameName": "Modern Warfare III (2023)",
-    "kind": "tool",
-    "section": "Urzikstan",
-    "label": "Red Worm USB records",
-    "url": "/tools/mw3-red-worm-usbs",
-    "accel": null,
-    "icon": "↗"
-  },
-  {
-    "id": "mw3-dark-aether-reference",
-    "map": "mw3-urzikstan",
-    "game": "mw3",
-    "gameName": "Modern Warfare III (2023)",
-    "kind": "tool",
-    "section": "Urzikstan",
-    "label": "Dark Aether entry and rewards",
-    "url": "/tools/mw3-dark-aether-reference",
-    "accel": null,
-    "icon": "↗"
   },
   {
     "id": "mw3-dark-aether-season-1",
@@ -2717,18 +2681,6 @@ const NAV = [
     "url": "/guides/mw3-dark-aether-season-3",
     "accel": null,
     "icon": "◇"
-  },
-  {
-    "id": "mw3-union-runes",
-    "map": "mw3-dark-aether-season-3",
-    "game": "mw3",
-    "gameName": "Modern Warfare III (2023)",
-    "kind": "tool",
-    "section": "Dark Aether — Season 3",
-    "label": "Union crystal rune records",
-    "url": "/tools/mw3-union-runes",
-    "accel": null,
-    "icon": "↗"
   },
   {
     "id": "mw3-unstable-rift",

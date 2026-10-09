@@ -98,6 +98,15 @@ try {
   assert.deepEqual(await guestEval(() => [typeof window.cw, typeof require, typeof process]), ['undefined', 'undefined', 'undefined'])
   observations.push('Real host IPC, isolated guest and hidden test profile verified')
 
+  await page.locator('#nav-game').selectOption('mw3')
+  assert.equal(await page.locator('#nav .nav-item').count(), 6)
+  assert.equal(await page.locator('#nav .nav-map').count(), 0)
+  assert.match(await page.locator('#nav-game-info').innerText(), /6 guides/)
+  await page.locator('#nav-search').fill('Red Worm')
+  await page.locator('[data-id="mw3-urzikstan"]').click()
+  await waitRoute('/guides/mw3-urzikstan')
+  observations.push('MW3 offers six direct guides; Red Worm search opens Urzikstan without tool groups')
+
   await page.locator('#nav-game').selectOption('iw')
   await page.locator('#nav-search').fill('speaker')
   assert.equal(await page.locator('[data-id="iw-spaceland-speakers"]').innerText(), 'Saved speaker sequence')

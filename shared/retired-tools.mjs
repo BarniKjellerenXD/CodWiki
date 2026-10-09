@@ -1,6 +1,10 @@
 // These activities belong in the guide. Keep old bookmarks useful without
 // instantiating a retired helper or touching its saved browser observations.
 export const retiredTools = {
+  'mw3-rune-portals': '/guides/mw3-urzikstan#details-rune-portals',
+  'mw3-red-worm-usbs': '/guides/mw3-urzikstan#details-red-worm',
+  'mw3-dark-aether-reference': '/guides/mw3-urzikstan#details-dark-aether-portals',
+  'mw3-union-runes': '/guides/mw3-dark-aether-season-3#details-crystals',
   'bo3-verruckt-setup': '/guides/bo3-verruckt#details-setup',
   'bo3-ascension-luna': '/guides/bo3-ascension#details-luna',
   'bo3-origins-staffs': '/guides/bo3-origins#details-staff-build',

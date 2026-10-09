@@ -11,7 +11,6 @@ import { evaluateIW } from './iw.mjs'
 import { evaluateWW2 } from './ww2.mjs'
 import { evaluateAW } from './aw.mjs'
 import { evaluateVanguard } from './vanguard.mjs'
-import { evaluateMW3 } from './mw3.mjs'
 const { tagRiddles, iceLabels, iceRuneLabels, fireValues, rushmoreCodes, voyageLocations } = references
 export { iceLabels }
 export const toolDefinitions = Object.fromEntries(expansionTools.map(tool => [tool.id, tool]))
@@ -55,7 +54,7 @@ export function evaluateTool(id, raw) {
   if (!tool) return invalid('Unknown helper.')
   const state = normalizeTool(id, raw)
   if (tool.evaluate === 'remaining') {
-    for (const evaluate of [evaluateIW, evaluateWW2, evaluateAW, evaluateVanguard, evaluateMW3]) {
+    for (const evaluate of [evaluateIW, evaluateWW2, evaluateAW, evaluateVanguard]) {
       const result = evaluate(id, state, tool)
       if (result) return result
     }

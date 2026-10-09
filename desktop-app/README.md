@@ -48,9 +48,10 @@ generated from the repository's shared catalogue and website theme tokens before
 ## Current game library
 
 The included library contains 96 authored maps, modes and destinations across
-13 games, 108 tools and two child quests. Infinite Warfare, WWII, Advanced Warfare,
-Vanguard and Modern Warfare III now contribute 30 complete guides and 31 puzzle
-tools. New tools can be assigned shortcuts in App settings; existing bindings
+13 games, 104 tools and two child quests. Infinite Warfare, WWII, Advanced Warfare,
+Vanguard and Modern Warfare III contribute 30 complete guides; the first four
+also have 27 puzzle tools. MW3 uses six direct guides covering portal unlocks,
+side Easter eggs and boss fights. New tools can be assigned shortcuts in App settings; existing bindings
 retain their meanings.
 
 Game metadata and aliases are authored in `../shared/games.mjs`. Run the catalogue
@@ -102,7 +103,7 @@ To check a packaged executable against the live site, run from the repository ro
 node scripts/verify-desktop-live.mjs 'path/to/CodWiki.exe'
 ```
 
-This also uses an isolated profile and verifies a live MWZ solver and the
+This also uses an isolated profile and verifies the live MW3 Red Worm guide and the
 official GitHub update check.
 
 ## Build on other OS (portable zip, no exe icon/metadata editing)

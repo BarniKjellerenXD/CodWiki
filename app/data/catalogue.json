@@ -1007,7 +1007,12 @@
       "edition": "Modern Warfare III (2023)",
       "aliases": [
         "MWZ",
-        "Operation Deadbolt"
+        "Operation Deadbolt",
+        "Red Worm",
+        "Greylorm",
+        "free perks",
+        "chess vault",
+        "Dark Aether portals"
       ]
     },
     {
@@ -1816,34 +1821,6 @@
       "map": "vanguard-the-archon",
       "name": "Mindfulness rune sequence",
       "route": "/tools/vanguard-archon-runes",
-      "kind": "recorder"
-    },
-    {
-      "id": "mw3-rune-portals",
-      "map": "mw3-urzikstan",
-      "name": "Rune portal destination codes",
-      "route": "/tools/mw3-rune-portals",
-      "kind": "lookup"
-    },
-    {
-      "id": "mw3-red-worm-usbs",
-      "map": "mw3-urzikstan",
-      "name": "Red Worm USB records",
-      "route": "/tools/mw3-red-worm-usbs",
-      "kind": "recorder"
-    },
-    {
-      "id": "mw3-dark-aether-reference",
-      "map": "mw3-urzikstan",
-      "name": "Dark Aether entry and rewards",
-      "route": "/tools/mw3-dark-aether-reference",
-      "kind": "reference"
-    },
-    {
-      "id": "mw3-union-runes",
-      "map": "mw3-dark-aether-season-3",
-      "name": "Union crystal rune records",
-      "route": "/tools/mw3-union-runes",
       "kind": "recorder"
     }
   ],

@@ -1,5 +1,16 @@
 # CodWiki Desktop release notes
 
+## v1.6.1
+
+- MW3 now offers six direct guides. Urzikstan prioritizes seasonal portal unlocks, the Red Worm fight, eight free-perk Easter eggs, the chessboard vault and triangle rituals.
+- Removed all four MW3 tools, the portal/schematic milestone panel and the seasonal route dropdown. Story, relic collection, gold upgrades, portal rituals and optional side quests are readable together. New readers start in Full Details; saved reading preferences remain available.
+- Red Worm search opens the Urzikstan guide. Old MW3 tool bookmarks open their corresponding guide section, and existing guide progress and pins retain their IDs.
+- The included library now has 96 guide destinations, 104 tools and two child quests across 13 games. Existing v1.6 apps receive the updated navigation automatically from the website.
+
+Validated with 257 passing automated tests, ten native Electron integration groups, five MW3 browser/native flow groups, phone and minimum-window interface checks, a production build and Windows installer/ZIP packaging.
+
+See [the MW3 guide plan and implementation record](https://github.com/BarniKjellerenXD/CodWiki/blob/master/docs/mw3-guide-plan.md). Use the Setup installer to update the app or extract the portable ZIP.
+
 ## v1.6.0
 
 - All 13 games are available in the desktop library: 96 maps, modes and destinations, 108 tools and two child quests. The 30 guides previously marked planned now include walkthroughs and 31 new puzzle tools across Infinite Warfare, WWII, Advanced Warfare, Vanguard and Modern Warfare III.

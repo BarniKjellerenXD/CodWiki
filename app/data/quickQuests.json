@@ -10485,7 +10485,209 @@
         },
         {
           "id": "mw3-field-upgrades",
-          "html": "Match the in-game field upgrade to survival, crowd control or squad recovery."
+          "html": "Prepare a field upgrade for survival, crowd control or squad recovery."
+        }
+      ]
+    },
+    {
+      "id": "dark-aether-portals",
+      "title": "Unlock the seasonal Dark Aether portals",
+      "detail": "details-dark-aether-portals",
+      "steps": [
+        {
+          "id": "mw3-portal-unlock-intro",
+          "html": "Follow the four-item ritual for the seasonal portal you want."
+        },
+        {
+          "id": "mw3-portal-season-1",
+          "html": "Al Bagra: Diary, Pill Bottle, Camera and Dog Collar."
+        },
+        {
+          "id": "mw3-portal-season-2",
+          "html": "Sa’id: Drum, MMA Gloves, Mirror and Target."
+        },
+        {
+          "id": "mw3-portal-season-3",
+          "html": "Zarqwa: Giraffe, Laptop, Journal and Drawing."
+        },
+        {
+          "id": "mw3-portal-season-5",
+          "html": "Highrise: Mr. Peeks and the three gold Echo relics."
+        }
+      ]
+    },
+    {
+      "id": "red-worm",
+      "title": "Red Worm boss fight — Greylorm",
+      "detail": "details-red-worm",
+      "steps": [
+        {
+          "id": "mw3-worm-preparation",
+          "html": "Bring strong damage, mask protection, revives and crowd control."
+        },
+        {
+          "id": "mw3-clue-walls",
+          "html": "Read four photographs from a current C1, H2, E8 or G7/G8 clue wall."
+        },
+        {
+          "id": "mw3-usb-collect",
+          "html": "Match the wall photographs and collect four differently named USBs."
+        },
+        {
+          "id": "mw3-worm-arena",
+          "html": "Locate paired ammo caches/refractors and prepare the current storm arena."
+        },
+        {
+          "id": "mw3-insert-usbs",
+          "html": "In the storm, install all four matching USBs and confirm the summoning cues."
+        },
+        {
+          "id": "mw3-greylorm-fight",
+          "html": "Attack weakpoints, shoot orbs, maintain mask/ammo and parachute after a swallow."
+        },
+        {
+          "id": "mw3-greylorm-reward",
+          "html": "Claim the boss reward and leave through the spawned exit."
+        }
+      ]
+    },
+    {
+      "id": "side-quests",
+      "title": "Free perk Easter eggs",
+      "detail": "details-side-quests",
+      "steps": [
+        {
+          "id": "mw3-free-perks",
+          "html": "Choose any available free-perk activity; the eight challenges are independent."
+        }
+      ]
+    },
+    {
+      "id": "free-juggernog",
+      "title": "Jugger-Nog — campsite fire",
+      "detail": "details-free-juggernog",
+      "steps": [
+        {
+          "id": "mw3-free-juggernog",
+          "html": "C3: light the campsite fire with a Molotov."
+        }
+      ]
+    },
+    {
+      "id": "free-speed-cola",
+      "title": "Speed Cola — eagle ramp",
+      "detail": "details-free-speed-cola",
+      "steps": [
+        {
+          "id": "mw3-free-speed-cola",
+          "html": "C2/D2: launch a vehicle off the eagle ramp."
+        }
+      ]
+    },
+    {
+      "id": "free-death-perception",
+      "title": "Death Perception — parachute rings",
+      "detail": "details-free-death-perception",
+      "steps": [
+        {
+          "id": "mw3-free-death-perception",
+          "html": "E1/E2: parachute through all three sculpture rings."
+        }
+      ]
+    },
+    {
+      "id": "free-deadshot",
+      "title": "Deadshot Daiquiri — church grenade",
+      "detail": "details-free-deadshot",
+      "steps": [
+        {
+          "id": "mw3-free-deadshot",
+          "html": "I3: throw a grenade through the church’s highest opening."
+        }
+      ]
+    },
+    {
+      "id": "free-phd",
+      "title": "PhD Flopper — manor pool dive",
+      "detail": "details-free-phd",
+      "steps": [
+        {
+          "id": "mw3-free-phd",
+          "html": "H7: dolphin-dive from the manor roof into its pool."
+        }
+      ]
+    },
+    {
+      "id": "free-quick-revive",
+      "title": "Quick Revive — highway race",
+      "detail": "details-free-quick-revive",
+      "steps": [
+        {
+          "id": "mw3-free-quick-revive",
+          "html": "H5: wait for the laugh, then race north to the next sign."
+        }
+      ]
+    },
+    {
+      "id": "free-staminup",
+      "title": "Stamin-Up — stairwell sprint",
+      "detail": "details-free-staminup",
+      "steps": [
+        {
+          "id": "mw3-free-staminup",
+          "html": "D7: sprint from the bottom Peeks to the stairwell’s top."
+        }
+      ]
+    },
+    {
+      "id": "free-tombstone",
+      "title": "Tombstone — crane sightline",
+      "detail": "details-free-tombstone",
+      "steps": [
+        {
+          "id": "mw3-free-tombstone",
+          "html": "G7/G8: scope Peeks and hold breath until the jumpscare."
+        }
+      ]
+    },
+    {
+      "id": "vault",
+      "title": "Chessboard vault — four transmissions",
+      "detail": "details-vault",
+      "steps": [
+        {
+          "id": "mw3-vault-transmissions",
+          "html": "Send Pawn, Bishop, Rook and moving Knight transmissions to H7."
+        },
+        {
+          "id": "mw3-vault-open",
+          "html": "Check four registered pieces at H7; open the vault and defeat its King Mimic."
+        }
+      ]
+    },
+    {
+      "id": "triangles",
+      "title": "Purple triangle rituals",
+      "detail": "details-triangles",
+      "steps": [
+        {
+          "id": "mw3-triangles",
+          "html": "Triangle: activate three runes, align the viewpoint and charge the ring."
+        }
+      ]
+    },
+    {
+      "id": "other-side-quests",
+      "title": "Other Urzikstan activities",
+      "detail": "details-other-side-quests",
+      "steps": [
+        {
+          "id": "mw3-blood-burner",
+          "html": "Find or summon Blood Burner; use the season-specific Key/Drum route."
+        },
+        {
+          "id": "mw3-portal-overview",
+          "html": "Open the stadium music or Unstable Rift instructions."
         }
       ]
     },
@@ -10592,91 +10794,20 @@
     },
     {
       "id": "rune-portals",
-      "title": "Rune entrances and destination codes",
+      "title": "Local rune-doorway travel",
       "detail": "details-rune-portals",
       "steps": [
         {
           "id": "mw3-rune-method",
-          "html": "Choose an exit code, shoot its three glyphs in order and pay the portal prompt."
+          "html": "Rune doorways are local fast travel, separate from seasonal portal unlocks."
         },
         {
           "id": "mw3-rune-entry-atlas",
-          "html": "Use the photographed entrance atlas; select the destination independently."
+          "html": "Find a rune doorway and use the sequence for your intended exit."
         },
         {
           "id": "mw3-rune-code-check",
-          "html": "Verify the entire ordered triplet and destination photograph before travel.",
-          "tools": [
-            "mw3-rune-portals"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "red-worm",
-      "title": "Greylorm: photographs, USBs and storm battle",
-      "detail": "details-red-worm",
-      "steps": [
-        {
-          "id": "mw3-clue-walls",
-          "html": "Read four photographs from a current C1, H2, E8 or G7/G8 clue wall."
-        },
-        {
-          "id": "mw3-usb-collect",
-          "html": "Match the photos; collect and record actual Alpha/Bravo/Charlie/Delta drives."
-        },
-        {
-          "id": "mw3-worm-arena",
-          "html": "Locate paired ammo caches/refractors and prepare the current storm arena."
-        },
-        {
-          "id": "mw3-insert-usbs",
-          "html": "In the storm, install all four matching USBs and confirm the summoning cues."
-        },
-        {
-          "id": "mw3-greylorm-fight",
-          "html": "Attack weakpoints, shoot orbs, maintain mask/ammo and parachute after a swallow."
-        },
-        {
-          "id": "mw3-greylorm-reward",
-          "html": "Collect Greylorm’s plan reward and take the spawned exit.",
-          "tools": [
-            "mw3-red-worm-usbs"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "side-quests",
-      "title": "Free perks, vault and seasonal routes",
-      "detail": "details-side-quests",
-      "steps": [
-        {
-          "id": "mw3-free-perks",
-          "html": "Use the eight landmark challenges below for their free-perk rewards."
-        },
-        {
-          "id": "mw3-vault-transmissions",
-          "html": "Send Pawn, Bishop, Rook and moving Knight transmissions to H7."
-        },
-        {
-          "id": "mw3-vault-open",
-          "html": "Check four registered pieces at H7; open the vault and defeat its King Mimic."
-        },
-        {
-          "id": "mw3-triangles",
-          "html": "Triangle: activate three runes, align the viewpoint and charge the ring."
-        },
-        {
-          "id": "mw3-blood-burner",
-          "html": "Find or summon Blood Burner; use the season-specific Key/Drum route."
-        },
-        {
-          "id": "mw3-portal-overview",
-          "html": "Use the seasonal reference for portal/reward goals and the stadium music route.",
-          "tools": [
-            "mw3-dark-aether-reference"
-          ]
+          "html": "Check the full sequence; use a seasonal guide for Dark Aether access."
         }
       ]
     },
@@ -10691,7 +10822,7 @@
         },
         {
           "id": "mw3-exfil-items",
-          "html": "Retain required items through successful extraction; clear only the next deployment’s observations."
+          "html": "Extract with the items you want to keep; collect new USBs for a new Worm attempt."
         }
       ]
     }
@@ -10699,12 +10830,12 @@
   "mw3-dark-aether-season-1": [
     {
       "id": "preparation",
-      "title": "Choose entry and prepare your deployment",
+      "title": "Before you enter",
       "detail": "details-preparation",
       "steps": [
         {
           "id": "mw1-goal",
-          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+          "html": "First unlock: story relic → three extra relics → gold upgrades → pedestal ritual."
         },
         {
           "id": "mw1-loadout",
@@ -10716,10 +10847,7 @@
         },
         {
           "id": "mw1-inventory",
-          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
-          "tools": [
-            "mw3-dark-aether-reference"
-          ]
+          "html": "Exfil with each relic; bring all four gold items for the portal ritual."
         }
       ]
     },
@@ -10727,10 +10855,6 @@
       "id": "bad-signal",
       "title": "Bad Signal: four seals and Gorm’gant",
       "detail": "details-bad-signal",
-      "branches": [
-        "story",
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw1-bad-signal-entry",
@@ -10754,9 +10878,6 @@
       "id": "relics",
       "title": "Acquire the three purple Urzikstan relics",
       "detail": "details-relics",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw1-pill",
@@ -10776,9 +10897,6 @@
       "id": "attunement",
       "title": "Upgrade each purple relic through its sky portal",
       "detail": "details-attunement",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw1-attune-bottle",
@@ -10798,9 +10916,6 @@
       "id": "portal",
       "title": "Establish personal Al Bagra portal access",
       "detail": "details-portal",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw1-pedestals",
@@ -10816,10 +10931,6 @@
       "id": "contracts",
       "title": "Repeat visits: three Mister Peeks contracts",
       "detail": "details-contracts",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw1-contract-entry",
@@ -10847,10 +10958,6 @@
       "id": "locked-rooms",
       "title": "Optional fortress keys and equipment rooms",
       "detail": "details-locked-rooms",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw1-keys-officers",
@@ -10885,12 +10992,12 @@
   "mw3-dark-aether-season-2": [
     {
       "id": "preparation",
-      "title": "Choose entry and prepare your deployment",
+      "title": "Before you enter",
       "detail": "details-preparation",
       "steps": [
         {
           "id": "mw2-goal",
-          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+          "html": "First unlock: story relic → three extra relics → gold upgrades → pedestal ritual."
         },
         {
           "id": "mw2-loadout",
@@ -10902,10 +11009,7 @@
         },
         {
           "id": "mw2-inventory",
-          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
-          "tools": [
-            "mw3-dark-aether-reference"
-          ]
+          "html": "Exfil with each relic; bring all four gold items for the portal ritual."
         }
       ]
     },
@@ -10913,10 +11017,6 @@
       "id": "countermeasures",
       "title": "Countermeasures: story vehicle, mall and Krawvir",
       "detail": "details-countermeasures",
-      "branches": [
-        "story",
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw2-mission-entry",
@@ -10952,9 +11052,6 @@
       "id": "relic-obelisks",
       "title": "Check or recover missing story offerings",
       "detail": "details-relic-obelisks",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw2-offering-check",
@@ -10966,9 +11063,6 @@
       "id": "attunement",
       "title": "Upgrade Mirror, Gloves and Target in Urzikstan",
       "detail": "details-attunement",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw2-gold-mirror",
@@ -10988,9 +11082,6 @@
       "id": "portal",
       "title": "Unlock the Nahr hill portal once",
       "detail": "details-portal",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw2-pedestals",
@@ -11006,10 +11097,6 @@
       "id": "contracts",
       "title": "Repeat visits: Bounty, Outlast and Extractors",
       "detail": "details-contracts",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw2-bounty",
@@ -11033,11 +11120,6 @@
       "id": "music",
       "title": "Optional stadium music and navigation",
       "detail": "details-music",
-      "branches": [
-        "story",
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw2-song",
@@ -11064,12 +11146,12 @@
   "mw3-dark-aether-season-3": [
     {
       "id": "preparation",
-      "title": "Choose entry and prepare your deployment",
+      "title": "Before you enter",
       "detail": "details-preparation",
       "steps": [
         {
           "id": "mw3s-goal",
-          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+          "html": "First unlock: story relic → three extra relics → gold upgrades → pedestal ritual."
         },
         {
           "id": "mw3s-loadout",
@@ -11081,10 +11163,7 @@
         },
         {
           "id": "mw3s-inventory",
-          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
-          "tools": [
-            "mw3-dark-aether-reference"
-          ]
+          "html": "Exfil with each relic; bring all four gold items for the portal ritual."
         }
       ]
     },
@@ -11092,10 +11171,6 @@
       "id": "union",
       "title": "Union: follow Ava and stop the two orbs",
       "detail": "details-union",
-      "branches": [
-        "story",
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw3s-union-entry",
@@ -11111,10 +11186,6 @@
       "id": "crystals",
       "title": "Read and shoot both three-rune sequences",
       "detail": "details-crystals",
-      "branches": [
-        "story",
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw3s-crystal-a",
@@ -11134,10 +11205,7 @@
         },
         {
           "id": "mw3s-giraffe-story",
-          "html": "Collect gold Giraffe, wake/escort Ava and finish the mission extraction.",
-          "tools": [
-            "mw3-union-runes"
-          ]
+          "html": "Collect gold Giraffe, wake/escort Ava and finish the mission extraction."
         }
       ]
     },
@@ -11145,9 +11213,6 @@
       "id": "relics",
       "title": "Collect the three purple Urzikstan relics",
       "detail": "details-relics",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw3s-laptop",
@@ -11167,9 +11232,6 @@
       "id": "attunement",
       "title": "Perform each item’s Tier 3 summoning",
       "detail": "details-attunement",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw3s-attunement-rule",
@@ -11193,9 +11255,6 @@
       "id": "portal",
       "title": "Unlock the northwest island portal",
       "detail": "details-portal",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw3s-pedestals",
@@ -11211,10 +11270,6 @@
       "id": "contracts",
       "title": "Three obelisks and carried temporary buffs",
       "detail": "details-contracts",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw3s-escort",
@@ -11238,10 +11293,6 @@
       "id": "gyanxi",
       "title": "Optional Gyanxi and Smoke Signals blueprint",
       "detail": "details-gyanxi",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw3s-gyanxi-gate",
@@ -11385,12 +11436,12 @@
   "mw3-dark-aether-season-5": [
     {
       "id": "preparation",
-      "title": "Choose entry and prepare your deployment",
+      "title": "Before you enter",
       "detail": "details-preparation",
       "steps": [
         {
           "id": "mw5-goal",
-          "html": "Choose story, first unlock, ordinary or Elder entry; check the actual prompt."
+          "html": "First unlock: story relic → three extra relics → gold upgrades → pedestal ritual."
         },
         {
           "id": "mw5-loadout",
@@ -11402,10 +11453,7 @@
         },
         {
           "id": "mw5-inventory",
-          "html": "Keep carried relics separate from permanent portal and schematic milestones.",
-          "tools": [
-            "mw3-dark-aether-reference"
-          ]
+          "html": "Exfil with each relic; bring all four gold items for the portal ritual."
         }
       ]
     },
@@ -11413,10 +11461,6 @@
       "id": "ascension",
       "title": "Ascension: weaken the Entity and finish its true ending",
       "detail": "details-ascension",
-      "branches": [
-        "story",
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw5-ascension-entry",
@@ -11452,9 +11496,6 @@
       "id": "echo-relics",
       "title": "Obtain the three purple Echo relics",
       "detail": "details-echo-relics",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw5-echo-diary",
@@ -11474,9 +11515,6 @@
       "id": "attunement",
       "title": "Attune each Echo through its meteor event",
       "detail": "details-attunement",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw5-diary-gold",
@@ -11496,9 +11534,6 @@
       "id": "portal",
       "title": "Complete the Opal Palace gold-relic ritual",
       "detail": "details-portal",
-      "branches": [
-        "unlock"
-      ],
       "steps": [
         {
           "id": "mw5-gold-pedestals",
@@ -11514,10 +11549,6 @@
       "id": "contracts",
       "title": "Navigate three floating contract starters",
       "detail": "details-contracts",
-      "branches": [
-        "ordinary",
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw5-movement",
@@ -11545,9 +11576,6 @@
       "id": "infinite-cosmos",
       "title": "Optional Elder-only Infinite Cosmos blueprint",
       "detail": "details-infinite-cosmos",
-      "branches": [
-        "elder"
-      ],
       "steps": [
         {
           "id": "mw5-cosmos-spore",

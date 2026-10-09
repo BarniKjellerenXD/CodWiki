@@ -147,7 +147,7 @@ function buildSidebar() {
   const planned = maps.filter(map => map.status === 'planned').length
   const tools = window.NAV.filter(item => item.game === selectedGame && item.kind === 'tool').length
   const units = selectedGame === 'mw3' ? 'destinations' : selectedGame === 'ww2' ? 'maps & modes' : 'maps'
-  document.getElementById('nav-game-info').textContent = `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
+  document.getElementById('nav-game-info').textContent = selectedGame === 'mw3' ? `${maps.length} guides · Portal unlocks & Easter eggs` : `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
   searchClear.hidden = !searchInput.value
   searchStatus.textContent = query ? `${groups.reduce((count, group) => count + group.items.length, 0)} results across all games` : ''
   emptyNav.hidden = groups.length > 0

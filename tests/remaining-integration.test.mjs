@@ -24,9 +24,9 @@ test('every authored destination has unique progress anchors and valid tools', (
     assert.equal(new Set(ids).size, ids.length, `${guide.id}: rendered IDs`)
   }
 })
-test('all 31 new helpers use the registered engine, reject undeclared state and can start empty', () => {
+test('all 27 remaining helpers use the registered engine, reject undeclared state and can start empty', () => {
   const tools = expansionTools.filter(t => t.widget === 'remaining')
-  assert.equal(tools.length, 31)
+  assert.equal(tools.length, 27)
   for (const tool of tools) {
     assert.ok(toolDefinitions[tool.id], tool.id)
     assert.equal(new Set(tool.fields.map(f => f.id)).size, tool.fields.length, tool.id)
