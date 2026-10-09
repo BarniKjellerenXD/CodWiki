@@ -123,6 +123,12 @@ Local verification on 8 October 2026:
   creating the installer/ZIP and publishing the desktop release. Push publishing
   is limited to the production `master` branch.
 
+The native launcher resolves its executable through the installed `electron`
+package. Electron 44 performs its binary download on first use, as described in
+the [installation documentation](https://www.electronjs.org/docs/latest/tutorial/installation).
+This makes the native check work after a fresh CI dependency install without
+depending on a pre-existing local `dist` directory.
+
 The pre-publication live run correctly used the included fallback because the
 new endpoint was not deployed yet. Deployment and release receipts are verified
 separately after publishing; local reports are in the ignored review directory.

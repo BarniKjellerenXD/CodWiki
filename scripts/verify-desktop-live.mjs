@@ -18,7 +18,7 @@ delete env.ELECTRON_RUN_AS_NODE
 // A packaged build must ignore a development-site override.
 if (binary) env.CW_SITE_URL = 'http://127.0.0.1:1'
 else delete env.CW_SITE_URL
-const app = await electron.launch({ executablePath: binary || path.resolve('desktop-app/node_modules/electron/dist/electron.exe'), args: binary ? [] : [path.resolve('desktop-app')], env, timeout: 30000 })
+const app = await electron.launch({ executablePath: binary || require('electron'), args: binary ? [] : [path.resolve('desktop-app')], env, timeout: 30000 })
 const page = await app.firstWindow(), errors = [], checks = [], screenshots = []
 page.on('pageerror', error => errors.push(error.message))
 const guest = expression => page.evaluate(expression => document.getElementById('webview').executeJavaScript(`(${expression})()`), expression.toString())

@@ -11,6 +11,9 @@ const require = createRequire(path.join(runtimeDirectory, '__desktop_runtime__.c
 const { _electron: electron } = require('playwright')
 process.chdir(fileURLToPath(new URL('..', import.meta.url)))
 const localRequire = createRequire(import.meta.url)
+const desktopRequire = createRequire(new URL('../desktop-app/package.json', import.meta.url))
+// Electron 44 downloads its binary on first resolution, not during npm ci.
+const electronExecutable = desktopRequire('electron')
 const { normalizeCatalogue } = localRequire('../desktop-app/catalogue.js')
 const bundled = JSON.parse(fs.readFileSync('public/desktop-catalogue.json', 'utf8'))
 const version = JSON.parse(fs.readFileSync('desktop-app/package.json', 'utf8')).version
@@ -38,7 +41,7 @@ let app, page
 async function launch() {
   const env = { ...process.env, CW_TEST: '1', CW_TEST_USER_DATA: profile, CW_SITE_URL: site }
   delete env.ELECTRON_RUN_AS_NODE
-  app = await electron.launch({ executablePath: path.resolve('desktop-app/node_modules/electron/dist/electron.exe'), args: [path.resolve('desktop-app')], cwd: path.resolve('desktop-app'), env, timeout: 30000 })
+  app = await electron.launch({ executablePath: electronExecutable, args: [path.resolve('desktop-app')], cwd: path.resolve('desktop-app'), env, timeout: 30000 })
   page = await app.firstWindow()
   page.on('pageerror', error => errors.push(error.message))
   await page.waitForFunction(() => { try { return window.CW_LIBRARY && window.CW_SETTINGS && document.getElementById('webview').getURL().startsWith('http:') } catch { return false } })
