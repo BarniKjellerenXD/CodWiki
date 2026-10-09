@@ -14,7 +14,8 @@ const root = fileURLToPath(new URL('../', import.meta.url))
 const readJson = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'))
 const fullCatalogue = readJson('shared/catalogue.json')
 const catalogue = { ...fullCatalogue, maps: fullCatalogue.maps.filter(map => map.interactiveMap) }
-assert.equal(catalogue.maps.length, 6, 'All six existing BO7 map datasets remain required')
+assert.equal(catalogue.maps.filter(map => map.gameId === 'bo7').length, 6, 'All six existing BO7 map datasets remain required')
+assert.equal(catalogue.maps.filter(map => map.gameId === 'mw3').length, 5, 'Urzikstan and four seasonal Dark Aether maps remain required')
 const quests = readJson('app/data/quickQuests.json')
 const validId = /^[a-z0-9-]+$/
 const attribute = (node, name) => node.props?.find(prop => prop.type === 6 && prop.name === name)?.value?.content
@@ -83,7 +84,7 @@ function imageDimensions(file) {
 
 test('map navigation distinguishes overview, targets, legacy anchors and malformed hashes', () => {
   for (const hash of ['#map', 'map', '#%6Dap']) assert.equal(mapTargetFromAnchor(decodeGuideHash(hash)), '')
-  for (const hash of ['#map:power-switch', '#map%3Apower-switch', '#map%3Aofficial-1234']) {
+  for (const hash of ['#map:power-switch', '#map%3Apower-switch', '#map%253Apower-switch', '#map%3Aofficial-1234']) {
     const target = mapTargetFromAnchor(decodeGuideHash(hash))
     assert.ok(target)
     assert.equal(mapTargetFromAnchor(mapAnchor(target)), target)
@@ -209,7 +210,7 @@ test('every catalogue map has a dataset and all normalized locations point to va
 })
 
 test('every map exposes Cursed Mister Peeks candidates as perks with a dedicated guide destination', () => {
-  for (const { id } of catalogue.maps) {
+  for (const { id } of catalogue.maps.filter(map => map.gameId === 'bo7')) {
     const data = loadMap(id)
     const spawns = data.locations.filter(location => location.perkType === 'mister-peeks')
     assert.ok(spawns.length, `${id}: missing Cursed perk spawn references`)
@@ -343,6 +344,42 @@ test('map viewer defaults to quest and area browsing, and selected locations byp
   assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['perk'])
   state.clearFilters()
   assert.equal(state.filteredLocations.value.length, 4)
+})
+
+test('map overview search includes non-overview services and grid references while preserving a selected target', () => {
+  const { props, state } = viewerFixture()
+  props.data.locations[0].overview = true
+  props.data.locations[2].grid = 'H7'
+  props.data.grid = { columns: ['A', 'B'], rows: ['0', '1'] }
+  state.restorePreferences()
+  assert.equal(state.category.value, 'overview')
+  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['room'])
+  state.query.value = 'H7'
+  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['perk'])
+  props.targetId = 'quest'
+  assert.deepEqual(state.visibleLocations.value.map(loc => loc.id), ['quest', 'perk'])
+  state.query.value = ''
+  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['room'])
+  state.category.value = 'perk'
+  state.query.value = 'H7'
+  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['perk'])
+})
+
+test('map grid preferences survive reopening without changing legacy map preference records', () => {
+  const { props, state, persisted } = viewerFixture()
+  props.data.locations[0].overview = true
+  props.data.grid = { columns: ['A', 'B'], rows: ['0', '1'] }
+  state.restorePreferences()
+  state.showGrid.value = false
+  state.savePreferences()
+  assert.equal(JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')).showGrid, false)
+  state.showGrid.value = true
+  state.restorePreferences()
+  assert.equal(state.category.value, 'overview')
+  assert.equal(state.showGrid.value, false)
+  delete props.data.grid
+  state.savePreferences()
+  assert.equal('showGrid' in JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')), false)
 })
 
 test('map viewer restores validated filters and layers while recovering from bad or unavailable storage', () => {

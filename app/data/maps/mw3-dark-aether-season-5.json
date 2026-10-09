@@ -1,0 +1,568 @@
+{
+  "id": "mw3-dark-aether-season-5",
+  "name": "Dark Aether — Al Mazrah City / Highrise",
+  "defaultLayer": "overview",
+  "grid": {
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "sources": [
+    {
+      "name": "WZHUB · Dark Aether — Al Mazrah City / Highrise",
+      "url": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+    },
+    {
+      "name": "CodWiki researched walkthrough",
+      "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Dark Aether — Al Mazrah City / Highrise",
+      "image": "/maps/mw3-dark-aether-season-5/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "note": "Overhead reference: floating contract starters, roof exits and ground-floor rooms have different heights. The Infinite Cosmos route is Elder-only. Follow actual launch pads/Tears and the guide photographs; the map does not draw a safe aerial walking route."
+    }
+  ],
+  "locations": [
+    {
+      "id": "contracts-m3222",
+      "label": "Escort — broken billboard · E5",
+      "layerId": "overview",
+      "x": 0.48480224609375,
+      "y": 0.54547119140625,
+      "grid": "E5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Reach the floating Peeks starter using a safe available pad/Tear route. The ground-floor objective can be at a different height from this starter.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "floor": "Floating billboard"
+    },
+    {
+      "id": "contracts-m3237",
+      "label": "Outlast — Highrise roof · G2",
+      "layerId": "overview",
+      "x": 0.616455078125,
+      "y": 0.27978515625,
+      "grid": "G2",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Reach the floating Peeks starter using a safe available pad/Tear route. The ground-floor objective can be at a different height from this starter.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "floor": "Roof"
+    },
+    {
+      "id": "contracts-m3238",
+      "label": "Spore Control — floating crane · D3",
+      "layerId": "overview",
+      "x": 0.315673828125,
+      "y": 0.3076171875,
+      "grid": "D3",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Reach the floating Peeks starter using a safe available pad/Tear route. The ground-floor objective can be at a different height from this starter.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "floor": "Floating crane"
+    },
+    {
+      "id": "exfil-m3223",
+      "label": "Highrise roof exit · G4",
+      "layerId": "overview",
+      "x": 0.6441650390625,
+      "y": 0.47812862077789564,
+      "grid": "G4",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the actual red portal before the visit timer expires. The roof and lower exit require different movement routes.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "floor": "Roof"
+    },
+    {
+      "id": "exfil-m3241",
+      "label": "Lower exit · E7",
+      "layerId": "overview",
+      "x": 0.44384765625,
+      "y": 0.7694091796875,
+      "grid": "E7",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the actual red portal before the visit timer expires. The roof and lower exit require different movement routes.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "floor": "Lower / ground"
+    },
+    {
+      "id": "locked-doors-m3244",
+      "label": "Post Office Warehouse — locked door · E7",
+      "layerId": "overview",
+      "x": 0.466552734375,
+      "y": 0.7786603434867753,
+      "grid": "E7",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Optional equipment room. Search for the matching warehouse key in this visit; this door is separate from the Infinite Cosmos maintenance door.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz"
+    },
+    {
+      "id": "keys-m3242",
+      "label": "Post Office Warehouse key candidate · G3",
+      "layerId": "overview",
+      "x": 0.6171875,
+      "y": 0.333251953125,
+      "grid": "G3",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the photographed candidate hiding place for the warehouse key. It does not unlock the Infinite Cosmos maintenance tower.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "highrise-secret-area",
+      "label": "Highrise — detector maze and lobby search",
+      "layerId": "overview",
+      "x": 0.628,
+      "y": 0.451,
+      "grid": "G4",
+      "category": "quest",
+      "precision": "area",
+      "areaRadius": 0.062,
+      "overview": true,
+      "description": "Elder-only Infinite Cosmos: search under the main Highrise building for the unmarked spore and R4D detector, follow its arrows for the skull, then find the Golden Whale lobby across from the detector building. This broad footprint does not pinpoint the spore, skull or whale head.",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "floor": "Under Highrise / ground-floor maze and nearby lobby",
+      "state": "Elder-only secret quest"
+    },
+    {
+      "id": "spec-electronics",
+      "label": "Spec Electronics — computer search",
+      "layerId": "overview",
+      "x": 0.25,
+      "y": 0.35,
+      "grid": "C3",
+      "category": "quest",
+      "precision": "area",
+      "areaRadius": 0.05,
+      "overview": true,
+      "description": "Search the C3 Spec Electronics building and its second-floor error-screen computer. Carry the IT Thumb Drive; activate the computer before fighting the marked Keyholder.",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "floor": "Second floor",
+      "state": "Elder-only secret quest"
+    },
+    {
+      "id": "maintenance-door",
+      "label": "Highrise maintenance door search",
+      "layerId": "overview",
+      "x": 0.642,
+      "y": 0.472,
+      "grid": "G4",
+      "category": "quest",
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "description": "Return to the roof/exfil level with the Maintenance Tower Key. Find its locked maintenance door and bring every squad member inside before using the purple boss portal.",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "floor": "Highrise roof / exfil level",
+      "state": "Elder-only secret quest"
+    },
+    {
+      "id": "ammo-depot-m3216",
+      "label": "Ammo cache · E5",
+      "layerId": "overview",
+      "x": 0.463134765625,
+      "y": 0.585693359375,
+      "grid": "E5",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3225",
+      "label": "Ammo cache · G5",
+      "layerId": "overview",
+      "x": 0.6015625,
+      "y": 0.527587890625,
+      "grid": "G5",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3226",
+      "label": "Ammo cache · G4",
+      "layerId": "overview",
+      "x": 0.60791015625,
+      "y": 0.47900390625,
+      "grid": "G4",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3230",
+      "label": "Ammo cache · E3",
+      "layerId": "overview",
+      "x": 0.472412109375,
+      "y": 0.3599853515625,
+      "grid": "E3",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3235",
+      "label": "Ammo cache · D3",
+      "layerId": "overview",
+      "x": 0.3115234375,
+      "y": 0.3084716796875,
+      "grid": "D3",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "aether-tear-m3221",
+      "label": "Aether Tear · F5",
+      "layerId": "overview",
+      "x": 0.51318359375,
+      "y": 0.504150390625,
+      "grid": "F5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m3227",
+      "label": "Aether Tear · B5",
+      "layerId": "overview",
+      "x": 0.1397705078125,
+      "y": 0.541015625,
+      "grid": "B5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m3228",
+      "label": "Aether Tear · B4",
+      "layerId": "overview",
+      "x": 0.173095703125,
+      "y": 0.4891357421875,
+      "grid": "B4",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m3229",
+      "label": "Aether Tear · C4",
+      "layerId": "overview",
+      "x": 0.261962890625,
+      "y": 0.4544677734375,
+      "grid": "C4",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m3232",
+      "label": "Aether Tear · F3",
+      "layerId": "overview",
+      "x": 0.5960693359375,
+      "y": 0.39404296875,
+      "grid": "F3",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m3233",
+      "label": "Aether Tear · F6",
+      "layerId": "overview",
+      "x": 0.5660400390625,
+      "y": 0.6170654296875,
+      "grid": "F6",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "pack-a-punch-green-m3218",
+      "label": "Pack-a-Punch · E3",
+      "layerId": "overview",
+      "x": 0.461669921875,
+      "y": 0.360107421875,
+      "grid": "E3",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "der-wu-m3240",
+      "label": "Der Wunderfizz · F5",
+      "layerId": "overview",
+      "x": 0.5855712890625,
+      "y": 0.5037841796875,
+      "grid": "F5",
+      "category": "perk",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the machine to buy perks if it is available; check the height and access route.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "dog-house-m3236",
+      "label": "Doghouse · G6",
+      "layerId": "overview",
+      "x": 0.669189453125,
+      "y": 0.6256103515625,
+      "grid": "G6",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible spawn / may already be used"
+    },
+    {
+      "id": "dead-turret-m3219",
+      "label": "Deadbolt turret · B4",
+      "layerId": "overview",
+      "x": 0.154296875,
+      "y": 0.44091796875,
+      "grid": "B4",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "dead-turret-m3231",
+      "label": "Deadbolt turret · F4",
+      "layerId": "overview",
+      "x": 0.5946044921875,
+      "y": 0.4290771484375,
+      "grid": "F4",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "dead-turret-m3234",
+      "label": "Deadbolt turret · D3",
+      "layerId": "overview",
+      "x": 0.33251953125,
+      "y": 0.3084716796875,
+      "grid": "D3",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "redeploy-drone-br-wz-m3224",
+      "label": "Redeploy drone · C3",
+      "layerId": "overview",
+      "x": 0.23193359375,
+      "y": 0.37060546875,
+      "grid": "C3",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the live ascender/drone and use it to move above the rooftops.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "spawn-locations-m3217",
+      "label": "Entry landing · C6",
+      "layerId": "overview",
+      "x": 0.23388671875,
+      "y": 0.66064453125,
+      "grid": "C6",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Entry reference"
+    },
+    {
+      "id": "spawn-locations-m3239",
+      "label": "Entry landing · I4",
+      "layerId": "overview",
+      "x": 0.866455078125,
+      "y": 0.4248046875,
+      "grid": "I4",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "state": "Entry reference"
+    }
+  ],
+  "targets": [
+    {
+      "id": "mw5-escort",
+      "title": "Escort starter",
+      "locationIds": [
+        "contracts-m3222"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw5-escort"
+    },
+    {
+      "id": "mw5-outlast",
+      "title": "Outlast starter",
+      "locationIds": [
+        "contracts-m3237"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw5-outlast"
+    },
+    {
+      "id": "mw5-spore-contract",
+      "title": "Spore Control starter",
+      "locationIds": [
+        "contracts-m3238"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw5-spore-contract"
+    },
+    {
+      "id": "exits",
+      "title": "Highrise and lower exits",
+      "locationIds": [
+        "exfil-m3223",
+        "exfil-m3241"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw5-exfil"
+    },
+    {
+      "id": "warehouse-room",
+      "title": "Optional Post Office Warehouse room",
+      "locationIds": [
+        "locked-doors-m3244",
+        "keys-m3242"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "details-contracts"
+    },
+    {
+      "id": "cosmos-maze",
+      "title": "Infinite Cosmos — Highrise search area",
+      "locationIds": [
+        "highrise-secret-area"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mw5-cosmos-spore",
+      "description": "Use the guide photos and detector arrows inside the building. The overhead map provides the neighborhood, not an invented interior maze."
+    },
+    {
+      "id": "cosmos-computer",
+      "title": "Infinite Cosmos — Spec Electronics",
+      "locationIds": [
+        "spec-electronics"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mw5-cosmos-key"
+    },
+    {
+      "id": "cosmos-maintenance",
+      "title": "Infinite Cosmos — maintenance tower",
+      "locationIds": [
+        "maintenance-door"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mw5-cosmos-door"
+    }
+  ],
+  "quickLinks": {
+    "mw5-escort": "mw5-escort",
+    "mw5-outlast": "mw5-outlast",
+    "mw5-spore-contract": "mw5-spore-contract",
+    "mw5-exfil": "exits",
+    "mw5-cosmos-spore": "cosmos-maze",
+    "mw5-cosmos-skull": "cosmos-maze",
+    "mw5-cosmos-trade": "cosmos-maze",
+    "mw5-cosmos-key": "cosmos-computer",
+    "mw5-cosmos-door": "cosmos-maintenance"
+  }
+}

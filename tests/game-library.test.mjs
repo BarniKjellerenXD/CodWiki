@@ -25,7 +25,7 @@ test('all 30 additional Zombies destinations have authored, generated guides', (
   for (const map of remainingMapMetadata) {
     assert.ok(games.some(game => game.id === map.gameId), map.id)
     assert.notEqual(catalogue.maps.find(entry => entry.id === map.id).status, 'planned')
-    assert.equal(catalogue.maps.find(entry => entry.id === map.id).interactiveMap, false)
+    assert.equal(catalogue.maps.find(entry => entry.id === map.id).interactiveMap, fs.existsSync(`app/data/maps/${map.id}.json`))
     assert.ok(quests[map.id]?.length > 0, map.id)
     assert.match(fs.readFileSync(`app/pages${map.route}.vue`, 'utf8'), /<Content/)
     assert.doesNotMatch(fs.readFileSync(`app/components/guide/${map.id}.vue`, 'utf8'), /<MapEntry/)

@@ -7,11 +7,12 @@
 
     <div class="atlas-fields">
       <label class="atlas-field atlas-search"><span>Find a location</span><input v-model="query" type="search" placeholder="Search rooms, items and landmarks…" autocomplete="off" /></label>
-      <label class="atlas-field atlas-layer-select"><span>Map layer</span><select v-model="layerId" @change="changeLayer"><option v-for="layer in data.layers" :key="layer.id" :value="layer.id">{{ layer.label }}{{ layerCount(layer.id) ? ` · ${layerCount(layer.id)} selected` : '' }}</option></select></label>
+      <label v-if="data.layers.length > 1" class="atlas-field atlas-layer-select"><span>Map layer</span><select v-model="layerId" @change="changeLayer"><option v-for="layer in data.layers" :key="layer.id" :value="layer.id">{{ layer.label }}{{ layerCount(layer.id) ? ` · ${layerCount(layer.id)} selected` : '' }}</option></select></label>
     </div>
 
     <div class="atlas-filters" role="group" aria-label="Location categories">
-      <button type="button" :aria-pressed="category === 'quest-areas'" @click="category = 'quest-areas'">Quest &amp; areas <span>{{ questAreaCount }}</span></button>
+      <button v-if="overviewCount" type="button" :aria-pressed="category === 'overview'" @click="category = 'overview'">Key locations <span>{{ overviewCount }}</span></button>
+      <button v-else type="button" :aria-pressed="category === 'quest-areas'" @click="category = 'quest-areas'">Quest &amp; areas <span>{{ questAreaCount }}</span></button>
       <button type="button" :aria-pressed="category === 'all'" @click="category = 'all'">All locations <span>{{ data.locations.length }}</span></button>
       <button v-for="item in categories" :key="item.id" type="button" :aria-pressed="category === item.id" @click="category = item.id"><span class="atlas-category-symbol" aria-hidden="true">{{ categorySymbol(item.id) }}</span>{{ categoryLabel(item.id) }} <span>{{ item.count }}</span></button>
     </div>
@@ -28,6 +29,7 @@
           <button type="button" :disabled="!ready" @click="fitOverview">Fit map</button>
           <button v-if="selectedLocations.length" type="button" :disabled="!ready" @click="fitSelection">Fit selected</button>
           <button type="button" :aria-pressed="expanded" @click="toggleExpand">{{ expanded ? '↙ Reduce' : '↗ Expand' }}</button>
+          <button v-if="data.grid" type="button" :aria-pressed="showGrid" @click="showGrid = !showGrid">Grid</button>
           <label class="atlas-wheel"><input v-model="wheelZoom" type="checkbox" /> Scroll to zoom</label>
         </div>
 
@@ -47,14 +49,14 @@
           <div class="atlas-selection-head"><span class="companion-label">{{ selectionKind }}</span><button type="button" class="atlas-text-button" @click="emit('select', '')">Clear</button></div>
           <h3 ref="selectionHeadingRef" tabindex="-1" aria-live="polite">{{ selectedTitle }}</h3>
           <p v-if="selectedTarget?.description">{{ selectedTarget.description }}</p>
-          <p v-if="selectedTarget?.kind === 'candidates'" class="atlas-selection-note">Check these possible spawn locations. An item may appear at only one.</p>
+          <p v-if="selectedTarget?.kind === 'candidates'" class="atlas-selection-note">Check these possible locations in this visit; read each location’s conditions.</p>
           <p v-else-if="selectedTarget?.kind === 'sequence' && selectedLocations.length > 1" class="atlas-selection-note">Numbers follow the guide order; they do not show a walking route.</p>
 
           <div v-if="selectedLayers.length > 1" class="atlas-selected-layers" role="group" aria-label="Layers containing selected locations"><button v-for="layer in selectedLayers" :key="layer.id" type="button" :aria-pressed="layerId === layer.id" @click="selectLayer(layer.id)">{{ layer.label }} <span>{{ layerCount(layer.id) }}</span></button></div>
 
           <ol class="atlas-selected-list">
             <li v-for="(location, index) in selectedLocations" :key="location.id" :class="{ 'atlas-location-focused': focusId === location.id }">
-              <button type="button" class="atlas-selected-location" :aria-pressed="focusId === location.id" :aria-label="`Locate ${location.label} on ${layerLabel(location.layerId)}`" @click="focusLocation(location)"><span class="atlas-location-number" aria-hidden="true">{{ selectedLocations.length > 1 ? index + 1 : categorySymbol(location.category) }}</span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }}{{ location.floor ? ` · ${location.floor}` : '' }}{{ location.state ? ` · ${location.state}` : '' }}</small></span><span class="atlas-locate-symbol" aria-hidden="true">⌖</span></button>
+              <button type="button" class="atlas-selected-location" :aria-pressed="focusId === location.id" :aria-label="`Locate ${location.label} on ${layerLabel(location.layerId)}`" @click="focusLocation(location)"><span class="atlas-location-number" aria-hidden="true">{{ selectedLocations.length > 1 ? index + 1 : categorySymbol(location.category) }}</span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }}{{ location.grid ? ` · Grid ${location.grid}` : '' }}{{ location.floor ? ` · ${location.floor}` : '' }}{{ location.state ? ` · ${location.state}` : '' }}</small></span><span class="atlas-locate-symbol" aria-hidden="true">⌖</span></button>
               <div class="atlas-location-description"><span v-if="location.precision === 'area'" class="atlas-precision">Approximate area</span><p>{{ location.description }}</p><a v-if="sourceUrl(location.source)" :href="sourceUrl(location.source)" target="_blank" rel="noopener noreferrer">Location reference ↗</a></div>
             </li>
           </ol>
@@ -81,17 +83,18 @@ import 'leaflet/dist/leaflet.css'
 import type { MapDataset, MapLayer, MapLocation } from '~/types/map'
 
 const props = withDefaults(defineProps<{ data: MapDataset; targetId?: string; active?: boolean; canReturn?: boolean }>(), { targetId: '', active: true, canReturn: false })
-const emit = defineEmits<{ select: [targetId: string]; back: []; guide: [anchor: string] }>()
+const emit = defineEmits<{ select: [targetId: string]; back: []; guide: [anchor: string]; ready: [] }>()
 const rootRef = ref<HTMLElement | null>(null)
 const canvasRef = ref<HTMLElement | null>(null)
 const panelRef = ref<HTMLElement | null>(null)
 const selectionHeadingRef = ref<HTMLElement | null>(null)
 const layerId = ref(props.data.defaultLayer)
 const query = ref('')
-const category = ref('quest-areas')
+const category = ref(browsingDefault())
 const perkFilter = ref<'all' | 'mister-peeks'>('all')
 const expanded = ref(false)
 const wheelZoom = ref(true)
+const showGrid = ref(true)
 const focusId = ref('')
 const ready = ref(false)
 const imageError = ref(false)
@@ -111,18 +114,19 @@ const selectedIds = computed(() => new Set(selectedLocations.value.map(location 
 const selectedTitle = computed(() => selectedTarget.value?.title || selectedLocations.value[0]?.label || '')
 const selectedLayers = computed(() => props.data.layers.filter(layer => layerCount(layer.id) > 0))
 const unknownTarget = computed(() => !!props.targetId && !selectedTarget.value && !locationIndex.value.has(props.targetId))
-const selectionKind = computed(() => selectedTarget.value?.kind === 'candidates' ? 'Possible spawns' : selectedTarget.value?.kind === 'sequence' ? 'Quest stops' : selectedLocations.value.length > 1 ? 'Selected locations' : 'Selected location')
+const selectionKind = computed(() => selectedTarget.value?.kind === 'candidates' ? 'Possible locations' : selectedTarget.value?.kind === 'sequence' ? 'Quest stops' : selectedLocations.value.length > 1 ? 'Selected locations' : 'Selected location')
 const categories = computed(() => {
   const counts = new Map<string, number>()
   props.data.locations.forEach(location => counts.set(location.category, (counts.get(location.category) || 0) + 1))
   return Array.from(counts, ([id, count]) => ({ id, count })).sort((a, b) => categoryLabel(a.id).localeCompare(categoryLabel(b.id)))
 })
 const questAreaCount = computed(() => props.data.locations.filter(location => location.category === 'quest' || location.category === 'area').length)
+const overviewCount = computed(() => props.data.locations.filter(location => location.overview).length)
 const perkCount = computed(() => props.data.locations.filter(location => location.category === 'perk').length)
 const peeksCount = computed(() => props.data.locations.filter(location => location.category === 'perk' && location.perkType === 'mister-peeks').length)
 const filteredLocations = computed(() => {
   const search = query.value.trim().toLocaleLowerCase()
-  return props.data.locations.filter(location => (category.value === 'all' || location.category === category.value || (category.value === 'quest-areas' && ['quest', 'area'].includes(location.category))) && (category.value !== 'perk' || perkFilter.value === 'all' || location.perkType === 'mister-peeks') && (!search || [location.label, location.description, location.category, location.floor, location.state, layerLabel(location.layerId)].filter(Boolean).join(' ').toLocaleLowerCase().includes(search)))
+  return props.data.locations.filter(location => (category.value === 'all' || (category.value === 'overview' && (!!search || location.overview)) || location.category === category.value || (category.value === 'quest-areas' && ['quest', 'area'].includes(location.category))) && (category.value !== 'perk' || perkFilter.value === 'all' || location.perkType === 'mister-peeks') && (!search || [location.label, location.description, location.category, location.grid, location.floor, location.state, layerLabel(location.layerId)].filter(Boolean).join(' ').toLocaleLowerCase().includes(search)))
 })
 const visibleLocations = computed(() => {
   const matches = new Set(filteredLocations.value.map(location => location.id))
@@ -141,6 +145,7 @@ const relatedTargets = computed(() => {
 let map: L.Map | undefined
 let artwork: L.ImageOverlay | undefined
 let markers: L.LayerGroup | undefined
+let gridLines: L.LayerGroup | undefined
 let observer: ResizeObserver | undefined
 let resizeFrame = 0
 let copyTimer: ReturnType<typeof setTimeout> | undefined
@@ -157,6 +162,7 @@ function categoryLabel(value: string) {
   const labels: Record<string, string> = { area: 'Areas', quest: 'Quest', perk: 'Perks', upgrade: 'Upgrades', travel: 'Travel', ammo: 'Ammo', equipment: 'Equipment', weapon: 'Weapons', trap: 'Traps' }
   return labels[value] || value.replace(/[-_]/g, ' ').replace(/^./, letter => letter.toUpperCase())
 }
+function browsingDefault() { return props.data.locations.some(location => location.overview) ? 'overview' : 'quest-areas' }
 function categorySymbol(value: string) {
   const symbols: Record<string, string> = { area: '◇', quest: '!', perk: '✚', upgrade: '↑', travel: '↗', ammo: '▪', equipment: '⚒', weapon: '×', trap: 'ϟ' }
   return symbols[value] || '•'
@@ -168,7 +174,7 @@ function sourceUrl(source?: string) {
   const candidate = props.data.sources.find(item => item.name === source)?.url || source
   try { const url = new URL(candidate); return /^(https?:)$/.test(url.protocol) ? url.href : undefined } catch { return undefined }
 }
-function coordinate(location: MapLocation, layer: MapLayer): L.LatLng {
+function coordinate(location: Pick<MapLocation, 'x' | 'y'>, layer: MapLayer): L.LatLng {
   return L.latLng((1 - location.y) * layer.height, location.x * layer.width)
 }
 function layerBounds(layer: MapLayer) { return L.latLngBounds([0, 0], [layer.height, layer.width]) }
@@ -242,7 +248,7 @@ function renderMarkers() {
     const index = selectedLocations.value.findIndex(item => item.id === location.id)
     const position = coordinate(location, layer)
     if (location.precision === 'area') {
-      L.circle(position, { radius: Math.min(layer.width, layer.height) * 0.03, className: selected ? 'atlas-area atlas-area-selected' : 'atlas-area', weight: selected ? 2 : 1, dashArray: '5 5', fillOpacity: selected ? 0.18 : 0.07, interactive: false }).addTo(markers)
+      L.circle(position, { radius: Math.min(layer.width, layer.height) * (location.areaRadius || 0.03), className: selected ? 'atlas-area atlas-area-selected' : 'atlas-area', weight: selected ? 2 : 1, dashArray: '5 5', fillOpacity: selected ? 0.18 : 0.07, interactive: false }).addTo(markers)
     }
     const symbol = document.createElement('span')
     symbol.className = `atlas-marker-symbol${selected ? ' atlas-marker-selected' : ''}${focused ? ' atlas-marker-focused' : ''}${location.precision === 'area' ? ' atlas-marker-area' : ''}`
@@ -275,6 +281,22 @@ function removeArtwork() {
   previous?.off('load error')
   previous?.remove()
 }
+function renderGrid() {
+  gridLines?.clearLayers()
+  if (!map || !activeLayer.value || !props.data.grid || !showGrid.value) return
+  gridLines ||= L.layerGroup().addTo(map)
+  const layer = activeLayer.value, { columns, rows } = props.data.grid
+  const line = { color: 'white', opacity: .2, weight: 1, interactive: false }
+  for (let i = 1; i < columns.length; i++) L.polyline([[0, layer.width * i / columns.length], [layer.height, layer.width * i / columns.length]], line).addTo(gridLines)
+  for (let i = 1; i < rows.length; i++) L.polyline([[layer.height * i / rows.length, 0], [layer.height * i / rows.length, layer.width]], line).addTo(gridLines)
+  function label(text: string, x: number, y: number) {
+    const content = document.createElement('span')
+    content.textContent = text
+    L.marker(coordinate({ x, y }, layer), { interactive: false, keyboard: false, zIndexOffset: -1000, icon: L.divIcon({ html: content, className: 'atlas-grid-label', iconSize: [24, 22], iconAnchor: [12, 11] }) }).addTo(gridLines!)
+  }
+  columns.forEach((text, i) => label(text, (i + .5) / columns.length, .025))
+  rows.forEach((text, i) => label(text, .025, (i + .5) / rows.length))
+}
 function renderLayer() {
   if (!map || !activeLayer.value) return
   const revision = ++layerRevision
@@ -290,6 +312,7 @@ function renderLayer() {
   artwork.addTo(map)
   const minimum = map.getBoundsZoom(viewBounds(layer), false, L.point(40, 40))
   if (Number.isFinite(minimum)) map.setMinZoom(minimum - 0.5)
+  renderGrid()
   renderMarkers()
   fitOverview()
 }
@@ -345,13 +368,14 @@ function resizeMap() {
 async function toggleExpand() { expanded.value = !expanded.value; await nextTick(); resizeMap() }
 function preferenceKey() { return `codwiki-map-ui-v2:${props.data.id}` }
 function savePreferences() {
-  try { localStorage.setItem(preferenceKey(), JSON.stringify({ layer: layerId.value, category: category.value, perkFilter: perkFilter.value, wheelZoom: wheelZoom.value })) } catch { /* Map browsing remains usable without storage. */ }
+  try { localStorage.setItem(preferenceKey(), JSON.stringify({ layer: layerId.value, category: category.value, perkFilter: perkFilter.value, wheelZoom: wheelZoom.value, ...(props.data.grid ? { showGrid: showGrid.value } : {}) })) } catch { /* Map browsing remains usable without storage. */ }
 }
 function restorePreferences() {
   layerId.value = props.data.defaultLayer
-  category.value = 'quest-areas'
+  category.value = browsingDefault()
   perkFilter.value = 'all'
   wheelZoom.value = true
+  showGrid.value = true
   function readSaved(key: string) {
     try {
       const value = JSON.parse(localStorage.getItem(key) || 'null')
@@ -363,11 +387,12 @@ function restorePreferences() {
     const saved = current || readSaved(`codwiki-map-ui-v1:${props.data.id}`)
     if (!saved) return
     if (props.data.layers.some(layer => layer.id === saved.layer)) layerId.value = saved.layer
-    if (['all', 'quest-areas'].includes(saved.category) || categories.value.some(item => item.id === saved.category)) category.value = saved.category
+    if (saved.category === 'overview' && overviewCount.value || ['all', 'quest-areas'].includes(saved.category) || categories.value.some(item => item.id === saved.category)) category.value = saved.category
     if (saved.perkFilter === 'mister-peeks' && peeksCount.value > 0) perkFilter.value = 'mister-peeks'
     // v1 automatically saved the old false default; it cannot distinguish an
     // opt-out from merely opening a map. Only v2 records explicit opt-outs.
     if (current && typeof current.wheelZoom === 'boolean') wheelZoom.value = current.wheelZoom
+    if (current && props.data.grid && typeof current.showGrid === 'boolean') showGrid.value = current.showGrid
   } catch { /* Ignore malformed or unavailable preferences. */ }
 }
 async function copyLink() {
@@ -394,6 +419,7 @@ function motionChanged(event: MediaQueryListEvent) {
 watch(() => props.targetId, selectTarget)
 watch([query, category, perkFilter], () => { renderMarkers(); savePreferences() })
 watch(wheelZoom, enabled => { if (enabled) map?.scrollWheelZoom.enable(); else map?.scrollWheelZoom.disable(); savePreferences() })
+watch(showGrid, () => { renderGrid(); savePreferences() })
 watch(() => props.active, async active => { if (active) { await nextTick(); resizeMap() } else { previouslyZeroSize = true; map?.stop() } })
 watch(() => props.data, () => { query.value = ''; restorePreferences(); renderLayer(); selectTarget() })
 onMounted(() => {
@@ -420,6 +446,7 @@ onMounted(() => {
     mapError.value = true
     imageLoading.value = false
   }
+  nextTick(() => { if (!disposed) emit('ready') })
 })
 onBeforeUnmount(() => {
   disposed = true
@@ -431,6 +458,7 @@ onBeforeUnmount(() => {
   map?.stop()
   removeArtwork()
   markers?.clearLayers()
+  gridLines?.clearLayers()
   map?.off('zoomend', updateZoomButtons)
   map?.remove()
   map = undefined
@@ -439,6 +467,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .atlas { min-width:0; padding:1.3rem 0 0; color:var(--text); }
+.atlas :deep(.atlas-grid-label) { display:grid; place-items:center; color:var(--text); background:var(--surface); border:1px solid var(--line); border-radius:3px; font-size:.65rem; font-weight:650; pointer-events:none; }
 .atlas-heading { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:1.1rem; }
 .atlas-heading h2 { margin:.2rem 0 0; font-size:1.5rem; line-height:1.25; letter-spacing:-.025em; }
 .atlas-fields { display:flex; gap:.8rem; }

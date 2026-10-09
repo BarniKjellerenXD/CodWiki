@@ -1,0 +1,6293 @@
+{
+  "maps": [
+    {
+      "id": "mw3-urzikstan",
+      "slug": "urzikstan",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "tileSource": "https://cdn.wzhub.gg/map/tiles/v2/urzikstan_mwz/3/{x}/{y}.webp",
+      "image": "/maps/mw3-urzikstan/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 2483534,
+      "sha256": "4e1c2c3578a7b98ef7a1febceb8dc79b476cfd93a2fd6ed036ee8688a364d657",
+      "sourceCoordinates": {
+        "west": 0,
+        "east": 256,
+        "north": 0,
+        "south": -256
+      },
+      "reviewed": "2026-10-09",
+      "credit": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained."
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "slug": "dark-aether",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "tileSource": "https://cdn.wzhub.gg/map/tiles/v2/dark_aether_v2_s11/3/{x}/{y}.webp",
+      "image": "/maps/mw3-dark-aether-season-1/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 1462940,
+      "sha256": "a35ee18930a91c5cbffc2b311ff9a75b49d299331044bbbee12a3ff1be6f25c5",
+      "sourceCoordinates": {
+        "west": 0,
+        "east": 256,
+        "north": 0,
+        "south": -256
+      },
+      "reviewed": "2026-10-09",
+      "credit": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained."
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "slug": "dark-aether-s2r",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "tileSource": "https://cdn.wzhub.gg/map/tiles/v2/dark_aether_s2r_v2_mwz/3/{x}/{y}.webp",
+      "image": "/maps/mw3-dark-aether-season-2/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 2016194,
+      "sha256": "bfe8b0dab026f9360a4e07cfb10044a60f2687090fcd599bdf69ac749a88e5e2",
+      "sourceCoordinates": {
+        "west": 0,
+        "east": 256,
+        "north": 0,
+        "south": -256
+      },
+      "reviewed": "2026-10-09",
+      "credit": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained."
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "slug": "dark-aether-s3r",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "tileSource": "https://cdn.wzhub.gg/map/tiles/v2/dark_s3r_4k_wm/3/{x}/{y}.webp",
+      "image": "/maps/mw3-dark-aether-season-3/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 1677212,
+      "sha256": "43cf4bdf61989adc4f804d5efb595d23aaba16827eb97b8f6abed1696bbf38c5",
+      "sourceCoordinates": {
+        "west": 0,
+        "east": 256,
+        "north": 0,
+        "south": -256
+      },
+      "reviewed": "2026-10-09",
+      "credit": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained."
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "slug": "dark-aether-s5r",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "tileSource": "https://cdn.wzhub.gg/map/tiles/v2/dark_aether_s5r_wm/3/{x}/{y}.webp",
+      "image": "/maps/mw3-dark-aether-season-5/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 2135806,
+      "sha256": "2b0c975127c7f62f1cd4df20eca8cacb8554a6a598718786e45b42d9d2384604",
+      "sourceCoordinates": {
+        "west": 0,
+        "east": 256,
+        "north": 0,
+        "south": -256
+      },
+      "reviewed": "2026-10-09",
+      "credit": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained."
+    }
+  ],
+  "limits": "Reference map positions and guide landmarks were cross-checked in software/source review. Moving, random and match-dependent locations are labelled. No full in-game playthrough was performed.",
+  "locations": [
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2109",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2109",
+      "publishedPosition": [
+        -63.21875,
+        129.125
+      ],
+      "normalized": [
+        0.50439453125,
+        0.2469482421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2131",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2131",
+      "publishedPosition": [
+        -128.5,
+        214.703125
+      ],
+      "normalized": [
+        0.83868408203125,
+        0.501953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2132",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2132",
+      "publishedPosition": [
+        -196.8359375,
+        191.515625
+      ],
+      "normalized": [
+        0.74810791015625,
+        0.768890380859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2133",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2133",
+      "publishedPosition": [
+        -192.921875,
+        138.59375
+      ],
+      "normalized": [
+        0.5413818359375,
+        0.75360107421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2134",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2134",
+      "publishedPosition": [
+        -134.25,
+        166.5625
+      ],
+      "normalized": [
+        0.650634765625,
+        0.5244140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2135",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2135",
+      "publishedPosition": [
+        -120.625,
+        140.875
+      ],
+      "normalized": [
+        0.55029296875,
+        0.47119140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2136",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2136",
+      "publishedPosition": [
+        -102.8127013081717,
+        104.95360866249044
+      ],
+      "normalized": [
+        0.4099750338378533,
+        0.4016121144850457
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2137",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2137",
+      "publishedPosition": [
+        -64.484375,
+        190.3125
+      ],
+      "normalized": [
+        0.743408203125,
+        0.25189208984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2138",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2138",
+      "publishedPosition": [
+        -60.5,
+        56.375
+      ],
+      "normalized": [
+        0.22021484375,
+        0.236328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2139",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2139",
+      "publishedPosition": [
+        -110.109375,
+        57.015625
+      ],
+      "normalized": [
+        0.22271728515625,
+        0.43011474609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "poi-m2140",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2140",
+      "publishedPosition": [
+        -180.96875,
+        90.515625
+      ],
+      "normalized": [
+        0.35357666015625,
+        0.7069091796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-speed-cola",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2267",
+      "publishedPosition": [
+        -60.53125,
+        80.09375
+      ],
+      "normalized": [
+        0.3128662109375,
+        0.2364501953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-juggernog",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2268",
+      "publishedPosition": [
+        -94.78125,
+        68.96875
+      ],
+      "normalized": [
+        0.2694091796875,
+        0.3702392578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-death-perception",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2269",
+      "publishedPosition": [
+        -45.34375,
+        114.65625
+      ],
+      "normalized": [
+        0.4478759765625,
+        0.1771240234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-deadshot",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2270",
+      "publishedPosition": [
+        -85.884601891133,
+        211.3495279723693
+      ],
+      "normalized": [
+        0.8255840936420675,
+        0.3354867261372383
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-tombstone",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2271",
+      "publishedPosition": [
+        -204.4375,
+        160.21875
+      ],
+      "normalized": [
+        0.6258544921875,
+        0.798583984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-staminup",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2272",
+      "publishedPosition": [
+        -185.5,
+        84.875
+      ],
+      "normalized": [
+        0.33154296875,
+        0.724609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-quick-revive",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2273",
+      "publishedPosition": [
+        -152.5625,
+        193.125
+      ],
+      "normalized": [
+        0.75439453125,
+        0.595947265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-phd",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2274",
+      "publishedPosition": [
+        -199.40625,
+        194.90625
+      ],
+      "normalized": [
+        0.7613525390625,
+        0.7789306640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portal-season-1",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2564",
+      "publishedPosition": [
+        -153.93291688530792,
+        141.50519850337383
+      ],
+      "normalized": [
+        0.552754681653804,
+        0.601300456583234
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portal-season-2",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search the hill/tower above Nahr Bathhouse around F4. Match the Drum, Mirror, Gloves and Target at the gold-relic pedestals; the guide has the full unlock.",
+      "normalized": [
+        0.547,
+        0.424
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portal-season-3",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search Tier 3’s northwest island circle around E3/E4. The Giraffe, Laptop, Drawing and Journal ritual is separate from ordinary triangle rewards. Use the island landmark to resolve the grid boundary.",
+      "normalized": [
+        0.488,
+        0.467
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portal-season-5",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search the F5 Opal Palace fountain tornado. Use gold Mr. Peeks and the three gold Echo relics; the Ascension story portal is at the nearby northeast gazebo.",
+      "normalized": [
+        0.555,
+        0.549
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "loc-image-m2574",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2574",
+      "publishedPosition": [
+        -32.042792155830156,
+        56.50037483146848
+      ],
+      "normalized": [
+        0.22070458918542374,
+        0.12516715685871155
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "loc-image-m2583",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2583",
+      "publishedPosition": [
+        -66.0625,
+        203.5546875
+      ],
+      "normalized": [
+        0.795135498046875,
+        0.258056640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "loc-image-m2623",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2623",
+      "publishedPosition": [
+        -204.1875,
+        169.6875
+      ],
+      "normalized": [
+        0.662841796875,
+        0.797607421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "loc-image-m2637",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2637",
+      "publishedPosition": [
+        -217.5859375,
+        107.6015625
+      ],
+      "normalized": [
+        0.420318603515625,
+        0.849945068359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2575",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2575",
+      "publishedPosition": [
+        -117.81643911393002,
+        68.34392841047435
+      ],
+      "normalized": [
+        0.2669684703534154,
+        0.4602204652887891
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2594",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2594",
+      "publishedPosition": [
+        -184.5,
+        136.625
+      ],
+      "normalized": [
+        0.53369140625,
+        0.720703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2595",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2595",
+      "publishedPosition": [
+        -160.75,
+        88.0625
+      ],
+      "normalized": [
+        0.343994140625,
+        0.6279296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2596",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2596",
+      "publishedPosition": [
+        -53.96798419093425,
+        222.4167444339679
+      ],
+      "normalized": [
+        0.8688154079451871,
+        0.21081243824583693
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2597",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2597",
+      "publishedPosition": [
+        -77.9375,
+        140.71875
+      ],
+      "normalized": [
+        0.5496826171875,
+        0.304443359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2598",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2598",
+      "publishedPosition": [
+        -139.1875,
+        141.03125
+      ],
+      "normalized": [
+        0.5509033203125,
+        0.543701171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2599",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2599",
+      "publishedPosition": [
+        -124.59375,
+        156.40625
+      ],
+      "normalized": [
+        0.6109619140625,
+        0.4866943359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2603",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2603",
+      "publishedPosition": [
+        -35.0625,
+        72.3125
+      ],
+      "normalized": [
+        0.282470703125,
+        0.136962890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2604",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2604",
+      "publishedPosition": [
+        -209.46851683572038,
+        82.6874010362348
+      ],
+      "normalized": [
+        0.3229976602977922,
+        0.8182363938895327
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2605",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2605",
+      "publishedPosition": [
+        -208.1121155302468,
+        193.11651605453264
+      ],
+      "normalized": [
+        0.7543613908380181,
+        0.8129379512900266
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2606",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2606",
+      "publishedPosition": [
+        -133.71875,
+        215.28125
+      ],
+      "normalized": [
+        0.8409423828125,
+        0.5223388671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "usb-key-m2625",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2625",
+      "publishedPosition": [
+        -112.84375,
+        136.09375
+      ],
+      "normalized": [
+        0.5316162109375,
+        0.4407958984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "greylom-m2573",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2573",
+      "publishedPosition": [
+        -103.25,
+        183.75
+      ],
+      "normalized": [
+        0.7177734375,
+        0.4033203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "greylom-m2588",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2588",
+      "publishedPosition": [
+        -150.03125,
+        78.15625
+      ],
+      "normalized": [
+        0.3052978515625,
+        0.5860595703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "greylom-m2591",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2591",
+      "publishedPosition": [
+        -156.96875,
+        215.34375
+      ],
+      "normalized": [
+        0.8411865234375,
+        0.6131591796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "greylom-m2600",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2600",
+      "publishedPosition": [
+        -80.875,
+        93.4375
+      ],
+      "normalized": [
+        0.364990234375,
+        0.31591796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "trans-m2681",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2681",
+      "publishedPosition": [
+        -38.81460247804635,
+        217.03551365952492
+      ],
+      "normalized": [
+        0.8477949752325192,
+        0.15161954092986857
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "trans-m2685",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2685",
+      "publishedPosition": [
+        -151.609375,
+        62.109375
+      ],
+      "normalized": [
+        0.24261474609375,
+        0.59222412109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "trans-m2686",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2686",
+      "publishedPosition": [
+        -48.46875,
+        94.59375
+      ],
+      "normalized": [
+        0.3695068359375,
+        0.1893310546875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "chess-vault",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2477",
+      "publishedPosition": [
+        -197.5625,
+        194.90625
+      ],
+      "normalized": [
+        0.7613525390625,
+        0.771728515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3125",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3125",
+      "publishedPosition": [
+        -134.28125,
+        148.296875
+      ],
+      "normalized": [
+        0.57928466796875,
+        0.5245361328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3130",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3130",
+      "publishedPosition": [
+        -130.53125,
+        142.71875
+      ],
+      "normalized": [
+        0.5574951171875,
+        0.5098876953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3135",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3135",
+      "publishedPosition": [
+        -123.8125,
+        126.21875
+      ],
+      "normalized": [
+        0.4930419921875,
+        0.483642578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3248",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3248",
+      "publishedPosition": [
+        -54.5625,
+        95.578125
+      ],
+      "normalized": [
+        0.37335205078125,
+        0.213134765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3253",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3253",
+      "publishedPosition": [
+        -170.15625,
+        160.28125
+      ],
+      "normalized": [
+        0.6260986328125,
+        0.6646728515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "free-crystals1-m3260",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3260",
+      "publishedPosition": [
+        -114.71875,
+        68
+      ],
+      "normalized": [
+        0.265625,
+        0.4481201171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3153",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3153",
+      "publishedPosition": [
+        -130.72658392471968,
+        46.56440530345583
+      ],
+      "normalized": [
+        0.18189220821662433,
+        0.5106507184559362
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3154",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3154",
+      "publishedPosition": [
+        -147.32546390080716,
+        89.56596305970146
+      ],
+      "normalized": [
+        0.3498670432019588,
+        0.575490093362528
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3155",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3155",
+      "publishedPosition": [
+        -122.89538124031759,
+        93.13257156422185
+      ],
+      "normalized": [
+        0.3637991076727416,
+        0.4800600829699906
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3156",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3156",
+      "publishedPosition": [
+        -99.18298695318501,
+        121.625
+      ],
+      "normalized": [
+        0.47509765625,
+        0.38743354278587894
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3157",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3157",
+      "publishedPosition": [
+        -103.63118446364055,
+        155.39772952218982
+      ],
+      "normalized": [
+        0.607022380946054,
+        0.4048093143110959
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3158",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3158",
+      "publishedPosition": [
+        -111.4375,
+        126.75
+      ],
+      "normalized": [
+        0.4951171875,
+        0.435302734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3159",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3159",
+      "publishedPosition": [
+        -126.03125,
+        117.125
+      ],
+      "normalized": [
+        0.45751953125,
+        0.4923095703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3160",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3160",
+      "publishedPosition": [
+        -144.87467994592703,
+        142.21831203126857
+      ],
+      "normalized": [
+        0.5555402813721428,
+        0.5659167185387775
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3161",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3161",
+      "publishedPosition": [
+        -161.62467994592703,
+        144.21831203126857
+      ],
+      "normalized": [
+        0.5633527813721428,
+        0.6313464060387775
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3162",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3162",
+      "publishedPosition": [
+        -125.0625,
+        187.5
+      ],
+      "normalized": [
+        0.732421875,
+        0.488525390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3163",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3163",
+      "publishedPosition": [
+        -202.3125,
+        183.1875
+      ],
+      "normalized": [
+        0.715576171875,
+        0.790283203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3164",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3164",
+      "publishedPosition": [
+        -153.4375,
+        196.4375
+      ],
+      "normalized": [
+        0.767333984375,
+        0.599365234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3165",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3165",
+      "publishedPosition": [
+        -144.5,
+        220.6875
+      ],
+      "normalized": [
+        0.862060546875,
+        0.564453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3166",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3166",
+      "publishedPosition": [
+        -71.34375,
+        65.0625
+      ],
+      "normalized": [
+        0.254150390625,
+        0.2786865234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3167",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3167",
+      "publishedPosition": [
+        -140.875,
+        115.84375
+      ],
+      "normalized": [
+        0.4525146484375,
+        0.55029296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3168",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3168",
+      "publishedPosition": [
+        -126.9375,
+        162.75
+      ],
+      "normalized": [
+        0.6357421875,
+        0.495849609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3169",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3169",
+      "publishedPosition": [
+        -209.3125,
+        91.03125
+      ],
+      "normalized": [
+        0.3555908203125,
+        0.817626953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3170",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3170",
+      "publishedPosition": [
+        -200.625,
+        164.03125
+      ],
+      "normalized": [
+        0.6407470703125,
+        0.78369140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3171",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3171",
+      "publishedPosition": [
+        -175.03125,
+        158.96875
+      ],
+      "normalized": [
+        0.6209716796875,
+        0.6837158203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3172",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3172",
+      "publishedPosition": [
+        -80.625,
+        189.375
+      ],
+      "normalized": [
+        0.73974609375,
+        0.31494140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3173",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3173",
+      "publishedPosition": [
+        -69.3125,
+        154.15625
+      ],
+      "normalized": [
+        0.6021728515625,
+        0.270751953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3174",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3174",
+      "publishedPosition": [
+        -94,
+        57.65625
+      ],
+      "normalized": [
+        0.2252197265625,
+        0.3671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3175",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3175",
+      "publishedPosition": [
+        -105.15625,
+        68.5
+      ],
+      "normalized": [
+        0.267578125,
+        0.4107666015625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3176",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3176",
+      "publishedPosition": [
+        -104,
+        98.21875
+      ],
+      "normalized": [
+        0.3836669921875,
+        0.40625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3177",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3177",
+      "publishedPosition": [
+        -174.31604748816272,
+        177.53178373321563
+      ],
+      "normalized": [
+        0.6934835302078736,
+        0.6809220605006356
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3178",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3178",
+      "publishedPosition": [
+        -206.71875,
+        201.4375
+      ],
+      "normalized": [
+        0.786865234375,
+        0.8074951171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3179",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3179",
+      "publishedPosition": [
+        -183.875,
+        189.75
+      ],
+      "normalized": [
+        0.7412109375,
+        0.71826171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3180",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3180",
+      "publishedPosition": [
+        -86.265625,
+        110.703125
+      ],
+      "normalized": [
+        0.43243408203125,
+        0.33697509765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3181",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3181",
+      "publishedPosition": [
+        -42.78125,
+        66.21875
+      ],
+      "normalized": [
+        0.2586669921875,
+        0.1671142578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3182",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3182",
+      "publishedPosition": [
+        -47.28125,
+        136.21875
+      ],
+      "normalized": [
+        0.5321044921875,
+        0.1846923828125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3183",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3183",
+      "publishedPosition": [
+        -86.5625,
+        148.375
+      ],
+      "normalized": [
+        0.57958984375,
+        0.338134765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3184",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3184",
+      "publishedPosition": [
+        -188.36562193066007,
+        125.49936456424426
+      ],
+      "normalized": [
+        0.49023189282907914,
+        0.7358032106666409
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3185",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3185",
+      "publishedPosition": [
+        -59.686609646013316,
+        107.28356801576791
+      ],
+      "normalized": [
+        0.4190764375615934,
+        0.23315081892973952
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3186",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3186",
+      "publishedPosition": [
+        -50.953260005673954,
+        227.609375
+      ],
+      "normalized": [
+        0.88909912109375,
+        0.19903617189716388
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3187",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3187",
+      "publishedPosition": [
+        -101.4375,
+        198.0625
+      ],
+      "normalized": [
+        0.773681640625,
+        0.396240234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3188",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3188",
+      "publishedPosition": [
+        -114.0625,
+        215.8125
+      ],
+      "normalized": [
+        0.843017578125,
+        0.445556640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3189",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3189",
+      "publishedPosition": [
+        -53.5,
+        200.1875
+      ],
+      "normalized": [
+        0.781982421875,
+        0.208984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3190",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3190",
+      "publishedPosition": [
+        -87.5625,
+        67.75
+      ],
+      "normalized": [
+        0.2646484375,
+        0.342041015625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3191",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3191",
+      "publishedPosition": [
+        -172.28125,
+        164.4375
+      ],
+      "normalized": [
+        0.642333984375,
+        0.6729736328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3192",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3192",
+      "publishedPosition": [
+        -112.5,
+        92.5
+      ],
+      "normalized": [
+        0.361328125,
+        0.439453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3203",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3203",
+      "publishedPosition": [
+        -132.80624152268604,
+        76.59375
+      ],
+      "normalized": [
+        0.2991943359375,
+        0.5187743809479923
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3204",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3204",
+      "publishedPosition": [
+        -73.28137536241152,
+        169.28125
+      ],
+      "normalized": [
+        0.6612548828125,
+        0.28625537250942
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3205",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3205",
+      "publishedPosition": [
+        -209.33600646027256,
+        99.625
+      ],
+      "normalized": [
+        0.38916015625,
+        0.8177187752354397
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3206",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3206",
+      "publishedPosition": [
+        -88.7765055148868,
+        87.375
+      ],
+      "normalized": [
+        0.34130859375,
+        0.34678322466752654
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3207",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3207",
+      "publishedPosition": [
+        -224.20381258650335,
+        136.15625
+      ],
+      "normalized": [
+        0.5318603515625,
+        0.8757961429160287
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3208",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3208",
+      "publishedPosition": [
+        -44.68766875709244,
+        93.484375
+      ],
+      "normalized": [
+        0.36517333984375,
+        0.17456120608239234
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3209",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3209",
+      "publishedPosition": [
+        -188.63054656129674,
+        96.24882702816564
+      ],
+      "normalized": [
+        0.375971980578772,
+        0.7368380725050654
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3210",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3210",
+      "publishedPosition": [
+        -169.0625,
+        92.625
+      ],
+      "normalized": [
+        0.36181640625,
+        0.660400390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3212",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3212",
+      "publishedPosition": [
+        -96.34375,
+        224.53125
+      ],
+      "normalized": [
+        0.8770751953125,
+        0.3763427734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3213",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3213",
+      "publishedPosition": [
+        -186.375,
+        226.9375
+      ],
+      "normalized": [
+        0.886474609375,
+        0.72802734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3214",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3214",
+      "publishedPosition": [
+        -126.9375,
+        104.125
+      ],
+      "normalized": [
+        0.40673828125,
+        0.495849609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3215",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3215",
+      "publishedPosition": [
+        -117.21875,
+        76.0625
+      ],
+      "normalized": [
+        0.297119140625,
+        0.4578857421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3255",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3255",
+      "publishedPosition": [
+        -161.7318050705637,
+        106.328125
+      ],
+      "normalized": [
+        0.41534423828125,
+        0.6317648635568894
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "obelisk-urzi-m3267",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m3267",
+      "publishedPosition": [
+        -126.109375,
+        175.78125
+      ],
+      "normalized": [
+        0.6866455078125,
+        0.49261474609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2111",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2111",
+      "publishedPosition": [
+        -46.4375,
+        121.96875
+      ],
+      "normalized": [
+        0.4764404296875,
+        0.181396484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2245",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2245",
+      "publishedPosition": [
+        -31.798024459379473,
+        56.11009026457096
+      ],
+      "normalized": [
+        0.2191800400959803,
+        0.12421103304445107
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2248",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2248",
+      "publishedPosition": [
+        -150.7503636965291,
+        62.86104446784891
+      ],
+      "normalized": [
+        0.24555095495253482,
+        0.5888686081895668
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2256",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2256",
+      "publishedPosition": [
+        -56.62269989501706,
+        222.59775299911726
+      ],
+      "normalized": [
+        0.8695224726528018,
+        0.22118242146491038
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2277",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2277",
+      "publishedPosition": [
+        -75.1875,
+        131.9375
+      ],
+      "normalized": [
+        0.515380859375,
+        0.293701171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2278",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2278",
+      "publishedPosition": [
+        -76.34375,
+        185.46875
+      ],
+      "normalized": [
+        0.7244873046875,
+        0.2982177734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2279",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2279",
+      "publishedPosition": [
+        -139.53125,
+        182.1875
+      ],
+      "normalized": [
+        0.711669921875,
+        0.5450439453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2280",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2280",
+      "publishedPosition": [
+        -206.171875,
+        204.65625
+      ],
+      "normalized": [
+        0.7994384765625,
+        0.80535888671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2281",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2281",
+      "publishedPosition": [
+        -211.4375,
+        130.140625
+      ],
+      "normalized": [
+        0.50836181640625,
+        0.825927734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2282",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2282",
+      "publishedPosition": [
+        -106.90625,
+        50
+      ],
+      "normalized": [
+        0.1953125,
+        0.4176025390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2284",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2284",
+      "publishedPosition": [
+        -143.875,
+        144.4375
+      ],
+      "normalized": [
+        0.564208984375,
+        0.56201171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2318",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2318",
+      "publishedPosition": [
+        -48.15625,
+        95.65625
+      ],
+      "normalized": [
+        0.3736572265625,
+        0.1881103515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2325",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2325",
+      "publishedPosition": [
+        -219.1875,
+        185.25
+      ],
+      "normalized": [
+        0.7236328125,
+        0.856201171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2331",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2331",
+      "publishedPosition": [
+        -80.0625,
+        76.5
+      ],
+      "normalized": [
+        0.298828125,
+        0.312744140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2388",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2388",
+      "publishedPosition": [
+        -120.9375,
+        198.90625
+      ],
+      "normalized": [
+        0.7769775390625,
+        0.472412109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2394",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2394",
+      "publishedPosition": [
+        -175.96335965582213,
+        89.82048117343385
+      ],
+      "normalized": [
+        0.35086125458372597,
+        0.6873568736555552
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-entry-m2397",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2397",
+      "publishedPosition": [
+        -168.56998667152664,
+        143.19269458955222
+      ],
+      "normalized": [
+        0.5593464632404384,
+        0.6584765104356509
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2112",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2112",
+      "publishedPosition": [
+        -159.875,
+        227.65625
+      ],
+      "normalized": [
+        0.8892822265625,
+        0.62451171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2291",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2291",
+      "publishedPosition": [
+        -161.41131064407128,
+        199.72170104818645
+      ],
+      "normalized": [
+        0.7801628947194783,
+        0.6305129322034034
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2292",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2292",
+      "publishedPosition": [
+        -178.16307861048463,
+        93.84682827529019
+      ],
+      "normalized": [
+        0.3665891729503523,
+        0.6959495258222056
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2293",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2293",
+      "publishedPosition": [
+        -129.0933218594547,
+        178.16193798246667
+      ],
+      "normalized": [
+        0.6959450702440104,
+        0.5042707885134949
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2295",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2295",
+      "publishedPosition": [
+        -86.03596398399024,
+        207.7856936393302
+      ],
+      "normalized": [
+        0.8116628657786336,
+        0.3360779843124619
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2296",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2296",
+      "publishedPosition": [
+        -55.568600031202436,
+        60.69121130770874
+      ],
+      "normalized": [
+        0.23707504417073727,
+        0.21706484387188452
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2297",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2297",
+      "publishedPosition": [
+        -105.01203976631105,
+        156.27212184088987
+      ],
+      "normalized": [
+        0.610437975940976,
+        0.41020328033715253
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2298",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2298",
+      "publishedPosition": [
+        -124.98694845969234,
+        228.75950579727754
+      ],
+      "normalized": [
+        0.8935918195206154,
+        0.4882302674206732
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2299",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2299",
+      "publishedPosition": [
+        -196.28125,
+        196.4375
+      ],
+      "normalized": [
+        0.767333984375,
+        0.7667236328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2301",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2301",
+      "publishedPosition": [
+        -202.1875,
+        146.5625
+      ],
+      "normalized": [
+        0.572509765625,
+        0.789794921875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2302",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2302",
+      "publishedPosition": [
+        -40.84375,
+        223.53125
+      ],
+      "normalized": [
+        0.8731689453125,
+        0.1595458984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2303",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2303",
+      "publishedPosition": [
+        -73.375,
+        131.625
+      ],
+      "normalized": [
+        0.51416015625,
+        0.28662109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2304",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2304",
+      "publishedPosition": [
+        -179.71875,
+        136.40625
+      ],
+      "normalized": [
+        0.5328369140625,
+        0.7020263671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2305",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2305",
+      "publishedPosition": [
+        -55.5625,
+        184.5625
+      ],
+      "normalized": [
+        0.720947265625,
+        0.217041015625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2306",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2306",
+      "publishedPosition": [
+        -196.375,
+        42.4375
+      ],
+      "normalized": [
+        0.165771484375,
+        0.76708984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2307",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2307",
+      "publishedPosition": [
+        -134.13510448458857,
+        115.03652007323312
+      ],
+      "normalized": [
+        0.4493614065360669,
+        0.5239652518929241
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2308",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2308",
+      "publishedPosition": [
+        -51.4375,
+        94.6875
+      ],
+      "normalized": [
+        0.369873046875,
+        0.200927734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2309",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2309",
+      "publishedPosition": [
+        -215.796875,
+        80.578125
+      ],
+      "normalized": [
+        0.31475830078125,
+        0.84295654296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2310",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2310",
+      "publishedPosition": [
+        -137.09375,
+        59.375
+      ],
+      "normalized": [
+        0.23193359375,
+        0.5355224609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2311",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2311",
+      "publishedPosition": [
+        -65.9478752971872,
+        149.61462470281282
+      ],
+      "normalized": [
+        0.5844321277453626,
+        0.2576088878796375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2312",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2312",
+      "publishedPosition": [
+        -105.4375,
+        116.125
+      ],
+      "normalized": [
+        0.45361328125,
+        0.411865234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2313",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2313",
+      "publishedPosition": [
+        -146.9375,
+        77.375
+      ],
+      "normalized": [
+        0.30224609375,
+        0.573974609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2314",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2314",
+      "publishedPosition": [
+        -196.21354482255785,
+        226.73433835846134
+      ],
+      "normalized": [
+        0.8856810092127396,
+        0.7664591594631166
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "portals-exit-m2393",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2393",
+      "publishedPosition": [
+        -104.75545352549648,
+        65.06485525296901
+      ],
+      "normalized": [
+        0.2541595908319102,
+        0.4092009903339706
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2090",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2090",
+      "publishedPosition": [
+        -38.734375,
+        87.09375
+      ],
+      "normalized": [
+        0.3402099609375,
+        0.15130615234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2121",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2121",
+      "publishedPosition": [
+        -75.109375,
+        190.84375
+      ],
+      "normalized": [
+        0.7454833984375,
+        0.29339599609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2122",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2122",
+      "publishedPosition": [
+        -56.5,
+        186.3125
+      ],
+      "normalized": [
+        0.727783203125,
+        0.220703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2125",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2125",
+      "publishedPosition": [
+        -45.359375,
+        204.375
+      ],
+      "normalized": [
+        0.79833984375,
+        0.17718505859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2128",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2128",
+      "publishedPosition": [
+        -137.1875,
+        145.21875
+      ],
+      "normalized": [
+        0.5672607421875,
+        0.535888671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2150",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2150",
+      "publishedPosition": [
+        -161.5625,
+        183
+      ],
+      "normalized": [
+        0.71484375,
+        0.631103515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2157",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2157",
+      "publishedPosition": [
+        -73.390625,
+        143.578125
+      ],
+      "normalized": [
+        0.56085205078125,
+        0.28668212890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2160",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2160",
+      "publishedPosition": [
+        -46.84375,
+        151.015625
+      ],
+      "normalized": [
+        0.58990478515625,
+        0.1829833984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2163",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2163",
+      "publishedPosition": [
+        -57.1875,
+        134.046875
+      ],
+      "normalized": [
+        0.52362060546875,
+        0.223388671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2174",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2174",
+      "publishedPosition": [
+        -87.53125,
+        209.375
+      ],
+      "normalized": [
+        0.81787109375,
+        0.3419189453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2179",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2179",
+      "publishedPosition": [
+        -59.9375,
+        214.1875
+      ],
+      "normalized": [
+        0.836669921875,
+        0.234130859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2180",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2180",
+      "publishedPosition": [
+        -51.5,
+        225.8125
+      ],
+      "normalized": [
+        0.882080078125,
+        0.201171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2186",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2186",
+      "publishedPosition": [
+        -97.84375,
+        86.125
+      ],
+      "normalized": [
+        0.33642578125,
+        0.3822021484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2188",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2188",
+      "publishedPosition": [
+        -77.90625,
+        62.75
+      ],
+      "normalized": [
+        0.2451171875,
+        0.3043212890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2190",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2190",
+      "publishedPosition": [
+        -57.75,
+        59.828125
+      ],
+      "normalized": [
+        0.23370361328125,
+        0.2255859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2198",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2198",
+      "publishedPosition": [
+        -87.84375,
+        126.8125
+      ],
+      "normalized": [
+        0.495361328125,
+        0.3431396484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2199",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2199",
+      "publishedPosition": [
+        -65.984375,
+        103.140625
+      ],
+      "normalized": [
+        0.40289306640625,
+        0.25775146484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2200",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2200",
+      "publishedPosition": [
+        -66.40625,
+        91.4375
+      ],
+      "normalized": [
+        0.357177734375,
+        0.2593994140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2202",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2202",
+      "publishedPosition": [
+        -128.75,
+        71.40625
+      ],
+      "normalized": [
+        0.2789306640625,
+        0.5029296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2207",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2207",
+      "publishedPosition": [
+        -142.625,
+        72.03125
+      ],
+      "normalized": [
+        0.2813720703125,
+        0.55712890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2208",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2208",
+      "publishedPosition": [
+        -167,
+        69.4375
+      ],
+      "normalized": [
+        0.271240234375,
+        0.65234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2212",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2212",
+      "publishedPosition": [
+        -194.625,
+        88.4375
+      ],
+      "normalized": [
+        0.345458984375,
+        0.76025390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2214",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2214",
+      "publishedPosition": [
+        -207.6875,
+        65.5625
+      ],
+      "normalized": [
+        0.256103515625,
+        0.811279296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2218",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2218",
+      "publishedPosition": [
+        -182.4375,
+        99.875
+      ],
+      "normalized": [
+        0.39013671875,
+        0.712646484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2219",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2219",
+      "publishedPosition": [
+        -183.28125,
+        103.34375
+      ],
+      "normalized": [
+        0.4036865234375,
+        0.7159423828125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2226",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2226",
+      "publishedPosition": [
+        -170.5625,
+        149.796875
+      ],
+      "normalized": [
+        0.58514404296875,
+        0.666259765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2227",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2227",
+      "publishedPosition": [
+        -169.828125,
+        143.078125
+      ],
+      "normalized": [
+        0.55889892578125,
+        0.66339111328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2236",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2236",
+      "publishedPosition": [
+        -154.03125,
+        101.8125
+      ],
+      "normalized": [
+        0.397705078125,
+        0.6016845703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2586",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2586",
+      "publishedPosition": [
+        -101.8125,
+        184.9375
+      ],
+      "normalized": [
+        0.722412109375,
+        0.397705078125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2587",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2587",
+      "publishedPosition": [
+        -102.96875,
+        181.25
+      ],
+      "normalized": [
+        0.7080078125,
+        0.4022216796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2589",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2589",
+      "publishedPosition": [
+        -153.265625,
+        77.171875
+      ],
+      "normalized": [
+        0.30145263671875,
+        0.59869384765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2590",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2590",
+      "publishedPosition": [
+        -147.4375,
+        77.59375
+      ],
+      "normalized": [
+        0.3031005859375,
+        0.575927734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2592",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2592",
+      "publishedPosition": [
+        -152.90625,
+        217.09375
+      ],
+      "normalized": [
+        0.8480224609375,
+        0.5972900390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2593",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2593",
+      "publishedPosition": [
+        -155.375,
+        216.375
+      ],
+      "normalized": [
+        0.84521484375,
+        0.60693359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2601",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2601",
+      "publishedPosition": [
+        -80,
+        92.1875
+      ],
+      "normalized": [
+        0.360107421875,
+        0.3125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "ammo-depot-m2602",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2602",
+      "publishedPosition": [
+        -81.84375,
+        94.65625
+      ],
+      "normalized": [
+        0.3697509765625,
+        0.3197021484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2324",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2324",
+      "publishedPosition": [
+        -205.625,
+        65.3125
+      ],
+      "normalized": [
+        0.255126953125,
+        0.80322265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2326",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2326",
+      "publishedPosition": [
+        -165.1875,
+        60.0625
+      ],
+      "normalized": [
+        0.234619140625,
+        0.645263671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2351",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2351",
+      "publishedPosition": [
+        -90.6875,
+        57.375
+      ],
+      "normalized": [
+        0.22412109375,
+        0.354248046875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2363",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2363",
+      "publishedPosition": [
+        -84.5625,
+        166.78125
+      ],
+      "normalized": [
+        0.6514892578125,
+        0.330322265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2389",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2389",
+      "publishedPosition": [
+        -174.9375,
+        202.375
+      ],
+      "normalized": [
+        0.79052734375,
+        0.683349609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2395",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2395",
+      "publishedPosition": [
+        -50.58951699255931,
+        207.482106677196
+      ],
+      "normalized": [
+        0.8104769792077968,
+        0.1976153007521848
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2396",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2396",
+      "publishedPosition": [
+        -137.00908190101143,
+        57.06388398264055
+      ],
+      "normalized": [
+        0.22290579680718964,
+        0.5351917261758259
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2399",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2399",
+      "publishedPosition": [
+        -149.63630052553015,
+        99.28443067759319
+      ],
+      "normalized": [
+        0.3878298073343484,
+        0.5845167989278521
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2414",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2414",
+      "publishedPosition": [
+        -38.818877359267276,
+        150.19291180655856
+      ],
+      "normalized": [
+        0.5866910617443694,
+        0.1516362396846378
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2415",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2415",
+      "publishedPosition": [
+        -101.10293589903576,
+        105.00148948804365
+      ],
+      "normalized": [
+        0.4101620683126705,
+        0.3949333433556084
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2419",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2419",
+      "publishedPosition": [
+        -89.94171710454074,
+        120.34724719380247
+      ],
+      "normalized": [
+        0.4701064343507909,
+        0.3513348324396123
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2424",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2424",
+      "publishedPosition": [
+        -173.6599586697552,
+        155.56526175908093
+      ],
+      "normalized": [
+        0.6076768037464099,
+        0.6783592135537313
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2426",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2426",
+      "publishedPosition": [
+        -160.91103331600647,
+        129.50195184995718
+      ],
+      "normalized": [
+        0.5058669994138952,
+        0.6285587238906503
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2428",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2428",
+      "publishedPosition": [
+        -57.63040671104034,
+        88.63057937396347
+      ],
+      "normalized": [
+        0.3462132006795448,
+        0.22511877621500131
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2434",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2434",
+      "publishedPosition": [
+        -213.59375,
+        184
+      ],
+      "normalized": [
+        0.71875,
+        0.8343505859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2448",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2448",
+      "publishedPosition": [
+        -117,
+        164.90625
+      ],
+      "normalized": [
+        0.6441650390625,
+        0.45703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2451",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2451",
+      "publishedPosition": [
+        -142.3125,
+        228.875
+      ],
+      "normalized": [
+        0.89404296875,
+        0.555908203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2461",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2461",
+      "publishedPosition": [
+        -135.875,
+        188.375
+      ],
+      "normalized": [
+        0.73583984375,
+        0.53076171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2466",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2466",
+      "publishedPosition": [
+        -146.25,
+        126.25
+      ],
+      "normalized": [
+        0.4931640625,
+        0.5712890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2474",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2474",
+      "publishedPosition": [
+        -44.875,
+        43.8125
+      ],
+      "normalized": [
+        0.171142578125,
+        0.17529296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2541",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2541",
+      "publishedPosition": [
+        -48.59375,
+        93.640625
+      ],
+      "normalized": [
+        0.36578369140625,
+        0.1898193359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2560",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2560",
+      "publishedPosition": [
+        -158.28125,
+        139.625
+      ],
+      "normalized": [
+        0.54541015625,
+        0.6182861328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2582",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2582",
+      "publishedPosition": [
+        -91.78125,
+        209.21875
+      ],
+      "normalized": [
+        0.8172607421875,
+        0.3585205078125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2651",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2651",
+      "publishedPosition": [
+        -190.96086370323857,
+        228.32203892967948
+      ],
+      "normalized": [
+        0.8918829645690605,
+        0.7459408738407757
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2759",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2759",
+      "publishedPosition": [
+        -108.3125,
+        154.9375
+      ],
+      "normalized": [
+        0.605224609375,
+        0.423095703125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "aether-tear-m2760",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2760",
+      "publishedPosition": [
+        -86.390625,
+        158.4375
+      ],
+      "normalized": [
+        0.618896484375,
+        0.33746337890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2093",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2093",
+      "publishedPosition": [
+        -148.28125,
+        199.125
+      ],
+      "normalized": [
+        0.77783203125,
+        0.5792236328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2094",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2094",
+      "publishedPosition": [
+        -202.265625,
+        164.984375
+      ],
+      "normalized": [
+        0.64447021484375,
+        0.79010009765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2095",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2095",
+      "publishedPosition": [
+        -218.1875,
+        104.90625
+      ],
+      "normalized": [
+        0.4097900390625,
+        0.852294921875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2097",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2097",
+      "publishedPosition": [
+        -100.1640625,
+        54.8125
+      ],
+      "normalized": [
+        0.214111328125,
+        0.391265869140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2098",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2098",
+      "publishedPosition": [
+        -58.234375,
+        60.09375
+      ],
+      "normalized": [
+        0.2347412109375,
+        0.22747802734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2099",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2099",
+      "publishedPosition": [
+        -44.6953125,
+        117.921875
+      ],
+      "normalized": [
+        0.46063232421875,
+        0.174591064453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2100",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2100",
+      "publishedPosition": [
+        -181.0625,
+        135.890625
+      ],
+      "normalized": [
+        0.53082275390625,
+        0.707275390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2101",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2101",
+      "publishedPosition": [
+        -172.59375,
+        98.03125
+      ],
+      "normalized": [
+        0.3829345703125,
+        0.6741943359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2102",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2102",
+      "publishedPosition": [
+        -74.296875,
+        138.984375
+      ],
+      "normalized": [
+        0.54290771484375,
+        0.29022216796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2104",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2104",
+      "publishedPosition": [
+        -132.140625,
+        111.8125
+      ],
+      "normalized": [
+        0.436767578125,
+        0.51617431640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2117",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2117",
+      "publishedPosition": [
+        -121.90625,
+        202.875
+      ],
+      "normalized": [
+        0.79248046875,
+        0.4761962890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2118",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2118",
+      "publishedPosition": [
+        -65.109375,
+        202.96875
+      ],
+      "normalized": [
+        0.7928466796875,
+        0.25433349609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2127",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2127",
+      "publishedPosition": [
+        -139.25,
+        141.09375
+      ],
+      "normalized": [
+        0.5511474609375,
+        0.5439453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2129",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2129",
+      "publishedPosition": [
+        -180.25,
+        171.28125
+      ],
+      "normalized": [
+        0.6690673828125,
+        0.7041015625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2141",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2141",
+      "publishedPosition": [
+        -187.59375,
+        221.203125
+      ],
+      "normalized": [
+        0.86407470703125,
+        0.7327880859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2142",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2142",
+      "publishedPosition": [
+        -34.5,
+        61.5
+      ],
+      "normalized": [
+        0.240234375,
+        0.134765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2154",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2154",
+      "publishedPosition": [
+        -113.015625,
+        132.234375
+      ],
+      "normalized": [
+        0.51654052734375,
+        0.44146728515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2155",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2155",
+      "publishedPosition": [
+        -73.71875,
+        132.78125
+      ],
+      "normalized": [
+        0.5186767578125,
+        0.2879638671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2167",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2167",
+      "publishedPosition": [
+        -75.875,
+        184.546875
+      ],
+      "normalized": [
+        0.72088623046875,
+        0.29638671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2203",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2203",
+      "publishedPosition": [
+        -133.375,
+        66.0625
+      ],
+      "normalized": [
+        0.258056640625,
+        0.52099609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2211",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2211",
+      "publishedPosition": [
+        -199.6875,
+        76.1875
+      ],
+      "normalized": [
+        0.297607421875,
+        0.780029296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2217",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2217",
+      "publishedPosition": [
+        -182.21875,
+        101.59375
+      ],
+      "normalized": [
+        0.3968505859375,
+        0.7117919921875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2243",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2243",
+      "publishedPosition": [
+        -67.19611544757643,
+        118.5394480601863
+      ],
+      "normalized": [
+        0.46304471898510274,
+        0.26248482596709544
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "pack-a-punch-green-m2244",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2244",
+      "publishedPosition": [
+        -211.16294024300822,
+        130.1883502494249
+      ],
+      "normalized": [
+        0.508548243161816,
+        0.8248552353242509
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "der-wu-m2565",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2565",
+      "publishedPosition": [
+        -125.28607953735059,
+        118.90871696457228
+      ],
+      "normalized": [
+        0.46448717564286046,
+        0.48939874819277573
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "der-wu-m2584",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2584",
+      "publishedPosition": [
+        -121.28460045433812,
+        143.223631176443
+      ],
+      "normalized": [
+        0.5594673092829805,
+        0.4737679705247583
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "der-wu-m2585",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2585",
+      "publishedPosition": [
+        -125.69247975671905,
+        161.78797441789703
+      ],
+      "normalized": [
+        0.6319842750699103,
+        0.4909862490496838
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2103",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2103",
+      "publishedPosition": [
+        -83.078125,
+        205.75
+      ],
+      "normalized": [
+        0.8037109375,
+        0.32452392578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2166",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2166",
+      "publishedPosition": [
+        -43.640625,
+        148.578125
+      ],
+      "normalized": [
+        0.58038330078125,
+        0.17047119140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2262",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2262",
+      "publishedPosition": [
+        -106.421875,
+        189.640625
+      ],
+      "normalized": [
+        0.74078369140625,
+        0.41571044921875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2290",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2290",
+      "publishedPosition": [
+        -96.65625,
+        57.9375
+      ],
+      "normalized": [
+        0.226318359375,
+        0.3775634765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2317",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2317",
+      "publishedPosition": [
+        -51.625,
+        97.8125
+      ],
+      "normalized": [
+        0.382080078125,
+        0.20166015625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2319",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2319",
+      "publishedPosition": [
+        -174.9375,
+        164.375
+      ],
+      "normalized": [
+        0.64208984375,
+        0.683349609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2321",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2321",
+      "publishedPosition": [
+        -166.5,
+        122.375
+      ],
+      "normalized": [
+        0.47802734375,
+        0.650390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2322",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2322",
+      "publishedPosition": [
+        -125.5,
+        114.75
+      ],
+      "normalized": [
+        0.4482421875,
+        0.490234375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2328",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2328",
+      "publishedPosition": [
+        -128.22255908865796,
+        220.53125
+      ],
+      "normalized": [
+        0.8614501953125,
+        0.5008693714400702
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2374",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2374",
+      "publishedPosition": [
+        -193.625,
+        51.90625
+      ],
+      "normalized": [
+        0.2027587890625,
+        0.75634765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2384",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2384",
+      "publishedPosition": [
+        -225.80016626735815,
+        132.4375
+      ],
+      "normalized": [
+        0.517333984375,
+        0.8820318994818678
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2407",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2407",
+      "publishedPosition": [
+        -153.1944094978369,
+        90.97134419167601
+      ],
+      "normalized": [
+        0.3553568132487344,
+        0.5984156621009253
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2418",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2418",
+      "publishedPosition": [
+        -80.09705423299398,
+        114.5336766242711
+      ],
+      "normalized": [
+        0.44739717431355897,
+        0.31287911809763275
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2429",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2429",
+      "publishedPosition": [
+        -38.940572533161294,
+        190.31895444818912
+      ],
+      "normalized": [
+        0.7434334158132387,
+        0.1521116114576613
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2463",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2463",
+      "publishedPosition": [
+        -218.5625,
+        191.375
+      ],
+      "normalized": [
+        0.74755859375,
+        0.853759765625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2464",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2464",
+      "publishedPosition": [
+        -118.3125,
+        84.125
+      ],
+      "normalized": [
+        0.32861328125,
+        0.462158203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2561",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2561",
+      "publishedPosition": [
+        -170.27991175787685,
+        217.83234251838434
+      ],
+      "normalized": [
+        0.8509075879624388,
+        0.6651559053042064
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2761",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2761",
+      "publishedPosition": [
+        -89.609375,
+        159.3125
+      ],
+      "normalized": [
+        0.622314453125,
+        0.35003662109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "dog-house-m2762",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2762",
+      "publishedPosition": [
+        -108.39292999298297,
+        152.9859994728976
+      ],
+      "normalized": [
+        0.5976015604410062,
+        0.42340988278508973
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2084",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2084",
+      "publishedPosition": [
+        -31.71875,
+        81.375
+      ],
+      "normalized": [
+        0.31787109375,
+        0.1239013671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2171",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2171",
+      "publishedPosition": [
+        -31.375,
+        202.0625
+      ],
+      "normalized": [
+        0.789306640625,
+        0.12255859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2181",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2181",
+      "publishedPosition": [
+        -65.890625,
+        48.328125
+      ],
+      "normalized": [
+        0.18878173828125,
+        0.25738525390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2215",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2215",
+      "publishedPosition": [
+        -199.46875,
+        42.71875
+      ],
+      "normalized": [
+        0.1668701171875,
+        0.7791748046875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2240",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2240",
+      "publishedPosition": [
+        -209.66033451473234,
+        180.76745893215374
+      ],
+      "normalized": [
+        0.7061228864537256,
+        0.8189856816981732
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2249",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2249",
+      "publishedPosition": [
+        -80.06704065394972,
+        51.314343241454004
+      ],
+      "normalized": [
+        0.2004466532869297,
+        0.3127618775544911
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2264",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2264",
+      "publishedPosition": [
+        -228.78125,
+        132.53125
+      ],
+      "normalized": [
+        0.5177001953125,
+        0.8936767578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2265",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2265",
+      "publishedPosition": [
+        -183.875,
+        51.875
+      ],
+      "normalized": [
+        0.20263671875,
+        0.71826171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2275",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2275",
+      "publishedPosition": [
+        -37.875,
+        130.53125
+      ],
+      "normalized": [
+        0.5098876953125,
+        0.14794921875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2276",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2276",
+      "publishedPosition": [
+        -49.25,
+        44.4375
+      ],
+      "normalized": [
+        0.173583984375,
+        0.1923828125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2285",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2285",
+      "publishedPosition": [
+        -215.78125,
+        155.84375
+      ],
+      "normalized": [
+        0.6087646484375,
+        0.8428955078125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2315",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2315",
+      "publishedPosition": [
+        -95.59375,
+        232.0625
+      ],
+      "normalized": [
+        0.906494140625,
+        0.3734130859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2327",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2327",
+      "publishedPosition": [
+        -133.57011817731592,
+        235.8125
+      ],
+      "normalized": [
+        0.921142578125,
+        0.5217582741301403
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2352",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2352",
+      "publishedPosition": [
+        -168.75,
+        222.5
+      ],
+      "normalized": [
+        0.869140625,
+        0.6591796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2353",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2353",
+      "publishedPosition": [
+        -151.8125,
+        229.5
+      ],
+      "normalized": [
+        0.896484375,
+        0.593017578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2354",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2354",
+      "publishedPosition": [
+        -118.125,
+        224.375
+      ],
+      "normalized": [
+        0.87646484375,
+        0.46142578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2355",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2355",
+      "publishedPosition": [
+        -40.875,
+        108.125
+      ],
+      "normalized": [
+        0.42236328125,
+        0.15966796875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2356",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2356",
+      "publishedPosition": [
+        -34.625,
+        37.5
+      ],
+      "normalized": [
+        0.146484375,
+        0.13525390625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2357",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2357",
+      "publishedPosition": [
+        -38,
+        224.4375
+      ],
+      "normalized": [
+        0.876708984375,
+        0.1484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2358",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2358",
+      "publishedPosition": [
+        -49.5625,
+        228.375
+      ],
+      "normalized": [
+        0.89208984375,
+        0.193603515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2359",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2359",
+      "publishedPosition": [
+        -71.4375,
+        219.375
+      ],
+      "normalized": [
+        0.85693359375,
+        0.279052734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2360",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2360",
+      "publishedPosition": [
+        -216.25,
+        102
+      ],
+      "normalized": [
+        0.3984375,
+        0.8447265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2361",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2361",
+      "publishedPosition": [
+        -219.9375,
+        68.5
+      ],
+      "normalized": [
+        0.267578125,
+        0.859130859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2362",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2362",
+      "publishedPosition": [
+        -211.375,
+        60.25
+      ],
+      "normalized": [
+        0.2353515625,
+        0.82568359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "spawn-locations-m2518",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2518",
+      "publishedPosition": [
+        -168.96170077516717,
+        49.5
+      ],
+      "normalized": [
+        0.193359375,
+        0.6600066436529968
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2087",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2087",
+      "publishedPosition": [
+        -108.0625,
+        203.21875
+      ],
+      "normalized": [
+        0.7938232421875,
+        0.422119140625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2126",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2126",
+      "publishedPosition": [
+        -50.59375,
+        197.71875
+      ],
+      "normalized": [
+        0.7723388671875,
+        0.1976318359375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2143",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2143",
+      "publishedPosition": [
+        -41.875,
+        66.6875
+      ],
+      "normalized": [
+        0.260498046875,
+        0.16357421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2149",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2149",
+      "publishedPosition": [
+        -169.5,
+        179.875
+      ],
+      "normalized": [
+        0.70263671875,
+        0.662109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2162",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2162",
+      "publishedPosition": [
+        -59,
+        134.328125
+      ],
+      "normalized": [
+        0.52471923828125,
+        0.23046875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2187",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2187",
+      "publishedPosition": [
+        -73,
+        79.125
+      ],
+      "normalized": [
+        0.30908203125,
+        0.28515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2201",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2201",
+      "publishedPosition": [
+        -131.9375,
+        71.90625
+      ],
+      "normalized": [
+        0.2808837890625,
+        0.515380859375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2213",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2213",
+      "publishedPosition": [
+        -204.25,
+        68.4375
+      ],
+      "normalized": [
+        0.267333984375,
+        0.7978515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2220",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2220",
+      "publishedPosition": [
+        -195.65625,
+        105.5
+      ],
+      "normalized": [
+        0.412109375,
+        0.7642822265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2223",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2223",
+      "publishedPosition": [
+        -222.125,
+        110.96875
+      ],
+      "normalized": [
+        0.4334716796875,
+        0.86767578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2225",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2225",
+      "publishedPosition": [
+        -173.5,
+        148.5
+      ],
+      "normalized": [
+        0.580078125,
+        0.677734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2235",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2235",
+      "publishedPosition": [
+        -151.03125,
+        102.21875
+      ],
+      "normalized": [
+        0.3992919921875,
+        0.5899658203125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "gas-station-m2365",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2365",
+      "publishedPosition": [
+        -118.28125,
+        140.15625
+      ],
+      "normalized": [
+        0.5474853515625,
+        0.4620361328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2092",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2092",
+      "publishedPosition": [
+        -139.84375,
+        223.59375
+      ],
+      "normalized": [
+        0.8734130859375,
+        0.5462646484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2119",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2119",
+      "publishedPosition": [
+        -67.140625,
+        183.640625
+      ],
+      "normalized": [
+        0.71734619140625,
+        0.26226806640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2130",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2130",
+      "publishedPosition": [
+        -185.171875,
+        195.90625
+      ],
+      "normalized": [
+        0.7652587890625,
+        0.72332763671875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2145",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2145",
+      "publishedPosition": [
+        -120.5625,
+        160.84375
+      ],
+      "normalized": [
+        0.6282958984375,
+        0.470947265625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2146",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2146",
+      "publishedPosition": [
+        -105.8125,
+        57.515625
+      ],
+      "normalized": [
+        0.22467041015625,
+        0.413330078125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2147",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2147",
+      "publishedPosition": [
+        -172.625,
+        176.46875
+      ],
+      "normalized": [
+        0.6893310546875,
+        0.67431640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2161",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2161",
+      "publishedPosition": [
+        -45.75,
+        142.75
+      ],
+      "normalized": [
+        0.5576171875,
+        0.1787109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2182",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2182",
+      "publishedPosition": [
+        -51.28125,
+        52.8203125
+      ],
+      "normalized": [
+        0.206329345703125,
+        0.2003173828125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2209",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2209",
+      "publishedPosition": [
+        -181.21875,
+        72.40625
+      ],
+      "normalized": [
+        0.2828369140625,
+        0.7078857421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2222",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2222",
+      "publishedPosition": [
+        -208.53125,
+        132.0625
+      ],
+      "normalized": [
+        0.515869140625,
+        0.8145751953125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2229",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2229",
+      "publishedPosition": [
+        -137.875,
+        148.71875
+      ],
+      "normalized": [
+        0.5809326171875,
+        0.53857421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2230",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2230",
+      "publishedPosition": [
+        -153.84375,
+        166.5625
+      ],
+      "normalized": [
+        0.650634765625,
+        0.6009521484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2242",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2242",
+      "publishedPosition": [
+        -77.37727610464287,
+        146.93836731647542
+      ],
+      "normalized": [
+        0.5739779973299821,
+        0.3022549847837612
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2316",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2316",
+      "publishedPosition": [
+        -100.15625,
+        217.5625
+      ],
+      "normalized": [
+        0.849853515625,
+        0.3912353515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2320",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2320",
+      "publishedPosition": [
+        -172.125,
+        211.75
+      ],
+      "normalized": [
+        0.8271484375,
+        0.67236328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2332",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2332",
+      "publishedPosition": [
+        -70.0625,
+        122.96875
+      ],
+      "normalized": [
+        0.4803466796875,
+        0.273681640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2376",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2376",
+      "publishedPosition": [
+        -150.625,
+        72.8125
+      ],
+      "normalized": [
+        0.284423828125,
+        0.58837890625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "mystery-box-color-m2377",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2377",
+      "publishedPosition": [
+        -107.3125,
+        84.1875
+      ],
+      "normalized": [
+        0.328857421875,
+        0.419189453125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2083",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2083",
+      "publishedPosition": [
+        -96.1875,
+        73.59375
+      ],
+      "normalized": [
+        0.2874755859375,
+        0.375732421875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2123",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2123",
+      "publishedPosition": [
+        -43.09375,
+        185.875
+      ],
+      "normalized": [
+        0.72607421875,
+        0.1683349609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2151",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2151",
+      "publishedPosition": [
+        -64.71875,
+        134.03125
+      ],
+      "normalized": [
+        0.5235595703125,
+        0.2528076171875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2152",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2152",
+      "publishedPosition": [
+        -130.09375,
+        45.8125
+      ],
+      "normalized": [
+        0.178955078125,
+        0.5081787109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2184",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2184",
+      "publishedPosition": [
+        -208.14295902960106,
+        181.97762686333118
+      ],
+      "normalized": [
+        0.7108501049348874,
+        0.8130584337093791
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2185",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2185",
+      "publishedPosition": [
+        -93.09375,
+        85.0625
+      ],
+      "normalized": [
+        0.332275390625,
+        0.3636474609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2233",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2233",
+      "publishedPosition": [
+        -150.34375,
+        74.78125
+      ],
+      "normalized": [
+        0.2921142578125,
+        0.5872802734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2286",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2286",
+      "publishedPosition": [
+        -43.75,
+        107.65625
+      ],
+      "normalized": [
+        0.4205322265625,
+        0.1708984375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2287",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2287",
+      "publishedPosition": [
+        -177.96875,
+        122.0625
+      ],
+      "normalized": [
+        0.476806640625,
+        0.6951904296875
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2288",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2288",
+      "publishedPosition": [
+        -86.609375,
+        191.328125
+      ],
+      "normalized": [
+        0.74737548828125,
+        0.33831787109375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2349",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2349",
+      "publishedPosition": [
+        -180.34375,
+        53.09375
+      ],
+      "normalized": [
+        0.2073974609375,
+        0.7044677734375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2372",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2372",
+      "publishedPosition": [
+        -82.8125,
+        154.5625
+      ],
+      "normalized": [
+        0.603759765625,
+        0.323486328125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2373",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2373",
+      "publishedPosition": [
+        -66,
+        50.4375
+      ],
+      "normalized": [
+        0.197021484375,
+        0.2578125
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-m2421",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2421",
+      "publishedPosition": [
+        -180.8351010510603,
+        175.88293152383238
+      ],
+      "normalized": [
+        0.6870427012649702,
+        0.7063871134807043
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2086",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2086",
+      "publishedPosition": [
+        -227.84375,
+        122.96875
+      ],
+      "normalized": [
+        0.4803466796875,
+        0.8900146484375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2114",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2114",
+      "publishedPosition": [
+        -145,
+        221.53125
+      ],
+      "normalized": [
+        0.8653564453125,
+        0.56640625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2170",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2170",
+      "publishedPosition": [
+        -32.647049869824585,
+        42.272049869824585
+      ],
+      "normalized": [
+        0.16512519480400228,
+        0.12752753855400228
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2283",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2283",
+      "publishedPosition": [
+        -205.5625,
+        53.375
+      ],
+      "normalized": [
+        0.20849609375,
+        0.802978515625
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2300",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2300",
+      "publishedPosition": [
+        -49.09375,
+        214.6875
+      ],
+      "normalized": [
+        0.838623046875,
+        0.1917724609375
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "exfil-last-m2553",
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "publishedId": "m2553",
+      "publishedPosition": [
+        -208.34796710454074,
+        181.59639384127746
+      ],
+      "normalized": [
+        0.7093609134424901,
+        0.8138592465021123
+      ]
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s2-mirror-upgrade",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Offer the Mirror at the I3 graveyard pedestal and use the matching elemental mod on its marked zombie.",
+      "normalized": [
+        0.85,
+        0.35
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s2-gloves-upgrade",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "At the F8 boxing gym, offer the Gloves, melee the bags left to right and finish the marked zombie.",
+      "normalized": [
+        0.55,
+        0.85
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s2-target-upgrade",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "At H8’s firing range, offer the Target, shoot all eight targets and headshot the marked zombie.",
+      "normalized": [
+        0.75,
+        0.85
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s5-drum-upgrade",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search the four-pillar square east of F7 Shorok Opera House. Use the pillar meteor and match the elemental zombies.",
+      "normalized": [
+        0.56,
+        0.75
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s5-giraffe-upgrade",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search the wrecked van in the square east of F4 Nahr Bathhouse. Use its meteor and finish the marked enemy chain.",
+      "normalized": [
+        0.568,
+        0.45
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-urzikstan",
+      "id": "s5-drum-course",
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "basis": "Search the canal around F4/G4 by Mister Peeks. Follow the actual white arrows on the Blood Burner; this pin does not draw the riding route.",
+      "normalized": [
+        0.604,
+        0.437
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "contracts-m2612",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2612",
+      "publishedPosition": [
+        -104.4375,
+        199.8125
+      ],
+      "normalized": [
+        0.780517578125,
+        0.407958984375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "contracts-m2613",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2613",
+      "publishedPosition": [
+        -111.25,
+        106.625
+      ],
+      "normalized": [
+        0.41650390625,
+        0.4345703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "contracts-m2620",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2620",
+      "publishedPosition": [
+        -163.875,
+        118.5
+      ],
+      "normalized": [
+        0.462890625,
+        0.64013671875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "exfil-m2563",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2563",
+      "publishedPosition": [
+        -148.5,
+        153.3125
+      ],
+      "normalized": [
+        0.598876953125,
+        0.580078125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "exfil-m2617",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2617",
+      "publishedPosition": [
+        -126.25,
+        123.375
+      ],
+      "normalized": [
+        0.48193359375,
+        0.4931640625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "locked-doors-m2566",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2566",
+      "publishedPosition": [
+        -143.1875,
+        152.375
+      ],
+      "normalized": [
+        0.59521484375,
+        0.559326171875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "locked-doors-m2567",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2567",
+      "publishedPosition": [
+        -143.875,
+        139.5
+      ],
+      "normalized": [
+        0.544921875,
+        0.56201171875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "locked-doors-m2581",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2581",
+      "publishedPosition": [
+        -129.3125,
+        157.5
+      ],
+      "normalized": [
+        0.615234375,
+        0.505126953125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "locked-doors-m2619",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2619",
+      "publishedPosition": [
+        -139.125,
+        190.625
+      ],
+      "normalized": [
+        0.74462890625,
+        0.54345703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "locked-doors-m2621",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2621",
+      "publishedPosition": [
+        -135.25,
+        118.25
+      ],
+      "normalized": [
+        0.4619140625,
+        0.5283203125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2571",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2571",
+      "publishedPosition": [
+        -154.625,
+        143.4375
+      ],
+      "normalized": [
+        0.560302734375,
+        0.60400390625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2580",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2580",
+      "publishedPosition": [
+        -103.1875,
+        141.1875
+      ],
+      "normalized": [
+        0.551513671875,
+        0.403076171875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2618",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2618",
+      "publishedPosition": [
+        -128.375,
+        193.75
+      ],
+      "normalized": [
+        0.7568359375,
+        0.50146484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2622",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2622",
+      "publishedPosition": [
+        -110.375,
+        46.625
+      ],
+      "normalized": [
+        0.18212890625,
+        0.43115234375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2628",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2628",
+      "publishedPosition": [
+        -126.1875,
+        145.3125
+      ],
+      "normalized": [
+        0.567626953125,
+        0.492919921875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2629",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2629",
+      "publishedPosition": [
+        -132.03125,
+        114.6875
+      ],
+      "normalized": [
+        0.447998046875,
+        0.5157470703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "keys-m2630",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2630",
+      "publishedPosition": [
+        -137.1875,
+        126.8125
+      ],
+      "normalized": [
+        0.495361328125,
+        0.535888671875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "ammo-depot-m2569",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2569",
+      "publishedPosition": [
+        -98.9375,
+        64.9375
+      ],
+      "normalized": [
+        0.253662109375,
+        0.386474609375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "ammo-depot-m2577",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2577",
+      "publishedPosition": [
+        -172.3125,
+        132.34375
+      ],
+      "normalized": [
+        0.5169677734375,
+        0.673095703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "ammo-depot-m2578",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2578",
+      "publishedPosition": [
+        -102.0625,
+        201.5625
+      ],
+      "normalized": [
+        0.787353515625,
+        0.398681640625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "aether-tear-m2570",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2570",
+      "publishedPosition": [
+        -147.375,
+        146.375
+      ],
+      "normalized": [
+        0.57177734375,
+        0.57568359375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "aether-tear-m2576",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2576",
+      "publishedPosition": [
+        -139.125,
+        40.125
+      ],
+      "normalized": [
+        0.15673828125,
+        0.54345703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "aether-tear-m2579",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2579",
+      "publishedPosition": [
+        -152.3125,
+        185.1875
+      ],
+      "normalized": [
+        0.723388671875,
+        0.594970703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "pack-a-punch-green-m2611",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2611",
+      "publishedPosition": [
+        -131.890625,
+        146.34375
+      ],
+      "normalized": [
+        0.5716552734375,
+        0.51519775390625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "der-wu-m2636",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2636",
+      "publishedPosition": [
+        -80.375,
+        165.75
+      ],
+      "normalized": [
+        0.6474609375,
+        0.31396484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "dog-house-m2608",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2608",
+      "publishedPosition": [
+        -79.0625,
+        67.15625
+      ],
+      "normalized": [
+        0.2623291015625,
+        0.308837890625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-1",
+      "id": "spawn-locations-m2568",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "publishedId": "m2568",
+      "publishedPosition": [
+        -43.0625,
+        150
+      ],
+      "normalized": [
+        0.5859375,
+        0.168212890625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "contracts-m2925",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2925",
+      "publishedPosition": [
+        -164.25,
+        204.875
+      ],
+      "normalized": [
+        0.80029296875,
+        0.6416015625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "contracts-m2927",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2927",
+      "publishedPosition": [
+        -139.75,
+        57.75
+      ],
+      "normalized": [
+        0.2255859375,
+        0.5458984375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "contracts-m2928",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2928",
+      "publishedPosition": [
+        -188.53125,
+        111.46875
+      ],
+      "normalized": [
+        0.4354248046875,
+        0.7364501953125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "exfil-m2924",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2924",
+      "publishedPosition": [
+        -189.75,
+        214.875
+      ],
+      "normalized": [
+        0.83935546875,
+        0.7412109375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "exfil-m2926",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2926",
+      "publishedPosition": [
+        -173.39526687318124,
+        55.62702942745946
+      ],
+      "normalized": [
+        0.21729308370101352,
+        0.6773252612233642
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "exfil-m2929",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2929",
+      "publishedPosition": [
+        -99.80407178864037,
+        175.9375
+      ],
+      "normalized": [
+        0.687255859375,
+        0.38985965542437645
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "exfil-m2949",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2949",
+      "publishedPosition": [
+        -231.375,
+        95.5625
+      ],
+      "normalized": [
+        0.373291015625,
+        0.90380859375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "perforated-target-m2937",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2937",
+      "publishedPosition": [
+        -103.25355845038676,
+        117.6898924901701
+      ],
+      "normalized": [
+        0.45972614253972693,
+        0.4033342126968233
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "pristine-mirror-m2938",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2938",
+      "publishedPosition": [
+        -216.0290027072236,
+        206.07163552666765
+      ],
+      "normalized": [
+        0.8049673262760455,
+        0.8438632918250922
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "tattered-mma-gloves-m2939",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2939",
+      "publishedPosition": [
+        -150.13948920516378,
+        90.87847547210183
+      ],
+      "normalized": [
+        0.35499404481289776,
+        0.586482379707671
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "stadium-music",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-2",
+      "basis": "Search the southern opening, field east of centre, and northern announcer booth. The guide photographs describe the individual stones; this is the stadium area.",
+      "normalized": [
+        0.815,
+        0.847
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2919",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2919",
+      "publishedPosition": [
+        -125.76705330353954,
+        137.38820679398694
+      ],
+      "normalized": [
+        0.5366726827890115,
+        0.49127755196695133
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2920",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2920",
+      "publishedPosition": [
+        -140.25,
+        132.125
+      ],
+      "normalized": [
+        0.51611328125,
+        0.5478515625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2921",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2921",
+      "publishedPosition": [
+        -170.5,
+        205.375
+      ],
+      "normalized": [
+        0.80224609375,
+        0.666015625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2922",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2922",
+      "publishedPosition": [
+        -156.75,
+        205.5
+      ],
+      "normalized": [
+        0.802734375,
+        0.6123046875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2933",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2933",
+      "publishedPosition": [
+        -186.1305921895289,
+        151.47150244978064
+      ],
+      "normalized": [
+        0.5916855564444556,
+        0.7270726257403473
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2934",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2934",
+      "publishedPosition": [
+        -168.9118075235208,
+        125.94026175908093
+      ],
+      "normalized": [
+        0.49195414749640987,
+        0.6598117481387531
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2940",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2940",
+      "publishedPosition": [
+        -169.5,
+        226
+      ],
+      "normalized": [
+        0.8828125,
+        0.662109375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2941",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2941",
+      "publishedPosition": [
+        -156.4375,
+        189.125
+      ],
+      "normalized": [
+        0.73876953125,
+        0.611083984375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "ammo-depot-m2945",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2945",
+      "publishedPosition": [
+        -154.125,
+        39.9375
+      ],
+      "normalized": [
+        0.156005859375,
+        0.60205078125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "aether-tear-m2931",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2931",
+      "publishedPosition": [
+        -192.4375,
+        210.3125
+      ],
+      "normalized": [
+        0.821533203125,
+        0.751708984375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "aether-tear-m2946",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2946",
+      "publishedPosition": [
+        -164.125,
+        165.625
+      ],
+      "normalized": [
+        0.64697265625,
+        0.64111328125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "pack-a-punch-green-m2942",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2942",
+      "publishedPosition": [
+        -188.625,
+        180.25
+      ],
+      "normalized": [
+        0.7041015625,
+        0.73681640625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "pack-a-punch-green-m2947",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2947",
+      "publishedPosition": [
+        -125.625,
+        205.25
+      ],
+      "normalized": [
+        0.8017578125,
+        0.49072265625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "pack-a-punch-green-m2948",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2948",
+      "publishedPosition": [
+        -175.4375,
+        112.375
+      ],
+      "normalized": [
+        0.43896484375,
+        0.685302734375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "der-wu-m2932",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2932",
+      "publishedPosition": [
+        -200.5608807595343,
+        161.89537037391753
+      ],
+      "normalized": [
+        0.6324037905231154,
+        0.7834409404669309
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "dog-house-m2930",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2930",
+      "publishedPosition": [
+        -108.38230178615007,
+        113.31705535093347
+      ],
+      "normalized": [
+        0.4426447474645839,
+        0.4233683663521487
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "dead-turret-m2951",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2951",
+      "publishedPosition": [
+        -156.5,
+        52.5
+      ],
+      "normalized": [
+        0.205078125,
+        0.611328125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-2",
+      "id": "spawn-locations-m2923",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "publishedId": "m2923",
+      "publishedPosition": [
+        -144.375,
+        77.25
+      ],
+      "normalized": [
+        0.3017578125,
+        0.56396484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "obelisk-m3103",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3103",
+      "publishedPosition": [
+        -89.06719028020618,
+        205.07166035146838
+      ],
+      "normalized": [
+        0.8010611732479234,
+        0.3479187120320554
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "obelisk-m3105",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3105",
+      "publishedPosition": [
+        -168.95829841863883,
+        151.9421112067351
+      ],
+      "normalized": [
+        0.593523871901309,
+        0.6599933531978079
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "obelisk-m3106",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3106",
+      "publishedPosition": [
+        -47.128002014921094,
+        128.2636039907986
+      ],
+      "normalized": [
+        0.501029703089057,
+        0.18409375787078552
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "exfil-m3108",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3108",
+      "publishedPosition": [
+        -129.25928930394807,
+        155.50729849141385
+      ],
+      "normalized": [
+        0.6074503847320853,
+        0.5049190988435471
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "desciple-blueprint-m3107",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3107",
+      "publishedPosition": [
+        -116.70057945416752,
+        93.88104483897712
+      ],
+      "normalized": [
+        0.36672283140225437,
+        0.4558616384928419
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "desciple-blueprint-m3109",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3109",
+      "publishedPosition": [
+        -118.4375,
+        154.375
+      ],
+      "normalized": [
+        0.60302734375,
+        0.462646484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "desciple-blueprint-m3110",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3110",
+      "publishedPosition": [
+        -109,
+        128.625
+      ],
+      "normalized": [
+        0.50244140625,
+        0.42578125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "desciple-blueprint-m3111",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3111",
+      "publishedPosition": [
+        -118.0625,
+        128.75
+      ],
+      "normalized": [
+        0.5029296875,
+        0.461181640625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "ammo-depot-m3086",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3086",
+      "publishedPosition": [
+        -178.90625,
+        143.3125
+      ],
+      "normalized": [
+        0.559814453125,
+        0.6988525390625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "ammo-depot-m3096",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3096",
+      "publishedPosition": [
+        -103.3125,
+        105.875
+      ],
+      "normalized": [
+        0.41357421875,
+        0.403564453125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "ammo-depot-m3097",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3097",
+      "publishedPosition": [
+        -108.25,
+        150.25
+      ],
+      "normalized": [
+        0.5869140625,
+        0.4228515625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "ammo-depot-m3099",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3099",
+      "publishedPosition": [
+        -70.625,
+        166.25
+      ],
+      "normalized": [
+        0.6494140625,
+        0.27587890625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "ammo-depot-m3100",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3100",
+      "publishedPosition": [
+        -29,
+        123.65625
+      ],
+      "normalized": [
+        0.4830322265625,
+        0.11328125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "pack-a-punch-green-m3092",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3092",
+      "publishedPosition": [
+        -196.03125,
+        160.8125
+      ],
+      "normalized": [
+        0.628173828125,
+        0.7657470703125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "der-wu-m3112",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3112",
+      "publishedPosition": [
+        -70.81342324065879,
+        197.25913552666765
+      ],
+      "normalized": [
+        0.7705434981510455,
+        0.2766149345338234
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "dog-house-m3090",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3090",
+      "publishedPosition": [
+        -72.5,
+        44.5
+      ],
+      "normalized": [
+        0.173828125,
+        0.283203125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "dead-turret-m3094",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3094",
+      "publishedPosition": [
+        -192.40625,
+        128.03125
+      ],
+      "normalized": [
+        0.5001220703125,
+        0.7515869140625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "dead-turret-m3101",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3101",
+      "publishedPosition": [
+        -115.84375,
+        194.75
+      ],
+      "normalized": [
+        0.7607421875,
+        0.4525146484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "dead-turret-m3102",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3102",
+      "publishedPosition": [
+        -105.53125,
+        69.3125
+      ],
+      "normalized": [
+        0.270751953125,
+        0.4122314453125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "redeploy-drone-br-wz-m3104",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3104",
+      "publishedPosition": [
+        -180.0777518573421,
+        149.00716195500985
+      ],
+      "normalized": [
+        0.5820592263867572,
+        0.7034287181927426
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-3",
+      "id": "spawn-locations-m3087",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "publishedId": "m3087",
+      "publishedPosition": [
+        -147.3125,
+        128.3125
+      ],
+      "normalized": [
+        0.501220703125,
+        0.575439453125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "contracts-m3222",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3222",
+      "publishedPosition": [
+        -139.640625,
+        124.109375
+      ],
+      "normalized": [
+        0.48480224609375,
+        0.54547119140625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "contracts-m3237",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3237",
+      "publishedPosition": [
+        -71.625,
+        157.8125
+      ],
+      "normalized": [
+        0.616455078125,
+        0.27978515625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "contracts-m3238",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3238",
+      "publishedPosition": [
+        -78.75,
+        80.8125
+      ],
+      "normalized": [
+        0.315673828125,
+        0.3076171875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "exfil-m3223",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3223",
+      "publishedPosition": [
+        -122.40092691914128,
+        164.90625
+      ],
+      "normalized": [
+        0.6441650390625,
+        0.47812862077789564
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "exfil-m3241",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3241",
+      "publishedPosition": [
+        -196.96875,
+        113.625
+      ],
+      "normalized": [
+        0.44384765625,
+        0.7694091796875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "locked-doors-m3244",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3244",
+      "publishedPosition": [
+        -199.33704793261447,
+        119.4375
+      ],
+      "normalized": [
+        0.466552734375,
+        0.7786603434867753
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "keys-m3242",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3242",
+      "publishedPosition": [
+        -85.3125,
+        158
+      ],
+      "normalized": [
+        0.6171875,
+        0.333251953125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "highrise-secret-area",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "basis": "Elder-only Infinite Cosmos: search under the main Highrise building for the unmarked spore and R4D detector, follow its arrows for the skull, then find the Golden Whale lobby across from the detector building. This broad footprint does not pinpoint the spore, skull or whale head.",
+      "normalized": [
+        0.628,
+        0.451
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "spec-electronics",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "basis": "Search the C3 Spec Electronics building and its second-floor error-screen computer. Carry the IT Thumb Drive; activate the computer before fighting the marked Keyholder.",
+      "normalized": [
+        0.25,
+        0.35
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "maintenance-door",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+      "basis": "Return to the roof/exfil level with the Maintenance Tower Key. Find its locked maintenance door and bring every squad member inside before using the purple boss portal.",
+      "normalized": [
+        0.642,
+        0.472
+      ],
+      "precision": "area"
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "ammo-depot-m3216",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3216",
+      "publishedPosition": [
+        -149.9375,
+        118.5625
+      ],
+      "normalized": [
+        0.463134765625,
+        0.585693359375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "ammo-depot-m3225",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3225",
+      "publishedPosition": [
+        -135.0625,
+        154
+      ],
+      "normalized": [
+        0.6015625,
+        0.527587890625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "ammo-depot-m3226",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3226",
+      "publishedPosition": [
+        -122.625,
+        155.625
+      ],
+      "normalized": [
+        0.60791015625,
+        0.47900390625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "ammo-depot-m3230",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3230",
+      "publishedPosition": [
+        -92.15625,
+        120.9375
+      ],
+      "normalized": [
+        0.472412109375,
+        0.3599853515625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "ammo-depot-m3235",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3235",
+      "publishedPosition": [
+        -78.96875,
+        79.75
+      ],
+      "normalized": [
+        0.3115234375,
+        0.3084716796875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3221",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3221",
+      "publishedPosition": [
+        -129.0625,
+        131.375
+      ],
+      "normalized": [
+        0.51318359375,
+        0.504150390625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3227",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3227",
+      "publishedPosition": [
+        -138.5,
+        35.78125
+      ],
+      "normalized": [
+        0.1397705078125,
+        0.541015625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3228",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3228",
+      "publishedPosition": [
+        -125.21875,
+        44.3125
+      ],
+      "normalized": [
+        0.173095703125,
+        0.4891357421875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3229",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3229",
+      "publishedPosition": [
+        -116.34375,
+        67.0625
+      ],
+      "normalized": [
+        0.261962890625,
+        0.4544677734375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3232",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3232",
+      "publishedPosition": [
+        -100.875,
+        152.59375
+      ],
+      "normalized": [
+        0.5960693359375,
+        0.39404296875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "aether-tear-m3233",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3233",
+      "publishedPosition": [
+        -157.96875,
+        144.90625
+      ],
+      "normalized": [
+        0.5660400390625,
+        0.6170654296875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "pack-a-punch-green-m3218",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3218",
+      "publishedPosition": [
+        -92.1875,
+        118.1875
+      ],
+      "normalized": [
+        0.461669921875,
+        0.360107421875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "der-wu-m3240",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3240",
+      "publishedPosition": [
+        -128.96875,
+        149.90625
+      ],
+      "normalized": [
+        0.5855712890625,
+        0.5037841796875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "dog-house-m3236",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3236",
+      "publishedPosition": [
+        -160.15625,
+        171.3125
+      ],
+      "normalized": [
+        0.669189453125,
+        0.6256103515625
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "dead-turret-m3219",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3219",
+      "publishedPosition": [
+        -112.875,
+        39.5
+      ],
+      "normalized": [
+        0.154296875,
+        0.44091796875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "dead-turret-m3231",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3231",
+      "publishedPosition": [
+        -109.84375,
+        152.21875
+      ],
+      "normalized": [
+        0.5946044921875,
+        0.4290771484375
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "dead-turret-m3234",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3234",
+      "publishedPosition": [
+        -78.96875,
+        85.125
+      ],
+      "normalized": [
+        0.33251953125,
+        0.3084716796875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "redeploy-drone-br-wz-m3224",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3224",
+      "publishedPosition": [
+        -94.875,
+        59.375
+      ],
+      "normalized": [
+        0.23193359375,
+        0.37060546875
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "spawn-locations-m3217",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3217",
+      "publishedPosition": [
+        -169.125,
+        59.875
+      ],
+      "normalized": [
+        0.23388671875,
+        0.66064453125
+      ]
+    },
+    {
+      "map": "mw3-dark-aether-season-5",
+      "id": "spawn-locations-m3239",
+      "source": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+      "publishedId": "m3239",
+      "publishedPosition": [
+        -108.75,
+        221.8125
+      ],
+      "normalized": [
+        0.866455078125,
+        0.4248046875
+      ]
+    }
+  ]
+}

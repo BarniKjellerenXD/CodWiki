@@ -10,6 +10,7 @@ near-black/gold theme matching the site.
 - Global sidebar search spans games, matches aliases and accents, and labels results by edition. Clear search or press Escape to return to the selected game's map list.
 - Remembers the selected game; restored pages, guide/tool links and shortcuts select the matching game automatically. BO3 Chronicles and BO2 Survival grouping remain available.
 - Guides and tools render inside the app; external links open in the system browser
+- MW3 offers six direct guides and five interactive maps: Urzikstan and all four seasonal Dark Aether regions. Use Map or an inline map icon to search by location/grid, select pins, filter categories and return to the guide step. Candidate spawns and approximate areas are labelled; the maps do not track a live match.
 - Keyboard shortcuts: Ctrl+1..9 and Ctrl+Shift+1..9 (guides/tools), Ctrl+Alt+1 (Paradox notes), Ctrl+H home, F5 reload,
   Alt+←/→ back/forward, Ctrl+= / Ctrl+- / Ctrl+0 zoom, F12 devtools
 - Remembers the last page you had open (localStorage persists, so guide pins

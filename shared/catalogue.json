@@ -1001,7 +1001,7 @@
       "image": "/images/remaining/extra-mw-tactics-official-01.jpg",
       "gameId": "mw3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Deployment activities",
       "mode": "Open-world deployment",
       "edition": "Modern Warfare III (2023)",
@@ -1012,7 +1012,8 @@
         "Greylorm",
         "free perks",
         "chess vault",
-        "Dark Aether portals"
+        "Dark Aether portals",
+        "interactive map"
       ]
     },
     {
@@ -1022,13 +1023,14 @@
       "image": "/images/remaining/wzhub-season-1-m2611-1.jpg",
       "gameId": "mw3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Bad Signal / Al Bagra routes",
       "mode": "Dark Aether",
       "edition": "Modern Warfare III (2023)",
       "aliases": [
         "Al Bagra Fortress",
-        "Bad Signal"
+        "Bad Signal",
+        "interactive map"
       ]
     },
     {
@@ -1038,14 +1040,15 @@
       "image": "/images/remaining/wzhub-season-2-m2939-1.jpg",
       "gameId": "mw3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Countermeasures / Sa’id routes",
       "mode": "Dark Aether",
       "edition": "Modern Warfare III (2023)",
       "aliases": [
         "Sa’id City",
         "Said City",
-        "Countermeasures"
+        "Countermeasures",
+        "interactive map"
       ]
     },
     {
@@ -1055,13 +1058,14 @@
       "image": "/images/remaining/wzhub-season-3-m3092-1.jpg",
       "gameId": "mw3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Union / Zarqwa routes",
       "mode": "Dark Aether",
       "edition": "Modern Warfare III (2023)",
       "aliases": [
         "Zarqwa Hydroelectric",
-        "Union"
+        "Union",
+        "interactive map"
       ]
     },
     {
@@ -1083,14 +1087,15 @@
       "image": "/images/remaining/mw-s5-story-01.jpg",
       "gameId": "mw3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Ascension / Highrise routes",
       "mode": "Dark Aether",
       "edition": "Modern Warfare III (2023)",
       "aliases": [
         "Highrise",
         "Al Mazrah City",
-        "Ascension"
+        "Ascension",
+        "interactive map"
       ]
     }
   ],

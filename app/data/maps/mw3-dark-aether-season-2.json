@@ -1,0 +1,558 @@
+{
+  "id": "mw3-dark-aether-season-2",
+  "name": "Dark Aether — Sa'id City",
+  "defaultLayer": "overview",
+  "grid": {
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "sources": [
+    {
+      "name": "WZHUB · Dark Aether — Sa'id City",
+      "url": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+    },
+    {
+      "name": "CodWiki researched walkthrough",
+      "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-2",
+      "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Dark Aether — Sa'id City",
+      "image": "/maps/mw3-dark-aether-season-2/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "focusBounds": [
+        [
+          0.045,
+          0.315
+        ],
+        [
+          0.945,
+          0.98
+        ]
+      ],
+      "note": "Story obelisks belong to Countermeasures; contract starters and exfils describe repeat visits. Check the current exit/machine prompt. The stadium music marker is an approximate area; the guide identifies its three stones."
+    }
+  ],
+  "locations": [
+    {
+      "id": "contracts-m2925",
+      "label": "Extractors — mall roof · I6",
+      "layerId": "overview",
+      "x": 0.80029296875,
+      "y": 0.6416015625,
+      "grid": "I6",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "floor": "Highest mall roof"
+    },
+    {
+      "id": "contracts-m2927",
+      "label": "Bounty — northwest ship · C5",
+      "layerId": "overview",
+      "x": 0.2255859375,
+      "y": 0.5458984375,
+      "grid": "C5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "floor": "Ground / starter reference"
+    },
+    {
+      "id": "contracts-m2928",
+      "label": "Outlast — restaurant · E7",
+      "layerId": "overview",
+      "x": 0.4354248046875,
+      "y": 0.7364501953125,
+      "grid": "E7",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "floor": "Ground / starter reference"
+    },
+    {
+      "id": "exfil-m2924",
+      "label": "Red exit portal reference · I7",
+      "layerId": "overview",
+      "x": 0.83935546875,
+      "y": 0.7412109375,
+      "grid": "I7",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "exfil-m2926",
+      "label": "Red exit portal reference · C6",
+      "layerId": "overview",
+      "x": 0.21729308370101352,
+      "y": 0.6773252612233642,
+      "grid": "C6",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "exfil-m2929",
+      "label": "Red exit portal reference · G3",
+      "layerId": "overview",
+      "x": 0.687255859375,
+      "y": 0.38985965542437645,
+      "grid": "G3",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "exfil-m2949",
+      "label": "Red exit portal reference · D9",
+      "layerId": "overview",
+      "x": 0.373291015625,
+      "y": 0.90380859375,
+      "grid": "D9",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "perforated-target-m2937",
+      "label": "Target — critical-hit obelisk · E4",
+      "layerId": "overview",
+      "x": 0.45972614253972693,
+      "y": 0.4033342126968233,
+      "grid": "E4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Countermeasures story only: activate the obelisk and make critical kills inside its ring for the purple Target.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Countermeasures story objective"
+    },
+    {
+      "id": "pristine-mirror-m2938",
+      "label": "Mirror — stadium obelisk · I8",
+      "layerId": "overview",
+      "x": 0.8049673262760455,
+      "y": 0.8438632918250922,
+      "grid": "I8",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Countermeasures story only: read the elemental symbols, take the corresponding mod and make the required kills for the purple Mirror.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Countermeasures story objective"
+    },
+    {
+      "id": "tattered-mma-gloves-m2939",
+      "label": "Gloves — ship obelisk · D5",
+      "layerId": "overview",
+      "x": 0.35499404481289776,
+      "y": 0.586482379707671,
+      "grid": "D5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Countermeasures story only: use melee kills within the activated obelisk ring for the purple Gloves.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Countermeasures story objective"
+    },
+    {
+      "id": "stadium-music",
+      "label": "Stadium — three song stones",
+      "layerId": "overview",
+      "x": 0.815,
+      "y": 0.847,
+      "grid": "I8",
+      "category": "quest",
+      "precision": "area",
+      "areaRadius": 0.06,
+      "overview": true,
+      "description": "Search the southern opening, field east of centre, and northern announcer booth. The guide photographs describe the individual stones; this is the stadium area.",
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-2"
+    },
+    {
+      "id": "ammo-depot-m2919",
+      "label": "Ammo cache · F4",
+      "layerId": "overview",
+      "x": 0.5366726827890115,
+      "y": 0.49127755196695133,
+      "grid": "F4",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2920",
+      "label": "Ammo cache · F5",
+      "layerId": "overview",
+      "x": 0.51611328125,
+      "y": 0.5478515625,
+      "grid": "F5",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2921",
+      "label": "Ammo cache · I6",
+      "layerId": "overview",
+      "x": 0.80224609375,
+      "y": 0.666015625,
+      "grid": "I6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2922",
+      "label": "Ammo cache · I6",
+      "layerId": "overview",
+      "x": 0.802734375,
+      "y": 0.6123046875,
+      "grid": "I6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2933",
+      "label": "Ammo cache · F7",
+      "layerId": "overview",
+      "x": 0.5916855564444556,
+      "y": 0.7270726257403473,
+      "grid": "F7",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2934",
+      "label": "Ammo cache · E6",
+      "layerId": "overview",
+      "x": 0.49195414749640987,
+      "y": 0.6598117481387531,
+      "grid": "E6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2940",
+      "label": "Ammo cache · I6",
+      "layerId": "overview",
+      "x": 0.8828125,
+      "y": 0.662109375,
+      "grid": "I6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2941",
+      "label": "Ammo cache · H6",
+      "layerId": "overview",
+      "x": 0.73876953125,
+      "y": 0.611083984375,
+      "grid": "H6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2945",
+      "label": "Ammo cache · B6",
+      "layerId": "overview",
+      "x": 0.156005859375,
+      "y": 0.60205078125,
+      "grid": "B6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "aether-tear-m2931",
+      "label": "Aether Tear · I7",
+      "layerId": "overview",
+      "x": 0.821533203125,
+      "y": 0.751708984375,
+      "grid": "I7",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m2946",
+      "label": "Aether Tear · G6",
+      "layerId": "overview",
+      "x": 0.64697265625,
+      "y": 0.64111328125,
+      "grid": "G6",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "pack-a-punch-green-m2942",
+      "label": "Pack-a-Punch · H7",
+      "layerId": "overview",
+      "x": 0.7041015625,
+      "y": 0.73681640625,
+      "grid": "H7",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "pack-a-punch-green-m2947",
+      "label": "Pack-a-Punch · I4",
+      "layerId": "overview",
+      "x": 0.8017578125,
+      "y": 0.49072265625,
+      "grid": "I4",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "pack-a-punch-green-m2948",
+      "label": "Pack-a-Punch · E6",
+      "layerId": "overview",
+      "x": 0.43896484375,
+      "y": 0.685302734375,
+      "grid": "E6",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "der-wu-m2932",
+      "label": "Der Wunderfizz · G7",
+      "layerId": "overview",
+      "x": 0.6324037905231154,
+      "y": 0.7834409404669309,
+      "grid": "G7",
+      "category": "perk",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the machine to buy perks if it is available; check the height and access route.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "dog-house-m2930",
+      "label": "Doghouse · E4",
+      "layerId": "overview",
+      "x": 0.4426447474645839,
+      "y": 0.4233683663521487,
+      "grid": "E4",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Possible spawn / may already be used"
+    },
+    {
+      "id": "dead-turret-m2951",
+      "label": "Deadbolt turret · C6",
+      "layerId": "overview",
+      "x": 0.205078125,
+      "y": 0.611328125,
+      "grid": "C6",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "spawn-locations-m2923",
+      "label": "Entry landing · D5",
+      "layerId": "overview",
+      "x": 0.3017578125,
+      "y": 0.56396484375,
+      "grid": "D5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
+      "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+      "state": "Entry reference"
+    }
+  ],
+  "targets": [
+    {
+      "id": "mw2-bounty",
+      "title": "Bounty starter",
+      "locationIds": [
+        "contracts-m2927"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-bounty"
+    },
+    {
+      "id": "mw2-outlast",
+      "title": "Outlast starter",
+      "locationIds": [
+        "contracts-m2928"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-outlast"
+    },
+    {
+      "id": "mw2-extractors",
+      "title": "Extractors starter",
+      "locationIds": [
+        "contracts-m2925"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-extractors"
+    },
+    {
+      "id": "exits",
+      "title": "Sa’id City exit references",
+      "locationIds": [
+        "exfil-m2924",
+        "exfil-m2926",
+        "exfil-m2929",
+        "exfil-m2949"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw2-exits"
+    },
+    {
+      "id": "mw2-target-detour",
+      "title": "Target — critical-hit obelisk",
+      "locationIds": [
+        "perforated-target-m2937"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-target-detour"
+    },
+    {
+      "id": "mw2-mirror-detour",
+      "title": "Mirror — stadium obelisk",
+      "locationIds": [
+        "pristine-mirror-m2938"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-mirror-detour"
+    },
+    {
+      "id": "mw2-ship-detour",
+      "title": "Gloves — ship obelisk",
+      "locationIds": [
+        "tattered-mma-gloves-m2939"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw2-ship-detour"
+    },
+    {
+      "id": "stadium-music",
+      "title": "Stadium music Easter egg",
+      "locationIds": [
+        "stadium-music"
+      ],
+      "kind": "area",
+      "guideAnchor": "guide-step-mw2-song"
+    }
+  ],
+  "quickLinks": {
+    "mw2-bounty": "mw2-bounty",
+    "mw2-outlast": "mw2-outlast",
+    "mw2-extractors": "mw2-extractors",
+    "mw2-exits": "exits",
+    "mw2-target-detour": "mw2-target-detour",
+    "mw2-mirror-detour": "mw2-mirror-detour",
+    "mw2-ship-detour": "mw2-ship-detour",
+    "mw2-song": "stadium-music"
+  }
+}

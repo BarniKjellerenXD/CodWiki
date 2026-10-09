@@ -1,0 +1,538 @@
+{
+  "id": "mw3-dark-aether-season-1",
+  "name": "Dark Aether — Al Bagra Fortress",
+  "defaultLayer": "overview",
+  "grid": {
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "sources": [
+    {
+      "name": "WZHUB · Dark Aether — Al Bagra Fortress",
+      "url": "https://wzhub.gg/map/dark-aether/mwz",
+      "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+    },
+    {
+      "name": "CodWiki researched walkthrough",
+      "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-1",
+      "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Dark Aether — Al Bagra Fortress",
+      "image": "/maps/mw3-dark-aether-season-1/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "note": "Contract-visit overview. Roof and underground objects share an overhead footprint; read the floor labels. Story Bad Signal has different objectives. Keys are possible spawns and services must be checked in the current visit."
+    }
+  ],
+  "locations": [
+    {
+      "id": "contracts-m2612",
+      "label": "Aether Extractors — east rampart · H4",
+      "layerId": "overview",
+      "x": 0.780517578125,
+      "y": 0.407958984375,
+      "grid": "H4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "contracts-m2613",
+      "label": "Escort — west starter · E4",
+      "layerId": "overview",
+      "x": 0.41650390625,
+      "y": 0.4345703125,
+      "grid": "E4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "contracts-m2620",
+      "label": "Outlast — fortress starter · E6",
+      "layerId": "overview",
+      "x": 0.462890625,
+      "y": 0.64013671875,
+      "grid": "E6",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "exfil-m2563",
+      "label": "Fortress roof exit · F5",
+      "layerId": "overview",
+      "x": 0.598876953125,
+      "y": 0.580078125,
+      "grid": "F5",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the red exit portal before the contract timer expires. Roof and underground access routes differ; this pin identifies the overhead position.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "floor": "Roof"
+    },
+    {
+      "id": "exfil-m2617",
+      "label": "Underground exit · E4",
+      "layerId": "overview",
+      "x": 0.48193359375,
+      "y": 0.4931640625,
+      "grid": "E4",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the red exit portal before the contract timer expires. Roof and underground access routes differ; this pin identifies the overhead position.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "floor": "Underground / lower tunnel"
+    },
+    {
+      "id": "locked-doors-m2566",
+      "label": "Officers Quarters · F5",
+      "layerId": "overview",
+      "x": 0.59521484375,
+      "y": 0.559326171875,
+      "grid": "F5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "locked-doors-m2567",
+      "label": "Antiquities Office · F5",
+      "layerId": "overview",
+      "x": 0.544921875,
+      "y": 0.56201171875,
+      "grid": "F5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "locked-doors-m2581",
+      "label": "Barracks · G5",
+      "layerId": "overview",
+      "x": 0.615234375,
+      "y": 0.505126953125,
+      "grid": "G5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "locked-doors-m2619",
+      "label": "South top-floor bedroom · H5",
+      "layerId": "overview",
+      "x": 0.74462890625,
+      "y": 0.54345703125,
+      "grid": "H5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "locked-doors-m2621",
+      "label": "Munitions Storeroom · E5",
+      "layerId": "overview",
+      "x": 0.4619140625,
+      "y": 0.5283203125,
+      "grid": "E5",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz"
+    },
+    {
+      "id": "keys-m2571",
+      "label": "Antiquities key candidate · F6",
+      "layerId": "overview",
+      "x": 0.560302734375,
+      "y": 0.60400390625,
+      "grid": "F6",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2580",
+      "label": "Officers key candidate · F4",
+      "layerId": "overview",
+      "x": 0.551513671875,
+      "y": 0.403076171875,
+      "grid": "F4",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2618",
+      "label": "Barracks key candidate · H5",
+      "layerId": "overview",
+      "x": 0.7568359375,
+      "y": 0.50146484375,
+      "grid": "H5",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2622",
+      "label": "Munitions key candidate · B4",
+      "layerId": "overview",
+      "x": 0.18212890625,
+      "y": 0.43115234375,
+      "grid": "B4",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2628",
+      "label": "Barracks key candidate · F4",
+      "layerId": "overview",
+      "x": 0.567626953125,
+      "y": 0.492919921875,
+      "grid": "F4",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2629",
+      "label": "Munitions key candidate · E5",
+      "layerId": "overview",
+      "x": 0.447998046875,
+      "y": 0.5157470703125,
+      "grid": "E5",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "keys-m2630",
+      "label": "Officers key candidate · E5",
+      "layerId": "overview",
+      "x": 0.495361328125,
+      "y": 0.535888671875,
+      "grid": "E5",
+      "category": "quest",
+      "precision": "point",
+      "overview": false,
+      "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible key spawn"
+    },
+    {
+      "id": "ammo-depot-m2569",
+      "label": "Ammo cache · C3",
+      "layerId": "overview",
+      "x": 0.253662109375,
+      "y": 0.386474609375,
+      "grid": "C3",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2577",
+      "label": "Ammo cache · F6",
+      "layerId": "overview",
+      "x": 0.5169677734375,
+      "y": 0.673095703125,
+      "grid": "F6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m2578",
+      "label": "Ammo cache · H3",
+      "layerId": "overview",
+      "x": 0.787353515625,
+      "y": 0.398681640625,
+      "grid": "H3",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "aether-tear-m2570",
+      "label": "Aether Tear · F5",
+      "layerId": "overview",
+      "x": 0.57177734375,
+      "y": 0.57568359375,
+      "grid": "F5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m2576",
+      "label": "Aether Tear · B5",
+      "layerId": "overview",
+      "x": 0.15673828125,
+      "y": 0.54345703125,
+      "grid": "B5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "aether-tear-m2579",
+      "label": "Aether Tear · H5",
+      "layerId": "overview",
+      "x": 0.723388671875,
+      "y": 0.594970703125,
+      "grid": "H5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "pack-a-punch-green-m2611",
+      "label": "Pack-a-Punch · F5",
+      "layerId": "overview",
+      "x": 0.5716552734375,
+      "y": 0.51519775390625,
+      "grid": "F5",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "der-wu-m2636",
+      "label": "Der Wunderfizz · G3",
+      "layerId": "overview",
+      "x": 0.6474609375,
+      "y": 0.31396484375,
+      "grid": "G3",
+      "category": "perk",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the machine to buy perks if it is available; check the height and access route.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "dog-house-m2608",
+      "label": "Doghouse · C3",
+      "layerId": "overview",
+      "x": 0.2623291015625,
+      "y": 0.308837890625,
+      "grid": "C3",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Possible spawn / may already be used"
+    },
+    {
+      "id": "spawn-locations-m2568",
+      "label": "Entry landing · F1",
+      "layerId": "overview",
+      "x": 0.5859375,
+      "y": 0.168212890625,
+      "grid": "F1",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "state": "Entry reference"
+    }
+  ],
+  "targets": [
+    {
+      "id": "mw1-extractor-contract",
+      "title": "Aether Extractors",
+      "locationIds": [
+        "contracts-m2612"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw1-extractor-contract"
+    },
+    {
+      "id": "mw1-escort-contract",
+      "title": "Escort",
+      "locationIds": [
+        "contracts-m2613"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw1-escort-contract"
+    },
+    {
+      "id": "mw1-outlast-contract",
+      "title": "Outlast",
+      "locationIds": [
+        "contracts-m2620"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw1-outlast-contract"
+    },
+    {
+      "id": "contracts",
+      "title": "Three Dark Aether contract starters",
+      "locationIds": [
+        "contracts-m2612",
+        "contracts-m2613",
+        "contracts-m2620"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mw1-contract-entry",
+      "description": "The squad chooses contract order. These numbers do not plot the ACV route or device locations."
+    },
+    {
+      "id": "exits",
+      "title": "Roof and underground exits",
+      "locationIds": [
+        "exfil-m2563",
+        "exfil-m2617"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw1-exfil"
+    },
+    {
+      "id": "locked-rooms",
+      "title": "Optional locked equipment rooms",
+      "locationIds": [
+        "locked-doors-m2566",
+        "locked-doors-m2567",
+        "locked-doors-m2581",
+        "locked-doors-m2619",
+        "locked-doors-m2621"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw1-conditional-keys"
+    },
+    {
+      "id": "mw1-keys-officers",
+      "title": "Officers Quarters and key candidates",
+      "locationIds": [
+        "locked-doors-m2566",
+        "keys-m2580",
+        "keys-m2630"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw1-keys-officers",
+      "description": "The room is fixed; the listed keys are candidate searches, not guaranteed spawns."
+    },
+    {
+      "id": "mw1-keys-munitions",
+      "title": "Munitions Storeroom and key candidates",
+      "locationIds": [
+        "locked-doors-m2621",
+        "keys-m2622",
+        "keys-m2629"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw1-keys-munitions",
+      "description": "The room is fixed; the listed keys are candidate searches, not guaranteed spawns."
+    },
+    {
+      "id": "mw1-keys-barracks-antiquities",
+      "title": "Barracks / Antiquities and key candidates",
+      "locationIds": [
+        "locked-doors-m2581",
+        "locked-doors-m2567",
+        "keys-m2618",
+        "keys-m2628",
+        "keys-m2571"
+      ],
+      "kind": "candidates",
+      "guideAnchor": "guide-step-mw1-keys-barracks-antiquities",
+      "description": "The room is fixed; the listed keys are candidate searches, not guaranteed spawns."
+    }
+  ],
+  "quickLinks": {
+    "mw1-extractor-contract": "mw1-extractor-contract",
+    "mw1-escort-contract": "mw1-escort-contract",
+    "mw1-outlast-contract": "mw1-outlast-contract",
+    "mw1-contract-entry": "contracts",
+    "mw1-exfil": "exits",
+    "mw1-conditional-keys": "locked-rooms",
+    "mw1-keys-officers": "mw1-keys-officers",
+    "mw1-keys-munitions": "mw1-keys-munitions",
+    "mw1-keys-barracks-antiquities": "mw1-keys-barracks-antiquities"
+  }
+}

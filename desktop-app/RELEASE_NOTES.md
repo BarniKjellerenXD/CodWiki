@@ -1,5 +1,17 @@
 # CodWiki Desktop release notes
 
+## v1.7.0
+
+- MW3 now has interactive maps for Urzikstan and all four seasonal Dark Aether regions. Use the guide's Map button or an inline map icon to locate an objective and return to its instructions.
+- Five credited overhead maps include 445 curated references: portal areas, Red Worm clue walls/USB candidates/arenas, free perks, the chess vault, triangles, possible Unstable Rift obelisks, Dark Aether contracts, exits, keys and secret-quest areas, plus useful support and travel locations.
+- Key locations keeps the overview readable. Search names or grid references, filter categories, pan/zoom, toggle the grid, and share a selected-location link. Candidate spawns, approximate areas, floor/height and story/Elder conditions stay explicit.
+- Seasonal portal and gold-upgrade instructions link directly to their Urzikstan map areas. No MW3 tool dropdown or progression tracker is reintroduced; saved progress and reading preferences remain compatible.
+- Existing v1.6 apps receive the live map content automatically. v1.7 updates the included search keywords and native MW3 library description.
+
+Validated with 281 passing automated tests, ten native integration groups, six focused browser/native map flow groups, desktop/phone/minimum-window review, a production build and Windows installer/ZIP packaging.
+
+See [the map options and implementation plan](https://github.com/BarniKjellerenXD/CodWiki/blob/master/docs/mw3-interactive-map-plan.md). Use the Setup installer to update the app or extract the portable ZIP.
+
 ## v1.6.1
 
 - MW3 now offers six direct guides. Urzikstan prioritizes seasonal portal unlocks, the Red Worm fight, eight free-perk Easter eggs, the chessboard vault and triangle rituals.

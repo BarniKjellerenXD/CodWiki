@@ -1,6 +1,11 @@
 /** Map hashes share the guide's existing anchor namespace. */
 export function decodeGuideHash(hash = '') {
-  try { return decodeURIComponent(String(hash).replace(/^#/, '')) } catch { return '' }
+  try {
+    const anchor = decodeURIComponent(String(hash).replace(/^#/, ''))
+    // Older in-app map links encoded the colon before the router encoded it.
+    // Recover that exact legacy namespace without decoding arbitrary text twice.
+    return /^map%3[aA][a-z0-9-]+$/.test(anchor) ? 'map:' + anchor.slice(6) : anchor
+  } catch { return '' }
 }
 
 export function mapTargetFromAnchor(anchor) {

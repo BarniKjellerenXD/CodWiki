@@ -17,11 +17,11 @@
           <nav v-show="view !== 'map'" class="guide-shortcuts" aria-label="Map shortcuts"><button v-for="item in sectionLinks?.length ? sectionLinks : shortcuts" :key="item.id" class="companion-button subtle" @click="scrollTo(item.id)">{{ item.text }}</button><button v-if="mapTools.length" class="companion-button subtle" @click="scrollTo('map-tools')">Tools ↗</button></nav>
           <div v-if="confirmReset" class="companion-confirm" role="alert"><p>Start a fresh {{ title }} run? This clears its run checkboxes. <template v-if="defaultView === 'full'">Pins and reading settings stay saved.</template><template v-else>Account milestones, tool observations, pins and reading settings stay saved. Use each tool’s reset when starting new observations.</template></p><button class="companion-button primary" @click="startNewRun">Start new run</button><button class="companion-button" @click="confirmReset = false">Keep this run</button></div>
           <p v-if="saveError" role="status" class="companion-muted">Your browser could not save progress. Keep this page open to retain this run.</p>
-          <div v-if="$slots.intro" class="guide-introduction"><slot name="intro" /></div>
+          <div v-if="$slots.intro" v-show="view !== 'map'" class="guide-introduction"><slot name="intro" /></div>
           <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
           <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /><GuideSourceNote :map-id="mapId" /></article>
           <section v-if="mapActivated" v-show="view === 'map'" ref="mapRef" class="guide-map-view" aria-label="Interactive map" tabindex="-1">
-            <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" />
+            <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" @ready="mapReady" />
             <div v-else class="guide-map-loading"><p v-if="mapLoading" role="status">Loading {{ title }} map…</p><p v-else role="alert">{{ mapError }}</p><button v-if="mapError" class="companion-button" @click="loadMap">Try again</button><button class="companion-button" @click="returnToStep">Back to guide</button></div>
           </section>
           <section v-if="mapTools.length" v-show="view !== 'map'" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
@@ -124,6 +124,11 @@ function showOnMap(target = '', source?: HTMLElement) {
 }
 provide(GUIDE_MAP_NAVIGATION, { open: showOnMap })
 function selectMapTarget(target: string) { scrollTo(mapAnchor(target)) }
+function mapReady() {
+  // Lazy component loading can finish after the initial hash scroll, when the
+  // document was still shorter than the viewport. Scroll once its layout exists.
+  if (mounted && view.value === 'map') mapRef.value?.scrollIntoView({ behavior: 'auto', block: 'start' })
+}
 function startNewRun() {
   const accountSteps = new Set(allPhases.filter(phase => phase.stateScope === 'account').flatMap(phase => phase.steps.map((step:any) => step.id)))
   const accountDone = current.value.done.filter((id:string) => accountSteps.has(id))
@@ -177,7 +182,8 @@ async function scrollTo(id?:string, updateUrl=true) {
   const legacy = phases.value.find(p=>p.legacy===id && p.legacy!==p.detail)
   if(legacy) id='quick-'+legacy.id
   if(id==='wiki_main_quest_cheat_sheet') id='quick-'+phases.value[0]?.id
-  const hash = '#'+encodeURIComponent(id)
+  // The router encodes the hash. Pre-encoding it here double-escapes map colons.
+  const hash = '#'+id
   if(updateUrl && decodeGuideHash(route.hash) !== id) {
     ignoreHash = hash
     try { await router.push({ path: route.path, query: props.branches?.length ? { ...route.query, branch: selectedBranch.value } : route.query, hash }) } finally { ignoreHash = null }

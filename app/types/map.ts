@@ -23,8 +23,13 @@ export interface MapLocation {
   x: number
   y: number
   category: string
+  /** Optional grid reference and inclusion in the quiet overview. */
+  grid?: string
+  overview?: boolean
   perkType?: 'machine' | 'mister-peeks'
   precision: 'point' | 'area'
+  /** Approximate area radius as a fraction of the shorter artwork dimension. */
+  areaRadius?: number
   description: string
   source?: string
   floor?: string
@@ -44,6 +49,7 @@ export interface MapDataset {
   id: string
   name: string
   defaultLayer: string
+  grid?: { columns: string[]; rows: string[] }
   sources: MapSource[]
   layers: MapLayer[]
   locations: MapLocation[]

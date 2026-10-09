@@ -1,0 +1,403 @@
+{
+  "id": "mw3-dark-aether-season-3",
+  "name": "Dark Aether — Zarqwa Hydroelectric",
+  "defaultLayer": "overview",
+  "grid": {
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "sources": [
+    {
+      "name": "WZHUB · Dark Aether — Zarqwa Hydroelectric",
+      "url": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+    },
+    {
+      "name": "CodWiki researched walkthrough",
+      "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-3",
+      "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Dark Aether — Zarqwa Hydroelectric",
+      "image": "/maps/mw3-dark-aether-season-3/overview.webp",
+      "width": 4096,
+      "height": 4096,
+      "note": "Repeat-visit map. Complete all three contracts before the optional Gyanxi sequence. Destroy the three outer spores before the central Rift Heart; both ordinary and Elder visits can award Smoke Signals."
+    }
+  ],
+  "locations": [
+    {
+      "id": "obelisk-m3103",
+      "label": "Outlast — eastern obelisk · I3",
+      "layerId": "overview",
+      "x": 0.8010611732479234,
+      "y": 0.3479187120320554,
+      "grid": "I3",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+    },
+    {
+      "id": "obelisk-m3105",
+      "label": "Escort — southern roof · F6",
+      "layerId": "overview",
+      "x": 0.593523871901309,
+      "y": 0.6599933531978079,
+      "grid": "F6",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+    },
+    {
+      "id": "obelisk-m3106",
+      "label": "Bounty — northern obelisk · F1",
+      "layerId": "overview",
+      "x": 0.501029703089057,
+      "y": 0.18409375787078552,
+      "grid": "F1",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+    },
+    {
+      "id": "exfil-m3108",
+      "label": "Central island exit · G5",
+      "layerId": "overview",
+      "x": 0.6074503847320853,
+      "y": 0.5049190988435471,
+      "grid": "G5",
+      "category": "travel",
+      "precision": "point",
+      "overview": true,
+      "description": "Reach the southeast end of the central island around G4/G5 and interact with its available red portal before the timer expires.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+    },
+    {
+      "id": "desciple-blueprint-m3107",
+      "label": "Gyanxi — west spore · D4",
+      "layerId": "overview",
+      "x": 0.36672283140225437,
+      "y": 0.4558616384928419,
+      "grid": "D4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Optional boss · requires all three contracts"
+    },
+    {
+      "id": "desciple-blueprint-m3109",
+      "label": "Gyanxi — east spore · G4",
+      "layerId": "overview",
+      "x": 0.60302734375,
+      "y": 0.462646484375,
+      "grid": "G4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Optional boss · requires all three contracts"
+    },
+    {
+      "id": "desciple-blueprint-m3110",
+      "label": "Gyanxi — north spore · F4",
+      "layerId": "overview",
+      "x": 0.50244140625,
+      "y": 0.42578125,
+      "grid": "F4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Optional boss · requires all three contracts"
+    },
+    {
+      "id": "desciple-blueprint-m3111",
+      "label": "Gyanxi — central Rift Heart · F4",
+      "layerId": "overview",
+      "x": 0.5029296875,
+      "y": 0.461181640625,
+      "grid": "F4",
+      "category": "quest",
+      "precision": "point",
+      "overview": true,
+      "description": "After all three contract completions and outer spores, destroy this central Rift Heart to summon Gyanxi.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Optional boss · requires all three contracts"
+    },
+    {
+      "id": "ammo-depot-m3086",
+      "label": "Ammo cache · F6",
+      "layerId": "overview",
+      "x": 0.559814453125,
+      "y": 0.6988525390625,
+      "grid": "F6",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3096",
+      "label": "Ammo cache · E4",
+      "layerId": "overview",
+      "x": 0.41357421875,
+      "y": 0.403564453125,
+      "grid": "E4",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3097",
+      "label": "Ammo cache · F4",
+      "layerId": "overview",
+      "x": 0.5869140625,
+      "y": 0.4228515625,
+      "grid": "F4",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3099",
+      "label": "Ammo cache · G2",
+      "layerId": "overview",
+      "x": 0.6494140625,
+      "y": 0.27587890625,
+      "grid": "G2",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "ammo-depot-m3100",
+      "label": "Ammo cache · E1",
+      "layerId": "overview",
+      "x": 0.4830322265625,
+      "y": 0.11328125,
+      "grid": "E1",
+      "category": "ammo",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the cache to replenish ammunition and check its current reuse availability.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Reference position"
+    },
+    {
+      "id": "pack-a-punch-green-m3092",
+      "label": "Pack-a-Punch · G7",
+      "layerId": "overview",
+      "x": 0.628173828125,
+      "y": 0.7657470703125,
+      "grid": "G7",
+      "category": "upgrade",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Possible machine location"
+    },
+    {
+      "id": "der-wu-m3112",
+      "label": "Der Wunderfizz · H2",
+      "layerId": "overview",
+      "x": 0.7705434981510455,
+      "y": 0.2766149345338234,
+      "grid": "H2",
+      "category": "perk",
+      "precision": "point",
+      "overview": false,
+      "description": "Use the machine to buy perks if it is available; check the height and access route.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "dog-house-m3090",
+      "label": "Doghouse · B2",
+      "layerId": "overview",
+      "x": 0.173828125,
+      "y": 0.283203125,
+      "grid": "B2",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Possible spawn / may already be used"
+    },
+    {
+      "id": "dead-turret-m3094",
+      "label": "Deadbolt turret · F7",
+      "layerId": "overview",
+      "x": 0.5001220703125,
+      "y": 0.7515869140625,
+      "grid": "F7",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "dead-turret-m3101",
+      "label": "Deadbolt turret · H4",
+      "layerId": "overview",
+      "x": 0.7607421875,
+      "y": 0.4525146484375,
+      "grid": "H4",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "dead-turret-m3102",
+      "label": "Deadbolt turret · C4",
+      "layerId": "overview",
+      "x": 0.270751953125,
+      "y": 0.4122314453125,
+      "grid": "C4",
+      "category": "equipment",
+      "precision": "point",
+      "overview": false,
+      "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Possible support location"
+    },
+    {
+      "id": "redeploy-drone-br-wz-m3104",
+      "label": "Redeploy drone · F7",
+      "layerId": "overview",
+      "x": 0.5820592263867572,
+      "y": 0.7034287181927426,
+      "grid": "F7",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Check the live ascender/drone and use it to move above the rooftops.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Check availability in this visit"
+    },
+    {
+      "id": "spawn-locations-m3087",
+      "label": "Entry landing · F5",
+      "layerId": "overview",
+      "x": 0.501220703125,
+      "y": 0.575439453125,
+      "grid": "F5",
+      "category": "travel",
+      "precision": "point",
+      "overview": false,
+      "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "state": "Entry reference"
+    }
+  ],
+  "targets": [
+    {
+      "id": "mw3s-escort",
+      "title": "Escort — Atomic Hunter",
+      "locationIds": [
+        "obelisk-m3105"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw3s-escort"
+    },
+    {
+      "id": "mw3s-outlast",
+      "title": "Outlast — Numb Foot",
+      "locationIds": [
+        "obelisk-m3103"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw3s-outlast"
+    },
+    {
+      "id": "mw3s-bounty",
+      "title": "Bounty — Mind-Blowing Revelation",
+      "locationIds": [
+        "obelisk-m3106"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw3s-bounty"
+    },
+    {
+      "id": "exits",
+      "title": "Central island exit",
+      "locationIds": [
+        "exfil-m3108"
+      ],
+      "kind": "single",
+      "guideAnchor": "guide-step-mw3s-exfil"
+    },
+    {
+      "id": "gyanxi-spores",
+      "title": "Gyanxi — three spores and Rift Heart",
+      "locationIds": [
+        "desciple-blueprint-m3107",
+        "desciple-blueprint-m3110",
+        "desciple-blueprint-m3109",
+        "desciple-blueprint-m3111"
+      ],
+      "kind": "sequence",
+      "guideAnchor": "guide-step-mw3s-spores",
+      "description": "Destroy west/north/east spores in any order, then the central Rift Heart. This is not a Spore Control contract."
+    }
+  ],
+  "quickLinks": {
+    "mw3s-escort": "mw3s-escort",
+    "mw3s-outlast": "mw3s-outlast",
+    "mw3s-bounty": "mw3s-bounty",
+    "mw3s-exfil": "exits",
+    "mw3s-spores": "gyanxi-spores"
+  }
+}

@@ -63,6 +63,68 @@
     "phase-6-ol-2": "onryo",
     "phase-6-ol-3": "volcano-entrance"
   },
+  "mw3-dark-aether-season-1": {
+    "mw1-extractor-contract": "mw1-extractor-contract",
+    "mw1-escort-contract": "mw1-escort-contract",
+    "mw1-outlast-contract": "mw1-outlast-contract",
+    "mw1-contract-entry": "contracts",
+    "mw1-exfil": "exits",
+    "mw1-conditional-keys": "locked-rooms",
+    "mw1-keys-officers": "mw1-keys-officers",
+    "mw1-keys-munitions": "mw1-keys-munitions",
+    "mw1-keys-barracks-antiquities": "mw1-keys-barracks-antiquities"
+  },
+  "mw3-dark-aether-season-2": {
+    "mw2-bounty": "mw2-bounty",
+    "mw2-outlast": "mw2-outlast",
+    "mw2-extractors": "mw2-extractors",
+    "mw2-exits": "exits",
+    "mw2-target-detour": "mw2-target-detour",
+    "mw2-mirror-detour": "mw2-mirror-detour",
+    "mw2-ship-detour": "mw2-ship-detour",
+    "mw2-song": "stadium-music"
+  },
+  "mw3-dark-aether-season-3": {
+    "mw3s-escort": "mw3s-escort",
+    "mw3s-outlast": "mw3s-outlast",
+    "mw3s-bounty": "mw3s-bounty",
+    "mw3s-exfil": "exits",
+    "mw3s-spores": "gyanxi-spores"
+  },
+  "mw3-dark-aether-season-5": {
+    "mw5-escort": "mw5-escort",
+    "mw5-outlast": "mw5-outlast",
+    "mw5-spore-contract": "mw5-spore-contract",
+    "mw5-exfil": "exits",
+    "mw5-cosmos-spore": "cosmos-maze",
+    "mw5-cosmos-skull": "cosmos-maze",
+    "mw5-cosmos-trade": "cosmos-maze",
+    "mw5-cosmos-key": "cosmos-computer",
+    "mw5-cosmos-door": "cosmos-maintenance"
+  },
+  "mw3-urzikstan": {
+    "mw3-free-speed-cola": "free-speed-cola",
+    "mw3-free-juggernog": "free-juggernog",
+    "mw3-free-death-perception": "free-death-perception",
+    "mw3-free-deadshot": "free-deadshot",
+    "mw3-free-tombstone": "free-tombstone",
+    "mw3-free-staminup": "free-staminup",
+    "mw3-free-quick-revive": "free-quick-revive",
+    "mw3-free-phd": "free-phd",
+    "mw3-free-perks": "free-perks",
+    "mw3-portal-season-1": "season-1-portal",
+    "mw3-portal-season-2": "season-2-portal",
+    "mw3-portal-season-3": "season-3-portal",
+    "mw3-portal-season-5": "season-5-portal",
+    "mw3-portal-unlock-intro": "dark-aether-portals",
+    "mw3-clue-walls": "red-worm-clue-walls",
+    "mw3-usb-collect": "red-worm-usbs",
+    "mw3-worm-arena": "red-worm-arenas",
+    "mw3-vault-transmissions": "vault-transmitters",
+    "mw3-vault-open": "chess-vault",
+    "mw3-triangles": "triangles",
+    "mw3-rune-entry-atlas": "rune-entrances"
+  },
   "paradox-junction": {
     "phase-1-ol-1": "blundergat",
     "phase-1-ol-2": "twins-swing",

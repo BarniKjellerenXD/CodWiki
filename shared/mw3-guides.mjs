@@ -324,4 +324,32 @@ season5.sectionLinks = [{ id: 'details-ascension', text: 'Ascension' }, { id: 'd
 unstable.sectionLinks = [{ id: 'details-obelisks', text: 'Activate obelisks' }, { id: 'details-rift-entry', text: 'Enter the Rift' }, { id: 'details-phase-1', text: 'Five-wave challenge' }]
 
 export const mw3Guides = [urzikstan, season1, season2, season3, unstable, season5]
+const urzikstanMapLinks = {
+  'mw1-bad-signal-entry': ['season-1-portal', 'Find the island portal area'],
+  'mw1-pedestals': ['season-1-portal', 'Find the Season 1 pedestals'],
+  'mw2-mission-entry': ['season-2-portal', 'Find the Nahr portal area'],
+  'mw2-pedestals': ['season-2-portal', 'Find the Season 2 pedestals'],
+  'mw2-gold-mirror': ['s2-mirror-upgrade', 'Find the Mirror graveyard area'],
+  'mw2-gold-gloves': ['s2-gloves-upgrade', 'Find the boxing gym area'],
+  'mw2-gold-target': ['s2-target-upgrade', 'Find the firing range area'],
+  'mw3s-union-entry': ['season-3-portal', 'Find the northwest island portal'],
+  'mw3s-pedestals': ['season-3-portal', 'Find the Season 3 pedestals'],
+  'mw3s-laptop-gold': ['s3-laptop-upgrade', 'Find the Laptop triangle'],
+  'mw3s-drawing-gold': ['s3-drawing-upgrade', 'Find the Drawing triangle'],
+  'mw3s-journal-gold': ['s3-journal-upgrade', 'Find the Journal triangle'],
+  'mw5-ascension-entry': ['season-5-portal', 'Find the Opal Palace portal area'],
+  'mw5-gold-pedestals': ['season-5-portal', 'Find the Season 5 fountain area'],
+  'mw5-echo-drum': ['s5-drum-course', 'Find the Blood Burner course start'],
+  'mw5-diary-gold': ['s5-diary-upgrade', 'Find the eagle-ramp meteor'],
+  'mw5-drum-gold': ['s5-drum-upgrade', 'Find the four-pillar square area'],
+  'mw5-giraffe-gold': ['s5-giraffe-upgrade', 'Find the wrecked-van area'],
+  'unstable-find-obelisks': ['unstable-obelisks', 'Browse possible Urzikstan obelisks'],
+}
+for (const guide of mw3Guides) {
+  if (guide !== unstable) guide.aliases = [...(guide.aliases || []), 'interactive map']
+  for (const phase of guide.phases) for (const entry of phase.steps) {
+    const link = urzikstanMapLinks[entry.id]
+    if (link) entry.links = [...(entry.links || []), { href: `/guides/mw3-urzikstan#map:${link[0]}`, label: link[1] + ' on the Urzikstan map' }]
+  }
+}
 for (const guide of mw3Guides) guide.reviewNote = 'Illustrated instructions from the references below, source-reviewed on 8 October 2026 and reorganized on 9 October 2026. The guide links, saved-progress compatibility and page behavior have software checks. These walkthroughs have not been verified in a complete in-game playthrough. Gameplay-image and chart creators are credited with each illustration.'
