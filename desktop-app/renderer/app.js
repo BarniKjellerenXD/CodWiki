@@ -147,7 +147,7 @@ function buildSidebar() {
   const planned = maps.filter(map => map.status === 'planned').length
   const tools = window.NAV.filter(item => item.game === selectedGame && item.kind === 'tool').length
   const units = selectedGame === 'mw3' ? 'destinations' : selectedGame === 'ww2' ? 'maps & modes' : 'maps'
-  document.getElementById('nav-game-info').textContent = selectedGame === 'mw3' ? `${maps.length} guides · 5 interactive maps` : `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
+  document.getElementById('nav-game-info').textContent = selectedGame === 'mw3' ? `${maps.length} guides · 5 maps · photo finder` : `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
   searchClear.hidden = !searchInput.value
   searchStatus.textContent = query ? `${groups.reduce((count, group) => count + group.items.length, 0)} results across all games` : ''
   emptyNav.hidden = groups.length > 0
@@ -172,6 +172,10 @@ function buildSidebar() {
         navEl.appendChild(heading)
       }
       lastGroup = group.group
+    }
+    if (group.game === 'mw3') {
+      for (const item of group.items) navEl.appendChild(makeItem(item, item.kind === 'guide'))
+      continue
     }
     if (group.items.length === 1 && group.items[0].kind === 'guide') {
       navEl.appendChild(makeItem(group.items[0], true))

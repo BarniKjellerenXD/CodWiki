@@ -17,6 +17,7 @@ const BlackOpsThree = defineAsyncComponent(() => import('./puzzle/BlackOpsThree.
 const Chronicles = defineAsyncComponent(() => import('./puzzle/Chronicles.vue'))
 const BlackOpsTwo = defineAsyncComponent(() => import('./puzzle/BlackOpsTwo.vue'))
 const Classic = defineAsyncComponent(() => import('./puzzle/Classic.vue'))
+const Mw3Photos = defineAsyncComponent(() => import('./puzzle/Mw3Photos.client.vue'))
 import { toolDefinitions } from '~/utils/expansionTools.mjs'
 const stateIds:Record<string,string>={'ashes-serum':'serum','ashes-rocket-launch':'rocket','astra-organ':'organ','astra-mars-code':'mars','astra-planets':'planets','kowakujo-pestle':'scroll','kowakujo-clock':'flags','kowakujo-murder':'murder','totenreich-uranium':'uranium','totenreich-wunderbarrage':'wunder','rex-ring':'rings','rex-pillars':'pillars','rex-house-symbols':'house','paradox-notes':'notes','astra-books':'books'}
 const legacyNotice=useState(`puzzle-${stateIds[props.tool]}-legacy-notice`,()=> '')
@@ -39,6 +40,7 @@ const widgets:Record<string,any>={"ashes-serum":PuzzleSerum,"ashes-rocket-launch
   <Chronicles v-else-if="toolDefinitions[tool]?.ui === 'chronicles'" :key="tool" :tool="tool" />
   <BlackOpsTwo v-else-if="toolDefinitions[tool]?.ui === 'bo2'" :key="tool" :tool="tool" />
   <Classic v-else-if="toolDefinitions[tool]?.ui === 'classic'" :key="tool" :tool="tool" />
+  <Mw3Photos v-else-if="tool === 'mw3-red-worm-photos'" :key="tool" />
   <Remaining v-else-if="toolDefinitions[tool]?.widget === 'remaining'" :key="tool" :tool="tool" />
   <Expansion v-else-if="toolDefinitions[tool]" :key="tool" :tool="tool" />
 </template>

@@ -23,7 +23,8 @@ async function ready() {
   await page.locator('.atlas').waitFor({ state: 'visible' })
   await page.waitForFunction(() => { const image = document.querySelector('.atlas .leaflet-image-layer'); return image?.complete && image.naturalWidth === 4096 && !document.querySelector('.atlas-image-loading') })
   assert.equal(await page.locator('.atlas-layer-select').count(), 0)
-  assert.equal(await page.locator('.mwz-milestones, .guide-branch, .map-tools').count(), 0)
+  assert.equal(await page.locator('.mwz-milestones, .guide-branch').count(), 0)
+  assert.equal(await page.locator('.map-tools:visible').count(), 0)
 }
 async function capture(name) {
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1), true)
@@ -45,7 +46,7 @@ try {
     assert.equal(await page.locator('.atlas-grid-label').count(), 20)
     page.off('request', collect)
   }
-  checks.push('All five production maps load local 4K artwork only when requested, with no MW3 dropdowns or tools')
+  checks.push('All five production maps load local 4K artwork only when requested, with no MW3 route dropdowns or progression trackers')
 
   await go('/guides/mw3-urzikstan#map')
   await ready(); await capture('urzikstan-desktop')
@@ -80,10 +81,13 @@ try {
   assert.equal(decodeURIComponent(new URL(page.url()).hash), '#map:red-worm-usbs')
   assert.ok(!new URL(page.url()).hash.includes('%25'), 'New map links must not double-encode their target')
   assert.equal(await page.locator('.atlas-selected-list > li').count(), 12)
-  await page.getByRole('button', { name: /^Ammo/ }).click()
+  await page.getByRole('button', { name: 'Supplies', exact: true }).click()
+  await page.getByRole('button', { name: /^Ammo caches/ }).click()
   await page.locator('.atlas-search input').fill('zz-no-such-landmark')
-  assert.equal(await page.locator('[data-map-location]').count(), 12, 'The selected USB candidates survive category and search filters')
+  assert.equal(await page.locator('[data-map-location]').count(), 0, 'Switching activities clears the previous USB selection')
   await page.locator('.atlas-search input').fill('')
+  await page.getByRole('button', { name: 'Red Worm', exact: true }).click()
+  await page.getByRole('button', { name: /^USB devices/ }).click()
   await capture('urzikstan-usbs-desktop')
   await page.getByRole('button', { name: '← Back to step', exact: true }).first().click()
   assert.equal(new URL(page.url()).hash, '#guide-step-mw3-usb-collect')
@@ -175,7 +179,7 @@ async function nativeShot(name, width, height) {
 try {
   await host.waitForFunction(() => !!window.CW_LIBRARY)
   await host.locator('#nav-game').selectOption('mw3')
-  assert.match(await host.locator('#nav-game-info').textContent(), /5 interactive maps/)
+  assert.match(await host.locator('#nav-game-info').textContent(), /5 maps.*photo finder/)
   await host.locator('[data-id="mw3-urzikstan"]').click()
   await waitGuest(() => !!document.getElementById('__nuxt')?.__vue_app__ && document.readyState === 'complete')
   await guest(() => { Array.from(document.querySelectorAll('.reading-switch button')).find(button => button.textContent === 'Map').click(); return true })

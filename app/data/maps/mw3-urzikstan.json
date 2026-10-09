@@ -419,7 +419,7 @@
     },
     {
       "id": "usb-key-m2575",
-      "label": "USB console candidate · C4",
+      "label": "USB — Al-Abboud Condos · C4",
       "layerId": "overview",
       "x": 0.2669684703534154,
       "y": 0.4602204652887891,
@@ -433,7 +433,7 @@
     },
     {
       "id": "usb-key-m2594",
-      "label": "USB console candidate · F7",
+      "label": "USB — Shorok Opera House · F7",
       "layerId": "overview",
       "x": 0.53369140625,
       "y": 0.720703125,
@@ -447,7 +447,7 @@
     },
     {
       "id": "usb-key-m2595",
-      "label": "USB console candidate · D6",
+      "label": "USB — Zaravan City · D6",
       "layerId": "overview",
       "x": 0.343994140625,
       "y": 0.6279296875,
@@ -461,7 +461,7 @@
     },
     {
       "id": "usb-key-m2596",
-      "label": "USB console candidate · I2",
+      "label": "USB — Zlatyev Array hill · I2",
       "layerId": "overview",
       "x": 0.8688154079451871,
       "y": 0.21081243824583693,
@@ -475,7 +475,7 @@
     },
     {
       "id": "usb-key-m2597",
-      "label": "USB console candidate · F3",
+      "label": "USB — Popov Power · F3",
       "layerId": "overview",
       "x": 0.5496826171875,
       "y": 0.304443359375,
@@ -489,7 +489,7 @@
     },
     {
       "id": "usb-key-m2598",
-      "label": "USB console candidate · F5",
+      "label": "USB — Opal Palace · F5",
       "layerId": "overview",
       "x": 0.5509033203125,
       "y": 0.543701171875,
@@ -503,7 +503,7 @@
     },
     {
       "id": "usb-key-m2599",
-      "label": "USB console candidate · G4",
+      "label": "USB — Opal Palace loading area · G4",
       "layerId": "overview",
       "x": 0.6109619140625,
       "y": 0.4866943359375,
@@ -517,7 +517,7 @@
     },
     {
       "id": "usb-key-m2603",
-      "label": "USB console candidate · C1",
+      "label": "USB — Kotovo Blocks · C1",
       "layerId": "overview",
       "x": 0.282470703125,
       "y": 0.136962890625,
@@ -531,7 +531,7 @@
     },
     {
       "id": "usb-key-m2604",
-      "label": "USB console candidate · D8",
+      "label": "USB — Community Center · D8",
       "layerId": "overview",
       "x": 0.3229976602977922,
       "y": 0.8182363938895327,
@@ -545,7 +545,7 @@
     },
     {
       "id": "usb-key-m2605",
-      "label": "USB console candidate · H8",
+      "label": "USB — Shahin Manor · H8",
       "layerId": "overview",
       "x": 0.7543613908380181,
       "y": 0.8129379512900266,
@@ -559,7 +559,7 @@
     },
     {
       "id": "usb-key-m2606",
-      "label": "USB console candidate · I5",
+      "label": "USB — Hadiqa Farms · I5",
       "layerId": "overview",
       "x": 0.8409423828125,
       "y": 0.5223388671875,
@@ -573,7 +573,7 @@
     },
     {
       "id": "usb-key-m2625",
-      "label": "USB console candidate · F4",
+      "label": "USB — Nahr Bathhouse · F4",
       "layerId": "overview",
       "x": 0.5316162109375,
       "y": 0.4407958984375,
@@ -5149,5 +5149,513 @@
     "mw3-vault-open": "chess-vault",
     "mw3-triangles": "triangles",
     "mw3-rune-entry-atlas": "rune-entrances"
-  }
+  },
+  "filterGroups": [
+    {
+      "id": "red-worm",
+      "label": "Red Worm",
+      "defaultFilter": "clue-boards",
+      "filters": [
+        {
+          "id": "clue-boards",
+          "label": "Clue boards",
+          "locationIds": [
+            "loc-image-m2574",
+            "loc-image-m2583",
+            "loc-image-m2623",
+            "loc-image-m2637"
+          ],
+          "note": "Read the four photos at any one of these boards. You do not need to visit all four boards."
+        },
+        {
+          "id": "usb-devices",
+          "label": "USB devices",
+          "locationIds": [
+            "usb-key-m2575",
+            "usb-key-m2594",
+            "usb-key-m2595",
+            "usb-key-m2596",
+            "usb-key-m2597",
+            "usb-key-m2598",
+            "usb-key-m2599",
+            "usb-key-m2603",
+            "usb-key-m2604",
+            "usb-key-m2605",
+            "usb-key-m2606",
+            "usb-key-m2625"
+          ],
+          "note": "Choose the photos on your board below to show only their matching USB consoles."
+        },
+        {
+          "id": "fight-arenas",
+          "label": "Fight arenas",
+          "locationIds": [
+            "greylom-m2573",
+            "greylom-m2588",
+            "greylom-m2591",
+            "greylom-m2600"
+          ],
+          "note": "Only one arena is active in your deployment. Find the paired ammo caches and refractors; the USB photos do not identify the arena."
+        }
+      ]
+    },
+    {
+      "id": "unstable-rift",
+      "label": "Unstable Rift",
+      "defaultFilter": "obelisks",
+      "filters": [
+        {
+          "id": "obelisks",
+          "label": "Obelisk candidates",
+          "locationIds": [
+            "obelisk-urzi-m3153",
+            "obelisk-urzi-m3154",
+            "obelisk-urzi-m3155",
+            "obelisk-urzi-m3156",
+            "obelisk-urzi-m3157",
+            "obelisk-urzi-m3158",
+            "obelisk-urzi-m3159",
+            "obelisk-urzi-m3160",
+            "obelisk-urzi-m3161",
+            "obelisk-urzi-m3162",
+            "obelisk-urzi-m3163",
+            "obelisk-urzi-m3164",
+            "obelisk-urzi-m3165",
+            "obelisk-urzi-m3166",
+            "obelisk-urzi-m3167",
+            "obelisk-urzi-m3168",
+            "obelisk-urzi-m3169",
+            "obelisk-urzi-m3170",
+            "obelisk-urzi-m3171",
+            "obelisk-urzi-m3172",
+            "obelisk-urzi-m3173",
+            "obelisk-urzi-m3174",
+            "obelisk-urzi-m3175",
+            "obelisk-urzi-m3176",
+            "obelisk-urzi-m3177",
+            "obelisk-urzi-m3178",
+            "obelisk-urzi-m3179",
+            "obelisk-urzi-m3180",
+            "obelisk-urzi-m3181",
+            "obelisk-urzi-m3182",
+            "obelisk-urzi-m3183",
+            "obelisk-urzi-m3184",
+            "obelisk-urzi-m3185",
+            "obelisk-urzi-m3186",
+            "obelisk-urzi-m3187",
+            "obelisk-urzi-m3188",
+            "obelisk-urzi-m3189",
+            "obelisk-urzi-m3190",
+            "obelisk-urzi-m3191",
+            "obelisk-urzi-m3192",
+            "obelisk-urzi-m3203",
+            "obelisk-urzi-m3204",
+            "obelisk-urzi-m3205",
+            "obelisk-urzi-m3206",
+            "obelisk-urzi-m3207",
+            "obelisk-urzi-m3208",
+            "obelisk-urzi-m3209",
+            "obelisk-urzi-m3210",
+            "obelisk-urzi-m3212",
+            "obelisk-urzi-m3213",
+            "obelisk-urzi-m3214",
+            "obelisk-urzi-m3215",
+            "obelisk-urzi-m3255",
+            "obelisk-urzi-m3267"
+          ],
+          "note": "These are possible spawns. Find three active obelisks during your deployment and read their ammo-mod symbols."
+        }
+      ]
+    },
+    {
+      "id": "dark-aether",
+      "label": "Dark Aether",
+      "defaultFilter": "seasonal-portals",
+      "filters": [
+        {
+          "id": "seasonal-portals",
+          "label": "Portal sites",
+          "locationIds": [
+            "portal-season-1",
+            "portal-season-2",
+            "portal-season-3",
+            "portal-season-5"
+          ]
+        },
+        {
+          "id": "season-2-upgrades",
+          "label": "Season 2 gold upgrades",
+          "locationIds": [
+            "s2-mirror-upgrade",
+            "s2-gloves-upgrade",
+            "s2-target-upgrade"
+          ]
+        },
+        {
+          "id": "season-5-upgrades",
+          "label": "Season 5 gold upgrades",
+          "locationIds": [
+            "s5-drum-upgrade",
+            "s5-giraffe-upgrade",
+            "s5-drum-course"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side-quests",
+      "label": "Side quests",
+      "defaultFilter": "free-perks",
+      "filters": [
+        {
+          "id": "free-perks",
+          "label": "Free perks",
+          "locationIds": [
+            "free-speed-cola",
+            "free-juggernog",
+            "free-death-perception",
+            "free-deadshot",
+            "free-tombstone",
+            "free-staminup",
+            "free-quick-revive",
+            "free-phd"
+          ]
+        },
+        {
+          "id": "chess-vault",
+          "label": "Chess vault",
+          "locationIds": [
+            "trans-m2681",
+            "trans-m2685",
+            "trans-m2686",
+            "chess-vault"
+          ],
+          "note": "The Pawn, Rook, Bishop and vault are fixed references. Find the roaming Knight in the match; it has no fixed pin."
+        },
+        {
+          "id": "triangles",
+          "label": "Triangle rituals",
+          "locationIds": [
+            "free-crystals1-m3125",
+            "free-crystals1-m3130",
+            "free-crystals1-m3135",
+            "free-crystals1-m3248",
+            "free-crystals1-m3253",
+            "free-crystals1-m3260"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "defaultFilter": "rune-entrances",
+      "filters": [
+        {
+          "id": "rune-entrances",
+          "label": "Rune entrances",
+          "locationIds": [
+            "portals-entry-m2111",
+            "portals-entry-m2245",
+            "portals-entry-m2248",
+            "portals-entry-m2256",
+            "portals-entry-m2277",
+            "portals-entry-m2278",
+            "portals-entry-m2279",
+            "portals-entry-m2280",
+            "portals-entry-m2281",
+            "portals-entry-m2282",
+            "portals-entry-m2284",
+            "portals-entry-m2318",
+            "portals-entry-m2325",
+            "portals-entry-m2331",
+            "portals-entry-m2388",
+            "portals-entry-m2394",
+            "portals-entry-m2397"
+          ]
+        },
+        {
+          "id": "rune-destinations",
+          "label": "Rune destinations",
+          "locationIds": [
+            "portals-exit-m2112",
+            "portals-exit-m2291",
+            "portals-exit-m2292",
+            "portals-exit-m2293",
+            "portals-exit-m2295",
+            "portals-exit-m2296",
+            "portals-exit-m2297",
+            "portals-exit-m2298",
+            "portals-exit-m2299",
+            "portals-exit-m2301",
+            "portals-exit-m2302",
+            "portals-exit-m2303",
+            "portals-exit-m2304",
+            "portals-exit-m2305",
+            "portals-exit-m2306",
+            "portals-exit-m2307",
+            "portals-exit-m2308",
+            "portals-exit-m2309",
+            "portals-exit-m2310",
+            "portals-exit-m2311",
+            "portals-exit-m2312",
+            "portals-exit-m2313",
+            "portals-exit-m2314",
+            "portals-exit-m2393"
+          ]
+        },
+        {
+          "id": "aether-tears",
+          "label": "Aether Tears",
+          "locationIds": [
+            "aether-tear-m2324",
+            "aether-tear-m2326",
+            "aether-tear-m2351",
+            "aether-tear-m2363",
+            "aether-tear-m2389",
+            "aether-tear-m2395",
+            "aether-tear-m2396",
+            "aether-tear-m2399",
+            "aether-tear-m2414",
+            "aether-tear-m2415",
+            "aether-tear-m2419",
+            "aether-tear-m2424",
+            "aether-tear-m2426",
+            "aether-tear-m2428",
+            "aether-tear-m2434",
+            "aether-tear-m2448",
+            "aether-tear-m2451",
+            "aether-tear-m2461",
+            "aether-tear-m2466",
+            "aether-tear-m2474",
+            "aether-tear-m2541",
+            "aether-tear-m2560",
+            "aether-tear-m2582",
+            "aether-tear-m2651",
+            "aether-tear-m2759",
+            "aether-tear-m2760"
+          ]
+        },
+        {
+          "id": "entry-landings",
+          "label": "Entry landings",
+          "locationIds": [
+            "spawn-locations-m2084",
+            "spawn-locations-m2171",
+            "spawn-locations-m2181",
+            "spawn-locations-m2215",
+            "spawn-locations-m2240",
+            "spawn-locations-m2249",
+            "spawn-locations-m2264",
+            "spawn-locations-m2265",
+            "spawn-locations-m2275",
+            "spawn-locations-m2276",
+            "spawn-locations-m2285",
+            "spawn-locations-m2315",
+            "spawn-locations-m2327",
+            "spawn-locations-m2352",
+            "spawn-locations-m2353",
+            "spawn-locations-m2354",
+            "spawn-locations-m2355",
+            "spawn-locations-m2356",
+            "spawn-locations-m2357",
+            "spawn-locations-m2358",
+            "spawn-locations-m2359",
+            "spawn-locations-m2360",
+            "spawn-locations-m2361",
+            "spawn-locations-m2362",
+            "spawn-locations-m2518"
+          ]
+        },
+        {
+          "id": "ordinary-exfils",
+          "label": "Ordinary exfils",
+          "locationIds": [
+            "exfil-m2083",
+            "exfil-m2123",
+            "exfil-m2151",
+            "exfil-m2152",
+            "exfil-m2184",
+            "exfil-m2185",
+            "exfil-m2233",
+            "exfil-m2286",
+            "exfil-m2287",
+            "exfil-m2288",
+            "exfil-m2349",
+            "exfil-m2372",
+            "exfil-m2373",
+            "exfil-m2421"
+          ]
+        },
+        {
+          "id": "final-exfils",
+          "label": "Final exfils",
+          "locationIds": [
+            "exfil-last-m2086",
+            "exfil-last-m2114",
+            "exfil-last-m2170",
+            "exfil-last-m2283",
+            "exfil-last-m2300",
+            "exfil-last-m2553"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplies",
+      "label": "Supplies",
+      "defaultFilter": "ammo",
+      "filters": [
+        {
+          "id": "ammo",
+          "label": "Ammo caches",
+          "locationIds": [
+            "ammo-depot-m2090",
+            "ammo-depot-m2121",
+            "ammo-depot-m2122",
+            "ammo-depot-m2125",
+            "ammo-depot-m2128",
+            "ammo-depot-m2150",
+            "ammo-depot-m2157",
+            "ammo-depot-m2160",
+            "ammo-depot-m2163",
+            "ammo-depot-m2174",
+            "ammo-depot-m2179",
+            "ammo-depot-m2180",
+            "ammo-depot-m2186",
+            "ammo-depot-m2188",
+            "ammo-depot-m2190",
+            "ammo-depot-m2198",
+            "ammo-depot-m2199",
+            "ammo-depot-m2200",
+            "ammo-depot-m2202",
+            "ammo-depot-m2207",
+            "ammo-depot-m2208",
+            "ammo-depot-m2212",
+            "ammo-depot-m2214",
+            "ammo-depot-m2218",
+            "ammo-depot-m2219",
+            "ammo-depot-m2226",
+            "ammo-depot-m2227",
+            "ammo-depot-m2236",
+            "ammo-depot-m2586",
+            "ammo-depot-m2587",
+            "ammo-depot-m2589",
+            "ammo-depot-m2590",
+            "ammo-depot-m2592",
+            "ammo-depot-m2593",
+            "ammo-depot-m2601",
+            "ammo-depot-m2602"
+          ]
+        },
+        {
+          "id": "pack-a-punch",
+          "label": "Pack-a-Punch",
+          "locationIds": [
+            "pack-a-punch-green-m2093",
+            "pack-a-punch-green-m2094",
+            "pack-a-punch-green-m2095",
+            "pack-a-punch-green-m2097",
+            "pack-a-punch-green-m2098",
+            "pack-a-punch-green-m2099",
+            "pack-a-punch-green-m2100",
+            "pack-a-punch-green-m2101",
+            "pack-a-punch-green-m2102",
+            "pack-a-punch-green-m2104",
+            "pack-a-punch-green-m2117",
+            "pack-a-punch-green-m2118",
+            "pack-a-punch-green-m2127",
+            "pack-a-punch-green-m2129",
+            "pack-a-punch-green-m2141",
+            "pack-a-punch-green-m2142",
+            "pack-a-punch-green-m2154",
+            "pack-a-punch-green-m2155",
+            "pack-a-punch-green-m2167",
+            "pack-a-punch-green-m2203",
+            "pack-a-punch-green-m2211",
+            "pack-a-punch-green-m2217",
+            "pack-a-punch-green-m2243",
+            "pack-a-punch-green-m2244"
+          ]
+        },
+        {
+          "id": "wunderfizz",
+          "label": "Wunderfizz",
+          "locationIds": [
+            "der-wu-m2565",
+            "der-wu-m2584",
+            "der-wu-m2585"
+          ]
+        },
+        {
+          "id": "doghouses",
+          "label": "Doghouses",
+          "locationIds": [
+            "dog-house-m2103",
+            "dog-house-m2166",
+            "dog-house-m2262",
+            "dog-house-m2290",
+            "dog-house-m2317",
+            "dog-house-m2319",
+            "dog-house-m2321",
+            "dog-house-m2322",
+            "dog-house-m2328",
+            "dog-house-m2374",
+            "dog-house-m2384",
+            "dog-house-m2407",
+            "dog-house-m2418",
+            "dog-house-m2429",
+            "dog-house-m2463",
+            "dog-house-m2464",
+            "dog-house-m2561",
+            "dog-house-m2761",
+            "dog-house-m2762"
+          ]
+        },
+        {
+          "id": "fuel",
+          "label": "Fuel stations",
+          "locationIds": [
+            "gas-station-m2087",
+            "gas-station-m2126",
+            "gas-station-m2143",
+            "gas-station-m2149",
+            "gas-station-m2162",
+            "gas-station-m2187",
+            "gas-station-m2201",
+            "gas-station-m2213",
+            "gas-station-m2220",
+            "gas-station-m2223",
+            "gas-station-m2225",
+            "gas-station-m2235",
+            "gas-station-m2365"
+          ]
+        },
+        {
+          "id": "mystery-box",
+          "label": "Mystery Box",
+          "locationIds": [
+            "mystery-box-color-m2092",
+            "mystery-box-color-m2119",
+            "mystery-box-color-m2130",
+            "mystery-box-color-m2145",
+            "mystery-box-color-m2146",
+            "mystery-box-color-m2147",
+            "mystery-box-color-m2161",
+            "mystery-box-color-m2182",
+            "mystery-box-color-m2209",
+            "mystery-box-color-m2222",
+            "mystery-box-color-m2229",
+            "mystery-box-color-m2230",
+            "mystery-box-color-m2242",
+            "mystery-box-color-m2316",
+            "mystery-box-color-m2320",
+            "mystery-box-color-m2332",
+            "mystery-box-color-m2376",
+            "mystery-box-color-m2377"
+          ]
+        }
+      ]
+    }
+  ]
 }

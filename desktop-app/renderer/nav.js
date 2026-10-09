@@ -2638,6 +2638,18 @@ const NAV = [
     "icon": "◇"
   },
   {
+    "id": "mw3-red-worm-photos",
+    "map": "mw3-urzikstan",
+    "game": "mw3",
+    "gameName": "Modern Warfare III (2023)",
+    "kind": "tool",
+    "section": "Urzikstan",
+    "label": "Red Worm photo finder",
+    "url": "/tools/mw3-red-worm-photos",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
     "id": "mw3-dark-aether-season-1",
     "map": "mw3-dark-aether-season-1",
     "game": "mw3",

@@ -1,0 +1,11 @@
+# MW3 map filter and photo finder direction
+
+Scope: ordinary extension of CodWiki's existing Operate interface. Baseline master a767c1b. Preserve PRODUCT.md and the incumbent charcoal/gold tokens, type, map controls, source credits and guide reading workflow. No approved comp, new brand, DESIGN.md or design.json. The user asks the implementer to compare options and choose; the decision is documented in docs/mw3-map-filter-plan.md.
+
+First viewport: in the guide map, a row of named activities reveals a smaller row of task-specific locations. Red Worm starts with four clue boards; Dark Aether Quests starts with three Mr. Peeks starters (three obelisks in Season 3). A dedicated photo finder places twelve authentic clue thumbnails directly beside the interactive map on desktop. Phones place the photo sheet before the map, with a View matching USBs control. Prior guide and native shell styles remain incumbent.
+
+Signature interaction: selecting a real observed board photo immediately reduces map pins to its known console; up to four checked images highlight numbered USB pins. Switching activity removes unrelated highlighted pins. Thumbnail previews enlarge the exact source pixels. Do not generate geography or alter watermarks. Save board observations apart from guide completion and filters.
+
+Quality bar: every twelve-clue match is correct and recognizable; the two-level filters name their contents and never mix Red Worm with Unstable Rift or story relics with contract starters. Keyboard users can select, preview and close with restored focus. Mobile and Electron minimum-window users can reach the map and filters without horizontal page overflow. Empty, four-selected, image-error/retry and unavailable-storage states remain usable. Retired progression/USB recorders and seasonal route dropdowns stay retired. All 445 source-backed pins and existing BO7 behavior survive.
+
+Required evidence: grouped Red Worm boards and Unstable Rift desktop; Dark Aether starters desktop and phone; inline photo-match guide desktop; standalone finder desktop, enlarged clue, phone sheet and phone map; actual hidden Electron finder desktop/minimum sheet/minimum map and minimum Dark Aether. Receipts in .impeccable/review/mw3-photo-filters/ and incumbent regression captures in .impeccable/review/mw3-maps/.

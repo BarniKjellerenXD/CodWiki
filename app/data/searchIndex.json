@@ -17598,6 +17598,14 @@
     "keywords": "vanguard Vanguard The Archon solver tracker"
   },
   {
+    "id": "mw3-red-worm-photos",
+    "map": "mw3-urzikstan",
+    "name": "Red Worm photo finder",
+    "route": "/tools/mw3-red-worm-photos",
+    "kind": "Tool",
+    "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
+  },
+  {
     "id": "super-ee",
     "name": "Super Easter Egg",
     "map": "",

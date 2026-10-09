@@ -399,5 +399,123 @@
     "mw3s-bounty": "mw3s-bounty",
     "mw3s-exfil": "exits",
     "mw3s-spores": "gyanxi-spores"
-  }
+  },
+  "filterGroups": [
+    {
+      "id": "quests",
+      "label": "Quests",
+      "defaultFilter": "contract-starters",
+      "filters": [
+        {
+          "id": "contract-starters",
+          "label": "Contract starters",
+          "locationIds": [
+            "obelisk-m3103",
+            "obelisk-m3105",
+            "obelisk-m3106"
+          ],
+          "note": "These three contract obelisks are separate from Urzikstan’s Unstable Rift obelisks."
+        },
+        {
+          "id": "gyanxi-spores",
+          "label": "Gyanxi spores",
+          "locationIds": [
+            "desciple-blueprint-m3107",
+            "desciple-blueprint-m3109",
+            "desciple-blueprint-m3110"
+          ]
+        },
+        {
+          "id": "gyanxi-heart",
+          "label": "Gyanxi Rift Heart",
+          "locationIds": [
+            "desciple-blueprint-m3111"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "label": "Exits",
+      "defaultFilter": "exit-portals",
+      "filters": [
+        {
+          "id": "exit-portals",
+          "label": "Exit portals",
+          "locationIds": [
+            "exfil-m3108"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "defaultFilter": "redeploy-drones",
+      "filters": [
+        {
+          "id": "redeploy-drones",
+          "label": "Redeploy drones",
+          "locationIds": [
+            "redeploy-drone-br-wz-m3104"
+          ]
+        },
+        {
+          "id": "entry-landings",
+          "label": "Entry landings",
+          "locationIds": [
+            "spawn-locations-m3087"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplies",
+      "label": "Supplies",
+      "defaultFilter": "ammo",
+      "filters": [
+        {
+          "id": "ammo",
+          "label": "Ammo caches",
+          "locationIds": [
+            "ammo-depot-m3086",
+            "ammo-depot-m3096",
+            "ammo-depot-m3097",
+            "ammo-depot-m3099",
+            "ammo-depot-m3100"
+          ]
+        },
+        {
+          "id": "pack-a-punch",
+          "label": "Pack-a-Punch",
+          "locationIds": [
+            "pack-a-punch-green-m3092"
+          ]
+        },
+        {
+          "id": "wunderfizz",
+          "label": "Wunderfizz",
+          "locationIds": [
+            "der-wu-m3112"
+          ]
+        },
+        {
+          "id": "doghouses",
+          "label": "Doghouses",
+          "locationIds": [
+            "dog-house-m3090"
+          ]
+        },
+        {
+          "id": "turrets",
+          "label": "Deadbolt turrets",
+          "locationIds": [
+            "dead-turret-m3094",
+            "dead-turret-m3101",
+            "dead-turret-m3102"
+          ]
+        }
+      ]
+    }
+  ]
 }

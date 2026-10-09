@@ -554,5 +554,132 @@
     "mw2-mirror-detour": "mw2-mirror-detour",
     "mw2-ship-detour": "mw2-ship-detour",
     "mw2-song": "stadium-music"
-  }
+  },
+  "filterGroups": [
+    {
+      "id": "quests",
+      "label": "Quests",
+      "defaultFilter": "contract-starters",
+      "filters": [
+        {
+          "id": "contract-starters",
+          "label": "Mr. Peeks starters",
+          "locationIds": [
+            "contracts-m2925",
+            "contracts-m2927",
+            "contracts-m2928"
+          ],
+          "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+        },
+        {
+          "id": "story-relics",
+          "label": "Story relic obelisks",
+          "locationIds": [
+            "perforated-target-m2937",
+            "pristine-mirror-m2938",
+            "tattered-mma-gloves-m2939"
+          ],
+          "note": "These relic trials belong to Countermeasures. They are separate from the three repeat-visit contracts."
+        },
+        {
+          "id": "song-stones",
+          "label": "Stadium song",
+          "locationIds": [
+            "stadium-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "label": "Exits",
+      "defaultFilter": "exit-portals",
+      "filters": [
+        {
+          "id": "exit-portals",
+          "label": "Exit portals",
+          "locationIds": [
+            "exfil-m2924",
+            "exfil-m2926",
+            "exfil-m2929",
+            "exfil-m2949"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "defaultFilter": "aether-tears",
+      "filters": [
+        {
+          "id": "aether-tears",
+          "label": "Aether Tears",
+          "locationIds": [
+            "aether-tear-m2931",
+            "aether-tear-m2946"
+          ]
+        },
+        {
+          "id": "entry-landings",
+          "label": "Entry landings",
+          "locationIds": [
+            "spawn-locations-m2923"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplies",
+      "label": "Supplies",
+      "defaultFilter": "ammo",
+      "filters": [
+        {
+          "id": "ammo",
+          "label": "Ammo caches",
+          "locationIds": [
+            "ammo-depot-m2919",
+            "ammo-depot-m2920",
+            "ammo-depot-m2921",
+            "ammo-depot-m2922",
+            "ammo-depot-m2933",
+            "ammo-depot-m2934",
+            "ammo-depot-m2940",
+            "ammo-depot-m2941",
+            "ammo-depot-m2945"
+          ]
+        },
+        {
+          "id": "pack-a-punch",
+          "label": "Pack-a-Punch",
+          "locationIds": [
+            "pack-a-punch-green-m2942",
+            "pack-a-punch-green-m2947",
+            "pack-a-punch-green-m2948"
+          ]
+        },
+        {
+          "id": "wunderfizz",
+          "label": "Wunderfizz",
+          "locationIds": [
+            "der-wu-m2932"
+          ]
+        },
+        {
+          "id": "doghouses",
+          "label": "Doghouses",
+          "locationIds": [
+            "dog-house-m2930"
+          ]
+        },
+        {
+          "id": "turrets",
+          "label": "Deadbolt turrets",
+          "locationIds": [
+            "dead-turret-m2951"
+          ]
+        }
+      ]
+    }
+  ]
 }

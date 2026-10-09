@@ -7,6 +7,7 @@ import { parse } from '@vue/compiler-dom'
 import { parse as parseSfc, compileScript } from '@vue/compiler-sfc'
 import { transformSync } from 'esbuild'
 import * as Vue from 'vue'
+import * as mw3PhotoBoard from '../app/utils/mw3PhotoBoard.mjs'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readerView, readReaderContext } from '../app/utils/mapNavigation.mjs'
 import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/companion.mjs'
 
@@ -304,6 +305,7 @@ function viewerFixture(saved, storageFails = false, environment = {}) {
     if (name === 'vue') return Vue
     if (name === 'leaflet') return { latLng: (lat, lng) => ({ lat, lng }), ...environment.leaflet }
     if (name === 'leaflet/dist/leaflet.css') return {}
+    if (name === '~/utils/mw3PhotoBoard.mjs') return mw3PhotoBoard
     throw new Error(`Unexpected runtime dependency in map logic test: ${name}`)
   }
   const lifecycle = { mounted: [], beforeUnmount: [] }
@@ -327,7 +329,7 @@ function viewerFixture(saved, storageFails = false, environment = {}) {
   return { props, state, events, persisted, lifecycle }
 }
 
-test('map viewer defaults to quest and area browsing, and selected locations bypass category/search filters', () => {
+test('legacy map viewer defaults to quest and area browsing, and selected locations bypass category/search filters', () => {
   const { props, state } = viewerFixture()
   assert.equal(state.category.value, 'quest-areas')
   assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['room', 'quest', 'upstairs'])
@@ -344,6 +346,96 @@ test('map viewer defaults to quest and area browsing, and selected locations byp
   assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['perk'])
   state.clearFilters()
   assert.equal(state.filteredLocations.value.length, 4)
+})
+
+test('MW3 activity changes isolate obelisks, clue boards and USB pins while retaining board observations', () => {
+  const { props, state, events } = viewerFixture()
+  props.data = readJson('app/data/maps/mw3-urzikstan.json')
+  state.restorePreferences()
+  state.chooseCategory('red-worm')
+  assert.equal(state.subfilterId.value, 'clue-boards')
+  assert.equal(state.filteredLocations.value.length, 4)
+  assert.ok(state.filteredLocations.value.every(location => location.id.startsWith('loc-image-')))
+  state.chooseSubfilter('usb-devices')
+  assert.equal(state.filteredLocations.value.length, 12)
+  state.choosePhotos([12, 1, 4, 8])
+  props.targetId = events.at(-1)[1]
+  state.selectTarget()
+  assert.deepEqual(state.visibleLocations.value.map(location => location.id).sort(), ['usb-key-m2603', 'usb-key-m2575', 'usb-key-m2606', 'usb-key-m2605'].sort())
+  assert.equal(state.locationNumber(state.selectedLocations.value[3], 3), 12)
+  state.chooseCategory('unstable-rift')
+  assert.deepEqual(events.at(-1), ['select', ''])
+  props.targetId = ''
+  state.selectTarget()
+  assert.equal(state.visibleLocations.value.length, 54)
+  assert.ok(state.visibleLocations.value.every(location => location.id.startsWith('obelisk-urzi-')))
+  assert.deepEqual(state.photoIds.value, [1, 4, 8, 12])
+  state.chooseCategory('red-worm')
+  state.chooseSubfilter('usb-devices')
+  assert.equal(events.at(-1)[1], 'red-worm-photos-1-4-8-12')
+  assert.equal(state.visibleLocations.value.length, 4)
+  props.targetId = 'usb-key-m2625'
+  state.selectTarget()
+  assert.equal(state.photoMode.value, false, 'An explicit shared console link must not be replaced by a saved board')
+  assert.deepEqual(state.selectedLocations.value.map(location => location.id), ['usb-key-m2625'])
+  assert.deepEqual(state.photoIds.value, [1, 4, 8, 12])
+})
+
+test('MW3 guide targets choose their smaller filter and preserve a quiet view for targets spanning subfilters', () => {
+  const { props, state } = viewerFixture()
+  props.data = readJson('app/data/maps/mw3-dark-aether-season-3.json')
+  state.restorePreferences()
+  props.targetId = 'obelisk-m3103'
+  state.selectTarget()
+  assert.equal(state.category.value, 'quests')
+  assert.equal(state.subfilterId.value, 'contract-starters')
+  assert.equal(state.visibleLocations.value.length, 3)
+  props.targetId = 'gyanxi-spores'
+  state.selectTarget()
+  assert.equal(state.category.value, 'selected')
+  assert.equal(state.visibleLocations.value.length, 4)
+})
+
+test('MW3 filter preferences validate subgroup IDs and migrate legacy categories without losing wheel or grid settings', () => {
+  const { props, state, persisted } = viewerFixture()
+  props.data = readJson('app/data/maps/mw3-urzikstan.json')
+  const key = 'codwiki-map-ui-v2:mw3-urzikstan'
+  persisted.set(key, JSON.stringify({ category: 'quest', wheelZoom: false, showGrid: false }))
+  state.restorePreferences()
+  assert.equal(state.category.value, 'overview')
+  assert.equal(state.wheelZoom.value, false)
+  assert.equal(state.showGrid.value, false)
+  persisted.set(key, JSON.stringify({ category: 'red-worm', subfilter: 'usb-devices', wheelZoom: false }))
+  state.restorePreferences()
+  assert.equal(state.category.value, 'red-worm')
+  assert.equal(state.subfilterId.value, 'usb-devices')
+  state.savePreferences()
+  assert.equal(JSON.parse(persisted.get(key)).subfilter, 'usb-devices')
+  persisted.set(key, JSON.stringify({ category: 'red-worm', subfilter: 'not-a-filter' }))
+  state.restorePreferences()
+  assert.equal(state.subfilterId.value, 'clue-boards')
+})
+
+test('board photos persist apart from map preferences, links replace saved observations and reset is contained', () => {
+  const { props, state, persisted } = viewerFixture()
+  props.data = readJson('app/data/maps/mw3-urzikstan.json')
+  persisted.set(mw3PhotoBoard.PHOTO_BOARD_KEY, '[2,3,6,10]')
+  state.restoreBoardPhotos()
+  assert.deepEqual(state.photoIds.value, [2, 3, 6, 10])
+  props.targetId = 'red-worm-photos-12-1-5-9'
+  state.selectTarget()
+  assert.deepEqual(state.photoIds.value, [1, 5, 9, 12])
+  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY), '[1,5,9,12]')
+  state.choosePhotos([])
+  props.targetId = ''
+  assert.deepEqual(state.photoIds.value, [])
+  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY), '[]')
+  assert.equal(state.visibleLocations.value.length, 12)
+  const unavailable = viewerFixture(undefined, true)
+  unavailable.props.data = readJson('app/data/maps/mw3-urzikstan.json')
+  unavailable.state.choosePhotos([1])
+  assert.equal(unavailable.state.photoSaveError.value, true)
+  assert.deepEqual(unavailable.state.photoIds.value, [1])
 })
 
 test('map overview search includes non-overview services and grid references while preserving a selected target', () => {
@@ -483,7 +575,7 @@ test('map viewer converts normalized artwork corners and center with a top-left 
   for (const [x, y, lat, lng] of [[0, 0, 1000, 0], [1, 0, 1000, 2000], [0, 1, 0, 0], [1, 1, 0, 2000], [0.5, 0.5, 500, 1000]]) assert.deepEqual(state.coordinate({ x, y }, layer), { lat, lng })
 })
 
-test('map viewer avoids Leaflet zoom-transition teardown races and stops queued work before removing layers', () => {
+test('map viewer avoids Leaflet zoom-transition teardown races and stops queued work before removing layers', async () => {
   const calls = []
   const frames = new Map()
   let nextFrame = 1
@@ -512,7 +604,7 @@ test('map viewer avoids Leaflet zoom-transition teardown races and stops queued 
   props.data.layers = []
   props.data.locations = []
   state.canvasRef.value = { addEventListener() {}, removeEventListener() { calls.push('remove-wheel-listener') } }
-  lifecycle.mounted.forEach(callback => callback())
+  for (const callback of lifecycle.mounted) await callback()
   assert.equal(state.mapError.value, false)
   assert.equal(state.ready.value, true)
   assert.equal(options.scrollWheelZoom, true, 'Scrolling should zoom by default')

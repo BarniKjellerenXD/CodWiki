@@ -12,6 +12,7 @@ import { ww2Tools } from './ww2-tools.mjs'
 import { awTools } from './aw-tools.mjs'
 import { vanguardTools } from './vanguard-tools.mjs'
 import { retiredTools } from './retired-tools.mjs'
+import { mw3PhotoTools } from './mw3-photo-board.mjs'
 // Authored tool definitions. Values are observations unless an evaluator is named.
 import { tagRiddles, iceLabels, fireValues, rushmoreCodes } from './expansion-references.mjs'
 import { voyageTools } from './bo4-voyage.mjs'
@@ -62,5 +63,5 @@ const baseTools = [
   tool('cw-outbreak-launch', 'cw-outbreak', 'Launch order notebook', 'The consoles are A, B and D. Record confirmed accepted positions, or a console rejected at a particular position. Only record a later rejection after the earlier positions were accepted in that attempt.', [field('first', 'Accepted first console', ['A', 'B', 'D']), field('second', 'Accepted second console', ['A', 'B', 'D']), field('third', 'Accepted third console', ['A', 'B', 'D']), ...[0, 1, 2].flatMap(i => ['A', 'B', 'D'].map(c => field(`reject-${i}-${c}`, `Position ${i + 1}: ${c} rejected`, null, { type: 'check' })))], { evaluate: 'launch' }),
   tool('cw-outbreak-regions', 'cw-outbreak', 'Quest region reference', 'Choose the quest and your current region. Region availability differs by objective; check the linked location guide before warping.', [field('quest', 'Quest', ['Ravenov Implications', 'Operation Excision']), field('region', 'Region', ['Alpine', 'Armada', 'Collateral', 'Duga', 'Golova', 'Ruka', 'Sanatorium', 'Zoo'])], { kind: 'reference', evaluate: 'regions' })
 ]
-const reviewedTools = [...voyageTools, ...chaosTools, ...nightTools, ...aetherTools, ...bo6Tools, ...coldWarTools, ...bo3Tools, ...chroniclesTools, ...bo2Tools, ...classicTools, ...iwTools, ...ww2Tools, ...awTools, ...vanguardTools]
+const reviewedTools = [...voyageTools, ...chaosTools, ...nightTools, ...aetherTools, ...bo6Tools, ...coldWarTools, ...bo3Tools, ...chroniclesTools, ...bo2Tools, ...classicTools, ...iwTools, ...ww2Tools, ...awTools, ...vanguardTools, ...mw3PhotoTools]
 export const expansionTools = [...baseTools.filter(tool => !retiredTools[tool.id] && !reviewedTools.some(replacement => replacement.id === tool.id)), ...reviewedTools]

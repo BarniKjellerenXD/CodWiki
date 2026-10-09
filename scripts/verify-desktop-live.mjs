@@ -21,11 +21,11 @@ else delete env.CW_SITE_URL
 const app = await electron.launch({ executablePath: binary || require('electron'), args: binary ? [] : [path.resolve('desktop-app')], env, timeout: 30000 })
 const page = await app.firstWindow(), errors = [], checks = [], screenshots = []
 page.on('pageerror', error => errors.push(error.message))
-const guest = expression => page.evaluate(expression => document.getElementById('webview').executeJavaScript(`(${expression})()`), expression.toString())
-async function waitGuest(expression) {
+const guest = (expression, argument) => page.evaluate(({ expression, argument }) => document.getElementById('webview').executeJavaScript(`(${expression})(${JSON.stringify(argument)})`), { expression: expression.toString(), argument })
+async function waitGuest(expression, argument) {
   const deadline = Date.now() + 30000
   while (Date.now() < deadline) {
-    try { if (await guest(expression)) return } catch {}
+    try { if (await guest(expression, argument)) return } catch {}
     await new Promise(resolve => setTimeout(resolve, 100))
   }
   throw new Error('Live page did not become ready: ' + expression.toString())
@@ -51,13 +51,14 @@ try {
   await page.locator('#nav-search').fill('Red Worm')
   await page.locator('[data-id="mw3-urzikstan"]').click()
   await waitGuest(() => document.querySelector('.guide-article') && document.getElementById('__nuxt')?.__vue_app__ && document.readyState === 'complete')
-  assert.equal(await guest(() => document.querySelectorAll('.guide-surface select, .mwz-milestones, .map-tools').length), 0)
+  assert.equal(await guest(() => document.querySelectorAll('.guide-surface select, .mwz-milestones').length), 0)
+  assert.equal(await guest(() => document.querySelectorAll('.map-tools a[href="/tools/mw3-red-worm-photos"]').length), 1)
   await guest(() => { Array.from(document.querySelectorAll('.guide-shortcuts button')).find(button => button.textContent.includes('Red Worm')).click(); return true })
   await waitGuest(() => location.hash === '#details-red-worm' && document.getElementById('details-red-worm').getClientRects().length > 0)
   assert.match(await guest(() => document.getElementById('details-red-worm').closest('section').textContent), /Alpha.*Bravo.*Charlie.*Delta/)
   assert.equal(await page.locator('#nav-game').inputValue(), 'mw3')
   assert.deepEqual(await guest(() => [typeof window.cw, typeof require, typeof process]), ['undefined', 'undefined', 'undefined'])
-  checks.push('Packaged app opens the live Red Worm guide with no route dropdowns, milestone panel or tool cards')
+  checks.push('Packaged app opens the live Red Worm guide with direct photo-finder discovery and no route dropdowns or milestone panel')
   await shot('live-mw3-red-worm')
   await guest(() => { document.querySelector('#guide-step-mw3-usb-collect .show-on-map').click(); return true })
   await waitGuest(() => decodeURIComponent(location.hash) === '#map:red-worm-usbs' && document.querySelector('.leaflet-image-layer')?.naturalWidth === 4096)
@@ -68,6 +69,18 @@ try {
   await guest(() => { document.querySelector('.atlas-heading button').click(); return true })
   await waitGuest(() => location.hash === '#guide-step-mw3-usb-collect')
   checks.push('Packaged app opens the live 4K Urzikstan map with twelve USB candidates and returns to its guide step')
+  await page.locator('[data-id="mw3-red-worm-photos"]').click()
+  await waitGuest(() => location.pathname.endsWith('mw3-red-worm-photos') && document.querySelectorAll('.photo-select').length === 12 && document.querySelector('.leaflet-image-layer')?.naturalWidth === 4096)
+  for (const [index, number] of [1, 4, 8, 12].entries()) {
+    await guest(number => { Array.from(document.querySelectorAll('.photo-select')).find(button => button.getAttribute('aria-label').startsWith(`Photo ${number}:`)).click(); return true }, number)
+    await waitGuest(count => document.querySelectorAll('[data-map-location]').length === count, index + 1)
+  }
+  assert.equal(await guest(() => localStorage.getItem('codwiki-mw3-red-worm-photos-v1')), '[1,4,8,12]')
+  assert.equal(await guest(() => document.querySelectorAll('.photo-select:disabled').length), 8)
+  await shot('live-mw3-photo-finder')
+  await guest(() => { document.querySelector('.tool-nav .backlink').click(); return true })
+  await waitGuest(() => location.hash === '#guide-step-mw3-usb-collect')
+  checks.push('Packaged app loads all twelve authentic live clues, selects four matching USB pins, saves their observations and returns to the original guide step')
   await page.locator('#btn-settings').click()
   await page.locator('[data-tab="general"]').click()
   await page.locator('#sp-app-update-check').click()

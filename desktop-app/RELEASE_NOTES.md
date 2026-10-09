@@ -1,5 +1,17 @@
 # CodWiki Desktop release notes
 
+## v1.8.0
+
+- MW3 maps now use activity groups with a second row of specific filters. Red Worm clue boards, USB devices and arenas are separate; Unstable Rift obelisks have their own activity. Dark Aether Quests isolates the three contract starters, with story relics and secret quests in separate filters.
+- Added the Red Worm photo finder. Choose the four actual images on your clue board from the twelve-photo reference sheet to show their matching USB consoles. Enlarge a photo, correct your selection, start a new board, or share its map link. Pin numbers match reference photos; drive letters must still be read in-game.
+- The finder is available inside Urzikstan's USB filter and as a tool in the website and desktop library. It remembers photos on this device separately from guide progress. Switching activities clears unrelated highlighted pins.
+- Website and existing desktop installations receive the live content automatically. This package includes the new finder in its bundled navigation snapshot: 96 guides, 105 tools and two child quests across 13 games.
+- Preserved all 445 credited map references, guide anchors, saved reading/progress settings, legacy BO7 filters and retired MW3 recorder redirects.
+
+Validated with automated compatibility/photo-binding tests, real browser and Electron interaction checks, responsive layouts, a production build and Windows installer/ZIP packaging. Source review and software checks are not an in-game playthrough.
+
+See [the options and implementation plan](https://github.com/BarniKjellerenXD/CodWiki/blob/master/docs/mw3-map-filter-plan.md). Use the Setup installer to update the app or extract the portable ZIP.
+
 ## v1.7.0
 
 - MW3 now has interactive maps for Urzikstan and all four seasonal Dark Aether regions. Use the guide's Map button or an inline map icon to locate an objective and return to its instructions.

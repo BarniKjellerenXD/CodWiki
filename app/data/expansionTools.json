@@ -19473,5 +19473,15 @@
         "assetId": "asset-0113"
       }
     ]
+  },
+  {
+    "id": "mw3-red-worm-photos",
+    "map": "mw3-urzikstan",
+    "name": "Red Worm photo finder",
+    "kind": "solver",
+    "widget": "mw3-photos",
+    "version": 1,
+    "fields": [],
+    "help": "Select the four photographs on your current clue board to locate their USB consoles on the map."
   }
 ]

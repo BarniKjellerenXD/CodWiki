@@ -317,6 +317,7 @@ urzikstan.phases.sort((a, b) => urzikstanOrder.indexOf(a.id) - urzikstanOrder.in
 urzikstan.phases.find(phase => phase.id === 'contracts').group = 'Deployment Reference'
 urzikstan.aliases.push('Red Worm', 'Greylorm', 'free perks', 'chess vault', 'Dark Aether portals')
 urzikstan.sectionLinks = [{ id: 'details-dark-aether-portals', text: 'Unlock a Dark Aether portal' }, { id: 'details-red-worm', text: 'Red Worm boss fight' }, { id: 'details-side-quests', text: 'Free perks' }, { id: 'details-vault', text: 'Chess vault' }]
+urzikstan.phases.find(phase => phase.id === 'red-worm').steps.find(step => step.id === 'mw3-usb-collect').links = [{ href: '/tools/mw3-red-worm-photos', label: 'Match your board photos to USB locations' }]
 season1.sectionLinks = [{ id: 'details-bad-signal', text: 'Bad Signal' }, { id: 'details-relics', text: 'Collect relics' }, { id: 'details-attunement', text: 'Gold upgrades' }, { id: 'details-portal', text: 'Open the portal' }, { id: 'details-locked-rooms', text: 'Secret rooms' }]
 season2.sectionLinks = [{ id: 'details-countermeasures', text: 'Countermeasures' }, { id: 'details-attunement', text: 'Gold upgrades' }, { id: 'details-portal', text: 'Open the portal' }, { id: 'details-music', text: 'Stadium music' }]
 season3.sectionLinks = [{ id: 'details-union', text: 'Union' }, { id: 'details-relics', text: 'Collect relics' }, { id: 'details-attunement', text: 'Gold upgrades' }, { id: 'details-portal', text: 'Open the portal' }, { id: 'details-gyanxi', text: 'Smoke Signals boss' }]

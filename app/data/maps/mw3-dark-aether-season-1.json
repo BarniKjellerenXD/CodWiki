@@ -534,5 +534,130 @@
     "mw1-keys-officers": "mw1-keys-officers",
     "mw1-keys-munitions": "mw1-keys-munitions",
     "mw1-keys-barracks-antiquities": "mw1-keys-barracks-antiquities"
-  }
+  },
+  "filterGroups": [
+    {
+      "id": "quests",
+      "label": "Quests",
+      "defaultFilter": "contract-starters",
+      "filters": [
+        {
+          "id": "contract-starters",
+          "label": "Mr. Peeks starters",
+          "locationIds": [
+            "contracts-m2612",
+            "contracts-m2613",
+            "contracts-m2620"
+          ],
+          "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+        }
+      ]
+    },
+    {
+      "id": "keys-rooms",
+      "label": "Keys & rooms",
+      "defaultFilter": "key-candidates",
+      "filters": [
+        {
+          "id": "key-candidates",
+          "label": "Key candidates",
+          "locationIds": [
+            "keys-m2571",
+            "keys-m2580",
+            "keys-m2618",
+            "keys-m2622",
+            "keys-m2628",
+            "keys-m2629",
+            "keys-m2630"
+          ]
+        },
+        {
+          "id": "locked-rooms",
+          "label": "Locked rooms",
+          "locationIds": [
+            "locked-doors-m2566",
+            "locked-doors-m2567",
+            "locked-doors-m2581",
+            "locked-doors-m2619",
+            "locked-doors-m2621"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "label": "Exits",
+      "defaultFilter": "exit-portals",
+      "filters": [
+        {
+          "id": "exit-portals",
+          "label": "Exit portals",
+          "locationIds": [
+            "exfil-m2563",
+            "exfil-m2617"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "defaultFilter": "aether-tears",
+      "filters": [
+        {
+          "id": "aether-tears",
+          "label": "Aether Tears",
+          "locationIds": [
+            "aether-tear-m2570",
+            "aether-tear-m2576",
+            "aether-tear-m2579"
+          ]
+        },
+        {
+          "id": "entry-landings",
+          "label": "Entry landings",
+          "locationIds": [
+            "spawn-locations-m2568"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplies",
+      "label": "Supplies",
+      "defaultFilter": "ammo",
+      "filters": [
+        {
+          "id": "ammo",
+          "label": "Ammo caches",
+          "locationIds": [
+            "ammo-depot-m2569",
+            "ammo-depot-m2577",
+            "ammo-depot-m2578"
+          ]
+        },
+        {
+          "id": "pack-a-punch",
+          "label": "Pack-a-Punch",
+          "locationIds": [
+            "pack-a-punch-green-m2611"
+          ]
+        },
+        {
+          "id": "wunderfizz",
+          "label": "Wunderfizz",
+          "locationIds": [
+            "der-wu-m2636"
+          ]
+        },
+        {
+          "id": "doghouses",
+          "label": "Doghouses",
+          "locationIds": [
+            "dog-house-m2608"
+          ]
+        }
+      ]
+    }
+  ]
 }

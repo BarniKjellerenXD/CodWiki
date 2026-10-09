@@ -19,7 +19,8 @@
         @pointercancel="onPointerUp"
         @pointerleave="onPointerUp"
       >
-        <img
+        <ReferenceCrop v-if="crop" class="lightbox-img lightbox-crop" :src="src" :crop="crop" :alt="alt" :style="{ transform: `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale})`, cursor: isDragging ? 'grabbing' : 'grab' }" />
+        <img v-else
           ref="imgRef"
           :src="src"
           :alt="alt"
@@ -43,8 +44,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from 'vue'
+import type { ReferenceCrop } from '~/types/map'
 
-const props = defineProps<{ src: string; alt?: string }>()
+const props = defineProps<{ src: string; alt?: string; crop?: ReferenceCrop }>()
 const emit = defineEmits<{ (e: 'close'): void }>()
 
 const overlayRef = ref<HTMLDialogElement | null>(null)
@@ -233,6 +235,7 @@ watch(() => props.src, () => {
   object-fit: contain;
   will-change: transform;
 }
+.lightbox-crop { width:min(720px,100%); height:100%; object-fit:contain; transform-origin:center; }
 
 .lightbox-hint {
   position: absolute;

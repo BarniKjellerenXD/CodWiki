@@ -564,5 +564,152 @@
     "mw5-cosmos-trade": "cosmos-maze",
     "mw5-cosmos-key": "cosmos-computer",
     "mw5-cosmos-door": "cosmos-maintenance"
-  }
+  },
+  "filterGroups": [
+    {
+      "id": "quests",
+      "label": "Quests",
+      "defaultFilter": "contract-starters",
+      "filters": [
+        {
+          "id": "contract-starters",
+          "label": "Mr. Peeks starters",
+          "locationIds": [
+            "contracts-m3222",
+            "contracts-m3237",
+            "contracts-m3238"
+          ],
+          "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+        },
+        {
+          "id": "infinite-cosmos",
+          "label": "Infinite Cosmos",
+          "locationIds": [
+            "highrise-secret-area",
+            "spec-electronics",
+            "maintenance-door"
+          ],
+          "note": "Search areas for the Elder blueprint quest. These are approximate areas, not fixed laptop or detector spawns."
+        }
+      ]
+    },
+    {
+      "id": "keys-rooms",
+      "label": "Keys & rooms",
+      "defaultFilter": "key-candidates",
+      "filters": [
+        {
+          "id": "key-candidates",
+          "label": "Key candidates",
+          "locationIds": [
+            "keys-m3242"
+          ]
+        },
+        {
+          "id": "locked-rooms",
+          "label": "Locked rooms",
+          "locationIds": [
+            "locked-doors-m3244"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exits",
+      "label": "Exits",
+      "defaultFilter": "exit-portals",
+      "filters": [
+        {
+          "id": "exit-portals",
+          "label": "Exit portals",
+          "locationIds": [
+            "exfil-m3223",
+            "exfil-m3241"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "label": "Travel",
+      "defaultFilter": "aether-tears",
+      "filters": [
+        {
+          "id": "aether-tears",
+          "label": "Aether Tears",
+          "locationIds": [
+            "aether-tear-m3221",
+            "aether-tear-m3227",
+            "aether-tear-m3228",
+            "aether-tear-m3229",
+            "aether-tear-m3232",
+            "aether-tear-m3233"
+          ]
+        },
+        {
+          "id": "redeploy-drones",
+          "label": "Redeploy drones",
+          "locationIds": [
+            "redeploy-drone-br-wz-m3224"
+          ]
+        },
+        {
+          "id": "entry-landings",
+          "label": "Entry landings",
+          "locationIds": [
+            "spawn-locations-m3217",
+            "spawn-locations-m3239"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supplies",
+      "label": "Supplies",
+      "defaultFilter": "ammo",
+      "filters": [
+        {
+          "id": "ammo",
+          "label": "Ammo caches",
+          "locationIds": [
+            "ammo-depot-m3216",
+            "ammo-depot-m3225",
+            "ammo-depot-m3226",
+            "ammo-depot-m3230",
+            "ammo-depot-m3235"
+          ]
+        },
+        {
+          "id": "pack-a-punch",
+          "label": "Pack-a-Punch",
+          "locationIds": [
+            "pack-a-punch-green-m3218"
+          ]
+        },
+        {
+          "id": "wunderfizz",
+          "label": "Wunderfizz",
+          "locationIds": [
+            "der-wu-m3240"
+          ]
+        },
+        {
+          "id": "doghouses",
+          "label": "Doghouses",
+          "locationIds": [
+            "dog-house-m3236"
+          ]
+        },
+        {
+          "id": "turrets",
+          "label": "Deadbolt turrets",
+          "locationIds": [
+            "dead-turret-m3219",
+            "dead-turret-m3231",
+            "dead-turret-m3234"
+          ]
+        }
+      ]
+    }
+  ]
 }

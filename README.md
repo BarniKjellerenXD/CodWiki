@@ -16,6 +16,8 @@ Not every walkthrough or puzzle has been verified in-game, and there may be mist
 
 The [search visibility plan](docs/search-visibility-plan.md) describes how to help people find the existing site while preserving its navigation, layout and purpose.
 
+MW3's five interactive maps provide activity groups and specific location filters. The [Red Worm photo finder](https://codzmwiki.com/tools/mw3-red-worm-photos) matches the twelve possible board photographs to their USB consoles. Its source bindings, filter design options and implementation are documented in [the map filter plan](docs/mw3-map-filter-plan.md).
+
 ## Layout
 
 ```

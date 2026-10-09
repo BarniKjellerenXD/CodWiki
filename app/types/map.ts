@@ -40,9 +40,32 @@ export interface MapTarget {
   id: string
   title: string
   locationIds: string[]
-  kind?: 'single' | 'candidates' | 'sequence' | 'area'
+  kind?: 'single' | 'candidates' | 'sequence' | 'area' | 'photo-match'
   description?: string
   guideAnchor?: string
+}
+
+export interface MapFilter {
+  id: string
+  label: string
+  locationIds: string[]
+  note?: string
+}
+
+export interface MapFilterGroup {
+  id: string
+  label: string
+  defaultFilter: string
+  filters: MapFilter[]
+}
+
+export interface ReferenceCrop {
+  x: number
+  y: number
+  width: number
+  height: number
+  sourceWidth: number
+  sourceHeight: number
 }
 
 export interface MapDataset {
@@ -55,6 +78,8 @@ export interface MapDataset {
   locations: MapLocation[]
   targets: MapTarget[]
   quickLinks: Record<string, string>
+  /** Optional authored activities, each with smaller, exclusive browsing filters. */
+  filterGroups?: MapFilterGroup[]
 }
 
 export type GuideMapData = MapDataset

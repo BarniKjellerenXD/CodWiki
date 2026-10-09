@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "c72b79a1f0033c9348ae",
+  "revision": "4484b4f90db019f3029d",
   "games": [
     {
       "id": "bo7",
@@ -3064,6 +3064,21 @@
       "url": "/guides/mw3-urzikstan",
       "accel": null,
       "icon": "◇"
+    },
+    {
+      "id": "mw3-red-worm-photos",
+      "map": "mw3-urzikstan",
+      "game": "mw3",
+      "gameName": "Modern Warfare III (2023)",
+      "group": "",
+      "status": "available",
+      "keywords": "",
+      "kind": "tool",
+      "section": "Urzikstan",
+      "label": "Red Worm photo finder",
+      "url": "/tools/mw3-red-worm-photos",
+      "accel": null,
+      "icon": "↗"
     },
     {
       "id": "mw3-dark-aether-season-1",
