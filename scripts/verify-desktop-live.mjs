@@ -78,7 +78,7 @@ try {
   assert.equal(await guest(() => localStorage.getItem('codwiki-mw3-red-worm-photos-v1')), '[1,4,8,12]')
   assert.equal(await guest(() => document.querySelectorAll('.photo-select:disabled').length), 8)
   await shot('live-mw3-photo-finder')
-  await guest(() => { document.querySelector('.tool-nav .backlink').click(); return true })
+  await guest(() => { document.querySelector('.atlas-guide-link').click(); return true })
   await waitGuest(() => location.hash === '#guide-step-mw3-usb-collect')
   checks.push('Packaged app loads all twelve authentic live clues, selects four matching USB pins, saves their observations and returns to the original guide step')
   await page.locator('#btn-settings').click()
