@@ -1,0 +1,572 @@
+{
+  "id": "bo4-classified",
+  "name": "Classified",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-classified",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/classified/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO4/classified/classified_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.playstationtrophies.org/forum/topic/312647-call-of-duty-black-ops-4-classified-trophy-guide-and-roadmap/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo4-classified/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic, not to scale. Lines show regional routes with intermediate rooms omitted. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-offices",
+      "label": "Main Offices / hallways",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.279,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Upper floor",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space. Offices → War Room → laboratories → power behind Soda; build shield.",
+      "source": "/guides/bo4-classified#guide-step-setup-1"
+    },
+    {
+      "id": "area-war",
+      "label": "War Room / Server Room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.499,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Middle floor",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space. Offices → War Room → laboratories → power behind Soda; build shield.",
+      "source": "/guides/bo4-classified#guide-step-setup-1"
+    },
+    {
+      "id": "area-labs",
+      "label": "Laboratories / Morgue",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.729,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Lower floor",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space. Offices → War Room → laboratories → power behind Soda; build shield.",
+      "source": "/guides/bo4-classified#guide-step-setup-1"
+    },
+    {
+      "id": "area-panic",
+      "label": "Panic Room",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.279,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Separate room",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space. Pad in Main Offices + wires in Morgue + amplifier in Panic Room.",
+      "source": "/guides/bo4-classified#guide-step-classified-pad"
+    },
+    {
+      "id": "area-groom",
+      "label": "Groom Lake",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.799,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Separate destination",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space. Build and place amplifier on small pad; DEFCON 5 + central teleporter → Groom Lake.",
+      "source": "/guides/bo4-classified#guide-step-setup-2"
+    },
+    {
+      "id": "power",
+      "label": "South Labs power switch",
+      "layerId": "overview",
+      "x": 0.7729999999999999,
+      "y": 0.748,
+      "category": "upgrade",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Lower floor",
+      "availability": "conditional",
+      "description": "Open Main Offices, ride the elevator down to the War Room, clear access to its lower elevator and descend to the laboratories. Turn on power in the South Laboratories room behind the Soda perk machine. Gather the three shield pieces while opening the floors, then build the Riot Shield at Weapon Testing if you plan to attempt round 150. Gun assembly: Central Filing near filing cabinets; teller/Side Passage window; left of Main Offices entrance. Base: lower War Room by Server Room doorway/computers; under stairs; behind the Mystery Box position. Window: South Laboratories left of power; left of the teleporter near Weapon Testing; North Laboratories beside the barrier near Auger. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-setup-1"
+    },
+    {
+      "id": "shield",
+      "label": "Weapon Testing shield bench",
+      "layerId": "overview",
+      "x": 0.867,
+      "y": 0.748,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Lower floor",
+      "availability": "conditional",
+      "description": "Open Main Offices, ride the elevator down to the War Room, clear access to its lower elevator and descend to the laboratories. Turn on power in the South Laboratories room behind the Soda perk machine. Gather the three shield pieces while opening the floors, then build the Riot Shield at Weapon Testing if you plan to attempt round 150. Gun assembly: Central Filing near filing cabinets; teller/Side Passage window; left of Main Offices entrance. Base: lower War Room by Server Room doorway/computers; under stairs; behind the Mystery Box position. Window: South Laboratories left of power; left of the teleporter near Weapon Testing; North Laboratories beside the barrier near Auger. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-setup-1"
+    },
+    {
+      "id": "defcon",
+      "label": "Four DEFCON switches",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.518,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Middle floor",
+      "availability": "conditional",
+      "description": "Collect the Teleporter Signal Amplifier’s pad from Main Offices and its wires from Morgue. For the third part, raise DEFCON to 5 by flipping four switches: two on the upper War Room balcony, one on the lower floor near the lab elevator, and one in Server Room. Before the amplifier is installed, the central War Room teleporter takes you to Panic Room; collect the amplifier there. Pad: beneath desk near Offices teleporter; on fallen desk near Mystery Box; beside Brew machine. Wires: chair near Morgue Mystery Box; countertop corner; open body chamber. There are four switches total. Normal Pack-a-Punch access accepts any order; the Kino clue later requires a particular order. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-classified-pad"
+    },
+    {
+      "id": "amplifier-pad",
+      "label": "Amplifier pad search",
+      "layerId": "overview",
+      "x": 0.133,
+      "y": 0.298,
+      "category": "quest",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Upper floor",
+      "availability": "conditional",
+      "description": "Collect the Teleporter Signal Amplifier’s pad from Main Offices and its wires from Morgue. For the third part, raise DEFCON to 5 by flipping four switches: two on the upper War Room balcony, one on the lower floor near the lab elevator, and one in Server Room. Before the amplifier is installed, the central War Room teleporter takes you to Panic Room; collect the amplifier there. Pad: beneath desk near Offices teleporter; on fallen desk near Mystery Box; beside Brew machine. Wires: chair near Morgue Mystery Box; countertop corner; open body chamber. There are four switches total. Normal Pack-a-Punch access accepts any order; the Kino clue later requires a particular order. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-classified-pad"
+    },
+    {
+      "id": "amplifier-wires",
+      "label": "Amplifier wire search",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.713,
+      "category": "quest",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Lower floor",
+      "availability": "conditional",
+      "description": "Collect the Teleporter Signal Amplifier’s pad from Main Offices and its wires from Morgue. For the third part, raise DEFCON to 5 by flipping four switches: two on the upper War Room balcony, one on the lower floor near the lab elevator, and one in Server Room. Before the amplifier is installed, the central War Room teleporter takes you to Panic Room; collect the amplifier there. Pad: beneath desk near Offices teleporter; on fallen desk near Mystery Box; beside Brew machine. Wires: chair near Morgue Mystery Box; countertop corner; open body chamber. There are four switches total. Normal Pack-a-Punch access accepts any order; the Kino clue later requires a particular order. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-classified-pad"
+    },
+    {
+      "id": "amplifier-part",
+      "label": "Panic Room amplifier",
+      "layerId": "overview",
+      "x": 0.7729999999999999,
+      "y": 0.298,
+      "category": "quest",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Separate room",
+      "availability": "conditional",
+      "description": "Collect the Teleporter Signal Amplifier’s pad from Main Offices and its wires from Morgue. For the third part, raise DEFCON to 5 by flipping four switches: two on the upper War Room balcony, one on the lower floor near the lab elevator, and one in Server Room. Before the amplifier is installed, the central War Room teleporter takes you to Panic Room; collect the amplifier there. Pad: beneath desk near Offices teleporter; on fallen desk near Mystery Box; beside Brew machine. Wires: chair near Morgue Mystery Box; countertop corner; open body chamber. There are four switches total. Normal Pack-a-Punch access accepts any order; the Kino clue later requires a particular order. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-classified-pad"
+    },
+    {
+      "id": "teleporter",
+      "label": "War Room teleporter",
+      "layerId": "overview",
+      "x": 0.547,
+      "y": 0.518,
+      "category": "travel",
+      "typeId": "teleporter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Middle floor",
+      "availability": "conditional",
+      "description": "Craft the amplifier at an available workbench and place it on the small teleporter base in the lower War Room. Set DEFCON 5 again, then use the large central teleporter to travel to Groom Lake for Pack-a-Punch. After installation, the Server Room teleporter is the route back to Panic Room when DEFCON is 5. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-setup-2"
+    },
+    {
+      "id": "pap",
+      "label": "Groom Lake Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.133,
+      "y": 0.8180000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Separate destination",
+      "availability": "conditional",
+      "description": "Craft the amplifier at an available workbench and place it on the small teleporter base in the lower War Room. Set DEFCON 5 again, then use the large central teleporter to travel to Groom Lake for Pack-a-Punch. After installation, the Server Room teleporter is the route back to Panic Room when DEFCON is 5. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-setup-2"
+    },
+    {
+      "id": "code-machine",
+      "label": "Four-code submission machine",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.483,
+      "category": "quest",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Middle floor",
+      "availability": "conditional",
+      "description": "At the lower War Room code machine, shoot the individual digits to match a recorded code, then press the button on the right. Submit in this order: Shi No Numa → Der Riese → Shangri-La → Kino der Toten. A green acceptance light confirms each. If an entry is wrong, restart the submission sequence from Shi No Numa; your collected clues remain useful. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-codes-2"
+    },
+    {
+      "id": "howl",
+      "label": "Winter’s Howl reward case",
+      "layerId": "overview",
+      "x": 0.22699999999999998,
+      "y": 0.8180000000000001,
+      "category": "weapon",
+      "typeId": "weapon-crate",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Separate destination",
+      "availability": "conditional",
+      "description": "With Skadi retrieved, set DEFCON 5 and go to Groom Lake. Keep every player there for three full rounds; count rounds that begin and end while the whole team remains there. Leaving interrupts the stay. After the debris left of Pack-a-Punch moves, collect Winter’s Howl from the glowing case. Pack-a-Punch it normally to obtain Winter’s Fury. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-classified#guide-step-codes-3"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Offices → War Room → laboratories → power behind Soda; build shield.",
+      "kind": "area",
+      "locationIds": [
+        "power",
+        "shield",
+        "area-offices",
+        "area-war",
+        "area-labs"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-pad",
+      "title": "Pad in Main Offices + wires in Morgue + amplifier in Panic Room.",
+      "kind": "area",
+      "locationIds": [
+        "defcon",
+        "amplifier-pad",
+        "amplifier-wires",
+        "amplifier-part",
+        "area-offices",
+        "area-war",
+        "area-labs",
+        "area-panic"
+      ],
+      "guideAnchor": "guide-step-classified-pad",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Build and place amplifier on small pad; DEFCON 5 + central teleporter → Groom Lake.",
+      "kind": "area",
+      "locationIds": [
+        "teleporter",
+        "pap",
+        "area-war",
+        "area-panic",
+        "area-groom"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-gear",
+      "title": "Prepare an explosive for the Labs clue and a Pack-a-Punched gun.",
+      "kind": "area",
+      "locationIds": [
+        "area-war"
+      ],
+      "guideAnchor": "guide-step-classified-gear",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-der-riese",
+      "title": "War Room key → central Main Offices desk drawer → Der Riese code.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices",
+        "area-war",
+        "area-panic"
+      ],
+      "guideAnchor": "guide-step-classified-der-riese",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-shang",
+      "title": "Explosive behind Labs machinery → Shangri-La picture right of barrier.",
+      "kind": "area",
+      "locationIds": [
+        "area-labs"
+      ],
+      "guideAnchor": "guide-step-classified-shang",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-kino",
+      "title": "DEFCON: upper far → Server → upper near → lower; Server teleporter → static TV.",
+      "kind": "area",
+      "locationIds": [
+        "defcon",
+        "area-offices",
+        "area-war",
+        "area-panic"
+      ],
+      "guideAnchor": "guide-step-classified-kino",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-shi",
+      "title": "Pack-a-Punched shots into nameplates: 1 → 3 → 2 → 4.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices"
+      ],
+      "guideAnchor": "guide-step-classified-shi",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-codes-2",
+      "title": "Submit Shi No Numa → Der Riese → Shangri-La → Kino; green light confirms each.",
+      "kind": "area",
+      "locationIds": [
+        "code-machine",
+        "area-war"
+      ],
+      "guideAnchor": "guide-step-codes-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-codes-3",
+      "title": "Stay together at Groom Lake for three full rounds; open cleared-area case; take Winter’s Howl.",
+      "kind": "area",
+      "locationIds": [
+        "howl",
+        "area-war",
+        "area-groom"
+      ],
+      "guideAnchor": "guide-step-codes-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ending-1",
+      "title": "Story target: finish round 149. Prepare shield-bench loadout before the long run.",
+      "kind": "area",
+      "locationIds": [
+        "area-labs"
+      ],
+      "guideAnchor": "guide-step-ending-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-bench",
+      "title": "Shield raised at Weapon Testing bench; rotate Wraith Fire, Ragnaroks and shield gun.",
+      "kind": "area",
+      "locationIds": [
+        "shield",
+        "area-labs"
+      ],
+      "guideAnchor": "guide-step-classified-bench",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-trap-parts",
+      "title": "Server + Porcine components → two spawn-floor electric traps.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices",
+        "area-war"
+      ],
+      "guideAnchor": "guide-step-classified-trap-parts",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-debris",
+      "title": "Three-round group stay clears a section; leave and return for another cycle.",
+      "kind": "area",
+      "locationIds": [
+        "area-groom"
+      ],
+      "guideAnchor": "guide-step-classified-debris",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-song",
+      "title": "Interact with bottles in Central Filing, lower War Room and Porcine Research.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices",
+        "area-war"
+      ],
+      "guideAnchor": "guide-step-classified-song",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-jazz",
+      "title": "Five terminals in listed order play the intro song.",
+      "kind": "area",
+      "locationIds": [
+        "area-war"
+      ],
+      "guideAnchor": "guide-step-classified-jazz",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-nova",
+      "title": "Main Offices door: finish each dialogue, trigger Nova wave, kill safely.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices"
+      ],
+      "guideAnchor": "guide-step-classified-nova",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-classified-audio",
+      "title": "Battery + Kill-O-Watt power the Server Room reader; insert collected punch cards.",
+      "kind": "area",
+      "locationIds": [
+        "area-offices",
+        "area-war",
+        "area-labs",
+        "area-panic",
+        "area-groom"
+      ],
+      "guideAnchor": "guide-step-classified-audio",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "classified-pad": "guide-classified-pad",
+    "setup-2": "guide-setup-2",
+    "classified-gear": "guide-classified-gear",
+    "classified-der-riese": "guide-classified-der-riese",
+    "classified-shang": "guide-classified-shang",
+    "classified-kino": "guide-classified-kino",
+    "classified-shi": "guide-classified-shi",
+    "codes-2": "guide-codes-2",
+    "codes-3": "guide-codes-3",
+    "ending-1": "guide-ending-1",
+    "classified-bench": "guide-classified-bench",
+    "classified-trap-parts": "guide-classified-trap-parts",
+    "classified-debris": "guide-classified-debris",
+    "classified-song": "guide-classified-song",
+    "classified-jazz": "guide-classified-jazz",
+    "classified-nova": "guide-classified-nova",
+    "classified-audio": "guide-classified-audio"
+  }
+}

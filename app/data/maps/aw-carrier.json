@@ -1,0 +1,602 @@
+{
+  "id": "aw-carrier",
+  "name": "Carrier",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+      "url": "/guides/aw-carrier",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2015/06/armory-map-layout-carrier-exo-zombies.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2015/06/hangar-area-map-layout-carrier-exo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/AW/carrier/carrier_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/comments/3878ck/carrier_easter_egg_thread_spoilers/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/aw-carrier/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-gun",
+      "label": "Gun Deck",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-armory",
+      "label": "Armory",
+      "layerId": "overview",
+      "x": 0.43,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper + lower floors",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-bio",
+      "label": "Bio Lab",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.5970000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-cargo",
+      "label": "Cargo Deck",
+      "layerId": "overview",
+      "x": 0.42,
+      "y": 0.627,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-lift",
+      "label": "Lift",
+      "layerId": "overview",
+      "x": 0.64,
+      "y": 0.8370000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-moon",
+      "label": "Moon Pool",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.617,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-hangar",
+      "label": "Hangar",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the required decks and buy Armory Teleport Grenades.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "area-island",
+      "label": "Island",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.8470000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Repaired teleporter destination",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Use the completed rod for the shovel; keep the bottle for the maze.",
+      "source": "/guides/aw-carrier#guide-step-carrier-fish"
+    },
+    {
+      "id": "suit",
+      "label": "Cargo Exo Suits",
+      "layerId": "overview",
+      "x": 0.38,
+      "y": 0.605,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "The creator places the Exo station in Cargo. Collect an Exo Suit and open the Armory, Cargo Deck, Lift, Moon Pool, Hangar, Bio Lab and Gun Deck routes needed below. Identify upgrade stations and the Armory Teleport Grenade wallbuy. Ordinary bomb-defusal rounds are map objectives, separate from the tablet sequence. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-setup"
+    },
+    {
+      "id": "chompy",
+      "label": "Chompy generator room",
+      "layerId": "overview",
+      "x": 0.45999999999999996,
+      "y": 0.605,
+      "category": "generator",
+      "typeId": "generator",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Activate Chompy in Cargo Deck. As its wall door opens, throw a Teleport Grenade into the small room before the door closes. Once inside, activate the generator; the room soon returns you to the deck. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-chompy"
+    },
+    {
+      "id": "disposal",
+      "label": "Weapon / Grenade Disposal",
+      "layerId": "overview",
+      "x": 0.39,
+      "y": 0.28500000000000003,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower floors",
+      "availability": "conditional",
+      "description": "The generator activates Weapon Disposal and the special Grenade Disposal puzzle in the Armory. Confirm their lights/power before spending weapons or beginning the icon sequence. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-disposals"
+    },
+    {
+      "id": "vault",
+      "label": "Four-tablet vault",
+      "layerId": "overview",
+      "x": 0.13,
+      "y": 0.315,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Take the tablet from the right-hand slot and deposit it at the Gun Deck vault door. If it will not accept the tablet, wait for Oz’s dialogue to finish and interact again. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-tablet1-deposit"
+    },
+    {
+      "id": "fishing",
+      "label": "Fishing rod",
+      "layerId": "overview",
+      "x": 0.21000000000000002,
+      "y": 0.315,
+      "category": "fishing-site",
+      "typeId": "fishing-site",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Feed Weapon Disposal distinct weapons; repeating a weapon already submitted does not advance its item payout. Its early rewards are the bottle, reel, line and hook. Install each rod part on the Gun Deck rod immediately before claiming another: a new part replaces an uninstalled held part. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-rod-parts"
+    },
+    {
+      "id": "teleporter",
+      "label": "Bio Lab teleporter",
+      "layerId": "overview",
+      "x": 0.13,
+      "y": 0.5750000000000001,
+      "category": "teleporter",
+      "typeId": "teleporter",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Kill teleporting zombies or dogs and collect their telefrag pieces promptly; floor drops expire. Carry one piece at a time and install it at the inactive Bio Lab teleporter. After 20 installed pieces the teleporter is usable. Their availability increases later in the match; wait for the relevant enemies instead of assuming every kill can drop one. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-telefrags"
+    },
+    {
+      "id": "cage",
+      "label": "Shark cage controls",
+      "layerId": "overview",
+      "x": 0.7999999999999999,
+      "y": 0.595,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Install the lever in the Moon Pool electrical box beside the printer. Kill zombies around the three floor grates until their blood attracts the swimming shark. When it passes beneath the central opening, pay the box’s 1,000-credit activation and jump onto the cage to descend. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-cage"
+    },
+    {
+      "id": "locker",
+      "label": "Captain DJ locker",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.29500000000000004,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Inspect Captain DJ’s locker near Hangar Exo Medic to hear the eye-scanner clue. After this, a pair of treasure drones can spawn over later rounds. Shoot the EMPTY drone to recover its lever; a normal filled loot drone does not provide this quest item. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-carrier#guide-step-carrier-locker"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-carrier-setup",
+      "title": "Open the required decks and buy Armory Teleport Grenades.",
+      "locationIds": [
+        "suit",
+        "area-gun",
+        "area-armory",
+        "area-bio",
+        "area-cargo",
+        "area-lift",
+        "area-moon",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-setup"
+    },
+    {
+      "id": "guide-carrier-chompy",
+      "title": "Teleport into Chompy’s open room and activate its generator.",
+      "locationIds": [
+        "chompy",
+        "area-cargo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-chompy"
+    },
+    {
+      "id": "guide-carrier-disposals",
+      "title": "Confirm Weapon Disposal and the Armory Grenade Disposal are powered.",
+      "locationIds": [
+        "disposal",
+        "area-armory"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-disposals"
+    },
+    {
+      "id": "guide-carrier-rod-parts",
+      "title": "Submit distinct weapons; install reel, line and hook as each is received.",
+      "locationIds": [
+        "disposal",
+        "fishing",
+        "area-gun",
+        "area-armory"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-rod-parts"
+    },
+    {
+      "id": "guide-carrier-fish",
+      "title": "Use the completed rod for the shovel; keep the bottle for the maze.",
+      "locationIds": [
+        "fishing",
+        "area-gun",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-fish"
+    },
+    {
+      "id": "guide-carrier-cycle-icons",
+      "title": "Start the icon cycle with a Teleport Grenade; use Contact Grenades on the required icons.",
+      "locationIds": [
+        "disposal",
+        "area-armory"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-cycle-icons"
+    },
+    {
+      "id": "guide-carrier-icon-rows",
+      "title": "Complete the 2-, 4- and 6-icon rows, checking each green light.",
+      "locationIds": [
+        "disposal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-icon-rows"
+    },
+    {
+      "id": "guide-carrier-tablet1-deposit",
+      "title": "Collect tablet 1 and deposit it at the Gun Deck vault.",
+      "locationIds": [
+        "vault",
+        "area-gun"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-tablet1-deposit"
+    },
+    {
+      "id": "guide-carrier-maze-ready",
+      "title": "Open the complete route, drink the bottle and activate the Cargo Deck keypad.",
+      "locationIds": [
+        "area-armory",
+        "area-cargo",
+        "area-lift",
+        "area-moon",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-maze-ready"
+    },
+    {
+      "id": "guide-carrier-maze-cross",
+      "title": "Cross all four areas without laser contact; take and deposit tablet 2.",
+      "locationIds": [
+        "area-gun",
+        "area-cargo",
+        "area-lift",
+        "area-moon",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-maze-cross"
+    },
+    {
+      "id": "guide-carrier-telefrags",
+      "title": "Install 20 telefrag pieces individually at the Bio Lab teleporter.",
+      "locationIds": [
+        "teleporter",
+        "area-bio"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-telefrags"
+    },
+    {
+      "id": "guide-carrier-island",
+      "title": "Fish a shovel, dig up island tablet 3 and deposit it; retry after cooldown if needed.",
+      "locationIds": [
+        "teleporter",
+        "area-gun",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-island"
+    },
+    {
+      "id": "guide-carrier-locker",
+      "title": "Inspect Captain DJ’s locker; shoot its empty drone for the lever.",
+      "locationIds": [
+        "locker",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-locker"
+    },
+    {
+      "id": "guide-carrier-cage",
+      "title": "Install the lever; lure the shark with grate kills and ride the activated cage.",
+      "locationIds": [
+        "cage",
+        "area-moon"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-cage"
+    },
+    {
+      "id": "guide-carrier-eye",
+      "title": "Collect the eye from the attacking shark; open the locker and deposit tablet 4.",
+      "locationIds": [
+        "cage",
+        "locker",
+        "area-gun",
+        "area-moon",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-eye"
+    },
+    {
+      "id": "guide-carrier-c4",
+      "title": "Obtain Weapon Disposal C4 and plant it at the vault to end the match.",
+      "locationIds": [
+        "vault",
+        "area-gun",
+        "area-armory"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-c4"
+    },
+    {
+      "id": "guide-carrier-gold",
+      "title": "Red Fish + tablet 1, then a laser maze under one minute.",
+      "locationIds": [
+        "area-gun"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-gold"
+    },
+    {
+      "id": "guide-carrier-song",
+      "title": "Activate the Hangar locker, upper Gun Deck and Lift crane toy sharks.",
+      "locationIds": [
+        "area-gun",
+        "area-lift",
+        "area-moon",
+        "area-hangar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-song"
+    },
+    {
+      "id": "guide-carrier-shark-jumps",
+      "title": "Jump the swimming Moon Pool shark, then all three Lift tank sharks quickly.",
+      "locationIds": [
+        "area-lift",
+        "area-moon"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry.",
+      "guideAnchor": "guide-step-carrier-shark-jumps"
+    }
+  ],
+  "quickLinks": {
+    "carrier-setup": "guide-carrier-setup",
+    "carrier-chompy": "guide-carrier-chompy",
+    "carrier-disposals": "guide-carrier-disposals",
+    "carrier-rod-parts": "guide-carrier-rod-parts",
+    "carrier-fish": "guide-carrier-fish",
+    "carrier-cycle-icons": "guide-carrier-cycle-icons",
+    "carrier-icon-rows": "guide-carrier-icon-rows",
+    "carrier-tablet1-deposit": "guide-carrier-tablet1-deposit",
+    "carrier-maze-ready": "guide-carrier-maze-ready",
+    "carrier-maze-cross": "guide-carrier-maze-cross",
+    "carrier-telefrags": "guide-carrier-telefrags",
+    "carrier-island": "guide-carrier-island",
+    "carrier-locker": "guide-carrier-locker",
+    "carrier-cage": "guide-carrier-cage",
+    "carrier-eye": "guide-carrier-eye",
+    "carrier-c4": "guide-carrier-c4",
+    "carrier-gold": "guide-carrier-gold",
+    "carrier-song": "guide-carrier-song",
+    "carrier-shark-jumps": "guide-carrier-shark-jumps"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "suit",
+            "area-gun",
+            "area-armory",
+            "area-bio",
+            "area-cargo",
+            "area-lift",
+            "area-moon",
+            "area-hangar"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "chompy",
+            "area-cargo",
+            "disposal",
+            "area-armory"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-gun",
+            "area-lift",
+            "area-moon",
+            "area-hangar"
+          ]
+        }
+      ]
+    }
+  ]
+}

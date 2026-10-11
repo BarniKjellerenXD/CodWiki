@@ -1,0 +1,445 @@
+{
+  "id": "bo1-shangri-la",
+  "name": "Shangri-La",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-shangri-la",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/shangri-la/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/shangri-la/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-shangri-la/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / temple",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Surface",
+      "description": "Black Ops · Surface. Region on a schematic, not an exact object position. Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "area-mud",
+      "label": "Mud Room",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.437,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Surface room",
+      "description": "Black Ops · Surface room. Region on a schematic, not an exact object position. Melee the twelve wall tiles.",
+      "source": "/guides/bo1-shangri-la#guide-step-dials-tiles"
+    },
+    {
+      "id": "area-minecart",
+      "label": "Minecart side",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.437,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Surface / tunnel",
+      "description": "Black Ops · Surface / tunnel. Region on a schematic, not an exact object position. Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "area-power",
+      "label": "Power room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.787,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Underground",
+      "description": "Black Ops · Underground. Region on a schematic, not an exact object position. Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "area-waterfall",
+      "label": "Waterfall tunnel",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.777,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Tunnel / bridge approach",
+      "description": "Black Ops · Tunnel / bridge approach. Region on a schematic, not an exact object position. Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "area-pap",
+      "label": "Temple altar",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.527,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Raised spawn stairs",
+      "description": "Black Ops · Raised spawn stairs. Region on a schematic, not an exact object position. Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "power",
+      "label": "Both underground power switches",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.788,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Underground",
+      "description": "Reach the underground power room and activate both switches. For Pack-a-Punch, find the raised pressure plates in front of the four-section statues: Spawn, bottom of Rope Bridge, between the power switches and the Minecart tunnel. One plate is required per player; everyone stands on their raised plate simultaneously to stop the rotating statue sections and raise the spawn stairs. Upgrade promptly before the stairs close. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch altar",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.528,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Raised spawn stairs",
+      "description": "Reach the underground power room and activate both switches. For Pack-a-Punch, find the raised pressure plates in front of the four-section statues: Spawn, bottom of Rope Bridge, between the power switches and the Minecart tunnel. One plate is required per player; everyone stands on their raised plate simultaneously to stop the rotating statue sections and raise the spawn stairs. Upgrade promptly before the stairs close. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-1"
+    },
+    {
+      "id": "eclipse",
+      "label": "Eclipse buttons",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.288,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Surface",
+      "description": "The main quest needs four players. Press the four small buttons around Quick Revive together to enter an eclipse. Start a fresh eclipse for each crystal trial below. A successful trial returns daylight; a failed or expired attempt can be retried with the buttons. Obtain the 31-79 JGb215 (“Baby Gun”) from the Box and keep it for the shrinking steps. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-shangri-la#guide-step-setup-2"
+    },
+    {
+      "id": "dials",
+      "label": "Mud Room dials",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.438,
+      "category": "quest",
+      "typeId": "code-symbol",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Surface room",
+      "description": "Enter the Mud Room from Spawn. Start with the dial immediately on your left and work clockwise. Set the top faces to 4, 3, 16, 1. Read dots as one, a line as five and the bracket shape as ten; the chart shows the exact faces. Wait for confirmation before continuing. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-shangri-la#guide-step-dials-code"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Activate both power switches; stand on the raised Pack-a-Punch plates.",
+      "locationIds": [
+        "power",
+        "pap",
+        "area-spawn",
+        "area-minecart",
+        "area-power",
+        "area-waterfall",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Use four players to trigger an eclipse before each trial.",
+      "locationIds": [
+        "eclipse",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-tiles-1",
+      "title": "Activate the brick button and assign one caller per tile area.",
+      "locationIds": [
+        "area-minecart",
+        "area-waterfall"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-tiles-1"
+    },
+    {
+      "id": "guide-trials-3",
+      "title": "Turn the valve four times; ignite all three leaks with a Napalm Zombie.",
+      "locationIds": [
+        "area-minecart",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-trials-3"
+    },
+    {
+      "id": "guide-holes-mines",
+      "title": "Plug all four tunnel holes with detonated Spikemores.",
+      "locationIds": [
+        "area-minecart",
+        "area-power",
+        "area-waterfall"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-holes-mines"
+    },
+    {
+      "id": "guide-holes-brick",
+      "title": "Press the pool-wall brick.",
+      "locationIds": [
+        "area-waterfall"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-holes-brick"
+    },
+    {
+      "id": "guide-dials-tiles",
+      "title": "Melee the twelve wall tiles.",
+      "locationIds": [
+        "area-spawn",
+        "area-mud",
+        "area-minecart",
+        "area-power",
+        "area-waterfall",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-dials-tiles"
+    },
+    {
+      "id": "guide-dials-teepee",
+      "title": "Explode the distant teepee, then enter another eclipse.",
+      "locationIds": [
+        "area-minecart"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-dials-teepee"
+    },
+    {
+      "id": "guide-dials-code",
+      "title": "Set the mud-room dials clockwise to 4, 3, 16, 1.",
+      "locationIds": [
+        "dials",
+        "area-spawn",
+        "area-mud"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-dials-code"
+    },
+    {
+      "id": "guide-stone-1",
+      "title": "Find and ring the four correct gongs during the eclipse.",
+      "locationIds": [
+        "area-spawn",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-stone-1"
+    },
+    {
+      "id": "guide-stone-dynamite",
+      "title": "Shoot the geyser crystal and catch the dynamite.",
+      "locationIds": [
+        "area-minecart"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-stone-dynamite"
+    },
+    {
+      "id": "guide-stone-meteor",
+      "title": "Shoot the charged Mud Room crystal to shrink the meteor.",
+      "locationIds": [
+        "area-spawn",
+        "area-mud",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-stone-meteor"
+    },
+    {
+      "id": "guide-stone-2",
+      "title": "Give Brock the dynamite; return in daylight for the Focusing Stone.",
+      "locationIds": [
+        "pap",
+        "area-spawn",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-stone-2"
+    },
+    {
+      "id": "guide-shang-song",
+      "title": "Activate the three Pareidolia meteors.",
+      "locationIds": [
+        "area-spawn",
+        "area-minecart",
+        "area-waterfall"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-shang-song"
+    },
+    {
+      "id": "guide-shang-explode-monkeys",
+      "title": "On the marked tile: Up, Up, Down, Jump on a controller.",
+      "locationIds": [
+        "area-spawn",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-shang-explode-monkeys"
+    },
+    {
+      "id": "guide-shang-radios",
+      "title": "Listen for the explorer radio as each crystal trial advances.",
+      "locationIds": [
+        "area-spawn",
+        "area-minecart",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale.",
+      "guideAnchor": "guide-step-shang-radios"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "tiles-1": "guide-tiles-1",
+    "trials-3": "guide-trials-3",
+    "holes-mines": "guide-holes-mines",
+    "holes-brick": "guide-holes-brick",
+    "dials-tiles": "guide-dials-tiles",
+    "dials-teepee": "guide-dials-teepee",
+    "dials-code": "guide-dials-code",
+    "stone-1": "guide-stone-1",
+    "stone-dynamite": "guide-stone-dynamite",
+    "stone-meteor": "guide-stone-meteor",
+    "stone-2": "guide-stone-2",
+    "shang-song": "guide-shang-song",
+    "shang-explode-monkeys": "guide-shang-explode-monkeys",
+    "shang-radios": "guide-shang-radios"
+  }
+}

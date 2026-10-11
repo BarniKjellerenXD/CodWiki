@@ -1,0 +1,100 @@
+[
+  {
+    "number": 1,
+    "id": "dc-587253654f",
+    "label": "Arsenal",
+    "x": 0.63665005,
+    "y": 0.38134338
+  },
+  {
+    "number": 2,
+    "id": "dc-6b4a377652",
+    "label": "Pack-a-Punch",
+    "x": 0.44240478,
+    "y": 0.5742679
+  },
+  {
+    "number": 3,
+    "id": "dc-42556c6e64",
+    "label": "Der Wunderfizz",
+    "x": 0.33159545,
+    "y": 0.53289126
+  },
+  {
+    "number": 4,
+    "id": "dc-733370724d",
+    "label": "Aether Rift",
+    "x": 0.19518898,
+    "y": 0.29664661
+  },
+  {
+    "number": 5,
+    "id": "dc-3046533141",
+    "label": "Requiem Radio",
+    "x": 0.36326601,
+    "y": 0.59264753
+  },
+  {
+    "number": 6,
+    "id": "dc-326344444e",
+    "label": "Mystery Box Location",
+    "x": 0.33686587,
+    "y": 0.34088283
+  },
+  {
+    "number": 7,
+    "id": "dc-346e384373",
+    "label": "Jump Pad",
+    "x": 0.14092668,
+    "y": 0.52297265
+  },
+  {
+    "number": 8,
+    "id": "dc-6966386b4b",
+    "label": "Zipline",
+    "x": 0.42268702,
+    "y": 0.29992462
+  },
+  {
+    "number": 9,
+    "id": "dc-4852614433",
+    "label": "Trial Computer",
+    "x": 0.3899619,
+    "y": 0.68968883
+  },
+  {
+    "number": 10,
+    "id": "dc-3258515652",
+    "label": "Maxis Radio Amplifier",
+    "x": 0.19152774,
+    "y": 0.82904079
+  },
+  {
+    "number": 11,
+    "id": "dc-4e4c54364b",
+    "label": "Stone Monkey",
+    "x": 0.32549903,
+    "y": 0.43232612
+  },
+  {
+    "number": 12,
+    "id": "dc-6a5a597835",
+    "label": "Demented Echo",
+    "x": 0.39571975,
+    "y": 0.40530253
+  },
+  {
+    "number": 13,
+    "id": "dc-614b76436d",
+    "label": "Unknown Signal Radio",
+    "x": 0.83854243,
+    "y": 0.40264694
+  },
+  {
+    "number": 14,
+    "id": "dc-63724d5642",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.14984741,
+    "y": 0.3804241
+  }
+]

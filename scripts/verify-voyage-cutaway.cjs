@@ -1,0 +1,108 @@
+const fs=require('node:fs/promises');
+const path=require('node:path');
+const assert=require('node:assert/strict');
+const {chromium}=require('C:/Users/MainLocalUser/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{
+ const base=process.argv[2]||'http://127.0.0.1:3001';
+ const out='docs/map-layout-redesign-research/previews';await fs.mkdir(out,{recursive:true});
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+ try {
+ const page=await browser.newPage({viewport:{width:1440,height:1100}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const checks=[];
+ await page.goto(base+'/guides/bo4-voyage-of-despair#map',{waitUntil:'networkidle'});
+ const ship=page.locator('.ship-cutaway');await ship.waitFor();
+ const screenshot=filename=>ship.screenshot({path:path.join(out,filename),style:'.guide-toolbar { visibility:hidden !important; }'});
+ assert.equal(await ship.locator('.ship-level-number').count(),9);
+ assert.equal(await page.locator('.atlas select').count(),0);
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Forecastle.*Level \+1.*Spawn deck/s);
+ await page.goto(base+'/guides/bo4-voyage-of-despair#map:sentinel',{waitUntil:'networkidle'});
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Poop Deck.*Level \+2.*Sentinel platform/s);
+ assert.equal(await ship.locator('[data-footprint="poop-deck-level-2"].ship-room-highlight').count(),1);
+ const roomLevels=ship.getByRole('group',{name:'Levels of this room',exact:true});
+ assert.equal(await roomLevels.getByRole('button').count(),3);
+ await screenshot('voyage-cutaway-sentinel.png');
+ await ship.locator('[data-connection="poop-sentinel-stairs"]>button').click();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Level \+1.*Pack-a-Punch deck/s);
+ await roomLevels.getByRole('button',{name:/^Poop Deck: level 0,/}).focus();await page.keyboard.press('Enter');
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Level 0.*Lower deck/s);
+ for(const id of ['passage-poop-deck-3rd-class-berths-level-0','vertical-3rd-class-berths-level-0','berths-down','berths-provisions','provisions-engine','vertical-engine-room-level-minus-3','passage-engine-room-turbine-room-level-minus-4','vertical-turbine-room-level-minus-4'])await ship.locator(`[data-connection="${id}"]>button`).click();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Turbine Room.*Level −5/s);
+ checks.push('reference spawn +1; Sentinel +2 is above PaP +1; direct room-level buttons; rear descent through every intervening room');
+ await ship.getByRole('button',{name:'Level 0: Cabins / suites / stern',exact:true}).focus();await page.keyboard.press('Enter');
+ await ship.locator('.ship-room-buttons').getByRole('button',{name:'Lower Grand Staircase',exact:true}).focus();await page.keyboard.press('Enter');
+ await ship.locator('[data-connection="grand-stairs-0-minus-1"]>button').click();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Level −1/);
+ await ship.getByRole('button',{name:'← Back to previous room',exact:true}).click();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Level 0/);
+ checks.push('keyboard level and room selection; stairs down and return');
+ await page.getByRole('button',{name:'Hide all',exact:true}).click();
+ assert.equal(await ship.locator('.ship-items button').count(),0);
+ assert.equal(await ship.locator('.ship-level-number').count(),9);
+ assert.ok(await ship.locator('.ship-destination').count());
+ checks.push('Hide all clears item pins and retains navigation');
+ await page.goto(base+'/guides/bo4-voyage-of-despair#map:pap-cargo',{waitUntil:'networkidle'});
+ await ship.locator('.ship-room-highlight').first().waitFor();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Cargo Hold/);
+ assert.ok(await ship.locator('[data-footprint="cargo-hold-level-minus-3"].ship-room-highlight').count());
+ await ship.getByRole('button',{name:'Fast travel',exact:true}).click();
+ await ship.locator('[data-connection="portal-cargo-boiler"]>button').click();
+ assert.match(await ship.locator('.ship-detail-heading').innerText(),/exact arrival level is not pinned/);
+ assert.equal(await ship.locator('.ship-room-selected').count(),3);
+ await page.evaluate(()=>history.replaceState(null,'',location.pathname+'#map'));
+ await page.reload({waitUntil:'networkidle'});
+ await ship.waitFor();
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Boiler Room/);
+ assert.equal(await ship.locator('.ship-room-selected').count(),3);
+ await page.goto(base+'/guides/bo4-voyage-of-despair#map:pap-cargo',{waitUntil:'networkidle'});
+ // Explicit guide links take priority over a saved browsing position.
+ assert.match(await ship.locator('.ship-detail h3').innerText(),/Cargo Hold/);
+ checks.push('deep link highlights exact pedestal; directed portal preserves unpinned arrival; room-wide position persists; guide link wins over save');
+ await page.getByRole('button',{name:'All locations',exact:true}).click();
+ await page.goto(base+'/guides/bo4-voyage-of-despair#map',{waitUntil:'networkidle'});
+ await ship.getByRole('button',{name:'Level 0: Cabins / suites / stern',exact:true}).click();
+ await ship.locator('.ship-room-buttons').getByRole('button',{name:'Lower Grand Staircase',exact:true}).click();
+ const search=page.getByPlaceholder('Search rooms, items and landmarks…');
+ await search.fill('Boiler');
+ assert.match(await ship.locator('.ship-picker-heading h3').innerText(),/Matching rooms across/);
+ assert.equal(await ship.locator('.ship-room-buttons button').count(),3);
+ assert.deepEqual(await ship.locator('.ship-room-buttons small').allTextContents(),['−3','−4','−5']);
+ await search.fill('');
+ checks.push('room search spans floors and labels every result with its height');
+ await screenshot('voyage-cutaway-desktop.png');
+ for(const width of [390,320]){
+  await page.setViewportSize({width,height:900});
+  await page.waitForTimeout(120);
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false,`page overflow at ${width}`);
+  await ship.getByRole('button',{name:'Level +3: Bridge / upper decks',exact:true}).click();
+  await ship.locator('.ship-room-buttons').getByRole('button',{name:'Bridge',exact:true}).click();
+  assert.match(await ship.locator('.ship-detail h3').innerText(),/Bridge/);
+  const sentinelBadge=ship.locator('[data-footprint="poop-deck-level-2"] .ship-room-index');
+  assert.equal(await sentinelBadge.isVisible(),true);
+  assert.ok(await sentinelBadge.evaluate(el=>el.clientWidth>=16&&el.scrollWidth<=el.clientWidth),`Sentinel number is readable at ${width}`);
+  await sentinelBadge.click();
+  assert.match(await ship.locator('.ship-detail h3').innerText(),/Level \+2.*Sentinel platform/s);
+  const small=await ship.locator('.ship-level-number,.ship-room-buttons button,.ship-room-levels button').evaluateAll(buttons=>buttons.filter(b=>b.getBoundingClientRect().height<44).length);
+  assert.equal(small,0,`small primary touch targets at ${width}`);
+  await screenshot(`voyage-cutaway-${width}.png`);
+ }
+ checks.push('390px and 320px no overflow; readable room buttons; 44px primary targets');
+ await page.setViewportSize({width:1440,height:1100});
+ for(const theme of ['archive','midnight','forest','ember','paper']){await page.evaluate(theme=>document.documentElement.dataset.theme=theme,theme);await screenshot(`voyage-cutaway-${theme}.png`)}
+ checks.push('five theme screenshots');
+ for(const view of ['Quick Parts','Full Details']){
+  await page.goto(base+'/guides/bo4-voyage-of-despair',{waitUntil:'networkidle'});
+  const viewButton=page.getByRole('button',{name:view,exact:true});await viewButton.click();
+  const link=page.locator('.show-on-map:visible').first();const origin=await link.elementHandle();await link.click();
+  await page.locator('.ship-room-highlight').first().waitFor();
+  await page.getByRole('button',{name:'← Back to step',exact:true}).first().click();
+  await page.waitForFunction(()=>!location.hash.startsWith('#map'));
+  assert.equal(await viewButton.getAttribute('aria-pressed'),'true');assert.equal(await origin.evaluate(el=>el===document.activeElement),true);
+ }
+ checks.push('Quick and Full guide → cutaway → Back to step restores reader and focus');
+ await page.goto(base+'/guides/bo6-liberty-falls#map',{waitUntil:'networkidle'});await page.locator('.atlas-marker').first().waitFor();assert.equal(await page.locator('.ship-cutaway').count(),0);
+ checks.push('existing image map remains on Leaflet');
+ assert.deepEqual(errors,[]);
+ const report={checked:new Date().toISOString(),origin:base,checks,runtimeErrors:errors};await fs.writeFile(path.join(out,'voyage-cutaway-verification.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
+ } finally {await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

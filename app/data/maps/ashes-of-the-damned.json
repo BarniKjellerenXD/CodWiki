@@ -44,7 +44,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2068",
@@ -55,7 +57,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-2069",
@@ -66,7 +70,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2070",
@@ -77,7 +83,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-2071",
@@ -88,7 +96,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2072",
@@ -99,7 +109,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2073",
@@ -110,7 +122,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2074",
@@ -121,7 +135,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2075",
@@ -132,7 +148,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-2076",
@@ -143,7 +161,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2077",
@@ -154,7 +174,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2078",
@@ -165,7 +187,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2079",
@@ -176,7 +200,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-2080",
@@ -187,7 +213,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-2081",
@@ -198,7 +226,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2082",
@@ -209,7 +239,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2083",
@@ -220,7 +252,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2084",
@@ -231,7 +265,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2090",
@@ -242,7 +278,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2091",
@@ -253,7 +291,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2092",
@@ -264,7 +304,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2093",
@@ -275,7 +317,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-2094",
@@ -286,7 +330,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-2095",
@@ -297,7 +343,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2096",
@@ -308,7 +356,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2097",
@@ -319,7 +369,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2098",
@@ -330,7 +382,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2099",
@@ -341,7 +395,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2100",
@@ -352,7 +408,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-2101",
@@ -363,7 +421,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-2102",
@@ -374,7 +434,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2103",
@@ -385,7 +447,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-2106",
@@ -396,7 +460,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2107",
@@ -407,7 +473,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-2108",
@@ -418,7 +486,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2109",
@@ -429,7 +499,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2110",
@@ -440,7 +512,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2111",
@@ -451,7 +525,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2113",
@@ -462,7 +538,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2114",
@@ -473,7 +551,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2116",
@@ -484,7 +564,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2117",
@@ -495,7 +577,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-2118",
@@ -506,7 +590,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2119",
@@ -517,7 +603,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2120",
@@ -528,7 +616,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-2121",
@@ -539,7 +629,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2122",
@@ -550,7 +642,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-2123",
@@ -561,7 +655,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2124",
@@ -572,7 +668,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-2125",
@@ -583,7 +681,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2126",
@@ -594,7 +694,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-2128",
@@ -605,7 +707,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-2129",
@@ -616,7 +720,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2132",
@@ -627,7 +733,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2133",
@@ -638,7 +746,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2134",
@@ -649,7 +759,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-2135",
@@ -660,7 +772,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2136",
@@ -671,7 +785,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-2137",
@@ -682,7 +798,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2138",
@@ -693,7 +811,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-2139",
@@ -704,7 +824,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2140",
@@ -715,7 +837,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2141",
@@ -726,7 +850,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-2142",
@@ -737,7 +863,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2143",
@@ -748,7 +876,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2144",
@@ -759,7 +889,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2145",
@@ -770,7 +902,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-2147",
@@ -781,7 +915,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2148",
@@ -792,7 +928,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2149",
@@ -803,7 +941,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-2150",
@@ -814,7 +954,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2151",
@@ -825,7 +967,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-2152",
@@ -836,7 +980,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2153",
@@ -847,7 +993,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-2154",
@@ -858,7 +1006,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-2155",
@@ -869,7 +1019,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2156",
@@ -880,7 +1032,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-2157",
@@ -891,7 +1045,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-2158",
@@ -902,7 +1058,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-2159",
@@ -913,7 +1071,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-2160",
@@ -924,7 +1084,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-2161",
@@ -935,7 +1097,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "janus",
@@ -946,7 +1110,9 @@
       "category": "area",
       "precision": "area",
       "description": "Starting plaza: find Ol' Tessie, the Server Room and the Stabilizer Chip encounter.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "server",
@@ -957,7 +1123,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Room containing Quick Revive. Collect T.E.D.D.'s head, free Stun Grenade and the song headphones here. Room highlight uses the verified nearby perk position.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "farm",
@@ -968,7 +1136,9 @@
       "category": "area",
       "precision": "area",
       "description": "Farm complex with Farmhouse, Barn, Cellar and Garage. Individual buildings have separate area markers.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "farmhouse",
@@ -979,7 +1149,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Stamin-Up building: dining clock and Pa, Tasty-Face bunk bed, red candle and the TV Twins. Search the described furniture; this is a room-area marker.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "barn",
@@ -991,7 +1163,9 @@
       "precision": "area",
       "description": "Death Perception building: power switch, hanging corpse, upstairs toy horse and Grim relic portal. Upper and lower floors share this overview.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
-      "floor": "Ground floor; upstairs where stated in the step"
+      "floor": "Ground floor; upstairs where stated in the step",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "cellar",
@@ -1003,7 +1177,9 @@
       "precision": "area",
       "description": "Underground room near the MK.78 / Arsenal. Necrofluid cube and Ma's Chalice bathtub. Marker uses the building footprint; the cellar is below it.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
-      "floor": "Cellar / underground"
+      "floor": "Cellar / underground",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "farm-garage",
@@ -1014,7 +1190,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Garage near the Armor Vest: Pa's Pigsticker ritual item. Building-area highlight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "blackwater",
@@ -1025,7 +1203,9 @@
       "category": "area",
       "precision": "area",
       "description": "Cabin, Toolshed, Boathouse and pier area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "cabin",
@@ -1037,7 +1217,9 @@
       "precision": "area",
       "description": "Speed Cola building. Find the Jar of Spores under the kitchen cabinet, projector, film reels, Hellion Horn box and interior relic portals.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
-      "floor": "Ground floor; upper floor where described"
+      "floor": "Ground floor; upper floor where described",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "cabin-back",
@@ -1048,7 +1230,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Ammo Cache side of the Cabin: film reel beneath the stairs and Klaus waiting with the Hellion Horn. Approximate area around the official Ammo Cache.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "toolshed",
@@ -1059,7 +1243,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Crafting Table building: fertilizer canister, film reel and axe-throwing trophy. Building-area highlight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "pier",
@@ -1070,7 +1256,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Pier and Boathouse at the lakeside north of the Cabin. Interact with the floating soul, check the overhead film reel, and find the boat-house relic portal. Approximate shore area, not an exact object pin.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "ashwood",
@@ -1081,7 +1269,9 @@
       "category": "area",
       "precision": "area",
       "description": "Town center between the northern and southern travel loops.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "sheriff",
@@ -1092,7 +1282,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Akita wall-buy building by Market Square. Put the Stabilizer Chip in the cell panel and revive Klaus. Building area, not the panel position.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "ruby",
@@ -1103,7 +1295,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Jugger-Nog building. Stun Grenade shelf, red candle and song/side quest items are inside. Building area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "ruby-alley",
@@ -1114,7 +1308,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Alley near the X9 Maverick wall-buy. Deliver the three keys to the Seal of Sorrow. Approximate alley area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "judgement",
@@ -1125,7 +1321,9 @@
       "category": "area",
       "precision": "area",
       "description": "VS Recon wall-buy area. Song headphones and fertilizer canister are in this square.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "market",
@@ -1136,7 +1334,9 @@
       "category": "area",
       "precision": "area",
       "description": "Vulture Aid area and Ashwood power-switch side.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "ash-garage",
@@ -1147,7 +1347,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Drive Ol' Tessie to the garage door to install upgrades. Ashwood building-area guidance; the exact garage-door coordinate has not been surveyed.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "tailor",
@@ -1158,7 +1360,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Town shop containing the mirror for Powder of the Forgotten. Approximate western-shop area; exact mirror position not surveyed.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "ash-clock",
@@ -1170,7 +1374,9 @@
       "precision": "area",
       "description": "Aim upwards at the clock tower above Ashwood. Freeze its faces using the DG-2 turret, then obtain purple Gauntlet charges. This ground-area highlight does not show the floating tower height.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
-      "floor": "Floating above the town"
+      "floor": "Floating above the town",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "cosmodrome",
@@ -1181,7 +1387,9 @@
       "category": "area",
       "precision": "area",
       "description": "Cosmodrome complex: Yuri's Lab, Support Systems, Control Room and the launch area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "lab",
@@ -1192,7 +1400,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Laboratory in the cosmodrome building complex. Read the chalkboard, add ingredients, then defend the Serum. Approximate building area, not the worktable coordinate.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "control",
@@ -1204,7 +1414,9 @@
       "precision": "area",
       "description": "Room near the Armor Vest: radar-dish challenge and pigpen / number monitors. The dishes are above/outside the room.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
-      "floor": "Control Room / upper level"
+      "floor": "Control Room / upper level",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "support",
@@ -1215,7 +1427,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Crafting Table building: send Klaus to the panel, stand in the scanner and collect the Aether Barrel. Room-area highlight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "launch",
@@ -1226,7 +1440,9 @@
       "category": "area",
       "precision": "area",
       "description": "Flame Trench / launch area, including the yellow relic trial portals. Follow the described launch-pad or Exfil-cabin landmark; exact portal positions not surveyed.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "exit",
@@ -1237,7 +1453,9 @@
       "category": "area",
       "precision": "area",
       "description": "Service area with Reba's Diner, McDougal's Service Station and the shipping container.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "diner",
@@ -1248,7 +1466,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Elemental Pop building: Cook zombie, freezer, Abomination carcass, free Tomahawk and waitress cash register. Room-area highlight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "service",
@@ -1259,7 +1479,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Deadshot Daiquiri building: shoot the clock and send Klaus to the mechanic in the garage. Room-area highlight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "trucker",
@@ -1270,7 +1492,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Cargo container opposite the Service Station. Ram it with Tessie to revive the trucker. Approximate roadside area; exact container not surveyed.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "monolith",
@@ -1281,7 +1505,9 @@
       "category": "area",
       "precision": "area",
       "description": "Northwestern fog road between Janus Towers and Blackwater Lake. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "collapsed",
@@ -1292,7 +1518,9 @@
       "category": "area",
       "precision": "area",
       "description": "Northeastern fog road between Janus Towers and Vandorn Farm. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "ship",
@@ -1303,7 +1531,9 @@
       "category": "area",
       "precision": "area",
       "description": "Ship on the road between Vandorn Farm and Ashwood. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "lost-cabins",
@@ -1314,7 +1544,9 @@
       "category": "area",
       "precision": "area",
       "description": "Cabins on the road between Blackwater Lake and Ashwood. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "rocket",
@@ -1325,7 +1557,9 @@
       "category": "area",
       "precision": "area",
       "description": "Fog road between Ashwood and Zarya Cosmodrome. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "plane",
@@ -1336,7 +1570,9 @@
       "category": "area",
       "precision": "area",
       "description": "Southern fog road between Zarya Cosmodrome and Exit 115. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "orda",
@@ -1347,7 +1583,9 @@
       "category": "area",
       "precision": "area",
       "description": "Southwestern fog road between Exit 115 and Ashwood. Region highlight; candidate items and soul-orb positions inside this region are not individually surveyed.",
-      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned"
+      "source": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "sepulcher",
@@ -1358,7 +1596,9 @@
       "category": "area",
       "precision": "area",
       "description": "Detached temple visible west of Blackwater Lake. This is the boss destination, not a driving entrance; completing the soul-orb collection teleports you inside. Interior combat positions are not shown.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "cursed-peeks-janus",
@@ -1371,7 +1611,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-farm",
@@ -1384,7 +1626,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-diner",
@@ -1397,7 +1641,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-ruby",
@@ -1410,7 +1656,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-sheriff",
@@ -1423,7 +1671,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-zarya",
@@ -1436,7 +1686,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-cabin",
@@ -1449,7 +1701,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [

@@ -1,0 +1,1378 @@
+{
+  "generatedAt": "2026-10-11",
+  "maps": [
+    {
+      "id": "waw-verruckt",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 6,
+      "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+    },
+    {
+      "id": "waw-der-riese",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 11,
+      "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+    },
+    {
+      "id": "bo1-verruckt",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 7,
+      "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+    },
+    {
+      "id": "bo1-der-riese",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 12,
+      "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 13,
+      "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+    },
+    {
+      "id": "bo1-five",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 7,
+      "note": "A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes."
+    },
+    {
+      "id": "bo1-shangri-la",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 16,
+      "note": "Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+    },
+    {
+      "id": "bo1-moon",
+      "kind": "schematic",
+      "locations": 12,
+      "guideLinks": 23,
+      "note": "Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+    },
+    {
+      "id": "bo1-call-of-the-dead",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 22,
+      "note": "Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects."
+    },
+    {
+      "id": "bo2-tranzit",
+      "kind": "schematic",
+      "locations": 9,
+      "guideLinks": 20,
+      "note": "Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them."
+    },
+    {
+      "id": "bo2-bus-depot",
+      "kind": "schematic",
+      "locations": 5,
+      "guideLinks": 4,
+      "note": "Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms."
+    },
+    {
+      "id": "bo2-town",
+      "kind": "schematic",
+      "locations": 9,
+      "guideLinks": 11,
+      "note": "Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths."
+    },
+    {
+      "id": "bo2-farm",
+      "kind": "schematic",
+      "locations": 9,
+      "guideLinks": 8,
+      "note": "Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied."
+    },
+    {
+      "id": "bo2-nuketown-zombies",
+      "kind": "schematic",
+      "locations": 6,
+      "guideLinks": 10,
+      "note": "Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins."
+    },
+    {
+      "id": "bo2-die-rise",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 22,
+      "note": "Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game."
+    },
+    {
+      "id": "bo2-mob-of-the-dead",
+      "kind": "schematic",
+      "locations": 13,
+      "guideLinks": 27,
+      "note": "Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways."
+    },
+    {
+      "id": "bo2-cell-block",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 8,
+      "note": "Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted."
+    },
+    {
+      "id": "bo2-buried",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 38,
+      "note": "Partial region schematic. Town interiors share an area marker, and the maze is intentionally not a fabricated static solution. Only an active prepared fountain is a return portal."
+    },
+    {
+      "id": "bo2-borough",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 6,
+      "note": "Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied."
+    },
+    {
+      "id": "bo3-shadows-of-evil",
+      "kind": "schematic",
+      "locations": 11,
+      "guideLinks": 25,
+      "note": "District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented."
+    },
+    {
+      "id": "bo3-the-giant",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 9,
+      "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+    },
+    {
+      "id": "bo3-der-eisendrache",
+      "kind": "schematic",
+      "locations": 12,
+      "guideLinks": 32,
+      "note": "Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs."
+    },
+    {
+      "id": "bo3-zetsubou-no-shima",
+      "kind": "schematic",
+      "locations": 11,
+      "guideLinks": 19,
+      "note": "Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access."
+    },
+    {
+      "id": "bo3-gorod-krovi",
+      "kind": "schematic",
+      "locations": 11,
+      "guideLinks": 27,
+      "note": "Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point."
+    },
+    {
+      "id": "bo3-revelations",
+      "kind": "schematic",
+      "locations": 14,
+      "guideLinks": 22,
+      "note": "Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps."
+    },
+    {
+      "id": "bo3-verruckt",
+      "kind": "schematic",
+      "locations": 8,
+      "guideLinks": 5,
+      "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+    },
+    {
+      "id": "bo3-kino-der-toten",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 10,
+      "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+    },
+    {
+      "id": "bo3-shangri-la",
+      "kind": "schematic",
+      "locations": 10,
+      "guideLinks": 15,
+      "note": "Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+    },
+    {
+      "id": "bo3-moon",
+      "kind": "schematic",
+      "locations": 12,
+      "guideLinks": 23,
+      "note": "Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+    },
+    {
+      "id": "bo2-origins",
+      "kind": "guide-linked",
+      "locations": 20,
+      "guideLinks": 29,
+      "note": "BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once."
+    },
+    {
+      "id": "bo3-origins",
+      "kind": "guide-linked",
+      "locations": 20,
+      "guideLinks": 29,
+      "note": "BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "bo3-nacht-der-untoten",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed."
+    },
+    {
+      "id": "bo3-shi-no-numa",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification."
+    },
+    {
+      "id": "bo3-ascension",
+      "reason": "Candidate image type and original floor-plan files remain unresolved."
+    },
+    {
+      "id": "bo2-diner",
+      "reason": "The Turned guide supplies tactics but insufficient checked arena topology for a useful navigational schematic."
+    },
+    {
+      "id": "waw-nacht-der-untoten",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed."
+    },
+    {
+      "id": "waw-shi-no-numa",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification."
+    },
+    {
+      "id": "bo1-nacht-der-untoten",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed."
+    },
+    {
+      "id": "bo1-shi-no-numa",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification."
+    },
+    {
+      "id": "bo1-ascension",
+      "reason": "Candidate image type and original floor-plan files remain unresolved."
+    },
+    {
+      "id": "bo1-dead-ops-arcade",
+      "reason": "Requires a sequence of independently sourced arcade arenas, not one map."
+    }
+  ],
+  "edgeEvidence": [
+    {
+      "family": "verruckt",
+      "from": "jug-side",
+      "to": "west-up",
+      "evidence": "verruckt-spawn",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-verruckt",
+      "sourceAnchor": "guide-step-verruckt-spawn",
+      "sourceText": "Check whether you started beside Jugger-Nog or Quick Revive. In co-op, the closed dividing door can split the team. Each side must buy its way upstairs and around the asylum toward the kitchen/power area. Buy ammunition before committing to the next corridor."
+    },
+    {
+      "family": "verruckt",
+      "from": "revive-side",
+      "to": "east-up",
+      "evidence": "verruckt-spawn",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-verruckt",
+      "sourceAnchor": "guide-step-verruckt-spawn",
+      "sourceText": "Check whether you started beside Jugger-Nog or Quick Revive. In co-op, the closed dividing door can split the team. Each side must buy its way upstairs and around the asylum toward the kitchen/power area. Buy ammunition before committing to the next corridor."
+    },
+    {
+      "family": "verruckt",
+      "from": "west-up",
+      "to": "power",
+      "evidence": "verruckt-spawn",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-verruckt",
+      "sourceAnchor": "guide-step-verruckt-spawn",
+      "sourceText": "Check whether you started beside Jugger-Nog or Quick Revive. In co-op, the closed dividing door can split the team. Each side must buy its way upstairs and around the asylum toward the kitchen/power area. Buy ammunition before committing to the next corridor."
+    },
+    {
+      "family": "verruckt",
+      "from": "east-up",
+      "to": "power",
+      "evidence": "verruckt-spawn",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-verruckt",
+      "sourceAnchor": "guide-step-verruckt-spawn",
+      "sourceText": "Check whether you started beside Jugger-Nog or Quick Revive. In co-op, the closed dividing door can split the team. Each side must buy its way upstairs and around the asylum toward the kitchen/power area. Buy ammunition before committing to the next corridor."
+    },
+    {
+      "family": "verruckt",
+      "from": "jug-side",
+      "to": "revive-side",
+      "evidence": "verruckt-power",
+      "kind": "path",
+      "label": "Opens with power",
+      "sourceGuideId": "waw-verruckt",
+      "sourceAnchor": "guide-step-verruckt-power",
+      "sourceText": "Reach the power room at the far end of the upper floor and activate the switch. The dividing spawn door opens and the perk machines and electric traps become usable. Reunite through the now-open connection before making the next round harder."
+    },
+    {
+      "family": "der-riese",
+      "from": "spawn",
+      "to": "animal",
+      "evidence": "der-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-power",
+      "sourceText": "Open either side from the mainframe at Spawn and work toward the rear central courtyard. Activate the power switch beside the original Box location; the bridge lowers and the perk machines and electric traps become available."
+    },
+    {
+      "family": "der-riese",
+      "from": "spawn",
+      "to": "garage",
+      "evidence": "der-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-power",
+      "sourceText": "Open either side from the mainframe at Spawn and work toward the rear central courtyard. Activate the power switch beside the original Box location; the bridge lowers and the perk machines and electric traps become available."
+    },
+    {
+      "family": "der-riese",
+      "from": "animal",
+      "to": "power",
+      "evidence": "der-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-power",
+      "sourceText": "Open either side from the mainframe at Spawn and work toward the rear central courtyard. Activate the power switch beside the original Box location; the bridge lowers and the perk machines and electric traps become available."
+    },
+    {
+      "family": "der-riese",
+      "from": "garage",
+      "to": "power",
+      "evidence": "der-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-power",
+      "sourceText": "Open either side from the mainframe at Spawn and work toward the rear central courtyard. Activate the power switch beside the original Box location; the bridge lowers and the perk machines and electric traps become available."
+    },
+    {
+      "family": "der-riese",
+      "from": "power",
+      "to": "rear",
+      "evidence": "der-links",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-links",
+      "sourceText": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you."
+    },
+    {
+      "family": "der-riese",
+      "from": "animal",
+      "to": "spawn",
+      "evidence": "der-links",
+      "kind": "teleport",
+      "label": "Link / return",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-links",
+      "sourceText": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you."
+    },
+    {
+      "family": "der-riese",
+      "from": "garage",
+      "to": "spawn",
+      "evidence": "der-links",
+      "kind": "teleport",
+      "label": "Link / return",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-links",
+      "sourceText": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you."
+    },
+    {
+      "family": "der-riese",
+      "from": "rear",
+      "to": "spawn",
+      "evidence": "der-links",
+      "kind": "teleport",
+      "label": "Link / return",
+      "sourceGuideId": "waw-der-riese",
+      "sourceAnchor": "guide-step-der-links",
+      "sourceText": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "lobby",
+      "to": "upper",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "upper",
+      "to": "dressing",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "dressing",
+      "to": "stage",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "lobby",
+      "to": "alley",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "alley",
+      "to": "stage",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "lobby",
+      "to": "stage",
+      "evidence": "kino-power",
+      "kind": "path",
+      "label": "Curtain / power",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-power",
+      "sourceText": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop."
+    },
+    {
+      "family": "kino-der-toten",
+      "from": "stage",
+      "to": "projection",
+      "evidence": "kino-link",
+      "kind": "teleport",
+      "label": "Linked teleporter",
+      "sourceGuideId": "bo1-kino-der-toten",
+      "sourceAnchor": "guide-step-kino-link",
+      "sourceText": "Interact with the teleporter pad on the stage to begin a link. Run to the circular mainframe pad in the lobby and interact again to finish it. Gather everyone who wants to upgrade inside the stage teleporter before activating it."
+    },
+    {
+      "family": "five",
+      "from": "offices",
+      "to": "war",
+      "evidence": "five-power",
+      "kind": "teleport",
+      "label": "First elevator",
+      "sourceGuideId": "bo1-five",
+      "sourceAnchor": "guide-step-five-power",
+      "sourceText": "Open the ground-floor offices and take the first elevator to the War Room. Clear the route to its larger freight elevator and ride to the lowest floor, the laboratories. Coming out of that elevator, the power switch is in the second room on the left, marked with a large 3."
+    },
+    {
+      "family": "five",
+      "from": "war",
+      "to": "labs",
+      "evidence": "five-power",
+      "kind": "teleport",
+      "label": "Freight elevator",
+      "sourceGuideId": "bo1-five",
+      "sourceAnchor": "guide-step-five-power",
+      "sourceText": "Open the ground-floor offices and take the first elevator to the War Room. Clear the route to its larger freight elevator and ride to the lowest floor, the laboratories. Coming out of that elevator, the power switch is in the second room on the left, marked with a large 3."
+    },
+    {
+      "family": "five",
+      "from": "war",
+      "to": "panic",
+      "evidence": "five-defcon",
+      "kind": "teleport",
+      "label": "DEFCON 5",
+      "sourceGuideId": "bo1-five",
+      "sourceAnchor": "guide-step-five-defcon",
+      "sourceText": "DEFCON begins at 1. Use the four switches in the War Room, in any order, to reach 5. Two are upstairs on the catwalk and two downstairs. Once DEFCON 5 is active, enter a teleporter to reach the Panic Room. Upper: to the left as you leave the first elevator. Upper: at the far end of the catwalk from that elevator. Lower: near the freight elevator to the laboratories. Lower: between Jugger-Nog and the later Mule Kick location."
+    },
+    {
+      "family": "shangri-la",
+      "from": "spawn",
+      "to": "mud",
+      "evidence": "dials-code",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-shangri-la",
+      "sourceAnchor": "guide-step-dials-code",
+      "sourceText": "Enter the Mud Room from Spawn. Start with the dial immediately on your left and work clockwise. Set the top faces to 4, 3, 16, 1. Read dots as one, a line as five and the bracket shape as ten; the chart shows the exact faces. Wait for confirmation before continuing."
+    },
+    {
+      "family": "shangri-la",
+      "from": "minecart",
+      "to": "power",
+      "evidence": "trials-3",
+      "kind": "path",
+      "label": "Gas-pipe tunnel",
+      "sourceGuideId": "bo1-shangri-la",
+      "sourceAnchor": "guide-step-trials-3",
+      "sourceText": "Enter an eclipse and turn the Minecart-side tunnel valve four times. Escort a live Napalm Zombie through the three leaking gas pipes: beside the valve, above the Box location near AK74u, and above the M16 underground. Stay far enough away that it does not detonate prematurely. Once all three leaks burn, pull the lever beside the valve."
+    },
+    {
+      "family": "shangri-la",
+      "from": "power",
+      "to": "waterfall",
+      "evidence": "holes-mines",
+      "kind": "path",
+      "label": "Descending tunnel",
+      "sourceGuideId": "bo1-shangri-la",
+      "sourceAnchor": "guide-step-holes-mines",
+      "sourceText": "Buy Spikemores from the power-room wall buy. During an eclipse, place one facing each of the four holes along the left wall of the tunnel descending toward the Waterfall. Lure zombies into detonating them so the spikes plug the holes. Check each hole is visibly filled; replenish Spikemores if a placement misses."
+    },
+    {
+      "family": "shangri-la",
+      "from": "spawn",
+      "to": "pap",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Pressure plates",
+      "sourceGuideId": "bo1-shangri-la",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "Reach the underground power room and activate both switches. For Pack-a-Punch, find the raised pressure plates in front of the four-section statues: Spawn, bottom of Rope Bridge, between the power switches and the Minecart tunnel. One plate is required per player; everyone stands on their raised plate simultaneously to stop the rotating statue sections and raise the spawn stairs. Upgrade promptly before the stairs close."
+    },
+    {
+      "family": "moon",
+      "from": "earth",
+      "to": "receiving",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Escape to Moon",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch."
+    },
+    {
+      "family": "moon",
+      "from": "receiving",
+      "to": "tunnel6",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch."
+    },
+    {
+      "family": "moon",
+      "from": "receiving",
+      "to": "tunnel11",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch."
+    },
+    {
+      "family": "moon",
+      "from": "tunnel6",
+      "to": "pyramid",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch."
+    },
+    {
+      "family": "moon",
+      "from": "tunnel11",
+      "to": "pyramid",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch."
+    },
+    {
+      "family": "moon",
+      "from": "pyramid",
+      "to": "labs",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Open the laboratories and outside teleporter route. All players stand on the Moon teleporter when its lights are green to revisit Area 51 for Pack-a-Punch. Jugger-Nog and Speed Cola alternate there between visits. Obtain the Wave Gun, Gersh Devices and Q.E.D.s from the Box for the quest; Gersh and Q.E.D. occupy the same slot, so plan to obtain Gersh again for the ending."
+    },
+    {
+      "family": "moon",
+      "from": "labs",
+      "to": "pad",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Open the laboratories and outside teleporter route. All players stand on the Moon teleporter when its lights are green to revisit Area 51 for Pack-a-Punch. Jugger-Nog and Speed Cola alternate there between visits. Obtain the Wave Gun, Gersh Devices and Q.E.D.s from the Box for the quest; Gersh and Q.E.D. occupy the same slot, so plan to obtain Gersh again for the ending."
+    },
+    {
+      "family": "moon",
+      "from": "pad",
+      "to": "earth",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "All players / green lights",
+      "sourceGuideId": "bo1-moon",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Open the laboratories and outside teleporter route. All players stand on the Moon teleporter when its lights are green to revisit Area 51 for Pack-a-Punch. Jugger-Nog and Speed Cola alternate there between visits. Obtain the Wave Gun, Gersh Devices and Q.E.D.s from the Box for the quest; Gersh and Q.E.D. occupy the same slot, so plan to obtain Gersh again for the ending."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "beach",
+      "to": "ship",
+      "evidence": "cotd-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-power",
+      "sourceText": "From the beach, buy the route onto the broken ship and climb to its upper control room. Flip the wall switch to power the map. Open a route between the ship, lighthouse and Stamin-Up so you can reach generators and return to the quest door without dead ends."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "ship",
+      "to": "bridge",
+      "evidence": "cotd-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-power",
+      "sourceText": "From the beach, buy the route onto the broken ship and climb to its upper control room. Flip the wall switch to power the map. Open a route between the ship, lighthouse and Stamin-Up so you can reach generators and return to the quest door without dead ends."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "beach",
+      "to": "lighthouse",
+      "evidence": "cotd-power",
+      "kind": "path",
+      "label": "Opened connecting route",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-power",
+      "sourceText": "From the beach, buy the route onto the broken ship and climb to its upper control room. Flip the wall switch to power the map. Open a route between the ship, lighthouse and Stamin-Up so you can reach generators and return to the quest door without dead ends."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "lighthouse",
+      "to": "annex",
+      "evidence": "cotd-door",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-door",
+      "sourceText": "With power on, go below the PhD Flopper room in the lighthouse annex. Knife the large metal door and listen to the trapped crew. Wait until they ask for a fuse before searching upstairs."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "lighthouse",
+      "to": "stamin",
+      "evidence": "cotd-power",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-power",
+      "sourceText": "From the beach, buy the route onto the broken ship and climb to its upper control room. Flip the wall switch to power the map. Open a route between the ship, lighthouse and Stamin-Up so you can reach generators and return to the quest door without dead ends."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "lighthouse",
+      "to": "ship",
+      "evidence": "cotd-transport",
+      "kind": "drop",
+      "label": "Top zipline",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-transport",
+      "sourceText": "The ship-top zipline returns to the coast, and the lighthouse-top zipline reaches the ship. Each costs 250 points and travels one way. The ship’s flinger is free: stand on its platform until it launches you toward the lighthouse, allowing for its cooldown. Cold water slows you and eventually freezes you; leave it promptly after calming George or reaching Pack-a-Punch."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "bridge",
+      "to": "beach",
+      "evidence": "cotd-transport",
+      "kind": "drop",
+      "label": "Ship zipline",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-transport",
+      "sourceText": "The ship-top zipline returns to the coast, and the lighthouse-top zipline reaches the ship. Each costs 250 points and travels one way. The ship’s flinger is free: stand on its platform until it launches you toward the lighthouse, allowing for its cooldown. Cold water slows you and eventually freezes you; leave it promptly after calming George or reaching Pack-a-Punch."
+    },
+    {
+      "family": "call-of-the-dead",
+      "from": "ship",
+      "to": "lighthouse",
+      "evidence": "cotd-transport",
+      "kind": "drop",
+      "label": "Flinger",
+      "sourceGuideId": "bo1-call-of-the-dead",
+      "sourceAnchor": "guide-step-cotd-transport",
+      "sourceText": "The ship-top zipline returns to the coast, and the lighthouse-top zipline reaches the ship. Each costs 250 points and travels one way. The ship’s flinger is free: stand on its platform until it launches you toward the lighthouse, allowing for its cooldown. Cold water slows you and eventually freezes you; leave it promptly after calming George or reaching Pack-a-Punch."
+    },
+    {
+      "family": "tranzit",
+      "from": "depot",
+      "to": "diner",
+      "evidence": "setup-route",
+      "kind": "drop",
+      "label": "Bus →",
+      "sourceGuideId": "bo2-tranzit",
+      "sourceAnchor": "guide-step-setup-route",
+      "sourceText": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building."
+    },
+    {
+      "family": "tranzit",
+      "from": "diner",
+      "to": "farm",
+      "evidence": "setup-route",
+      "kind": "drop",
+      "label": "Bus →",
+      "sourceGuideId": "bo2-tranzit",
+      "sourceAnchor": "guide-step-setup-route",
+      "sourceText": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building."
+    },
+    {
+      "family": "tranzit",
+      "from": "farm",
+      "to": "power",
+      "evidence": "setup-route",
+      "kind": "drop",
+      "label": "Bus →",
+      "sourceGuideId": "bo2-tranzit",
+      "sourceAnchor": "guide-step-setup-route",
+      "sourceText": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building."
+    },
+    {
+      "family": "tranzit",
+      "from": "power",
+      "to": "town",
+      "evidence": "setup-route",
+      "kind": "drop",
+      "label": "Bus →",
+      "sourceGuideId": "bo2-tranzit",
+      "sourceAnchor": "guide-step-setup-route",
+      "sourceText": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building."
+    },
+    {
+      "family": "tranzit",
+      "from": "town",
+      "to": "depot",
+      "evidence": "setup-route",
+      "kind": "drop",
+      "label": "Bus →",
+      "sourceGuideId": "bo2-tranzit",
+      "sourceAnchor": "guide-step-setup-route",
+      "sourceText": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building."
+    },
+    {
+      "family": "bus-depot",
+      "from": "terminal",
+      "to": "forecourt",
+      "evidence": "setup-door",
+      "kind": "path",
+      "label": "750-point exit",
+      "sourceGuideId": "bo2-bus-depot",
+      "sourceAnchor": "guide-step-setup-door",
+      "sourceText": "Use the starting M14 or Olympia to earn the 750 points needed for the depot exit. Avoid committing to a knife lunge after taking a hit. Open the exit before several windows are overwhelmed; the terminal has too little space to recover from a blocked doorway."
+    },
+    {
+      "family": "town",
+      "from": "street",
+      "to": "jug",
+      "evidence": "setup-layout",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-town",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "Open the upstairs Jugger-Nog building and buy its MP5 as an early dependable weapon. Jugger-Nog is upstairs; the broken upper wall is an escape into the street. The bar opposite offers another upstairs escape. Check where each drop lands before jumping so you do not land in a horde or stand in lava."
+    },
+    {
+      "family": "town",
+      "from": "street",
+      "to": "bar",
+      "evidence": "setup-layout",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-town",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "Open the upstairs Jugger-Nog building and buy its MP5 as an early dependable weapon. Jugger-Nog is upstairs; the broken upper wall is an escape into the street. The bar opposite offers another upstairs escape. Check where each drop lands before jumping so you do not land in a horde or stand in lava."
+    },
+    {
+      "family": "town",
+      "from": "jug",
+      "to": "street",
+      "evidence": "setup-layout",
+      "kind": "drop",
+      "label": "Upper escape",
+      "sourceGuideId": "bo2-town",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "Open the upstairs Jugger-Nog building and buy its MP5 as an early dependable weapon. Jugger-Nog is upstairs; the broken upper wall is an escape into the street. The bar opposite offers another upstairs escape. Check where each drop lands before jumping so you do not land in a horde or stand in lava."
+    },
+    {
+      "family": "town",
+      "from": "bar",
+      "to": "street",
+      "evidence": "setup-layout",
+      "kind": "drop",
+      "label": "Upper escape",
+      "sourceGuideId": "bo2-town",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "Open the upstairs Jugger-Nog building and buy its MP5 as an early dependable weapon. Jugger-Nog is upstairs; the broken upper wall is an escape into the street. The bar opposite offers another upstairs escape. Check where each drop lands before jumping so you do not land in a horde or stand in lava."
+    },
+    {
+      "family": "farm",
+      "from": "yard",
+      "to": "house",
+      "evidence": "setup-house",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-farm",
+      "sourceAnchor": "guide-step-setup-house",
+      "sourceText": "Open the farmhouse, take an MP5 when you can afford it and work toward Jugger-Nog upstairs. Speed Cola is downstairs; the Box sits on the upper balcony. Learn the balcony drop before you use it under pressure, then move away from its landing point."
+    },
+    {
+      "family": "farm",
+      "from": "yard",
+      "to": "barn",
+      "evidence": "setup-barn",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-farm",
+      "sourceAnchor": "guide-step-setup-barn",
+      "sourceText": "Quick Revive is outside near the barn and Double Tap is upstairs in the barn. Perks already have power. Use the barn doorway and upper opening as two different exits, checking the ground before dropping. The photographed barn is a shared TranZit layout reference; this standalone mode has different equipment."
+    },
+    {
+      "family": "farm",
+      "from": "house",
+      "to": "yard",
+      "evidence": "setup-house",
+      "kind": "drop",
+      "label": "Balcony drop",
+      "sourceGuideId": "bo2-farm",
+      "sourceAnchor": "guide-step-setup-house",
+      "sourceText": "Open the farmhouse, take an MP5 when you can afford it and work toward Jugger-Nog upstairs. Speed Cola is downstairs; the Box sits on the upper balcony. Learn the balcony drop before you use it under pressure, then move away from its landing point."
+    },
+    {
+      "family": "farm",
+      "from": "barn",
+      "to": "yard",
+      "evidence": "setup-barn",
+      "kind": "drop",
+      "label": "Upper opening",
+      "sourceGuideId": "bo2-farm",
+      "sourceAnchor": "guide-step-setup-barn",
+      "sourceText": "Quick Revive is outside near the barn and Double Tap is upstairs in the barn. Perks already have power. Use the barn doorway and upper opening as two different exits, checking the ground before dropping. The photographed barn is a shared TranZit layout reference; this standalone mode has different equipment."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "street",
+      "to": "house1",
+      "evidence": "setup-houses",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "street",
+      "to": "house2",
+      "evidence": "setup-houses",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "house1",
+      "to": "yard1",
+      "evidence": "setup-houses",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "house2",
+      "to": "yard2",
+      "evidence": "setup-houses",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "house1",
+      "to": "yard1",
+      "evidence": "setup-houses",
+      "kind": "drop",
+      "label": "Upper window",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "nuketown-zombies",
+      "from": "house2",
+      "to": "yard2",
+      "evidence": "setup-houses",
+      "kind": "drop",
+      "label": "Upper window",
+      "sourceGuideId": "bo2-nuketown-zombies",
+      "sourceAnchor": "guide-step-setup-houses",
+      "sourceText": "Open a house and its yard to create a usable route. The house doors cost 750; some debris and backyard access cost 1,000. Upper windows let you drop into a yard, but check the landing before committing. Keep one yard for your train instead of repeatedly crossing the narrow house stairs."
+    },
+    {
+      "family": "die-rise",
+      "from": "spawn",
+      "to": "lower",
+      "evidence": "setup-power",
+      "kind": "drop",
+      "label": "Broken elevator",
+      "sourceGuideId": "bo2-die-rise",
+      "sourceAnchor": "guide-step-setup-power",
+      "sourceText": "From spawn, the broken starting elevator drops you toward the lower floor. Cross to the power building using the broken passages and mattress landing, then turn on the switch beside the sewing machines. Its elevators now move and carry perks or Pack-a-Punch between floors. Ride upward to reach the dragon roof. Before any drop, identify a visible landing and how you will get back; an arbitrary long fall kills you."
+    },
+    {
+      "family": "die-rise",
+      "from": "lower",
+      "to": "power",
+      "evidence": "setup-power",
+      "kind": "path",
+      "label": "Broken passages / mattress",
+      "sourceGuideId": "bo2-die-rise",
+      "sourceAnchor": "guide-step-setup-power",
+      "sourceText": "From spawn, the broken starting elevator drops you toward the lower floor. Cross to the power building using the broken passages and mattress landing, then turn on the switch beside the sewing machines. Its elevators now move and carry perks or Pack-a-Punch between floors. Ride upward to reach the dragon roof. Before any drop, identify a visible landing and how you will get back; an arbitrary long fall kills you."
+    },
+    {
+      "family": "die-rise",
+      "from": "power",
+      "to": "roof",
+      "evidence": "setup-power",
+      "kind": "teleport",
+      "label": "Moving elevators",
+      "sourceGuideId": "bo2-die-rise",
+      "sourceAnchor": "guide-step-setup-power",
+      "sourceText": "From spawn, the broken starting elevator drops you toward the lower floor. Cross to the power building using the broken passages and mattress landing, then turn on the switch beside the sewing machines. Its elevators now move and carry perks or Pack-a-Punch between floors. Ride upward to reach the dragon roof. Before any drop, identify a visible landing and how you will get back; an arbitrary long fall kills you."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "cells",
+      "to": "cafeteria",
+      "evidence": "setup-key",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-setup-key",
+      "sourceText": "Look for the hanging Warden’s Key above either the Cafeteria/Showers approach or the Warden’s Office approach. Enter Afterlife, jump through the nearby blue doorway and shock the generator controlling its hook. Revive, then collect the lowered key. One pickup supplies the team’s key doors. While near Warden’s Office, use the ghost passage and shock its door meter to open it."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "cells",
+      "to": "warden",
+      "evidence": "setup-key",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-setup-key",
+      "sourceText": "Look for the hanging Warden’s Key above either the Cafeteria/Showers approach or the Warden’s Office approach. Enter Afterlife, jump through the nearby blue doorway and shock the generator controlling its hook. Revive, then collect the lowered key. One pickup supplies the team’s key doors. While near Warden’s Office, use the ghost passage and shock its door meter to open it."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "cafeteria",
+      "to": "citadel",
+      "evidence": "retriever-dogs",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-retriever-dogs",
+      "sourceText": "Wake and feed each red dog head with nearby zombie corpses: Cell Block beneath Electric Cherry, Infirmary near the roof stairs, and Docks beneath Jugger-Nog. Wait for each chewing animation before the next kill so the corpse counts. When all three heads disappear, claim Hell’s Retriever in the opened three-dog alcove on the Citadel/Showers route."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "cells",
+      "to": "docks",
+      "evidence": "setup-perks",
+      "kind": "teleport",
+      "label": "Powered gondola",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-setup-perks",
+      "sourceText": "Shock the small meter by each perk to activate it: Jugger-Nog at Docks, Electric Cherry by the upper Cell Block workbench, Speed Cola in Warden’s Office, Double Tap on the Citadel route and Deadshot in Infirmary. Power the gondola for travel between Cell Block and Docks. There is no Quick Revive machine; Afterlife is your recovery system."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "infirmary",
+      "to": "roof",
+      "evidence": "plane-roof",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-plane-roof",
+      "sourceText": "Use Afterlife in Infirmary, pass through the blue opening and jump up to the roof. Shock the roof-door meter so humans can reach the plane frame. Each player carries one plane part at a time in co-op; solo can collect the complete set. Add parts at the frame when convenient."
+    },
+    {
+      "family": "mob-of-the-dead",
+      "from": "roof",
+      "to": "bridge",
+      "evidence": "plane-valve",
+      "kind": "teleport",
+      "label": "Completed plane",
+      "sourceGuideId": "bo2-mob-of-the-dead",
+      "sourceAnchor": "guide-step-plane-valve",
+      "sourceText": "Control valve: use the Warden’s Key on the cage in Infirmary near the roof stairs and pick it up. Fit all five parts to the roof frame. Gather the team and interact with the plane to fly to the Golden Gate Bridge."
+    },
+    {
+      "family": "cell-block",
+      "from": "cells",
+      "to": "upper",
+      "evidence": "setup-pap",
+      "kind": "path",
+      "label": "2,000-point door",
+      "sourceGuideId": "bo2-cell-block",
+      "sourceAnchor": "guide-step-setup-pap",
+      "sourceText": "Open the upper Cell Block route to Pack-a-Punch; its access door costs 2,000 and the upgrade costs 5,000. Double Tap is nearby. There is no plane flight, bridge trip or power-meter task. Crouch while using the machine to make it harder for opponents to push you off the walkway."
+    },
+    {
+      "family": "cell-block",
+      "from": "cells",
+      "to": "cafe",
+      "evidence": "setup-gun",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-cell-block",
+      "sourceAnchor": "guide-step-setup-gun",
+      "sourceText": "Secure the MP5 near the Cafeteria approach for 1,000 points and keep enough money for ammo. With no Jugger-Nog, avoid trading a hit for a knife kill once the crowd grows. Look up as well as forward: zombies enter from the upper walkways and cell openings."
+    },
+    {
+      "family": "buried",
+      "from": "surface",
+      "to": "town",
+      "evidence": "setup-drop",
+      "kind": "drop",
+      "label": "Drop / tunnels",
+      "sourceGuideId": "bo2-buried",
+      "sourceAnchor": "guide-step-setup-drop",
+      "sourceText": "Before dropping from the starting processing platform, decide whether to save 2,000 points for the LSAT above spawn. Jump and climb onto its short ledge to buy it before the platform gives way. Once below, take Quick Revive if playing solo, use the tunnels to reach town and look for the jail beside the initial Mystery Box. The LSAT is optional; falling into town does not block the quest."
+    },
+    {
+      "family": "buried",
+      "from": "town",
+      "to": "mansion",
+      "evidence": "setup-arthur",
+      "kind": "path",
+      "label": "Arthur opens barrier",
+      "sourceGuideId": "bo2-buried",
+      "sourceAnchor": "guide-step-setup-arthur",
+      "sourceText": "Enter the jail from above and take the key on the wall to open Arthur’s cell. Give him the bottle of booze from inside. He charges away from the player who hands it over, so position his back toward the barrier you want broken. Free the Jugger-Nog alley and the approach to the mansion early. If you shoot him, he retreats to his cell; search the jail, courthouse judge’s bench, upstairs saloon or bank for the key to release him again."
+    },
+    {
+      "family": "buried",
+      "from": "mansion",
+      "to": "maze",
+      "evidence": "pap-mansion",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-buried",
+      "sourceAnchor": "guide-step-pap-mansion",
+      "sourceText": "Have Arthur break the mansion barrier, then enter with a loaded weapon. Ghost women take 2,000 points per hit, so move together, check behind you and kill them before contact. Follow the entry rooms through the moving bookcase, upstairs and out the rear into the maze. Do not stop at the entrance to fight an endless flow while teammates remain in the house."
+    },
+    {
+      "family": "buried",
+      "from": "maze",
+      "to": "pap",
+      "evidence": "pap-maze",
+      "kind": "path",
+      "label": "Gazebo stairs",
+      "sourceGuideId": "bo2-buried",
+      "sourceAnchor": "guide-step-pap-maze",
+      "sourceText": "Navigate the hedge maze from the mansion’s rear to the gazebo, checking the metal gates for the current route. Its configuration can change between rounds. At the gazebo, descend the spiral stairway for Pack-a-Punch and pay 5,000 points. Stop on each stair segment: there are gaps that can kill you if you rush or backpedal. Keep a teammate watching the approach while a weapon is inside the machine."
+    },
+    {
+      "family": "buried",
+      "from": "maze",
+      "to": "surface",
+      "evidence": "pap-return",
+      "kind": "teleport",
+      "label": "Prepared fountain portal",
+      "sourceGuideId": "bo2-buried",
+      "sourceAnchor": "guide-step-pap-return",
+      "sourceText": "For a shortcut back to the surface starting area, first have Arthur smash the town fountain and destroy the maze fountain with explosives. Only jump into the maze fountain when the portal is visibly active. An unprepared fountain is a lethal hole. The return route lets you revisit upper processing; it does not give a second chance at the collapsed LSAT ledge."
+    },
+    {
+      "family": "borough",
+      "from": "street",
+      "to": "saloon",
+      "evidence": "setup-layout",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-borough",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "In Grief, use the town streets, Saloon and Courthouse to move between buildings. Pack-a-Punch is outside in front of the Church and mansion and costs 5,000. There is no mansion crossing, maze route or Arthur barrier task. Approach the upgrade machine only when the lane behind you is clear."
+    },
+    {
+      "family": "borough",
+      "from": "street",
+      "to": "court",
+      "evidence": "setup-layout",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo2-borough",
+      "sourceAnchor": "guide-step-setup-layout",
+      "sourceText": "In Grief, use the town streets, Saloon and Courthouse to move between buildings. Pack-a-Punch is outside in front of the Church and mansion and costs 5,000. There is no mansion crossing, maze route or Arthur barrier task. Approach the upgrade machine only when the lane behind you is clear."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "spawn",
+      "to": "junction",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "Use a flaming chalice to enter Beast mode. Shock fuse boxes to power perks and stairs, melee chained crates and doors, and grapple to the glowing hooks above you. Plan each route before transforming: you return to the same chalice when time runs out. A used chalice stays unavailable for that round. Spawn: break the truck crate for the Summoning Key; shock the Junction crane, then grapple above Easy Street and shock the exterior box behind Nero’s loft to open its stairs. Canals: shock the box behind the translucent wall at the far end of the canal; break the badge box beside the rift. Grapple to Ruby Rabbit and run down to shock its entrance stairs. Waterfront: grapple above the district Mystery Box and knock down the belt crate. Break the Boxing Gym’s front door. Footlight: grapple to the upper walkway; jump from the small ramp to the crate ledge and knock the crate down. Grapple to Black Lace Burlesque and shock the box behind its sign."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "junction",
+      "to": "canals",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "junction",
+      "to": "waterfront",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "junction",
+      "to": "footlight",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "canals",
+      "to": "rift",
+      "evidence": "survival",
+      "kind": "teleport",
+      "label": "Opened rift",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-survival",
+      "sourceText": "Check the broken bottle at each district entrance to locate the randomized perk: red Juggernog, green Speed Cola, orange Double Tap. Power its fuse box before buying. Use rifts and the opened subway stairs to move between districts; do not train beside an unfinished flag. Shoot a Margwa’s open mouth and leave room to escape its slam."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "waterfront",
+      "to": "rift",
+      "evidence": "survival",
+      "kind": "teleport",
+      "label": "Opened rift",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-survival",
+      "sourceText": "Check the broken bottle at each district entrance to locate the randomized perk: red Juggernog, green Speed Cola, orange Double Tap. Power its fuse box before buying. Use rifts and the opened subway stairs to move between districts; do not train beside an unfinished flag. Shoot a Margwa’s open mouth and leave room to escape its slam."
+    },
+    {
+      "family": "shadows-of-evil",
+      "from": "footlight",
+      "to": "rift",
+      "evidence": "survival",
+      "kind": "teleport",
+      "label": "Opened rift",
+      "sourceGuideId": "bo3-shadows-of-evil",
+      "sourceAnchor": "guide-step-survival",
+      "sourceText": "Check the broken bottle at each district entrance to locate the randomized perk: red Juggernog, green Speed Cola, orange Double Tap. Power its fuse box before buying. Use rifts and the opened subway stairs to move between districts; do not train beside an unfinished flag. Shoot a Margwa’s open mouth and leave room to escape its slam."
+    },
+    {
+      "family": "der-eisendrache",
+      "from": "courtyard",
+      "to": "armory",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-der-eisendrache",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "Open the courtyard route to the power switch in the Armory near Stamin-Up. In the Undercroft, stand on each of the four plates around the pyramid until it lights. After all four are active, low gravity cycles on and off, allowing wall-running. Activate Wundersphere landing pads when passing them so the launchers can be used later."
+    },
+    {
+      "family": "zetsubou-no-shima",
+      "from": "bunker",
+      "to": "power",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-zetsubou-no-shima",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "Collect a bucket at spawn or either laboratory and fill it at a colored pool. Power Lab A and Lab B by pouring water into their generators. Both temporary generators must run at the same time to open the bunker; refill one if it expires. Open the bunker, enter the left power room, dive down and knife the web blocking the turbine. Survive the underwater lockdown, then use the power switch. Break underwater spores to replenish air and surface whenever the room allows it."
+    },
+    {
+      "family": "zetsubou-no-shima",
+      "from": "docks",
+      "to": "laba",
+      "evidence": "cogs-2",
+      "kind": "teleport",
+      "label": "Zipline",
+      "sourceGuideId": "bo3-zetsubou-no-shima",
+      "sourceAnchor": "guide-step-cogs-2",
+      "sourceText": "The final cog sits on the small dock beneath the zipline. In solo, bash the zipline control with an electrified shield, ride it and melee to release directly over the dock. Traveling from the docks toward Lab A gives an early release point. In co-op, have a teammate electrify the control while the rider is over the dock to drop them. Collect the cog and use the path back."
+    },
+    {
+      "family": "gorod-krovi",
+      "from": "spawn",
+      "to": "command",
+      "evidence": "challenges-valkyrie",
+      "kind": "path",
+      "label": "Escort route; rooms omitted",
+      "sourceGuideId": "bo3-gorod-krovi",
+      "sourceAnchor": "guide-step-challenges-valkyrie",
+      "sourceText": "Valkyrie escort: find the special green-eyed, damaged drone at spawn. Stay near it to move it toward Dragon Command; it stops when nobody is nearby. Clear the route ahead without hitting it. Explosives, traps and the Mark III’s combined black hole can destroy it. Keep your team’s firing direction away from the drone."
+    },
+    {
+      "family": "gorod-krovi",
+      "from": "command",
+      "to": "hatchery",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "Dragon flight",
+      "sourceGuideId": "bo3-gorod-krovi",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Install the three circuits in the Dragon Network Controller in Operations Bunker. Pay 2,000 points at an active dragon platform to ride to the Hatchery, where Pack-a-Punch is available. The stations are Dragon Command, Supply Depot and Tank Factory. Leave through the Hatchery’s lower sewer chute when finished."
+    },
+    {
+      "family": "gorod-krovi",
+      "from": "supply",
+      "to": "hatchery",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "Dragon flight",
+      "sourceGuideId": "bo3-gorod-krovi",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Install the three circuits in the Dragon Network Controller in Operations Bunker. Pay 2,000 points at an active dragon platform to ride to the Hatchery, where Pack-a-Punch is available. The stations are Dragon Command, Supply Depot and Tank Factory. Leave through the Hatchery’s lower sewer chute when finished."
+    },
+    {
+      "family": "gorod-krovi",
+      "from": "factory",
+      "to": "hatchery",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "Dragon flight",
+      "sourceGuideId": "bo3-gorod-krovi",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "Install the three circuits in the Dragon Network Controller in Operations Bunker. Pay 2,000 points at an active dragon platform to ride to the Hatchery, where Pack-a-Punch is available. The stations are Dragon Command, Supply Depot and Tank Factory. Leave through the Hatchery’s lower sewer chute when finished."
+    },
+    {
+      "family": "revelations",
+      "from": "spawn",
+      "to": "nacht",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Engine portal",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht."
+    },
+    {
+      "family": "revelations",
+      "from": "de",
+      "to": "nacht",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Engine portal",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht."
+    },
+    {
+      "family": "revelations",
+      "from": "mob",
+      "to": "nacht",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Engine portal",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht."
+    },
+    {
+      "family": "revelations",
+      "from": "verruckt",
+      "to": "nacht",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Engine portal",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-1",
+      "sourceText": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht."
+    },
+    {
+      "family": "revelations",
+      "from": "nacht",
+      "to": "apothicon",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "Trap / mouth",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-2",
+      "sourceText": "With all four engines active, use Nacht’s Tesla control when the giant Apothicon passes directly in front of the building. Enter its mouth after it is trapped. Shoot the three yellow tubes holding its heart to release Pack-a-Punch into the stomach. Return through the mouth to leave; the stomach is also used for the Arnie and egg steps."
+    },
+    {
+      "family": "revelations",
+      "from": "spawn",
+      "to": "origins",
+      "evidence": "setup-3",
+      "kind": "path",
+      "label": "",
+      "sourceGuideId": "bo3-revelations",
+      "sourceAnchor": "guide-step-setup-3",
+      "sourceText": "Build the shield at Nacht’s upstairs bench. One part is in Origins: by the entrance from spawn, near Wunderfizz, or beside the truck. One is high on a wall in Der Eisendrache; activate the four pyramid plates and collect it during low gravity. The last is in Verrückt: the pillar near Speed Cola, the kitchen table or the corner room beyond the stairs. Keep a fresh shield before entering a trial or boss arena."
+    }
+  ],
+  "rights": "All new SVGs are original logical connection schematics, not traced fan art. The sole acquired raster is Origins with the creator’s explicit attribution permission."
+}

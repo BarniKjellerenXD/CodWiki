@@ -1,0 +1,93 @@
+[
+  {
+    "number": 1,
+    "id": "dc-747a515734",
+    "label": "Arsenal",
+    "x": 0.7135913,
+    "y": 0.58555262
+  },
+  {
+    "number": 2,
+    "id": "dc-3474705f45",
+    "label": "Pack-a-Punch",
+    "x": 0.58153534,
+    "y": 0.46513961
+  },
+  {
+    "number": 3,
+    "id": "dc-4c50514e66",
+    "label": "Der Wunderfizz",
+    "x": 0.63297037,
+    "y": 0.63399501
+  },
+  {
+    "number": 4,
+    "id": "dc-6c4c32324f",
+    "label": "Aether Rift",
+    "x": 0.52734375,
+    "y": 0.14951245
+  },
+  {
+    "number": 5,
+    "id": "dc-74736e4247",
+    "label": "Ammo Crate",
+    "x": 0.65846214,
+    "y": 0.62486021
+  },
+  {
+    "number": 6,
+    "id": "dc-7247364f5a",
+    "label": "Ammo Crate",
+    "x": 0.71842297,
+    "y": 0.73934473
+  },
+  {
+    "number": 7,
+    "id": "dc-4c49494443",
+    "label": "Jump Pad",
+    "x": 0.53361949,
+    "y": 0.69135992
+  },
+  {
+    "number": 8,
+    "id": "dc-4b6b76436b",
+    "label": "Trial Computer",
+    "x": 0.72894324,
+    "y": 0.62998689
+  },
+  {
+    "number": 9,
+    "id": "dc-356d484e55",
+    "label": "Wall Buy wall buy",
+    "x": 0.63961973,
+    "y": 0.46894276
+  },
+  {
+    "number": 10,
+    "id": "dc-646b4a4f53",
+    "label": "Stone Monkey",
+    "x": 0.51287948,
+    "y": 0.34634686
+  },
+  {
+    "number": 11,
+    "id": "dc-51446e7937",
+    "label": "Red Aether Rift",
+    "x": 0.78100586,
+    "y": 0.61999512
+  },
+  {
+    "number": 12,
+    "id": "dc-4467356f56",
+    "label": "Aetherial Orb",
+    "x": 0.41966285,
+    "y": 0.59716988
+  },
+  {
+    "number": 13,
+    "id": "dc-3239517037",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.22503069,
+    "y": 0.4832451
+  }
+]

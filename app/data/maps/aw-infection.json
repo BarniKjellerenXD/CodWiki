@@ -1,0 +1,611 @@
+{
+  "id": "aw-infection",
+  "name": "Infection",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+      "url": "/guides/aw-infection",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2015/04/value-voltage-map-layout-infection-exo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/AW/infection/infection_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/comments/30wwdi/infection_easter_egg_thread_spoilers/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/aw-infection/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Hoard More / spawn",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Roof + shop",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Exo-boost from the spawn crate to the golden roof pan.",
+      "source": "/guides/aw-infection#guide-step-infection-pan-pickup"
+    },
+    {
+      "id": "area-voltage",
+      "label": "Value Voltage",
+      "layerId": "overview",
+      "x": 0.43,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Shop / gas station",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Get the sewer Exo Suit and open all four districts.",
+      "source": "/guides/aw-infection#guide-step-infection-exo"
+    },
+    {
+      "id": "area-atlas",
+      "label": "Atlas Command",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two command units",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Get the sewer Exo Suit and open all four districts.",
+      "source": "/guides/aw-infection#guide-step-infection-exo"
+    },
+    {
+      "id": "area-sewers",
+      "label": "Sewers",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.637,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper + lower routes",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Get the sewer Exo Suit and open all four districts.",
+      "source": "/guides/aw-infection#guide-step-infection-exo"
+    },
+    {
+      "id": "area-altar",
+      "label": "Waterfall altar",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.8370000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower hidden chamber",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Turn four orange sewer valves; enter the waterfall passage.",
+      "source": "/guides/aw-infection#guide-step-infection-valves"
+    },
+    {
+      "id": "area-burger",
+      "label": "Burger Town / Bubby",
+      "layerId": "overview",
+      "x": 0.78,
+      "y": 0.647,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Restaurant + roof",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Get the sewer Exo Suit and open all four districts.",
+      "source": "/guides/aw-infection#guide-step-infection-exo"
+    },
+    {
+      "id": "area-burger-top",
+      "label": "Giant burger interior",
+      "layerId": "overview",
+      "x": 0.78,
+      "y": 0.867,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Roof hatch",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Take Bubby’s key and trigger Access Denied inside the rooftop burger.",
+      "source": "/guides/aw-infection#guide-step-infection-key"
+    },
+    {
+      "id": "exo-suit",
+      "label": "Exo Suit station",
+      "layerId": "overview",
+      "x": 0.4,
+      "y": 0.615,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower routes",
+      "availability": "conditional",
+      "description": "Open the Sewers and take an Exo Suit. Open access to Atlas Command, Value Voltage and Burger Town and power equipment where needed. Locate the sewer decontamination pad before carrying infected quest items. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-exo"
+    },
+    {
+      "id": "pan",
+      "label": "Golden frying pan",
+      "layerId": "overview",
+      "x": 0.12,
+      "y": 0.305,
+      "category": "quest-item",
+      "typeId": "quest-item",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Roof + shop",
+      "availability": "conditional",
+      "description": "From spawn’s highest crate, Exo-boost toward the cracked roof and collect the golden frying pan. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-pan-pickup"
+    },
+    {
+      "id": "valves",
+      "label": "Four variable sewer valves",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.615,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower routes",
+      "availability": "conditional",
+      "description": "Search the connected sewer pipes for four orange valves. Interact with each until steam vents. Their positions vary; inspect above and below the corridors and make another pass if a valve remains missing. After four successful interactions, the passage behind the waterfall opens. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-valves"
+    },
+    {
+      "id": "altar",
+      "label": "Pan charging altar",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.8150000000000001,
+      "category": "ritual-site",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Lower hidden chamber",
+      "availability": "conditional",
+      "description": "Place the pan on the altar inside the hidden chamber. The altar lowers to begin charging. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-pan-altar"
+    },
+    {
+      "id": "stove",
+      "label": "Burger cooking stove",
+      "layerId": "overview",
+      "x": 0.74,
+      "y": 0.625,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Restaurant + roof",
+      "availability": "conditional",
+      "description": "Kill zombies in the LOWER part of the altar room until the pan fills and the altar rises. Kills upstairs do not satisfy the collection area. Retrieve the charged pan and place it on Burger Town’s kitchen stove. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-pan-blood"
+    },
+    {
+      "id": "shower",
+      "label": "Decontamination pad",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.663,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower routes",
+      "availability": "conditional",
+      "description": "Go directly to the sewer decontamination pad, using the Burger Town chute if convenient. Cleanse yourself while carrying the burger, then return and feed it to Bubby. His low-battery response starts the next phase. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-cleanse-burger"
+    },
+    {
+      "id": "battery",
+      "label": "Command battery and screen",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.305,
+      "category": "quest-item",
+      "typeId": "quest-item",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Two command units",
+      "availability": "conditional",
+      "description": "In Atlas Command, interact with the Bubby schematic screen inside one Command Center unit. Immediately run to the other unit containing the power generator and take the battery from its opened box. If it closes before pickup, activate the schematic again. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-battery-screen"
+    },
+    {
+      "id": "charger",
+      "label": "Battery charger",
+      "layerId": "overview",
+      "x": 0.39,
+      "y": 0.315,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Shop / gas station",
+      "availability": "conditional",
+      "description": "Put the battery into the Value Voltage charger. Defend it from zombies; if they knock it out, pick it up and replace it. When fully charged it becomes red. Retrieve it and give it to Bubby. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-charge-battery"
+    },
+    {
+      "id": "scanner",
+      "label": "Upstairs fingerprint scanner",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.305,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Roof + shop",
+      "availability": "conditional",
+      "description": "Use the arm on the upstairs spawn fingerprint scanner. Take the red tablet from the opened safe and install it at the burger’s Access Denied screen. You are forced outside as explosives and the rocket launch. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-fingerprint"
+    },
+    {
+      "id": "gator",
+      "label": "Insta-Gator trap",
+      "layerId": "overview",
+      "x": 0.37,
+      "y": 0.65,
+      "category": "trap",
+      "typeId": "trap",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower routes",
+      "availability": "conditional",
+      "description": "Activate the sewer Insta-Gator trap. When the gator emerges holding a zombie, shoot it rapidly until it breaks and drops the floating zombie arm. Collect the arm. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-infection#guide-step-infection-arm"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-infection-exo",
+      "title": "Get the sewer Exo Suit and open all four districts.",
+      "locationIds": [
+        "exo-suit",
+        "area-voltage",
+        "area-atlas",
+        "area-sewers",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-exo"
+    },
+    {
+      "id": "guide-infection-pan-pickup",
+      "title": "Exo-boost from the spawn crate to the golden roof pan.",
+      "locationIds": [
+        "pan",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-pan-pickup"
+    },
+    {
+      "id": "guide-infection-valves",
+      "title": "Turn four orange sewer valves; enter the waterfall passage.",
+      "locationIds": [
+        "valves",
+        "area-sewers",
+        "area-altar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-valves"
+    },
+    {
+      "id": "guide-infection-pan-altar",
+      "title": "Place the pan on the chamber altar.",
+      "locationIds": [
+        "altar",
+        "area-altar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-pan-altar"
+    },
+    {
+      "id": "guide-infection-pan-blood",
+      "title": "Fill the pan with lower-room kills; put it on the Burger Town stove.",
+      "locationIds": [
+        "altar",
+        "stove",
+        "area-altar",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-pan-blood"
+    },
+    {
+      "id": "guide-infection-meat",
+      "title": "Deposit one meat piece from each of the four districts, one at a time.",
+      "locationIds": [
+        "area-spawn",
+        "area-voltage",
+        "area-atlas",
+        "area-sewers",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-meat"
+    },
+    {
+      "id": "guide-infection-cook",
+      "title": "Cook all four meat pieces with the Magnetron until the ding.",
+      "locationIds": [
+        "stove"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-cook"
+    },
+    {
+      "id": "guide-infection-bun",
+      "title": "Collect an employee-zombie bun; assemble and pick up the burger.",
+      "locationIds": [
+        "stove",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-bun"
+    },
+    {
+      "id": "guide-infection-cleanse-burger",
+      "title": "Decontaminate with the burger; feed Bubby and listen for the battery request.",
+      "locationIds": [
+        "shower",
+        "area-sewers",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-cleanse-burger"
+    },
+    {
+      "id": "guide-infection-battery-screen",
+      "title": "Use the Bubby schematic, then take the timed battery from the other Command Center.",
+      "locationIds": [
+        "battery",
+        "area-atlas",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-battery-screen"
+    },
+    {
+      "id": "guide-infection-charge-battery",
+      "title": "Defend the Value Voltage charger; give the red charged battery to Bubby.",
+      "locationIds": [
+        "charger",
+        "area-voltage",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-charge-battery"
+    },
+    {
+      "id": "guide-infection-key",
+      "title": "Take Bubby’s key and trigger Access Denied inside the rooftop burger.",
+      "locationIds": [
+        "area-burger",
+        "area-burger-top"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-key"
+    },
+    {
+      "id": "guide-infection-arm",
+      "title": "Shoot the Insta-Gator while it holds a zombie; collect the arm.",
+      "locationIds": [
+        "gator",
+        "area-sewers"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-arm"
+    },
+    {
+      "id": "guide-infection-fingerprint",
+      "title": "Scan the arm upstairs at spawn; install the red tablet in the rooftop burger.",
+      "locationIds": [
+        "scanner",
+        "area-spawn",
+        "area-burger-top"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-fingerprint"
+    },
+    {
+      "id": "guide-infection-blue-tablet",
+      "title": "Collect the blue tablet beneath the burger screen and give it to Bubby.",
+      "locationIds": [
+        "area-burger",
+        "area-burger-top"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-blue-tablet"
+    },
+    {
+      "id": "guide-infection-atlas-0",
+      "title": "Atlas Command: find and deposit one meat piece.",
+      "locationIds": [
+        "area-spawn",
+        "area-atlas"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-atlas-0"
+    },
+    {
+      "id": "guide-infection-atlas-1",
+      "title": "Value Voltage: find and deposit one meat piece.",
+      "locationIds": [
+        "area-voltage"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-atlas-1"
+    },
+    {
+      "id": "guide-infection-atlas-2",
+      "title": "Sewers: find and deposit one meat piece.",
+      "locationIds": [
+        "area-voltage",
+        "area-sewers",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-atlas-2"
+    },
+    {
+      "id": "guide-infection-atlas-3",
+      "title": "Burger Town: find and deposit one meat piece.",
+      "locationIds": [
+        "area-sewers",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-atlas-3"
+    },
+    {
+      "id": "guide-infection-song",
+      "title": "Activate the Value Voltage, Atlas Command and Burger Town golden rockets.",
+      "locationIds": [
+        "area-voltage",
+        "area-atlas",
+        "area-burger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map.",
+      "guideAnchor": "guide-step-infection-song"
+    }
+  ],
+  "quickLinks": {
+    "infection-exo": "guide-infection-exo",
+    "infection-pan-pickup": "guide-infection-pan-pickup",
+    "infection-valves": "guide-infection-valves",
+    "infection-pan-altar": "guide-infection-pan-altar",
+    "infection-pan-blood": "guide-infection-pan-blood",
+    "infection-meat": "guide-infection-meat",
+    "infection-cook": "guide-infection-cook",
+    "infection-bun": "guide-infection-bun",
+    "infection-cleanse-burger": "guide-infection-cleanse-burger",
+    "infection-battery-screen": "guide-infection-battery-screen",
+    "infection-charge-battery": "guide-infection-charge-battery",
+    "infection-key": "guide-infection-key",
+    "infection-arm": "guide-infection-arm",
+    "infection-fingerprint": "guide-infection-fingerprint",
+    "infection-blue-tablet": "guide-infection-blue-tablet",
+    "infection-atlas-0": "guide-infection-atlas-0",
+    "infection-atlas-1": "guide-infection-atlas-1",
+    "infection-atlas-2": "guide-infection-atlas-2",
+    "infection-atlas-3": "guide-infection-atlas-3",
+    "infection-song": "guide-infection-song"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "exo-suit",
+            "area-voltage",
+            "area-atlas",
+            "area-sewers",
+            "area-burger"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "pan",
+            "area-spawn",
+            "valves",
+            "area-sewers",
+            "area-altar",
+            "altar"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-voltage",
+            "area-atlas",
+            "area-burger"
+          ]
+        }
+      ]
+    }
+  ]
+}

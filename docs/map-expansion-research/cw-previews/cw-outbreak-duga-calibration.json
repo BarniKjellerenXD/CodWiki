@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "id": "dc-6b326a4831",
+    "label": "Arsenal",
+    "x": 0.41464036,
+    "y": 0.36212356
+  },
+  {
+    "number": 2,
+    "id": "dc-33586a7671",
+    "label": "Arsenal",
+    "x": 0.86941821,
+    "y": 0.61597273
+  },
+  {
+    "number": 3,
+    "id": "dc-6762494b66",
+    "label": "Pack-a-Punch",
+    "x": 0.68117383,
+    "y": 0.50239417
+  },
+  {
+    "number": 4,
+    "id": "dc-737641766f",
+    "label": "Der Wunderfizz",
+    "x": 0.50854072,
+    "y": 0.57193495
+  },
+  {
+    "number": 5,
+    "id": "dc-6a30776f4a",
+    "label": "Aether Rift",
+    "x": 0.94921875,
+    "y": 0.49029566
+  },
+  {
+    "number": 6,
+    "id": "dc-7071746739",
+    "label": "Fishing",
+    "x": 0.12597656,
+    "y": 0.43854336
+  },
+  {
+    "number": 7,
+    "id": "dc-3956487969",
+    "label": "Ammo Crate",
+    "x": 0.87133261,
+    "y": 0.48163488
+  },
+  {
+    "number": 8,
+    "id": "dc-317130667a",
+    "label": "Mystery Box Location",
+    "x": 0.73788426,
+    "y": 0.22867522
+  },
+  {
+    "number": 9,
+    "id": "dc-6364397334",
+    "label": "Crafting Table",
+    "x": 0.51224086,
+    "y": 0.70597654
+  },
+  {
+    "number": 10,
+    "id": "dc-5a3247377a",
+    "label": "Wall Buy wall buy",
+    "x": 0.53465126,
+    "y": 0.42226329
+  },
+  {
+    "number": 11,
+    "id": "dc-7677486636",
+    "label": "Maxis Radio Amplifier",
+    "x": 0.87575615,
+    "y": 0.33875664
+  },
+  {
+    "number": 12,
+    "id": "dc-4d36506849",
+    "label": "Demented Echo",
+    "x": 0.49015304,
+    "y": 0.21813707
+  },
+  {
+    "number": 13,
+    "id": "dc-70694e7978",
+    "label": "Aetherial Orb",
+    "x": 0.62127686,
+    "y": 0.77105713
+  },
+  {
+    "number": 14,
+    "id": "dc-677561536b",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.63616703,
+    "y": 0.77517364
+  },
+  {
+    "number": 15,
+    "id": "dc-336c303848",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.66302584,
+    "y": 0.2293807
+  }
+]

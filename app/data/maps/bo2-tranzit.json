@@ -1,0 +1,476 @@
+{
+  "id": "bo2-tranzit",
+  "name": "TranZit",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-tranzit",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/tranzit/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/tranzit/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombieguides.com/tranzit"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-tranzit/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-depot",
+      "label": "Bus Depot",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.617,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stop 1",
+      "description": "Black Ops II · Stop 1. Region on a schematic, not an exact object position. Build a Turbine in Bus Depot; take one before boarding.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-turbine"
+    },
+    {
+      "id": "area-diner",
+      "label": "Diner",
+      "layerId": "overview",
+      "x": 0.34,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stop 2",
+      "description": "Black Ops II · Stop 2. Region on a schematic, not an exact object position. Follow the five-stop loop; buy a reliable wall weapon at Diner.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-route"
+    },
+    {
+      "id": "area-farm",
+      "label": "Farm",
+      "layerId": "overview",
+      "x": 0.65,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stop 3",
+      "description": "Black Ops II · Stop 3. Region on a schematic, not an exact object position. Follow the five-stop loop; buy a reliable wall weapon at Diner.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-route"
+    },
+    {
+      "id": "area-power",
+      "label": "Power Station",
+      "layerId": "overview",
+      "x": 0.85,
+      "y": 0.5870000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stop 4 / underground",
+      "description": "Black Ops II · Stop 4 / underground. Region on a schematic, not an exact object position. Follow the five-stop loop; buy a reliable wall weapon at Diner.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-route"
+    },
+    {
+      "id": "area-town",
+      "label": "Town",
+      "layerId": "overview",
+      "x": 0.58,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stop 5",
+      "description": "Black Ops II · Stop 5. Region on a schematic, not an exact object position. Follow the five-stop loop; buy a reliable wall weapon at Diner.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-route"
+    },
+    {
+      "id": "turbine",
+      "label": "Turbine workbench",
+      "layerId": "overview",
+      "x": 0.122,
+      "y": 0.618,
+      "category": "equipment",
+      "typeId": "workbench",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Stop 1",
+      "description": "Before leaving Bus Depot, take the mannequin beside the central sign, the fan on the seats and the model-plane tail near the payphones. Carry one part at a time to the workbench in the starting room. Everyone can take a Turbine from the finished bench. Deploy it at the side door to leave without buying the main door; pick it back up after passing through. A broken Turbine can be replaced at this bench. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-turbine"
+    },
+    {
+      "id": "power",
+      "label": "Build and activate power",
+      "layerId": "overview",
+      "x": 0.8119999999999999,
+      "y": 0.5880000000000001,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Stop 4 / underground",
+      "description": "At the fourth stop, buy the small shed door and drop through its floor. In the white underground room, collect the electrical panel, switch handle and severed hand from the floor/railings and assemble them at the workbench. Turn the completed switch on. Wait for the electrical sequence and dialogue before leaving via the upper catwalk; a Turbine can open the exit gate. Avoid the open pit. For Maxis, wait for his instruction, then switch power off. For Richtofen or ordinary setup, leave it on. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-power"
+    },
+    {
+      "id": "pap",
+      "label": "Town bank / Pack-a-Punch route",
+      "layerId": "overview",
+      "x": 0.5419999999999999,
+      "y": 0.8280000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Stop 5",
+      "description": "In Town’s bank, use explosives to open both vault doors. The passage beyond the second vault should lead downstairs. A closed metal wall means the Power Station Turbine is not supplying the door: return and replace it. Downstairs, find the machine casing, battery and stool/table in the corridors and carry them to the far workbench one at a time. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-tranzit#guide-step-pap-bank"
+    },
+    {
+      "id": "diner-box",
+      "label": "First Mystery Box",
+      "layerId": "overview",
+      "x": 0.30200000000000005,
+      "y": 0.288,
+      "category": "weapon",
+      "typeId": "mystery-box",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Stop 2",
+      "description": "The bus travels Bus Depot → Diner → Farm → Power Station → Town → Bus Depot. It does not wait for your setup to finish. At Diner, the MP5 is a dependable refillable weapon and the first Mystery Box is outside. At Farm, open the farmhouse for the weapon fridge and reach the barn for Double Tap. Save enough for the Power Station shed and Town’s Jugger-Nog building. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-tranzit#guide-step-setup-route"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-turbine",
+      "title": "Build a Turbine in Bus Depot; take one before boarding.",
+      "locationIds": [
+        "turbine",
+        "area-depot"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-setup-turbine"
+    },
+    {
+      "id": "guide-setup-route",
+      "title": "Follow the five-stop loop; buy a reliable wall weapon at Diner.",
+      "locationIds": [
+        "diner-box",
+        "area-depot",
+        "area-diner",
+        "area-farm",
+        "area-power",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-setup-route"
+    },
+    {
+      "id": "guide-setup-power",
+      "title": "Build power in the white underground room; choose whether to leave it on.",
+      "locationIds": [
+        "power",
+        "area-depot",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-setup-power"
+    },
+    {
+      "id": "guide-setup-perks",
+      "title": "Jugger-Nog is in Town; perk access follows the power supply.",
+      "locationIds": [
+        "area-depot",
+        "area-diner",
+        "area-farm",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-setup-perks"
+    },
+    {
+      "id": "guide-pap-door",
+      "title": "Power the lightning door at the Power Station with a fresh Turbine.",
+      "locationIds": [
+        "area-depot",
+        "area-power",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-pap-door"
+    },
+    {
+      "id": "guide-pap-bank",
+      "title": "Blast both bank vault doors; build Pack-a-Punch in the open basement.",
+      "locationIds": [
+        "pap",
+        "area-depot",
+        "area-power",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-pap-bank"
+    },
+    {
+      "id": "guide-pap-use",
+      "title": "Upgrade for 5,000; repeat the Turbine step if the basement closes.",
+      "locationIds": [
+        "pap",
+        "area-depot"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-pap-use"
+    },
+    {
+      "id": "guide-equipment-shield",
+      "title": "Combine the garage door and diner trolley at the garage bench.",
+      "locationIds": [
+        "area-depot",
+        "area-diner"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-equipment-shield"
+    },
+    {
+      "id": "guide-equipment-bus",
+      "title": "Search four Turbine rooms; reserve the hatch for Diner if you want Galvaknuckles.",
+      "locationIds": [
+        "area-depot",
+        "area-diner",
+        "area-farm",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-equipment-bus"
+    },
+    {
+      "id": "guide-equipment-traps",
+      "title": "Turret at Farm; Electric Trap at Power; both need a Turbine.",
+      "locationIds": [
+        "area-depot",
+        "area-farm",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-equipment-traps"
+    },
+    {
+      "id": "guide-equipment-jet",
+      "title": "Build the Jet Gun from tunnel, Nacht, cabin and Power Station parts.",
+      "locationIds": [
+        "area-diner",
+        "area-farm",
+        "area-power",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-equipment-jet"
+    },
+    {
+      "id": "guide-maxis-ready",
+      "title": "Original, 2+ players, EMPs, two fresh Turbines; turn power off after Maxis speaks.",
+      "locationIds": [
+        "area-farm"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-maxis-ready"
+    },
+    {
+      "id": "guide-maxis-lamps",
+      "title": "Power two separate streetlamps; look for orange energy and the achievement.",
+      "locationIds": [
+        "area-depot",
+        "area-diner"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-maxis-lamps"
+    },
+    {
+      "id": "guide-richtofen-ready",
+      "title": "Power on; fully cool the Jet Gun, then break it while firing into the pylon.",
+      "locationIds": [
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-richtofen-ready"
+    },
+    {
+      "id": "guide-storage-bank",
+      "title": "Use the bank keys for shared Victis storage and teammate point transfers.",
+      "locationIds": [
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-storage-bank"
+    },
+    {
+      "id": "guide-storage-fridge",
+      "title": "Store an eligible weapon in the Farm kitchen fridge.",
+      "locationIds": [
+        "area-farm"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-storage-fridge"
+    },
+    {
+      "id": "guide-navcard-parts",
+      "title": "Build the four-part Navcard table under the pylon.",
+      "locationIds": [
+        "area-depot",
+        "area-diner",
+        "area-farm",
+        "area-power",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-navcard-parts"
+    },
+    {
+      "id": "guide-navcard-loop",
+      "title": "Card loop: TranZit → Die Rise → Buried → TranZit.",
+      "locationIds": [
+        "area-depot"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-navcard-loop"
+    },
+    {
+      "id": "guide-music-bears",
+      "title": "Activate the Depot, Farm bedroom and Town bar teddy bears.",
+      "locationIds": [
+        "area-depot",
+        "area-diner",
+        "area-farm",
+        "area-town"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-music-bears"
+    },
+    {
+      "id": "guide-music-radio",
+      "title": "Listen to Farm’s TV and visit the cornfield Nacht landmark.",
+      "locationIds": [
+        "area-farm"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them.",
+      "guideAnchor": "guide-step-music-radio"
+    }
+  ],
+  "quickLinks": {
+    "setup-turbine": "guide-setup-turbine",
+    "setup-route": "guide-setup-route",
+    "setup-power": "guide-setup-power",
+    "setup-perks": "guide-setup-perks",
+    "pap-door": "guide-pap-door",
+    "pap-bank": "guide-pap-bank",
+    "pap-use": "guide-pap-use",
+    "equipment-shield": "guide-equipment-shield",
+    "equipment-bus": "guide-equipment-bus",
+    "equipment-traps": "guide-equipment-traps",
+    "equipment-jet": "guide-equipment-jet",
+    "maxis-ready": "guide-maxis-ready",
+    "maxis-lamps": "guide-maxis-lamps",
+    "richtofen-ready": "guide-richtofen-ready",
+    "storage-bank": "guide-storage-bank",
+    "storage-fridge": "guide-storage-fridge",
+    "navcard-parts": "guide-navcard-parts",
+    "navcard-loop": "guide-navcard-loop",
+    "music-bears": "guide-music-bears",
+    "music-radio": "guide-music-radio"
+  }
+}

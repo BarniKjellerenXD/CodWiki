@@ -1,0 +1,594 @@
+{
+  "id": "bo3-shadows-of-evil",
+  "name": "Shadows of Evil",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-shadows-of-evil",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/shadows-of-evil/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO3/shadows_of_evil/shadows_of_evil_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/shadows-of-evil/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-shadows-of-evil/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Easy Street / Nero",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Spawn and loft",
+      "description": "Black Ops III · Spawn and loft. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-junction",
+      "label": "Junction",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.537,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Central district",
+      "description": "Black Ops III · Central district. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-canals",
+      "label": "Canals / Ruby Rabbit",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Black Ops III · Street / high street / ritual. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-waterfront",
+      "label": "Waterfront / Boxing Gym",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Black Ops III · Street / high street / ritual. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-footlight",
+      "label": "Footlight / Burlesque",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Black Ops III · Street / high street / ritual. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-rift",
+      "label": "Rift / underground",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate lower region",
+      "description": "Black Ops III · Separate lower region. Region on a schematic, not an exact object position. Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "key",
+      "label": "Summoning Key / spawn setup",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.8280000000000001,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Spawn and loft",
+      "description": "Use a flaming chalice to enter Beast mode. Shock fuse boxes to power perks and stairs, melee chained crates and doors, and grapple to the glowing hooks above you. Plan each route before transforming: you return to the same chalice when time runs out. A used chalice stays unavailable for that round. Spawn: break the truck crate for the Summoning Key; shock the Junction crane, then grapple above Easy Street and shock the exterior box behind Nero’s loft to open its stairs. Canals: shock the box behind the translucent wall at the far end of the canal; break the badge box beside the rift. Grapple to Ruby Rabbit and run down to shock its entrance stairs. Waterfront: grapple above the district Mystery Box and knock down the belt crate. Break the Boxing Gym’s front door. Footlight: grapple to the upper walkway; jump from the small ramp to the crate ledge and knock the crate down. Grapple to Black Lace Burlesque and shock the box behind its sign. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-1"
+    },
+    {
+      "id": "pap",
+      "label": "Underground Pack-a-Punch ritual",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.798,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Separate lower region",
+      "description": "Build the Rocket Shield before longer defenses. Open the upper perk routes and collect one piece per district, checking the three nearby alternatives listed below. Build at Waterfront behind the gym, Canals outside Ruby Rabbit, or Footlight below the train station. Get Juggernog and a Pack-a-Punched bullet weapon; the Servant is excellent crowd control but is not a substitute for accurate Shadowman damage. Footlight window: bench opposite the perk, fence beside it, or chair in the stairs room toward Burlesque. Canals base: lion-head room wall, connecting bridge, or window opposite the perk. Waterfront rockets: by the upper stairs/chalice, window near the perk, or floor farther into the burning room. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-4"
+    },
+    {
+      "id": "ruby",
+      "label": "Ruby Rabbit ritual",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.308,
+      "category": "quest",
+      "typeId": "ritual-site",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-2"
+    },
+    {
+      "id": "boxing",
+      "label": "Boxing Gym ritual",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.308,
+      "category": "quest",
+      "typeId": "ritual-site",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-2"
+    },
+    {
+      "id": "burlesque",
+      "label": "Burlesque ritual",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.798,
+      "category": "quest",
+      "typeId": "ritual-site",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Street / high street / ritual",
+      "description": "Return as a human to collect the Summoning Key and dropped items. Take each item to its matching ritual table, then interact again to start. Gather the team inside first: the door locks during the ritual. Keep moving until it finishes and collect the Gateworm. A Margwa appears after the second and fourth rituals; shoot its open yellow mouths one at a time. Lawyer’s Pen, Junction crane → Nero’s loft above spawn. Detective’s Badge, Canals → upper floor of Ruby Rabbit. Championship Belt, Waterfront → center of the Boxing Gym ring. Producer’s Toupee, Footlight → Black Lace Burlesque stage. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-shadows-of-evil#guide-step-setup-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Beast mode: shock power boxes, break crates and grapple to ritual entrances.",
+      "locationIds": [
+        "key",
+        "area-spawn",
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Pen → Nero; badge → Ruby Rabbit; belt → Boxing Gym; toupee → Burlesque. Collect all four Gateworms.",
+      "locationIds": [
+        "ruby",
+        "boxing",
+        "burlesque",
+        "area-spawn",
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Open a rift → place four Gateworms → complete the underground ritual → Pack-a-Punch.",
+      "locationIds": [
+        "ruby",
+        "boxing",
+        "burlesque",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-setup-4",
+      "title": "Build the three-district shield, get perks and upgrade a bullet weapon.",
+      "locationIds": [
+        "pap",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-setup-4"
+    },
+    {
+      "id": "guide-swords-1",
+      "title": "Record three train glyphs → shock those shapes on the underground wall.",
+      "locationIds": [
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-swords-1"
+    },
+    {
+      "id": "guide-swords-2",
+      "title": "Charge your egg at the four statues → return it → take the sword.",
+      "locationIds": [
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-swords-2"
+    },
+    {
+      "id": "guide-swords-3",
+      "title": "Your character’s Keeper → four street circles over four rounds → upgraded sword.",
+      "locationIds": [
+        "area-spawn",
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-swords-3"
+    },
+    {
+      "id": "guide-flags-1",
+      "title": "Float Nero’s book → pick up the flag near Widow’s Wine.",
+      "locationIds": [
+        "area-spawn",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-flags-1"
+    },
+    {
+      "id": "guide-flags-2",
+      "title": "Defend both lightning patches, then deliver the charged flag to that district’s Keeper.",
+      "locationIds": [
+        "area-spawn",
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-flags-2"
+    },
+    {
+      "id": "guide-flags-3",
+      "title": "Complete one district per round until all four Keepers move underground.",
+      "locationIds": [
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-flags-3"
+    },
+    {
+      "id": "guide-finale-1",
+      "title": "Activate four Keepers → shoot the exposed Shadowman to the table → interact to trap him.",
+      "locationIds": [
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-finale-1"
+    },
+    {
+      "id": "guide-finale-2",
+      "title": "Three station players + one Junction player; one station player calls the train as a human.",
+      "locationIds": [
+        "area-junction"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-finale-2"
+    },
+    {
+      "id": "guide-servant-build",
+      "title": "Apothicon Servant, Civil Protector and survival: servant-build",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-servant-build"
+    },
+    {
+      "id": "guide-protector",
+      "title": "Apothicon Servant, Civil Protector and survival: protector",
+      "locationIds": [
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-protector"
+    },
+    {
+      "id": "guide-survival",
+      "title": "Apothicon Servant, Civil Protector and survival: survival",
+      "locationIds": [
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-survival"
+    },
+    {
+      "id": "guide-arnies-upgrade",
+      "title": "Goddard shield, upgraded Arnies and pastry Trip Mines: arnies-upgrade",
+      "locationIds": [
+        "area-spawn",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-arnies-upgrade"
+    },
+    {
+      "id": "guide-trip-mines",
+      "title": "Goddard shield, upgraded Arnies and pastry Trip Mines: trip-mines",
+      "locationIds": [
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-trip-mines"
+    },
+    {
+      "id": "guide-mask-hearts",
+      "title": "Margwa Mask: six hearts in two train rides: mask-hearts",
+      "locationIds": [
+        "area-junction",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-mask-hearts"
+    },
+    {
+      "id": "guide-mask-claim",
+      "title": "Margwa Mask: six hearts in two train rides: mask-claim",
+      "locationIds": [
+        "area-spawn",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-mask-claim"
+    },
+    {
+      "id": "guide-song-snakeskin",
+      "title": "Songs, free Gobblegum, points and visual secrets: song-snakeskin",
+      "locationIds": [
+        "area-canals",
+        "area-waterfront",
+        "area-footlight"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-song-snakeskin"
+    },
+    {
+      "id": "guide-song-cash",
+      "title": "Songs, free Gobblegum, points and visual secrets: song-cash",
+      "locationIds": [
+        "area-spawn",
+        "area-canals",
+        "area-waterfront",
+        "area-footlight",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-song-cash"
+    },
+    {
+      "id": "guide-free-gum",
+      "title": "Songs, free Gobblegum, points and visual secrets: free-gum",
+      "locationIds": [
+        "area-junction",
+        "area-canals"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-free-gum"
+    },
+    {
+      "id": "guide-laundry",
+      "title": "Songs, free Gobblegum, points and visual secrets: laundry",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-laundry"
+    },
+    {
+      "id": "guide-visual-secrets",
+      "title": "Songs, free Gobblegum, points and visual secrets: visual-secrets",
+      "locationIds": [
+        "area-junction",
+        "area-waterfront",
+        "area-rift"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-visual-secrets"
+    },
+    {
+      "id": "guide-round-skip",
+      "title": "Songs, free Gobblegum, points and visual secrets: round-skip",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented.",
+      "guideAnchor": "guide-step-round-skip"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "setup-4": "guide-setup-4",
+    "swords-1": "guide-swords-1",
+    "swords-2": "guide-swords-2",
+    "swords-3": "guide-swords-3",
+    "flags-1": "guide-flags-1",
+    "flags-2": "guide-flags-2",
+    "flags-3": "guide-flags-3",
+    "finale-1": "guide-finale-1",
+    "finale-2": "guide-finale-2",
+    "servant-build": "guide-servant-build",
+    "protector": "guide-protector",
+    "survival": "guide-survival",
+    "arnies-upgrade": "guide-arnies-upgrade",
+    "trip-mines": "guide-trip-mines",
+    "mask-hearts": "guide-mask-hearts",
+    "mask-claim": "guide-mask-claim",
+    "song-snakeskin": "guide-song-snakeskin",
+    "song-cash": "guide-song-cash",
+    "free-gum": "guide-free-gum",
+    "laundry": "guide-laundry",
+    "visual-secrets": "guide-visual-secrets",
+    "round-skip": "guide-round-skip"
+  }
+}

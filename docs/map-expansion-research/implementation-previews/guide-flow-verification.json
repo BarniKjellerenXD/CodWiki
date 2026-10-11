@@ -1,0 +1,144 @@
+{
+  "checked": "2026-10-11T11:25:31.131Z",
+  "origin": "http://127.0.0.1:3001",
+  "verified": [
+    {
+      "id": "paradox-junction",
+      "view": "Quick Parts",
+      "target": "#map:blundergat",
+      "focusRestored": true
+    },
+    {
+      "id": "paradox-junction",
+      "view": "Full Details",
+      "target": "#map:step-normal-yellowup-destroyed-yellowup-destroyed-green-destroyed-truck-2",
+      "focusRestored": true
+    },
+    {
+      "id": "mw3-urzikstan",
+      "view": "Quick Parts",
+      "target": "#map:dark-aether-portals",
+      "focusRestored": true
+    },
+    {
+      "id": "mw3-urzikstan",
+      "view": "Full Details",
+      "target": "#map:dark-aether-portals",
+      "focusRestored": true
+    },
+    {
+      "id": "bo6-liberty-falls",
+      "view": "Quick Parts",
+      "target": "#map:setup-open",
+      "focusRestored": true
+    },
+    {
+      "id": "bo6-liberty-falls",
+      "view": "Full Details",
+      "target": "#map:setup-open",
+      "focusRestored": true
+    },
+    {
+      "id": "cw-firebase-z",
+      "view": "Quick Parts",
+      "target": "#map:reactors",
+      "focusRestored": true
+    },
+    {
+      "id": "cw-firebase-z",
+      "view": "Full Details",
+      "target": "#map:reactors",
+      "focusRestored": true
+    },
+    {
+      "id": "bo4-voyage-of-despair",
+      "view": "Quick Parts",
+      "target": "#map:guide-setup-1",
+      "focusRestored": true
+    },
+    {
+      "id": "bo4-voyage-of-despair",
+      "view": "Full Details",
+      "target": "#map:guide-setup-1",
+      "focusRestored": true
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "view": "Quick Parts",
+      "target": "#map:guide-kino-power",
+      "focusRestored": true
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "view": "Full Details",
+      "target": "#map:guide-kino-power",
+      "focusRestored": true
+    },
+    {
+      "id": "bo2-origins",
+      "view": "Quick Parts",
+      "target": "#map:guide-setup-1",
+      "focusRestored": true
+    },
+    {
+      "id": "bo2-origins",
+      "view": "Full Details",
+      "target": "#map:guide-setup-1",
+      "focusRestored": true
+    },
+    {
+      "id": "aw-infection",
+      "view": "Quick Parts",
+      "target": "#map:guide-infection-exo",
+      "focusRestored": true
+    },
+    {
+      "id": "aw-infection",
+      "view": "Full Details",
+      "target": "#map:guide-infection-exo",
+      "focusRestored": true
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "view": "Quick Parts",
+      "target": "#map:guide-setup-power",
+      "focusRestored": true
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "view": "Full Details",
+      "target": "#map:guide-setup-power",
+      "focusRestored": true
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "view": "Quick Parts",
+      "target": "#map:guide-throne-radio",
+      "focusRestored": true
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "view": "Full Details",
+      "target": "#map:guide-throne-radio",
+      "focusRestored": true
+    },
+    {
+      "id": "vanguard-the-archon",
+      "view": "Quick Parts",
+      "target": "#map:guide-archon-pap-parts",
+      "focusRestored": true
+    },
+    {
+      "id": "vanguard-the-archon",
+      "view": "Full Details",
+      "target": "#map:guide-archon-pap-parts",
+      "focusRestored": true
+    }
+  ],
+  "runtimeErrors": [],
+  "checks": [
+    "guide click opens its target",
+    "lazy client map renders highlighted locations",
+    "Back to step restores Quick/Full reader and the originating link focus"
+  ]
+}

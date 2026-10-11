@@ -1,0 +1,280 @@
+{
+  "id": "bo2-borough",
+  "name": "Borough",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-borough",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://discover.hubpages.com/games-hobbies/Borough-Grief-Mode-Buried-Grief-Call-of-Duty-Black-Ops-2-Zombies"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://callofduty.fandom.com/wiki/Borough"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-borough/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-street",
+      "label": "Town streets",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.547,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street arena",
+      "description": "Black Ops II · Street arena. Region on a schematic, not an exact object position. Find Pack-a-Punch outside by the Church and mansion.",
+      "source": "/guides/bo2-borough#guide-step-setup-layout"
+    },
+    {
+      "id": "area-saloon",
+      "label": "Saloon",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Find Pack-a-Punch outside by the Church and mansion.",
+      "source": "/guides/bo2-borough#guide-step-setup-layout"
+    },
+    {
+      "id": "area-court",
+      "label": "Courthouse",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Building",
+      "description": "Black Ops II · Building. Region on a schematic, not an exact object position. Find Pack-a-Punch outside by the Church and mansion.",
+      "source": "/guides/bo2-borough#guide-step-setup-layout"
+    },
+    {
+      "id": "area-store",
+      "label": "General Store / Gunsmith",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Several building floors",
+      "description": "Black Ops II · Several building floors. Region on a schematic, not an exact object position. Use the town’s perks; Stamin-Up is outside by Courthouse/Church.",
+      "source": "/guides/bo2-borough#guide-step-setup-perks"
+    },
+    {
+      "id": "area-church",
+      "label": "Church / mansion front",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Grief boundary",
+      "description": "Black Ops II · Grief boundary. Region on a schematic, not an exact object position. Find Pack-a-Punch outside by the Church and mansion.",
+      "source": "/guides/bo2-borough#guide-step-setup-layout"
+    },
+    {
+      "id": "pap",
+      "label": "Grief Pack-a-Punch outside Church",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.8180000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Grief boundary",
+      "description": "In Grief, use the town streets, Saloon and Courthouse to move between buildings. Pack-a-Punch is outside in front of the Church and mansion and costs 5,000. There is no mansion crossing, maze route or Arthur barrier task. Approach the upgrade machine only when the lane behind you is clear. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-borough#guide-step-setup-layout"
+    },
+    {
+      "id": "revive",
+      "label": "Church Quick Revive",
+      "layerId": "overview",
+      "x": 0.8480000000000001,
+      "y": 0.8180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Grief boundary",
+      "description": "Jugger-Nog is in its alley, Speed Cola in General Store, Mule Kick upstairs in Gunsmith, Double Tap on the mansion porch Stamin-Up between Courthouse and Church, and Quick Revive inside the Church where Buried has Vulture Aid. Vulture Aid is unavailable. Buy a core survival setup before investing in an extra Mule Kick weapon. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-borough#guide-step-setup-perks"
+    },
+    {
+      "id": "devices",
+      "label": "Ready-made device tables",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.318,
+      "category": "equipment",
+      "typeId": "workbench",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Building",
+      "description": "Assignments vary between the Courthouse, Saloon and upstairs table beside Sheriff’s Office. This is not a guaranteed active device pin. Three ready-built devices are distributed between the Courthouse table, Saloon table and upstairs table beside the Sheriff’s Office: Turbine, Trample Steam and Subsurface Resonator. Check all three because their table assignments vary. A Resonator needs a nearby Turbine to work. There are no parts to assemble and no Head Chopper here. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-borough#guide-step-setup-buildables"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-layout",
+      "title": "Find Pack-a-Punch outside by the Church and mansion.",
+      "locationIds": [
+        "pap",
+        "area-street",
+        "area-saloon",
+        "area-court",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-setup-layout"
+    },
+    {
+      "id": "guide-setup-perks",
+      "title": "Use the town’s perks; Stamin-Up is outside by Courthouse/Church.",
+      "locationIds": [
+        "revive",
+        "area-street",
+        "area-court",
+        "area-store",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-setup-perks"
+    },
+    {
+      "id": "guide-setup-buildables",
+      "title": "Find the three prebuilt devices; power the Resonator with a Turbine.",
+      "locationIds": [
+        "devices",
+        "area-saloon",
+        "area-court"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-setup-buildables"
+    },
+    {
+      "id": "guide-turned-layout",
+      "title": "Use the street and General Store; the Grief route is closed.",
+      "locationIds": [
+        "area-street",
+        "area-saloon",
+        "area-court",
+        "area-store",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-turned-layout"
+    },
+    {
+      "id": "guide-turned-tactics",
+      "title": "Flank through the store; use Diner for Diner-specific achievements.",
+      "locationIds": [
+        "area-street",
+        "area-store"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-turned-tactics"
+    },
+    {
+      "id": "guide-secrets-scope",
+      "title": "Open full Buried for its equipment and Easter eggs.",
+      "locationIds": [
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied.",
+      "guideAnchor": "guide-step-secrets-scope"
+    }
+  ],
+  "quickLinks": {
+    "setup-layout": "guide-setup-layout",
+    "setup-perks": "guide-setup-perks",
+    "setup-buildables": "guide-setup-buildables",
+    "turned-layout": "guide-turned-layout",
+    "turned-tactics": "guide-turned-tactics",
+    "secrets-scope": "guide-secrets-scope"
+  }
+}

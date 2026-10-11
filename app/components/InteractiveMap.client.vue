@@ -7,29 +7,18 @@
 
     <div v-if="!photoFinder" class="atlas-fields">
       <label class="atlas-field atlas-search"><span>Find a location</span><input v-model="query" type="search" placeholder="Search rooms, items and landmarks…" autocomplete="off" /></label>
-      <label v-if="data.layers.length > 1" class="atlas-field atlas-layer-select"><span>Map layer</span><select v-model="layerId" @change="changeLayer"><option v-for="layer in data.layers" :key="layer.id" :value="layer.id">{{ layer.label }}{{ layerCount(layer.id) ? ` · ${layerCount(layer.id)} selected` : '' }}</option></select></label>
+      <label v-if="data.layers.length > 1 && !data.cutaway" class="atlas-field atlas-layer-select"><span>Map layer</span><select v-model="layerId" @change="changeLayer"><option v-for="layer in data.layers" :key="layer.id" :value="layer.id">{{ layer.label }}{{ layerCount(layer.id) ? ` · ${layerCount(layer.id)} selected` : '' }}</option></select></label>
     </div>
 
-    <div v-if="!photoFinder" class="atlas-filters" role="group" :aria-label="data.filterGroups ? 'Map activities' : 'Location categories'">
-      <button v-if="overviewCount" type="button" :aria-pressed="category === 'overview'" @click="chooseCategory('overview')">Key locations <span>{{ overviewCount }}</span></button>
-      <button v-else type="button" :aria-pressed="category === 'quest-areas'" @click="category = 'quest-areas'">Quest &amp; areas <span>{{ questAreaCount }}</span></button>
-      <template v-if="data.filterGroups"><button v-for="group in data.filterGroups" :key="group.id" type="button" :aria-pressed="category === group.id" :aria-controls="category === group.id ? `${data.id}-subfilters` : undefined" @click="chooseCategory(group.id)">{{ group.label }}</button><button v-if="category === 'selected'" type="button" aria-pressed="true">Guide locations <span>{{ selectedLocations.length }}</span></button></template>
-      <button type="button" :aria-pressed="category === 'all'" @click="chooseCategory('all')">All locations <span>{{ data.locations.length }}</span></button>
-      <template v-if="!data.filterGroups"><button v-for="item in categories" :key="item.id" type="button" :aria-pressed="category === item.id" @click="category = item.id"><span class="atlas-category-symbol" aria-hidden="true">{{ categorySymbol(item.id) }}</span>{{ categoryLabel(item.id) }} <span>{{ item.count }}</span></button></template>
-    </div>
-    <div v-if="activeFilterGroup" :id="`${data.id}-subfilters`" class="atlas-subfilters">
-      <div class="atlas-subfilter-buttons" role="group" :aria-label="`${activeFilterGroup.label} filters`"><button v-for="filter in activeFilterGroup.filters" :key="filter.id" type="button" :aria-pressed="subfilterId === filter.id" @click="chooseSubfilter(filter.id)">{{ filter.label }} <span>{{ filter.locationIds.length }}</span></button></div>
-      <p v-if="activeFilter?.note">{{ activeFilter.note }}</p>
-    </div>
-    <div v-if="category === 'perk' && peeksCount" class="atlas-perk-options">
-      <div class="atlas-perk-switch" role="group" aria-label="Perk locations"><button type="button" :aria-pressed="perkFilter === 'all'" @click="perkFilter = 'all'">All perks <span>{{ perkCount }}</span></button><button type="button" :aria-pressed="perkFilter === 'mister-peeks'" @click="perkFilter = 'mister-peeks'">Mister Peeks <span>{{ peeksCount }}</span></button></div>
-      <p>Cursed mode: Mister Peeks locations are possible spawns.</p>
-    </div>
+    <MapCompactFilters v-if="!photoFinder" v-model="checkedFilters" :data="data" :options="filterOptions" :layer-id="layerId" :query="query" @essentials="resetEssentials" @all="showAllFilters" />
+    <div v-if="!photoFinder" class="atlas-browse-status" aria-live="polite"><span>{{ browseLayerCount }} on this layer · {{ otherLayerCount }} on other layers</span><button v-if="selectedLocations.length" type="button" :aria-pressed="showHighlights" @click="showHighlights = !showHighlights">Guide highlight <span>{{ selectedLocations.length }}</span></button><span v-if="outsideFilterCount && showHighlights">+ {{ outsideFilterCount }} highlighted outside filters</span><button v-if="data.id === 'mw3-urzikstan'" type="button" :aria-pressed="photoMode" @click="togglePhotoFinder">USB photo finder</button><NuxtLink v-if="data.id === 'mw3-urzikstan'" class="atlas-portal-tool" to="/tools/mw3-rune-portals">Rune portal finder ↗</NuxtLink></div>
+    <p v-if="data.coverage" class="atlas-layer-note">{{ data.coverage.kind === 'schematic' ? 'Schematic · not to scale. ' : '' }}{{ data.coverage.note }}</p>
 
     <p v-if="unknownTarget" class="atlas-notice" role="status">That location is no longer in this map. Search the location list to find it.</p>
-    <div class="atlas-workspace" :class="{ 'atlas-photo-mode': photoMode }">
+    <div class="atlas-workspace" :class="{ 'atlas-photo-mode': photoMode, 'atlas-cutaway-mode': !!data.cutaway }">
       <Mw3PhotoBoard v-if="photoMode" :selected="photoIds" :save-error="photoSaveError" @change="choosePhotos" @locate="revealPhotoMatches" />
-      <div class="atlas-map-column">
+      <MapShipCutaway v-if="data.cutaway" :data="data" :visible-locations="visibleLocations" :highlights="showHighlights ? selectedLocations : []" :focus-id="focusId" :query="query" @select="chooseLocation" />
+      <div v-else class="atlas-map-column">
         <div class="atlas-map-tools" role="group" aria-label="Map controls">
           <div class="atlas-zoom-controls"><button type="button" aria-label="Zoom in" :disabled="!ready || atMaxZoom" @click="zoom(1)">+</button><button type="button" aria-label="Zoom out" :disabled="!ready || atMinZoom" @click="zoom(-1)">−</button></div>
           <button type="button" :disabled="!ready" @click="fitOverview">Fit map</button>
@@ -51,6 +40,7 @@
       </div>
 
       <aside ref="panelRef" class="atlas-panel" aria-label="Map locations">
+        <section v-if="overlapChoices.length" class="atlas-selection" aria-label="Locations sharing this point"><div class="atlas-selection-head"><h3>Locations at this point</h3><button type="button" class="atlas-text-button" @click="closeOverlap">Close</button></div><ul class="atlas-location-list"><li v-for="location in overlapChoices" :key="location.id"><button type="button" @click="chooseOverlap(location)"><MapGlyph :name="typeInfo(locationType(location)).icon" /><span>{{ location.label }}<small>{{ typeInfo(locationType(location)).label }}</small></span></button></li></ul></section>
         <section v-if="selectedLocations.length" class="atlas-selection" aria-label="Selected locations">
           <div class="atlas-selection-head"><span class="companion-label">{{ selectionKind }}</span><button type="button" class="atlas-text-button" @click="clearSelection">Clear</button></div>
           <h3 ref="selectionHeadingRef" tabindex="-1" aria-live="polite">{{ selectedTitle }}</h3>
@@ -63,52 +53,57 @@
 
           <ol class="atlas-selected-list">
             <li v-for="(location, index) in selectedLocations" :key="location.id" :class="{ 'atlas-location-focused': focusId === location.id }">
-              <button type="button" class="atlas-selected-location" :aria-pressed="focusId === location.id" :aria-label="`Locate ${location.label} on ${layerLabel(location.layerId)}`" @click="focusLocation(location)"><span class="atlas-location-number" aria-hidden="true">{{ locationNumber(location, index) }}</span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }}{{ location.grid ? ` · Grid ${location.grid}` : '' }}{{ location.floor ? ` · ${location.floor}` : '' }}{{ location.state ? ` · ${location.state}` : '' }}</small></span><span class="atlas-locate-symbol" aria-hidden="true">⌖</span></button>
-              <div class="atlas-location-description"><span v-if="location.precision === 'area'" class="atlas-precision">Approximate area</span><p>{{ location.description }}</p><a v-if="sourceUrl(location.source)" :href="sourceUrl(location.source)" target="_blank" rel="noopener noreferrer">Location reference ↗</a></div>
+              <button type="button" class="atlas-selected-location" :aria-pressed="focusId === location.id" :aria-label="`Locate ${location.label} on ${layerLabel(location.layerId)}`" @click="focusLocation(location)"><span class="atlas-location-number" aria-hidden="true"><template v-if="locationNumber(location, index)">{{ locationNumber(location, index) }}</template><MapGlyph v-else :name="typeInfo(locationType(location)).icon" /></span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }}{{ location.grid ? ` · Grid ${location.grid}` : '' }}{{ location.floor ? ` · ${location.floor}` : '' }}{{ location.state ? ` · ${location.state}` : '' }}</small></span><span class="atlas-locate-symbol" aria-hidden="true">⌖</span></button>
+              <div class="atlas-location-description"><span v-if="location.precision === 'area'" class="atlas-precision">Approximate area</span><p>{{ location.description }}</p><NuxtLink v-if="data.id === 'mw3-urzikstan' && /^portals-(entry|exit)-m\d+$/.test(location.id)" :to="{ path: '/tools/mw3-rune-portals', query: { [location.id.startsWith('portals-exit-') ? 'to' : 'from']: location.id.split('-').at(-1) } }">{{ location.id.startsWith('portals-exit-') ? 'Show the rune code for this destination →' : 'Choose a destination from this entrance →' }}</NuxtLink><a v-if="sourceUrl(location.source)" :href="sourceUrl(location.source)" target="_blank" rel="noopener noreferrer">Location reference ↗</a></div>
             </li>
           </ol>
 
-          <div v-if="relatedTargets.length" class="atlas-related"><span class="companion-label">In the guide</span><button v-for="target in relatedTargets" :key="target.id" type="button" class="atlas-guide-link" @click="emit('guide', target.guideAnchor!)">{{ target.title }} <span aria-hidden="true">↗</span></button></div>
+          <div v-if="relatedTargets.length" class="atlas-related"><span class="companion-label">In the guide</span><button v-for="target in relatedTargets" :key="target.id" type="button" class="atlas-guide-link" @click="emit('guide', target.guideAnchor!, target.guideId || data.id)">{{ target.title }} <span aria-hidden="true">↗</span></button></div>
           <div class="atlas-selection-actions"><button v-if="canReturn" type="button" class="companion-button primary" @click="emit('back')">← Back to step</button><button type="button" class="companion-button" @click="copyLink">Copy map link</button></div>
           <p v-if="copyMessage" class="atlas-copy-message" role="status">{{ copyMessage }}</p>
         </section>
 
         <template v-if="!photoMode || !photoIds.length">
         <div class="atlas-results-heading"><h3>{{ query.trim() ? 'Search results' : 'Locations' }}</h3><span aria-live="polite">{{ filteredLocations.length }}</span></div>
-        <p v-if="selectedLocations.length && (query.trim() || category !== 'all')" class="atlas-results-note">{{ data.filterGroups ? 'Switch activities or filters to clear the highlighted locations.' : 'Selected locations stay on the map when filters change.' }}</p>
-        <p v-if="!filteredLocations.length" class="atlas-no-results">No locations match{{ category !== 'all' ? ' this filter' : '' }}. <button v-if="query.trim() && category !== 'all'" type="button" class="atlas-text-button" @click="chooseCategory('all', true)">Search all locations</button><button v-else type="button" class="atlas-text-button" @click="clearFilters">Clear filters</button></p>
-        <ul v-else class="atlas-location-list"><li v-for="location in filteredLocations" :key="location.id"><button type="button" :aria-pressed="selectedIds.has(location.id)" @click="chooseLocation(location)"><span class="atlas-list-symbol" :class="{ 'atlas-list-area': location.precision === 'area' }" aria-hidden="true">{{ categorySymbol(location.category) }}</span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }} · {{ categoryLabel(location.category) }}</small></span><span v-if="selectedIds.has(location.id)" class="atlas-list-check" aria-hidden="true">✓</span></button></li></ul>
+        <p v-if="selectedLocations.length && (query.trim() || checkedFilters.length)" class="atlas-results-note">Guide highlights stay visible when filters change. Clear the selection or turn off its highlight to hide them.</p>
+        <p v-if="!filteredLocations.length" class="atlas-no-results">No locations match the enabled filters. <button v-if="query.trim()" type="button" class="atlas-text-button" @click="showAllFilters">Search all locations</button><button v-else type="button" class="atlas-text-button" @click="clearFilters">Clear filters</button></p>
+        <ul v-else class="atlas-location-list"><li v-for="location in filteredLocations" :key="location.id"><button type="button" :aria-pressed="selectedIds.has(location.id)" @click="chooseLocation(location)"><span class="atlas-list-symbol" :data-family="typeInfo(locationType(location)).family" :class="{ 'atlas-list-area': location.precision === 'area' }" aria-hidden="true"><MapGlyph :name="typeInfo(locationType(location)).icon" /></span><span>{{ location.label }}<small>{{ layerLabel(location.layerId) }} · {{ typeInfo(locationType(location)).label }}</small></span><span v-if="selectedIds.has(location.id)" class="atlas-list-check" aria-hidden="true">✓</span></button></li></ul>
         </template>
       </aside>
     </div>
 
-    <footer class="atlas-footer"><details><summary>Map sources &amp; credits</summary><ul><li v-for="source in data.sources" :key="source.url + source.name"><a :href="sourceUrl(source.url)" target="_blank" rel="noopener noreferrer">{{ source.name }} ↗</a><span v-if="source.note">{{ source.note }}</span></li></ul><p>Interactive viewer by CodWiki, using <a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer">Leaflet</a>.</p></details></footer>
+    <footer class="atlas-footer"><details><summary>Map sources &amp; credits</summary><ul><li v-for="source in data.sources" :key="source.url + source.name"><a :href="sourceUrl(source.url)" target="_blank" rel="noopener noreferrer">{{ source.name }} ↗</a><span v-if="source.note">{{ source.note }}</span></li></ul><p v-if="data.cutaway">Original interactive cutaway by CodWiki.</p><p v-else>Interactive viewer by CodWiki, using <a href="https://leafletjs.com" target="_blank" rel="noopener noreferrer">Leaflet</a>.</p></details></footer>
   </section>
 </template>
 
 <script setup lang="ts">
 import * as L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import mapIcons from '~/data/mapIcons.json'
+import { buildMapFilters, defaultMapFilters, filterMapLocations, migrateMapFilters, locationType, typeInfo } from '~/utils/mapFilters.mjs'
 import type { MapDataset, MapLayer, MapLocation, MapTarget } from '~/types/map'
 import { normalizeBoardPhotos, photoTargetId, photosFromTarget, photoMapTarget, redWormPhotoAtlas, PHOTO_BOARD_KEY } from '~/utils/mw3PhotoBoard.mjs'
 
 const props = withDefaults(defineProps<{ data: MapDataset; targetId?: string; active?: boolean; canReturn?: boolean; photoFinder?: boolean }>(), { targetId: '', active: true, canReturn: false, photoFinder: false })
-const emit = defineEmits<{ select: [targetId: string]; back: []; guide: [anchor: string]; ready: [] }>()
+const emit = defineEmits<{ select: [targetId: string]; back: []; guide: [anchor: string, guideId?: string]; ready: [] }>()
 const rootRef = ref<HTMLElement | null>(null)
 const canvasRef = ref<HTMLElement | null>(null)
 const panelRef = ref<HTMLElement | null>(null)
 const selectionHeadingRef = ref<HTMLElement | null>(null)
 const layerId = ref(props.data.defaultLayer)
 const query = ref('')
-const category = ref(browsingDefault())
-const subfilterId = ref(props.photoFinder ? 'usb-devices' : '')
+const filterOptions = computed(() => buildMapFilters(props.data))
+const checkedFilters = ref<string[]>(defaultMapFilters(props.data))
+const showHighlights = ref(true)
+const photoBoardOpen = ref(false)
 const photoIds = ref<number[]>([])
 const photoSaveError = ref(false)
-const perkFilter = ref<'all' | 'mister-peeks'>('all')
 const expanded = ref(false)
 const wheelZoom = ref(true)
 const showGrid = ref(true)
 const focusId = ref('')
+const overlapChoices = ref<MapLocation[]>([])
+let overlapTriggerId = ''
 const ready = ref(false)
 const imageError = ref(false)
 const imageLoading = ref(true)
@@ -118,9 +113,7 @@ const atMaxZoom = ref(false)
 const copyMessage = ref('')
 const activeLayer = computed(() => props.data.layers.find(layer => layer.id === layerId.value) || props.data.layers[0])
 const locationIndex = computed(() => new Map(props.data.locations.map(location => [location.id, location])))
-const activeFilterGroup = computed(() => props.data.filterGroups?.find(group => group.id === category.value))
-const activeFilter = computed(() => activeFilterGroup.value?.filters.find(filter => filter.id === subfilterId.value))
-const photoMode = computed(() => props.data.id === 'mw3-urzikstan' && category.value === 'red-worm' && subfilterId.value === 'usb-devices' && !locationIndex.value.has(props.targetId))
+const photoMode = computed(() => props.data.id === 'mw3-urzikstan' && (props.photoFinder || photoBoardOpen.value) && !locationIndex.value.has(props.targetId))
 const requestedTarget = computed(() => props.data.targets.find(target => target.id === props.targetId) || (props.data.id === 'mw3-urzikstan' ? photoMapTarget(props.targetId) as MapTarget | undefined : undefined))
 const selectedTarget = computed(() => photoMode.value && photoIds.value.length ? photoMapTarget(photoTargetId(photoIds.value)) as MapTarget : requestedTarget.value)
 const selectedLocations = computed(() => {
@@ -132,24 +125,17 @@ const selectedTitle = computed(() => selectedTarget.value?.title || selectedLoca
 const selectedLayers = computed(() => props.data.layers.filter(layer => layerCount(layer.id) > 0))
 const unknownTarget = computed(() => !!props.targetId && !requestedTarget.value && !locationIndex.value.has(props.targetId))
 const selectionKind = computed(() => selectedTarget.value?.kind === 'candidates' ? 'Possible locations' : selectedTarget.value?.kind === 'sequence' ? 'Quest stops' : selectedLocations.value.length > 1 ? 'Selected locations' : 'Selected location')
-const categories = computed(() => {
-  const counts = new Map<string, number>()
-  props.data.locations.forEach(location => counts.set(location.category, (counts.get(location.category) || 0) + 1))
-  return Array.from(counts, ([id, count]) => ({ id, count })).sort((a, b) => categoryLabel(a.id).localeCompare(categoryLabel(b.id)))
-})
-const questAreaCount = computed(() => props.data.locations.filter(location => location.category === 'quest' || location.category === 'area').length)
-const overviewCount = computed(() => props.data.locations.filter(location => location.overview).length)
-const perkCount = computed(() => props.data.locations.filter(location => location.category === 'perk').length)
-const peeksCount = computed(() => props.data.locations.filter(location => location.category === 'perk' && location.perkType === 'mister-peeks').length)
 const filteredLocations = computed(() => {
-  const search = query.value.trim().toLocaleLowerCase()
-  const activityIds = new Set(activeFilter.value?.locationIds || [])
-  if (photoMode.value && photoIds.value.length) return selectedLocations.value.filter(location => !search || [location.label, location.grid].join(' ').toLocaleLowerCase().includes(search))
-  return props.data.locations.filter(location => (category.value === 'all' || (category.value === 'selected' && selectedIds.value.has(location.id)) || (category.value === 'overview' && (!!search || location.overview)) || (activeFilterGroup.value ? activityIds.has(location.id) : location.category === category.value) || (category.value === 'quest-areas' && ['quest', 'area'].includes(location.category))) && (category.value !== 'perk' || perkFilter.value === 'all' || location.perkType === 'mister-peeks') && (!search || [location.label, location.description, location.category, location.grid, location.floor, location.state, layerLabel(location.layerId)].filter(Boolean).join(' ').toLocaleLowerCase().includes(search)))
+  if (photoMode.value && photoIds.value.length) return selectedLocations.value.filter(location => !query.value.trim() || [location.label, location.grid].join(' ').toLocaleLowerCase().includes(query.value.trim().toLocaleLowerCase()))
+  const checked = props.photoFinder ? ['activity:red-worm:usb-devices'] : checkedFilters.value
+  return filterMapLocations(props.data, filterOptions.value, checked, query.value)
 })
+const browseLayerCount = computed(() => filteredLocations.value.filter(location => location.layerId === layerId.value).length)
+const otherLayerCount = computed(() => filteredLocations.value.length - browseLayerCount.value)
+const outsideFilterCount = computed(() => selectedLocations.value.filter(location => location.layerId === layerId.value && !filteredLocations.value.some(item => item.id === location.id)).length)
 const visibleLocations = computed(() => {
   const matches = new Set(filteredLocations.value.map(location => location.id))
-  return props.data.locations.filter(location => location.layerId === activeLayer.value?.id && (matches.has(location.id) || selectedIds.value.has(location.id)))
+  return props.data.locations.filter(location => location.layerId === activeLayer.value?.id && (matches.has(location.id) || (showHighlights.value && selectedIds.value.has(location.id))))
 })
 const relatedTargets = computed(() => {
   const seen = new Set<string>()
@@ -177,31 +163,11 @@ let lastCanvasWidth = 0
 let lastCanvasHeight = 0
 let pendingSelectionFocus = false
 
-function categoryLabel(value: string) {
-  const labels: Record<string, string> = { area: 'Areas', quest: 'Quest', perk: 'Perks', upgrade: 'Upgrades', travel: 'Travel', ammo: 'Ammo', equipment: 'Equipment', weapon: 'Weapons', trap: 'Traps' }
-  return labels[value] || value.replace(/[-_]/g, ' ').replace(/^./, letter => letter.toUpperCase())
-}
-function browsingDefault() { return props.photoFinder ? 'red-worm' : props.data.locations.some(location => location.overview) ? 'overview' : 'quest-areas' }
-function chooseCategory(id: string, keepQuery = false) {
-  category.value = id
-  const group = props.data.filterGroups?.find(group => group.id === id)
-  subfilterId.value = group?.defaultFilter || ''
-  if (props.data.filterGroups) {
-    if (!keepQuery) query.value = ''
-    focusId.value = ''
-    emit('select', '')
-  }
-}
-function chooseSubfilter(id: string) {
-  if (!activeFilterGroup.value?.filters.some(filter => filter.id === id)) return
-  subfilterId.value = id
-  query.value = ''
-  focusId.value = ''
-  emit('select', photoMode.value ? photoTargetId(photoIds.value) : '')
-}
+function resetEssentials() { checkedFilters.value = defaultMapFilters(props.data, filterOptions.value) }
+function showAllFilters() { checkedFilters.value = filterOptions.value.filter(option => option.id.startsWith('type:')).map(option => option.id) }
 function locationNumber(location: MapLocation, index: number) {
   if (selectedTarget.value?.kind === 'photo-match') return redWormPhotoAtlas.photos.find(photo => photo.locationId === location.id)?.number || index + 1
-  return selectedLocations.value.length > 1 ? index + 1 : categorySymbol(location.category)
+  return selectedTarget.value?.kind === 'sequence' ? index + 1 : ''
 }
 function saveBoardPhotos() {
   try { localStorage.setItem(PHOTO_BOARD_KEY, JSON.stringify(photoIds.value)); photoSaveError.value = false } catch { photoSaveError.value = true }
@@ -221,21 +187,22 @@ function choosePhotos(numbers: number[]) {
   renderMarkers()
   photoIds.value.length ? fitSelection() : fitOverview()
 }
+function togglePhotoFinder() {
+  if (photoMode.value) { photoBoardOpen.value = false; emit('select', '') }
+  else { photoBoardOpen.value = true; emit('select', photoIds.value.length ? photoTargetId(photoIds.value) : '') }
+}
 function clearSelection() { if (photoMode.value && photoIds.value.length) choosePhotos([]); else emit('select', '') }
 function revealPhotoMatches() {
   fitSelection()
   canvasRef.value?.scrollIntoView({ block: 'center', behavior: reducedMotion ? 'instant' : 'smooth' })
   canvasRef.value?.focus({ preventScroll: true })
 }
-function categorySymbol(value: string) {
-  const symbols: Record<string, string> = { area: '◇', quest: '!', perk: '✚', upgrade: '↑', travel: '↗', ammo: '▪', equipment: '⚒', weapon: '×', trap: 'ϟ' }
-  return symbols[value] || '•'
-}
 function layerLabel(id: string) { return props.data.layers.find(layer => layer.id === id)?.label || id }
 function layerCount(id: string) { return selectedLocations.value.filter(location => location.layerId === id).length }
 function sourceUrl(source?: string) {
   if (!source) return undefined
   const candidate = props.data.sources.find(item => item.name === source)?.url || source
+  if (/^\/guides\/[a-z0-9-]+(?:#[a-z0-9_-]+)?$/.test(candidate)) return candidate
   try { const url = new URL(candidate); return /^(https?:)$/.test(url.protocol) ? url.href : undefined } catch { return undefined }
 }
 function coordinate(location: Pick<MapLocation, 'x' | 'y'>, layer: MapLayer): L.LatLng {
@@ -277,12 +244,23 @@ function fitSelection() {
   else if (selectedLocations.value[0]) selectLayer(selectedLocations.value[0].layerId)
   else fitOverview()
 }
-function clearFilters() { query.value = ''; chooseCategory('all'); perkFilter.value = 'all' }
+function clearFilters() { query.value = ''; showAllFilters() }
 function chooseLocation(location: MapLocation) {
   if (selectedTarget.value && selectedIds.value.has(location.id)) { focusLocation(location); return }
   if (props.targetId === location.id) { focusLocation(location); return }
   pendingSelectionFocus = !!panelRef.value?.querySelector('.atlas-location-list')?.contains(document.activeElement)
   emit('select', location.id)
+}
+async function closeOverlap() {
+  overlapChoices.value = []
+  await nextTick()
+  canvasRef.value?.querySelector<HTMLElement>(`[data-map-location="${CSS.escape(overlapTriggerId)}"]`)?.focus()
+}
+async function chooseOverlap(location: MapLocation) {
+  overlapChoices.value = []
+  chooseLocation(location)
+  await nextTick()
+  selectionHeadingRef.value?.focus()
 }
 function focusLocation(location: MapLocation) {
   focusId.value = location.id
@@ -296,6 +274,7 @@ function focusLocation(location: MapLocation) {
 }
 function changeLayer() {
   focusId.value = ''
+  overlapChoices.value = []
   renderLayer()
   if (layerCount(layerId.value)) fitSelection()
   savePreferences()
@@ -306,33 +285,61 @@ function renderMarkers() {
   const focusedMarkerId = (document.activeElement as HTMLElement | null)?.dataset?.mapLocation
   markers.clearLayers()
   const layer = activeLayer.value
+  const positions = new Map<string, MapLocation[]>()
   for (const location of visibleLocations.value) {
-    const selected = selectedIds.value.has(location.id)
-    const focused = focusId.value === location.id
+    const key = `${location.x.toFixed(5)}:${location.y.toFixed(5)}`
+    const group = positions.get(key) || []
+    group.push(location)
+    positions.set(key, group)
+  }
+  const drawnPositions = new Set<string>()
+  for (const entry of visibleLocations.value) {
+    const key = `${entry.x.toFixed(5)}:${entry.y.toFixed(5)}`
+    if (drawnPositions.has(key)) continue
+    drawnPositions.add(key)
+    const coincident = positions.get(key)!
+    const location = coincident.find(item => focusId.value === item.id) || coincident.find(item => selectedIds.value.has(item.id)) || entry
+    const selected = coincident.some(item => selectedIds.value.has(item.id))
+    const focused = coincident.some(item => focusId.value === item.id)
     const index = selectedLocations.value.findIndex(item => item.id === location.id)
     const position = coordinate(location, layer)
-    if (location.precision === 'area') {
-      L.circle(position, { radius: Math.min(layer.width, layer.height) * (location.areaRadius || 0.03), className: selected ? 'atlas-area atlas-area-selected' : 'atlas-area', weight: selected ? 2 : 1, dashArray: '5 5', fillOpacity: selected ? 0.18 : 0.07, interactive: false }).addTo(markers)
+    const areas = coincident.filter(item => item.precision === 'area')
+    const area = areas.find(item => selectedIds.value.has(item.id)) || areas[0]
+    if (area) {
+      const selectedArea = selectedIds.value.has(area.id)
+      L.circle(position, { radius: Math.min(layer.width, layer.height) * (area.areaRadius || 0.03), className: selectedArea ? 'atlas-area atlas-area-selected' : 'atlas-area', weight: selectedArea ? 2 : 1, dashArray: '5 5', fillOpacity: selectedArea ? 0.18 : 0.07, interactive: false }).addTo(markers)
     }
     const symbol = document.createElement('span')
     symbol.className = `atlas-marker-symbol${selected ? ' atlas-marker-selected' : ''}${focused ? ' atlas-marker-focused' : ''}${location.precision === 'area' ? ' atlas-marker-area' : ''}`
-    symbol.textContent = selected ? String(locationNumber(location, index)) : categorySymbol(location.category)
+    const identity = typeInfo(locationType(location))
+    symbol.dataset.family = identity.family
+    // Icon markup comes only from the local, licensed static icon registry.
+    symbol.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' + ((mapIcons as Record<string,string>)[identity.icon] || mapIcons.MapPin) + '</svg>'
+    const number = selected ? locationNumber(location, index) : ''
+    if (number) { const badge = document.createElement('small'); badge.className = 'atlas-marker-number'; badge.textContent = String(number); symbol.append(badge) }
+    if (location.availability === 'candidate' || location.perkType === 'mister-peeks') symbol.classList.add('atlas-marker-candidate')
+    if (coincident.length > 1) { const badge = document.createElement('small'); badge.className = 'atlas-marker-stack'; badge.textContent = `×${coincident.length}`; symbol.append(badge) }
     symbol.setAttribute('aria-hidden', 'true')
     const marker = L.marker(position, { icon: L.divIcon({ html: symbol, className: 'atlas-marker', iconSize: [44, 44], iconAnchor: [22, 22] }), title: `${location.label}${location.precision === 'area' ? ' (approximate area)' : ''}`, keyboard: true, riseOnHover: true, zIndexOffset: selected ? 500 + (focused ? 100 : 0) : 0 })
     const label = document.createElement('span')
     label.textContent = location.label
     marker.bindTooltip(label, { direction: 'top', offset: [0, -15], className: 'atlas-tooltip' })
-    marker.on('click', () => chooseLocation(location))
+    const activate = () => {
+      if (coincident.length > 1) { overlapTriggerId = location.id; overlapChoices.value = coincident; nextTick(() => { if (panelRef.value) panelRef.value.scrollTop = 0; panelRef.value?.querySelector<HTMLButtonElement>('.atlas-location-list button')?.focus() }) }
+      else { overlapChoices.value = []; chooseLocation(location) }
+    }
+    marker.on('click', activate)
     marker.addTo(markers)
     const element = marker.getElement()
     element?.setAttribute('data-map-location', location.id)
-    element?.setAttribute('aria-label', `${location.label}, ${categoryLabel(location.category)}${location.precision === 'area' ? ', approximate area' : ''}`)
+    element?.setAttribute('aria-label', coincident.length > 1 ? `${coincident.length} locations at this point: ${coincident.map(item => item.label).join(', ')}` : `${location.label}, ${typeInfo(locationType(location)).label}${location.precision === 'area' ? ', approximate area' : ''}`)
     element?.setAttribute('aria-pressed', String(selected))
-    // Leaflet handles Enter for markers; Space is added for the button role.
+    // These markers use tooltips rather than Leaflet popups, so activate both
+    // native button keys explicitly.
     if (element) {
-      const onSpace = (event: Event) => { if ((event as KeyboardEvent).key === ' ') { event.preventDefault(); chooseLocation(location) } }
-      L.DomEvent.on(element, 'keydown', onSpace)
-      marker.on('remove', () => L.DomEvent.off(element, 'keydown', onSpace))
+      const onActivateKey = (event: Event) => { if ([' ', 'Enter'].includes((event as KeyboardEvent).key)) { event.preventDefault(); L.DomEvent.stopPropagation(event); activate() } }
+      L.DomEvent.on(element, 'keydown', onActivateKey)
+      marker.on('remove', () => L.DomEvent.off(element, 'keydown', onActivateKey))
       if (props.active && focusedMarkerId === location.id) element.focus({ preventScroll: true })
     }
   }
@@ -382,15 +389,12 @@ function renderLayer() {
 }
 function selectTarget() {
   focusId.value = ''
+  overlapChoices.value = []
   copyMessage.value = ''
-  if (props.data.filterGroups && props.targetId) {
-    const linked = photosFromTarget(props.targetId)
-    if (props.data.id === 'mw3-urzikstan' && linked) { photoIds.value = linked; saveBoardPhotos() }
-    const ids = requestedTarget.value?.locationIds || (locationIndex.value.has(props.targetId) ? [props.targetId] : [])
-    const matches = props.data.filterGroups.flatMap(group => group.filters.map(filter => ({ group, filter }))).filter(({ filter }) => ids.length && ids.every(id => filter.locationIds.includes(id))).sort((a, b) => a.filter.locationIds.length - b.filter.locationIds.length)
-    if (matches[0]) { category.value = matches[0].group.id; subfilterId.value = matches[0].filter.id }
-    else if (ids.length) { category.value = 'selected'; subfilterId.value = '' }
-  }
+  if (props.targetId) showHighlights.value = true
+  const linked = photosFromTarget(props.targetId)
+  if (props.data.id === 'mw3-urzikstan' && linked) { photoBoardOpen.value = true; photoIds.value = linked; saveBoardPhotos() }
+  else if (props.targetId && !props.photoFinder) photoBoardOpen.value = false
   const first = selectedLocations.value[0]
   if (first) {
     focusId.value = selectedLocations.value.length === 1 ? first.id : ''
@@ -399,7 +403,6 @@ function selectTarget() {
     fitSelection()
   } else {
     renderMarkers()
-    fitOverview()
   }
   // Reveal details after rendering. A list selection moves focus to its detail
   // heading; a map-pin selection keeps keyboard focus on the pin. Neither
@@ -438,39 +441,23 @@ function resizeMap() {
   })
 }
 async function toggleExpand() { expanded.value = !expanded.value; await nextTick(); resizeMap() }
-function preferenceKey() { return `codwiki-map-ui-v2:${props.data.id}` }
+function preferenceKey() { return `codwiki-map-ui-v3:${props.data.id}` }
 function savePreferences() {
-  try { localStorage.setItem(preferenceKey(), JSON.stringify({ layer: layerId.value, category: category.value, perkFilter: perkFilter.value, wheelZoom: wheelZoom.value, ...(props.data.grid ? { showGrid: showGrid.value } : {}), ...(props.data.filterGroups ? { subfilter: subfilterId.value } : {}) })) } catch { /* Map browsing remains usable without storage. */ }
+  try { localStorage.setItem(preferenceKey(), JSON.stringify({ layer: layerId.value, checked: checkedFilters.value, wheelZoom: wheelZoom.value, ...(props.data.grid ? { showGrid: showGrid.value } : {}) })) } catch { /* Browsing remains usable without storage. */ }
 }
 function restorePreferences() {
   layerId.value = props.data.defaultLayer
-  category.value = browsingDefault()
-  subfilterId.value = props.photoFinder ? 'usb-devices' : ''
-  perkFilter.value = 'all'
+  resetEssentials()
   wheelZoom.value = true
   showGrid.value = true
-  function readSaved(key: string) {
-    try {
-      const value = JSON.parse(localStorage.getItem(key) || 'null')
-      return value && typeof value === 'object' && !Array.isArray(value) ? value : null
-    } catch { return null }
-  }
-  try {
-    const current = readSaved(preferenceKey())
-    const saved = current || readSaved(`codwiki-map-ui-v1:${props.data.id}`)
-    if (!saved) return
-    if (props.data.layers.some(layer => layer.id === saved.layer)) layerId.value = saved.layer
-    if (!props.photoFinder) {
-      if (saved.category === 'overview' && overviewCount.value || ['all', 'quest-areas'].includes(saved.category) || (!props.data.filterGroups && categories.value.some(item => item.id === saved.category))) category.value = saved.category
-      const group = props.data.filterGroups?.find(group => group.id === saved.category)
-      if (group) { category.value = group.id; subfilterId.value = group.filters.some(filter => filter.id === saved.subfilter) ? saved.subfilter : group.defaultFilter }
-    }
-    if (saved.perkFilter === 'mister-peeks' && peeksCount.value > 0) perkFilter.value = 'mister-peeks'
-    // v1 automatically saved the old false default; it cannot distinguish an
-    // opt-out from merely opening a map. Only v2 records explicit opt-outs.
-    if (current && typeof current.wheelZoom === 'boolean') wheelZoom.value = current.wheelZoom
-    if (current && props.data.grid && typeof current.showGrid === 'boolean') showGrid.value = current.showGrid
-  } catch { /* Ignore malformed or unavailable preferences. */ }
+  const readSaved = (key:string) => { try { const value = JSON.parse(localStorage.getItem(key) || 'null'); return value && typeof value === 'object' && !Array.isArray(value) ? value : null } catch { return null } }
+  const current = readSaved(preferenceKey())
+  const v2 = readSaved(`codwiki-map-ui-v2:${props.data.id}`)
+  const saved = current || v2 || readSaved(`codwiki-map-ui-v1:${props.data.id}`)
+  checkedFilters.value = migrateMapFilters(props.data, filterOptions.value, saved, !!current)
+  if (saved && props.data.layers.some(layer => layer.id === saved.layer)) layerId.value = saved.layer
+  if ((current || v2) && typeof saved?.wheelZoom === 'boolean') wheelZoom.value = saved.wheelZoom
+  if (props.data.grid && typeof saved?.showGrid === 'boolean') showGrid.value = saved.showGrid
 }
 async function copyLink() {
   const url = new URL(window.location.href)
@@ -494,7 +481,7 @@ function motionChanged(event: MediaQueryListEvent) {
 }
 
 watch(() => props.targetId, selectTarget)
-watch([query, category, subfilterId, perkFilter, photoIds], () => { renderMarkers(); savePreferences() })
+watch([query, checkedFilters, showHighlights, photoIds, photoBoardOpen], () => { renderMarkers(); savePreferences() })
 watch(wheelZoom, enabled => { if (enabled) map?.scrollWheelZoom.enable(); else map?.scrollWheelZoom.disable(); savePreferences() })
 watch(showGrid, () => { renderGrid(); savePreferences() })
 watch(() => props.active, async active => { if (active) { await nextTick(); resizeMap() } else { previouslyZeroSize = true; map?.stop() } })
@@ -509,6 +496,13 @@ onMounted(async () => {
   motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
   reducedMotion = motionQuery.matches
   motionQuery.addEventListener('change', motionChanged)
+  if (props.data.cutaway) {
+    imageLoading.value = false
+    ready.value = true
+    selectTarget()
+    nextTick(() => { if (!disposed) emit('ready') })
+    return
+  }
   if (!canvasRef.value) return
   try {
     canvasRef.value.addEventListener('wheel', preserveBrowserZoom, { capture: true, passive: true })
@@ -572,6 +566,7 @@ onBeforeUnmount(() => {
 .atlas-subfilter-buttons button>span { font-size:.68rem; font-variant-numeric:tabular-nums; }
 .atlas-subfilters p { margin:.55rem 0 .25rem; max-width:75ch; color:var(--muted); font-size:.76rem; line-height:1.6; }
 .atlas-workspace { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:1rem; align-items:start; }
+.atlas-cutaway-mode { grid-template-columns:minmax(0,1fr) 270px; }
 .atlas-photo-mode { grid-template-columns:310px minmax(0,1fr); }
 .atlas-photo-mode>.photo-board { grid-column:1; grid-row:1; }
 .atlas-photo-mode>.atlas-map-column { grid-column:2; grid-row:1 / span 2; position:sticky; top:6rem; }
@@ -652,4 +647,29 @@ onBeforeUnmount(() => {
 @media (min-width:761px) and (max-width:1050px) { .atlas-photo-mode { grid-template-columns:280px minmax(0,1fr); } }
 @media (max-width:760px) { .atlas-photo-mode>.photo-board { width:100%; }.atlas-photo-mode>.atlas-map-column { position:static; }.atlas-photo-mode>.atlas-panel { max-height:none; }.atlas-subfilter-buttons button { min-height:44px; }.atlas-subfilters p { font-size:.73rem; } }
 @media (prefers-reduced-motion:reduce) { .atlas :deep(*) { animation:none !important; transition:none !important; } }
+
+.atlas-browse-status { display:flex; align-items:center; gap:.5rem 1rem; flex-wrap:wrap; margin:0 0 1rem; color:var(--muted); font-size:.73rem; }
+.atlas-browse-status button { min-height:40px; padding:.4rem .6rem; border:1px solid var(--line); border-radius:7px; color:var(--text); background:var(--surface-2); font:inherit; font-size:.72rem; cursor:pointer; }
+.atlas-browse-status button[aria-pressed=true] { border-color:var(--gold-border); color:var(--gold-bright); }
+.atlas-portal-tool { display:inline-flex; align-items:center; min-height:40px; padding:.4rem .6rem; border:1px solid var(--gold-border); border-radius:7px; color:var(--gold-bright); background:var(--gold-dim); text-decoration:none; }
+.atlas-list-symbol svg,.atlas-location-number svg { width:17px; height:17px; }
+.atlas-location-list button>svg { width:20px; height:20px; flex:none; }
+.atlas-list-symbol[data-family=blue] { color:light-dark(#17577f,#8accef); }
+.atlas-list-symbol[data-family=green] { color:light-dark(#386625,#a6da91); }
+.atlas-list-symbol[data-family=purple] { color:light-dark(#77468a,#d3a5eb); }
+.atlas-list-symbol[data-family=orange] { color:light-dark(#834e20,#efb982); }
+.atlas-list-symbol[data-family=red] { color:light-dark(#9a3731,#f29d97); }
+.atlas :deep(.atlas-marker-symbol) { position:relative; width:30px; height:30px; background:#202329; color:#dedbd2; border-color:currentColor; border-radius:7px; }
+.atlas :deep(.atlas-marker-symbol svg) { width:20px; height:20px; }
+.atlas :deep(.atlas-marker-symbol[data-family=blue]) { color:#8accef; border-radius:50%; }
+.atlas :deep(.atlas-marker-symbol[data-family=green]) { color:#a6da91; }
+.atlas :deep(.atlas-marker-symbol[data-family=purple]) { color:#d3a5eb; border-radius:3px; }
+.atlas :deep(.atlas-marker-symbol[data-family=orange]) { color:#efb982; }
+.atlas :deep(.atlas-marker-symbol[data-family=gold]) { color:#edca84; border-radius:10px 3px 10px 3px; }
+.atlas :deep(.atlas-marker-symbol[data-family=red]) { color:#f29d97; }
+.atlas :deep(.atlas-marker-selected) { width:34px; height:34px; background:#202329; box-shadow:0 0 0 2px #edc984,0 2px 6px #000b; border-color:currentColor; }
+.atlas :deep(.atlas-marker-area) { border-style:dashed; }
+.atlas :deep(.atlas-marker-candidate::after) { content:'?'; position:absolute; top:-6px; left:-5px; color:#202329; background:#eee7d8; width:13px; height:13px; border-radius:50%; font:700 10px/13px system-ui; }
+.atlas :deep(.atlas-marker-number) { position:absolute; right:-8px; bottom:-7px; min-width:17px; height:17px; border-radius:5px; background:#edc984; color:#21170a; border:1px solid #fff3d8; font:700 11px/16px system-ui; text-align:center; }
+.atlas :deep(.atlas-marker-stack) { position:absolute; left:-10px; top:-9px; min-width:20px; height:17px; padding:0 2px; border-radius:5px; background:#242c37; color:#f1d39a; border:1px solid #f1d39a; font:700 10px/16px system-ui; text-align:center; }
 </style>

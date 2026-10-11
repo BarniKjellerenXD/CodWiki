@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-alpha-omega and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. Alpha Omega only, with surface and bunker regions grouped separately. The dashed Power House–Prisoner Holding connection requires player-placed Telepads. Exact house doors, bunker corridors, moving enemies and randomized active vents are not plotted.

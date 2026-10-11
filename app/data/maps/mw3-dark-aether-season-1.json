@@ -62,7 +62,9 @@
       "precision": "point",
       "overview": true,
       "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "contracts-m2613",
@@ -75,7 +77,9 @@
       "precision": "point",
       "overview": true,
       "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "contracts-m2620",
@@ -88,7 +92,9 @@
       "precision": "point",
       "overview": true,
       "description": "Interact with the Peeks contract starter, then follow its active objective markers. Read the matching guide step before starting.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "exfil-m2563",
@@ -102,7 +108,9 @@
       "overview": true,
       "description": "Use the red exit portal before the contract timer expires. Roof and underground access routes differ; this pin identifies the overhead position.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "floor": "Roof"
+      "floor": "Roof",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "exfil-m2617",
@@ -116,7 +124,9 @@
       "overview": true,
       "description": "Use the red exit portal before the contract timer expires. Roof and underground access routes differ; this pin identifies the overhead position.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "floor": "Underground / lower tunnel"
+      "floor": "Underground / lower tunnel",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "locked-doors-m2566",
@@ -129,7 +139,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "locked-doors-m2567",
@@ -142,7 +154,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "locked-doors-m2581",
@@ -155,7 +169,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "locked-doors-m2619",
@@ -168,7 +184,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "locked-doors-m2621",
@@ -181,7 +199,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the matching room key if found in this visit. The top-floor bedroom has its separate conditional route; a room pin does not guarantee its loot or key.",
-      "source": "https://wzhub.gg/map/dark-aether/mwz"
+      "source": "https://wzhub.gg/map/dark-aether/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "keys-m2571",
@@ -195,7 +215,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2580",
@@ -209,7 +231,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2618",
@@ -223,7 +247,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2622",
@@ -237,7 +263,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2628",
@@ -251,7 +279,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2629",
@@ -265,7 +295,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "keys-m2630",
@@ -279,7 +311,9 @@
       "overview": false,
       "description": "Check this published candidate and the photographed hiding place. A key may not appear at every candidate in one visit.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible key spawn"
+      "state": "Possible key spawn",
+      "typeId": "key",
+      "availability": "candidate"
     },
     {
       "id": "ammo-depot-m2569",
@@ -293,7 +327,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2577",
@@ -307,7 +343,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2578",
@@ -321,7 +359,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2570",
@@ -335,7 +375,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2576",
@@ -349,7 +391,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2579",
@@ -363,7 +407,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "pack-a-punch-green-m2611",
@@ -377,7 +423,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "der-wu-m2636",
@@ -391,7 +439,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "dog-house-m2608",
@@ -405,7 +455,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "spawn-locations-m2568",
@@ -419,7 +471,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/dark-aether/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     }
   ],
   "targets": [

@@ -1,0 +1,613 @@
+{
+  "id": "aw-descent",
+  "name": "Descent",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+      "url": "/guides/aw-descent",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2015/08/reception-and-promenade-area-map-layout.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 4",
+      "url": "https://codzombified.blogspot.com/2015/08/galleria-map-layout-for-descent-exo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/AW/descent/descent_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.playstationtrophies.org/game/call-of-duty-advanced-warfare-ps3/guide/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/aw-descent/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-landing",
+      "label": "Landing / spawn",
+      "layerId": "overview",
+      "x": 0.15,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper starting platform",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Depressurize the Lounge door and obtain a Goliath suit.",
+      "source": "/guides/aw-descent#guide-step-descent-door"
+    },
+    {
+      "id": "area-reception",
+      "label": "Reception / Promenade",
+      "layerId": "overview",
+      "x": 0.36,
+      "y": 0.46699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "area-hall",
+      "label": "Concierge / Great Hall",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Activate the Concierge, Galleria aquarium and high Tidal Generator stingrays.",
+      "source": "/guides/aw-descent#guide-step-descent-song"
+    },
+    {
+      "id": "area-spa",
+      "label": "Spa",
+      "layerId": "overview",
+      "x": 0.38,
+      "y": 0.8470000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "area-annex",
+      "label": "Annex",
+      "layerId": "overview",
+      "x": 0.59,
+      "y": 0.45699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Only the documented connections are drawn; detailed object placements and unshown paths require the guide.",
+      "source": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html"
+    },
+    {
+      "id": "area-galleria",
+      "label": "Galleria",
+      "layerId": "overview",
+      "x": 0.6,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper + lower floors",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "area-tidal",
+      "label": "Tidal Generator",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Spiral stairs + hidden room",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "area-lounge",
+      "label": "Lounge / airlock",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.437,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Goliath underwater passage",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "area-oz",
+      "label": "Oz arena",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate round-event destination",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Prepare for Oz at rounds 5, 12/13 and 20; resume Reunion afterward.",
+      "source": "/guides/aw-descent#guide-step-descent-boss-gates"
+    },
+    {
+      "id": "suit",
+      "label": "Galleria Exo Suits",
+      "layerId": "overview",
+      "x": 0.5599999999999999,
+      "y": 0.6950000000000001,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower floors",
+      "availability": "conditional",
+      "description": "Collect an Exo Suit from Galleria and open routes to Lounge, Reception and Tidal Generator. Prepare upgrades and decontamination access. Exo Slam is specifically required for the later number panel. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "shower",
+      "label": "Spa decontamination",
+      "layerId": "overview",
+      "x": 0.34,
+      "y": 0.8250000000000001,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Resort decontamination is in the Spa; Oz’s arena has a separate event pad. Collect an Exo Suit from Galleria and open routes to Lounge, Reception and Tidal Generator. Prepare upgrades and decontamination access. Exo Slam is specifically required for the later number panel. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-exo"
+    },
+    {
+      "id": "terminal",
+      "label": "Hidden Tidal terminal",
+      "layerId": "overview",
+      "x": 0.7899999999999999,
+      "y": 0.805,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Spiral stairs + hidden room",
+      "availability": "conditional",
+      "description": "Shoot the three valves along Tidal Generator’s spiral staircase until each shows a BLUE lamp: left of its power generator, above the right yellow door, and right of the AMR9 wallbuy. The room halfway up the staircase opens. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-valves"
+    },
+    {
+      "id": "airlock",
+      "label": "Floodable airlock",
+      "layerId": "overview",
+      "x": 0.7799999999999999,
+      "y": 0.41500000000000004,
+      "category": "entry-point",
+      "typeId": "entry-point",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Goliath underwater passage",
+      "availability": "conditional",
+      "description": "Hold interact at Lounge’s underwater door to depressurize it. This takes a sustained hold, but its progress persists if you leave to retrieve equipment. Obtain a Goliath suit from a supply drop; it is a random reward rather than a guaranteed round spawn. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-door"
+    },
+    {
+      "id": "capacitor",
+      "label": "Galleria capacitor",
+      "layerId": "overview",
+      "x": 0.64,
+      "y": 0.6950000000000001,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + lower floors",
+      "availability": "conditional",
+      "description": "Bring electrical enemies to the Galleria capacitor and allow their electrical hits to charge it. Other electric variants also work. Remove ordinary attackers and leave an escape route: losing Exo movement in this space can trap you. Continue until its display reads 100% and Angie confirms power diversion; use the display instead of counting guessed hits. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-charge"
+    },
+    {
+      "id": "simon",
+      "label": "Reception monitors",
+      "layerId": "overview",
+      "x": 0.32,
+      "y": 0.445,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "At Reception, interact with the glowing right-hand monitor. First record which colour occupies each physical screen from LEFT to RIGHT; the arrangement varies. Record the flashing colours in order, including repeats, and interact with their corresponding screens. A cheerful tone and power-diversion line confirm success. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-simon-start"
+    },
+    {
+      "id": "digits",
+      "label": "Four-digit number panel",
+      "layerId": "overview",
+      "x": 0.87,
+      "y": 0.805,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Spiral stairs + hidden room",
+      "availability": "conditional",
+      "description": "Read the target TOP row and current BOTTOM row near the upstairs terminal. Match all four digits using the actions below. Digits wrap through 0–9; the first counts zombie hits, so a single multi-target slam can advance it several times. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-digits"
+    },
+    {
+      "id": "platforms",
+      "label": "Nine platform patterns",
+      "layerId": "overview",
+      "x": 0.10999999999999999,
+      "y": 0.235,
+      "category": "challenge-starter",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper starting platform",
+      "availability": "conditional",
+      "description": "At spawn, cross each blue-platform pattern using Exo movement and reach its final platform. It bounces you back and changes the pattern; complete nine. A platform disappears shortly after being stood on, then returns, so pause safely when an upcoming platform is absent. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-descent#guide-step-descent-platforms"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-descent-exo",
+      "title": "Collect Galleria Exo Suit; open Lounge, Reception and Tidal Generator.",
+      "locationIds": [
+        "suit",
+        "shower",
+        "area-reception",
+        "area-spa",
+        "area-galleria",
+        "area-tidal",
+        "area-lounge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-exo"
+    },
+    {
+      "id": "guide-descent-boss-gates",
+      "title": "Prepare for Oz at rounds 5, 12/13 and 20; resume Reunion afterward.",
+      "locationIds": [
+        "area-oz"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-boss-gates"
+    },
+    {
+      "id": "guide-descent-valves",
+      "title": "Turn all three staircase valve lamps blue.",
+      "locationIds": [
+        "terminal",
+        "area-tidal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-valves"
+    },
+    {
+      "id": "guide-descent-denied",
+      "title": "Use the exposed terminal twice until Angie denies access.",
+      "locationIds": [
+        "terminal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-denied"
+    },
+    {
+      "id": "guide-descent-door",
+      "title": "Depressurize the Lounge door and obtain a Goliath suit.",
+      "locationIds": [
+        "airlock",
+        "area-landing",
+        "area-spa",
+        "area-lounge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-door"
+    },
+    {
+      "id": "guide-descent-switch",
+      "title": "Use Goliath to reach the underwater switch; turn it blue and return.",
+      "locationIds": [
+        "airlock",
+        "area-lounge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-switch"
+    },
+    {
+      "id": "guide-descent-drone-challenge",
+      "title": "Destroy five empty drones in one challenge round without escape or early round end.",
+      "locationIds": [
+        "area-landing",
+        "area-spa"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-drone-challenge"
+    },
+    {
+      "id": "guide-descent-charge",
+      "title": "Absorb electrical hits by the capacitor until its display reaches 100%.",
+      "locationIds": [
+        "capacitor",
+        "area-spa",
+        "area-galleria"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-charge"
+    },
+    {
+      "id": "guide-descent-platforms",
+      "title": "Reach the end of all nine spawn platform patterns.",
+      "locationIds": [
+        "platforms",
+        "area-landing",
+        "area-spa"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-platforms"
+    },
+    {
+      "id": "guide-descent-simon-start",
+      "title": "Record the four-screen layout, replay each flash sequence and wait for the success tone.",
+      "locationIds": [
+        "simon",
+        "area-reception"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-simon-start"
+    },
+    {
+      "id": "guide-descent-digits",
+      "title": "Match target/current digits using slam hits, jumps, purchases and kills.",
+      "locationIds": [
+        "digits",
+        "area-tidal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-digits"
+    },
+    {
+      "id": "guide-descent-coupling",
+      "title": "After slams reread all digits; adjust purchases/kills, then jumps last.",
+      "locationIds": [
+        "digits",
+        "area-tidal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-coupling"
+    },
+    {
+      "id": "guide-descent-red-blue",
+      "title": "Use the terminal through its red, then blue machine states.",
+      "locationIds": [
+        "terminal",
+        "area-tidal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-red-blue"
+    },
+    {
+      "id": "guide-descent-preview",
+      "title": "Watch the round-5 arena preview and resume the quest.",
+      "locationIds": [
+        "area-oz"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-preview"
+    },
+    {
+      "id": "guide-descent-window-hazards",
+      "title": "Avoid lasers/gas/electric floor; cleanse gas at the centre pad and destroy turrets.",
+      "locationIds": [
+        "area-spa",
+        "area-oz"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-window-hazards"
+    },
+    {
+      "id": "guide-descent-mutated-generators",
+      "title": "Power all four corner generators and activate the pad with Oz on it.",
+      "locationIds": [
+        "area-spa",
+        "area-oz"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-mutated-generators"
+    },
+    {
+      "id": "guide-descent-double-feature",
+      "title": "After unlocking, activate the spawn keypad for Double Feature.",
+      "locationIds": [
+        "area-landing",
+        "area-spa"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-double-feature"
+    },
+    {
+      "id": "guide-descent-double-gold",
+      "title": "Defeat round-20 Mutated Oz in Double Feature for the gold trophy.",
+      "locationIds": [
+        "area-reception",
+        "area-oz"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-double-gold"
+    },
+    {
+      "id": "guide-descent-song",
+      "title": "Activate the Concierge, Galleria aquarium and high Tidal Generator stingrays.",
+      "locationIds": [
+        "area-landing",
+        "area-hall",
+        "area-spa",
+        "area-galleria",
+        "area-tidal"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn.",
+      "guideAnchor": "guide-step-descent-song"
+    }
+  ],
+  "quickLinks": {
+    "descent-exo": "guide-descent-exo",
+    "descent-boss-gates": "guide-descent-boss-gates",
+    "descent-valves": "guide-descent-valves",
+    "descent-denied": "guide-descent-denied",
+    "descent-door": "guide-descent-door",
+    "descent-switch": "guide-descent-switch",
+    "descent-drone-challenge": "guide-descent-drone-challenge",
+    "descent-charge": "guide-descent-charge",
+    "descent-platforms": "guide-descent-platforms",
+    "descent-simon-start": "guide-descent-simon-start",
+    "descent-digits": "guide-descent-digits",
+    "descent-coupling": "guide-descent-coupling",
+    "descent-red-blue": "guide-descent-red-blue",
+    "descent-preview": "guide-descent-preview",
+    "descent-window-hazards": "guide-descent-window-hazards",
+    "descent-mutated-generators": "guide-descent-mutated-generators",
+    "descent-double-feature": "guide-descent-double-feature",
+    "descent-double-gold": "guide-descent-double-gold",
+    "descent-song": "guide-descent-song"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "suit",
+            "shower",
+            "area-reception",
+            "area-spa",
+            "area-galleria",
+            "area-tidal",
+            "area-lounge",
+            "area-oz"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "terminal",
+            "area-tidal"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-landing",
+            "area-spa",
+            "area-reception",
+            "area-oz",
+            "area-hall",
+            "area-galleria",
+            "area-tidal"
+          ]
+        }
+      ]
+    }
+  ]
+}

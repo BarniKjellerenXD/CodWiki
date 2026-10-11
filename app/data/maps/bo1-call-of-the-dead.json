@@ -1,0 +1,519 @@
+{
+  "id": "bo1-call-of-the-dead",
+  "name": "Call of the Dead",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-call-of-the-dead",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/call-of-the-dead/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/call-of-the-dead/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-call-of-the-dead/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-beach",
+      "label": "Beach / spawn",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.757,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Beach",
+      "description": "Black Ops · Beach. Region on a schematic, not an exact object position. Climb the ship to the control-room power switch.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "area-ship",
+      "label": "Ship / lower decks",
+      "layerId": "overview",
+      "x": 0.65,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Several decks",
+      "description": "Black Ops · Several decks. Region on a schematic, not an exact object position. Climb the ship to the control-room power switch.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "area-bridge",
+      "label": "Ship control room",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.39699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper ship",
+      "description": "Black Ops · Upper ship. Region on a schematic, not an exact object position. Climb the ship to the control-room power switch.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "area-lighthouse",
+      "label": "Lighthouse",
+      "layerId": "overview",
+      "x": 0.35,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Four floors",
+      "description": "Black Ops · Four floors. Region on a schematic, not an exact object position. Climb the ship to the control-room power switch.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "area-annex",
+      "label": "Lighthouse annex",
+      "layerId": "overview",
+      "x": 0.14,
+      "y": 0.507,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower annex",
+      "description": "Black Ops · Lower annex. Region on a schematic, not an exact object position. Solo: skip the co-op-only phases. Co-op: complete every phase.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-route"
+    },
+    {
+      "id": "area-stamin",
+      "label": "Stamin-Up approach",
+      "layerId": "overview",
+      "x": 0.59,
+      "y": 0.227,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside route",
+      "description": "Black Ops · Outside route. Region on a schematic, not an exact object position. Climb the ship to the control-room power switch.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "power",
+      "label": "Ship power switch",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.39799999999999996,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper ship",
+      "description": "From the beach, buy the route onto the broken ship and climb to its upper control room. Flip the wall switch to power the map. Open a route between the ship, lighthouse and Stamin-Up so you can reach generators and return to the quest door without dead ends. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-power"
+    },
+    {
+      "id": "quest-door",
+      "label": "Crew’s locked door",
+      "layerId": "overview",
+      "x": 0.10200000000000001,
+      "y": 0.508,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Lower annex",
+      "description": "With power on, go below the PhD Flopper room in the lighthouse annex. Knife the large metal door and listen to the trapped crew. Wait until they ask for a fuse before searching upstairs. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-door"
+    },
+    {
+      "id": "ship-controls",
+      "label": "Wheel and levers",
+      "layerId": "overview",
+      "x": 0.858,
+      "y": 0.39799999999999996,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper ship",
+      "description": "Return to the power room. From their untouched starting positions, turn the ship’s wheel twice clockwise so its differently coloured handle points down-right, around five o’clock. Pull the left lever once, leave the middle lever alone, and pull the right lever three times. Compare the completed wheel and levers in the photos. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-ship"
+    },
+    {
+      "id": "lighthouse-dials",
+      "label": "Four lighthouse floor dials",
+      "layerId": "overview",
+      "x": 0.312,
+      "y": 0.358,
+      "category": "quest",
+      "typeId": "code-symbol",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Four floors",
+      "description": "The target from top to bottom is Yellow 2, Orange 7, Blue 4, Purple 6. Turning a dial adds one to itself and the immediately adjacent floor dial(s), wrapping 9 back to 0. Setting each floor independently will disturb the others. Read all four current digits and enter them in the solver below; apply its turn counts without additional adjustments. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-call-of-the-dead#guide-step-cotd-dials"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-cotd-power",
+      "title": "Climb the ship to the control-room power switch.",
+      "locationIds": [
+        "power",
+        "area-beach",
+        "area-ship",
+        "area-bridge",
+        "area-lighthouse",
+        "area-stamin"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-power"
+    },
+    {
+      "id": "guide-cotd-pap",
+      "title": "Follow the beam to the active Pack-a-Punch.",
+      "locationIds": [
+        "area-beach",
+        "area-ship",
+        "area-lighthouse",
+        "area-stamin"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-pap"
+    },
+    {
+      "id": "guide-cotd-kit",
+      "title": "Keep a V-R11; buy Jugger-Nog and suitable damage equipment.",
+      "locationIds": [
+        "area-ship"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-kit"
+    },
+    {
+      "id": "guide-cotd-transport",
+      "title": "Use the one-way ziplines or flinger; avoid lingering in water.",
+      "locationIds": [
+        "area-beach",
+        "area-ship",
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-transport"
+    },
+    {
+      "id": "guide-cotd-route",
+      "title": "Solo: skip the co-op-only phases. Co-op: complete every phase.",
+      "locationIds": [
+        "area-ship",
+        "area-bridge",
+        "area-lighthouse",
+        "area-annex"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-route"
+    },
+    {
+      "id": "guide-cotd-door",
+      "title": "Knife the annex metal door and hear the fuse request.",
+      "locationIds": [
+        "quest-door",
+        "area-lighthouse",
+        "area-annex"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-door"
+    },
+    {
+      "id": "guide-cotd-fuse",
+      "title": "Find the upstairs fuse and insert it beside the door.",
+      "locationIds": [
+        "quest-door",
+        "area-annex"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-fuse"
+    },
+    {
+      "id": "guide-cotd-generators",
+      "title": "Explode the four generators; report back to the door.",
+      "locationIds": [
+        "area-beach",
+        "area-ship",
+        "area-stamin"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-generators"
+    },
+    {
+      "id": "guide-cotd-vodka",
+      "title": "Find the frozen bottle; one player knives while another catches.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse",
+        "area-annex"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-vodka"
+    },
+    {
+      "id": "guide-cotd-vodka-tube",
+      "title": "Send the vodka through the left-hand tube.",
+      "locationIds": [
+        "quest-door"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-vodka-tube"
+    },
+    {
+      "id": "guide-cotd-radios",
+      "title": "Play Power → Stamin-Up → cargo crate → door-room radios.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse",
+        "area-stamin"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-radios"
+    },
+    {
+      "id": "guide-cotd-ship",
+      "title": "Wheel twice right; left lever once; middle untouched; right three times.",
+      "locationIds": [
+        "ship-controls",
+        "area-ship",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-ship"
+    },
+    {
+      "id": "guide-cotd-sub",
+      "title": "Solo: go to the beam. Co-op: answer the submarine.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-sub"
+    },
+    {
+      "id": "guide-cotd-horns",
+      "title": "Sound pool → slide exit → lighthouse wall → slide rock.",
+      "locationIds": [
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-horns"
+    },
+    {
+      "id": "guide-cotd-horn-retry",
+      "title": "After a failure, wait for the submarine and retry the full order.",
+      "locationIds": [
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-horn-retry"
+    },
+    {
+      "id": "guide-cotd-dials",
+      "title": "Read all four digits; use the solver to reach 2–7–4–6.",
+      "locationIds": [
+        "lighthouse-dials",
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-dials"
+    },
+    {
+      "id": "guide-cotd-dial-confirm",
+      "title": "Confirm 2, 7, 4, 6 and the green lighthouse beam.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-dial-confirm"
+    },
+    {
+      "id": "guide-cotd-human",
+      "title": "V-R11 a zombie; down the human as it rises through the beam.",
+      "locationIds": [
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-human"
+    },
+    {
+      "id": "guide-cotd-rod",
+      "title": "Deliver the Golden Rod and knife the sparking fuse box.",
+      "locationIds": [
+        "area-lighthouse",
+        "area-annex"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-rod"
+    },
+    {
+      "id": "guide-cotd-george-kill",
+      "title": "Defeat George for a perk and weapon pickup.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-george-kill"
+    },
+    {
+      "id": "guide-cotd-song",
+      "title": "Activate the Spawn, PhD and cafeteria meteors.",
+      "locationIds": [
+        "area-beach",
+        "area-ship"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-song"
+    },
+    {
+      "id": "guide-cotd-story-radios",
+      "title": "Play the five diary radios in order.",
+      "locationIds": [
+        "area-ship",
+        "area-lighthouse",
+        "area-annex",
+        "area-stamin"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects.",
+      "guideAnchor": "guide-step-cotd-story-radios"
+    }
+  ],
+  "quickLinks": {
+    "cotd-power": "guide-cotd-power",
+    "cotd-pap": "guide-cotd-pap",
+    "cotd-kit": "guide-cotd-kit",
+    "cotd-transport": "guide-cotd-transport",
+    "cotd-route": "guide-cotd-route",
+    "cotd-door": "guide-cotd-door",
+    "cotd-fuse": "guide-cotd-fuse",
+    "cotd-generators": "guide-cotd-generators",
+    "cotd-vodka": "guide-cotd-vodka",
+    "cotd-vodka-tube": "guide-cotd-vodka-tube",
+    "cotd-radios": "guide-cotd-radios",
+    "cotd-ship": "guide-cotd-ship",
+    "cotd-sub": "guide-cotd-sub",
+    "cotd-horns": "guide-cotd-horns",
+    "cotd-horn-retry": "guide-cotd-horn-retry",
+    "cotd-dials": "guide-cotd-dials",
+    "cotd-dial-confirm": "guide-cotd-dial-confirm",
+    "cotd-human": "guide-cotd-human",
+    "cotd-rod": "guide-cotd-rod",
+    "cotd-george-kill": "guide-cotd-george-kill",
+    "cotd-song": "guide-cotd-song",
+    "cotd-story-radios": "guide-cotd-story-radios"
+  }
+}

@@ -1,0 +1,667 @@
+{
+  "id": "bo3-der-eisendrache",
+  "name": "Der Eisendrache",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-der-eisendrache",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/der-eisendrache/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO3/der_eisendrache/der_eisendrache_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/der-eisendrache/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-der-eisendrache/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-courtyard",
+      "label": "Courtyards / Clock Tower",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Castle / several heights",
+      "description": "Black Ops III · Castle / several heights. Region on a schematic, not an exact object position. Power → activate four pyramid plates → open Wundersphere landing pads.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-1"
+    },
+    {
+      "id": "area-armory",
+      "label": "Armory / power",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Castle interior",
+      "description": "Black Ops III · Castle interior. Region on a schematic, not an exact object position. Power → activate four pyramid plates → open Wundersphere landing pads.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-1"
+    },
+    {
+      "id": "area-church",
+      "label": "Church / Knight’s Tomb",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Castle interior",
+      "description": "Black Ops III · Castle interior. Region on a schematic, not an exact object position. Assemble Pack-a-Punch; feed courtyard, Church and Undercroft dragons → collect base bow.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "area-undercroft",
+      "label": "Undercroft / pyramid",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.657,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower castle",
+      "description": "Black Ops III · Lower castle. Region on a schematic, not an exact object position. Power → activate four pyramid plates → open Wundersphere landing pads.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-1"
+    },
+    {
+      "id": "area-deathray",
+      "label": "Death Ray platform",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.787,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper platform",
+      "description": "Black Ops III · Upper platform. Region on a schematic, not an exact object position. Assemble Pack-a-Punch; feed courtyard, Church and Undercroft dragons → collect base bow.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "area-rocket",
+      "label": "Rocket platform",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate launch area",
+      "description": "Black Ops III · Separate launch area. Region on a schematic, not an exact object position. Assemble Pack-a-Punch; feed courtyard, Church and Undercroft dragons → collect base bow.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "power",
+      "label": "Armory power switch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.258,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Castle interior",
+      "description": "Open the courtyard route to the power switch in the Armory near Stamin-Up. In the Undercroft, stand on each of the four plates around the pyramid until it lights. After all four are active, low gravity cycles on and off, allowing wall-running. Activate Wundersphere landing pads when passing them so the launchers can be used later. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-1"
+    },
+    {
+      "id": "gravity",
+      "label": "Pyramid gravity plates",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.658,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Lower castle",
+      "description": "Open the courtyard route to the power switch in the Armory near Stamin-Up. In the Undercroft, stand on each of the four plates around the pyramid until it lights. After all four are active, low gravity cycles on and off, allowing wall-running. Activate Wundersphere landing pads when passing them so the launchers can be used later. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-1"
+    },
+    {
+      "id": "pap-lower",
+      "label": "Possible Pack-a-Punch: Undercroft",
+      "layerId": "overview",
+      "x": 0.538,
+      "y": 0.658,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Lower castle",
+      "description": "Teleport two Pack-a-Punch components by interacting with them; the machine assembles at the third location. Check the Death Ray platform, Undercroft and Rocket Pad. The indicator signs track its current location after it moves. Feed the three stone dragons at the lower courtyard, Church and Undercroft with nearby zombie kills, one at a time; wait until each finishes eating before the next kill. When all three crumble, collect Wrath of the Ancients behind the Knight’s Tomb. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "pap-ray",
+      "label": "Possible Pack-a-Punch: Death Ray",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.788,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper platform",
+      "description": "Teleport two Pack-a-Punch components by interacting with them; the machine assembles at the third location. Check the Death Ray platform, Undercroft and Rocket Pad. The indicator signs track its current location after it moves. Feed the three stone dragons at the lower courtyard, Church and Undercroft with nearby zombie kills, one at a time; wait until each finishes eating before the next kill. When all three crumble, collect Wrath of the Ancients behind the Knight’s Tomb. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "pap-rocket",
+      "label": "Possible Pack-a-Punch: Rocket Pad",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.798,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Separate launch area",
+      "description": "Teleport two Pack-a-Punch components by interacting with them; the machine assembles at the third location. Check the Death Ray platform, Undercroft and Rocket Pad. The indicator signs track its current location after it moves. Feed the three stone dragons at the lower courtyard, Church and Undercroft with nearby zombie kills, one at a time; wait until each finishes eating before the next kill. When all three crumble, collect Wrath of the Ancients behind the Knight’s Tomb. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    },
+    {
+      "id": "bow",
+      "label": "Knight’s Tomb bow reward",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.38799999999999996,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Castle interior",
+      "description": "Teleport two Pack-a-Punch components by interacting with them; the machine assembles at the third location. Check the Death Ray platform, Undercroft and Rocket Pad. The indicator signs track its current location after it moves. Feed the three stone dragons at the lower courtyard, Church and Undercroft with nearby zombie kills, one at a time; wait until each finishes eating before the next kill. When all three crumble, collect Wrath of the Ancients behind the Knight’s Tomb. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-der-eisendrache#guide-step-setup-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Power → activate four pyramid plates → open Wundersphere landing pads.",
+      "locationIds": [
+        "power",
+        "gravity",
+        "area-courtyard",
+        "area-armory",
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Assemble Pack-a-Punch; feed courtyard, Church and Undercroft dragons → collect base bow.",
+      "locationIds": [
+        "pap-lower",
+        "pap-ray",
+        "pap-rocket",
+        "bow",
+        "area-courtyard",
+        "area-church",
+        "area-undercroft",
+        "area-deathray",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Collect Panzer, Death Ray and rocket-test parts → build Ragnarok DG-4 and shield.",
+      "locationIds": [
+        "area-courtyard",
+        "area-undercroft",
+        "area-deathray",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-bows-4",
+      "title": "Reforged arrow → matching pyramid chest → souls → exchange the base bow.",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-bows-4"
+    },
+    {
+      "id": "guide-time-1",
+      "title": "Base bow: teleporter prongs → upgraded bow: four active wisps.",
+      "locationIds": [
+        "area-courtyard",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-time-1"
+    },
+    {
+      "id": "guide-time-3",
+      "title": "Fuses → Protect → safe code → collect disk/coils → install both coils → Destroy.",
+      "locationIds": [
+        "area-courtyard",
+        "area-deathray"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-time-3"
+    },
+    {
+      "id": "guide-keeper-1",
+      "title": "Solve both terminal boards → press the green Death Ray button → crash the pod.",
+      "locationIds": [
+        "area-courtyard",
+        "area-deathray",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-keeper-1"
+    },
+    {
+      "id": "guide-keeper-2",
+      "title": "Follow Keeper → stand inside each circle → use its indicated bow; place tablet at Double Tap.",
+      "locationIds": [
+        "area-courtyard",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-keeper-2"
+    },
+    {
+      "id": "guide-keeper-3",
+      "title": "Fit the canister → resupply → every player plants charged Ragnaroks on a separate plate.",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-keeper-3"
+    },
+    {
+      "id": "guide-boss-2",
+      "title": "Return → collect Summoning Key → Clock Tower terminal → ending.",
+      "locationIds": [
+        "area-courtyard",
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-boss-2"
+    },
+    {
+      "id": "guide-lightning-arrow",
+      "title": "Lightning bow: bonfires, wall-run and electrified arrows: lightning-arrow",
+      "locationIds": [
+        "area-courtyard",
+        "area-deathray",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-lightning-arrow"
+    },
+    {
+      "id": "guide-lightning-wall",
+      "title": "Lightning bow: bonfires, wall-run and electrified arrows: lightning-wall",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-lightning-wall"
+    },
+    {
+      "id": "guide-lightning-urns",
+      "title": "Lightning bow: bonfires, wall-run and electrified arrows: lightning-urns",
+      "locationIds": [
+        "area-courtyard",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-lightning-urns"
+    },
+    {
+      "id": "guide-lightning-finish",
+      "title": "Lightning bow: bonfires, wall-run and electrified arrows: lightning-finish",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-lightning-finish"
+    },
+    {
+      "id": "guide-wolf-paintings",
+      "title": "Wolf bow: paintings and the spirit wolf: wolf-paintings",
+      "locationIds": [
+        "area-courtyard",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-wolf-paintings"
+    },
+    {
+      "id": "guide-wolf-skull",
+      "title": "Wolf bow: paintings and the spirit wolf: wolf-skull",
+      "locationIds": [
+        "area-undercroft",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-wolf-skull"
+    },
+    {
+      "id": "guide-wolf-digs",
+      "title": "Wolf bow: paintings and the spirit wolf: wolf-digs",
+      "locationIds": [
+        "area-courtyard",
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-wolf-digs"
+    },
+    {
+      "id": "guide-wolf-wall",
+      "title": "Wolf bow: paintings and the spirit wolf: wolf-wall",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-wolf-wall"
+    },
+    {
+      "id": "guide-fire-start",
+      "title": "Fire bow: aerial circles and the fireplace route: fire-start",
+      "locationIds": [
+        "area-courtyard",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-fire-start"
+    },
+    {
+      "id": "guide-fire-circles",
+      "title": "Fire bow: aerial circles and the fireplace route: fire-circles",
+      "locationIds": [
+        "area-courtyard",
+        "area-deathray"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-fire-circles"
+    },
+    {
+      "id": "guide-fire-fireplace",
+      "title": "Fire bow: aerial circles and the fireplace route: fire-fireplace",
+      "locationIds": [
+        "area-courtyard",
+        "area-church",
+        "area-deathray"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-fire-fireplace"
+    },
+    {
+      "id": "guide-fire-finish",
+      "title": "Fire bow: aerial circles and the fireplace route: fire-finish",
+      "locationIds": [
+        "area-undercroft",
+        "area-deathray"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-fire-finish"
+    },
+    {
+      "id": "guide-void-start",
+      "title": "Void bow: six skulls, three spoken names and their glyphs: void-start",
+      "locationIds": [
+        "area-courtyard"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-void-start"
+    },
+    {
+      "id": "guide-void-skulls",
+      "title": "Void bow: six skulls, three spoken names and their glyphs: void-skulls",
+      "locationIds": [
+        "area-church",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-void-skulls"
+    },
+    {
+      "id": "guide-void-names",
+      "title": "Void bow: six skulls, three spoken names and their glyphs: void-names",
+      "locationIds": [
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-void-names"
+    },
+    {
+      "id": "guide-void-finish",
+      "title": "Void bow: six skulls, three spoken names and their glyphs: void-finish",
+      "locationIds": [
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-void-finish"
+    },
+    {
+      "id": "guide-panzer-helmet",
+      "title": "Panzer helmet, plunger, BRM and better gondola: panzer-helmet",
+      "locationIds": [
+        "area-courtyard",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-panzer-helmet"
+    },
+    {
+      "id": "guide-plunger",
+      "title": "Panzer helmet, plunger, BRM and better gondola: plunger",
+      "locationIds": [
+        "area-courtyard",
+        "area-undercroft"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-plunger"
+    },
+    {
+      "id": "guide-brm",
+      "title": "Panzer helmet, plunger, BRM and better gondola: brm",
+      "locationIds": [
+        "area-church",
+        "area-undercroft",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-brm"
+    },
+    {
+      "id": "guide-song",
+      "title": "Dead Again, skeletons, disco and free Gobblegum: song",
+      "locationIds": [
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-song"
+    },
+    {
+      "id": "guide-skeletons",
+      "title": "Dead Again, skeletons, disco and free Gobblegum: skeletons",
+      "locationIds": [
+        "area-courtyard",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-skeletons"
+    },
+    {
+      "id": "guide-disco",
+      "title": "Dead Again, skeletons, disco and free Gobblegum: disco",
+      "locationIds": [
+        "area-church",
+        "area-rocket"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs.",
+      "guideAnchor": "guide-step-disco"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "bows-4": "guide-bows-4",
+    "time-1": "guide-time-1",
+    "time-3": "guide-time-3",
+    "keeper-1": "guide-keeper-1",
+    "keeper-2": "guide-keeper-2",
+    "keeper-3": "guide-keeper-3",
+    "boss-2": "guide-boss-2",
+    "lightning-arrow": "guide-lightning-arrow",
+    "lightning-wall": "guide-lightning-wall",
+    "lightning-urns": "guide-lightning-urns",
+    "lightning-finish": "guide-lightning-finish",
+    "wolf-paintings": "guide-wolf-paintings",
+    "wolf-skull": "guide-wolf-skull",
+    "wolf-digs": "guide-wolf-digs",
+    "wolf-wall": "guide-wolf-wall",
+    "fire-start": "guide-fire-start",
+    "fire-circles": "guide-fire-circles",
+    "fire-fireplace": "guide-fire-fireplace",
+    "fire-finish": "guide-fire-finish",
+    "void-start": "guide-void-start",
+    "void-skulls": "guide-void-skulls",
+    "void-names": "guide-void-names",
+    "void-finish": "guide-void-finish",
+    "panzer-helmet": "guide-panzer-helmet",
+    "plunger": "guide-plunger",
+    "brm": "guide-brm",
+    "song": "guide-song",
+    "skeletons": "guide-skeletons",
+    "disco": "guide-disco"
+  }
+}

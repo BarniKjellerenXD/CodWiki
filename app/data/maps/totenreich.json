@@ -37,7 +37,9 @@
       "category": "area",
       "precision": "area",
       "description": "Spawn region around Quick Revive and the Riese head.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "eidskallen-square",
@@ -48,7 +50,9 @@
       "category": "area",
       "precision": "area",
       "description": "Village square around Stamin-Up and the routes to the landing and hall.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dry-dock",
@@ -59,7 +63,9 @@
       "category": "area",
       "precision": "area",
       "description": "Dock area around Speed Cola, PhD Flopper and Melee Macchiato. Search the boat and buildings described by the guide.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "titan-crane",
@@ -70,7 +76,9 @@
       "category": "area",
       "precision": "area",
       "description": "Crane room at the north end of Dry Dock. Use its timed button, then wall-jump to the ship bow for the chain links.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "machine-workshop",
@@ -82,7 +90,9 @@
       "precision": "area",
       "description": "Upper room on the southwestern side of Dry Dock, reached by clearing the 02 Building stairs with Wunderbarrage. Contains the claw machine and upper gnome catwalk.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "floor": "Upper level of Dry Dock"
+      "floor": "Upper level of Dry Dock",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "core-foundry",
@@ -93,7 +103,9 @@
       "category": "area",
       "precision": "area",
       "description": "Western foundry rooms, near the VS Recon wall-buy. The ARC-XD vent leads across the water to the Genetic Lab; the Ascender reaches the radio console.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "genetic-lab",
@@ -105,7 +117,9 @@
       "precision": "area",
       "description": "Lab on Fishery Island, opened by sending the ARC-XD across from Core Foundry. Enter from the Pack-a-Punch side for the jars, Necrospike and Uranium cell.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "floor": "Interior on Fishery Island"
+      "floor": "Interior on Fishery Island",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "war-factory",
@@ -116,7 +130,9 @@
       "category": "area",
       "precision": "area",
       "description": "Western factory building next to Core Foundry. The crate sits near the Admin room entrance.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "storm-bridge",
@@ -127,7 +143,9 @@
       "category": "area",
       "precision": "area",
       "description": "Northern bridge between Tyr’s Foot and Tyr’s Shoulder. The Chilly Chunks truck and charged-core barrel are on this bridge.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "tyrs-foot",
@@ -138,7 +156,9 @@
       "category": "area",
       "precision": "area",
       "description": "Northwestern foot of the giant robot. Enter Tyr here, and search nearby for the note and Dravakar Shard.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "tyrs-head",
@@ -150,7 +170,9 @@
       "precision": "area",
       "description": "Tyr’s interior is drawn separately as the small circle north of Storm Bridge. The transmitter and blinking lights are on the second floor; the console launches the boss encounter.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "floor": "Robot interior / second floor"
+      "floor": "Robot interior / second floor",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "tyrs-shoulder",
@@ -162,7 +184,9 @@
       "precision": "area",
       "description": "Northeastern shoulder of the giant robot. Upper access to Tyr and a fishing spot.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "floor": "Upper robot platform"
+      "floor": "Upper robot platform",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "fjord-road",
@@ -173,7 +197,9 @@
       "category": "area",
       "precision": "area",
       "description": "Southern road connecting the landing to Dry Dock. Check the checkpoint near the Flammenfalle trap for the flak-round crate.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "fishery-island",
@@ -184,7 +210,9 @@
       "category": "area",
       "precision": "area",
       "description": "Central island containing Juggernog and the Glocke Drop Pack-a-Punch landing.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "skallen-market",
@@ -195,7 +223,9 @@
       "category": "area",
       "precision": "area",
       "description": "Market around Mule Kick. Place Chilly Chunks on the central table and search nearby houses for side-quest items.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "burial-grounds",
@@ -206,7 +236,9 @@
       "category": "area",
       "precision": "area",
       "description": "Northeastern burial region and shrine, beyond the church. Use the chain links at the door and match the constellations.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "stave-church",
@@ -217,7 +249,9 @@
       "category": "area",
       "precision": "area",
       "description": "Church just west of Burial Grounds, north of Skallen Market. Place the Sunstone on its central altar.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "blodheim-hall",
@@ -228,7 +262,9 @@
       "category": "area",
       "precision": "area",
       "description": "Feasting hall around Vulture Aid. Its central bonfire, bear pelts and helmet displays serve several quests.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "lovens-antiquities",
@@ -239,7 +275,9 @@
       "category": "area",
       "precision": "area",
       "description": "Antiquities shop in the northwestern part of Eidskallen Square. Search its shelves for headphones and the counter for the Kneehigh Helm.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "beacon-island",
@@ -250,7 +288,9 @@
       "category": "area",
       "precision": "area",
       "description": "Southeastern island with the Lighthouse, arsenal, Wunderfizz and fishing access.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "lighthouse",
@@ -262,7 +302,9 @@
       "precision": "area",
       "description": "Tower on Beacon Island. Jotunn Star is in the top chamber; the Crowbar is on an interior shelf.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "floor": "Multiple floors / top chamber"
+      "floor": "Multiple floors / top chamber",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-1",
@@ -273,7 +315,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-2",
@@ -284,7 +328,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-3",
@@ -295,7 +341,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-4",
@@ -306,7 +354,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-5",
@@ -317,7 +367,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-6",
@@ -328,7 +380,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-7",
@@ -339,7 +393,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-8",
@@ -350,7 +406,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-9",
@@ -361,7 +419,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-10",
@@ -372,7 +432,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-fishing-spot-11",
@@ -383,7 +445,9 @@
       "category": "quest",
       "precision": "point",
       "description": "Fishing Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "fishing-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-1",
@@ -394,7 +458,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-2",
@@ -405,7 +471,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-3",
@@ -416,7 +484,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-4",
@@ -427,7 +497,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-5",
@@ -438,7 +510,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-6",
@@ -449,7 +523,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-7",
@@ -460,7 +536,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-8",
@@ -471,7 +549,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-9",
@@ -482,7 +562,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-10",
@@ -493,7 +575,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-1",
@@ -504,7 +588,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-2",
@@ -515,7 +601,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-3",
@@ -526,7 +614,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-4",
@@ -537,7 +627,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-1",
@@ -548,7 +640,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-2",
@@ -559,7 +653,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-3",
@@ -570,7 +666,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-1",
@@ -581,7 +679,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-2",
@@ -592,7 +692,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-3",
@@ -603,7 +705,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-1",
@@ -614,7 +718,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-2",
@@ -625,7 +731,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-3",
@@ -636,7 +744,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-4",
@@ -647,7 +757,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-5",
@@ -658,7 +770,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-6",
@@ -669,7 +783,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-7",
@@ -680,7 +796,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-8",
@@ -691,7 +809,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-9",
@@ -702,7 +822,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-10",
@@ -713,7 +835,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-11",
@@ -724,7 +848,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-12",
@@ -735,7 +861,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-13",
@@ -746,7 +874,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-14",
@@ -757,7 +887,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-15",
@@ -768,7 +900,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-16",
@@ -779,7 +913,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-17",
@@ -790,7 +926,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-18",
@@ -801,7 +939,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-19",
@@ -812,7 +952,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-20",
@@ -823,7 +965,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-21",
@@ -834,7 +978,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-22",
@@ -845,7 +991,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-23",
@@ -856,7 +1004,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-1",
@@ -867,7 +1017,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-2",
@@ -878,7 +1030,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-3",
@@ -889,7 +1043,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-4",
@@ -900,7 +1056,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-5",
@@ -911,7 +1069,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-1",
@@ -922,7 +1082,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Beacon Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-2",
@@ -933,7 +1095,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Eidskallen Landing",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-3",
@@ -944,7 +1108,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Beacon Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-4",
@@ -955,7 +1121,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Eidskallen Square",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-5",
@@ -966,7 +1134,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Fishery Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-6",
@@ -977,7 +1147,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Eidskallen Square",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-7",
@@ -988,7 +1160,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Fishery Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-8",
@@ -999,7 +1173,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Dry Dock",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-9",
@@ -1010,7 +1186,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Skallen Market",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-10",
@@ -1021,7 +1199,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Fishery Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-11",
@@ -1032,7 +1212,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Core Foundry",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-12",
@@ -1043,7 +1225,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Travel to Fishery Island",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-13",
@@ -1054,7 +1238,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Enter Tyr's Head",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-14",
@@ -1065,7 +1251,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Enter Tyr's Head",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "zipline",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-1",
@@ -1076,7 +1264,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-2",
@@ -1087,7 +1277,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-3",
@@ -1098,7 +1290,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-4",
@@ -1109,7 +1303,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-5",
@@ -1120,7 +1316,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-6",
@@ -1131,7 +1329,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-7",
@@ -1142,7 +1342,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-8",
@@ -1153,7 +1355,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-1",
@@ -1164,7 +1368,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-2",
@@ -1175,7 +1381,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-3",
@@ -1186,7 +1394,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-4",
@@ -1197,7 +1407,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-5",
@@ -1208,7 +1420,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-6",
@@ -1219,7 +1433,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-7",
@@ -1230,7 +1446,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-pack-a-punch-1",
@@ -1241,7 +1459,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Pack-a-Punch location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "pack-a-punch",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-1",
@@ -1252,7 +1472,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-2",
@@ -1263,7 +1485,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-3",
@@ -1274,7 +1498,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-4",
@@ -1285,7 +1511,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-5",
@@ -1296,7 +1524,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-6",
@@ -1307,7 +1537,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-7",
@@ -1318,7 +1550,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-power-door-8",
@@ -1329,7 +1563,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Power Door location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-rampage-inducer-1",
@@ -1340,7 +1576,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Rampage Inducer location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "challenge-starter",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-1",
@@ -1351,7 +1589,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-2",
@@ -1362,7 +1602,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-3",
@@ -1373,7 +1615,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-4",
@@ -1384,7 +1628,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-5",
@@ -1395,7 +1641,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-deadshot-daiquiri-1",
@@ -1406,7 +1654,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Deadshot Daiquiri location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-der-wunderfizz-1",
@@ -1417,7 +1667,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Der Wunderfizz location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wunderfizz",
+      "availability": "unknown"
     },
     {
       "id": "czg-double-tap-1",
@@ -1428,7 +1680,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Double Tap location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-juggernog-1",
@@ -1439,7 +1693,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Juggernog location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-melee-macchiato-1",
@@ -1450,7 +1706,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Melee Macchiato location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-mule-kick-1",
@@ -1461,7 +1719,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Mule Kick location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-phd-flopper-1",
@@ -1472,7 +1732,9 @@
       "category": "perk",
       "precision": "point",
       "description": "PHD Flopper location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-quick-revive-1",
@@ -1483,7 +1745,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Quick Revive location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-speed-cola-1",
@@ -1494,7 +1758,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Speed Cola location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-stamin-up-1",
@@ -1505,7 +1771,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Stamin-Up location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-vulture-aid-1",
@@ -1516,7 +1784,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Vulture Aid location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-coda-9-1",
@@ -1527,7 +1797,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "CODA 9 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-echo-12-1",
@@ -1538,7 +1810,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Echo 12 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-mxr-17-1",
@@ -1549,7 +1823,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "MXR-17 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-peacekeeper-mk1-1",
@@ -1560,7 +1836,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Peacekeeper MK1 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-shadow-sk-1",
@@ -1571,7 +1849,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Shadow Sk location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-vs-recon-1",
@@ -1582,7 +1862,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "VS Recon location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-x9-maverick-1",
@@ -1593,7 +1875,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "X9 Maverick location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-xm325-1",
@@ -1604,7 +1888,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "XM325 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m8a1-1",
@@ -1615,7 +1901,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M8A1 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m10-breacher-1",
@@ -1626,7 +1914,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M10 Breacher location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-rk-9-1",
@@ -1637,7 +1927,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "RK-9 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-mpc-25-1",
@@ -1648,7 +1940,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "MPC-25 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-warden-308-1",
@@ -1659,7 +1953,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Warden 308 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-ds20-mirage-1",
@@ -1670,7 +1966,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "DS20 Mirage location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "boss-dravakars-fall-1",
@@ -1681,7 +1979,9 @@
       "category": "area",
       "precision": "area",
       "description": "The separate Dravakar encounter arena.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "boss-trap-1",
@@ -1692,7 +1992,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle in the boss arena.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "boss-trap-2",
@@ -1703,7 +2005,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle in the boss arena.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "boss-trap-3",
@@ -1714,7 +2018,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Flammenfalle in the boss arena.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "boss-ammo-cache-1",
@@ -1725,7 +2031,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache in the boss arena.",
-      "source": "https://www.codzombiesguides.com/maps/totenreich/"
+      "source": "https://www.codzombiesguides.com/maps/totenreich/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "cursed-mister-peeks-1",
@@ -1738,7 +2046,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-2",
@@ -1751,7 +2061,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-3",
@@ -1764,7 +2076,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-4",
@@ -1777,7 +2091,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-5",
@@ -1790,7 +2106,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-6",
@@ -1803,7 +2121,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-7",
@@ -1816,7 +2136,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-8",
@@ -1829,7 +2151,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-9",
@@ -1842,7 +2166,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/totenreich/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [

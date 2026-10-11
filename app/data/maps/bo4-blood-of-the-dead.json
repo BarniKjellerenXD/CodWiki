@@ -1,0 +1,877 @@
+{
+  "id": "bo4-blood-of-the-dead",
+  "name": "Blood of the Dead",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-blood-of-the-dead",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/blood-of-the-dead/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/blood-of-the-dead/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://mmmrkennedy.com/games/BO4/blood_of_the_dead/blood_of_the_dead_guide"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo4-blood-of-the-dead/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic, not to scale. Lines show regional routes with intermediate rooms omitted. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / West Grounds",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Spawn buildings",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-catwalk",
+      "label": "Catwalk",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Connecting route",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-yard",
+      "label": "Recreation Yard",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "side-quests"
+      ],
+      "floor": "Prison approach",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Carry it toward New Industries, refreshing its heat at the blue barrels: Eagle Plaza → Michigan Avenue → Cell Block Entrance → Recreation Yard → West Grounds. Keep the weapon unfired and avoid fast travel. At New Industries, place it in the press and collect the forged Magmagat.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-side-magma-route"
+    },
+    {
+      "id": "area-cells",
+      "label": "Cell Block / Michigan",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Prison floors",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-wardens",
+      "label": "Warden’s House / Eagle",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "House + nearby plaza",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-citadel",
+      "label": "Citadel Tunnels",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Prison lower route",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-docks",
+      "label": "Docks / Building 64",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Waterfront",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-showers",
+      "label": "Showers",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Lower prison",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "area-roof",
+      "label": "Roof / Infirmary",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Upper prison",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas. Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "power-spawn",
+      "label": "Power House switch",
+      "layerId": "overview",
+      "x": 0.113,
+      "y": 0.288,
+      "category": "upgrade",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Spawn buildings",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "power-docks",
+      "label": "Building 64 switch",
+      "layerId": "overview",
+      "x": 0.113,
+      "y": 0.8380000000000001,
+      "category": "upgrade",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Waterfront",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "pap-roof",
+      "label": "Roof PaP / voltmeter",
+      "layerId": "overview",
+      "x": 0.7929999999999999,
+      "y": 0.8380000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Upper prison",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "pap-spawn",
+      "label": "Power House PaP candidate",
+      "layerId": "overview",
+      "x": 0.20700000000000002,
+      "y": 0.288,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Spawn buildings",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "pap-docks",
+      "label": "Building 64 PaP candidate",
+      "layerId": "overview",
+      "x": 0.20700000000000002,
+      "y": 0.8380000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Waterfront",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "shield-cell",
+      "label": "Cell Block 3rd-floor bench",
+      "layerId": "overview",
+      "x": 0.7929999999999999,
+      "y": 0.558,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Prison floors",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "shield-docks",
+      "label": "Docks workbench",
+      "layerId": "overview",
+      "x": 0.1,
+      "y": 0.803,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Waterfront",
+      "availability": "conditional",
+      "description": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1"
+    },
+    {
+      "id": "citadel-pad",
+      "label": "Citadel number pad",
+      "layerId": "overview",
+      "x": 0.113,
+      "y": 0.558,
+      "category": "quest",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Prison lower route",
+      "availability": "conditional",
+      "description": "Read the three pillar numbers in the Warden’s Office through the shield. Spirit Blast the Citadel Tunnels number pad and enter that code. After the elevator falls, Spirit Blast the Docks voltmeter to move the crane. Throw the Retriever at the skeleton in the raised net, then collect the Spoon from the crate below. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-spoon"
+    },
+    {
+      "id": "ritual-chair",
+      "label": "Ritual Room chair",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.558,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "House + nearby plaza",
+      "availability": "conditional",
+      "description": "Prepare a Blundergat or Magmagat for crowd control, then open the Warden’s hidden room. At the top of the Warden’s House stairs, hit the left wall with the Spoon to scratch it. Bring Brutus upstairs and throw a Monkey Bomb directly below that wall; move away and let his electrical slam break it. Enter 666 at the charged Citadel pad if you need to summon Brutus. This summon is a once-per-game resource; keep him alive until the wall is open. The Monkey Bomb route avoids waiting for his later-round electrical slam. Keep other players away from the wall so he targets the bomb. Inside the Ritual Room, pull the lever beside the electric chair and collect the red stone from the opposite table. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-2"
+    },
+    {
+      "id": "lab-map",
+      "label": "Laboratory quest map",
+      "layerId": "overview",
+      "x": 0.1,
+      "y": 0.253,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Spawn buildings",
+      "availability": "conditional",
+      "description": "Place the red stone on the map in Richtofen’s Laboratory. Interact with the Kronorium on the floor to release the bird. Keep the shield repaired and charged: looking through it reveals clues, but Spirit Blasting spends a charge. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-3"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Both power switches on; shield built; Pack-a-Punch open; Retriever collected.",
+      "kind": "area",
+      "locationIds": [
+        "power-spawn",
+        "power-docks",
+        "pap-roof",
+        "pap-spawn",
+        "pap-docks",
+        "shield-cell",
+        "shield-docks",
+        "area-spawn",
+        "area-catwalk",
+        "area-cells",
+        "area-wardens",
+        "area-citadel",
+        "area-docks",
+        "area-showers",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-spoon",
+      "title": "Read Office code → Citadel pad → Docks crane → Retriever the skeleton → collect Spoon.",
+      "kind": "area",
+      "locationIds": [
+        "citadel-pad",
+        "area-wardens",
+        "area-citadel",
+        "area-docks"
+      ],
+      "guideAnchor": "guide-step-setup-spoon",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-monkeys",
+      "title": "Get Monkey Bombs; save one for the Warden’s wall.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-setup-monkeys",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Spoon-scratch upstairs wall; lure Brutus to a Monkey Bomb to open the Ritual Room.",
+      "kind": "area",
+      "locationIds": [
+        "ritual-chair",
+        "area-wardens",
+        "area-citadel"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Place stone in lab map; interact with the Kronorium to release the bird.",
+      "kind": "area",
+      "locationIds": [
+        "lab-map",
+        "area-spawn"
+      ],
+      "guideAnchor": "guide-step-setup-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-birds-2",
+      "title": "Final bird: locate orb → 872 Zombie Blood → reveal with shield → Retriever → pick up book.",
+      "kind": "area",
+      "locationIds": [
+        "citadel-pad",
+        "area-citadel"
+      ],
+      "guideAnchor": "guide-step-birds-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-birds-3",
+      "title": "Read book code; enter it at Citadel; find and blast the lighthouse-marked portal.",
+      "kind": "area",
+      "locationIds": [
+        "citadel-pad",
+        "ritual-chair",
+        "area-wardens",
+        "area-citadel"
+      ],
+      "guideAnchor": "guide-step-birds-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-challenges-1",
+      "title": "Building 64: finish five fresh Simon sequences; record only the three steady-light symbols.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-docks"
+      ],
+      "guideAnchor": "guide-step-challenges-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-powerhouse-card",
+      "title": "Take punch card to Model Industries; interact with your three matching monitors.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-docks"
+      ],
+      "guideAnchor": "guide-step-powerhouse-card",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-powerhouse-levers",
+      "title": "Blast the spirit at each of the three observed replacement-symbol levers; take the stone.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "guideAnchor": "guide-step-powerhouse-levers",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-challenges-2",
+      "title": "Finish whichever branch the book assigned; return for a new code.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells",
+        "area-docks",
+        "area-showers"
+      ],
+      "guideAnchor": "guide-step-challenges-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-morse-1",
+      "title": "Read the shield-visible buoy at Gondola, Recreation Yard and Model Industries.",
+      "kind": "area",
+      "locationIds": [
+        "area-docks"
+      ],
+      "guideAnchor": "guide-step-morse-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-morse-3",
+      "title": "Infirmary: reveal and blast ghost, feed nearby kills, escort to Docks, collect stone.",
+      "kind": "area",
+      "locationIds": [
+        "area-docks",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-morse-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-showers-banjo",
+      "title": "Take the banjo; stay in the blue circle and collect kills.",
+      "kind": "area",
+      "locationIds": [
+        "area-showers"
+      ],
+      "guideAnchor": "guide-step-showers-banjo",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-industries-reveal",
+      "title": "Library: reveal ghost; alternate Spirit Blasts and key drains while following it.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-industries-reveal",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-industries-trap",
+      "title": "Make ghost fully red; activate blade trap before it arrives; take the stone.",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "guideAnchor": "guide-step-industries-trap",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-michigan-reveal",
+      "title": "Cafeteria: spawn, reveal and blast the spirit; regroup with it.",
+      "kind": "area",
+      "locationIds": [
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-michigan-reveal",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-michigan-escort",
+      "title": "Protect the spirit to Michigan Avenue; collect the stone.",
+      "kind": "area",
+      "locationIds": [
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-michigan-escort",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-finale-1",
+      "title": "Place five stones; Key into corpse; gather at chair; escape cells and recover equipment.",
+      "kind": "area",
+      "locationIds": [
+        "ritual-chair",
+        "lab-map",
+        "area-wardens"
+      ],
+      "guideAnchor": "guide-step-finale-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-skulls",
+      "title": "Free Blundergat — five skulls",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells",
+        "area-wardens",
+        "area-docks",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-side-skulls",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-magma-fill",
+      "title": "Magmagat — fireplace & barrel run",
+      "kind": "area",
+      "locationIds": [
+        "area-wardens"
+      ],
+      "guideAnchor": "guide-step-side-magma-fill",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-magma-route",
+      "title": "Magmagat — fireplace & barrel run",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-yard",
+        "area-cells",
+        "area-wardens"
+      ],
+      "guideAnchor": "guide-step-side-magma-route",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-acidgat",
+      "title": "Acidgat — an alternative upgrade",
+      "kind": "area",
+      "locationIds": [
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-side-acidgat",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-monkey",
+      "title": "Free Monkey Bombs",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-side-monkey",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-charge",
+      "title": "Attuned Shield & free charges",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-cells",
+        "area-citadel",
+        "area-docks",
+        "area-showers",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-side-charge",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-spork",
+      "title": "Golden Spork",
+      "kind": "area",
+      "locationIds": [
+        "area-catwalk",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-side-spork",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-redeemer-kills",
+      "title": "Hell’s Redeemer",
+      "kind": "area",
+      "locationIds": [
+        "area-yard"
+      ],
+      "guideAnchor": "guide-step-side-redeemer-kills",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-redeemer-mark",
+      "title": "Hell’s Redeemer",
+      "kind": "area",
+      "locationIds": [
+        "area-yard",
+        "area-wardens",
+        "area-citadel"
+      ],
+      "guideAnchor": "guide-step-side-redeemer-mark",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-redeemer-dog",
+      "title": "Hell’s Redeemer",
+      "kind": "area",
+      "locationIds": [
+        "area-wardens",
+        "area-showers"
+      ],
+      "guideAnchor": "guide-step-side-redeemer-dog",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-scalpel",
+      "title": "Golden Scalpel & Sporknife",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-wardens",
+        "area-docks",
+        "area-roof"
+      ],
+      "guideAnchor": "guide-step-side-scalpel",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-scalpel-forge",
+      "title": "Golden Scalpel & Sporknife",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "guideAnchor": "guide-step-side-scalpel-forge",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-sporknife",
+      "title": "Golden Scalpel & Sporknife",
+      "kind": "area",
+      "locationIds": [
+        "area-spawn",
+        "area-catwalk"
+      ],
+      "guideAnchor": "guide-step-side-sporknife",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-song",
+      "title": "Music, power-ups & small secrets",
+      "kind": "area",
+      "locationIds": [
+        "citadel-pad",
+        "area-citadel"
+      ],
+      "guideAnchor": "guide-step-side-song",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-powerups",
+      "title": "Music, power-ups & small secrets",
+      "kind": "area",
+      "locationIds": [
+        "area-cells"
+      ],
+      "guideAnchor": "guide-step-side-powerups",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-sketch",
+      "title": "Music, power-ups & small secrets",
+      "kind": "area",
+      "locationIds": [
+        "area-cells",
+        "area-wardens"
+      ],
+      "guideAnchor": "guide-step-side-sketch",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-side-jumpscare",
+      "title": "Music, power-ups & small secrets",
+      "kind": "area",
+      "locationIds": [
+        "area-yard"
+      ],
+      "guideAnchor": "guide-step-side-jumpscare",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-spoon": "guide-setup-spoon",
+    "setup-monkeys": "guide-setup-monkeys",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "birds-2": "guide-birds-2",
+    "birds-3": "guide-birds-3",
+    "challenges-1": "guide-challenges-1",
+    "powerhouse-card": "guide-powerhouse-card",
+    "powerhouse-levers": "guide-powerhouse-levers",
+    "challenges-2": "guide-challenges-2",
+    "morse-1": "guide-morse-1",
+    "morse-3": "guide-morse-3",
+    "showers-banjo": "guide-showers-banjo",
+    "industries-reveal": "guide-industries-reveal",
+    "industries-trap": "guide-industries-trap",
+    "michigan-reveal": "guide-michigan-reveal",
+    "michigan-escort": "guide-michigan-escort",
+    "finale-1": "guide-finale-1",
+    "side-skulls": "guide-side-skulls",
+    "side-magma-fill": "guide-side-magma-fill",
+    "side-magma-route": "guide-side-magma-route",
+    "side-acidgat": "guide-side-acidgat",
+    "side-monkey": "guide-side-monkey",
+    "side-charge": "guide-side-charge",
+    "side-spork": "guide-side-spork",
+    "side-redeemer-kills": "guide-side-redeemer-kills",
+    "side-redeemer-mark": "guide-side-redeemer-mark",
+    "side-redeemer-dog": "guide-side-redeemer-dog",
+    "side-scalpel": "guide-side-scalpel",
+    "side-scalpel-forge": "guide-side-scalpel-forge",
+    "side-sporknife": "guide-side-sporknife",
+    "side-song": "guide-side-song",
+    "side-powerups": "guide-side-powerups",
+    "side-sketch": "guide-side-sketch",
+    "side-jumpscare": "guide-side-jumpscare"
+  }
+}

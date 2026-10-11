@@ -1,0 +1,758 @@
+{
+  "id": "iw-zombies-in-spaceland",
+  "name": "Zombies in Spaceland",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Infinite Warfare guide",
+      "url": "/guides/iw-zombies-in-spaceland",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2462403426",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/IW/zombies_in_spaceland/zombies_in_spaceland_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/zombies-in-spaceland/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/iw-zombies-in-spaceland/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / bridge",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Enable all five power switches.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "area-hub",
+      "label": "Cosmic Way",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.547,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Use four regional portals, then the Cosmic Way projector gateway.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+    },
+    {
+      "id": "area-journey",
+      "label": "Journey Into Space",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.547,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Enable all five power switches.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "area-arcade",
+      "label": "Astrocade",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Enable all five power switches.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "area-polar",
+      "label": "Polar Peak",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Enable all five power switches.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "area-kepler",
+      "label": "Kepler / Moonlight Cafe",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.627,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Enable all five power switches.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "area-underground",
+      "label": "Underground",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.8370000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Find the quest boombox.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-seticom-boombox"
+    },
+    {
+      "id": "area-projector",
+      "label": "Projector room",
+      "layerId": "overview",
+      "x": 0.49,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Timed hub-portal destination",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Use four regional portals, then the Cosmic Way projector gateway.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+    },
+    {
+      "id": "spawn-power",
+      "label": "Spawn power",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.805,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Switch on all five regional supplies: the Spawn employee room by the M1; Journey’s Star Mission/Rover Rampage hallway; Astrocade left of its portal; Polar Peak by Quickies; and Moonlight Cafe upstairs in Kepler. Each switch powers only its own region. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "journey-power",
+      "label": "Journey power",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.525,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Switch on all five regional supplies: the Spawn employee room by the M1; Journey’s Star Mission/Rover Rampage hallway; Astrocade left of its portal; Polar Peak by Quickies; and Moonlight Cafe upstairs in Kepler. Each switch powers only its own region. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "arcade-power",
+      "label": "Astrocade power",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.245,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Switch on all five regional supplies: the Spawn employee room by the M1; Journey’s Star Mission/Rover Rampage hallway; Astrocade left of its portal; Polar Peak by Quickies; and Moonlight Cafe upstairs in Kepler. Each switch powers only its own region. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "polar-power",
+      "label": "Polar power",
+      "layerId": "overview",
+      "x": 0.71,
+      "y": 0.245,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Switch on all five regional supplies: the Spawn employee room by the M1; Journey’s Star Mission/Rover Rampage hallway; Astrocade left of its portal; Polar Peak by Quickies; and Moonlight Cafe upstairs in Kepler. Each switch powers only its own region. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "kepler-power",
+      "label": "Moonlight Cafe power",
+      "layerId": "overview",
+      "x": 0.7799999999999999,
+      "y": 0.605,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Switch on all five regional supplies: the Spawn employee room by the M1; Journey’s Star Mission/Rover Rampage hallway; Astrocade left of its portal; Polar Peak by Quickies; and Moonlight Cafe upstairs in Kepler. Each switch powers only its own region. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-power"
+    },
+    {
+      "id": "pap",
+      "label": "Projector Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.45,
+      "y": 0.235,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Timed hub-portal destination",
+      "availability": "conditional",
+      "description": "Activate and travel through Journey, Astrocade, Polar Peak Gift Shop and Kepler’s stair-base portals. The four hub indicators turn blue. Enter Cosmic Way’s central portal to reach the projector; it returns you after its visit window and needs to cool down before reuse. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+    },
+    {
+      "id": "teeth",
+      "label": "Gator teeth / crystal targets",
+      "layerId": "overview",
+      "x": 0.86,
+      "y": 0.605,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Buy Golden Teeth for 300 tickets. Lure a Brute into Kepler’s gator mouth so its teeth break, then fit the replacements. Shoot the throat targets with matching elemental cores: left to right Wind, Electric, Laser, Fire. Take the matching crystal for your selected Weapon of Rock. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-equipment-teeth"
+    },
+    {
+      "id": "speaker-arena",
+      "label": "Speakers / alien fight",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.525,
+      "category": "boss-arena",
+      "typeId": "boss-arena",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Place speakers on Cosmic Way’s three golden region symbols and in front of the projector gateway. Prepare before interacting with a speaker: activation seals you inside the Cosmic Way/Spawn arena. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-zombies-in-spaceland#guide-step-speakers-place"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-power",
+      "title": "Enable all five power switches.",
+      "locationIds": [
+        "spawn-power",
+        "journey-power",
+        "arcade-power",
+        "polar-power",
+        "kepler-power",
+        "area-spawn",
+        "area-journey",
+        "area-arcade",
+        "area-polar",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-setup-power"
+    },
+    {
+      "id": "guide-setup-portals",
+      "title": "Use four regional portals, then the Cosmic Way projector gateway.",
+      "locationIds": [
+        "pap",
+        "area-hub",
+        "area-journey",
+        "area-arcade",
+        "area-polar",
+        "area-kepler",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-setup-portals"
+    },
+    {
+      "id": "guide-equipment-loadout",
+      "title": "Prepare defence equipment and save the chosen wonder-weapon coins.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-equipment-loadout"
+    },
+    {
+      "id": "guide-equipment-cores",
+      "title": "Release the UFOs; charge a trap, then its UFO with Arcane Core kills.",
+      "locationIds": [
+        "area-journey",
+        "area-arcade",
+        "area-polar",
+        "area-kepler",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-equipment-cores"
+    },
+    {
+      "id": "guide-equipment-teeth",
+      "title": "Break/replace the gator teeth, then shoot the matching crystal target.",
+      "locationIds": [
+        "teeth",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-equipment-teeth"
+    },
+    {
+      "id": "guide-seticom-calculator",
+      "title": "Find the calculator at one of three sites.",
+      "locationIds": [
+        "area-hub",
+        "area-arcade",
+        "area-kepler",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-seticom-calculator"
+    },
+    {
+      "id": "guide-seticom-boombox",
+      "title": "Find the quest boombox.",
+      "locationIds": [
+        "area-spawn",
+        "area-kepler",
+        "area-underground"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-seticom-boombox"
+    },
+    {
+      "id": "guide-seticom-umbrella",
+      "title": "Find the umbrella; wait for the next-round UFO event.",
+      "locationIds": [
+        "area-hub",
+        "area-journey",
+        "area-polar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-seticom-umbrella"
+    },
+    {
+      "id": "guide-seticom-hoff",
+      "title": "Receive the device from Hasselhoff.",
+      "locationIds": [
+        "area-journey",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-seticom-hoff"
+    },
+    {
+      "id": "guide-defences-placements",
+      "title": "Find the shaking placement prompt.",
+      "locationIds": [
+        "area-hub",
+        "area-journey",
+        "area-arcade",
+        "area-polar",
+        "area-kepler",
+        "area-underground"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-defences-placements"
+    },
+    {
+      "id": "guide-defences-defend",
+      "title": "Defend 60 / 90 / 120 seconds; recover the device after each success.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-defences-defend"
+    },
+    {
+      "id": "guide-defences-return",
+      "title": "Wait a full round, return the SETI-COM and take four speakers.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-defences-return"
+    },
+    {
+      "id": "guide-speakers-place",
+      "title": "Place speakers on three symbols and at the gateway; prepare before activation.",
+      "locationIds": [
+        "speaker-arena",
+        "area-spawn",
+        "area-hub",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-speakers-place"
+    },
+    {
+      "id": "guide-speakers-layout",
+      "title": "Record this match’s four unique speaker colours.",
+      "locationIds": [
+        "speaker-arena"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-speakers-layout"
+    },
+    {
+      "id": "guide-ufo-sequences-repeat",
+      "title": "Repeat the UFO’s flashes three times.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-ufo-sequences-repeat"
+    },
+    {
+      "id": "guide-ufo-sequences-retry",
+      "title": "Missed display: observe again. Wrong input: clear the Brute and retry.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-ufo-sequences-retry"
+    },
+    {
+      "id": "guide-aliens-collar",
+      "title": "Shoot the glowing alien neck collar.",
+      "locationIds": [
+        "speaker-arena",
+        "area-spawn",
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-aliens-collar"
+    },
+    {
+      "id": "guide-fuses-projector-fuses",
+      "title": "Install alien fuses and Pack-a-Punch a Weapon of Rock.",
+      "locationIds": [
+        "pap",
+        "area-hub",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-fuses-projector-fuses"
+    },
+    {
+      "id": "guide-laser-nodes",
+      "title": "Light four ring nodes; time the fifth to hit the UFO.",
+      "locationIds": [
+        "area-spawn",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-laser-nodes"
+    },
+    {
+      "id": "guide-laser-soul-key",
+      "title": "Collect the Soul Key; Director’s Cut also grants the talisman.",
+      "locationIds": [
+        "area-spawn",
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-laser-soul-key"
+    },
+    {
+      "id": "guide-head-cutter-battery",
+      "title": "Freeze and headshot ten zombies; take the yeti battery.",
+      "locationIds": [
+        "area-polar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-head-cutter-battery"
+    },
+    {
+      "id": "guide-head-cutter-plush",
+      "title": "Three Green at Polar; Wind crystal; build at Gift Shop cutout.",
+      "locationIds": [
+        "area-polar",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-head-cutter-plush"
+    },
+    {
+      "id": "guide-face-melter-battery",
+      "title": "Relay Journey’s returned red grenade into the hub portal.",
+      "locationIds": [
+        "area-hub",
+        "area-journey",
+        "area-projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-face-melter-battery"
+    },
+    {
+      "id": "guide-face-melter-toy",
+      "title": "Three Blue at Journey; Electric crystal; Escape Velocity cutout.",
+      "locationIds": [
+        "area-journey",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-face-melter-toy"
+    },
+    {
+      "id": "guide-dischord-targets",
+      "title": "Wear sunglasses, shoot five active targets and take the dance-floor battery.",
+      "locationIds": [
+        "area-spawn",
+        "area-hub",
+        "area-arcade",
+        "area-polar"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-dischord-targets"
+    },
+    {
+      "id": "guide-dischord-disco",
+      "title": "One of each at rear Astrocade; Laser crystal; prize-counter cutout.",
+      "locationIds": [
+        "area-arcade",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-dischord-disco"
+    },
+    {
+      "id": "guide-shredder-battery",
+      "title": "Shoot the log-ride battery and catch it at the geysers.",
+      "locationIds": [
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-shredder-battery"
+    },
+    {
+      "id": "guide-shredder-alien",
+      "title": "Three Red at Kepler; Fire crystal; Underground cutout.",
+      "locationIds": [
+        "area-kepler",
+        "area-underground"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-shredder-alien"
+    },
+    {
+      "id": "guide-n31l-head",
+      "title": "Restore N31L and finish five challenges to summon Hasselhoff.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-n31l-head"
+    },
+    {
+      "id": "guide-n31l-upgrades",
+      "title": "Battery set → summon → floppy set → summon; then repeat paid assistance.",
+      "locationIds": [
+        "area-polar",
+        "area-kepler",
+        "area-underground"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-n31l-upgrades"
+    },
+    {
+      "id": "guide-ghosts-n-skulls-first-skulls",
+      "title": "Balloons → GHOST sign skulls → dance-floor counts 1,9,8,4.",
+      "locationIds": [
+        "area-spawn",
+        "area-hub",
+        "area-journey",
+        "area-arcade",
+        "area-kepler"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-ghosts-n-skulls-first-skulls"
+    },
+    {
+      "id": "guide-ghosts-n-skulls-arcade",
+      "title": "Complete five arcade events; main-quest laser skull; Brute-laser the cabinet.",
+      "locationIds": [
+        "area-spawn",
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-ghosts-n-skulls-arcade"
+    },
+    {
+      "id": "guide-music-and-characters-hoff-code",
+      "title": "Hasselhoff lobby code: L R L U D.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs.",
+      "guideAnchor": "guide-step-music-and-characters-hoff-code"
+    }
+  ],
+  "quickLinks": {
+    "setup-power": "guide-setup-power",
+    "setup-portals": "guide-setup-portals",
+    "equipment-loadout": "guide-equipment-loadout",
+    "equipment-cores": "guide-equipment-cores",
+    "equipment-teeth": "guide-equipment-teeth",
+    "seticom-calculator": "guide-seticom-calculator",
+    "seticom-boombox": "guide-seticom-boombox",
+    "seticom-umbrella": "guide-seticom-umbrella",
+    "seticom-hoff": "guide-seticom-hoff",
+    "defences-placements": "guide-defences-placements",
+    "defences-defend": "guide-defences-defend",
+    "defences-return": "guide-defences-return",
+    "speakers-place": "guide-speakers-place",
+    "speakers-layout": "guide-speakers-layout",
+    "ufo-sequences-repeat": "guide-ufo-sequences-repeat",
+    "ufo-sequences-retry": "guide-ufo-sequences-retry",
+    "aliens-collar": "guide-aliens-collar",
+    "fuses-projector-fuses": "guide-fuses-projector-fuses",
+    "laser-nodes": "guide-laser-nodes",
+    "laser-soul-key": "guide-laser-soul-key",
+    "head-cutter-battery": "guide-head-cutter-battery",
+    "head-cutter-plush": "guide-head-cutter-plush",
+    "face-melter-battery": "guide-face-melter-battery",
+    "face-melter-toy": "guide-face-melter-toy",
+    "dischord-targets": "guide-dischord-targets",
+    "dischord-disco": "guide-dischord-disco",
+    "shredder-battery": "guide-shredder-battery",
+    "shredder-alien": "guide-shredder-alien",
+    "n31l-head": "guide-n31l-head",
+    "n31l-upgrades": "guide-n31l-upgrades",
+    "ghosts-n-skulls-first-skulls": "guide-ghosts-n-skulls-first-skulls",
+    "ghosts-n-skulls-arcade": "guide-ghosts-n-skulls-arcade",
+    "music-and-characters-hoff-code": "guide-music-and-characters-hoff-code"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "main-quest",
+      "filters": [
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "spawn-power",
+            "journey-power",
+            "arcade-power",
+            "polar-power",
+            "kepler-power",
+            "area-spawn",
+            "area-journey",
+            "area-arcade",
+            "area-polar",
+            "area-kepler",
+            "pap",
+            "area-hub",
+            "area-projector"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-polar",
+            "area-kepler"
+          ]
+        }
+      ]
+    }
+  ]
+}

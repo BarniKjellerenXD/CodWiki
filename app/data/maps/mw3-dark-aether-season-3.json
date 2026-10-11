@@ -62,7 +62,9 @@
       "precision": "point",
       "overview": true,
       "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
-      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "obelisk-m3105",
@@ -75,7 +77,9 @@
       "precision": "point",
       "overview": true,
       "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
-      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "obelisk-m3106",
@@ -88,7 +92,9 @@
       "precision": "point",
       "overview": true,
       "description": "Activate the gold-beam obelisk and keep its buff item in your inventory. Follow the actual objective marker for the contract.",
-      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "exfil-m3108",
@@ -101,7 +107,9 @@
       "precision": "point",
       "overview": true,
       "description": "Reach the southeast end of the central island around G4/G5 and interact with its available red portal before the timer expires.",
-      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz"
+      "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "desciple-blueprint-m3107",
@@ -115,7 +123,9 @@
       "overview": true,
       "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Optional boss · requires all three contracts"
+      "state": "Optional boss · requires all three contracts",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "desciple-blueprint-m3109",
@@ -129,7 +139,9 @@
       "overview": true,
       "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Optional boss · requires all three contracts"
+      "state": "Optional boss · requires all three contracts",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "desciple-blueprint-m3110",
@@ -143,7 +155,9 @@
       "overview": true,
       "description": "After all three contracts, destroy this outer spore. Clear all three before breaking the central Rift Heart.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Optional boss · requires all three contracts"
+      "state": "Optional boss · requires all three contracts",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "desciple-blueprint-m3111",
@@ -157,7 +171,9 @@
       "overview": true,
       "description": "After all three contract completions and outer spores, destroy this central Rift Heart to summon Gyanxi.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Optional boss · requires all three contracts"
+      "state": "Optional boss · requires all three contracts",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m3086",
@@ -171,7 +187,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m3096",
@@ -185,7 +203,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m3097",
@@ -199,7 +219,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m3099",
@@ -213,7 +235,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m3100",
@@ -227,7 +251,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "pack-a-punch-green-m3092",
@@ -241,7 +267,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "der-wu-m3112",
@@ -255,7 +283,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "dog-house-m3090",
@@ -269,7 +299,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dead-turret-m3094",
@@ -283,7 +315,9 @@
       "overview": false,
       "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Possible support location"
+      "state": "Possible support location",
+      "typeId": "turret",
+      "availability": "candidate"
     },
     {
       "id": "dead-turret-m3101",
@@ -297,7 +331,9 @@
       "overview": false,
       "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Possible support location"
+      "state": "Possible support location",
+      "typeId": "turret",
+      "availability": "candidate"
     },
     {
       "id": "dead-turret-m3102",
@@ -311,7 +347,9 @@
       "overview": false,
       "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Possible support location"
+      "state": "Possible support location",
+      "typeId": "turret",
+      "availability": "candidate"
     },
     {
       "id": "redeploy-drone-br-wz-m3104",
@@ -325,7 +363,9 @@
       "overview": false,
       "description": "Check the live ascender/drone and use it to move above the rooftops.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "fast-travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m3087",
@@ -339,7 +379,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/dark-aether-s3r/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "entry-point",
+      "availability": "conditional"
     }
   ],
   "targets": [

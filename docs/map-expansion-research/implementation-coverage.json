@@ -1,0 +1,3017 @@
+{
+  "reviewed": "2026-10-11",
+  "scope": "96 catalog maps; Outbreak child guides share their parent atlas and are not extra map rows.",
+  "counts": {
+    "catalogMaps": 96,
+    "interactiveMaps": 72,
+    "addedMaps": 61,
+    "updatedMaps": 11,
+    "gaps": 24,
+    "schematicMaps": 48,
+    "layers": 90,
+    "uniqueArtwork": 87,
+    "locations": 3709,
+    "targets": 2056,
+    "guideLinks": 1407
+  },
+  "maps": [
+    {
+      "id": "ashes-of-the-damned",
+      "name": "Ashes of the Damned",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 127,
+      "targets": 212,
+      "guideLinks": 19,
+      "dataset": "app/data/maps/ashes-of-the-damned.json",
+      "artwork": [
+        "/maps/ashes-of-the-damned/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Ashes of the Damned · region and fog layout reference",
+          "url": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+          "note": "Cross-check for the clockwise order of fog landmarks and the Sepulcher beside Blackwater Lake."
+        },
+        {
+          "name": "Ashes of the Damned · quest reference photos",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/ashes-of-the-damned/",
+          "note": "Quest landmark descriptions and candidate reference photos. Markers use region guidance where exact item coordinates are not verified."
+        },
+        {
+          "name": "Community map · Cursed Mister Peeks candidates",
+          "url": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
+          "note": "Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "astra-malorum",
+      "name": "Astra Malorum",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 3,
+      "locations": 75,
+      "targets": 154,
+      "guideLinks": 21,
+      "dataset": "app/data/maps/astra-malorum.json",
+      "artwork": [
+        "/maps/astra-malorum/overview.webp",
+        "/maps/astra-malorum/mars.webp",
+        "/maps/astra-malorum/mars-schematic.svg"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Astra Malorum quest reference",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/astra-malorum/",
+          "note": "Mars pylon and final-pylon screenshots verify the temple and four distant pylons face one another. Schematic coordinates are illustrative, not surveyed."
+        },
+        {
+          "name": "Astra Malorum community tactical map",
+          "url": "https://codzombiesguides.com/maps/astra-malorum/",
+          "note": "Mars arena artwork and portal/service coordinates. Quest markers remain approximate areas. Artwork © Activision. Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "paradox-junction",
+      "name": "Paradox Junction",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 3,
+      "locations": 113,
+      "targets": 212,
+      "guideLinks": 16,
+      "dataset": "app/data/maps/paradox-junction.json",
+      "artwork": [
+        "/maps/paradox-junction/overview.webp",
+        "/maps/paradox-junction/overview.webp",
+        "/maps/paradox-junction/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Paradox Junction quest and spawn reference photos",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/paradox-junction/",
+          "note": "RC-XD, headset and ball candidate descriptions; room-area placement reviewed against the official atlas."
+        },
+        {
+          "name": "Community map · Cursed Mister Peeks candidates",
+          "url": "https://codzombiesguides.com/maps/paradox-junction/",
+          "note": "Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "totenreich",
+      "name": "Totenreich",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 2,
+      "locations": 163,
+      "targets": 61,
+      "guideLinks": 14,
+      "dataset": "app/data/maps/totenreich.json",
+      "artwork": [
+        "/maps/totenreich/overview.webp",
+        "/maps/totenreich/boss-arena.webp"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/totenreich/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/totenreich/totenreich-eidskallen-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        }
+      ]
+    },
+    {
+      "id": "kowakujo",
+      "name": "Kowakujō",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 94,
+      "targets": 70,
+      "guideLinks": 18,
+      "dataset": "app/data/maps/kowakujo.json",
+      "artwork": [
+        "/maps/kowakujo/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/kowakujo/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/kowakujo/kowakujo-main-map.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        },
+        {
+          "name": "Call of Duty — Kowakujō tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+          "note": "Official 4096-unit marker coordinates are normalized to the un-cropped tactical overview. Area guidance uses those landmarks and the guide’s room descriptions."
+        }
+      ]
+    },
+    {
+      "id": "rex-infernus",
+      "name": "Rex Infernus",
+      "gameId": "bo7",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 156,
+      "targets": 51,
+      "guideLinks": 11,
+      "dataset": "app/data/maps/rex-infernus.json",
+      "artwork": [
+        "/maps/rex-infernus/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/rex-infernus/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/rex-infernus/rex-infernus-main-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        }
+      ]
+    },
+    {
+      "id": "bo6-liberty-falls",
+      "name": "Liberty Falls",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 1,
+      "locations": 130,
+      "targets": 30,
+      "guideLinks": 30,
+      "dataset": "app/data/maps/bo6-liberty-falls.json",
+      "artwork": [
+        "/maps/bo6-liberty-falls/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "Liberty Falls guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/liberty-falls/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "bo6-terminus",
+      "name": "Terminus",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 2,
+      "locations": 175,
+      "targets": 37,
+      "guideLinks": 37,
+      "dataset": "app/data/maps/bo6-terminus.json",
+      "artwork": [
+        "/maps/bo6-terminus/prison.svg",
+        "/maps/bo6-terminus/biolab-islands.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "Terminus guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/terminus/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "bo6-citadelle-des-morts",
+      "name": "Citadelle des Morts",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 1,
+      "locations": 145,
+      "targets": 35,
+      "guideLinks": 35,
+      "dataset": "app/data/maps/bo6-citadelle-des-morts.json",
+      "artwork": [
+        "/maps/bo6-citadelle-des-morts/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "Citadelle des Morts guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/citadelle-des-morts/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "bo6-the-tomb",
+      "name": "The Tomb",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 1,
+      "locations": 109,
+      "targets": 21,
+      "guideLinks": 21,
+      "dataset": "app/data/maps/bo6-the-tomb.json",
+      "artwork": [
+        "/maps/bo6-the-tomb/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "The Tomb guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/the-tomb/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "bo6-shattered-veil",
+      "name": "Shattered Veil",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 1,
+      "locations": 125,
+      "targets": 27,
+      "guideLinks": 27,
+      "dataset": "app/data/maps/bo6-shattered-veil.json",
+      "artwork": [
+        "/maps/bo6-shattered-veil/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "Shattered Veil guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/shattered-veil/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "bo6-reckoning",
+      "name": "Reckoning",
+      "gameId": "bo6",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Published community services and quest locations with guide links. Candidate markers are possible sites, area rings are approximate, and some optional activities have no verified spatial pins yet."
+      },
+      "layers": 2,
+      "locations": 165,
+      "targets": 23,
+      "guideLinks": 23,
+      "dataset": "app/data/maps/bo6-reckoning.json",
+      "artwork": [
+        "/maps/bo6-reckoning/overview.svg",
+        "/maps/bo6-reckoning/boss-arena.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED community map & coordinates",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/tree/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+          "note": "MIT © Odinn H & Ben Ashley. Pinned revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0; SVG geometry and coordinate framing preserved. Physical types, cautious area precision and guide bindings added by CodWiki. Null positions and a duplicated-floor boss pin excluded. Not an independently surveyed or exhaustive inventory."
+        },
+        {
+          "name": "Reckoning guide references",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/reckoning/",
+          "note": "Existing CodWiki walkthrough sources support quest names, conditions and the linked guide steps. Pin coordinates come from the separately cited DECLASSIFIED source records."
+        }
+      ]
+    },
+    {
+      "id": "cw-die-maschine",
+      "name": "Die Maschine",
+      "gameId": "cw",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Sourced facilities, quest locations and selected side activities on schematic layers. Several floors share one plan; read marker floor and state notes. Random enemy drops and the full Intel collection are not mapped."
+      },
+      "layers": 2,
+      "locations": 106,
+      "targets": 19,
+      "guideLinks": 22,
+      "dataset": "app/data/maps/cw-die-maschine.json",
+      "artwork": [
+        "/maps/cw-die-maschine/surface.svg",
+        "/maps/cw-die-maschine/underground.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED — layouts and published location data",
+          "url": "https://declassified.app/",
+          "note": "Layout and coordinates by Odinn H, Ben Ashley and DECLASSIFIED contributors; MIT license retained beside each SVG. Pinned source commit e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0."
+        },
+        {
+          "name": "DECLASSIFIED source and MIT license",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+          "note": "Source pins use Leaflet CRS.Simple: x = longitude / 512; y = 1 − latitude / 512. All legacy/current overlay geometry matched before import."
+        },
+        {
+          "name": "CodWiki authored walkthrough",
+          "url": "/guides/cw-die-maschine",
+          "note": "Quest prerequisites, variable drops and guide anchor interpretation reviewed against the existing walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "cw-firebase-z",
+      "name": "Firebase Z",
+      "gameId": "cw",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Sourced facilities, quest locations and selected side activities on schematic layers. Several floors share one plan; read marker floor and state notes. Random enemy drops and the full Intel collection are not mapped."
+      },
+      "layers": 2,
+      "locations": 112,
+      "targets": 17,
+      "guideLinks": 20,
+      "dataset": "app/data/maps/cw-firebase-z.json",
+      "artwork": [
+        "/maps/cw-firebase-z/village.svg",
+        "/maps/cw-firebase-z/firebase.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED — layouts and published location data",
+          "url": "https://declassified.app/",
+          "note": "Layout and coordinates by Odinn H, Ben Ashley and DECLASSIFIED contributors; MIT license retained beside each SVG. Pinned source commit e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0."
+        },
+        {
+          "name": "DECLASSIFIED source and MIT license",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+          "note": "Source pins use Leaflet CRS.Simple: x = longitude / 512; y = 1 − latitude / 512. All legacy/current overlay geometry matched before import."
+        },
+        {
+          "name": "CodWiki authored walkthrough",
+          "url": "/guides/cw-firebase-z",
+          "note": "Quest prerequisites, variable drops and guide anchor interpretation reviewed against the existing walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "cw-mauer-der-toten",
+      "name": "Mauer der Toten",
+      "gameId": "cw",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Sourced facilities, quest locations and selected side activities on schematic layers. Several floors share one plan; read marker floor and state notes. Random enemy drops and the full Intel collection are not mapped."
+      },
+      "layers": 2,
+      "locations": 131,
+      "targets": 18,
+      "guideLinks": 26,
+      "dataset": "app/data/maps/cw-mauer-der-toten.json",
+      "artwork": [
+        "/maps/cw-mauer-der-toten/streets.svg",
+        "/maps/cw-mauer-der-toten/underground.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED — layouts and published location data",
+          "url": "https://declassified.app/",
+          "note": "Layout and coordinates by Odinn H, Ben Ashley and DECLASSIFIED contributors; MIT license retained beside each SVG. Pinned source commit e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0."
+        },
+        {
+          "name": "DECLASSIFIED source and MIT license",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+          "note": "Source pins use Leaflet CRS.Simple: x = longitude / 512; y = 1 − latitude / 512. All legacy/current overlay geometry matched before import."
+        },
+        {
+          "name": "CodWiki authored walkthrough",
+          "url": "/guides/cw-mauer-der-toten",
+          "note": "Quest prerequisites, variable drops and guide anchor interpretation reviewed against the existing walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "cw-forsaken",
+      "name": "Forsaken",
+      "gameId": "cw",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Sourced facilities, quest locations and selected side activities on schematic layers. Several floors share one plan; read marker floor and state notes. Random enemy drops and the full Intel collection are not mapped."
+      },
+      "layers": 2,
+      "locations": 124,
+      "targets": 20,
+      "guideLinks": 23,
+      "dataset": "app/data/maps/cw-forsaken.json",
+      "artwork": [
+        "/maps/cw-forsaken/surface.svg",
+        "/maps/cw-forsaken/underground.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED — layouts and published location data",
+          "url": "https://declassified.app/",
+          "note": "Layout and coordinates by Odinn H, Ben Ashley and DECLASSIFIED contributors; MIT license retained beside each SVG. Pinned source commit e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0."
+        },
+        {
+          "name": "DECLASSIFIED source and MIT license",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+          "note": "Source pins use Leaflet CRS.Simple: x = longitude / 512; y = 1 − latitude / 512. All legacy/current overlay geometry matched before import."
+        },
+        {
+          "name": "CodWiki authored walkthrough",
+          "url": "/guides/cw-forsaken",
+          "note": "Quest prerequisites, variable drops and guide anchor interpretation reviewed against the existing walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "cw-outbreak",
+      "name": "Outbreak",
+      "gameId": "cw",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Eight regions with sourced facilities, quest candidates and selected side activities. Missile-silo interiors, moving objectives, random enemy drops and the full Intel collection are not mapped. Match objectives and active spawns vary."
+      },
+      "layers": 8,
+      "locations": 574,
+      "targets": 20,
+      "guideLinks": 25,
+      "dataset": "app/data/maps/cw-outbreak.json",
+      "artwork": [
+        "/maps/cw-outbreak/ruka.svg",
+        "/maps/cw-outbreak/alpine.svg",
+        "/maps/cw-outbreak/golova.svg",
+        "/maps/cw-outbreak/sanatorium.svg",
+        "/maps/cw-outbreak/duga.svg",
+        "/maps/cw-outbreak/zoo.svg",
+        "/maps/cw-outbreak/collateral.svg",
+        "/maps/cw-outbreak/armada.svg"
+      ],
+      "sources": [
+        {
+          "name": "DECLASSIFIED — layouts and published location data",
+          "url": "https://declassified.app/",
+          "note": "Layout and coordinates by Odinn H, Ben Ashley and DECLASSIFIED contributors; MIT license retained beside each SVG. Pinned source commit e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0."
+        },
+        {
+          "name": "DECLASSIFIED source and MIT license",
+          "url": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+          "note": "Source pins use Leaflet CRS.Simple: x = longitude / 512; y = 1 − latitude / 512. All legacy/current overlay geometry matched before import."
+        },
+        {
+          "name": "CodWiki authored walkthrough",
+          "url": "/guides/cw-outbreak",
+          "note": "Quest prerequisites, variable drops and guide anchor interpretation reviewed against the existing walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "bo4-dead-of-the-night",
+      "name": "Dead of the Night",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed."
+      },
+      "layers": 1,
+      "locations": 19,
+      "targets": 31,
+      "guideLinks": 31,
+      "dataset": "app/data/maps/bo4-dead-of-the-night.json",
+      "artwork": [
+        "/maps/bo4-dead-of-the-night/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-dead-of-the-night",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/dead-of-the-night/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO4/dead_of_the_night/dead_of_the_night_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/dead-of-the-night/"
+        }
+      ]
+    },
+    {
+      "id": "bo4-ix",
+      "name": "IX",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference."
+      },
+      "layers": 1,
+      "locations": 18,
+      "targets": 25,
+      "guideLinks": 25,
+      "dataset": "app/data/maps/bo4-ix.json",
+      "artwork": [
+        "/maps/bo4-ix/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-ix",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/ix/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO4/ix/ix_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.reddit.com/r/CODZombies/comments/9zou7t/complete_ix_easter_egg_written_guide_updated/"
+        }
+      ]
+    },
+    {
+      "id": "bo4-voyage-of-despair",
+      "name": "Voyage of Despair",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial multi-deck route diagram. Bridge, State Rooms and Lounge are grouped under upper decks; internal stairs and many rooms are omitted. PaP markers are possible machine pedestals, not four active machines. Flooding changes access, not schematic placement."
+      },
+      "layers": 1,
+      "locations": 18,
+      "targets": 20,
+      "guideLinks": 20,
+      "dataset": "app/data/maps/bo4-voyage-of-despair.json",
+      "artwork": [
+        "/maps/bo4-voyage-of-despair/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-voyage-of-despair",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/voyage-of-despair/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://codzombies.info/voyage/"
+        }
+      ]
+    },
+    {
+      "id": "bo4-blood-of-the-dead",
+      "name": "Blood of the Dead",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas."
+      },
+      "layers": 1,
+      "locations": 19,
+      "targets": 36,
+      "guideLinks": 36,
+      "dataset": "app/data/maps/bo4-blood-of-the-dead.json",
+      "artwork": [
+        "/maps/bo4-blood-of-the-dead/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-blood-of-the-dead",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/blood-of-the-dead/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/blood-of-the-dead/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://mmmrkennedy.com/games/BO4/blood_of_the_dead/blood_of_the_dead_guide"
+        }
+      ]
+    },
+    {
+      "id": "bo4-ancient-evil",
+      "name": "Ancient Evil",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins."
+      },
+      "layers": 1,
+      "locations": 18,
+      "targets": 21,
+      "guideLinks": 21,
+      "dataset": "app/data/maps/bo4-ancient-evil.json",
+      "artwork": [
+        "/maps/bo4-ancient-evil/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-ancient-evil",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/ancient-evil/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/ancient-evil/"
+        }
+      ]
+    },
+    {
+      "id": "bo4-alpha-omega",
+      "name": "Alpha Omega",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Alpha Omega only, with surface and bunker regions grouped separately. The dashed Power House–Prisoner Holding connection requires player-placed Telepads. Exact house doors, bunker corridors, moving enemies and randomized active vents are not plotted."
+      },
+      "layers": 1,
+      "locations": 19,
+      "targets": 29,
+      "guideLinks": 29,
+      "dataset": "app/data/maps/bo4-alpha-omega.json",
+      "artwork": [
+        "/maps/bo4-alpha-omega/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-alpha-omega",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/alpha-omega/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/alpha-omega/"
+        }
+      ]
+    },
+    {
+      "id": "bo4-tag-der-toten",
+      "name": "Tag der Toten",
+      "gameId": "bo4",
+      "status": "gap",
+      "reason": "No adequate layout verified. Call of the Dead omits the expanded geography; the local lava image is a gameplay reference.",
+      "geometryCaveats": [],
+      "nextAction": "Verify a suitable source or author and review an original layout.",
+      "researchStatus": "gap",
+      "sourcePages": []
+    },
+    {
+      "id": "bo4-classified",
+      "name": "Classified",
+      "gameId": "bo4",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space."
+      },
+      "layers": 1,
+      "locations": 15,
+      "targets": 18,
+      "guideLinks": 18,
+      "dataset": "app/data/maps/bo4-classified.json",
+      "artwork": [
+        "/maps/bo4-classified/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO4 authored guide",
+          "url": "/guides/bo4-classified",
+          "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/classified/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO4/classified/classified_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.playstationtrophies.org/forum/topic/312647-call-of-duty-black-ops-4-classified-trophy-guide-and-roadmap/"
+        }
+      ]
+    },
+    {
+      "id": "bo3-shadows-of-evil",
+      "name": "Shadows of Evil",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "District connection schematic. Each district groups its elevated routes and ritual rooms. Train travel and Beast-only traversal need the guide details; physical distances are not represented."
+      },
+      "layers": 1,
+      "locations": 11,
+      "targets": 25,
+      "guideLinks": 25,
+      "dataset": "app/data/maps/bo3-shadows-of-evil.json",
+      "artwork": [
+        "/maps/bo3-shadows-of-evil/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-shadows-of-evil",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/shadows-of-evil/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO3/shadows_of_evil/shadows_of_evil_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/shadows-of-evil/"
+        }
+      ]
+    },
+    {
+      "id": "bo3-the-giant",
+      "name": "The Giant",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 9,
+      "guideLinks": 9,
+      "dataset": "app/data/maps/bo3-the-giant.json",
+      "artwork": [
+        "/maps/bo3-the-giant/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-the-giant",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/the-giant/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/the-giant/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://gamingaroundtheclock.com/the-giant/"
+        }
+      ]
+    },
+    {
+      "id": "bo3-der-eisendrache",
+      "name": "Der Eisendrache",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial destination schematic, not a full castle floor plan. Only the confirmed courtyard-to-Armory route is connected. Pack-a-Punch appears at one active destination after assembly; check signs."
+      },
+      "layers": 1,
+      "locations": 12,
+      "targets": 32,
+      "guideLinks": 32,
+      "dataset": "app/data/maps/bo3-der-eisendrache.json",
+      "artwork": [
+        "/maps/bo3-der-eisendrache/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-der-eisendrache",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/der-eisendrache/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO3/der_eisendrache/der_eisendrache_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/der-eisendrache/"
+        }
+      ]
+    },
+    {
+      "id": "bo3-zetsubou-no-shima",
+      "name": "Zetsubou No Shima",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access."
+      },
+      "layers": 1,
+      "locations": 11,
+      "targets": 19,
+      "guideLinks": 19,
+      "dataset": "app/data/maps/bo3-zetsubou-no-shima.json",
+      "artwork": [
+        "/maps/bo3-zetsubou-no-shima/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-zetsubou-no-shima",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/zetsubou-no-shima/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/zetsubou-no-shima/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=705034546"
+        }
+      ]
+    },
+    {
+      "id": "bo3-gorod-krovi",
+      "name": "Gorod Krovi",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point."
+      },
+      "layers": 1,
+      "locations": 11,
+      "targets": 27,
+      "guideLinks": 27,
+      "dataset": "app/data/maps/bo3-gorod-krovi.json",
+      "artwork": [
+        "/maps/bo3-gorod-krovi/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-gorod-krovi",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/gorod-krovi/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/gorod-krovi/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=724585259"
+        }
+      ]
+    },
+    {
+      "id": "bo3-revelations",
+      "name": "Revelations",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps."
+      },
+      "layers": 1,
+      "locations": 14,
+      "targets": 22,
+      "guideLinks": 22,
+      "dataset": "app/data/maps/bo3-revelations.json",
+      "artwork": [
+        "/maps/bo3-revelations/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops III guide",
+          "url": "/guides/bo3-revelations",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/revelations/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/revelations/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=776602072"
+        }
+      ]
+    },
+    {
+      "id": "bo3-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "bo3",
+      "status": "gap",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ]
+    },
+    {
+      "id": "bo3-verruckt",
+      "name": "Verrückt",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 5,
+      "guideLinks": 5,
+      "dataset": "app/data/maps/bo3-verruckt.json",
+      "artwork": [
+        "/maps/bo3-verruckt/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO3 · Zombies Chronicles guide",
+          "url": "/guides/bo3-verruckt",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/verruckt/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://callofduty.fandom.com/wiki/Samantha%27s_Sorrow"
+        }
+      ]
+    },
+    {
+      "id": "bo3-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "bo3",
+      "status": "gap",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ]
+    },
+    {
+      "id": "bo3-kino-der-toten",
+      "name": "Kino der Toten",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 10,
+      "guideLinks": 10,
+      "dataset": "app/data/maps/bo3-kino-der-toten.json",
+      "artwork": [
+        "/maps/bo3-kino-der-toten/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO3 · Zombies Chronicles guide",
+          "url": "/guides/bo3-kino-der-toten",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/kino-der-toten/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide"
+        }
+      ]
+    },
+    {
+      "id": "bo3-ascension",
+      "name": "Ascension",
+      "gameId": "bo3",
+      "status": "gap",
+      "reason": "Candidate image type and original floor-plan files remain unresolved.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve the named gallery drawings and original creators; visually inspect BO_Ascension.jpg, accepting it only if actually a useful plan.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Category%3AAscension_images",
+        "https://gameranx.com/features/id/106907/article/call-of-duty-black-ops-3-zombie-chronicles-ascension-map-walkthrough-map-guide/",
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62247"
+      ]
+    },
+    {
+      "id": "bo3-shangri-la",
+      "name": "Shangri-La",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 15,
+      "guideLinks": 15,
+      "dataset": "app/data/maps/bo3-shangri-la.json",
+      "artwork": [
+        "/maps/bo3-shangri-la/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO3 · Zombies Chronicles guide",
+          "url": "/guides/bo3-shangri-la",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/shangri-la/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide?version=bo3"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.accelerated-ideas.com/news/shangrila-easter-egg-steps-zombies-chronicles-dlc-5.aspx"
+        }
+      ]
+    },
+    {
+      "id": "bo3-moon",
+      "name": "Moon",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+      },
+      "layers": 1,
+      "locations": 12,
+      "targets": 23,
+      "guideLinks": 23,
+      "dataset": "app/data/maps/bo3-moon.json",
+      "artwork": [
+        "/maps/bo3-moon/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO3 · Zombies Chronicles guide",
+          "url": "/guides/bo3-moon",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/moon/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2373011651"
+        }
+      ]
+    },
+    {
+      "id": "bo3-origins",
+      "name": "Origins",
+      "gameId": "bo3",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Credited community layout with area overlays. Baked-in symbols remain visible when filters are changed. Interior floors and Crazy Place are not fully drawn; markers describe their access regions. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once."
+      },
+      "layers": 1,
+      "locations": 20,
+      "targets": 29,
+      "guideLinks": 29,
+      "dataset": "app/data/maps/bo3-origins.json",
+      "artwork": [
+        "/maps/bo2-origins/origins-zedz.jpg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki BO3 · Zombies Chronicles guide",
+          "url": "/guides/bo3-origins",
+          "note": "Edition-specific instructions supply area overlays and guide links. The base is the credited Origins creator image."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/origins/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=946030431"
+        },
+        {
+          "name": "Origins map by u/ZedzDEMIZie",
+          "url": "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+          "note": "Creator explicitly permits any use with credit in the linked discussion. The selected golden-dig revision is https://i.imgur.com/9aPCMFq.jpg. Inspected at 5760 × 3240; original attribution is retained in the artwork."
+        }
+      ]
+    },
+    {
+      "id": "bo2-tranzit",
+      "name": "TranZit",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Bus-stop navigation diagram, not an overhead road map. Walking fog routes, cabin, Nacht and pylon fields are not located on this partial layer. Read guide landmarks for them."
+      },
+      "layers": 1,
+      "locations": 9,
+      "targets": 20,
+      "guideLinks": 20,
+      "dataset": "app/data/maps/bo2-tranzit.json",
+      "artwork": [
+        "/maps/bo2-tranzit/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-tranzit",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/tranzit/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/tranzit/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombieguides.com/tranzit"
+        }
+      ]
+    },
+    {
+      "id": "bo2-bus-depot",
+      "name": "Bus Depot",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms."
+      },
+      "layers": 1,
+      "locations": 5,
+      "targets": 4,
+      "guideLinks": 4,
+      "dataset": "app/data/maps/bo2-bus-depot.json",
+      "artwork": [
+        "/maps/bo2-bus-depot/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-bus-depot",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://callofduty.fandom.com/wiki/Bus_Depot"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://discover.hubpages.com/games-hobbies/Black-Ops-2-Zombies-Bus-Depot-on-Survival-Mode-Strategy-Tips"
+        }
+      ]
+    },
+    {
+      "id": "bo2-town",
+      "name": "Town",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths."
+      },
+      "layers": 1,
+      "locations": 9,
+      "targets": 11,
+      "guideLinks": 11,
+      "dataset": "app/data/maps/bo2-town.json",
+      "artwork": [
+        "/maps/bo2-town/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-town",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://gamefaqs.gamespot.com/pc/669290-call-of-duty-black-ops-ii/faqs/65308"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=445161376"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.reddit.com/r/CODZombies/comments/13sxi2/get_all_perks_on_survival/"
+        }
+      ]
+    },
+    {
+      "id": "bo2-farm",
+      "name": "Farm",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied."
+      },
+      "layers": 1,
+      "locations": 9,
+      "targets": 8,
+      "guideLinks": 8,
+      "dataset": "app/data/maps/bo2-farm.json",
+      "artwork": [
+        "/maps/bo2-farm/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-farm",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://callofduty.fandom.com/wiki/Farm"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://gamefaqs.gamespot.com/ps3/669288-call-of-duty-black-ops-ii/faqs/65280"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bo2-diner",
+      "name": "Diner",
+      "gameId": "bo2",
+      "status": "gap",
+      "reason": "The Turned guide supplies tactics but insufficient checked arena topology for a useful navigational schematic.",
+      "geometryCaveats": [],
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items.",
+      "researchStatus": "candidate",
+      "sourcePages": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ]
+    },
+    {
+      "id": "bo2-nuketown-zombies",
+      "name": "Nuketown Zombies",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins."
+      },
+      "layers": 1,
+      "locations": 6,
+      "targets": 10,
+      "guideLinks": 10,
+      "dataset": "app/data/maps/bo2-nuketown-zombies.json",
+      "artwork": [
+        "/maps/bo2-nuketown-zombies/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-nuketown-zombies",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/nuketown/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombieguides.com/nuketown-zombies"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://mmmrkennedy.com/games/BO2/nuketown/nuketown_guide"
+        }
+      ]
+    },
+    {
+      "id": "bo2-die-rise",
+      "name": "Die Rise",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 22,
+      "guideLinks": 22,
+      "dataset": "app/data/maps/bo2-die-rise.json",
+      "artwork": [
+        "/maps/bo2-die-rise/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-die-rise",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/die-rise/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/die-rise/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombieguides.com/die-rise"
+        }
+      ]
+    },
+    {
+      "id": "bo2-mob-of-the-dead",
+      "name": "Mob of the Dead",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways."
+      },
+      "layers": 1,
+      "locations": 13,
+      "targets": 27,
+      "guideLinks": 27,
+      "dataset": "app/data/maps/bo2-mob-of-the-dead.json",
+      "artwork": [
+        "/maps/bo2-mob-of-the-dead/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-mob-of-the-dead",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/mob-of-the-dead/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/mob-of-the-dead/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://mmmrkennedy.com/games/BO2/mob_of_the_dead/mob_of_the_dead_guide"
+        }
+      ]
+    },
+    {
+      "id": "bo2-cell-block",
+      "name": "Cell Block",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 8,
+      "guideLinks": 8,
+      "dataset": "app/data/maps/bo2-cell-block.json",
+      "artwork": [
+        "/maps/bo2-cell-block/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-cell-block",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.callofdutyzombies.com/topic/156717-the-full-cell-block-grief-guide/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://callofduty.fandom.com/wiki/Cell_Block"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bo2-buried",
+      "name": "Buried",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial region schematic. Town interiors share an area marker, and the maze is intentionally not a fabricated static solution. Only an active prepared fountain is a return portal."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 38,
+      "guideLinks": 38,
+      "dataset": "app/data/maps/bo2-buried.json",
+      "artwork": [
+        "/maps/bo2-buried/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-buried",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/buried/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/buried/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombieguides.com/buried"
+        }
+      ]
+    },
+    {
+      "id": "bo2-borough",
+      "name": "Borough",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial Borough mode orientation. The Church/mansion frontage belongs to Grief; Turned uses a smaller street arena. No mansion crossing, maze, Arthur task or buildable parts are implied."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 6,
+      "guideLinks": 6,
+      "dataset": "app/data/maps/bo2-borough.json",
+      "artwork": [
+        "/maps/bo2-borough/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-borough",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://discover.hubpages.com/games-hobbies/Borough-Grief-Mode-Buried-Grief-Call-of-Duty-Black-Ops-2-Zombies"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://callofduty.fandom.com/wiki/Borough"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bo2-origins",
+      "name": "Origins",
+      "gameId": "bo2",
+      "status": "added",
+      "coverage": {
+        "kind": "guide-linked",
+        "note": "Credited community layout with area overlays. Baked-in symbols remain visible when filters are changed. Interior floors and Crazy Place are not fully drawn; markers describe their access regions. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once."
+      },
+      "layers": 1,
+      "locations": 20,
+      "targets": 29,
+      "guideLinks": 29,
+      "dataset": "app/data/maps/bo2-origins.json",
+      "artwork": [
+        "/maps/bo2-origins/origins-zedz.jpg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops II guide",
+          "url": "/guides/bo2-origins",
+          "note": "Edition-specific instructions supply area overlays and guide links. The base is the credited Origins creator image."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/origins/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.glitchingqueen.com/origins.html"
+        },
+        {
+          "name": "Origins map by u/ZedzDEMIZie",
+          "url": "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+          "note": "Creator explicitly permits any use with credit in the linked discussion. The selected golden-dig revision is https://i.imgur.com/9aPCMFq.jpg. Inspected at 5760 × 3240; original attribution is retained in the artwork."
+        }
+      ]
+    },
+    {
+      "id": "waw-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "waw",
+      "status": "gap",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ]
+    },
+    {
+      "id": "waw-verruckt",
+      "name": "Verrückt",
+      "gameId": "waw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 6,
+      "guideLinks": 6,
+      "dataset": "app/data/maps/waw-verruckt.json",
+      "artwork": [
+        "/maps/waw-verruckt/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki World at War guide",
+          "url": "/guides/waw-verruckt",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/verruckt/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+        }
+      ]
+    },
+    {
+      "id": "waw-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "waw",
+      "status": "gap",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ]
+    },
+    {
+      "id": "waw-der-riese",
+      "name": "Der Riese",
+      "gameId": "waw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 11,
+      "guideLinks": 11,
+      "dataset": "app/data/maps/waw-der-riese.json",
+      "artwork": [
+        "/maps/waw-der-riese/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki World at War guide",
+          "url": "/guides/waw-der-riese",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/der-riese/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+        }
+      ]
+    },
+    {
+      "id": "bo1-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "bo1",
+      "status": "gap",
+      "reason": "Floor-plan file provenance remains unresolved; an independently checked original floor drawing is still needed.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ]
+    },
+    {
+      "id": "bo1-verruckt",
+      "name": "Verrückt",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 7,
+      "guideLinks": 7,
+      "dataset": "app/data/maps/bo1-verruckt.json",
+      "artwork": [
+        "/maps/bo1-verruckt/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-verruckt",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/verruckt/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+        }
+      ]
+    },
+    {
+      "id": "bo1-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "bo1",
+      "status": "gap",
+      "reason": "Legacy image link is not a calibrated floor plan; original main-hut/hut-route schematic needs visual/source verification.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ]
+    },
+    {
+      "id": "bo1-der-riese",
+      "name": "Der Riese",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 12,
+      "guideLinks": 12,
+      "dataset": "app/data/maps/bo1-der-riese.json",
+      "artwork": [
+        "/maps/bo1-der-riese/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-der-riese",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/der-riese/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+        }
+      ]
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "name": "Kino der Toten",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 13,
+      "guideLinks": 13,
+      "dataset": "app/data/maps/bo1-kino-der-toten.json",
+      "artwork": [
+        "/maps/bo1-kino-der-toten/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-kino-der-toten",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/kino-der-toten/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.reddit.com/r/CODZombies/comments/4p0mbg/kino_der_toten_complete_map_breakdown/"
+        }
+      ]
+    },
+    {
+      "id": "bo1-five",
+      "name": "Five",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes."
+      },
+      "layers": 1,
+      "locations": 8,
+      "targets": 7,
+      "guideLinks": 7,
+      "dataset": "app/data/maps/bo1-five.json",
+      "artwork": [
+        "/maps/bo1-five/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-five",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/five/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/five/five_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.reddit.com/r/CODZombies/comments/lqmf21/"
+        }
+      ]
+    },
+    {
+      "id": "bo1-ascension",
+      "name": "Ascension",
+      "gameId": "bo1",
+      "status": "gap",
+      "reason": "Candidate image type and original floor-plan files remain unresolved.",
+      "geometryCaveats": [],
+      "nextAction": "Resolve the named gallery drawings and original creators; visually inspect BO_Ascension.jpg, accepting it only if actually a useful plan.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Category%3AAscension_images",
+        "https://gameranx.com/features/id/106907/article/call-of-duty-black-ops-3-zombie-chronicles-ascension-map-walkthrough-map-guide/",
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62247"
+      ]
+    },
+    {
+      "id": "bo1-shangri-la",
+      "name": "Shangri-La",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial region schematic showing only guide-described connections. Surface paths between the bridge and minecart regions are omitted. Eclipse changes quest interactions, not this drawing’s scale."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 16,
+      "guideLinks": 16,
+      "dataset": "app/data/maps/bo1-shangri-la.json",
+      "artwork": [
+        "/maps/bo1-shangri-la/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-shangri-la",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/shangri-la/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/shangri_la/shangri_la_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/shangri-la/"
+        }
+      ]
+    },
+    {
+      "id": "bo1-moon",
+      "name": "Moon",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+      },
+      "layers": 1,
+      "locations": 12,
+      "targets": 23,
+      "guideLinks": 23,
+      "dataset": "app/data/maps/bo1-moon.json",
+      "artwork": [
+        "/maps/bo1-moon/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-moon",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/moon/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://callofduty.fandom.com/wiki/Moon/Radios_and_Audio_Reels"
+        }
+      ]
+    },
+    {
+      "id": "bo1-call-of-the-dead",
+      "name": "Call of the Dead",
+      "gameId": "bo1",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Region and transport diagram; ship decks and four lighthouse floors are grouped. Moving Pack-a-Punch and George are not shown as fixed active objects."
+      },
+      "layers": 1,
+      "locations": 10,
+      "targets": 22,
+      "guideLinks": 22,
+      "dataset": "app/data/maps/bo1-call-of-the-dead.json",
+      "artwork": [
+        "/maps/bo1-call-of-the-dead/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Black Ops guide",
+          "url": "/guides/bo1-call-of-the-dead",
+          "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+        },
+        {
+          "name": "Guide reference 1",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/call-of-the-dead/"
+        },
+        {
+          "name": "Guide reference 2",
+          "url": "https://mmmrkennedy.com/games/BO1/call_of_the_dead/call_of_the_dead_guide"
+        },
+        {
+          "name": "Guide reference 3",
+          "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/call-of-the-dead/"
+        }
+      ]
+    },
+    {
+      "id": "bo1-dead-ops-arcade",
+      "name": "Dead Ops Arcade",
+      "gameId": "bo1",
+      "status": "gap",
+      "reason": "Requires a sequence of independently sourced arcade arenas, not one map.",
+      "geometryCaveats": [],
+      "nextAction": "Defer the map button until an arena-index product with actual arena images and useful data is planned.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62778"
+      ]
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "name": "Zombies in Spaceland",
+      "gameId": "iw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs."
+      },
+      "layers": 1,
+      "locations": 16,
+      "targets": 33,
+      "guideLinks": 33,
+      "dataset": "app/data/maps/iw-zombies-in-spaceland.json",
+      "artwork": [
+        "/maps/iw-zombies-in-spaceland/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Infinite Warfare guide",
+          "url": "/guides/iw-zombies-in-spaceland",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2462403426",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/IW/zombies_in_spaceland/zombies_in_spaceland_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/zombies-in-spaceland/"
+        }
+      ]
+    },
+    {
+      "id": "iw-rave-in-the-redwoods",
+      "name": "Rave in the Redwoods",
+      "gameId": "iw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied."
+      },
+      "layers": 1,
+      "locations": 16,
+      "targets": 28,
+      "guideLinks": 28,
+      "dataset": "app/data/maps/iw-rave-in-the-redwoods.json",
+      "artwork": [
+        "/maps/iw-rave-in-the-redwoods/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Infinite Warfare guide",
+          "url": "/guides/iw-rave-in-the-redwoods",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/IW/rave_in_the_redwoods/rave_in_the_redwoods_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/rave-in-the-redwoods/"
+        }
+      ]
+    },
+    {
+      "id": "iw-shaolin-shuffle",
+      "name": "Shaolin Shuffle",
+      "gameId": "iw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots."
+      },
+      "layers": 1,
+      "locations": 19,
+      "targets": 34,
+      "guideLinks": 34,
+      "dataset": "app/data/maps/iw-shaolin-shuffle.json",
+      "artwork": [
+        "/maps/iw-shaolin-shuffle/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Infinite Warfare guide",
+          "url": "/guides/iw-shaolin-shuffle",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2644508979",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/IW/shaolin_shuffle/shaolin_shuffle_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/shaolin-shuffle/"
+        }
+      ]
+    },
+    {
+      "id": "iw-attack-of-the-radioactive-thing",
+      "name": "Attack of the Radioactive Thing",
+      "gameId": "iw",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "World-colour puzzle states should be marker conditions; verify beach, motel, power station and boss arena separately."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=2711831705"
+      ]
+    },
+    {
+      "id": "iw-the-beast-from-beyond",
+      "name": "The Beast from Beyond",
+      "gameId": "iw",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Separate station, cinema and boss areas/Mephistopheles; do not present portal-connected arenas on a false continuous coordinate plane."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/IW/the_beast_from_beyond/the_beast_from_beyond_guide"
+      ]
+    },
+    {
+      "id": "ww2-the-final-reich",
+      "name": "The Final Reich",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "Referenced creator/layout lead remains unverified or lacks accepted geometry and usage evidence.",
+      "geometryCaveats": [
+        "Above-ground Mittelburg, underground bunker and boss arena need layers. Guided/hardcore routes share geometry with different quest overlays."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "lead",
+      "sourcePages": [
+        "https://www.reddit.com/r/CODZombies/comments/17xkm7o"
+      ]
+    },
+    {
+      "id": "ww2-groesten-haus",
+      "name": "Groesten Haus",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Two floors and mystery-box room; multiplayer exterior and prologue forest are different playable boundaries and cannot be used uncritically."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://www.codzombie.com/atlas/groesten-haus",
+        "https://www.callofduty.com/blog/archives/defend-this-haus-a-brief-tour-of-groesten-haus"
+      ]
+    },
+    {
+      "id": "ww2-the-darkest-shore",
+      "name": "The Darkest Shore",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Surface cliffs/beach, bunker rooms, minecart routes and encounter/ritual states require verification."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://www.codzombie.com/atlas/the-darkest-shore"
+      ]
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "name": "The Shadowed Throne",
+      "gameId": "ww2",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork."
+      },
+      "layers": 1,
+      "locations": 17,
+      "targets": 28,
+      "guideLinks": 28,
+      "dataset": "app/data/maps/ww2-the-shadowed-throne.json",
+      "artwork": [
+        "/maps/ww2-the-shadowed-throne/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki World War II guide",
+          "url": "/guides/ww2-the-shadowed-throne",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://www.zombiescodex.com/world-war-ii/the-shadowed-throne/",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/WW2/the_shadowed_throne/the_shadowed_throne_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/the-shadowed-throne/"
+        }
+      ]
+    },
+    {
+      "id": "ww2-into-the-storm",
+      "name": "Into the Storm",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with Bodega Cervantes after boundary/door review; timed objectives and chapter weapon boxes need separate overlays."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/the_tortured_path_guide"
+      ]
+    },
+    {
+      "id": "ww2-across-the-depths",
+      "name": "Across the Depths",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with U.S.S. Mount Olympus after validation; upper/lower decks need independent layers; chapter objectives are not survival objectives."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/the_tortured_path_guide"
+      ]
+    },
+    {
+      "id": "ww2-beneath-the-ice",
+      "name": "Beneath the Ice",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with Altar of Blood after validation; temple elevations, sealed spaces and timed chapter objectives remain mode-specific."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/the_tortured_path_guide"
+      ]
+    },
+    {
+      "id": "ww2-bodega-cervantes",
+      "name": "Bodega Cervantes",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with Into the Storm; survival weapon lockers/Mystery Box and Sword side quest differ from chapter objectives."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://callofduty.fandom.com/wiki/Bodega_Cervantes",
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/bodega_cervantes_guide"
+      ]
+    },
+    {
+      "id": "ww2-uss-mount-olympus",
+      "name": "U.S.S. Mount Olympus",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with Across the Depths; upper/lower decks and mode-specific marker sets."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/uss_mount_olympus_guide"
+      ]
+    },
+    {
+      "id": "ww2-altar-of-blood",
+      "name": "Altar of Blood",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Potential shared base with Beneath the Ice; verify survival-only accessible areas, weapon economy and quest objects."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/the_tortured_path_guide",
+        "https://mmmrkennedy.com/games/WW2/the_tortured_path/survival_maps/altar_of_blood_guide"
+      ]
+    },
+    {
+      "id": "ww2-the-frozen-dawn",
+      "name": "The Frozen Dawn",
+      "gameId": "ww2",
+      "status": "gap",
+      "reason": "No adequate overhead or verified region topology found; guide screenshots alone are insufficient.",
+      "geometryCaveats": [
+        "Surface spawn, underground temple/rooms, teleporter destinations and boss arena must be represented separately where appropriate."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://mmmrkennedy.com/games/WW2/the_frozen_dawn/the_frozen_dawn_guide"
+      ]
+    },
+    {
+      "id": "aw-outbreak",
+      "name": "Outbreak",
+      "gameId": "aw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned."
+      },
+      "layers": 1,
+      "locations": 15,
+      "targets": 15,
+      "guideLinks": 15,
+      "dataset": "app/data/maps/aw-outbreak.json",
+      "artwork": [
+        "/maps/aw-outbreak/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+          "url": "/guides/aw-outbreak",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2015/01/call-of-duty-advanced-warfare-exo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2015/01/atlas-administration-map-layout-call-of.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/AW/outbreak_AW/outbreak_AW_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/wiki/outbreak/"
+        }
+      ]
+    },
+    {
+      "id": "aw-infection",
+      "name": "Infection",
+      "gameId": "aw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map."
+      },
+      "layers": 1,
+      "locations": 17,
+      "targets": 20,
+      "guideLinks": 20,
+      "dataset": "app/data/maps/aw-infection.json",
+      "artwork": [
+        "/maps/aw-infection/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+          "url": "/guides/aw-infection",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2015/04/value-voltage-map-layout-infection-exo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/AW/infection/infection_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/comments/30wwdi/infection_easter_egg_thread_spoilers/"
+        }
+      ]
+    },
+    {
+      "id": "aw-carrier",
+      "name": "Carrier",
+      "gameId": "aw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry."
+      },
+      "layers": 1,
+      "locations": 16,
+      "targets": 19,
+      "guideLinks": 19,
+      "dataset": "app/data/maps/aw-carrier.json",
+      "artwork": [
+        "/maps/aw-carrier/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+          "url": "/guides/aw-carrier",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2015/06/armory-map-layout-carrier-exo-zombies.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2015/06/hangar-area-map-layout-carrier-exo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/AW/carrier/carrier_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.reddit.com/r/CODZombies/comments/3878ck/carrier_easter_egg_thread_spoilers/"
+        }
+      ]
+    },
+    {
+      "id": "aw-descent",
+      "name": "Descent",
+      "gameId": "aw",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn."
+      },
+      "layers": 1,
+      "locations": 17,
+      "targets": 19,
+      "guideLinks": 19,
+      "dataset": "app/data/maps/aw-descent.json",
+      "artwork": [
+        "/maps/aw-descent/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+          "url": "/guides/aw-descent",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2015/08/reception-and-promenade-area-map-layout.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 4",
+          "url": "https://codzombified.blogspot.com/2015/08/galleria-map-layout-for-descent-exo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/AW/descent/descent_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.playstationtrophies.org/game/call-of-duty-advanced-warfare-ps3/guide/"
+        }
+      ]
+    },
+    {
+      "id": "vanguard-der-anfang",
+      "name": "Der Anfang",
+      "gameId": "vanguard",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted."
+      },
+      "layers": 1,
+      "locations": 13,
+      "targets": 14,
+      "guideLinks": 14,
+      "dataset": "app/data/maps/vanguard-der-anfang.json",
+      "artwork": [
+        "/maps/vanguard-der-anfang/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Vanguard guide",
+          "url": "/guides/vanguard-der-anfang",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-panzer-column.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2022/02/der-anfang-map-layout-theater-theater.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://www.codzombieguides.com/der-anfang"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.treyarch.com/game-intel/2021/11/Your_Gameplay_Guide_to_Vanguard_Zombies"
+        }
+      ]
+    },
+    {
+      "id": "vanguard-terra-maledicta",
+      "name": "Terra Maledicta",
+      "gameId": "vanguard",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup."
+      },
+      "layers": 1,
+      "locations": 14,
+      "targets": 16,
+      "guideLinks": 16,
+      "dataset": "app/data/maps/vanguard-terra-maledicta.json",
+      "artwork": [
+        "/maps/vanguard-terra-maledicta/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Vanguard guide",
+          "url": "/guides/vanguard-terra-maledicta",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-east-spring-tents-fuel.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/VG/terra_maledicta/terra_maledicta_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.codzombieguides.com/terra-maledicta"
+        }
+      ]
+    },
+    {
+      "id": "vanguard-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "vanguard",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points."
+      },
+      "layers": 1,
+      "locations": 16,
+      "targets": 21,
+      "guideLinks": 21,
+      "dataset": "app/data/maps/vanguard-shi-no-numa.json",
+      "artwork": [
+        "/maps/vanguard-shi-no-numa/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Vanguard guide",
+          "url": "/guides/vanguard-shi-no-numa",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-dig-site-map-layout-call-of.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-doctors-quarters-map-layout.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/VG/shi_no_numa_reborn/shi_no_numa_reborn_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.codzombieguides.com/shi-no-numa"
+        }
+      ]
+    },
+    {
+      "id": "vanguard-the-archon",
+      "name": "The Archon",
+      "gameId": "vanguard",
+      "status": "added",
+      "coverage": {
+        "kind": "schematic",
+        "note": "The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas."
+      },
+      "layers": 1,
+      "locations": 16,
+      "targets": 24,
+      "guideLinks": 24,
+      "dataset": "app/data/maps/vanguard-the-archon.json",
+      "artwork": [
+        "/maps/vanguard-the-archon/overview.svg"
+      ],
+      "sources": [
+        {
+          "name": "CodWiki Vanguard guide",
+          "url": "/guides/vanguard-the-archon",
+          "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+        },
+        {
+          "name": "Documented region connections 1",
+          "url": "https://codzombified.blogspot.com/2022/09/archon-map-layout-temple-area-call-of.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 2",
+          "url": "https://codzombified.blogspot.com/2022/09/archon-east-spring-tents-fuel-depot.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 3",
+          "url": "https://codzombified.blogspot.com/2022/09/archon-west-spring-bazaar-arroyo.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Documented region connections 4",
+          "url": "https://codzombified.blogspot.com/2022/09/archon-merchant-road-debris-field-spike.html",
+          "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+        },
+        {
+          "name": "Illustrated guide reference 1",
+          "url": "https://mmmrkennedy.com/games/VG/the_archon/the_archon_guide"
+        },
+        {
+          "name": "Illustrated guide reference 2",
+          "url": "https://www.codzombieguides.com/the-archon"
+        }
+      ]
+    },
+    {
+      "id": "mw3-urzikstan",
+      "name": "Urzikstan",
+      "gameId": "mw3",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 338,
+      "targets": 32,
+      "guideLinks": 21,
+      "dataset": "app/data/maps/mw3-urzikstan.json",
+      "artwork": [
+        "/maps/mw3-urzikstan/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Urzikstan",
+          "url": "https://wzhub.gg/map/urzikstan/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-urzikstan",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "name": "Dark Aether — Season 1",
+      "gameId": "mw3",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 27,
+      "targets": 9,
+      "guideLinks": 9,
+      "dataset": "app/data/maps/mw3-dark-aether-season-1.json",
+      "artwork": [
+        "/maps/mw3-dark-aether-season-1/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Al Bagra Fortress",
+          "url": "https://wzhub.gg/map/dark-aether/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-1",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "name": "Dark Aether — Season 2",
+      "gameId": "mw3",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 29,
+      "targets": 8,
+      "guideLinks": 8,
+      "dataset": "app/data/maps/mw3-dark-aether-season-2.json",
+      "artwork": [
+        "/maps/mw3-dark-aether-season-2/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Sa'id City",
+          "url": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-2",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "name": "Dark Aether — Season 3",
+      "gameId": "mw3",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 21,
+      "targets": 5,
+      "guideLinks": 5,
+      "dataset": "app/data/maps/mw3-dark-aether-season-3.json",
+      "artwork": [
+        "/maps/mw3-dark-aether-season-3/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Zarqwa Hydroelectric",
+          "url": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-3",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-unstable-rift",
+      "name": "Unstable Rift",
+      "gameId": "mw3",
+      "status": "gap",
+      "reason": "No arena layout verified. Urzikstan obelisk entry points do not represent the separate Rift arena.",
+      "geometryCaveats": [
+        "Urzikstan obelisks/entrance markers are pre-entry navigation and already belong to the Urzikstan coordinate space; do not label these as an arena map. Rift arena is a separate wave challenge, not Season 1/2/3/5 Dark Aether geometry."
+      ],
+      "nextAction": "Keep the guide honest about missing spatial coverage. Investigate linked lead/reference or capture and author a validated layout; do not fabricate a base map.",
+      "researchStatus": "gap",
+      "sourcePages": [
+        "https://www.callofduty.com/patchnotes/2024/05/call-of-duty-modern-warfare-iii-season-4-patch-notes"
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "name": "Dark Aether — Season 5",
+      "gameId": "mw3",
+      "status": "existing-updated",
+      "coverage": {
+        "kind": "existing",
+        "note": "Existing dataset retained with reviewed physical types and the shared compact controls."
+      },
+      "layers": 1,
+      "locations": 30,
+      "targets": 8,
+      "guideLinks": 9,
+      "dataset": "app/data/maps/mw3-dark-aether-season-5.json",
+      "artwork": [
+        "/maps/mw3-dark-aether-season-5/overview.webp"
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Al Mazrah City / Highrise",
+          "url": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    }
+  ]
+}

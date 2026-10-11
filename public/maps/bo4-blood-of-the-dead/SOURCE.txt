@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-blood-of-the-dead and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas.

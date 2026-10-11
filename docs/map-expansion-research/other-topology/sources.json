@@ -1,0 +1,386 @@
+[
+  {
+    "guideId": "iw-zombies-in-spaceland",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2462403426",
+    "path": "docs\\map-expansion-research\\other-topology\\iw-zombies-in-spaceland-1.txt",
+    "length": 35155,
+    "sha256": "0bf6773a14e18b2dc0f027bed611b2adccc323317576fab2977387d1472075ff",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "iw-rave-in-the-redwoods",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023",
+    "path": "docs\\map-expansion-research\\other-topology\\iw-rave-in-the-redwoods-1.txt",
+    "length": 28513,
+    "sha256": "58e5433a4ef73422305e28b033b54649f7d72465e5df2b6b536c125437bf9c4e",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "iw-shaolin-shuffle",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2644508979",
+    "path": "docs\\map-expansion-research\\other-topology\\iw-shaolin-shuffle-1.txt",
+    "length": 20159,
+    "sha256": "42d7fd306fe66e14616c21c20fae31203515df0d659e94cfc3fefb898587d6c6",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "ww2-the-shadowed-throne",
+    "url": "https://www.zombiescodex.com/world-war-ii/the-shadowed-throne/",
+    "path": "docs\\map-expansion-research\\other-topology\\ww2-the-shadowed-throne-1.txt",
+    "length": 21652,
+    "sha256": "cf650e9049da1799ff69b975b086c9115d8d83cabd226a5949e54ae0438f3e36",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-outbreak",
+    "url": "https://codzombified.blogspot.com/2015/01/atlas-administration-map-layout-call-of.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-outbreak-1.txt",
+    "length": 1431,
+    "sha256": "1cbb8a121dd69d3b322bf0e636bee268da7fe360ceefa5a3a0f9b0666db4e3b4",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-outbreak",
+    "url": "https://codzombified.blogspot.com/2015/01/call-of-duty-advanced-warfare-exo_28.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-outbreak-2.txt",
+    "length": 1282,
+    "sha256": "45c063fb2705609b52af25c908769f1b5969189799257555d4f9ca7ffd96f6da",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-outbreak",
+    "url": "https://codzombified.blogspot.com/2015/01/call-of-duty-advanced-warfare-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-outbreak-3.txt",
+    "length": 5148,
+    "sha256": "de0b85c07b50d4627c42d8db93372320b900cfae5041a81f319aeed36935f559",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-outbreak",
+    "url": "https://codzombified.blogspot.com/2015/01/exo-testing-area-map-layout-call-of.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-outbreak-4.txt",
+    "length": 1433,
+    "sha256": "7ccc75833bed328dd7f1a21c67677435e494da0aa650a0c6b64b4133526ea4ad",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-outbreak",
+    "url": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-outbreak-5.txt",
+    "length": 1633,
+    "sha256": "ed889ebdd4c25c42ad4178a82e9d9af5c475f6e284e597498adbf521ae7b3595",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/atlas-command-centre-map-layout-for.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-1.txt",
+    "length": 1688,
+    "sha256": "4e440e94ac697b54b76bb66e490951e654930024a0302b9ea53abfd581fa8d64",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/burger-town-map-layout-for-infection.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-2.txt",
+    "length": 1121,
+    "sha256": "be52e4082f22e250aff6b3c55375b462e016b3a4faf545c0cb0242987fcd7d82",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/infection-exo-zombies-call-of-duty.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-3.txt",
+    "length": 3594,
+    "sha256": "081062a33656627dc71410cc442ef1bc62531d885ae1769ab24e94d059da3b47",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/sewer-area-map-layout-lower-level.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-4.txt",
+    "length": 1782,
+    "sha256": "80127c57e8c83e8f0c679995f018f6f07edc40fc21b8b53437ea2b54f5b3c9bc",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/sewer-area-map-layout-upper-level.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-5.txt",
+    "length": 1640,
+    "sha256": "3dd6dc5ce7fe0752fe8d9b7b385134cdb3e6b74de7499cd3b7654f4817e6cf5a",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-infection",
+    "url": "https://codzombified.blogspot.com/2015/04/value-voltage-map-layout-infection-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-infection-6.txt",
+    "length": 1606,
+    "sha256": "3ea379c92eefa79631594bbe186a818e5c464e4ca8f0dd4648f145c002f66fcf",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/armory-map-layout-carrier-exo-zombies.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-1.txt",
+    "length": 2257,
+    "sha256": "aa2ac35dc6b9db32cb13a2802ceee4081e4c128703d439eb4c06a721ccd6d31c",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-2.txt",
+    "length": 1506,
+    "sha256": "2c8721ecf7f61433c11c7a7ff235b5e730627ec3029769b3b07dd352fb5c84e3",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/cargo-area-map-layout-carrier-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-3.txt",
+    "length": 1475,
+    "sha256": "f5f6425a3a5498375434719dc8e68aa397ca4be60380d644861bf5051428ce94",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/carrier-exo-zombies-map-layout-call-of.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-4.txt",
+    "length": 4386,
+    "sha256": "082c2de33921093285c09bfe5f3836ba6ac411e4571b497500a82e0dddabe81c",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/hangar-area-map-layout-carrier-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-5.txt",
+    "length": 1779,
+    "sha256": "bcd02e892e561f037b5a5c085479c0d671f0b2442717e5b68c8f99d326cf8c7b",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/lift-area-map-layout-carrier-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-6.txt",
+    "length": 1129,
+    "sha256": "92b0055474432292a9e7aa9e5e9a3aced18fb379efa80551465da7d3f1198835",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-carrier",
+    "url": "https://codzombified.blogspot.com/2015/06/moon-pool-area-map-layout-carrier-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-carrier-7.txt",
+    "length": 1988,
+    "sha256": "6ff7da07725f751e9b6bb4d3b4b2717264130ebf2e7fe5037c61c9c0e3e01cd7",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-1.txt",
+    "length": 1389,
+    "sha256": "9193cd38821ab1627d0964220595a2a597324a0b422d52ed81c23c3b939aaabd",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-2.txt",
+    "length": 2016,
+    "sha256": "5f7da67273885ab6f25085a2e521b5acf24505bfd78d26130a292bd1c9035848",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/galleria-map-layout-for-descent-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-3.txt",
+    "length": 2039,
+    "sha256": "cc2094d8c8d33bd3beb42d2e2c63a11ccb33cca9f5ef76a88db2842d48846a98",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/landing-area-map-layout-for-descent-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-4.txt",
+    "length": 4055,
+    "sha256": "5892a167a5591910b0390ad8df56600192180dfbebb78685227e222c920b22b0",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/lounge-map-layout-for-descent-exo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-5.txt",
+    "length": 2091,
+    "sha256": "be0b6256aa25f3fa8f4de487125122948c6e98bba52d39d95061b82d408735c9",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/reception-and-promenade-area-map-layout.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-6.txt",
+    "length": 2242,
+    "sha256": "e11efab3f7871eb1f48f48913d69d5f183db4a8254fbc1386744c134612f0c62",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/spa-map-layout-for-descent-exo-zombies.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-7.txt",
+    "length": 1417,
+    "sha256": "bf48e50bef03e8835f9162579b5920832e0fb43954b0678fee34303934e394b4",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "aw-descent",
+    "url": "https://codzombified.blogspot.com/2015/08/tidal-generator-map-layout-for-descent.html",
+    "path": "docs\\map-expansion-research\\other-topology\\aw-descent-8.txt",
+    "length": 1983,
+    "sha256": "b2440db6a34610aaaf96ae85611cb9cf5b008d5c57569536ed8f083db5ca1312",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-der-anfang",
+    "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-der-anfang-1.txt",
+    "length": 1839,
+    "sha256": "7a32371e12e8a00a525f2e5feffc3fb276ea46fa34db39ebdf481f27997eab8e",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-der-anfang",
+    "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-fountain-square.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-der-anfang-2.txt",
+    "length": 9896,
+    "sha256": "0f862283d3e589417b077cf756f2ca708c3a0d3ddeac2195c06ba68036209f06",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-der-anfang",
+    "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-panzer-column.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-der-anfang-3.txt",
+    "length": 2464,
+    "sha256": "4a7ec38c896366f1104bd6ac51140e6c78d9fa1f3b9fe4399ad9c5955bf8e393",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-der-anfang",
+    "url": "https://codzombified.blogspot.com/2022/02/der-anfang-map-layout-theater-theater.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-der-anfang-4.txt",
+    "length": 1298,
+    "sha256": "a377e0b5a3f9e106e299a23b4c81ce94c494c8c4034778b7cd9e1363adf2a479",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-terra-maledicta",
+    "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-terra-maledicta-1.txt",
+    "length": 4431,
+    "sha256": "0cb9a6889f312877221f1cf9c862e77bebd7ca4d826d4ce4afed30edbbd386ff",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-terra-maledicta",
+    "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-east-spring-tents-fuel.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-terra-maledicta-2.txt",
+    "length": 2923,
+    "sha256": "7f17b007e9f2917fa318fd927adce2c79f364578b7bec0965fed67f7c8891089",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-terra-maledicta",
+    "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-merchant-road-debris.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-terra-maledicta-3.txt",
+    "length": 2103,
+    "sha256": "69fdc87138009898b208471bd6ac31c645caadb95f03bba824679f98f1379329",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-terra-maledicta",
+    "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-west-spring-arroyo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-terra-maledicta-4.txt",
+    "length": 3520,
+    "sha256": "a1993b38b193842e70f1b6798b0aa6f04ae8a8bfd576e825d5fa293d06b035c8",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-comm-room-map-layout-call.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-1.txt",
+    "length": 2395,
+    "sha256": "9b4c88e9f1d3e9275c13159d9e5b9eb7da0f056d410a01a1bfdf44c677691622",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-dig-site-map-layout-call-of.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-2.txt",
+    "length": 1633,
+    "sha256": "1c8115d5a716cc2332bdc44cf93beee2db338c9226dab6102b3d1521ac80c683",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-doctors-quarters-map-layout.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-3.txt",
+    "length": 2602,
+    "sha256": "3a141c6ed7f1cea49402f6d85e212b99e3d8e769cd6a1e40bec3dd54ea495cfe",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-fishing-hut-map-layout-call.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-4.txt",
+    "length": 2649,
+    "sha256": "d59c91115cbfed798c1264571603f5fba92517326ef54d2c51539a1278c86799",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-5.txt",
+    "length": 4591,
+    "sha256": "f1c0dd3cacfee4a135bd06888e1d7144d5698d68dc6183657d546259cd883133",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-shi-no-numa",
+    "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-storage-hut-map-layout-call.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-shi-no-numa-6.txt",
+    "length": 2270,
+    "sha256": "c059932cbd61cf17258c17a48c504aa1ffaa7bb1d09c9777b51533263ccb098e",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-the-archon",
+    "url": "https://codzombified.blogspot.com/2022/09/archon-map-layout-temple-area-call-of.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-the-archon-1.txt",
+    "length": 2347,
+    "sha256": "9d76d42b8a02caffe74cacd272ff20fbee94a9fca3d0bfbf64314e3867a75b7d",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-the-archon",
+    "url": "https://codzombified.blogspot.com/2022/09/archon-east-spring-tents-fuel-depot.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-the-archon-2.txt",
+    "length": 2445,
+    "sha256": "8fd4a1ff96008b0d75d3cfe073753343812ccb758c2c1a710555d7cbf40bacc5",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-the-archon",
+    "url": "https://codzombified.blogspot.com/2022/09/archon-merchant-road-debris-field-spike.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-the-archon-3.txt",
+    "length": 6690,
+    "sha256": "790ad0055ae47aa85c25b2cc6091aee2ac71f37506032a7d57b18ede1f95590d",
+    "retained": "Original factual relationship summary, not full article text"
+  },
+  {
+    "guideId": "vanguard-the-archon",
+    "url": "https://codzombified.blogspot.com/2022/09/archon-west-spring-bazaar-arroyo.html",
+    "path": "docs\\map-expansion-research\\other-topology\\vanguard-the-archon-4.txt",
+    "length": 4007,
+    "sha256": "f25921c33f7e46b73ce642ec062c10338ccee8b0b7f9fe747d350a7b7dcf7129",
+    "retained": "Original factual relationship summary, not full article text"
+  }
+]

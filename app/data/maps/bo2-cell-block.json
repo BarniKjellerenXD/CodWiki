@@ -1,0 +1,338 @@
+{
+  "id": "bo2-cell-block",
+  "name": "Cell Block",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-cell-block",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.callofdutyzombies.com/topic/156717-the-full-cell-block-grief-guide/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://callofduty.fandom.com/wiki/Cell_Block"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-cell-block/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Original spawn room",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Prison room",
+      "description": "Black Ops II · Prison room. Region on a schematic, not an exact object position. Five perks: Double Tap, Speed Cola, Deadshot, PhD and Mule Kick.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    },
+    {
+      "id": "area-cells",
+      "label": "Cell Block",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.5770000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Main cell floors",
+      "description": "Black Ops II · Main cell floors. Region on a schematic, not an exact object position. Buy the Cafeteria-side MP5; watch overhead arrivals.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-gun"
+    },
+    {
+      "id": "area-upper",
+      "label": "Upper Pack-a-Punch route",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops II · Upper floor. Region on a schematic, not an exact object position. Open the upper Pack-a-Punch route; upgrade inside the prison.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-pap"
+    },
+    {
+      "id": "area-cafe",
+      "label": "Cafeteria approach",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Room / approach",
+      "description": "Black Ops II · Room / approach. Region on a schematic, not an exact object position. Buy the Cafeteria-side MP5; watch overhead arrivals.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-gun"
+    },
+    {
+      "id": "area-warden",
+      "label": "Warden’s Office",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Office",
+      "description": "Black Ops II · Office. Region on a schematic, not an exact object position. Five perks: Double Tap, Speed Cola, Deadshot, PhD and Mule Kick.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    },
+    {
+      "id": "pap",
+      "label": "Upper Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.258,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Open the upper Cell Block route to Pack-a-Punch; its access door costs 2,000 and the upgrade costs 5,000. Double Tap is nearby. There is no plane flight, bridge trip or power-meter task. Crouch while using the machine to make it harder for opponents to push you off the walkway. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-pap"
+    },
+    {
+      "id": "double",
+      "label": "Double Tap by Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.538,
+      "y": 0.258,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Double Tap is by Pack-a-Punch, Speed Cola in Warden’s Office, Deadshot in Cafeteria, and PhD Flopper plus Mule Kick in the original Mob spawn room. Jugger-Nog, Quick Revive and Electric Cherry are absent. Double Tap and Speed Cola support a wall-gun setup; PhD supports explosive weapons and safe drops. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    },
+    {
+      "id": "speed",
+      "label": "Warden’s Office Speed Cola",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.808,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Office",
+      "description": "Double Tap is by Pack-a-Punch, Speed Cola in Warden’s Office, Deadshot in Cafeteria, and PhD Flopper plus Mule Kick in the original Mob spawn room. Jugger-Nog, Quick Revive and Electric Cherry are absent. Double Tap and Speed Cola support a wall-gun setup; PhD supports explosive weapons and safe drops. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    },
+    {
+      "id": "deadshot",
+      "label": "Cafeteria Deadshot",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.808,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Room / approach",
+      "description": "Double Tap is by Pack-a-Punch, Speed Cola in Warden’s Office, Deadshot in Cafeteria, and PhD Flopper plus Mule Kick in the original Mob spawn room. Jugger-Nog, Quick Revive and Electric Cherry are absent. Double Tap and Speed Cola support a wall-gun setup; PhD supports explosive weapons and safe drops. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    },
+    {
+      "id": "phd",
+      "label": "Spawn PhD Flopper / Mule Kick",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.318,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Prison room",
+      "description": "Double Tap is by Pack-a-Punch, Speed Cola in Warden’s Office, Deadshot in Cafeteria, and PhD Flopper plus Mule Kick in the original Mob spawn room. Jugger-Nog, Quick Revive and Electric Cherry are absent. Double Tap and Speed Cola support a wall-gun setup; PhD supports explosive weapons and safe drops. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-cell-block#guide-step-setup-perks"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-gun",
+      "title": "Buy the Cafeteria-side MP5; watch overhead arrivals.",
+      "locationIds": [
+        "area-cells",
+        "area-cafe"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-setup-gun"
+    },
+    {
+      "id": "guide-setup-pap",
+      "title": "Open the upper Pack-a-Punch route; upgrade inside the prison.",
+      "locationIds": [
+        "pap",
+        "area-cells",
+        "area-upper"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-setup-pap"
+    },
+    {
+      "id": "guide-setup-perks",
+      "title": "Five perks: Double Tap, Speed Cola, Deadshot, PhD and Mule Kick.",
+      "locationIds": [
+        "double",
+        "speed",
+        "deadshot",
+        "phd",
+        "area-spawn",
+        "area-upper",
+        "area-cafe",
+        "area-warden"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-setup-perks"
+    },
+    {
+      "id": "guide-setup-explosives",
+      "title": "Pair Mustang & Sally with PhD before using close-range blasts.",
+      "locationIds": [
+        "phd",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-setup-explosives"
+    },
+    {
+      "id": "guide-traps-rooms",
+      "title": "Check trap switches before entering either Box room.",
+      "locationIds": [
+        "area-cafe",
+        "area-warden"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-traps-rooms"
+    },
+    {
+      "id": "guide-traps-movement",
+      "title": "Use staged drops and clear the narrow Cell Walkway before entering.",
+      "locationIds": [
+        "area-spawn",
+        "area-cells",
+        "area-upper",
+        "area-cafe"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-traps-movement"
+    },
+    {
+      "id": "guide-cerberus-feed",
+      "title": "Feed six zombies to Cerberus and claim its pickup.",
+      "locationIds": [
+        "area-cells"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-cerberus-feed"
+    },
+    {
+      "id": "guide-cerberus-scope",
+      "title": "For plane and weapon quests, switch to Mob of the Dead.",
+      "locationIds": [
+        "area-cells"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Grief-only partial region schematic. No plane, bridge, Afterlife, Jugger-Nog, Quick Revive or Electric Cherry is implied. Office/spawn connection details are omitted.",
+      "guideAnchor": "guide-step-cerberus-scope"
+    }
+  ],
+  "quickLinks": {
+    "setup-gun": "guide-setup-gun",
+    "setup-pap": "guide-setup-pap",
+    "setup-perks": "guide-setup-perks",
+    "setup-explosives": "guide-setup-explosives",
+    "traps-rooms": "guide-traps-rooms",
+    "traps-movement": "guide-traps-movement",
+    "cerberus-feed": "guide-cerberus-feed",
+    "cerberus-scope": "guide-cerberus-scope"
+  }
+}

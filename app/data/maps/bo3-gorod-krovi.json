@@ -1,0 +1,594 @@
+{
+  "id": "bo3-gorod-krovi",
+  "name": "Gorod Krovi",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-gorod-krovi",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/gorod-krovi/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/gorod-krovi/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=724585259"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-gorod-krovi/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / Belsinki Square",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.737,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "City start",
+      "description": "Black Ops III · City start. Region on a schematic, not an exact object position. Collect egg → heat in dragon fire → cool → napalm, penetration and melee trials.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-equipment-2"
+    },
+    {
+      "id": "area-command",
+      "label": "Dragon Command",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Several floors",
+      "description": "Black Ops III · Several floors. Region on a schematic, not an exact object position. Power → three colored cylinders → defend three modules → collect their circuits.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-1"
+    },
+    {
+      "id": "area-supply",
+      "label": "Supply Depot",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.27699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Several floors",
+      "description": "Black Ops III · Several floors. Region on a schematic, not an exact object position. Power → three colored cylinders → defend three modules → collect their circuits.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-1"
+    },
+    {
+      "id": "area-factory",
+      "label": "Tank Factory",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Several floors",
+      "description": "Black Ops III · Several floors. Region on a schematic, not an exact object position. Power → three colored cylinders → defend three modules → collect their circuits.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-1"
+    },
+    {
+      "id": "area-operations",
+      "label": "Operations Bunker",
+      "layerId": "overview",
+      "x": 0.45,
+      "y": 0.777,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Bunker",
+      "description": "Black Ops III · Bunker. Region on a schematic, not an exact object position. Install circuits in Operations Bunker → dragon ride → Hatchery Pack-a-Punch.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-2"
+    },
+    {
+      "id": "area-hatchery",
+      "label": "Hatchery",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.777,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate flight destination",
+      "description": "Black Ops III · Separate flight destination. Region on a schematic, not an exact object position. Install circuits in Operations Bunker → dragon ride → Hatchery Pack-a-Punch.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-2"
+    },
+    {
+      "id": "power",
+      "label": "Dragon Command power",
+      "layerId": "overview",
+      "x": 0.192,
+      "y": 0.308,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Several floors",
+      "description": "Reach Dragon Command, turn on power and interact with SOPHIA. Enemies can now drop colored Code Cylinders. Insert each cylinder in its matching terminal: blue at Dragon Command, yellow at Supply Depot, red at Tank Factory. Follow the green beam to its Groph Module and protect it with nearby kills until it opens. Collect the Network Circuit and repeat for all three colors. If a module is destroyed, obtain another cylinder and retry. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-1"
+    },
+    {
+      "id": "sophia",
+      "label": "SOPHIA",
+      "layerId": "overview",
+      "x": 0.268,
+      "y": 0.308,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Several floors",
+      "description": "Reach Dragon Command, turn on power and interact with SOPHIA. Enemies can now drop colored Code Cylinders. Insert each cylinder in its matching terminal: blue at Dragon Command, yellow at Supply Depot, red at Tank Factory. Follow the green beam to its Groph Module and protect it with nearby kills until it opens. Collect the Network Circuit and repeat for all three colors. If a module is destroyed, obtain another cylinder and retry. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-1"
+    },
+    {
+      "id": "network",
+      "label": "Dragon Network Controller",
+      "layerId": "overview",
+      "x": 0.41200000000000003,
+      "y": 0.778,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Bunker",
+      "description": "Install the three circuits in the Dragon Network Controller in Operations Bunker. Pay 2,000 points at an active dragon platform to ride to the Hatchery, where Pack-a-Punch is available. The stations are Dragon Command, Supply Depot and Tank Factory. Leave through the Hatchery’s lower sewer chute when finished. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-2"
+    },
+    {
+      "id": "pap",
+      "label": "Hatchery Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.778,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Separate flight destination",
+      "description": "Install the three circuits in the Dragon Network Controller in Operations Bunker. Pay 2,000 points at an active dragon platform to ride to the Hatchery, where Pack-a-Punch is available. The stations are Dragon Command, Supply Depot and Tank Factory. Leave through the Hatchery’s lower sewer chute when finished. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-2"
+    },
+    {
+      "id": "shield",
+      "label": "Operations shield workbench",
+      "layerId": "overview",
+      "x": 0.488,
+      "y": 0.778,
+      "category": "equipment",
+      "typeId": "workbench",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Bunker",
+      "description": "Collect one shield piece from each group, then build at the Operations Bunker bench. Hold the shield in front of you during dragon fire; wearing it on your back does not protect your exposed front. Its fire blast is also needed for a trophy. Visage: Infirmary shelf near the middle-floor stairs, rubble by the broken Operations walkway, or upper floor beside Stamin-Up. Core: chair beside Juggernog in Department Store, the truck toward Operations Bunker, or a shelf inside Operations Bunker. Maw: Armory ground-floor rubble by Wunderfizz, the middle-floor wall beside the crashed-bus walkway, or upper-floor wall by the bridge. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-gorod-krovi#guide-step-setup-3"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Power → three colored cylinders → defend three modules → collect their circuits.",
+      "locationIds": [
+        "power",
+        "sophia",
+        "area-command",
+        "area-supply",
+        "area-factory"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Install circuits in Operations Bunker → dragon ride → Hatchery Pack-a-Punch.",
+      "locationIds": [
+        "network",
+        "pap",
+        "area-command",
+        "area-supply",
+        "area-factory",
+        "area-operations",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Collect three shield pieces → build in Operations Bunker.",
+      "locationIds": [
+        "shield",
+        "area-operations"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-equipment-1",
+      "title": "All players activate Hatchery crystal → survive four waves → collect Dragon Strike.",
+      "locationIds": [
+        "area-supply",
+        "area-operations",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-equipment-1"
+    },
+    {
+      "id": "guide-equipment-2",
+      "title": "Collect egg → heat in dragon fire → cool → napalm, penetration and melee trials.",
+      "locationIds": [
+        "area-spawn",
+        "area-command",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-equipment-2"
+    },
+    {
+      "id": "guide-equipment-3",
+      "title": "Incubate and defend egg → cool → collect → claim Gauntlet at spawn.",
+      "locationIds": [
+        "area-spawn",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-equipment-3"
+    },
+    {
+      "id": "guide-valves-1",
+      "title": "Power Hatchery generator → find green-light room and pink-cylinder room.",
+      "locationIds": [
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-valves-1"
+    },
+    {
+      "id": "guide-valves-3",
+      "title": "Insert cylinder → spell KRONOS top to bottom → submit.",
+      "locationIds": [
+        "sophia",
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-valves-3"
+    },
+    {
+      "id": "guide-trophies-1",
+      "title": "Statue hand + shield-blasted pipe + Supply Depot laser trap.",
+      "locationIds": [
+        "area-command",
+        "area-supply",
+        "area-factory"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-trophies-1"
+    },
+    {
+      "id": "guide-trophies-2",
+      "title": "Dragon Strike puddle + Gauntlet-punch safe + sewer red light / Hatchery toilet.",
+      "locationIds": [
+        "area-supply",
+        "area-operations",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-trophies-2"
+    },
+    {
+      "id": "guide-trophies-3",
+      "title": "Install trophies → activate monitor → complete five random challenges, then download.",
+      "locationIds": [
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-trophies-3"
+    },
+    {
+      "id": "guide-challenges-gersh",
+      "title": "Gersh: find yellow orb → Pack-a-Punched damage → listen → follow and repeat.",
+      "locationIds": [
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-challenges-gersh"
+    },
+    {
+      "id": "guide-challenges-valkyrie",
+      "title": "Escort green-eyed drone from spawn to SOPHIA without damaging it.",
+      "locationIds": [
+        "area-spawn",
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-challenges-valkyrie"
+    },
+    {
+      "id": "guide-challenges-mangler",
+      "title": "Find green-eyed Mangler → maintain its attention → lure it to Dragon Command.",
+      "locationIds": [
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-challenges-mangler"
+    },
+    {
+      "id": "guide-challenges-pod",
+      "title": "Protect distant module → send whelp for cargo → return cargo to SOPHIA.",
+      "locationIds": [
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-challenges-pod"
+    },
+    {
+      "id": "guide-challenges-download",
+      "title": "Take keycard → Hatchery computer / lockdown → retrieve downloaded card → SOPHIA.",
+      "locationIds": [
+        "area-command",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-challenges-download"
+    },
+    {
+      "id": "guide-boss-1",
+      "title": "Whelp delivers core to Nikolai → SOPHIA leaves → all players enter grate → arena button.",
+      "locationIds": [
+        "area-spawn",
+        "area-command"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-boss-1"
+    },
+    {
+      "id": "guide-shield-upgrade",
+      "title": "Upgraded shield and Dragon Strike: shield-upgrade",
+      "locationIds": [
+        "area-spawn",
+        "area-command",
+        "area-supply",
+        "area-factory"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-shield-upgrade"
+    },
+    {
+      "id": "guide-strike-upgrade",
+      "title": "Upgraded shield and Dragon Strike: strike-upgrade",
+      "locationIds": [
+        "area-spawn",
+        "area-operations",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-strike-upgrade"
+    },
+    {
+      "id": "guide-time-attacks",
+      "title": "Helmets, wings and timed melee rewards: time-attacks",
+      "locationIds": [
+        "area-operations"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-time-attacks"
+    },
+    {
+      "id": "guide-monkey-items",
+      "title": "Upgraded Monkey Bombs: monkey-items",
+      "locationIds": [
+        "area-command",
+        "area-supply",
+        "area-factory"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-monkey-items"
+    },
+    {
+      "id": "guide-monkey-finish",
+      "title": "Upgraded Monkey Bombs: monkey-finish",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-monkey-finish"
+    },
+    {
+      "id": "guide-dead-ended",
+      "title": "Music, Samantha’s challenge and lore: dead-ended",
+      "locationIds": [
+        "area-supply",
+        "area-operations"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-dead-ended"
+    },
+    {
+      "id": "guide-ace-of-spades",
+      "title": "Music, Samantha’s challenge and lore: ace-of-spades",
+      "locationIds": [
+        "area-command",
+        "area-factory",
+        "area-hatchery"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-ace-of-spades"
+    },
+    {
+      "id": "guide-samantha-start",
+      "title": "Music, Samantha’s challenge and lore: samantha-start",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-samantha-start"
+    },
+    {
+      "id": "guide-samantha-locations",
+      "title": "Music, Samantha’s challenge and lore: samantha-locations",
+      "locationIds": [
+        "area-spawn",
+        "area-command",
+        "area-supply",
+        "area-operations"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-samantha-locations"
+    },
+    {
+      "id": "guide-gorod-lore",
+      "title": "Music, Samantha’s challenge and lore: gorod-lore",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial flight-network and objective-region schematic. Ordinary streets and internal building connections are omitted. The Hatchery sewer return is not assigned an unverified landing point.",
+      "guideAnchor": "guide-step-gorod-lore"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "equipment-1": "guide-equipment-1",
+    "equipment-2": "guide-equipment-2",
+    "equipment-3": "guide-equipment-3",
+    "valves-1": "guide-valves-1",
+    "valves-3": "guide-valves-3",
+    "trophies-1": "guide-trophies-1",
+    "trophies-2": "guide-trophies-2",
+    "trophies-3": "guide-trophies-3",
+    "challenges-gersh": "guide-challenges-gersh",
+    "challenges-valkyrie": "guide-challenges-valkyrie",
+    "challenges-mangler": "guide-challenges-mangler",
+    "challenges-pod": "guide-challenges-pod",
+    "challenges-download": "guide-challenges-download",
+    "boss-1": "guide-boss-1",
+    "shield-upgrade": "guide-shield-upgrade",
+    "strike-upgrade": "guide-strike-upgrade",
+    "time-attacks": "guide-time-attacks",
+    "monkey-items": "guide-monkey-items",
+    "monkey-finish": "guide-monkey-finish",
+    "dead-ended": "guide-dead-ended",
+    "ace-of-spades": "guide-ace-of-spades",
+    "samantha-start": "guide-samantha-start",
+    "samantha-locations": "guide-samantha-locations",
+    "gorod-lore": "guide-gorod-lore"
+  }
+}

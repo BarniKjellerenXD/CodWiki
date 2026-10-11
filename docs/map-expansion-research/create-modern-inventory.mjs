@@ -1,0 +1,41 @@
+import fs from 'node:fs/promises'
+const base = new URL('./', import.meta.url)
+const catalog = JSON.parse(await fs.readFile(new URL('../../app/data/catalogue.json', base), 'utf8'))
+const downloads = JSON.parse((await fs.readFile(new URL('downloaded-assets.json', base), 'utf8')).replace(/^\uFEFF/, ''))
+const commit = downloads.commit
+const repo = 'https://github.com/Miss-placed/DECLASSIFIED'
+const vectorSource = `${repo}/blob/${commit}/src/data/maps/blackOps6Maps.tsx`
+const bo6 = {
+ 'liberty-falls': { keys: ['libertyFalls'], provider: 'liberty-falls/mwz', note: 'Good first new-map pilot; confirm roof and bank access and quest-object precision.' },
+ 'terminus': { keys: ['terminus_biolab','terminus_prison'], provider: 'terminus/mwz', note: 'Bio Lab/islands and prison layers exist. Separate islands-only entry has no dedicated overlay; do not count it as a third delivered layer. Audit caves, elevations and Patient 13 arena.' },
+ 'citadelle-des-morts': { keys: ['citadelle'], provider: 'citadelle-des-morts/zombies', note: 'Inspect combined exterior/interior arrangement, stairs and basement; no verified separate-floor inventory yet.' },
+ 'the-tomb': { keys: ['tomb'], provider: 'the-tomb/zombies', note: 'Verify the Dark Aether Nexus is represented and labeled separately from connected dig-site rooms.' },
+ 'shattered-veil': { keys: ['shatteredVeil'], provider: 'shattered-veil/zombies', note: 'Inspect mansion floors, underground and isolated quest spaces; do not assume one overlay equals complete floors.' },
+ 'reckoning': { keys: ['reckoning','reckoningBossArena'], provider: 'reckoning/zombies', note: 'Separate boss overlay verified in source. Main tower requires floor/teleport transition audit.' },
+}
+const cw = {
+ 'die-maschine': { files: ['dieMaschine/dieMaschine.svg','dieMaschine_underground/dieMaschine_underground.svg'], note: 'Surface plus facility. Dark Aether state is an independent facet; identical geometry does not establish identical POIs.' },
+ 'firebase-z': { files: ['firebaseZ/firebaseZ.svg','firebaseZ_spawn/firebaseZ_spawn.svg'], note: 'Main base and village/spawn need separate layers and linked teleport endpoints.' },
+ 'mauer-der-toten': { files: ['mauerDerToten/mauerDerToten.svg','mauerDerToten_streets/mauerDerToten_streets.svg'], note: 'Source mapDetails labels mauerDerToten as underground and mauerDerToten_streets as surface; the file names alone are misleading. Roof access remains to be audited.' },
+ 'forsaken': { files: ['forsaken/forsaken.svg','forsaken_underground/forsaken_underground.svg'], note: 'Surface and underground. Audit teleport connections and separated arenas before treating this as a complete floor stack.' },
+ 'outbreak': { files: ['alpine/alpine.svg','armada/armada.svg','collateral/collateral.svg','duga/duga.svg','golova/golova.svg','ruka/Ruka.svg','sanatorium/sanatorium.svg','zoo/zoo.svg'], note: 'Eight region drawings exist. Ruka missile silo interiors are not supplied as a ninth layer in this legacy set. Existing local radio/monkey/projector images are annotations, not automatically clean backgrounds. Two child quest guides need dataset-owner routing.' },
+}
+const bo4 = {
+ 'dead-of-the-night': { source:'https://www.reddit.com/r/CODZombies/comments/adh173/i_made_a_map_layout_for_dead_of_the_night/', mirror:'https://codzombified.blogspot.com/2019/03/dead-of-night-map-layout-black-ops-4.html', creator:'PvtLoganator; alternative by Sandkastles', note:'Mansion floors/cellar, cemetery, greenhouse and forest must be reviewed. Original post linked by creator; image links also verified in mirror HTML.', evidence:'creator-linked-image-candidate' },
+ 'ix': { source:'https://www.reddit.com/r/CODZombies/comments/af90as/just_finished_my_map_layout_for_ix/', mirror:'https://codzombified.blogspot.com/2019/03/ix-map-layout-for-call-of-duty-black.html', creator:'PvtLoganator; alternative projection by DownieHoofd', note:'Four towers and underground temple need floor separation; perspective projection is reference only.', evidence:'creator-linked-image-candidate' },
+ 'voyage-of-despair': { source:'https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/', creator:'TRPG_', note:'Original creator post includes vector PDF and full quality PNG links. Multi-deck layout: preserve every deck and stair connection; water/drained state separate. Download-link availability requires checking.', evidence:'original-creator-page-opened' },
+ 'blood-of-the-dead': { source:'https://www.reddit.com/r/CODZombies/comments/ae5hjm/as_requested_here_is_the_map_layout_for_blood_of/', mirror:'https://codzombified.blogspot.com/2019/03/blood-of-dead-map-layout-call-of-duty.html', creator:'PvtLoganator', note:'Separate floors and new industries/catwalk; Mob of the Dead POIs cannot be reused.', evidence:'creator-linked-image-candidate' },
+ 'ancient-evil': { source:'https://www.reddit.com/r/CODZombies/comments/b8vtvk/finally_got_to_play_ancient_evil_yesterday_so_ive/', alternative:'https://www.reddit.com/r/CODZombies/comments/cry59h/ancient_evil_detailed_map_fanart_feedback_welcome/', creator:'PvtLoganator; annotated edition by RayPoopertonIII', note:'Main city and dark side plus separate boss arena; annotated edition comments report missing/misplaced item candidates, so geometry is not verified marker truth.', evidence:'original-creator-page-opened' },
+ 'alpha-omega': { source:'https://www.reddit.com/r/CODZombies/comments/chax94/two_weeks_overdue_but_here_it_is_my_map_layout/', creator:'PvtLoganator', note:'Surface houses and bunker layers; never substitute BO2 Nuketown boundaries or POIs.', evidence:'original-creator-page-opened' },
+ 'tag-der-toten': { source:null, creator:null, note:'No adequate overhead identified yet. Local lava image is a gameplay/state illustration, not a layout. Call of the Dead geometry cannot substitute for this expanded map.', evidence:'search-gap' },
+ 'classified': { source:'https://www.reddit.com/r/CODZombies/comments/afmoyd/and_as_promised_here_is_my_map_layout_for/', mirror:'https://codzombified.blogspot.com/2019/03/classified-map-layout-call-of-duty.html', creator:'PvtLoganator', note:'Office/war-room/lab floors and Groom Lake; Five differs in rooms, perks and travel.', evidence:'creator-linked-image-candidate' },
+}
+const rows = catalog.maps.filter(m=>['bo6','cw','bo4'].includes(m.gameId)).map(m=>{
+ const slug=m.id.slice(m.gameId.length+1)
+ const row={id:m.id,name:m.name,gameId:m.gameId,reviewed:'2026-10-11',existingDataset:false,readiness:'candidate',coordinateStatus:'not-calibrated',geographyReview:'not-in-game-verified'}
+ if(m.gameId==='bo6') {const s=bo6[slug];return {...row,evidence:'source-vector-keys-verified',sourcePage:repo,assetSource:vectorSource,localSource:'assets/declassified/src/data/maps/blackOps6Maps.tsx',layerKeys:s.keys,alternativeProvider:'https://wzhub.gg/map/'+s.provider,assetKind:'vector-layout-in-jsx',credit:'DECLASSIFIED / Odinn H & Ben Ashley and contributors',usage:'Repository MIT notices preserved; separately review provenance of underlying game imagery. WZHUB alternative has no reuse license established.',notes:s.note}}
+ if(m.gameId==='cw') {const s=cw[slug];return {...row,evidence:'local-svg-candidates-downloaded',sourcePage:'https://declassified.app/legacy/',repository:repo,assetSources:s.files.map(f=>`${repo}/blob/${commit}/public/legacy/maps/${f}`),localAssets:s.files.map(f=>'assets/declassified/public/legacy/maps/'+f),assetKind:'vector-layout-svg',credit:'DECLASSIFIED / Odinn H and contributors',usage:'Legacy MIT notice preserved; separately review source provenance and game-art rights.',notes:s.note}}
+ const s=bo4[slug];return {...row,readiness:s.source?'candidate':'gap',evidence:s.evidence,sourcePage:s.source,mirror:s.mirror||null,alternative:s.alternative||null,assetKind:s.source?'annotated-creator-layout':'none-verified',credit:s.creator,usage:'No express republication permission located in this pass; retain attribution and request permission or use independently authored geometry.',notes:s.note}
+})
+await fs.writeFile(new URL('modern-sources.json',base),JSON.stringify({reviewed:'2026-10-11',maps:rows},null,2)+'\n')
+console.log(`Wrote ${rows.length} modern map source rows`)

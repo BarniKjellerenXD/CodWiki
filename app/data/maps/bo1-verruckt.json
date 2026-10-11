@@ -1,0 +1,295 @@
+{
+  "id": "bo1-verruckt",
+  "name": "Verrückt",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-verruckt",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/verruckt/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-verruckt/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-jug-side",
+      "label": "Jugger-Nog wing",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Black Ops · Ground floor. Region on a schematic, not an exact object position. Follow your spawn side upstairs toward power.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-spawn"
+    },
+    {
+      "id": "area-revive-side",
+      "label": "Quick Revive wing",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Black Ops · Ground floor. Region on a schematic, not an exact object position. Follow your spawn side upstairs toward power.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-spawn"
+    },
+    {
+      "id": "area-west-up",
+      "label": "Upstairs circuit",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops · Upper floor. Region on a schematic, not an exact object position. Follow your spawn side upstairs toward power.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-spawn"
+    },
+    {
+      "id": "area-east-up",
+      "label": "Upstairs kitchen route",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops · Upper floor. Region on a schematic, not an exact object position. Follow your spawn side upstairs toward power.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-spawn"
+    },
+    {
+      "id": "area-power",
+      "label": "Kitchen / power room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops · Upper floor. Region on a schematic, not an exact object position. Follow your spawn side upstairs toward power.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-spawn"
+    },
+    {
+      "id": "power-switch",
+      "label": "Power switch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.268,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Reach the power room at the far end of the upper floor and activate the switch. The dividing spawn door opens and the perk machines and electric traps become usable. Reunite through the now-open connection before making the next round harder. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-power"
+    },
+    {
+      "id": "juggernog",
+      "label": "Jugger-Nog starting side",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.7180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Jugger-Nog and Quick Revive mark the two starting sides; Double Tap and Speed Cola lie along the upstairs circuit. In solo, Quick Revive costs 500 and provides up to three self-revives. In co-op it speeds up revives instead. Double Tap increases fire rate; it is not Double Tap II. Mule Kick is available with the BO1 title update. There is no Pack-a-Punch route on this map. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-perks"
+    },
+    {
+      "id": "quick-revive",
+      "label": "Quick Revive starting side",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.7180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Jugger-Nog and Quick Revive mark the two starting sides; Double Tap and Speed Cola lie along the upstairs circuit. In solo, Quick Revive costs 500 and provides up to three self-revives. In co-op it speeds up revives instead. Double Tap increases fire rate; it is not Double Tap II. Mule Kick is available with the BO1 title update. There is no Pack-a-Punch route on this map. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-verruckt#guide-step-verruckt-perks"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-verruckt-spawn",
+      "title": "Follow your spawn side upstairs toward power.",
+      "locationIds": [
+        "area-jug-side",
+        "area-revive-side",
+        "area-west-up",
+        "area-east-up",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-spawn"
+    },
+    {
+      "id": "guide-verruckt-power",
+      "title": "Turn on power; reconnect downstairs.",
+      "locationIds": [
+        "power-switch",
+        "area-jug-side",
+        "area-revive-side",
+        "area-west-up",
+        "area-east-up",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-power"
+    },
+    {
+      "id": "guide-verruckt-perks",
+      "title": "Buy survival perks and learn the upper circuit.",
+      "locationIds": [
+        "juggernog",
+        "quick-revive",
+        "area-jug-side",
+        "area-revive-side",
+        "area-west-up",
+        "area-east-up"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-perks"
+    },
+    {
+      "id": "guide-verruckt-route",
+      "title": "Plan your next doorway and wait out trap cooldowns.",
+      "locationIds": [
+        "area-west-up",
+        "area-east-up",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-route"
+    },
+    {
+      "id": "guide-verruckt-song",
+      "title": "Flush the left toilet three times.",
+      "locationIds": [
+        "area-west-up",
+        "area-east-up",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-song"
+    },
+    {
+      "id": "guide-verruckt-chair",
+      "title": "Interact beside the dentist chair.",
+      "locationIds": [
+        "area-jug-side"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-chair"
+    },
+    {
+      "id": "guide-verruckt-radio",
+      "title": "Shoot the desk radio through the balcony window.",
+      "locationIds": [
+        "area-east-up"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-verruckt-radio"
+    }
+  ],
+  "quickLinks": {
+    "verruckt-spawn": "guide-verruckt-spawn",
+    "verruckt-power": "guide-verruckt-power",
+    "verruckt-perks": "guide-verruckt-perks",
+    "verruckt-route": "guide-verruckt-route",
+    "verruckt-song": "guide-verruckt-song",
+    "verruckt-chair": "guide-verruckt-chair",
+    "verruckt-radio": "guide-verruckt-radio"
+  }
+}

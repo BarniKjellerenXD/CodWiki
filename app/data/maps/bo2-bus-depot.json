@@ -1,0 +1,184 @@
+{
+  "id": "bo2-bus-depot",
+  "name": "Bus Depot",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-bus-depot",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://callofduty.fandom.com/wiki/Bus_Depot"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://discover.hubpages.com/games-hobbies/Black-Ops-2-Zombies-Bus-Depot-on-Survival-Mode-Strategy-Tips"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-bus-depot/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-terminal",
+      "label": "Terminal / spawn",
+      "layerId": "overview",
+      "x": 0.27,
+      "y": 0.5870000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Interior",
+      "description": "Black Ops II · Interior. Region on a schematic, not an exact object position. Earn 750 and open the depot exit.",
+      "source": "/guides/bo2-bus-depot#guide-step-setup-door"
+    },
+    {
+      "id": "area-forecourt",
+      "label": "Outside forecourt",
+      "layerId": "overview",
+      "x": 0.73,
+      "y": 0.5870000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside",
+      "description": "Black Ops II · Outside. Region on a schematic, not an exact object position. Buy a refillable wall weapon; use the outside Box when safe.",
+      "source": "/guides/bo2-bus-depot#guide-step-setup-weapons"
+    },
+    {
+      "id": "exit",
+      "label": "Depot exit",
+      "layerId": "overview",
+      "x": 0.232,
+      "y": 0.5880000000000001,
+      "category": "door",
+      "typeId": "door-buy",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Interior",
+      "description": "Use the starting M14 or Olympia to earn the 750 points needed for the depot exit. Avoid committing to a knife lunge after taking a hit. Open the exit before several windows are overwhelmed; the terminal has too little space to recover from a blocked doorway. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-bus-depot#guide-step-setup-door"
+    },
+    {
+      "id": "box",
+      "label": "Forecourt Mystery Box",
+      "layerId": "overview",
+      "x": 0.692,
+      "y": 0.5880000000000001,
+      "category": "weapon",
+      "typeId": "mystery-box",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Outside",
+      "description": "Outside, use the MP5 or Remington 870 MCS wall purchase for a weapon with a dependable ammo supply. The Mystery Box sits in the forecourt; take a spin only with a clear approach and enough ammunition to recover from a poor result. There is no upgrade machine to rescue a weak weapon later. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-bus-depot#guide-step-setup-weapons"
+    },
+    {
+      "id": "wallguns",
+      "label": "Outside wall weapons",
+      "layerId": "overview",
+      "x": 0.768,
+      "y": 0.5880000000000001,
+      "category": "weapon",
+      "typeId": "wall-buy",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Outside",
+      "description": "Outside, use the MP5 or Remington 870 MCS wall purchase for a weapon with a dependable ammo supply. The Mystery Box sits in the forecourt; take a spin only with a clear approach and enough ammunition to recover from a poor result. There is no upgrade machine to rescue a weak weapon later. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-bus-depot#guide-step-setup-weapons"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-door",
+      "title": "Earn 750 and open the depot exit.",
+      "locationIds": [
+        "exit",
+        "area-terminal"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms.",
+      "guideAnchor": "guide-step-setup-door"
+    },
+    {
+      "id": "guide-setup-weapons",
+      "title": "Buy a refillable wall weapon; use the outside Box when safe.",
+      "locationIds": [
+        "box",
+        "wallguns",
+        "area-forecourt"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms.",
+      "guideAnchor": "guide-step-setup-weapons"
+    },
+    {
+      "id": "guide-setup-limits",
+      "title": "Plan around two-hit health and no solo revive.",
+      "locationIds": [
+        "area-terminal"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms.",
+      "guideAnchor": "guide-step-setup-limits"
+    },
+    {
+      "id": "guide-survive-circle",
+      "title": "Circle the forecourt; widen the route for fresh spawns.",
+      "locationIds": [
+        "area-forecourt"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Survival only. No perks, Pack-a-Punch, Turbine or bus. The terminal-to-forecourt connection is shown without invented internal rooms.",
+      "guideAnchor": "guide-step-survive-circle"
+    }
+  ],
+  "quickLinks": {
+    "setup-door": "guide-setup-door",
+    "setup-weapons": "guide-setup-weapons",
+    "setup-limits": "guide-setup-limits",
+    "survive-circle": "guide-survive-circle"
+  }
+}

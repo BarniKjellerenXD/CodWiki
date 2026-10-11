@@ -1,0 +1,2482 @@
+{
+  "id": "bo4-voyage-of-despair",
+  "name": "Voyage of Despair",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Ship cutaway aligned to the reference floor plans. Room shapes are simplified; port and starboard overlap. Dashed links show regional routes. Pack-a-Punch pins are possible pedestal sites."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-voyage-of-despair",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/voyage-of-despair/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://codzombies.info/voyage/"
+    },
+    {
+      "name": "TRPG Voyage height atlas",
+      "url": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "note": "Reference for relative height slices (+3 to −5) and approximate room spans."
+    },
+    {
+      "name": "Annotated Voyage floor plans",
+      "url": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "note": "RayPoopertonIII / TRPG reference: stair runs, spawn deck and separate Sentinel platform. Original CodWiki cutaway; no map artwork copied."
+    },
+    {
+      "name": "Voyage travel and water reference",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/"
+    },
+    {
+      "name": "Voyage regional descent walkthrough",
+      "url": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Ship cutaway · all levels",
+      "image": "/maps/bo4-voyage-of-despair/overview.svg",
+      "width": 1600,
+      "height": 1000
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-bridge",
+      "label": "Bridge",
+      "layerId": "overview",
+      "x": 0.27092000000000005,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "bridge"
+      ],
+      "floor": "3",
+      "description": "Bridge on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-upper-grand-staircase",
+      "label": "Upper Grand Staircase",
+      "layerId": "overview",
+      "x": 0.33757,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "upper-grand-staircase"
+      ],
+      "floor": "3, 2",
+      "description": "Upper Grand Staircase on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-boat-deck",
+      "label": "Boat Deck",
+      "layerId": "overview",
+      "x": 0.40852,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "boat-deck"
+      ],
+      "floor": "3",
+      "description": "Boat Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-mid-deck",
+      "label": "Mid Deck",
+      "layerId": "overview",
+      "x": 0.51086,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "mid-deck"
+      ],
+      "floor": "3",
+      "description": "Mid Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-sun-deck",
+      "label": "Sun Deck",
+      "layerId": "overview",
+      "x": 0.60675,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "sun-deck"
+      ],
+      "floor": "3",
+      "description": "Sun Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-aft-decks",
+      "label": "Aft Decks",
+      "layerId": "overview",
+      "x": 0.68673,
+      "y": 0.12,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "aft-decks"
+      ],
+      "floor": "3, 2, 1",
+      "description": "Aft Decks on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-forecastle",
+      "label": "Forecastle",
+      "layerId": "overview",
+      "x": 0.24770000000000003,
+      "y": 0.208,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "forecastle"
+      ],
+      "floor": "2, 1, 0",
+      "description": "Forecastle on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-1st-class-lounge",
+      "label": "1st Class Lounge",
+      "layerId": "overview",
+      "x": 0.4283,
+      "y": 0.208,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "1st-class-lounge"
+      ],
+      "floor": "2",
+      "description": "1st Class Lounge on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-promenade-port-deck",
+      "label": "Promenade Port Deck",
+      "layerId": "overview",
+      "x": 0.6024499999999999,
+      "y": 0.208,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "promenade-port-deck"
+      ],
+      "floor": "2",
+      "description": "Promenade Port Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-promenade-starboard-deck",
+      "label": "Promenade Starboard Deck",
+      "layerId": "overview",
+      "x": 0.6024499999999999,
+      "y": 0.208,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "promenade-starboard-deck"
+      ],
+      "floor": "2",
+      "description": "Promenade Starboard Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-poop-deck",
+      "label": "Poop Deck",
+      "layerId": "overview",
+      "x": 0.9107599999999999,
+      "y": 0.208,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "poop-deck"
+      ],
+      "floor": "2, 1, 0",
+      "description": "Poop Deck on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-lower-grand-staircase",
+      "label": "Lower Grand Staircase",
+      "layerId": "overview",
+      "x": 0.33757,
+      "y": 0.296,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "lower-grand-staircase"
+      ],
+      "floor": "1, 0, -1",
+      "description": "Lower Grand Staircase on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-dining-hall",
+      "label": "Dining Hall",
+      "layerId": "overview",
+      "x": 0.43948,
+      "y": 0.296,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "dining-hall"
+      ],
+      "floor": "1",
+      "description": "Dining Hall on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-galley",
+      "label": "Galley",
+      "layerId": "overview",
+      "x": 0.51817,
+      "y": 0.296,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "galley"
+      ],
+      "floor": "1",
+      "description": "Galley on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-state-rooms",
+      "label": "State Rooms",
+      "layerId": "overview",
+      "x": 0.2778,
+      "y": 0.384,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "state-rooms"
+      ],
+      "floor": "0",
+      "description": "State Rooms on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-millionaire-suites",
+      "label": "Millionaire Suites",
+      "layerId": "overview",
+      "x": 0.35391,
+      "y": 0.384,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "millionaire-suites"
+      ],
+      "floor": "0",
+      "description": "Millionaire Suites on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-3rd-class-berths",
+      "label": "3rd Class Berths",
+      "layerId": "overview",
+      "x": 0.83895,
+      "y": 0.384,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "3rd-class-berths"
+      ],
+      "floor": "0, -1, -2",
+      "description": "3rd Class Berths on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-mail-rooms",
+      "label": "Mail Rooms",
+      "layerId": "overview",
+      "x": 0.16471000000000002,
+      "y": 0.472,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "mail-rooms"
+      ],
+      "floor": "-1, -2",
+      "description": "Mail Rooms on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-cargo-hold",
+      "label": "Cargo Hold",
+      "layerId": "overview",
+      "x": 0.14106,
+      "y": 0.648,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "cargo-hold"
+      ],
+      "floor": "-3",
+      "description": "Cargo Hold on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-boiler-room",
+      "label": "Boiler Room",
+      "layerId": "overview",
+      "x": 0.52505,
+      "y": 0.648,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "boiler-room"
+      ],
+      "floor": "-3, -4, -5",
+      "description": "Boiler Room on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-engine-room",
+      "label": "Engine Room",
+      "layerId": "overview",
+      "x": 0.6037399999999999,
+      "y": 0.648,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "engine-room"
+      ],
+      "floor": "-3, -4, -5",
+      "description": "Engine Room on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-provisions",
+      "label": "Provisions",
+      "layerId": "overview",
+      "x": 0.725,
+      "y": 0.648,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "provisions"
+      ],
+      "floor": "-3",
+      "description": "Provisions on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "area-turbine-room",
+      "label": "Turbine Room",
+      "layerId": "overview",
+      "x": 0.64545,
+      "y": 0.736,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "overview": true,
+      "activityIds": [
+        "navigation"
+      ],
+      "roomIds": [
+        "turbine-room"
+      ],
+      "floor": "-4, -5",
+      "description": "Turbine Room on the ship cutaway. Height and approximate fore/aft position follow the reference floor plans. Select a level to inspect this room and its documented connections.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/"
+    },
+    {
+      "id": "sentinel",
+      "label": "Sentinel Artifact",
+      "layerId": "overview",
+      "x": 0.9107599999999999,
+      "y": 0.208,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level +2",
+      "availability": "conditional",
+      "description": "Work from the Forecastle through the upper decks to the Poop Deck at the opposite end of the ship. Interact with the floating Sentinel Artifact above the wheel. Activate all four Pack-a-Punch pedestals; the machine appears at the last one activated. Poop Deck — near the Sentinel wheel. Lower Grand Staircase — bottom of the stairs. Cargo Hold — flooded forward compartment below Mail Rooms. Turbine Room — rear machinery area beside Engine Room. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-1",
+      "roomIds": [
+        "poop-deck"
+      ],
+      "footprintIds": [
+        "poop-deck-level-2"
+      ]
+    },
+    {
+      "id": "pap-poop",
+      "label": "PaP pedestal · Poop Deck",
+      "layerId": "overview",
+      "x": 0.8815199999999999,
+      "y": 0.296,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level +1",
+      "availability": "candidate",
+      "description": "Work from the Forecastle through the upper decks to the Poop Deck at the opposite end of the ship. Interact with the floating Sentinel Artifact above the wheel. Activate all four Pack-a-Punch pedestals; the machine appears at the last one activated. Poop Deck — near the Sentinel wheel. Lower Grand Staircase — bottom of the stairs. Cargo Hold — flooded forward compartment below Mail Rooms. Turbine Room — rear machinery area beside Engine Room. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-1",
+      "roomIds": [
+        "poop-deck"
+      ],
+      "footprintIds": [
+        "poop-deck-level-1"
+      ],
+      "conditions": "Possible pedestal site; only the active site has the machine."
+    },
+    {
+      "id": "pap-stairs",
+      "label": "PaP pedestal · lower stairs",
+      "layerId": "overview",
+      "x": 0.33757,
+      "y": 0.472,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level -1",
+      "availability": "candidate",
+      "description": "Work from the Forecastle through the upper decks to the Poop Deck at the opposite end of the ship. Interact with the floating Sentinel Artifact above the wheel. Activate all four Pack-a-Punch pedestals; the machine appears at the last one activated. Poop Deck — near the Sentinel wheel. Lower Grand Staircase — bottom of the stairs. Cargo Hold — flooded forward compartment below Mail Rooms. Turbine Room — rear machinery area beside Engine Room. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-1",
+      "roomIds": [
+        "lower-grand-staircase"
+      ],
+      "footprintIds": [
+        "lower-grand-staircase-level-minus-1"
+      ],
+      "conditions": "Possible pedestal site; only the active site has the machine."
+    },
+    {
+      "id": "pap-cargo",
+      "label": "PaP pedestal · Cargo Hold",
+      "layerId": "overview",
+      "x": 0.14106,
+      "y": 0.648,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level -3",
+      "availability": "candidate",
+      "description": "Work from the Forecastle through the upper decks to the Poop Deck at the opposite end of the ship. Interact with the floating Sentinel Artifact above the wheel. Activate all four Pack-a-Punch pedestals; the machine appears at the last one activated. Poop Deck — near the Sentinel wheel. Lower Grand Staircase — bottom of the stairs. Cargo Hold — flooded forward compartment below Mail Rooms. Turbine Room — rear machinery area beside Engine Room. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-1",
+      "roomIds": [
+        "cargo-hold"
+      ],
+      "footprintIds": [
+        "cargo-hold-level-minus-3"
+      ],
+      "conditions": "Possible pedestal site; only the active site has the machine."
+    },
+    {
+      "id": "pap-turbine",
+      "label": "PaP pedestal · Turbine",
+      "layerId": "overview",
+      "x": 0.66566,
+      "y": 0.824,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level -5",
+      "availability": "candidate",
+      "description": "Work from the Forecastle through the upper decks to the Poop Deck at the opposite end of the ship. Interact with the floating Sentinel Artifact above the wheel. Activate all four Pack-a-Punch pedestals; the machine appears at the last one activated. Poop Deck — near the Sentinel wheel. Lower Grand Staircase — bottom of the stairs. Cargo Hold — flooded forward compartment below Mail Rooms. Turbine Room — rear machinery area beside Engine Room. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-1",
+      "roomIds": [
+        "turbine-room"
+      ],
+      "footprintIds": [
+        "turbine-room-level-minus-5"
+      ],
+      "conditions": "Possible pedestal site; only the active site has the machine."
+    },
+    {
+      "id": "shield-bench",
+      "label": "Shield workbench",
+      "layerId": "overview",
+      "x": 0.7894999999999999,
+      "y": 0.384,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level 0",
+      "availability": "conditional",
+      "description": "Build the Ballistic Shield at the Poop Deck workbench. Each part has one active spawn among its three positions. Carry the shield during travel and replace it before lockdowns. Bridge part: maintenance room; railing in the passage behind the RK7; or the outside railing toward the Forecastle. State Rooms part: towel cupboard opposite the Saug room; a chair in the left-side room from spawn; or the rolling chair beside the MOG room. Provisions / 3rd Class Berths part: apple crates near ICR; boxes behind the stairs to the berths; or railing beside the stairs to Poop Deck. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-shield",
+      "roomIds": [
+        "poop-deck"
+      ],
+      "footprintIds": [
+        "poop-deck-level-0"
+      ]
+    },
+    {
+      "id": "distillation-bench",
+      "label": "Distillation Kit workbench",
+      "layerId": "overview",
+      "x": 0.6037399999999999,
+      "y": 0.648,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Level -3",
+      "availability": "conditional",
+      "description": "Get a Kraken and build the Distillation Kit at the Engine Room bench. The free chest route is the reliable first-clear option; a Mystery Box Kraken skips that acquisition quest. You will need the poison upgrade for the pipes, while a water upgrade is useful for later crowd control. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-2",
+      "roomIds": [
+        "engine-room"
+      ],
+      "footprintIds": [
+        "engine-room-level-minus-3"
+      ]
+    },
+    {
+      "id": "cargo-valve",
+      "label": "Cargo drain valve",
+      "layerId": "overview",
+      "x": 0.14106,
+      "y": 0.648,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Level -3",
+      "availability": "conditional",
+      "description": "Drain the Cargo Hold and Boiler Room by interacting with their underwater wall valves. This makes the part hunt and later travel easier. Remember the valves: the pipe quest will flood the rear rooms again. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-drain",
+      "roomIds": [
+        "cargo-hold"
+      ],
+      "footprintIds": [
+        "cargo-hold-level-minus-3"
+      ]
+    },
+    {
+      "id": "boiler-valve",
+      "label": "Boiler drain valve",
+      "layerId": "overview",
+      "x": 0.52505,
+      "y": 0.648,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Room spans several height levels",
+      "availability": "conditional",
+      "description": "Drain the Cargo Hold and Boiler Room by interacting with their underwater wall valves. This makes the part hunt and later travel easier. Remember the valves: the pipe quest will flood the rear rooms again. Shown at room precision; the object coordinate is not measured.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-setup-drain",
+      "roomIds": [
+        "boiler-room"
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Activate Sentinel; touch all four Pack-a-Punch pedestals.",
+      "kind": "area",
+      "locationIds": [
+        "sentinel",
+        "pap-poop",
+        "pap-stairs",
+        "pap-cargo",
+        "pap-turbine",
+        "area-upper-grand-staircase",
+        "area-forecastle",
+        "area-poop-deck",
+        "area-lower-grand-staircase",
+        "area-mail-rooms",
+        "area-cargo-hold",
+        "area-engine-room",
+        "area-turbine-room"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-setup-shield",
+      "title": "Collect three shield parts and build at the Poop Deck.",
+      "kind": "area",
+      "locationIds": [
+        "shield-bench",
+        "area-bridge",
+        "area-forecastle",
+        "area-poop-deck",
+        "area-state-rooms",
+        "area-3rd-class-berths",
+        "area-provisions"
+      ],
+      "guideAnchor": "guide-step-setup-shield",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-setup-drain",
+      "title": "Drain both flooded sections.",
+      "kind": "area",
+      "locationIds": [
+        "cargo-valve",
+        "boiler-valve",
+        "area-cargo-hold",
+        "area-boiler-room"
+      ],
+      "guideAnchor": "guide-step-setup-drain",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Kraken acquired; Distillation Kit built.",
+      "kind": "area",
+      "locationIds": [
+        "distillation-bench",
+        "area-engine-room"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-clocks-1",
+      "title": "Record the four active glyphs and clock times.",
+      "kind": "area",
+      "locationIds": [
+        "area-bridge",
+        "area-upper-grand-staircase",
+        "area-1st-class-lounge",
+        "area-lower-grand-staircase",
+        "area-galley",
+        "area-3rd-class-berths",
+        "area-mail-rooms",
+        "area-cargo-hold"
+      ],
+      "guideAnchor": "guide-step-clocks-1",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-clocks-2",
+      "title": "Bridge minutes → Engine Room Fire/Water hours → Poop Deck Air/Earth hours.",
+      "kind": "area",
+      "locationIds": [
+        "area-bridge",
+        "area-poop-deck",
+        "area-engine-room"
+      ],
+      "guideAnchor": "guide-step-clocks-2",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-outlets-find",
+      "title": "Locate four active outlets and record their elements.",
+      "kind": "area",
+      "locationIds": [
+        "area-upper-grand-staircase",
+        "area-aft-decks",
+        "area-1st-class-lounge",
+        "area-lower-grand-staircase",
+        "area-dining-hall",
+        "area-state-rooms",
+        "area-3rd-class-berths"
+      ],
+      "guideAnchor": "guide-step-outlets-find",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-outlets-trials",
+      "title": "Complete Poison, Water, Electric, Fire trials; collect every artifact.",
+      "kind": "area",
+      "locationIds": [
+        "area-boat-deck",
+        "area-poop-deck",
+        "area-cargo-hold",
+        "area-boiler-room"
+      ],
+      "guideAnchor": "guide-step-outlets-trials",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-pipes-1",
+      "title": "Poison Kraken: convert all nine steam leaks into water leaks.",
+      "kind": "area",
+      "locationIds": [
+        "area-boiler-room",
+        "area-turbine-room"
+      ],
+      "guideAnchor": "guide-step-pipes-1",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-pipes-artifact",
+      "title": "Pack-a-Punch the artifact at Turbine Room.",
+      "kind": "area",
+      "locationIds": [
+        "pap-turbine",
+        "area-engine-room",
+        "area-turbine-room"
+      ],
+      "guideAnchor": "guide-step-pipes-artifact",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-pipes-2",
+      "title": "Activate nine symbols, then watch the Cargo Hold model.",
+      "kind": "area",
+      "locationIds": [
+        "area-cargo-hold"
+      ],
+      "guideAnchor": "guide-step-pipes-2",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-boss-1",
+      "title": "Everyone interacts with Sun orb → break ice → final Poop Deck block.",
+      "kind": "area",
+      "locationIds": [
+        "area-aft-decks",
+        "area-forecastle",
+        "area-promenade-port-deck",
+        "area-poop-deck"
+      ],
+      "guideAnchor": "guide-step-boss-1",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-boss-2",
+      "title": "Enter prepared; survive Poop Deck and Engine Room.",
+      "kind": "area",
+      "locationIds": [
+        "area-poop-deck",
+        "area-engine-room"
+      ],
+      "guideAnchor": "guide-step-boss-2",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-boss-staterooms",
+      "title": "State Rooms → Starboard Deck: damage pupil during beam windows.",
+      "kind": "area",
+      "locationIds": [
+        "area-forecastle",
+        "area-promenade-starboard-deck",
+        "area-state-rooms"
+      ],
+      "guideAnchor": "guide-step-boss-staterooms",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-boss-3",
+      "title": "Final arena: interrupt three charged wipe attacks.",
+      "kind": "area",
+      "locationIds": [
+        "area-poop-deck"
+      ],
+      "guideAnchor": "guide-step-boss-3",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-distillery-parts",
+      "title": "First Class Lounge + Galley + Cargo Hold parts.",
+      "kind": "area",
+      "locationIds": [
+        "distillation-bench",
+        "area-engine-room"
+      ],
+      "guideAnchor": "guide-step-distillery-parts",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-shield-codebreaker",
+      "title": "Collect code breaker; record four bone-code pairs.",
+      "kind": "area",
+      "locationIds": [
+        "area-mail-rooms"
+      ],
+      "guideAnchor": "guide-step-shield-codebreaker",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-shield-safes",
+      "title": "Match four safe codes to bones.",
+      "kind": "area",
+      "locationIds": [
+        "area-bridge",
+        "area-1st-class-lounge",
+        "area-millionaire-suites",
+        "area-3rd-class-berths",
+        "area-mail-rooms"
+      ],
+      "guideAnchor": "guide-step-shield-safes",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-shield-car",
+      "title": "Launch car; shoot and recover green vials.",
+      "kind": "area",
+      "locationIds": [
+        "area-bridge",
+        "area-1st-class-lounge",
+        "area-millionaire-suites",
+        "area-3rd-class-berths",
+        "area-mail-rooms",
+        "area-cargo-hold",
+        "area-engine-room"
+      ],
+      "guideAnchor": "guide-step-shield-car",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "guide-shield-fireworks",
+      "title": "Hit the car with a firework; claim upgraded shield.",
+      "kind": "area",
+      "locationIds": [
+        "area-forecastle",
+        "area-poop-deck"
+      ],
+      "guideAnchor": "guide-step-shield-fireworks",
+      "description": "Relevant rooms and service areas on the ship cutaway. Room-level positions and regional connections are schematic."
+    },
+    {
+      "id": "area-upper",
+      "title": "Bridge / State Rooms / 1st Class Lounge",
+      "kind": "area",
+      "locationIds": [
+        "area-bridge",
+        "area-state-rooms",
+        "area-1st-class-lounge"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-poop",
+      "title": "Poop Deck",
+      "kind": "area",
+      "locationIds": [
+        "area-poop-deck"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-mail",
+      "title": "Mail Rooms",
+      "kind": "area",
+      "locationIds": [
+        "area-mail-rooms"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-stairs",
+      "title": "Upper Grand Staircase / Lower Grand Staircase",
+      "kind": "area",
+      "locationIds": [
+        "area-upper-grand-staircase",
+        "area-lower-grand-staircase"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-berths",
+      "title": "3rd Class Berths / Provisions",
+      "kind": "area",
+      "locationIds": [
+        "area-3rd-class-berths",
+        "area-provisions"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-cargo",
+      "title": "Cargo Hold",
+      "kind": "area",
+      "locationIds": [
+        "area-cargo-hold"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-turbine",
+      "title": "Turbine Room",
+      "kind": "area",
+      "locationIds": [
+        "area-turbine-room"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    },
+    {
+      "id": "area-engine",
+      "title": "Engine Room / Boiler Room",
+      "kind": "area",
+      "locationIds": [
+        "area-engine-room",
+        "area-boiler-room"
+      ],
+      "description": "Saved regional link expanded into its individual rooms."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-shield": "guide-setup-shield",
+    "setup-drain": "guide-setup-drain",
+    "setup-2": "guide-setup-2",
+    "clocks-1": "guide-clocks-1",
+    "clocks-2": "guide-clocks-2",
+    "outlets-find": "guide-outlets-find",
+    "outlets-trials": "guide-outlets-trials",
+    "pipes-1": "guide-pipes-1",
+    "pipes-artifact": "guide-pipes-artifact",
+    "pipes-2": "guide-pipes-2",
+    "boss-1": "guide-boss-1",
+    "boss-2": "guide-boss-2",
+    "boss-staterooms": "guide-boss-staterooms",
+    "boss-3": "guide-boss-3",
+    "distillery-parts": "guide-distillery-parts",
+    "shield-codebreaker": "guide-shield-codebreaker",
+    "shield-safes": "guide-shield-safes",
+    "shield-car": "guide-shield-car",
+    "shield-fireworks": "guide-shield-fireworks"
+  },
+  "cutaway": {
+    "kind": "ship",
+    "defaultFootprint": "forecastle-level-1",
+    "levels": [
+      {
+        "id": "level-3",
+        "index": 3,
+        "label": "Bridge / upper decks"
+      },
+      {
+        "id": "level-2",
+        "index": 2,
+        "label": "Lounge / promenades / Sentinel"
+      },
+      {
+        "id": "level-1",
+        "index": 1,
+        "label": "Dining / Galley / decks"
+      },
+      {
+        "id": "level-0",
+        "index": 0,
+        "label": "Cabins / suites / stern"
+      },
+      {
+        "id": "level-minus-1",
+        "index": -1,
+        "label": "Mail / lowest stairs / berths"
+      },
+      {
+        "id": "level-minus-2",
+        "index": -2,
+        "label": "Mail Rooms / berths"
+      },
+      {
+        "id": "level-minus-3",
+        "index": -3,
+        "label": "Cargo / machinery / Provisions"
+      },
+      {
+        "id": "level-minus-4",
+        "index": -4,
+        "label": "Machinery upper"
+      },
+      {
+        "id": "level-minus-5",
+        "index": -5,
+        "label": "Machinery lower"
+      }
+    ],
+    "rooms": [
+      {
+        "id": "bridge",
+        "label": "Bridge",
+        "shortLabel": "Bridge"
+      },
+      {
+        "id": "upper-grand-staircase",
+        "label": "Upper Grand Staircase",
+        "shortLabel": "Upper stairs"
+      },
+      {
+        "id": "boat-deck",
+        "label": "Boat Deck",
+        "shortLabel": "Boat Deck"
+      },
+      {
+        "id": "mid-deck",
+        "label": "Mid Deck",
+        "shortLabel": "Mid Deck"
+      },
+      {
+        "id": "sun-deck",
+        "label": "Sun Deck",
+        "shortLabel": "Sun Deck"
+      },
+      {
+        "id": "aft-decks",
+        "label": "Aft Decks",
+        "shortLabel": "Aft Decks"
+      },
+      {
+        "id": "forecastle",
+        "label": "Forecastle",
+        "shortLabel": "Forecastle"
+      },
+      {
+        "id": "1st-class-lounge",
+        "label": "1st Class Lounge",
+        "shortLabel": "Lounge"
+      },
+      {
+        "id": "promenade-port-deck",
+        "label": "Promenade Port Deck",
+        "shortLabel": "Port promenade"
+      },
+      {
+        "id": "promenade-starboard-deck",
+        "label": "Promenade Starboard Deck",
+        "shortLabel": "Starboard promenade"
+      },
+      {
+        "id": "poop-deck",
+        "label": "Poop Deck",
+        "shortLabel": "Poop Deck"
+      },
+      {
+        "id": "lower-grand-staircase",
+        "label": "Lower Grand Staircase",
+        "shortLabel": "Lower stairs"
+      },
+      {
+        "id": "dining-hall",
+        "label": "Dining Hall",
+        "shortLabel": "Dining Hall"
+      },
+      {
+        "id": "galley",
+        "label": "Galley",
+        "shortLabel": "Galley"
+      },
+      {
+        "id": "state-rooms",
+        "label": "State Rooms",
+        "shortLabel": "State Rooms"
+      },
+      {
+        "id": "millionaire-suites",
+        "label": "Millionaire Suites",
+        "shortLabel": "Suites"
+      },
+      {
+        "id": "3rd-class-berths",
+        "label": "3rd Class Berths",
+        "shortLabel": "3rd Class"
+      },
+      {
+        "id": "mail-rooms",
+        "label": "Mail Rooms",
+        "shortLabel": "Mail Rooms"
+      },
+      {
+        "id": "cargo-hold",
+        "label": "Cargo Hold",
+        "shortLabel": "Cargo Hold"
+      },
+      {
+        "id": "boiler-room",
+        "label": "Boiler Room",
+        "shortLabel": "Boiler"
+      },
+      {
+        "id": "engine-room",
+        "label": "Engine Room",
+        "shortLabel": "Engine"
+      },
+      {
+        "id": "provisions",
+        "label": "Provisions",
+        "shortLabel": "Provisions"
+      },
+      {
+        "id": "turbine-room",
+        "label": "Turbine Room",
+        "shortLabel": "Turbine"
+      }
+    ],
+    "footprints": [
+      {
+        "id": "bridge-level-3",
+        "roomId": "bridge",
+        "levelId": "level-3",
+        "start": 0.166,
+        "end": 0.278,
+        "lane": 0
+      },
+      {
+        "id": "upper-grand-staircase-level-3",
+        "roomId": "upper-grand-staircase",
+        "levelId": "level-3",
+        "start": 0.278,
+        "end": 0.321,
+        "lane": 0
+      },
+      {
+        "id": "boat-deck-level-3",
+        "roomId": "boat-deck",
+        "levelId": "level-3",
+        "start": 0.321,
+        "end": 0.443,
+        "lane": 0
+      },
+      {
+        "id": "mid-deck-level-3",
+        "roomId": "mid-deck",
+        "levelId": "level-3",
+        "start": 0.443,
+        "end": 0.559,
+        "lane": 0
+      },
+      {
+        "id": "sun-deck-level-3",
+        "roomId": "sun-deck",
+        "levelId": "level-3",
+        "start": 0.559,
+        "end": 0.666,
+        "lane": 0
+      },
+      {
+        "id": "aft-decks-level-3",
+        "roomId": "aft-decks",
+        "levelId": "level-3",
+        "start": 0.666,
+        "end": 0.745,
+        "lane": 0
+      },
+      {
+        "id": "forecastle-level-2",
+        "roomId": "forecastle",
+        "levelId": "level-2",
+        "start": 0.174,
+        "end": 0.216,
+        "lane": 0,
+        "label": "Stair landings"
+      },
+      {
+        "id": "upper-grand-staircase-level-2",
+        "roomId": "upper-grand-staircase",
+        "levelId": "level-2",
+        "start": 0.278,
+        "end": 0.321,
+        "lane": 0
+      },
+      {
+        "id": "1st-class-lounge-level-2",
+        "roomId": "1st-class-lounge",
+        "levelId": "level-2",
+        "start": 0.321,
+        "end": 0.489,
+        "lane": 0
+      },
+      {
+        "id": "promenade-port-deck-level-2",
+        "roomId": "promenade-port-deck",
+        "levelId": "level-2",
+        "start": 0.489,
+        "end": 0.726,
+        "lane": 0
+      },
+      {
+        "id": "promenade-starboard-deck-level-2",
+        "roomId": "promenade-starboard-deck",
+        "levelId": "level-2",
+        "start": 0.489,
+        "end": 0.726,
+        "lane": 1
+      },
+      {
+        "id": "aft-decks-level-2",
+        "roomId": "aft-decks",
+        "levelId": "level-2",
+        "start": 0.726,
+        "end": 0.805,
+        "lane": 0
+      },
+      {
+        "id": "poop-deck-level-2",
+        "roomId": "poop-deck",
+        "levelId": "level-2",
+        "start": 0.956,
+        "end": 0.976,
+        "lane": 0,
+        "label": "Sentinel platform"
+      },
+      {
+        "id": "forecastle-level-1",
+        "roomId": "forecastle",
+        "levelId": "level-1",
+        "start": 0.054,
+        "end": 0.207,
+        "lane": 0,
+        "label": "Spawn deck"
+      },
+      {
+        "id": "lower-grand-staircase-level-1",
+        "roomId": "lower-grand-staircase",
+        "levelId": "level-1",
+        "start": 0.249,
+        "end": 0.35,
+        "lane": 0
+      },
+      {
+        "id": "dining-hall-level-1",
+        "roomId": "dining-hall",
+        "levelId": "level-1",
+        "start": 0.35,
+        "end": 0.486,
+        "lane": 0
+      },
+      {
+        "id": "galley-level-1",
+        "roomId": "galley",
+        "levelId": "level-1",
+        "start": 0.486,
+        "end": 0.533,
+        "lane": 0
+      },
+      {
+        "id": "aft-decks-level-1",
+        "roomId": "aft-decks",
+        "levelId": "level-1",
+        "start": 0.753,
+        "end": 0.805,
+        "lane": 0
+      },
+      {
+        "id": "poop-deck-level-1",
+        "roomId": "poop-deck",
+        "levelId": "level-1",
+        "start": 0.864,
+        "end": 1,
+        "lane": 0,
+        "label": "Pack-a-Punch deck"
+      },
+      {
+        "id": "forecastle-level-0",
+        "roomId": "forecastle",
+        "levelId": "level-0",
+        "start": 0.1,
+        "end": 0.182,
+        "lane": 0
+      },
+      {
+        "id": "state-rooms-level-0",
+        "roomId": "state-rooms",
+        "levelId": "level-0",
+        "start": 0.182,
+        "end": 0.278,
+        "lane": 0
+      },
+      {
+        "id": "lower-grand-staircase-level-0",
+        "roomId": "lower-grand-staircase",
+        "levelId": "level-0",
+        "start": 0.278,
+        "end": 0.321,
+        "lane": 0
+      },
+      {
+        "id": "millionaire-suites-level-0",
+        "roomId": "millionaire-suites",
+        "levelId": "level-0",
+        "start": 0.278,
+        "end": 0.359,
+        "lane": 1
+      },
+      {
+        "id": "poop-deck-level-0",
+        "roomId": "poop-deck",
+        "levelId": "level-0",
+        "start": 0.785,
+        "end": 0.865,
+        "lane": 0,
+        "label": "Lower deck / shield bench"
+      },
+      {
+        "id": "3rd-class-berths-level-0",
+        "roomId": "3rd-class-berths",
+        "levelId": "level-0",
+        "start": 0.865,
+        "end": 0.9,
+        "lane": 0
+      },
+      {
+        "id": "mail-rooms-level-minus-1",
+        "roomId": "mail-rooms",
+        "levelId": "level-minus-1",
+        "start": 0.077,
+        "end": 0.12,
+        "lane": 0
+      },
+      {
+        "id": "lower-grand-staircase-level-minus-1",
+        "roomId": "lower-grand-staircase",
+        "levelId": "level-minus-1",
+        "start": 0.278,
+        "end": 0.321,
+        "lane": 0,
+        "label": "Lowest landing / Pack-a-Punch"
+      },
+      {
+        "id": "3rd-class-berths-level-minus-1",
+        "roomId": "3rd-class-berths",
+        "levelId": "level-minus-1",
+        "start": 0.75,
+        "end": 0.911,
+        "lane": 0
+      },
+      {
+        "id": "mail-rooms-level-minus-2",
+        "roomId": "mail-rooms",
+        "levelId": "level-minus-2",
+        "start": 0.069,
+        "end": 0.12,
+        "lane": 0
+      },
+      {
+        "id": "3rd-class-berths-level-minus-2",
+        "roomId": "3rd-class-berths",
+        "levelId": "level-minus-2",
+        "start": 0.73,
+        "end": 0.813,
+        "lane": 0
+      },
+      {
+        "id": "cargo-hold-level-minus-3",
+        "roomId": "cargo-hold",
+        "levelId": "level-minus-3",
+        "start": 0,
+        "end": 0.142,
+        "lane": 0
+      },
+      {
+        "id": "boiler-room-level-minus-3",
+        "roomId": "boiler-room",
+        "levelId": "level-minus-3",
+        "start": 0.499,
+        "end": 0.536,
+        "lane": 0
+      },
+      {
+        "id": "engine-room-level-minus-3",
+        "roomId": "engine-room",
+        "levelId": "level-minus-3",
+        "start": 0.536,
+        "end": 0.682,
+        "lane": 0
+      },
+      {
+        "id": "provisions-level-minus-3",
+        "roomId": "provisions",
+        "levelId": "level-minus-3",
+        "start": 0.682,
+        "end": 0.818,
+        "lane": 0
+      },
+      {
+        "id": "boiler-room-level-minus-4",
+        "roomId": "boiler-room",
+        "levelId": "level-minus-4",
+        "start": 0.493,
+        "end": 0.536,
+        "lane": 0
+      },
+      {
+        "id": "engine-room-level-minus-4",
+        "roomId": "engine-room",
+        "levelId": "level-minus-4",
+        "start": 0.536,
+        "end": 0.63,
+        "lane": 0
+      },
+      {
+        "id": "turbine-room-level-minus-4",
+        "roomId": "turbine-room",
+        "levelId": "level-minus-4",
+        "start": 0.63,
+        "end": 0.685,
+        "lane": 0
+      },
+      {
+        "id": "boiler-room-level-minus-5",
+        "roomId": "boiler-room",
+        "levelId": "level-minus-5",
+        "start": 0.493,
+        "end": 0.536,
+        "lane": 0
+      },
+      {
+        "id": "engine-room-level-minus-5",
+        "roomId": "engine-room",
+        "levelId": "level-minus-5",
+        "start": 0.536,
+        "end": 0.652,
+        "lane": 0
+      },
+      {
+        "id": "turbine-room-level-minus-5",
+        "roomId": "turbine-room",
+        "levelId": "level-minus-5",
+        "start": 0.652,
+        "end": 0.71,
+        "lane": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "passage-bridge-upper-grand-staircase-level-3",
+        "from": [
+          "bridge-level-3"
+        ],
+        "to": [
+          "upper-grand-staircase-level-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-upper-grand-staircase-boat-deck-level-3",
+        "from": [
+          "upper-grand-staircase-level-3"
+        ],
+        "to": [
+          "boat-deck-level-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-boat-deck-mid-deck-level-3",
+        "from": [
+          "boat-deck-level-3"
+        ],
+        "to": [
+          "mid-deck-level-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-mid-deck-sun-deck-level-3",
+        "from": [
+          "mid-deck-level-3"
+        ],
+        "to": [
+          "sun-deck-level-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-sun-deck-aft-decks-level-3",
+        "from": [
+          "sun-deck-level-3"
+        ],
+        "to": [
+          "aft-decks-level-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-upper-grand-staircase-1st-class-lounge-level-2",
+        "from": [
+          "upper-grand-staircase-level-2"
+        ],
+        "to": [
+          "1st-class-lounge-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-1st-class-lounge-promenade-port-deck-level-2",
+        "from": [
+          "1st-class-lounge-level-2"
+        ],
+        "to": [
+          "promenade-port-deck-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-1st-class-lounge-promenade-starboard-deck-level-2",
+        "from": [
+          "1st-class-lounge-level-2"
+        ],
+        "to": [
+          "promenade-starboard-deck-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-promenade-starboard-deck-aft-decks-level-2",
+        "from": [
+          "promenade-starboard-deck-level-2"
+        ],
+        "to": [
+          "aft-decks-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-lower-grand-staircase-dining-hall-level-1",
+        "from": [
+          "lower-grand-staircase-level-1"
+        ],
+        "to": [
+          "dining-hall-level-1"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-dining-hall-galley-level-1",
+        "from": [
+          "dining-hall-level-1"
+        ],
+        "to": [
+          "galley-level-1"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-forecastle-state-rooms-level-0",
+        "from": [
+          "forecastle-level-0"
+        ],
+        "to": [
+          "state-rooms-level-0"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-state-rooms-lower-grand-staircase-level-0",
+        "from": [
+          "state-rooms-level-0"
+        ],
+        "to": [
+          "lower-grand-staircase-level-0"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-lower-grand-staircase-millionaire-suites-level-0",
+        "from": [
+          "lower-grand-staircase-level-0"
+        ],
+        "to": [
+          "millionaire-suites-level-0"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-poop-deck-3rd-class-berths-level-0",
+        "from": [
+          "poop-deck-level-0"
+        ],
+        "to": [
+          "3rd-class-berths-level-0"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-boiler-room-engine-room-level-minus-3",
+        "from": [
+          "boiler-room-level-minus-3"
+        ],
+        "to": [
+          "engine-room-level-minus-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-boiler-room-engine-room-level-minus-4",
+        "from": [
+          "boiler-room-level-minus-4"
+        ],
+        "to": [
+          "engine-room-level-minus-4"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-engine-room-turbine-room-level-minus-4",
+        "from": [
+          "engine-room-level-minus-4"
+        ],
+        "to": [
+          "turbine-room-level-minus-4"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-boiler-room-engine-room-level-minus-5",
+        "from": [
+          "boiler-room-level-minus-5"
+        ],
+        "to": [
+          "engine-room-level-minus-5"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "passage-engine-room-turbine-room-level-minus-5",
+        "from": [
+          "engine-room-level-minus-5"
+        ],
+        "to": [
+          "turbine-room-level-minus-5"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Room connection",
+        "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-aft-decks-level-3",
+        "from": [
+          "aft-decks-level-3"
+        ],
+        "to": [
+          "aft-decks-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-3rd-class-berths-level-0",
+        "from": [
+          "3rd-class-berths-level-0"
+        ],
+        "to": [
+          "3rd-class-berths-level-minus-1"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-engine-room-level-minus-3",
+        "from": [
+          "engine-room-level-minus-3"
+        ],
+        "to": [
+          "engine-room-level-minus-4"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-engine-room-level-minus-4",
+        "from": [
+          "engine-room-level-minus-4"
+        ],
+        "to": [
+          "engine-room-level-minus-5"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-boiler-room-level-minus-3",
+        "from": [
+          "boiler-room-level-minus-3"
+        ],
+        "to": [
+          "boiler-room-level-minus-4"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-boiler-room-level-minus-4",
+        "from": [
+          "boiler-room-level-minus-4"
+        ],
+        "to": [
+          "boiler-room-level-minus-5"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "vertical-turbine-room-level-minus-4",
+        "from": [
+          "turbine-room-level-minus-4"
+        ],
+        "to": [
+          "turbine-room-level-minus-5"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Between room levels",
+        "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "forecastle-lower-stairs",
+        "from": [
+          "forecastle-level-0"
+        ],
+        "to": [
+          "forecastle-level-1"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "forecastle-upper-stairs",
+        "from": [
+          "forecastle-level-1"
+        ],
+        "to": [
+          "forecastle-level-2"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "forecastle-bridge-stairs",
+        "from": [
+          "forecastle-level-2"
+        ],
+        "to": [
+          "bridge-level-3"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "aft-stairs",
+        "from": [
+          "aft-decks-level-2"
+        ],
+        "to": [
+          "aft-decks-level-1"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "aft-poop-stairs",
+        "from": [
+          "aft-decks-level-1"
+        ],
+        "to": [
+          "poop-deck-level-0"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "poop-main-stairs",
+        "from": [
+          "poop-deck-level-0"
+        ],
+        "to": [
+          "poop-deck-level-1"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "poop-sentinel-stairs",
+        "from": [
+          "poop-deck-level-1"
+        ],
+        "to": [
+          "poop-deck-level-2"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Deck stairs",
+        "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "grand-stairs-3-2",
+        "from": [
+          "upper-grand-staircase-level-3"
+        ],
+        "to": [
+          "upper-grand-staircase-level-2"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Grand Staircase",
+        "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "grand-stairs-2-1",
+        "from": [
+          "upper-grand-staircase-level-2"
+        ],
+        "to": [
+          "lower-grand-staircase-level-1"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Grand Staircase",
+        "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "grand-stairs-1-0",
+        "from": [
+          "lower-grand-staircase-level-1"
+        ],
+        "to": [
+          "lower-grand-staircase-level-0"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Grand Staircase",
+        "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "grand-stairs-0-minus-1",
+        "from": [
+          "lower-grand-staircase-level-0"
+        ],
+        "to": [
+          "lower-grand-staircase-level-minus-1"
+        ],
+        "kind": "stairs",
+        "direction": "both",
+        "label": "Grand Staircase",
+        "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "forecastle-mail",
+        "from": [
+          "forecastle-level-0"
+        ],
+        "to": [
+          "mail-rooms-level-minus-1"
+        ],
+        "kind": "descent",
+        "direction": "forward",
+        "label": "Downward connection",
+        "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "mail-down",
+        "from": [
+          "mail-rooms-level-minus-1"
+        ],
+        "to": [
+          "mail-rooms-level-minus-2"
+        ],
+        "kind": "descent",
+        "direction": "forward",
+        "label": "Downward connection",
+        "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "berths-down",
+        "from": [
+          "3rd-class-berths-level-minus-1"
+        ],
+        "to": [
+          "3rd-class-berths-level-minus-2"
+        ],
+        "kind": "descent",
+        "direction": "forward",
+        "label": "Downward connection",
+        "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "berths-provisions",
+        "from": [
+          "3rd-class-berths-level-minus-2"
+        ],
+        "to": [
+          "provisions-level-minus-3"
+        ],
+        "kind": "descent",
+        "direction": "forward",
+        "label": "Downward connection",
+        "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+        "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+        "precision": "level",
+        "arrival": "level"
+      },
+      {
+        "id": "mail-cargo",
+        "from": [
+          "mail-rooms-level-minus-2"
+        ],
+        "to": [
+          "cargo-hold-level-minus-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Cargo access",
+        "note": "Descend through Mail Rooms and open the Cargo Hold door. The approach is compressed; this is not a measured doorway.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "provisions-engine",
+        "from": [
+          "provisions-level-minus-3"
+        ],
+        "to": [
+          "engine-room-level-minus-3"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Machinery access",
+        "note": "Continue from Provisions into Engine Room; door access may be required.",
+        "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "promenade-aft",
+        "from": [
+          "promenade-port-deck-level-2"
+        ],
+        "to": [
+          "aft-decks-level-2"
+        ],
+        "kind": "route",
+        "direction": "both",
+        "label": "Toward aft decks",
+        "note": "Continue along the port route toward Aft Decks. This regional connection does not locate an exact door.",
+        "source": "/guides/bo4-voyage-of-despair#guide-step-boss-1",
+        "precision": "regional",
+        "arrival": "level"
+      },
+      {
+        "id": "portal-forecastle-poop",
+        "from": [
+          "forecastle-level-1"
+        ],
+        "to": [
+          "poop-deck-level-2",
+          "poop-deck-level-1",
+          "poop-deck-level-0"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "room",
+        "cost": 500
+      },
+      {
+        "id": "portal-poop-forecastle",
+        "from": [
+          "poop-deck-level-2",
+          "poop-deck-level-1",
+          "poop-deck-level-0"
+        ],
+        "to": [
+          "forecastle-level-2",
+          "forecastle-level-1",
+          "forecastle-level-0"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted. The departure landing is not pinned.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "room",
+        "cost": 500
+      },
+      {
+        "id": "portal-suites-provisions",
+        "from": [
+          "millionaire-suites-level-0"
+        ],
+        "to": [
+          "provisions-level-minus-3"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "level",
+        "cost": 500
+      },
+      {
+        "id": "portal-turbine-cargo",
+        "from": [
+          "turbine-room-level-minus-4",
+          "turbine-room-level-minus-5"
+        ],
+        "to": [
+          "cargo-hold-level-minus-3"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. The departure landing is not pinned.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "level",
+        "cost": 500
+      },
+      {
+        "id": "portal-cargo-boiler",
+        "from": [
+          "cargo-hold-level-minus-3"
+        ],
+        "to": [
+          "boiler-room-level-minus-3",
+          "boiler-room-level-minus-4",
+          "boiler-room-level-minus-5"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "room",
+        "cost": 500
+      },
+      {
+        "id": "portal-boiler-boat",
+        "from": [
+          "boiler-room-level-minus-3"
+        ],
+        "to": [
+          "boat-deck-level-3"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "level",
+        "cost": 500
+      },
+      {
+        "id": "portal-boiler-stairs",
+        "from": [
+          "boiler-room-level-minus-5"
+        ],
+        "to": [
+          "lower-grand-staircase-level-1",
+          "lower-grand-staircase-level-0",
+          "lower-grand-staircase-level-minus-1"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "room",
+        "cost": 500
+      },
+      {
+        "id": "portal-mid-engine",
+        "from": [
+          "mid-deck-level-3"
+        ],
+        "to": [
+          "engine-room-level-minus-3",
+          "engine-room-level-minus-4",
+          "engine-room-level-minus-5"
+        ],
+        "kind": "portal",
+        "direction": "forward",
+        "label": "Fast travel",
+        "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+        "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+        "precision": "regional",
+        "arrival": "room",
+        "cost": 500
+      }
+    ]
+  }
+}

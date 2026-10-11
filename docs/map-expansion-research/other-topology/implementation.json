@@ -1,0 +1,683 @@
+[
+  {
+    "id": "aw-outbreak",
+    "regions": 8,
+    "locations": 15,
+    "targets": 15,
+    "edges": [
+      {
+        "from": "spawn",
+        "to": "admin",
+        "evidence": "topology:aw-outbreak-3",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/01/call-of-duty-advanced-warfare-exo.html"
+      },
+      {
+        "from": "admin",
+        "to": "morgue",
+        "evidence": "topology:aw-outbreak-1",
+        "kind": "path",
+        "label": "Connecting corridor",
+        "source": "https://codzombified.blogspot.com/2015/01/atlas-administration-map-layout-call-of.html"
+      },
+      {
+        "from": "hub",
+        "to": "morgue",
+        "evidence": "topology:aw-outbreak-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html"
+      },
+      {
+        "from": "morgue",
+        "to": "exo",
+        "evidence": "topology:aw-outbreak-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html"
+      },
+      {
+        "from": "chutes",
+        "to": "incinerator",
+        "evidence": "outbreak-decker-chute",
+        "kind": "teleport",
+        "label": "Special chute entry",
+        "source": "/guides/aw-outbreak#guide-step-outbreak-decker-chute"
+      }
+    ],
+    "note": "Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned."
+  },
+  {
+    "id": "aw-infection",
+    "regions": 7,
+    "locations": 17,
+    "targets": 20,
+    "edges": [
+      {
+        "from": "voltage",
+        "to": "sewers",
+        "evidence": "topology:aw-infection-6",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/04/value-voltage-map-layout-infection-exo.html"
+      },
+      {
+        "from": "burger",
+        "to": "sewers",
+        "evidence": "infection-cleanse-burger",
+        "kind": "teleport",
+        "label": "Garbage chute",
+        "source": "/guides/aw-infection#guide-step-infection-cleanse-burger"
+      },
+      {
+        "from": "sewers",
+        "to": "altar",
+        "evidence": "infection-valves",
+        "kind": "path",
+        "label": "Four valves / waterfall",
+        "source": "/guides/aw-infection#guide-step-infection-valves"
+      },
+      {
+        "from": "burger",
+        "to": "burger-top",
+        "evidence": "infection-key",
+        "kind": "path",
+        "label": "Roof ladder / key",
+        "source": "/guides/aw-infection#guide-step-infection-key"
+      }
+    ],
+    "note": "Partial district diagram. The sewer levels are grouped; valve and meat positions vary. Only the documented sewer/chute/roof connections are drawn. Gas and survivor objectives do not change this diagram into a live objective map."
+  },
+  {
+    "id": "aw-carrier",
+    "regions": 8,
+    "locations": 16,
+    "targets": 19,
+    "edges": [
+      {
+        "from": "gun",
+        "to": "bio",
+        "evidence": "topology:aw-carrier-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html"
+      },
+      {
+        "from": "bio",
+        "to": "armory",
+        "evidence": "topology:aw-carrier-2",
+        "kind": "path",
+        "label": "Lower Armory",
+        "source": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html"
+      },
+      {
+        "from": "bio",
+        "to": "cargo",
+        "evidence": "topology:aw-carrier-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html"
+      },
+      {
+        "from": "gun",
+        "to": "armory",
+        "evidence": "topology:aw-carrier-1",
+        "kind": "path",
+        "label": "Upper walkway",
+        "source": "https://codzombified.blogspot.com/2015/06/armory-map-layout-carrier-exo-zombies.html"
+      },
+      {
+        "from": "cargo",
+        "to": "lift",
+        "evidence": "carrier-maze-ready",
+        "kind": "path",
+        "source": "/guides/aw-carrier#guide-step-carrier-maze-ready"
+      },
+      {
+        "from": "lift",
+        "to": "moon",
+        "evidence": "carrier-maze-ready",
+        "kind": "path",
+        "source": "/guides/aw-carrier#guide-step-carrier-maze-ready"
+      },
+      {
+        "from": "moon",
+        "to": "hangar",
+        "evidence": "carrier-maze-ready",
+        "kind": "path",
+        "source": "/guides/aw-carrier#guide-step-carrier-maze-ready"
+      },
+      {
+        "from": "hangar",
+        "to": "gun",
+        "evidence": "topology:aw-carrier-5",
+        "kind": "drop",
+        "label": "Exo shortcut / drop",
+        "source": "https://codzombified.blogspot.com/2015/06/hangar-area-map-layout-carrier-exo.html"
+      },
+      {
+        "from": "bio",
+        "to": "island",
+        "evidence": "carrier-island",
+        "kind": "teleport",
+        "label": "20 telefrag pieces",
+        "source": "/guides/aw-carrier#guide-step-carrier-island"
+      }
+    ],
+    "note": "Deck connections are compressed into regions. Upper/lower Armory need Exo movement; the island is a teleporter destination. Bomb, gas and laser timing are match states, not permanent floor geometry."
+  },
+  {
+    "id": "aw-descent",
+    "regions": 9,
+    "locations": 17,
+    "targets": 19,
+    "edges": [
+      {
+        "from": "landing",
+        "to": "reception",
+        "evidence": "topology:aw-descent-6",
+        "kind": "drop",
+        "label": "Opening shaft",
+        "source": "https://codzombified.blogspot.com/2015/08/reception-and-promenade-area-map-layout.html"
+      },
+      {
+        "from": "reception",
+        "to": "hall",
+        "evidence": "topology:aw-descent-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html"
+      },
+      {
+        "from": "hall",
+        "to": "spa",
+        "evidence": "topology:aw-descent-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html"
+      },
+      {
+        "from": "hall",
+        "to": "galleria",
+        "evidence": "topology:aw-descent-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html"
+      },
+      {
+        "from": "hall",
+        "to": "landing",
+        "evidence": "topology:aw-descent-2",
+        "kind": "teleport",
+        "label": "Transit tube",
+        "source": "https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html"
+      },
+      {
+        "from": "reception",
+        "to": "annex",
+        "evidence": "topology:aw-descent-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html"
+      },
+      {
+        "from": "annex",
+        "to": "lounge",
+        "evidence": "topology:aw-descent-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html"
+      },
+      {
+        "from": "annex",
+        "to": "galleria",
+        "evidence": "topology:aw-descent-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/annex-map-layout-for-descent-exo.html"
+      },
+      {
+        "from": "galleria",
+        "to": "tidal",
+        "evidence": "topology:aw-descent-3",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2015/08/galleria-map-layout-for-descent-exo.html"
+      }
+    ],
+    "note": "Resort route schematic with compressed Galleria floors. Oz’s separate arena is context only; its round-triggered teleport can happen anywhere. The later Outbreak memory and detailed boss hazards are not drawn."
+  },
+  {
+    "id": "iw-zombies-in-spaceland",
+    "regions": 8,
+    "locations": 16,
+    "targets": 33,
+    "edges": [
+      {
+        "from": "journey",
+        "to": "hub",
+        "evidence": "setup-portals",
+        "kind": "teleport",
+        "label": "Regional portal",
+        "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+      },
+      {
+        "from": "arcade",
+        "to": "hub",
+        "evidence": "setup-portals",
+        "kind": "teleport",
+        "label": "Regional portal",
+        "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+      },
+      {
+        "from": "polar",
+        "to": "hub",
+        "evidence": "setup-portals",
+        "kind": "teleport",
+        "label": "Regional portal",
+        "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+      },
+      {
+        "from": "kepler",
+        "to": "hub",
+        "evidence": "setup-portals",
+        "kind": "teleport",
+        "label": "Regional portal",
+        "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+      },
+      {
+        "from": "hub",
+        "to": "projector",
+        "evidence": "setup-portals",
+        "kind": "teleport",
+        "label": "Four blue indicators",
+        "source": "/guides/iw-zombies-in-spaceland#guide-step-setup-portals"
+      },
+      {
+        "from": "journey",
+        "to": "underground",
+        "evidence": "topology:iw-zombies-in-spaceland-1",
+        "kind": "path",
+        "label": "Stairs",
+        "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2462403426"
+      }
+    ],
+    "note": "Regions and verified portal links, not a park floor plan. Surface walking paths and most underground joins are omitted. SETI-COM and part targets highlight search districts; their exact candidates remain in the guide photographs."
+  },
+  {
+    "id": "iw-rave-in-the-redwoods",
+    "regions": 9,
+    "locations": 16,
+    "targets": 28,
+    "edges": [
+      {
+        "from": "mines",
+        "to": "basement",
+        "evidence": "setup-power",
+        "kind": "path",
+        "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+      },
+      {
+        "from": "basement",
+        "to": "lodge",
+        "evidence": "departure-buttons",
+        "kind": "path",
+        "label": "Basement stairs",
+        "source": "/guides/iw-rave-in-the-redwoods#guide-step-departure-buttons"
+      },
+      {
+        "from": "lodge",
+        "to": "mess",
+        "evidence": "topology:iw-rave-in-the-redwoods-1",
+        "kind": "path",
+        "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023"
+      },
+      {
+        "from": "lodge",
+        "to": "rave",
+        "evidence": "topology:iw-rave-in-the-redwoods-1",
+        "kind": "path",
+        "label": "Adventure Course door",
+        "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023"
+      },
+      {
+        "from": "mess",
+        "to": "camp",
+        "evidence": "topology:iw-rave-in-the-redwoods-1",
+        "kind": "path",
+        "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023"
+      },
+      {
+        "from": "docks",
+        "to": "island",
+        "evidence": "projector-reels",
+        "kind": "teleport",
+        "label": "Repaired boat",
+        "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+      },
+      {
+        "from": "island",
+        "to": "pap",
+        "evidence": "projector-reels",
+        "kind": "teleport",
+        "label": "Two film reels",
+        "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+      }
+    ],
+    "note": "Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied."
+  },
+  {
+    "id": "iw-shaolin-shuffle",
+    "regions": 10,
+    "locations": 19,
+    "targets": 34,
+    "edges": [
+      {
+        "from": "dojo",
+        "to": "disco",
+        "evidence": "topology:iw-shaolin-shuffle-1",
+        "kind": "path",
+        "label": "Alley / stairs",
+        "source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2644508979"
+      },
+      {
+        "from": "roof",
+        "to": "blue",
+        "evidence": "chi-and-travel-travel",
+        "kind": "teleport",
+        "label": "Opened travel doors",
+        "source": "/guides/iw-shaolin-shuffle#guide-step-chi-and-travel-travel"
+      },
+      {
+        "from": "heebie",
+        "to": "subway",
+        "evidence": "chi-and-travel-travel",
+        "kind": "teleport",
+        "label": "Opened travel doors",
+        "source": "/guides/iw-shaolin-shuffle#guide-step-chi-and-travel-travel"
+      }
+    ],
+    "note": "Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots."
+  },
+  {
+    "id": "ww2-the-shadowed-throne",
+    "regions": 8,
+    "locations": 17,
+    "targets": 28,
+    "edges": [
+      {
+        "from": "street",
+        "to": "plaza",
+        "evidence": "topology:ww2-the-shadowed-throne-1",
+        "kind": "path",
+        "label": "Central district",
+        "source": "https://www.zombiescodex.com/world-war-ii/the-shadowed-throne/"
+      },
+      {
+        "from": "street",
+        "to": "apartments",
+        "evidence": "axe-frequencies",
+        "kind": "path",
+        "label": "Main Street door",
+        "source": "/guides/ww2-the-shadowed-throne#guide-step-axe-frequencies"
+      },
+      {
+        "from": "plaza",
+        "to": "cabaret",
+        "evidence": "smuggler-arm",
+        "kind": "path",
+        "label": "Rear door",
+        "source": "/guides/ww2-the-shadowed-throne#guide-step-smuggler-arm"
+      },
+      {
+        "from": "plaza",
+        "to": "museum",
+        "evidence": "throne-flare",
+        "kind": "path",
+        "label": "Museum door",
+        "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-flare"
+      },
+      {
+        "from": "church",
+        "to": "refuge",
+        "evidence": "refuge-weapons",
+        "kind": "path",
+        "label": "Charged weapon door",
+        "source": "/guides/ww2-the-shadowed-throne#guide-step-refuge-weapons"
+      }
+    ],
+    "note": "Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork."
+  },
+  {
+    "id": "vanguard-der-anfang",
+    "regions": 7,
+    "locations": 13,
+    "targets": 14,
+    "edges": [
+      {
+        "from": "hub",
+        "to": "west",
+        "evidence": "topology:vanguard-der-anfang-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html"
+      },
+      {
+        "from": "west",
+        "to": "apartments",
+        "evidence": "topology:vanguard-der-anfang-1",
+        "kind": "path",
+        "label": "Objective unlock",
+        "source": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html"
+      },
+      {
+        "from": "hub",
+        "to": "east",
+        "evidence": "topology:vanguard-der-anfang-3",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-panzer-column.html"
+      },
+      {
+        "from": "east",
+        "to": "office",
+        "evidence": "anfang-east",
+        "kind": "path",
+        "label": "Store objective",
+        "source": "/guides/vanguard-der-anfang#guide-step-anfang-east"
+      },
+      {
+        "from": "hub",
+        "to": "theater",
+        "evidence": "topology:vanguard-der-anfang-4",
+        "kind": "path",
+        "label": "Objective unlock",
+        "source": "https://codzombified.blogspot.com/2022/02/der-anfang-map-layout-theater-theater.html"
+      },
+      {
+        "from": "office",
+        "to": "void",
+        "evidence": "anfang-void-enter",
+        "kind": "teleport",
+        "label": "Void portal / 3 rounds",
+        "source": "/guides/vanguard-der-anfang#guide-step-anfang-void-enter"
+      }
+    ],
+    "note": "Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted."
+  },
+  {
+    "id": "vanguard-terra-maledicta",
+    "regions": 7,
+    "locations": 14,
+    "targets": 16,
+    "edges": [
+      {
+        "from": "temple",
+        "to": "east",
+        "evidence": "topology:vanguard-terra-maledicta-1",
+        "kind": "path",
+        "label": "Objective unlock",
+        "source": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html"
+      },
+      {
+        "from": "temple",
+        "to": "west",
+        "evidence": "topology:vanguard-terra-maledicta-1",
+        "kind": "path",
+        "label": "Objective unlock",
+        "source": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html"
+      },
+      {
+        "from": "temple",
+        "to": "merchant",
+        "evidence": "topology:vanguard-terra-maledicta-1",
+        "kind": "path",
+        "label": "Objective unlock",
+        "source": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html"
+      },
+      {
+        "from": "east",
+        "to": "outpost",
+        "evidence": "topology:vanguard-terra-maledicta-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/02/terra-maledicta-east-spring-tents-fuel.html"
+      },
+      {
+        "from": "east",
+        "to": "dark",
+        "evidence": "terra-augmentor-enter",
+        "kind": "teleport",
+        "label": "Tents Augmentor portal",
+        "source": "/guides/vanguard-terra-maledicta#guide-step-terra-augmentor-enter"
+      },
+      {
+        "from": "west",
+        "to": "dark",
+        "evidence": "terra-sacrifice",
+        "kind": "teleport",
+        "label": "Bazaar Sacrifice portal",
+        "source": "/guides/vanguard-terra-maledicta#guide-step-terra-sacrifice"
+      },
+      {
+        "from": "debris",
+        "to": "dark",
+        "evidence": "terra-debris-portal",
+        "kind": "teleport",
+        "label": "Void portal",
+        "source": "/guides/vanguard-terra-maledicta#guide-step-terra-debris-portal"
+      }
+    ],
+    "note": "Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup."
+  },
+  {
+    "id": "vanguard-shi-no-numa",
+    "regions": 7,
+    "locations": 16,
+    "targets": 21,
+    "edges": [
+      {
+        "from": "main",
+        "to": "fishing",
+        "evidence": "topology:vanguard-shi-no-numa-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html"
+      },
+      {
+        "from": "main",
+        "to": "doctors",
+        "evidence": "topology:vanguard-shi-no-numa-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html"
+      },
+      {
+        "from": "main",
+        "to": "comms",
+        "evidence": "topology:vanguard-shi-no-numa-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html"
+      },
+      {
+        "from": "main",
+        "to": "storage",
+        "evidence": "topology:vanguard-shi-no-numa-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html"
+      },
+      {
+        "from": "main",
+        "to": "flogger",
+        "evidence": "topology:vanguard-shi-no-numa-5",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html"
+      },
+      {
+        "from": "comms",
+        "to": "dig",
+        "evidence": "topology:vanguard-shi-no-numa-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-dig-site-map-layout-call-of.html"
+      },
+      {
+        "from": "storage",
+        "to": "dig",
+        "evidence": "topology:vanguard-shi-no-numa-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-dig-site-map-layout-call-of.html"
+      },
+      {
+        "from": "doctors",
+        "to": "main",
+        "evidence": "topology:vanguard-shi-no-numa-3",
+        "kind": "teleport",
+        "label": "Powered zipline / balcony",
+        "source": "https://codzombified.blogspot.com/2022/06/shi-no-numa-doctors-quarters-map-layout.html"
+      }
+    ],
+    "note": "Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points."
+  },
+  {
+    "id": "vanguard-the-archon",
+    "regions": 8,
+    "locations": 16,
+    "targets": 24,
+    "edges": [
+      {
+        "from": "temple",
+        "to": "east",
+        "evidence": "topology:vanguard-the-archon-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-map-layout-temple-area-call-of.html"
+      },
+      {
+        "from": "temple",
+        "to": "west",
+        "evidence": "topology:vanguard-the-archon-1",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-map-layout-temple-area-call-of.html"
+      },
+      {
+        "from": "east",
+        "to": "merchant",
+        "evidence": "topology:vanguard-the-archon-2",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-east-spring-tents-fuel-depot.html"
+      },
+      {
+        "from": "west",
+        "to": "merchant",
+        "evidence": "topology:vanguard-the-archon-4",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-west-spring-bazaar-arroyo.html"
+      },
+      {
+        "from": "merchant",
+        "to": "debris",
+        "evidence": "topology:vanguard-the-archon-3",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-merchant-road-debris-field-spike.html"
+      },
+      {
+        "from": "debris",
+        "to": "spike",
+        "evidence": "topology:vanguard-the-archon-3",
+        "kind": "path",
+        "source": "https://codzombified.blogspot.com/2022/09/archon-merchant-road-debris-field-spike.html"
+      },
+      {
+        "from": "temple",
+        "to": "dark",
+        "evidence": "archon-relic-place",
+        "kind": "teleport",
+        "label": "Relic portal",
+        "source": "/guides/vanguard-the-archon#guide-step-archon-relic-place"
+      }
+    ],
+    "note": "The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas."
+  }
+]

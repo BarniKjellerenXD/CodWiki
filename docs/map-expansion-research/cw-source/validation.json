@@ -1,0 +1,123 @@
+{
+  "sourceCommit": "e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+  "coordinateTransform": "x = longitude / 512; y = 1 - latitude / 512",
+  "geometry": [
+    {
+      "dataset": "cw-die-maschine",
+      "layer": "surface",
+      "identicalGeometryPrimitives": 8
+    },
+    {
+      "dataset": "cw-die-maschine",
+      "layer": "underground",
+      "identicalGeometryPrimitives": 10
+    },
+    {
+      "dataset": "cw-firebase-z",
+      "layer": "village",
+      "identicalGeometryPrimitives": 86
+    },
+    {
+      "dataset": "cw-firebase-z",
+      "layer": "firebase",
+      "identicalGeometryPrimitives": 144
+    },
+    {
+      "dataset": "cw-mauer-der-toten",
+      "layer": "streets",
+      "identicalGeometryPrimitives": 114
+    },
+    {
+      "dataset": "cw-mauer-der-toten",
+      "layer": "underground",
+      "identicalGeometryPrimitives": 59
+    },
+    {
+      "dataset": "cw-forsaken",
+      "layer": "surface",
+      "identicalGeometryPrimitives": 171
+    },
+    {
+      "dataset": "cw-forsaken",
+      "layer": "underground",
+      "identicalGeometryPrimitives": 46
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "ruka",
+      "identicalGeometryPrimitives": 597
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "alpine",
+      "identicalGeometryPrimitives": 191
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "golova",
+      "identicalGeometryPrimitives": 539
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "sanatorium",
+      "identicalGeometryPrimitives": 267
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "duga",
+      "identicalGeometryPrimitives": 228
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "zoo",
+      "identicalGeometryPrimitives": 211
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "collateral",
+      "identicalGeometryPrimitives": 257
+    },
+    {
+      "dataset": "cw-outbreak",
+      "layer": "armada",
+      "identicalGeometryPrimitives": 71
+    }
+  ],
+  "datasets": [
+    {
+      "id": "cw-die-maschine",
+      "layers": 2,
+      "locations": 106,
+      "targets": 19,
+      "guideLinks": 22
+    },
+    {
+      "id": "cw-firebase-z",
+      "layers": 2,
+      "locations": 112,
+      "targets": 17,
+      "guideLinks": 20
+    },
+    {
+      "id": "cw-mauer-der-toten",
+      "layers": 2,
+      "locations": 131,
+      "targets": 18,
+      "guideLinks": 26
+    },
+    {
+      "id": "cw-forsaken",
+      "layers": 2,
+      "locations": 124,
+      "targets": 20,
+      "guideLinks": 23
+    },
+    {
+      "id": "cw-outbreak",
+      "layers": 8,
+      "locations": 574,
+      "targets": 20,
+      "guideLinks": 25
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-classified and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space.

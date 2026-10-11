@@ -1,0 +1,1353 @@
+{
+  "generatedAt": "2026-10-11",
+  "coverage": "Original source-backed regional schematics",
+  "maps": [
+    {
+      "id": "bo4-voyage-of-despair",
+      "locations": 32,
+      "targets": 28,
+      "regions": 23,
+      "routes": 53,
+      "note": "Ship cutaway aligned to the reference floor plans. Room shapes are simplified; port and starboard overlap. Dashed links show regional routes. Pack-a-Punch pins are possible pedestal sites."
+    },
+    {
+      "id": "bo4-blood-of-the-dead",
+      "locations": 19,
+      "targets": 36,
+      "regions": 9,
+      "routes": 6,
+      "note": "Blood of the Dead only. Several spawn buildings and prison floors are grouped into regions. Paths represent the stated route with intermediate rooms omitted. Roof and Citadel exact stair connections are not drawn. PaP can move between its three areas."
+    },
+    {
+      "id": "bo4-ix",
+      "locations": 18,
+      "targets": 25,
+      "regions": 8,
+      "routes": 5,
+      "note": "The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference."
+    },
+    {
+      "id": "bo4-ancient-evil",
+      "locations": 18,
+      "targets": 21,
+      "regions": 9,
+      "routes": 4,
+      "note": "Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins."
+    },
+    {
+      "id": "bo4-dead-of-the-night",
+      "locations": 19,
+      "targets": 31,
+      "regions": 9,
+      "routes": 4,
+      "note": "Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed."
+    },
+    {
+      "id": "bo4-classified",
+      "locations": 15,
+      "targets": 18,
+      "regions": 5,
+      "routes": 4,
+      "note": "Classified floor/transport diagram, not the BO1 Five layout. Labs and office side rooms are grouped. Before amplifier installation the main teleporter reaches Panic Room; afterward use the Server Room link at DEFCON 5. Groom Lake is not adjacent floor space."
+    },
+    {
+      "id": "bo4-alpha-omega",
+      "locations": 19,
+      "targets": 29,
+      "regions": 9,
+      "routes": 5,
+      "note": "Alpha Omega only, with surface and bunker regions grouped separately. The dashed Power House–Prisoner Holding connection requires player-placed Telepads. Exact house doors, bunker corridors, moving enemies and randomized active vents are not plotted."
+    }
+  ],
+  "edgeEvidence": [
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-bridge-upper-grand-staircase-level-3",
+      "from": [
+        "bridge-level-3"
+      ],
+      "to": [
+        "upper-grand-staircase-level-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-upper-grand-staircase-boat-deck-level-3",
+      "from": [
+        "upper-grand-staircase-level-3"
+      ],
+      "to": [
+        "boat-deck-level-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-boat-deck-mid-deck-level-3",
+      "from": [
+        "boat-deck-level-3"
+      ],
+      "to": [
+        "mid-deck-level-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-mid-deck-sun-deck-level-3",
+      "from": [
+        "mid-deck-level-3"
+      ],
+      "to": [
+        "sun-deck-level-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-sun-deck-aft-decks-level-3",
+      "from": [
+        "sun-deck-level-3"
+      ],
+      "to": [
+        "aft-decks-level-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-upper-grand-staircase-1st-class-lounge-level-2",
+      "from": [
+        "upper-grand-staircase-level-2"
+      ],
+      "to": [
+        "1st-class-lounge-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-1st-class-lounge-promenade-port-deck-level-2",
+      "from": [
+        "1st-class-lounge-level-2"
+      ],
+      "to": [
+        "promenade-port-deck-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-1st-class-lounge-promenade-starboard-deck-level-2",
+      "from": [
+        "1st-class-lounge-level-2"
+      ],
+      "to": [
+        "promenade-starboard-deck-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-promenade-starboard-deck-aft-decks-level-2",
+      "from": [
+        "promenade-starboard-deck-level-2"
+      ],
+      "to": [
+        "aft-decks-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-lower-grand-staircase-dining-hall-level-1",
+      "from": [
+        "lower-grand-staircase-level-1"
+      ],
+      "to": [
+        "dining-hall-level-1"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-dining-hall-galley-level-1",
+      "from": [
+        "dining-hall-level-1"
+      ],
+      "to": [
+        "galley-level-1"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-forecastle-state-rooms-level-0",
+      "from": [
+        "forecastle-level-0"
+      ],
+      "to": [
+        "state-rooms-level-0"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-state-rooms-lower-grand-staircase-level-0",
+      "from": [
+        "state-rooms-level-0"
+      ],
+      "to": [
+        "lower-grand-staircase-level-0"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-lower-grand-staircase-millionaire-suites-level-0",
+      "from": [
+        "lower-grand-staircase-level-0"
+      ],
+      "to": [
+        "millionaire-suites-level-0"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-poop-deck-3rd-class-berths-level-0",
+      "from": [
+        "poop-deck-level-0"
+      ],
+      "to": [
+        "3rd-class-berths-level-0"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-boiler-room-engine-room-level-minus-3",
+      "from": [
+        "boiler-room-level-minus-3"
+      ],
+      "to": [
+        "engine-room-level-minus-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-boiler-room-engine-room-level-minus-4",
+      "from": [
+        "boiler-room-level-minus-4"
+      ],
+      "to": [
+        "engine-room-level-minus-4"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-engine-room-turbine-room-level-minus-4",
+      "from": [
+        "engine-room-level-minus-4"
+      ],
+      "to": [
+        "turbine-room-level-minus-4"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-boiler-room-engine-room-level-minus-5",
+      "from": [
+        "boiler-room-level-minus-5"
+      ],
+      "to": [
+        "engine-room-level-minus-5"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "passage-engine-room-turbine-room-level-minus-5",
+      "from": [
+        "engine-room-level-minus-5"
+      ],
+      "to": [
+        "turbine-room-level-minus-5"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Room connection",
+      "note": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Connected regions in the reference atlas. Corridors and exact doorway positions are simplified; open the relevant doors before travelling."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-aft-decks-level-3",
+      "from": [
+        "aft-decks-level-3"
+      ],
+      "to": [
+        "aft-decks-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-3rd-class-berths-level-0",
+      "from": [
+        "3rd-class-berths-level-0"
+      ],
+      "to": [
+        "3rd-class-berths-level-minus-1"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-engine-room-level-minus-3",
+      "from": [
+        "engine-room-level-minus-3"
+      ],
+      "to": [
+        "engine-room-level-minus-4"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-engine-room-level-minus-4",
+      "from": [
+        "engine-room-level-minus-4"
+      ],
+      "to": [
+        "engine-room-level-minus-5"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-boiler-room-level-minus-3",
+      "from": [
+        "boiler-room-level-minus-3"
+      ],
+      "to": [
+        "boiler-room-level-minus-4"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-boiler-room-level-minus-4",
+      "from": [
+        "boiler-room-level-minus-4"
+      ],
+      "to": [
+        "boiler-room-level-minus-5"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "vertical-turbine-room-level-minus-4",
+      "from": [
+        "turbine-room-level-minus-4"
+      ],
+      "to": [
+        "turbine-room-level-minus-5"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Between room levels",
+      "note": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the internal route between these levels of the same room. Exact stairs and landing positions are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "forecastle-lower-stairs",
+      "from": [
+        "forecastle-level-0"
+      ],
+      "to": [
+        "forecastle-level-1"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "forecastle-upper-stairs",
+      "from": [
+        "forecastle-level-1"
+      ],
+      "to": [
+        "forecastle-level-2"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "forecastle-bridge-stairs",
+      "from": [
+        "forecastle-level-2"
+      ],
+      "to": [
+        "bridge-level-3"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "aft-stairs",
+      "from": [
+        "aft-decks-level-2"
+      ],
+      "to": [
+        "aft-decks-level-1"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "aft-poop-stairs",
+      "from": [
+        "aft-decks-level-1"
+      ],
+      "to": [
+        "poop-deck-level-0"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "poop-main-stairs",
+      "from": [
+        "poop-deck-level-0"
+      ],
+      "to": [
+        "poop-deck-level-1"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "poop-sentinel-stairs",
+      "from": [
+        "poop-deck-level-1"
+      ],
+      "to": [
+        "poop-deck-level-2"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Deck stairs",
+      "note": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "Stair runs in the paired reference slices connect these room levels. Door and debris access may be required; the line does not mark an exact landing."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "grand-stairs-3-2",
+      "from": [
+        "upper-grand-staircase-level-3"
+      ],
+      "to": [
+        "upper-grand-staircase-level-2"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Grand Staircase",
+      "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the Grand Staircase between these height levels. Landing positions are schematic."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "grand-stairs-2-1",
+      "from": [
+        "upper-grand-staircase-level-2"
+      ],
+      "to": [
+        "lower-grand-staircase-level-1"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Grand Staircase",
+      "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the Grand Staircase between these height levels. Landing positions are schematic."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "grand-stairs-1-0",
+      "from": [
+        "lower-grand-staircase-level-1"
+      ],
+      "to": [
+        "lower-grand-staircase-level-0"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Grand Staircase",
+      "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the Grand Staircase between these height levels. Landing positions are schematic."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "grand-stairs-0-minus-1",
+      "from": [
+        "lower-grand-staircase-level-0"
+      ],
+      "to": [
+        "lower-grand-staircase-level-minus-1"
+      ],
+      "kind": "stairs",
+      "direction": "both",
+      "label": "Grand Staircase",
+      "note": "Use the Grand Staircase between these height levels. Landing positions are schematic.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Use the Grand Staircase between these height levels. Landing positions are schematic."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "forecastle-mail",
+      "from": [
+        "forecastle-level-0"
+      ],
+      "to": [
+        "mail-rooms-level-minus-1"
+      ],
+      "kind": "descent",
+      "direction": "forward",
+      "label": "Downward connection",
+      "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "mail-down",
+      "from": [
+        "mail-rooms-level-minus-1"
+      ],
+      "to": [
+        "mail-rooms-level-minus-2"
+      ],
+      "kind": "descent",
+      "direction": "forward",
+      "label": "Downward connection",
+      "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "berths-down",
+      "from": [
+        "3rd-class-berths-level-minus-1"
+      ],
+      "to": [
+        "3rd-class-berths-level-minus-2"
+      ],
+      "kind": "descent",
+      "direction": "forward",
+      "label": "Downward connection",
+      "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "berths-provisions",
+      "from": [
+        "3rd-class-berths-level-minus-2"
+      ],
+      "to": [
+        "provisions-level-minus-3"
+      ],
+      "kind": "descent",
+      "direction": "forward",
+      "label": "Downward connection",
+      "note": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped.",
+      "source": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+      "precision": "level",
+      "arrival": "level",
+      "interpretation": "The reference marks this downward level change. The exact stair, ladder or drop and reverse route are not mapped."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "mail-cargo",
+      "from": [
+        "mail-rooms-level-minus-2"
+      ],
+      "to": [
+        "cargo-hold-level-minus-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Cargo access",
+      "note": "Descend through Mail Rooms and open the Cargo Hold door. The approach is compressed; this is not a measured doorway.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Descend through Mail Rooms and open the Cargo Hold door. The approach is compressed; this is not a measured doorway."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "provisions-engine",
+      "from": [
+        "provisions-level-minus-3"
+      ],
+      "to": [
+        "engine-room-level-minus-3"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Machinery access",
+      "note": "Continue from Provisions into Engine Room; door access may be required.",
+      "source": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Continue from Provisions into Engine Room; door access may be required."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "promenade-aft",
+      "from": [
+        "promenade-port-deck-level-2"
+      ],
+      "to": [
+        "aft-decks-level-2"
+      ],
+      "kind": "route",
+      "direction": "both",
+      "label": "Toward aft decks",
+      "note": "Continue along the port route toward Aft Decks. This regional connection does not locate an exact door.",
+      "source": "/guides/bo4-voyage-of-despair#guide-step-boss-1",
+      "precision": "regional",
+      "arrival": "level",
+      "interpretation": "Continue along the port route toward Aft Decks. This regional connection does not locate an exact door."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-forecastle-poop",
+      "from": [
+        "forecastle-level-1"
+      ],
+      "to": [
+        "poop-deck-level-2",
+        "poop-deck-level-1",
+        "poop-deck-level-0"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "room",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-poop-forecastle",
+      "from": [
+        "poop-deck-level-2",
+        "poop-deck-level-1",
+        "poop-deck-level-0"
+      ],
+      "to": [
+        "forecastle-level-2",
+        "forecastle-level-1",
+        "forecastle-level-0"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted. The departure landing is not pinned.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "room",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted. The departure landing is not pinned."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-suites-provisions",
+      "from": [
+        "millionaire-suites-level-0"
+      ],
+      "to": [
+        "provisions-level-minus-3"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "level",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-turbine-cargo",
+      "from": [
+        "turbine-room-level-minus-4",
+        "turbine-room-level-minus-5"
+      ],
+      "to": [
+        "cargo-hold-level-minus-3"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. The departure landing is not pinned.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "level",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. The departure landing is not pinned."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-cargo-boiler",
+      "from": [
+        "cargo-hold-level-minus-3"
+      ],
+      "to": [
+        "boiler-room-level-minus-3",
+        "boiler-room-level-minus-4",
+        "boiler-room-level-minus-5"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "room",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-boiler-boat",
+      "from": [
+        "boiler-room-level-minus-3"
+      ],
+      "to": [
+        "boat-deck-level-3"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "level",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-boiler-stairs",
+      "from": [
+        "boiler-room-level-minus-5"
+      ],
+      "to": [
+        "lower-grand-staircase-level-1",
+        "lower-grand-staircase-level-0",
+        "lower-grand-staircase-level-minus-1"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "room",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted."
+    },
+    {
+      "mapId": "bo4-voyage-of-despair",
+      "id": "portal-mid-engine",
+      "from": [
+        "mid-deck-level-3"
+      ],
+      "to": [
+        "engine-room-level-minus-3",
+        "engine-room-level-minus-4",
+        "engine-room-level-minus-5"
+      ],
+      "kind": "portal",
+      "direction": "forward",
+      "label": "Fast travel",
+      "note": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted.",
+      "source": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+      "precision": "regional",
+      "arrival": "room",
+      "cost": 500,
+      "interpretation": "500 points. Activate the Sentinel Artifact and check destination access. Arrival level is not mapped; all source-listed levels of the destination room are highlighted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "spawn",
+      "to": "catwalk",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Cross Catwalk",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1",
+      "sourceText": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "catwalk",
+      "to": "yard",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Prison approach",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1",
+      "sourceText": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "yard",
+      "to": "cells",
+      "evidence": "side-magma-route",
+      "kind": "path",
+      "label": "Cell Block entrance",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-side-magma-route",
+      "sourceText": "Carry it toward New Industries, refreshing its heat at the blue barrels: Eagle Plaza → Michigan Avenue → Cell Block Entrance → Recreation Yard → West Grounds. Keep the weapon unfired and avoid fast travel. At New Industries, place it in the press and collect the forged Magmagat.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "cells",
+      "to": "wardens",
+      "evidence": "side-magma-route",
+      "kind": "path",
+      "label": "Michigan → Eagle",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-side-magma-route",
+      "sourceText": "Carry it toward New Industries, refreshing its heat at the blue barrels: Eagle Plaza → Michigan Avenue → Cell Block Entrance → Recreation Yard → West Grounds. Keep the weapon unfired and avoid fast travel. At New Industries, place it in the press and collect the forged Magmagat.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "cells",
+      "to": "docks",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1",
+      "sourceText": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-blood-of-the-dead",
+      "from": "wardens",
+      "to": "showers",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "House ↔ Showers",
+      "source": "/guides/bo4-blood-of-the-dead#guide-step-setup-1",
+      "sourceText": "Turn on power in the Power House on the spawn side, then cross the Catwalk and work through the prison to Building 64 for the second switch. Kill the first Warden and collect his key. Build the Spectral Shield, open Pack-a-Punch and feed the three wall dogs before starting the quest. Shield essence: check the blue electrical boxes in Library, Michigan Avenue and Times Square. Only one holds the part. Shield door: check the Citadel Tunnels staircase, its lower section and China Alley. Add the key dropped by the Warden, then build at a workbench, such as Cell Block 3rd Floor or Docks. With the shield equipped, drain three zombie souls using the key to earn a Spirit Blast. Aim and fire at the Roof voltmeter to reveal Pack-a-Punch. Later, check Roof, Power House and Building 64 when it moves. Feed the dog heads at New Industries, Cell Block 2nd Floor and Eagle Plaza. Kill one zombie at a time and wait for the chewing animation. When all three disappear, take the Warden’s House ↔ Showers fast travel and hold interact as you pass the floating Retriever.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ix",
+      "from": "danu",
+      "to": "ra",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Tower-pair bridge",
+      "source": "/guides/bo4-ix#guide-step-setup-1",
+      "sourceText": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ix",
+      "from": "odin",
+      "to": "zeus",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Tower-pair bridge",
+      "source": "/guides/bo4-ix#guide-step-setup-1",
+      "sourceText": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ix",
+      "from": "arena",
+      "to": "zeus",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "Arena doorway",
+      "source": "/guides/bo4-ix#guide-step-setup-2",
+      "sourceText": "Collect one shield part from each spawn group below, then build the Brazen Bull on the workbench in the back corner of The Pit. Obtain Death of Orion from its quest or the Mystery Box and Pack-a-Punch it into Serket’s Kiss. The shield’s gun is required for the Ra bull targets. Horns, Ra Altar Room: wall between the gong and stairs; pillar beside the Trebuchet wallbuy; or wall beside the zombie window closest to the perk statue. Blade, Zeus tower: Bath House ledge by the stairs; statue’s hand on Entrance level beside the Arena doorway; or statue base on Altar level by the nearby zombie window. Barrels, Odin tower: Cauldron pillar beside the Mystery Box; shield shelf at the top of the Entrance stairs; or around the corner from the Altar stairs.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ix",
+      "from": "ra",
+      "to": "temple",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Underground corridors",
+      "source": "/guides/bo4-ix#guide-step-setup-1",
+      "sourceText": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ix",
+      "from": "zeus",
+      "to": "temple",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Underground corridors",
+      "source": "/guides/bo4-ix#guide-step-setup-1",
+      "sourceText": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ancient-evil",
+      "from": "stoa",
+      "to": "spartan",
+      "evidence": "flame-oil",
+      "kind": "path",
+      "label": "Descending Stoa stairs",
+      "source": "/guides/bo4-ancient-evil#guide-step-flame-oil",
+      "sourceText": "Melee the blue Eternal Flame with Apollo’s Will to ignite its spear. Keep the shield out and melee the three oil patches: Upper Road’s rock on the descent to the river, the top of the Treasuries stairs left of Mozu, and the Spartan Monument landing below the Stoa stairs. Reignite the spear if it goes out.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ancient-evil",
+      "from": "spartan",
+      "to": "sorrow",
+      "evidence": "setup-2",
+      "kind": "drop",
+      "label": "Outbound Pegasus ride",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2",
+      "sourceText": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ancient-evil",
+      "from": "sorrow",
+      "to": "cliffs",
+      "evidence": "boss-1",
+      "kind": "path",
+      "label": "Venom Trap route",
+      "source": "/guides/bo4-ancient-evil#guide-step-boss-1",
+      "sourceText": "Place Pegasus Strike on the glowing blue mark at the top of the River of Sorrow stairs to raise the ballista. From that mark, send charged Redeemed Ouranos blasts at it until it aims toward the Python. Ignite Apollo’s spear at the Temple flame, keep it equipped, travel back and run through the active Venom Trap at Python Pass. With the spear burning green, melee the ballista to fire it.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-ancient-evil",
+      "from": "cliffs",
+      "to": "center",
+      "evidence": "setup-2",
+      "kind": "path",
+      "label": "Dark Side route",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2",
+      "sourceText": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-dead-of-the-night",
+      "from": "smoking",
+      "to": "library",
+      "evidence": "knights-2",
+      "kind": "path",
+      "label": "Fireplace route",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-knights-2",
+      "sourceText": "First run: Smoking Room → Library fireplace right of its trap → Library fireplace left of its trap → Billiards Room. The final fireplace gives a gem when the sequence succeeds; collect it before leaving.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-dead-of-the-night",
+      "from": "library",
+      "to": "hall",
+      "evidence": "knights-2",
+      "kind": "path",
+      "label": "To Billiards",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-knights-2",
+      "sourceText": "First run: Smoking Room → Library fireplace right of its trap → Library fireplace left of its trap → Billiards Room. The final fireplace gives a gem when the sequence succeeds; collect it before leaving.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-dead-of-the-night",
+      "from": "hall",
+      "to": "cemetery",
+      "evidence": "effigy-1",
+      "kind": "path",
+      "label": "Mansion → Cemetery Path",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-effigy-1",
+      "sourceText": "With the twigs vision activated, shoot five leaf-shedding birch trees with Alistair’s Annihilator. Collect each fallen branch. Check the pile in front of the Cemetery Mystery Box to confirm it registered. Cemetery Path: left side when entering from mansion. Cemetery: right of the Crimson Nosferatu coffin. Cemetery: near the armor/right staircase. Mausoleum: front-right area near the stairs. Mausoleum: back-left near the fast-travel gate.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-dead-of-the-night",
+      "from": "terrace",
+      "to": "forest",
+      "evidence": "setup-3",
+      "kind": "path",
+      "label": "Three-fork gate",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-3",
+      "sourceText": "Once all three forks are collected, interact with the blocked Forest Terrace gate. Opening it summons a werewolf; the Pack-a-Punch machine is at the far end of the forest. Recommended: finish the silver-bullet recipe below before opening the gate so this werewolf supplies your first upgrade material.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-classified",
+      "from": "offices",
+      "to": "war",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Elevator",
+      "source": "/guides/bo4-classified#guide-step-setup-1",
+      "sourceText": "Open Main Offices, ride the elevator down to the War Room, clear access to its lower elevator and descend to the laboratories. Turn on power in the South Laboratories room behind the Soda perk machine. Gather the three shield pieces while opening the floors, then build the Riot Shield at Weapon Testing if you plan to attempt round 150. Gun assembly: Central Filing near filing cabinets; teller/Side Passage window; left of Main Offices entrance. Base: lower War Room by Server Room doorway/computers; under stairs; behind the Mystery Box position. Window: South Laboratories left of power; left of the teleporter near Weapon Testing; North Laboratories beside the barrier near Auger.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-classified",
+      "from": "war",
+      "to": "labs",
+      "evidence": "setup-1",
+      "kind": "teleport",
+      "label": "Lower elevator",
+      "source": "/guides/bo4-classified#guide-step-setup-1",
+      "sourceText": "Open Main Offices, ride the elevator down to the War Room, clear access to its lower elevator and descend to the laboratories. Turn on power in the South Laboratories room behind the Soda perk machine. Gather the three shield pieces while opening the floors, then build the Riot Shield at Weapon Testing if you plan to attempt round 150. Gun assembly: Central Filing near filing cabinets; teller/Side Passage window; left of Main Offices entrance. Base: lower War Room by Server Room doorway/computers; under stairs; behind the Mystery Box position. Window: South Laboratories left of power; left of the teleporter near Weapon Testing; North Laboratories beside the barrier near Auger.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-classified",
+      "from": "war",
+      "to": "panic",
+      "evidence": "classified-pad",
+      "kind": "teleport",
+      "label": "DEFCON 5 / pre-install",
+      "source": "/guides/bo4-classified#guide-step-classified-pad",
+      "sourceText": "Collect the Teleporter Signal Amplifier’s pad from Main Offices and its wires from Morgue. For the third part, raise DEFCON to 5 by flipping four switches: two on the upper War Room balcony, one on the lower floor near the lab elevator, and one in Server Room. Before the amplifier is installed, the central War Room teleporter takes you to Panic Room; collect the amplifier there. Pad: beneath desk near Offices teleporter; on fallen desk near Mystery Box; beside Brew machine. Wires: chair near Morgue Mystery Box; countertop corner; open body chamber. There are four switches total. Normal Pack-a-Punch access accepts any order; the Kino clue later requires a particular order.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-classified",
+      "from": "war",
+      "to": "groom",
+      "evidence": "setup-2",
+      "kind": "teleport",
+      "label": "Amplifier + DEFCON 5",
+      "source": "/guides/bo4-classified#guide-step-setup-2",
+      "sourceText": "Craft the amplifier at an available workbench and place it on the small teleporter base in the lower War Room. Set DEFCON 5 again, then use the large central teleporter to travel to Groom Lake for Pack-a-Punch. After installation, the Server Room teleporter is the route back to Panic Room when DEFCON is 5.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-alpha-omega",
+      "from": "power",
+      "to": "generators",
+      "evidence": "setup-1",
+      "kind": "path",
+      "label": "Enter bunker / route",
+      "source": "/guides/bo4-alpha-omega#guide-step-setup-1",
+      "sourceText": "Open the route through Nuketown to the Power House in the Cul-de-sac and turn on its switch. Enter the bunker, reach Generators and interact with the ventilation console. Gather the team there and survive the lockdown. On the surface, find the four houses releasing green gas and hold interact on each affected ventilation unit until its gauge reaches green. Pack-a-Punch opens in Beds.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-alpha-omega",
+      "from": "generators",
+      "to": "beds",
+      "evidence": "telepads-parts",
+      "kind": "path",
+      "label": "Beds tunnel",
+      "source": "/guides/bo4-alpha-omega#guide-step-telepads-parts",
+      "sourceText": "Find one part from each area, then build the two reusable Telepads at APD Control or Green House Upstairs. Place pads on marked teleporter positions and interact to travel between them; relocate the pads when a different route is needed. Transfusion Facility: locker by the front entrance, below the medical chair, or the stacked boxes/materials in the backyard. Green House: downstairs corner by the front entrance, kitchen beneath the damaged barrier, or upstairs balcony. Generators: yellow railing opposite the perk machine, yellow buckets against the wall, or blue barrels near the Beds tunnel.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-alpha-omega",
+      "from": "generators",
+      "to": "storage",
+      "evidence": "extras-1",
+      "kind": "path",
+      "label": "Storage tunnel",
+      "source": "/guides/bo4-alpha-omega#guide-step-extras-1",
+      "sourceText": "The clock sequence opens the Operations locker containing an upgraded standard Mark II. For an elemental variant, first collect the assembly kit parts below and build its workbench in Operations Upstairs. Tubing, Yellow House: downstairs kitchen table, upstairs lamp table, or upstairs bookshelf. Canister, Storage: shelf, barrel by the Generators tunnel, or barrel by the exit. Container, APD Control / Solitary: cart near the Mystery Box, chair by the APD Control terminal, or Solitary desk beside the seated mannequin.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-alpha-omega",
+      "from": "power",
+      "to": "prisoner",
+      "evidence": "tasks-2",
+      "kind": "teleport",
+      "label": "Player-placed Telepads",
+      "source": "/guides/bo4-alpha-omega#guide-step-tasks-2",
+      "sourceText": "Before lifting the server, place one Telepad in Power House and its partner in Prisoner Holding. Lure a Jolting Jack into firing electricity at the Power House server to unlock the core. Take it, use the prepared teleporter immediately, sprint to Operations and install it in the server slot before its countdown expires.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    },
+    {
+      "mapId": "bo4-alpha-omega",
+      "from": "prisoner",
+      "to": "operations",
+      "evidence": "tasks-2",
+      "kind": "path",
+      "label": "Core delivery run",
+      "source": "/guides/bo4-alpha-omega#guide-step-tasks-2",
+      "sourceText": "Before lifting the server, place one Telepad in Power House and its partner in Prisoner Holding. Lure a Jolting Jack into firing electricity at the Power House server to unlock the core. Take it, use the prepared teleporter immediately, sprint to Operations and install it in the server slot before its countdown expires.",
+      "interpretation": "Regional route or transport, not a claim of direct room adjacency. Intermediate rooms can be omitted."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "bo4-tag-der-toten",
+      "reason": "No accepted source layout. Do not substitute Call of the Dead."
+    }
+  ]
+}

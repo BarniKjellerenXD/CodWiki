@@ -21,7 +21,7 @@
           <div v-show="view === 'quick'" ref="quickRef" @click="onArticleClick"><QuestSteps ref="partsRef" :map-id="mapId" :label="questLabel" :phases="phases" :map-links="quickMapLinks" :completed="current.done" :hide-completed="current.hideCompleted" @hide="current.hideCompleted = $event; save()" @toggle="current.done = togglePart(current.done, $event); save()" @details="scrollTo" @visit="remember" /></div>
           <article v-show="view === 'full'" ref="articleRef" class="prose guide-article" @click="onArticleClick" @change="saveCollapsed"><slot /><GuideSourceNote :map-id="mapId" /></article>
           <section v-if="mapActivated" v-show="view === 'map'" ref="mapRef" class="guide-map-view" aria-label="Interactive map" tabindex="-1">
-            <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="scrollTo" @ready="mapReady" />
+            <LazyInteractiveMap v-if="mapData" :data="mapData" :target-id="selectedMapTarget" :active="view === 'map'" :can-return="true" @select="selectMapTarget" @back="returnToStep" @guide="openMapGuide" @ready="mapReady" />
             <div v-else class="guide-map-loading"><p v-if="mapLoading" role="status">Loading {{ title }} map…</p><p v-else role="alert">{{ mapError }}</p><button v-if="mapError" class="companion-button" @click="loadMap">Try again</button><button class="companion-button" @click="returnToStep">Back to guide</button></div>
           </section>
           <section v-if="mapTools.length" v-show="view !== 'map'" id="map-tools" class="map-tools"><span class="companion-label">Keep handy</span><h2>Tools for {{ title }}</h2><div><NuxtLink v-for="tool in mapTools" :key="tool.id" class="companion-button" :to="tool.route">{{ tool.name }} ↗</NuxtLink></div></section>
@@ -47,6 +47,11 @@ const route = useRoute()
 const router = useRouter()
 const mapId = route.path.replace(/\/$/, '').split('/').pop()!
 const parentMap = catalogue.guides?.find(g => g.id === mapId)?.map || mapId
+function openMapGuide(anchor: string, guideId = mapId) {
+  if (guideId === mapId) return scrollTo(anchor)
+  if (!/^[a-z0-9-]+$/.test(guideId) || !/^[a-z0-9_-]+$/.test(anchor)) return
+  return navigateTo(`/guides/${guideId}#${anchor}`)
+}
 const hasMap = catalogue.maps.find(m => m.id === parentMap)?.interactiveMap === true
 const { progress, run, visit, save, reset, init, saveError } = useProgress()
 const current = computed(() => run(mapId))
@@ -56,7 +61,7 @@ const selectedBranch = ref(props.branches?.some(branch => branch.id === route.qu
 provide('guide-branch', selectedBranch)
 const phases = computed(() => visibleGuidePhases(allPhases, selectedBranch.value))
 const quickMapLinks = (quickMapIndex as Record<string, Record<string, string>>)[mapId] || {}
-const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(mapId)
+const { data: mapData, loading: mapLoading, error: mapError, load: loadMap } = useGuideMap(parentMap)
 const mapTools = catalogue.tools.filter(t => t.map === parentMap)
 const view = ref<string>(props.defaultView || 'quick')
 const active = ref('')

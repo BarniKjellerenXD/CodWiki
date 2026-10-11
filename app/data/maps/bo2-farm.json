@@ -1,0 +1,310 @@
+{
+  "id": "bo2-farm",
+  "name": "Farm",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-farm",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://callofduty.fandom.com/wiki/Farm"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://gamefaqs.gamespot.com/ps3/669288-call-of-duty-black-ops-ii/faqs/65280"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.callofduty.com/content/dam/atvi/callofduty/blackops2/cod-bo2/manuals/Manual_WiiU_EN.pdf"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-farm/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-yard",
+      "label": "Farmyard",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.607,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground level",
+      "description": "Black Ops II · Ground level. Region on a schematic, not an exact object position. Find Quick Revive outside and Double Tap in the barn.",
+      "source": "/guides/bo2-farm#guide-step-setup-barn"
+    },
+    {
+      "id": "area-house",
+      "label": "Farmhouse",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Open the house; take MP5 and upstairs Jugger-Nog.",
+      "source": "/guides/bo2-farm#guide-step-setup-house"
+    },
+    {
+      "id": "area-barn",
+      "label": "Barn",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Find Quick Revive outside and Double Tap in the barn.",
+      "source": "/guides/bo2-farm#guide-step-setup-barn"
+    },
+    {
+      "id": "area-shed",
+      "label": "Small shed",
+      "layerId": "overview",
+      "x": 0.78,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground level",
+      "description": "Black Ops II · Ground level. Region on a schematic, not an exact object position. Keep refillable ammunition; no Pack-a-Punch is available.",
+      "source": "/guides/bo2-farm#guide-step-setup-gear"
+    },
+    {
+      "id": "jug",
+      "label": "Upstairs Jugger-Nog",
+      "layerId": "overview",
+      "x": 0.192,
+      "y": 0.33799999999999997,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Open the farmhouse, take an MP5 when you can afford it and work toward Jugger-Nog upstairs. Speed Cola is downstairs; the Box sits on the upper balcony. Learn the balcony drop before you use it under pressure, then move away from its landing point. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-farm#guide-step-setup-house"
+    },
+    {
+      "id": "speed",
+      "label": "Downstairs Speed Cola",
+      "layerId": "overview",
+      "x": 0.268,
+      "y": 0.33799999999999997,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Open the farmhouse, take an MP5 when you can afford it and work toward Jugger-Nog upstairs. Speed Cola is downstairs; the Box sits on the upper balcony. Learn the balcony drop before you use it under pressure, then move away from its landing point. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-farm#guide-step-setup-house"
+    },
+    {
+      "id": "box",
+      "label": "Balcony Mystery Box",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.361,
+      "category": "weapon",
+      "typeId": "mystery-box",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Open the farmhouse, take an MP5 when you can afford it and work toward Jugger-Nog upstairs. Speed Cola is downstairs; the Box sits on the upper balcony. Learn the balcony drop before you use it under pressure, then move away from its landing point. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-farm#guide-step-setup-house"
+    },
+    {
+      "id": "double",
+      "label": "Upstairs Double Tap",
+      "layerId": "overview",
+      "x": 0.752,
+      "y": 0.33799999999999997,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Quick Revive is outside near the barn and Double Tap is upstairs in the barn. Perks already have power. Use the barn doorway and upper opening as two different exits, checking the ground before dropping. The photographed barn is a shared TranZit layout reference; this standalone mode has different equipment. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-farm#guide-step-setup-barn"
+    },
+    {
+      "id": "revive",
+      "label": "Quick Revive near barn",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.608,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground level",
+      "description": "Quick Revive is outside near the barn and Double Tap is upstairs in the barn. Perks already have power. Use the barn doorway and upper opening as two different exits, checking the ground before dropping. The photographed barn is a shared TranZit layout reference; this standalone mode has different equipment. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-farm#guide-step-setup-barn"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-house",
+      "title": "Open the house; take MP5 and upstairs Jugger-Nog.",
+      "locationIds": [
+        "jug",
+        "speed",
+        "box",
+        "area-house"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-setup-house"
+    },
+    {
+      "id": "guide-setup-barn",
+      "title": "Find Quick Revive outside and Double Tap in the barn.",
+      "locationIds": [
+        "double",
+        "revive",
+        "area-yard",
+        "area-barn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-setup-barn"
+    },
+    {
+      "id": "guide-setup-gear",
+      "title": "Keep refillable ammunition; no Pack-a-Punch is available.",
+      "locationIds": [
+        "area-shed"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-setup-gear"
+    },
+    {
+      "id": "guide-survive-yard",
+      "title": "Train around the yard; commit to a building only with a clear exit.",
+      "locationIds": [
+        "area-yard"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-survive-yard"
+    },
+    {
+      "id": "guide-survive-coop",
+      "title": "Separate team routes and call out drops or revives.",
+      "locationIds": [
+        "area-house",
+        "area-barn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-survive-coop"
+    },
+    {
+      "id": "guide-survive-rebuild",
+      "title": "Rebuild with a wall gun and Jugger-Nog; the fridge does not store weapons here.",
+      "locationIds": [
+        "area-yard",
+        "area-house"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-survive-rebuild"
+    },
+    {
+      "id": "guide-grief-layout",
+      "title": "Keep the balcony and barn exits usable.",
+      "locationIds": [
+        "area-house",
+        "area-barn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-grief-layout"
+    },
+    {
+      "id": "guide-grief-revive",
+      "title": "Cover the revive and keep one player free to escape.",
+      "locationIds": [
+        "area-yard"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Standalone Farm modes. Upper-floor drops are one-way. No Pack-a-Punch or TranZit buildables are implied.",
+      "guideAnchor": "guide-step-grief-revive"
+    }
+  ],
+  "quickLinks": {
+    "setup-house": "guide-setup-house",
+    "setup-barn": "guide-setup-barn",
+    "setup-gear": "guide-setup-gear",
+    "survive-yard": "guide-survive-yard",
+    "survive-coop": "guide-survive-coop",
+    "survive-rebuild": "guide-survive-rebuild",
+    "grief-layout": "guide-grief-layout",
+    "grief-revive": "guide-grief-revive"
+  }
+}

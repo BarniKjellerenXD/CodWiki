@@ -1,0 +1,92 @@
+{
+  "mapId": "bo4-voyage-of-despair",
+  "researchedAt": "2026-10-11",
+  "status": "implemented-cutaway-reference-reviewed",
+  "userImageReference": {
+    "filename": "codex-clipboard-baa73ec9-d17e-4e78-9f0f-f3a08c7fbb8d.png",
+    "dimensions": [1500, 16231],
+    "sha256": "D6B73171C671A525A8316A21CE89823ABC7EC24700475BCA1D3286E168A38025",
+    "inspected": "Three readable panels, compared with aligned original atlas",
+    "corrections": ["Forecastle spawn on +1", "Poop Deck Sentinel platform on +2", "reference-aligned longitudinal room spans", "adjacent deck stairs and intermediate descent rooms"]
+  },
+  "sourceRefs": {
+    "official": "https://www.callofduty.com/blog/2018-10/voyage-of-despair.html",
+    "cartographer": "https://www.reddit.com/r/CODZombies/comments/9ztkzk/voyage_of_despair_complete_map_with_location/",
+    "updatedCreatorMap": "https://www.reddit.com/r/CODZombies/comments/cxfzzg/detailed_maps_for_all_black_ops_4_zombies_maps/",
+    "community": "https://www.reddit.com/r/CODZombies/wiki/voyage-of-despair/",
+    "routeGuide": "https://www.gamesradar.com/call-of-duty-black-ops-4-zombies-voyage-of-despair-easter-eggs/",
+    "sentinelRoute": "https://games-guides.com/all-guide-list/cod-black-ops-4-voyage-of-despair-sentinel-artifact-location-guide/",
+    "gameOverview": "https://www.powerpyx.com/call-of-duty-black-ops-4-voyage-of-despair-map/"
+  },
+  "geometryStatus": {
+    "measuredCoordinates": false,
+    "creatorPdfInspected": true,
+    "creatorPdfPath": "C:/Users/MainLocalUser/.codex/visualizations/2026/10/11/01a12a67-329a-7730-b28d-c12362794e3d/voyage-reference/vector-source/vod_fullmap.pdf",
+    "inspectionMethods": ["rendered full atlas", "pdfplumber extracted text", "user-supplied annotated PNG panels", "enlarged aligned level strips"],
+    "exactFloorAssignments": "transcribed creator slice membership; gameplay corroboration pending",
+    "reportedLevelCount": 9,
+    "reportedLevelCountEvidence": "Inspected creator drawing labels +3 through -5",
+    "indexMeaning": "creator elevation indices, not official game deck names or historical Titanic deck letters",
+    "doNotInfer": ["historical Titanic deck letters", "continuous lower bow-to-stern corridor", "reverse portal edges", "exact walls from coarse guide routes"]
+  },
+  "creatorLevels": [
+    {"index": 3, "label": "+3", "regions": [{"name": "Bridge", "extent": "forward"}, {"name": "Upper Grand Staircase", "extent": "forward third"}, {"name": "Boat Deck", "extent": "middle"}, {"name": "Mid Deck", "extent": "middle"}, {"name": "Sun Deck", "extent": "middle to aft"}, {"name": "Aft Decks", "extent": "aft"}]},
+    {"index": 2, "label": "+2", "regions": [{"name": "Forecastle", "extent": "forward stair landings"}, {"name": "Upper Grand Staircase", "extent": "forward third"}, {"name": "1st Class Lounge", "extent": "forward to middle"}, {"name": "Promenade Starboard Deck", "extent": "middle to aft"}, {"name": "Promenade Port Deck", "extent": "middle to aft"}, {"name": "Aft Decks", "extent": "aft"}, {"name": "Poop Deck", "extent": "narrow stern Sentinel platform"}]},
+    {"index": 1, "label": "+1", "regions": [{"name": "Forecastle", "extent": "bow"}, {"name": "Lower Grand Staircase", "extent": "forward third"}, {"name": "Dining Hall", "extent": "forward to middle"}, {"name": "Galley", "extent": "middle"}, {"name": "Aft Decks", "extent": "aft"}, {"name": "Poop Deck", "extent": "stern"}]},
+    {"index": 0, "label": "0", "regions": [{"name": "Forecastle", "extent": "bow"}, {"name": "State Rooms", "extent": "forward"}, {"name": "Lower Grand Staircase", "extent": "forward third"}, {"name": "Millionaire Suites", "extent": "forward third"}, {"name": "Poop Deck", "extent": "stern"}, {"name": "3rd Class Berths", "extent": "stern"}]},
+    {"index": -1, "label": "-1", "regions": [{"name": "Mail Rooms", "extent": "bow"}, {"name": "Lower Grand Staircase", "extent": "forward third, lowest landing"}, {"name": "3rd Class Berths", "extent": "stern"}], "note": "Three disconnected islands."},
+    {"index": -2, "label": "-2", "regions": [{"name": "Mail Rooms", "extent": "bow"}, {"name": "3rd Class Berths", "extent": "stern"}], "note": "No intervening traversable corridor drawn."},
+    {"index": -3, "label": "-3", "regions": [{"name": "Cargo Hold", "extent": "bow"}, {"name": "Boiler Room", "extent": "middle to aft"}, {"name": "Engine Room", "extent": "middle to aft"}, {"name": "Provisions", "extent": "aft"}], "note": "Cargo and machinery are separate islands."},
+    {"index": -4, "label": "-4", "regions": [{"name": "Boiler Room", "extent": "middle to aft"}, {"name": "Engine Room", "extent": "middle to aft"}, {"name": "Turbine Room", "extent": "middle to aft"}]},
+    {"index": -5, "label": "-5", "regions": [{"name": "Boiler Room", "extent": "middle to aft"}, {"name": "Engine Room", "extent": "middle to aft"}, {"name": "Turbine Room", "extent": "middle to aft"}]}
+  ],
+  "explicitDownwardConnectors": [
+    {"fromArea": "Forecastle", "fromLevel": 0, "toArea": "Mail Rooms", "toLevel": -1, "evidence": "Down arrow labeled -1 on creator slice 0; room at aligned next slice is Mail Rooms", "movementType": "pending gameplay", "reverseTravel": "unknown"},
+    {"fromArea": "Mail Rooms", "fromLevel": -1, "toArea": "Mail Rooms", "toLevel": -2, "evidence": "Down arrow labeled -2", "movementType": "pending gameplay", "reverseTravel": "unknown"},
+    {"fromArea": "3rd Class Berths", "fromLevel": -1, "toArea": "3rd Class Berths", "toLevel": -2, "evidence": "Down arrow labeled -2", "movementType": "pending gameplay", "reverseTravel": "unknown"},
+    {"fromArea": "3rd Class Berths", "fromLevel": -2, "toArea": "Provisions", "toLevel": -3, "evidence": "Down arrow labeled -3; next slice region bracket is Provisions", "movementType": "pending gameplay", "reverseTravel": "unknown"}
+  ],
+  "creatorNamingConflicts": [
+    {"legend": "Workbench Aft Decks (0)", "drawing": "Poop Deck region bracket at workbench", "resolution": "Verify HUD; do not create duplicate area"},
+    {"legend": "Clock 3rd Class Lounge (-2)", "drawing": "3rd Class Berths", "resolution": "Use established Berths name pending HUD verification"}
+  ],
+  "relativeSpatialChains": [
+    {"areas": ["Forecastle", "Mail Rooms", "Cargo Hold"], "trend": "downward into bow", "precision": "regional", "sourceRef": "routeGuide", "note": "Mail Rooms below Forecastle; door into Cargo Hold. Exact landing count unresolved."},
+    {"areas": ["Poop Deck", "Provisions", "Engine Room", "Turbine Room"], "trend": "downward into stern machinery", "precision": "regional", "sourceRef": "routeGuide", "note": "Route sequence, not a claim that every pair is one immediate door."},
+    {"areas": ["Upper Grand Staircase", "Lower Grand Staircase"], "trend": "vertical stairwell", "precision": "regional", "sourceRef": "routeGuide", "note": "Represent intermediate landings explicitly after verification."}
+  ],
+  "roomInventory": [
+    "Forecastle", "Bridge", "Boat Deck", "Sun Deck", "Mid Deck", "Aft Decks", "Poop Deck",
+    "State Rooms", "Millionaire Suites", "Upper Grand Staircase", "Lower Grand Staircase", "1st Class Lounge", "Dining Hall", "Galley", "Promenade Port Deck", "Promenade Starboard Deck",
+    "Mail Rooms", "Cargo Hold", "3rd Class Berths", "Provisions", "Engine Room", "Turbine Room", "Boiler Room"
+  ],
+  "namesToReconcile": ["Officer's Cabin", "Palm Court", "2nd Class"],
+  "portalCommon": {
+    "direction": "one-way",
+    "costPoints": 500,
+    "sourceRef": "community",
+    "status": "source-confirmed regional endpoints; exact floor and position pending",
+    "requirements": ["Sentinel Artifact active", "verify destination door access condition before implementing route availability"]
+  },
+  "portals": [
+    {"id": "forecastle-to-poop", "from": "Forecastle", "fromCreatorLevel": 1, "to": "Poop Deck", "toCreatorLevel": null, "creatorEvidence": "To Poop Deck label on +1"},
+    {"id": "poop-to-forecastle", "from": "Poop Deck", "to": "Forecastle"},
+    {"id": "suites-to-provisions", "from": "Millionaire Suites", "to": "Provisions"},
+    {"id": "turbine-to-cargo", "from": "Turbine Room", "to": "Cargo Hold"},
+    {"id": "cargo-to-boiler", "from": "Cargo Hold", "fromCreatorLevel": -3, "to": "Boiler Room", "toCreatorLevel": null, "creatorEvidence": "To Boiler Room label on -3"},
+    {"id": "boiler-upper-to-boat", "from": "Boiler Room", "fromSublevel": "upper", "fromCreatorLevel": -3, "to": "Boat Deck", "toCreatorLevel": 3, "creatorEvidence": "To Boat Deck label on -3; named Boat Deck region on +3", "note": "Gameplay arrival corroboration pending."},
+    {"id": "boiler-lower-to-staircase", "from": "Boiler Room", "fromSublevel": "lower", "fromCreatorLevel": -5, "to": "Lower Grand Staircase", "toCreatorLevel": null, "creatorEvidence": "Explicit To Lower Grand Staircase label on -5", "note": "Regional destination source-backed; precise arrival landing and gameplay corroboration pending."},
+    {"id": "mid-to-engine", "from": "Mid Deck", "fromCreatorLevel": 3, "to": "Engine Room", "toCreatorLevel": null, "creatorEvidence": "To Engine Room label on +3"}
+  ],
+  "stateDimensions": ["Sentinel active", "paid door access", "Cargo Hold flooded or drained", "rear machinery flooded or drained", "quest arena travel", "active Pack-a-Punch site"],
+  "recommendedViews": ["ship-shaped regional overview", "single floor slice", "persistent small side profile"],
+  "connectionRequiredFields": ["fromArea", "fromLevel", "toArea", "toLevel", "kind", "direction", "requirements", "evidence"],
+  "connectionKinds": ["walk", "stairs", "climb", "drop", "portal"],
+  "nextEvidenceTasks": [
+    "Corroborate transcribed creator slice membership against HUD room names",
+    "Verify both endpoints, traversal type and direction of every individual stair and shortcut",
+    "Resolve precise arrival landing of Boiler lower portal into Lower Grand Staircase",
+    "Reconcile source map labels with in-game names",
+    "Review source-image reuse permission before shipping third-party art"
+  ]
+}

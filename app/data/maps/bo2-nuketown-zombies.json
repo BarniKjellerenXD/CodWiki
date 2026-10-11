@@ -1,0 +1,295 @@
+{
+  "id": "bo2-nuketown-zombies",
+  "name": "Nuketown Zombies",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-nuketown-zombies",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/nuketown/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombieguides.com/nuketown-zombies"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://mmmrkennedy.com/games/BO2/nuketown/nuketown_guide"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-nuketown-zombies/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-street",
+      "label": "Central street / truck",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.5670000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street",
+      "description": "Black Ops II · Street. Region on a schematic, not an exact object position. Open the 3,000-point truck; melee the boxes to reveal Galvaknuckles.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-equipment-truck"
+    },
+    {
+      "id": "area-house1",
+      "label": "One house route",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Open one house and yard; learn its upper-window escape.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-setup-houses"
+    },
+    {
+      "id": "area-yard1",
+      "label": "First backyard",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Backyard",
+      "description": "Black Ops II · Backyard. Region on a schematic, not an exact object position. Open one house and yard; learn its upper-window escape.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-setup-houses"
+    },
+    {
+      "id": "area-house2",
+      "label": "Other house route",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Open one house and yard; learn its upper-window escape.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-setup-houses"
+    },
+    {
+      "id": "area-yard2",
+      "label": "Other backyard",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Backyard",
+      "description": "Black Ops II · Backyard. Region on a schematic, not an exact object position. Open one house and yard; learn its upper-window escape.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-setup-houses"
+    },
+    {
+      "id": "truck",
+      "label": "Truck equipment route",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.5680000000000001,
+      "category": "weapon",
+      "typeId": "wall-buy",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Street",
+      "description": "The central truck can be opened for 3,000. Inside are the AK74u, Semtex, Claymores and Bowie Knife. Break the boxes with melee attacks to expose the Galvaknuckles purchase. This is an optional expensive detour, so secure a safe route and core perks before buying everything at once. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-nuketown-zombies#guide-step-equipment-truck"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-houses",
+      "title": "Open one house and yard; learn its upper-window escape.",
+      "locationIds": [
+        "area-house1",
+        "area-yard1",
+        "area-house2",
+        "area-yard2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-setup-houses"
+    },
+    {
+      "id": "guide-setup-pap",
+      "title": "Upgrade when the machine arrives; the backyard shed is a separate reward.",
+      "locationIds": [
+        "area-yard1",
+        "area-yard2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-setup-pap"
+    },
+    {
+      "id": "guide-equipment-truck",
+      "title": "Open the 3,000-point truck; melee the boxes to reveal Galvaknuckles.",
+      "locationIds": [
+        "truck",
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-equipment-truck"
+    },
+    {
+      "id": "guide-survive-yards",
+      "title": "Use a consistent yard loop; check ground spawns and the doorway.",
+      "locationIds": [
+        "area-house1",
+        "area-house2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-survive-yards"
+    },
+    {
+      "id": "guide-survive-team",
+      "title": "Divide the yards and announce crossings or rescues.",
+      "locationIds": [
+        "area-street",
+        "area-yard1",
+        "area-yard2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-survive-team"
+    },
+    {
+      "id": "guide-music-teddies",
+      "title": "Interact with the bus, top-bunk and backyard-fence teddies.",
+      "locationIds": [
+        "area-house1",
+        "area-house2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-music-teddies"
+    },
+    {
+      "id": "guide-music-mannequins",
+      "title": "Decapitate all 28 spawned mannequins, including distant ones.",
+      "locationIds": [
+        "area-street",
+        "area-house1",
+        "area-yard1",
+        "area-house2",
+        "area-yard2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-music-mannequins"
+    },
+    {
+      "id": "guide-music-counter",
+      "title": "Set population to 15, stop killing and collect the shed power-up.",
+      "locationIds": [
+        "area-house1",
+        "area-yard1",
+        "area-house2",
+        "area-yard2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-music-counter"
+    },
+    {
+      "id": "guide-story-bunker",
+      "title": "Knife the bunker door for Marlton’s dialogue.",
+      "locationIds": [
+        "area-house1",
+        "area-house2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-story-bunker"
+    },
+    {
+      "id": "guide-story-tv",
+      "title": "Listen to the green-house TV and watch the round 25 transition.",
+      "locationIds": [
+        "area-house1",
+        "area-house2"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Two-house route diagram; left/right placement is diagrammatic, not compass orientation. Perk and Pack-a-Punch drops must be located in the current match and are not false fixed pins.",
+      "guideAnchor": "guide-step-story-tv"
+    }
+  ],
+  "quickLinks": {
+    "setup-houses": "guide-setup-houses",
+    "setup-pap": "guide-setup-pap",
+    "equipment-truck": "guide-equipment-truck",
+    "survive-yards": "guide-survive-yards",
+    "survive-team": "guide-survive-team",
+    "music-teddies": "guide-music-teddies",
+    "music-mannequins": "guide-music-mannequins",
+    "music-counter": "guide-music-counter",
+    "story-bunker": "guide-story-bunker",
+    "story-tv": "guide-story-tv"
+  }
+}

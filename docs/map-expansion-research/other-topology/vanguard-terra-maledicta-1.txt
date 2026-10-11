@@ -1,0 +1,6 @@
+Reference: https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html
+Guide: vanguard-terra-maledicta
+Read for factual room/transport relationships; external artwork and article text are not redistributed.
+Diagram relationship: temple → east; path; Objective unlock.
+Diagram relationship: temple → west; path; Objective unlock.
+Diagram relationship: temple → merchant; path; Objective unlock.

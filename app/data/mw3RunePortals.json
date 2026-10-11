@@ -1,0 +1,1120 @@
+{
+  "version": 2,
+  "reviewed": "2026-10-11",
+  "source": "https://wzhub.gg/map/urzikstan/mwz",
+  "entryCost": 1000,
+  "map": {
+    "id": "overview",
+    "label": "Urzikstan",
+    "image": "/maps/mw3-urzikstan/overview.webp",
+    "width": 4096,
+    "height": 4096
+  },
+  "grid": {
+    "columns": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J"
+    ],
+    "rows": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "entrances": [
+    {
+      "id": "m2111",
+      "kind": "entrance",
+      "label": "A",
+      "grid": "E1",
+      "nearbyArea": "Popov Power",
+      "x": 0.4764404296875,
+      "y": 0.181396484375,
+      "photos": [
+        {
+          "id": "wzhub-m2111-1",
+          "src": "/images/remaining/wzhub-m2111-1.jpg",
+          "width": 640,
+          "height": 392,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2111",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2245",
+      "kind": "entrance",
+      "label": "B",
+      "grid": "C1",
+      "nearbyArea": "Levin Resort",
+      "x": 0.2191800400959803,
+      "y": 0.12421103304445107,
+      "photos": [
+        {
+          "id": "wzhub-m2245-1",
+          "src": "/images/remaining/wzhub-m2245-1.jpg",
+          "width": 640,
+          "height": 393,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2245",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2248",
+      "kind": "entrance",
+      "label": "C",
+      "grid": "C5",
+      "nearbyArea": "Zaravan City",
+      "x": 0.24555095495253482,
+      "y": 0.5888686081895668,
+      "photos": [
+        {
+          "id": "wzhub-m2248-1",
+          "src": "/images/remaining/wzhub-m2248-1.jpg",
+          "width": 640,
+          "height": 392,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2248",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2256",
+      "kind": "entrance",
+      "label": "D",
+      "grid": "I2",
+      "nearbyArea": "Orlov Military Base",
+      "x": 0.8695224726528018,
+      "y": 0.22118242146491038,
+      "photos": [
+        {
+          "id": "wzhub-m2256-1",
+          "src": "/images/remaining/wzhub-m2256-1.jpg",
+          "width": 640,
+          "height": 390,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2256",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2277",
+      "kind": "entrance",
+      "label": "E",
+      "grid": "F2",
+      "nearbyArea": "Popov Power",
+      "x": 0.515380859375,
+      "y": 0.293701171875,
+      "photos": [
+        {
+          "id": "wzhub-m2277-1",
+          "src": "/images/remaining/wzhub-m2277-1.jpg",
+          "width": 640,
+          "height": 385,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2277",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2278",
+      "kind": "entrance",
+      "label": "F",
+      "grid": "H2",
+      "nearbyArea": "Orlov Military Base",
+      "x": 0.7244873046875,
+      "y": 0.2982177734375,
+      "photos": [
+        {
+          "id": "wzhub-m2278-1",
+          "src": "/images/remaining/wzhub-m2278-1.jpg",
+          "width": 640,
+          "height": 400,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2278",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2279",
+      "kind": "entrance",
+      "label": "G",
+      "grid": "H5",
+      "nearbyArea": "Low Town",
+      "x": 0.711669921875,
+      "y": 0.5450439453125,
+      "photos": [
+        {
+          "id": "wzhub-m2279-1",
+          "src": "/images/remaining/wzhub-m2279-1.jpg",
+          "width": 640,
+          "height": 432,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2279",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2280",
+      "kind": "entrance",
+      "label": "H",
+      "grid": "H8",
+      "nearbyArea": "Shahin Manor",
+      "x": 0.7994384765625,
+      "y": 0.80535888671875,
+      "photos": [
+        {
+          "id": "wzhub-m2280-1",
+          "src": "/images/remaining/wzhub-m2280-1.jpg",
+          "width": 640,
+          "height": 388,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2280",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2281",
+      "kind": "entrance",
+      "label": "I",
+      "grid": "F8",
+      "nearbyArea": "Zaravan Suburbs",
+      "x": 0.50836181640625,
+      "y": 0.825927734375,
+      "photos": [
+        {
+          "id": "wzhub-m2281-1",
+          "src": "/images/remaining/wzhub-m2281-1.jpg",
+          "width": 640,
+          "height": 403,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2281",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2282",
+      "kind": "entrance",
+      "label": "J",
+      "grid": "B4",
+      "nearbyArea": "Seaport District",
+      "x": 0.1953125,
+      "y": 0.4176025390625,
+      "photos": [
+        {
+          "id": "wzhub-m2282-1",
+          "src": "/images/remaining/wzhub-m2282-1.jpg",
+          "width": 640,
+          "height": 403,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2282",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2284",
+      "kind": "entrance",
+      "label": "K",
+      "grid": "F5",
+      "nearbyArea": "Old Town",
+      "x": 0.564208984375,
+      "y": 0.56201171875,
+      "photos": [
+        {
+          "id": "wzhub-m2284-1",
+          "src": "/images/remaining/wzhub-m2284-1.jpg",
+          "width": 640,
+          "height": 405,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2284",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2318",
+      "kind": "entrance",
+      "label": "L",
+      "grid": "D1",
+      "nearbyArea": "Popov Power",
+      "x": 0.3736572265625,
+      "y": 0.1881103515625,
+      "photos": [
+        {
+          "id": "wzhub-m2318-1",
+          "src": "/images/remaining/wzhub-m2318-1.jpg",
+          "width": 640,
+          "height": 430,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2318",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2325",
+      "kind": "entrance",
+      "label": "M",
+      "grid": "H8",
+      "nearbyArea": "Shahin Manor",
+      "x": 0.7236328125,
+      "y": 0.856201171875,
+      "photos": [
+        {
+          "id": "wzhub-m2325-1",
+          "src": "/images/remaining/wzhub-m2325-1.jpg",
+          "width": 640,
+          "height": 344,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2325",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2331",
+      "kind": "entrance",
+      "label": "N",
+      "grid": "C3",
+      "nearbyArea": "Levin Resort",
+      "x": 0.298828125,
+      "y": 0.312744140625,
+      "photos": [
+        {
+          "id": "wzhub-m2331-1",
+          "src": "/images/remaining/wzhub-m2331-1.jpg",
+          "width": 640,
+          "height": 392,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2331",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2388",
+      "kind": "entrance",
+      "label": "O",
+      "grid": "H4",
+      "nearbyArea": "Hadiqa Farms",
+      "x": 0.7769775390625,
+      "y": 0.472412109375,
+      "photos": [
+        {
+          "id": "wzhub-m2388-1",
+          "src": "/images/remaining/wzhub-m2388-1.jpg",
+          "width": 640,
+          "height": 472,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2388",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2394",
+      "kind": "entrance",
+      "label": "P",
+      "grid": "D6",
+      "nearbyArea": "Zaravan City",
+      "x": 0.35086125458372597,
+      "y": 0.6873568736555552,
+      "photos": [
+        {
+          "id": "wzhub-m2394-1",
+          "src": "/images/remaining/wzhub-m2394-1.jpg",
+          "width": 640,
+          "height": 426,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2394",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    },
+    {
+      "id": "m2397",
+      "kind": "entrance",
+      "label": "Q",
+      "grid": "F6",
+      "nearbyArea": "Zaravan Suburbs",
+      "x": 0.5593464632404384,
+      "y": 0.6584765104356509,
+      "photos": [
+        {
+          "id": "wzhub-m2397-1",
+          "src": "/images/remaining/wzhub-m2397-1.jpg",
+          "width": 640,
+          "height": 394,
+          "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2397",
+          "credit": "WZHUB (individual screenshot creator not identified)"
+        }
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "m2112",
+      "kind": "destination",
+      "label": "1",
+      "grid": "I6",
+      "nearbyArea": "Hadiqa Farms",
+      "x": 0.8892822265625,
+      "y": 0.62451171875,
+      "glyphIds": [
+        "mwz-glyph-01",
+        "mwz-glyph-02",
+        "mwz-glyph-03"
+      ],
+      "code": {
+        "id": "wzhub-m2112-1",
+        "src": "/images/remaining/wzhub-m2112-1.jpg",
+        "width": 839,
+        "height": 336,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2112",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2112-2",
+        "src": "/images/remaining/wzhub-m2112-2.jpg",
+        "width": 640,
+        "height": 410,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2112",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2291",
+      "kind": "destination",
+      "label": "2",
+      "grid": "H6",
+      "nearbyArea": "Hadiqa Farms",
+      "x": 0.7801628947194783,
+      "y": 0.6305129322034034,
+      "glyphIds": [
+        "mwz-glyph-01",
+        "mwz-glyph-04",
+        "mwz-glyph-05"
+      ],
+      "code": {
+        "id": "wzhub-m2291-1",
+        "src": "/images/remaining/wzhub-m2291-1.jpg",
+        "width": 829,
+        "height": 334,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2291",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2291-2",
+        "src": "/images/remaining/wzhub-m2291-2.jpg",
+        "width": 640,
+        "height": 405,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2291",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2292",
+      "kind": "destination",
+      "label": "3",
+      "grid": "D6",
+      "nearbyArea": "Zaravan City",
+      "x": 0.3665891729503523,
+      "y": 0.6959495258222056,
+      "glyphIds": [
+        "mwz-glyph-06",
+        "mwz-glyph-01",
+        "mwz-glyph-07"
+      ],
+      "code": {
+        "id": "wzhub-m2292-1",
+        "src": "/images/remaining/wzhub-m2292-1.jpg",
+        "width": 844,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2292",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2292-2",
+        "src": "/images/remaining/wzhub-m2292-2.jpg",
+        "width": 640,
+        "height": 423,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2292",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2293",
+      "kind": "destination",
+      "label": "4",
+      "grid": "G5",
+      "nearbyArea": "Low Town",
+      "x": 0.6959450702440104,
+      "y": 0.5042707885134949,
+      "glyphIds": [
+        "mwz-glyph-06",
+        "mwz-glyph-04",
+        "mwz-glyph-08"
+      ],
+      "code": {
+        "id": "wzhub-m2293-1",
+        "src": "/images/remaining/wzhub-m2293-1.jpg",
+        "width": 835,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2293",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2293-2",
+        "src": "/images/remaining/wzhub-m2293-2.jpg",
+        "width": 640,
+        "height": 420,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2293",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2295",
+      "kind": "destination",
+      "label": "5",
+      "grid": "I3",
+      "nearbyArea": "Orlov Military Base",
+      "x": 0.8116628657786336,
+      "y": 0.3360779843124619,
+      "glyphIds": [
+        "mwz-glyph-06",
+        "mwz-glyph-05",
+        "mwz-glyph-03"
+      ],
+      "code": {
+        "id": "wzhub-m2295-1",
+        "src": "/images/remaining/wzhub-m2295-1.jpg",
+        "width": 833,
+        "height": 333,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2295",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2295-2",
+        "src": "/images/remaining/wzhub-m2295-2.jpg",
+        "width": 640,
+        "height": 415,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2295",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2296",
+      "kind": "destination",
+      "label": "6",
+      "grid": "C2",
+      "nearbyArea": "Levin Resort",
+      "x": 0.23707504417073727,
+      "y": 0.21706484387188452,
+      "glyphIds": [
+        "mwz-glyph-06",
+        "mwz-glyph-02",
+        "mwz-glyph-05"
+      ],
+      "code": {
+        "id": "wzhub-m2296-1",
+        "src": "/images/remaining/wzhub-m2296-1.jpg",
+        "width": 841,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2296",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2296-2",
+        "src": "/images/remaining/wzhub-m2296-2.jpg",
+        "width": 640,
+        "height": 398,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2296",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2297",
+      "kind": "destination",
+      "label": "7",
+      "grid": "G4",
+      "nearbyArea": "Old Town",
+      "x": 0.610437975940976,
+      "y": 0.41020328033715253,
+      "glyphIds": [
+        "mwz-glyph-08",
+        "mwz-glyph-04",
+        "mwz-glyph-06"
+      ],
+      "code": {
+        "id": "wzhub-m2297-1",
+        "src": "/images/remaining/wzhub-m2297-1.jpg",
+        "width": 836,
+        "height": 336,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2297",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2297-2",
+        "src": "/images/remaining/wzhub-m2297-2.jpg",
+        "width": 640,
+        "height": 397,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2297",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2298",
+      "kind": "destination",
+      "label": "8",
+      "grid": "I4",
+      "nearbyArea": "Hadiqa Farms",
+      "x": 0.8935918195206154,
+      "y": 0.4882302674206732,
+      "glyphIds": [
+        "mwz-glyph-08",
+        "mwz-glyph-02",
+        "mwz-glyph-01"
+      ],
+      "code": {
+        "id": "wzhub-m2298-1",
+        "src": "/images/remaining/wzhub-m2298-1.jpg",
+        "width": 836,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2298",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2298-2",
+        "src": "/images/remaining/wzhub-m2298-2.jpg",
+        "width": 640,
+        "height": 381,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2298",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2299",
+      "kind": "destination",
+      "label": "9",
+      "grid": "H7",
+      "nearbyArea": "Shahin Manor",
+      "x": 0.767333984375,
+      "y": 0.7667236328125,
+      "glyphIds": [
+        "mwz-glyph-08",
+        "mwz-glyph-07",
+        "mwz-glyph-03"
+      ],
+      "code": {
+        "id": "wzhub-m2299-1",
+        "src": "/images/remaining/wzhub-m2299-1.jpg",
+        "width": 831,
+        "height": 338,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2299",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2299-2",
+        "src": "/images/remaining/wzhub-m2299-2.jpg",
+        "width": 640,
+        "height": 381,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2299",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2301",
+      "kind": "destination",
+      "label": "10",
+      "grid": "F7",
+      "nearbyArea": "Zaravan Suburbs",
+      "x": 0.572509765625,
+      "y": 0.789794921875,
+      "glyphIds": [
+        "mwz-glyph-04",
+        "mwz-glyph-01",
+        "mwz-glyph-03"
+      ],
+      "code": {
+        "id": "wzhub-m2301-1",
+        "src": "/images/remaining/wzhub-m2301-1.jpg",
+        "width": 835,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2301",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2301-2",
+        "src": "/images/remaining/wzhub-m2301-2.jpg",
+        "width": 640,
+        "height": 375,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2301",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2302",
+      "kind": "destination",
+      "label": "11",
+      "grid": "I1",
+      "nearbyArea": "Orlov Military Base",
+      "x": 0.8731689453125,
+      "y": 0.1595458984375,
+      "glyphIds": [
+        "mwz-glyph-04",
+        "mwz-glyph-08",
+        "mwz-glyph-01"
+      ],
+      "code": {
+        "id": "wzhub-m2302-1",
+        "src": "/images/remaining/wzhub-m2302-1.jpg",
+        "width": 838,
+        "height": 332,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2302",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2302-2",
+        "src": "/images/remaining/wzhub-m2302-2.jpg",
+        "width": 640,
+        "height": 412,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2302",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2303",
+      "kind": "destination",
+      "label": "12",
+      "grid": "F2",
+      "nearbyArea": "Popov Power",
+      "x": 0.51416015625,
+      "y": 0.28662109375,
+      "glyphIds": [
+        "mwz-glyph-04",
+        "mwz-glyph-03",
+        "mwz-glyph-08"
+      ],
+      "code": {
+        "id": "wzhub-m2303-1",
+        "src": "/images/remaining/wzhub-m2303-1.jpg",
+        "width": 833,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2303",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2303-2",
+        "src": "/images/remaining/wzhub-m2303-2.jpg",
+        "width": 640,
+        "height": 364,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2303",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2304",
+      "kind": "destination",
+      "label": "13",
+      "grid": "F7",
+      "nearbyArea": "Zaravan Suburbs",
+      "x": 0.5328369140625,
+      "y": 0.7020263671875,
+      "glyphIds": [
+        "mwz-glyph-03",
+        "mwz-glyph-08",
+        "mwz-glyph-04"
+      ],
+      "code": {
+        "id": "wzhub-m2304-1",
+        "src": "/images/remaining/wzhub-m2304-1.jpg",
+        "width": 832,
+        "height": 336,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2304",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2304-2",
+        "src": "/images/remaining/wzhub-m2304-2.jpg",
+        "width": 640,
+        "height": 387,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2304",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2305",
+      "kind": "destination",
+      "label": "14",
+      "grid": "H2",
+      "nearbyArea": "Orlov Military Base",
+      "x": 0.720947265625,
+      "y": 0.217041015625,
+      "glyphIds": [
+        "mwz-glyph-03",
+        "mwz-glyph-04",
+        "mwz-glyph-01"
+      ],
+      "code": {
+        "id": "wzhub-m2305-1",
+        "src": "/images/remaining/wzhub-m2305-1.jpg",
+        "width": 836,
+        "height": 336,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2305",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2305-2",
+        "src": "/images/remaining/wzhub-m2305-2.jpg",
+        "width": 640,
+        "height": 370,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2305",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2306",
+      "kind": "destination",
+      "label": "15",
+      "grid": "B7",
+      "nearbyArea": "Zaravan City",
+      "x": 0.165771484375,
+      "y": 0.76708984375,
+      "glyphIds": [
+        "mwz-glyph-03",
+        "mwz-glyph-07",
+        "mwz-glyph-02"
+      ],
+      "code": {
+        "id": "wzhub-m2306-1",
+        "src": "/images/remaining/wzhub-m2306-1.jpg",
+        "width": 843,
+        "height": 339,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2306",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2306-2",
+        "src": "/images/remaining/wzhub-m2306-2.jpg",
+        "width": 640,
+        "height": 407,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2306",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2307",
+      "kind": "destination",
+      "label": "16",
+      "grid": "E5",
+      "nearbyArea": "Old Town",
+      "x": 0.4493614065360669,
+      "y": 0.5239652518929241,
+      "glyphIds": [
+        "mwz-glyph-05",
+        "mwz-glyph-06",
+        "mwz-glyph-02"
+      ],
+      "code": {
+        "id": "wzhub-m2307-1",
+        "src": "/images/remaining/wzhub-m2307-1.jpg",
+        "width": 842,
+        "height": 341,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2307",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2307-2",
+        "src": "/images/remaining/wzhub-m2307-2.jpg",
+        "width": 640,
+        "height": 399,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2307",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2308",
+      "kind": "destination",
+      "label": "17",
+      "grid": "D2",
+      "nearbyArea": "Popov Power",
+      "x": 0.369873046875,
+      "y": 0.200927734375,
+      "glyphIds": [
+        "mwz-glyph-05",
+        "mwz-glyph-08",
+        "mwz-glyph-01"
+      ],
+      "code": {
+        "id": "wzhub-m2308-1",
+        "src": "/images/remaining/wzhub-m2308-1.jpg",
+        "width": 837,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2308",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2308-2",
+        "src": "/images/remaining/wzhub-m2308-2.jpg",
+        "width": 640,
+        "height": 390,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2308",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2309",
+      "kind": "destination",
+      "label": "18",
+      "grid": "D8",
+      "nearbyArea": "Zaravan City",
+      "x": 0.31475830078125,
+      "y": 0.84295654296875,
+      "glyphIds": [
+        "mwz-glyph-05",
+        "mwz-glyph-03",
+        "mwz-glyph-04"
+      ],
+      "code": {
+        "id": "wzhub-m2309-1",
+        "src": "/images/remaining/wzhub-m2309-1.jpg",
+        "width": 835,
+        "height": 336,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2309",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2309-2",
+        "src": "/images/remaining/wzhub-m2309-2.jpg",
+        "width": 640,
+        "height": 394,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2309",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2310",
+      "kind": "destination",
+      "label": "19",
+      "grid": "C5",
+      "nearbyArea": "Seaport District",
+      "x": 0.23193359375,
+      "y": 0.5355224609375,
+      "glyphIds": [
+        "mwz-glyph-02",
+        "mwz-glyph-01",
+        "mwz-glyph-08"
+      ],
+      "code": {
+        "id": "wzhub-m2310-1",
+        "src": "/images/remaining/wzhub-m2310-1.jpg",
+        "width": 842,
+        "height": 333,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2310",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2310-2",
+        "src": "/images/remaining/wzhub-m2310-2.jpg",
+        "width": 640,
+        "height": 437,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2310",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2311",
+      "kind": "destination",
+      "label": "20",
+      "grid": "F2",
+      "nearbyArea": "Popov Power",
+      "x": 0.5844321277453626,
+      "y": 0.2576088878796375,
+      "glyphIds": [
+        "mwz-glyph-02",
+        "mwz-glyph-04",
+        "mwz-glyph-05"
+      ],
+      "code": {
+        "id": "wzhub-m2311-1",
+        "src": "/images/remaining/wzhub-m2311-1.jpg",
+        "width": 842,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2311",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2311-2",
+        "src": "/images/remaining/wzhub-m2311-2.jpg",
+        "width": 640,
+        "height": 374,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2311",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2312",
+      "kind": "destination",
+      "label": "21",
+      "grid": "E4",
+      "nearbyArea": "Urzikstan Cargo",
+      "x": 0.45361328125,
+      "y": 0.411865234375,
+      "glyphIds": [
+        "mwz-glyph-07",
+        "mwz-glyph-01",
+        "mwz-glyph-06"
+      ],
+      "code": {
+        "id": "wzhub-m2312-1",
+        "src": "/images/remaining/wzhub-m2312-1.jpg",
+        "width": 841,
+        "height": 337,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2312",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2312-2",
+        "src": "/images/remaining/wzhub-m2312-2.jpg",
+        "width": 640,
+        "height": 391,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2312",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2313",
+      "kind": "destination",
+      "label": "22",
+      "grid": "D5",
+      "nearbyArea": "Zaravan City",
+      "x": 0.30224609375,
+      "y": 0.573974609375,
+      "glyphIds": [
+        "mwz-glyph-07",
+        "mwz-glyph-08",
+        "mwz-glyph-05"
+      ],
+      "code": {
+        "id": "wzhub-m2313-1",
+        "src": "/images/remaining/wzhub-m2313-1.jpg",
+        "width": 841,
+        "height": 340,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2313",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2313-2",
+        "src": "/images/remaining/wzhub-m2313-2.jpg",
+        "width": 640,
+        "height": 398,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2313",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2314",
+      "kind": "destination",
+      "label": "23",
+      "grid": "I7",
+      "nearbyArea": "Shahin Manor",
+      "x": 0.8856810092127396,
+      "y": 0.7664591594631166,
+      "glyphIds": [
+        "mwz-glyph-07",
+        "mwz-glyph-05",
+        "mwz-glyph-08"
+      ],
+      "code": {
+        "id": "wzhub-m2314-1",
+        "src": "/images/remaining/wzhub-m2314-1.jpg",
+        "width": 838,
+        "height": 334,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2314",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2314-2",
+        "src": "/images/remaining/wzhub-m2314-2.jpg",
+        "width": 640,
+        "height": 404,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2314",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    },
+    {
+      "id": "m2393",
+      "kind": "destination",
+      "label": "24",
+      "grid": "C4",
+      "nearbyArea": "Seaport District",
+      "x": 0.2541595908319102,
+      "y": 0.4092009903339706,
+      "glyphIds": [
+        "mwz-glyph-01",
+        "mwz-glyph-06",
+        "mwz-glyph-07"
+      ],
+      "code": {
+        "id": "wzhub-m2393-1",
+        "src": "/images/remaining/wzhub-m2393-1.png",
+        "width": 399,
+        "height": 156,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2393",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      },
+      "photo": {
+        "id": "wzhub-m2393-2",
+        "src": "/images/remaining/wzhub-m2393-2.jpg",
+        "width": 640,
+        "height": 403,
+        "source": "https://wzhub.gg/map/urzikstan/mwz?p=m2393",
+        "credit": "WZHUB (individual screenshot creator not identified)"
+      }
+    }
+  ],
+  "glyphs": [
+    {
+      "id": "mwz-glyph-01",
+      "label": "Curved crescent with dot"
+    },
+    {
+      "id": "mwz-glyph-02",
+      "label": "Arch with dot above"
+    },
+    {
+      "id": "mwz-glyph-03",
+      "label": "Angled stem with divided foot and two drops"
+    },
+    {
+      "id": "mwz-glyph-04",
+      "label": "Key with pointed top"
+    },
+    {
+      "id": "mwz-glyph-05",
+      "label": "Hourglass"
+    },
+    {
+      "id": "mwz-glyph-06",
+      "label": "Capped downward triangle"
+    },
+    {
+      "id": "mwz-glyph-07",
+      "label": "Wings with central stem and dot"
+    },
+    {
+      "id": "mwz-glyph-08",
+      "label": "Zigzag with split legs"
+    }
+  ]
+}

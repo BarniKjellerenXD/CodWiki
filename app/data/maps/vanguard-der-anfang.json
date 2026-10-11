@@ -1,0 +1,465 @@
+{
+  "id": "vanguard-der-anfang",
+  "name": "Der Anfang",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Vanguard guide",
+      "url": "/guides/vanguard-der-anfang",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-panzer-column.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2022/02/der-anfang-map-layout-theater-theater.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://www.codzombieguides.com/der-anfang"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.treyarch.com/game-intel/2021/11/Your_Gameplay_Guide_to_Vanguard_Zombies"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/vanguard-der-anfang/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-hub",
+      "label": "Fountain Square",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.627,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Complete district portals to open the hub and earn Sacrificial Hearts.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-objectives"
+    },
+    {
+      "id": "area-west",
+      "label": "Panzer Column West",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.637,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Only the documented connections are drawn; detailed object placements and unshown paths require the guide.",
+      "source": "https://codzombified.blogspot.com/2021/11/der-anfang-map-layout-apartments-area.html"
+    },
+    {
+      "id": "area-apartments",
+      "label": "Apartments",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.297,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper ritual room",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open Apartments and interact with its upstairs ritual rune.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-apartments-rune"
+    },
+    {
+      "id": "area-east",
+      "label": "Panzer Column East",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.647,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open Panzer Column East, then Store, and enter the upper Office.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-east"
+    },
+    {
+      "id": "area-office",
+      "label": "Command Post / Office",
+      "layerId": "overview",
+      "x": 0.78,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper office / stairs",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open Panzer Column East, then Store, and enter the upper Office.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-east"
+    },
+    {
+      "id": "area-theater",
+      "label": "Theater / Promenade",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.307,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Only the documented connections are drawn; detailed object placements and unshown paths require the guide.",
+      "source": "https://codzombified.blogspot.com/2022/02/der-anfang-map-layout-theater-theater.html"
+    },
+    {
+      "id": "area-void",
+      "label": "Shi No Numa Void",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.857,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate limited objective space",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Use salvage for armour/equipment; keep Hearts and Essence separate.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-crafting"
+    },
+    {
+      "id": "pap",
+      "label": "Hub Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.605,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Pack-a-Punch is already in Stalingrad’s starting hub. Its upgrade tiers cost 7,500, 15,000 and 30,000 Essence. Ammo-mod effects come through Covenants rather than a Pack-a-Punch ammo-mod menu. These are Vanguard’s source-documented prices, not Cold War’s price schedule. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-pap"
+    },
+    {
+      "id": "covenants",
+      "label": "Altar of Covenants",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.605,
+      "category": "ritual-site",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Use Sacrificial Hearts at the Altar of Covenants for available combat effects or at the Tome of Rituals to strengthen your artifact. Covenants refresh after objectives and become stronger at later rarity; inspect the actual offers. Brain Rot supplies temporary allies, melee bonuses help close fighting, and damage/reload bonuses suit different weapons. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-hearts"
+    },
+    {
+      "id": "crafting",
+      "label": "Hub crafting table",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.653,
+      "category": "crafting-table",
+      "typeId": "crafting-table",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Collect the single green salvage type and use the crafting table for armour, equipment and support. Repair armour before another portal or Void session. A Heart, salvage and Essence are different resources; buying a Covenant does not upgrade your weapon. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-crafting"
+    },
+    {
+      "id": "office-portal",
+      "label": "Office Void portal",
+      "layerId": "overview",
+      "x": 0.74,
+      "y": 0.29500000000000004,
+      "category": "portal",
+      "typeId": "portal",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper office / stairs",
+      "availability": "conditional",
+      "description": "Use the Void portal inside Von List’s Office. Survive three full rounds in its Shi No Numa area. This opens the return portal near Flinger Gate; you may stay for further survival, but take the return portal for the narrative route. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-void-enter"
+    },
+    {
+      "id": "rune",
+      "label": "Apartments rune stone",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.275,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper ritual room",
+      "availability": "conditional",
+      "description": "Complete the remaining portal objectives needed to open Apartments. On its top floor, find the room with a floor ritual and interact with the rune stone. Wait for the conversation and Krafft’s cue about Command Post. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-apartments-rune"
+    },
+    {
+      "id": "krafft",
+      "label": "Krafft door / green portal",
+      "layerId": "overview",
+      "x": 0.8200000000000001,
+      "y": 0.29500000000000004,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper office / stairs",
+      "availability": "conditional",
+      "description": "Go back up Command Post’s stairs and interact with the white door bearing the magical symbol. Let Krafft and the Dark Aether entities finish their conversation. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-der-anfang#guide-step-anfang-kraft-door"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-anfang-objectives",
+      "title": "Complete district portals to open the hub and earn Sacrificial Hearts.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-objectives"
+    },
+    {
+      "id": "guide-anfang-pap",
+      "title": "Use hub Pack-a-Punch; buy ammo effects through Covenants.",
+      "locationIds": [
+        "pap",
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-pap"
+    },
+    {
+      "id": "guide-anfang-perks",
+      "title": "Take the free first tier at each fountain, then upgrade useful perks.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-perks"
+    },
+    {
+      "id": "guide-anfang-hearts",
+      "title": "Spend Hearts on current Covenant offers or artifact upgrades.",
+      "locationIds": [
+        "covenants",
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-hearts"
+    },
+    {
+      "id": "guide-anfang-artifacts",
+      "title": "Choose escape, crowd control or held-area damage to suit your objective.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-artifacts"
+    },
+    {
+      "id": "guide-anfang-crafting",
+      "title": "Use salvage for armour/equipment; keep Hearts and Essence separate.",
+      "locationIds": [
+        "crafting",
+        "area-hub",
+        "area-void"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-crafting"
+    },
+    {
+      "id": "guide-anfang-east",
+      "title": "Open Panzer Column East, then Store, and enter the upper Office.",
+      "locationIds": [
+        "area-east",
+        "area-office"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-east"
+    },
+    {
+      "id": "guide-anfang-void-enter",
+      "title": "Enter Office Void, survive three rounds and return near Flinger Gate.",
+      "locationIds": [
+        "office-portal",
+        "area-office",
+        "area-void"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-void-enter"
+    },
+    {
+      "id": "guide-anfang-void-return",
+      "title": "Let the return scene finish before following Krafft’s dialogue.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-void-return"
+    },
+    {
+      "id": "guide-anfang-kraft-door",
+      "title": "Use the marked white Command Post door and let the conversation finish.",
+      "locationIds": [
+        "krafft",
+        "area-office"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-kraft-door"
+    },
+    {
+      "id": "guide-anfang-apartments-rune",
+      "title": "Open Apartments and interact with its upstairs ritual rune.",
+      "locationIds": [
+        "rune",
+        "area-apartments",
+        "area-office"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-apartments-rune"
+    },
+    {
+      "id": "guide-anfang-final-portal",
+      "title": "Return to Command Post’s green portal and finish the final dialogue.",
+      "locationIds": [
+        "krafft",
+        "area-office"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-final-portal"
+    },
+    {
+      "id": "guide-anfang-exfil",
+      "title": "Use the hub’s Exfil option, clear its enemies and reach its portal before time expires.",
+      "locationIds": [
+        "area-hub",
+        "area-office"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-exfil"
+    },
+    {
+      "id": "guide-anfang-records",
+      "title": "Listen to the opened districts’ radios and ancient rune tablets.",
+      "locationIds": [
+        "area-hub"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Stalingrad narrative-route schematic. Doors depend on completed objectives. The limited Shi No Numa Void is context only, not the complete round-based Vanguard Shi No Numa map; other objective arenas are omitted.",
+      "guideAnchor": "guide-step-anfang-records"
+    }
+  ],
+  "quickLinks": {
+    "anfang-objectives": "guide-anfang-objectives",
+    "anfang-pap": "guide-anfang-pap",
+    "anfang-perks": "guide-anfang-perks",
+    "anfang-hearts": "guide-anfang-hearts",
+    "anfang-artifacts": "guide-anfang-artifacts",
+    "anfang-crafting": "guide-anfang-crafting",
+    "anfang-east": "guide-anfang-east",
+    "anfang-void-enter": "guide-anfang-void-enter",
+    "anfang-void-return": "guide-anfang-void-return",
+    "anfang-kraft-door": "guide-anfang-kraft-door",
+    "anfang-apartments-rune": "guide-anfang-apartments-rune",
+    "anfang-final-portal": "guide-anfang-final-portal",
+    "anfang-exfil": "guide-anfang-exfil",
+    "anfang-records": "guide-anfang-records"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "area-hub",
+            "pap",
+            "covenants",
+            "crafting",
+            "area-void"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "area-east",
+            "area-office"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-hub",
+            "area-office"
+          ]
+        }
+      ]
+    }
+  ]
+}

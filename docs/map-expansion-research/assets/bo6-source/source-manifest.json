@@ -1,0 +1,79 @@
+{
+  "repository": "https://github.com/Miss-placed/DECLASSIFIED",
+  "revision": "e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "src/classes/index.ts",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/classes/index.ts",
+      "bytes": 3883,
+      "sha256": "7c986e073d069cccce6efdc28f5d0cdda196e381d929db76977d0870f16a6b25"
+    },
+    {
+      "file": "src/data/doors.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/doors.tsx",
+      "bytes": 7419,
+      "sha256": "a60df142c384fbb8bafe908fb381f75fcaf8ce7e21908d3cca952c246de62820"
+    },
+    {
+      "file": "src/data/easterEggs.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/easterEggs.tsx",
+      "bytes": 74750,
+      "sha256": "c4c5805a35763240e6563b01bbb7415fdfa043c334aeb2f1e245356d3d8e9994"
+    },
+    {
+      "file": "src/data/IntelTypes.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/IntelTypes.tsx",
+      "bytes": 3003,
+      "sha256": "f191ae659b775817232e18341ad3a7ddf908c14a7e36cb1fe393dfb553c4484f"
+    },
+    {
+      "file": "src/data/mainQuest.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/mainQuest.tsx",
+      "bytes": 112788,
+      "sha256": "130a00225a89ed27919baa0581e9a1eb15276cdf0405679bf237c9b4531a05cf"
+    },
+    {
+      "file": "src/data/misc.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/misc.tsx",
+      "bytes": 70794,
+      "sha256": "41eb11115263b6b57fb517d9ca506e1b1bfc2a3df8857fe58f8bce7a8b53034e"
+    },
+    {
+      "file": "src/data/perks.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/perks.tsx",
+      "bytes": 10864,
+      "sha256": "018411b68edfeecbcec8c6992f6bb238c5ef54ae9e4ab3b33d7422ac217e1e4e"
+    },
+    {
+      "file": "src/data/types.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/types.tsx",
+      "bytes": 6220,
+      "sha256": "bcac19f4165b827c5689d7f85915b493d85bbb32adefd98e49418da1a018dbdc"
+    },
+    {
+      "file": "src/data/wallbuys.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/wallbuys.tsx",
+      "bytes": 22064,
+      "sha256": "adddb57a8e3f80a4b42c849c593c41f5be96ae73e053ad4f2238b83b49fc0cab"
+    },
+    {
+      "file": "src/components/Map/index.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/components/Map/index.tsx",
+      "bytes": 2532,
+      "sha256": "b8e5233b58a70ddc5a3137e727ff18cfeb9d30fef991273aa931f31a9d2ec1bb"
+    },
+    {
+      "file": "src/components/MapControls/MapIds.ts",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/components/MapControls/MapIds.ts",
+      "bytes": 1695,
+      "sha256": "a641abb9cb6651bcea2063d0c2a1c38ce652a010146cc02f08428cce92c641ba"
+    },
+    {
+      "file": "src/components/MiscMapMarker/index.tsx",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/components/MiscMapMarker/index.tsx",
+      "bytes": 2242,
+      "sha256": "6f7b186f86af1aa8dd4fbb97ccd7cfeabbdad0abf9a07d935a3b67e75f5d7ce8"
+    }
+  ]
+}

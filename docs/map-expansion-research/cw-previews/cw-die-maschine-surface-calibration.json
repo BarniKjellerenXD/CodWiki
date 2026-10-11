@@ -1,0 +1,86 @@
+[
+  {
+    "number": 1,
+    "id": "dc-7235746665",
+    "label": "Der Wunderfizz",
+    "x": 0.58154297,
+    "y": 0.45718656
+  },
+  {
+    "number": 2,
+    "id": "dc-716e6e6e37",
+    "label": "Crafting Table",
+    "x": 0.61182213,
+    "y": 0.53329415
+  },
+  {
+    "number": 3,
+    "id": "dc-7231763155",
+    "label": "Mystery Box Location",
+    "x": 0.671875,
+    "y": 0.59674986
+  },
+  {
+    "number": 4,
+    "id": "dc-3831563833",
+    "label": "Ammo Crate",
+    "x": 0.58837891,
+    "y": 0.51080993
+  },
+  {
+    "number": 5,
+    "id": "dc-795a344d66",
+    "label": "Aether Tunnel",
+    "x": 0.51025391,
+    "y": 0.54743861
+  },
+  {
+    "number": 6,
+    "id": "dc-36384f324f",
+    "label": "1911 wall buy",
+    "x": 0.69335938,
+    "y": 0.49002393
+  },
+  {
+    "number": 7,
+    "id": "dc-7a6e75357a",
+    "label": "M16 wall buy",
+    "x": 0.30883789,
+    "y": 0.58766359
+  },
+  {
+    "number": 8,
+    "id": "dc-4854737447",
+    "label": "Dark Aether Portal",
+    "x": 0.14814245,
+    "y": 0.52342605
+  },
+  {
+    "number": 9,
+    "id": "dc-4737534532",
+    "label": "Vial Crate",
+    "x": 0.49997693,
+    "y": 0.52543665
+  },
+  {
+    "number": 10,
+    "id": "dc-6e68486465",
+    "label": "Yellow Crystal",
+    "x": 0.3396807,
+    "y": 0.4949317
+  },
+  {
+    "number": 11,
+    "id": "dc-6848594f6f",
+    "label": "Radio Alignment",
+    "x": 0.80483801,
+    "y": 0.51809082
+  },
+  {
+    "number": 12,
+    "id": "dc-3368647a6e",
+    "label": "Floating Bodies",
+    "x": 0.47684827,
+    "y": 0.21919582
+  }
+]

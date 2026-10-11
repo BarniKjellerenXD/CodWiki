@@ -1,0 +1,33 @@
+{
+  "checked": "2026-10-11T11:25:22.553Z",
+  "origin": "http://127.0.0.1:3001",
+  "mapsWithArtChecked": 72,
+  "artRequests": 90,
+  "verified": [
+    "bo6-liberty-falls",
+    "bo6-terminus",
+    "bo6-reckoning",
+    "cw-die-maschine",
+    "cw-firebase-z",
+    "cw-outbreak",
+    "bo1-kino-der-toten",
+    "bo2-origins",
+    "bo3-revelations",
+    "bo4-ancient-evil",
+    "bo4-voyage-of-despair",
+    "aw-infection",
+    "iw-rave-in-the-redwoods",
+    "ww2-the-shadowed-throne",
+    "vanguard-the-archon",
+    "cw-outbreak-ravenov shared atlas + Back to step",
+    "cw-outbreak-excision shared atlas + Back to step"
+  ],
+  "runtimeErrors": [],
+  "checks": [
+    "all accepted artwork routes return bytes",
+    "representative map lazy data and viewer render",
+    "child Outbreak atlas ownership and return navigation",
+    "five theme screenshots",
+    "390px no horizontal overflow"
+  ]
+}

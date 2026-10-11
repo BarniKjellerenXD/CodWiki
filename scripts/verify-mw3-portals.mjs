@@ -1,0 +1,187 @@
+// Browser verification of the local production preview. Usage: node scripts/verify-mw3-portals.mjs [URL] [output directory]
+import fs from 'node:fs'
+import path from 'node:path'
+import assert from 'node:assert/strict'
+import { createRequire } from 'node:module'
+const require = createRequire(path.resolve('desktop-app/package.json'))
+const { chromium } = require('playwright')
+const base = process.argv[2] || 'http://127.0.0.1:3002'
+const output = path.resolve(process.argv[3] || '.impeccable/review/mw3-portals')
+const data = JSON.parse(fs.readFileSync('app/data/mw3RunePortals.json', 'utf8'))
+fs.mkdirSync(output, { recursive: true })
+const checks = [], errors = [], screenshots = []
+const browser = await chromium.launch({ headless: true, executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' })
+const context = await browser.newContext({ viewport: { width: 1440, height: 1100 }, reducedMotion: 'reduce', permissions: ['clipboard-read', 'clipboard-write'] })
+const page = await context.newPage()
+page.on('pageerror', error => errors.push(error.message))
+async function go(url = '/tools/mw3-rune-portals') {
+  await page.goto(base + url, { waitUntil: 'networkidle' })
+  await page.locator('.portal-finder').waitFor()
+}
+async function ready() {
+  await page.waitForFunction(() => { const image = document.querySelector('.portal-map .leaflet-image-layer'); return image?.complete && image.naturalWidth === 4096 && !document.querySelector('.portal-map-loading') })
+}
+async function answer(id) {
+  await page.waitForFunction(id => document.querySelector('.portal-code')?.dataset.destination === id, id)
+  await page.locator('.portal-code .reference-crop').first().waitFor()
+  const point = data.destinations.find(point => point.id === id)
+  assert.deepEqual(await page.locator('.portal-code .reference-crop').evaluateAll(elements => elements.map(element => element.getAttribute('aria-label'))), point.glyphIds.map((id, index) => `Rune ${index + 1}: ${data.glyphs.find(glyph => glyph.id === id).label}`))
+  assert.ok((await page.locator('.portal-code svg image').evaluateAll(elements => elements.map(element => element.getAttribute('href')))).every(src => src === point.code.src))
+}
+async function capture(name, fullPage = false) {
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, 'No horizontal page overflow')
+  const file = path.join(output, `${name}.png`)
+  await page.screenshot({ path: file, fullPage })
+  screenshots.push(file)
+}
+try {
+  await go()
+  await ready()
+  assert.equal(await page.locator('.portal-pin-entrance').count(), 17)
+  assert.equal(await page.locator('.portal-pin-destination').count(), 24)
+  assert.equal(await page.locator('.portal-pin').evaluateAll(elements => {
+    return elements.every(element => {
+      const box = element.getBoundingClientRect()
+      return document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2)?.closest('.portal-pin') === element
+    })
+  }), true, 'Every marker has a separate click target at overview zoom')
+  assert.equal(await page.locator('.portal-code').count(), 0)
+  assert.equal(await page.locator('select').count(), 0)
+  await capture('desktop-empty', true)
+  checks.push('Active route: 17 entrance markers, 24 destination markers, no forced trip or dropdown')
+
+  const destinations = page.getByRole('region', { name: 'Destinations', exact: true })
+  for (const point of data.destinations) {
+    await destinations.getByRole('button', { name: `Destination ${point.label}, ${point.grid}, near ${point.nearbyArea}`, exact: true }).click()
+    await answer(point.id)
+    assert.equal(new URL(page.url()).searchParams.get('to'), point.id)
+  }
+  checks.push('All 24 list destinations display their own original plate, ordered glyphs and share ID, including both F2 and F7 choices')
+
+  await page.getByRole('button', { name: 'Fit map', exact: true }).click()
+  await page.locator('.portal-pin-destination').getByText('1', { exact: true }).click()
+  await answer('m2112')
+  await page.locator('.portal-pin-entrance').filter({ hasText: /^A$/ }).click()
+  await answer('m2112')
+  assert.equal(new URL(page.url()).searchParams.get('from'), 'm2111')
+  await page.getByText('See this doorway', { exact: true }).click()
+  await page.locator('.portal-entrance-selection img').waitFor()
+  await page.waitForFunction(() => document.querySelector('.portal-entrance-selection img')?.naturalWidth > 0)
+  await capture('desktop-trip', true)
+  checks.push('Map click selects destination; entrance selection preserves its code and opens a real doorway photo')
+
+  await page.locator('.portal-pin-destination').filter({ hasText: /^12$/ }).focus()
+  await page.keyboard.press('Enter')
+  await answer('m2303')
+  await page.locator('.portal-pin-entrance').filter({ hasText: /^E$/ }).focus()
+  await page.keyboard.press('Space')
+  await page.waitForURL(url => url.searchParams.get('from') === 'm2277')
+  assert.equal(new URL(page.url()).searchParams.get('from'), 'm2277')
+  await answer('m2303')
+  checks.push('Keyboard Enter and Space activate map markers')
+
+  const search = page.getByPlaceholder('Grid, area or marker… e.g. F2')
+  await search.fill('F2')
+  await page.waitForFunction(() => document.querySelectorAll('.portal-pin').length === 3)
+  assert.equal(await destinations.getByRole('button').count(), 2)
+  await page.getByRole('button', { name: /^Entrances 17/ }).click()
+  await page.waitForFunction(() => document.querySelectorAll('.portal-pin').length === 2)
+  await page.getByRole('button', { name: /^Destinations 24/ }).click()
+  await page.waitForFunction(() => document.querySelectorAll('.portal-pin').length === 0)
+  await answer('m2303')
+  await page.getByRole('button', { name: 'Reset filters', exact: true }).click()
+  await page.waitForFunction(() => document.querySelectorAll('.portal-pin').length === 41)
+  await page.getByRole('button', { name: 'Copy trip link', exact: false }).click()
+  await page.getByText('Trip link copied.', { exact: true }).waitFor()
+  const copied = await page.evaluate(() => navigator.clipboard.readText())
+  assert.equal(new URL(copied).searchParams.get('to'), 'm2303')
+  assert.equal(new URL(copied).searchParams.get('from'), 'm2277')
+  checks.push('Compact toggles and search filter both map and lists without clearing the answer; trip link copies the exact selection')
+
+  await go()
+  await ready()
+  await answer('m2303')
+  await go('/tools/mw3-rune-portals?to=m2393')
+  await ready()
+  await answer('m2393')
+  assert.equal(await page.locator('.portal-entrance-selection h3').count(), 0)
+  await go('/tools/mw3-rune-portals?to=invalid')
+  await page.getByText('This link contains an unknown portal.', { exact: false }).waitFor()
+  assert.equal(await page.locator('.portal-code').count(), 0)
+  await go('/tools/mw3-rune-portals?from=m2111')
+  assert.equal(await page.locator('.portal-code').count(), 0)
+  assert.match(await page.locator('.portal-entrance-selection h3').innerText(), /Grid E1/)
+  await page.getByRole('button', { name: 'Clear trip', exact: true }).click()
+  await go()
+  assert.equal(await page.locator('.portal-code').count(), 0)
+  checks.push('Saved trip restores; explicit destination, entrance-only and invalid links override it; Clear trip persists')
+
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 900 })
+    await go('/tools/mw3-rune-portals?to=m2112&from=m2111')
+    await ready()
+    await answer('m2112')
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true)
+    assert.ok((await page.locator('.portal-answer').boundingBox()).y < (await page.locator('.portal-map').boundingBox()).y)
+    assert.ok(await page.locator('.portal-lists button').evaluateAll(elements => elements.every(element => element.getBoundingClientRect().height >= 44)))
+    await capture(`phone-${width}-code`)
+    await page.locator('.portal-map').scrollIntoViewIfNeeded()
+    await page.getByRole('button', { name: 'Fit map', exact: true }).click()
+    await page.locator('.portal-pin-destination').filter({ hasText: /^24$/ }).click()
+    await answer('m2393')
+    await page.getByRole('button', { name: 'View code for C4 · #24', exact: true }).click()
+    await page.waitForFunction(() => document.activeElement === document.querySelector('.portal-answer h2'))
+    assert.ok((await page.locator('.portal-code').boundingBox()).y < 900)
+    await capture(`phone-${width}-map-selection`)
+  }
+  checks.push('390px and 320px: answer before map, readable glyphs, no overflow, 44px list targets and View code returns focus to the selected answer')
+
+  await page.setViewportSize({ width: 1440, height: 1100 })
+  await page.route('**/maps/mw3-urzikstan/overview.webp', request => request.abort())
+  await go('/tools/mw3-rune-portals?to=m2112')
+  await page.getByText('Map image could not load', { exact: true }).waitFor()
+  await destinations.getByRole('button', { name: 'Destination 24, C4, near Seaport District', exact: true }).click()
+  await answer('m2393')
+  await page.unroute('**/maps/mw3-urzikstan/overview.webp')
+  await page.getByRole('button', { name: 'Retry map image', exact: true }).click()
+  await ready()
+  checks.push('Missing base map leaves the list and rune codes usable; Retry restores the map')
+
+  await page.route('**/images/remaining/wzhub-m2112-1.jpg', request => request.abort())
+  await go('/tools/mw3-rune-portals?to=m2112')
+  await page.getByText('Rune images could not load.', { exact: false }).waitFor()
+  assert.equal(await page.locator('.portal-code svg').count(), 0)
+  assert.equal(await page.getByRole('link', { name: 'Open the illustrated code ↗', exact: true }).getAttribute('href'), 'https://wzhub.gg/map/urzikstan/mwz?p=m2112')
+  await page.unroute('**/images/remaining/wzhub-m2112-1.jpg')
+  checks.push('Missing rune plate shows a clear error and original reference instead of empty or fabricated symbols')
+
+  await page.addInitScript(() => { Storage.prototype.getItem = () => { throw new Error('Storage blocked') }; Storage.prototype.setItem = () => { throw new Error('Storage blocked') } })
+  await go('/tools/mw3-rune-portals?to=m2112')
+  await ready()
+  await answer('m2112')
+  await page.getByText('Browser storage is unavailable.', { exact: false }).waitFor()
+  await destinations.getByRole('button', { name: 'Destination 24, C4, near Seaport District', exact: true }).click()
+  await answer('m2393')
+  await page.evaluate(() => { Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: () => Promise.reject(new Error('Clipboard blocked')) } }) })
+  await page.getByRole('button', { name: 'Copy trip link', exact: false }).click()
+  await page.getByRole('textbox', { name: 'Trip link', exact: true }).waitFor()
+  assert.equal(new URL(await page.getByRole('textbox', { name: 'Trip link', exact: true }).inputValue()).searchParams.get('to'), 'm2393')
+  checks.push('Blocked storage does not break selection; blocked clipboard gives a selectable trip URL')
+
+  await page.getByRole('link', { name: 'Back to Urzikstan guide', exact: false }).click()
+  await page.waitForURL('**/guides/mw3-urzikstan*')
+  await page.goto(base + '/guides/mw3-urzikstan#map', { waitUntil: 'networkidle' })
+  await page.locator('.atlas-portal-tool').click()
+  await page.waitForURL('**/tools/mw3-rune-portals')
+  await ready()
+  const guide = await page.request.get(base + '/guides/mw3-urzikstan')
+  assert.match(await guide.text(), /Rune portal finder — entrances, destinations and codes/)
+  checks.push('Guide backlink, general map entry link, guide instructions and repeated SPA map mounting work')
+  assert.deepEqual(errors, [], 'No uncaught browser errors')
+  console.log(JSON.stringify({ checks, errors, screenshots }, null, 2))
+  fs.writeFileSync(path.join(output, 'verification.json'), JSON.stringify({ checks, errors, screenshots }, null, 2))
+} catch (error) {
+  await page.screenshot({ path: path.join(output, 'failure.png'), fullPage: true })
+  console.error(JSON.stringify({ checks, errors, url: page.url() }, null, 2))
+  throw error
+} finally { await browser.close() }

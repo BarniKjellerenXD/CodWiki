@@ -7,6 +7,8 @@ import { parse } from '@vue/compiler-dom'
 import { parse as parseSfc, compileScript } from '@vue/compiler-sfc'
 import { transformSync } from 'esbuild'
 import * as Vue from 'vue'
+import * as mapFilters from '../app/utils/mapFilters.mjs'
+const mapIcons = JSON.parse(fs.readFileSync(new URL('../app/data/mapIcons.json', import.meta.url)))
 import * as mw3PhotoBoard from '../app/utils/mw3PhotoBoard.mjs'
 import { decodeGuideHash, mapAnchor, mapTargetFromAnchor, phaseForAnchor, readerView, readReaderContext } from '../app/utils/mapNavigation.mjs'
 import { emptyProgress, ensureRun, readProgress, resetRun } from '../app/utils/companion.mjs'
@@ -62,13 +64,25 @@ function assertUniqueIds(items, label) {
 function imageDimensions(file) {
   const bytes = fs.readFileSync(file)
   if (path.extname(file) === '.svg') {
-    const svg = parse(bytes.toString()).children.find(node => node.tag === 'svg')
+    const svg = parse(bytes.toString().replace(/<\?xml[\s\S]*?\?>/i, '')).children.find(node => node.tag === 'svg')
     assert.ok(svg, `${file}: no SVG root`)
     const box = attribute(svg, 'viewBox')?.trim().split(/[\s,]+/).map(Number)
     if (box?.length === 4) return [box[2], box[3]]
     return [Number(attribute(svg, 'width')), Number(attribute(svg, 'height'))]
   }
   if (bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) return [bytes.readUInt32BE(16), bytes.readUInt32BE(20)]
+  if (bytes[0] === 0xff && bytes[1] === 0xd8) {
+    let offset = 2
+    while (offset + 8 < bytes.length) {
+      if (bytes[offset] !== 0xff) { offset++; continue }
+      const marker = bytes[offset + 1]
+      if (marker === 0xd9 || marker === 0xda) break
+      if (marker === 0xff || marker === 0x00) { offset++; continue }
+      const length = bytes.readUInt16BE(offset + 2)
+      if ([0xc0,0xc1,0xc2,0xc3,0xc5,0xc6,0xc7,0xc9,0xca,0xcb,0xcd,0xce,0xcf].includes(marker)) return [bytes.readUInt16BE(offset + 7), bytes.readUInt16BE(offset + 5)]
+      offset += length + 2
+    }
+  }
   if (bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP') {
     for (let offset = 12; offset + 8 < bytes.length;) {
       const kind = bytes.toString('ascii', offset, offset + 4)
@@ -178,12 +192,12 @@ test('every catalogue map has a dataset and all normalized locations point to va
     assert.ok(Array.isArray(data.sources) && data.sources.length, `${entry.id}: missing attribution`)
     for (const source of data.sources) {
       assert.ok(source.name?.trim())
-      assert.ok(['https:', 'http:'].includes(new URL(source.url).protocol), `${entry.id}: unsupported source URL`)
+      assert.ok(/^\/guides\/[a-z0-9-]+$/.test(source.url) || ['https:', 'http:'].includes(new URL(source.url).protocol), `${entry.id}: unsupported source URL`)
     }
     for (const layer of data.layers) {
       assert.ok(layer.label?.trim(), `${entry.id}/${layer.id}: missing label`)
       assert.ok(Number.isInteger(layer.width) && layer.width > 0 && Number.isInteger(layer.height) && layer.height > 0, `${entry.id}/${layer.id}: invalid artwork dimensions`)
-      assert.ok(layer.image.startsWith(`/maps/${entry.id}/`), `${entry.id}/${layer.id}: expected locally hosted artwork`)
+      assert.match(layer.image, /^\/maps\/[a-z0-9-]+\/[a-z0-9.-]+$/, `${entry.id}/${layer.id}: expected locally hosted artwork`)
       const publicRoot = path.join(root, 'public')
       const file = path.resolve(publicRoot, '.' + layer.image)
       assert.ok(file.startsWith(publicRoot + path.sep), `${entry.id}/${layer.id}: asset escapes public directory`)
@@ -205,7 +219,7 @@ test('every catalogue map has a dataset and all normalized locations point to va
       assert.ok(location.label?.trim() && location.description?.trim(), `${label}: missing readable location guidance`)
       assert.equal(typeof location.category, 'string', `${label}: missing category`)
       assert.ok(location.category.trim())
-      if (location.source) assert.ok(data.sources.some(source => source.name === location.source) || /^https?:\/\//.test(location.source), `${label}: unresolved source reference`)
+      if (location.source) assert.ok(data.sources.some(source => source.name === location.source) || /^https?:\/\//.test(location.source) || /^\/guides\/[a-z0-9-]+(?:#[a-z0-9_-]+)?$/.test(location.source), `${label}: unresolved source reference`)
     }
   })
 })
@@ -246,12 +260,12 @@ test('map targets and both guide views resolve to existing locations and stable 
       for (const id of target.locationIds) assert.ok(locationIds.has(id), `${entry.id}/${target.id}: unknown location ${id}`)
       if (locationIds.has(target.id)) assert.deepEqual(target.locationIds, [target.id], `${entry.id}/${target.id}: group shadows an unrelated location`)
       if (target.kind) assert.ok(['single', 'candidates', 'sequence', 'area'].includes(target.kind), `${entry.id}/${target.id}: unsupported target kind`)
-      if (target.guideAnchor) assert.ok(readingAnchors.has(target.guideAnchor), `${entry.id}/${target.id}: missing guide anchor ${target.guideAnchor}`)
+      if (target.guideAnchor) assert.ok((target.guideId && target.guideId !== entry.id ? guideReferences(target.guideId).anchors : readingAnchors).has(target.guideAnchor), `${entry.id}/${target.id}: missing guide anchor ${target.guideAnchor}`)
     }
     const targetIds = new Set([...locationIds, ...data.targets.map(target => target.id)])
     assert.ok(data.quickLinks && Object.keys(data.quickLinks).length, `${entry.id}: no quick map links`)
     for (const [stepId, target] of Object.entries(data.quickLinks)) {
-      assert.ok(stepIds.has(stepId), `${entry.id}: quick map link references removed step ${stepId}`)
+      assert.ok(stepIds.has(stepId) || guide.anchors.has(`guide-step-${stepId}`), `${entry.id}: map binding references removed guide step ${stepId}`)
       assert.ok(targetIds.has(target), `${entry.id}/${stepId}: missing map target ${target}`)
       assert.equal(mapTargetFromAnchor(mapAnchor(target)), target, `${entry.id}/${stepId}: target cannot be shared in a URL`)
     }
@@ -264,9 +278,9 @@ test('map targets and both guide views resolve to existing locations and stable 
 })
 
 test('generated map quick-link registry matches all datasets and contains only target IDs', () => {
-  const files = fs.readdirSync(path.join(root, 'app/data/maps')).filter(file => file.endsWith('.json')).sort()
+  const files = fs.readdirSync(path.join(root, 'app/data/maps')).filter(file => /^[a-z0-9-]+\.json$/.test(file)).sort()
   assert.deepEqual(files.map(file => file.replace(/\.json$/, '')).sort(), catalogue.maps.map(map => map.id).sort())
-  const expected = Object.fromEntries(files.map(file => { const data = loadMap(file.replace(/\.json$/, '')); return [data.id, data.quickLinks || {}] }))
+  const expected = Object.fromEntries(files.flatMap(file => { const data = loadMap(file.replace(/\.json$/, '')); return [[data.id, data.quickLinks || {}], ...Object.entries(data.guideQuickLinks || {})] }))
   const registry = readJson('app/data/mapQuickLinks.json')
   assert.deepEqual(registry, expected, 'Run node scripts/generate-map-links.mjs after changing map bindings')
   for (const links of Object.values(registry)) for (const value of Object.values(links)) assert.equal(typeof value, 'string')
@@ -306,6 +320,8 @@ function viewerFixture(saved, storageFails = false, environment = {}) {
     if (name === 'leaflet') return { latLng: (lat, lng) => ({ lat, lng }), ...environment.leaflet }
     if (name === 'leaflet/dist/leaflet.css') return {}
     if (name === '~/utils/mw3PhotoBoard.mjs') return mw3PhotoBoard
+    if (name === '~/utils/mapFilters.mjs') return mapFilters
+    if (name === '~/data/mapIcons.json') return mapIcons
     throw new Error(`Unexpected runtime dependency in map logic test: ${name}`)
   }
   const lifecycle = { mounted: [], beforeUnmount: [] }
@@ -329,244 +345,178 @@ function viewerFixture(saved, storageFails = false, environment = {}) {
   return { props, state, events, persisted, lifecycle }
 }
 
-test('legacy map viewer defaults to quest and area browsing, and selected locations bypass category/search filters', () => {
-  const { props, state } = viewerFixture()
-  assert.equal(state.category.value, 'quest-areas')
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['room', 'quest', 'upstairs'])
-  assert.deepEqual(state.visibleLocations.value.map(location => location.id), ['room', 'quest'])
-  props.targetId = 'perk'
-  assert.deepEqual(state.visibleLocations.value.map(location => location.id), ['room', 'quest', 'perk'])
-  state.query.value = 'upper'
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['upstairs'])
-  assert.deepEqual(state.visibleLocations.value.map(location => location.id), ['perk'])
-  props.targetId = ''
-  assert.deepEqual(state.visibleLocations.value, [])
-  state.category.value = 'all'
-  state.query.value = 'Speed Cola'
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['perk'])
-  state.clearFilters()
-  assert.equal(state.filteredLocations.value.length, 4)
+test('compact filters combine physical types, deduplicate sets and keep explicit guide highlights', () => {
+  const {props,state}=viewerFixture()
+  assert.deepEqual(state.checkedFilters.value,['type:area','type:quest'])
+  state.checkedFilters.value=['type:area','type:quest']
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['room','quest','upstairs'])
+  props.targetId='perk'
+  assert.deepEqual(state.visibleLocations.value.map(l=>l.id),['room','quest','perk'])
+  state.checkedFilters.value=[]
+  assert.deepEqual(state.filteredLocations.value,[])
+  assert.deepEqual(state.visibleLocations.value.map(l=>l.id),['perk'])
+  assert.equal(state.outsideFilterCount.value,1)
+  state.showHighlights.value=false
+  assert.deepEqual(state.visibleLocations.value,[])
+  state.showAllFilters()
+  state.query.value='upper'
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['upstairs'])
+  assert.equal(state.otherLayerCount.value,1)
+  assert.equal(state.browseLayerCount.value,0)
 })
 
-test('MW3 activity changes isolate obelisks, clue boards and USB pins while retaining board observations', () => {
-  const { props, state, events } = viewerFixture()
-  props.data = readJson('app/data/maps/mw3-urzikstan.json')
+test('Essentials enables physical leaves so disabling a type actually removes its pins', () => {
+  const data = {layers:[{id:'ground',label:'Ground'}],locations:[{id:'perk',layerId:'ground',typeId:'perk-machine',category:'perk',label:'Perk',overview:true},{id:'power',layerId:'ground',typeId:'power-switch',category:'power',label:'Power',overview:true}]}
+  const options=mapFilters.buildMapFilters(data)
+  const enabled=mapFilters.defaultMapFilters(data,options)
+  assert.ok(enabled.includes('type:perk-machine'))
+  assert.deepEqual(mapFilters.filterMapLocations(data,options,enabled.filter(id=>id!=='type:perk-machine')).map(l=>l.id),['power'])
+})
+
+test('overlapping activity toggles form a union and do not change target, query or photos', () => {
+  const {props,state,events}=viewerFixture()
+  props.data=readJson('app/data/maps/mw3-urzikstan.json')
   state.restorePreferences()
-  state.chooseCategory('red-worm')
-  assert.equal(state.subfilterId.value, 'clue-boards')
-  assert.equal(state.filteredLocations.value.length, 4)
-  assert.ok(state.filteredLocations.value.every(location => location.id.startsWith('loc-image-')))
-  state.chooseSubfilter('usb-devices')
-  assert.equal(state.filteredLocations.value.length, 12)
-  state.choosePhotos([12, 1, 4, 8])
-  props.targetId = events.at(-1)[1]
+  state.checkedFilters.value=['activity:red-worm:clue-boards','activity:red-worm:usb-devices']
+  assert.equal(state.filteredLocations.value.length,16)
+  assert.equal(state.photoMode.value,false,'USB toggles must not open the photo workflow')
+  state.checkedFilters.value.push('activity:red-worm:usb-devices')
+  assert.equal(state.filteredLocations.value.length,16,'Overlapping enabled sets must not duplicate pins')
+  state.choosePhotos([12,1,4,8])
+  props.targetId=events.at(-1)[1]
   state.selectTarget()
-  assert.deepEqual(state.visibleLocations.value.map(location => location.id).sort(), ['usb-key-m2603', 'usb-key-m2575', 'usb-key-m2606', 'usb-key-m2605'].sort())
-  assert.equal(state.locationNumber(state.selectedLocations.value[3], 3), 12)
-  state.chooseCategory('unstable-rift')
-  assert.deepEqual(events.at(-1), ['select', ''])
-  props.targetId = ''
+  assert.deepEqual(state.photoIds.value,[1,4,8,12])
+  assert.equal(state.photoMode.value,true,'A shared photo target opens the explicit workflow')
+  assert.equal(state.locationNumber(state.selectedLocations.value[3],3),12)
+  state.togglePhotoFinder()
+  props.targetId=events.at(-1)[1]
   state.selectTarget()
-  assert.equal(state.visibleLocations.value.length, 54)
-  assert.ok(state.visibleLocations.value.every(location => location.id.startsWith('obelisk-urzi-')))
-  assert.deepEqual(state.photoIds.value, [1, 4, 8, 12])
-  state.chooseCategory('red-worm')
-  state.chooseSubfilter('usb-devices')
-  assert.equal(events.at(-1)[1], 'red-worm-photos-1-4-8-12')
-  assert.equal(state.visibleLocations.value.length, 4)
-  props.targetId = 'usb-key-m2625'
+  assert.equal(state.photoMode.value,false,'Photo-target deep links can close the finder')
+  assert.deepEqual(state.photoIds.value,[1,4,8,12],'Closing preserves observed photos')
+  const previousEvents=events.length
+  state.checkedFilters.value=['activity:unstable-rift:obelisks']
+  assert.equal(events.length,previousEvents)
+  props.targetId='usb-key-m2625'
   state.selectTarget()
-  assert.equal(state.photoMode.value, false, 'An explicit shared console link must not be replaced by a saved board')
-  assert.deepEqual(state.selectedLocations.value.map(location => location.id), ['usb-key-m2625'])
-  assert.deepEqual(state.photoIds.value, [1, 4, 8, 12])
+  assert.equal(state.photoMode.value,false,'A console target takes precedence over saved photos')
+  assert.deepEqual(state.selectedLocations.value.map(l=>l.id),['usb-key-m2625'])
 })
 
-test('MW3 guide targets choose their smaller filter and preserve a quiet view for targets spanning subfilters', () => {
-  const { props, state } = viewerFixture()
-  props.data = readJson('app/data/maps/mw3-dark-aether-season-3.json')
-  state.restorePreferences()
-  props.targetId = 'obelisk-m3103'
+test('guide target selection keeps saved browsing filters and does not number candidate sets as sequences', () => {
+  const {props,state}=viewerFixture()
+  state.checkedFilters.value=['type:perk']
+  props.targetId='candidates'
   state.selectTarget()
-  assert.equal(state.category.value, 'quests')
-  assert.equal(state.subfilterId.value, 'contract-starters')
-  assert.equal(state.visibleLocations.value.length, 3)
-  props.targetId = 'gyanxi-spores'
-  state.selectTarget()
-  assert.equal(state.category.value, 'selected')
-  assert.equal(state.visibleLocations.value.length, 4)
-})
-
-test('MW3 filter preferences validate subgroup IDs and migrate legacy categories without losing wheel or grid settings', () => {
-  const { props, state, persisted } = viewerFixture()
-  props.data = readJson('app/data/maps/mw3-urzikstan.json')
-  const key = 'codwiki-map-ui-v2:mw3-urzikstan'
-  persisted.set(key, JSON.stringify({ category: 'quest', wheelZoom: false, showGrid: false }))
-  state.restorePreferences()
-  assert.equal(state.category.value, 'overview')
-  assert.equal(state.wheelZoom.value, false)
-  assert.equal(state.showGrid.value, false)
-  persisted.set(key, JSON.stringify({ category: 'red-worm', subfilter: 'usb-devices', wheelZoom: false }))
-  state.restorePreferences()
-  assert.equal(state.category.value, 'red-worm')
-  assert.equal(state.subfilterId.value, 'usb-devices')
-  state.savePreferences()
-  assert.equal(JSON.parse(persisted.get(key)).subfilter, 'usb-devices')
-  persisted.set(key, JSON.stringify({ category: 'red-worm', subfilter: 'not-a-filter' }))
-  state.restorePreferences()
-  assert.equal(state.subfilterId.value, 'clue-boards')
-})
-
-test('board photos persist apart from map preferences, links replace saved observations and reset is contained', () => {
-  const { props, state, persisted } = viewerFixture()
-  props.data = readJson('app/data/maps/mw3-urzikstan.json')
-  persisted.set(mw3PhotoBoard.PHOTO_BOARD_KEY, '[2,3,6,10]')
-  state.restoreBoardPhotos()
-  assert.deepEqual(state.photoIds.value, [2, 3, 6, 10])
-  props.targetId = 'red-worm-photos-12-1-5-9'
-  state.selectTarget()
-  assert.deepEqual(state.photoIds.value, [1, 5, 9, 12])
-  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY), '[1,5,9,12]')
-  state.choosePhotos([])
-  props.targetId = ''
-  assert.deepEqual(state.photoIds.value, [])
-  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY), '[]')
-  assert.equal(state.visibleLocations.value.length, 12)
-  const unavailable = viewerFixture(undefined, true)
-  unavailable.props.data = readJson('app/data/maps/mw3-urzikstan.json')
-  unavailable.state.choosePhotos([1])
-  assert.equal(unavailable.state.photoSaveError.value, true)
-  assert.deepEqual(unavailable.state.photoIds.value, [1])
-})
-
-test('map overview search includes non-overview services and grid references while preserving a selected target', () => {
-  const { props, state } = viewerFixture()
-  props.data.locations[0].overview = true
-  props.data.locations[2].grid = 'H7'
-  props.data.grid = { columns: ['A', 'B'], rows: ['0', '1'] }
-  state.restorePreferences()
-  assert.equal(state.category.value, 'overview')
-  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['room'])
-  state.query.value = 'H7'
-  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['perk'])
-  props.targetId = 'quest'
-  assert.deepEqual(state.visibleLocations.value.map(loc => loc.id), ['quest', 'perk'])
-  state.query.value = ''
-  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['room'])
-  state.category.value = 'perk'
-  state.query.value = 'H7'
-  assert.deepEqual(state.filteredLocations.value.map(loc => loc.id), ['perk'])
-})
-
-test('map grid preferences survive reopening without changing legacy map preference records', () => {
-  const { props, state, persisted } = viewerFixture()
-  props.data.locations[0].overview = true
-  props.data.grid = { columns: ['A', 'B'], rows: ['0', '1'] }
-  state.restorePreferences()
-  state.showGrid.value = false
-  state.savePreferences()
-  assert.equal(JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')).showGrid, false)
-  state.showGrid.value = true
-  state.restorePreferences()
-  assert.equal(state.category.value, 'overview')
-  assert.equal(state.showGrid.value, false)
-  delete props.data.grid
-  state.savePreferences()
-  assert.equal('showGrid' in JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')), false)
-})
-
-test('map viewer restores validated filters and layers while recovering from bad or unavailable storage', () => {
-  for (const category of ['quest-areas', 'all', 'perk']) {
-    const { state, persisted } = viewerFixture(JSON.stringify({ layer: 'upper', category, wheelZoom: true }))
-    state.restorePreferences()
-    assert.equal(state.category.value, category)
-    assert.equal(state.layerId.value, 'upper')
-    assert.equal(state.wheelZoom.value, true)
-    state.savePreferences()
-    assert.deepEqual(JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')), { layer: 'upper', category, perkFilter: 'all', wheelZoom: true })
-  }
-  for (const saved of [undefined, 'broken JSON', 'null', '42', JSON.stringify({ layer: 'removed-floor', category: 'removed-category', wheelZoom: 'yes' })]) {
-    const { state } = viewerFixture(saved)
-    assert.doesNotThrow(() => state.restorePreferences())
-    assert.equal(state.category.value, 'quest-areas')
-    assert.equal(state.layerId.value, 'ground')
-    assert.equal(state.wheelZoom.value, true)
-  }
-  const { state } = viewerFixture(null, true)
-  assert.doesNotThrow(() => { state.restorePreferences(); state.savePreferences() })
-  assert.equal(state.category.value, 'quest-areas')
-  assert.equal(state.wheelZoom.value, true)
-})
-
-test('map viewer migrates automatic scroll-zoom defaults while keeping layers, categories and new explicit opt-outs', () => {
-  const { state, persisted } = viewerFixture()
-  persisted.set('codwiki-map-ui-v1:fixture', JSON.stringify({ layer: 'upper', category: 'perk', wheelZoom: false }))
-  state.restorePreferences()
-  assert.equal(state.layerId.value, 'upper')
-  assert.equal(state.category.value, 'perk')
-  assert.equal(state.wheelZoom.value, true, 'The automatically saved v1 false should not disable the new default')
-  state.savePreferences()
-  assert.deepEqual(JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')), { layer: 'upper', category: 'perk', perkFilter: 'all', wheelZoom: true })
-  state.wheelZoom.value = false
-  state.savePreferences()
-  state.wheelZoom.value = true
-  state.restorePreferences()
-  assert.equal(state.wheelZoom.value, false, 'An explicit v2 opt-out must survive reopening the map')
-  assert.equal(state.layerId.value, 'upper')
-  assert.equal(state.category.value, 'perk')
-  persisted.set('codwiki-map-ui-v2:fixture', 'malformed JSON')
-  state.restorePreferences()
-  assert.equal(state.layerId.value, 'upper', 'A malformed current save can still recover legacy browsing preferences')
-  assert.equal(state.category.value, 'perk')
-  assert.equal(state.wheelZoom.value, true)
-})
-
-test('map viewer keeps candidate groups together while focusing members across layers', () => {
-  const { props, state, events } = viewerFixture()
-  props.targetId = 'candidates'
-  state.selectTarget()
-  assert.equal(state.focusId.value, '', 'No candidate should be presented as the preferred spawn')
-  assert.deepEqual(state.selectedLayers.value.map(layer => layer.id), ['ground', 'upper'])
+  assert.deepEqual(state.checkedFilters.value,['type:perk'])
+  assert.deepEqual(state.selectedLayers.value.map(l=>l.id),['ground','upper'])
+  assert.equal(state.locationNumber(state.selectedLocations.value[0],0),'')
+  assert.equal(state.focusId.value,'')
   state.chooseLocation(props.data.locations[3])
-  assert.equal(state.focusId.value, 'upstairs')
-  assert.equal(state.layerId.value, 'upper')
-  assert.equal(props.targetId, 'candidates')
-  assert.deepEqual(events, [])
-  assert.equal(state.selectedLocations.value.length, 2)
-  state.chooseLocation(props.data.locations[2])
-  assert.deepEqual(events, [['select', 'perk']], 'An unrelated pin should select its own location')
+  assert.equal(state.layerId.value,'upper')
+  assert.equal(props.targetId,'candidates')
+  assert.equal(state.selectedLocations.value.length,2)
 })
 
-test('map viewer separates tagged Mister Peeks perks from ordinary perks and preserves selected pins', () => {
-  const { props, state, persisted } = viewerFixture()
-  props.data.locations.push(
-    { id: 'peeks-ground', label: 'Mister Peeks — Boiler Room', layerId: 'ground', category: 'perk', perkType: 'mister-peeks', precision: 'area', x: 0.2, y: 0.3, description: 'Check beside the stairs.', state: 'Cursed mode · possible spawn' },
-    { id: 'peeks-upper', label: 'Mister Peeks — Upper workshop', layerId: 'upper', category: 'perk', perkType: 'mister-peeks', precision: 'area', x: 0.4, y: 0.5, description: 'Check the desk.', state: 'Cursed mode · possible spawn' },
-    { id: 'peeks-quest', label: 'Mister Peeks quest', layerId: 'ground', category: 'quest', precision: 'area', x: 0.5, y: 0.3, description: 'Carry the quest object.' },
-  )
-  state.category.value = 'perk'
-  assert.equal(state.perkCount.value, 3)
-  assert.equal(state.peeksCount.value, 2)
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['perk', 'peeks-ground', 'peeks-upper'])
-  state.perkFilter.value = 'mister-peeks'
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['peeks-ground', 'peeks-upper'])
-  props.targetId = 'perk'
-  assert.deepEqual(state.visibleLocations.value.map(location => location.id), ['perk', 'peeks-ground'], 'The selected ordinary perk remains visible under the Peeks subfilter')
-  state.query.value = 'upper'
-  assert.deepEqual(state.filteredLocations.value.map(location => location.id), ['peeks-upper'])
-  state.query.value = 'Cursed mode'
-  assert.equal(state.filteredLocations.value.length, 2, 'The documented mode/state is searchable')
-  state.query.value = 'Mister Peeks'
-  assert.equal(state.filteredLocations.value.length, 2, 'An unrelated quest with the same name is not a Peeks perk spawn')
+test('standalone photo finder derives its USB view without overwriting normal map filters', () => {
+  const {props,state,persisted}=viewerFixture()
+  props.data=readJson('app/data/maps/mw3-urzikstan.json')
+  props.photoFinder=true
+  const checked=['type:perk-reward','type:pack-a-punch']
+  persisted.set('codwiki-map-ui-v3:mw3-urzikstan',JSON.stringify({layer:props.data.defaultLayer,checked,wheelZoom:true}))
+  state.restorePreferences()
+  assert.deepEqual(state.checkedFilters.value,checked)
+  assert.equal(state.filteredLocations.value.length,12,'Tool shows its USB positions independently')
   state.savePreferences()
-  assert.equal(JSON.parse(persisted.get('codwiki-map-ui-v2:fixture')).perkFilter, 'mister-peeks')
-  state.perkFilter.value = 'all'
+  assert.deepEqual(JSON.parse(persisted.get('codwiki-map-ui-v3:mw3-urzikstan')).checked,checked)
+  props.photoFinder=false
   state.restorePreferences()
-  assert.equal(state.perkFilter.value, 'mister-peeks')
-  props.data.locations = props.data.locations.filter(location => location.perkType !== 'mister-peeks')
+  assert.deepEqual(state.checkedFilters.value,checked)
+})
+
+test('v3 map preferences preserve empty filters and migrate reviewed v2 types/activities independently', () => {
+  const {props,state,persisted}=viewerFixture()
+  persisted.set('codwiki-map-ui-v2:fixture',JSON.stringify({layer:'upper',category:'perk',wheelZoom:false}))
   state.restorePreferences()
-  assert.equal(state.perkFilter.value, 'all', 'A removed/unavailable subtype must not leave an empty saved filter')
-  state.clearFilters()
-  assert.equal(state.perkFilter.value, 'all')
+  assert.deepEqual(state.checkedFilters.value,['type:perk'])
+  assert.equal(state.layerId.value,'upper')
+  assert.equal(state.wheelZoom.value,false)
+  state.checkedFilters.value=[]
+  state.savePreferences()
+  state.showAllFilters()
+  state.restorePreferences()
+  assert.deepEqual(state.checkedFilters.value,[],'Intentional hide-all must survive reopen')
+  persisted.set('codwiki-map-ui-v3:fixture',JSON.stringify({checked:['removed-type']}))
+  state.restorePreferences()
+  assert.ok(state.checkedFilters.value.length,'Removed-only IDs recover Essentials')
+  props.data=readJson('app/data/maps/mw3-urzikstan.json')
+  persisted.set('codwiki-map-ui-v2:mw3-urzikstan',JSON.stringify({category:'red-worm',subfilter:'usb-devices',showGrid:false,wheelZoom:false}))
+  state.restorePreferences()
+  assert.deepEqual(state.checkedFilters.value,['activity:red-worm:usb-devices'])
+  assert.equal(state.showGrid.value,false)
+  assert.equal(state.wheelZoom.value,false)
+  state.savePreferences()
+  assert.deepEqual(JSON.parse(persisted.get('codwiki-map-ui-v3:mw3-urzikstan')).checked,['activity:red-worm:usb-devices'])
+})
+
+test('v1 automatic wheel defaults migrate while malformed or unavailable storage remains usable', () => {
+  const {state,persisted}=viewerFixture()
+  persisted.set('codwiki-map-ui-v1:fixture',JSON.stringify({category:'perk',layer:'upper',wheelZoom:false}))
+  state.restorePreferences()
+  assert.deepEqual(state.checkedFilters.value,['type:perk'])
+  assert.equal(state.wheelZoom.value,true)
+  state.wheelZoom.value=false
+  state.savePreferences()
+  state.wheelZoom.value=true
+  state.restorePreferences()
+  assert.equal(state.wheelZoom.value,false)
+  const unavailable=viewerFixture('malformed',true)
+  assert.doesNotThrow(()=>{unavailable.state.restorePreferences();unavailable.state.savePreferences()})
+  assert.ok(unavailable.state.filteredLocations.value.length)
+})
+
+test('Cursed Peeks have an independent physical filter without conflating unrelated Peeks quests', () => {
+  const {props,state}=viewerFixture()
+  props.data.locations.push({id:'peeks',label:'Mister Peeks',category:'perk',perkType:'mister-peeks',layerId:'ground',precision:'area',x:.2,y:.3,description:'Check the possible spawn.',state:'Cursed mode · possible spawn'})
+  state.checkedFilters.value=['type:cursed-peeks']
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['peeks'])
+  state.checkedFilters.value.push('type:perk')
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['perk','peeks'])
+  state.query.value='Cursed mode'
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['peeks'])
+})
+
+test('board photos persist independently, linked observations replace saves and storage errors are contained', () => {
+  const {props,state,persisted}=viewerFixture()
+  props.data=readJson('app/data/maps/mw3-urzikstan.json')
+  persisted.set(mw3PhotoBoard.PHOTO_BOARD_KEY,'[2,3,6,10]')
+  state.restoreBoardPhotos()
+  assert.deepEqual(state.photoIds.value,[2,3,6,10])
+  props.targetId='red-worm-photos-12-1-5-9'
+  state.selectTarget()
+  assert.deepEqual(state.photoIds.value,[1,5,9,12])
+  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY),'[1,5,9,12]')
+  state.choosePhotos([])
+  assert.equal(persisted.get(mw3PhotoBoard.PHOTO_BOARD_KEY),'[]')
+  const unavailable=viewerFixture(undefined,true)
+  unavailable.props.data=readJson('app/data/maps/mw3-urzikstan.json')
+  unavailable.state.choosePhotos([1])
+  assert.equal(unavailable.state.photoSaveError.value,true)
+})
+
+test('grid and scoped search round-trip independently of enabled filters', () => {
+  const {props,state,persisted}=viewerFixture()
+  props.data.grid={columns:['A','B'],rows:['0','1']}
+  props.data.locations[2].grid='H7'
+  state.checkedFilters.value=['type:perk']
+  state.query.value='H7'
+  assert.deepEqual(state.filteredLocations.value.map(l=>l.id),['perk'])
+  state.showGrid.value=false
+  state.savePreferences()
+  state.query.value=''
+  state.restorePreferences()
+  assert.equal(state.showGrid.value,false)
+  assert.deepEqual(state.checkedFilters.value,['type:perk'])
+  assert.equal('query' in JSON.parse(persisted.get('codwiki-map-ui-v3:fixture')),false)
 })
 
 test('map viewer converts normalized artwork corners and center with a top-left authoring origin', () => {

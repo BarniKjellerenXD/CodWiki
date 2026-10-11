@@ -1,0 +1,638 @@
+{
+  "id": "bo2-mob-of-the-dead",
+  "name": "Mob of the Dead",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-mob-of-the-dead",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/mob-of-the-dead/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/mob-of-the-dead/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://mmmrkennedy.com/games/BO2/mob_of_the_dead/mob_of_the_dead_guide"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-mob-of-the-dead/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-cells",
+      "label": "Cell Block / spawn",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Prison floors",
+      "description": "Black Ops II · Prison floors. Region on a schematic, not an exact object position. Power perks individually; prioritize Docks Jugger-Nog and the gondola.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "area-cafeteria",
+      "label": "Cafeteria / Showers",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.757,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower prison",
+      "description": "Black Ops II · Lower prison. Region on a schematic, not an exact object position. Lower the hanging key in Afterlife and collect it as a human.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-key"
+    },
+    {
+      "id": "area-warden",
+      "label": "Warden’s Office",
+      "layerId": "overview",
+      "x": 0.45,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Prison rooms",
+      "description": "Black Ops II · Prison rooms. Region on a schematic, not an exact object position. Lower the hanging key in Afterlife and collect it as a human.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-key"
+    },
+    {
+      "id": "area-citadel",
+      "label": "Citadel / Generator Room",
+      "layerId": "overview",
+      "x": 0.49,
+      "y": 0.687,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower prison / tunnels",
+      "description": "Black Ops II · Lower prison / tunnels. Region on a schematic, not an exact object position. Power perks individually; prioritize Docks Jugger-Nog and the gondola.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "area-docks",
+      "label": "Docks",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside lower area",
+      "description": "Black Ops II · Outside lower area. Region on a schematic, not an exact object position. Power perks individually; prioritize Docks Jugger-Nog and the gondola.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "area-infirmary",
+      "label": "Infirmary",
+      "layerId": "overview",
+      "x": 0.7,
+      "y": 0.39699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper prison",
+      "description": "Black Ops II · Upper prison. Region on a schematic, not an exact object position. Power perks individually; prioritize Docks Jugger-Nog and the gondola.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "area-roof",
+      "label": "Roof / plane frame",
+      "layerId": "overview",
+      "x": 0.88,
+      "y": 0.217,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Roof",
+      "description": "Black Ops II · Roof. Region on a schematic, not an exact object position. Open the roof door in Afterlife.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-plane-roof"
+    },
+    {
+      "id": "area-bridge",
+      "label": "Golden Gate Bridge",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.5870000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate flight destination",
+      "description": "Black Ops II · Separate flight destination. Region on a schematic, not an exact object position. Take the Infirmary valve and finish the roof plane.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-plane-valve"
+    },
+    {
+      "id": "key",
+      "label": "Warden’s Key candidate approaches",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.38799999999999996,
+      "category": "quest",
+      "typeId": "key",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Prison floors",
+      "description": "Look for the hanging Warden’s Key above either the Cafeteria/Showers approach or the Warden’s Office approach. Enter Afterlife, jump through the nearby blue doorway and shock the generator controlling its hook. Revive, then collect the lowered key. One pickup supplies the team’s key doors. While near Warden’s Office, use the ghost passage and shock its door meter to open it. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-key"
+    },
+    {
+      "id": "cherry",
+      "label": "Upper Cell Block Electric Cherry",
+      "layerId": "overview",
+      "x": 0.23800000000000002,
+      "y": 0.38799999999999996,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Prison floors",
+      "description": "Shock the small meter by each perk to activate it: Jugger-Nog at Docks, Electric Cherry by the upper Cell Block workbench, Speed Cola in Warden’s Office, Double Tap on the Citadel route and Deadshot in Infirmary. Power the gondola for travel between Cell Block and Docks. There is no Quick Revive machine; Afterlife is your recovery system. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "jug",
+      "label": "Docks Jugger-Nog",
+      "layerId": "overview",
+      "x": 0.772,
+      "y": 0.808,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Outside lower area",
+      "description": "Shock the small meter by each perk to activate it: Jugger-Nog at Docks, Electric Cherry by the upper Cell Block workbench, Speed Cola in Warden’s Office, Double Tap on the Citadel route and Deadshot in Infirmary. Power the gondola for travel between Cell Block and Docks. There is no Quick Revive machine; Afterlife is your recovery system. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-setup-perks"
+    },
+    {
+      "id": "plane",
+      "label": "Plane assembly",
+      "layerId": "overview",
+      "x": 0.842,
+      "y": 0.218,
+      "category": "equipment",
+      "typeId": "crafting-table",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Roof",
+      "description": "Use Afterlife in Infirmary, pass through the blue opening and jump up to the roof. Shock the roof-door meter so humans can reach the plane frame. Each player carries one plane part at a time in co-op; solo can collect the complete set. Add parts at the frame when convenient. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-plane-roof"
+    },
+    {
+      "id": "pap",
+      "label": "Bridge Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.752,
+      "y": 0.5880000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Separate flight destination",
+      "description": "Pack-a-Punch is on the bridge and costs 5,000. Survive the zombies and Brutus while upgrading. The electric chairs appear for the return trip; use them, then revive your bodies back in the prison. On later trips collect fuel cans from the five original part locations and refuel the plane. Wait for the next round if replacement fuel has not appeared. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-mob-of-the-dead#guide-step-plane-bridge"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-key",
+      "title": "Lower the hanging key in Afterlife and collect it as a human.",
+      "locationIds": [
+        "key",
+        "area-cafeteria",
+        "area-warden"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-setup-key"
+    },
+    {
+      "id": "guide-setup-perks",
+      "title": "Power perks individually; prioritize Docks Jugger-Nog and the gondola.",
+      "locationIds": [
+        "cherry",
+        "jug",
+        "area-cells",
+        "area-warden",
+        "area-citadel",
+        "area-docks",
+        "area-infirmary"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-setup-perks"
+    },
+    {
+      "id": "guide-shield-parts",
+      "title": "Find a Docks trolley, Generator Room clamp and Citadel cell door.",
+      "locationIds": [
+        "area-cells",
+        "area-cafeteria",
+        "area-citadel",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-shield-parts"
+    },
+    {
+      "id": "guide-plane-roof",
+      "title": "Open the roof door in Afterlife.",
+      "locationIds": [
+        "plane",
+        "area-infirmary",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-roof"
+    },
+    {
+      "id": "guide-plane-laundry",
+      "title": "Power and run the Showers washer; survive and take the uniforms.",
+      "locationIds": [
+        "area-cafeteria"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-laundry"
+    },
+    {
+      "id": "guide-plane-rigging",
+      "title": "Read the Afterlife staircase code, enter it and run for the opened rigging cage.",
+      "locationIds": [
+        "area-citadel"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-rigging"
+    },
+    {
+      "id": "guide-plane-engines",
+      "title": "Shock all three Generator Room generators; collect the Office engine.",
+      "locationIds": [
+        "area-warden",
+        "area-citadel"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-engines"
+    },
+    {
+      "id": "guide-plane-tanks",
+      "title": "Unlock the Docks cage; coordinate the two-player electrical gate.",
+      "locationIds": [
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-tanks"
+    },
+    {
+      "id": "guide-plane-valve",
+      "title": "Take the Infirmary valve and finish the roof plane.",
+      "locationIds": [
+        "plane",
+        "area-warden",
+        "area-infirmary",
+        "area-roof",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-valve"
+    },
+    {
+      "id": "guide-plane-bridge",
+      "title": "Upgrade on the bridge; return by electric chair and refuel for later flights.",
+      "locationIds": [
+        "pap",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-plane-bridge"
+    },
+    {
+      "id": "guide-retriever-dogs",
+      "title": "Feed the three dogs one corpse at a time, then claim the Retriever.",
+      "locationIds": [
+        "area-cells",
+        "area-cafeteria",
+        "area-citadel",
+        "area-docks",
+        "area-infirmary",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-retriever-dogs"
+    },
+    {
+      "id": "guide-blundergat-skulls",
+      "title": "Retriever-collect all five hidden skulls.",
+      "locationIds": [
+        "area-cells",
+        "area-warden",
+        "area-docks",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-blundergat-skulls"
+    },
+    {
+      "id": "guide-blundergat-claim",
+      "title": "Claim the desk Blundergat; the skull secret is required for the quest.",
+      "locationIds": [
+        "area-warden"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-blundergat-claim"
+    },
+    {
+      "id": "guide-acid-parts",
+      "title": "Find Office motor, Cell Block case and Infirmary acid.",
+      "locationIds": [
+        "area-cells",
+        "area-cafeteria",
+        "area-warden",
+        "area-infirmary"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-acid-parts"
+    },
+    {
+      "id": "guide-acid-upgrade",
+      "title": "Convert the Blundergat; upgrade to Vitriolic Withering on the bridge.",
+      "locationIds": [
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-acid-upgrade"
+    },
+    {
+      "id": "guide-spoon-poster",
+      "title": "Remove the Office-cell poster; shock the spoon through its ghost passage.",
+      "locationIds": [
+        "area-cells",
+        "area-warden",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-spoon-poster"
+    },
+    {
+      "id": "guide-spoon-pickup",
+      "title": "Retriever-collect the Cafeteria spoon.",
+      "locationIds": [
+        "area-cafeteria"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-spoon-pickup"
+    },
+    {
+      "id": "guide-quest-ready",
+      "title": "2–4 players including Weasel; three bridge cycles plus skull and spoon secrets.",
+      "locationIds": [
+        "area-citadel",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-quest-ready"
+    },
+    {
+      "id": "guide-quest-codes",
+      "title": "Enter prisoner numbers 101, 872, 386 and 481.",
+      "locationIds": [
+        "area-citadel"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-quest-codes"
+    },
+    {
+      "id": "guide-quest-recordings",
+      "title": "Follow the five recordings from Citadel to the roof.",
+      "locationIds": [
+        "area-cafeteria",
+        "area-warden",
+        "area-infirmary",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-quest-recordings"
+    },
+    {
+      "id": "guide-finale-flight",
+      "title": "Board the final plane in Afterlife; revive at the bridge chairs.",
+      "locationIds": [
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-finale-flight"
+    },
+    {
+      "id": "guide-redeemer-prison",
+      "title": "Earn prison Retriever kills; complete a round 10+ bridge round using only it.",
+      "locationIds": [
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-redeemer-prison"
+    },
+    {
+      "id": "guide-redeemer-pit",
+      "title": "Throw it into the Cell Block lava; next round claim the blue axe in Afterlife.",
+      "locationIds": [
+        "area-cells",
+        "area-bridge"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-redeemer-pit"
+    },
+    {
+      "id": "guide-spork-bath",
+      "title": "Stir the Infirmary bath; earn acid-explosion kills in Showers.",
+      "locationIds": [
+        "area-cafeteria",
+        "area-infirmary"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-spork-bath"
+    },
+    {
+      "id": "guide-music-bottles",
+      "title": "Three whiskey bottles play Rusty Cage; panel code 935 plays Where Are We Going.",
+      "locationIds": [
+        "area-citadel",
+        "area-docks",
+        "area-infirmary"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-music-bottles"
+    },
+    {
+      "id": "guide-music-115",
+      "title": "115 triggers Brutus’s panel secret; it is not a quest code.",
+      "locationIds": [
+        "area-citadel"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-music-115"
+    },
+    {
+      "id": "guide-music-scare",
+      "title": "Scope the distant fireworks from the roof for the optional jumpscare.",
+      "locationIds": [
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial prison-region diagram. Upper floors and unverified intermediate corridors are not joined by invented paths. Afterlife routes are not ordinary human doorways.",
+      "guideAnchor": "guide-step-music-scare"
+    }
+  ],
+  "quickLinks": {
+    "setup-key": "guide-setup-key",
+    "setup-perks": "guide-setup-perks",
+    "shield-parts": "guide-shield-parts",
+    "plane-roof": "guide-plane-roof",
+    "plane-laundry": "guide-plane-laundry",
+    "plane-rigging": "guide-plane-rigging",
+    "plane-engines": "guide-plane-engines",
+    "plane-tanks": "guide-plane-tanks",
+    "plane-valve": "guide-plane-valve",
+    "plane-bridge": "guide-plane-bridge",
+    "retriever-dogs": "guide-retriever-dogs",
+    "blundergat-skulls": "guide-blundergat-skulls",
+    "blundergat-claim": "guide-blundergat-claim",
+    "acid-parts": "guide-acid-parts",
+    "acid-upgrade": "guide-acid-upgrade",
+    "spoon-poster": "guide-spoon-poster",
+    "spoon-pickup": "guide-spoon-pickup",
+    "quest-ready": "guide-quest-ready",
+    "quest-codes": "guide-quest-codes",
+    "quest-recordings": "guide-quest-recordings",
+    "finale-flight": "guide-finale-flight",
+    "redeemer-prison": "guide-redeemer-prison",
+    "redeemer-pit": "guide-redeemer-pit",
+    "spork-bath": "guide-spork-bath",
+    "music-bottles": "guide-music-bottles",
+    "music-115": "guide-music-115",
+    "music-scare": "guide-music-scare"
+  }
+}

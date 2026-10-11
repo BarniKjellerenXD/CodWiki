@@ -1,0 +1,349 @@
+{
+  "id": "bo3-the-giant",
+  "name": "The Giant",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-the-giant",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-giant/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/the-giant/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://gamingaroundtheclock.com/the-giant/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-the-giant/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / mainframe",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Mainframe",
+      "description": "Black Ops III · Mainframe. Region on a schematic, not an exact object position. Open the rear courtyard → power switch below the catwalk.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-1"
+    },
+    {
+      "id": "area-animal",
+      "label": "Animal Testing route",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Laboratory route",
+      "description": "Black Ops III · Laboratory route. Region on a schematic, not an exact object position. Shoot the furnace monkey, high balcony bear and bear in the liquid vat.",
+      "source": "/guides/bo3-the-giant#guide-step-flytrap-2"
+    },
+    {
+      "id": "area-garage",
+      "label": "Automobile Garage route",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Garage route",
+      "description": "Black Ops III · Garage route. Region on a schematic, not an exact object position. Shoot the furnace monkey, high balcony bear and bear in the liquid vat.",
+      "source": "/guides/bo3-the-giant#guide-step-flytrap-2"
+    },
+    {
+      "id": "area-power",
+      "label": "Rear power courtyard",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.46699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Courtyard",
+      "description": "Black Ops III · Courtyard. Region on a schematic, not an exact object position. Open the rear courtyard → power switch below the catwalk.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-1"
+    },
+    {
+      "id": "area-rear",
+      "label": "Catwalk / rear teleporter",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.227,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper rear area",
+      "description": "Black Ops III · Upper rear area. Region on a schematic, not an exact object position. Open the rear courtyard → power switch below the catwalk.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-1"
+    },
+    {
+      "id": "power-switch",
+      "label": "Power switch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.46799999999999997,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Courtyard",
+      "description": "Open a route from the mainframe through the laboratories to the rear courtyard and turn on the switch under the catwalk. The bridge lowers, joining both sides. Locate Juggernog by checking the perk machines: the five normal machines shuffle each game. Keep points for doors before spending heavily on the box. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-1"
+    },
+    {
+      "id": "pack-a-punch",
+      "label": "Pack-a-Punch / mainframe",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.808,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Mainframe",
+      "description": "At each of the three teleporters, start the link and return to the mainframe in spawn before the countdown expires. Interact with the mainframe to confirm it; in co-op, leave a teammate there to finish links quickly. Repeat for all three teleporter rooms. The gate in front of Pack-a-Punch lowers after the third successful link. Upgrade a normal bullet weapon for 5,000 points. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-2"
+    },
+    {
+      "id": "left-teleporter",
+      "label": "Laboratory teleporter",
+      "layerId": "overview",
+      "x": 0.142,
+      "y": 0.518,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Laboratory route",
+      "description": "At each of the three teleporters, start the link and return to the mainframe in spawn before the countdown expires. Interact with the mainframe to confirm it; in co-op, leave a teammate there to finish links quickly. Repeat for all three teleporter rooms. The gate in front of Pack-a-Punch lowers after the third successful link. Upgrade a normal bullet weapon for 5,000 points. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-2"
+    },
+    {
+      "id": "right-teleporter",
+      "label": "Garage-side teleporter",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.518,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Garage route",
+      "description": "At each of the three teleporters, start the link and return to the mainframe in spawn before the countdown expires. Interact with the mainframe to confirm it; in co-op, leave a teammate there to finish links quickly. Repeat for all three teleporter rooms. The gate in front of Pack-a-Punch lowers after the third successful link. Upgrade a normal bullet weapon for 5,000 points. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-2"
+    },
+    {
+      "id": "rear-teleporter",
+      "label": "Rear teleporter",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.228,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper rear area",
+      "description": "At each of the three teleporters, start the link and return to the mainframe in spawn before the countdown expires. Interact with the mainframe to confirm it; in co-op, leave a teammate there to finish links quickly. Repeat for all three teleporter rooms. The gate in front of Pack-a-Punch lowers after the third successful link. Upgrade a normal bullet weapon for 5,000 points. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-the-giant#guide-step-setup-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Open the rear courtyard → power switch below the catwalk.",
+      "locationIds": [
+        "power-switch",
+        "area-spawn",
+        "area-power",
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Link every teleporter back to spawn → Pack-a-Punch a weapon.",
+      "locationIds": [
+        "pack-a-punch",
+        "left-teleporter",
+        "right-teleporter",
+        "rear-teleporter",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-flytrap-2",
+      "title": "Shoot the furnace monkey, high balcony bear and bear in the liquid vat.",
+      "locationIds": [
+        "area-animal",
+        "area-garage",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-flytrap-2"
+    },
+    {
+      "id": "guide-flytrap-3",
+      "title": "Claim the Annihilator from the furnace to finish Fly Trap.",
+      "locationIds": [
+        "area-garage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-flytrap-3"
+    },
+    {
+      "id": "guide-perk-1",
+      "title": "Teleport a live Monkey Bomb from each of the three teleporters.",
+      "locationIds": [
+        "left-teleporter",
+        "right-teleporter",
+        "rear-teleporter",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-perk-1"
+    },
+    {
+      "id": "guide-perk-2",
+      "title": "Three green lamps → mainframe button → buy the revealed Stamin-Up or Deadshot.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-perk-2"
+    },
+    {
+      "id": "guide-song-jars",
+      "title": "Beauty of Annihilation remix and small secrets: song-jars",
+      "locationIds": [
+        "area-animal"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-song-jars"
+    },
+    {
+      "id": "guide-weapons",
+      "title": "Wunderwaffe, ammunition and escape routes: weapons",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-weapons"
+    },
+    {
+      "id": "guide-training",
+      "title": "Wunderwaffe, ammunition and escape routes: training",
+      "locationIds": [
+        "area-spawn",
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-training"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "flytrap-2": "guide-flytrap-2",
+    "flytrap-3": "guide-flytrap-3",
+    "perk-1": "guide-perk-1",
+    "perk-2": "guide-perk-2",
+    "song-jars": "guide-song-jars",
+    "weapons": "guide-weapons",
+    "training": "guide-training"
+  }
+}

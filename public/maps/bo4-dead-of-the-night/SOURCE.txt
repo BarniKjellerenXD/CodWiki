@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-dead-of-the-night and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed.

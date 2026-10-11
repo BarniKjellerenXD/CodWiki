@@ -1,0 +1,5 @@
+Reference: https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html
+Guide: aw-outbreak
+Read for factual room/transport relationships; external artwork and article text are not redistributed.
+Diagram relationship: hub → morgue; path; documented connection.
+Diagram relationship: morgue → exo; path; documented connection.

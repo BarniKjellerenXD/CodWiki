@@ -1,0 +1,6 @@
+Reference: https://codzombified.blogspot.com/2015/06/bio-lab-map-layout-carrier-exo-zombies.html
+Guide: aw-carrier
+Read for factual room/transport relationships; external artwork and article text are not redistributed.
+Diagram relationship: gun → bio; path; documented connection.
+Diagram relationship: bio → armory; path; Lower Armory.
+Diagram relationship: bio → cargo; path; documented connection.

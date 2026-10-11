@@ -1,0 +1,288 @@
+{
+  "id": "bo1-five",
+  "name": "Five",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-five",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/five/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO1/five/five_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.reddit.com/r/CODZombies/comments/lqmf21/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-five/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-offices",
+      "label": "Offices / spawn",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.38699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops · Upper floor. Region on a schematic, not an exact object position. Ride through the War Room to Lab room 3 and switch on power.",
+      "source": "/guides/bo1-five#guide-step-five-power"
+    },
+    {
+      "id": "area-war",
+      "label": "War Room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.5670000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Middle floor",
+      "description": "Black Ops · Middle floor. Region on a schematic, not an exact object position. Ride through the War Room to Lab room 3 and switch on power.",
+      "source": "/guides/bo1-five#guide-step-five-power"
+    },
+    {
+      "id": "area-labs",
+      "label": "Laboratories",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.757,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower floor",
+      "description": "Black Ops · Lower floor. Region on a schematic, not an exact object position. Ride through the War Room to Lab room 3 and switch on power.",
+      "source": "/guides/bo1-five#guide-step-five-power"
+    },
+    {
+      "id": "area-panic",
+      "label": "Panic Room",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.297,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Timed destination",
+      "description": "Black Ops · Timed destination. Region on a schematic, not an exact object position. Flip all four switches; teleport at DEFCON 5.",
+      "source": "/guides/bo1-five#guide-step-five-defcon"
+    },
+    {
+      "id": "power",
+      "label": "Laboratory power room",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.758,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Lower floor",
+      "description": "Open the ground-floor offices and take the first elevator to the War Room. Clear the route to its larger freight elevator and ride to the lowest floor, the laboratories. Coming out of that elevator, the power switch is in the second room on the left, marked with a large 3. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-five#guide-step-five-power"
+    },
+    {
+      "id": "jug",
+      "label": "War Room Jugger-Nog",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.5680000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Middle floor",
+      "description": "Buy Jugger-Nog in the lower War Room and keep a weapon with ammunition available nearby. The Box supplies the Winter’s Howl, Ray Gun and Monkey Bombs. Upgrading Winter’s Howl produces Winter’s Fury; there is no build or free-weapon quest for it here. Quick Revive gives three solo self-revives, while co-op use speeds up reviving teammates. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-five#guide-step-five-loadout"
+    },
+    {
+      "id": "defcon",
+      "label": "DEFCON switches",
+      "layerId": "overview",
+      "x": 0.538,
+      "y": 0.5680000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Middle floor",
+      "description": "DEFCON begins at 1. Use the four switches in the War Room, in any order, to reach 5. Two are upstairs on the catwalk and two downstairs. Once DEFCON 5 is active, enter a teleporter to reach the Panic Room. Upper: to the left as you leave the first elevator. Upper: at the far end of the catwalk from that elevator. Lower: near the freight elevator to the laboratories. Lower: between Jugger-Nog and the later Mule Kick location. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-five#guide-step-five-defcon"
+    },
+    {
+      "id": "pap",
+      "label": "Panic Room Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.298,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Timed destination",
+      "description": "Pack-a-Punch costs 5,000 points in the Panic Room. The closed doors give a short window of roughly 30 seconds; finish and collect your weapon before they open and the machine closes. When everyone leaves, the room resets and the switches must be used again for another visit. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-five#guide-step-five-upgrade"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-five-power",
+      "title": "Ride through the War Room to Lab room 3 and switch on power.",
+      "locationIds": [
+        "power",
+        "area-offices",
+        "area-war",
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-power"
+    },
+    {
+      "id": "guide-five-loadout",
+      "title": "Buy Jugger-Nog and prepare a strong Thief-round weapon.",
+      "locationIds": [
+        "jug",
+        "area-war"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-loadout"
+    },
+    {
+      "id": "guide-five-defcon",
+      "title": "Flip all four switches; teleport at DEFCON 5.",
+      "locationIds": [
+        "defcon",
+        "area-war",
+        "area-panic"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-defcon"
+    },
+    {
+      "id": "guide-five-upgrade",
+      "title": "Upgrade during the Panic Room window and retrieve your weapon.",
+      "locationIds": [
+        "pap",
+        "area-panic"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-upgrade"
+    },
+    {
+      "id": "guide-five-bonfire",
+      "title": "No theft: Bonfire Sale. After theft: recover guns and take Fire Sale.",
+      "locationIds": [
+        "pap",
+        "area-war",
+        "area-panic"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-bonfire"
+    },
+    {
+      "id": "guide-five-parts",
+      "title": "Bring each red component back to a ground-floor metal-detector trap.",
+      "locationIds": [
+        "area-war"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-parts"
+    },
+    {
+      "id": "guide-five-song",
+      "title": "Use the Quick Revive, power and Panic Room red phones.",
+      "locationIds": [
+        "area-offices",
+        "area-war",
+        "area-labs",
+        "area-panic"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. A floor connection diagram. Ordinary red teleporters have variable destinations and are deliberately not drawn as guaranteed return routes.",
+      "guideAnchor": "guide-step-five-song"
+    }
+  ],
+  "quickLinks": {
+    "five-power": "guide-five-power",
+    "five-loadout": "guide-five-loadout",
+    "five-defcon": "guide-five-defcon",
+    "five-upgrade": "guide-five-upgrade",
+    "five-bonfire": "guide-five-bonfire",
+    "five-parts": "guide-five-parts",
+    "five-song": "guide-five-song"
+  }
+}

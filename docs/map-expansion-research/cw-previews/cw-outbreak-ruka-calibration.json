@@ -1,0 +1,100 @@
+[
+  {
+    "number": 1,
+    "id": "dc-7246714a67",
+    "label": "Arsenal",
+    "x": 0.45817691,
+    "y": 0.32197102
+  },
+  {
+    "number": 2,
+    "id": "dc-534b633777",
+    "label": "Pack-a-Punch",
+    "x": 0.21875927,
+    "y": 0.58552537
+  },
+  {
+    "number": 3,
+    "id": "dc-6c79726f67",
+    "label": "Der Wunderfizz",
+    "x": 0.50341797,
+    "y": 0.42547607
+  },
+  {
+    "number": 4,
+    "id": "dc-6b5849584b",
+    "label": "Ammo Crate",
+    "x": 0.80784616,
+    "y": 0.49730828
+  },
+  {
+    "number": 5,
+    "id": "dc-4968705843",
+    "label": "Ammo Crate",
+    "x": 0.50851527,
+    "y": 0.22701789
+  },
+  {
+    "number": 6,
+    "id": "dc-6334716578",
+    "label": "Jump Pad",
+    "x": 0.54897673,
+    "y": 0.81436188
+  },
+  {
+    "number": 7,
+    "id": "dc-6646534a73",
+    "label": "Trial Computer",
+    "x": 0.33552676,
+    "y": 0.67438215
+  },
+  {
+    "number": 8,
+    "id": "dc-715266636c",
+    "label": "Fishing",
+    "x": 0.44238281,
+    "y": 0.4294715
+  },
+  {
+    "number": 9,
+    "id": "dc-5669514b42",
+    "label": "Wall Buy wall buy",
+    "x": 0.42940336,
+    "y": 0.35386734
+  },
+  {
+    "number": 10,
+    "id": "dc-4e585a4371",
+    "label": "Stone Monkey",
+    "x": 0.67382813,
+    "y": 0.38943289
+  },
+  {
+    "number": 11,
+    "id": "dc-4942556431",
+    "label": "Maxis Radio Amplifier",
+    "x": 0.17472852,
+    "y": 0.61981739
+  },
+  {
+    "number": 12,
+    "id": "dc-7669307379",
+    "label": "Demented Echo",
+    "x": 0.17551153,
+    "y": 0.61269233
+  },
+  {
+    "number": 13,
+    "id": "dc-546e545748",
+    "label": "Unknown Signal Radio",
+    "x": 0.23396634,
+    "y": 0.46604592
+  },
+  {
+    "number": 14,
+    "id": "dc-55646a6557",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.48430955,
+    "y": 0.54906034
+  }
+]

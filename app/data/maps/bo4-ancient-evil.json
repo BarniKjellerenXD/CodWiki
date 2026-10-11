@@ -1,0 +1,667 @@
+{
+  "id": "bo4-ancient-evil",
+  "name": "Ancient Evil",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-ancient-evil",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/ancient-evil/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO4/ancient_evil/ancient_evil_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/ancient-evil/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo4-ancient-evil/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic, not to scale. Lines show regional routes with intermediate rooms omitted. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-apollo",
+      "label": "Temple of Apollo",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Main city",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Oracle clue → pictured purple-glowing container → melee → hand → chosen shrine.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-3"
+    },
+    {
+      "id": "area-amphitheater",
+      "label": "Amphitheater",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Amphitheater artifact → survive → collect bridle → kill Gegenees and take shield body.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-market",
+      "label": "Marketplace / Attalids",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Main city",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "area-stoa",
+      "label": "Stoa / Treasuries",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Main city",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Amphitheater artifact → survive → collect bridle → kill Gegenees and take shield body.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-1"
+    },
+    {
+      "id": "area-spartan",
+      "label": "Spartan Monument",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Pegasus departure",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "area-riverpass",
+      "label": "River Pass / Upper Road",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "area-sorrow",
+      "label": "River of Sorrow",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Dark Side",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "area-cliffs",
+      "label": "Python Pass / Cliff Ruins",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Dark Side",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "area-center",
+      "label": "Center of the World",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Dark Side",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins. Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "artifact",
+      "label": "Sentinel Artifact",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.288,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "availability": "conditional",
+      "description": "Open the Amphitheater and interact with the Sentinel Artifact. Headshot the skeletons so they stay dead, then survive until Pegasus finishes the lockdown. Find the Golden Bridle on its pedestal at either Intersection of Treasuries, between the red crystal and cart, or Stoa of the Athenians beside the descending stairs. Kill the Gegenees it summons and collect the shield body. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-1"
+    },
+    {
+      "id": "shield",
+      "label": "Apollo’s Will workbench",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.288,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "availability": "conditional",
+      "description": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "bridle",
+      "label": "Golden Bridle candidates",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.558,
+      "category": "quest",
+      "typeId": "quest-item",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "availability": "conditional",
+      "description": "Open the Amphitheater and interact with the Sentinel Artifact. Headshot the skeletons so they stay dead, then survive until Pegasus finishes the lockdown. Find the Golden Bridle on its pedestal at either Intersection of Treasuries, between the red crystal and cart, or Stoa of the Athenians beside the descending stairs. Kill the Gegenees it summons and collect the shield body. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-1"
+    },
+    {
+      "id": "pegasus",
+      "label": "Pegasus departure circle",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.558,
+      "category": "travel",
+      "typeId": "fast-travel",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Pegasus departure",
+      "availability": "conditional",
+      "description": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "eagles",
+      "label": "Two eagle cage regions",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.8380000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Dark Side",
+      "availability": "conditional",
+      "description": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.8380000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Dark Side",
+      "availability": "conditional",
+      "description": "Collect Apollo’s Will’s handle and spear, then build the shield at the Marketplace bench beside the Saug wallbuy. Ride Pegasus from the blue circle at Spartan Monument to River of Sorrow. Open both eagle cages with your Specialist: shoot down the hanging Python Pass cage first; the other is on the ground in Cliff Ruins by the Koshka. Go to Center of the World and survive until the eagles reveal Pack-a-Punch. Handle group, River Pass / Upper Road bridge: lower bridge support, rock near the upper bridge, or rock in the river underneath. Spear group: Stoa of the Athenians behind the Mozu wall; Intersection of Treasuries opposite Mozu; or statue base across from Auger DMR. The shield body comes from a Gegenees. Use shield spear throws at its head when later Gegenees need to be killed. Fast-travel portals open after Pack-a-Punch. Collect the three Pegasus Strike parts during this first Dark Side visit to save a later search. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-setup-2"
+    },
+    {
+      "id": "flame",
+      "label": "Eternal Flame / tribute bowls",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.288,
+      "category": "quest",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Main city",
+      "availability": "conditional",
+      "description": "Start tribute challenges at the bowls in Temple of Apollo or Cliff Ruins. Keep completing tasks to raise your personal reward rarity, then claim rewards at the Temple pillars. The Eternal Flame needs nine tribute points per player in the match: Common = 0.5, Rare = 1, Legendary = 4, Epic = 6. Check that the Temple flame turns blue before continuing. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-flame-1"
+    },
+    {
+      "id": "ballista",
+      "label": "Ballista / symbol door",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.8380000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Dark Side",
+      "availability": "conditional",
+      "description": "At River of Sorrow, find the symbol door beside the Spitfire wallbuy. Use a bullet weapon to shoot the six panels in the numbered order in the image. Reading rows from top and columns from left, the positions are R3 C2 → R1 C2 → R3 C5 → R4 C4 → R2 C1 → R2 C4. A wrong shot clears the display; restart from the first panel. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-ballista-door"
+    },
+    {
+      "id": "boss-portal",
+      "label": "Boss portal entrance",
+      "layerId": "overview",
+      "x": 0.877,
+      "y": 0.8380000000000001,
+      "category": "travel",
+      "typeId": "portal",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Dark Side",
+      "availability": "conditional",
+      "description": "The shot opens the boss portal behind Pack-a-Punch at Center of the World. Gather the team, refill weapons and shield, bring a charged Specialist and your preferred crowd-control hand, then interact together. The portal begins the final encounter. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ancient-evil#guide-step-ballista-ready"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Amphitheater artifact → survive → collect bridle → kill Gegenees and take shield body.",
+      "kind": "area",
+      "locationIds": [
+        "artifact",
+        "bridle",
+        "area-amphitheater",
+        "area-stoa"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Build Apollo’s Will; ride Pegasus; Specialist-open both cages; survive at Pack-a-Punch.",
+      "kind": "area",
+      "locationIds": [
+        "shield",
+        "pegasus",
+        "eagles",
+        "pap",
+        "area-market",
+        "area-stoa",
+        "area-spartan",
+        "area-riverpass",
+        "area-sorrow",
+        "area-cliffs",
+        "area-center"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Oracle clue → pictured purple-glowing container → melee → hand → chosen shrine.",
+      "kind": "area",
+      "locationIds": [
+        "area-apollo"
+      ],
+      "guideAnchor": "guide-step-setup-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-flame-1",
+      "title": "Claim enough tribute rewards for 9 points per player; confirm the blue Eternal Flame.",
+      "kind": "area",
+      "locationIds": [
+        "flame",
+        "area-apollo",
+        "area-cliffs"
+      ],
+      "guideAnchor": "guide-step-flame-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-flame-oil",
+      "title": "Burning shield spear → ignite all three oil patches.",
+      "kind": "area",
+      "locationIds": [
+        "flame",
+        "area-apollo",
+        "area-stoa",
+        "area-spartan",
+        "area-riverpass"
+      ],
+      "guideAnchor": "guide-step-flame-oil",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-flame-2",
+      "title": "Stand in Charon’s blood pool at Zeus; single-shot the glowing-eyed statue, four times.",
+      "kind": "area",
+      "locationIds": [
+        "area-spartan"
+      ],
+      "guideAnchor": "guide-step-flame-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-flame-gears",
+      "title": "Expose three cog sets → spear at contact → lock Stoa statues facing the crystal.",
+      "kind": "area",
+      "locationIds": [
+        "area-stoa"
+      ],
+      "guideAnchor": "guide-step-flame-gears",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-roots-gaia",
+      "title": "Gaia: one root → one shot through the pair → one shot through the group of three.",
+      "kind": "area",
+      "locationIds": [
+        "area-market"
+      ],
+      "guideAnchor": "guide-step-roots-gaia",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-roots-ankh",
+      "title": "Gegenees shield blast frees Ankh → kill root Gegenees for pole → install pole in sundial.",
+      "kind": "area",
+      "locationIds": [
+        "area-market",
+        "area-stoa"
+      ],
+      "guideAnchor": "guide-step-roots-ankh",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-flame-3",
+      "title": "Give Ra the Ankh and Redeemed Hemera; protect beam; return the revealed scepter.",
+      "kind": "area",
+      "locationIds": [
+        "area-apollo",
+        "area-stoa"
+      ],
+      "guideAnchor": "guide-step-flame-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-theater-1",
+      "title": "Electric Catalyst on sundial → stop three blue marks under the light line.",
+      "kind": "area",
+      "locationIds": [
+        "area-market"
+      ],
+      "guideAnchor": "guide-step-theater-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-theater-2",
+      "title": "Own-color circle; stands = normal shot; floor = charged shot; grayscale = return home.",
+      "kind": "area",
+      "locationIds": [
+        "area-amphitheater"
+      ],
+      "guideAnchor": "guide-step-theater-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ballista-door",
+      "title": "Shoot the six numbered door panels in order; restart if the lights clear.",
+      "kind": "area",
+      "locationIds": [
+        "ballista",
+        "area-sorrow"
+      ],
+      "guideAnchor": "guide-step-ballista-door",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-boss-1",
+      "title": "Pegasus Strike at blue mark → Ouranos turns ballista → burning spear through venom → melee ballista.",
+      "kind": "area",
+      "locationIds": [
+        "ballista",
+        "area-apollo",
+        "area-sorrow",
+        "area-cliffs"
+      ],
+      "guideAnchor": "guide-step-boss-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ballista-ready",
+      "title": "Resupply and charge Specialist before entering the portal behind Pack-a-Punch.",
+      "kind": "area",
+      "locationIds": [
+        "boss-portal",
+        "area-center"
+      ],
+      "guideAnchor": "guide-step-ballista-ready",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-hands-charon",
+      "title": "Charon shrine → river kills → drink → three real Obols → portal trial.",
+      "kind": "area",
+      "locationIds": [
+        "area-sorrow",
+        "area-cliffs",
+        "area-center"
+      ],
+      "guideAnchor": "guide-step-hands-charon",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-hands-gaia",
+      "title": "Gaia shrine → three plants and seedlings → portal trial.",
+      "kind": "area",
+      "locationIds": [
+        "area-stoa",
+        "area-spartan"
+      ],
+      "guideAnchor": "guide-step-hands-gaia",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-hands-ouranos",
+      "title": "Ouranos shrine → fling zombie into each arrow → keep feather airborne → portal trial.",
+      "kind": "area",
+      "locationIds": [
+        "area-cliffs",
+        "area-center"
+      ],
+      "guideAnchor": "guide-step-hands-ouranos",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-pegasus-parts",
+      "title": "Anvil + hammer + tongs → Cliff Ruins forge.",
+      "kind": "area",
+      "locationIds": [
+        "area-sorrow",
+        "area-cliffs"
+      ],
+      "guideAnchor": "guide-step-pegasus-parts",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-exalted-fire",
+      "title": "Light the outside gas bowl; charge all four shrine circles.",
+      "kind": "area",
+      "locationIds": [
+        "area-apollo"
+      ],
+      "guideAnchor": "guide-step-exalted-fire",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ancient-coins",
+      "title": "Shoot the four coins in Marketplace, Spartan Monument, River of Sorrow and Cliff Ruins.",
+      "kind": "area",
+      "locationIds": [
+        "area-market",
+        "area-spartan",
+        "area-sorrow",
+        "area-cliffs"
+      ],
+      "guideAnchor": "guide-step-ancient-coins",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "flame-1": "guide-flame-1",
+    "flame-oil": "guide-flame-oil",
+    "flame-2": "guide-flame-2",
+    "flame-gears": "guide-flame-gears",
+    "roots-gaia": "guide-roots-gaia",
+    "roots-ankh": "guide-roots-ankh",
+    "flame-3": "guide-flame-3",
+    "theater-1": "guide-theater-1",
+    "theater-2": "guide-theater-2",
+    "ballista-door": "guide-ballista-door",
+    "boss-1": "guide-boss-1",
+    "ballista-ready": "guide-ballista-ready",
+    "hands-charon": "guide-hands-charon",
+    "hands-gaia": "guide-hands-gaia",
+    "hands-ouranos": "guide-hands-ouranos",
+    "pegasus-parts": "guide-pegasus-parts",
+    "exalted-fire": "guide-exalted-fire",
+    "ancient-coins": "guide-ancient-coins"
+  }
+}

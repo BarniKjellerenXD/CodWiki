@@ -1,0 +1,93 @@
+[
+  {
+    "number": 1,
+    "id": "dc-495746564b",
+    "label": "Pack-a-Punch",
+    "x": 0.70019531,
+    "y": 0.65774466
+  },
+  {
+    "number": 2,
+    "id": "dc-6262704f42",
+    "label": "Arsenal",
+    "x": 0.72900391,
+    "y": 0.51913709
+  },
+  {
+    "number": 3,
+    "id": "dc-4c58785451",
+    "label": "Power Switch",
+    "x": 0.77954102,
+    "y": 0.75368845
+  },
+  {
+    "number": 4,
+    "id": "dc-617a666248",
+    "label": "Workbench",
+    "x": 0.68552401,
+    "y": 0.64490582
+  },
+  {
+    "number": 5,
+    "id": "dc-564a53504e",
+    "label": "Ammo Crate",
+    "x": 0.62451172,
+    "y": 0.53621901
+  },
+  {
+    "number": 6,
+    "id": "dc-74624b7037",
+    "label": "Deadshot Daiquiri",
+    "x": 0.44506836,
+    "y": 0.61721169
+  },
+  {
+    "number": 7,
+    "id": "dc-4352517259",
+    "label": "LW3 - Tundra wall buy",
+    "x": 0.80664063,
+    "y": 0.80569686
+  },
+  {
+    "number": 8,
+    "id": "dc-36576e5476",
+    "label": "Pack-a-Punch part room",
+    "x": 0.34408752,
+    "y": 0.59712943
+  },
+  {
+    "number": 9,
+    "id": "dc-454b635f4c",
+    "label": "D.I.E Remote",
+    "x": 0.3892835,
+    "y": 0.67116837
+  },
+  {
+    "number": 10,
+    "id": "dc-4a467a345a",
+    "label": "Vogel's Computer",
+    "x": 0.63754133,
+    "y": 0.33750008
+  },
+  {
+    "number": 11,
+    "id": "dc-7348706f39",
+    "label": "Dark Aether Portal",
+    "x": 0.58528002,
+    "y": 0.3909591
+  },
+  {
+    "number": 12,
+    "id": "dc-414a493874",
+    "label": "Cassette Tape",
+    "x": 0.64333273,
+    "y": 0.70757603
+  },
+  {
+    "number": 13,
+    "id": "dc-50786c734d",
+    "label": "Coffin Dance",
+    "x": 0.70045488,
+    "y": 0.85135385
+  }
+]

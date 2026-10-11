@@ -1,0 +1,93 @@
+[
+  {
+    "number": 1,
+    "id": "dc-5f78757176",
+    "label": "Arsenal",
+    "x": 0.68287044,
+    "y": 0.66060755
+  },
+  {
+    "number": 2,
+    "id": "dc-5839514171",
+    "label": "Pack-a-Punch",
+    "x": 0.616918,
+    "y": 0.66440128
+  },
+  {
+    "number": 3,
+    "id": "dc-6c6278777a",
+    "label": "Der Wunderfizz",
+    "x": 0.57560771,
+    "y": 0.50902556
+  },
+  {
+    "number": 4,
+    "id": "dc-6a4d795949",
+    "label": "Aether Rift",
+    "x": 0.25195313,
+    "y": 0.67679998
+  },
+  {
+    "number": 5,
+    "id": "dc-3932303943",
+    "label": "Jump Pad",
+    "x": 0.81363868,
+    "y": 0.64178394
+  },
+  {
+    "number": 6,
+    "id": "dc-516b754748",
+    "label": "Ammo Crate",
+    "x": 0.57301498,
+    "y": 0.51446011
+  },
+  {
+    "number": 7,
+    "id": "dc-737365776c",
+    "label": "Ammo Crate",
+    "x": 0.52921025,
+    "y": 0.77538661
+  },
+  {
+    "number": 8,
+    "id": "dc-496c714153",
+    "label": "Mystery Box Location",
+    "x": 0.56466685,
+    "y": 0.68253981
+  },
+  {
+    "number": 9,
+    "id": "dc-4e55656746",
+    "label": "Wall Buy wall buy",
+    "x": 0.54397466,
+    "y": 0.50135656
+  },
+  {
+    "number": 10,
+    "id": "dc-516b51686c",
+    "label": "Stone Monkey",
+    "x": 0.29492188,
+    "y": 0.64945914
+  },
+  {
+    "number": 11,
+    "id": "dc-694d487772",
+    "label": "Projector",
+    "x": 0.67895508,
+    "y": 0.65428294
+  },
+  {
+    "number": 12,
+    "id": "dc-556576646d",
+    "label": "Aetherial Orb",
+    "x": 0.6822744,
+    "y": 0.34638721
+  },
+  {
+    "number": 13,
+    "id": "dc-7962737046",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.66198095,
+    "y": 0.67881819
+  }
+]

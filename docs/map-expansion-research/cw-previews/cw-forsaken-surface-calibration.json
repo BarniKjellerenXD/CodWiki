@@ -1,0 +1,128 @@
+[
+  {
+    "number": 1,
+    "id": "dc-36754c4b4f",
+    "label": "Arsenal",
+    "x": 0.22558594,
+    "y": 0.49668817
+  },
+  {
+    "number": 2,
+    "id": "dc-5f53386553",
+    "label": "Arsenal",
+    "x": 0.85229492,
+    "y": 0.4621582
+  },
+  {
+    "number": 3,
+    "id": "dc-7846427059",
+    "label": "Arsenal",
+    "x": 0.46557617,
+    "y": 0.78103713
+  },
+  {
+    "number": 4,
+    "id": "dc-6a544c6b79",
+    "label": "Arsenal",
+    "x": 0.48291016,
+    "y": 0.21734075
+  },
+  {
+    "number": 5,
+    "id": "dc-7365463144",
+    "label": "Pack-a-Punch",
+    "x": 0.59936523,
+    "y": 0.4629176
+  },
+  {
+    "number": 6,
+    "id": "dc-4742735533",
+    "label": "Pack-a-Punch",
+    "x": 0.88525391,
+    "y": 0.48278809
+  },
+  {
+    "number": 7,
+    "id": "dc-6c5964697a",
+    "label": "Power Switch",
+    "x": 0.59124473,
+    "y": 0.50555197
+  },
+  {
+    "number": 8,
+    "id": "dc-43706f6236",
+    "label": "Der Wunderfizz",
+    "x": 0.8848877,
+    "y": 0.46728516
+  },
+  {
+    "number": 9,
+    "id": "dc-75686b3563",
+    "label": "Teleporter",
+    "x": 0.16162109,
+    "y": 0.38978168
+  },
+  {
+    "number": 10,
+    "id": "dc-6c4146516e",
+    "label": "Ammo Crate",
+    "x": 0.16909405,
+    "y": 0.82448096
+  },
+  {
+    "number": 11,
+    "id": "dc-6571796750",
+    "label": "Suspended Hind",
+    "x": 0.21142578,
+    "y": 0.7341643
+  },
+  {
+    "number": 12,
+    "id": "dc-614a54724d",
+    "label": "Zipline",
+    "x": 0.55224609,
+    "y": 0.52294922
+  },
+  {
+    "number": 13,
+    "id": "dc-76754c5842",
+    "label": "Exfill Radio",
+    "x": 0.25219727,
+    "y": 0.86916668
+  },
+  {
+    "number": 14,
+    "id": "dc-4d4354495a",
+    "label": "Speed Cola",
+    "x": 0.34790039,
+    "y": 0.84353608
+  },
+  {
+    "number": 15,
+    "id": "dc-6d4f545762",
+    "label": "Milano 821 wall buy",
+    "x": 0.3104248,
+    "y": 0.6975237
+  },
+  {
+    "number": 16,
+    "id": "dc-564d70624d",
+    "label": "Activision Grand Prix",
+    "x": 0.15142533,
+    "y": 0.79440033
+  },
+  {
+    "number": 17,
+    "id": "dc-4d55657853",
+    "label": "Large Dark Aether Crystal #3",
+    "x": 0.37318407,
+    "y": 0.31519584
+  },
+  {
+    "number": 18,
+    "id": "dc-6a32315151",
+    "label": "Arcade Token Dispenser",
+    "x": 0.19854736,
+    "y": 0.82507324
+  }
+]

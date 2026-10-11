@@ -73,7 +73,9 @@
       "overview": true,
       "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "floor": "Highest mall roof"
+      "floor": "Highest mall roof",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "contracts-m2927",
@@ -87,7 +89,9 @@
       "overview": true,
       "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "floor": "Ground / starter reference"
+      "floor": "Ground / starter reference",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "contracts-m2928",
@@ -101,7 +105,9 @@
       "overview": true,
       "description": "Take the named Peeks contract, then follow its live objective markers. Contract starter positions do not map every device or moving HVT.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "floor": "Ground / starter reference"
+      "floor": "Ground / starter reference",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "exfil-m2924",
@@ -115,7 +121,9 @@
       "overview": true,
       "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "exfil-m2926",
@@ -129,7 +137,9 @@
       "overview": true,
       "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "exfil-m2929",
@@ -143,7 +153,9 @@
       "overview": true,
       "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "exfil-m2949",
@@ -157,7 +169,9 @@
       "overview": true,
       "description": "Locate a reachable red exit and use its actual prompt before the visit timer expires. The source places the northeast reference around the G3/G4 boundary.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "perforated-target-m2937",
@@ -171,7 +185,9 @@
       "overview": true,
       "description": "Countermeasures story only: activate the obelisk and make critical kills inside its ring for the purple Target.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Countermeasures story objective"
+      "state": "Countermeasures story objective",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "pristine-mirror-m2938",
@@ -185,7 +201,9 @@
       "overview": true,
       "description": "Countermeasures story only: read the elemental symbols, take the corresponding mod and make the required kills for the purple Mirror.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Countermeasures story objective"
+      "state": "Countermeasures story objective",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "tattered-mma-gloves-m2939",
@@ -199,7 +217,9 @@
       "overview": true,
       "description": "Countermeasures story only: use melee kills within the activated obelisk ring for the purple Gloves.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Countermeasures story objective"
+      "state": "Countermeasures story objective",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "stadium-music",
@@ -213,7 +233,9 @@
       "areaRadius": 0.06,
       "overview": true,
       "description": "Search the southern opening, field east of centre, and northern announcer booth. The guide photographs describe the individual stones; this is the stadium area.",
-      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-2"
+      "source": "https://codzmwiki.com/guides/mw3-dark-aether-season-2",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "ammo-depot-m2919",
@@ -227,7 +249,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2920",
@@ -241,7 +265,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2921",
@@ -255,7 +281,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2922",
@@ -269,7 +297,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2933",
@@ -283,7 +313,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2934",
@@ -297,7 +329,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2940",
@@ -311,7 +345,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2941",
@@ -325,7 +361,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2945",
@@ -339,7 +377,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2931",
@@ -353,7 +393,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2946",
@@ -367,7 +409,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "pack-a-punch-green-m2942",
@@ -381,7 +425,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2947",
@@ -395,7 +441,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2948",
@@ -409,7 +457,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "der-wu-m2932",
@@ -423,7 +473,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "dog-house-m2930",
@@ -437,7 +489,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dead-turret-m2951",
@@ -451,7 +505,9 @@
       "overview": false,
       "description": "A possible support turret. Bring a circuit and verify the actual turret before planning a defence around it.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Possible support location"
+      "state": "Possible support location",
+      "typeId": "turret",
+      "availability": "candidate"
     },
     {
       "id": "spawn-locations-m2923",
@@ -465,7 +521,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/dark-aether-s2r/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "entry-point",
+      "availability": "conditional"
     }
   ],
   "targets": [

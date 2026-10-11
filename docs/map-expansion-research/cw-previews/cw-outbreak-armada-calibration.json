@@ -1,0 +1,93 @@
+[
+  {
+    "number": 1,
+    "id": "dc-7770695659",
+    "label": "Arsenal",
+    "x": 0.56738281,
+    "y": 0.50910457
+  },
+  {
+    "number": 2,
+    "id": "dc-526c487539",
+    "label": "Pack-a-Punch",
+    "x": 0.5098877,
+    "y": 0.62824854
+  },
+  {
+    "number": 3,
+    "id": "dc-65476f5550",
+    "label": "Der Wunderfizz",
+    "x": 0.55401611,
+    "y": 0.32063999
+  },
+  {
+    "number": 4,
+    "id": "dc-694332764a",
+    "label": "Requiem Radio",
+    "x": 0.67930874,
+    "y": 0.38580437
+  },
+  {
+    "number": 5,
+    "id": "dc-3949537335",
+    "label": "Fishing",
+    "x": 0.52807617,
+    "y": 0.46389177
+  },
+  {
+    "number": 6,
+    "id": "dc-4942675176",
+    "label": "Ammo Crate",
+    "x": 0.16772461,
+    "y": 0.62209461
+  },
+  {
+    "number": 7,
+    "id": "dc-434b733167",
+    "label": "Mystery Box Location",
+    "x": 0.54785156,
+    "y": 0.36040531
+  },
+  {
+    "number": 8,
+    "id": "dc-4d706c5976",
+    "label": "Wall Buy wall buy",
+    "x": 0.53234863,
+    "y": 0.53522343
+  },
+  {
+    "number": 9,
+    "id": "dc-3344704447",
+    "label": "Maxis Radio Amplifier",
+    "x": 0.35144821,
+    "y": 0.63426252
+  },
+  {
+    "number": 10,
+    "id": "dc-716b397568",
+    "label": "Stone Monkey",
+    "x": 0.47744589,
+    "y": 0.55295626
+  },
+  {
+    "number": 11,
+    "id": "dc-6c39434375",
+    "label": "Demented Echo",
+    "x": 0.68524905,
+    "y": 0.41233273
+  },
+  {
+    "number": 12,
+    "id": "dc-5939474e73",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.51766904,
+    "y": 0.53690451
+  },
+  {
+    "number": 13,
+    "id": "dc-374535674c",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.80138048,
+    "y": 0.55428328
+  }
+]

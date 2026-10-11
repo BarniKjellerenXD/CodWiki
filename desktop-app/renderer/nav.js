@@ -2650,6 +2650,18 @@ const NAV = [
     "icon": "↗"
   },
   {
+    "id": "mw3-rune-portals",
+    "map": "mw3-urzikstan",
+    "game": "mw3",
+    "gameName": "Modern Warfare III (2023)",
+    "kind": "tool",
+    "section": "Urzikstan",
+    "label": "Rune portal finder",
+    "url": "/tools/mw3-rune-portals",
+    "accel": null,
+    "icon": "↗"
+  },
+  {
     "id": "mw3-dark-aether-season-1",
     "map": "mw3-dark-aether-season-1",
     "game": "mw3",

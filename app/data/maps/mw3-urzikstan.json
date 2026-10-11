@@ -62,7 +62,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Popov Power. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2131",
@@ -75,7 +77,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Hadiqa Farms. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2132",
@@ -88,7 +92,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Shahin Manor. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2133",
@@ -101,7 +107,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Zaravan Suburbs. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2134",
@@ -114,7 +122,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Low Town. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2135",
@@ -127,7 +137,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Old Town. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2136",
@@ -140,7 +152,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Urzikstan Cargo. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2137",
@@ -153,7 +167,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Orlov Military Base. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2138",
@@ -166,7 +182,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Levin Resort. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2139",
@@ -179,7 +197,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Seaport District. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "poi-m2140",
@@ -192,7 +212,9 @@
       "precision": "area",
       "overview": true,
       "description": "District reference for Zaravan City. Use its roads and buildings to orient yourself; this marker identifies an area.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "free-speed-cola",
@@ -206,7 +228,9 @@
       "overview": true,
       "description": "Drive a vehicle off the stone eagle ramp; collect the challenge reward if it is still available.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-juggernog",
@@ -220,7 +244,9 @@
       "overview": true,
       "description": "Throw a Molotov into the campfire by Mister Peeks, then collect the reward.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-death-perception",
@@ -234,7 +260,9 @@
       "overview": true,
       "description": "Parachute through all three sculpture rings in one flight. The pin marks the challenge area, not your flight path.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-deadshot",
@@ -248,7 +276,9 @@
       "overview": true,
       "description": "Throw a grenade through the high church opening shown in the guide photograph.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-tombstone",
@@ -262,7 +292,9 @@
       "overview": true,
       "description": "Use the crane sightline, aim a scoped weapon at distant Mister Peeks and hold your breath for the cue.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-staminup",
@@ -276,7 +308,9 @@
       "overview": true,
       "description": "Sprint from Mister Peeks at the bottom of the stairwell to the top.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-quick-revive",
@@ -290,7 +324,9 @@
       "overview": true,
       "description": "Start under the highway sign, wait for the laugh and race north to the next sign.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "free-phd",
@@ -304,7 +340,9 @@
       "overview": true,
       "description": "Dolphin-dive from the manor roof into the swimming pool.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Independent challenge · may already be claimed"
+      "state": "Independent challenge · may already be claimed",
+      "typeId": "perk-reward",
+      "availability": "conditional"
     },
     {
       "id": "portal-season-1",
@@ -317,7 +355,9 @@
       "precision": "point",
       "overview": true,
       "description": "Island pedestal ritual near Bad Signal. Bring the four correct gold relics for a first unlock; use the proper Sigil side after permanent access.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portal-season-2",
@@ -331,7 +371,9 @@
       "areaRadius": 0.03,
       "overview": true,
       "description": "Search the hill/tower above Nahr Bathhouse around F4. Match the Drum, Mirror, Gloves and Target at the gold-relic pedestals; the guide has the full unlock.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portal-season-3",
@@ -345,7 +387,9 @@
       "areaRadius": 0.032,
       "overview": true,
       "description": "Search Tier 3’s northwest island circle around E3/E4. The Giraffe, Laptop, Drawing and Journal ritual is separate from ordinary triangle rewards. Use the island landmark to resolve the grid boundary.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portal-season-5",
@@ -359,7 +403,9 @@
       "areaRadius": 0.03,
       "overview": true,
       "description": "Search the F5 Opal Palace fountain tornado. Use gold Mr. Peeks and the three gold Echo relics; the Ascension story portal is at the nearby northeast gazebo.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "loc-image-m2574",
@@ -373,7 +419,9 @@
       "overview": true,
       "description": "Photograph this deployment’s four pinned images. Compare them with the candidate USB landmarks; their selection changes each match.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Current clue photographs required"
+      "state": "Current clue photographs required",
+      "typeId": "clue",
+      "availability": "conditional"
     },
     {
       "id": "loc-image-m2583",
@@ -387,7 +435,9 @@
       "overview": true,
       "description": "Photograph this deployment’s four pinned images. Compare them with the candidate USB landmarks; their selection changes each match.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Current clue photographs required"
+      "state": "Current clue photographs required",
+      "typeId": "clue",
+      "availability": "conditional"
     },
     {
       "id": "loc-image-m2623",
@@ -401,7 +451,9 @@
       "overview": true,
       "description": "Photograph this deployment’s four pinned images. Compare them with the candidate USB landmarks; their selection changes each match.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Current clue photographs required"
+      "state": "Current clue photographs required",
+      "typeId": "clue",
+      "availability": "conditional"
     },
     {
       "id": "loc-image-m2637",
@@ -415,7 +467,9 @@
       "overview": true,
       "description": "Photograph this deployment’s four pinned images. Compare them with the candidate USB landmarks; their selection changes each match.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Current clue photographs required"
+      "state": "Current clue photographs required",
+      "typeId": "clue",
+      "availability": "conditional"
     },
     {
       "id": "usb-key-m2575",
@@ -429,7 +483,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2594",
@@ -443,7 +499,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2595",
@@ -457,7 +515,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2596",
@@ -471,7 +531,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2597",
@@ -485,7 +547,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2598",
@@ -499,7 +563,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2599",
@@ -513,7 +579,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2603",
@@ -527,7 +595,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2604",
@@ -541,7 +611,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2605",
@@ -555,7 +627,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2606",
@@ -569,7 +643,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "usb-key-m2625",
@@ -583,7 +659,9 @@
       "overview": false,
       "description": "Match this landmark to a current clue photograph before travelling. Only the selected consoles supply the four current drives; Alpha/Bravo/Charlie/Delta are not permanently tied to this pin.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible active console · selection changes each deployment"
+      "state": "Possible active console · selection changes each deployment",
+      "typeId": "quest-mechanism",
+      "availability": "candidate"
     },
     {
       "id": "greylom-m2573",
@@ -597,7 +675,9 @@
       "overview": true,
       "description": "Identify the current arena by two close ammo caches and four seismic refractors. Insert the correct current USBs when the actual storm condition permits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible arena · check paired ammo caches and refractors"
+      "state": "Possible arena · check paired ammo caches and refractors",
+      "typeId": "quest",
+      "availability": "candidate"
     },
     {
       "id": "greylom-m2588",
@@ -611,7 +691,9 @@
       "overview": true,
       "description": "Identify the current arena by two close ammo caches and four seismic refractors. Insert the correct current USBs when the actual storm condition permits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible arena · check paired ammo caches and refractors"
+      "state": "Possible arena · check paired ammo caches and refractors",
+      "typeId": "quest",
+      "availability": "candidate"
     },
     {
       "id": "greylom-m2591",
@@ -625,7 +707,9 @@
       "overview": true,
       "description": "Identify the current arena by two close ammo caches and four seismic refractors. Insert the correct current USBs when the actual storm condition permits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible arena · check paired ammo caches and refractors"
+      "state": "Possible arena · check paired ammo caches and refractors",
+      "typeId": "quest",
+      "availability": "candidate"
     },
     {
       "id": "greylom-m2600",
@@ -639,7 +723,9 @@
       "overview": true,
       "description": "Identify the current arena by two close ammo caches and four seismic refractors. Insert the correct current USBs when the actual storm condition permits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible arena · check paired ammo caches and refractors"
+      "state": "Possible arena · check paired ammo caches and refractors",
+      "typeId": "quest",
+      "availability": "candidate"
     },
     {
       "id": "trans-m2681",
@@ -652,7 +738,9 @@
       "precision": "point",
       "overview": true,
       "description": "Use the stationary shack transmitter to send its signal to the manor.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "trans-m2685",
@@ -665,7 +753,9 @@
       "precision": "point",
       "overview": true,
       "description": "Enter the hotel carefully, clear its traps and Rook, then use the transmitter.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "trans-m2686",
@@ -678,7 +768,9 @@
       "precision": "point",
       "overview": true,
       "description": "Defeat Bishop in the rail tunnel and use the transmitter.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "chess-vault",
@@ -692,7 +784,9 @@
       "overview": true,
       "description": "Descend to the manor basement. Confirm all four transmissions on its chessboard, open the vault and clear the King Mimic.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "floor": "Basement"
+      "floor": "Basement",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3125",
@@ -705,7 +799,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3130",
@@ -718,7 +814,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3135",
@@ -731,7 +829,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3248",
@@ -744,7 +844,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3253",
@@ -757,7 +859,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "free-crystals1-m3260",
@@ -770,7 +874,9 @@
       "precision": "point",
       "overview": true,
       "description": "Shoot the surrounding runes, align the perspective markings and make the required kills. A corresponding relic summoning is a separate interaction from an ordinary triangle reward.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "obelisk-urzi-m3153",
@@ -784,7 +890,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3154",
@@ -798,7 +906,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3155",
@@ -812,7 +922,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3156",
@@ -826,7 +938,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3157",
@@ -840,7 +954,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3158",
@@ -854,7 +970,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3159",
@@ -868,7 +986,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3160",
@@ -882,7 +1002,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3161",
@@ -896,7 +1018,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3162",
@@ -910,7 +1034,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3163",
@@ -924,7 +1050,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3164",
@@ -938,7 +1066,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3165",
@@ -952,7 +1082,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3166",
@@ -966,7 +1098,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3167",
@@ -980,7 +1114,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3168",
@@ -994,7 +1130,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3169",
@@ -1008,7 +1146,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3170",
@@ -1022,7 +1162,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3171",
@@ -1036,7 +1178,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3172",
@@ -1050,7 +1194,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3173",
@@ -1064,7 +1210,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3174",
@@ -1078,7 +1226,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3175",
@@ -1092,7 +1242,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3176",
@@ -1106,7 +1258,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3177",
@@ -1120,7 +1274,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3178",
@@ -1134,7 +1290,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3179",
@@ -1148,7 +1306,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3180",
@@ -1162,7 +1322,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3181",
@@ -1176,7 +1338,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3182",
@@ -1190,7 +1354,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3183",
@@ -1204,7 +1370,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3184",
@@ -1218,7 +1386,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3185",
@@ -1232,7 +1402,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3186",
@@ -1246,7 +1418,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3187",
@@ -1260,7 +1434,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3188",
@@ -1274,7 +1450,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3189",
@@ -1288,7 +1466,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3190",
@@ -1302,7 +1482,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3191",
@@ -1316,7 +1498,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3192",
@@ -1330,7 +1514,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3203",
@@ -1344,7 +1530,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3204",
@@ -1358,7 +1546,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3205",
@@ -1372,7 +1562,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3206",
@@ -1386,7 +1578,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3207",
@@ -1400,7 +1594,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3208",
@@ -1414,7 +1610,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3209",
@@ -1428,7 +1626,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3210",
@@ -1442,7 +1642,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3212",
@@ -1456,7 +1658,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3213",
@@ -1470,7 +1674,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3214",
@@ -1484,7 +1690,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3215",
@@ -1498,7 +1706,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3255",
@@ -1512,7 +1722,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "obelisk-urzi-m3267",
@@ -1526,7 +1738,9 @@
       "overview": false,
       "description": "Check for an active obelisk and read its ammo-mod symbol. Complete three active obelisks using the required mod; another squad may claim the public rift first.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn · not every site is active"
+      "state": "Possible spawn · not every site is active",
+      "typeId": "challenge-starter",
+      "availability": "candidate"
     },
     {
       "id": "portals-entry-m2111",
@@ -1539,7 +1753,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2245",
@@ -1552,7 +1768,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2248",
@@ -1565,7 +1783,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2256",
@@ -1578,7 +1798,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2277",
@@ -1591,7 +1813,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2278",
@@ -1604,7 +1828,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2279",
@@ -1617,7 +1843,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2280",
@@ -1630,7 +1858,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2281",
@@ -1643,7 +1873,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2282",
@@ -1656,7 +1888,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2284",
@@ -1669,7 +1903,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2318",
@@ -1682,7 +1918,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2325",
@@ -1695,7 +1933,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2331",
@@ -1708,7 +1948,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2388",
@@ -1721,7 +1963,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2394",
@@ -1734,7 +1978,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-entry-m2397",
@@ -1747,7 +1993,9 @@
       "precision": "point",
       "overview": false,
       "description": "Find the three-symbol wall, enter the required destination sequence and pay the displayed cost. The guide explains the interaction; this is an entrance reference.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2112",
@@ -1760,7 +2008,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2291",
@@ -1773,7 +2023,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2292",
@@ -1786,7 +2038,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2293",
@@ -1799,7 +2053,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2295",
@@ -1812,7 +2068,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2296",
@@ -1825,7 +2083,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2297",
@@ -1838,7 +2098,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2298",
@@ -1851,7 +2113,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2299",
@@ -1864,7 +2128,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2301",
@@ -1877,7 +2143,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2302",
@@ -1890,7 +2158,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2303",
@@ -1903,7 +2173,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2304",
@@ -1916,7 +2188,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2305",
@@ -1929,7 +2203,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2306",
@@ -1942,7 +2218,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2307",
@@ -1955,7 +2233,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2308",
@@ -1968,7 +2248,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2309",
@@ -1981,7 +2263,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2310",
@@ -1994,7 +2278,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2311",
@@ -2007,7 +2293,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2312",
@@ -2020,7 +2308,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2313",
@@ -2033,7 +2323,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2314",
@@ -2046,7 +2338,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "portals-exit-m2393",
@@ -2059,7 +2353,9 @@
       "precision": "point",
       "overview": false,
       "description": "A published rune-portal destination landmark. Confirm its glyph sequence in the linked reference before using an entrance.",
-      "source": "https://wzhub.gg/map/urzikstan/mwz"
+      "source": "https://wzhub.gg/map/urzikstan/mwz",
+      "typeId": "travel",
+      "availability": "unknown"
     },
     {
       "id": "ammo-depot-m2090",
@@ -2073,7 +2369,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2121",
@@ -2087,7 +2385,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2122",
@@ -2101,7 +2401,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2125",
@@ -2115,7 +2417,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2128",
@@ -2129,7 +2433,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2150",
@@ -2143,7 +2449,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2157",
@@ -2157,7 +2465,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2160",
@@ -2171,7 +2481,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2163",
@@ -2185,7 +2497,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2174",
@@ -2199,7 +2513,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2179",
@@ -2213,7 +2529,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2180",
@@ -2227,7 +2545,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2186",
@@ -2241,7 +2561,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2188",
@@ -2255,7 +2577,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2190",
@@ -2269,7 +2593,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2198",
@@ -2283,7 +2609,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2199",
@@ -2297,7 +2625,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2200",
@@ -2311,7 +2641,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2202",
@@ -2325,7 +2657,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2207",
@@ -2339,7 +2673,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2208",
@@ -2353,7 +2689,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2212",
@@ -2367,7 +2705,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2214",
@@ -2381,7 +2721,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2218",
@@ -2395,7 +2737,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2219",
@@ -2409,7 +2753,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2226",
@@ -2423,7 +2769,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2227",
@@ -2437,7 +2785,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2236",
@@ -2451,7 +2801,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2586",
@@ -2465,7 +2817,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2587",
@@ -2479,7 +2833,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2589",
@@ -2493,7 +2849,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2590",
@@ -2507,7 +2865,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2592",
@@ -2521,7 +2881,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2593",
@@ -2535,7 +2897,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2601",
@@ -2549,7 +2913,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "ammo-depot-m2602",
@@ -2563,7 +2929,9 @@
       "overview": false,
       "description": "Use the cache to replenish ammunition and check its current reuse availability.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2324",
@@ -2577,7 +2945,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2326",
@@ -2591,7 +2961,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2351",
@@ -2605,7 +2977,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2363",
@@ -2619,7 +2993,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2389",
@@ -2633,7 +3009,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2395",
@@ -2647,7 +3025,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2396",
@@ -2661,7 +3041,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2399",
@@ -2675,7 +3057,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2414",
@@ -2689,7 +3073,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2415",
@@ -2703,7 +3089,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2419",
@@ -2717,7 +3105,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2424",
@@ -2731,7 +3121,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2426",
@@ -2745,7 +3137,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2428",
@@ -2759,7 +3153,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2434",
@@ -2773,7 +3169,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2448",
@@ -2787,7 +3185,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2451",
@@ -2801,7 +3201,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2461",
@@ -2815,7 +3217,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2466",
@@ -2829,7 +3233,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2474",
@@ -2843,7 +3249,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2541",
@@ -2857,7 +3265,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2560",
@@ -2871,7 +3281,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2582",
@@ -2885,7 +3297,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2651",
@@ -2899,7 +3313,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2759",
@@ -2913,7 +3329,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "aether-tear-m2760",
@@ -2927,7 +3345,9 @@
       "overview": false,
       "description": "Use an available Tear for height and travel. Check the actual portal and landing before jumping.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "portal",
+      "availability": "conditional"
     },
     {
       "id": "pack-a-punch-green-m2093",
@@ -2941,7 +3361,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2094",
@@ -2955,7 +3377,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2095",
@@ -2969,7 +3393,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2097",
@@ -2983,7 +3409,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2098",
@@ -2997,7 +3425,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2099",
@@ -3011,7 +3441,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2100",
@@ -3025,7 +3457,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2101",
@@ -3039,7 +3473,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2102",
@@ -3053,7 +3489,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2104",
@@ -3067,7 +3505,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2117",
@@ -3081,7 +3521,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2118",
@@ -3095,7 +3537,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2127",
@@ -3109,7 +3553,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2129",
@@ -3123,7 +3569,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2141",
@@ -3137,7 +3585,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2142",
@@ -3151,7 +3601,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2154",
@@ -3165,7 +3617,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2155",
@@ -3179,7 +3633,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2167",
@@ -3193,7 +3649,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2203",
@@ -3207,7 +3665,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2211",
@@ -3221,7 +3681,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2217",
@@ -3235,7 +3697,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2243",
@@ -3249,7 +3713,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "pack-a-punch-green-m2244",
@@ -3263,7 +3729,9 @@
       "overview": false,
       "description": "Check the current machine marker. Upgrades and availability can differ between visits.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible machine location"
+      "state": "Possible machine location",
+      "typeId": "pack-a-punch",
+      "availability": "candidate"
     },
     {
       "id": "der-wu-m2565",
@@ -3277,7 +3745,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "der-wu-m2584",
@@ -3291,7 +3761,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "der-wu-m2585",
@@ -3305,7 +3777,9 @@
       "overview": false,
       "description": "Use the machine to buy perks if it is available; check the height and access route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Check availability in this visit"
+      "state": "Check availability in this visit",
+      "typeId": "wunderfizz",
+      "availability": "conditional"
     },
     {
       "id": "dog-house-m2103",
@@ -3319,7 +3793,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2166",
@@ -3333,7 +3809,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2262",
@@ -3347,7 +3825,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2290",
@@ -3361,7 +3841,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2317",
@@ -3375,7 +3857,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2319",
@@ -3389,7 +3873,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2321",
@@ -3403,7 +3889,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2322",
@@ -3417,7 +3905,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2328",
@@ -3431,7 +3921,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2374",
@@ -3445,7 +3937,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2384",
@@ -3459,7 +3953,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2407",
@@ -3473,7 +3969,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2418",
@@ -3487,7 +3985,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2429",
@@ -3501,7 +4001,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2463",
@@ -3515,7 +4017,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2464",
@@ -3529,7 +4033,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2561",
@@ -3543,7 +4049,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2761",
@@ -3557,7 +4065,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "dog-house-m2762",
@@ -3571,7 +4081,9 @@
       "overview": false,
       "description": "A possible doghouse reference. Check whether it is present and available before bringing the required meat.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible spawn / may already be used"
+      "state": "Possible spawn / may already be used",
+      "typeId": "doghouse",
+      "availability": "candidate"
     },
     {
       "id": "spawn-locations-m2084",
@@ -3585,7 +4097,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2171",
@@ -3599,7 +4113,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2181",
@@ -3613,7 +4129,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2215",
@@ -3627,7 +4145,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2240",
@@ -3641,7 +4161,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2249",
@@ -3655,7 +4177,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2264",
@@ -3669,7 +4193,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2265",
@@ -3683,7 +4209,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2275",
@@ -3697,7 +4225,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2276",
@@ -3711,7 +4241,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2285",
@@ -3725,7 +4257,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2315",
@@ -3739,7 +4273,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2327",
@@ -3753,7 +4289,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2352",
@@ -3767,7 +4305,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2353",
@@ -3781,7 +4321,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2354",
@@ -3795,7 +4337,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2355",
@@ -3809,7 +4353,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2356",
@@ -3823,7 +4369,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2357",
@@ -3837,7 +4385,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2358",
@@ -3851,7 +4401,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2359",
@@ -3865,7 +4417,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2360",
@@ -3879,7 +4433,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2361",
@@ -3893,7 +4449,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2362",
@@ -3907,7 +4465,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "spawn-locations-m2518",
@@ -3921,7 +4481,9 @@
       "overview": false,
       "description": "Orient yourself here on arrival, then locate a return exit before taking contracts.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Entry reference"
+      "state": "Entry reference",
+      "typeId": "travel",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2087",
@@ -3935,7 +4497,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2126",
@@ -3949,7 +4513,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2143",
@@ -3963,7 +4529,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2149",
@@ -3977,7 +4545,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2162",
@@ -3991,7 +4561,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2187",
@@ -4005,7 +4577,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2201",
@@ -4019,7 +4593,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2213",
@@ -4033,7 +4609,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2220",
@@ -4047,7 +4625,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2223",
@@ -4061,7 +4641,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2225",
@@ -4075,7 +4657,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2235",
@@ -4089,7 +4673,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "gas-station-m2365",
@@ -4103,7 +4689,9 @@
       "overview": false,
       "description": "Refuel and repair a suitable vehicle at the station if it is usable.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Reference position"
+      "state": "Reference position",
+      "typeId": "equipment",
+      "availability": "conditional"
     },
     {
       "id": "mystery-box-color-m2092",
@@ -4117,7 +4705,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2119",
@@ -4131,7 +4721,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2130",
@@ -4145,7 +4737,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2145",
@@ -4159,7 +4753,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2146",
@@ -4173,7 +4769,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2147",
@@ -4187,7 +4785,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2161",
@@ -4201,7 +4801,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2182",
@@ -4215,7 +4817,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2209",
@@ -4229,7 +4833,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2222",
@@ -4243,7 +4849,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2229",
@@ -4257,7 +4865,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2230",
@@ -4271,7 +4881,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2242",
@@ -4285,7 +4897,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2316",
@@ -4299,7 +4913,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2320",
@@ -4313,7 +4929,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2332",
@@ -4327,7 +4945,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2376",
@@ -4341,7 +4961,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "mystery-box-color-m2377",
@@ -4355,7 +4977,9 @@
       "overview": false,
       "description": "Check the current beam/box marker before travelling; a published location does not guarantee an active box.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible box location"
+      "state": "Possible box location",
+      "typeId": "mystery-box",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2083",
@@ -4369,7 +4993,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2123",
@@ -4383,7 +5009,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2151",
@@ -4397,7 +5025,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2152",
@@ -4411,7 +5041,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2184",
@@ -4425,7 +5057,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2185",
@@ -4439,7 +5073,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2233",
@@ -4453,7 +5089,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2286",
@@ -4467,7 +5105,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2287",
@@ -4481,7 +5121,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2288",
@@ -4495,7 +5137,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2349",
@@ -4509,7 +5153,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2372",
@@ -4523,7 +5169,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2373",
@@ -4537,7 +5185,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-m2421",
@@ -4551,7 +5201,9 @@
       "overview": false,
       "description": "Check the live Tac-Map for the active helicopter site. Call and board a valid extraction before the storm closes your route.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible exfil · check current Tac-Map"
+      "state": "Possible exfil · check current Tac-Map",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2086",
@@ -4565,7 +5217,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2114",
@@ -4579,7 +5233,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2170",
@@ -4593,7 +5249,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2283",
@@ -4607,7 +5265,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2300",
@@ -4621,7 +5281,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "exfil-last-m2553",
@@ -4635,7 +5297,9 @@
       "overview": false,
       "description": "The actual final helicopter and timer are authoritative. This reference is not a prediction of the storm or final pickup.",
       "source": "https://wzhub.gg/map/urzikstan/mwz",
-      "state": "Possible final site · match-dependent"
+      "state": "Possible final site · match-dependent",
+      "typeId": "travel",
+      "availability": "candidate"
     },
     {
       "id": "s2-mirror-upgrade",
@@ -4649,7 +5313,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "Offer the Mirror at the I3 graveyard pedestal and use the matching elemental mod on its marked zombie.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "s2-gloves-upgrade",
@@ -4663,7 +5329,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "At the F8 boxing gym, offer the Gloves, melee the bags left to right and finish the marked zombie.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "s2-target-upgrade",
@@ -4677,7 +5345,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "At H8’s firing range, offer the Target, shoot all eight targets and headshot the marked zombie.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "s5-drum-upgrade",
@@ -4691,7 +5361,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "Search the four-pillar square east of F7 Shorok Opera House. Use the pillar meteor and match the elemental zombies.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "s5-giraffe-upgrade",
@@ -4705,7 +5377,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "Search the wrecked van in the square east of F4 Nahr Bathhouse. Use its meteor and finish the marked enemy chain.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "s5-drum-course",
@@ -4719,7 +5393,9 @@
       "areaRadius": 0.045,
       "overview": false,
       "description": "Search the canal around F4/G4 by Mister Peeks. Follow the actual white arrows on the Blood Burner; this pin does not draw the riding route.",
-      "source": "https://codzmwiki.com/guides/mw3-urzikstan"
+      "source": "https://codzmwiki.com/guides/mw3-urzikstan",
+      "typeId": "quest",
+      "availability": "unknown"
     }
   ],
   "targets": [

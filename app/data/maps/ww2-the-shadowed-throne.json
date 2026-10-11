@@ -1,0 +1,695 @@
+{
+  "id": "ww2-the-shadowed-throne",
+  "name": "The Shadowed Throne",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork."
+  },
+  "sources": [
+    {
+      "name": "CodWiki World War II guide",
+      "url": "/guides/ww2-the-shadowed-throne",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://www.zombiescodex.com/world-war-ii/the-shadowed-throne/",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/WW2/the_shadowed_throne/the_shadowed_throne_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/the-shadowed-throne/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/ww2-the-shadowed-throne/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-street",
+      "label": "Main Street",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.787,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street / pod",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Pinned region + radio code → left/right frequencies.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-radio"
+    },
+    {
+      "id": "area-plaza",
+      "label": "Plaza",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Central square",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Plaza box flare → melee Sizzler → Geistbolt.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-flare"
+    },
+    {
+      "id": "area-apartments",
+      "label": "Apartments",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.767,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Floors + basement",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Find battery → open build gate → remove battery → build Wunderbuss.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-battery"
+    },
+    {
+      "id": "area-cabaret",
+      "label": "Cabaret",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.437,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stage / upper rooms",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Find battery → open build gate → remove battery → build Wunderbuss.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-battery"
+    },
+    {
+      "id": "area-museum",
+      "label": "Museum",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.537,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground + upper floor",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Plaza box flare → melee Sizzler → Geistbolt.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-flare"
+    },
+    {
+      "id": "area-church",
+      "label": "Church",
+      "layerId": "overview",
+      "x": 0.49,
+      "y": 0.247,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Church / map puzzle",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Pinned region + radio code → left/right frequencies.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-radio"
+    },
+    {
+      "id": "area-refuge",
+      "label": "Barbarossa’s Refuge",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hidden courtyard",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Three melee weapons → 20 zombies / 10 Sizzlers / 10 Pests.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-refuge-weapons"
+    },
+    {
+      "id": "area-destroyed",
+      "label": "Destroyed Building / Underbelly",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Elevator / lower passage",
+      "availability": "fixed",
+      "description": "World War II. Named region on an original diagram; spacing and angles are not geographical. Grenade-open both spawn-building panels.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-panels"
+    },
+    {
+      "id": "radio",
+      "label": "Main Street radio",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.765,
+      "category": "radio",
+      "typeId": "radio",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Street / pod",
+      "availability": "conditional",
+      "description": "Read the two-letter/number code above Main Street’s radio. In Church, find the pinned map region and use the adjacent frequency chart—or the tool—to obtain its letter band and model-number frequency. Enter band on the left dial and number frequency on the right. Green light and “Contacted the Russians” confirm success. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-radio"
+    },
+    {
+      "id": "wunderbuss",
+      "label": "Basement Wunderbuss workbench",
+      "layerId": "overview",
+      "x": 0.15,
+      "y": 0.745,
+      "category": "workbench",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Floors + basement",
+      "availability": "conditional",
+      "description": "Find the battery on a broken wallbuy box: Museum left of Armour, Museum right of Faustblitz or Cabaret right of M1928. Fit it into the fenced Apartments-basement generator. Enter, then remove the battery inside; the gate closes. Fit the battery and Geistbolt on the Wunderbuss table and claim the weapon. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-battery"
+    },
+    {
+      "id": "pap",
+      "label": "Elevator Ubersprengen",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.775,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Elevator / lower passage",
+      "availability": "conditional",
+      "description": "Use throwable explosives to blow open two metal panels: left of the Destroyed Building Waffe 28, and behind Underbelly bars right of the Destroyed Building door. S-Mines and Throwing Knife cannot expose these panels. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-panels"
+    },
+    {
+      "id": "projector",
+      "label": "Cabaret clown projector",
+      "layerId": "overview",
+      "x": 0.15,
+      "y": 0.41500000000000004,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Stage / upper rooms",
+      "availability": "conditional",
+      "description": "Take the large woman’s painting in Apartments and fit it in front of Cabaret’s rear projector. Shoot down the reel above the projector, collect it and insert it. Charge the projector with Wunderbuss to reveal a map with one green active district. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-dagger-projector"
+    },
+    {
+      "id": "safe",
+      "label": "Apartments safe",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.745,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Floors + basement",
+      "availability": "conditional",
+      "description": "At the Apartments safe, reset with three full clockwise rotations, counting a rotation each time you pass the first recorded number. Stop clockwise on number 1, counterclockwise on number 2, clockwise on number 3 and counterclockwise on number 4. Hold interact to exit the dial and claim the Dagger after it opens. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-dagger-safe"
+    },
+    {
+      "id": "map",
+      "label": "Church map / clue board",
+      "layerId": "overview",
+      "x": 0.45,
+      "y": 0.22499999999999998,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Church / map puzzle",
+      "availability": "conditional",
+      "description": "Read the two-letter/number code above Main Street’s radio. In Church, find the pinned map region and use the adjacent frequency chart—or the tool—to obtain its letter band and model-number frequency. Enter band on the left dial and number frequency on the right. Green light and “Contacted the Russians” confirm success. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-throne-radio"
+    },
+    {
+      "id": "scales",
+      "label": "Upper Museum scales",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.515,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Ground + upper floor",
+      "availability": "conditional",
+      "description": "Take Cabaret’s magnifying glass beside the hat on the couch left of M1928. Interact with Church’s map and move the glass to the decoded clue’s position, using the numbered reference. Exit the map at the chosen spot; correct placement opens the cabinet with the bowl. Fit the bowl on the Museum upper-floor scale left of Combat Shotgun. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-axe-bowl"
+    },
+    {
+      "id": "statues",
+      "label": "Refuge statue walls",
+      "layerId": "overview",
+      "x": 0.75,
+      "y": 0.235,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hidden courtyard",
+      "availability": "conditional",
+      "description": "The three-statue wall left of the stairs is wall 1; count walls counterclockwise. Record each statue’s current facing in the solver: down means facing you, up means away. Shoot the returned minimum route for that wall. Shooting affects neighbours at the affected statue’s own rate, so changing walls requires fresh input. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-statues-solve"
+    },
+    {
+      "id": "pod",
+      "label": "Zeppelin departure pod",
+      "layerId": "overview",
+      "x": 0.54,
+      "y": 0.765,
+      "category": "entry-point",
+      "typeId": "entry-point",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Street / pod",
+      "availability": "conditional",
+      "description": "After all three anchors are yellow, the Drop Pod hangs over Main Street. Upgrade a gun whose arena wallbuy can refill it—MP-40 or FG42 are available—and stock armour, perks and full Wunderbuss reserve. Dagger heavy attacks restore armour when already at full health. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/ww2-the-shadowed-throne#guide-step-anchors-pod"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-throne-radio",
+      "title": "Pinned region + radio code → left/right frequencies.",
+      "locationIds": [
+        "radio",
+        "map",
+        "area-street",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-radio"
+    },
+    {
+      "id": "guide-throne-flare",
+      "title": "Plaza box flare → melee Sizzler → Geistbolt.",
+      "locationIds": [
+        "area-plaza",
+        "area-museum"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-flare"
+    },
+    {
+      "id": "guide-throne-battery",
+      "title": "Find battery → open build gate → remove battery → build Wunderbuss.",
+      "locationIds": [
+        "wunderbuss",
+        "area-apartments",
+        "area-cabaret",
+        "area-museum"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-battery"
+    },
+    {
+      "id": "guide-throne-exit",
+      "title": "Charge gate generator to escape; siphon enemies for ammo.",
+      "locationIds": [
+        "wunderbuss"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-exit"
+    },
+    {
+      "id": "guide-throne-panels",
+      "title": "Grenade-open both spawn-building panels.",
+      "locationIds": [
+        "pap",
+        "area-destroyed"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-panels"
+    },
+    {
+      "id": "guide-throne-pap",
+      "title": "Wunderbuss charge both panels → lowered elevator → PaP.",
+      "locationIds": [
+        "pap",
+        "area-destroyed"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-pap"
+    },
+    {
+      "id": "guide-smuggler-code",
+      "title": "Register frequencies + observed ammo type → Smuggler radio.",
+      "locationIds": [
+        "radio",
+        "area-street",
+        "area-apartments"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-smuggler-code"
+    },
+    {
+      "id": "guide-smuggler-arm",
+      "title": "Give the matching weapon class at Plaza sewer.",
+      "locationIds": [
+        "area-plaza",
+        "area-cabaret"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-smuggler-arm"
+    },
+    {
+      "id": "guide-smuggler-pay",
+      "title": "After round wait → Main Street sewer → 1,500 Jolts.",
+      "locationIds": [
+        "area-street",
+        "area-cabaret"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-smuggler-pay"
+    },
+    {
+      "id": "guide-smuggler-bat",
+      "title": "Melee wooden door three times → collect Bat.",
+      "locationIds": [
+        "area-apartments",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-smuggler-bat"
+    },
+    {
+      "id": "guide-dagger-projector",
+      "title": "Painting + shot-down reel → Wunderbuss projector.",
+      "locationIds": [
+        "projector",
+        "area-apartments",
+        "area-cabaret"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-dagger-projector"
+    },
+    {
+      "id": "guide-dagger-clowns",
+      "title": "Count and confirm four active clowns in order.",
+      "locationIds": [
+        "projector"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-dagger-clowns"
+    },
+    {
+      "id": "guide-dagger-safe",
+      "title": "Reset clockwise ×3 → CW / CCW / CW / CCW → Dagger.",
+      "locationIds": [
+        "safe",
+        "area-apartments"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-dagger-safe"
+    },
+    {
+      "id": "guide-axe-frequencies",
+      "title": "Etched frequencies → radio → two Morse digits.",
+      "locationIds": [
+        "radio",
+        "area-street",
+        "area-apartments",
+        "area-cabaret",
+        "area-museum"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-axe-frequencies"
+    },
+    {
+      "id": "guide-axe-bowl",
+      "title": "Magnifying glass + decoded map clue → bowl → Museum scale.",
+      "locationIds": [
+        "map",
+        "scales",
+        "area-cabaret",
+        "area-museum",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-axe-bowl"
+    },
+    {
+      "id": "guide-axe-head",
+      "title": "Sizzler melee at Armour → buy Armour/head → bowl charge → Axe.",
+      "locationIds": [
+        "scales"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-axe-head"
+    },
+    {
+      "id": "guide-refuge-weapons",
+      "title": "Three melee weapons → 20 zombies / 10 Sizzlers / 10 Pests.",
+      "locationIds": [
+        "area-church",
+        "area-refuge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-refuge-weapons"
+    },
+    {
+      "id": "guide-refuge-lock",
+      "title": "Internal anchor to yellow → Refuge locks for statue puzzle.",
+      "locationIds": [
+        "area-refuge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-refuge-lock"
+    },
+    {
+      "id": "guide-statues-solve",
+      "title": "Walls 1–4 counterclockwise → record facing → follow shot route.",
+      "locationIds": [
+        "statues",
+        "area-refuge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-statues-solve"
+    },
+    {
+      "id": "guide-statues-ravens",
+      "title": "Collect four ravens → correct base mounts → green cue → Blade.",
+      "locationIds": [
+        "statues",
+        "area-refuge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-statues-ravens"
+    },
+    {
+      "id": "guide-statues-exit",
+      "title": "Blade into stair-top slot → reopen Refuge.",
+      "locationIds": [
+        "area-refuge"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-statues-exit"
+    },
+    {
+      "id": "guide-anchors-charge",
+      "title": "Charge three external anchors; keep Plaza method consistent.",
+      "locationIds": [
+        "area-plaza",
+        "area-museum",
+        "area-destroyed"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-anchors-charge"
+    },
+    {
+      "id": "guide-anchors-pod",
+      "title": "Lowered Main Street pod → upgrade/restock squad.",
+      "locationIds": [
+        "pod",
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-anchors-pod"
+    },
+    {
+      "id": "guide-zeppelin-enter",
+      "title": "All players in pod → Wunderbuss cable together.",
+      "locationIds": [
+        "pod"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-zeppelin-enter"
+    },
+    {
+      "id": "guide-stadtjager-3",
+      "title": "Phase 3: electrify boss gas cloud → return to pod.",
+      "locationIds": [
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-stadtjager-3"
+    },
+    {
+      "id": "guide-hangman-play",
+      "title": "Sign arrows/selector → enter observed pattern and wrong letters.",
+      "locationIds": [
+        "area-street",
+        "area-cabaret"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-hangman-play"
+    },
+    {
+      "id": "guide-hats-order",
+      "title": "Fedora → Pilot → Garrison → Officer → Red.",
+      "locationIds": [
+        "area-street",
+        "area-apartments",
+        "area-cabaret",
+        "area-museum",
+        "area-church",
+        "area-refuge",
+        "area-destroyed"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-hats-order"
+    },
+    {
+      "id": "guide-throne-classic",
+      "title": "Three mirror timing wins → Classic; radio 39 / 39 → camo.",
+      "locationIds": [
+        "area-street",
+        "area-cabaret"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Berlin district schematic. Several building floors share a region. The zeppelin interior and live power-node network are not mapped; the pod marks departure only. The clown projection is a puzzle reference, not the base artwork.",
+      "guideAnchor": "guide-step-throne-classic"
+    }
+  ],
+  "quickLinks": {
+    "throne-radio": "guide-throne-radio",
+    "throne-flare": "guide-throne-flare",
+    "throne-battery": "guide-throne-battery",
+    "throne-exit": "guide-throne-exit",
+    "throne-panels": "guide-throne-panels",
+    "throne-pap": "guide-throne-pap",
+    "smuggler-code": "guide-smuggler-code",
+    "smuggler-arm": "guide-smuggler-arm",
+    "smuggler-pay": "guide-smuggler-pay",
+    "smuggler-bat": "guide-smuggler-bat",
+    "dagger-projector": "guide-dagger-projector",
+    "dagger-clowns": "guide-dagger-clowns",
+    "dagger-safe": "guide-dagger-safe",
+    "axe-frequencies": "guide-axe-frequencies",
+    "axe-bowl": "guide-axe-bowl",
+    "axe-head": "guide-axe-head",
+    "refuge-weapons": "guide-refuge-weapons",
+    "refuge-lock": "guide-refuge-lock",
+    "statues-solve": "guide-statues-solve",
+    "statues-ravens": "guide-statues-ravens",
+    "statues-exit": "guide-statues-exit",
+    "anchors-charge": "guide-anchors-charge",
+    "anchors-pod": "guide-anchors-pod",
+    "zeppelin-enter": "guide-zeppelin-enter",
+    "stadtjager-3": "guide-stadtjager-3",
+    "hangman-play": "guide-hangman-play",
+    "hats-order": "guide-hats-order",
+    "throne-classic": "guide-throne-classic"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "main-quest",
+      "filters": [
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "area-church",
+            "area-refuge",
+            "statues",
+            "area-plaza",
+            "area-museum",
+            "area-destroyed",
+            "pod",
+            "area-street"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-street",
+            "area-cabaret"
+          ]
+        }
+      ]
+    }
+  ]
+}

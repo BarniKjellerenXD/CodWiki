@@ -1,0 +1,695 @@
+{
+  "id": "iw-rave-in-the-redwoods",
+  "name": "Rave in the Redwoods",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Infinite Warfare guide",
+      "url": "/guides/iw-rave-in-the-redwoods",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2589580023",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/IW/rave_in_the_redwoods/rave_in_the_redwoods_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/rave-in-the-redwoods/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/iw-rave-in-the-redwoods/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-lodge",
+      "label": "Bear Lodge",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground + upper rooms",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Basement power; collect handle, engine and propeller.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "area-basement",
+      "label": "Lodge basement",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Power / Magic Wheel",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Basement power; collect handle, engine and propeller.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "area-mines",
+      "label": "Mines",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Caves / stairs",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Basement power; collect handle, engine and propeller.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "area-mess",
+      "label": "Mess Hall",
+      "layerId": "overview",
+      "x": 0.43,
+      "y": 0.527,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Basement power; collect handle, engine and propeller.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "area-camp",
+      "label": "Camper Cabins",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Owl / Wolf camps",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Three hot-dog deer glyphs in Rave Vision; unlock Vlad.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-bows-vlad"
+    },
+    {
+      "id": "area-rave",
+      "label": "Rave Area / recreation",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Basement power; collect handle, engine and propeller.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "area-docks",
+      "label": "Beach / boathouse",
+      "layerId": "overview",
+      "x": 0.69,
+      "y": 0.6970000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Dock reel → boat → rear cabin reel → projector.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+    },
+    {
+      "id": "area-island",
+      "label": "Turtle Island",
+      "layerId": "overview",
+      "x": 0.85,
+      "y": 0.427,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Cabin / attic / projector",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Dock reel → boat → rear cabin reel → projector.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+    },
+    {
+      "id": "area-pap",
+      "label": "Projector dimension",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.227,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Timed island-portal destination",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Dock reel → boat → rear cabin reel → projector.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+    },
+    {
+      "id": "power",
+      "label": "Basement power switch",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.785,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Power / Magic Wheel",
+      "availability": "conditional",
+      "description": "Reach Bear Lodge’s basement through the Mines and switch on power. Collect the handle against the structure near Rave Area Quickies, engine beside Mess Hall’s central pillar, and propeller upstairs in the Lodge’s Tuff ’Nuff room. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-setup-power"
+    },
+    {
+      "id": "boat",
+      "label": "Boat boarding",
+      "layerId": "overview",
+      "x": 0.6499999999999999,
+      "y": 0.675,
+      "category": "fast-travel",
+      "typeId": "fast-travel",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Take the film reel at the docks before boarding the repaired boathouse boat. On Turtle Island collect the reel outside the cabin’s rear door; fit both to the broken projector. Its projected wall portal reaches Pack-a-Punch during the visit window. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+    },
+    {
+      "id": "pap",
+      "label": "Projector Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.7799999999999999,
+      "y": 0.20500000000000002,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Timed island-portal destination",
+      "availability": "conditional",
+      "description": "Take the film reel at the docks before boarding the repaired boathouse boat. On Turtle Island collect the reel outside the cabin’s rear door; fit both to the broken projector. Its projected wall portal reaches Pack-a-Punch during the visit window. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-reels"
+    },
+    {
+      "id": "kevin",
+      "label": "Kevin / cabin attic",
+      "layerId": "overview",
+      "x": 0.8099999999999999,
+      "y": 0.405,
+      "category": "npc",
+      "typeId": "npc",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Cabin / attic / projector",
+      "availability": "conditional",
+      "description": "Talk to Kevin in the cabin attic. Return by the island’s travel route when you need the main map. Prepare a weapon that removes limbs without instantly killing every target before starting the first ritual. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-projector-kevin"
+    },
+    {
+      "id": "crossbow",
+      "label": "Vlad crossbow cabinet",
+      "layerId": "overview",
+      "x": 0.13,
+      "y": 0.495,
+      "category": "weapon-crate",
+      "typeId": "weapon-crate",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Ground + upper rooms",
+      "availability": "conditional",
+      "description": "Take hot dogs from the cabin bathroom bucket. In Rave Vision, throw one at each deer head, then shoot the floating head and collect its glyph: Bear Lodge couch wall, Mess Hall fireplace and Owl Camp’s out-of-bounds cabin. Exit vision and unlock the Lodge crossbow cabinet. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-bows-vlad"
+    },
+    {
+      "id": "speakers",
+      "label": "Bow-statue charging speakers",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.235,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Choose the statue for your upgrade: Deer → Whirlwind EF-5, Eagle → Trap-o-Matic, Owl → Acid Rain, Wolf → Ben Franklin. Statue candidates are the obstacle course, climbing wall, Rave trailer, Mines stairs, Owl balcony, Wolf picnic table, Mess/Wolf bench, docks table and beach canoe rack. Place it on the Rave speaker stack and damage nearby zombies until enough turn to red mist; take the charged statue. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-bows-statue"
+    },
+    {
+      "id": "buttons",
+      "label": "Departure buttons",
+      "layerId": "overview",
+      "x": 0.22,
+      "y": 0.785,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Power / Magic Wheel",
+      "availability": "conditional",
+      "description": "In the basement, every player uses an unlit button simultaneously. Three are beside the stairs and one by the Magic Wheel; the alarm confirms the activation. The boat now leads to the arena instead of an ordinary island visit. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-rave-in-the-redwoods#guide-step-departure-buttons"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-power",
+      "title": "Basement power; collect handle, engine and propeller.",
+      "locationIds": [
+        "power",
+        "area-lodge",
+        "area-basement",
+        "area-mines",
+        "area-mess",
+        "area-rave"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-setup-power"
+    },
+    {
+      "id": "guide-projector-reels",
+      "title": "Dock reel → boat → rear cabin reel → projector.",
+      "locationIds": [
+        "boat",
+        "pap",
+        "area-docks",
+        "area-island",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-projector-reels"
+    },
+    {
+      "id": "guide-projector-kevin",
+      "title": "Speak to Kevin and prepare a controlled limb-damage weapon.",
+      "locationIds": [
+        "kevin",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-projector-kevin"
+    },
+    {
+      "id": "guide-bows-vlad",
+      "title": "Three hot-dog deer glyphs in Rave Vision; unlock Vlad.",
+      "locationIds": [
+        "crossbow",
+        "area-lodge",
+        "area-mess",
+        "area-camp",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-bows-vlad"
+    },
+    {
+      "id": "guide-bows-statue",
+      "title": "Choose a statue; charge it on the Rave speakers.",
+      "locationIds": [
+        "speakers",
+        "area-mines",
+        "area-camp",
+        "area-rave",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-bows-statue"
+    },
+    {
+      "id": "guide-bows-ritual",
+      "title": "Unupgraded Vlad souls at the matching large animal statue.",
+      "locationIds": [
+        "area-mines",
+        "area-mess",
+        "area-camp",
+        "area-rave",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-bows-ritual"
+    },
+    {
+      "id": "guide-photo-arms-photo",
+      "title": "Burning Man photo; Thunderbird ritual: remove ten arms.",
+      "locationIds": [
+        "area-rave"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-photo-arms-photo"
+    },
+    {
+      "id": "guide-photo-arms-slasher",
+      "title": "Interact with the glowing photo, kill the ritual Slasher and return to Kevin.",
+      "locationIds": [
+        "area-lodge",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-photo-arms-slasher"
+    },
+    {
+      "id": "guide-photo-legs-photo",
+      "title": "Lodge photo; Quickies ritual: remove ten legs.",
+      "locationIds": [
+        "area-lodge",
+        "area-rave"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-photo-legs-photo"
+    },
+    {
+      "id": "guide-photo-legs-slasher",
+      "title": "Glowing photo → ritual Slasher → completed photo → Kevin.",
+      "locationIds": [
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-photo-legs-slasher"
+    },
+    {
+      "id": "guide-skull-pickup",
+      "title": "Basement skull; beach ritual: ten headshots.",
+      "locationIds": [
+        "area-lodge",
+        "area-basement",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-skull-pickup"
+    },
+    {
+      "id": "guide-skull-complete",
+      "title": "Glowing skull → ritual Slasher → completed skull; prepare for departure.",
+      "locationIds": [
+        "area-basement"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-skull-complete"
+    },
+    {
+      "id": "guide-departure-buttons",
+      "title": "Use the unlit basement buttons together.",
+      "locationIds": [
+        "buttons",
+        "area-basement"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-departure-buttons"
+    },
+    {
+      "id": "guide-departure-boat",
+      "title": "Board the arena boat together.",
+      "locationIds": [
+        "boat"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-departure-boat"
+    },
+    {
+      "id": "guide-super-slasher-symbols",
+      "title": "Shoot body symbols; shelter in a green-circle rock position.",
+      "locationIds": [
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-super-slasher-symbols"
+    },
+    {
+      "id": "guide-double-pap-and-smiley-fuses",
+      "title": "Spawn computer → wait three rounds → install fuses.",
+      "locationIds": [
+        "pap",
+        "area-lodge",
+        "area-pap"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-double-pap-and-smiley-fuses"
+    },
+    {
+      "id": "guide-double-pap-and-smiley-smiley",
+      "title": "Main quest / Director’s Cut unlocks the basement Smiley.",
+      "locationIds": [
+        "area-lodge",
+        "area-basement"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-double-pap-and-smiley-smiley"
+    },
+    {
+      "id": "guide-charms-binoculars",
+      "title": "Binoculars → Bait & Tackle bench → eight eyes from gazebo.",
+      "locationIds": [
+        "area-mess",
+        "area-docks",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-binoculars"
+    },
+    {
+      "id": "guide-charms-shovel",
+      "title": "Shovel: grave skeletons. Arrowhead: eight vision archery targets.",
+      "locationIds": [
+        "area-lodge",
+        "area-mines",
+        "area-mess",
+        "area-rave"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-shovel"
+    },
+    {
+      "id": "guide-charms-ring-mask",
+      "title": "Ring: aim both lamps. Bird Mask: shoot the adjacent keys.",
+      "locationIds": [
+        "area-lodge",
+        "area-mines",
+        "area-mess",
+        "area-rave"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-ring-mask"
+    },
+    {
+      "id": "guide-charms-ball-fish",
+      "title": "8 Ball: three white pool balls. Fish: grenade the blue water wisp.",
+      "locationIds": [
+        "area-lodge",
+        "area-mines",
+        "area-camp",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-ball-fish"
+    },
+    {
+      "id": "guide-charms-frog-pacifier",
+      "title": "Frog: slam five vision frogs. Pacifier: Mess Hall lockdown.",
+      "locationIds": [
+        "area-mess",
+        "area-camp",
+        "area-docks",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-frog-pacifier"
+    },
+    {
+      "id": "guide-charms-boots",
+      "title": "Boots: follow cabin → Lodge → docks prints and recover at the cabin.",
+      "locationIds": [
+        "area-lodge",
+        "area-camp",
+        "area-rave",
+        "area-docks",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-charms-boots"
+    },
+    {
+      "id": "guide-ghosts-n-skulls-2-glyph-sites",
+      "title": "Use the nine glyph landmarks; knife-wheel skull; spell SKULL in vision.",
+      "locationIds": [
+        "area-lodge",
+        "area-basement",
+        "area-mess",
+        "area-rave",
+        "area-docks",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-ghosts-n-skulls-2-glyph-sites"
+    },
+    {
+      "id": "guide-ghosts-n-skulls-2-finish",
+      "title": "Boat gallery → Ben Franklin cabinet → three matching-colour rounds.",
+      "locationIds": [
+        "area-lodge",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-ghosts-n-skulls-2-finish"
+    },
+    {
+      "id": "guide-music-and-character-puppet",
+      "title": "Aim at ten Lodge vision dots for Puppet Strings.",
+      "locationIds": [
+        "area-lodge",
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-music-and-character-puppet"
+    },
+    {
+      "id": "guide-music-and-character-ammo",
+      "title": "Keep the wheel-game reward, skull and Director’s Cut mask separate.",
+      "locationIds": [
+        "area-basement"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-music-and-character-ammo"
+    },
+    {
+      "id": "guide-music-and-character-kevin-code",
+      "title": "Kevin lobby code: R L L D D R.",
+      "locationIds": [
+        "area-island"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Lodge floors, camp clusters and travel destinations are diagram regions. Rave Vision is a state. After departure buttons the boat enters the boss event instead of an ordinary island visit; no surveyed boss-arena geometry is supplied.",
+      "guideAnchor": "guide-step-music-and-character-kevin-code"
+    }
+  ],
+  "quickLinks": {
+    "setup-power": "guide-setup-power",
+    "projector-reels": "guide-projector-reels",
+    "projector-kevin": "guide-projector-kevin",
+    "bows-vlad": "guide-bows-vlad",
+    "bows-statue": "guide-bows-statue",
+    "bows-ritual": "guide-bows-ritual",
+    "photo-arms-photo": "guide-photo-arms-photo",
+    "photo-arms-slasher": "guide-photo-arms-slasher",
+    "photo-legs-photo": "guide-photo-legs-photo",
+    "photo-legs-slasher": "guide-photo-legs-slasher",
+    "skull-pickup": "guide-skull-pickup",
+    "skull-complete": "guide-skull-complete",
+    "departure-buttons": "guide-departure-buttons",
+    "departure-boat": "guide-departure-boat",
+    "super-slasher-symbols": "guide-super-slasher-symbols",
+    "double-pap-and-smiley-fuses": "guide-double-pap-and-smiley-fuses",
+    "double-pap-and-smiley-smiley": "guide-double-pap-and-smiley-smiley",
+    "charms-binoculars": "guide-charms-binoculars",
+    "charms-shovel": "guide-charms-shovel",
+    "charms-ring-mask": "guide-charms-ring-mask",
+    "charms-ball-fish": "guide-charms-ball-fish",
+    "charms-frog-pacifier": "guide-charms-frog-pacifier",
+    "charms-boots": "guide-charms-boots",
+    "ghosts-n-skulls-2-glyph-sites": "guide-ghosts-n-skulls-2-glyph-sites",
+    "ghosts-n-skulls-2-finish": "guide-ghosts-n-skulls-2-finish",
+    "music-and-character-puppet": "guide-music-and-character-puppet",
+    "music-and-character-ammo": "guide-music-and-character-ammo",
+    "music-and-character-kevin-code": "guide-music-and-character-kevin-code"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "main-quest",
+      "filters": [
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "power",
+            "area-lodge",
+            "area-basement",
+            "area-mines",
+            "area-mess",
+            "area-rave"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "pap",
+            "area-lodge",
+            "area-pap",
+            "area-basement"
+          ]
+        }
+      ]
+    }
+  ]
+}

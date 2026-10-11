@@ -1,0 +1,5 @@
+Map artwork and source coordinates: DECLASSIFIED
+https://github.com/Miss-placed/DECLASSIFIED
+Revision e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0
+MIT license: LICENSE.txt
+Converted from SVGOverlay JSX into static SVG. Geometry and framing preserved; neutral display palette and CSS property spelling normalized. Coordinates converted from Leaflet [latitude, longitude] on [0,0]–[512,512] to normalized top-left coordinates.

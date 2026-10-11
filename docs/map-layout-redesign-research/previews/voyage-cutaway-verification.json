@@ -1,0 +1,16 @@
+{
+  "checked": "2026-10-11T14:08:48.115Z",
+  "origin": "http://127.0.0.1:3001",
+  "checks": [
+    "reference spawn +1; Sentinel +2 is above PaP +1; direct room-level buttons; rear descent through every intervening room",
+    "keyboard level and room selection; stairs down and return",
+    "Hide all clears item pins and retains navigation",
+    "deep link highlights exact pedestal; directed portal preserves unpinned arrival; room-wide position persists; guide link wins over save",
+    "room search spans floors and labels every result with its height",
+    "390px and 320px no overflow; readable room buttons; 44px primary targets",
+    "five theme screenshots",
+    "Quick and Full guide → cutaway → Back to step restores reader and focus",
+    "existing image map remains on Leaflet"
+  ],
+  "runtimeErrors": []
+}

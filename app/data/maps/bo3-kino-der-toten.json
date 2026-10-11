@@ -1,0 +1,353 @@
+{
+  "id": "bo3-kino-der-toten",
+  "name": "Kino der Toten",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki BO3 · Zombies Chronicles guide",
+      "url": "/guides/bo3-kino-der-toten",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/kino-der-toten/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-kino-der-toten/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-lobby",
+      "label": "Lobby",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "BO3 · Zombies Chronicles · Ground floor. Region on a schematic, not an exact object position. Reach the stage and switch on power.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-1"
+    },
+    {
+      "id": "area-upper",
+      "label": "Upper indoor route",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.5770000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper rooms",
+      "description": "BO3 · Zombies Chronicles · Upper rooms. Region on a schematic, not an exact object position. Find all three 115 meteor fragments.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-secrets-1"
+    },
+    {
+      "id": "area-dressing",
+      "label": "Dressing Room",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stage approach",
+      "description": "BO3 · Zombies Chronicles · Stage approach. Region on a schematic, not an exact object position. Find all three 115 meteor fragments.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-secrets-1"
+    },
+    {
+      "id": "area-alley",
+      "label": "Alley route",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.5770000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside / lower route",
+      "description": "BO3 · Zombies Chronicles · Outside / lower route. Region on a schematic, not an exact object position. Find all three 115 meteor fragments.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-secrets-1"
+    },
+    {
+      "id": "area-stage",
+      "label": "Stage / theatre",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "BO3 · Zombies Chronicles · Main hall. Region on a schematic, not an exact object position. Reach the stage and switch on power.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-1"
+    },
+    {
+      "id": "area-projection",
+      "label": "Projection room",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Teleporter destination",
+      "description": "BO3 · Zombies Chronicles · Teleporter destination. Region on a schematic, not an exact object position. Link the stage teleporter to the lobby pad.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-link"
+    },
+    {
+      "id": "power-switch",
+      "label": "Stage power switch",
+      "layerId": "overview",
+      "x": 0.48200000000000004,
+      "y": 0.318,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "Open a route from the lobby to the stage through either side of the theatre. Flip the power switch on the stage to open the curtain and connect the stage to the seating area and lobby. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-1"
+    },
+    {
+      "id": "teleporter",
+      "label": "Stage teleporter",
+      "layerId": "overview",
+      "x": 0.558,
+      "y": 0.318,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "Interact with the teleporter on the stage to begin linking, then run to the circular pad in the lobby and interact there to finish the link. Both parts are required before the stage teleporter will take you to Pack-a-Punch. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-link"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.23800000000000002,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Teleporter destination",
+      "description": "Return to the stage teleporter and activate it. In the projector room, spend 5,000 points at Pack-a-Punch and collect your gun before the roughly 30-second visit ends. After returning and the cooldown finishing, link the two pads again for another trip. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-2"
+    },
+    {
+      "id": "revive",
+      "label": "Quick Revive",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.8180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Teleporter returns can briefly send you through small side rooms. Search those rooms for a film reel and pick it up before the return completes. On your next Pack-a-Punch trip, interact with the projector to play the reel. Repeat trips to find the other reels; the room order is random. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-kino-der-toten#guide-step-setup-3"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Reach the stage and switch on power.",
+      "locationIds": [
+        "power-switch",
+        "area-lobby",
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-link",
+      "title": "Link the stage teleporter to the lobby pad.",
+      "locationIds": [
+        "teleporter",
+        "area-lobby",
+        "area-stage",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-setup-link"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Teleport, upgrade and retrieve your weapon before returning.",
+      "locationIds": [
+        "pap",
+        "area-stage",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Collect intermission-room film reels and play them upstairs.",
+      "locationIds": [
+        "revive",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-secrets-1",
+      "title": "Find all three 115 meteor fragments.",
+      "locationIds": [
+        "area-lobby",
+        "area-upper",
+        "area-dressing",
+        "area-alley"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-secrets-1"
+    },
+    {
+      "id": "guide-secrets-2",
+      "title": "Repeat three knock patterns, listening anew each time.",
+      "locationIds": [
+        "area-alley"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-secrets-2"
+    },
+    {
+      "id": "guide-secrets-3",
+      "title": "Complete the stage doll hunt and collect its reward.",
+      "locationIds": [
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-secrets-3"
+    },
+    {
+      "id": "guide-kino-doll-start",
+      "title": "Start the stage doll hunt.",
+      "locationIds": [
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-doll-start"
+    },
+    {
+      "id": "guide-kino-doll-finish",
+      "title": "Finish five targets and return for the reward.",
+      "locationIds": [
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-doll-finish"
+    },
+    {
+      "id": "guide-kino-rocket",
+      "title": "Jump by the dressing-room mannequin; activate the Pentagon model.",
+      "locationIds": [
+        "area-upper",
+        "area-dressing"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-rocket"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-link": "guide-setup-link",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "secrets-1": "guide-secrets-1",
+    "secrets-2": "guide-secrets-2",
+    "secrets-3": "guide-secrets-3",
+    "kino-doll-start": "guide-kino-doll-start",
+    "kino-doll-finish": "guide-kino-doll-finish",
+    "kino-rocket": "guide-kino-rocket"
+  }
+}

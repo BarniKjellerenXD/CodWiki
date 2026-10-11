@@ -1,0 +1,842 @@
+{
+  "id": "bo3-origins",
+  "name": "Origins",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki BO3 · Zombies Chronicles guide",
+      "url": "/guides/bo3-origins",
+      "note": "Edition-specific instructions supply area overlays and guide links. The base is the credited Origins creator image."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/origins/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/origins/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=946030431"
+    },
+    {
+      "name": "Origins map by u/ZedzDEMIZie",
+      "url": "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+      "note": "Creator explicitly permits any use with credit in the linked discussion. The selected golden-dig revision is https://i.imgur.com/9aPCMFq.jpg. Inspected at 5760 × 3240; original attribution is retained in the artwork."
+    }
+  ],
+  "coverage": {
+    "kind": "guide-linked",
+    "note": "Credited community layout with area overlays. Baked-in symbols remain visible when filters are changed. Interior floors and Crazy Place are not fully drawn; markers describe their access regions. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Origins · creator overview",
+      "image": "/maps/bo2-origins/origins-zedz.jpg",
+      "width": 5760,
+      "height": 3240,
+      "note": "Map by u/ZedzDEMIZie. Used with the creator’s stated permission and attribution. Baked symbols cannot be hidden by filters. Region overlays are approximate; no standalone Crazy Place floor plan is provided."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / Generator 1",
+      "layerId": "overview",
+      "x": 0.849,
+      "y": 0.781,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Spawn bunker",
+      "description": "BO3 · Zombies Chronicles · Spawn bunker. Approximate region on the credited creator map. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-tank",
+      "label": "Tank Station / Generator 2",
+      "layerId": "overview",
+      "x": 0.771,
+      "y": 0.431,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Bunker / outside",
+      "description": "BO3 · Zombies Chronicles · Bunker / outside. Approximate region on the credited creator map. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-gen3",
+      "label": "Generator 3 route",
+      "layerId": "overview",
+      "x": 0.644,
+      "y": 0.546,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Trench route",
+      "description": "BO3 · Zombies Chronicles · Trench route. Approximate region on the credited creator map. Take a shovel and collect the three shield parts.",
+      "source": "/guides/bo3-origins#guide-step-setup-2"
+    },
+    {
+      "id": "area-workshop",
+      "label": "Workshop",
+      "layerId": "overview",
+      "x": 0.674,
+      "y": 0.362,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "BO3 · Zombies Chronicles · Two floors. Approximate region on the credited creator map. Clean a tablet with melee kills, then carry it back without mud.",
+      "source": "/guides/bo3-origins#guide-step-equipment-2"
+    },
+    {
+      "id": "area-gen4",
+      "label": "Generator 4 / Wind Tunnel",
+      "layerId": "overview",
+      "x": 0.468,
+      "y": 0.824,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Surface / tunnel",
+      "description": "BO3 · Zombies Chronicles · Surface / tunnel. Approximate region on the credited creator map. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-gen5",
+      "label": "Generator 5 / Lightning Tunnel",
+      "layerId": "overview",
+      "x": 0.467,
+      "y": 0.099,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Surface / tunnel",
+      "description": "BO3 · Zombies Chronicles · Surface / tunnel. Approximate region on the credited creator map. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-excavation",
+      "label": "Excavation",
+      "layerId": "overview",
+      "x": 0.451,
+      "y": 0.456,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Surface + lower chambers",
+      "description": "BO3 · Zombies Chronicles · Surface + lower chambers. The circular drawing groups several Excavation levels; use the guide for stairs and pedestals. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-church",
+      "label": "Church",
+      "layerId": "overview",
+      "x": 0.226,
+      "y": 0.546,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "BO3 · Zombies Chronicles · Two floors. Approximate region on the credited creator map. Power all six generators for Pack-a-Punch.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "area-gen6",
+      "label": "Generator 6 / Ice Tunnel",
+      "layerId": "overview",
+      "x": 0.137,
+      "y": 0.622,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "floor": "Church rear / tunnel",
+      "description": "BO3 · Zombies Chronicles · Church rear / tunnel. Approximate region on the credited creator map. Use each coloured record at its matching tunnel.",
+      "source": "/guides/bo3-origins#guide-step-setup-4"
+    },
+    {
+      "id": "gen1",
+      "label": "Generator 1",
+      "layerId": "overview",
+      "x": 0.844,
+      "y": 0.775,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Spawn bunker",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gen2",
+      "label": "Generator 2",
+      "layerId": "overview",
+      "x": 0.727,
+      "y": 0.415,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Bunker / outside",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gen3-power",
+      "label": "Generator 3",
+      "layerId": "overview",
+      "x": 0.641,
+      "y": 0.534,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Trench route",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gen4-power",
+      "label": "Generator 4",
+      "layerId": "overview",
+      "x": 0.464,
+      "y": 0.82,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Surface / tunnel",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gen5-power",
+      "label": "Generator 5",
+      "layerId": "overview",
+      "x": 0.464,
+      "y": 0.081,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Surface / tunnel",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gen6-power",
+      "label": "Generator 6",
+      "layerId": "overview",
+      "x": 0.125,
+      "y": 0.608,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.018,
+      "overview": true,
+      "floor": "Church rear / tunnel",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch / excavation top",
+      "layerId": "overview",
+      "x": 0.4339,
+      "y": 0.4731,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.014,
+      "overview": true,
+      "floor": "Surface + lower chambers",
+      "description": "Activate all six generators by paying at the console and staying inside the capture area while fighting the Templar zombies. Their locations are Spawn (1), Tank Station (2), the other trench route (3), Jugger-Nog (4), Stamin-Up (5) and behind the Church (6). All six must be powered to use Pack-a-Punch at the top of Excavation. Retake generators when the Templar squad disables them. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-1"
+    },
+    {
+      "id": "gramophone",
+      "label": "Gramophone / excavation interior",
+      "layerId": "overview",
+      "x": 0.4681,
+      "y": 0.4731,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.014,
+      "overview": true,
+      "floor": "Surface + lower chambers",
+      "description": "Pick up the gramophone beside the table inside Excavation. Find the black record around the mound: by the engine at the ramp, on the Church-facing low wall, or in the wheelbarrow by Pack-a-Punch. Place the gramophone on the Excavation table to open the spiral staircase, then retrieve it. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-setup-3"
+    },
+    {
+      "id": "staff-pedestals",
+      "label": "Lower Excavation staff pedestals",
+      "layerId": "overview",
+      "x": 0.451,
+      "y": 0.48345,
+      "category": "equipment",
+      "typeId": "crafting-table",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.014,
+      "overview": true,
+      "floor": "Surface + lower chambers",
+      "description": "With an element’s three pieces and crystal collected, use its pedestal at the bottom of Excavation to build that staff. Repeat for all four; a solo player can swap between staffs there. Building is only the first stage—each still needs its own elemental trial and the common charging step. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-staff-build-5"
+    },
+    {
+      "id": "tablet",
+      "label": "Tank Station stone tablet",
+      "layerId": "overview",
+      "x": 0.7881,
+      "y": 0.4481,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.014,
+      "overview": true,
+      "floor": "Bunker / outside",
+      "description": "Take a stone tablet from the Tank Station table and put it in the upstairs Church basin. Earn nearby melee kills until the tablet is clean and the soul effect stops. Take it back to Tank Station without touching mud: follow the boards out of Church, around Excavation and through the Workshop to Generator 2. If it becomes dirty, wash it in the basin again and retry the walk. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-equipment-2"
+    },
+    {
+      "id": "basin",
+      "label": "Upstairs Church tablet basin",
+      "layerId": "overview",
+      "x": 0.2089,
+      "y": 0.5631,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.014,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Take a stone tablet from the Tank Station table and put it in the upstairs Church basin. Earn nearby melee kills until the tablet is clean and the soul effect stops. Take it back to Tank Station without touching mud: follow the boards out of Church, around Excavation and through the Workshop to Generator 2. If it becomes dirty, wash it in the basin again and retry the walk. The overlay highlights the surrounding area, not a surveyed pickup point.",
+      "source": "/guides/bo3-origins#guide-step-equipment-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Power all six generators for Pack-a-Punch.",
+      "locationIds": [
+        "gen1",
+        "gen2",
+        "gen3-power",
+        "gen4-power",
+        "gen5-power",
+        "gen6-power",
+        "pap",
+        "area-spawn",
+        "area-tank",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Take a shovel and collect the three shield parts.",
+      "locationIds": [
+        "area-spawn",
+        "area-tank",
+        "area-gen3",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Use the black record and gramophone to open the lower Excavation.",
+      "locationIds": [
+        "gramophone",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-setup-4",
+      "title": "Use each coloured record at its matching tunnel.",
+      "locationIds": [
+        "area-spawn",
+        "area-gen3",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-setup-4"
+    },
+    {
+      "id": "guide-staff-build-1",
+      "title": "Ice: three snowy dig regions, blue Tank Station record, Ice crystal.",
+      "locationIds": [
+        "area-spawn",
+        "area-tank",
+        "area-gen3",
+        "area-gen4",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-staff-build-1"
+    },
+    {
+      "id": "guide-staff-build-2",
+      "title": "Fire: Generator 6, first Panzer, glowing plane; red record and Fire crystal.",
+      "locationIds": [
+        "area-gen3",
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-staff-build-2"
+    },
+    {
+      "id": "guide-staff-build-3",
+      "title": "Wind: enter all three robots; yellow Generator 5 record and Wind crystal.",
+      "locationIds": [
+        "area-spawn",
+        "area-gen4",
+        "area-gen5",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-staff-build-3"
+    },
+    {
+      "id": "guide-staff-build-4",
+      "title": "Lightning: three tank jumps, purple Generator 4 record, Lightning crystal.",
+      "locationIds": [
+        "area-tank",
+        "area-gen3",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-staff-build-4"
+    },
+    {
+      "id": "guide-staff-build-5",
+      "title": "Assemble all four staffs at their Excavation pedestals.",
+      "locationIds": [
+        "staff-pedestals",
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-staff-build-5"
+    },
+    {
+      "id": "guide-upgrades-1",
+      "title": "Ice: match the tablet, then freeze and shatter three tombstones.",
+      "locationIds": [
+        "area-tank",
+        "area-gen4",
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-upgrades-1"
+    },
+    {
+      "id": "guide-upgrades-2",
+      "title": "Fire: light four cauldrons, decode Church symbols, ignite four torches.",
+      "locationIds": [
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-upgrades-2"
+    },
+    {
+      "id": "guide-upgrades-3",
+      "title": "Wind: match the ceiling rings; blow three chimneys toward Excavation.",
+      "locationIds": [
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-upgrades-3"
+    },
+    {
+      "id": "guide-upgrades-4",
+      "title": "Lightning: play 136 / 357 / 246; set all seven electrical dials.",
+      "locationIds": [
+        "area-spawn",
+        "area-tank",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-upgrades-4"
+    },
+    {
+      "id": "guide-upgrades-5",
+      "title": "For each staff: align rings, shoot orb, charge in the Crazy Place.",
+      "locationIds": [
+        "staff-pedestals",
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-upgrades-5"
+    },
+    {
+      "id": "guide-equipment-1",
+      "title": "Fill four footprint chests and collect Thunder Fists.",
+      "locationIds": [
+        "area-spawn",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-equipment-1"
+    },
+    {
+      "id": "guide-equipment-2",
+      "title": "Clean a tablet with melee kills, then carry it back without mud.",
+      "locationIds": [
+        "tablet",
+        "basin",
+        "area-tank",
+        "area-workshop",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-equipment-2"
+    },
+    {
+      "id": "guide-equipment-3",
+      "title": "Finish the tablet kills for G-Strikes and build the drone.",
+      "locationIds": [
+        "tablet",
+        "area-tank"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-equipment-3"
+    },
+    {
+      "id": "guide-equipment-drone",
+      "title": "Collect the brain, rotor and frame; assemble the Maxis Drone.",
+      "locationIds": [
+        "area-spawn",
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-equipment-drone"
+    },
+    {
+      "id": "guide-seal-1",
+      "title": "Place Ice/Freya, Wind/Odin, Lightning/Thor, Fire/Excavation.",
+      "locationIds": [
+        "area-spawn",
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-seal-1"
+    },
+    {
+      "id": "guide-seal-2",
+      "title": "Press the robot button and quickly G-Strike the Generator 5 seal.",
+      "locationIds": [
+        "area-gen5"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-seal-2"
+    },
+    {
+      "id": "guide-finale-1",
+      "title": "In Zombie Blood, down the plane and kill its pilot; recover the drone.",
+      "locationIds": [
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-finale-1"
+    },
+    {
+      "id": "guide-finale-2",
+      "title": "Every player earns and collects an Iron Fist tablet.",
+      "locationIds": [
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-finale-2"
+    },
+    {
+      "id": "guide-blood-carts",
+      "title": "Extinguish the three carts and collect Zombie Blood at Pack-a-Punch.",
+      "locationIds": [
+        "area-workshop",
+        "area-gen4",
+        "area-gen5",
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-blood-carts"
+    },
+    {
+      "id": "guide-rewards-challenges",
+      "title": "Claim headshot, generator, spending and soul-chest rewards.",
+      "locationIds": [
+        "area-spawn",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-rewards-challenges"
+    },
+    {
+      "id": "guide-rewards-drone",
+      "title": "Use the drone to collect four discs for a free upgraded MG08.",
+      "locationIds": [
+        "area-spawn",
+        "area-tank",
+        "area-gen5",
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-rewards-drone"
+    },
+    {
+      "id": "guide-origins-archangel",
+      "title": "Activate the three green Archangel rocks.",
+      "locationIds": [
+        "area-spawn",
+        "area-workshop",
+        "area-excavation"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-origins-archangel"
+    },
+    {
+      "id": "guide-origins-shepherd",
+      "title": "Activate the Freya, Excavation and Crazy Place radios.",
+      "locationIds": [
+        "area-excavation",
+        "area-church",
+        "area-gen6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-origins-shepherd"
+    },
+    {
+      "id": "guide-origins-aether",
+      "title": "Prone-interact with 1, 1, then 5.",
+      "locationIds": [
+        "area-spawn",
+        "area-gen5"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-origins-aether"
+    },
+    {
+      "id": "guide-origins-jumpscare",
+      "title": "Scope the burning Church tower from Excavation.",
+      "locationIds": [
+        "area-excavation",
+        "area-church"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. BO2 and Chronicles overlays use their own guide instructions. Static art includes possible spawn locations; they are not all active at once.",
+      "guideAnchor": "guide-step-origins-jumpscare"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "setup-4": "guide-setup-4",
+    "staff-build-1": "guide-staff-build-1",
+    "staff-build-2": "guide-staff-build-2",
+    "staff-build-3": "guide-staff-build-3",
+    "staff-build-4": "guide-staff-build-4",
+    "staff-build-5": "guide-staff-build-5",
+    "upgrades-1": "guide-upgrades-1",
+    "upgrades-2": "guide-upgrades-2",
+    "upgrades-3": "guide-upgrades-3",
+    "upgrades-4": "guide-upgrades-4",
+    "upgrades-5": "guide-upgrades-5",
+    "equipment-1": "guide-equipment-1",
+    "equipment-2": "guide-equipment-2",
+    "equipment-3": "guide-equipment-3",
+    "equipment-drone": "guide-equipment-drone",
+    "seal-1": "guide-seal-1",
+    "seal-2": "guide-seal-2",
+    "finale-1": "guide-finale-1",
+    "finale-2": "guide-finale-2",
+    "blood-carts": "guide-blood-carts",
+    "rewards-challenges": "guide-rewards-challenges",
+    "rewards-drone": "guide-rewards-drone",
+    "origins-archangel": "guide-origins-archangel",
+    "origins-shepherd": "guide-origins-shepherd",
+    "origins-aether": "guide-origins-aether",
+    "origins-jumpscare": "guide-origins-jumpscare"
+  }
+}

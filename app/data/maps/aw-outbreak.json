@@ -1,0 +1,522 @@
+{
+  "id": "aw-outbreak",
+  "name": "Outbreak",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Advanced Warfare · Exo Zombies guide",
+      "url": "/guides/aw-outbreak",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2015/01/call-of-duty-advanced-warfare-exo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2015/01/atlas-administration-map-layout-call-of.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/AW/outbreak_AW/outbreak_AW_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/outbreak/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/aw-outbreak/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Warbird / spawn",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.737,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Collect the Black Box beside the crashed Warbird.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-box"
+    },
+    {
+      "id": "area-admin",
+      "label": "Administration",
+      "layerId": "overview",
+      "x": 0.4,
+      "y": 0.737,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Corridors + balcony",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the facility, activate equipment power and collect an Exo Suit.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-open"
+    },
+    {
+      "id": "area-hub",
+      "label": "Hub",
+      "layerId": "overview",
+      "x": 0.4,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Only the documented connections are drawn; detailed object placements and unshown paths require the guide.",
+      "source": "https://codzombified.blogspot.com/2015/01/morgue-area-map-layout-call-of-duty.html"
+    },
+    {
+      "id": "area-morgue",
+      "label": "Morgue",
+      "layerId": "overview",
+      "x": 0.64,
+      "y": 0.547,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the facility, activate equipment power and collect an Exo Suit.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-open"
+    },
+    {
+      "id": "area-exo",
+      "label": "Exo Testing",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the facility, activate equipment power and collect an Exo Suit.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-open"
+    },
+    {
+      "id": "area-holding",
+      "label": "Holding cells",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Cells + upper level",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Open the facility, activate equipment power and collect an Exo Suit.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-open"
+    },
+    {
+      "id": "area-chutes",
+      "label": "Trash chutes",
+      "layerId": "overview",
+      "x": 0.62,
+      "y": 0.8470000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Solo: buy, stay out, let close, buy again and enter. Co-op: enter two different chutes together.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-decker-chute"
+    },
+    {
+      "id": "area-incinerator",
+      "label": "Incinerator",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Special chute destination",
+      "availability": "fixed",
+      "description": "Advanced Warfare · Exo Zombies. Named region on an original diagram; spacing and angles are not geographical. Solo: buy, stay out, let close, buy again and enter. Co-op: enter two different chutes together.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-decker-chute"
+    },
+    {
+      "id": "suit",
+      "label": "Exo Suit station",
+      "layerId": "overview",
+      "x": 0.7999999999999999,
+      "y": 0.315,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Two floors",
+      "availability": "conditional",
+      "description": "Open routes through Administration, Holding, Morgue and Exo Testing. Use the local power generators to activate equipment as you reach it. Collect your Exo Suit from the station in Exo Testing; a suit and the Exo Slam upgrade are separate requirements. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-open"
+    },
+    {
+      "id": "morgue-terminal",
+      "label": "Black Box terminal",
+      "layerId": "overview",
+      "x": 0.6,
+      "y": 0.525,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Two floors",
+      "availability": "conditional",
+      "description": "Carry it to the computer on the right side of the Morgue and interact to install it. Wait for Angie’s acknowledgement before beginning the four card puzzles. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-box-terminal"
+    },
+    {
+      "id": "black-box",
+      "label": "Warbird Black Box",
+      "layerId": "overview",
+      "x": 0.13,
+      "y": 0.715,
+      "category": "quest-item",
+      "typeId": "quest-item",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Collect the Black Box lying to the left of the crashed Warbird in spawn. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-box"
+    },
+    {
+      "id": "keypads",
+      "label": "Four infection keypads",
+      "layerId": "overview",
+      "x": 0.36000000000000004,
+      "y": 0.715,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Corridors + balcony",
+      "availability": "conditional",
+      "description": "During an infected round, become infected in Administration. Use all four keypads during the same infection; their order is unrestricted. Cleansing before all four are used clears this attempt. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-kahn-infect"
+    },
+    {
+      "id": "holding-card",
+      "label": "Oz cell-card puzzle",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.305,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Cells + upper level",
+      "availability": "conditional",
+      "description": "In Holding, shoot the metal bar beneath the middle cell until it disappears. Its reaction to shots identifies the correct bar. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-oz-bar"
+    },
+    {
+      "id": "decontamination",
+      "label": "Decontamination shower",
+      "layerId": "overview",
+      "x": 0.44,
+      "y": 0.715,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Corridors + balcony",
+      "availability": "conditional",
+      "description": "Locate the decontamination shower before an infected round and keep a route to Administration’s four keypads open. Use the 3D Printer for the EM1 and weapon stations for upgrades; the quest later unlocks the experimental Mk 25 station. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-prepare"
+    },
+    {
+      "id": "mk25",
+      "label": "Experimental Mk 25 upgrade",
+      "layerId": "overview",
+      "x": 0.88,
+      "y": 0.315,
+      "category": "upgrade-station",
+      "typeId": "upgrade-station",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Two floors",
+      "availability": "conditional",
+      "description": "Return to spawn to see the extraction scene. The standard route allows continued play and unlocks the experimental Exo Testing upgrade station for Mk 20 → Mk 25. The qualifying alternate route ends the match. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/aw-outbreak#guide-step-outbreak-outro"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-outbreak-open",
+      "title": "Open the facility, activate equipment power and collect an Exo Suit.",
+      "locationIds": [
+        "suit",
+        "area-admin",
+        "area-morgue",
+        "area-exo",
+        "area-holding"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-open"
+    },
+    {
+      "id": "guide-outbreak-prepare",
+      "title": "Prepare an infection escape route and keep access to the printer.",
+      "locationIds": [
+        "decontamination",
+        "area-admin"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-prepare"
+    },
+    {
+      "id": "guide-outbreak-box",
+      "title": "Collect the Black Box beside the crashed Warbird.",
+      "locationIds": [
+        "black-box",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-box"
+    },
+    {
+      "id": "guide-outbreak-box-terminal",
+      "title": "Install it at the Morgue terminal; wait for Angie.",
+      "locationIds": [
+        "morgue-terminal",
+        "area-morgue"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-box-terminal"
+    },
+    {
+      "id": "guide-outbreak-decker-chute",
+      "title": "Solo: buy, stay out, let close, buy again and enter. Co-op: enter two different chutes together.",
+      "locationIds": [
+        "area-chutes",
+        "area-incinerator"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-decker-chute"
+    },
+    {
+      "id": "guide-outbreak-decker-floor",
+      "title": "Shoot the incinerator floor and collect Decker’s card before ejection.",
+      "locationIds": [
+        "area-incinerator"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-decker-floor"
+    },
+    {
+      "id": "guide-outbreak-oz-bar",
+      "title": "Shoot away the bar beneath the middle holding cell.",
+      "locationIds": [
+        "holding-card",
+        "area-holding"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-oz-bar"
+    },
+    {
+      "id": "guide-outbreak-oz-slam",
+      "title": "All players: slam the outer cell together and collect Oz’s card.",
+      "locationIds": [
+        "holding-card",
+        "area-holding"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-oz-slam"
+    },
+    {
+      "id": "guide-outbreak-kahn-infect",
+      "title": "While infected, use all four Administration keypads without cleansing.",
+      "locationIds": [
+        "keypads",
+        "area-admin"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-kahn-infect"
+    },
+    {
+      "id": "guide-outbreak-kahn-collect",
+      "title": "Collect Kahn’s card from the opened checkpoint window.",
+      "locationIds": [
+        "area-admin"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-kahn-collect"
+    },
+    {
+      "id": "guide-outbreak-level-terminal",
+      "title": "At 49 for the whole squad, use the Morgue terminal.",
+      "locationIds": [
+        "morgue-terminal",
+        "area-morgue"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-level-terminal"
+    },
+    {
+      "id": "guide-outbreak-personal-readers",
+      "title": "Each player scans their own character’s reader and reaches 50.",
+      "locationIds": [
+        "area-admin",
+        "area-morgue",
+        "area-exo",
+        "area-holding"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-personal-readers"
+    },
+    {
+      "id": "guide-outbreak-reauthorize",
+      "title": "Reauthorize at Morgue; all players use the Exo station together.",
+      "locationIds": [
+        "suit",
+        "morgue-terminal",
+        "area-morgue",
+        "area-exo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-reauthorize"
+    },
+    {
+      "id": "guide-outbreak-outro",
+      "title": "Return to spawn for the ending; standard completion unlocks Mk 25.",
+      "locationIds": [
+        "mk25",
+        "area-spawn",
+        "area-exo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-outro"
+    },
+    {
+      "id": "guide-outbreak-song",
+      "title": "Activate the Administration wrench, Exo Testing bonesaw and Holding corpse-table tool.",
+      "locationIds": [
+        "area-admin",
+        "area-exo",
+        "area-holding"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial facility route diagram. Holding and the shared trash-chute destinations are shown as search regions; unverified corridor joins are omitted. Ordinary printer and generator availability is not exhaustively pinned.",
+      "guideAnchor": "guide-step-outbreak-song"
+    }
+  ],
+  "quickLinks": {
+    "outbreak-open": "guide-outbreak-open",
+    "outbreak-prepare": "guide-outbreak-prepare",
+    "outbreak-box": "guide-outbreak-box",
+    "outbreak-box-terminal": "guide-outbreak-box-terminal",
+    "outbreak-decker-chute": "guide-outbreak-decker-chute",
+    "outbreak-decker-floor": "guide-outbreak-decker-floor",
+    "outbreak-oz-bar": "guide-outbreak-oz-bar",
+    "outbreak-oz-slam": "guide-outbreak-oz-slam",
+    "outbreak-kahn-infect": "guide-outbreak-kahn-infect",
+    "outbreak-kahn-collect": "guide-outbreak-kahn-collect",
+    "outbreak-level-terminal": "guide-outbreak-level-terminal",
+    "outbreak-personal-readers": "guide-outbreak-personal-readers",
+    "outbreak-reauthorize": "guide-outbreak-reauthorize",
+    "outbreak-outro": "guide-outbreak-outro",
+    "outbreak-song": "guide-outbreak-song"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "suit",
+            "area-admin",
+            "area-morgue",
+            "area-exo",
+            "area-holding",
+            "decontamination"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "black-box",
+            "area-spawn",
+            "morgue-terminal",
+            "area-morgue"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-admin",
+            "area-exo",
+            "area-holding"
+          ]
+        }
+      ]
+    }
+  ]
+}

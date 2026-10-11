@@ -1,0 +1,114 @@
+[
+  {
+    "number": 1,
+    "id": "dc-524f447259",
+    "label": "Arsenal",
+    "x": 0.49121094,
+    "y": 0.18562757
+  },
+  {
+    "number": 2,
+    "id": "dc-437862506d",
+    "label": "Arsenal",
+    "x": 0.66162109,
+    "y": 0.37219591
+  },
+  {
+    "number": 3,
+    "id": "dc-6a48486352",
+    "label": "Arsenal",
+    "x": 0.52050781,
+    "y": 0.68924399
+  },
+  {
+    "number": 4,
+    "id": "dc-596d494d4d",
+    "label": "Aether Reactor",
+    "x": 0.36181641,
+    "y": 0.47274606
+  },
+  {
+    "number": 5,
+    "id": "dc-5176456844",
+    "label": "Aether Reactor",
+    "x": 0.65722656,
+    "y": 0.23450008
+  },
+  {
+    "number": 6,
+    "id": "dc-6b35396b41",
+    "label": "Aether Reactor",
+    "x": 0.66064453,
+    "y": 0.60987456
+  },
+  {
+    "number": 7,
+    "id": "dc-4a67523061",
+    "label": "Teleporter",
+    "x": 0.43310547,
+    "y": 0.36504322
+  },
+  {
+    "number": 8,
+    "id": "dc-5552565266",
+    "label": "Ammo Crate",
+    "x": 0.75048828,
+    "y": 0.20623936
+  },
+  {
+    "number": 9,
+    "id": "dc-384f616548",
+    "label": "Crafting Table",
+    "x": 0.30004883,
+    "y": 0.42412195
+  },
+  {
+    "number": 10,
+    "id": "dc-6255615239",
+    "label": "Collection Unit",
+    "x": 0.66162109,
+    "y": 0.30288465
+  },
+  {
+    "number": 11,
+    "id": "dc-526e4f7653",
+    "label": "Jump Pad",
+    "x": 0.63134766,
+    "y": 0.68757695
+  },
+  {
+    "number": 12,
+    "id": "dc-346f4d514b",
+    "label": "Exfill Radio",
+    "x": 0.4675293,
+    "y": 0.47147828
+  },
+  {
+    "number": 13,
+    "id": "dc-7a34366c51",
+    "label": "Ak-74u wall buy",
+    "x": 0.54370117,
+    "y": 0.35332864
+  },
+  {
+    "number": 14,
+    "id": "dc-3365787a64",
+    "label": "AK-47 wall buy",
+    "x": 0.68359375,
+    "y": 0.6259821
+  },
+  {
+    "number": 15,
+    "id": "dc-647057654c",
+    "label": "Compound P65 - Truth Serum",
+    "x": 0.42181149,
+    "y": 0.44732348
+  },
+  {
+    "number": 16,
+    "id": "dc-576b717859",
+    "label": "Aether Crystal 1 of 3",
+    "x": 0.12273021,
+    "y": 0.53083587
+  }
+]

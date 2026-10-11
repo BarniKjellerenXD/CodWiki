@@ -1,0 +1,4 @@
+Original CodWiki ship cutaway; no external artwork traced or copied.
+Nine relative height slices and simplified longitudinal spans from the TRPG atlas and annotated Voyage floor plans supplied as a user reference.
+Stair links identify room levels, not exact landing coordinates. Regional routes remain marked separately.
+Sources and per-connection evidence: app/data/maps/bo4-voyage-of-despair.json

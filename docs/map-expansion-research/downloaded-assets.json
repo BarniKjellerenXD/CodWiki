@@ -1,0 +1,177 @@
+{
+  "reviewed": "2026-10-11",
+  "repository": "https://github.com/Miss-placed/DECLASSIFIED",
+  "commit": "e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+  "purpose": "Research snapshots only. Not imported into CodWiki. SVG/JSX require visual and geographic QA; preserve license notices and review underlying game-art provenance before publication.",
+  "license": "Repository MIT: 2024 Odinn H & Ben Ashley; legacy MIT: 2021 Odinn H. Notices preserved beside sources.",
+  "files": [
+    {
+      "path": "assets/declassified/public/legacy/maps/alpine/alpine.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/alpine/alpine.svg",
+      "bytes": 25774,
+      "sha256": "b5c2a408845caba3c70523a4d500f935643e8cbcab8a012d82c41ac86fcf3715",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/armada/armada.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/armada/armada.svg",
+      "bytes": 9139,
+      "sha256": "29311fa367f01ab6ac6a9ce7b923865bc84ac026e91bffd0901f4a342339a94d",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/collateral/collateral.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/collateral/collateral.svg",
+      "bytes": 33804,
+      "sha256": "848d72d018b88c97de76192aa1051f319c16c942607137e14d7b4f32e54b4d9c",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/dieMaschine/dieMaschine.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/dieMaschine/dieMaschine.svg",
+      "bytes": 12956,
+      "sha256": "226bdeffd19d9c084c53cde471b67307944a97624d01298e2885e6778d03f8ce",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/dieMaschine_underground/dieMaschine_underground.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/dieMaschine_underground/dieMaschine_underground.svg",
+      "bytes": 18384,
+      "sha256": "65513a04c61fab8e78d6874b15642d893e9a6b21a61af8e3fe2bb24fcddbbd5e",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/duga/duga.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/duga/duga.svg",
+      "bytes": 38157,
+      "sha256": "9bbd029a8960b76880bd7148196934a7d3ec9667ac69e30ca2edb6519f43f8c9",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/firebaseZ/firebaseZ.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/firebaseZ/firebaseZ.svg",
+      "bytes": 32958,
+      "sha256": "16ea68792669c49773a711bdf463d910638b5715957e6ee291b5503e6d8f2add",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/firebaseZ_spawn/firebaseZ_spawn.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/firebaseZ_spawn/firebaseZ_spawn.svg",
+      "bytes": 15024,
+      "sha256": "574c5a74660ea7843f98711f4db97b8e1103fecf51b9d29e5d77a0f0cacea8be",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/forsaken/forsaken.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/forsaken/forsaken.svg",
+      "bytes": 19899,
+      "sha256": "adab1b862d6b76700a67a37fcdef8e92aca86e01e6f1c31f02f1db0df7b98a09",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/forsaken_underground/forsaken_underground.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/forsaken_underground/forsaken_underground.svg",
+      "bytes": 6522,
+      "sha256": "0ba0f4cf3cfbd1ff9660aa66145d174918e6ffec152195bb488af0f64339c7ad",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/golova/golova.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/golova/golova.svg",
+      "bytes": 68216,
+      "sha256": "e8d11dbf2c4b3f24c851ef84492d7a07b7830914ba2620ea767f88fc3456ad1a",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/mauerDerToten/mauerDerToten.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/mauerDerToten/mauerDerToten.svg",
+      "bytes": 8719,
+      "sha256": "387ea4d378c61639d4d4691e4872a4d204b9217f62ff2bdde8191d648cbe2de0",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/mauerDerToten_streets/mauerDerToten_streets.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/mauerDerToten_streets/mauerDerToten_streets.svg",
+      "bytes": 14417,
+      "sha256": "dcfe2c6a92c2d4ad9996d032f0a487d5228b7e7d08b638fa42784030cd0a6ccc",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/ruka/Ruka.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/ruka/Ruka.svg",
+      "bytes": 115334,
+      "sha256": "471f976b6c6997ee4a608bb4e5e48260d5822d01f09bf1f68205fbbcadfbb27d",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/sanatorium/sanatorium.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/sanatorium/sanatorium.svg",
+      "bytes": 35489,
+      "sha256": "a09e5ebc5d05f269430462a227a67a76666048cec917608383e081d79cee3f40",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/public/legacy/maps/zoo/zoo.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/maps/zoo/zoo.svg",
+      "bytes": 26585,
+      "sha256": "876d099bc29ab33936a669b4f52d2c7b83f10aee5e163a9ebce0c9b865b80eb5",
+      "kind": "vector-layout-reference"
+    },
+    {
+      "path": "assets/declassified/LICENSE",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/LICENSE",
+      "bytes": 1077,
+      "sha256": "107907fc8fe7d18ff4b6fd6c3107cf4abb62f1f1b91ec3b4b9db2bbadf990708",
+      "kind": "provenance"
+    },
+    {
+      "path": "assets/declassified/public/legacy/LICENSE",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/public/legacy/LICENSE",
+      "bytes": 1064,
+      "sha256": "bd441979350cc54b444d768fec695fcecb6a58ea599ac0e47b662c84a3830230",
+      "kind": "provenance"
+    },
+    {
+      "path": "assets/declassified/README.md",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/README.md",
+      "bytes": 2024,
+      "sha256": "a920a17d2794e5d92c4925b0d551200f8a8f5349b845de986bf37f4c9c1b7e58",
+      "kind": "provenance"
+    },
+    {
+      "path": "assets/declassified/src/data/maps/blackOps6Maps.tsx",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx",
+      "bytes": 934143,
+      "sha256": "8c1ba58e1f6e7ca6f2a91cf487e4c13dda9bb202303b754dbfe08586a014d7df",
+      "kind": "vector-source-reference-not-executed"
+    },
+    {
+      "path": "assets/declassified/src/data/maps/coldWarMaps.tsx",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/coldWarMaps.tsx",
+      "bytes": 169477,
+      "sha256": "67ae872bc3b29d54f8cf3775f521224bbee7f58afbe7611ef1b3c91ea26e64e2",
+      "kind": "vector-source-reference-not-executed"
+    },
+    {
+      "path": "assets/declassified/src/data/maps/coldWarOutbreakMaps.tsx",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/coldWarOutbreakMaps.tsx",
+      "bytes": 504079,
+      "sha256": "8e1a80ea131d65f2fa2846c2cf6e8ed6ff68480ed1179216ef1844a48fa69c59",
+      "kind": "vector-source-reference-not-executed"
+    },
+    {
+      "path": "assets/declassified/src/data/maps/sharedSVGProperties.tsx",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/sharedSVGProperties.tsx",
+      "bytes": 719,
+      "sha256": "369d96afea3fabb30f4c998e7c87f9f0e4787e27992cb78fc01af3e7234f5574",
+      "kind": "vector-source-reference-not-executed"
+    },
+    {
+      "path": "assets/declassified/src/data/maps/mapDetails.tsx",
+      "sourceUrl": "https://raw.githubusercontent.com/Miss-placed/DECLASSIFIED/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/mapDetails.tsx",
+      "bytes": 5018,
+      "sha256": "4e0b1837d783fa7d99eaa0814dad06190f6cfe93c596b348b8afcb5627dbcddd",
+      "kind": "vector-source-reference-not-executed"
+    }
+  ]
+}

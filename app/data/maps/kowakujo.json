@@ -34,7 +34,9 @@
       "category": "area",
       "precision": "area",
       "description": "Spawn area around Quick Revive.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "staging-area",
@@ -45,7 +47,9 @@
       "category": "area",
       "precision": "area",
       "description": "Area around Stamin-Up between the Outer Ward and Stables.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "stables",
@@ -56,7 +60,9 @@
       "category": "area",
       "precision": "area",
       "description": "Area around Death Perception and the MPC-25 wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "gatehouse",
@@ -67,7 +73,9 @@
       "category": "area",
       "precision": "area",
       "description": "Building around Speed Cola, between the Outer Ward and Flower Garden.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "flower-garden",
@@ -78,7 +86,9 @@
       "category": "area",
       "precision": "area",
       "description": "Garden around Wisp Tea, the Exfil booth and Ryden 45K wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "kitchens",
@@ -89,7 +99,9 @@
       "category": "area",
       "precision": "area",
       "description": "Kitchen rooms around Double Tap and the M34 Novaline wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "training-area",
@@ -100,7 +112,9 @@
       "category": "area",
       "precision": "area",
       "description": "Area around Melee Macchiato and the Warden 308 wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "central-courtyard",
@@ -111,7 +125,9 @@
       "category": "area",
       "precision": "area",
       "description": "Cherry blossom tree courtyard near Juggernog and the Peacekeeper wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "tenshu-entrance",
@@ -122,7 +138,9 @@
       "category": "area",
       "precision": "area",
       "description": "Castle entrance between Central Courtyard and the keep. The suspended cage and Monkshood pot are in this approach area.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "storage-rooms",
@@ -133,7 +151,9 @@
       "category": "area",
       "precision": "area",
       "description": "Storage rooms spanning levels near PhD Flopper and the MK.78 wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "onsen-baths",
@@ -144,7 +164,9 @@
       "category": "area",
       "precision": "area",
       "description": "Bath rooms near Elemental Pop and the XM325 wall-buy.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "shoguns-sanctum",
@@ -155,7 +177,9 @@
       "category": "area",
       "precision": "area",
       "description": "Upper keep near Pack-a-Punch and the World Seed.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "war-room",
@@ -166,7 +190,9 @@
       "category": "area",
       "precision": "area",
       "description": "Keep interior below the Pack-a-Punch stairs. This overview does not separate the floors.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "workshop",
@@ -177,7 +203,9 @@
       "category": "area",
       "precision": "area",
       "description": "Workshop in the upper keep. The Maneki-Neko crafting bench is near Vulture Aid.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "collapsed-study",
@@ -188,7 +216,9 @@
       "category": "area",
       "precision": "area",
       "description": "Western lower keep interior. The evidence soul box and comb search area are near Der Wunderfizz.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "meditation-room",
@@ -199,7 +229,9 @@
       "category": "area",
       "precision": "area",
       "description": "Evidence-room approach in the keep. Meditation Room does not have a separate surveyed label in the source map, so this is broad keep-area guidance. Use the paintings and evidence shelves to locate it.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "tea-garden",
@@ -210,7 +242,9 @@
       "category": "area",
       "precision": "area",
       "description": "Garden approach next to the Training Area, toward Central Courtyard. Search the small house and its table.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "official-4818",
@@ -221,7 +255,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "pack-a-punch",
+      "availability": "unknown"
     },
     {
       "id": "official-4819",
@@ -232,7 +268,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4820",
@@ -243,7 +281,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4821",
@@ -254,7 +294,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4822",
@@ -265,7 +307,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4823",
@@ -276,7 +320,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4824",
@@ -287,7 +333,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4825",
@@ -298,7 +346,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4826",
@@ -309,7 +359,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4827",
@@ -320,7 +372,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4828",
@@ -331,7 +385,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4829",
@@ -342,7 +398,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4830",
@@ -353,7 +411,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4831",
@@ -364,7 +424,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4832",
@@ -375,7 +437,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4833",
@@ -386,7 +450,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4834",
@@ -397,7 +463,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4835",
@@ -408,7 +476,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4836",
@@ -419,7 +489,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4838",
@@ -430,7 +502,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4839",
@@ -441,7 +515,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4840",
@@ -452,7 +528,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-4842",
@@ -463,7 +541,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4843",
@@ -474,7 +554,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4844",
@@ -485,7 +567,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4845",
@@ -496,7 +580,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4846",
@@ -507,7 +593,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4847",
@@ -518,7 +606,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4848",
@@ -529,7 +619,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4849",
@@ -540,7 +632,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4850",
@@ -551,7 +645,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4851",
@@ -562,7 +658,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4853",
@@ -573,7 +671,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-4876",
@@ -584,7 +684,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4877",
@@ -595,7 +697,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4878",
@@ -606,7 +710,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4879",
@@ -617,7 +723,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4880",
@@ -628,7 +736,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4881",
@@ -639,7 +749,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4882",
@@ -650,7 +762,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4883",
@@ -661,7 +775,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-4884",
@@ -672,7 +788,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-4885",
@@ -683,7 +801,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-4886",
@@ -694,7 +814,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-4887",
@@ -705,7 +827,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4888",
@@ -716,7 +840,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4889",
@@ -727,7 +853,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4890",
@@ -738,7 +866,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4891",
@@ -749,7 +879,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4892",
@@ -760,7 +892,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4893",
@@ -771,7 +905,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4894",
@@ -782,7 +918,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4895",
@@ -793,7 +931,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4896",
@@ -804,7 +944,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4897",
@@ -815,7 +957,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4898",
@@ -826,7 +970,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-4899",
@@ -837,7 +983,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Published location on the official Call of Duty tactical map. Check the guide for any floor or unlock requirement.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-1",
@@ -848,7 +996,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Glide to the Grounds",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "czg-fast-travel-2",
@@ -859,7 +1009,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Glide to the Castle",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "czg-workbench-1",
@@ -870,7 +1022,9 @@
       "category": "quest",
       "precision": "point",
       "description": "workbench location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "czg-workbench-2",
@@ -881,7 +1035,9 @@
       "category": "quest",
       "precision": "point",
       "description": "workbench location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "czg-der-wunderfizz-1",
@@ -892,7 +1048,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Der Wunderfizz location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "wunderfizz",
+      "availability": "unknown"
     },
     {
       "id": "czg-vulture-aid-1",
@@ -903,7 +1061,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Vulture Aid location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-1",
@@ -914,7 +1074,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-2",
@@ -925,7 +1087,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-3",
@@ -936,7 +1100,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-4",
@@ -947,7 +1113,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-5",
@@ -958,7 +1126,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-6",
@@ -969,7 +1139,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-7",
@@ -980,7 +1152,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-8",
@@ -991,7 +1165,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-9",
@@ -1002,7 +1178,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Possible Mystery Box location. Look for the gold plaque when completing the Merchant evidence.",
-      "source": "https://www.codzombiesguides.com/maps/kowakujo/"
+      "source": "https://www.codzombiesguides.com/maps/kowakujo/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "cursed-mister-peeks-1",
@@ -1015,7 +1193,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/kowakujo/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-2",
@@ -1028,7 +1208,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/kowakujo/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-3",
@@ -1041,7 +1223,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/kowakujo/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-4",
@@ -1054,7 +1238,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/kowakujo/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-5",
@@ -1067,7 +1253,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/kowakujo/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [

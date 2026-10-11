@@ -1,0 +1,386 @@
+{
+  "id": "bo1-der-riese",
+  "name": "Der Riese",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-der-riese",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/der-riese/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/WAW/der_riese/der_riese_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://strategywiki.org/wiki/Call_of_Duty%3A_World_at_War/Nazi_Zombies"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-der-riese/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / mainframe",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.807,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Mainframe",
+      "description": "Black Ops · Mainframe. Region on a schematic, not an exact object position. Reach the rear courtyard and switch on power.",
+      "source": "/guides/bo1-der-riese#guide-step-der-power"
+    },
+    {
+      "id": "area-animal",
+      "label": "Animal Testing route",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Laboratory route",
+      "description": "Black Ops · Laboratory route. Region on a schematic, not an exact object position. Link A, B and C to the Spawn mainframe within each timer.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    },
+    {
+      "id": "area-garage",
+      "label": "Automobile Garage route",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Garage route",
+      "description": "Black Ops · Garage route. Region on a schematic, not an exact object position. Link A, B and C to the Spawn mainframe within each timer.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    },
+    {
+      "id": "area-power",
+      "label": "Rear power courtyard",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.46699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Courtyard",
+      "description": "Black Ops · Courtyard. Region on a schematic, not an exact object position. Reach the rear courtyard and switch on power.",
+      "source": "/guides/bo1-der-riese#guide-step-der-power"
+    },
+    {
+      "id": "area-rear",
+      "label": "Catwalk / rear teleporter",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.227,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper rear area",
+      "description": "Black Ops · Upper rear area. Region on a schematic, not an exact object position. Link A, B and C to the Spawn mainframe within each timer.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    },
+    {
+      "id": "power-switch",
+      "label": "Power switch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.46799999999999997,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Courtyard",
+      "description": "Open either side from the mainframe at Spawn and work toward the rear central courtyard. Activate the power switch beside the original Box location; the bridge lowers and the perk machines and electric traps become available. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-der-riese#guide-step-der-power"
+    },
+    {
+      "id": "pack-a-punch",
+      "label": "Pack-a-Punch / mainframe",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.808,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Mainframe",
+      "description": "Every successful link lowers the barrier around the Pack-a-Punch machine. After all three, upgrade a gun at Spawn for 5,000 points. Linked teleporters can return you to the mainframe for 1,500 points, but check the pad is clear before arriving. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-der-riese#guide-step-der-pap"
+    },
+    {
+      "id": "left-teleporter",
+      "label": "Laboratory teleporter",
+      "layerId": "overview",
+      "x": 0.142,
+      "y": 0.518,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Laboratory route",
+      "description": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    },
+    {
+      "id": "right-teleporter",
+      "label": "Garage-side teleporter",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.518,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Garage route",
+      "description": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    },
+    {
+      "id": "rear-teleporter",
+      "label": "Rear teleporter",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.228,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper rear area",
+      "description": "Find Teleporter A through Animal Testing on the left route, B through the Thompson/Automobile Garage route on the right, and C at the back by the catwalk/Bowie Knife area. At each teleporter, hold interact to start a link, then reach the mainframe in Spawn and interact within 30 seconds. A teammate may finish the link for you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-der-riese#guide-step-der-links"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-der-power",
+      "title": "Reach the rear courtyard and switch on power.",
+      "locationIds": [
+        "power-switch",
+        "area-spawn",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-power"
+    },
+    {
+      "id": "guide-der-links",
+      "title": "Link A, B and C to the Spawn mainframe within each timer.",
+      "locationIds": [
+        "pack-a-punch",
+        "left-teleporter",
+        "right-teleporter",
+        "rear-teleporter",
+        "area-spawn",
+        "area-animal",
+        "area-garage",
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-links"
+    },
+    {
+      "id": "guide-der-pap",
+      "title": "Link all three, then upgrade at Spawn.",
+      "locationIds": [
+        "pack-a-punch",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-pap"
+    },
+    {
+      "id": "guide-der-perks",
+      "title": "Learn the perk circuit before starting the hunt.",
+      "locationIds": [
+        "area-animal",
+        "area-garage",
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-perks"
+    },
+    {
+      "id": "guide-der-weapons",
+      "title": "Use wonder weapons at a safe distance.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-weapons"
+    },
+    {
+      "id": "guide-der-survival",
+      "title": "Prepare a trap/teleporter escape before holding the catwalk.",
+      "locationIds": [
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-survival"
+    },
+    {
+      "id": "guide-der-panel",
+      "title": "Shoot the distant panel with a Pack-a-Punched gun.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-panel"
+    },
+    {
+      "id": "guide-der-targets",
+      "title": "Shoot all three original targets.",
+      "locationIds": [
+        "area-spawn",
+        "area-animal",
+        "area-garage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-targets"
+    },
+    {
+      "id": "guide-der-song",
+      "title": "Activate the two Animal Testing jars and the Teleporter B jar.",
+      "locationIds": [
+        "area-animal"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-song"
+    },
+    {
+      "id": "guide-der-radios",
+      "title": "Listen to all seven factory recordings.",
+      "locationIds": [
+        "area-spawn",
+        "area-animal",
+        "area-garage",
+        "area-power",
+        "area-rear"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-radios"
+    },
+    {
+      "id": "guide-der-brick",
+      "title": "Move the unusual brick beside the Thompson.",
+      "locationIds": [
+        "area-garage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-brick"
+    },
+    {
+      "id": "guide-der-monkey",
+      "title": "Try the furnace reaction or inspect the Double Tap vent.",
+      "locationIds": [
+        "area-garage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Route schematic shared only for factory structure. The Giant markers use its own guide and randomized-perk rules. Exact laboratory object positions require the guide photographs.",
+      "guideAnchor": "guide-step-der-monkey"
+    }
+  ],
+  "quickLinks": {
+    "der-power": "guide-der-power",
+    "der-links": "guide-der-links",
+    "der-pap": "guide-der-pap",
+    "der-perks": "guide-der-perks",
+    "der-weapons": "guide-der-weapons",
+    "der-survival": "guide-der-survival",
+    "der-panel": "guide-der-panel",
+    "der-targets": "guide-der-targets",
+    "der-song": "guide-der-song",
+    "der-radios": "guide-der-radios",
+    "der-brick": "guide-der-brick",
+    "der-monkey": "guide-der-monkey"
+  }
+}

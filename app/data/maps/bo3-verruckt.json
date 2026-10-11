@@ -1,0 +1,260 @@
+{
+  "id": "bo3-verruckt",
+  "name": "Verrückt",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki BO3 · Zombies Chronicles guide",
+      "url": "/guides/bo3-verruckt",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/verruckt/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/WAW/verruckt/verruckt_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://callofduty.fandom.com/wiki/Samantha%27s_Sorrow"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-verruckt/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-jug-side",
+      "label": "Jugger-Nog wing",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "BO3 · Zombies Chronicles · Ground floor. Region on a schematic, not an exact object position. Follow your spawn-side route upstairs.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "area-revive-side",
+      "label": "Quick Revive wing",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.7170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "BO3 · Zombies Chronicles · Ground floor. Region on a schematic, not an exact object position. Follow your spawn-side route upstairs.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "area-west-up",
+      "label": "Upstairs circuit",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "BO3 · Zombies Chronicles · Upper floor. Region on a schematic, not an exact object position. Follow your spawn-side route upstairs.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "area-east-up",
+      "label": "Upstairs kitchen route",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.357,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "BO3 · Zombies Chronicles · Upper floor. Region on a schematic, not an exact object position. Follow your spawn-side route upstairs.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "area-power",
+      "label": "Kitchen / power room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "BO3 · Zombies Chronicles · Upper floor. Region on a schematic, not an exact object position. Turn on power and reunite the team.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-2"
+    },
+    {
+      "id": "power-switch",
+      "label": "Power switch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.268,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Identify your spawn: Jugger-Nog is on one side, Quick Revive on the other. In co-op the team can begin separated. Follow your side’s doors upstairs rather than waiting for the dividing door to open. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "juggernog",
+      "label": "Jugger-Nog starting side",
+      "layerId": "overview",
+      "x": 0.162,
+      "y": 0.7180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Identify your spawn: Jugger-Nog is on one side, Quick Revive on the other. In co-op the team can begin separated. Follow your side’s doors upstairs rather than waiting for the dividing door to open. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    },
+    {
+      "id": "quick-revive",
+      "label": "Quick Revive starting side",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.7180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Identify your spawn: Jugger-Nog is on one side, Quick Revive on the other. In co-op the team can begin separated. Follow your side’s doors upstairs rather than waiting for the dividing door to open. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-verruckt#guide-step-setup-1"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Follow your spawn-side route upstairs.",
+      "locationIds": [
+        "power-switch",
+        "juggernog",
+        "quick-revive",
+        "area-jug-side",
+        "area-revive-side",
+        "area-west-up",
+        "area-east-up"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Turn on power and reunite the team.",
+      "locationIds": [
+        "juggernog",
+        "quick-revive",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Buy perks and establish a safe circuit.",
+      "locationIds": [
+        "area-west-up"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-secrets-2",
+      "title": "Flush the left toilet three times for the song.",
+      "locationIds": [
+        "area-east-up",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-secrets-2"
+    },
+    {
+      "id": "guide-atmosphere-chair",
+      "title": "Interact at the Jugger-Nog dentist chair.",
+      "locationIds": [
+        "area-jug-side"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Two-floor route overview. Upper corridors are compressed; the central courtyard is not an accessible shortcut. The starting-side door opens with power.",
+      "guideAnchor": "guide-step-atmosphere-chair"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "secrets-2": "guide-secrets-2",
+    "atmosphere-chair": "guide-atmosphere-chair"
+  }
+}

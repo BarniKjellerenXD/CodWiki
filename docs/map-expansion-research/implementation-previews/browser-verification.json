@@ -1,0 +1,18 @@
+{
+  "checked": "2026-10-11T11:25:13.167Z",
+  "origin": "http://127.0.0.1:3001",
+  "checks": [
+    "real client map and image loaded",
+    "Hide all",
+    "mixed type union",
+    "independent selection highlight",
+    "v3 explicit-empty persistence",
+    "390px no horizontal overflow",
+    "Urzikstan USB toggle independent of photo finder",
+    "explicit photo workflow opens and closes",
+    "standalone photo tool preserves normal filters",
+    "coincident guide stop retains area and sequence number",
+    "chooser reveals itself and restores keyboard focus"
+  ],
+  "runtimeErrors": []
+}

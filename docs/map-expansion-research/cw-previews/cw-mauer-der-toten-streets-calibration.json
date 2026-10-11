@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "id": "dc-673745466f",
+    "label": "Arsenal",
+    "x": 0.75561523,
+    "y": 0.19488261
+  },
+  {
+    "number": 2,
+    "id": "dc-64345f4f57",
+    "label": "Arsenal",
+    "x": 0.76074219,
+    "y": 0.6506623
+  },
+  {
+    "number": 3,
+    "id": "dc-6672496750",
+    "label": "Arsenal",
+    "x": 0.41919268,
+    "y": 0.65077783
+  },
+  {
+    "number": 4,
+    "id": "dc-37454d6342",
+    "label": "Pack-a-Punch",
+    "x": 0.38425561,
+    "y": 0.50789164
+  },
+  {
+    "number": 5,
+    "id": "dc-4177766335",
+    "label": "Der Wunderfizz",
+    "x": 0.11172791,
+    "y": 0.38242828
+  },
+  {
+    "number": 6,
+    "id": "dc-574c4b477a",
+    "label": "Ammo Crate",
+    "x": 0.2035831,
+    "y": 0.55814813
+  },
+  {
+    "number": 7,
+    "id": "dc-6a4f343258",
+    "label": "Crafting Table",
+    "x": 0.49388656,
+    "y": 0.36169916
+  },
+  {
+    "number": 8,
+    "id": "dc-69534f4635",
+    "label": "Zipline",
+    "x": 0.66064453,
+    "y": 0.6900006
+  },
+  {
+    "number": 9,
+    "id": "dc-315a45667a",
+    "label": "Zipline",
+    "x": 0.47795473,
+    "y": 0.37660313
+  },
+  {
+    "number": 10,
+    "id": "dc-554d5f7a59",
+    "label": "Klaus recall radio",
+    "x": 0.55958065,
+    "y": 0.64553393
+  },
+  {
+    "number": 11,
+    "id": "dc-4276376f72",
+    "label": "QBZ-83 wall buy",
+    "x": 0.34362256,
+    "y": 0.61054402
+  },
+  {
+    "number": 12,
+    "id": "dc-50776d5253",
+    "label": "Blacklight code — Garment Factory search",
+    "x": 0.58288029,
+    "y": 0.78359187
+  },
+  {
+    "number": 13,
+    "id": "dc-61714b376e",
+    "label": "Satellite Computer",
+    "x": 0.08710865,
+    "y": 0.43271717
+  },
+  {
+    "number": 14,
+    "id": "dc-677575576c",
+    "label": "HVT Spawn",
+    "x": 0.33648395,
+    "y": 0.50970611
+  },
+  {
+    "number": 15,
+    "id": "dc-4943305871",
+    "label": "Hasenbau Club",
+    "x": 0.91045347,
+    "y": 0.662164
+  }
+]

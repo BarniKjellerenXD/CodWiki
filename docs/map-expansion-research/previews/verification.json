@@ -1,0 +1,14 @@
+{
+  "reviewed": "2026-10-11",
+  "scope": "Planning concept only; not CodWiki product browser tests",
+  "checks": [
+    "no escaped markup",
+    "initial marker set",
+    "hide all",
+    "mixed checkbox union",
+    "marker details",
+    "three desktop variants captured",
+    "390px no horizontal overflow"
+  ],
+  "runtimeErrors": []
+}

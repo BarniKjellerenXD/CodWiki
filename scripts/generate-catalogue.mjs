@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 import desktopCatalogue from '../desktop-app/catalogue.js'
 import './generate-map-links.mjs'
 import './generate-expansion.mjs'
+import './build-mw3-rune-portals.mjs'
 process.chdir(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'))
 const catalogue = JSON.parse(fs.readFileSync('shared/catalogue.json', 'utf8'))
 fs.writeFileSync('app/data/catalogue.json', JSON.stringify(catalogue, null, 2) + '\n')

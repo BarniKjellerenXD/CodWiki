@@ -1,0 +1,730 @@
+{
+  "id": "bo4-ix",
+  "name": "IX",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-ix",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/ix/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO4/ix/ix_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.reddit.com/r/CODZombies/comments/9zou7t/complete_ix_easter_egg_written_guide_updated/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo4-ix/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic, not to scale. Lines show regional routes with intermediate rooms omitted. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-arena",
+      "label": "Arena",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.259,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Surface",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "area-danu",
+      "label": "Danu tower",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.449,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Three floors",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "area-ra",
+      "label": "Ra tower",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.7090000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Three floors",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Build the Brazen Bull in The Pit; get Death of Orion and upgrade it.",
+      "source": "/guides/bo4-ix#guide-step-setup-2"
+    },
+    {
+      "id": "area-odin",
+      "label": "Odin tower",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.449,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Three floors",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "area-zeus",
+      "label": "Zeus tower",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.7090000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Three floors",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "area-temple",
+      "label": "Temple",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.599,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Underground",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "area-pit",
+      "label": "The Pit",
+      "layerId": "overview",
+      "x": 0.37,
+      "y": 0.8390000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Underground",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Build the Brazen Bull in The Pit; get Death of Orion and upgrade it.",
+      "source": "/guides/bo4-ix#guide-step-setup-2"
+    },
+    {
+      "id": "area-crypt",
+      "label": "Flooded Crypt",
+      "layerId": "overview",
+      "x": 0.63,
+      "y": 0.8390000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "floor": "Underground",
+      "description": "Region on an original schematic; spacing and angles are illustrative. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference. Find the blue-marked Temple skull → Specialist → Flooded Crypt grinder → collect bone meal.",
+      "source": "/guides/bo4-ix#guide-step-danu-1"
+    },
+    {
+      "id": "banners",
+      "label": "Challenge banners / podium",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.278,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Surface",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "danu-gong",
+      "label": "Danu gong & champion",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.46799999999999997,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "ra-gong",
+      "label": "Ra gong & champion",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.7280000000000001,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "odin-gong",
+      "label": "Odin gong & champion",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.46799999999999997,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "zeus-gong",
+      "label": "Zeus gong & champion",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.7280000000000001,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "pap",
+      "label": "Temple Pack-a-Punch altar",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.618,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Underground",
+      "availability": "conditional",
+      "description": "Cut a challenge-banner rope in the Arena with a melee attack. Complete its first three tasks and claim each reward at your podium; the third supplies a Pack-a-Punched Strife, and the central cauldron becomes available for the Acid Trap. Open the four towers, ring each altar-room gong and kill its summoned champion. Carry the four heads to the spikes around the Temple altar to reveal Pack-a-Punch. Danu and Ra share one tower pair; Zeus and Odin share the other. Take the bridges and underground corridors to reach all four altar rooms. Keep your crowd affinity positive until you have the jar for the Orion quest. Deliberately lowering it for Danu first creates extra work. Recommended loadout: a reliable bullet weapon for precise Ra kills, Serket’s Kiss for crowds, and a repaired shield. Dying Wish or Winter’s Wail can protect longer interactions. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-1"
+    },
+    {
+      "id": "shield-bench",
+      "label": "Brazen Bull workbench",
+      "layerId": "overview",
+      "x": 0.323,
+      "y": 0.8580000000000001,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Underground",
+      "availability": "conditional",
+      "description": "Collect one shield part from each spawn group below, then build the Brazen Bull on the workbench in the back corner of The Pit. Obtain Death of Orion from its quest or the Mystery Box and Pack-a-Punch it into Serket’s Kiss. The shield’s gun is required for the Ra bull targets. Horns, Ra Altar Room: wall between the gong and stairs; pillar beside the Trebuchet wallbuy; or wall beside the zombie window closest to the perk statue. Blade, Zeus tower: Bath House ledge by the stairs; statue’s hand on Entrance level beside the Arena doorway; or statue base on Altar level by the nearby zombie window. Barrels, Odin tower: Cauldron pillar beside the Mystery Box; shield shelf at the top of the Entrance stairs; or around the corner from the Altar stairs. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-setup-2"
+    },
+    {
+      "id": "skull-grinders",
+      "label": "Skull-grinder search area",
+      "layerId": "overview",
+      "x": 0.583,
+      "y": 0.8580000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Underground",
+      "availability": "conditional",
+      "description": "Three candidate recesses; consult the photographs. After Pack-a-Punch opens, inspect the skull walls in the Temple for the blue-marked skull shown below. Face it, activate your Specialist and interact; collect it from the floor. Put it in the active grinder in Flooded Crypt and fire fully charged Orion shots until it grinds. Take the bone meal from the bottom. Search below all four god emblems; the pillars in front of and behind Pack-a-Punch; both flanking walls; and the skull sections on each side of the upper stair exits. These cover the twelve documented spawn spots. The grinder has three possible positions, all in Flooded Crypt. Check the recessed wall sections around the room. The base Orion takes three fully charged shots; the upgraded version can finish sooner. Watch the grinder and collect its output rather than counting partial-charge shots. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-danu-1"
+    },
+    {
+      "id": "danu-fertilizer",
+      "label": "Danu fertilizer ritual",
+      "layerId": "overview",
+      "x": 0.21700000000000003,
+      "y": 0.46799999999999997,
+      "category": "quest",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Place the prepared fertilizer between the two trees in Danu Tower: Arboretum. This starts a separate wait: allow two full non-special rounds until it emits green smoke. Trigger a Fire Bomb kill with a zombie standing directly over it. Blue cracks in the floor confirm the activation. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-danu-plant"
+    },
+    {
+      "id": "zeus-bowl",
+      "label": "Fertilizer bowl",
+      "layerId": "overview",
+      "x": 0.877,
+      "y": 0.7280000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Three floors",
+      "availability": "conditional",
+      "description": "Lower crowd affinity to a full red thumbs-down and collect the dung gift the crowd throws into the Arena. Combine dung, bone meal and charcoal in the bowl at Zeus Tower: Bath House. Inspect it after a full non-special round and collect only when the mixture is ready; if it is not ready, allow another round. Running through Arena fire or throwing grenades into the crowd lowers affinity. Retrieve the jar for Orion first if using its quest. Dung costs points on pickup. Confirm you collected the gift instead of only seeing it land. Older walkthroughs budget two full bowl rounds. Readiness in your match is the deciding signal. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-ix#guide-step-danu-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Banner: complete three challenges. Ring four tower gongs; four heads into the Temple.",
+      "kind": "area",
+      "locationIds": [
+        "banners",
+        "danu-gong",
+        "ra-gong",
+        "odin-gong",
+        "zeus-gong",
+        "pap",
+        "area-arena",
+        "area-danu",
+        "area-odin",
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Build the Brazen Bull in The Pit; get Death of Orion and upgrade it.",
+      "kind": "area",
+      "locationIds": [
+        "shield-bench",
+        "area-arena",
+        "area-ra",
+        "area-odin",
+        "area-zeus",
+        "area-temple",
+        "area-pit"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Prepare Fire Bomb; begin the wood wait early. Save a bullet weapon for precision kills.",
+      "kind": "area",
+      "locationIds": [
+        "area-danu",
+        "area-zeus"
+      ],
+      "guideAnchor": "guide-step-setup-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-1",
+      "title": "Find the blue-marked Temple skull → Specialist → Flooded Crypt grinder → collect bone meal.",
+      "kind": "area",
+      "locationIds": [
+        "skull-grinders",
+        "area-temple",
+        "area-crypt"
+      ],
+      "guideAnchor": "guide-step-danu-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-grinder-locations",
+      "title": "Flooded Crypt: locate the active grinder in one of these three recesses.",
+      "kind": "area",
+      "locationIds": [
+        "skull-grinders",
+        "area-crypt"
+      ],
+      "guideAnchor": "guide-step-danu-grinder-locations",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-wood",
+      "title": "Gladiator axe into a pyre → wood over Odin’s cauldron → wait and collect charcoal.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena",
+        "area-odin"
+      ],
+      "guideAnchor": "guide-step-danu-wood",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-2",
+      "title": "Collect dung at minimum affinity; mix all three ingredients in Zeus’s Bath House bowl.",
+      "kind": "area",
+      "locationIds": [
+        "zeus-bowl",
+        "area-arena",
+        "area-zeus"
+      ],
+      "guideAnchor": "guide-step-danu-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-plant",
+      "title": "Plant between Danu’s trees; wait for green smoke; Fire Bomb a zombie on top.",
+      "kind": "area",
+      "locationIds": [
+        "danu-fertilizer",
+        "area-danu"
+      ],
+      "guideAnchor": "guide-step-danu-plant",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-danu-3",
+      "title": "Whole team on blue cracks → destroy red growth floor by floor → return teleport.",
+      "kind": "area",
+      "locationIds": [
+        "area-danu"
+      ],
+      "guideAnchor": "guide-step-danu-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ra-1",
+      "title": "Shield-shoot four bull targets; kill each summoned Gladiator.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena",
+        "area-danu",
+        "area-ra",
+        "area-odin",
+        "area-zeus",
+        "area-temple",
+        "area-pit",
+        "area-crypt"
+      ],
+      "guideAnchor": "guide-step-ra-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ra-target-gallery",
+      "title": "Nine possible bull sightlines; only four are active in your match.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena"
+      ],
+      "guideAnchor": "guide-step-ra-target-gallery",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ra-2",
+      "title": "Start at Ra’s obelisk; record four glyphs in the order they flash.",
+      "kind": "area",
+      "locationIds": [
+        "area-ra"
+      ],
+      "guideAnchor": "guide-step-ra-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-zeus-1",
+      "title": "Central stone → raise four underground rods → stunned Kill-O-Watt kills inside four circles.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena",
+        "area-danu",
+        "area-odin"
+      ],
+      "guideAnchor": "guide-step-zeus-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-zeus-2",
+      "title": "Align and shoot three groups: Danu Tunnel, The Pit and The Crypts.",
+      "kind": "area",
+      "locationIds": [
+        "area-odin"
+      ],
+      "guideAnchor": "guide-step-zeus-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-odin-defense",
+      "title": "All players on The Pit’s rear grate → clear lockdown waves → collect key.",
+      "kind": "area",
+      "locationIds": [
+        "area-pit"
+      ],
+      "guideAnchor": "guide-step-odin-defense",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-zeus-3",
+      "title": "Resupply before all players activate the red Arena portal.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena"
+      ],
+      "guideAnchor": "guide-step-zeus-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-orion-trap",
+      "title": "Three challenges give cauldron; Temple gives chain and cog; build Acid Trap.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena",
+        "area-danu",
+        "area-odin",
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-orion-trap",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-orion-head",
+      "title": "Knock over fire bowl → follow arrow to stone head → dissolve head → take key.",
+      "kind": "area",
+      "locationIds": [
+        "area-danu",
+        "area-ra",
+        "area-odin",
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-orion-head",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-orion-jar",
+      "title": "Keep full positive affinity for a whole round; tree key + jar; collect next round.",
+      "kind": "area",
+      "locationIds": [
+        "area-danu"
+      ],
+      "guideAnchor": "guide-step-orion-jar",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-orion-box",
+      "title": "Poison the box’s side → next purchase gives Orion → Pack-a-Punch.",
+      "kind": "area",
+      "locationIds": [
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-orion-box",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-iron-heads",
+      "title": "Three Zeus bull heads → shoot and collect Temple ceiling component.",
+      "kind": "area",
+      "locationIds": [
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-iron-heads",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-iron-ignitions",
+      "title": "Four distinct special types as ninth shield-melee kills; collect statue component.",
+      "kind": "area",
+      "locationIds": [
+        "area-odin",
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-iron-ignitions",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-iron-final",
+      "title": "Burning-blade Gladiator + Brawler → Fallen Hero component → workbench.",
+      "kind": "area",
+      "locationIds": [
+        "area-pit"
+      ],
+      "guideAnchor": "guide-step-iron-final",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ix-song",
+      "title": "Shoot the four tower coins to play Mad Hatter.",
+      "kind": "area",
+      "locationIds": [
+        "area-danu",
+        "area-ra",
+        "area-odin",
+        "area-zeus"
+      ],
+      "guideAnchor": "guide-step-ix-song",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-ix-perk",
+      "title": "Helmet + sword + cup onto Odin’s boat → ignite with Wraith Fire → wait seven rounds.",
+      "kind": "area",
+      "locationIds": [
+        "area-arena",
+        "area-danu",
+        "area-ra",
+        "area-odin",
+        "area-zeus",
+        "area-temple"
+      ],
+      "guideAnchor": "guide-step-ix-perk",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "danu-1": "guide-danu-1",
+    "danu-grinder-locations": "guide-danu-grinder-locations",
+    "danu-wood": "guide-danu-wood",
+    "danu-2": "guide-danu-2",
+    "danu-plant": "guide-danu-plant",
+    "danu-3": "guide-danu-3",
+    "ra-1": "guide-ra-1",
+    "ra-target-gallery": "guide-ra-target-gallery",
+    "ra-2": "guide-ra-2",
+    "zeus-1": "guide-zeus-1",
+    "zeus-2": "guide-zeus-2",
+    "odin-defense": "guide-odin-defense",
+    "zeus-3": "guide-zeus-3",
+    "orion-trap": "guide-orion-trap",
+    "orion-head": "guide-orion-head",
+    "orion-jar": "guide-orion-jar",
+    "orion-box": "guide-orion-box",
+    "iron-heads": "guide-iron-heads",
+    "iron-ignitions": "guide-iron-ignitions",
+    "iron-final": "guide-iron-final",
+    "ix-song": "guide-ix-song",
+    "ix-perk": "guide-ix-perk"
+  }
+}

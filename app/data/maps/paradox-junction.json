@@ -56,7 +56,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "arsenal",
+      "availability": "conditional"
     },
     {
       "id": "official-3691",
@@ -68,7 +70,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "trap",
+      "availability": "conditional"
     },
     {
       "id": "official-3692",
@@ -80,7 +84,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "trap",
+      "availability": "conditional"
     },
     {
       "id": "official-3693",
@@ -92,7 +98,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "gobblegum",
+      "availability": "conditional"
     },
     {
       "id": "official-3694",
@@ -104,7 +112,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "official-3695",
@@ -116,7 +126,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "pack-a-punch",
+      "availability": "conditional"
     },
     {
       "id": "official-3696",
@@ -128,7 +140,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "official-3697",
@@ -140,7 +154,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "official-3698",
@@ -152,7 +168,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "official-3699",
@@ -164,7 +182,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3700",
@@ -176,7 +196,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3701",
@@ -188,7 +210,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3702",
@@ -200,7 +224,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3703",
@@ -212,7 +238,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3723",
@@ -224,7 +252,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3725",
@@ -236,7 +266,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3726",
@@ -248,7 +280,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "armor-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3727",
@@ -260,7 +294,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "armor-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3728",
@@ -272,7 +308,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3729",
@@ -284,7 +322,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3730",
@@ -296,7 +336,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3731",
@@ -308,7 +350,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3732",
@@ -320,7 +364,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3733",
@@ -332,7 +378,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Destroyed / Future"
+      "state": "Destroyed / Future",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3734",
@@ -344,7 +392,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "arsenal",
+      "availability": "conditional"
     },
     {
       "id": "official-3735",
@@ -356,7 +406,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "trap",
+      "availability": "conditional"
     },
     {
       "id": "official-3736",
@@ -368,7 +420,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "trap",
+      "availability": "conditional"
     },
     {
       "id": "official-3737",
@@ -380,7 +434,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "pack-a-punch",
+      "availability": "conditional"
     },
     {
       "id": "official-3738",
@@ -392,7 +448,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "exfil",
+      "availability": "conditional"
     },
     {
       "id": "official-3739",
@@ -404,7 +462,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "gobblegum",
+      "availability": "conditional"
     },
     {
       "id": "official-3740",
@@ -416,7 +476,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "crafting-table",
+      "availability": "conditional"
     },
     {
       "id": "official-3741",
@@ -428,7 +490,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "crafting-table",
+      "availability": "conditional"
     },
     {
       "id": "official-3742",
@@ -440,7 +504,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3743",
@@ -452,7 +518,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3744",
@@ -464,7 +532,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3745",
@@ -476,7 +546,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3746",
@@ -488,7 +560,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "perk-machine",
+      "availability": "conditional"
     },
     {
       "id": "official-3766",
@@ -500,7 +574,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3767",
@@ -512,7 +588,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3768",
@@ -524,7 +602,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3769",
@@ -536,7 +616,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "ammo-cache",
+      "availability": "conditional"
     },
     {
       "id": "official-3770",
@@ -548,7 +630,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "armor-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3771",
@@ -560,7 +644,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "armor-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3772",
@@ -572,7 +658,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3773",
@@ -584,7 +672,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3774",
@@ -596,7 +686,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3775",
@@ -608,7 +700,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3776",
@@ -620,7 +714,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3777",
@@ -632,7 +728,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "wall-buy",
+      "availability": "conditional"
     },
     {
       "id": "official-3778",
@@ -644,7 +742,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "official-3779",
@@ -656,7 +756,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "official-3780",
@@ -668,7 +770,9 @@
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Normal / Past"
+      "state": "Normal / Past",
+      "typeId": "mystery-box",
+      "availability": "conditional"
     },
     {
       "id": "normal-green",
@@ -681,7 +785,9 @@
       "description": "Main rooms in the western house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-greenup",
@@ -694,7 +800,9 @@
       "description": "Upper floor of the western house; same top-down footprint as downstairs.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Upstairs"
+      "floor": "Upstairs",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-greenyard",
@@ -707,7 +815,9 @@
       "description": "Western backyard, including the bunker and the rear perk location.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-greengarage",
@@ -720,7 +830,9 @@
       "description": "Garage adjoining the western house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-yellow",
@@ -733,7 +845,9 @@
       "description": "Main rooms in the eastern house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-yellowup",
@@ -746,7 +860,9 @@
       "description": "Upper floor of the eastern house; same top-down footprint as downstairs.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Upstairs"
+      "floor": "Upstairs",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-yellowyard",
@@ -759,7 +875,9 @@
       "description": "Eastern backyard, including the swing, headless mannequin and putting green.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-yellowgarage",
@@ -772,7 +890,9 @@
       "description": "Garage of the eastern house. Search the shelves for the red toolbox or controller.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-trinity",
@@ -785,7 +905,9 @@
       "description": "Southern street leading to Pack-a-Punch.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-pap",
@@ -798,7 +920,9 @@
       "description": "Far southern end of Trinity Avenue.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-truck",
@@ -811,7 +935,9 @@
       "description": "Truck between the houses at the head of the cul-de-sac. Blundergat/Sundergat workbench is inside.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-culdesac",
@@ -824,7 +950,9 @@
       "description": "Central road and bus between the two houses.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "normal-clock",
@@ -837,7 +965,9 @@
       "description": "Look up towards the clock on/above the Green House. Area marker; the roof height is not shown.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Roof / above the house"
+      "floor": "Roof / above the house",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-green",
@@ -850,7 +980,9 @@
       "description": "Main rooms in the western house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-greenup",
@@ -863,7 +995,9 @@
       "description": "Upper floor of the western house; same top-down footprint as downstairs.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Upstairs"
+      "floor": "Upstairs",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-greenyard",
@@ -876,7 +1010,9 @@
       "description": "Western backyard, including the bunker and the rear perk location.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-greengarage",
@@ -889,7 +1025,9 @@
       "description": "Garage adjoining the western house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-yellow",
@@ -902,7 +1040,9 @@
       "description": "Main rooms in the eastern house.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-yellowup",
@@ -915,7 +1055,9 @@
       "description": "Upper floor of the eastern house; same top-down footprint as downstairs.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Upstairs"
+      "floor": "Upstairs",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-yellowyard",
@@ -928,7 +1070,9 @@
       "description": "Eastern backyard, including the swing, headless mannequin and putting green.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-yellowgarage",
@@ -941,7 +1085,9 @@
       "description": "Garage of the eastern house. Search the shelves for the red toolbox or controller.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-trinity",
@@ -954,7 +1100,9 @@
       "description": "Southern street leading to Pack-a-Punch.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-pap",
@@ -967,7 +1115,9 @@
       "description": "Far southern end of Trinity Avenue.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-truck",
@@ -980,7 +1130,9 @@
       "description": "Truck between the houses at the head of the cul-de-sac. Blundergat/Sundergat workbench is inside.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-culdesac",
@@ -993,7 +1145,9 @@
       "description": "Central road and bus between the two houses.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "destroyed-clock",
@@ -1006,7 +1160,9 @@
       "description": "Look up towards the clock on/above the Green House. Area marker; the roof height is not shown.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Roof / above the house"
+      "floor": "Roof / above the house",
+      "typeId": "named-area",
+      "availability": "conditional"
     },
     {
       "id": "rcxd-pap",
@@ -1019,7 +1175,9 @@
       "description": "Possible spawn: against the boxes on the right of Pack-a-Punch when facing it. Room-area guidance; use the reference photos.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "rcxd-green",
@@ -1032,7 +1190,9 @@
       "description": "Possible spawn: against the fence in Green House Backyard. Room-area guidance; use the reference photos.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "rcxd-yellow",
@@ -1045,7 +1205,9 @@
       "description": "Possible spawn: on a shelf in Yellow House Garage. Room-area guidance; use the reference photos.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "headset-street",
@@ -1058,7 +1220,9 @@
       "description": "With Death Perception, check the trash cans near the Green House car / left of the GobbleGum machine. Area highlight.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "headset-green",
@@ -1071,7 +1235,9 @@
       "description": "With Death Perception, check the coat rack / wall between the upstairs rooms. Area highlight on the house footprint.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Upstairs"
+      "floor": "Upstairs",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "headset-yellow",
@@ -1084,7 +1250,9 @@
       "description": "With Death Perception, check the hand of the headless mannequin next to the perk location. Area highlight.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "ball-crates",
@@ -1097,7 +1265,9 @@
       "description": "Possible spawn: on top of the ammunition crates in Trinity Avenue. Area highlight; exact crate not surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "ball-roof",
@@ -1110,7 +1280,9 @@
       "description": "Possible spawn: on a house roof in Trinity Avenue. The road region is highlighted; exact rooftop has not been surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "ball-yellow",
@@ -1123,7 +1295,9 @@
       "description": "Possible spawn: elevated on the Yellow House patio pillar / mezzanine. Backyard area highlighted; look upwards.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-green-bunker",
@@ -1136,7 +1310,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-yellow-fence",
@@ -1149,7 +1325,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-bus",
@@ -1162,7 +1340,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-teleporter",
@@ -1175,7 +1355,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-garage",
@@ -1188,7 +1370,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-m8a1",
@@ -1201,7 +1385,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-rock",
@@ -1214,7 +1400,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "note-exfil",
@@ -1227,7 +1415,9 @@
       "description": "One of eight fixed notes; inspect the named landmark and use its blink count to determine collection order. The marker highlights its area, not the exact wall pixel.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "seeds",
@@ -1240,7 +1430,9 @@
       "description": "Destroyed Yellow House Garage: crouch at the red toolbox on the shelf and interact.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "goggles",
@@ -1253,7 +1445,9 @@
       "description": "Shoot the top of the speaker pole outside the playable area at the Pack-a-Punch end of Trinity Avenue; use Wisp Tea to retrieve the Goggles.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "tree-normal",
@@ -1266,7 +1460,9 @@
       "description": "Plant the Irradiated Seeds in the earth mound on the left of Pack-a-Punch when facing it. Approximate end-of-street area.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "tree-destroyed",
@@ -1279,7 +1475,9 @@
       "description": "Throw three Combat Axes at the grown tree at the Pack-a-Punch end of Trinity Avenue.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "hopscotch-normal",
@@ -1292,7 +1490,9 @@
       "description": "Find the Twins’ hopscotch drawing and the white orb facing the Wunderfizz area. Region highlighted; exact X is not surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "hopscotch-destroyed",
@@ -1305,7 +1505,9 @@
       "description": "Stand on the large X facing the Wunderfizz area until it stays blue. Region highlighted; exact X is not surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Destroyed / Future",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "ball-trial-normal",
@@ -1318,7 +1520,9 @@
       "description": "The ball trial uses the chalk circle in Trinity Avenue. Region highlighted; this is a different drawing from Hopscotch.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "toybox",
@@ -1331,7 +1535,9 @@
       "description": "Blue toy box against the crates near the chalk circle in Trinity Avenue. Exact crate position not surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "fireplace",
@@ -1344,7 +1550,9 @@
       "description": "Place firewood in the fireplace and light it with a Molotov; escort the golden music box here. House area highlighted.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "piano",
@@ -1357,7 +1565,9 @@
       "description": "Play 86756535 at the piano after collecting the notes; escort the music sheet here. House area highlighted.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "swing",
@@ -1370,7 +1580,9 @@
       "description": "Shoot the swing seat, then return the seat and Chalk here. Later, the yellow portal here starts the boss fight. Backyard area highlighted.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
       "state": "Normal / Past",
-      "floor": "Ground / outside"
+      "floor": "Ground / outside",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "boss-trinity",
@@ -1382,7 +1594,9 @@
       "precision": "area",
       "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Dark Heart encounter"
+      "state": "Dark Heart encounter",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "boss-yellowyard",
@@ -1394,7 +1608,9 @@
       "precision": "area",
       "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Dark Heart encounter"
+      "state": "Dark Heart encounter",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "boss-greenyard",
@@ -1406,7 +1622,9 @@
       "precision": "area",
       "description": "One of the three named Dark Heart encounter areas. The boss alters the neighborhood; the base artwork shows its normal layout.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
-      "state": "Dark Heart encounter"
+      "state": "Dark Heart encounter",
+      "typeId": "quest",
+      "availability": "conditional"
     },
     {
       "id": "cursed-peeks-normal-north",
@@ -1419,7 +1637,9 @@
       "precision": "area",
       "description": "Possible Cursed-mode Mister Peeks egg-reward spawn on an off-map roof north of Cul-de-Sac. The published spawn is cropped beyond the upper edge of the Past map image; this marker identifies the nearby search area, not the exact roof position. Look above/outside the playable boundary. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed.",
       "source": "https://codzombiesguides.com/maps/paradox-junction/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-normal-trinity",
@@ -1432,7 +1652,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/paradox-junction/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-destroyed-north",
@@ -1445,7 +1667,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/paradox-junction/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-destroyed-trinity",
@@ -1458,7 +1682,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/paradox-junction/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [

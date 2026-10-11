@@ -1,0 +1,353 @@
+{
+  "id": "bo2-town",
+  "name": "Town",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-town",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://gamefaqs.gamespot.com/pc/669290-call-of-duty-black-ops-ii/faqs/65308"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=445161376"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.reddit.com/r/CODZombies/comments/13sxi2/get_all_perks_on_survival/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-town/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-street",
+      "label": "Street / central lava",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.637,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground level",
+      "description": "Black Ops II · Ground level. Region on a schematic, not an exact object position. Open the Jugger-Nog building; use the MP5 and learn both upstairs exits.",
+      "source": "/guides/bo2-town#guide-step-setup-layout"
+    },
+    {
+      "id": "area-jug",
+      "label": "Jugger-Nog building",
+      "layerId": "overview",
+      "x": 0.23,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Black Ops II · Upper floor. Region on a schematic, not an exact object position. Open the Jugger-Nog building; use the MP5 and learn both upstairs exits.",
+      "source": "/guides/bo2-town#guide-step-setup-layout"
+    },
+    {
+      "id": "area-bar",
+      "label": "Bar",
+      "layerId": "overview",
+      "x": 0.79,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Black Ops II · Two floors. Region on a schematic, not an exact object position. Open the Jugger-Nog building; use the MP5 and learn both upstairs exits.",
+      "source": "/guides/bo2-town#guide-step-setup-layout"
+    },
+    {
+      "id": "area-bank",
+      "label": "Bank",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Black Ops II · Ground floor. Region on a schematic, not an exact object position. Prioritize Jugger-Nog, then choose perks for your route and weapon.",
+      "source": "/guides/bo2-town#guide-step-setup-perks"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch in lava",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.638,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground level",
+      "description": "Pack-a-Punch is already active in the central lava and costs 5,000. Save a slow zombie, let your health recover, approach by the shortest safe line and retrieve the weapon immediately. Have a teammate draw the last zombie away in co-op. There is no power switch or bank-door puzzle to complete. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-town#guide-step-setup-pap"
+    },
+    {
+      "id": "jug",
+      "label": "Upstairs Jugger-Nog",
+      "layerId": "overview",
+      "x": 0.192,
+      "y": 0.318,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper floor",
+      "description": "Find Jugger-Nog upstairs in the burning building, Quick Revive upstairs in the bar, Stamin-Up downstairs in the bar, Speed Cola inside the bank and Double Tap beside the outdoor Box location. Tombstone is in the street in co-op Survival. Solo Quick Revive costs 500 and supplies up to three self-revives; Tombstone is absent in solo. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-town#guide-step-setup-perks"
+    },
+    {
+      "id": "revive",
+      "label": "Upstairs Quick Revive",
+      "layerId": "overview",
+      "x": 0.752,
+      "y": 0.318,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Find Jugger-Nog upstairs in the burning building, Quick Revive upstairs in the bar, Stamin-Up downstairs in the bar, Speed Cola inside the bank and Double Tap beside the outdoor Box location. Tombstone is in the street in co-op Survival. Solo Quick Revive costs 500 and supplies up to three self-revives; Tombstone is absent in solo. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-town#guide-step-setup-perks"
+    },
+    {
+      "id": "stamin",
+      "label": "Downstairs Stamin-Up",
+      "layerId": "overview",
+      "x": 0.8280000000000001,
+      "y": 0.318,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Two floors",
+      "description": "Find Jugger-Nog upstairs in the burning building, Quick Revive upstairs in the bar, Stamin-Up downstairs in the bar, Speed Cola inside the bank and Double Tap beside the outdoor Box location. Tombstone is in the street in co-op Survival. Solo Quick Revive costs 500 and supplies up to three self-revives; Tombstone is absent in solo. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-town#guide-step-setup-perks"
+    },
+    {
+      "id": "speed",
+      "label": "Bank Speed Cola",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.8180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Find Jugger-Nog upstairs in the burning building, Quick Revive upstairs in the bar, Stamin-Up downstairs in the bar, Speed Cola inside the bank and Double Tap beside the outdoor Box location. Tombstone is in the street in co-op Survival. Solo Quick Revive costs 500 and supplies up to three self-revives; Tombstone is absent in solo. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-town#guide-step-setup-perks"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-layout",
+      "title": "Open the Jugger-Nog building; use the MP5 and learn both upstairs exits.",
+      "locationIds": [
+        "jug",
+        "area-street",
+        "area-jug",
+        "area-bar"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-setup-layout"
+    },
+    {
+      "id": "guide-setup-perks",
+      "title": "Prioritize Jugger-Nog, then choose perks for your route and weapon.",
+      "locationIds": [
+        "jug",
+        "revive",
+        "stamin",
+        "speed",
+        "area-street",
+        "area-jug",
+        "area-bar",
+        "area-bank"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-setup-perks"
+    },
+    {
+      "id": "guide-setup-pap",
+      "title": "Upgrade for 5,000 in the street; keep the lava crossing short.",
+      "locationIds": [
+        "pap",
+        "area-street",
+        "area-bank"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-setup-pap"
+    },
+    {
+      "id": "guide-setup-box",
+      "title": "Check the bar or Double Tap corner for the Box; retain an ammo fallback.",
+      "locationIds": [
+        "area-street",
+        "area-bar"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-setup-box"
+    },
+    {
+      "id": "guide-survive-route",
+      "title": "Train outside; drop from an upstairs opening when the stairs are blocked.",
+      "locationIds": [
+        "area-street",
+        "area-bar",
+        "area-bank"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-survive-route"
+    },
+    {
+      "id": "guide-survive-lava",
+      "title": "Keep fire and explosive damage away from your feet.",
+      "locationIds": [
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-survive-lava"
+    },
+    {
+      "id": "guide-survive-coop",
+      "title": "Call route changes and keep recovery money.",
+      "locationIds": [
+        "area-jug"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-survive-coop"
+    },
+    {
+      "id": "guide-grief-differences",
+      "title": "Guard the player using Pack-a-Punch; Tombstone is Survival-only.",
+      "locationIds": [
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-grief-differences"
+    },
+    {
+      "id": "guide-tombstone-bank",
+      "title": "Buy three perks plus Tombstone; save for the missing two and another Tombstone.",
+      "locationIds": [
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-tombstone-bank"
+    },
+    {
+      "id": "guide-tombstone-down",
+      "title": "Respawn → buy the missing two plus Tombstone → collect the old marker.",
+      "locationIds": [
+        "area-street"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-tombstone-down"
+    },
+    {
+      "id": "guide-secrets-scope",
+      "title": "Use the TranZit guide for the connected Green Run secrets.",
+      "locationIds": [
+        "area-street",
+        "area-bank"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Town Survival/Grief region schematic. Bar floors are grouped; marker descriptions distinguish them. The schematic does not plot lava-safe footpaths.",
+      "guideAnchor": "guide-step-secrets-scope"
+    }
+  ],
+  "quickLinks": {
+    "setup-layout": "guide-setup-layout",
+    "setup-perks": "guide-setup-perks",
+    "setup-pap": "guide-setup-pap",
+    "setup-box": "guide-setup-box",
+    "survive-route": "guide-survive-route",
+    "survive-lava": "guide-survive-lava",
+    "survive-coop": "guide-survive-coop",
+    "grief-differences": "guide-grief-differences",
+    "tombstone-bank": "guide-tombstone-bank",
+    "tombstone-down": "guide-tombstone-down",
+    "secrets-scope": "guide-secrets-scope"
+  }
+}

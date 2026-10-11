@@ -1,0 +1,832 @@
+{
+  "id": "iw-shaolin-shuffle",
+  "name": "Shaolin Shuffle",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Infinite Warfare guide",
+      "url": "/guides/iw-shaolin-shuffle",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2644508979",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/IW/shaolin_shuffle/shaolin_shuffle_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/shaolin-shuffle/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/iw-shaolin-shuffle/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn subway",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Tracks / turnstile",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-dojo",
+      "label": "Dojo / street",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.46699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street / interior",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-heebie",
+      "label": "Heebie Geebies",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Club / alley",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Talk to Pam; release/follow the rat through six cages.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-rats-release"
+    },
+    {
+      "id": "area-disco",
+      "label": "Disco",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.46699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Floors + roof",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-roof",
+      "label": "Racin’ Stripes roof",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Roof portal",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-blue",
+      "label": "Blue Bolts street",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.647,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Street portal",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Open paired travel doors; projector button → Blue Bolts portal → fuse pickup.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-chi-and-travel-travel"
+    },
+    {
+      "id": "area-park",
+      "label": "Park / RPR",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Park / raised routes",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-subway",
+      "label": "Main Street subway",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower floor / tracks",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-pink",
+      "label": "Pink Cat",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.5970000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Club / projector room",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "area-lair",
+      "label": "Sewers / Rat King lair",
+      "layerId": "overview",
+      "x": 0.84,
+      "y": 0.857,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate lower space",
+      "availability": "fixed",
+      "description": "Infinite Warfare. Named region on an original diagram; spacing and angles are not geographical. Four power switches; flyer, sewer coin and film reel.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "spawn-power",
+      "label": "Spawn subway power",
+      "layerId": "overview",
+      "x": 0.12,
+      "y": 0.775,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Tracks / turnstile",
+      "availability": "conditional",
+      "description": "Enable power at Spawn subway’s pillar, Disco roof beside Quickies, Park wall left of Deadeye Dewdrops and Main Street subway across from Bang Bangs. Collect a flyer (Dojo trash, Racin’ Stripes chair, Disco roof stool or Pink Cat sidewalk), the coin under sewer Tuff ’Nuff and a film reel (Disco couch, Pink Cat couch, subway boxes, sewer stairs or Rat King’s wall holes). Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "disco-power",
+      "label": "Disco roof power",
+      "layerId": "overview",
+      "x": 0.47000000000000003,
+      "y": 0.445,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Floors + roof",
+      "availability": "conditional",
+      "description": "Enable power at Spawn subway’s pillar, Disco roof beside Quickies, Park wall left of Deadeye Dewdrops and Main Street subway across from Bang Bangs. Collect a flyer (Dojo trash, Racin’ Stripes chair, Disco roof stool or Pink Cat sidewalk), the coin under sewer Tuff ’Nuff and a film reel (Disco couch, Pink Cat couch, subway boxes, sewer stairs or Rat King’s wall holes). Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "park-power",
+      "label": "Park power",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.245,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Park / raised routes",
+      "availability": "conditional",
+      "description": "Enable power at Spawn subway’s pillar, Disco roof beside Quickies, Park wall left of Deadeye Dewdrops and Main Street subway across from Bang Bangs. Collect a flyer (Dojo trash, Racin’ Stripes chair, Disco roof stool or Pink Cat sidewalk), the coin under sewer Tuff ’Nuff and a film reel (Disco couch, Pink Cat couch, subway boxes, sewer stairs or Rat King’s wall holes). Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "subway-power",
+      "label": "Main Street subway power",
+      "layerId": "overview",
+      "x": 0.48000000000000004,
+      "y": 0.805,
+      "category": "power-switch",
+      "typeId": "power-switch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Lower floor / tracks",
+      "availability": "conditional",
+      "description": "Enable power at Spawn subway’s pillar, Disco roof beside Quickies, Park wall left of Deadeye Dewdrops and Main Street subway across from Bang Bangs. Collect a flyer (Dojo trash, Racin’ Stripes chair, Disco roof stool or Pink Cat sidewalk), the coin under sewer Tuff ’Nuff and a film reel (Disco couch, Pink Cat couch, subway boxes, sewer stairs or Rat King’s wall holes). Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-power"
+    },
+    {
+      "id": "pap",
+      "label": "Pink Cat projector",
+      "layerId": "overview",
+      "x": 0.7899999999999999,
+      "y": 0.5750000000000001,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Club / projector room",
+      "availability": "conditional",
+      "description": "Use the flyer on the Pink Cat front door, the coin on its left private-room door and the reel on the projector. The wall portal reaches Pack-a-Punch during each visit window. On/after Scene 5, speak to Pam in the Dojo, drink a Chi gourd and make fifteen melee kills in that style to unlock Shurikens. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-setup-projector"
+    },
+    {
+      "id": "pam",
+      "label": "Pam / Chi training",
+      "layerId": "overview",
+      "x": 0.15,
+      "y": 0.445,
+      "category": "npc",
+      "typeId": "npc",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Street / interior",
+      "availability": "conditional",
+      "description": "Dragon, Tiger, Crane and Snake have independent upgrade progress. Start with melee kills, then complete the displayed style challenges to unlock Shuriken, special and ultimate tiers. Gourds recharge the ability and eventually respawn; changing style preserves its previous progress. Chi melee/Shurikens break the Torii barriers. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-chi-and-travel-styles"
+    },
+    {
+      "id": "spotlight",
+      "label": "Disco roof spotlight",
+      "layerId": "overview",
+      "x": 0.55,
+      "y": 0.445,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Floors + roof",
+      "availability": "conditional",
+      "description": "Place the poster on the Disco roof spotlight. Explode the projected X window and defeat the spawned ninjas. An initial letter and six shootable Wyler glyphs now appear. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-word-spotlight"
+    },
+    {
+      "id": "dj",
+      "label": "Upstairs DJ booth",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.493,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Floors + roof",
+      "availability": "conditional",
+      "description": "Interact with the upstairs Disco DJ booth. Keep another zombie on the active dance floor before killing the passive zombie carrying the disco ball; it transfers to that waiting target. Repeat ten transfers without ending the round. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-disco-dj"
+    },
+    {
+      "id": "lair",
+      "label": "Rat King arena",
+      "layerId": "overview",
+      "x": 0.7999999999999999,
+      "y": 0.835,
+      "category": "boss-arena",
+      "typeId": "boss-arena",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Separate lower space",
+      "availability": "conditional",
+      "description": "Damage the Rat King until he retreats. Avoid firing continuously into his raised shield; Shurikens can destroy the staff temporarily. Select an organ and then the central floor symbol to start its challenge. Any challenge order is allowed. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/iw-shaolin-shuffle#guide-step-finale-damage"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-power",
+      "title": "Four power switches; flyer, sewer coin and film reel.",
+      "locationIds": [
+        "spawn-power",
+        "disco-power",
+        "park-power",
+        "subway-power",
+        "area-spawn",
+        "area-dojo",
+        "area-disco",
+        "area-roof",
+        "area-park",
+        "area-subway",
+        "area-pink",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-setup-power"
+    },
+    {
+      "id": "guide-setup-projector",
+      "title": "Open the Pink Cat projector; Pam on Scene 5; fifteen Chi melee kills.",
+      "locationIds": [
+        "pap",
+        "area-dojo",
+        "area-pink"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-setup-projector"
+    },
+    {
+      "id": "guide-rats-release",
+      "title": "Talk to Pam; release/follow the rat through six cages.",
+      "locationIds": [
+        "area-dojo",
+        "area-heebie"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-rats-release"
+    },
+    {
+      "id": "guide-soulkey-locker",
+      "title": "Locker → Dojo left → bathroom second → Park first → Park second.",
+      "locationIds": [
+        "area-dojo",
+        "area-disco",
+        "area-park",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-soulkey-locker"
+    },
+    {
+      "id": "guide-eye-rat-king",
+      "title": "Dojo Rat King fight → eye → Pam.",
+      "locationIds": [
+        "area-dojo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-eye-rat-king"
+    },
+    {
+      "id": "guide-eye-hunt",
+      "title": "Eye-scan and shoot six successive active orange symbols.",
+      "locationIds": [
+        "area-spawn",
+        "area-dojo",
+        "area-heebie",
+        "area-disco",
+        "area-park",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-eye-hunt"
+    },
+    {
+      "id": "guide-phone-poster",
+      "title": "Match the Film Registration number, not poster artwork.",
+      "locationIds": [
+        "area-spawn",
+        "area-dojo",
+        "area-disco",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-phone-poster"
+    },
+    {
+      "id": "guide-word-spotlight",
+      "title": "Spotlight poster → explosive X → ninja wave.",
+      "locationIds": [
+        "spotlight",
+        "area-spawn",
+        "area-disco"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-word-spotlight"
+    },
+    {
+      "id": "guide-word-letters",
+      "title": "Filter all candidates; shoot confirmed next glyphs; reset only the current word.",
+      "locationIds": [
+        "spotlight",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-word-letters"
+    },
+    {
+      "id": "guide-word-complete",
+      "title": "Word completion gong → RPR Rat King marker.",
+      "locationIds": [
+        "area-park"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-word-complete"
+    },
+    {
+      "id": "guide-brain-brain",
+      "title": "Defeat the second Rat King; take brain; Pam; three marked round starts.",
+      "locationIds": [
+        "area-dojo",
+        "area-park"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-brain-brain"
+    },
+    {
+      "id": "guide-brain-lockdown",
+      "title": "Complete the street lockdown and take the turnstile piece.",
+      "locationIds": [
+        "area-dojo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-brain-lockdown"
+    },
+    {
+      "id": "guide-turnstile-gate",
+      "title": "Repair Spawn turnstile; shoot the ladder-window glyph.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-turnstile-gate"
+    },
+    {
+      "id": "guide-turnstile-circles",
+      "title": "Feed successive circle sites until the gong.",
+      "locationIds": [
+        "area-spawn",
+        "area-disco",
+        "area-park"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-turnstile-circles"
+    },
+    {
+      "id": "guide-disco-dj",
+      "title": "DJ booth → ten disco-ball transfers with a receiver on the floor.",
+      "locationIds": [
+        "dj",
+        "area-disco"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-disco-dj"
+    },
+    {
+      "id": "guide-heart-heart",
+      "title": "Pink Cat Rat King → heart → Pam.",
+      "locationIds": [
+        "area-dojo",
+        "area-pink",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-heart-heart"
+    },
+    {
+      "id": "guide-finale-damage",
+      "title": "Damage until retreat; choose organ + center symbol.",
+      "locationIds": [
+        "lair",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-finale-damage"
+    },
+    {
+      "id": "guide-finale-eye-challenge",
+      "title": "Eye: revealed glyphs. Brain: protect blue-eyed allies. Heart: clear all acid puddles.",
+      "locationIds": [
+        "lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-finale-eye-challenge"
+    },
+    {
+      "id": "guide-finale-finish",
+      "title": "Challenge → ammo → damage → next organ; after three kill and collect the key.",
+      "locationIds": [
+        "lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-finale-finish"
+    },
+    {
+      "id": "guide-chi-and-travel-styles",
+      "title": "Four independent Chi styles; complete their displayed tier challenges.",
+      "locationIds": [
+        "pam",
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-chi-and-travel-styles"
+    },
+    {
+      "id": "guide-chi-and-travel-travel",
+      "title": "Open paired travel doors; projector button → Blue Bolts portal → fuse pickup.",
+      "locationIds": [
+        "area-heebie",
+        "area-roof",
+        "area-blue",
+        "area-subway",
+        "area-pink"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-chi-and-travel-travel"
+    },
+    {
+      "id": "guide-chi-and-travel-charge",
+      "title": "Train-charge fuses; install in projector.",
+      "locationIds": [
+        "area-subway",
+        "area-pink"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-chi-and-travel-charge"
+    },
+    {
+      "id": "guide-katana-and-nunchakus-katana",
+      "title": "Quest unlocks Dojo Katana.",
+      "locationIds": [
+        "area-dojo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-katana-and-nunchakus-katana"
+    },
+    {
+      "id": "guide-katana-and-nunchakus-clock-items",
+      "title": "Clock item stages: Blue Bolts pair → scripts → books.",
+      "locationIds": [
+        "area-disco",
+        "area-roof",
+        "area-blue",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-katana-and-nunchakus-clock-items"
+    },
+    {
+      "id": "guide-katana-and-nunchakus-tv",
+      "title": "Character TV lockdown → roof/Disco/subway clock punches → first Fire Sale draw.",
+      "locationIds": [
+        "area-spawn",
+        "area-heebie",
+        "area-disco",
+        "area-roof",
+        "area-blue",
+        "area-park",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-katana-and-nunchakus-tv"
+    },
+    {
+      "id": "guide-mahjong-equipment-tables",
+      "title": "Return three table-matching tiles; one carried at a time.",
+      "locationIds": [
+        "area-spawn",
+        "area-dojo",
+        "area-roof",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-mahjong-equipment-tables"
+    },
+    {
+      "id": "guide-mahjong-equipment-other-tables",
+      "title": "Zom-B-Gone, Lava Lamp and Sentry use their own three-tile table collections.",
+      "locationIds": [
+        "area-heebie",
+        "area-disco",
+        "area-park",
+        "area-pink",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-mahjong-equipment-other-tables"
+    },
+    {
+      "id": "guide-skullbuster-clean",
+      "title": "Clean cabinet; four triples + one pair in the fourteen-tile roof hand.",
+      "locationIds": [
+        "area-heebie",
+        "area-disco",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-skullbuster-clean"
+    },
+    {
+      "id": "guide-skullbuster-numbers",
+      "title": "Glass numbers 1,9,7,2; then RPR white-circle jumps.",
+      "locationIds": [
+        "area-dojo",
+        "area-disco",
+        "area-roof",
+        "area-park"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-skullbuster-numbers"
+    },
+    {
+      "id": "guide-skullbuster-train-phone",
+      "title": "Prepare a revive; train skull jump; full 555-0152 phone call.",
+      "locationIds": [
+        "area-spawn",
+        "area-subway"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-skullbuster-train-phone"
+    },
+    {
+      "id": "guide-skullbuster-game",
+      "title": "Form matching three-skull groups; after three strikes repeat the phone call.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-skullbuster-game"
+    },
+    {
+      "id": "guide-music-and-pam-music",
+      "title": "Interact with seven active radios; note the David Savage recording.",
+      "locationIds": [
+        "area-dojo",
+        "area-heebie",
+        "area-disco",
+        "area-park",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-music-and-pam-music"
+    },
+    {
+      "id": "guide-music-and-pam-savage",
+      "title": "Clock → twelve trashcans → four ciphers → timed Tuff ’Nuff cipher → throne.",
+      "locationIds": [
+        "area-spawn",
+        "area-lair"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-music-and-pam-savage"
+    },
+    {
+      "id": "guide-music-and-pam-pam-code",
+      "title": "Pam lobby code: U U R L D L.",
+      "locationIds": [
+        "area-dojo"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Partial neighborhood and travel-pair schematic. Subway levels and Disco floors are grouped, and uncertain street/sewer connections are omitted. Random symbols, posters and craftable parts remain search-area targets, not exact dots.",
+      "guideAnchor": "guide-step-music-and-pam-pam-code"
+    }
+  ],
+  "quickLinks": {
+    "setup-power": "guide-setup-power",
+    "setup-projector": "guide-setup-projector",
+    "rats-release": "guide-rats-release",
+    "soulkey-locker": "guide-soulkey-locker",
+    "eye-rat-king": "guide-eye-rat-king",
+    "eye-hunt": "guide-eye-hunt",
+    "phone-poster": "guide-phone-poster",
+    "word-spotlight": "guide-word-spotlight",
+    "word-letters": "guide-word-letters",
+    "word-complete": "guide-word-complete",
+    "brain-brain": "guide-brain-brain",
+    "brain-lockdown": "guide-brain-lockdown",
+    "turnstile-gate": "guide-turnstile-gate",
+    "turnstile-circles": "guide-turnstile-circles",
+    "disco-dj": "guide-disco-dj",
+    "heart-heart": "guide-heart-heart",
+    "finale-damage": "guide-finale-damage",
+    "finale-eye-challenge": "guide-finale-eye-challenge",
+    "finale-finish": "guide-finale-finish",
+    "chi-and-travel-styles": "guide-chi-and-travel-styles",
+    "chi-and-travel-travel": "guide-chi-and-travel-travel",
+    "chi-and-travel-charge": "guide-chi-and-travel-charge",
+    "katana-and-nunchakus-katana": "guide-katana-and-nunchakus-katana",
+    "katana-and-nunchakus-clock-items": "guide-katana-and-nunchakus-clock-items",
+    "katana-and-nunchakus-tv": "guide-katana-and-nunchakus-tv",
+    "mahjong-equipment-tables": "guide-mahjong-equipment-tables",
+    "mahjong-equipment-other-tables": "guide-mahjong-equipment-other-tables",
+    "skullbuster-clean": "guide-skullbuster-clean",
+    "skullbuster-numbers": "guide-skullbuster-numbers",
+    "skullbuster-train-phone": "guide-skullbuster-train-phone",
+    "skullbuster-game": "guide-skullbuster-game",
+    "music-and-pam-music": "guide-music-and-pam-music",
+    "music-and-pam-savage": "guide-music-and-pam-savage",
+    "music-and-pam-pam-code": "guide-music-and-pam-pam-code"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "main-quest",
+      "filters": [
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "spawn-power",
+            "disco-power",
+            "park-power",
+            "subway-power",
+            "area-spawn",
+            "area-dojo",
+            "area-disco",
+            "area-roof",
+            "area-park",
+            "area-subway",
+            "area-pink",
+            "area-lair",
+            "pap"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "pam",
+            "area-spawn",
+            "area-heebie",
+            "area-roof",
+            "area-blue",
+            "area-subway",
+            "area-pink"
+          ]
+        }
+      ]
+    }
+  ]
+}

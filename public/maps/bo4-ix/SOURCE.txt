@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-ix and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. The four towers each combine three floors. Named bridges and underground routes are compressed; Pit/Crypt interior links are not asserted. Diagram directions and distances are illustrative, and every object marker is an area reference.

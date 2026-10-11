@@ -1,0 +1,1982 @@
+{
+  "reviewedAt": "2026-10-11",
+  "scope": "local checkout inventory; no new assets or product changes",
+  "totals": {
+    "catalogueMaps": 96,
+    "childGuides": 2,
+    "datasets": 11,
+    "withoutDatasets": 85,
+    "locations": 1173,
+    "targets": 822,
+    "quickLinks": 151,
+    "layers": 16,
+    "distinctArtworks": 14,
+    "artworkBytes": 12791405
+  },
+  "games": [
+    {
+      "id": "bo7",
+      "name": "Black Ops 7",
+      "mapCount": 6,
+      "interactiveCount": 6
+    },
+    {
+      "id": "bo6",
+      "name": "Black Ops 6",
+      "mapCount": 6,
+      "interactiveCount": 0
+    },
+    {
+      "id": "cw",
+      "name": "Black Ops Cold War",
+      "mapCount": 5,
+      "interactiveCount": 0
+    },
+    {
+      "id": "bo4",
+      "name": "Black Ops 4",
+      "mapCount": 8,
+      "interactiveCount": 0
+    },
+    {
+      "id": "bo3",
+      "name": "Black Ops 3",
+      "mapCount": 14,
+      "interactiveCount": 0
+    },
+    {
+      "id": "bo2",
+      "name": "Black Ops 2",
+      "mapCount": 12,
+      "interactiveCount": 0
+    },
+    {
+      "id": "bo1",
+      "name": "Black Ops",
+      "mapCount": 11,
+      "interactiveCount": 0
+    },
+    {
+      "id": "waw",
+      "name": "World at War",
+      "mapCount": 4,
+      "interactiveCount": 0
+    },
+    {
+      "id": "iw",
+      "name": "Infinite Warfare",
+      "mapCount": 5,
+      "interactiveCount": 0
+    },
+    {
+      "id": "ww2",
+      "name": "WWII",
+      "mapCount": 11,
+      "interactiveCount": 0
+    },
+    {
+      "id": "aw",
+      "name": "Advanced Warfare",
+      "mapCount": 4,
+      "interactiveCount": 0
+    },
+    {
+      "id": "vanguard",
+      "name": "Vanguard",
+      "mapCount": 4,
+      "interactiveCount": 0
+    },
+    {
+      "id": "mw3",
+      "name": "Modern Warfare III (2023)",
+      "mapCount": 6,
+      "interactiveCount": 5
+    }
+  ],
+  "catalogueMaps": [
+    {
+      "id": "ashes-of-the-damned",
+      "name": "Ashes of the Damned",
+      "gameId": "bo7",
+      "route": "/guides/ashes-of-the-damned",
+      "interactiveMap": true
+    },
+    {
+      "id": "astra-malorum",
+      "name": "Astra Malorum",
+      "gameId": "bo7",
+      "route": "/guides/astra-malorum",
+      "interactiveMap": true
+    },
+    {
+      "id": "paradox-junction",
+      "name": "Paradox Junction",
+      "gameId": "bo7",
+      "route": "/guides/paradox-junction",
+      "interactiveMap": true
+    },
+    {
+      "id": "totenreich",
+      "name": "Totenreich",
+      "gameId": "bo7",
+      "route": "/guides/totenreich",
+      "interactiveMap": true
+    },
+    {
+      "id": "kowakujo",
+      "name": "Kowakujō",
+      "gameId": "bo7",
+      "route": "/guides/kowakujo",
+      "interactiveMap": true
+    },
+    {
+      "id": "rex-infernus",
+      "name": "Rex Infernus",
+      "gameId": "bo7",
+      "route": "/guides/rex-infernus",
+      "interactiveMap": true
+    },
+    {
+      "id": "bo6-liberty-falls",
+      "name": "Liberty Falls",
+      "gameId": "bo6",
+      "route": "/guides/bo6-liberty-falls",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo6-terminus",
+      "name": "Terminus",
+      "gameId": "bo6",
+      "route": "/guides/bo6-terminus",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo6-citadelle-des-morts",
+      "name": "Citadelle des Morts",
+      "gameId": "bo6",
+      "route": "/guides/bo6-citadelle-des-morts",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo6-the-tomb",
+      "name": "The Tomb",
+      "gameId": "bo6",
+      "route": "/guides/bo6-the-tomb",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo6-shattered-veil",
+      "name": "Shattered Veil",
+      "gameId": "bo6",
+      "route": "/guides/bo6-shattered-veil",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo6-reckoning",
+      "name": "Reckoning",
+      "gameId": "bo6",
+      "route": "/guides/bo6-reckoning",
+      "interactiveMap": false
+    },
+    {
+      "id": "cw-die-maschine",
+      "name": "Die Maschine",
+      "gameId": "cw",
+      "route": "/guides/cw-die-maschine",
+      "interactiveMap": false
+    },
+    {
+      "id": "cw-firebase-z",
+      "name": "Firebase Z",
+      "gameId": "cw",
+      "route": "/guides/cw-firebase-z",
+      "interactiveMap": false
+    },
+    {
+      "id": "cw-mauer-der-toten",
+      "name": "Mauer der Toten",
+      "gameId": "cw",
+      "route": "/guides/cw-mauer-der-toten",
+      "interactiveMap": false
+    },
+    {
+      "id": "cw-forsaken",
+      "name": "Forsaken",
+      "gameId": "cw",
+      "route": "/guides/cw-forsaken",
+      "interactiveMap": false
+    },
+    {
+      "id": "cw-outbreak",
+      "name": "Outbreak",
+      "gameId": "cw",
+      "route": "/guides/cw-outbreak",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-dead-of-the-night",
+      "name": "Dead of the Night",
+      "gameId": "bo4",
+      "route": "/guides/bo4-dead-of-the-night",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-ix",
+      "name": "IX",
+      "gameId": "bo4",
+      "route": "/guides/bo4-ix",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-voyage-of-despair",
+      "name": "Voyage of Despair",
+      "gameId": "bo4",
+      "route": "/guides/bo4-voyage-of-despair",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-blood-of-the-dead",
+      "name": "Blood of the Dead",
+      "gameId": "bo4",
+      "route": "/guides/bo4-blood-of-the-dead",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-ancient-evil",
+      "name": "Ancient Evil",
+      "gameId": "bo4",
+      "route": "/guides/bo4-ancient-evil",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-alpha-omega",
+      "name": "Alpha Omega",
+      "gameId": "bo4",
+      "route": "/guides/bo4-alpha-omega",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-tag-der-toten",
+      "name": "Tag der Toten",
+      "gameId": "bo4",
+      "route": "/guides/bo4-tag-der-toten",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo4-classified",
+      "name": "Classified",
+      "gameId": "bo4",
+      "route": "/guides/bo4-classified",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-shadows-of-evil",
+      "name": "Shadows of Evil",
+      "gameId": "bo3",
+      "route": "/guides/bo3-shadows-of-evil",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-the-giant",
+      "name": "The Giant",
+      "gameId": "bo3",
+      "route": "/guides/bo3-the-giant",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-der-eisendrache",
+      "name": "Der Eisendrache",
+      "gameId": "bo3",
+      "route": "/guides/bo3-der-eisendrache",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-zetsubou-no-shima",
+      "name": "Zetsubou No Shima",
+      "gameId": "bo3",
+      "route": "/guides/bo3-zetsubou-no-shima",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-gorod-krovi",
+      "name": "Gorod Krovi",
+      "gameId": "bo3",
+      "route": "/guides/bo3-gorod-krovi",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-revelations",
+      "name": "Revelations",
+      "gameId": "bo3",
+      "route": "/guides/bo3-revelations",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "bo3",
+      "route": "/guides/bo3-nacht-der-untoten",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-verruckt",
+      "name": "Verrückt",
+      "gameId": "bo3",
+      "route": "/guides/bo3-verruckt",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "bo3",
+      "route": "/guides/bo3-shi-no-numa",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-kino-der-toten",
+      "name": "Kino der Toten",
+      "gameId": "bo3",
+      "route": "/guides/bo3-kino-der-toten",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-ascension",
+      "name": "Ascension",
+      "gameId": "bo3",
+      "route": "/guides/bo3-ascension",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-shangri-la",
+      "name": "Shangri-La",
+      "gameId": "bo3",
+      "route": "/guides/bo3-shangri-la",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-moon",
+      "name": "Moon",
+      "gameId": "bo3",
+      "route": "/guides/bo3-moon",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo3-origins",
+      "name": "Origins",
+      "gameId": "bo3",
+      "route": "/guides/bo3-origins",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo2-tranzit",
+      "name": "TranZit",
+      "gameId": "bo2",
+      "route": "/guides/bo2-tranzit",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo2-bus-depot",
+      "name": "Bus Depot",
+      "gameId": "bo2",
+      "route": "/guides/bo2-bus-depot",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo2-town",
+      "name": "Town",
+      "gameId": "bo2",
+      "route": "/guides/bo2-town",
+      "interactiveMap": false,
+      "mode": "Survival / Grief"
+    },
+    {
+      "id": "bo2-farm",
+      "name": "Farm",
+      "gameId": "bo2",
+      "route": "/guides/bo2-farm",
+      "interactiveMap": false,
+      "mode": "Survival / Grief"
+    },
+    {
+      "id": "bo2-diner",
+      "name": "Diner",
+      "gameId": "bo2",
+      "route": "/guides/bo2-diner",
+      "interactiveMap": false,
+      "mode": "Turned"
+    },
+    {
+      "id": "bo2-nuketown-zombies",
+      "name": "Nuketown Zombies",
+      "gameId": "bo2",
+      "route": "/guides/bo2-nuketown-zombies",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo2-die-rise",
+      "name": "Die Rise",
+      "gameId": "bo2",
+      "route": "/guides/bo2-die-rise",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo2-mob-of-the-dead",
+      "name": "Mob of the Dead",
+      "gameId": "bo2",
+      "route": "/guides/bo2-mob-of-the-dead",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo2-cell-block",
+      "name": "Cell Block",
+      "gameId": "bo2",
+      "route": "/guides/bo2-cell-block",
+      "interactiveMap": false,
+      "mode": "Grief"
+    },
+    {
+      "id": "bo2-buried",
+      "name": "Buried",
+      "gameId": "bo2",
+      "route": "/guides/bo2-buried",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo2-borough",
+      "name": "Borough",
+      "gameId": "bo2",
+      "route": "/guides/bo2-borough",
+      "interactiveMap": false,
+      "mode": "Grief / Turned"
+    },
+    {
+      "id": "bo2-origins",
+      "name": "Origins",
+      "gameId": "bo2",
+      "route": "/guides/bo2-origins",
+      "interactiveMap": false
+    },
+    {
+      "id": "waw-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "waw",
+      "route": "/guides/waw-nacht-der-untoten",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "waw-verruckt",
+      "name": "Verrückt",
+      "gameId": "waw",
+      "route": "/guides/waw-verruckt",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "waw-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "waw",
+      "route": "/guides/waw-shi-no-numa",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "waw-der-riese",
+      "name": "Der Riese",
+      "gameId": "waw",
+      "route": "/guides/waw-der-riese",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-nacht-der-untoten",
+      "name": "Nacht der Untoten",
+      "gameId": "bo1",
+      "route": "/guides/bo1-nacht-der-untoten",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-verruckt",
+      "name": "Verrückt",
+      "gameId": "bo1",
+      "route": "/guides/bo1-verruckt",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "bo1",
+      "route": "/guides/bo1-shi-no-numa",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-der-riese",
+      "name": "Der Riese",
+      "gameId": "bo1",
+      "route": "/guides/bo1-der-riese",
+      "interactiveMap": false,
+      "mode": "Survival"
+    },
+    {
+      "id": "bo1-kino-der-toten",
+      "name": "Kino der Toten",
+      "gameId": "bo1",
+      "route": "/guides/bo1-kino-der-toten",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-five",
+      "name": "Five",
+      "gameId": "bo1",
+      "route": "/guides/bo1-five",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-ascension",
+      "name": "Ascension",
+      "gameId": "bo1",
+      "route": "/guides/bo1-ascension",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-shangri-la",
+      "name": "Shangri-La",
+      "gameId": "bo1",
+      "route": "/guides/bo1-shangri-la",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-moon",
+      "name": "Moon",
+      "gameId": "bo1",
+      "route": "/guides/bo1-moon",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-call-of-the-dead",
+      "name": "Call of the Dead",
+      "gameId": "bo1",
+      "route": "/guides/bo1-call-of-the-dead",
+      "interactiveMap": false
+    },
+    {
+      "id": "bo1-dead-ops-arcade",
+      "name": "Dead Ops Arcade",
+      "gameId": "bo1",
+      "route": "/guides/bo1-dead-ops-arcade",
+      "interactiveMap": false,
+      "mode": "Arcade"
+    },
+    {
+      "id": "iw-zombies-in-spaceland",
+      "name": "Zombies in Spaceland",
+      "gameId": "iw",
+      "route": "/guides/iw-zombies-in-spaceland",
+      "interactiveMap": false,
+      "edition": "Launch map",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "iw-rave-in-the-redwoods",
+      "name": "Rave in the Redwoods",
+      "gameId": "iw",
+      "route": "/guides/iw-rave-in-the-redwoods",
+      "interactiveMap": false,
+      "edition": "Sabotage",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "iw-shaolin-shuffle",
+      "name": "Shaolin Shuffle",
+      "gameId": "iw",
+      "route": "/guides/iw-shaolin-shuffle",
+      "interactiveMap": false,
+      "edition": "Continuum",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "iw-attack-of-the-radioactive-thing",
+      "name": "Attack of the Radioactive Thing",
+      "gameId": "iw",
+      "route": "/guides/iw-attack-of-the-radioactive-thing",
+      "interactiveMap": false,
+      "edition": "Absolution",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "iw-the-beast-from-beyond",
+      "name": "The Beast from Beyond",
+      "gameId": "iw",
+      "route": "/guides/iw-the-beast-from-beyond",
+      "interactiveMap": false,
+      "edition": "Retribution",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "ww2-the-final-reich",
+      "name": "The Final Reich",
+      "gameId": "ww2",
+      "route": "/guides/ww2-the-final-reich",
+      "interactiveMap": false,
+      "edition": "Launch map",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "ww2-groesten-haus",
+      "name": "Groesten Haus",
+      "gameId": "ww2",
+      "route": "/guides/ww2-groesten-haus",
+      "interactiveMap": false,
+      "edition": "Bonus map",
+      "mode": "Survival"
+    },
+    {
+      "id": "ww2-the-darkest-shore",
+      "name": "The Darkest Shore",
+      "gameId": "ww2",
+      "route": "/guides/ww2-the-darkest-shore",
+      "interactiveMap": false,
+      "edition": "The Resistance",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "ww2-the-shadowed-throne",
+      "name": "The Shadowed Throne",
+      "gameId": "ww2",
+      "route": "/guides/ww2-the-shadowed-throne",
+      "interactiveMap": false,
+      "edition": "The War Machine",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "ww2-into-the-storm",
+      "name": "Into the Storm",
+      "gameId": "ww2",
+      "route": "/guides/ww2-into-the-storm",
+      "interactiveMap": false,
+      "edition": "Tortured Path story chapter",
+      "mode": "Objective-based chapter"
+    },
+    {
+      "id": "ww2-across-the-depths",
+      "name": "Across the Depths",
+      "gameId": "ww2",
+      "route": "/guides/ww2-across-the-depths",
+      "interactiveMap": false,
+      "edition": "Tortured Path story chapter",
+      "mode": "Objective-based chapter"
+    },
+    {
+      "id": "ww2-beneath-the-ice",
+      "name": "Beneath the Ice",
+      "gameId": "ww2",
+      "route": "/guides/ww2-beneath-the-ice",
+      "interactiveMap": false,
+      "edition": "Tortured Path story chapter",
+      "mode": "Objective-based chapter"
+    },
+    {
+      "id": "ww2-bodega-cervantes",
+      "name": "Bodega Cervantes",
+      "gameId": "ww2",
+      "route": "/guides/ww2-bodega-cervantes",
+      "interactiveMap": false,
+      "edition": "Tortured Path survival",
+      "mode": "Survival"
+    },
+    {
+      "id": "ww2-uss-mount-olympus",
+      "name": "U.S.S. Mount Olympus",
+      "gameId": "ww2",
+      "route": "/guides/ww2-uss-mount-olympus",
+      "interactiveMap": false,
+      "edition": "Tortured Path survival",
+      "mode": "Survival"
+    },
+    {
+      "id": "ww2-altar-of-blood",
+      "name": "Altar of Blood",
+      "gameId": "ww2",
+      "route": "/guides/ww2-altar-of-blood",
+      "interactiveMap": false,
+      "edition": "Tortured Path survival",
+      "mode": "Survival"
+    },
+    {
+      "id": "ww2-the-frozen-dawn",
+      "name": "The Frozen Dawn",
+      "gameId": "ww2",
+      "route": "/guides/ww2-the-frozen-dawn",
+      "interactiveMap": false,
+      "edition": "Shadow War",
+      "mode": "Round-based Zombies"
+    },
+    {
+      "id": "aw-outbreak",
+      "name": "Outbreak",
+      "gameId": "aw",
+      "route": "/guides/aw-outbreak",
+      "interactiveMap": false,
+      "edition": "Havoc",
+      "mode": "Exo Zombies"
+    },
+    {
+      "id": "aw-infection",
+      "name": "Infection",
+      "gameId": "aw",
+      "route": "/guides/aw-infection",
+      "interactiveMap": false,
+      "edition": "Ascendance",
+      "mode": "Exo Zombies"
+    },
+    {
+      "id": "aw-carrier",
+      "name": "Carrier",
+      "gameId": "aw",
+      "route": "/guides/aw-carrier",
+      "interactiveMap": false,
+      "edition": "Supremacy",
+      "mode": "Exo Zombies"
+    },
+    {
+      "id": "aw-descent",
+      "name": "Descent",
+      "gameId": "aw",
+      "route": "/guides/aw-descent",
+      "interactiveMap": false,
+      "edition": "Reckoning",
+      "mode": "Exo Zombies"
+    },
+    {
+      "id": "vanguard-der-anfang",
+      "name": "Der Anfang",
+      "gameId": "vanguard",
+      "route": "/guides/vanguard-der-anfang",
+      "interactiveMap": false,
+      "edition": "Launch map",
+      "mode": "Objective-based"
+    },
+    {
+      "id": "vanguard-terra-maledicta",
+      "name": "Terra Maledicta",
+      "gameId": "vanguard",
+      "route": "/guides/vanguard-terra-maledicta",
+      "interactiveMap": false,
+      "edition": "Season 2",
+      "mode": "Objective-based"
+    },
+    {
+      "id": "vanguard-shi-no-numa",
+      "name": "Shi No Numa",
+      "gameId": "vanguard",
+      "route": "/guides/vanguard-shi-no-numa",
+      "interactiveMap": false,
+      "edition": "Season 4",
+      "mode": "Round-based"
+    },
+    {
+      "id": "vanguard-the-archon",
+      "name": "The Archon",
+      "gameId": "vanguard",
+      "route": "/guides/vanguard-the-archon",
+      "interactiveMap": false,
+      "edition": "Season 5",
+      "mode": "Round-based"
+    },
+    {
+      "id": "mw3-urzikstan",
+      "name": "Urzikstan",
+      "gameId": "mw3",
+      "route": "/guides/mw3-urzikstan",
+      "interactiveMap": true,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Open-world deployment"
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "name": "Dark Aether — Season 1",
+      "gameId": "mw3",
+      "route": "/guides/mw3-dark-aether-season-1",
+      "interactiveMap": true,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Dark Aether"
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "name": "Dark Aether — Season 2",
+      "gameId": "mw3",
+      "route": "/guides/mw3-dark-aether-season-2",
+      "interactiveMap": true,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Dark Aether"
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "name": "Dark Aether — Season 3",
+      "gameId": "mw3",
+      "route": "/guides/mw3-dark-aether-season-3",
+      "interactiveMap": true,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Dark Aether"
+    },
+    {
+      "id": "mw3-unstable-rift",
+      "name": "Unstable Rift",
+      "gameId": "mw3",
+      "route": "/guides/mw3-unstable-rift",
+      "interactiveMap": false,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Five-phase arena"
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "name": "Dark Aether — Season 5",
+      "gameId": "mw3",
+      "route": "/guides/mw3-dark-aether-season-5",
+      "interactiveMap": true,
+      "edition": "Modern Warfare III (2023)",
+      "mode": "Dark Aether"
+    }
+  ],
+  "childGuides": [
+    {
+      "id": "cw-outbreak-ravenov",
+      "map": "cw-outbreak",
+      "gameId": "cw",
+      "name": "Outbreak: Ravenov Implications",
+      "route": "/guides/cw-outbreak-ravenov"
+    },
+    {
+      "id": "cw-outbreak-excision",
+      "map": "cw-outbreak",
+      "gameId": "cw",
+      "name": "Outbreak: Operation Excision",
+      "route": "/guides/cw-outbreak-excision"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "ashes-of-the-damned",
+      "name": "Ashes of the Damned",
+      "defaultLayer": "overview",
+      "locationCount": 127,
+      "targetCount": 212,
+      "quickLinkCount": 19,
+      "categories": {
+        "ammo": 12,
+        "area": 17,
+        "equipment": 15,
+        "perk": 19,
+        "quest": 21,
+        "trap": 3,
+        "travel": 12,
+        "upgrade": 5,
+        "weapon": 23
+      },
+      "precision": {
+        "area": 38,
+        "point": 89
+      },
+      "perkTypes": {
+        "mister-peeks": 7
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "image": "/maps/ashes-of-the-damned/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Top-down overview. Room highlights are approximate; consult each marker for floor and landmark details.",
+          "bytes": 501308
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/ashes-of-the-damned",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Ashes of the Damned · region and fog layout reference",
+          "url": "https://callofduty.fandom.com/wiki/Ashes_of_the_Damned",
+          "note": "Cross-check for the clockwise order of fog landmarks and the Sepulcher beside Blackwater Lake."
+        },
+        {
+          "name": "Ashes of the Damned · quest reference photos",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/ashes-of-the-damned/",
+          "note": "Quest landmark descriptions and candidate reference photos. Markers use region guidance where exact item coordinates are not verified."
+        },
+        {
+          "name": "Community map · Cursed Mister Peeks candidates",
+          "url": "https://codzombiesguides.com/maps/ashes-of-the-damned/",
+          "note": "Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "astra-malorum",
+      "name": "Astra Malorum",
+      "defaultLayer": "overview",
+      "locationCount": 75,
+      "targetCount": 154,
+      "quickLinkCount": 21,
+      "categories": {
+        "ammo": 10,
+        "area": 10,
+        "equipment": 8,
+        "perk": 14,
+        "quest": 11,
+        "trap": 2,
+        "travel": 4,
+        "upgrade": 3,
+        "weapon": 13
+      },
+      "precision": {
+        "area": 21,
+        "point": 54
+      },
+      "perkTypes": {
+        "mister-peeks": 8
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "image": "/maps/astra-malorum/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "note": "Top-down overview. Room highlights are approximate; consult each marker for floor and landmark details.",
+          "bytes": 640154
+        },
+        {
+          "id": "mars",
+          "label": "Mars",
+          "image": "/maps/astra-malorum/mars.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Mars arena overview. Temple/portal is on the left. The right-side device in the guide is toward the bottom when facing away from the temple. Quest areas are approximate; elevation is not shown.",
+          "bytes": 365724
+        },
+        {
+          "id": "pylon-order",
+          "label": "Mars · pylon order diagram",
+          "image": "/maps/astra-malorum/mars-schematic.svg",
+          "width": 1200,
+          "height": 900,
+          "note": "Schematic, not to scale. Face away from the temple towards the four distant pylons (top of diagram) for left and right. The fifth pylon is above the temple behind you. Elevation and precise pillar positions are not shown.",
+          "bytes": 1401
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Astra Malorum quest reference",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/astra-malorum/",
+          "note": "Mars pylon and final-pylon screenshots verify the temple and four distant pylons face one another. Schematic coordinates are illustrative, not surveyed."
+        },
+        {
+          "name": "Astra Malorum community tactical map",
+          "url": "https://codzombiesguides.com/maps/astra-malorum/",
+          "note": "Mars arena artwork and portal/service coordinates. Quest markers remain approximate areas. Artwork © Activision. Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "kowakujo",
+      "name": "Kowakujō",
+      "defaultLayer": "overview",
+      "locationCount": 94,
+      "targetCount": 70,
+      "quickLinkCount": 18,
+      "categories": {
+        "ammo": 9,
+        "area": 17,
+        "perk": 18,
+        "quest": 2,
+        "trap": 8,
+        "travel": 18,
+        "upgrade": 1,
+        "weapon": 21
+      },
+      "precision": {
+        "area": 17,
+        "point": 77
+      },
+      "perkTypes": {
+        "mister-peeks": 5
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "image": "/maps/kowakujo/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Full tactical overview. Room highlights indicate an area, while service pins use published marker coordinates. Interior floors can overlap.",
+          "bytes": 212640
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/kowakujo/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/kowakujo/kowakujo-main-map.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        },
+        {
+          "name": "Call of Duty — Kowakujō tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/kowakujo",
+          "note": "Official 4096-unit marker coordinates are normalized to the un-cropped tactical overview. Area guidance uses those landmarks and the guide’s room descriptions."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-1",
+      "name": "Dark Aether — Al Bagra Fortress",
+      "defaultLayer": "overview",
+      "locationCount": 27,
+      "targetCount": 9,
+      "quickLinkCount": 9,
+      "categories": {
+        "ammo": 3,
+        "equipment": 1,
+        "perk": 1,
+        "quest": 15,
+        "travel": 6,
+        "upgrade": 1
+      },
+      "precision": {
+        "point": 27
+      },
+      "perkTypes": {},
+      "overviewCount": 10,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Dark Aether — Al Bagra Fortress",
+          "image": "/maps/mw3-dark-aether-season-1/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "note": "Contract-visit overview. Roof and underground objects share an overhead footprint; read the floor labels. Story Bad Signal has different objectives. Keys are possible spawns and services must be checked in the current visit.",
+          "bytes": 1462940
+        }
+      ],
+      "filterGroups": [
+        {
+          "id": "quests",
+          "label": "Quests",
+          "defaultFilter": "contract-starters",
+          "filters": [
+            {
+              "id": "contract-starters",
+              "label": "Mr. Peeks starters",
+              "count": 3,
+              "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+            }
+          ]
+        },
+        {
+          "id": "keys-rooms",
+          "label": "Keys & rooms",
+          "defaultFilter": "key-candidates",
+          "filters": [
+            {
+              "id": "key-candidates",
+              "label": "Key candidates",
+              "count": 7
+            },
+            {
+              "id": "locked-rooms",
+              "label": "Locked rooms",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "id": "exits",
+          "label": "Exits",
+          "defaultFilter": "exit-portals",
+          "filters": [
+            {
+              "id": "exit-portals",
+              "label": "Exit portals",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "label": "Travel",
+          "defaultFilter": "aether-tears",
+          "filters": [
+            {
+              "id": "aether-tears",
+              "label": "Aether Tears",
+              "count": 3
+            },
+            {
+              "id": "entry-landings",
+              "label": "Entry landings",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "label": "Supplies",
+          "defaultFilter": "ammo",
+          "filters": [
+            {
+              "id": "ammo",
+              "label": "Ammo caches",
+              "count": 3
+            },
+            {
+              "id": "pack-a-punch",
+              "label": "Pack-a-Punch",
+              "count": 1
+            },
+            {
+              "id": "wunderfizz",
+              "label": "Wunderfizz",
+              "count": 1
+            },
+            {
+              "id": "doghouses",
+              "label": "Doghouses",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Al Bagra Fortress",
+          "url": "https://wzhub.gg/map/dark-aether/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-1",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-2",
+      "name": "Dark Aether — Sa'id City",
+      "defaultLayer": "overview",
+      "locationCount": 29,
+      "targetCount": 8,
+      "quickLinkCount": 8,
+      "categories": {
+        "ammo": 9,
+        "equipment": 2,
+        "perk": 1,
+        "quest": 7,
+        "travel": 7,
+        "upgrade": 3
+      },
+      "precision": {
+        "area": 1,
+        "point": 28
+      },
+      "perkTypes": {},
+      "overviewCount": 11,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Dark Aether — Sa'id City",
+          "image": "/maps/mw3-dark-aether-season-2/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "focusBounds": [
+            [
+              0.045,
+              0.315
+            ],
+            [
+              0.945,
+              0.98
+            ]
+          ],
+          "note": "Story obelisks belong to Countermeasures; contract starters and exfils describe repeat visits. Check the current exit/machine prompt. The stadium music marker is an approximate area; the guide identifies its three stones.",
+          "bytes": 2016194
+        }
+      ],
+      "filterGroups": [
+        {
+          "id": "quests",
+          "label": "Quests",
+          "defaultFilter": "contract-starters",
+          "filters": [
+            {
+              "id": "contract-starters",
+              "label": "Mr. Peeks starters",
+              "count": 3,
+              "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+            },
+            {
+              "id": "story-relics",
+              "label": "Story relic obelisks",
+              "count": 3,
+              "note": "These relic trials belong to Countermeasures. They are separate from the three repeat-visit contracts."
+            },
+            {
+              "id": "song-stones",
+              "label": "Stadium song",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "exits",
+          "label": "Exits",
+          "defaultFilter": "exit-portals",
+          "filters": [
+            {
+              "id": "exit-portals",
+              "label": "Exit portals",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "label": "Travel",
+          "defaultFilter": "aether-tears",
+          "filters": [
+            {
+              "id": "aether-tears",
+              "label": "Aether Tears",
+              "count": 2
+            },
+            {
+              "id": "entry-landings",
+              "label": "Entry landings",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "label": "Supplies",
+          "defaultFilter": "ammo",
+          "filters": [
+            {
+              "id": "ammo",
+              "label": "Ammo caches",
+              "count": 9
+            },
+            {
+              "id": "pack-a-punch",
+              "label": "Pack-a-Punch",
+              "count": 3
+            },
+            {
+              "id": "wunderfizz",
+              "label": "Wunderfizz",
+              "count": 1
+            },
+            {
+              "id": "doghouses",
+              "label": "Doghouses",
+              "count": 1
+            },
+            {
+              "id": "turrets",
+              "label": "Deadbolt turrets",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Sa'id City",
+          "url": "https://wzhub.gg/map/dark-aether-s2r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-2",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-3",
+      "name": "Dark Aether — Zarqwa Hydroelectric",
+      "defaultLayer": "overview",
+      "locationCount": 21,
+      "targetCount": 5,
+      "quickLinkCount": 5,
+      "categories": {
+        "ammo": 5,
+        "equipment": 4,
+        "perk": 1,
+        "quest": 7,
+        "travel": 3,
+        "upgrade": 1
+      },
+      "precision": {
+        "point": 21
+      },
+      "perkTypes": {},
+      "overviewCount": 8,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Dark Aether — Zarqwa Hydroelectric",
+          "image": "/maps/mw3-dark-aether-season-3/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "note": "Repeat-visit map. Complete all three contracts before the optional Gyanxi sequence. Destroy the three outer spores before the central Rift Heart; both ordinary and Elder visits can award Smoke Signals.",
+          "bytes": 1677212
+        }
+      ],
+      "filterGroups": [
+        {
+          "id": "quests",
+          "label": "Quests",
+          "defaultFilter": "contract-starters",
+          "filters": [
+            {
+              "id": "contract-starters",
+              "label": "Contract starters",
+              "count": 3,
+              "note": "These three contract obelisks are separate from Urzikstan’s Unstable Rift obelisks."
+            },
+            {
+              "id": "gyanxi-spores",
+              "label": "Gyanxi spores",
+              "count": 3
+            },
+            {
+              "id": "gyanxi-heart",
+              "label": "Gyanxi Rift Heart",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "exits",
+          "label": "Exits",
+          "defaultFilter": "exit-portals",
+          "filters": [
+            {
+              "id": "exit-portals",
+              "label": "Exit portals",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "label": "Travel",
+          "defaultFilter": "redeploy-drones",
+          "filters": [
+            {
+              "id": "redeploy-drones",
+              "label": "Redeploy drones",
+              "count": 1
+            },
+            {
+              "id": "entry-landings",
+              "label": "Entry landings",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "label": "Supplies",
+          "defaultFilter": "ammo",
+          "filters": [
+            {
+              "id": "ammo",
+              "label": "Ammo caches",
+              "count": 5
+            },
+            {
+              "id": "pack-a-punch",
+              "label": "Pack-a-Punch",
+              "count": 1
+            },
+            {
+              "id": "wunderfizz",
+              "label": "Wunderfizz",
+              "count": 1
+            },
+            {
+              "id": "doghouses",
+              "label": "Doghouses",
+              "count": 1
+            },
+            {
+              "id": "turrets",
+              "label": "Deadbolt turrets",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Zarqwa Hydroelectric",
+          "url": "https://wzhub.gg/map/dark-aether-s3r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-3",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-dark-aether-season-5",
+      "name": "Dark Aether — Al Mazrah City / Highrise",
+      "defaultLayer": "overview",
+      "locationCount": 30,
+      "targetCount": 8,
+      "quickLinkCount": 9,
+      "categories": {
+        "ammo": 5,
+        "equipment": 4,
+        "perk": 1,
+        "quest": 8,
+        "travel": 11,
+        "upgrade": 1
+      },
+      "precision": {
+        "area": 3,
+        "point": 27
+      },
+      "perkTypes": {},
+      "overviewCount": 9,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Dark Aether — Al Mazrah City / Highrise",
+          "image": "/maps/mw3-dark-aether-season-5/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "note": "Overhead reference: floating contract starters, roof exits and ground-floor rooms have different heights. The Infinite Cosmos route is Elder-only. Follow actual launch pads/Tears and the guide photographs; the map does not draw a safe aerial walking route.",
+          "bytes": 2135806
+        }
+      ],
+      "filterGroups": [
+        {
+          "id": "quests",
+          "label": "Quests",
+          "defaultFilter": "contract-starters",
+          "filters": [
+            {
+              "id": "contract-starters",
+              "label": "Mr. Peeks starters",
+              "count": 3,
+              "note": "Only the three Mr. Peeks contract-start locations are shown. Read each pin for the contract and height."
+            },
+            {
+              "id": "infinite-cosmos",
+              "label": "Infinite Cosmos",
+              "count": 3,
+              "note": "Search areas for the Elder blueprint quest. These are approximate areas, not fixed laptop or detector spawns."
+            }
+          ]
+        },
+        {
+          "id": "keys-rooms",
+          "label": "Keys & rooms",
+          "defaultFilter": "key-candidates",
+          "filters": [
+            {
+              "id": "key-candidates",
+              "label": "Key candidates",
+              "count": 1
+            },
+            {
+              "id": "locked-rooms",
+              "label": "Locked rooms",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "exits",
+          "label": "Exits",
+          "defaultFilter": "exit-portals",
+          "filters": [
+            {
+              "id": "exit-portals",
+              "label": "Exit portals",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "label": "Travel",
+          "defaultFilter": "aether-tears",
+          "filters": [
+            {
+              "id": "aether-tears",
+              "label": "Aether Tears",
+              "count": 6
+            },
+            {
+              "id": "redeploy-drones",
+              "label": "Redeploy drones",
+              "count": 1
+            },
+            {
+              "id": "entry-landings",
+              "label": "Entry landings",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "label": "Supplies",
+          "defaultFilter": "ammo",
+          "filters": [
+            {
+              "id": "ammo",
+              "label": "Ammo caches",
+              "count": 5
+            },
+            {
+              "id": "pack-a-punch",
+              "label": "Pack-a-Punch",
+              "count": 1
+            },
+            {
+              "id": "wunderfizz",
+              "label": "Wunderfizz",
+              "count": 1
+            },
+            {
+              "id": "doghouses",
+              "label": "Doghouses",
+              "count": 1
+            },
+            {
+              "id": "turrets",
+              "label": "Deadbolt turrets",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Dark Aether — Al Mazrah City / Highrise",
+          "url": "https://wzhub.gg/map/dark-aether-s5r/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-dark-aether-season-5",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "mw3-urzikstan",
+      "name": "Urzikstan",
+      "defaultLayer": "overview",
+      "locationCount": 338,
+      "targetCount": 32,
+      "quickLinkCount": 21,
+      "categories": {
+        "ammo": 36,
+        "area": 11,
+        "equipment": 32,
+        "perk": 11,
+        "quest": 90,
+        "travel": 116,
+        "upgrade": 24,
+        "weapon": 18
+      },
+      "precision": {
+        "area": 20,
+        "point": 318
+      },
+      "perkTypes": {},
+      "overviewCount": 41,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Urzikstan",
+          "image": "/maps/mw3-urzikstan/overview.webp",
+          "width": 4096,
+          "height": 4096,
+          "note": "Reference positions, not live match tracking. USB consoles, Worm arenas, obelisks, services and extraction sites must be checked against this deployment. Grid labels describe the artwork; landmark descriptions resolve border cases.",
+          "bytes": 2483534
+        }
+      ],
+      "filterGroups": [
+        {
+          "id": "red-worm",
+          "label": "Red Worm",
+          "defaultFilter": "clue-boards",
+          "filters": [
+            {
+              "id": "clue-boards",
+              "label": "Clue boards",
+              "count": 4,
+              "note": "Read the four photos at any one of these boards. You do not need to visit all four boards."
+            },
+            {
+              "id": "usb-devices",
+              "label": "USB devices",
+              "count": 12,
+              "note": "Choose the photos on your board below to show only their matching USB consoles."
+            },
+            {
+              "id": "fight-arenas",
+              "label": "Fight arenas",
+              "count": 4,
+              "note": "Only one arena is active in your deployment. Find the paired ammo caches and refractors; the USB photos do not identify the arena."
+            }
+          ]
+        },
+        {
+          "id": "unstable-rift",
+          "label": "Unstable Rift",
+          "defaultFilter": "obelisks",
+          "filters": [
+            {
+              "id": "obelisks",
+              "label": "Obelisk candidates",
+              "count": 54,
+              "note": "These are possible spawns. Find three active obelisks during your deployment and read their ammo-mod symbols."
+            }
+          ]
+        },
+        {
+          "id": "dark-aether",
+          "label": "Dark Aether",
+          "defaultFilter": "seasonal-portals",
+          "filters": [
+            {
+              "id": "seasonal-portals",
+              "label": "Portal sites",
+              "count": 4
+            },
+            {
+              "id": "season-2-upgrades",
+              "label": "Season 2 gold upgrades",
+              "count": 3
+            },
+            {
+              "id": "season-5-upgrades",
+              "label": "Season 5 gold upgrades",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side quests",
+          "defaultFilter": "free-perks",
+          "filters": [
+            {
+              "id": "free-perks",
+              "label": "Free perks",
+              "count": 8
+            },
+            {
+              "id": "chess-vault",
+              "label": "Chess vault",
+              "count": 4,
+              "note": "The Pawn, Rook, Bishop and vault are fixed references. Find the roaming Knight in the match; it has no fixed pin."
+            },
+            {
+              "id": "triangles",
+              "label": "Triangle rituals",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "id": "travel",
+          "label": "Travel",
+          "defaultFilter": "rune-entrances",
+          "filters": [
+            {
+              "id": "rune-entrances",
+              "label": "Rune entrances",
+              "count": 17
+            },
+            {
+              "id": "rune-destinations",
+              "label": "Rune destinations",
+              "count": 24
+            },
+            {
+              "id": "aether-tears",
+              "label": "Aether Tears",
+              "count": 26
+            },
+            {
+              "id": "entry-landings",
+              "label": "Entry landings",
+              "count": 25
+            },
+            {
+              "id": "ordinary-exfils",
+              "label": "Ordinary exfils",
+              "count": 14
+            },
+            {
+              "id": "final-exfils",
+              "label": "Final exfils",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "id": "supplies",
+          "label": "Supplies",
+          "defaultFilter": "ammo",
+          "filters": [
+            {
+              "id": "ammo",
+              "label": "Ammo caches",
+              "count": 36
+            },
+            {
+              "id": "pack-a-punch",
+              "label": "Pack-a-Punch",
+              "count": 24
+            },
+            {
+              "id": "wunderfizz",
+              "label": "Wunderfizz",
+              "count": 3
+            },
+            {
+              "id": "doghouses",
+              "label": "Doghouses",
+              "count": 19
+            },
+            {
+              "id": "fuel",
+              "label": "Fuel stations",
+              "count": 13
+            },
+            {
+              "id": "mystery-box",
+              "label": "Mystery Box",
+              "count": 18
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WZHUB · Urzikstan",
+          "url": "https://wzhub.gg/map/urzikstan/mwz",
+          "note": "Call of Duty game map imagery © Activision; map reference and published positions WZHUB. CodWiki curates guide targets and descriptions. Existing artwork markings are retained. Published points are reference positions; live availability is determined in-game."
+        },
+        {
+          "name": "CodWiki researched walkthrough",
+          "url": "https://codzmwiki.com/guides/mw3-urzikstan",
+          "note": "Named grid/landmark areas and guide bindings; approximate areas are labelled. Sources and photographs are in the walkthrough."
+        }
+      ]
+    },
+    {
+      "id": "paradox-junction",
+      "name": "Paradox Junction",
+      "defaultLayer": "normal",
+      "locationCount": 113,
+      "targetCount": 212,
+      "quickLinkCount": 16,
+      "categories": {
+        "ammo": 6,
+        "area": 26,
+        "equipment": 8,
+        "perk": 14,
+        "quest": 31,
+        "trap": 4,
+        "travel": 2,
+        "upgrade": 4,
+        "weapon": 18
+      },
+      "precision": {
+        "area": 58,
+        "point": 55
+      },
+      "perkTypes": {
+        "mister-peeks": 4
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "normal",
+          "label": "Normal · Past",
+          "image": "/maps/paradox-junction/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "The official atlas shows Future above Past. Normal/Past markers are on the lower half. All floors share an overview; upstairs objects are labelled in their descriptions.",
+          "bytes": 502024
+        },
+        {
+          "id": "destroyed",
+          "label": "Destroyed · Future",
+          "image": "/maps/paradox-junction/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "The official atlas shows Future above Past. Destroyed/Future markers are on the upper half. All floors share an overview; upstairs objects are labelled in their descriptions.",
+          "bytes": 502024
+        },
+        {
+          "id": "boss",
+          "label": "Dark Heart · arena overview",
+          "image": "/maps/paradox-junction/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Boss encounter uses the same neighborhood. Highlights show the three named encounter areas on the Past overview; boss transformations and moving objects are not depicted.",
+          "bytes": 502024
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty official tactical map",
+          "url": "https://www.callofduty.com/guides/blackops7/zombies/paradox-junction",
+          "note": "Map artwork and fixed-service coordinates. © Activision. Quest areas are annotated from the CodWiki walkthrough, not official item pins."
+        },
+        {
+          "name": "Paradox Junction quest and spawn reference photos",
+          "url": "https://codzombiesguides.com/main-quests/black-ops-7/paradox-junction/",
+          "note": "RC-XD, headset and ball candidate descriptions; room-area placement reviewed against the official atlas."
+        },
+        {
+          "name": "Community map · Cursed Mister Peeks candidates",
+          "url": "https://codzombiesguides.com/maps/paradox-junction/",
+          "note": "Cursed-only Mister Peeks egg-reward candidate positions from the public interactive map’s mister-peeks marker group. Distinct from music headphones, Mystery Box/field-upgrade Peeks and the Ashes Aether Shroud Teddy Bear relic. Candidate list reflects the published map, not a guarantee of completeness or an active spawn."
+        }
+      ]
+    },
+    {
+      "id": "rex-infernus",
+      "name": "Rex Infernus",
+      "defaultLayer": "overview",
+      "locationCount": 156,
+      "targetCount": 51,
+      "quickLinkCount": 11,
+      "categories": {
+        "ammo": 11,
+        "area": 23,
+        "equipment": 42,
+        "perk": 20,
+        "trap": 2,
+        "travel": 26,
+        "upgrade": 5,
+        "weapon": 27
+      },
+      "precision": {
+        "area": 23,
+        "point": 133
+      },
+      "perkTypes": {
+        "mister-peeks": 6
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "image": "/maps/rex-infernus/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Full tactical overview. Room highlights indicate an area, while service pins use published marker coordinates. Interior floors can overlap.",
+          "bytes": 215548
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/rex-infernus/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/rex-infernus/rex-infernus-main-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        }
+      ]
+    },
+    {
+      "id": "totenreich",
+      "name": "Totenreich",
+      "defaultLayer": "overview",
+      "locationCount": 163,
+      "targetCount": 61,
+      "quickLinkCount": 14,
+      "categories": {
+        "ammo": 11,
+        "area": 22,
+        "equipment": 16,
+        "perk": 20,
+        "quest": 11,
+        "trap": 8,
+        "travel": 50,
+        "upgrade": 4,
+        "weapon": 21
+      },
+      "precision": {
+        "area": 22,
+        "point": 141
+      },
+      "perkTypes": {
+        "mister-peeks": 9
+      },
+      "overviewCount": 0,
+      "layers": [
+        {
+          "id": "overview",
+          "label": "Overview",
+          "image": "/maps/totenreich/overview.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Full tactical overview. Room highlights indicate an area, while service pins use published marker coordinates. Interior floors can overlap.",
+          "bytes": 284338
+        },
+        {
+          "id": "boss-arena",
+          "label": "Dravakar’s Fall",
+          "image": "/maps/totenreich/boss-arena.webp",
+          "width": 2048,
+          "height": 2048,
+          "note": "Separate boss arena. The three Flammenfalle traps use published coordinates; the boss and attack targets move.",
+          "bytes": 292582
+        }
+      ],
+      "filterGroups": [],
+      "sources": [
+        {
+          "name": "Call of Duty: Zombies Guides — interactive map",
+          "url": "https://www.codzombiesguides.com/maps/totenreich/",
+          "note": "Area labels and service coordinates from the public map, paired with its 2048 × 2048 Activision background (/layers/totenreich/totenreich-eidskallen-layer.webp). The separate Mister Peeks marker group supplies Cursed reward spawn candidates, distinct from music, relic and doll quests."
+        }
+      ]
+    }
+  ]
+}

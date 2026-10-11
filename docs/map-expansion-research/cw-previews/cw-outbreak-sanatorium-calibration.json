@@ -1,0 +1,100 @@
+[
+  {
+    "number": 1,
+    "id": "dc-4579594c4a",
+    "label": "Pack-a-Punch",
+    "x": 0.4081751,
+    "y": 0.46854422
+  },
+  {
+    "number": 2,
+    "id": "dc-7059475158",
+    "label": "Arsenal",
+    "x": 0.25069358,
+    "y": 0.32964909
+  },
+  {
+    "number": 3,
+    "id": "dc-4131594234",
+    "label": "Der Wunderfizz",
+    "x": 0.51327702,
+    "y": 0.62782146
+  },
+  {
+    "number": 4,
+    "id": "dc-653152374c",
+    "label": "Ammo Crate",
+    "x": 0.29638672,
+    "y": 0.39091438
+  },
+  {
+    "number": 5,
+    "id": "dc-706d613568",
+    "label": "Ammo Crate",
+    "x": 0.12251594,
+    "y": 0.43142606
+  },
+  {
+    "number": 6,
+    "id": "dc-5153595147",
+    "label": "Jump Pad",
+    "x": 0.51657923,
+    "y": 0.34415351
+  },
+  {
+    "number": 7,
+    "id": "dc-764c4a7765",
+    "label": "Aether Rift",
+    "x": 0.03027344,
+    "y": 0.5039744
+  },
+  {
+    "number": 8,
+    "id": "dc-4b30476f57",
+    "label": "Omega Radio",
+    "x": 0.4140625,
+    "y": 0.38386999
+  },
+  {
+    "number": 9,
+    "id": "dc-4c69336250",
+    "label": "Wall Buy wall buy",
+    "x": 0.39208984,
+    "y": 0.45211422
+  },
+  {
+    "number": 10,
+    "id": "dc-62456d6c41",
+    "label": "Stone Monkey",
+    "x": 0.13232422,
+    "y": 0.6201471
+  },
+  {
+    "number": 11,
+    "id": "dc-6563793367",
+    "label": "Red Aetherial Orb",
+    "x": 0.31933594,
+    "y": 0.23154235
+  },
+  {
+    "number": 12,
+    "id": "dc-48384c5642",
+    "label": "Demented Echo",
+    "x": 0.6010893,
+    "y": 0.40979343
+  },
+  {
+    "number": 13,
+    "id": "dc-6151316454",
+    "label": "Unknown Signal Radio",
+    "x": 0.4163393,
+    "y": 0.38321056
+  },
+  {
+    "number": 14,
+    "id": "dc-3355314b78",
+    "label": "Tiger Mask",
+    "x": 0.39393527,
+    "y": 0.47651273
+  }
+]

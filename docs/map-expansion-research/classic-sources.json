@@ -1,0 +1,1397 @@
+{
+  "reviewedAt": "2026-10-11",
+  "scope": "41 current WaW, BO1, BO2 and BO3 catalogue guide entries including eight Zombies Chronicles editions",
+  "catalogPath": "shared/catalogue.json",
+  "planningOnly": true,
+  "productionAssetsDownloaded": false,
+  "limitations": [
+    "Source pages, original-author posts, exact linked image URLs and indexed metadata were researched. Except existing local-file presence, no new image assets were installed.",
+    "Remote pixel-level visual inspection, actual raster dimensions, calibration and complete marker correctness are not established by a source link.",
+    "No permission is inferred from public availability, a free guide download, wiki text licensing or publisher ownership. Only the specific Zedz creator comment supplies affirmative image-use permission found here.",
+    "Geometry-family reuse is a hypothesis to validate. Edition and mode POI manifests must remain separate.",
+    "Source-gap means no technically ready base acquired; the planning inventory is complete, the imagery implementation is not."
+  ],
+  "summary": {
+    "entries": 41,
+    "geometryFamilies": 22,
+    "games": {
+      "waw": 4,
+      "bo1": 11,
+      "bo2": 12,
+      "bo3": 14
+    },
+    "chronicles": 8
+  },
+  "sources": [
+    {
+      "id": "cz-der-riese",
+      "title": "Der Riese layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/p/der-riese.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhie9Tk886jCveuHSGNZaeYm8iFFPl6a-10XzM_xIkVyLRQclmqyA9JVzWa9ht1eiA9H4a-AQQwJxifl_FAR8FCFKJ2myMPd4Tqh5lXWY-JxtBhKuvJojvdS5Eg7ZgBMD2ktZqz7whyphenhyphenu4Hx/s1600/derriesemaplayout.jpg"
+      ],
+      "assetKind": "shared-family-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified page by Henry / Hazzman; original image author not established",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Classic repost; original diagram author unconfirmed. Candidate geometry for WaW, BO1 and The Giant, subject to comparison."
+    },
+    {
+      "id": "cz-kino",
+      "title": "Kino der Toten room diagrams",
+      "sourcePageUrl": "https://codzombified.blogspot.com/p/kino-der-toten.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk6F6QpsvJ1PLI3Q97gp66emM6JKajzf-ZfzDd_XuKW0oKQeTakbWvYDtpFhBjHrnq-9Ofkop5dIJ-RpopamyMtNEm6RKo2BRAqLx5QCk3l6oVZb1VDhUqhFgYdUHmEyTObIPgbGY16UK1/s1600/kinodertotenmap.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6J0jqmQacugh9RxpWwLzf0XHYhff4jxyKHJKlaU55QaMqpr-cr1582fYeNd0cgmX9tlIYtMrwRT1Muur1GidRQjsCuMeXKfT7n6trZqNhcgDQ2em5bS7wVvh5eZwmThSxsw-PcmHQBsZT/s1600/kinodertotenmap2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZZKab6mjSobYf9ZCQjq6d-xT0OP88pf234vMMcxD4z74coJyrfadvR5fJMtnmvpe2kDH4wlwC8wAHxfwvZRdpNfF_681NpX1Qv-YHVJpqWWFyte1ys4knZ9CfVBmUzDkP3-7HDFaIU_uf/s1600/kinodertotenmap3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEfzpHTR-StwKMK9KPKoE8jNp6IuWtF0twIxCES33LttV-NR1oytMJ13qHfsOsx7guk1wxggFr5AlMDG7QMbg0CZUiGcIfGLzvVWjrVrcv9Cas_pMErPszwwYNa_vvF3iYpt3R_5e3pYd5/s1600/kinodertotenmap4.jpg"
+      ],
+      "assetKind": "annotated-floor-plans",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified page by Henry / Hazzman; original image author not established",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Four linked plan images; need determine level and inset boundaries before choosing a base."
+    },
+    {
+      "id": "cz-call-of-dead",
+      "title": "Call of the Dead layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/p/call-of-dead.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsrne3i7R5VAGlMG2Txaexb9Be8sADx895_xhpvYa98aHO0_o_Q3gN_KESHwsLsU-lEATVOxEPM6ZoKwnpkg9SiBCDEZJTLMRUv8LBafUfssqmR7j4AE1AdJ5oStS_shZtXOvZJ8F2cWQ/s1600/mapofcallofthedead.jpg"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified page by Henry / Hazzman; original image author not established",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Overview candidate; full lighthouse and ship floor detail still needs inspection."
+    },
+    {
+      "id": "cz-shangri-la",
+      "title": "Shangri-La layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2015/03/shangri-la-free-pdf-download-guide-from.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUcD-T9WgG90szQS2MIhmtqDYumry1jOsDNZionjFahUJcwuKsUJJInTLlJTionEP4XQWeTC0s7kedobXOEm2DXgoNzFyp3nF_oVnd0YqUvrEITx007vtXEm0WcbP6EuL8Lhy6ZAN_ntqF/s1600/shangrila+Map+Layout.jpg"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified page by Henry / Hazzman; original image author not established",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Map-layout image linked by a classic guide/PDF post; original image authorship not established."
+    },
+    {
+      "id": "cz-nuketown",
+      "title": "Nuketown Zombies layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2015/03/nuketown-zombies-free-pdf-download.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB8glAbw3P2j4fXLj1mYf_l9ryldwCYN9yo76JRh3HkL5PCAHTzI5THGBmPY4Fi3gaaD9l20fmz1DP1TNov1haTFrVUs__iAzvN54OWmwg5WK7Apw5Io_CtZcH03hj5ZMhSL1AnAAfZDJD/s1600/nuketownzombiesmaplayout.jpg"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified page by Henry / Hazzman; original image author not established",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Whole arena candidate; perks and Pack-a-Punch are variable landing sites."
+    },
+    {
+      "id": "cz-die-rise",
+      "title": "Die Rise floor-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2013/01/die-rise-map-layout-call-of-duty-black.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCso8IYvXFfMTKgnd_UCbCPjaV7goOjJJss0yCnSxrRD9_KNObUKOIWlhBV2L39fUidKboxMI0tp3wNO46_BGGLo7PK40qA9UeRYPzHf8QNt-21e2-wTMC3_F7Fm98leJyhTL8I_U7ePu3/s1600/die+rise+floor+1+plan.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9FHWPaI0B-aKXKvxE2wFgWl6dp2mfTm1TLdera45NVsLNPns9cSrvFBYAMq2jOQ_lgE8Jkz8jSkUML2JZgH6WwCVt7IOVeE0gYrTx3z-xpmwddcVSwfm19lfjUqMLGFt0vd7f_48kOlhU/s1600/die+rise+floor+1+plan.png"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Two main-post floor-one image variants; additional linked floors required.",
+      "relatedSourcePages": [
+        "https://codzombified.blogspot.com/2013/02/die-rise-2nd-floor-map-layout-call-of.html",
+        "https://codzombified.blogspot.com/2013/03/die-rise-3rd-floor-map-layout-call-of.html",
+        "https://codzombified.blogspot.com/2013/03/electricity-room-layout-die-rise.html",
+        "https://codzombified.blogspot.com/2013/03/die-rise-floor-beneath-electricity-room.html",
+        "https://codzombified.blogspot.com/2013/03/rooftop-map-layout-die-rise-zombies.html",
+        "https://codzombified.blogspot.com/2013/03/floor-beneath-rooftop-map-layout-die.html",
+        "https://codzombified.blogspot.com/2013/03/trample-steam-room-map-layout-die-rise.html"
+      ],
+      "relatedPagesEvidence": "URLs observed in creator site/feed; detailed image calibration not performed"
+    },
+    {
+      "id": "cz-mob",
+      "title": "Mob of the Dead room-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2013/04/mob-dead-map-layout-call-of-duty-black.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbDPSPpULnLJ2Zd9qeIpmM7pBCvszscAN3sAMInHgwUSvQ1WUzEBD2BUv2pfeXA1J6YjLSiSJyrA8I7hqPZzZzYSf-3ToRBInSpBcA5msDPC6RUw6FpdCGG5bdOWcsZvDGw4UOi1jpoVmh/s1600/Mob+The+Dead+Map+Layout+Main+Room+Spawn.png"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Main post is spawn/cell block only; associated floors, docks and bridge must be assembled.",
+      "relatedSourcePages": [
+        "https://codzombified.blogspot.com/2013/04/mob-dead-map-layout-second-floor-call.html",
+        "https://codzombified.blogspot.com/2013/04/mob-dead-map-layout-michigan-area-floor.html",
+        "https://codzombified.blogspot.com/2013/04/cafeteria-area-layout-mob-of-dead-call.html",
+        "https://codzombified.blogspot.com/2013/04/citadel-tunnels-area-map-layout-from.html",
+        "https://codzombified.blogspot.com/2013/04/mob-of-dead-shower-room-layout-call-of.html",
+        "https://codzombified.blogspot.com/2013/04/roof-map-layout-for-mob-of-dead-call-of.html",
+        "https://codzombified.blogspot.com/2013/04/floor-3-infirmary-layout-part-and-docks.html",
+        "https://codzombified.blogspot.com/2013/04/docks-area-map-layout-mob-of-dead-call.html"
+      ],
+      "relatedPagesEvidence": "URLs observed in creator site/feed; detailed image calibration not performed"
+    },
+    {
+      "id": "cz-buried",
+      "title": "Buried overview and room-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2013/07/general-map-layout-for-buried-zombie.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNcEqF44-_68zVycPy9xrn8RWpphTge5BRTSxBI1GETCzhyphenhyphenL9xBXvmx_21mtM3DfXMJDsFWFoGgluskRdwDop7i63gMjosQrxzKQ-7wwcs3uvHCxQqeq2sKr5qRegt_IrNsdKTVxqR91d1/s1600/buried+map+layout+entire+level+call+of+duty+black+ops+2.png"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Whole-level overview plus linked building interiors; elevation and maze state need separate treatment.",
+      "relatedSourcePages": [
+        "https://codzombified.blogspot.com/2013/07/buried-resolution-1295-map-layout-call.html",
+        "https://codzombified.blogspot.com/2013/07/buried-map-layout-level-2-underground.html",
+        "https://codzombified.blogspot.com/2013/07/buried-map-layout-courthouse-ground.html",
+        "https://codzombified.blogspot.com/2013/07/buried-general-store-map-layout-floor-1.html",
+        "https://codzombified.blogspot.com/2013/07/buried-casino-building-map-layout-call.html",
+        "https://codzombified.blogspot.com/2013/07/buried-map-layout-sheriffs-office-and.html",
+        "https://codzombified.blogspot.com/2013/07/buried-bank-building-map-layout-call-of.html",
+        "https://codzombified.blogspot.com/2013/07/candy-store-building-map-layout-buried.html",
+        "https://codzombified.blogspot.com/2013/07/gunsmith-building-layout-in-buried.html",
+        "https://codzombified.blogspot.com/2013/07/church-building-layout-buried-zombies.html",
+        "https://codzombified.blogspot.com/2013/07/ghosthouse-map-layout-for-buried-zombie.html",
+        "https://codzombified.blogspot.com/2013/07/garden-bagoda-area-and-pack-punch-in.html",
+        "https://codzombified.blogspot.com/2013/07/barn-layout-for-buried-zombie-map-call.html",
+        "https://codzombified.blogspot.com/2013/07/tunnel-layout-from-continuing-on-level.html"
+      ],
+      "relatedPagesEvidence": "URLs observed in creator site/feed; detailed image calibration not performed"
+    },
+    {
+      "id": "cz-shadows",
+      "title": "Shadows of Evil room-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2015/11/shadows-of-evil-map-layout-call-of-duty.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq75brTiLO90WBQMKC7bctZYmMxl-ZVmII1OxEgaan_DrNXa30lD5bieKRL7uE_tmFzs2WY90E3sj7IloDjqyLqIRvNb8iiqv-TsDN8owLPSdkEM1X8UZUltxrDNsbhwdGUxDztyFnYlOh/s1600/Shadows+Of+Evil+Zombies+Call+Of+Duty+Black+Ops+3+Spawn+Area+Layout.png"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Exact base candidate captured for Easy Street spawn; linked district plans cover the remaining topology."
+    },
+    {
+      "id": "cz-der-eisendrache",
+      "title": "Der Eisendrache room-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2016/03/main-spawn-area-map-layout-der.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWDbormAamoYTiAaP8EwiefwDpbUhW-rPGf0ouB_jGUcLByAFZIxAkPhyyB9LneazjIvCMEkgsLLimxnJNo3ZrHKCyOG6Lh2xKtt1TAYH0TIvgoH_hZvfWWx36UTCShNW8FQOsYKEeOxYK/s1600/Der+Eisendrache+main+spawn+area+map+layout+call+of+duty+black+ops+3+part+1.1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_tagl_90GsJfv9kn4ezWSSLOcBlSqdTCv1mWIA5AKhb3FYR_4x-IskAj3BaIgQSfibFamMqJCTaLg2fTpQCdYcxOpzDNvEKdejMLRpv8L-uv5EDrLnydsxCn3sEYgpDNkz2F6MB3neKk/s1600/Der+Eisendrache+main+spawn+area+map+layout+call+of+duty+black+ops+3+part+2.2.jpg"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Two spawn-area parts captured; twelve named area pages form the wider source set."
+    },
+    {
+      "id": "cz-zetsubou",
+      "title": "Zetsubou No Shima room-plan series",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2016/06/zetsubou-no-shima-map-layout-main-spawn.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJjYQMuR2bL5cQWvhgXwTIQHrLK1oN89p7KN28kAz3h9R2S6QPYCBNhxGNlV_3GViSU53ZF-VMNe4PCW3JaGM0PkIcGjAjmiwyh2QG3179Xg-NjUonqaJIAjmDcwJUjaPEHD2SWoIOwSub/s1600/Zetsubou+No+Shima+call+of+duty+black+ops+3+cod+zombified+Main+Spawn+Area+Map+Layout.jpg"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Main spawn image captured; labs, bunker and underwater routes need their linked plans."
+    },
+    {
+      "id": "cz-gorod",
+      "title": "Gorod Krovi fourteen room plans",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2016/09/gorod-krovi-14-map-layouts-for-tank.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOGSBQMnBTgzQXFFndMO9UP3FSW1hqqwQis9HnpPmqz459xHWiZncwzVzqJskfTldeBlItbk3c19GhF6oJH2CIriWse4YuiYpt01ZDxlGqLQBqgBcjgQTP8J2m2QE9gA1mSJ1MZ-0jb1o-/s1600/gorod+krovi+tank+factory+infirmary+to+tank+factory+street+map+layout+call+of+duty+black+ops+3+zombies+cod+zombified+facebook+blogger+twitter.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip1rsS-x_5xVMVyYyOVc-ZkhMLvLJt0ZNU0aq254LlWYWU_enxi02ntjqCu6flCIbujwuOaxg69KMGSzpC0PtaVbi6ZnLIsbu5RimGUmztm0QtipzJS7iGJI69BMMBfuhU3QcEajJHjKCP/s1600/gorod+krovi+tank+factory+map+layout+call+of+duty+black+ops+3+zombies+cod+zombified+facebook+blogger+twitter+ground+floor.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlHX1JRDGC8uSBdnQIE-OjuywG6u4OUI1-cAr7MAFn14m3pVXzZ69ZoQimwvziUWRBzplF0a0x2PQH4FLVw_ArW7_Avd86GUrmugK-wUGMm33G08VJvz_wUeyjYuNDzljFrkvpDEqEkTaT/s1600/gorod+krovi+tank+factory+map+layout+call+of+duty+black+ops+3+zombies+cod+zombified+facebook+blogger+twitter+second+floor.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic7b_YOu5s-HIzjEnCNHEEpQUEoKn3c0-uL9RNlXBY71c4Tn7wIKAaZzCCRCGNeQ6ZZsOAUmfsV48c2a46u9qsAoNWBukkNM2v68YcRW-FBipiUqbOrSIWIHiMBVMjxphbU-rtEHo4k98W/s1600/gorod+krovi+tank+factory+map+layout+call+of+duty+black+ops+3+zombies+cod+zombified+facebook+blogger+twitter+third+floor.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBwmHyTAOsNaGpkkyCZaOagGesfeYepQqWluvcOla74E0jTxankGGao6Es7-za03f0PTx1qxDFSFy0lzl4MMO7Gl5VWtZv_IZB5s4i_qeBXZN-sKTBxU5oOhhqGfdH5MHrBfm05H__oXDt/s1600/gorod+krovi+zombie+supply+depot+ground+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3RqIfNsLQQzWQCWihD1Ynb5swiPoc-qN4BECp3_POTx0sWIp1tbW7TmiZm3ErtGZs-NWWBJD_qgQ1H4mMqNK-0d4SXBqikaa0VUiLBiQEEF_k7OSfux56_cauwAFgGKqGytCPSixrlnFv/s1600/gorod+krovi+zombie+supply+depot+second+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzKArDF8RwN0tQeJeTNwMQzY70OICpSKuUn75ANfAryRMxcnSPFvytM_zVf_ZarhJpo4iE6hBuJSUhNRsmVQD-00E4Fff1p-zFmibwb4rgGwQS4cfdvdCHMNkisUTc5ML2-bf_skfamvPj/s1600/gorod+krovi+zombie+supply+depot+street+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX8p2nzg9uWv2q9aA1zuPQf4Ajc6soriovZWXq-WkjD3uJyTLvdKnC31Xp6ahxPMWOjZZXBtLRZlkgpqx7lirsEAS8np5RjKQwan5cHzkJgvvj8WsDyDl5wrcBZqLUdNecX5DpoTIvfhIW/s1600/gorod+krovi+zombie+Infirmary+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook+Infirmary+to+Dragon+Command+to+Armory.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3gIvSOC4_QWTRr-AwYaZM_cEkUCAUxOyDKeWR0oBWtRf7sAa0eFOzC-Y1F8tlTjYa5tJ4-BNEAoBboUx1glUrK09o6ESl_2Cdnwxr_qmuDE2R672DKBi-bbhk9ntsl-x138mW_pC4gC2C/s1600/gorod+krovi+zombie+Infirmary+ground+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRmWYIrmkvpIogj2v4fIqp7XGZJUG22-vjIULgN0fNC5cnpSEwjGuZUYxSWcKV_BDsJxltghKwZMWSrCfc2OWmXaKjvLW7Q4W9wA3vIaT4O7r1zbgbLK5EuXwi6D64rZZ7iKsZzVt_ltLT/s1600/gorod+krovi+zombie+Infirmary+second+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiE0ymAKXG-G7w-hbUL7tMLN6gdRFJmzb_WyhV4RkkdV8AEDgXUN-NvCv2ZOFQAl5ZkrjgLVojyOQ00WHFpBvbnHcUbmc7odaT7kKHFACS2VDKdiSIR4lLZrjRTIbvzIcXdcpEwSqS1vAY/s1600/gorod+krovi+zombie+operations+bunker+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihGMuNlM9Ckndh3rq9bMjMekiyxVOTzHOp4QLMgUMYvZnT9auDiB6K5w4xrB93CFx-NgJqwEbeexFKHELO-M6fwSNgdlBiGkMSve79JOR5F_xJ5THHMCELVrt9ZT3gfg9EEFzR-m7Vd3e7/s1600/gorod+krovi+zombie+operations+bunker+to+department+store+street+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6oX8aU5GMS9qbUd4e-mRgkyGsmM0iH7a21zOYE-hLmgEr1swq-A9PAHy2CuCCfX3y5iT62g3PR0W1kAoghRfX2t-BtUmH7SKj1u62ptMb42zAEXQJO8CYTs8AyKN085XS-d8AXijvgQ7H/s1600/gorod+krovi+zombie+dragon+command+ground+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdezgnxFz20-mi_YXYZN5hn1gL9mdDNNnPnr-rtLWep26pFO6dz2z3X6K5ZYIz61Pfb0-kciw9CRlT05EEWIK2zvyyQpUq7MiavMENSFYZgT1jZ20W5P4U7lAF9oeytzeznCS_akK__XOf/s1600/gorod+krovi+zombie+dragon+command+second+floor+black+ops+3+call+of+duty+cod+zombified+blogger+map+layout+facebook.jpg"
+      ],
+      "assetKind": "annotated-room-plan-series",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Fourteen plan images for tank factory, supply depot, infirmary, operations bunker and Dragon Command; additional Belsinki/department store/armory pages needed.",
+      "relatedSourcePages": [
+        "https://codzombified.blogspot.com/2016/09/belsinki-square-gorod-krovi-map-layout.html",
+        "https://codzombified.blogspot.com/2016/09/department-store-gorod-krovi-map-layout.html",
+        "https://codzombified.blogspot.com/2016/09/armory-gorod-krovi-zombies-map-layout.html"
+      ],
+      "relatedPagesEvidence": "URLs observed in creator site/feed; detailed image calibration not performed"
+    },
+    {
+      "id": "cz-revelations",
+      "title": "Revelations overview diagrams",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2016/11/revelations-map-layout-call-of-duty.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOBF1GINbkNtOZeAE43cCZ7fJgTHU4a6ubAJAS19L8ABWX-avJ0cJCBerb37WNp_ZSJYM_N1KEGrESD9-VtFoIc4yML1N80IJUTMFkgJb61Q5G37QGeed8scsxCkWpYtkcZDre1nGsGZNs/s1600/Revelations+map+layout+cod+zombified+blogger+twitter+facebook+secrets+easter+eggs+walkthrough+guide+MAIN.JPG",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmOOyh5kzj99ZGcN52tF6ukDKfMW_9-SbTLlXxLqwR_pTSDbwWU_ke6J7hDnsp6rHrKdsA-hZRCxzhYwU1Une_cLJL97yB7EpuAMqeL724ugUEj5BbSm3WZoOWddodSPYwCicCYXmJOL6/s1600/Revelations+map+layout+cod+zombified+blogger+twitter+facebook+secrets+easter+eggs+walkthrough+guide.JPG",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixrEJs70P43jpk8Ln-94wcu_S1tG2gh2V6swJkVoD_1ByYVKZOQn95-j2rCqOmGofXfvPU9dOYDEYpB6BK7gzcfuOVt1NxQaT-UEi0sV0-UqS-xTIVuP8uzPFr7pvgeYDTu68MgLNVm-Wf/s1600/Revelations+map+layout+cod+zombified+blogger+twitter+facebook+secrets+easter+eggs+walkthrough+guide+abstract.JPG"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "Henry / Hazzman, COD Zombified (map-plan series author)",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Three linked overview/abstract diagrams; portal graph and real floor geometry require separation."
+    },
+    {
+      "id": "cz-moon",
+      "title": "Moon layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2014/01/classic-zombie-map-layouts-from-from.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWpZFyA65FWgMtpGyRm8DxCFCUBjoHPIftNHG6YMyStL7FM7WH17HNTP1j5ujKKWPMzDQufyUG4-42KajQVGZSNLU0VQHjUe9hW8I5z8KCaeGT0yRHRcJ2cawsBJ35wnqN8N4Sl392paXj/s1600/zombiesmoonmaplayout.jpg"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified repost; original image author unconfirmed",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Classic BO1 overview; Earth/No Man's Land and lunar floors must remain distinct. Page credits an old ImageShack image, not a reusable license."
+    },
+    {
+      "id": "cz-five",
+      "title": "Five floor layout",
+      "sourcePageUrl": "https://codzombified.blogspot.com/2014/01/classic-zombie-map-layouts-from-from.html",
+      "imageUrls": [
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6QU2nXjKAIbqzXlIoZYpWPAWO9czity2KcOeORqDdD0rCKtaML5H1AwUeXLZNMF-mr8pV3B-zqyU-eGSSE8ttjgFLMoYd7vs8qmYIek9hYH_ND93sSnFssiJorT_rJcPagJtxeMgCBvBw/s1600/thefivecodblackopszombielevellayout.png"
+      ],
+      "assetKind": "annotated-schematic",
+      "evidenceStatus": "source-page-and-exact-image-links-observed",
+      "creator": "COD Zombified repost; original image author unconfirmed",
+      "rightsStatus": "permission-not-established",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "Three-level Pentagon setting; elevator/teleporter connectivity must be explicit."
+    },
+    {
+      "id": "pearson-tranzit",
+      "title": "BradyGames / Pearson Black Ops II Zombies supplement",
+      "sourcePageUrl": "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf",
+      "imageUrls": [],
+      "assetKind": "publisher-pdf-annotated-overview-and-floor-plans",
+      "evidenceStatus": "publisher-pdf-text-and-layout-references-observed",
+      "creator": "BradyGames / Pearson; licensed Call of Duty strategy-guide supplement",
+      "rightsStatus": "no-reuse-license-observed",
+      "visualInspection": "PDF image pixels not reviewed; extraction references and text inspected",
+      "pageCount": 5,
+      "pageMapping": [
+        {
+          "pdfPage": 1,
+          "printedPages": "274–275",
+          "coverage": "TranZit regional overview, five stops and legend"
+        },
+        {
+          "pdfPage": 2,
+          "printedPages": "276–277",
+          "coverage": "Bus Terminal, tunnel and bus route"
+        },
+        {
+          "pdfPage": 3,
+          "printedPages": "278–279",
+          "coverage": "Diner, Farm, farm/barn upper floors and Nacht landmark"
+        },
+        {
+          "pdfPage": 4,
+          "printedPages": "280–281",
+          "coverage": "Power Station, Town Center and cabin"
+        },
+        {
+          "pdfPage": 5,
+          "coverage": "Playing-primer text"
+        }
+      ],
+      "notes": "Primary publisher reference; crops are not separate mode maps. Confirm PDF rendering, resolution and rights before using a crop. Recheck POIs independently; a guide can contain errors."
+    },
+    {
+      "id": "sir-cool-whip-verruckt",
+      "title": "Verrückt first and second floor drawings",
+      "sourcePageUrl": "https://www.flickr.com/photos/sir_cool_whip/albums/72157616015554759/",
+      "relatedSourcePages": [
+        "https://www.flickr.com/photos/sir_cool_whip/3397565120/in/album-72157616015554759",
+        "https://www.flickr.com/photos/sir_cool_whip/3399179457/in/album-72157616015554759"
+      ],
+      "imageUrls": [
+        "https://live.staticflickr.com/3431/3397565120_9f762a9883_z.jpg",
+        "https://live.staticflickr.com/3460/3399179457_3f741940cc.jpg"
+      ],
+      "assetKind": "two-floor-community-drawings",
+      "evidenceStatus": "creator-album-and-second-floor-page-observed",
+      "creator": "Sir Cool Whip",
+      "rightsStatus": "all-rights-reserved",
+      "publishedAt": "2009-03-30 (second-floor page)",
+      "visualInspection": "not-completed; CDN image fetches failed (403/502), and page availability was intermittent",
+      "width": null,
+      "height": null,
+      "notes": "Original WaW-era author attribution is strong. Credit alone does not satisfy an all-rights-reserved image; ask for explicit reuse/adaptation permission if selecting it."
+    },
+    {
+      "id": "zedz-origins",
+      "title": "HQ Origins map by ZedzDEMIZie",
+      "sourcePageUrl": "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+      "imageUrls": [
+        "https://i.imgur.com/tQgsI94.jpg",
+        "https://i.imgur.com/9aPCMFq.jpg"
+      ],
+      "assetKind": "annotated-community-overview",
+      "evidenceStatus": "creator-post-image-links-and-creator-permission-comment-observed",
+      "creator": "u/ZedzDEMIZie",
+      "rightsStatus": "creator-attribution-permission-observed",
+      "rightsEvidenceQuote": "Anyone is free to use it for whatever purpose they want as long as they credit me :)",
+      "publishedAt": "2017-08-28",
+      "visualInspection": "not-completed",
+      "width": null,
+      "height": null,
+      "notes": "tQgsI94 is version 2 with wind domes and zombie-blood carts. Creator subsequently linked 9aPCMFq with golden dig spots. Informal creator permission is evidenced, not a Creative Commons license or a claim to third-party game rights. Prefer this candidate over unattributed reposts; inspect legibility and baked labels before import."
+    },
+    {
+      "id": "glitching-queen-origins",
+      "title": "Origins red dig-site diagram already in repository",
+      "sourcePageUrl": "https://www.glitchingqueen.com/origins.html",
+      "imageUrls": [
+        "https://www.glitchingqueen.com/uploads/8/7/2/1/87212810/published/map_2.png?1494490506="
+      ],
+      "localPath": "public/images/chronicles/origins/red-dig-map.png",
+      "assetKind": "special-purpose-annotated-location-diagram",
+      "evidenceStatus": "local-file-and-existing-asset-manifest-observed",
+      "creator": "Glitching Queen (credit recorded in docs/chronicles-assets.json)",
+      "rightsStatus": "not-recorded-in-existing-manifest",
+      "visualInspection": "not-completed",
+      "notes": "Already used as Origins guide supporting media. It is a sixteen-red-dig-site specialist reference, not evidence of a clean reusable tactical base."
+    },
+    {
+      "id": "nacht-fandom-lead",
+      "title": "Nacht der Untoten gallery floor-plan lead",
+      "sourcePageUrl": "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+      "imageUrls": [],
+      "assetKind": "floor-plan-gallery-search-lead",
+      "evidenceStatus": "search-index-only-page-access-blocked",
+      "creator": "Original image author unresolved",
+      "rightsStatus": "unknown",
+      "visualInspection": "not-completed",
+      "notes": "Search index lists Downstair Floor-plan, Upstairs Floor-plan and Map overview. Exact file links, resolution and image-specific rights remain unresolved; not counted as an acquired base."
+    },
+    {
+      "id": "nacht-guide",
+      "title": "BO1 Nacht der Untoten walkthrough",
+      "sourcePageUrl": "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/",
+      "imageUrls": [],
+      "assetKind": "text-gameplay-reference",
+      "evidenceStatus": "source-page-observed",
+      "creator": "hXcHector",
+      "rightsStatus": "all-rights-reserved-footer",
+      "notes": "Useful original gameplay description, not a base-map image. Distinguish BO1 mechanics from WaW and Chronicles."
+    },
+    {
+      "id": "shi-no-numa-legacy",
+      "title": "2009 Shi No Numa map discussion with linked map image",
+      "sourcePageUrl": "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908",
+      "imageUrls": [
+        "http://images2.wikia.nocookie.net/Callofduty/images/7/7e/Zombie_3.jpg"
+      ],
+      "assetKind": "legacy-map-image-link-unverified",
+      "evidenceStatus": "forum-post-and-exact-image-link-observed",
+      "creator": "Forum post by R0yledge989; linked image author unconfirmed",
+      "rightsStatus": "unknown",
+      "visualInspection": "not-completed; legacy image availability unverified",
+      "notes": "Potential original WaW loading-screen/overview source, not a confirmed high-resolution floor plan. Resolve the current original file and inspect before use."
+    },
+    {
+      "id": "ascension-fandom-lead",
+      "title": "Ascension layout image-file leads",
+      "sourcePageUrl": "https://callofduty.fandom.com/wiki/Category%3AAscension_images",
+      "relatedSourcePages": [
+        "https://callofduty.fandom.com/wiki/Ascension"
+      ],
+      "imageUrls": [],
+      "assetKind": "gallery-file-search-lead",
+      "evidenceStatus": "search-index-only-page-access-blocked",
+      "creator": "Original image author unresolved",
+      "rightsStatus": "unknown",
+      "notes": "Search index lists File:Ascension map.png and File:Acsension on Paper.PNG (spelling retained). No exact image URL or image-specific rights verified."
+    },
+    {
+      "id": "ascension-gameranx",
+      "title": "Ascension walkthrough Map Layout section",
+      "sourcePageUrl": "https://gameranx.com/features/id/106907/article/call-of-duty-black-ops-3-zombie-chronicles-ascension-map-walkthrough-map-guide/",
+      "imageUrls": [
+        "https://gameranx.com/wp-content/uploads/2017/05/BO_Ascension.jpg"
+      ],
+      "assetKind": "image-type-unverified",
+      "evidenceStatus": "source-html-and-exact-image-link-observed",
+      "creator": "Article by Dennis Patrick; image author unverified",
+      "rightsStatus": "unknown",
+      "visualInspection": "not-completed",
+      "width": 1440,
+      "height": 900,
+      "dimensionEvidence": "HTML width and height attributes, not decoded raster dimensions",
+      "notes": "Do not label this a usable overhead until pixels are inspected. Header says Chronicles but listed wall weapons include original BO1 entries, so it is not a reliable edition-specific marker dataset."
+    },
+    {
+      "id": "ascension-guide",
+      "title": "Ascension guide by RusselRaZe",
+      "sourcePageUrl": "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62247",
+      "imageUrls": [],
+      "assetKind": "text-gameplay-reference",
+      "evidenceStatus": "indexed-author-guide",
+      "creator": "RusselRaZe",
+      "rightsStatus": "unknown",
+      "notes": "Original BO1 landmark/route reference, not an overhead-image source."
+    },
+    {
+      "id": "dead-ops-guide",
+      "title": "Dead Ops Arcade walkthrough",
+      "sourcePageUrl": "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62778",
+      "imageUrls": [],
+      "assetKind": "text-arena-sequence-reference",
+      "evidenceStatus": "indexed-author-guide",
+      "creator": "MKillBill",
+      "rightsStatus": "unknown",
+      "notes": "Covers arena/round sequence; no suitable complete tactical base identified. An arena selector is a separate content project."
+    }
+  ],
+  "entries": [
+    {
+      "guideId": "bo3-shadows-of-evil",
+      "title": "Shadows of Evil",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "shadows-of-evil",
+      "variant": null,
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-shadows"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2015/11/shadows-of-evil-map-layout-call-of-duty.html"
+      ],
+      "floorRequirements": "Easy Street/Junction and three districts with high streets, ritual rooms and Rift.",
+      "stateRequirements": "Beast-mode traversal/interaction, train routes and portal connections.",
+      "editionCaveats": "Room plans are annotated, not a calibrated seamless map.",
+      "nextAction": "Collect all creator district plans and author connected, consistently scaled floor diagrams with Beast/Human visibility rules."
+    },
+    {
+      "guideId": "bo3-the-giant",
+      "title": "The Giant",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "der-riese",
+      "variant": "The Giant",
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-der-riese"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/der-riese.html"
+      ],
+      "floorRequirements": "Factory yards, upper catwalks/rooms, teleporter bays and furnace area.",
+      "stateRequirements": "Power, linked teleporters, barriers and Pack-a-Punch access.",
+      "editionCaveats": "Geometry may reuse Der Riese after side-by-side calibration. The Giant has its own randomized perks, weapons, GobbleGum and Fly Trap markers; no POIs may be copied wholesale.",
+      "nextAction": "Validate Der Riese source against The Giant and author the BO3 overlay independently."
+    },
+    {
+      "guideId": "bo3-der-eisendrache",
+      "title": "Der Eisendrache",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "der-eisendrache",
+      "variant": null,
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-der-eisendrache"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2016/03/main-spawn-area-map-layout-der.html"
+      ],
+      "floorRequirements": "Courtyards, rooms, undercroft/crypt, teleporter room and detached rocket platform.",
+      "stateRequirements": "Rocket-test hazard, teleporter links and quest-dependent access.",
+      "editionCaveats": "Two spawn image parts alone are not a full castle plan.",
+      "nextAction": "Review the twelve named area layouts, establish creator permission, and map interiors and rocket platform as distinct levels/regions."
+    },
+    {
+      "guideId": "bo3-zetsubou-no-shima",
+      "title": "Zetsubou No Shima",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "zetsubou-no-shima",
+      "variant": null,
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-zetsubou"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2016/06/zetsubou-no-shima-map-layout-main-spawn.html"
+      ],
+      "floorRequirements": "Island paths, Lab A/B platforms, bunker, underwater paths, spider area and boss access.",
+      "stateRequirements": "Temporary lab power, permanent bunker power, water types and underwater traversal.",
+      "editionCaveats": "Water/lab tags are independent of floor filters and item categories.",
+      "nextAction": "Collect linked lab/bunker/dock/AA plans, inspect completeness, and separately represent underwater and normal routes."
+    },
+    {
+      "guideId": "bo3-gorod-krovi",
+      "title": "Gorod Krovi",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "gorod-krovi",
+      "variant": null,
+      "coverageStatus": "multi-room-series-rights-pending",
+      "sourceIds": [
+        "cz-gorod"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2016/09/gorod-krovi-14-map-layouts-for-tank.html"
+      ],
+      "floorRequirements": "Multi-storey buildings, operations bunker, streets, Dragon Command and separate hatchery.",
+      "stateRequirements": "Dragon travel, fire hazards and hatchery lockdown state.",
+      "editionCaveats": "Fourteen plans cover a large subset but do not by themselves prove complete-map coverage.",
+      "nextAction": "Add Belsinki/department store/armory and hatchery coverage; unify scale and floors after permission and visual review."
+    },
+    {
+      "guideId": "bo3-revelations",
+      "title": "Revelations",
+      "gameId": "bo3",
+      "catalogGroup": "",
+      "edition": "Black Ops III",
+      "currentlyInteractive": false,
+      "geometryFamily": "revelations",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-revelations"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2016/11/revelations-map-layout-call-of-duty.html"
+      ],
+      "floorRequirements": "Connected fragments/islands, Nacht hub and separate Apothicon interior.",
+      "stateRequirements": "Portal links, jump pads and quest-dependent interactions.",
+      "editionCaveats": "Fragments of older maps do not justify reusing those complete original maps.",
+      "nextAction": "Inspect the three overview diagrams and distinguish abstract connection graph from geometric floor base; fill Apothicon detail."
+    },
+    {
+      "guideId": "bo3-nacht-der-untoten",
+      "title": "Nacht der Untoten",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "nacht-der-untoten",
+      "variant": null,
+      "coverageStatus": "source-gap-floor-plan-leads-only",
+      "sourceIds": [
+        "nacht-fandom-lead",
+        "nacht-guide"
+      ],
+      "sourcePageUrls": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ],
+      "floorRequirements": "Ground floor and upstairs; two alternative routes upstairs and door costs.",
+      "stateRequirements": "Doors and blockers; no continuous world movement.",
+      "editionCaveats": "Do not add WaW perks or Pack-a-Punch. BO1 and Chronicles each need their own weapon/perk/GobbleGum treatment.",
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay."
+    },
+    {
+      "guideId": "bo3-verruckt",
+      "title": "Verrückt",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "verruckt",
+      "variant": null,
+      "coverageStatus": "two-floor-candidate-rights-pending",
+      "sourceIds": [
+        "sir-cool-whip-verruckt"
+      ],
+      "sourcePageUrls": [
+        "https://www.flickr.com/photos/sir_cool_whip/albums/72157616015554759/"
+      ],
+      "floorRequirements": "Ground and first floor, left/right starting wings and power-room join.",
+      "stateRequirements": "Split spawn and doors/power connections.",
+      "editionCaveats": "Original drawing is WaW 2009. Recheck room dimensions and all perk/weapon positions for BO1 and Chronicles.",
+      "nextAction": "Request Sir Cool Whip reuse/adaptation permission, obtain both original-resolution floor files, then compare three editions."
+    },
+    {
+      "guideId": "bo3-shi-no-numa",
+      "title": "Shi No Numa",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "shi-no-numa",
+      "variant": null,
+      "coverageStatus": "source-gap-legacy-link-unverified",
+      "sourceIds": [
+        "shi-no-numa-legacy"
+      ],
+      "sourcePageUrls": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ],
+      "floorRequirements": "Two-floor main hut, four surrounding huts and swamp paths.",
+      "stateRequirements": "Randomized perk hut assignment; trap/zipline paths and candidate spawn groups.",
+      "editionCaveats": "Only WaW/BO1/Chronicles geometry is in scope. Vanguard's additional dig site and Mobile Raid must not be substituted.",
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets."
+    },
+    {
+      "guideId": "bo3-kino-der-toten",
+      "title": "Kino der Toten",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "kino-der-toten",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-kino"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/kino-der-toten.html"
+      ],
+      "floorRequirements": "Lobby/balcony, theater/backstage, rooms/alley, disconnected projection room.",
+      "stateRequirements": "Doors, teleporter link and return path.",
+      "editionCaveats": "Chronicles wall buys, perks, GobbleGum and quest collectibles require a BO3 overlay.",
+      "nextAction": "Inspect the four exact plan images, assign floors/insets, establish provenance, then build edition-specific markers."
+    },
+    {
+      "guideId": "bo3-ascension",
+      "title": "Ascension",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "ascension",
+      "variant": null,
+      "coverageStatus": "source-gap-image-type-and-provenance-unresolved",
+      "sourceIds": [
+        "ascension-fandom-lead",
+        "ascension-gameranx",
+        "ascension-guide"
+      ],
+      "sourcePageUrls": [
+        "https://callofduty.fandom.com/wiki/Category%3AAscension_images",
+        "https://gameranx.com/features/id/106907/article/call-of-duty-black-ops-3-zombie-chronicles-ascension-map-walkthrough-map-guide/",
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62247"
+      ],
+      "floorRequirements": "Centrifuge lower/upper floor, outside yards, lander platforms and rocket/Pack-a-Punch area.",
+      "stateRequirements": "Lander route links and rocket-launch access.",
+      "editionCaveats": "Chronicles title on an article does not validate its BO3 POIs; the Gameranx page lists original BO1 wall weapons.",
+      "nextAction": "Resolve the named gallery drawings and original creators; visually inspect BO_Ascension.jpg, accepting it only if actually a useful plan."
+    },
+    {
+      "guideId": "bo3-shangri-la",
+      "title": "Shangri-La",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "shangri-la",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-shangri-la"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2015/03/shangri-la-free-pdf-download-guide-from.html"
+      ],
+      "floorRequirements": "Surface and underground tunnels/cave; waterslide and minecart connections.",
+      "stateRequirements": "Eclipse quest state, traversal direction and variable perk assignments.",
+      "editionCaveats": "Chronicles geometry may be comparable but interaction and equipment overlays remain separate.",
+      "nextAction": "Inspect linked layout image and PDF provenance; split underground/above-ground paths so overlapping POIs remain unambiguous."
+    },
+    {
+      "guideId": "bo3-moon",
+      "title": "Moon",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "moon",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-moon"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2014/01/classic-zombie-map-layouts-from-from.html"
+      ],
+      "floorRequirements": "Separate Earth/No Man's Land inset plus Moon spawn/tunnels/labs/biodome.",
+      "stateRequirements": "Excavator affected zones, airlock connections and spawn-alternating Earth perks.",
+      "editionCaveats": "BO1 and Chronicles need distinct POIs; don't flatten Earth and Moon into one physical scale.",
+      "nextAction": "Resolve original image author behind repost and inspect floors; design location selector plus hazard zones."
+    },
+    {
+      "guideId": "bo3-origins",
+      "title": "Origins",
+      "gameId": "bo3",
+      "catalogGroup": "chronicles",
+      "edition": "Black Ops III: Zombies Chronicles",
+      "currentlyInteractive": false,
+      "geometryFamily": "origins",
+      "variant": null,
+      "coverageStatus": "creator-permission-candidate-technical-review-pending",
+      "sourceIds": [
+        "zedz-origins",
+        "glitching-queen-origins"
+      ],
+      "sourcePageUrls": [
+        "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+        "https://www.glitchingqueen.com/origins.html"
+      ],
+      "floorRequirements": "Surface trenches/tank route, bunker/staff tunnels, excavation levels, church and Crazy Place inset.",
+      "stateRequirements": "Snow-dependent digs, candidate part spawns, robot paths and realm access.",
+      "editionCaveats": "BO2 and Chronicles need separate POIs even when a common structural base passes comparison.",
+      "nextAction": "Use the credited Zedz candidate for first technical review; check pixel dimensions, legibility, baked labels and missing interiors before import."
+    },
+    {
+      "guideId": "bo2-tranzit",
+      "title": "TranZit",
+      "gameId": "bo2",
+      "catalogGroup": "",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "tranzit",
+      "variant": null,
+      "coverageStatus": "publisher-pdf-candidate-rights-pending",
+      "sourceIds": [
+        "pearson-tranzit"
+      ],
+      "sourcePageUrls": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ],
+      "floorRequirements": "Regional bus loop plus local terminal, diner, farm, power station and town floor detail.",
+      "stateRequirements": "Bus route, fog connections, buildables, doors and per-run candidates.",
+      "editionCaveats": "Regional overview and local stop plans need different zoom/coordinate scopes.",
+      "nextAction": "Review PDF pixels, confirm reuse rights or author an original base, then calibrate regional and stop-level layouts."
+    },
+    {
+      "guideId": "bo2-bus-depot",
+      "title": "Bus Depot",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "tranzit",
+      "variant": "bus-depot",
+      "coverageStatus": "publisher-pdf-candidate-rights-pending",
+      "sourceIds": [
+        "pearson-tranzit"
+      ],
+      "sourcePageUrls": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ],
+      "floorRequirements": "Terminal area only; PDF page 2, printed 276–277.",
+      "stateRequirements": "Survival bounds and blockers; no automatic TranZit power/perk/buildable layer.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-town",
+      "title": "Town",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "tranzit",
+      "variant": "town",
+      "coverageStatus": "publisher-pdf-candidate-rights-pending",
+      "sourceIds": [
+        "pearson-tranzit"
+      ],
+      "sourcePageUrls": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ],
+      "floorRequirements": "Town Center only; PDF page 4, printed 280–281.",
+      "stateRequirements": "Separate supported Survival/Grief mode overlays; validate doors, weapons and perks.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-farm",
+      "title": "Farm",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "tranzit",
+      "variant": "farm",
+      "coverageStatus": "publisher-pdf-candidate-rights-pending",
+      "sourceIds": [
+        "pearson-tranzit"
+      ],
+      "sourcePageUrls": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ],
+      "floorRequirements": "Farm, house and barn levels only; PDF page 3, printed 278–279.",
+      "stateRequirements": "Separate supported Survival/Grief mode overlays; validate bounds and doors.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-diner",
+      "title": "Diner",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "tranzit",
+      "variant": "diner",
+      "coverageStatus": "publisher-pdf-candidate-rights-pending",
+      "sourceIds": [
+        "pearson-tranzit"
+      ],
+      "sourcePageUrls": [
+        "https://ptgmedia.pearsoncmg.com/imprint_downloads/brady/colin/black_ops_2_zombies_supplement_11-12.pdf"
+      ],
+      "floorRequirements": "Diner/garage area only; PDF page 3, printed 278–279.",
+      "stateRequirements": "Turned mode bounds/spawns; do not label this as normal round-based Survival despite catalogue grouping.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-nuketown-zombies",
+      "title": "Nuketown Zombies",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "nuketown-zombies",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-nuketown"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2015/03/nuketown-zombies-free-pdf-download.html"
+      ],
+      "floorRequirements": "Street/courtyard and two house floors/backyards.",
+      "stateRequirements": "Random perk and Pack-a-Punch landing sites; house blockers.",
+      "editionCaveats": "Do not borrow BO4 Alpha Omega underground expansion or multiplayer Nuketown unchanged.",
+      "nextAction": "Inspect image, establish provenance, and model landing positions as possible locations rather than fixed active machines."
+    },
+    {
+      "guideId": "bo2-die-rise",
+      "title": "Die Rise",
+      "gameId": "bo2",
+      "catalogGroup": "",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "die-rise",
+      "variant": null,
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-die-rise"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2013/01/die-rise-map-layout-call-of-duty-black.html"
+      ],
+      "floorRequirements": "Two distinct high-rise buildings, many floors and upside-down rooms.",
+      "stateRequirements": "Elevators change level; one-way drops and jumps need directed links.",
+      "editionCaveats": "Floor 1 in a source title is ambiguous without building identity and explicit vertical order.",
+      "nextAction": "Collect all linked floor images, build tower-aware level IDs, validate edge connectivity, then author a consistent-scale base."
+    },
+    {
+      "guideId": "bo2-mob-of-the-dead",
+      "title": "Mob of the Dead",
+      "gameId": "bo2",
+      "catalogGroup": "",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "mob-of-the-dead",
+      "variant": null,
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-mob"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2013/04/mob-dead-map-layout-call-of-duty-black.html"
+      ],
+      "floorRequirements": "Cell floors, cafeteria, showers, citadel tunnels, docks, infirmary, roof and detached bridge.",
+      "stateRequirements": "Afterlife-specific routes/switches, gondola and plane travel.",
+      "editionCaveats": "BO4 Blood of the Dead changes topology and content; it is not the same base.",
+      "nextAction": "Collect remaining room plans, fill bridge coverage, and assemble floor-specific navigation with Afterlife-state metadata."
+    },
+    {
+      "guideId": "bo2-cell-block",
+      "title": "Cell Block",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "mob-of-the-dead",
+      "variant": "Cell Block",
+      "coverageStatus": "partial-room-series-rights-pending",
+      "sourceIds": [
+        "cz-mob"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2013/04/mob-dead-map-layout-call-of-duty-black.html"
+      ],
+      "floorRequirements": "Restricted prison Grief subset; source series is the larger Mob of the Dead.",
+      "stateRequirements": "Dedicated Grief bounds/rules/POIs; no automatic Afterlife, plane or bridge layers.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-buried",
+      "title": "Buried",
+      "gameId": "bo2",
+      "catalogGroup": "",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "buried",
+      "variant": null,
+      "coverageStatus": "overview-and-room-series-rights-pending",
+      "sourceIds": [
+        "cz-buried"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2013/07/general-map-layout-for-buried-zombie.html"
+      ],
+      "floorRequirements": "Surface start, underground town, building interiors/upper levels, manor and maze/Pack-a-Punch.",
+      "stateRequirements": "One-way entry, breakable barriers and changeable maze arrangement.",
+      "editionCaveats": "A static overview must not imply one permanently valid maze route.",
+      "nextAction": "Inspect overview and room plans; build towns/buildings first and model maze state separately."
+    },
+    {
+      "guideId": "bo2-borough",
+      "title": "Borough",
+      "gameId": "bo2",
+      "catalogGroup": "survival",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "buried",
+      "variant": "Borough",
+      "coverageStatus": "overview-and-room-series-rights-pending",
+      "sourceIds": [
+        "cz-buried"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2013/07/general-map-layout-for-buried-zombie.html"
+      ],
+      "floorRequirements": "Restricted Buried Grief subset and accessible interiors.",
+      "stateRequirements": "Dedicated Grief bounds/rules/POIs; don't inherit inaccessible manor/maze content.",
+      "editionCaveats": "Shared parent geometry is a candidate only. This guide is a mode-specific map; coordinates, play-space boundary and POIs must be validated for its mode.",
+      "nextAction": "Draw validated mode bounds on the parent geometry; create an independent marker manifest and verify all available routes/items."
+    },
+    {
+      "guideId": "bo2-origins",
+      "title": "Origins",
+      "gameId": "bo2",
+      "catalogGroup": "",
+      "edition": "Black Ops II",
+      "currentlyInteractive": false,
+      "geometryFamily": "origins",
+      "variant": null,
+      "coverageStatus": "creator-permission-candidate-technical-review-pending",
+      "sourceIds": [
+        "zedz-origins",
+        "glitching-queen-origins"
+      ],
+      "sourcePageUrls": [
+        "https://www.reddit.com/r/CODZombies/comments/6wh7nx/hq_map_i_made_to_celebrate_originss_4th_birthday/",
+        "https://www.glitchingqueen.com/origins.html"
+      ],
+      "floorRequirements": "Surface trenches/tank route, bunker/staff tunnels, excavation levels, church and Crazy Place inset.",
+      "stateRequirements": "Snow-dependent digs, candidate part spawns, robot paths and realm access.",
+      "editionCaveats": "BO2 and Chronicles need separate POIs even when a common structural base passes comparison.",
+      "nextAction": "Use the credited Zedz candidate for first technical review; check pixel dimensions, legibility, baked labels and missing interiors before import."
+    },
+    {
+      "guideId": "waw-nacht-der-untoten",
+      "title": "Nacht der Untoten",
+      "gameId": "waw",
+      "catalogGroup": "",
+      "edition": "World at War",
+      "currentlyInteractive": false,
+      "geometryFamily": "nacht-der-untoten",
+      "variant": null,
+      "coverageStatus": "source-gap-floor-plan-leads-only",
+      "sourceIds": [
+        "nacht-fandom-lead",
+        "nacht-guide"
+      ],
+      "sourcePageUrls": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ],
+      "floorRequirements": "Ground floor and upstairs; two alternative routes upstairs and door costs.",
+      "stateRequirements": "Doors and blockers; no continuous world movement.",
+      "editionCaveats": "Do not add WaW perks or Pack-a-Punch. BO1 and Chronicles each need their own weapon/perk/GobbleGum treatment.",
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay."
+    },
+    {
+      "guideId": "waw-verruckt",
+      "title": "Verrückt",
+      "gameId": "waw",
+      "catalogGroup": "",
+      "edition": "World at War",
+      "currentlyInteractive": false,
+      "geometryFamily": "verruckt",
+      "variant": null,
+      "coverageStatus": "two-floor-candidate-rights-pending",
+      "sourceIds": [
+        "sir-cool-whip-verruckt"
+      ],
+      "sourcePageUrls": [
+        "https://www.flickr.com/photos/sir_cool_whip/albums/72157616015554759/"
+      ],
+      "floorRequirements": "Ground and first floor, left/right starting wings and power-room join.",
+      "stateRequirements": "Split spawn and doors/power connections.",
+      "editionCaveats": "Original drawing is WaW 2009. Recheck room dimensions and all perk/weapon positions for BO1 and Chronicles.",
+      "nextAction": "Request Sir Cool Whip reuse/adaptation permission, obtain both original-resolution floor files, then compare three editions."
+    },
+    {
+      "guideId": "waw-shi-no-numa",
+      "title": "Shi No Numa",
+      "gameId": "waw",
+      "catalogGroup": "",
+      "edition": "World at War",
+      "currentlyInteractive": false,
+      "geometryFamily": "shi-no-numa",
+      "variant": null,
+      "coverageStatus": "source-gap-legacy-link-unverified",
+      "sourceIds": [
+        "shi-no-numa-legacy"
+      ],
+      "sourcePageUrls": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ],
+      "floorRequirements": "Two-floor main hut, four surrounding huts and swamp paths.",
+      "stateRequirements": "Randomized perk hut assignment; trap/zipline paths and candidate spawn groups.",
+      "editionCaveats": "Only WaW/BO1/Chronicles geometry is in scope. Vanguard's additional dig site and Mobile Raid must not be substituted.",
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets."
+    },
+    {
+      "guideId": "waw-der-riese",
+      "title": "Der Riese",
+      "gameId": "waw",
+      "catalogGroup": "",
+      "edition": "World at War",
+      "currentlyInteractive": false,
+      "geometryFamily": "der-riese",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-der-riese"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/der-riese.html"
+      ],
+      "floorRequirements": "Factory yards, upper catwalks/rooms, teleporter bays and furnace area.",
+      "stateRequirements": "Power, linked teleporters, barriers and Pack-a-Punch access.",
+      "editionCaveats": "WaW and BO1 use separate weapon/perk/quest overlays; The Giant is only a geometry-reuse candidate.",
+      "nextAction": "Identify the underlying image author or create an original floor-separated diagram; calibrate shared geometry before reusing it."
+    },
+    {
+      "guideId": "bo1-nacht-der-untoten",
+      "title": "Nacht der Untoten",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "nacht-der-untoten",
+      "variant": null,
+      "coverageStatus": "source-gap-floor-plan-leads-only",
+      "sourceIds": [
+        "nacht-fandom-lead",
+        "nacht-guide"
+      ],
+      "sourcePageUrls": [
+        "https://callofduty.fandom.com/wiki/Nacht_der_Untoten",
+        "https://www.hxchector.com/call-of-duty-black-ops-walkthrough/nacht-der-untoten/"
+      ],
+      "floorRequirements": "Ground floor and upstairs; two alternative routes upstairs and door costs.",
+      "stateRequirements": "Doors and blockers; no continuous world movement.",
+      "editionCaveats": "Do not add WaW perks or Pack-a-Punch. BO1 and Chronicles each need their own weapon/perk/GobbleGum treatment.",
+      "nextAction": "Resolve two floor-plan image files and author permission, or draw an original two-floor plan using independently verified gameplay."
+    },
+    {
+      "guideId": "bo1-verruckt",
+      "title": "Verrückt",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "verruckt",
+      "variant": null,
+      "coverageStatus": "two-floor-candidate-rights-pending",
+      "sourceIds": [
+        "sir-cool-whip-verruckt"
+      ],
+      "sourcePageUrls": [
+        "https://www.flickr.com/photos/sir_cool_whip/albums/72157616015554759/"
+      ],
+      "floorRequirements": "Ground and first floor, left/right starting wings and power-room join.",
+      "stateRequirements": "Split spawn and doors/power connections.",
+      "editionCaveats": "Original drawing is WaW 2009. Recheck room dimensions and all perk/weapon positions for BO1 and Chronicles.",
+      "nextAction": "Request Sir Cool Whip reuse/adaptation permission, obtain both original-resolution floor files, then compare three editions."
+    },
+    {
+      "guideId": "bo1-shi-no-numa",
+      "title": "Shi No Numa",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "shi-no-numa",
+      "variant": null,
+      "coverageStatus": "source-gap-legacy-link-unverified",
+      "sourceIds": [
+        "shi-no-numa-legacy"
+      ],
+      "sourcePageUrls": [
+        "https://gamefaqs.gamespot.com/boards/944199-call-of-duty-world-at-war/49930908"
+      ],
+      "floorRequirements": "Two-floor main hut, four surrounding huts and swamp paths.",
+      "stateRequirements": "Randomized perk hut assignment; trap/zipline paths and candidate spawn groups.",
+      "editionCaveats": "Only WaW/BO1/Chronicles geometry is in scope. Vanguard's additional dig site and Mobile Raid must not be substituted.",
+      "nextAction": "Resolve the original/current Zombie_3 image and creator, or author a new schematic with upper/lower main-hut insets."
+    },
+    {
+      "guideId": "bo1-der-riese",
+      "title": "Der Riese",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "der-riese",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-der-riese"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/der-riese.html"
+      ],
+      "floorRequirements": "Factory yards, upper catwalks/rooms, teleporter bays and furnace area.",
+      "stateRequirements": "Power, linked teleporters, barriers and Pack-a-Punch access.",
+      "editionCaveats": "WaW and BO1 use separate weapon/perk/quest overlays; The Giant is only a geometry-reuse candidate.",
+      "nextAction": "Identify the underlying image author or create an original floor-separated diagram; calibrate shared geometry before reusing it."
+    },
+    {
+      "guideId": "bo1-kino-der-toten",
+      "title": "Kino der Toten",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "kino-der-toten",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-kino"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/kino-der-toten.html"
+      ],
+      "floorRequirements": "Lobby/balcony, theater/backstage, rooms/alley, disconnected projection room.",
+      "stateRequirements": "Doors, teleporter link and return path.",
+      "editionCaveats": "Chronicles wall buys, perks, GobbleGum and quest collectibles require a BO3 overlay.",
+      "nextAction": "Inspect the four exact plan images, assign floors/insets, establish provenance, then build edition-specific markers."
+    },
+    {
+      "guideId": "bo1-five",
+      "title": "Five",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "five",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-five"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2014/01/classic-zombie-map-layouts-from-from.html"
+      ],
+      "floorRequirements": "Offices, War Room and labs; Pack-a-Punch panic-room inset.",
+      "stateRequirements": "Elevators, teleporters and DEFCON state.",
+      "editionCaveats": "Do not use BO4 Classified's changed spaces as Five geometry.",
+      "nextAction": "Inspect the linked multi-floor schematic and establish image provenance before deriving a base."
+    },
+    {
+      "guideId": "bo1-ascension",
+      "title": "Ascension",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "ascension",
+      "variant": null,
+      "coverageStatus": "source-gap-image-type-and-provenance-unresolved",
+      "sourceIds": [
+        "ascension-fandom-lead",
+        "ascension-gameranx",
+        "ascension-guide"
+      ],
+      "sourcePageUrls": [
+        "https://callofduty.fandom.com/wiki/Category%3AAscension_images",
+        "https://gameranx.com/features/id/106907/article/call-of-duty-black-ops-3-zombie-chronicles-ascension-map-walkthrough-map-guide/",
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62247"
+      ],
+      "floorRequirements": "Centrifuge lower/upper floor, outside yards, lander platforms and rocket/Pack-a-Punch area.",
+      "stateRequirements": "Lander route links and rocket-launch access.",
+      "editionCaveats": "Chronicles title on an article does not validate its BO3 POIs; the Gameranx page lists original BO1 wall weapons.",
+      "nextAction": "Resolve the named gallery drawings and original creators; visually inspect BO_Ascension.jpg, accepting it only if actually a useful plan."
+    },
+    {
+      "guideId": "bo1-shangri-la",
+      "title": "Shangri-La",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "shangri-la",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-shangri-la"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2015/03/shangri-la-free-pdf-download-guide-from.html"
+      ],
+      "floorRequirements": "Surface and underground tunnels/cave; waterslide and minecart connections.",
+      "stateRequirements": "Eclipse quest state, traversal direction and variable perk assignments.",
+      "editionCaveats": "Chronicles geometry may be comparable but interaction and equipment overlays remain separate.",
+      "nextAction": "Inspect linked layout image and PDF provenance; split underground/above-ground paths so overlapping POIs remain unambiguous."
+    },
+    {
+      "guideId": "bo1-moon",
+      "title": "Moon",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "moon",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-moon"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/2014/01/classic-zombie-map-layouts-from-from.html"
+      ],
+      "floorRequirements": "Separate Earth/No Man's Land inset plus Moon spawn/tunnels/labs/biodome.",
+      "stateRequirements": "Excavator affected zones, airlock connections and spawn-alternating Earth perks.",
+      "editionCaveats": "BO1 and Chronicles need distinct POIs; don't flatten Earth and Moon into one physical scale.",
+      "nextAction": "Resolve original image author behind repost and inspect floors; design location selector plus hazard zones."
+    },
+    {
+      "guideId": "bo1-call-of-the-dead",
+      "title": "Call of the Dead",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "call-of-the-dead",
+      "variant": null,
+      "coverageStatus": "annotated-candidate-rights-pending",
+      "sourceIds": [
+        "cz-call-of-dead"
+      ],
+      "sourcePageUrls": [
+        "https://codzombified.blogspot.com/p/call-of-dead.html"
+      ],
+      "floorRequirements": "Beach, ship decks, multi-floor lighthouse and connecting routes.",
+      "stateRequirements": "Pack-a-Punch possible sites, moving George, ziplines and flinger paths.",
+      "editionCaveats": "BO4 Tag der Toten changes the layout and content; it is not interchangeable.",
+      "nextAction": "Verify full floor coverage and image creator; represent George as a mechanic/zone explanation, not a falsely fixed POI."
+    },
+    {
+      "guideId": "bo1-dead-ops-arcade",
+      "title": "Dead Ops Arcade",
+      "gameId": "bo1",
+      "catalogGroup": "",
+      "edition": "Black Ops",
+      "currentlyInteractive": false,
+      "geometryFamily": "dead-ops-arcade",
+      "variant": null,
+      "coverageStatus": "no-single-base-map-found",
+      "sourceIds": [
+        "dead-ops-guide"
+      ],
+      "sourcePageUrls": [
+        "https://gamefaqs.gamespot.com/ps3/960188-call-of-duty-black-ops/faqs/62778"
+      ],
+      "floorRequirements": "Sequence of distinct arcade arenas, not a single connected round-based location.",
+      "stateRequirements": "Arena/round progression.",
+      "editionCaveats": "Dead Ops 1 must not inherit Dead Ops 2/3 arenas.",
+      "nextAction": "Defer the map button until an arena-index product with actual arena images and useful data is planned."
+    }
+  ]
+}

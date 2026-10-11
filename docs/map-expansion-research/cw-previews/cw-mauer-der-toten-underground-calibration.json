@@ -1,0 +1,107 @@
+[
+  {
+    "number": 1,
+    "id": "dc-325a363964",
+    "label": "Arsenal",
+    "x": 0.40792198,
+    "y": 0.63014804
+  },
+  {
+    "number": 2,
+    "id": "dc-524f423553",
+    "label": "Power Switch",
+    "x": 0.40325911,
+    "y": 0.44637353
+  },
+  {
+    "number": 3,
+    "id": "dc-71566a5279",
+    "label": "Exfill Radio",
+    "x": 0.37622946,
+    "y": 0.45948466
+  },
+  {
+    "number": 4,
+    "id": "dc-3032384277",
+    "label": "Ammo Crate",
+    "x": 0.4391787,
+    "y": 0.59378389
+  },
+  {
+    "number": 5,
+    "id": "dc-71585a4358",
+    "label": "Crafting Table",
+    "x": 0.38964844,
+    "y": 0.39952689
+  },
+  {
+    "number": 6,
+    "id": "dc-6542613134",
+    "label": "Mystery Box Location",
+    "x": 0.34092369,
+    "y": 0.64581579
+  },
+  {
+    "number": 7,
+    "id": "dc-6d59744a4c",
+    "label": "Elemental Pop",
+    "x": 0.41597815,
+    "y": 0.50368105
+  },
+  {
+    "number": 8,
+    "id": "dc-5f4d684632",
+    "label": "M16 wall buy",
+    "x": 0.609375,
+    "y": 0.43758309
+  },
+  {
+    "number": 9,
+    "id": "dc-7630384b34",
+    "label": "DMR 14 wall buy",
+    "x": 0.15733279,
+    "y": 0.70608959
+  },
+  {
+    "number": 10,
+    "id": "dc-4731303765",
+    "label": "Blacklight code — Service Passage search",
+    "x": 0.89784677,
+    "y": 0.64492701
+  },
+  {
+    "number": 11,
+    "id": "dc-4759524536",
+    "label": "Train Line Controls",
+    "x": 0.55501909,
+    "y": 0.29697582
+  },
+  {
+    "number": 12,
+    "id": "dc-6467665979",
+    "label": "Essence Harvester",
+    "x": 0.65705947,
+    "y": 0.49582759
+  },
+  {
+    "number": 13,
+    "id": "dc-784c4c6d6d",
+    "label": "Endstation Lure Machine",
+    "x": 0.29172805,
+    "y": 0.69936616
+  },
+  {
+    "number": 14,
+    "id": "dc-4263514d65",
+    "label": "Klaus Escort",
+    "x": 0.07764511,
+    "y": 0.672223
+  },
+  {
+    "number": 15,
+    "id": "dc-6551586666",
+    "label": "Klaus Disk Box",
+    "x": 0.64504154,
+    "y": 0.59755426
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "number": 1,
+    "id": "dc-5839505070",
+    "label": "Pack-a-Punch",
+    "x": 0.26994324,
+    "y": 0.57816449
+  },
+  {
+    "number": 2,
+    "id": "dc-5f56304956",
+    "label": "Arsenal",
+    "x": 0.41582939,
+    "y": 0.24669331
+  },
+  {
+    "number": 3,
+    "id": "dc-7332325875",
+    "label": "Der Wunderfizz",
+    "x": 0.75190954,
+    "y": 0.52222707
+  },
+  {
+    "number": 4,
+    "id": "dc-6757746261",
+    "label": "Aether Rift",
+    "x": 0.44677734,
+    "y": 0.19780123
+  },
+  {
+    "number": 5,
+    "id": "dc-4748336e67",
+    "label": "Maxis Radio",
+    "x": 0.67895508,
+    "y": 0.73239337
+  },
+  {
+    "number": 6,
+    "id": "dc-5f57336837",
+    "label": "Ammo Crate",
+    "x": 0.22061995,
+    "y": 0.38888503
+  },
+  {
+    "number": 7,
+    "id": "dc-7455687535",
+    "label": "Mystery Box Location",
+    "x": 0.66091005,
+    "y": 0.7008659
+  },
+  {
+    "number": 8,
+    "id": "dc-4952634e62",
+    "label": "Jump Pad",
+    "x": 0.24969985,
+    "y": 0.26363414
+  },
+  {
+    "number": 9,
+    "id": "dc-557a4e6b56",
+    "label": "Wall Buy wall buy",
+    "x": 0.27170277,
+    "y": 0.5779737
+  },
+  {
+    "number": 10,
+    "id": "dc-65774b4a6a",
+    "label": "Maxis Radio Amplifier",
+    "x": 0.58762552,
+    "y": 0.66446495
+  },
+  {
+    "number": 11,
+    "id": "dc-734b785851",
+    "label": "Demented Echo",
+    "x": 0.56795639,
+    "y": 0.44909542
+  },
+  {
+    "number": 12,
+    "id": "dc-643161746a",
+    "label": "Unknown Signal Radio",
+    "x": 0.46034055,
+    "y": 0.26896171
+  },
+  {
+    "number": 13,
+    "id": "dc-42526b715f",
+    "label": "Unknown Signal Amplifier",
+    "x": 0.14251131,
+    "y": 0.38307605
+  }
+]

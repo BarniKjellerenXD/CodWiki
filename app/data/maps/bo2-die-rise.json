@@ -1,0 +1,465 @@
+{
+  "id": "bo2-die-rise",
+  "name": "Die Rise",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops II guide",
+      "url": "/guides/bo2-die-rise",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/die-rise/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-2/die-rise/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombieguides.com/die-rise"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo2-die-rise/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn building",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper / multiple floors",
+      "description": "Black Ops II · Upper / multiple floors. Region on a schematic, not an exact object position. Reach the sewing-machine power room, turn on power and ride to the roof.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-power"
+    },
+    {
+      "id": "area-lower",
+      "label": "Lower spawn-side route",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.737,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Lower floors",
+      "description": "Black Ops II · Lower floors. Region on a schematic, not an exact object position. Reach the sewing-machine power room, turn on power and ride to the roof.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-power"
+    },
+    {
+      "id": "area-power",
+      "label": "Power / sewing machines",
+      "layerId": "overview",
+      "x": 0.77,
+      "y": 0.757,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Other building",
+      "description": "Black Ops II · Other building. Region on a schematic, not an exact object position. Reach the sewing-machine power room, turn on power and ride to the roof.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-power"
+    },
+    {
+      "id": "area-roof",
+      "label": "Dragon roof",
+      "layerId": "overview",
+      "x": 0.78,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Power-building roof",
+      "description": "Black Ops II · Power-building roof. Region on a schematic, not an exact object position. Reach the sewing-machine power room, turn on power and ride to the roof.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-power"
+    },
+    {
+      "id": "power",
+      "label": "Sewing-room power switch",
+      "layerId": "overview",
+      "x": 0.732,
+      "y": 0.758,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Other building",
+      "description": "From spawn, the broken starting elevator drops you toward the lower floor. Cross to the power building using the broken passages and mattress landing, then turn on the switch beside the sewing machines. Its elevators now move and carry perks or Pack-a-Punch between floors. Ride upward to reach the dragon roof. Before any drop, identify a visible landing and how you will get back; an arbitrary long fall kills you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-power"
+    },
+    {
+      "id": "lifts",
+      "label": "Power-building elevator machines",
+      "layerId": "overview",
+      "x": 0.808,
+      "y": 0.758,
+      "category": "transport",
+      "typeId": "fast-travel",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Other building",
+      "description": "Read which machine is in each elevator rather than assuming a fixed shaft. Spawn-side elevators carry Quick Revive, Speed Cola and Who’s Who; the power-building group carries Jugger-Nog, Double Tap, Mule Kick and Pack-a-Punch. Buy or upgrade when it has just arrived and remains stationary, then step clear. Bells and closing doors warn it is about to move; staying on its roof at the top of a shaft crushes you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-elevators"
+    },
+    {
+      "id": "spawn-lifts",
+      "label": "Spawn-side elevator machines",
+      "layerId": "overview",
+      "x": 0.142,
+      "y": 0.288,
+      "category": "transport",
+      "typeId": "fast-travel",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Upper / multiple floors",
+      "description": "Read which machine is in each elevator rather than assuming a fixed shaft. Spawn-side elevators carry Quick Revive, Speed Cola and Who’s Who; the power-building group carries Jugger-Nog, Double Tap, Mule Kick and Pack-a-Punch. Buy or upgrade when it has just arrived and remains stationary, then step clear. Bells and closing doors warn it is about to move; staying on its roof at the top of a shaft crushes you. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-die-rise#guide-step-setup-elevators"
+    },
+    {
+      "id": "tower",
+      "label": "Roof tower / final symbols",
+      "layerId": "overview",
+      "x": 0.742,
+      "y": 0.288,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Power-building roof",
+      "description": "The pylon leg beside the photographed tile spawn is North (the side facing away from the Power Building), even if that spawn is empty. Orient yourself from that fixed anchor; screen-left and screen-right change when you walk around the tower. With Galvaknuckles, strike the four legs once each in the decoded 1–4 order. A wrong attempt extinguishes the glow and requires the next round before retrying. Electricity over the whole tower, the achievement and all perks confirm the selected route. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo2-die-rise#guide-step-mahjong-strike"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-power",
+      "title": "Reach the sewing-machine power room, turn on power and ride to the roof.",
+      "locationIds": [
+        "power",
+        "area-spawn",
+        "area-lower",
+        "area-power",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-setup-power"
+    },
+    {
+      "id": "guide-setup-elevators",
+      "title": "Wait for an elevator to stop before buying; step off before its top stop.",
+      "locationIds": [
+        "lifts",
+        "spawn-lifts",
+        "area-spawn",
+        "area-power",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-setup-elevators"
+    },
+    {
+      "id": "guide-setup-key",
+      "title": "Use elevator keys carefully and retain a refillable weapon.",
+      "locationIds": [
+        "area-spawn",
+        "area-lower"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-setup-key"
+    },
+    {
+      "id": "guide-build-trample",
+      "title": "Carry the four spawn/lobby parts to the Trample Steam bench.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-build-trample"
+    },
+    {
+      "id": "guide-build-sliq",
+      "title": "Find foot, canister, bottle and trigger around the power-building workshop.",
+      "locationIds": [
+        "area-lower",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-build-sliq"
+    },
+    {
+      "id": "guide-build-sliq-use",
+      "title": "Use Sliquifier chains on open ground; keep puddles away from drops.",
+      "locationIds": [
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-build-sliq-use"
+    },
+    {
+      "id": "guide-quest-ready",
+      "title": "Four players; power, rooftop table, Trample Steams and branch equipment.",
+      "locationIds": [
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-quest-ready"
+    },
+    {
+      "id": "guide-quest-elevators",
+      "title": "Stand on the four elevator-roof symbols together.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-quest-elevators"
+    },
+    {
+      "id": "guide-quest-floor",
+      "title": "Find the floor-symbol order by testing and watching which symbols stay lit.",
+      "locationIds": [
+        "area-spawn",
+        "area-power",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-quest-floor"
+    },
+    {
+      "id": "guide-quest-balls",
+      "title": "Sniper-shoot both dragon-mouth balls; choose Maxis or Richtofen.",
+      "locationIds": [
+        "area-spawn",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-quest-balls"
+    },
+    {
+      "id": "guide-maxis-buddha",
+      "title": "Earn the Buddha-room kills until Maxis’s reincarnation cue.",
+      "locationIds": [
+        "area-lower"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-maxis-buddha"
+    },
+    {
+      "id": "guide-maxis-knife",
+      "title": "Fire the upgraded Ballistic Knife in the Buddha room; listen for acceptance.",
+      "locationIds": [
+        "area-lower"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-maxis-knife"
+    },
+    {
+      "id": "guide-maxis-launch",
+      "title": "Align the four lion launchers; launch both balls until the tower glows orange.",
+      "locationIds": [
+        "area-lower",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-maxis-launch"
+    },
+    {
+      "id": "guide-richtofen-balls",
+      "title": "Sliquifier-shoot both spawn balls until they spin.",
+      "locationIds": [
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-richtofen-balls"
+    },
+    {
+      "id": "guide-richtofen-launch",
+      "title": "Launch zombies from the four zombie symbols until the tower glows blue.",
+      "locationIds": [
+        "area-spawn",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-richtofen-launch"
+    },
+    {
+      "id": "guide-mahjong-read",
+      "title": "Pair number and direction tiles by colour; use the visual decoder.",
+      "locationIds": [
+        "tower",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-mahjong-read"
+    },
+    {
+      "id": "guide-mahjong-locations",
+      "title": "Search all eleven possible tile positions for eight actual clues.",
+      "locationIds": [
+        "area-lower",
+        "area-power",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-mahjong-locations"
+    },
+    {
+      "id": "guide-mahjong-strike",
+      "title": "Strike North/East/South/West legs in your decoded order with Galvaknuckles.",
+      "locationIds": [
+        "tower",
+        "area-power",
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-mahjong-strike"
+    },
+    {
+      "id": "guide-jacks-use",
+      "title": "Buy essentials before free bottles; the shaft’s PhD machine is inaccessible.",
+      "locationIds": [
+        "area-spawn"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-jacks-use"
+    },
+    {
+      "id": "guide-navcard-table",
+      "title": "Build the rooftop table; insert TranZit’s card and take Die Rise’s to Buried.",
+      "locationIds": [
+        "area-roof"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-navcard-table"
+    },
+    {
+      "id": "guide-storage",
+      "title": "Use the shower bank and nearby weapon fridge between rooftop trips.",
+      "locationIds": [
+        "area-lower"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-storage"
+    },
+    {
+      "id": "guide-music-bears",
+      "title": "Activate the SVU shelf, Buddha ledge and power-table bears.",
+      "locationIds": [
+        "area-spawn",
+        "area-lower",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops II instruction. Partial two-building orientation diagram. Several intermediate floors are omitted. Lines are route summaries, not safe jump instructions; verify every landing and elevator in game.",
+      "guideAnchor": "guide-step-music-bears"
+    }
+  ],
+  "quickLinks": {
+    "setup-power": "guide-setup-power",
+    "setup-elevators": "guide-setup-elevators",
+    "setup-key": "guide-setup-key",
+    "build-trample": "guide-build-trample",
+    "build-sliq": "guide-build-sliq",
+    "build-sliq-use": "guide-build-sliq-use",
+    "quest-ready": "guide-quest-ready",
+    "quest-elevators": "guide-quest-elevators",
+    "quest-floor": "guide-quest-floor",
+    "quest-balls": "guide-quest-balls",
+    "maxis-buddha": "guide-maxis-buddha",
+    "maxis-knife": "guide-maxis-knife",
+    "maxis-launch": "guide-maxis-launch",
+    "richtofen-balls": "guide-richtofen-balls",
+    "richtofen-launch": "guide-richtofen-launch",
+    "mahjong-read": "guide-mahjong-read",
+    "mahjong-locations": "guide-mahjong-locations",
+    "mahjong-strike": "guide-mahjong-strike",
+    "jacks-use": "guide-jacks-use",
+    "navcard-table": "guide-navcard-table",
+    "storage": "guide-storage",
+    "music-bears": "guide-music-bears"
+  }
+}

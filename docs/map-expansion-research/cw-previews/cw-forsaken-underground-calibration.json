@@ -1,0 +1,114 @@
+[
+  {
+    "number": 1,
+    "id": "dc-6e644b5047",
+    "label": "Arsenal",
+    "x": 0.27734375,
+    "y": 0.24719053
+  },
+  {
+    "number": 2,
+    "id": "dc-4343555279",
+    "label": "Der Wunderfizz",
+    "x": 0.51489258,
+    "y": 0.6762915
+  },
+  {
+    "number": 3,
+    "id": "dc-3973786d37",
+    "label": "Ammo Crate",
+    "x": 0.19238281,
+    "y": 0.44395206
+  },
+  {
+    "number": 4,
+    "id": "dc-6c6f74664d",
+    "label": "Ammo Crate",
+    "x": 0.58251953,
+    "y": 0.62014402
+  },
+  {
+    "number": 5,
+    "id": "dc-7a43336550",
+    "label": "Ammo Crate",
+    "x": 0.82910156,
+    "y": 0.67146211
+  },
+  {
+    "number": 6,
+    "id": "dc-374267484f",
+    "label": "Crafting Table",
+    "x": 0.44384766,
+    "y": 0.46293404
+  },
+  {
+    "number": 7,
+    "id": "dc-42776c6746",
+    "label": "Teleporter",
+    "x": 0.07421875,
+    "y": 0.42009489
+  },
+  {
+    "number": 8,
+    "id": "dc-6637643071",
+    "label": "Teleporter",
+    "x": 0.87597656,
+    "y": 0.89261095
+  },
+  {
+    "number": 9,
+    "id": "dc-6a79733236",
+    "label": "Mystery Box Location",
+    "x": 0.77368164,
+    "y": 0.41800427
+  },
+  {
+    "number": 10,
+    "id": "dc-4557626864",
+    "label": "Krig wall buy",
+    "x": 0.44604492,
+    "y": 0.32524439
+  },
+  {
+    "number": 11,
+    "id": "dc-775465504a",
+    "label": "M60 wall buy",
+    "x": 0.51513672,
+    "y": 0.5655016
+  },
+  {
+    "number": 12,
+    "id": "dc-4f46535447",
+    "label": "AK-74u wall buy",
+    "x": 0.91943359,
+    "y": 0.70660585
+  },
+  {
+    "number": 13,
+    "id": "dc-4268565156",
+    "label": "Abomination Spawn",
+    "x": 0.09024172,
+    "y": 0.42012994
+  },
+  {
+    "number": 14,
+    "id": "dc-724e355067",
+    "label": "Housing Unit",
+    "x": 0.72986627,
+    "y": 0.56966924
+  },
+  {
+    "number": 15,
+    "id": "dc-426a4f3050",
+    "label": "Chrysalax Savager",
+    "x": 0.43730358,
+    "y": 0.20315725
+  },
+  {
+    "number": 16,
+    "id": "dc-6d5649764b",
+    "label": "Large Dark Aether Crystal #1",
+    "x": 0.66262164,
+    "y": 0.42114577
+  }
+]

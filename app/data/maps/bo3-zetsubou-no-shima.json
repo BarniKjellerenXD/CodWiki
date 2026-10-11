@@ -1,0 +1,491 @@
+{
+  "id": "bo3-zetsubou-no-shima",
+  "name": "Zetsubou No Shima",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-zetsubou-no-shima",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/zetsubou-no-shima/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/zetsubou-no-shima/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=705034546"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-zetsubou-no-shima/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / skull approach",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.7070000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Island start",
+      "description": "Black Ops III · Island start. Region on a schematic, not an exact object position. Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "area-laba",
+      "label": "Lab A",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Laboratory / supports",
+      "description": "Black Ops III · Laboratory / supports. Region on a schematic, not an exact object position. Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "area-labb",
+      "label": "Lab B",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Laboratory / trees",
+      "description": "Black Ops III · Laboratory / trees. Region on a schematic, not an exact object position. Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "area-bunker",
+      "label": "Bunker / central chamber",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.507,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Bunker interior",
+      "description": "Black Ops III · Bunker interior. Region on a schematic, not an exact object position. Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "area-power",
+      "label": "Underwater power room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Bunker left / underwater",
+      "description": "Black Ops III · Bunker left / underwater. Region on a schematic, not an exact object position. Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "area-docks",
+      "label": "Docks / zipline",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Coast",
+      "description": "Black Ops III · Coast. Region on a schematic, not an exact object position. Every player completes three trials → hold shield in the platform’s lightning.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-skull-3"
+    },
+    {
+      "id": "lab-a-generator",
+      "label": "Lab A water generator",
+      "layerId": "overview",
+      "x": 0.152,
+      "y": 0.318,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Laboratory / supports",
+      "description": "Collect a bucket at spawn or either laboratory and fill it at a colored pool. Power Lab A and Lab B by pouring water into their generators. Both temporary generators must run at the same time to open the bunker; refill one if it expires. Open the bunker, enter the left power room, dive down and knife the web blocking the turbine. Survive the underwater lockdown, then use the power switch. Break underwater spores to replenish air and surface whenever the room allows it. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "lab-b-generator",
+      "label": "Lab B water generator",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.318,
+      "category": "power",
+      "typeId": "generator",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Laboratory / trees",
+      "description": "Collect a bucket at spawn or either laboratory and fill it at a colored pool. Power Lab A and Lab B by pouring water into their generators. Both temporary generators must run at the same time to open the bunker; refill one if it expires. Open the bunker, enter the left power room, dive down and knife the web blocking the turbine. Survive the underwater lockdown, then use the power switch. Break underwater spores to replenish air and surface whenever the room allows it. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "power",
+      "label": "Permanent power / lockdown",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.8180000000000001,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Bunker left / underwater",
+      "description": "Collect a bucket at spawn or either laboratory and fill it at a colored pool. Power Lab A and Lab B by pouring water into their generators. Both temporary generators must run at the same time to open the bunker; refill one if it expires. Open the bunker, enter the left power room, dive down and knife the web blocking the turbine. Survive the underwater lockdown, then use the power switch. Break underwater spores to replenish air and surface whenever the room allows it. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-1"
+    },
+    {
+      "id": "pap",
+      "label": "Drained-chamber Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.47200000000000003,
+      "y": 0.508,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Bunker interior",
+      "description": "Recover the three drainage parts: from the underwater power-room vent after its lockdown; from a hanging cocoon that you knife open in the purple-water room; and from the underwater tunnels beside Mule Kick. Search the branches of the tunnel carefully and use the air spores. Fit the three parts to the marked valves around the central flooded chamber to drain it and reach Pack-a-Punch. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-setup-2"
+    },
+    {
+      "id": "zipline-cog",
+      "label": "Zipline dock cog area",
+      "layerId": "overview",
+      "x": 0.7919999999999999,
+      "y": 0.798,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Coast",
+      "description": "The final cog sits on the small dock beneath the zipline. In solo, bash the zipline control with an electrified shield, ride it and melee to release directly over the dock. Traveling from the docks toward Lab A gives an early release point. In co-op, have a teammate electrify the control while the rider is over the dock to drop them. Collect the cog and use the path back. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-zetsubou-no-shima#guide-step-cogs-2"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Bucket → water both labs → bunker → clear underwater turbine → permanent power.",
+      "locationIds": [
+        "lab-a-generator",
+        "lab-b-generator",
+        "power",
+        "area-spawn",
+        "area-laba",
+        "area-labb",
+        "area-bunker",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Power vent + cocoon + underwater tunnel parts → repair three drainage valves → Pack-a-Punch.",
+      "locationIds": [
+        "pap",
+        "area-bunker",
+        "area-power"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Build shield from Lab A, Lab B and artillery parts; build a mask from propeller, green pool and dock parts.",
+      "locationIds": [
+        "area-laba",
+        "area-labb",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-skull-1",
+      "title": "Match each skull’s actual markings to one of four altars.",
+      "locationIds": [
+        "area-spawn",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-skull-1"
+    },
+    {
+      "id": "guide-skull-3",
+      "title": "Every player completes three trials → hold shield in the platform’s lightning.",
+      "locationIds": [
+        "area-spawn",
+        "area-labb",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-skull-3"
+    },
+    {
+      "id": "guide-equipment-1",
+      "title": "Scientist vial + caged-spider venom + deep underwater plant → KT-4.",
+      "locationIds": [
+        "area-laba",
+        "area-labb",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-equipment-1"
+    },
+    {
+      "id": "guide-equipment-2",
+      "title": "Mesmerize purple-pool poster → reveal elevator wall and underwater planter.",
+      "locationIds": [
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-equipment-2"
+    },
+    {
+      "id": "guide-equipment-3",
+      "title": "Spider tooth + electrified-cage vial + rainbow plant → Masamune.",
+      "locationIds": [
+        "area-laba",
+        "area-labb",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-equipment-3"
+    },
+    {
+      "id": "guide-plants-1",
+      "title": "Plant → blue water + KT-4 on three consecutive rounds.",
+      "locationIds": [
+        "area-laba"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-plants-1"
+    },
+    {
+      "id": "guide-plants-3",
+      "title": "Load cannon → shoot passing plane → collect smoking cog at one of three sites.",
+      "locationIds": [
+        "area-laba",
+        "area-labb",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-plants-3"
+    },
+    {
+      "id": "guide-cogs-1",
+      "title": "Reveal mechanism → Anywhere But Here → collect secret-room cog.",
+      "locationIds": [
+        "area-laba",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-cogs-1"
+    },
+    {
+      "id": "guide-cogs-2",
+      "title": "Electrified zipline → release over the small dock → collect cog.",
+      "locationIds": [
+        "zipline-cog",
+        "area-laba",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-cogs-2"
+    },
+    {
+      "id": "guide-cogs-3",
+      "title": "Insert all three cogs → prepare Masamune, protection and ammunition.",
+      "locationIds": [
+        "area-bunker",
+        "area-docks"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-cogs-3"
+    },
+    {
+      "id": "guide-boss-1",
+      "title": "Insert three cogs → resupply → elevator → cut orange vines with Masamune.",
+      "locationIds": [
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-boss-1"
+    },
+    {
+      "id": "guide-boss-2",
+      "title": "Survive between openings → Masamune the orange weak points → ending.",
+      "locationIds": [
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-boss-2"
+    },
+    {
+      "id": "guide-plant-recipes",
+      "title": "Plant recipes, imprint insurance and the golden bucket: plant-recipes",
+      "locationIds": [
+        "area-laba"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-plant-recipes"
+    },
+    {
+      "id": "guide-gold-bucket",
+      "title": "Plant recipes, imprint insurance and the golden bucket: gold-bucket",
+      "locationIds": [
+        "area-labb"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-gold-bucket"
+    },
+    {
+      "id": "guide-spider-cage",
+      "title": "Spider Bait transformation: spider-cage",
+      "locationIds": [
+        "area-laba"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-spider-cage"
+    },
+    {
+      "id": "guide-dead-flowers",
+      "title": "Friendly Thrasher, music and jump scare: dead-flowers",
+      "locationIds": [
+        "area-laba",
+        "area-labb",
+        "area-bunker"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Partial destination schematic. Both labs must be powered to open the bunker, but their paths are not invented here. Underwater tunnels and boss access are grouped/omitted; follow the guide for air and access.",
+      "guideAnchor": "guide-step-dead-flowers"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "skull-1": "guide-skull-1",
+    "skull-3": "guide-skull-3",
+    "equipment-1": "guide-equipment-1",
+    "equipment-2": "guide-equipment-2",
+    "equipment-3": "guide-equipment-3",
+    "plants-1": "guide-plants-1",
+    "plants-3": "guide-plants-3",
+    "cogs-1": "guide-cogs-1",
+    "cogs-2": "guide-cogs-2",
+    "cogs-3": "guide-cogs-3",
+    "boss-1": "guide-boss-1",
+    "boss-2": "guide-boss-2",
+    "plant-recipes": "guide-plant-recipes",
+    "gold-bucket": "guide-gold-bucket",
+    "spider-cage": "guide-spider-cage",
+    "dead-flowers": "guide-dead-flowers"
+  }
+}

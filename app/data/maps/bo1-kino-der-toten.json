@@ -1,0 +1,407 @@
+{
+  "id": "bo1-kino-der-toten",
+  "name": "Kino der Toten",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops guide",
+      "url": "/guides/bo1-kino-der-toten",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/kino-der-toten/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO1/kino_der_toten/kino_der_toten_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.reddit.com/r/CODZombies/comments/4p0mbg/kino_der_toten_complete_map_breakdown/"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo1-kino-der-toten/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-lobby",
+      "label": "Lobby",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8170000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Black Ops · Ground floor. Region on a schematic, not an exact object position. Reach the stage and activate power.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "area-upper",
+      "label": "Upper indoor route",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.5770000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper rooms",
+      "description": "Black Ops · Upper rooms. Region on a schematic, not an exact object position. Reach the stage and activate power.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "area-dressing",
+      "label": "Dressing Room",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.287,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Stage approach",
+      "description": "Black Ops · Stage approach. Region on a schematic, not an exact object position. Reach the stage and activate power.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "area-alley",
+      "label": "Alley route",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.5770000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside / lower route",
+      "description": "Black Ops · Outside / lower route. Region on a schematic, not an exact object position. Reach the stage and activate power.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "area-stage",
+      "label": "Stage / theatre",
+      "layerId": "overview",
+      "x": 0.52,
+      "y": 0.317,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "Black Ops · Main hall. Region on a schematic, not an exact object position. Reach the stage and activate power.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "area-projection",
+      "label": "Projection room",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Teleporter destination",
+      "description": "Black Ops · Teleporter destination. Region on a schematic, not an exact object position. Upgrade and collect the weapon before the booth timer ends.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-upgrade"
+    },
+    {
+      "id": "power-switch",
+      "label": "Stage power switch",
+      "layerId": "overview",
+      "x": 0.48200000000000004,
+      "y": 0.318,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "From the lobby, buy the upstairs route through the rooms, Speed Cola area and Dressing Room to the stage, or take the lower Alley route around the other side. Switch on power at the side of the stage to lift the curtain and open the central theatre loop. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-power"
+    },
+    {
+      "id": "teleporter",
+      "label": "Stage teleporter",
+      "layerId": "overview",
+      "x": 0.558,
+      "y": 0.318,
+      "category": "transport",
+      "typeId": "teleporter",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Main hall",
+      "description": "Interact with the teleporter pad on the stage to begin a link. Run to the circular mainframe pad in the lobby and interact again to finish it. Gather everyone who wants to upgrade inside the stage teleporter before activating it. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-link"
+    },
+    {
+      "id": "pap",
+      "label": "Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.23800000000000002,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Teleporter destination",
+      "description": "The teleporter sends its occupants to the projection booth for about 30 seconds. Pack-a-Punch costs 5,000 points. Retrieve your gun before the forced return; the clock over the machine shows the remaining window. A random intermission room may appear before you return to the lobby. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-upgrade"
+    },
+    {
+      "id": "revive",
+      "label": "Quick Revive",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.8180000000000001,
+      "category": "perk",
+      "typeId": "perk-machine",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Ground floor",
+      "description": "Jugger-Nog is beside the theatre’s rear seating; Quick Revive is in the lobby, Speed Cola on the upper indoor route and Double Tap in the Alley. In solo, Quick Revive provides up to three self-revives. Updated BO1 also adds Mule Kick, but no Wunderfizz. Double Tap is the original fire-rate version. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo1-kino-der-toten#guide-step-kino-perks"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-kino-power",
+      "title": "Reach the stage and activate power.",
+      "locationIds": [
+        "power-switch",
+        "area-lobby",
+        "area-upper",
+        "area-dressing",
+        "area-alley",
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-power"
+    },
+    {
+      "id": "guide-kino-perks",
+      "title": "Buy Jugger-Nog and appropriate survival perks.",
+      "locationIds": [
+        "revive",
+        "area-lobby",
+        "area-upper",
+        "area-alley",
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-perks"
+    },
+    {
+      "id": "guide-kino-link",
+      "title": "Link stage → lobby; activate the stage teleporter.",
+      "locationIds": [
+        "teleporter",
+        "area-lobby",
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-link"
+    },
+    {
+      "id": "guide-kino-upgrade",
+      "title": "Upgrade and collect the weapon before the booth timer ends.",
+      "locationIds": [
+        "pap",
+        "area-lobby",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-upgrade"
+    },
+    {
+      "id": "guide-kino-relink",
+      "title": "After cooldown, relink for each new trip.",
+      "locationIds": [
+        "teleporter",
+        "area-lobby",
+        "area-stage",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-relink"
+    },
+    {
+      "id": "guide-kino-traps",
+      "title": "Use traps with a clear retreat and warn teammates.",
+      "locationIds": [
+        "area-alley"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-traps"
+    },
+    {
+      "id": "guide-kino-nova",
+      "title": "Clear crawlers before their gas covers your escape.",
+      "locationIds": [
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-nova"
+    },
+    {
+      "id": "guide-kino-song",
+      "title": "Activate the lobby, Dressing Room and upstairs Alley meteors.",
+      "locationIds": [
+        "area-lobby",
+        "area-upper",
+        "area-dressing",
+        "area-alley"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-song"
+    },
+    {
+      "id": "guide-kino-reels",
+      "title": "Search each brief intermission room for a film reel.",
+      "locationIds": [
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-reels"
+    },
+    {
+      "id": "guide-kino-project",
+      "title": "Load each collected reel into the projection-booth projector.",
+      "locationIds": [
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-project"
+    },
+    {
+      "id": "guide-kino-rocket",
+      "title": "Try the mannequin trigger, then the Pentagon-room rocket.",
+      "locationIds": [
+        "area-upper",
+        "area-dressing",
+        "area-projection"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-rocket"
+    },
+    {
+      "id": "guide-kino-radios",
+      "title": "Shoot the theatre chandelier and distant Alley radios.",
+      "locationIds": [
+        "area-alley",
+        "area-stage"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-radios"
+    },
+    {
+      "id": "guide-kino-portraits",
+      "title": "Interact with the upstairs portraits for character dialogue.",
+      "locationIds": [
+        "area-lobby",
+        "area-upper"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops instruction. Two theatre routes are compressed into named areas. Projection room is a separate teleporter destination, not adjacent floor space.",
+      "guideAnchor": "guide-step-kino-portraits"
+    }
+  ],
+  "quickLinks": {
+    "kino-power": "guide-kino-power",
+    "kino-perks": "guide-kino-perks",
+    "kino-link": "guide-kino-link",
+    "kino-upgrade": "guide-kino-upgrade",
+    "kino-relink": "guide-kino-relink",
+    "kino-traps": "guide-kino-traps",
+    "kino-nova": "guide-kino-nova",
+    "kino-song": "guide-kino-song",
+    "kino-reels": "guide-kino-reels",
+    "kino-project": "guide-kino-project",
+    "kino-rocket": "guide-kino-rocket",
+    "kino-radios": "guide-kino-radios",
+    "kino-portraits": "guide-kino-portraits"
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "id": "vanguard-terra-maledicta",
+  "name": "Terra Maledicta",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Vanguard guide",
+      "url": "/guides/vanguard-terra-maledicta",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-temple-area-map-layout.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2022/02/terra-maledicta-east-spring-tents-fuel.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/VG/terra_maledicta/terra_maledicta_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.codzombieguides.com/terra-maledicta"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/vanguard-terra-maledicta/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-temple",
+      "label": "Temple",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.667,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Destroy the East Spring, West Spring and two Temple crystals.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-crystals"
+    },
+    {
+      "id": "area-east",
+      "label": "East Spring / Tents",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.557,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Complete portals to open Merchant Road, both Springs and Debris Field.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-setup"
+    },
+    {
+      "id": "area-outpost",
+      "label": "Outpost Courtyard",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.267,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Optional digs: find a shovel at one of the four hub pickup areas.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-shovel"
+    },
+    {
+      "id": "area-west",
+      "label": "West Spring / Bazaar",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.667,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Complete portals to open Merchant Road, both Springs and Debris Field.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-setup"
+    },
+    {
+      "id": "area-merchant",
+      "label": "Merchant Road / Market Storage",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.367,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Road / shield",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Complete portals to open Merchant Road, both Springs and Debris Field.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-setup"
+    },
+    {
+      "id": "area-debris",
+      "label": "Debris Field / Spike",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.347,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Complete portals to open Merchant Road, both Springs and Debris Field.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-setup"
+    },
+    {
+      "id": "area-dark",
+      "label": "Dark Aether objectives",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.877,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate portal destinations",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Enter the Tents portal and finish the Augmentor objective.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-augmentor-enter"
+    },
+    {
+      "id": "pap",
+      "label": "Temple Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.645,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Creator map text places Pack-a-Punch in Temple. Use portal objectives to remove barriers into Merchant Road, East Spring, West Spring and Debris Field. Collect free first-tier perk drinks and prepare weapon, armour and artifact upgrades between objectives. This objective-based map opens areas through portals; The Archon uses a different round-based progression. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-setup"
+    },
+    {
+      "id": "shield",
+      "label": "Trapped Decimator Shield",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.34500000000000003,
+      "category": "weapon-crate",
+      "typeId": "weapon-crate",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Road / shield",
+      "availability": "conditional",
+      "description": "After opening Merchant Road, approach the trapped Decimator Shield to begin its conversation. Open East Spring, then use the rune stone in the Tents area by Demonic Frenzy. Wait for the dialogue to finish and the portal to appear behind the stone. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-shield-talk"
+    },
+    {
+      "id": "tents-rune",
+      "label": "Tents rune stone",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.535,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "After opening Merchant Road, approach the trapped Decimator Shield to begin its conversation. Open East Spring, then use the rune stone in the Tents area by Demonic Frenzy. Wait for the dialogue to finish and the portal to appear behind the stone. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-shield-talk"
+    },
+    {
+      "id": "bazaar-rune",
+      "label": "Bazaar rune stone",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.645,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Return to the shield for its next conversation. Open West Spring and use the Bazaar rune stone below Diabolical Damage. Wait for the new portal beside it, then enter. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-second-rune"
+    },
+    {
+      "id": "void-rune",
+      "label": "Debris Field Void rune",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.325,
+      "category": "portal",
+      "typeId": "portal",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Open Debris Field and use its rune stone near Venomous Vigor. Wait for the conversation and enter THIS new Void portal; it is separate from the earlier shield portals. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-debris-portal"
+    },
+    {
+      "id": "page-door",
+      "label": "Lost Pages barrier",
+      "layerId": "overview",
+      "x": 0.77,
+      "y": 0.245,
+      "category": "code-symbol",
+      "typeId": "code-symbol",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Dig up four Lost Tome pages in Eastern Desert. Take them to the magical barrier on the small Outpost Courtyard building. Its four attachment positions are Top, Bottom, Left and Right. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-lost-pages-dig"
+    },
+    {
+      "id": "radio",
+      "label": "Merchant Road antenna radio",
+      "layerId": "overview",
+      "x": 0.54,
+      "y": 0.34500000000000003,
+      "category": "radio",
+      "typeId": "radio",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Road / shield",
+      "availability": "conditional",
+      "description": "Dig up a radio antenna and install it on Merchant Road’s radio beside the armoured vehicle. Defeat the spawned Boom-Schreiers. Continue through the two intermediate radios: Bazaar’s Diabolical Damage room and the radio beside Venomous Vigor. The sources list these two in opposite orders; follow whichever is currently interactable, finish its enemies, then check the other. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-terra-maledicta#guide-step-terra-antenna-radio"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-terra-setup",
+      "title": "Complete portals to open Merchant Road, both Springs and Debris Field.",
+      "locationIds": [
+        "pap",
+        "area-east",
+        "area-west",
+        "area-merchant",
+        "area-debris"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-setup"
+    },
+    {
+      "id": "guide-terra-shovel",
+      "title": "Optional digs: find a shovel at one of the four hub pickup areas.",
+      "locationIds": [
+        "area-outpost",
+        "area-merchant",
+        "area-debris"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-shovel"
+    },
+    {
+      "id": "guide-terra-shield-talk",
+      "title": "Speak to the Merchant Road shield; use the Tents rune by Demonic Frenzy.",
+      "locationIds": [
+        "shield",
+        "tents-rune",
+        "area-east",
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-shield-talk"
+    },
+    {
+      "id": "guide-terra-augmentor-enter",
+      "title": "Enter the Tents portal and finish the Augmentor objective.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-augmentor-enter"
+    },
+    {
+      "id": "guide-terra-crystals",
+      "title": "Destroy the East Spring, West Spring and two Temple crystals.",
+      "locationIds": [
+        "area-temple",
+        "area-east",
+        "area-west"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-crystals"
+    },
+    {
+      "id": "guide-terra-second-rune",
+      "title": "Return to the shield; use Bazaar’s rune below Diabolical Damage.",
+      "locationIds": [
+        "bazaar-rune",
+        "area-west",
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-second-rune"
+    },
+    {
+      "id": "guide-terra-sacrifice",
+      "title": "Complete Sacrifice; return and collect the released Decimator Shield.",
+      "locationIds": [
+        "shield",
+        "area-temple",
+        "area-merchant",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-sacrifice"
+    },
+    {
+      "id": "guide-terra-debris-portal",
+      "title": "Use Debris Field’s Venomous Vigor rune and enter its Void portal.",
+      "locationIds": [
+        "void-rune",
+        "area-merchant",
+        "area-debris",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-debris-portal"
+    },
+    {
+      "id": "guide-terra-sealing-arms",
+      "title": "Follow the Tome Page’s four beams and Decimator-slam each sealing arm.",
+      "locationIds": [
+        "area-merchant",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-sealing-arms"
+    },
+    {
+      "id": "guide-terra-tome-reward",
+      "title": "Collect the released Tome Page and use the portal to its right.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-tome-reward"
+    },
+    {
+      "id": "guide-terra-lost-pages-dig",
+      "title": "Dig four Lost Tome pages; go to the Outpost Courtyard barrier.",
+      "locationIds": [
+        "page-door",
+        "area-outpost",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-lost-pages-dig"
+    },
+    {
+      "id": "guide-terra-page-order",
+      "title": "Find the changing Top/Bottom/Left/Right order; correct pages remain attached.",
+      "locationIds": [
+        "page-door"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-page-order"
+    },
+    {
+      "id": "guide-terra-antenna-radio",
+      "title": "Fit the antenna at Merchant Road; clear the available Bazaar/Venomous Vigor radios.",
+      "locationIds": [
+        "radio",
+        "area-temple",
+        "area-west",
+        "area-merchant",
+        "area-debris"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-antenna-radio"
+    },
+    {
+      "id": "guide-terra-antenna-finish",
+      "title": "Finish Market Storage’s Sturmkriegers and collect the dropped loot chest.",
+      "locationIds": [
+        "radio",
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-antenna-finish"
+    },
+    {
+      "id": "guide-terra-heart",
+      "title": "Take the purple heart to a marked burial dig and collect its Sacrificial Heart.",
+      "locationIds": [
+        "area-temple"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-heart"
+    },
+    {
+      "id": "guide-terra-points-orb",
+      "title": "Follow a dug-up red orb, shoot it down and collect its points.",
+      "locationIds": [
+        "area-east"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Objective-unlocked Eastern Desert regions. Portal tasks share a context node without a claimed common floor plan. Derailment and finer district paths are omitted. This is deliberately separate from The Archon’s barriers and Pack-a-Punch setup.",
+      "guideAnchor": "guide-step-terra-points-orb"
+    }
+  ],
+  "quickLinks": {
+    "terra-setup": "guide-terra-setup",
+    "terra-shovel": "guide-terra-shovel",
+    "terra-shield-talk": "guide-terra-shield-talk",
+    "terra-augmentor-enter": "guide-terra-augmentor-enter",
+    "terra-crystals": "guide-terra-crystals",
+    "terra-second-rune": "guide-terra-second-rune",
+    "terra-sacrifice": "guide-terra-sacrifice",
+    "terra-debris-portal": "guide-terra-debris-portal",
+    "terra-sealing-arms": "guide-terra-sealing-arms",
+    "terra-tome-reward": "guide-terra-tome-reward",
+    "terra-lost-pages-dig": "guide-terra-lost-pages-dig",
+    "terra-page-order": "guide-terra-page-order",
+    "terra-antenna-radio": "guide-terra-antenna-radio",
+    "terra-antenna-finish": "guide-terra-antenna-finish",
+    "terra-heart": "guide-terra-heart",
+    "terra-points-orb": "guide-terra-points-orb"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "pap",
+            "area-east",
+            "area-west",
+            "area-merchant",
+            "area-debris",
+            "area-outpost"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "shield",
+            "tents-rune",
+            "area-east",
+            "area-merchant",
+            "area-dark"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "page-door",
+            "area-outpost",
+            "area-dark",
+            "radio",
+            "area-temple",
+            "area-west",
+            "area-merchant",
+            "area-debris",
+            "area-east"
+          ]
+        }
+      ]
+    }
+  ]
+}

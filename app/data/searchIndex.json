@@ -17606,6 +17606,14 @@
     "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
   },
   {
+    "id": "mw3-rune-portals",
+    "map": "mw3-urzikstan",
+    "name": "Rune portal finder",
+    "route": "/tools/mw3-rune-portals",
+    "kind": "Tool",
+    "keywords": "mw3 Modern Warfare III (2023) Urzikstan solver tracker"
+  },
+  {
     "id": "super-ee",
     "name": "Super Easter Egg",
     "map": "",

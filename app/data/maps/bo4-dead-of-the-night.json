@@ -1,0 +1,828 @@
+{
+  "id": "bo4-dead-of-the-night",
+  "name": "Dead of the Night",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed."
+  },
+  "sources": [
+    {
+      "name": "CodWiki BO4 authored guide",
+      "url": "/guides/bo4-dead-of-the-night",
+      "note": "Guide passages supply named regions, service locations and explicitly described routes. Original CodWiki schematic; no external creator map image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/dead-of-the-night/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://mmmrkennedy.com/games/BO4/dead_of_the_night/dead_of_the_night_guide"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-4/dead-of-the-night/"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo4-dead-of-the-night/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic, not to scale. Lines show regional routes with intermediate rooms omitted. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-smoking",
+      "label": "Smoking Room",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest"
+      ],
+      "floor": "Mansion",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-2"
+    },
+    {
+      "id": "area-hall",
+      "label": "Main Hall / galleries",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Mansion",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Sentinel on → expose and charge purple, green and blue stones.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-1"
+    },
+    {
+      "id": "area-bedrooms",
+      "label": "Bedrooms / Dining route",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.269,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Multiple mansion rooms",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Sentinel on → expose and charge purple, green and blue stones.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-1"
+    },
+    {
+      "id": "area-library",
+      "label": "Library / Study",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Mansion",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Sentinel on → expose and charge purple, green and blue stones.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-1"
+    },
+    {
+      "id": "area-terrace",
+      "label": "Forest Terrace",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Gate approach",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-2"
+    },
+    {
+      "id": "area-cellar",
+      "label": "Wine Cellar",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.539,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Lower mansion",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Sentinel on → expose and charge purple, green and blue stones.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-1"
+    },
+    {
+      "id": "area-cemetery",
+      "label": "Cemetery / Mausoleum",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Outside",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-2"
+    },
+    {
+      "id": "area-forest",
+      "label": "Forest",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Outside",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Use three forks at Forest Terrace; kill the werewolf with silver if ready; reach Pack-a-Punch.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-3"
+    },
+    {
+      "id": "area-gardens",
+      "label": "Gardens / Greenhouse",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.8190000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "floor": "Outside / laboratory",
+      "description": "Region on an original schematic; spacing and angles are illustrative. Partial mansion/outdoor diagram. Connections shown are explicitly described routes, often through omitted rooms. Bedroom/Dining, Cemetery/Mausoleum and Gardens/Greenhouse are search regions, not single rooms. Fixed point or complete candidate coverage is not claimed. Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-2"
+    },
+    {
+      "id": "sentinel",
+      "label": "Grand Staircase Artifact",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.288,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Mansion",
+      "availability": "conditional",
+      "description": "Reach the Grand Staircase and activate the Sentinel Artifact. Look for a vase emitting colored particles in each of the three stone groups. Break that vase, then kill four zombies close to the exposed stone. Interact with the charged stone and identify its vision. The color tells you where to search for the stone, not which task it will assign. Purple: Bedroom Hallway table; foot of the Master Bedroom bed; Trophy Room table near its fireplace. Green: Library table by the Mystery Box; Library near the silver-bullet bench; Study central table. Blue: Wine Cellar near the silver-melting bench; Wine Cellar table by the MX9. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-1"
+    },
+    {
+      "id": "shield",
+      "label": "Ballistic Shield bench",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.288,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Mansion",
+      "availability": "conditional",
+      "description": "Collect one piece from each shield group and assemble the Ballistic Shield in the Smoking Room. Keep it intact: the Library upgrade, blue-flame runs and telescope all need it. Base: Grand Staircase pillar near the Artifact; East Balcony beside Saug; West Balcony below stained glass. Window: Library sofa beside Trebuchet; floor by the opposite broken Library shelf; Study table upstairs. Gun assembly: East Hallway chair; Dining Room floor beside Swordfish; Dining Room ledge next to the bedroom stairs. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-shield"
+    },
+    {
+      "id": "silver-smelter",
+      "label": "Silver melting bench",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.558,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Lower mansion",
+      "availability": "conditional",
+      "description": "Gather three silver objects and three gunpowder ingredients. Melt the silver objects at the Wine Cellar bench, then craft silver bullets at the Library bench. Equip them on your ordinary damage weapon and rebuy ammunition there when needed. Candlestick: Entrance Hall round table; floor beside Billiards fireplace; Main Hall near Mozu/clock. Trophy/vase: West Hallway beside the sofa; Dining Room side table opposite clock; corner of the long dining table. Plate: Wine Cellar wall near MX9; shelf opposite the bench; large table near the noose. Guano: tree right of Mausoleum; bottom of its left stairs; Cemetery corner between the approach paths. Charcoal: Billiards, Main Hall or Master Bedroom fireplace. Sulfur: left or right of Greenhouse Laboratory entrance; rear Laboratory table near ICR-7. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-weapons-1"
+    },
+    {
+      "id": "silver-bullets",
+      "label": "Silver bullet bench",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.558,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Mansion",
+      "availability": "conditional",
+      "description": "Gather three silver objects and three gunpowder ingredients. Melt the silver objects at the Wine Cellar bench, then craft silver bullets at the Library bench. Equip them on your ordinary damage weapon and rebuy ammunition there when needed. Candlestick: Entrance Hall round table; floor beside Billiards fireplace; Main Hall near Mozu/clock. Trophy/vase: West Hallway beside the sofa; Dining Room side table opposite clock; corner of the long dining table. Plate: Wine Cellar wall near MX9; shelf opposite the bench; large table near the noose. Guano: tree right of Mausoleum; bottom of its left stairs; Cemetery corner between the approach paths. Charcoal: Billiards, Main Hall or Master Bedroom fireplace. Sulfur: left or right of Greenhouse Laboratory entrance; rear Laboratory table near ICR-7. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-weapons-1"
+    },
+    {
+      "id": "folly",
+      "label": "Alistair’s Folly case",
+      "layerId": "overview",
+      "x": 0.21700000000000003,
+      "y": 0.558,
+      "category": "weapon",
+      "typeId": "weapon-crate",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Mansion",
+      "availability": "conditional",
+      "description": "Find one glowing glyph in each color group. Save its shape in the visual helper, then set the Library lock’s blue, green, yellow and red dials to your observations. Interact with the case above the dials to submit and take Alistair’s Folly. The free case is the recommended route; a Mystery Box Folly can enter the same upgrade path. Blue: gravestone behind the tree near the Stake bench; grave right of Mausoleum stairs; front/top of the small crypt right of Mausoleum; lion-statue base. Green: gate left of Greenhouse entrance; inside Gardens gazebo; building beyond gate left of the Gardens perk; wall beyond gate right of the perk. Yellow: Forest Terrace wall left of Bowie Knife; outside left gate near GKS; outside right gate near Bowie; wall right of GKS. Red: wall right of Master Bedroom fireplace; East Gallery above the little table; Wine Cellar barrel behind the barrier near MX9; Dining Room above the bar painting. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-weapons-2"
+    },
+    {
+      "id": "processing",
+      "label": "Materia processing machine",
+      "layerId": "overview",
+      "x": 0.7829999999999999,
+      "y": 0.8380000000000001,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Outside / laboratory",
+      "availability": "conditional",
+      "description": "Kill a werewolf with a silver-bullet weapon and collect its Chaos Materia. Put it into the Greenhouse Laboratory processing machine and collect the Prima Materia from the other side. In Library, shield-bash the bookcase at the back-left of the Folly case, beside the silver-bullet table, and collect the blue gun part. Use the upgrade bench left of the Laboratory stairs to craft Chaos Theory. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-weapons-3"
+    },
+    {
+      "id": "upgrade-benches",
+      "label": "Wonder weapon upgrade benches",
+      "layerId": "overview",
+      "x": 0.877,
+      "y": 0.8380000000000001,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Outside / laboratory",
+      "availability": "conditional",
+      "description": "Kill a werewolf with a silver-bullet weapon and collect its Chaos Materia. Put it into the Greenhouse Laboratory processing machine and collect the Prima Materia from the other side. In Library, shield-bash the bookcase at the back-left of the Folly case, beside the silver-bullet table, and collect the blue gun part. Use the upgrade bench left of the Laboratory stairs to craft Chaos Theory. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-weapons-3"
+    },
+    {
+      "id": "forest-gate",
+      "label": "Forest gate",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.558,
+      "category": "travel",
+      "typeId": "door-buy",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Gate approach",
+      "availability": "conditional",
+      "description": "Once all three forks are collected, interact with the blocked Forest Terrace gate. Opening it summons a werewolf; the Pack-a-Punch machine is at the far end of the forest. Recommended: finish the silver-bullet recipe below before opening the gate so this werewolf supplies your first upgrade material. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-3"
+    },
+    {
+      "id": "pap",
+      "label": "Forest Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.453,
+      "y": 0.8380000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "floor": "Outside",
+      "availability": "conditional",
+      "description": "Once all three forks are collected, interact with the blocked Forest Terrace gate. Opening it summons a werewolf; the Pack-a-Punch machine is at the far end of the forest. Recommended: finish the silver-bullet recipe below before opening the gate so this werewolf supplies your first upgrade material. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-setup-3"
+    },
+    {
+      "id": "stake-bench",
+      "label": "Cemetery Path Stake bench",
+      "layerId": "overview",
+      "x": 0.12300000000000001,
+      "y": 0.8380000000000001,
+      "category": "equipment",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.022,
+      "overview": true,
+      "activityIds": [
+        "essentials",
+        "side-quests"
+      ],
+      "floor": "Outside",
+      "availability": "conditional",
+      "description": "Buy Bowie Knife at Forest Terrace. On the separate marked tree left of the lantern tree, Bowie-melee the same four shapes in the same order. Then shield-bash its symbols until a branch drops. Put the branch on the Mausoleum stone and kill vampires nearby until it stops taking souls and smokes orange. Pick it up and craft the Stake Knife at the Cemetery Path bench. This marker identifies the named region on a diagram, not a measured object coordinate.",
+      "source": "/guides/bo4-dead-of-the-night#guide-step-stake-craft"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Sentinel on → expose and charge purple, green and blue stones.",
+      "kind": "area",
+      "locationIds": [
+        "sentinel",
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-cellar"
+      ],
+      "guideAnchor": "guide-step-setup-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Clock = hold circle; perk = vampire lockdown; object/painting = ghost escort.",
+      "kind": "area",
+      "locationIds": [
+        "area-smoking",
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-terrace",
+        "area-cellar",
+        "area-cemetery",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-setup-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-shield",
+      "title": "Three shield pieces → Smoking Room workbench.",
+      "kind": "area",
+      "locationIds": [
+        "shield",
+        "area-smoking",
+        "area-hall",
+        "area-bedrooms",
+        "area-library"
+      ],
+      "guideAnchor": "guide-step-setup-shield",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Use three forks at Forest Terrace; kill the werewolf with silver if ready; reach Pack-a-Punch.",
+      "kind": "area",
+      "locationIds": [
+        "forest-gate",
+        "pap",
+        "area-terrace",
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-setup-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-1",
+      "title": "Three silver objects → Wine Cellar; three powder ingredients → Library silver bullets.",
+      "kind": "area",
+      "locationIds": [
+        "silver-smelter",
+        "silver-bullets",
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-cellar",
+        "area-cemetery",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-weapons-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-2",
+      "title": "Record four colored shapes; set matching dials and interact with the Library case.",
+      "kind": "area",
+      "locationIds": [
+        "folly",
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-terrace",
+        "area-cellar",
+        "area-cemetery",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-weapons-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-3",
+      "title": "Silver werewolf material → process; shield-bash Library shelf → blue part; craft Chaos Theory.",
+      "kind": "area",
+      "locationIds": [
+        "processing",
+        "upgrade-benches",
+        "area-library",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-weapons-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-4",
+      "title": "Follow four orange lamps; shoot the released bat; collect its material.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-weapons-4",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-5",
+      "title": "Tornado-kill vampires → collect bile → red coffin → kill Crimson Nosferatu.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-weapons-5",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-6",
+      "title": "Green charged effect on enemy beside mushroom mound → let it dig → collect component.",
+      "kind": "area",
+      "locationIds": [
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-weapons-6",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-weapons-7",
+      "title": "Process both materials; use the right Laboratory bench for Alistair’s Annihilator.",
+      "kind": "area",
+      "locationIds": [
+        "processing",
+        "upgrade-benches",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-weapons-7",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-telescope-2",
+      "title": "Silver-shot rod together → Atlas wheels: middle/green, left/blue, right/red; repeat.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-telescope-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-telescope-3",
+      "title": "Find three active sign areas; record all three scratch groups for each.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-cellar",
+        "area-forest",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-telescope-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-telescope-4",
+      "title": "Dial: lowest total → middle → highest; melee to submit each symbol.",
+      "kind": "area",
+      "locationIds": [
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-telescope-4",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-knights-1",
+      "title": "Library blue fire → flaming shield → bash a whole fireplace sequence.",
+      "kind": "area",
+      "locationIds": [
+        "area-library"
+      ],
+      "guideAnchor": "guide-step-knights-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-knights-2",
+      "title": "Smoking → Library right → Library left → Billiards; collect gem.",
+      "kind": "area",
+      "locationIds": [
+        "area-smoking",
+        "area-hall",
+        "area-library"
+      ],
+      "guideAnchor": "guide-step-knights-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-knights-3",
+      "title": "Run 2: Mozu-side Hall → East → other Hall → West. Run 3: Trophy → Bedroom → Music → Dining.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms"
+      ],
+      "guideAnchor": "guide-step-knights-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-knights-4",
+      "title": "Animate Main Hall, Gardens and Cemetery armor; escort each gem to its matching Forest circle.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-cemetery",
+        "area-forest",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-knights-4",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-effigy-1",
+      "title": "Shoot five birches with Annihilator; interact with every dropped branch.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-effigy-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-effigy-2",
+      "title": "Matching player uses 1912 grave → fireball at effigy base → interact to enter ghost mode.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-effigy-2",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-effigy-3",
+      "title": "Find woman in ghost mode; escort to Cemetery; interact with her stone to exit.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms",
+        "area-cellar",
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-effigy-3",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-effigy-4",
+      "title": "Exit ghost mode; start group lockdown; collect third stone; resupply.",
+      "kind": "area",
+      "locationIds": [
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-effigy-4",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-boss-1",
+      "title": "Full shield, silver ammo, upgraded damage weapon; group at Forest boss door.",
+      "kind": "area",
+      "locationIds": [
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-boss-1",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-stake-read",
+      "title": "Face the lantern tree and save the four triangle shapes from left to right.",
+      "kind": "area",
+      "locationIds": [
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-stake-read",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-stake-shoot",
+      "title": "Map tree shapes to Gardens stones; shoot in the recorded tree order.",
+      "kind": "area",
+      "locationIds": [
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-stake-shoot",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-stake-craft",
+      "title": "Bowie-melee same sequence → shield-bash branch → charge at Mausoleum → Cemetery bench.",
+      "kind": "area",
+      "locationIds": [
+        "stake-bench",
+        "area-terrace",
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-stake-craft",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-impaler-candles",
+      "title": "Extinguish six candles; use Forest grave right of Pack-a-Punch.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-cellar",
+        "area-forest"
+      ],
+      "guideAnchor": "guide-step-impaler-candles",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-impaler-ghost",
+      "title": "Timed vision: find and escort ghost to Mausoleum; refresh when needed.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms",
+        "area-cemetery",
+        "area-gardens"
+      ],
+      "guideAnchor": "guide-step-impaler-ghost",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-impaler-jewelry",
+      "title": "Four marked kills: normal → fire → Specialist → shield; pick up jewelry each time.",
+      "kind": "area",
+      "locationIds": [
+        "area-cemetery"
+      ],
+      "guideAnchor": "guide-step-impaler-jewelry",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-night-music",
+      "title": "Shoot four coins: Main Hall, East Hallway, Wine Cellar and Library.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-bedrooms",
+        "area-library",
+        "area-cellar"
+      ],
+      "guideAnchor": "guide-step-night-music",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    },
+    {
+      "id": "guide-night-pool",
+      "title": "Pool balls 1–9; or leaking barrels fastest → slowest.",
+      "kind": "area",
+      "locationIds": [
+        "area-hall",
+        "area-cellar"
+      ],
+      "guideAnchor": "guide-step-night-pool",
+      "description": "Relevant named regions and authored service areas. Exact item positions, room geometry and unshown routes are not implied."
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-shield": "guide-setup-shield",
+    "setup-3": "guide-setup-3",
+    "weapons-1": "guide-weapons-1",
+    "weapons-2": "guide-weapons-2",
+    "weapons-3": "guide-weapons-3",
+    "weapons-4": "guide-weapons-4",
+    "weapons-5": "guide-weapons-5",
+    "weapons-6": "guide-weapons-6",
+    "weapons-7": "guide-weapons-7",
+    "telescope-2": "guide-telescope-2",
+    "telescope-3": "guide-telescope-3",
+    "telescope-4": "guide-telescope-4",
+    "knights-1": "guide-knights-1",
+    "knights-2": "guide-knights-2",
+    "knights-3": "guide-knights-3",
+    "knights-4": "guide-knights-4",
+    "effigy-1": "guide-effigy-1",
+    "effigy-2": "guide-effigy-2",
+    "effigy-3": "guide-effigy-3",
+    "effigy-4": "guide-effigy-4",
+    "boss-1": "guide-boss-1",
+    "stake-read": "guide-stake-read",
+    "stake-shoot": "guide-stake-shoot",
+    "stake-craft": "guide-stake-craft",
+    "impaler-candles": "guide-impaler-candles",
+    "impaler-ghost": "guide-impaler-ghost",
+    "impaler-jewelry": "guide-impaler-jewelry",
+    "night-music": "guide-night-music",
+    "night-pool": "guide-night-pool"
+  }
+}

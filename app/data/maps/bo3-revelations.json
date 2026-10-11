@@ -1,0 +1,597 @@
+{
+  "id": "bo3-revelations",
+  "name": "Revelations",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki Black Ops III guide",
+      "url": "/guides/bo3-revelations",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/revelations/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-3/revelations/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=776602072"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-revelations/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-spawn",
+      "label": "Spawn / House",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "Black Ops III · Fragment. Region on a schematic, not an exact object position. Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "area-de",
+      "label": "Der Eisendrache",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "Black Ops III · Fragment. Region on a schematic, not an exact object position. Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "area-mob",
+      "label": "Mob of the Dead",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "Black Ops III · Fragment. Region on a schematic, not an exact object position. Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "area-verruckt",
+      "label": "Verrückt",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "Black Ops III · Fragment. Region on a schematic, not an exact object position. Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "area-nacht",
+      "label": "Nacht hub",
+      "layerId": "overview",
+      "x": 0.49,
+      "y": 0.517,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hub / two floors",
+      "description": "Black Ops III · Hub / two floors. Region on a schematic, not an exact object position. Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "area-apothicon",
+      "label": "Apothicon interior",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Detached interior",
+      "description": "Black Ops III · Detached interior. Region on a schematic, not an exact object position. Trap Apothicon at Nacht → enter mouth → shoot three heart tubes → Pack-a-Punch.",
+      "source": "/guides/bo3-revelations#guide-step-setup-2"
+    },
+    {
+      "id": "area-origins",
+      "label": "Origins fragment",
+      "layerId": "overview",
+      "x": 0.48,
+      "y": 0.23700000000000002,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Partial fragment",
+      "description": "Black Ops III · Partial fragment. Region on a schematic, not an exact object position. Origins + low-gravity Der Eisendrache + Verrückt parts → Nacht shield bench.",
+      "source": "/guides/bo3-revelations#guide-step-setup-3"
+    },
+    {
+      "id": "tesla",
+      "label": "Nacht Tesla control",
+      "layerId": "overview",
+      "x": 0.452,
+      "y": 0.518,
+      "category": "quest",
+      "typeId": "quest-mechanism",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Hub / two floors",
+      "description": "With all four engines active, use Nacht’s Tesla control when the giant Apothicon passes directly in front of the building. Enter its mouth after it is trapped. Shoot the three yellow tubes holding its heart to release Pack-a-Punch into the stomach. Return through the mouth to leave; the stomach is also used for the Arnie and egg steps. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-2"
+    },
+    {
+      "id": "pap",
+      "label": "Apothicon Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.462,
+      "y": 0.8280000000000001,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Detached interior",
+      "description": "With all four engines active, use Nacht’s Tesla control when the giant Apothicon passes directly in front of the building. Enter its mouth after it is trapped. Shoot the three yellow tubes holding its heart to release Pack-a-Punch into the stomach. Return through the mouth to leave; the stomach is also used for the Arnie and egg steps. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-2"
+    },
+    {
+      "id": "shield",
+      "label": "Upstairs Nacht shield bench",
+      "layerId": "overview",
+      "x": 0.528,
+      "y": 0.518,
+      "category": "equipment",
+      "typeId": "workbench",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Hub / two floors",
+      "description": "Build the shield at Nacht’s upstairs bench. One part is in Origins: by the entrance from spawn, near Wunderfizz, or beside the truck. One is high on a wall in Der Eisendrache; activate the four pyramid plates and collect it during low gravity. The last is in Verrückt: the pillar near Speed Cola, the kitchen table or the corner room beyond the stairs. Keep a fresh shield before entering a trial or boss arena. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-3"
+    },
+    {
+      "id": "engine-spawn",
+      "label": "Spawn corruption engine",
+      "layerId": "overview",
+      "x": 0.142,
+      "y": 0.32799999999999996,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "engine-de",
+      "label": "Der Eisendrache corruption engine",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.32799999999999996,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "engine-mob",
+      "label": "Mob corruption engine",
+      "layerId": "overview",
+      "x": 0.142,
+      "y": 0.798,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    },
+    {
+      "id": "engine-verruckt",
+      "label": "Verrückt corruption engine",
+      "layerId": "overview",
+      "x": 0.762,
+      "y": 0.798,
+      "category": "quest",
+      "typeId": "challenge-starter",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Fragment",
+      "description": "At spawn, shoot the four marked gravestones in the order shown: second → third → first → fourth from left to right, corresponding to Richtofen, Dempsey, Takeo and Nikolai. A sound confirms the sequence. If it fails, start the full sequence again. Then activate and defend the corruption engines at spawn, Der Eisendrache, Mob of the Dead and Verrückt. Each costs 500 points and connects its region to Nacht. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-revelations#guide-step-setup-1"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Gravestones 2 → 3 → 1 → 4; complete all four corruption engines.",
+      "locationIds": [
+        "engine-spawn",
+        "engine-de",
+        "engine-mob",
+        "engine-verruckt",
+        "area-spawn",
+        "area-de",
+        "area-mob",
+        "area-verruckt",
+        "area-nacht"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Trap Apothicon at Nacht → enter mouth → shoot three heart tubes → Pack-a-Punch.",
+      "locationIds": [
+        "tesla",
+        "pap",
+        "area-nacht",
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-setup-3",
+      "title": "Origins + low-gravity Der Eisendrache + Verrückt parts → Nacht shield bench.",
+      "locationIds": [
+        "shield",
+        "area-spawn",
+        "area-de",
+        "area-verruckt",
+        "area-nacht",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-setup-3"
+    },
+    {
+      "id": "guide-equipment-keeper",
+      "title": "Collect skull, crystal and flag → build Keeper altar.",
+      "locationIds": [
+        "area-de",
+        "area-verruckt",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-equipment-keeper"
+    },
+    {
+      "id": "guide-equipment-servant",
+      "title": "Box Servant → absorb five blue sky rocks → Pack-a-Punch; obtain Arnies and an upgraded bullet gun.",
+      "locationIds": [
+        "area-de",
+        "area-mob",
+        "area-verruckt",
+        "area-apothicon",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-equipment-servant"
+    },
+    {
+      "id": "guide-reels-1",
+      "title": "Pointed jump-pad rock → Keeper ritual → defend → play reel at Nacht.",
+      "locationIds": [
+        "area-spawn",
+        "area-verruckt",
+        "area-nacht"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-reels-1"
+    },
+    {
+      "id": "guide-reels-2",
+      "title": "Arnies into nine holes in three batches → clear each Margwa wave → play reel at Kino.",
+      "locationIds": [
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-reels-2"
+    },
+    {
+      "id": "guide-reels-3",
+      "title": "Release six bones with upgraded bullets → absorb each with upgraded Servant.",
+      "locationIds": [
+        "area-de",
+        "area-verruckt",
+        "area-nacht",
+        "area-apothicon",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-reels-3"
+    },
+    {
+      "id": "guide-reels-bones-finish",
+      "title": "Nacht bone pile → Servant twice → play third reel at Origins.",
+      "locationIds": [
+        "area-nacht",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-reels-bones-finish"
+    },
+    {
+      "id": "guide-eggs-1",
+      "title": "Four turret beams → reflector rocks → SOPHIA → Kino teleporter → bedroom book → stage podium.",
+      "locationIds": [
+        "area-nacht"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-eggs-1"
+    },
+    {
+      "id": "guide-eggs-2",
+      "title": "Find egg → acid-pool incubator → owner supplies souls → collect gateworm.",
+      "locationIds": [
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-eggs-2"
+    },
+    {
+      "id": "guide-key-3",
+      "title": "Key hits seven photographed relics → confirm every hit → return to Kino.",
+      "locationIds": [
+        "area-de",
+        "area-verruckt",
+        "area-nacht",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-key-3"
+    },
+    {
+      "id": "guide-boss-2",
+      "title": "Shoot Shadowman into statue mouth → use Kronorium → ending ends the match.",
+      "locationIds": [
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-boss-2"
+    },
+    {
+      "id": "guide-mask-wolf",
+      "title": "Masks and helmets: mask-wolf",
+      "locationIds": [
+        "area-de",
+        "area-verruckt",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-mask-wolf"
+    },
+    {
+      "id": "guide-mask-apothicon",
+      "title": "Masks and helmets: mask-apothicon",
+      "locationIds": [
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-mask-apothicon"
+    },
+    {
+      "id": "guide-mask-al",
+      "title": "Masks and helmets: mask-al",
+      "locationIds": [
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-mask-al"
+    },
+    {
+      "id": "guide-arnies-upgrade",
+      "title": "Upgraded Arnies, free perk and weapon trading: arnies-upgrade",
+      "locationIds": [
+        "area-spawn",
+        "area-apothicon"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-arnies-upgrade"
+    },
+    {
+      "id": "guide-free-perk",
+      "title": "Upgraded Arnies, free perk and weapon trading: free-perk",
+      "locationIds": [
+        "area-de"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-free-perk"
+    },
+    {
+      "id": "guide-chalk",
+      "title": "Upgraded Arnies, free perk and weapon trading: chalk",
+      "locationIds": [
+        "area-de",
+        "area-verruckt",
+        "area-nacht"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-chalk"
+    },
+    {
+      "id": "guide-spark-carry",
+      "title": "Super Easter egg spark and timed melee weapons: spark-carry",
+      "locationIds": [
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-spark-carry"
+    },
+    {
+      "id": "guide-gift",
+      "title": "The Gift, Nacht radio and story secrets: gift",
+      "locationIds": [
+        "area-verruckt",
+        "area-origins"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-gift"
+    },
+    {
+      "id": "guide-radio",
+      "title": "The Gift, Nacht radio and story secrets: radio",
+      "locationIds": [
+        "area-de",
+        "area-nacht"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this Black Ops III instruction. Confirmed portal network and selected fragments only. Kino, Shangri-La, jump-pad links and boss arenas are not falsely located. Old-map fragments are not their full original maps.",
+      "guideAnchor": "guide-step-radio"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "setup-3": "guide-setup-3",
+    "equipment-keeper": "guide-equipment-keeper",
+    "equipment-servant": "guide-equipment-servant",
+    "reels-1": "guide-reels-1",
+    "reels-2": "guide-reels-2",
+    "reels-3": "guide-reels-3",
+    "reels-bones-finish": "guide-reels-bones-finish",
+    "eggs-1": "guide-eggs-1",
+    "eggs-2": "guide-eggs-2",
+    "key-3": "guide-key-3",
+    "boss-2": "guide-boss-2",
+    "mask-wolf": "guide-mask-wolf",
+    "mask-apothicon": "guide-mask-apothicon",
+    "mask-al": "guide-mask-al",
+    "arnies-upgrade": "guide-arnies-upgrade",
+    "free-perk": "guide-free-perk",
+    "chalk": "guide-chalk",
+    "spark-carry": "guide-spark-carry",
+    "gift": "guide-gift",
+    "radio": "guide-radio"
+  }
+}

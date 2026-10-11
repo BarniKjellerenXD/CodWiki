@@ -55,7 +55,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1798",
@@ -66,7 +68,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1799",
@@ -77,7 +81,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1800",
@@ -88,7 +94,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-1801",
@@ -99,7 +107,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1803",
@@ -110,7 +120,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1804",
@@ -121,7 +133,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1805",
@@ -132,7 +146,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-1806",
@@ -143,7 +159,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1807",
@@ -154,7 +172,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-1808",
@@ -165,7 +185,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1810",
@@ -176,7 +198,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1811",
@@ -187,7 +211,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1812",
@@ -198,7 +224,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1813",
@@ -209,7 +237,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-1814",
@@ -220,7 +250,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-1815",
@@ -231,7 +263,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1817",
@@ -242,7 +276,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1818",
@@ -253,7 +289,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-1819",
@@ -264,7 +302,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "official-1820",
@@ -275,7 +315,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1821",
@@ -286,7 +328,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1822",
@@ -297,7 +341,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1823",
@@ -308,7 +354,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "official-1825",
@@ -319,7 +367,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1826",
@@ -330,7 +380,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "official-1827",
@@ -341,7 +393,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1828",
@@ -352,7 +406,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1829",
@@ -363,7 +419,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1830",
@@ -374,7 +432,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1831",
@@ -385,7 +445,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1832",
@@ -396,7 +458,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1833",
@@ -407,7 +471,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1834",
@@ -418,7 +484,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "official-1835",
@@ -429,7 +497,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1836",
@@ -440,7 +510,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1837",
@@ -451,7 +523,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "official-1838",
@@ -462,7 +536,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "official-1839",
@@ -473,7 +549,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "official-1840",
@@ -484,7 +562,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "official-1842",
@@ -495,7 +575,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "pack-a-punch",
+      "availability": "unknown"
     },
     {
       "id": "official-1843",
@@ -506,7 +588,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "official-1844",
@@ -517,7 +601,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "fast-travel",
+      "availability": "unknown"
     },
     {
       "id": "official-1845",
@@ -528,7 +614,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Fixed location from the official tactical map. Availability may depend on quest progress or the current round.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "crash",
@@ -539,7 +627,9 @@
       "category": "area",
       "precision": "area",
       "description": "Ol' Tessie and the starting area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "luminarium",
@@ -550,7 +640,9 @@
       "category": "area",
       "precision": "area",
       "description": "Brain jar, planet page, gramophone, grandfather clock and Stellar Dissector room. Area highlight; inspect the described table, shelves or doorway.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "museum",
@@ -561,7 +653,9 @@
       "category": "area",
       "precision": "area",
       "description": "Rock Saw display, rocket-thruster trap, records, Twins cabinets and chandelier puzzle. The highlight identifies the room, not an individual display.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "courtyard",
@@ -572,7 +666,9 @@
       "category": "area",
       "precision": "area",
       "description": "Central outdoor courtyard between the museum and the Observatory Dome.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "machina",
@@ -584,7 +680,9 @@
       "precision": "area",
       "description": "Main circular building: Perfusion Machine and portal defense. Upper-level model and terminal locations have separate markers.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
-      "floor": "Ground / middle floor"
+      "floor": "Ground / middle floor",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "machina-upper",
@@ -596,7 +694,9 @@
       "precision": "area",
       "description": "Climb to the upper level for the planet model and four-digit terminal. Overview uses the same building footprint for all floors.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
-      "floor": "Upper floor"
+      "floor": "Upper floor",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "cryopod",
@@ -608,7 +708,9 @@
       "precision": "area",
       "description": "Side room on the route towards Scholar's Way: open the cryopod and collect the brain. Approximate room highlight; room is not separately labelled in the official atlas.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
-      "floor": "Lower side room"
+      "floor": "Lower side room",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "archive",
@@ -619,7 +721,9 @@
       "category": "area",
       "precision": "area",
       "description": "Library adjoining Machina Astralis, near Stamin-Up. Busts, bookshelves, planet page and Neptune ladder are in this room.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dome",
@@ -630,7 +734,9 @@
       "category": "area",
       "precision": "area",
       "description": "Telescope, organ and lift terminal. The precise valve and terminal positions are not marked; search the room using the step instructions.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "rim",
@@ -641,7 +747,9 @@
       "category": "area",
       "precision": "area",
       "description": "Outer path from the Luminarium towards the Observatory Dome, including the lower Ammo Cache area and the route past Wisp Tea.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "veilwalk",
@@ -652,7 +760,9 @@
       "category": "area",
       "precision": "area",
       "description": "Outer walkway east of the Observatory Dome, continuing to Machina Astralis.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "scholar",
@@ -663,7 +773,9 @@
       "category": "area",
       "precision": "area",
       "description": "Passage between Museum Infinitum and the side room of Machina Astralis.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "mars-center",
@@ -675,7 +787,9 @@
       "precision": "area",
       "description": "Pick up the brain jar here. Arena pillars, gut piles and the moving Ascendant Eye are represented as an area; their exact positions are not surveyed.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
-      "floor": "Arena platform"
+      "floor": "Arena platform",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-machine",
@@ -687,7 +801,9 @@
       "precision": "area",
       "description": "Place the brain jar in the machine, create the return portal, play music and start Caltheris. Temple area near the community-map portal coordinate.",
       "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
-      "floor": "Temple / top of stairs"
+      "floor": "Temple / top of stairs",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-eye",
@@ -698,7 +814,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Place the Ascendant Eye in the device on the right, facing the distant pylons away from the temple. This is the southern arena corner on the top-down map. Approximate device area.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-left",
@@ -709,7 +827,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Opposite arena corner used during the boss sequence. Approximate area; look for the charged coil during the fight.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-back-right",
@@ -720,7 +840,9 @@
       "category": "quest",
       "precision": "area",
       "description": "First off-map pylon in the Ascendant Eye sequence. Relative position only.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-back-left",
@@ -731,7 +853,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Second off-map pylon in the Ascendant Eye sequence. Relative position only.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-front-right",
@@ -742,7 +866,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Third off-map pylon in the Ascendant Eye sequence. Relative position only.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-front-left",
@@ -753,7 +879,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Fourth off-map pylon in the Ascendant Eye sequence. Relative position only.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-temple",
@@ -764,7 +892,9 @@
       "category": "quest",
       "precision": "area",
       "description": "Turn back towards the temple and shoot the pylon above it last, then repeatedly to keep the music playing while collecting the Ascendant Eye. Height is not shown.",
-      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum"
+      "source": "https://www.callofduty.com/guides/blackops7/zombies/astra-malorum",
+      "typeId": "quest",
+      "availability": "unknown"
     },
     {
       "id": "mars-ammo",
@@ -775,7 +905,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache position from the community tactical map.",
-      "source": "https://codzombiesguides.com/maps/astra-malorum/"
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "mars-armor",
@@ -786,7 +918,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy position from the community tactical map.",
-      "source": "https://codzombiesguides.com/maps/astra-malorum/"
+      "source": "https://codzombiesguides.com/maps/astra-malorum/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "cursed-peeks-crash",
@@ -799,7 +933,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-museum-southeast",
@@ -812,7 +948,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-museum-east",
@@ -825,7 +963,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-museum-west",
@@ -838,7 +978,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-machina",
@@ -851,7 +993,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-rim",
@@ -864,7 +1008,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-dome",
@@ -877,7 +1023,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-peeks-mars",
@@ -890,7 +1038,9 @@
       "precision": "point",
       "description": "Published possible Cursed-mode Mister Peeks egg-reward spawn in this vicinity. Check the indicated spot, including raised or out-of-bounds surfaces. Shoot Mister Peeks when he appears to release a reward egg; perks are possible rewards, not guaranteed. The marker does not mean he is currently present.",
       "source": "https://codzombiesguides.com/maps/astra-malorum/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [

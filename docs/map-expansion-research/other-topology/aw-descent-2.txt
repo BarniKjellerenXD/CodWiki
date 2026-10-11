@@ -1,0 +1,7 @@
+Reference: https://codzombified.blogspot.com/2015/08/concierge-and-great-hall-map-layout-for.html
+Guide: aw-descent
+Read for factual room/transport relationships; external artwork and article text are not redistributed.
+Diagram relationship: reception → hall; path; documented connection.
+Diagram relationship: hall → spa; path; documented connection.
+Diagram relationship: hall → galleria; path; documented connection.
+Diagram relationship: hall → landing; teleport; Transit tube.

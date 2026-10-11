@@ -1,0 +1,42 @@
+const fs = require('node:fs/promises');
+const path = require('node:path');
+const deps = 'C:/Users/MainLocalUser/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const { chromium } = require(path.join(deps, 'playwright'));
+const sharp = require(path.join(deps,'sharp'));
+const source = 'C:/Users/MainLocalUser/.codex/visualizations/2026/10/11/01a12a67-329a-7730-b28d-c12362794e3d/map-filter-options.html';
+(async()=>{
+ const out=path.join(__dirname,'previews');await fs.mkdir(out,{recursive:true});
+ const fragment=await fs.readFile(source,'utf8');
+ if(fragment.includes('\\"') || fragment.includes('\\n')) throw Error('Unexpected escaped markup');
+ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+ const page=await browser.newPage({viewport:{width:1000,height:800},colorScheme:'dark'});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const lucide=await fs.readFile(path.join(deps,'lucide/dist/umd/lucide.js'),'utf8');
+ await page.setContent('<html style="color-scheme:dark"><head><style>body{margin:16px;background:#17191d}button{cursor:pointer}</style></head><body><script>'+lucide+'</script>'+fragment+'</body></html>');
+ await page.locator('[data-mode=sidebar] .cw-pin').first().waitFor();
+ const initial=await page.locator('[data-mode=sidebar] .cw-pin:visible').count();
+ if(initial!==6)throw Error('Expected six initial markers, got '+initial);
+ await page.locator('[data-mode=sidebar] [data-preset=none]').click();
+ if(await page.locator('[data-mode=sidebar] .cw-pin:visible').count()!==0)throw Error('Hide all failed');
+ await page.locator('[data-mode=sidebar] input[value=perk]').check();
+ await page.locator('[data-mode=sidebar] input[value=pap]').check();
+ if(await page.locator('[data-mode=sidebar] .cw-pin:visible').count()!==3)throw Error('Checkbox union failed');
+ await page.locator('[data-mode=sidebar] .cw-pin:visible').first().click();
+ if(!(await page.locator('[data-mode=sidebar] .cw-detail strong').innerText()).includes('Perk machine'))throw Error('Pin detail failed');
+ await page.locator('[data-mode=sidebar] [data-preset=all]').click();
+ for(const mode of ['sidebar','chips','activity']){
+   await page.evaluate(mode=>document.querySelectorAll('[data-variant]').forEach(s=>s.hidden=s.querySelector('.cw-product').dataset.mode!==mode),mode);
+   await page.locator('[data-mode='+mode+']').screenshot({path:path.join(out,mode+'-desktop.png')});
+ }
+ await page.evaluate(()=>document.querySelectorAll('[data-variant]').forEach(s=>s.hidden=s.querySelector('.cw-product').dataset.mode!=='sidebar'));
+ await page.setViewportSize({width:390,height:1000});
+ await page.locator('[data-mode=sidebar]').screenshot({path:path.join(out,'sidebar-mobile.png')});
+ const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ if(overflow)throw Error('Mobile horizontal overflow');
+ await browser.close();
+ const svg=await fs.readFile(path.join(__dirname,'assets/declassified/public/legacy/maps/dieMaschine/dieMaschine.svg'));
+ await sharp(svg).resize(900,900).png().toFile(path.join(out,'die-maschine-source.png'));
+ const report={reviewed:'2026-10-11',scope:'Planning concept only; not CodWiki product browser tests',checks:['no escaped markup','initial marker set','hide all','mixed checkbox union','marker details','three desktop variants captured','390px no horizontal overflow'],runtimeErrors:errors};
+ await fs.writeFile(path.join(out,'verification.json'),JSON.stringify(report,null,2)+'\n');
+ if(errors.length)throw Error(errors.join('\n'));console.log(JSON.stringify(report));
+})().catch(e=>{console.error(e);process.exitCode=1});

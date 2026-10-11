@@ -61,7 +61,7 @@
       "image": "/images/bo6-liberty-falls/liberty-falls.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -71,7 +71,7 @@
       "image": "/images/bo6-terminus/terminus.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -81,7 +81,7 @@
       "image": "/images/bo6-citadelle-des-morts/citadelle-des-morts.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -91,7 +91,7 @@
       "image": "/images/bo6-the-tomb/the-tomb.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -101,7 +101,7 @@
       "image": "/images/bo6-shattered-veil/shattered-veil.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -111,7 +111,7 @@
       "image": "/images/bo6-reckoning/reckoning.webp",
       "gameId": "bo6",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -121,7 +121,7 @@
       "image": "/images/cw-die-maschine/scope_crashsite.webp",
       "gameId": "cw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -131,7 +131,7 @@
       "image": "/images/cw-firebase-z/mimic_motorpool.webp",
       "gameId": "cw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -141,7 +141,7 @@
       "image": "/images/cw-mauer-der-toten/klaus_on_tracks.webp",
       "gameId": "cw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -151,7 +151,7 @@
       "image": "/images/cw-forsaken/largecrystal_spawn.webp",
       "gameId": "cw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -161,7 +161,7 @@
       "image": "/images/cw-outbreak/ritual_site.webp",
       "gameId": "cw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and quest selection"
     },
     {
@@ -171,7 +171,7 @@
       "image": "/images/bo4-dead-of-the-night/dial.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -181,7 +181,7 @@
       "image": "/images/bo4-ix/cover.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -191,7 +191,7 @@
       "image": "/images/bo4-voyage-of-despair/cover.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -201,7 +201,7 @@
       "image": "/images/blood-of-the-dead/cover.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -211,7 +211,7 @@
       "image": "/images/bo4-ancient-evil/cover.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -221,7 +221,7 @@
       "image": "/images/bo4-alpha-omega/alpha-omega.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -241,7 +241,7 @@
       "image": "/images/bo4-classified/american_paintings.webp",
       "gameId": "bo4",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -251,7 +251,7 @@
       "image": "/images/bo3-shadows-of-evil/pap/pap.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -261,7 +261,7 @@
       "image": "/images/bo3-the-giant/the-giant.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -271,7 +271,7 @@
       "image": "/images/bo3-der-eisendrache/pap/pap_bastion.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -281,7 +281,7 @@
       "image": "/images/bo3-zetsubou-no-shima/zetsubou-no-shima.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -291,7 +291,7 @@
       "image": "/images/bo3-gorod-krovi/gorod-krovi.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -301,7 +301,7 @@
       "image": "/images/bo3-revelations/revelations.webp",
       "gameId": "bo3",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -321,7 +321,7 @@
       "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
       "gameId": "bo3",
       "group": "chronicles",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets"
     },
     {
@@ -341,7 +341,7 @@
       "image": "/images/chronicles/kino-der-toten/power/power.webp",
       "gameId": "bo3",
       "group": "chronicles",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets"
     },
     {
@@ -361,7 +361,7 @@
       "image": "/images/chronicles/shangri-la/power/power.webp",
       "gameId": "bo3",
       "group": "chronicles",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -371,7 +371,7 @@
       "image": "/images/chronicles/moon/moon.webp",
       "gameId": "bo3",
       "group": "chronicles",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -381,7 +381,7 @@
       "image": "/images/chronicles/origins/origins.webp",
       "gameId": "bo3",
       "group": "chronicles",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -391,7 +391,7 @@
       "image": "/images/bo2/tranzit/tranzit.webp",
       "gameId": "bo2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -401,7 +401,7 @@
       "image": "/images/bo2/bus-depot/bus-depot.webp",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Survival setup",
       "mode": "Survival"
     },
@@ -412,7 +412,7 @@
       "image": "/images/bo2/town/town.jpg",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Survival setup",
       "mode": "Survival / Grief"
     },
@@ -423,7 +423,7 @@
       "image": "/images/bo2/farm/farm.png",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Survival setup",
       "mode": "Survival / Grief"
     },
@@ -445,7 +445,7 @@
       "image": "/images/bo2/nuketown-zombies/marlton_bunker/bunker.webp",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Survival setup",
       "mode": "Survival"
     },
@@ -456,7 +456,7 @@
       "image": "/images/bo2/die-rise/die-rise.webp",
       "gameId": "bo2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -466,7 +466,7 @@
       "image": "/images/bo2/mob-of-the-dead/mob-of-the-dead.webp",
       "gameId": "bo2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -476,7 +476,7 @@
       "image": "/images/bo2/mob-of-the-dead/hells_retriever/dog_b23r.webp",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Grief setup",
       "mode": "Grief"
     },
@@ -487,7 +487,7 @@
       "image": "/images/bo2/buried/buried.webp",
       "gameId": "bo2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -497,7 +497,7 @@
       "image": "/images/bo2/borough/borough.jpg",
       "gameId": "bo2",
       "group": "survival",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Grief setup",
       "mode": "Grief / Turned"
     },
@@ -508,7 +508,7 @@
       "image": "/images/chronicles/origins/origins.webp",
       "gameId": "bo2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest"
     },
     {
@@ -529,7 +529,7 @@
       "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
       "gameId": "waw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets",
       "mode": "Survival"
     },
@@ -551,7 +551,7 @@
       "image": "/images/classic/der-riese/pap/mainframe.webp",
       "gameId": "waw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets",
       "mode": "Survival"
     },
@@ -573,7 +573,7 @@
       "image": "/images/chronicles/verruckt/free_max_ammo/fountain.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets",
       "mode": "Survival"
     },
@@ -595,7 +595,7 @@
       "image": "/images/classic/der-riese/pap/mainframe.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets",
       "mode": "Survival"
     },
@@ -606,7 +606,7 @@
       "image": "/images/chronicles/kino-der-toten/power/power.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets"
     },
     {
@@ -616,7 +616,7 @@
       "image": "/images/classic/five/power/power_room_outside.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Setup and secrets"
     },
     {
@@ -636,7 +636,7 @@
       "image": "/images/chronicles/shangri-la/power/power.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main Easter Egg"
     },
     {
@@ -646,7 +646,7 @@
       "image": "/images/chronicles/moon/moon.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main Easter Egg"
     },
     {
@@ -656,7 +656,7 @@
       "image": "/images/classic/call-of-the-dead/power/power_ship.webp",
       "gameId": "bo1",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Solo & co-op Easter Eggs"
     },
     {
@@ -677,7 +677,7 @@
       "image": "/images/remaining/asset-0808.webp",
       "gameId": "iw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest",
       "mode": "Round-based Zombies",
       "edition": "Launch map"
@@ -689,7 +689,7 @@
       "image": "/images/remaining/asset-1008.webp",
       "gameId": "iw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest",
       "mode": "Round-based Zombies",
       "edition": "Sabotage"
@@ -701,7 +701,7 @@
       "image": "/images/remaining/asset-1243.webp",
       "gameId": "iw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest",
       "mode": "Round-based Zombies",
       "edition": "Continuum"
@@ -783,7 +783,7 @@
       "image": "/images/remaining/asset-0445.webp",
       "gameId": "ww2",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Main quest",
       "mode": "Round-based Zombies",
       "edition": "The War Machine"
@@ -898,7 +898,7 @@
       "image": "/images/remaining/asset-1693.webp",
       "gameId": "aw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Game Over, Man!",
       "mode": "Exo Zombies",
       "edition": "Havoc"
@@ -910,7 +910,7 @@
       "image": "/images/remaining/asset-1762.webp",
       "gameId": "aw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "MEAT IS MURDER",
       "mode": "Exo Zombies",
       "edition": "Ascendance",
@@ -925,7 +925,7 @@
       "image": "/images/remaining/asset-1790.webp",
       "gameId": "aw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Flotsam & Jetsam",
       "mode": "Exo Zombies",
       "edition": "Supremacy"
@@ -937,7 +937,7 @@
       "image": "/images/remaining/asset-1841.webp",
       "gameId": "aw",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Reunion",
       "mode": "Exo Zombies",
       "edition": "Reckoning"
@@ -949,7 +949,7 @@
       "image": "/images/remaining/extra-czg-der-anfang-01.jpg",
       "gameId": "vanguard",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Office story progression",
       "mode": "Objective-based",
       "edition": "Launch map"
@@ -961,7 +961,7 @@
       "image": "/images/remaining/asset-0002.webp",
       "gameId": "vanguard",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Decimator and Tome Page",
       "mode": "Objective-based",
       "edition": "Season 2"
@@ -973,7 +973,7 @@
       "image": "/images/remaining/asset-0056.webp",
       "gameId": "vanguard",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Mirror and Echo",
       "mode": "Round-based",
       "edition": "Season 4",
@@ -989,7 +989,7 @@
       "image": "/images/remaining/extra-czg-archon-01.jpg",
       "gameId": "vanguard",
       "group": "",
-      "interactiveMap": false,
+      "interactiveMap": true,
       "questLabel": "Trials and Kortifex",
       "mode": "Round-based",
       "edition": "Season 5"
@@ -1833,6 +1833,13 @@
       "map": "mw3-urzikstan",
       "name": "Red Worm photo finder",
       "route": "/tools/mw3-red-worm-photos",
+      "kind": "solver"
+    },
+    {
+      "id": "mw3-rune-portals",
+      "map": "mw3-urzikstan",
+      "name": "Rune portal finder",
+      "route": "/tools/mw3-rune-portals",
       "kind": "solver"
     }
   ],

@@ -1,0 +1,8 @@
+Reference: https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html
+Guide: vanguard-shi-no-numa
+Read for factual room/transport relationships; external artwork and article text are not redistributed.
+Diagram relationship: main → fishing; path; documented connection.
+Diagram relationship: main → doctors; path; documented connection.
+Diagram relationship: main → comms; path; documented connection.
+Diagram relationship: main → storage; path; documented connection.
+Diagram relationship: main → flogger; path; documented connection.

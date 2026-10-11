@@ -1,0 +1,32 @@
+[
+  {
+    "mapId": "bo6-terminus",
+    "sourceId": "da69a",
+    "label": "Hard Drive",
+    "reason": "No spatial coordinate supplied by the source; no fixed pin created."
+  },
+  {
+    "mapId": "bo6-citadelle-des-morts",
+    "sourceId": "OZOnd",
+    "label": "Stamp",
+    "reason": "No spatial coordinate supplied by the source; no fixed pin created."
+  },
+  {
+    "mapId": "bo6-citadelle-des-morts",
+    "sourceId": "1kPgF",
+    "label": "Ritual Item - The Dragon",
+    "reason": "No spatial coordinate supplied by the source; no fixed pin created."
+  },
+  {
+    "mapId": "bo6-shattered-veil",
+    "sourceId": "Pk1Og",
+    "label": "Blue Mk2 W Canister",
+    "reason": "No spatial coordinate supplied by the source; no fixed pin created."
+  },
+  {
+    "mapId": "bo6-reckoning",
+    "sourceId": "Q6sId",
+    "label": "Floor 3 - Boss Fight",
+    "reason": "Upstream Floor 3 boss pin duplicates Floor 1 coordinates on a multi-floor atlas. Excluded until separately verified."
+  }
+]

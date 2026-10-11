@@ -1,0 +1,564 @@
+{
+  "id": "bo3-moon",
+  "name": "Moon",
+  "defaultLayer": "overview",
+  "sources": [
+    {
+      "name": "CodWiki BO3 · Zombies Chronicles guide",
+      "url": "/guides/bo3-moon",
+      "note": "Edition-specific instructions supply marker descriptions and guide links. Original schematic geometry is limited to the cited connections; no unlicensed fan image is copied."
+    },
+    {
+      "name": "Guide reference 1",
+      "url": "https://www.reddit.com/r/CODZombies/wiki/moon/"
+    },
+    {
+      "name": "Guide reference 2",
+      "url": "https://www.codzombiesguides.com/main-quests/black-ops-1/moon/"
+    },
+    {
+      "name": "Guide reference 3",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2373011651"
+    }
+  ],
+  "coverage": {
+    "kind": "schematic",
+    "note": "Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+  },
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/bo3-moon/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Schematic · not to scale. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-earth",
+      "label": "Area 51 / No Man’s Land",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.27699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Earth",
+      "description": "BO3 · Zombies Chronicles · Earth. Region on a schematic, not an exact object position. Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "area-receiving",
+      "label": "Receiving Bay",
+      "layerId": "overview",
+      "x": 0.17,
+      "y": 0.7070000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Moon arrival",
+      "description": "BO3 · Zombies Chronicles · Moon arrival. Region on a schematic, not an exact object position. Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "area-tunnel6",
+      "label": "Tunnel 6",
+      "layerId": "overview",
+      "x": 0.43,
+      "y": 0.497,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Moon tunnel",
+      "description": "BO3 · Zombies Chronicles · Moon tunnel. Region on a schematic, not an exact object position. Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "area-tunnel11",
+      "label": "Tunnel 11",
+      "layerId": "overview",
+      "x": 0.43,
+      "y": 0.8270000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Moon tunnel",
+      "description": "BO3 · Zombies Chronicles · Moon tunnel. Region on a schematic, not an exact object position. Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "area-pyramid",
+      "label": "Pyramid / M.P.D.",
+      "layerId": "overview",
+      "x": 0.67,
+      "y": 0.687,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Moon power area",
+      "description": "BO3 · Zombies Chronicles · Moon power area. Region on a schematic, not an exact object position. Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "area-labs",
+      "label": "Laboratories",
+      "layerId": "overview",
+      "x": 0.82,
+      "y": 0.347,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "main-quest",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Three floors",
+      "description": "BO3 · Zombies Chronicles · Three floors. Region on a schematic, not an exact object position. Search the six laboratory Hacker spots.",
+      "source": "/guides/bo3-moon#guide-step-hacker-find"
+    },
+    {
+      "id": "area-pad",
+      "label": "Moon teleporter",
+      "layerId": "overview",
+      "x": 0.64,
+      "y": 0.227,
+      "category": "area",
+      "typeId": "named-area",
+      "activityIds": [
+        "navigation",
+        "essentials",
+        "side-quests"
+      ],
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Outside destination",
+      "description": "BO3 · Zombies Chronicles · Outside destination. Region on a schematic, not an exact object position. Open the return teleporter and gather Wave Gun, Gersh and Q.E.D.",
+      "source": "/guides/bo3-moon#guide-step-setup-2"
+    },
+    {
+      "id": "pes",
+      "label": "P.E.S. locker / receiving area",
+      "layerId": "overview",
+      "x": 0.132,
+      "y": 0.7080000000000001,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Moon arrival",
+      "description": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "power",
+      "label": "Pyramid power switch",
+      "layerId": "overview",
+      "x": 0.632,
+      "y": 0.6880000000000001,
+      "category": "power",
+      "typeId": "power-switch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Moon power area",
+      "description": "At Area 51, the alarm opens the teleporter cage. Move all players onto the pad to escape. On arrival at Griffin Station, immediately take a P.E.S. from the locker and equip it before going outside. Open either Tunnel 6 or Tunnel 11 to reach the pyramid room and flip the power switch. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-moon#guide-step-setup-1"
+    },
+    {
+      "id": "hacker",
+      "label": "Hacker candidate floors",
+      "layerId": "overview",
+      "x": 0.7819999999999999,
+      "y": 0.348,
+      "category": "quest",
+      "typeId": "quest-item",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Three floors",
+      "description": "The Hacker is a small brown device on a yellow pad in the three-floor laboratory. Search two spots per floor. Picking it up replaces your P.E.S.; swapping back to P.E.S. drops the Hacker. Use pressurised routes and return for a suit before a long trip through a breached area. Floor 1: shelf near the stairs; shelf near the doorway from the MPD room. Floor 2: electrical box beside the stairs; blue structural railing on the opposite side. Floor 3: metal tanks beside Deadshot; shelf left of the Biodome doorway. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-moon#guide-step-hacker-find"
+    },
+    {
+      "id": "pap",
+      "label": "Area 51 Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.132,
+      "y": 0.27799999999999997,
+      "category": "upgrade",
+      "typeId": "pack-a-punch",
+      "activityIds": [
+        "essentials"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Earth",
+      "description": "Open the laboratories and outside teleporter route. All players stand on the Moon teleporter when its lights are green to revisit Area 51 for Pack-a-Punch. Jugger-Nog and Speed Cola alternate there between visits. Obtain the Wave Gun, Gersh Devices and Q.E.D.s from the Box for the quest; Gersh and Q.E.D. occupy the same slot, so plan to obtain Gersh again for the ending. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-moon#guide-step-setup-2"
+    },
+    {
+      "id": "simon",
+      "label": "Samantha Says computers",
+      "layerId": "overview",
+      "x": 0.20800000000000002,
+      "y": 0.7080000000000001,
+      "category": "quest",
+      "typeId": "code-symbol",
+      "activityIds": [
+        "essentials",
+        "main-quest"
+      ],
+      "precision": "area",
+      "areaRadius": 0.025,
+      "overview": true,
+      "floor": "Moon arrival",
+      "description": "After power is on, interact with the four computers outside the Receiving Bay near Tunnel 6. Facing them, the physical order from left to right is Red, Green, Blue, Yellow. Watch the flashing sequence, then interact with the matching computers in that order. Complete the initial set of increasingly long sequences. Red failure feedback means replay the attempt. Area shown on an original schematic; use these landmark directions for the exact interaction.",
+      "source": "/guides/bo3-moon#guide-step-simon-1"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-setup-1",
+      "title": "Escape Area 51, equip P.E.S., reach the MPD power switch.",
+      "locationIds": [
+        "pes",
+        "power",
+        "area-earth",
+        "area-receiving",
+        "area-tunnel6",
+        "area-tunnel11",
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-setup-1"
+    },
+    {
+      "id": "guide-setup-2",
+      "title": "Open the return teleporter and gather Wave Gun, Gersh and Q.E.D.",
+      "locationIds": [
+        "pap",
+        "area-earth",
+        "area-pad"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-setup-2"
+    },
+    {
+      "id": "guide-hacker-find",
+      "title": "Search the six laboratory Hacker spots.",
+      "locationIds": [
+        "hacker",
+        "area-pyramid",
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-hacker-find"
+    },
+    {
+      "id": "guide-hacker-excavators",
+      "title": "Allow the required Pi breach; stop other excavators when possible.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6",
+        "area-tunnel11"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-hacker-excavators"
+    },
+    {
+      "id": "guide-simon-1",
+      "title": "Repeat the first Samantha Says sequences.",
+      "locationIds": [
+        "simon",
+        "area-receiving",
+        "area-tunnel6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-simon-1"
+    },
+    {
+      "id": "guide-simon-2",
+      "title": "Hack the starting button, then the four green panel boxes.",
+      "locationIds": [
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-simon-2"
+    },
+    {
+      "id": "guide-sphere-1",
+      "title": "After Pi breaches, retract it and move the Tunnel 6 sphere.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6",
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-sphere-1"
+    },
+    {
+      "id": "guide-sphere-2",
+      "title": "Wave Gun the satellite sphere, then escort it through Tunnel 11.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6",
+        "area-tunnel11",
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-sphere-2"
+    },
+    {
+      "id": "guide-sphere-3",
+      "title": "Fill the first tube and open the MPD.",
+      "locationIds": [
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-sphere-3"
+    },
+    {
+      "id": "guide-device-plates",
+      "title": "Grenade and Gersh the Area 51 plates onto the pad.",
+      "locationIds": [
+        "area-earth"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-device-plates"
+    },
+    {
+      "id": "guide-device-qed",
+      "title": "Q.E.D. the plates beside Quick Revive.",
+      "locationIds": [
+        "area-earth",
+        "area-receiving",
+        "area-tunnel6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-device-qed"
+    },
+    {
+      "id": "guide-device-cable",
+      "title": "Find and connect the S-shaped cable.",
+      "locationIds": [
+        "area-earth",
+        "area-receiving",
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-device-cable"
+    },
+    {
+      "id": "guide-device-charge",
+      "title": "Richtofen charges and retrieves the Vril Device.",
+      "locationIds": [
+        "area-earth"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-device-charge"
+    },
+    {
+      "id": "guide-rockets-1",
+      "title": "Fill four tubes, perform the body swap and Q.E.D. the sphere.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6",
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-rockets-1"
+    },
+    {
+      "id": "guide-rockets-2",
+      "title": "Complete three final computer games, then Gersh the sphere.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-rockets-2"
+    },
+    {
+      "id": "guide-hack-box",
+      "title": "Reroll Box weapons or refund an unwanted perk.",
+      "locationIds": [
+        "area-labs"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-hack-box"
+    },
+    {
+      "id": "guide-moon-sam-code",
+      "title": "Enter the photographed fifteen-press power-room code.",
+      "locationIds": [
+        "area-receiving",
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-moon-sam-code"
+    },
+    {
+      "id": "guide-moon-sam-dolls",
+      "title": "Shoot the MPD dolls and return to the starter.",
+      "locationIds": [
+        "area-pyramid"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-moon-sam-dolls"
+    },
+    {
+      "id": "guide-space-dog-items",
+      "title": "Wave Gun the dog toy, Biodome teddy and teleporter bone.",
+      "locationIds": [
+        "area-earth",
+        "area-pad"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-space-dog-items"
+    },
+    {
+      "id": "guide-space-dog-souls",
+      "title": "Hack the bowls and supply fifty nearby kills.",
+      "locationIds": [
+        "area-pad"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-space-dog-souls"
+    },
+    {
+      "id": "guide-moon-coming-home",
+      "title": "Find the three astronaut teddy bears.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel6"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-moon-coming-home"
+    },
+    {
+      "id": "guide-moon-electronic",
+      "title": "Try the three electronic computer songs.",
+      "locationIds": [
+        "area-receiving",
+        "area-tunnel11"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-moon-electronic"
+    },
+    {
+      "id": "guide-moon-nightmare",
+      "title": "Complete the co-op One Giant Leap setup for Nightmare.",
+      "locationIds": [
+        "area-receiving"
+      ],
+      "kind": "area",
+      "description": "Related mapped areas for this BO3 · Zombies Chronicles instruction. Earth and Moon are separate regions linked by teleporters. Laboratory floors are grouped as a search area. Excavator breaches and active perk/teleporter states must be checked in the match.",
+      "guideAnchor": "guide-step-moon-nightmare"
+    }
+  ],
+  "quickLinks": {
+    "setup-1": "guide-setup-1",
+    "setup-2": "guide-setup-2",
+    "hacker-find": "guide-hacker-find",
+    "hacker-excavators": "guide-hacker-excavators",
+    "simon-1": "guide-simon-1",
+    "simon-2": "guide-simon-2",
+    "sphere-1": "guide-sphere-1",
+    "sphere-2": "guide-sphere-2",
+    "sphere-3": "guide-sphere-3",
+    "device-plates": "guide-device-plates",
+    "device-qed": "guide-device-qed",
+    "device-cable": "guide-device-cable",
+    "device-charge": "guide-device-charge",
+    "rockets-1": "guide-rockets-1",
+    "rockets-2": "guide-rockets-2",
+    "hack-box": "guide-hack-box",
+    "moon-sam-code": "guide-moon-sam-code",
+    "moon-sam-dolls": "guide-moon-sam-dolls",
+    "space-dog-items": "guide-space-dog-items",
+    "space-dog-souls": "guide-space-dog-souls",
+    "moon-coming-home": "guide-moon-coming-home",
+    "moon-electronic": "guide-moon-electronic",
+    "moon-nightmare": "guide-moon-nightmare"
+  }
+}

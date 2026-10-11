@@ -1,0 +1,651 @@
+{
+  "id": "vanguard-the-archon",
+  "name": "The Archon",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Vanguard guide",
+      "url": "/guides/vanguard-the-archon",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2022/09/archon-map-layout-temple-area-call-of.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2022/09/archon-east-spring-tents-fuel-depot.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2022/09/archon-west-spring-bazaar-arroyo.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 4",
+      "url": "https://codzombified.blogspot.com/2022/09/archon-merchant-road-debris-field-spike.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/VG/the_archon/the_archon_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.codzombieguides.com/the-archon"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/vanguard-the-archon/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-temple",
+      "label": "Temple",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.8370000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Spawn / rebuilt machine",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Collect Derailment rail-cart and Spike plane-wing parts; install at Temple.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "area-east",
+      "label": "East Spring / Tents",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.647,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "East / upper outpost",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Get a shovel; complete all three trials in your preferred order.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-shovel"
+    },
+    {
+      "id": "area-west",
+      "label": "West Spring / Bazaar",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.687,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Bazaar upper floor",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Get a shovel; complete all three trials in your preferred order.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-shovel"
+    },
+    {
+      "id": "area-merchant",
+      "label": "Merchant Road",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.557,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Central route",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Dig Merchant Road’s red orb; record and traverse its rune order.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-mindfulness-orb"
+    },
+    {
+      "id": "area-debris",
+      "label": "Debris Field",
+      "layerId": "overview",
+      "x": 0.81,
+      "y": 0.32699999999999996,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Shield / trial",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Get a shovel; complete all three trials in your preferred order.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-shovel"
+    },
+    {
+      "id": "area-spike",
+      "label": "Spike",
+      "layerId": "overview",
+      "x": 0.53,
+      "y": 0.247,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Region",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Collect Derailment rail-cart and Spike plane-wing parts; install at Temple.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "area-derail",
+      "label": "Derailment",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.33699999999999997,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Rail cart / trial",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Collect Derailment rail-cart and Spike plane-wing parts; install at Temple.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "area-dark",
+      "label": "Dark Aether / Kortifex",
+      "layerId": "overview",
+      "x": 0.83,
+      "y": 0.867,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Separate encounter arenas",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Place the Temple relic and enter its new Dark Aether portal.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-relic-place"
+    },
+    {
+      "id": "pap",
+      "label": "Temple Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.47000000000000003,
+      "y": 0.8150000000000001,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Spawn / rebuilt machine",
+      "availability": "conditional",
+      "description": "Collect the two ghostly Pack-a-Punch parts: one on a rail cart in Derailment and one on the plane wing in Spike. Return to the ghostly machine at Temple and install them. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "rail-part",
+      "label": "Derailment rail-cart part",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.315,
+      "category": "buildable-part",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Rail cart / trial",
+      "availability": "conditional",
+      "description": "Collect the two ghostly Pack-a-Punch parts: one on a rail cart in Derailment and one on the plane wing in Spike. Return to the ghostly machine at Temple and install them. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "wing-part",
+      "label": "Spike plane-wing part",
+      "layerId": "overview",
+      "x": 0.49000000000000005,
+      "y": 0.22499999999999998,
+      "category": "buildable-part",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Region",
+      "availability": "conditional",
+      "description": "Collect the two ghostly Pack-a-Punch parts: one on a rail cart in Derailment and one on the plane wing in Spike. Return to the ghostly machine at Temple and install them. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-pap-parts"
+    },
+    {
+      "id": "relic",
+      "label": "Temple relic plinth",
+      "layerId": "overview",
+      "x": 0.55,
+      "y": 0.8150000000000001,
+      "category": "ritual-site",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Spawn / rebuilt machine",
+      "availability": "conditional",
+      "description": "Place the relic on the stone in front of Temple Pack-a-Punch. Watch the scene, then interact with the new nearby Dark Aether portal. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-relic-place"
+    },
+    {
+      "id": "mindfulness",
+      "label": "Mindfulness obelisk",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.535,
+      "category": "challenge-starter",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Central route",
+      "availability": "conditional",
+      "description": "Dig around the Merchant Road obelisk until you find the red orb. Activate it and record the wall’s displayed symbols and their matching ground-rune landmarks before moving. Step on the matching runes in the displayed order. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-mindfulness-orb"
+    },
+    {
+      "id": "resilience",
+      "label": "Resilience shield / obelisk",
+      "layerId": "overview",
+      "x": 0.77,
+      "y": 0.305,
+      "category": "challenge-starter",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Shield / trial",
+      "availability": "conditional",
+      "description": "At Debris Field, shoot the three external Dark Aether crystal candidates until one releases the red orb. Follow it to the wall near the Decimator Shield. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-resilience-orb"
+    },
+    {
+      "id": "sacrifice",
+      "label": "Sacrifice torches / obelisk",
+      "layerId": "overview",
+      "x": 0.22,
+      "y": 0.315,
+      "category": "challenge-starter",
+      "typeId": "challenge-starter",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Rail cart / trial",
+      "availability": "conditional",
+      "description": "Get three Molotovs from Merchant Road West or crafting. At Derailment, light the three torches in quick succession so all remain lit together: the entry boxcar, the right side of Derailment and behind that second torch. The red orb appears near the third. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-torches"
+    },
+    {
+      "id": "portal",
+      "label": "Final Kortifex portal",
+      "layerId": "overview",
+      "x": 0.51,
+      "y": 0.863,
+      "category": "portal",
+      "typeId": "portal",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Spawn / rebuilt machine",
+      "availability": "conditional",
+      "description": "Confirm Mindfulness, Resilience AND Sacrifice are complete. Refill ammo, repair armour and upgrade your damage weapon. Keep the Decimator for defense, then use the portal near Temple Pack-a-Punch when the squad is ready. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-the-archon#guide-step-archon-final-ready"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-archon-pap-parts",
+      "title": "Collect Derailment rail-cart and Spike plane-wing parts; install at Temple.",
+      "locationIds": [
+        "pap",
+        "rail-part",
+        "wing-part",
+        "area-temple",
+        "area-spike",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-pap-parts"
+    },
+    {
+      "id": "guide-archon-pap-souls",
+      "title": "Charge Temple Pack-a-Punch with its spawned ghost-zombie kills.",
+      "locationIds": [
+        "pap",
+        "area-temple"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-pap-souls"
+    },
+    {
+      "id": "guide-archon-relic-place",
+      "title": "Place the Temple relic and enter its new Dark Aether portal.",
+      "locationIds": [
+        "relic",
+        "area-temple",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-relic-place"
+    },
+    {
+      "id": "guide-archon-intro-return",
+      "title": "Survive the Dark Aether introduction through its scripted return.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-intro-return"
+    },
+    {
+      "id": "guide-archon-shovel",
+      "title": "Get a shovel; complete all three trials in your preferred order.",
+      "locationIds": [
+        "area-temple",
+        "area-east",
+        "area-west",
+        "area-debris",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-shovel"
+    },
+    {
+      "id": "guide-archon-mindfulness-orb",
+      "title": "Dig Merchant Road’s red orb; record and traverse its rune order.",
+      "locationIds": [
+        "mindfulness",
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-mindfulness-orb"
+    },
+    {
+      "id": "guide-archon-preparation-rounds",
+      "title": "Complete the 3-, 4- and 5-symbol preparations and their challenges.",
+      "locationIds": [
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-preparation-rounds"
+    },
+    {
+      "id": "guide-archon-no-kill-capture",
+      "title": "Start the formal trial and capture its runes without zombie kills.",
+      "locationIds": [
+        "mindfulness",
+        "area-merchant"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-no-kill-capture"
+    },
+    {
+      "id": "guide-archon-resilience-orb",
+      "title": "Shoot Debris Field’s external crystals until the Resilience orb appears.",
+      "locationIds": [
+        "resilience",
+        "area-debris",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-resilience-orb"
+    },
+    {
+      "id": "guide-archon-cursed-items",
+      "title": "Return the Tents hat, upper Bazaar skull and dug-up Derailment femur.",
+      "locationIds": [
+        "area-east",
+        "area-west",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-cursed-items"
+    },
+    {
+      "id": "guide-archon-shield-pickup",
+      "title": "Collect the freed Decimator Shield after all three cursed deliveries.",
+      "locationIds": [
+        "resilience",
+        "area-temple",
+        "area-debris"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-shield-pickup"
+    },
+    {
+      "id": "guide-archon-resilience-trial",
+      "title": "Destroy the three Syphoncores and deliver their Demon Blood to the fountain.",
+      "locationIds": [
+        "resilience",
+        "area-debris"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-resilience-trial"
+    },
+    {
+      "id": "guide-archon-torches",
+      "title": "Light all three Derailment torches together with Molotovs.",
+      "locationIds": [
+        "sacrifice",
+        "area-merchant",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-torches"
+    },
+    {
+      "id": "guide-archon-sacrifice-weapon",
+      "title": "Surrender a spare packed weapon, survive armour loss and defeat the Uberkrieger.",
+      "locationIds": [
+        "area-temple"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-sacrifice-weapon"
+    },
+    {
+      "id": "guide-archon-ring-of-fire",
+      "title": "Equip Ring of Fire; charge each trial obelisk with nearby kills while inside the Ring.",
+      "locationIds": [
+        "sacrifice",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-ring-of-fire"
+    },
+    {
+      "id": "guide-archon-sacrifice-complete",
+      "title": "Finish every charged obelisk and confirm the reward drops.",
+      "locationIds": [
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-sacrifice-complete"
+    },
+    {
+      "id": "guide-archon-final-ready",
+      "title": "After all three trials, prepare the squad and enter the Temple boss portal.",
+      "locationIds": [
+        "portal",
+        "area-temple",
+        "area-merchant",
+        "area-debris",
+        "area-derail"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-final-ready"
+    },
+    {
+      "id": "guide-archon-eye-one",
+      "title": "Destroy the first upper eye and move to the next arena.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-eye-one"
+    },
+    {
+      "id": "guide-archon-convert-shards",
+      "title": "Ground crystal → red shard → purple pod → wait → blue shard.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-convert-shards"
+    },
+    {
+      "id": "guide-archon-sky-pillars",
+      "title": "Use blue shards on sky pillars to expose and destroy the next eye.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-sky-pillars"
+    },
+    {
+      "id": "guide-archon-last-eye",
+      "title": "Repeat for the final eye; strike pillars to interrupt healing.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-last-eye"
+    },
+    {
+      "id": "guide-archon-ending",
+      "title": "After the final eye, receive the ending and quest rewards.",
+      "locationIds": [
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-ending"
+    },
+    {
+      "id": "guide-archon-rampage",
+      "title": "Shoot left → ahead → right/SVT → middle Temple → above PaP skulls.",
+      "locationIds": [
+        "area-temple",
+        "area-west",
+        "area-dark"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-rampage"
+    },
+    {
+      "id": "guide-archon-song",
+      "title": "Interact three times with Radio Outpost’s upstairs instrument.",
+      "locationIds": [
+        "area-temple",
+        "area-east"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. The Archon’s route diagram omits Terra’s blocked Temple–Merchant Road shortcuts. Derailment travel and small district joins are not fully drawn. The Dark Aether node is encounter context, not shared geometry for its three arenas.",
+      "guideAnchor": "guide-step-archon-song"
+    }
+  ],
+  "quickLinks": {
+    "archon-pap-parts": "guide-archon-pap-parts",
+    "archon-pap-souls": "guide-archon-pap-souls",
+    "archon-relic-place": "guide-archon-relic-place",
+    "archon-intro-return": "guide-archon-intro-return",
+    "archon-shovel": "guide-archon-shovel",
+    "archon-mindfulness-orb": "guide-archon-mindfulness-orb",
+    "archon-preparation-rounds": "guide-archon-preparation-rounds",
+    "archon-no-kill-capture": "guide-archon-no-kill-capture",
+    "archon-resilience-orb": "guide-archon-resilience-orb",
+    "archon-cursed-items": "guide-archon-cursed-items",
+    "archon-shield-pickup": "guide-archon-shield-pickup",
+    "archon-resilience-trial": "guide-archon-resilience-trial",
+    "archon-torches": "guide-archon-torches",
+    "archon-sacrifice-weapon": "guide-archon-sacrifice-weapon",
+    "archon-ring-of-fire": "guide-archon-ring-of-fire",
+    "archon-sacrifice-complete": "guide-archon-sacrifice-complete",
+    "archon-final-ready": "guide-archon-final-ready",
+    "archon-eye-one": "guide-archon-eye-one",
+    "archon-convert-shards": "guide-archon-convert-shards",
+    "archon-sky-pillars": "guide-archon-sky-pillars",
+    "archon-last-eye": "guide-archon-last-eye",
+    "archon-ending": "guide-archon-ending",
+    "archon-rampage": "guide-archon-rampage",
+    "archon-song": "guide-archon-song"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "pap",
+            "rail-part",
+            "wing-part",
+            "area-temple",
+            "area-spike",
+            "area-derail"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "relic",
+            "area-temple",
+            "area-dark"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-temple",
+            "area-west",
+            "area-dark",
+            "area-east"
+          ]
+        }
+      ]
+    }
+  ]
+}

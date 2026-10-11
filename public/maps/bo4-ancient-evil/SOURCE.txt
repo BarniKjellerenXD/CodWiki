@@ -1,0 +1,4 @@
+Original CodWiki regional schematic, 2026-10-11.
+Coordinates place labels on a diagram and do not measure the game world.
+Evidence: /guides/bo4-ancient-evil and docs/map-expansion-research/bo4-implementation.json.
+No external fan artwork copied. Partial main-city / Dark Side diagram. The Pegasus arrow shows the documented outbound ride. Post-PaP portal destinations and the separate boss islands are not drawn. Shrine and Dormant Hand locations remain guide/photo references rather than fabricated pins.

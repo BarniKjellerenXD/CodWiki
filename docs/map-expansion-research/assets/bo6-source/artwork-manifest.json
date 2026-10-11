@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/Miss-placed/DECLASSIFIED",
+  "revision": "e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0",
+  "license": "MIT",
+  "conversion": "Static AST extraction; SVG geometry/framing unchanged. loc [lat,lng] → x=lng/512, y=1-lat/512.",
+  "files": [
+    {
+      "file": "public/maps/bo6-liberty-falls/overview.svg",
+      "sha256": "28bc3d109a1a7b88705cdd71b6c2ffcc30918737318772f2ec25463a7e8e1f19",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L7",
+      "sourceKey": "libertyFalls"
+    },
+    {
+      "file": "public/maps/bo6-terminus/prison.svg",
+      "sha256": "8b23cbce9c749c802c80637f7522dfa2601ac836e469b4274e388d617cbbe32e",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L2825",
+      "sourceKey": "terminus_prison"
+    },
+    {
+      "file": "public/maps/bo6-terminus/biolab-islands.svg",
+      "sha256": "1d5195c32ec958703adaa84fe21baf4425c421b1988908b69368d78d33477cde",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L447",
+      "sourceKey": "terminus_biolab"
+    },
+    {
+      "file": "public/maps/bo6-citadelle-des-morts/overview.svg",
+      "sha256": "def549618902e9d75951ffb666df18c53c551d7606368d1db9ebc458cbced661",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L3549",
+      "sourceKey": "citadelle"
+    },
+    {
+      "file": "public/maps/bo6-the-tomb/overview.svg",
+      "sha256": "42ac983463cf9e8bf06f8e6458b6f5a5e063b8918070fe2fa6e1933f612f0496",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L3662",
+      "sourceKey": "tomb"
+    },
+    {
+      "file": "public/maps/bo6-shattered-veil/overview.svg",
+      "sha256": "01bdd7d2db1d9dfb4f294e95a163135b69086aba2b81b4d4e113fa8842d5a1a9",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L3752",
+      "sourceKey": "shatteredVeil"
+    },
+    {
+      "file": "public/maps/bo6-reckoning/overview.svg",
+      "sha256": "55df12177839715f5d85065569a9cefc3edc776b8b81f50476fb8c948ba636f4",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L3921",
+      "sourceKey": "reckoning"
+    },
+    {
+      "file": "public/maps/bo6-reckoning/boss-arena.svg",
+      "sha256": "8aab8b77c5f67cfc06765b776067e3f41a16c5e0954d747e58e1965d187ff2ab",
+      "source": "https://github.com/Miss-placed/DECLASSIFIED/blob/e3b8a56f3a4c44a8f9d3fabaf185f5aeac328df0/src/data/maps/blackOps6Maps.tsx#L4217",
+      "sourceKey": "reckoningBossArena"
+    }
+  ]
+}

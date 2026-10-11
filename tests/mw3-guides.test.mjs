@@ -83,15 +83,15 @@ test('Red Worm instructions cover preparation, four current USBs, storm activati
   assert.ok(worm.steps.some(step => step.images?.some(image => image.assetId === 'reddit-red-worm-chart')))
 })
 
-test('MW3 discovery is six direct guides plus the photo finder; retired recorders still redirect to useful sections', () => {
-  assert.deepEqual(expansionTools.filter(tool => tool.id.startsWith('mw3-')).map(tool => tool.id), ['mw3-red-worm-photos'])
+test('MW3 discovery includes the photo and portal finders; retired recorders still redirect to useful sections', () => {
+  assert.deepEqual(expansionTools.filter(tool => tool.id.startsWith('mw3-')).map(tool => tool.id), ['mw3-red-worm-photos', 'mw3-rune-portals'])
   const groups = groupNavigation(nav).filter(group => group.game === 'mw3')
   assert.equal(groups.length, 6)
   assert.ok(groups.every(group => group.items[0].kind === 'guide'))
-  assert.deepEqual(groups.find(group => group.id === 'mw3-urzikstan').items.filter(item => item.kind === 'tool').map(item => item.id), ['mw3-red-worm-photos'])
+  assert.deepEqual(groups.find(group => group.id === 'mw3-urzikstan').items.filter(item => item.kind === 'tool').map(item => item.id), ['mw3-red-worm-photos', 'mw3-rune-portals'])
   assert.ok(groups.filter(group => group.id !== 'mw3-urzikstan').every(group => group.items.length === 1))
   assert.ok(filterNavigation(groupNavigation(nav), 'bo7', 'Red Worm').some(group => group.id === 'mw3-urzikstan'))
-  for (const id of ['mw3-rune-portals', 'mw3-red-worm-usbs', 'mw3-dark-aether-reference', 'mw3-union-runes']) {
+  for (const id of ['mw3-red-worm-usbs', 'mw3-dark-aether-reference', 'mw3-union-runes']) {
     assert.ok(retiredTools[id])
     assert.ok(!nav.some(entry => entry.id === id))
     const [route, anchor] = retiredTools[id].split('#')

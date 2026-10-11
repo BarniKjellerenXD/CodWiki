@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "4484b4f90db019f3029d",
+  "revision": "e3e231852d485169787a",
   "games": [
     {
       "id": "bo7",
@@ -3077,6 +3077,21 @@
       "section": "Urzikstan",
       "label": "Red Worm photo finder",
       "url": "/tools/mw3-red-worm-photos",
+      "accel": null,
+      "icon": "↗"
+    },
+    {
+      "id": "mw3-rune-portals",
+      "map": "mw3-urzikstan",
+      "game": "mw3",
+      "gameName": "Modern Warfare III (2023)",
+      "group": "",
+      "status": "available",
+      "keywords": "",
+      "kind": "tool",
+      "section": "Urzikstan",
+      "label": "Rune portal finder",
+      "url": "/tools/mw3-rune-portals",
       "accel": null,
       "icon": "↗"
     },

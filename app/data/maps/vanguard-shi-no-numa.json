@@ -1,0 +1,621 @@
+{
+  "id": "vanguard-shi-no-numa",
+  "name": "Shi No Numa",
+  "defaultLayer": "overview",
+  "coverage": {
+    "kind": "schematic",
+    "note": "Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points."
+  },
+  "sources": [
+    {
+      "name": "CodWiki Vanguard guide",
+      "url": "/guides/vanguard-shi-no-numa",
+      "note": "Edition-specific walkthrough supplies object directions, prerequisites and guide links. Positions are diagram areas, not measured coordinates."
+    },
+    {
+      "name": "Documented region connections 1",
+      "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-main-spawn-map-layout-call.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 2",
+      "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-dig-site-map-layout-call-of.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Documented region connections 3",
+      "url": "https://codzombified.blogspot.com/2022/06/shi-no-numa-doctors-quarters-map-layout.html",
+      "note": "Textual route evidence. External artwork is not copied, traced or redistributed."
+    },
+    {
+      "name": "Illustrated guide reference 1",
+      "url": "https://mmmrkennedy.com/games/VG/shi_no_numa_reborn/shi_no_numa_reborn_guide"
+    },
+    {
+      "name": "Illustrated guide reference 2",
+      "url": "https://www.codzombieguides.com/shi-no-numa"
+    }
+  ],
+  "layers": [
+    {
+      "id": "overview",
+      "label": "Regions · schematic",
+      "image": "/maps/vanguard-shi-no-numa/overview.svg",
+      "width": 1400,
+      "height": 980,
+      "note": "Original regional diagram, not an overhead floor plan. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points."
+    }
+  ],
+  "locations": [
+    {
+      "id": "area-main",
+      "label": "Main hut / War Room",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.437,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Upper + ground rooms",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Bait Zaballa’s mines onto the Excavation Tesla coil; take tube 3.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-zaballa-tube"
+    },
+    {
+      "id": "area-flogger",
+      "label": "Flogger Courtyard",
+      "layerId": "overview",
+      "x": 0.2,
+      "y": 0.507,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Courtyard / vision fountain",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Collect Dormitory, Doctor’s Quarters and Dig Site wheel parts; install them.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-wheels"
+    },
+    {
+      "id": "area-fishing",
+      "label": "Fishing Hut",
+      "layerId": "overview",
+      "x": 0.18,
+      "y": 0.257,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hut + exterior",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open the required huts, Doctor’s Quarters and Dig Site.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "area-doctors",
+      "label": "Doctor’s Quarters",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.247,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hut + exterior",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open the required huts, Doctor’s Quarters and Dig Site.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "area-comms",
+      "label": "Comms",
+      "layerId": "overview",
+      "x": 0.8,
+      "y": 0.7070000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hut + exterior",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open the required huts, Doctor’s Quarters and Dig Site.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "area-storage",
+      "label": "Storage",
+      "layerId": "overview",
+      "x": 0.19,
+      "y": 0.797,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "Hut + exterior",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open the required huts, Doctor’s Quarters and Dig Site.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "area-dig",
+      "label": "Dig Site",
+      "layerId": "overview",
+      "x": 0.5,
+      "y": 0.8370000000000001,
+      "category": "area",
+      "typeId": "named-area",
+      "precision": "area",
+      "areaRadius": 0.035,
+      "overview": true,
+      "floor": "New Vanguard area",
+      "availability": "fixed",
+      "description": "Vanguard. Named region on an original diagram; spacing and angles are not geographical. Open the required huts, Doctor’s Quarters and Dig Site.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "pap",
+      "label": "Dig Site Pack-a-Punch",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.8150000000000001,
+      "category": "pack-a-punch",
+      "typeId": "pack-a-punch",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "New Vanguard area",
+      "availability": "conditional",
+      "description": "Open Doctor’s Quarters, Dig Site and the Fishing, Comms and Storage huts. Locate Dig Site Pack-a-Punch and plan armour/perk upgrades before the ceremony. Use water paths and the zipline to reach the huts; the free Wunderwaffe’s last tube needs Zaballa’s round-15 arrival. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-open"
+    },
+    {
+      "id": "barrel",
+      "label": "Fishing Hut weapon barrel",
+      "layerId": "overview",
+      "x": 0.13999999999999999,
+      "y": 0.235,
+      "category": "buildable-part",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hut + exterior",
+      "availability": "conditional",
+      "description": "Take the weapon barrel from Fishing Hut’s shelf near its door. Put it on the radio tower outside Comms. At the NEXT round’s start, defend the tower after its lightning strike. Retrieve the charged barrel and take the first charged vacuum tube from the radio inside Comms. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-barrel"
+    },
+    {
+      "id": "radio-tower",
+      "label": "Comms radio tower",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.685,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hut + exterior",
+      "availability": "conditional",
+      "description": "Take the weapon barrel from Fishing Hut’s shelf near its door. Put it on the radio tower outside Comms. At the NEXT round’s start, defend the tower after its lightning strike. Retrieve the charged barrel and take the first charged vacuum tube from the radio inside Comms. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-barrel"
+    },
+    {
+      "id": "fuse",
+      "label": "Comms electrical fuse",
+      "layerId": "overview",
+      "x": 0.8400000000000001,
+      "y": 0.685,
+      "category": "buildable-part",
+      "typeId": "buildable-part",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hut + exterior",
+      "availability": "conditional",
+      "description": "Collect the electrical fuse from Comms’ table. Activate Storage’s trap and let it short out; when its red box opens, fit the fuse and restart it. Feed the repaired trap zombie kills until the tube on the Storage workbench lights, then collect it. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-fuse"
+    },
+    {
+      "id": "workbench",
+      "label": "Storage Wunderwaffe bench",
+      "layerId": "overview",
+      "x": 0.15,
+      "y": 0.775,
+      "category": "workbench",
+      "typeId": "workbench",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hut + exterior",
+      "availability": "conditional",
+      "description": "With the barrel and all three charged tubes, craft the Wunderwaffe at Storage’s workbench. A mystery-box Wunderwaffe is an alternative acquisition and satisfies the weapon need without these build tasks. Upgrade it and keep ammunition ready before the ceremony. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-craft"
+    },
+    {
+      "id": "coil",
+      "label": "War Room Tesla coil",
+      "layerId": "overview",
+      "x": 0.46,
+      "y": 0.41500000000000004,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Upper + ground rooms",
+      "availability": "conditional",
+      "description": "From round 15, lure Zaballa into the Excavation/War Room and stand by its Tesla coil to bait her energy mines into it. After the coil has received enough hits (the reference specifies five), take the charged tube from the adjacent table. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-zaballa-tube"
+    },
+    {
+      "id": "monolith",
+      "label": "Doctor’s monolith",
+      "layerId": "overview",
+      "x": 0.76,
+      "y": 0.22499999999999998,
+      "category": "ritual-site",
+      "typeId": "ritual-site",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Hut + exterior",
+      "availability": "conditional",
+      "description": "At Doctor’s Quarters Exterior, lure three Boom-Schreier explosions next to the vine-covered monolith. Clear the vines before interacting with its wheel assembly. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-vines"
+    },
+    {
+      "id": "blood",
+      "label": "Flogger blood fountain",
+      "layerId": "overview",
+      "x": 0.16,
+      "y": 0.485,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "Courtyard / vision fountain",
+      "availability": "conditional",
+      "description": "Use Flogger kills in its Courtyard to fill the empty Demonic Fountain. Once filled, drink for the temporary Zombie Blood vision. Zombies still see and attack you during this effect; refill/drink again when you need another clue window. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-flogger-blood"
+    },
+    {
+      "id": "mirror",
+      "label": "Dig Site mirror pedestal",
+      "layerId": "overview",
+      "x": 0.54,
+      "y": 0.8150000000000001,
+      "category": "quest-mechanism",
+      "typeId": "quest-mechanism",
+      "precision": "area",
+      "areaRadius": 0.026,
+      "overview": false,
+      "floor": "New Vanguard area",
+      "availability": "conditional",
+      "description": "Install both fragments on Dig Site’s central pedestal. Interact with your blue orb’s stone; its position identifies the hut-side orb route. Find the orb and shoot its successive positions until it returns to Dig Site. The route uses three shots; an expired attempt respawns at its start stone for another try. Region-level overlay only: consult the guide photographs for the exact object and current match conditions.",
+      "source": "/guides/vanguard-shi-no-numa#guide-step-vshi-place-mirror"
+    }
+  ],
+  "targets": [
+    {
+      "id": "guide-vshi-open",
+      "title": "Open the required huts, Doctor’s Quarters and Dig Site.",
+      "locationIds": [
+        "pap",
+        "area-fishing",
+        "area-doctors",
+        "area-comms",
+        "area-storage",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-open"
+    },
+    {
+      "id": "guide-vshi-barrel",
+      "title": "Fishing Hut barrel → Comms tower defense → barrel and first tube.",
+      "locationIds": [
+        "barrel",
+        "radio-tower",
+        "area-fishing",
+        "area-comms"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-barrel"
+    },
+    {
+      "id": "guide-vshi-fuse",
+      "title": "Fit the Comms fuse into Storage’s broken trap and charge tube 2 with trap kills.",
+      "locationIds": [
+        "fuse",
+        "area-comms",
+        "area-storage"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-fuse"
+    },
+    {
+      "id": "guide-vshi-zaballa-tube",
+      "title": "Bait Zaballa’s mines onto the Excavation Tesla coil; take tube 3.",
+      "locationIds": [
+        "coil",
+        "area-main"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-zaballa-tube"
+    },
+    {
+      "id": "guide-vshi-craft",
+      "title": "Craft at Storage, or obtain the Wunderwaffe from the box; prepare it for the ceremony.",
+      "locationIds": [
+        "workbench",
+        "area-doctors",
+        "area-storage"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-craft"
+    },
+    {
+      "id": "guide-vshi-vines",
+      "title": "Explode three Boom-Schreiers beside the monolith to remove its vines.",
+      "locationIds": [
+        "monolith",
+        "area-doctors"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-vines"
+    },
+    {
+      "id": "guide-vshi-wheels",
+      "title": "Collect Dormitory, Doctor’s Quarters and Dig Site wheel parts; install them.",
+      "locationIds": [
+        "monolith",
+        "area-main",
+        "area-flogger",
+        "area-doctors",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-wheels"
+    },
+    {
+      "id": "guide-vshi-papers",
+      "title": "Read the Excavation, Dig Site and Comms paper glyphs.",
+      "locationIds": [
+        "area-main",
+        "area-comms",
+        "area-storage",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-papers"
+    },
+    {
+      "id": "guide-vshi-translate",
+      "title": "Translate the papers, align their wheel markings at the top and lock the monolith.",
+      "locationIds": [
+        "monolith",
+        "area-doctors"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-translate"
+    },
+    {
+      "id": "guide-vshi-ceremony",
+      "title": "All players start the stones; Wunderwaffe-kill blue-mist enemies near the shrine.",
+      "locationIds": [
+        "monolith",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-ceremony"
+    },
+    {
+      "id": "guide-vshi-flogger-blood",
+      "title": "Flogger-kill zombies to fill the fountain; drink for clue vision.",
+      "locationIds": [
+        "blood",
+        "area-flogger"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-flogger-blood"
+    },
+    {
+      "id": "guide-vshi-map-x",
+      "title": "In blood vision, read War Room’s X and shoot down that hut’s mirror fragment.",
+      "locationIds": [
+        "area-main"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-map-x"
+    },
+    {
+      "id": "guide-vshi-red-orb",
+      "title": "Activate the red orb and recover the fragment at its endpoint.",
+      "locationIds": [
+        "area-main",
+        "area-fishing",
+        "area-doctors",
+        "area-storage",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-red-orb"
+    },
+    {
+      "id": "guide-vshi-place-mirror",
+      "title": "Place both mirror pieces; activate and follow each blue orb’s three-shot route.",
+      "locationIds": [
+        "mirror",
+        "area-fishing",
+        "area-doctors",
+        "area-comms",
+        "area-storage",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-place-mirror"
+    },
+    {
+      "id": "guide-vshi-enter-echo",
+      "title": "Prepare, then all players use the returned blue orbs to summon Echo.",
+      "locationIds": [
+        "mirror",
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-enter-echo"
+    },
+    {
+      "id": "guide-vshi-echo-loop",
+      "title": "Wunderwaffe-kill the marked enemies; damage Echo’s mask only inside the blue dome.",
+      "locationIds": [
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-echo-loop"
+    },
+    {
+      "id": "guide-vshi-mirror-finish",
+      "title": "Destroy all three masks and collect the repaired mirror relic.",
+      "locationIds": [
+        "area-dig"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-mirror-finish"
+    },
+    {
+      "id": "guide-vshi-rampage",
+      "title": "Shoot the five spawn lanterns in order; use the appeared inducer tablet.",
+      "locationIds": [
+        "area-main"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-rampage"
+    },
+    {
+      "id": "guide-vshi-bunny",
+      "title": "In blood vision, collect zipline, Fishing Hut water and moving-box bunny parts.",
+      "locationIds": [
+        "area-flogger",
+        "area-fishing"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-bunny"
+    },
+    {
+      "id": "guide-vshi-samantha",
+      "title": "Shoot four Fishing Hut plates; start the doll, shoot its bridge sequence and return.",
+      "locationIds": [
+        "area-fishing"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-samantha"
+    },
+    {
+      "id": "guide-vshi-phone",
+      "title": "Use the Comms telephone for the instrumental song.",
+      "locationIds": [
+        "area-comms"
+      ],
+      "kind": "area",
+      "description": "Related regions for this instruction. Vanguard edition only. Its new Dig Site connects through Comms and Storage exteriors, not straight from the main hut. Perk assignments and mirror-fragment hints vary; huts are search regions, not guaranteed individual pickup points.",
+      "guideAnchor": "guide-step-vshi-phone"
+    }
+  ],
+  "quickLinks": {
+    "vshi-open": "guide-vshi-open",
+    "vshi-barrel": "guide-vshi-barrel",
+    "vshi-fuse": "guide-vshi-fuse",
+    "vshi-zaballa-tube": "guide-vshi-zaballa-tube",
+    "vshi-craft": "guide-vshi-craft",
+    "vshi-vines": "guide-vshi-vines",
+    "vshi-wheels": "guide-vshi-wheels",
+    "vshi-papers": "guide-vshi-papers",
+    "vshi-translate": "guide-vshi-translate",
+    "vshi-ceremony": "guide-vshi-ceremony",
+    "vshi-flogger-blood": "guide-vshi-flogger-blood",
+    "vshi-map-x": "guide-vshi-map-x",
+    "vshi-red-orb": "guide-vshi-red-orb",
+    "vshi-place-mirror": "guide-vshi-place-mirror",
+    "vshi-enter-echo": "guide-vshi-enter-echo",
+    "vshi-echo-loop": "guide-vshi-echo-loop",
+    "vshi-mirror-finish": "guide-vshi-mirror-finish",
+    "vshi-rampage": "guide-vshi-rampage",
+    "vshi-bunny": "guide-vshi-bunny",
+    "vshi-samantha": "guide-vshi-samantha",
+    "vshi-phone": "guide-vshi-phone"
+  },
+  "filterGroups": [
+    {
+      "id": "activities",
+      "label": "Guide activities",
+      "defaultFilter": "essentials",
+      "filters": [
+        {
+          "id": "essentials",
+          "label": "Key Features",
+          "locationIds": [
+            "pap",
+            "area-fishing",
+            "area-doctors",
+            "area-comms",
+            "area-storage",
+            "area-dig"
+          ]
+        },
+        {
+          "id": "main-quest",
+          "label": "Main Quest",
+          "locationIds": [
+            "monolith",
+            "area-doctors",
+            "area-main",
+            "area-flogger",
+            "area-dig",
+            "area-comms",
+            "area-storage"
+          ]
+        },
+        {
+          "id": "side-quests",
+          "label": "Side Quests",
+          "locationIds": [
+            "area-main",
+            "area-flogger",
+            "area-fishing",
+            "area-comms"
+          ]
+        }
+      ]
+    }
+  ]
+}

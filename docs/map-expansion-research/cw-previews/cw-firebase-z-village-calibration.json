@@ -1,0 +1,86 @@
+[
+  {
+    "number": 1,
+    "id": "dc-3371735759",
+    "label": "Pack-a-Punch",
+    "x": 0.50366211,
+    "y": 0.256895
+  },
+  {
+    "number": 2,
+    "id": "dc-64317a5658",
+    "label": "Arsenal",
+    "x": 0.33056641,
+    "y": 0.28740172
+  },
+  {
+    "number": 3,
+    "id": "dc-4754653179",
+    "label": "Der Wunderfizz",
+    "x": 0.4206543,
+    "y": 0.25811527
+  },
+  {
+    "number": 4,
+    "id": "dc-7578413552",
+    "label": "Ammo Crate",
+    "x": 0.45410156,
+    "y": 0.59193167
+  },
+  {
+    "number": 5,
+    "id": "dc-6f51777863",
+    "label": "Omega Radio",
+    "x": 0.6452179,
+    "y": 0.41219556
+  },
+  {
+    "number": 6,
+    "id": "dc-5a5177424d",
+    "label": "Teleporter",
+    "x": 0.68212891,
+    "y": 0.5699036
+  },
+  {
+    "number": 7,
+    "id": "dc-5579574d7a",
+    "label": "Magnum wall buy",
+    "x": 0.43652344,
+    "y": 0.36347095
+  },
+  {
+    "number": 8,
+    "id": "dc-7a514b3639",
+    "label": "Gallo wall buy",
+    "x": 0.42016602,
+    "y": 0.77515264
+  },
+  {
+    "number": 9,
+    "id": "dc-7364555835",
+    "label": "Sergei Ravenov",
+    "x": 0.52170946,
+    "y": 0.25208511
+  },
+  {
+    "number": 10,
+    "id": "dc-734447494f",
+    "label": "Dart Board / Aetherium Converter",
+    "x": 0.386594,
+    "y": 0.27699177
+  },
+  {
+    "number": 11,
+    "id": "dc-5873743939",
+    "label": "Cassette Tape",
+    "x": 0.36882775,
+    "y": 0.29423283
+  },
+  {
+    "number": 12,
+    "id": "dc-746471354d",
+    "label": "Mr Peeks Jumpscare",
+    "x": 0.47277178,
+    "y": 0.36709585
+  }
+]

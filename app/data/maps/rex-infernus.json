@@ -29,7 +29,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nexus-forge",
@@ -40,7 +42,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "veytharion-sanctuary",
@@ -51,7 +55,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "veytharion-main-chamber",
@@ -62,7 +68,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "veytharion-entrance",
@@ -73,7 +81,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "veytharion-passage",
@@ -84,7 +94,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "aranea-insula",
@@ -95,7 +107,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dravakar-sanctuary",
@@ -106,7 +120,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dravakar-main-chamber",
@@ -117,7 +133,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dravakar-passage",
@@ -128,7 +146,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "ruinas-insula",
@@ -139,7 +159,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "caltheris-passage",
@@ -150,7 +172,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "caltheris-entrance",
@@ -161,7 +185,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "caltheris-main-chamber",
@@ -172,7 +198,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "spira-insula",
@@ -183,7 +211,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nyxara-sanctuary",
@@ -194,7 +224,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nyxara-main-chamber",
@@ -205,7 +237,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nyxara-passage",
@@ -216,7 +250,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nexus-core",
@@ -228,7 +264,9 @@
       "precision": "area",
       "description": "Lower part of the Nexus beneath the Forge platform, near the published Deadshot pin. Descend for the pull switch and boss circles; this is an area highlight.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "floor": "Lower level beneath Nexus Forge"
+      "floor": "Lower level beneath Nexus Forge",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nyxara-inner-sanctum",
@@ -240,7 +278,9 @@
       "precision": "area",
       "description": "Inner sanctum of Nyxara. Eat the fruit here to reach the separate forest. The forest itself is not drawn.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "floor": "Interior beyond Nyxara Sanctuary"
+      "floor": "Interior beyond Nyxara Sanctuary",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dravakar-inner-sanctum",
@@ -252,7 +292,9 @@
       "precision": "area",
       "description": "Enter beneath the central pillar after the lever puzzle in Dravakar Sanctuary. The inner anvil and shields have no separately surveyed room label; this marks the sanctuary approach.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "floor": "Interior beneath Dravakar Sanctuary"
+      "floor": "Interior beneath Dravakar Sanctuary",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "dravakar-entrance",
@@ -264,7 +306,9 @@
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "floor": "Entrance / upper platform"
+      "floor": "Entrance / upper platform",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "nyxara-entrance",
@@ -275,7 +319,9 @@
       "category": "area",
       "precision": "area",
       "description": "Room area from the published interactive map. Follow the guide’s landmarks for the precise quest object and its height.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "named-area",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-1",
@@ -286,7 +332,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-2",
@@ -297,7 +345,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-3",
@@ -308,7 +358,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-4",
@@ -319,7 +371,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-5",
@@ -330,7 +384,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-6",
@@ -341,7 +397,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-7",
@@ -352,7 +410,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-8",
@@ -363,7 +423,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-9",
@@ -374,7 +436,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-10",
@@ -385,7 +449,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-dig-spot-11",
@@ -396,7 +462,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Dig Spot location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "dig-site",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-1",
@@ -407,7 +475,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-2",
@@ -418,7 +488,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-3",
@@ -429,7 +501,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-4",
@@ -440,7 +514,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-5",
@@ -451,7 +527,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-6",
@@ -462,7 +540,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-7",
@@ -473,7 +553,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-8",
@@ -484,7 +566,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-9",
@@ -495,7 +579,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-10",
@@ -506,7 +592,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-11",
@@ -517,7 +605,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-12",
@@ -528,7 +618,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-13",
@@ -539,7 +631,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-14",
@@ -550,7 +644,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-void-claw-pedestal-15",
@@ -561,7 +657,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Void Claw Pedestal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "quest-mechanism",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-1",
@@ -572,7 +670,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-2",
@@ -583,7 +683,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-3",
@@ -594,7 +696,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-4",
@@ -605,7 +709,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-5",
@@ -616,7 +722,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-6",
@@ -627,7 +735,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-7",
@@ -638,7 +748,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-8",
@@ -649,7 +761,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-9",
@@ -660,7 +774,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-10",
@@ -671,7 +787,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-ammo-cache-11",
@@ -682,7 +800,9 @@
       "category": "ammo",
       "precision": "point",
       "description": "Ammo Cache location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "ammo-cache",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-1",
@@ -693,7 +813,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-2",
@@ -704,7 +826,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-3",
@@ -715,7 +839,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-armor-wall-buy-4",
@@ -726,7 +852,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Armor Wall Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "armor-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-1",
@@ -737,7 +865,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-2",
@@ -748,7 +878,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-3",
@@ -759,7 +891,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-arsenal-4",
@@ -770,7 +904,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Arsenal location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "arsenal",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-1",
@@ -781,7 +917,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-2",
@@ -792,7 +930,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-crafting-table-3",
@@ -803,7 +943,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Crafting Table location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "crafting-table",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-1",
@@ -814,7 +956,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-2",
@@ -825,7 +969,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-3",
@@ -836,7 +982,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-4",
@@ -847,7 +995,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-5",
@@ -858,7 +1008,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-6",
@@ -869,7 +1021,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-7",
@@ -880,7 +1034,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-8",
@@ -891,7 +1047,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-9",
@@ -902,7 +1060,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-10",
@@ -913,7 +1073,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-11",
@@ -924,7 +1086,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-12",
@@ -935,7 +1099,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-13",
@@ -946,7 +1112,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-14",
@@ -957,7 +1125,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-15",
@@ -968,7 +1138,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-16",
@@ -979,7 +1151,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-17",
@@ -990,7 +1164,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-18",
@@ -1001,7 +1177,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-19",
@@ -1012,7 +1190,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-20",
@@ -1023,7 +1203,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-21",
@@ -1034,7 +1216,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-22",
@@ -1045,7 +1229,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-door-buy-23",
@@ -1056,7 +1242,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Door Buy location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "door-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-1",
@@ -1067,7 +1255,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-2",
@@ -1078,7 +1268,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-exfil-3",
@@ -1089,7 +1281,9 @@
       "category": "travel",
       "precision": "point",
       "description": "Exfil location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "exfil",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-1",
@@ -1100,7 +1294,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-2",
@@ -1111,7 +1307,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-3",
@@ -1122,7 +1320,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-4",
@@ -1133,7 +1333,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-5",
@@ -1144,7 +1346,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-6",
@@ -1155,7 +1359,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-7",
@@ -1166,7 +1372,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-gobblegum-machine-8",
@@ -1177,7 +1385,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Gobblegum Machine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "gobblegum",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-1",
@@ -1188,7 +1398,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-2",
@@ -1199,7 +1411,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-3",
@@ -1210,7 +1424,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-4",
@@ -1221,7 +1437,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-5",
@@ -1232,7 +1450,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-6",
@@ -1243,7 +1463,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-7",
@@ -1254,7 +1476,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-mystery-box-8",
@@ -1265,7 +1489,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Mystery Box Location location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "mystery-box",
+      "availability": "unknown"
     },
     {
       "id": "czg-pack-a-punch-1",
@@ -1276,7 +1502,9 @@
       "category": "upgrade",
       "precision": "point",
       "description": "Pack-a-Punch location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "pack-a-punch",
+      "availability": "unknown"
     },
     {
       "id": "czg-rampage-inducer-1",
@@ -1287,7 +1515,9 @@
       "category": "equipment",
       "precision": "point",
       "description": "Rampage Inducer location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "challenge-starter",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-1",
@@ -1298,7 +1528,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Titan Trap location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-trap-2",
@@ -1309,7 +1541,9 @@
       "category": "trap",
       "precision": "point",
       "description": "Titan Trap location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "trap",
+      "availability": "unknown"
     },
     {
       "id": "czg-quick-revive-1",
@@ -1320,7 +1554,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Quick Revive location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-deadshot-daiquiri-1",
@@ -1331,7 +1567,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Deadshot Daiquiri location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-stamin-up-1",
@@ -1342,7 +1580,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Stamin-Up location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-double-tap-1",
@@ -1353,7 +1593,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Double Tap location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-juggernog-1",
@@ -1364,7 +1606,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Juggernog location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-mule-kick-1",
@@ -1375,7 +1619,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Mule Kick location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-widows-wine-1",
@@ -1386,7 +1632,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Widow's Wine location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-vulture-aid-1",
@@ -1397,7 +1645,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Vulture Aid location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-death-perception-1",
@@ -1408,7 +1658,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Death Perception location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-phd-flopper-1",
@@ -1419,7 +1671,9 @@
       "category": "perk",
       "precision": "point",
       "description": "PHD Flopper location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-speed-cola-1",
@@ -1430,7 +1684,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Speed Cola location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-elemental-pop-1",
@@ -1441,7 +1697,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Elemental Pop location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-wisp-tea-1",
@@ -1452,7 +1710,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Wisp Tea location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "perk-machine",
+      "availability": "unknown"
     },
     {
       "id": "czg-der-wunderfizz-1",
@@ -1463,7 +1723,9 @@
       "category": "perk",
       "precision": "point",
       "description": "Der Wunderfizz location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wunderfizz",
+      "availability": "unknown"
     },
     {
       "id": "czg-ak-27-1",
@@ -1474,7 +1736,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "AK-27 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-akita-1",
@@ -1485,7 +1749,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Akita location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-coda-9-1",
@@ -1496,7 +1762,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "CODA 9 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-dravec-45-1",
@@ -1507,7 +1775,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Dravec 45 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-ds20-mirage-1",
@@ -1518,7 +1788,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "DS20 Mirage location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-echo-12-1",
@@ -1529,7 +1801,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Echo 12 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m10-breacher-1",
@@ -1540,7 +1814,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M10 Breacher location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m15-mod-0-1",
@@ -1551,7 +1827,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M15 Mod 0 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m34-novaline-1",
@@ -1562,7 +1840,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M34 Novaline location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-m8a1-1",
@@ -1573,7 +1853,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "M8A1 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-mk-78-1",
@@ -1584,7 +1866,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "MK.78 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-peacekeeper-mk1-1",
@@ -1595,7 +1879,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Peacekeeper MK1 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-ryden-45k-1",
@@ -1606,7 +1892,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Ryden 45K location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-shadow-sk-1",
@@ -1617,7 +1905,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Shadow Sk location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-vs-recon-1",
@@ -1628,7 +1918,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "VS Recon location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-warden-308-1",
@@ -1639,7 +1931,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "Warden 308 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-x9-maverick-1",
@@ -1650,7 +1944,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "X9 Maverick location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-xm325-1",
@@ -1661,7 +1957,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "XM325 location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "czg-xr3-ion-1",
@@ -1672,7 +1970,9 @@
       "category": "weapon",
       "precision": "point",
       "description": "XR-3 Ion location from the published interactive map.",
-      "source": "https://www.codzombiesguides.com/maps/rex-infernus/"
+      "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
+      "typeId": "wall-buy",
+      "availability": "unknown"
     },
     {
       "id": "cursed-mister-peeks-1",
@@ -1685,7 +1985,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-2",
@@ -1698,7 +2000,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-3",
@@ -1711,7 +2015,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-4",
@@ -1724,7 +2030,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-5",
@@ -1737,7 +2045,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     },
     {
       "id": "cursed-mister-peeks-6",
@@ -1750,7 +2060,9 @@
       "precision": "point",
       "description": "Possible Cursed reward spawn. The nearby area name helps orient you; the source does not specify elevation.",
       "source": "https://www.codzombiesguides.com/maps/rex-infernus/",
-      "state": "Cursed mode · possible spawn"
+      "state": "Cursed mode · possible spawn",
+      "typeId": "cursed-peeks",
+      "availability": "candidate"
     }
   ],
   "targets": [
