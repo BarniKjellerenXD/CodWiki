@@ -1200,6 +1200,14 @@
     "keywords": "Totenreich bo7 Black Ops 7 Black Ops VII zombies     main quest easter egg"
   },
   {
+    "id": "totenreich:wiki_wrestlers_belt",
+    "name": "Wrestler's Belt",
+    "map": "totenreich",
+    "kind": "Section",
+    "route": "/guides/totenreich#wiki_wrestlers_belt",
+    "keywords": "Totenreich bo7 Black Ops 7 Black Ops VII zombies     main quest easter egg"
+  },
+  {
     "id": "totenreich:h2-sinister-relics",
     "name": "Sinister Relics",
     "map": "totenreich",
