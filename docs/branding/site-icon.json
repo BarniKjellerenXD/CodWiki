@@ -1,0 +1,45 @@
+{
+  "name": "CodWiki site icon",
+  "created": "2026-10-16",
+  "generator": "Built-in image_gen",
+  "selectedConcept": "cw-monogram",
+  "decision": "The interlocked CW identifies CodWiki directly, retains a clear silhouette at 16 and 32 pixels, and matches the established charcoal-and-gold palette. The skull contains more small details; the waypoint reads more like an alien face.",
+  "source": "docs/branding/codwiki-icon-source.png",
+  "processing": "Only Lanczos resizing and PNG/ICO encoding were applied to the selected generated source; no manual drawing or retouching.",
+  "concepts": [
+    {
+      "id": "zombie-codex",
+      "prompt": "Use case: logo-brand. Asset type: a real website favicon and app icon for CodWiki, a Call of Duty Zombies guide and map companion. Create ONE polished icon, not a presentation or mockup. Concept A: an extremely simple angular zombie skull emblem, with its chunky open outer silhouette subtly reading as a letter C. Large angular eye sockets and a tiny number of broad jaw cuts; bold geometric masses, balanced negative space. Subject fills about 78 percent of a square canvas and is perfectly centered. Two flat colors only: warm gold #E0B45D emblem on solid charcoal #1C1F23 filling the entire square. Clean flat vector-like raster, perfectly crisp silhouette, no distress, no texture, no shading, no thin lines, no circular border, no glow. Designed to remain identifiable when reduced to 16 by 16 pixels. Original design, no existing franchise logos, no weapons, no blood, no words, no caption, no watermark."
+    },
+    {
+      "id": "cw-monogram",
+      "prompt": "Use case: logo-brand. Asset type: a real website favicon and app icon for CodWiki, a Call of Duty Zombies guide and map companion. Create ONE polished icon, not a presentation or mockup. Concept B: a bold compact geometric monogram of the letters C and W, interlocked into a single clear emblem with angled cuts reminiscent of a game quest rune. The C must remain open at its right and the W must have broad distinct valleys, with generous negative spaces. Strong simple overall silhouette, no fragile strokes. Subject fills about 78 percent of a square canvas and is perfectly centered. Two flat colors only: warm gold #E0B45D emblem on solid charcoal #1C1F23 filling the entire square. Clean flat vector-like raster with no distress, no texture, no shading, no outline border, no glow. The ONLY lettering is the integrated CW monogram, no wordmark or caption. Designed to read at 16 by 16 pixels. Original design, no existing franchise logo, no watermark."
+    },
+    {
+      "id": "quest-waypoint",
+      "prompt": "Use case: logo-brand. Asset type: a real website favicon and app icon for CodWiki, a Call of Duty Zombies guide and map companion. Create ONE polished icon, not a presentation or mockup. Concept C: a compact angular map waypoint pin with two large cutout zombie eyes inside, combining finding a quest location with Zombies. A chunky geometric gold pin silhouette, two bold angular charcoal eye sockets, one tapered bottom point. Maximal clarity, almost like a distinctive map marker rather than an illustration. Subject fills about 78 percent of a square canvas and is perfectly centered. Two flat colors only: warm gold #E0B45D emblem on solid charcoal #1C1F23 filling the entire square. Clean flat vector-like raster, no skull teeth or extra detail, no distress, no texture, no shading, no outlines, no circular badge, no glow. No lettering, no wordmark, no caption, no watermark. Original design. Must remain recognizable at 16 by 16 pixels."
+    }
+  ],
+  "outputs": {
+    "ico": "public/favicon.ico",
+    "icoSizes": [
+      16,
+      32,
+      48,
+      64,
+      128,
+      256
+    ],
+    "pngSizes": [
+      16,
+      32,
+      48,
+      192,
+      512
+    ],
+    "pngPattern": "public/icons/codwiki-{size}.png",
+    "appleTouchIcon": "public/apple-touch-icon.png",
+    "appleTouchSize": 180,
+    "manifest": "public/site.webmanifest"
+  }
+}

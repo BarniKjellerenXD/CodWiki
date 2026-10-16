@@ -2,7 +2,20 @@
 import { DEFAULT_SITE_URL } from './shared/seo.mjs'
 
 export default defineNuxtConfig({
-  app: { head: { htmlAttrs: { lang: 'en' }, title: 'CodWiki · Zombies companion' } },
+  app: {
+    head: {
+      htmlAttrs: { lang: 'en' },
+      title: 'CodWiki · Zombies companion',
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico?v=codwiki-1' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/icons/codwiki-16.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/icons/codwiki-32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/icons/codwiki-48.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+    },
+  },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   // Keep local shared helpers in Nitro's bundle (Windows dev builds otherwise
