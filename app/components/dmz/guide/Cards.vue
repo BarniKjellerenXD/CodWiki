@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { guideTier } from '#shared/dmz-guide.mjs'
 import { intelEntry } from '#shared/dmz-stations.mjs'
+import { bossPlaybook, materialSpots } from '#shared/dmz-playbooks.mjs'
 
 // One of a stage's card sets: what to print, where to farm, or who to hunt.
-// Farm and hunt cards carry a Tac-Map cut of the places they name.
+// Farm and hunt cards carry a Tac-Map cut of the places they name, and open
+// into the exact spots or how to find and kill the boss, across the full row.
 const props = defineProps<{ tier: string, kind: 'print' | 'farm' | 'hunt' }>()
 const tier = computed(() => guideTier(props.tier)!)
 const nameOf = (id: string) => intelEntry(id)?.name || id
@@ -32,6 +34,10 @@ const parts = (cost: string) => cost.split(' · ')
         <p class="gc-head"><span class="gc-name">{{ item.name }}</span><span class="gc-rarity dmz-mono" :data-rarity="item.rarity.toLowerCase()">{{ item.rarity }}</span></p>
         <p class="gc-why">{{ item.where }}</p>
         <p class="gc-for"><span class="dmz-mono">For</span> {{ item.for }}</p>
+        <details v-if="materialSpots(item.name)" class="gc-how">
+          <summary class="dmz-mono">Exact spots and a route<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+          <DmzMaterialSpots :name="item.name" :map="false" />
+        </details>
       </div>
     </li>
   </ul>
@@ -42,6 +48,10 @@ const parts = (cost: string) => cost.split(' · ')
       <div class="gc-main">
         <p class="gc-head"><span class="gc-rank dmz-mono" aria-hidden="true">{{ String(index + 1).padStart(2, '0') }}</span><DmzIntelLink :id="item.intel" class="gc-name">{{ item.name }}</DmzIntelLink></p>
         <p class="gc-why">{{ item.why }}</p>
+        <details v-if="bossPlaybook(item.intel)" class="gc-how">
+          <summary class="dmz-mono">How to find and kill<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+          <DmzPlaybook :id="item.intel" />
+        </details>
       </div>
     </li>
   </ol>
@@ -71,9 +81,18 @@ const parts = (cost: string) => cost.split(' · ')
 .gc-rarity[data-rarity='epic'] { color: #b99ae8; }
 .gc-rarity[data-rarity='legendary'] { color: #ddb363; }
 .gc-rarity[data-rarity='ultra'] { color: #ff6a5c; }
+.gc-how summary { display: inline-flex; align-items: center; gap: 0.375rem; min-height: 2.75rem; cursor: pointer; list-style: none; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-accent); }
+.gc-how summary::-webkit-details-marker { display: none; }
+.gc-how summary svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s; }
+.gc-how[open] summary svg { transform: rotate(180deg); }
+.gc-how[open] summary { margin-bottom: 0.25rem; }
+/* An open card takes the whole row, its map beside the how-to. */
+.gc > li:has(.gc-how[open]) { grid-column: 1 / -1; }
+.gc-card.gc-card--map:has(.gc-how[open]) { grid-template-columns: minmax(12rem, 18rem) minmax(0, 1fr); }
 @media (max-width: 599px) {
   .gc--print, .gc--map { grid-template-columns: minmax(0, 1fr); }
   .gc-card { grid-template-columns: auto minmax(0, 1fr); }
   .gc-unlock { grid-column: 2; }
+  .gc-card.gc-card--map.gc-card--map:has(.gc-how[open]) { grid-template-columns: minmax(0, 1fr); }
 }
 </style>

@@ -20129,7 +20129,7 @@
     "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-the-doctor",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses boss-level enemy called doctor named nintendo life's hands-on preview"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses lieutenant white hazmat suit mask holds mirae general hospital charges close range command office opens upper-floor whose crate"
   },
   {
     "id": "dmz-intel:north-korean-forces",
@@ -20216,7 +20216,7 @@
     "id": "dmz-intel:jin-tae",
     "name": "Jin-Tae",
     "map": "",
-    "kind": "Enemy",
+    "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-jin-tae",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses jin-tae lieutenant heavenly luck casino high cheongun village opens with heavy automatic fire floor guides advise falling back"
@@ -20225,7 +20225,7 @@
     "id": "dmz-intel:roze",
     "name": "Roze",
     "map": "",
-    "kind": "Enemy",
+    "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-roze",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses roze sniper lieutenant headquarters grid extreme fights from rooftop terraces among vents radio mast top-floor machine room roof"
@@ -20234,7 +20234,7 @@
     "id": "dmz-intel:iskra",
     "name": "Iskra",
     "map": "",
-    "kind": "Enemy",
+    "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-iskra",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses iskra holds office building cheonwang peak array medium fires from upper doorway then runs down stairwell chase finish"
@@ -20243,7 +20243,7 @@
     "id": "dmz-intel:the-chemist",
     "name": "The Chemist",
     "map": "",
-    "kind": "Enemy",
+    "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-the-chemist",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses chemist waits warehouse beside reactor tanks inside haneul nuclear radiation zone high guards wear dark hazmat suits yellow"

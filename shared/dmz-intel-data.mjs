@@ -2451,6 +2451,7 @@ export const intelData = [
       ['Area', 'high woodland above Hanrim Village'],
       ['Weapon', 'M4'],
       ['Escorts', 'camouflaged troops'],
+      ['Decoys', 'inflatable copies that blend in with his ghillie escorts; killing one does not complete the side op'],
       ['Drops', 'Incisor (Legendary marksman rifle based on the MAR-9) or a MAR-9 (Rare), Gorani\'s Dog Tag (Legendary), Infantry Invasion Plans (valuable), Nitro Compounds'],
       ['Location', 'Mujin Pass camp, South Korean Wilderness forest'],
     ],
@@ -2488,7 +2489,7 @@ export const intelData = [
   },
   {
     id: 'the-doctor', category: 'enemies', type: 'Lieutenant', name: 'The Doctor',
-    summary: 'A boss-level enemy called the Doctor, named in Nintendo Life\'s hands-on preview of DMZ.',
+    summary: 'A Lieutenant in a white hazmat suit and gas mask who holds Mirae General Hospital. He charges at close range, and his Command Office key opens an upper-floor office whose crate can hold the Tempered Armor Vest recipe.',
     details: [
       ['Location', 'Mirae General Hospital (wards during Operation Critical Extraction; garage or grounds in free play)'],
       ['Drops', 'Doctor\'s Salve (Legendary battle rifle, $6,900) or Patriot XMR, The Doctor\'s Command Office key (Legendary), The Doctor\'s Dog Tag'],
@@ -2582,7 +2583,7 @@ export const intelData = [
     confidence: 'confirmed', sources: ['codmunity-2026-10-05', 'fandom-modern-warfare-4', 'modernwarfare4dmz-modernwarfare4dmz-com-dmz-mw4-guide', 'allthings-modern-warfare-4-dmz-scavenger', 'allthings-call-of-duty-modern-warfare-12', 'gamerant-call-of-duty-cod-modern-3', 'reddit-which-bosses-have-you-killed'], updated: '2026-10-22',
   },
   {
-    id: 'jin-tae', category: 'enemies', type: 'Enemy', name: 'Jin-Tae',
+    id: 'jin-tae', category: 'enemies', type: 'Lieutenant', name: 'Jin-Tae',
     summary: 'Jin-Tae is the Lieutenant of the Heavenly Luck Casino (HIGH) in Cheongun Village. He opens with heavy automatic fire on the casino floor, so guides advise falling back through the double doors into the staff offices and killing him as he comes down the office corridor. He drops the ISO Nightshade SMG and his dog tag.',
     details: [
       ['Location', 'Heavenly Luck Casino gaming floor and back offices'],
@@ -2594,7 +2595,7 @@ export const intelData = [
     confidence: 'confirmed', sources: ['allthings-call-of-duty-modern-warfare-12', 'allthings-how-to-beat-jin-tae', 'gamerant-call-of-duty-cod-modern-3', 'game8-archives-7', 'dmzcodex-jin-tae', 'reddit-which-bosses-have-you-killed', 'youtube-bakk3ee8kwi', 'youtube-m73l87czrh8'], added: '2026-10-22',
   },
   {
-    id: 'roze', category: 'enemies', type: 'Enemy', name: 'Roze',
+    id: 'roze', category: 'enemies', type: 'Lieutenant', name: 'Roze',
     summary: 'Roze is a sniper Lieutenant at DBN Headquarters in The Grid (EXTREME). She fights from the rooftop terraces among vents and a radio mast, or from a top-floor machine room by the roof door, and one shot can down you. Climb the stairs using the rails as cover. The Deathstalker also patrols this roof.',
     details: [
       ['Location', 'DBN Headquarters roof and top floor'],
@@ -2604,7 +2605,7 @@ export const intelData = [
     confidence: 'confirmed', sources: ['allthings-call-of-duty-modern-warfare-12', 'gamerant-call-of-duty-cod-modern-3', 'game8-archives-7', 'dmzcodex-roze', 'youtube-rye5kdij2ra', 'youtube-e1psnlxwzzw', 'reddit-which-bosses-have-you-killed'], added: '2026-10-22',
   },
   {
-    id: 'iskra', category: 'enemies', type: 'Enemy', name: 'Iskra',
+    id: 'iskra', category: 'enemies', type: 'Lieutenant', name: 'Iskra',
     summary: 'Iskra holds the office building at Cheonwang Peak Array (MEDIUM). Iskra fires from an upper doorway and then runs down the stairwell, so chase and finish the fight on a landing. The kill pays 1,000 XP and can drop the Widowmaker, a Legendary shotgun, or the Warlord.',
     details: [
       ['Location', 'Cheonwang Peak Array office building'],
@@ -2614,7 +2615,7 @@ export const intelData = [
     confidence: 'confirmed', sources: ['allthings-call-of-duty-modern-warfare-12', 'allthings-mw4-dmz-how-to-complete', 'gamerant-call-of-duty-cod-modern-3', 'dmzcodex-iskra', 'youtube-m73l87czrh8', 'reddit-comms-module-farming'], added: '2026-10-22',
   },
   {
-    id: 'the-chemist', category: 'enemies', type: 'Enemy', name: 'The Chemist',
+    id: 'the-chemist', category: 'enemies', type: 'Lieutenant', name: 'The Chemist',
     summary: 'The Chemist waits in a warehouse beside the reactor tanks inside the Haneul Nuclear Reactor radiation zone (HIGH). The guards wear dark hazmat suits and the Chemist a yellow one, so bring a gas mask and Radiation Blockers. His dog tag drops on the body.',
     details: [
       ['Location', 'Haneul Nuclear Reactor, warehouse by the reactor tanks'],

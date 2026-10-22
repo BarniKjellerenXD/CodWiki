@@ -31,7 +31,7 @@ export const dmzStations = [
     id: 'boss', label: 'Boss Board', title: 'Lieutenants and Commanders', route: '/dmz/boss-board',
     icon: 'M12 3v4 M12 17v4 M3 12h4 M17 12h4 M17 12a5 5 0 1 1-10 0a5 5 0 1 1 10 0 M12 11v2',
     desc: 'Who roams Hajin, where players find them and what they drop, plus the forces that escalate around you.',
-    facts: ['6 Lieutenants · 4 Commanders and bosses', 'Places on the Tac-Map, drops and routes'],
+    facts: ['10 Lieutenants · 4 Commanders and bosses', 'Where to find them, how to kill them, what they drop'],
   },
   {
     id: 'printer', label: '3D Printer', title: 'Materials calculator', route: '/dmz/printer',

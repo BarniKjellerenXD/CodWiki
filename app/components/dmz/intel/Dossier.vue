@@ -2,6 +2,7 @@
 import type { PropType } from 'vue'
 import { dmzIntel, intelSources, intelSourceSite, intelCategory, intelConfidence, intelConfidenceLabel } from '#shared/dmz-intel.mjs'
 import { relatedIntel, entryPlaces, placeLink, intelHome, intelHomeLabel } from '#shared/dmz-stations.mjs'
+import { bossPlaybook } from '#shared/dmz-playbooks.mjs'
 
 // Everything about one entry: facts, note, places, related entries, sources and
 // a link to the station it lives on. Related entries open in the drawer.
@@ -55,6 +56,11 @@ const atHome = computed(() => home.value.split(/[?#]/)[0] === route.path.replace
       <NuxtLink v-if="entry.link" :to="entry.link.to" class="dz-link">{{ entry.link.label }}<span aria-hidden="true">&nbsp;→</span></NuxtLink>
       <NuxtLink v-if="!atHome" :to="home" class="dz-link">Go to {{ intelHomeLabel(entry) }}<span aria-hidden="true">&nbsp;→</span></NuxtLink>
     </p>
+
+    <section v-if="bossPlaybook(entry.id)" class="id-block" aria-label="How to find and kill">
+      <h3 class="dz-sub dmz-mono">How to find and kill</h3>
+      <DmzPlaybook :id="entry.id" />
+    </section>
 
     <section v-if="places.length" class="id-block" aria-label="Where on Hajin">
       <h3 class="dz-sub dmz-mono">On the Tac-Map</h3>

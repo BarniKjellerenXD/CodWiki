@@ -73,6 +73,16 @@ The first build asked "What are you wearing?" and named the tiers by armor. The 
 
 The data keeps the `tier` name in code and the `armor` and `levels` fields, which the lab drafts still read.
 
+## How-to layer
+
+Players found the guide said what to do but not how, so the steps, bosses and materials now carry the how:
+
+- **Steps:** a `how` list on 17 steps (Boss Board intel, Hunt towers, printer upgrades, story mission starts and hard parts, the Doctor's office, Fallen Ember, Prestige).
+- **Bosses:** `shared/dmz-playbooks.mjs` has a playbook for each of the 10 Lieutenants and 3 Commanders: find, what it does, the kill in order, bring, avoid, loot. It shows on the guide's hunt cards, the Boss Board cards and the Intel drawer. Gorani is the decoy Lieutenant; his playbook says how to tell the real one.
+- **Materials:** the same file has 32 materials with the room or container to search, a route for one run, other ways to get it and the print recipe. It shows on the guide's farm cards and in "Where to find materials" on the Printer page, whose planner totals link to it.
+- **Sources:** every playbook lists its own sources; guide-only sources go in `shared/dmz-guide-sources.mjs` and must not repeat an Intel source under a new id. PlayerAuctions is not cited.
+- **Fact-check:** a second pass checked each line against its sources. Claims found only on PlayerAuctions were cut, guesses are labelled as guesses, one-off finds say "one find", and the two Commander-only drops show rarity Unknown because no source gives one.
+
 ## Images
 
 - **No downloads needed:** rank stripes and sign icons for the stages, vest and plate drawings, op step chains with an icon per step type, material rarity chips, mini-maps cut from the approved Hajin Tac-Map art with the place highlighted, and threat colours from the Tac-Map data.

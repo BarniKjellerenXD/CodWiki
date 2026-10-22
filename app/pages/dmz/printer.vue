@@ -2,6 +2,7 @@
 import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelConfidenceLabel, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
 import { printerRecipes, recipeMaterials, recipeUnlock, recipeName, sumMaterials, intelEntry, PRINT_MAX } from '#shared/dmz-stations.mjs'
+import { materialPlaybooks, materialSpots } from '#shared/dmz-playbooks.mjs'
 
 // 3D Printer station: every recipe with its materials, and a planner that adds
 // up what to loot for the prints you pick. The plan stays on this device.
@@ -17,6 +18,21 @@ const planned = computed(() => Object.entries(state.value.plan).filter(([, count
 const totals = computed(() => sumMaterials(state.value.plan))
 const rarityClass = (rarity?: string) => `is-${(rarity || 'unknown').toLowerCase()}`
 const nameOf = (id: string) => recipeName(intelEntry(id)!)
+
+// Where to find each material: a fold per material, opened from the planner's
+// totals as well as by tap.
+const matId = (name: string) => `mat-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`
+const openMats = ref(new Set<string>())
+function toggleMat(name: string, open: boolean) {
+  const next = new Set(openMats.value)
+  if (open) next.add(name)
+  else next.delete(name)
+  openMats.value = next
+}
+function showMat(name: string) {
+  toggleMat(name, true)
+  nextTick(() => document.getElementById(matId(name))?.scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }))
+}
 
 // On phones the totals sit above the list; while they are off screen, a bar
 // above the dock keeps count and jumps back to them.
@@ -71,6 +87,26 @@ function showPlan() {
         </ul>
         <p v-if="!shown.length" class="dz-empty">No recipe uses “{{ query.trim() }}”.</p>
 
+        <section v-if="materialPlaybooks.length" class="dz-group" aria-labelledby="pr-where">
+          <header class="dz-group-head">
+            <h2 id="pr-where" class="dz-h2">Where to find materials<span class="dmz-mono">{{ materialPlaybooks.length }}</span></h2>
+            <p>The rooms and containers worth searching for each material, a route for one run, and when the printer can make it instead.</p>
+          </header>
+          <ul class="pr-where">
+            <li v-for="item in materialPlaybooks" :id="matId(item.name)" :key="item.name">
+              <details class="pr-mat-how" :open="openMats.has(item.name)" @toggle="toggleMat(item.name, ($event.target as HTMLDetailsElement).open)">
+                <summary>
+                  <span class="pr-mat-name">{{ item.name }}</span>
+                  <span class="pr-mat-rarity dmz-mono" :class="rarityClass(item.rarity)">{{ item.rarity }}</span>
+                  <span class="pr-mat-hint">{{ item.hint }}</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+                </summary>
+                <div class="pr-mat-body"><DmzMaterialSpots :name="item.name" :level="3" /></div>
+              </details>
+            </li>
+          </ul>
+        </section>
+
         <section class="dz-group" aria-labelledby="pr-guides">
           <header class="dz-group-head">
             <h2 id="pr-guides" class="dz-h2">How the printer works</h2>
@@ -88,7 +124,7 @@ function showPlan() {
           <p class="pr-plan-for">{{ planned.map(([id, n]) => `${n}× ${nameOf(id)}`).join(' · ') }}</p>
           <ul class="pr-totals">
             <li v-for="item in totals" :key="item.name" :class="rarityClass(item.rarity)">
-              <span class="pr-total-name">{{ item.name }}<small v-if="item.rarity && item.rarity !== 'Resource'" class="dmz-mono">{{ item.rarity }}</small></span>
+              <span class="pr-total-name"><a v-if="materialSpots(item.name)" :href="`#${matId(item.name)}`" @click.prevent="showMat(item.name)">{{ item.name }}</a><template v-else>{{ item.name }}</template><small v-if="item.rarity && item.rarity !== 'Resource'" class="dmz-mono">{{ item.rarity }}</small></span>
               <span class="dmz-mono pr-total-n">{{ item.amount }}</span>
             </li>
           </ul>
@@ -140,6 +176,28 @@ function showPlan() {
 .pr-totals li { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.375rem 0.625rem; border: 1px solid var(--dz-line); border-radius: 8px; background: rgba(10, 12, 11, 0.35); }
 .pr-total-name { display: flex; flex-direction: column; font-size: 0.95rem; }
 .pr-total-name small { font-size: 0.625rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-muted); }
+.pr-total-name a { color: inherit; text-underline-offset: 0.2em; }
+.pr-where { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.375rem; }
+.pr-where > li { scroll-margin-top: 1.5rem; }
+.pr-mat-how { border: 1px solid var(--dz-line); border-radius: 12px; background: rgba(20, 24, 23, 0.82); }
+.pr-mat-how[open] { border-color: var(--dz-line-strong); }
+.pr-mat-how summary { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: center; gap: 0.25rem 0.625rem; min-height: 3rem; padding: 0.5rem 0.875rem; cursor: pointer; list-style: none; }
+.pr-mat-how summary::-webkit-details-marker { display: none; }
+.pr-mat-name { font-weight: 700; color: var(--dz-ink); }
+.pr-mat-rarity { padding: 0.1rem 0.45rem; border: 1px solid currentColor; border-radius: 4px; font-size: 0.5625rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.pr-mat-rarity { color: #b8b9ac; }
+.pr-mat-rarity.is-uncommon { color: #a9d98a; }
+.pr-mat-rarity.is-rare { color: #7fb8e6; }
+.pr-mat-rarity.is-epic { color: #b99ae8; }
+.pr-mat-rarity.is-legendary { color: #ddb363; }
+.pr-mat-hint { overflow: hidden; color: var(--dz-muted); font-size: 0.875rem; white-space: nowrap; text-overflow: ellipsis; }
+.pr-mat-how summary svg { width: 1.125rem; height: 1.125rem; fill: none; stroke: var(--dz-ink-2); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s; }
+.pr-mat-how[open] summary svg { transform: rotate(180deg); }
+.pr-mat-body { padding: 0.25rem 0.875rem 0.875rem; }
+@media (max-width: 599px) {
+  .pr-mat-how summary { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .pr-mat-hint { grid-column: 1 / -1; grid-row: 2; white-space: normal; }
+}
 .pr-total-n { font-size: 1.125rem; font-weight: 700; }
 .pr-clear { align-self: flex-start; min-height: 2.75rem; font-size: 0.9rem; }
 .pr-plan-note { font-size: 0.85rem !important; color: var(--dz-muted) !important; }

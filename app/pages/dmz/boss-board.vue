@@ -2,10 +2,12 @@
 import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelConfidenceLabel, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
 import { bossGroups, intelDetail, intelEntry, entryPlaces, placeLink } from '#shared/dmz-stations.mjs'
+import { bossPlaybook } from '#shared/dmz-playbooks.mjs'
 
 // Boss Board station: the named targets with where players find them and what
-// they drop, then the forces that escalate around you. Every card opens its
-// full entry in the drawer.
+// they drop, then the forces that escalate around you. A card with a playbook
+// opens into how to find and kill the boss; every card opens its full entry
+// in the drawer.
 type Entry = (typeof dmzIntel)[number]
 const icon = dmzStations.find(station => station.id === 'boss')!.icon
 const groups = bossGroups()
@@ -47,6 +49,10 @@ const tier = (entry: Entry) => intelDetail(entry, 'Tier') ? `Tier ${intelDetail(
             <div v-if="drops(entry)"><dt>Drops</dt><dd>{{ drops(entry) }}</dd></div>
             <div v-if="way(entry)"><dt>Find</dt><dd>{{ way(entry) }}</dd></div>
           </dl>
+          <details v-if="bossPlaybook(entry.id)" class="bb-how">
+            <summary class="dmz-mono">How to find and kill<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <DmzPlaybook :id="entry.id" />
+          </details>
           <DmzIntelLink :id="entry.id" class="bb-open dmz-mono">Full intel<span class="sr-only"> on {{ entry.name }}</span> <span aria-hidden="true">→</span></DmzIntelLink>
         </article>
       </div>
@@ -76,6 +82,11 @@ const tier = (entry: Entry) => intelDetail(entry, 'Tier') ? `Tier ${intelDetail(
 .bb-place:hover { border-color: var(--dz-ink); }
 .bb-place .dmz-mono { font-size: 0.6875rem; color: var(--dz-muted); }
 .bb-open { align-self: flex-start; display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--dz-ink) !important; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-underline-offset: 0.25em; }
+.bb-how summary { display: inline-flex; align-items: center; gap: 0.375rem; min-height: 2.75rem; cursor: pointer; list-style: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-accent); }
+.bb-how summary::-webkit-details-marker { display: none; }
+.bb-how summary svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s; }
+.bb-how[open] summary svg { transform: rotate(180deg); }
+.bb-grid > .bb-card:has(.bb-how[open]) { grid-column: 1 / -1; }
 .bb-card:has(.bb-open.is-open) { border-color: var(--dz-accent); box-shadow: inset 3px 0 var(--dz-accent); }
 @media (max-width: 899px) {
   .bb-grid { grid-template-columns: minmax(0, 1fr); }
