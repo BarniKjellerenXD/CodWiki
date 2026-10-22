@@ -2911,7 +2911,7 @@ const NAV_MODES = [
     "name": "DMZ",
     "title": "Modern Warfare 4 · DMZ",
     "route": "/dmz",
-    "summary": "Modern Warfare 4 · 15 pages · Orders tracker"
+    "summary": "Modern Warfare 4 · 16 pages · Orders tracker"
   }
 ]
 const NAV_MODE_ENTRIES = [
@@ -3122,6 +3122,21 @@ const NAV_MODE_ENTRIES = [
     "section": "DMZ progression guide",
     "label": "Guide station",
     "url": "/dmz/guide",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-gunsmith",
+    "map": "dmz-gunsmith",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ meta weapons: the guns players on Reddit recommend, side by side with guide-site tier lists, plus how to get each gun through Weapon Manuals, the Gunsmith and blueprints.",
+    "kind": "guide",
+    "section": "DMZ meta weapons",
+    "label": "Gunsmith station",
+    "url": "/dmz/gunsmith",
     "accel": null,
     "icon": "◇"
   },

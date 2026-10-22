@@ -17756,6 +17756,15 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction What to do next in Modern Warfare 4 DMZ, from your first deploy to the endgame: early, mid and late game steps in order, which deployment and Dynamic Ops to pick, what to print and farm, and which Lieutenants to hunt first."
   },
   {
+    "id": "dmz-gunsmith",
+    "name": "DMZ meta weapons",
+    "map": "",
+    "kind": "DMZ",
+    "context": "Modern Warfare 4 · DMZ",
+    "route": "/dmz/gunsmith",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ meta weapons: the guns players on Reddit recommend, side by side with guide-site tier lists, plus how to get each gun through Weapon Manuals, the Gunsmith and blueprints."
+  },
+  {
     "id": "dmz-briefing",
     "name": "How DMZ works",
     "map": "",

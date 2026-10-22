@@ -3838,7 +3838,7 @@ export const intelData = [
       ['Spend at', 'Operators station > Traits menu; points can be banked'],
       ['Permanence', 'Locked once chosen; branch alternatives close; reset only by Prestige'],
       ['MIA effect', 'More traits = higher MIA recovery cost'],
-      ['Named traits', 'Warfighter: Quick Fix, Possum · Survivalist: Last Stand'],
+      ['Named traits', 'Warfighter: Quick Fix, Possum'],
       ['Warfighter majors', '3: Combat Resistance / Equipment Professional; 6: Quick Fix / Viper Sense; 9: Adaptive Restock / Possum'],
       ['Scout majors', '3: Container Looter / Hostile Looter; 6: UAV Upgrade / Field Crafting; 9: Thermal Padding / Overwatch'],
       ['Survivalist majors', '3: Consumable Duration / Faster Revive; 6: Free Revive / Impact Smokes; 9: Die Hard / Numb the Pain'],
@@ -3854,7 +3854,7 @@ export const intelData = [
     details: [
       ['Examples', 'Adrenaline Burst: kill resets tactical sprint · Equipment Professional: slowly recharges used Lethals and Tacticals · Combat Resistance: less explosive damage and Tactical effects · Viper Sense: hidden from thermal optics and AI targeting · Quick Fix: shorter health regen delay after a kill · Possum: once per match self revive into Last Stand with full health · Adaptive Restock: enemies drop one extra item'],
     ],
-    note: 'blog lists six Main Traits plus one random Minor Trait per tree but does not mark which one is the Minor',
+    note: 'The blog lists six Main Traits plus one random Minor per tree without marking the Minor. In-game captures show the Minor is the first one listed: Adrenaline Burst, Investor and Air Superiority.',
     confidence: 'official', sources: ['callofduty-call-of-duty-modern-warfare'],
   },
   {
@@ -3863,7 +3863,7 @@ export const intelData = [
     details: [
       ['Examples', 'Investor: slightly more cash extracted · Hostile Looter: enemies sometimes drop an Uncommon printer ingredient, very small chance of Rare · Container Looter: chance of an extra item in containers · Thermal Padding: hidden from UAVs; Advanced UAVs treated as UAV · UAV Upgrade: longer range and duration; upgrades to Advanced UAV · Overwatch: UAV towers you activate never expire · Field Crafting: craft from Common printer resources while deployed'],
     ],
-    note: 'blog lists six Main Traits plus one random Minor Trait per tree but does not mark which one is the Minor',
+    note: 'The blog lists six Main Traits plus one random Minor per tree without marking the Minor. In-game captures show the Minor is the first one listed: Adrenaline Burst, Investor and Air Superiority.',
     confidence: 'official', sources: ['callofduty-call-of-duty-modern-warfare'],
   },
   {
@@ -3872,7 +3872,7 @@ export const intelData = [
     details: [
       ['Examples', 'Air Superiority: longer UAV tower and SAM site duration · Faster Revive: faster revives · Consumable Duration: consumables last longer · Impact Smokes: releases smoke when downed · Free Revive: auto-repairs your first Wound · Numb the Pain: revives apply Painkillers and Smelling Salts effects · Die Hard: nearing an exfil in Last Stand calls it automatically; infinite bleed-out in Last Stand'],
     ],
-    note: 'blog lists six Main Traits plus one random Minor Trait per tree but does not mark which one is the Minor',
+    note: 'The blog lists six Main Traits plus one random Minor per tree without marking the Minor. In-game captures show the Minor is the first one listed: Adrenaline Burst, Investor and Air Superiority.',
     confidence: 'official', sources: ['callofduty-call-of-duty-modern-warfare'],
   },
   {
@@ -3885,7 +3885,7 @@ export const intelData = [
     summary: 'Killing an enemy resets Tactical Sprint.',
     details: [
       ['Tree', 'Warfighter'],
-      ['Type', 'Major'],
+      ['Type', 'Minor'],
     ],
     confidence: 'confirmed', sources: ['gamelevate-modern-warfare-4-dmz-operator', 'codmunity-traits', 'xbox-call-of-duty-modern-warfare'],
   },
@@ -3969,7 +3969,7 @@ export const intelData = [
     summary: 'Slightly increases the cash you extract.',
     details: [
       ['Tree', 'Scout'],
-      ['Type', 'Major'],
+      ['Type', 'Minor'],
     ],
     confidence: 'confirmed', sources: ['gamelevate-modern-warfare-4-dmz-operator', 'codmunity-traits'],
   },
@@ -4062,7 +4062,7 @@ export const intelData = [
     summary: 'Captured UAV Towers and SAM Sites stay active longer.',
     details: [
       ['Tree', 'Survivalist'],
-      ['Type', 'Major'],
+      ['Type', 'Minor'],
     ],
     confidence: 'confirmed', sources: ['gamelevate-modern-warfare-4-dmz-operator', 'codmunity-traits'],
   },

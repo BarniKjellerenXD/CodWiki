@@ -4,6 +4,7 @@ import fs from 'node:fs'
 import { dmzStations, dmzPages, dmzOrders } from '../shared/dmz.mjs'
 import { dmzIntel, intelCategories } from '../shared/dmz-intel.mjs'
 import { hajinPins } from '../shared/dmz-map.mjs'
+import { traitRule } from '../shared/dmz-traits.mjs'
 import { resolvePageSeo, sitemapUrls, DEFAULT_SITE_URL } from '../shared/seo.mjs'
 import {
   intelStations, intelHandoffs, intelEverything, intelHome, intelHomeLabel, categoryHome, stationOf, bossGroups,
@@ -63,7 +64,9 @@ test('station facts count what the stations show', () => {
   const groups = Object.fromEntries(bossGroups().map(group => [group.id, group.entries.length]))
   assert.match(fact('boss'), new RegExp(`${groups.lieutenants} Lieutenants · ${groups.commanders} Commanders`))
   assert.match(fact('printer'), new RegExp(`${printerRecipes.length} recipes`))
-  assert.match(fact('operators'), new RegExp(`${dmzIntel.filter(entry => entry.category === 'traits' && entry.type === 'Trait').length} traits`))
+  // The official total; the trees on the page draw every slot of it.
+  assert.match(fact('operators'), /66 traits · 22 per tree, 3 trees/)
+  assert.match(traitRule('Trait count').value, /^66 traits: 22 per tree/)
 })
 
 test('the Boss Board shows every enemy and traits sort into three trees', () => {

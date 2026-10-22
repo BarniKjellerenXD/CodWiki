@@ -42,8 +42,16 @@ export const dmzStations = [
   {
     id: 'operators', label: 'Operators', title: 'Operators and traits', route: '/dmz/operators',
     icon: 'M12 11a4 4 0 1 0 0-8a4 4 0 1 0 0 8 M4 21c0-4 4-6 8-6s8 2 8 6',
-    desc: 'The Warfighter, Scout and Survivalist trait trees side by side, plus Active Duty slots, MIA recovery and Dog Tag levels.',
-    facts: ['33 traits · Warfighter, Scout, Survivalist', '18 Dog Tag levels, Steel to Onyx III'],
+    desc: 'The Warfighter, Scout and Survivalist trait trees drawn like the game screen. Plan where your 18 points go and read what players say about each trait.',
+    // Counts match shared/dmz-traits.mjs; tests/dmz-traits.test.mjs checks them.
+    facts: ['66 traits · 22 per tree, 3 trees', '18 Trait Points · plan a build'],
+  },
+  {
+    // Counts match shared/dmz-weapons.mjs; tests/dmz-weapons.test.mjs checks them.
+    id: 'gunsmith', label: 'Gunsmith', title: 'Meta weapons', route: '/dmz/gunsmith',
+    icon: 'M2 10h14l3-2h3v4h-6l-2 2h-3l-1 4H6l1-4H2z M9 10v2',
+    desc: 'The guns players on r/DMZ say they win with, next to four guide-site tier lists, and every way to get a gun in DMZ.',
+    facts: ['33 launch weapons · 4 site tier lists', 'Reddit picks from 20 Oct on'],
   },
   {
     id: 'briefing', label: 'Briefing', title: 'How DMZ works', route: '/dmz/briefing',
@@ -145,6 +153,11 @@ export const dmzPages = [
     description: 'What to do next in Modern Warfare 4 DMZ, from your first deploy to the endgame: early, mid and late game steps in order, which deployment and Dynamic Ops to pick, what to print and farm, and which Lieutenants to hunt first.',
   },
   {
+    path: '/dmz/gunsmith', name: 'DMZ meta weapons',
+    title: 'DMZ Meta Weapons: What Players Use — MW4 DMZ — CodWiki',
+    description: 'Modern Warfare 4 DMZ meta weapons: the guns players on Reddit recommend, side by side with guide-site tier lists, plus how to get each gun through Weapon Manuals, the Gunsmith and blueprints.',
+  },
+  {
     path: '/dmz/briefing', name: 'How DMZ works',
     title: 'How DMZ Works in Modern Warfare 4 — CodWiki',
     description: 'Modern Warfare 4 DMZ basics: lobbies, the FOB, Active Duty Operators and MIA, missions, threat levels, DMZ Cash and progression.',
@@ -166,6 +179,10 @@ export const dmzLabPages = [
   { path: '/dmz/lab/guide-vest', name: 'Guide G2: Pick your vest', title: 'Concept G2: Pick Your Vest — DMZ Lab — CodWiki', description: 'Draft: the DMZ guide starts by asking which vest you wear, then shows that tier as a briefing.' },
   { path: '/dmz/lab/guide-tabs', name: 'Guide G3: Tabs and dropdowns', title: 'Concept G3: Guide Tabs — DMZ Lab — CodWiki', description: 'Draft: the DMZ guide as Early, Mid and Late tabs, each a list of questions that open into answers.' },
   { path: '/dmz/lab/guide-ask', name: 'Guide G4: Ask the handler', title: 'Concept G4: Ask the Handler — DMZ Lab — CodWiki', description: 'Draft: three quick questions about your vest, your goal and your squad lead to a short DMZ plan.' },
+  { path: '/dmz/lab/traits', name: 'Trait tree concepts', title: 'Trait Tree Concepts — DMZ Lab — CodWiki', description: 'Draft layouts for a visual MW4 DMZ trait tree, compared side by side with their scores. Concepts only.' },
+  { path: '/dmz/lab/traits-replica', name: 'Traits T1: In-game replica', title: 'Concept T1: Trait Tree Replica — DMZ Lab — CodWiki', description: 'Draft: the DMZ trait trees drawn like the in-game screen, climbed from the bottom, with random Minors shown as question marks.' },
+  { path: '/dmz/lab/traits-planner', name: 'Traits T2: Build planner', title: 'Concept T2: Trait Build Planner — DMZ Lab — CodWiki', description: 'Draft: plan where 18 DMZ Trait Points go, one pick per row and nine per tree, saved on this device.' },
+  { path: '/dmz/lab/traits-forks', name: 'Traits T3: Fork comparison', title: 'Concept T3: Trait Forks — DMZ Lab — CodWiki', description: 'Draft: each DMZ trait tree as its three Major forks side by side, with what players say about each.' },
 ]
 
 // Briefing sections, in page order. Search entries link to these anchors.
