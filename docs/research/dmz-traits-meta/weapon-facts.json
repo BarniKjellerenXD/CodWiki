@@ -1,0 +1,1537 @@
+{
+ "weapons": [
+  {
+   "name": "Han 86",
+   "class": "Assault Rifle",
+   "aliases": [
+    "HAN 86",
+    "Han X20 Skybreaker (Apex conversion)",
+    "Beta Forged (Beta reward blueprint)"
+   ],
+   "notes": "DMZ Gunsmith menu price 6,000 DMZ Cash (DMZ Codex). The Beta Forged Han 86 blueprint was the reward for completing the MW4 Beta; not every player has it.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "M4",
+   "class": "Assault Rifle",
+   "aliases": [
+    "M4 Hurricane (Apex conversion)",
+    "Inner Circuit (digital pre-order blueprint)"
+   ],
+   "notes": "The official DMZ guide says a base M4 costs about 5,000 DMZ Cash. DMZ Codex lists 6,250 as the menu price, and GamerFuzion says the early-access menu showed 6,250.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "name": "Hyeon Burst",
+   "class": "Assault Rifle",
+   "aliases": [
+    "HYEON BURST",
+    "Hyeon Hyperburst (Apex conversion)"
+   ],
+   "notes": "Burst rifle. Gunsmith price 5,250. Jang-ui drops a Hyeon Burst (see Paektu).",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "Patriot XMR",
+   "class": "Assault Rifle",
+   "aliases": [
+    "PARTRIOT XMR (misspelling on WZStats)",
+    "Patriot XMR Volt (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 6,500. Base of the Doctor's signature weapon Doctor's Salve.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/wzstats-mw4-dmz-meta.html",
+    "raw/dmzcodex-boss-the-doctor.html"
+   ]
+  },
+  {
+   "name": "Kastov 762",
+   "class": "Assault Rifle",
+   "aliases": [
+    "KASTOV 762",
+    "Kastov",
+    "Kastov ARC (Apex conversion)",
+    "Voltspine (Vault Edition blueprint)"
+   ],
+   "notes": "Gunsmith price 5,500.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Oden",
+   "class": "Assault Rifle",
+   "aliases": [
+    "Oden Sentinel (Apex conversion)"
+   ],
+   "notes": "Bullpup rifle in 12.7x55mm. No DMZ Gunsmith price found.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": "Axion",
+   "class": "Assault Rifle",
+   "aliases": [
+    "Axion Clearcut (Apex conversion)"
+   ],
+   "notes": "Subsonic .300 BLK rifle. The official weapon text says its subsonic rounds hide enemy skulls on kills. No DMZ Gunsmith price found.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": "Cronen Squall",
+   "class": "Assault Rifle",
+   "aliases": [
+    "Cronen Maelstrom (Apex conversion)"
+   ],
+   "notes": "Listed as an Assault Rifle, but the official weapon text calls it a bullpup marksman rifle in 6.8 Wrath. No DMZ Gunsmith price found.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": "ISO Nightshade",
+   "class": "SMG",
+   "aliases": [
+    "ISO",
+    "Iso Nightshade",
+    "Nightshade",
+    "ISO Trace (Apex conversion)",
+    "La Sombra Venenosa (Vault Edition blueprint)"
+   ],
+   "notes": "DMZ Codex lists 3,000, but its guide says that SMG price came from an earlier preview capture and is unconfirmed. The 20 Oct DMZ update fixed the ISO Apex Attachment not working as intended in DMZ.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "VEL 46",
+   "class": "SMG",
+   "aliases": [
+    "VEL 46 Snap (Apex conversion)"
+   ],
+   "notes": "DMZ Codex lists 3,000, from an earlier preview capture; unconfirmed.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "Wz.55 Striga",
+   "class": "SMG",
+   "aliases": [
+    "WZ.55 Striga",
+    "Wz. 55 Striga",
+    "WZ.55 Striga Rampage (Apex conversion)"
+   ],
+   "notes": "9x18mm SMG. DMZ Codex lists 3,000, from an earlier preview capture; unconfirmed.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/codmunity-mw4-dmz-meta.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "PPSh-41",
+   "class": "SMG",
+   "aliases": [
+    "PPSH-41",
+    "PPSh-41 Ember (Apex conversion)"
+   ],
+   "notes": "71-round magazine, 1110 RPM (official). DMZ Codex lists 3,000, from an earlier preview capture; unconfirmed.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "X-58 Nyx",
+   "class": "SMG",
+   "aliases": [
+    "X-58 NYX",
+    "NYX",
+    "X-58 Void (Apex conversion)"
+   ],
+   "notes": "5.8x21mm SMG with a built-in suppressor (official). DMZ Codex lists 3,000, from an earlier preview capture; unconfirmed. Base of the Warden's Incarcerator.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/destructoid-mw4-dmz-weapons-tier-list.html",
+    "raw/dmzcodex-boss-the-warden.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "Rezi 12",
+   "class": "Shotgun",
+   "aliases": [
+    "REZI 12",
+    "Rezi 12 Enforcer (Apex: pump action with explosive slugs)",
+    "Shattered Code (Vault Edition blueprint)"
+   ],
+   "notes": "Semi-auto 12-gauge. Gunsmith price 4,000. Launch patch fixed the Firing Range showing 0.00 TTK for it.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "Warlord",
+   "class": "Shotgun",
+   "aliases": [
+    "Warlord Lumen (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 3,500. Iskra was recorded dropping a Rare Warlord.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-boss-iskra.html"
+   ]
+  },
+  {
+   "name": "FiNN LMG",
+   "class": "LMG",
+   "aliases": [
+    "Finn LMG",
+    "FINN LMG",
+    "FiNN Adverse (Apex conversion)",
+    "Terminal (Store blueprint, costs cash)"
+   ],
+   "notes": "Gunsmith price 8,000.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "name": "Type 73",
+   "class": "LMG",
+   "aliases": [
+    "TYPE 73",
+    "Type 73 Assault (Apex: top magazine with explosive rounds)"
+   ],
+   "notes": "Gunsmith price 7,500. Base of Bale's Legendary Dreadnought.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-boss-bale.html"
+   ]
+  },
+  {
+   "name": "APOC-338",
+   "class": "LMG",
+   "aliases": [
+    "APOC-338 Praetor (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 7,750.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "MAR-9",
+   "class": "Marksman Rifle",
+   "aliases": [
+    "Mar-9",
+    "MAR-9 Auto (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 6,500. Gorani drops a MAR-9; one site says his Incisor is built on it.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Oris 8.6",
+   "class": "Marksman Rifle",
+   "aliases": [
+    "ORIS 8.6",
+    "Oris 8.6 Razor (Apex conversion)",
+    "Volt-Edge (Vault Edition blueprint)"
+   ],
+   "notes": "Gunsmith price 7,000. Scavenger was recorded dropping a Rare Oris 8.6.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-boss-scavenger.html"
+   ]
+  },
+  {
+   "name": "Mosin-Nagant",
+   "class": "Marksman Rifle",
+   "aliases": [
+    "Mosin",
+    "Mosin Harpoon (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 7,500; a Rare one was a Vendor offer at 32,750.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "KG-7 Vulcan",
+   "class": "Sniper Rifle",
+   "aliases": [
+    "KG-7",
+    "KG-7 Drillcharge (Apex conversion)"
+   ],
+   "notes": "Gunsmith price 16,000.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Astaroth .57",
+   "class": "Sniper Rifle",
+   "aliases": [
+    "Astaroth .57 Infiltrator (Apex conversion)"
+   ],
+   "notes": "Heavy sniper rifle firing 14.5mm rounds, 3-round magazine (official). Gunsmith price 24,000. Its Apex cuts the magazine to 1.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Signal 50",
+   "class": "Sniper Rifle",
+   "aliases": [
+    "Signal .50",
+    "Signal",
+    "Signal Inferno (Apex: incendiary .50 rounds, more damage to vehicles and Killstreaks)"
+   ],
+   "notes": "Gunsmith price 14,000.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzradar-meta.html"
+   ]
+  },
+  {
+   "name": "SANG 9mm",
+   "class": "Pistol",
+   "aliases": [
+    "Sang 9mm",
+    "SANG Breach (Apex: one-shell underbarrel shotgun)"
+   ],
+   "notes": "One guide says the Free Loadout gives a random primary plus a Sang 9mm.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/game8-mw4-how-to-unlock-weapons.html"
+   ]
+  },
+  {
+   "name": "Krait P68",
+   "class": "Pistol",
+   "aliases": [
+    "Krait P68 Commando (Apex conversion)"
+   ],
+   "notes": null,
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": ".50 GS",
+   "class": "Pistol",
+   "aliases": [
+    "GS Magna (Apex conversion)"
+   ],
+   "notes": null,
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": "Mojave .357",
+   "class": "Pistol",
+   "aliases": [
+    "Mojave Lawless (Apex conversion)"
+   ],
+   "notes": null,
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "name": "PILA",
+   "class": "Launcher",
+   "aliases": [],
+   "notes": "Launchers take no Attachments or Apex Attachments.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "RPG-8",
+   "class": "Launcher",
+   "aliases": [],
+   "notes": "Unguided anti-vehicle rockets. No attachments.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "JOKR",
+   "class": "Launcher",
+   "aliases": [],
+   "notes": "Lock-on launcher that hits vehicles from above. No attachments.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "PM-40 Anvil",
+   "class": "Launcher",
+   "aliases": [],
+   "notes": "Pump-action 43mm grenade launcher. No attachments.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "FSS Carbon Edge 1095",
+   "class": "Melee",
+   "aliases": [
+    "Combat Knife (name DMZ Codex uses)",
+    "Sombra Besada (Vault Edition Combat Knife blueprint)"
+   ],
+   "notes": "The only launch melee weapon. The official DMZ guide counts 32 guns and launchers on the Gunsmith Buy New Weapon screen, without the knife, but in-game footage described by GamerFuzion also shows a Melee tab there. Activision does not say outright that the Combat Knife and the FSS Carbon Edge 1095 are the same item; DMZ Codex treats them as one.",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "name": "Dreadnought",
+   "class": "LMG (Lieutenant signature variant of the Type 73; not one of the 33 launch weapons)",
+   "aliases": [],
+   "notes": "Bale's Legendary LMG with a 100-round box magazine, shown in the official Dynamic Ops trailer. Value 16K in the trailer (CODMunity, DMZ Codex) but $8,000 per AllThingsHow. Insider Gaming lists a plain Type 73 as Bale's drop.",
+   "sources": [
+    "raw/codmunity-dmz-news-2026-10-06.html",
+    "raw/dmzcodex-boss-bale.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Incisor",
+   "class": "Marksman Rifle (Lieutenant signature variant of the MAR-9; not one of the 33)",
+   "aliases": [],
+   "notes": "Gorani's Legendary marksman rifle, value $6,900, built on the MAR-9 per AllThingsHow (read twice). DMZ Codex marks the name as community-reported and unconfirmed. Insider Gaming lists a MAR-9 as Gorani's drop.",
+   "sources": [
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/dmzcodex-boss-groan-gorani.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Doctor's Salve",
+   "class": "Assault Rifle (Lieutenant signature variant of the Patriot XMR; DMZ Codex and AllThingsHow call it a battle rifle)",
+   "aliases": [],
+   "notes": "The Doctor's Legendary Patriot XMR, recorded value $6,900. Insider Gaming lists a Patriot XMR blueprint as his drop.",
+   "sources": [
+    "raw/dmzcodex-boss-the-doctor.html",
+    "raw/dmzcodex-weapons.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Incarcerator",
+   "class": "SMG (Lieutenant signature variant of the X-58 Nyx)",
+   "aliases": [],
+   "notes": "The Warden's Ultra X-58 Nyx, recorded value $8,500. Insider Gaming lists an X-58 NYX blueprint as his drop.",
+   "sources": [
+    "raw/dmzcodex-boss-the-warden.html",
+    "raw/dmzcodex-weapons.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Paektu",
+   "class": "Assault Rifle (Lieutenant signature variant of the Hyeon Burst)",
+   "aliases": [],
+   "notes": "Named only by AllThingsHow (one site, read twice): Jang-ui's Ultra Hyeon Burst, $11,200, five attachments. DMZ Codex recorded an Epic Hyeon Burst ($2,800) from him; PC Gamer got a kitted burst rifle unique to the fight plus a Weapon Manual. Treat the name as unconfirmed.",
+   "sources": [
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/dmzcodex-boss-jang-ui.html",
+    "raw/pcgamer-mw4-review-in-progress.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Widowmaker",
+   "class": "Shotgun (Lieutenant signature weapon, base not stated)",
+   "aliases": [],
+   "notes": "Named only by AllThingsHow (one site, read twice): Iskra's Legendary shotgun, $3,700. DMZ Codex and Insider Gaming record a Warlord as her drop. Treat the name as unconfirmed.",
+   "sources": [
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/dmzcodex-boss-iskra.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Revenant",
+   "class": "Marksman Rifle (Lieutenant signature weapon, base not stated)",
+   "aliases": [],
+   "notes": "The Chemist's Legendary marksman rifle, $7,500 per AllThingsHow. DMZ Codex marks it community-reported and unconfirmed. Insider Gaming lists an Oris 8.6 blueprint as the Chemist's drop.",
+   "sources": [
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/dmzcodex-boss-chemist.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "The Kraken",
+   "class": "Unknown (Lieutenant signature weapon, unconfirmed)",
+   "aliases": [],
+   "notes": "Roze's rifle. AllThingsHow says some matches drop The Kraken and others an Astaroth .57 (Rare, $6,400). DMZ Codex marks the name unconfirmed. Insider Gaming lists an Astaroth .57 blueprint.",
+   "sources": [
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/dmzcodex-boss-roze.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "High Roller's Fortune",
+   "class": "Unknown (Lieutenant signature weapon, unconfirmed)",
+   "aliases": [],
+   "notes": "Jin-Tae's weapon per a community report that DMZ Codex marks unconfirmed. Insider Gaming (blueprint) and AllThingsHow list an ISO Nightshade for Jin-Tae.",
+   "sources": [
+    "raw/dmzcodex-boss-jin-tae.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  }
+ ],
+ "dmzBalance": [
+  {
+   "fact": "MW4 launches with 33 weapons shared by Multiplayer and DMZ (Warzone joins in Season 1): 24 primaries, 8 secondaries (4 pistols, 4 launchers) and 1 melee knife.",
+   "date": "2026-10-19",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "fact": "The official DMZ guide says the Gunsmith Buy New Weapon screen shows all 32 launch weapons in 8 classes: AR 8, SMG 5, Shotgun 2, LMG 3, Marksman 3, Sniper 3, Pistol 4, Launcher 4. The knife is not in that count, so 32 + 1 melee = 33. In-game footage described by GamerFuzion also shows a Melee tab on that screen.",
+   "date": "2026-10-09",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/gamerfuzion-dmz-gunsmith-32-weapons.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "fact": "Per the official AMA (as reported by GamerFuzion), DMZ has its own damage tuning. It is close to Warzone but built around DMZ items such as plate carriers. No source gives per-weapon DMZ numbers.",
+   "date": "2026-10-09",
+   "sources": [
+    "raw/gamerfuzion-dmz-progression-carry-over.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "fact": "Infinity Ward said there are currently no armor-piercing rounds or a similar field upgrade in DMZ (AMA answer).",
+   "date": "2026-10-09",
+   "sources": [
+    "raw/gamerfuzion-dmz-survival-rules-ama.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "fact": "Tac Sprint is on by default in DMZ. In Multiplayer it sits on the Blood Rush perk.",
+   "date": "2026-10-21",
+   "sources": [
+    "raw/gamerfuzion-dmz-progression-carry-over.html",
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "fact": "Per the 9 Oct AMA (GamerFuzion summary), weapon levels, attachment unlocks and camo progress are shared between modes. The right to buy a gun in the DMZ Gunsmith is not shared: you need that gun's Weapon Manual. (The 19 Oct arsenal blog words this differently; see gaps.)",
+   "date": "2026-10-12",
+   "sources": [
+    "raw/gamerfuzion-dmz-progression-carry-over.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "fact": "Early Access update of 20 Oct: no weapon balance changes. DMZ fixes include the ISO Nightshade Apex Attachment not working as intended in DMZ.",
+   "date": "2026-10-20",
+   "sources": [
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/gamerfuzion-dmz-ea-patch-notes-oct20.html",
+    "raw/dmzradar-news.html"
+   ]
+  },
+  {
+   "fact": "Launch patch notes (21 Oct): a deep balance pass on all weapons since the Beta. SMGs are stronger at close to mid range, one-shot weapons get flinch and damage tuning, and attachments were retuned. No numbers are given and nothing is marked DMZ-only.",
+   "date": "2026-10-21",
+   "sources": [
+    "raw/cod-patchnotes-mw4-launch.html",
+    "raw/gamerfuzion-launch-patch-notes-explained.html"
+   ]
+  },
+  {
+   "fact": "DMZ Radar reports that on 28 Sep Infinity Ward said launch TTK is close to Beta Weekend Two, SMGs get buffs and assault rifles stay as they are. This is second-hand; the original post was not saved.",
+   "date": "2026-09-28",
+   "sources": [
+    "raw/dmzradar-meta.html"
+   ]
+  },
+  {
+   "fact": "Other weapon fixes on 20-21 Oct: the Rezi 12 showed 0.00 TTK in the Firing Range; the Gunsmith Attachment menu could stay on screen during deployment; Switch 2 players could not buy saved Blueprint changes.",
+   "date": "2026-10-21",
+   "sources": [
+    "raw/cod-patchnotes-mw4-launch.html"
+   ]
+  },
+  {
+   "fact": "Open DMZ known issues on the official Trello (21 Oct): the Free Loadout can load you in with no weapons; applying some camos or reticles in the DMZ Gunsmith can take DMZ Cash.",
+   "date": "2026-10-21",
+   "sources": [
+    "raw/trello-board-mw4-cards.json (+ raw/trello-board-mw4-lists.json, raw/trello-card-8JPTQiXo.json)"
+   ]
+  },
+  {
+   "fact": "Gunsmith builds take at most 5 attachments plus a free Apex slot. Guns found in Hajin can have up to 8 attachments, and boss weapons can go past five.",
+   "date": "2026-10-09",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/destructoid-dmz-impressions.html"
+   ]
+  },
+  {
+   "fact": "Each attachment slot costs more than the last (official). DMZ Radar lists 1,000 / 5,000 / 10,000 / 25,000 / 50,000. DMZ Codex shows a Han 86 cart: slot 1 (1,000) + slot 2 (5,000) + drum (15,000) + suppressor (15,000) = 36,000.",
+   "date": "2026-10-22",
+   "sources": [
+    "raw/dmzradar-meta.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "fact": "Full builds are expensive: Destructoid says a Manual gun with five attachments runs past six digits, and PC Gamer paid over $90,000 for one gun. DMZ Radar cites an official M4 example of 99,987 after a 5% discount.",
+   "date": "2026-10-22",
+   "sources": [
+    "raw/destructoid-dmz-impressions.html",
+    "raw/pcgamer-mw4-review-in-progress.html",
+    "raw/dmzradar-meta.html"
+   ]
+  },
+  {
+   "fact": "Weapons wear down. Damaged guns still work but handle worse.",
+   "date": "2026-10-22",
+   "sources": [
+    "raw/codmunity-dmz-guide.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "fact": "Hajin has four AI tiers: Grunts, Armored soldiers, Armored soldiers with gas masks and Faceless armored soldiers. CODMunity says Commanders (Colossus, Deathstalker and a battle tank) shrug off many standard weapons. The official weapon text says launchers are for vehicles and Killstreaks, and the Signal 50 Inferno Apex adds damage to vehicles and Killstreaks. No source says which gun works best on Commanders.",
+   "date": "2026-10-19",
+   "sources": [
+    "raw/codmunity-dmz-guide.html",
+    "raw/codmunity-dmz-bosses.html",
+    "raw/cod-blog-ready-for-launch-weapons.html"
+   ]
+  },
+  {
+   "fact": "In DMZ you may carry two primaries, two secondaries or one of each, plus a melee weapon; a Weapon Backpack (found or 3D printed) lets you bring more. DMZ Radar notes the 3D Printer makes gear, not guns.",
+   "date": "2026-10-19",
+   "sources": [
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzradar-weapons.html"
+   ]
+  }
+ ],
+ "access": [
+  {
+   "name": "Free Loadout (any gun)",
+   "how": "Choose the Free Loadout at Ready Up for basic gear and keep it if you extract. One guide says it gives a random primary plus a Sang 9mm. Known issue (21 Oct): some players load in with no weapons.",
+   "price": "Free",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/game8-mw4-how-to-unlock-weapons.html",
+    "raw/dmzcodex-free-loadout-guide.html",
+    "raw/trello-board-mw4-cards.json (+ raw/trello-board-mw4-lists.json, raw/trello-card-8JPTQiXo.json)"
+   ]
+  },
+  {
+   "name": "Gunsmith base weapon (any gun)",
+   "how": "The Gunsmith opens at DMZ level 10. Extract with a gun's Weapon Manual, then buy that base gun with DMZ Cash; locked guns tell you to extract the manual. Then pay for slots and attachments (attachments unlock by weapon level). Note: the 19 Oct arsenal blog reads as if MP or DMZ unlocks are enough; DMZ Codex flags this conflict.",
+   "price": "About 3,500 to 24,000 by gun in the DMZ Codex menu table (SMGs listed at 3,000 from an older, unconfirmed capture); a Gunsmith Discount (5% per DMZ Codex) unlocks through DMZ progression at the 3D Printer",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-weapon-manuals-guide.html",
+    "raw/cod-blog-ready-for-launch-weapons.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "Weapon Manuals",
+   "how": "Look in military containers and safes; Lieutenants can also drop rare manuals. Extracting one unlocks that gun for purchase and pays 5,000 DMZ Cash. Manuals seen so far include Mosin-Nagant, X-58 Nyx and Patriot XMR. Whether the unlock is shared with your squad is unconfirmed.",
+   "price": "Free (pays 5,000 on extract)",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-weapon-manuals-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/dmzradar-news.html",
+    "raw/pcgamer-mw4-review-in-progress.html"
+   ]
+  },
+  {
+   "name": "Owned blueprints (the \"free at level 10\" guns)",
+   "how": "Not a gift for everyone. Once the Gunsmith opens at level 10, each blueprint you already own can be taken once for free and goes to your Stash. Lose it and you can rebuy it at a discount. Owned via the Vault Edition (Kastov 762 Voltspine, ISO Nightshade La Sombra Venenosa, Rezi 12 Shattered Code, Oris 8.6 Volt-Edge, Combat Knife Sombra Besada), the digital pre-order (Inner Circuit M4) or as the reward for completing the Beta (Beta Forged Han 86).",
+   "price": "Free once (the Inner Circuit M4 showed $88,075 crossed out)",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+    "raw/windowscentral-dmz-high-tier-weapons-early.html",
+    "raw/dmzcodex-weapon-blueprints-guide.html"
+   ]
+  },
+  {
+   "name": "Vendor",
+   "how": "Unlocks at DMZ level 5. Sells weapons for DMZ Cash; stock refreshes now and then, and Vendor upgrades from the 3D Printer add more options.",
+   "price": "Varies (a Rare Mosin-Nagant was offered at 32,750)",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Loot in Hajin",
+   "how": "From enemies, Lieutenants, killed players, military containers in Police Stations and Compounds, supply drops and vaults. Rarity and attachments are random; higher threat zones give better guns. A gun you extract can go into the Gunsmith as a single copy, but if you lose it that model stays locked.",
+   "price": "Free",
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/game8-mw4-how-to-unlock-weapons.html"
+   ]
+  },
+  {
+   "name": "Lieutenant signature weapons",
+   "how": "Each Lieutenant's own weapon is a rare drop on the kill. If it does not drop, check the body for a key to their loot room, where it can usually be found. Drops are random.",
+   "price": null,
+   "sources": [
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/dmzcodex-bosses.html"
+   ]
+  },
+  {
+   "name": "Han 86",
+   "how": "Gunsmith after its Manual; Beta Forged blueprint for players who completed the Beta.",
+   "price": "6,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "M4",
+   "how": "Gunsmith after its Manual; Inner Circuit blueprint for digital pre-orders.",
+   "price": "6,250 in the menu (official example about 5,000)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "name": "Kastov 762",
+   "how": "Gunsmith after its Manual; Voltspine blueprint for the Vault Edition.",
+   "price": "5,500",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "ISO Nightshade",
+   "how": "Gunsmith after its Manual; La Sombra Venenosa blueprint for the Vault Edition; Jin-Tae can drop an ISO (a blueprint per Insider Gaming).",
+   "price": "3,000 (DMZ Codex, earlier capture, unconfirmed)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "PPSh-41",
+   "how": "Gunsmith after its Manual.",
+   "price": "3,000 (DMZ Codex, earlier capture, unconfirmed)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "X-58 Nyx",
+   "how": "Gunsmith after its Manual (manual seen in game); the Warden can drop the Ultra Incarcerator or an X-58 NYX blueprint.",
+   "price": "3,000 (DMZ Codex, earlier capture, unconfirmed)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzradar-news.html",
+    "raw/dmzcodex-boss-the-warden.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/dmzcodex-weapons.html"
+   ]
+  },
+  {
+   "name": "Rezi 12",
+   "how": "Gunsmith after its Manual; Shattered Code blueprint for the Vault Edition.",
+   "price": "4,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html"
+   ]
+  },
+  {
+   "name": "Type 73 / Dreadnought",
+   "how": "Type 73 from the Gunsmith after its Manual. Bale can drop a Type 73 or his Legendary Dreadnought.",
+   "price": "Type 73: 7,500. Dreadnought value: 16K (trailer) or $8,000 (AllThingsHow)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-boss-bale.html",
+    "raw/codmunity-dmz-news-2026-10-06.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "MAR-9 / Incisor",
+   "how": "MAR-9 from the Gunsmith after its Manual. Gorani drops a MAR-9 or, per AllThingsHow, the Legendary Incisor.",
+   "price": "MAR-9: 6,500. Incisor value: $6,900",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt"
+   ]
+  },
+  {
+   "name": "Signal 50",
+   "how": "Gunsmith after its Manual.",
+   "price": "14,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "KG-7 Vulcan",
+   "how": "Gunsmith after its Manual.",
+   "price": "16,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Oris 8.6",
+   "how": "Gunsmith after its Manual; Volt-Edge blueprint for the Vault Edition; Scavenger drops a Rare Oris 8.6; Insider Gaming lists an Oris 8.6 blueprint from the Chemist.",
+   "price": "7,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/cod-blog-dmz-fob-guide.html",
+    "raw/dmzcodex-boss-scavenger.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "Hyeon Burst",
+   "how": "Gunsmith after its Manual; Jang-ui drops a Hyeon Burst (Epic recorded by DMZ Codex; AllThingsHow also names an Ultra Paektu, unconfirmed elsewhere).",
+   "price": "5,250",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-boss-jang-ui.html",
+    "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "Patriot XMR",
+   "how": "Gunsmith after its Manual (manual seen in game); the Doctor drops the Legendary Doctor's Salve, and Insider Gaming lists a Patriot XMR blueprint from him.",
+   "price": "6,500",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzradar-news.html",
+    "raw/dmzcodex-boss-the-doctor.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "FiNN LMG",
+   "how": "Gunsmith after its Manual. A FiNN blueprint called Terminal is in the Store tab and costs cash.",
+   "price": "8,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/gamerfuzion-dmz-free-blueprints-lvl10.html"
+   ]
+  },
+  {
+   "name": "Mosin-Nagant",
+   "how": "Gunsmith after its Manual (manual seen in game); a Rare one appeared at the Vendor.",
+   "price": "7,500 (Vendor Rare: 32,750)",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzradar-news.html"
+   ]
+  },
+  {
+   "name": "Warlord",
+   "how": "Gunsmith after its Manual; Iskra drops a Rare Warlord (DMZ Codex, Insider Gaming).",
+   "price": "3,500",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/dmzcodex-boss-iskra.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  },
+  {
+   "name": "APOC-338",
+   "how": "Gunsmith after its Manual.",
+   "price": "7,750",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html"
+   ]
+  },
+  {
+   "name": "Astaroth .57",
+   "how": "Gunsmith after its Manual; Roze can drop an Astaroth .57 (a blueprint per Insider Gaming).",
+   "price": "24,000",
+   "sources": [
+    "raw/dmzcodex-gunsmith-weapons-guide.html",
+    "raw/insidergaming-dmz-bosses-locations-rewards.html"
+   ]
+  }
+ ],
+ "otherMetaLists": [
+  {
+   "site": "CODMunity",
+   "url": "https://codmunity.gg/mw4-dmz",
+   "date": "2026-10-22",
+   "mode": "DMZ",
+   "picks": [
+    "Absolute Meta: Han 86, PPSh-41, Kastov 762, ISO Nightshade, M4",
+    "Meta: VEL 46, Hyeon Burst, X-58 Nyx, Axion, Signal 50, Rezi 12, WZ.55 Striga, Mosin-Nagant, KG-7 Vulcan, Cronen Squall",
+    "Contender: Warlord, Oris 8.6, Oden, Astaroth .57, Patriot XMR, MAR-9, Type 73, FiNN LMG, APOC-338",
+    "Very Good (pistols): Krait P68, SANG 9mm, Mojave .357, .50 GS",
+    "Site pick rates: Han 86 52.6%, PPSh-41 16.1%, Kastov 762 8.6%, M4 6.4%, ISO Nightshade 4.7%"
+   ],
+   "raw": "raw/codmunity-mw4-dmz-meta.html",
+   "notes": "Same top order on its DMZ tier list page (raw/codmunity-tier-list-mw4-dmz.html). The page shows pick rates but does not say how they are measured."
+  },
+  {
+   "site": "WZStats",
+   "url": "https://wzstats.gg/mw4/dmz",
+   "date": "2026-10-22",
+   "mode": "DMZ (PvP)",
+   "picks": [
+    "Top tier: Han 86, M4, ISO Nightshade, Kastov 762, PPSh-41",
+    "A: Rezi 12, X-58 Nyx, Type 73, MAR-9, FiNN LMG, Signal 50, KG-7 Vulcan",
+    "B: Patriot XMR, Hyeon Burst, Oris 8.6",
+    "C: Krait P68",
+    "D: .50 GS, Oden, Axion, Cronen Squall, VEL 46, Wz.55 Striga, Warlord, APOC-338, Mosin-Nagant, Astaroth .57 and others"
+   ],
+   "raw": "raw/wzstats-mw4-dmz-meta.html",
+   "notes": "LoadoutVault recorded a different WZStats order on 21 Oct with the M4 first; that order matches the current WZStats PvE list. The WZStats DMZ loadouts page (raw/wzstats-mw4-dmz-loadouts.html) leads with a Han 86 kit."
+  },
+  {
+   "site": "WZStats",
+   "url": "https://wzstats.gg/mw4/dmz/pve",
+   "date": "2026-10-22",
+   "mode": "DMZ (PvE, against AI)",
+   "picks": [
+    "Top tier: M4, ISO Nightshade, Kastov 762, Type 73, X-58 Nyx, Oris 8.6",
+    "A: Han 86, PPSh-41, Rezi 12, MAR-9, FiNN LMG, Signal 50, KG-7 Vulcan",
+    "B: Patriot XMR, Hyeon Burst",
+    "C: Krait P68"
+   ],
+   "raw": "raw/wzstats-mw4-dmz-pve-meta.html",
+   "notes": "Top tier is the same six guns as the WZStats Multiplayer list."
+  },
+  {
+   "site": "Destructoid",
+   "url": "https://www.destructoid.com/modern-warfare-4-dmz-weapons-tier-list/",
+   "date": "2026-10-22",
+   "mode": "DMZ",
+   "picks": [
+    "S: Han 86, M4, PPSh-41, ISO Nightshade, X-58 NYX",
+    "A: Kastov 762, Rezi 12, Type 73, MAR-9, FiNN LMG, Signal 50, KG-7, Warlord, Mosin-Nagant, APOC-338",
+    "B: Patriot XMR, Hyeon Burst, Oris 8.6, .50 GS, Cronen Squall, Astaroth .57",
+    "C: Krait P68, Oden, Axion, VEL 46, Mojave .357, PM-40 Anvil, Wz.55 Striga, SANG 9mm, PILA, RPG-8, JOKR"
+   ],
+   "raw": "raw/destructoid-mw4-dmz-weapons-tier-list.html",
+   "notes": "The writer says some B and C guns are not yet assessed. The order is almost the same as the Skycoach list from a day earlier."
+  },
+  {
+   "site": "Skycoach (blog of a boosting and account-selling service)",
+   "url": "https://skycoach.gg/blog/call-of-duty/articles/mw-4-weapons-tier-list",
+   "date": "2026-10-21",
+   "mode": "DMZ (mainly PvP)",
+   "picks": [
+    "S: Han 86, M4, PPSh-41, ISO Nightshade, X-58 NYX",
+    "A: Kastov 762, Type 73, Rezi 12, MAR-9, FiNN LMG, Signal 50, KG-7 Vulcan, Warlord, APOC-338, Mosin-Nagant",
+    "B: Patriot XMR, Hyeon Burst, Oris 8.6, .50 GS, Cronen Squall, Astaroth .57",
+    "C: Krait P68, Oden, Axion, VEL 46, Mojave .357, PM-40 Anvil",
+    "D: Wz.55 Striga, SANG 9mm, PILA, RPG-8, JOKR",
+    "Writer's pairings: Han 86 + Rezi 12, or PPSh-41 + Signal 50"
+   ],
+   "raw": "raw/skycoach-mw4-dmz-weapons-tier-list.html",
+   "notes": "Commercial site that sells boosting and accounts; treat with care. Tier labels checked in the page HTML."
+  },
+  {
+   "site": "DMZ Radar (fan hub)",
+   "url": "https://dmzradar.com/meta.html",
+   "date": "2026-10-22",
+   "mode": "DMZ (PvP)",
+   "picks": [
+    "S: Han 86, M4, ISO Nightshade, Kastov 762, PPSh-41",
+    "A: Rezi 12, X-58 Nyx, Type 73, MAR-9, FiNN LMG, Signal .50, KG-7 Vulcan",
+    "B: Patriot XMR, Hyeon Burst, Oris 8.6",
+    "C: Krait P68"
+   ],
+   "raw": "raw/dmzradar-meta.html",
+   "notes": "Its S to C tiers match the WZStats DMZ PvP list gun for gun, so it is not independent. It says the reasons and builds behind it are Beta numbers. Change log for 22 Oct: Kastov 762 back to S, X-58 Nyx down from S."
+  },
+  {
+   "site": "LoadoutVault (fan guide)",
+   "url": "https://loadoutvault.com/mw4/dmz/tier-list/",
+   "date": "2026-10-21",
+   "mode": "DMZ (consensus)",
+   "picks": [
+    "1 M4, 2 Han 86, 3 ISO Nightshade, 4 PPSh-41, 5 Kastov 762, 6 X-58 Nyx, 7 Rezi 12, 8 Type 73, 9 Signal 50, 10 MAR-9"
+   ],
+   "raw": "raw/loadoutvault-mw4-dmz-tier-list.html",
+   "notes": "An average of WZStats, CODMunity, DMZ Radar and Skycoach, so not independent. Its starter loadouts page is raw/loadoutvault-mw4-dmz-starter-loadouts.html."
+  },
+  {
+   "site": "COD DMZ Wiki",
+   "url": "https://coddmz.wiki/loadouts/best-loadouts",
+   "date": "2026-10-21",
+   "mode": "DMZ",
+   "picks": [],
+   "raw": "raw/coddmzwiki-best-loadouts.html",
+   "notes": "Names no guns on purpose: it says a best-guns list one day into Early Access would be made up."
+  },
+  {
+   "site": "CODMunity",
+   "url": "https://codmunity.gg/mw4",
+   "date": "2026-10-22",
+   "mode": "Multiplayer",
+   "picks": [
+    "Absolute Meta: Han 86, VEL 46, KG-7 Vulcan, M4, ISO Nightshade",
+    "Meta: X-58 Nyx, Hyeon Burst, Kastov 762, WZ.55 Striga, Signal 50, Type 73"
+   ],
+   "raw": "raw/codmunity-mw4-meta.html"
+  },
+  {
+   "site": "WZStats",
+   "url": "https://wzstats.gg/mw4/meta",
+   "date": "2026-10-22",
+   "mode": "Multiplayer",
+   "picks": [
+    "Top tier: M4, ISO Nightshade, Kastov 762, Type 73, X-58 Nyx, Oris 8.6",
+    "A: Han 86, VEL 46, PPSh-41, Rezi 12, MAR-9, FiNN LMG, Oden, Signal 50, KG-7 Vulcan"
+   ],
+   "raw": "raw/wzstats-mw4-mp-meta.html"
+  },
+  {
+   "site": "Sportskeeda",
+   "url": "https://www.sportskeeda.com/call-of-duty-game/best-starting-meta-loadout-cod-modern-warfare-4-beta",
+   "date": "2026-10-22",
+   "mode": "Multiplayer",
+   "picks": [
+    "M4 (best starting loadout)"
+   ],
+   "raw": "raw/sportskeeda-mw4-beta-starting-meta-loadout.html",
+   "notes": "First published 21 Aug 2026 for the Beta, updated 22 Oct 2026 for launch (page metadata). Multiplayer only. No DMZ meta article from Sportskeeda found."
+  }
+ ],
+ "gaps": [
+  "Separate DMZ balance: the only non-Reddit source is the AMA summary (own damage tuning, close to Warzone, built around plate carriers). No official patch note or blog gives DMZ-only weapon numbers or says a gun was tuned only for DMZ.",
+  "Stopping Power rounds: no non-Reddit page was found saying this field upgrade is missing from DMZ. Only the no-AP-rounds answer was found.",
+  "Gunsmith prices were not found for the Axion, Oden, Cronen Squall, any pistol or any launcher. The SMG price (3,000) comes from an earlier capture and is unconfirmed. The official M4 example (about 5,000) and the menu price (6,250) differ.",
+  "Free Loadout contents (random primary plus Sang 9mm) come from one guide (Game8). Activision only says basic gear.",
+  "Purchase rule conflict: the 9 Oct FOB guide and the AMA say a Weapon Manual is needed, but the 19 Oct arsenal blog says MP or DMZ unlocks can be bought with DMZ Cash. In-game footage (via GamerFuzion) shows locked guns asking for the manual.",
+  "Whether a Weapon Manual unlock is shared with the squad is unconfirmed.",
+  "Lieutenant signature weapons: AllThingsHow sits behind a Cloudflare check, so only WebFetch summaries were saved (the original and a checker re-read; both give the same names and values), not the page itself. The Dreadnought value conflicts (16K vs $8,000). The Incisor base (MAR-9) comes from AllThingsHow only. Paektu and Widowmaker are named only by AllThingsHow; Revenant, The Kraken and High Roller's Fortune are marked unconfirmed by DMZ Codex.",
+  "Lieutenant locations differ between sites, for example Bale: Insider Gaming says Re-Education Center, CODMunity says the Tank Depot at Chang-san. Not checked further here.",
+  "Activision never says outright that the Vault Edition Combat Knife is the FSS Carbon Edge 1095. DMZ Codex treats them as one.",
+  "No DMZ meta or loadout article was found from Dexerto, CharlieIntel (search page loads by script), GameRant, Sportskeeda or Dot Esports (Dot Esports and esports.gg returned 403). IGN, Eurogamer, Polygon and VG247 were skipped because they block requests. DMZ Codex has no meta list.",
+  "Most DMZ meta lists copy each other: LoadoutVault averages four lists, DMZ Radar matches the WZStats DMZ PvP list tier for tier, and Destructoid is almost the same as Skycoach. CODMunity pick rates have no stated method. None cite in-game DMZ stats. Roughly three independent DMZ lists remain (CODMunity, WZStats, Skycoach/Destructoid).",
+  "The official launch blog gives two different unlock levels for some guns (table vs stat block, e.g. VEL 46 at 5 or 13). These are Multiplayer player levels.",
+  "The wiki detail \"Named pre launch: 13\" could not be checked against any saved page.",
+  "Slot pricing conflict: CODMunity (its beginner guide and its recap of the DMZ Progression trailer, raw/codmunity-dmz-news.html) says each new attachment slot costs 1,000, but the official DMZ guide says each slot costs more than the last (DMZ Radar: 1,000 / 5,000 / 10,000 / 25,000 / 50,000).",
+  "Pre-1 Sep 2026 sources dropped: PixelNitro, Dexerto (tier list and all-weapons page), Nintendo Life, FandomWire and Gameshorizon. No post-launch replacement was fetched for the Multiplayer Beta lists."
+ ],
+ "listCheck": {
+  "verdict": "The 33 names and 9 classes in existing-weapons.json match the official launch blog and launch patch notes.",
+  "count": "Both numbers are right. 33 is the whole game (24 primaries + 8 secondaries + 1 knife). The official DMZ guide counts 32 on the Gunsmith Buy New Weapon screen, without the knife (in-game footage also shows a Melee tab there). Suggest the line read: 33 weapons (32 guns and launchers + 1 knife), and drop the bare \"Weapons at launch: 32\".",
+  "dreadnought": "Not a separate launch weapon. It is Bale's Legendary Lieutenant version of the Type 73 with a 100-round box mag. Take it out of the launch-weapon Named examples, or label it as a Lieutenant variant.",
+  "balance_wording": "Change \"separate from MP and Warzone\" to: DMZ has its own damage tuning, close to Warzone, built around plate carriers; weapon levels and attachments are shared across modes. The wiki currently cites Reddit and YouTube for this; GamerFuzion's AMA summary is a non-Reddit source.",
+  "prices": "Menu prices on DMZ Codex differ from the wiki: Han 86 is 6,000 (wiki says 4,750, a discounted trailer price), M4 is 6,250 (official example about 5,000). The ISO 3,000 is from an earlier capture and is unconfirmed.",
+  "sources": [
+   "raw/cod-blog-ready-for-launch-weapons.html",
+   "raw/cod-patchnotes-mw4-launch.html",
+   "raw/cod-blog-dmz-fob-guide.html",
+   "raw/gamerfuzion-dmz-progression-carry-over.html",
+   "raw/dmzcodex-gunsmith-weapons-guide.html",
+   "raw/dmzcodex-boss-bale.html",
+   "raw/codmunity-dmz-news-2026-10-06.html",
+   "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+   "raw/codmunity-dmz-news.html"
+  ]
+ },
+ "sourceList": [
+  {
+   "url": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-launch-multiplayer-operators-weapons-equipment-create-a-class",
+   "title": "Call of Duty Blog (official): MW4 launch operators, weapons, equipment and Create-a-Class",
+   "raw": "raw/cod-blog-ready-for-launch-weapons.html",
+   "date": "2026-10-19"
+  },
+  {
+   "url": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+   "title": "Call of Duty Blog (official): DMZ how to play, Forward Operating Base guide",
+   "raw": "raw/cod-blog-dmz-fob-guide.html",
+   "date": "2026-10-09"
+  },
+  {
+   "url": "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes",
+   "title": "Call of Duty (official): MW4 launch patch notes, incl. DMZ updates of 20 and 21 Oct",
+   "raw": "raw/cod-patchnotes-mw4-launch.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://api.trello.com/1/boards/6a70f09dca9a35542abdabbb/cards",
+   "title": "Official MW4 Trello known-issues board, public API (DMZ Known Issues list; card trello.com/c/8JPTQiXo)",
+   "raw": "raw/trello-board-mw4-cards.json (+ raw/trello-board-mw4-lists.json, raw/trello-card-8JPTQiXo.json)",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-gunsmith-weapon-manuals-32-launch-weapons-attachment-slots/",
+   "title": "GamerFuzion: MW4 DMZ Gunsmith, Weapon Manuals, 32 launch weapons, attachment slots",
+   "raw": "raw/gamerfuzion-dmz-gunsmith-32-weapons.html",
+   "date": "2026-10-10"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-free-blueprints-how-to-claim-fully-kitted-weapons-level-10/",
+   "title": "GamerFuzion: MW4 DMZ free blueprints, claiming kitted guns at level 10 (based on a YouTube video)",
+   "raw": "raw/gamerfuzion-dmz-free-blueprints-lvl10.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-progression-camo-grind-weapon-levels-carry-over-multiplayer-warzone/",
+   "title": "GamerFuzion: MW4 DMZ progression and what carries over (summary of the official Infinity Ward AMA, 9 Oct)",
+   "raw": "raw/gamerfuzion-dmz-progression-carry-over.html",
+   "date": "2026-10-12"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-parachutes-tourniquet-wounded-100-health-tac-sprint-changes/",
+   "title": "GamerFuzion: MW4 DMZ survival rules from the Infinity Ward AMA (incl. no AP rounds)",
+   "raw": "raw/gamerfuzion-dmz-survival-rules-ama.html",
+   "date": "2026-10-12"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-dmz-early-access-patch-notes-october-20-xp-fix-story-mission-credit-commander-xp/",
+   "title": "GamerFuzion: DMZ Early Access patch notes, 20 Oct",
+   "raw": "raw/gamerfuzion-dmz-ea-patch-notes-oct20.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.gamerfuzion.com/modern-warfare-4-launch-patch-notes-ttk-tac-sprint-perks-killstreaks-dmz/",
+   "title": "GamerFuzion: MW4 launch patch notes explained",
+   "raw": "raw/gamerfuzion-launch-patch-notes-explained.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://codmunity.gg/mw4-dmz",
+   "title": "CODMunity: MW4 DMZ meta",
+   "raw": "raw/codmunity-mw4-dmz-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://codmunity.gg/tier-list/mw4-dmz",
+   "title": "CODMunity: MW4 DMZ tier list",
+   "raw": "raw/codmunity-tier-list-mw4-dmz.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://codmunity.gg/mw4",
+   "title": "CODMunity: MW4 Multiplayer meta",
+   "raw": "raw/codmunity-mw4-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://codmunity.gg/dmz/news/2026-10-06",
+   "title": "CODMunity: DMZ news 6 Oct 2026 (Dynamic Ops trailer, Bale, Dreadnought)",
+   "raw": "raw/codmunity-dmz-news-2026-10-06.html",
+   "date": "2026-10-06"
+  },
+  {
+   "url": "https://codmunity.gg/dmz/bosses",
+   "title": "CODMunity: MW4 DMZ bosses",
+   "raw": "raw/codmunity-dmz-bosses.html",
+   "date": ""
+  },
+  {
+   "url": "https://codmunity.gg/dmz/bosses/bale",
+   "title": "CODMunity: Bale",
+   "raw": "raw/codmunity-boss-bale.html",
+   "date": ""
+  },
+  {
+   "url": "https://codmunity.gg/dmz/guide",
+   "title": "CODMunity: MW4 DMZ beginner guide",
+   "raw": "raw/codmunity-dmz-guide.html",
+   "date": ""
+  },
+  {
+   "url": "https://wzstats.gg/mw4/dmz",
+   "title": "WZStats: MW4 DMZ meta (PvP)",
+   "raw": "raw/wzstats-mw4-dmz-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://wzstats.gg/mw4/dmz/pve",
+   "title": "WZStats: MW4 DMZ PvE meta",
+   "raw": "raw/wzstats-mw4-dmz-pve-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://wzstats.gg/mw4/meta",
+   "title": "WZStats: MW4 Multiplayer meta",
+   "raw": "raw/wzstats-mw4-mp-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://wzstats.gg/mw4/dmz/loadouts",
+   "title": "WZStats: best MW4 DMZ loadouts",
+   "raw": "raw/wzstats-mw4-dmz-loadouts.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.destructoid.com/modern-warfare-4-dmz-weapons-tier-list/",
+   "title": "Destructoid: Modern Warfare 4 DMZ weapons tier list",
+   "raw": "raw/destructoid-mw4-dmz-weapons-tier-list.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.destructoid.com/cod-mw4-dmz-impressions-massive-potential-extraction-casual/",
+   "title": "Destructoid: MW4 DMZ impressions",
+   "raw": "raw/destructoid-dmz-impressions.html",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://skycoach.gg/blog/call-of-duty/articles/mw-4-weapons-tier-list",
+   "title": "Skycoach blog (a boosting and account-selling service): best MW4 DMZ weapons tier list",
+   "raw": "raw/skycoach-mw4-dmz-weapons-tier-list.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzradar.com/meta.html",
+   "title": "DMZ Radar (fan hub): DMZ meta weapons tier list and builds",
+   "raw": "raw/dmzradar-meta.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzradar.com/weapons.html",
+   "title": "DMZ Radar: MW4 DMZ weapons and arsenal rules",
+   "raw": "raw/dmzradar-weapons.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzradar.com/news.html",
+   "title": "DMZ Radar: news and intel digest",
+   "raw": "raw/dmzradar-news.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://loadoutvault.com/mw4/dmz/tier-list/",
+   "title": "LoadoutVault: MW4 DMZ tier list (consensus of four rankings)",
+   "raw": "raw/loadoutvault-mw4-dmz-tier-list.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://loadoutvault.com/mw4/dmz/loadouts/",
+   "title": "LoadoutVault: best MW4 DMZ starter loadouts",
+   "raw": "raw/loadoutvault-mw4-dmz-starter-loadouts.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/weapons/",
+   "title": "DMZ Codex (fan database): weapons",
+   "raw": "raw/dmzcodex-weapons.html",
+   "date": ""
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-gunsmith-weapons-guide/",
+   "title": "DMZ Codex: Gunsmith and weapons guide (prices, unlocks, builds)",
+   "raw": "raw/dmzcodex-gunsmith-weapons-guide.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-weapon-manuals-guide/",
+   "title": "DMZ Codex: Weapon Manuals guide",
+   "raw": "raw/dmzcodex-weapon-manuals-guide.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-weapon-blueprints-guide/",
+   "title": "DMZ Codex: weapon Blueprints guide",
+   "raw": "raw/dmzcodex-weapon-blueprints-guide.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-free-loadout-regain-guide/",
+   "title": "DMZ Codex: Free Loadout guide",
+   "raw": "raw/dmzcodex-free-loadout-guide.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/",
+   "title": "DMZ Codex: bosses list",
+   "raw": "raw/dmzcodex-bosses.html",
+   "date": ""
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/bale/",
+   "title": "DMZ Codex: Bale",
+   "raw": "raw/dmzcodex-boss-bale.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/groan/",
+   "title": "DMZ Codex: Gorani",
+   "raw": "raw/dmzcodex-boss-groan-gorani.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/the-doctor/",
+   "title": "DMZ Codex: The Doctor",
+   "raw": "raw/dmzcodex-boss-the-doctor.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/the-warden/",
+   "title": "DMZ Codex: The Warden",
+   "raw": "raw/dmzcodex-boss-the-warden.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/jang-ui/",
+   "title": "DMZ Codex: Jang-ui",
+   "raw": "raw/dmzcodex-boss-jang-ui.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/jin-tae/",
+   "title": "DMZ Codex: Jin-Tae",
+   "raw": "raw/dmzcodex-boss-jin-tae.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/chemist/",
+   "title": "DMZ Codex: Chemist",
+   "raw": "raw/dmzcodex-boss-chemist.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/roze/",
+   "title": "DMZ Codex: Roze",
+   "raw": "raw/dmzcodex-boss-roze.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/iskra/",
+   "title": "DMZ Codex: Iskra",
+   "raw": "raw/dmzcodex-boss-iskra.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/bosses/scavenger/",
+   "title": "DMZ Codex: Scavenger",
+   "raw": "raw/dmzcodex-boss-scavenger.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://allthings.how/?p=286632",
+   "title": "AllThingsHow: MW4 DMZ bosses, where Lieutenants spawn and what they drop (curl hit a Cloudflare check that was not bypassed; a WebFetch summary was saved instead of the page)",
+   "raw": "raw/webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://insider-gaming.com/modern-warfare-4-dmz-bosses-lieutenants-locations-rewards/",
+   "title": "Insider Gaming: all MW4 DMZ boss locations and rewards",
+   "raw": "raw/insidergaming-dmz-bosses-locations-rewards.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://game8.co/games/Call-of-Duty-Modern-Warfare-4/archives/632817",
+   "title": "Game8: how to unlock weapons in MW4 DMZ",
+   "raw": "raw/game8-mw4-how-to-unlock-weapons.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.windowscentral.com/gaming/call-of-duty/anyone-can-get-high-tier-weapons-in-modern-warfare-4-dmz-with-minimal-effort-even-in-the-early-game-heres-how",
+   "title": "Windows Central: high-tier weapons early in MW4 DMZ via blueprints",
+   "raw": "raw/windowscentral-dmz-high-tier-weapons-early.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.pcgamer.com/games/call-of-duty/call-of-duty-modern-warfare-4-review-in-progress-a-campaign-you-shouldnt-skip/",
+   "title": "PC Gamer: MW4 review in progress (DMZ section, review-event play; first published 16 Oct)",
+   "raw": "raw/pcgamer-mw4-review-in-progress.html",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://coddmz.wiki/loadouts/best-loadouts",
+   "title": "COD DMZ Wiki: best MW4 DMZ loadouts (method only, no gun picks)",
+   "raw": "raw/coddmzwiki-best-loadouts.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.sportskeeda.com/call-of-duty-game/best-starting-meta-loadout-cod-modern-warfare-4-beta",
+   "title": "Sportskeeda: best starting meta loadout for MW4 (Multiplayer; first published 21 Aug, updated 22 Oct)",
+   "raw": "raw/sportskeeda-mw4-beta-starting-meta-loadout.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://allthings.how/?p=286632",
+   "title": "AllThingsHow: MW4 DMZ bosses and Lieutenant drops, checker re-read with WebFetch (summary with quoted page lines, not the page)",
+   "raw": "raw/verify-webfetch-allthingshow-dmz-bosses-lieutenant-drops.txt",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://codmunity.gg/dmz/news",
+   "title": "CODMunity: DMZ news (trailer prices: ARs $4,750, SMGs $2,850 after discount)",
+   "raw": "raw/codmunity-dmz-news.html",
+   "date": ""
+  }
+ ],
+ "removed": [
+  {
+   "item": "Cronen Squall note claiming it was a battle rifle in an earlier game",
+   "reason": "Only source is a pre-launch Gameshorizon list dated 10 Aug 2026, before the 1 Sep cutoff; trivia about an older game, not about MW4 DMZ."
+  },
+  {
+   "item": "Alias \"Rezi-12\", alias \"PPSH\", and the Dexerto all-weapons page as a source (Rezi 12, FiNN LMG)",
+   "reason": "These spellings only appear on pages dated before 1 Sep 2026 (Dexerto, published 28 May; Nintendo Life, 24 Aug). \"Finn LMG\" stays because the official patch notes use it."
+  },
+  {
+   "item": "Type 73 Apex (explosive rounds) listed as an anti-armor option against Commanders",
+   "reason": "No saved page links the Type 73 Assault Apex, or any gun, to Commanders or armor; the official text only says explosive rounds give stopping power. The link was the research agent's own inference."
+  },
+  {
+   "item": "Per-gun access entries saying \"loot\" for PPSh-41, Signal 50 and KG-7 Vulcan",
+   "reason": "No saved page names these guns as loot finds; general loot rules are already in the \"Loot in Hajin\" entry."
+  },
+  {
+   "item": "Meta list: PixelNitro (DMZ (pre-release opinion)), raw/pixelnitro-best-dmz-loadout-mw4.html",
+   "reason": "Dated 22 Aug 2026, before the 1 Sep cutoff and before DMZ was playable; an opinion piece, not based on DMZ play."
+  },
+  {
+   "item": "Meta list: Dexerto (Multiplayer (Beta)), raw/dexerto-mw4-weapon-tier-list.html",
+   "reason": "Multiplayer Beta list dated 23 Aug 2026, before the 1 Sep cutoff; the launch patch retuned every weapon since the Beta."
+  },
+  {
+   "item": "Meta list: Nintendo Life (Multiplayer (Beta)), raw/nintendolife-mw4-best-guns.html",
+   "reason": "Multiplayer Beta list dated 24 Aug 2026 (last change 28 Aug), before the 1 Sep cutoff; outdated by the launch balance pass."
+  },
+  {
+   "item": "Meta list: FandomWire (Multiplayer (Beta)), raw/fandomwire-5-best-loadouts-mw4.html",
+   "reason": "Multiplayer Beta list dated 23 Aug 2026, before the 1 Sep cutoff; outdated by the launch balance pass."
+  },
+  {
+   "item": "Gap note about a Sterling SMG named by a pre-launch list",
+   "reason": "Based on an unofficial pre-launch weapon list (10 Aug 2026), which is rumour-level; the official launch list is the reference."
+  }
+ ]
+}

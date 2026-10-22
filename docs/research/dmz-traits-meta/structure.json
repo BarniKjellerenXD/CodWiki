@@ -1,0 +1,1724 @@
+{
+ "layout": {
+  "screen": "One screen called TRAITS (reached from the left-side quick menu or the Operators station). It shows four tall columns side by side, not tabs: Warfighter (red), Scout (yellow/gold), Survivalist (teal) and a narrow Prestige column (orange label). Each tree is vertical and is climbed from the bottom up, 9 rows. Row 1 is one node at the bottom centre (the random starting Minor). Minor rows (2, 4, 5, 7, 8) have three small nodes: left, middle, right. Major rows (3, 6, 9) have two bigger nodes, left and right. Each tree has its own node shape: hexagons in Warfighter, circles in Scout, squares in Survivalist. The panels differ too: Warfighter has cut-off top corners, Scout has a round arch top, Survivalist is a plain rectangle. The tree name sits under each column in the tree colour, with a faded Korean word behind it. Picked node: filled with the tree colour, white icon, soft glow, joined to the pick below by a thin elbow line. Nodes you did not take in a finished row: plain dim grey icon with no frame (locked out). Next row you can pick from: outlined nodes with dotted guide lines from your last pick to every node of that row; any node in the row can be taken, not only the one above. Hidden Minor rows: a '?' in an outlined frame of the tree's shape. Majors always show their icon, dim and outlined until you take one. The random row-1 Minor already shows its icon even in a tree with no points. Pointing at a node opens a tooltip: the trait name in capitals in the tree colour and a one-line italic description on a dark strip. In the screenshots, the tree being pointed at is lit in its colour. Prestige column: a crown-and-shield badge at the top with the Prestige level number, then three empty shield-shaped slots; an earned Prestige trait fills the bottom slot as a gold shield with its icon. Right side: the 3D Operator model, a big number over the words TRAIT POINTS (unspent points), the Operator name, the Dog Tag badge with its rank (for example Damascus II), and three small counters in the tree shapes and colours showing points spent per tree (for example 9, 3, 2). Top right shows the Bank cash and cap.",
+  "rows": [
+   {
+    "point": 1,
+    "kind": "random-minor",
+    "choices": 1,
+    "note": "Random Minor, one node at the bottom centre. Its icon is visible before you spend the point."
+   },
+   {
+    "point": 2,
+    "kind": "minor-choice",
+    "choices": 3,
+    "note": "Three random Minors; hidden as '?' until you take row 1."
+   },
+   {
+    "point": 3,
+    "kind": "major-choice",
+    "choices": 2,
+    "note": "First Major pair, always visible, same for every Operator."
+   },
+   {
+    "point": 4,
+    "kind": "minor-choice",
+    "choices": 3,
+    "note": "Three random Minors, revealed after a row-3 pick."
+   },
+   {
+    "point": 5,
+    "kind": "minor-choice",
+    "choices": 3,
+    "note": "Three random Minors, revealed after a row-4 pick."
+   },
+   {
+    "point": 6,
+    "kind": "major-choice",
+    "choices": 2,
+    "note": "Second Major pair, always visible."
+   },
+   {
+    "point": 7,
+    "kind": "minor-choice",
+    "choices": 3,
+    "note": "Three random Minors, revealed after a row-6 pick."
+   },
+   {
+    "point": 8,
+    "kind": "minor-choice",
+    "choices": 3,
+    "note": "Three random Minors, revealed after a row-7 pick."
+   },
+   {
+    "point": 9,
+    "kind": "major-choice",
+    "choices": 2,
+    "note": "Top Major pair (capstone), always visible. Ninth and last point in the tree."
+   }
+  ],
+  "evidence": [
+   "Official blog (cod-blog-fob-guide.html): every tree holds 22 traits: 6 Majors (always shown, in pairs except for the first pick) and 16 Minors (random, in threes); the first point buys the random Minor; one pick per branch; 9 per tree at most; 18 points in all.",
+   "dmztracker-trait-builder.html: Major slots sit in branches 3, 6 and 9 (two each); branch 1 has one slot; branches 2, 4, 5, 7, 8 have three slots each.",
+   "dmzcodex-skill-trees.html and dmzcodex-trait-trees.html: every tree has 9 rows, climbed from the bottom; Majors come at picks 3, 6 and 9, with two options each; hidden Minors show once you pick in the row below.",
+   "img/1xc1cti-prestige-b-zd5ec6gibwwh1.png (player screenshot, 21 Oct): full Traits screen of a Prestige 1 Operator at Silver III with 9 Warfighter picks; four columns side by side; Prestige badge shows 1 and one filled prestige slot; per-tree counters 9/0/0. The Scout and Survivalist row-1 icons show although those trees have 0 points.",
+   "img/1xbcvqz-warfighter-video-thumb.png (frame of a player video, 21 Oct): same screen for a Damascus II Operator with 9/3/2 picks; shows dotted guide lines to the next row, '?' hidden Minors, a revealed row 4 above a Scout row-3 pick while row 5 is still '?', and a Final Intel tooltip on a Warfighter row-2 node.",
+   "img/1xce1kz-overwatch-trait-4aps3kjvizwh1.png (player screenshot, 22 Oct): Scout column close-up, Overwatch picked at the top, tooltip style, round nodes and arch-shaped panel.",
+   "Reddit 1xbf794 and 1xce1kz: Overwatch sits at the top of the Scout (yellow) tree; one post counts six final traits across the trees.",
+   "Reddit 1xbcvqz comments (two players): Minors roll again for each new Operator and only the Major (keystone) traits stay put; Reddit 1xb4nrm: a player says Field Crafting is in the Scout tree on every Operator."
+  ],
+  "confidence": "confirmed"
+ },
+ "trees": [
+  {
+   "tree": "Warfighter",
+   "theme": "Red tree, hexagon nodes. Combat, and staying alive in a fight.",
+   "traits": [
+    {
+     "name": "Equipment Professional",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Combat Resistance",
+     "effect": "After you use them, your equipped Lethals and Tacticals refill slowly, up to the slot's maximum.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+      "https://www.reddit.com/r/DMZ/comments/1xc6pdi/has_anyone_else_noticed_the_equipment/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Combat Resistance",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Equipment Professional",
+     "effect": "Explosives hurt you less, and enemy Tacticals affect you less.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Viper Sense",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "Quick Fix",
+     "effect": "Thermal scopes and AI targeting systems cannot pick you out.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://dmztracker.gg/traits/viper-sense/",
+      "https://www.reddit.com/r/DMZ/comments/1x1v1n5/so_they_changed_how_viper_sense_trait_work/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Quick Fix",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "Viper Sense",
+     "effect": "After you kill an enemy Operator or a hostile, your health begins to come back sooner.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Possum",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Adaptive Restock",
+     "effect": "Once per match, after you die you can self-revive into Last Stand with full health.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+      "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+      "https://www.reddit.com/r/DMZ/comments/1wzgcqg/notable_traits_recently_shown_in_the_from_the/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Adaptive Restock",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Possum",
+     "effect": "Each enemy hostile drops one more item.",
+     "numbers": "+1 item",
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Adrenaline Burst",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Killing an enemy resets your Tactical Sprint.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/traits/adrenaline-burst/",
+      "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Killing Spree",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Each kill makes your active effects last longer, up to double their normal time.",
+     "numbers": "up to 2x duration",
+     "sources": [
+      "https://dmztracker.gg/traits/killing-spree/",
+      "https://dmztracker.gg/traits/",
+      "https://dmzcodex.com/traits/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "LT Hunter",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Activating a Lieutenant Tower gives extra Lieutenant intel (one guide reads the in-game text as one more Lieutenant revealed).",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/lt-hunter/",
+      "https://dmzcodex.com/traits/lt-hunter/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Final Intel",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "The final exfil is marked on your Tac Map from the start of the match.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/final-intel/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Free Prep",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "When you take the Free Loadout, a random Consumable is added to your Backpack.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/free-prep/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Plate Pouch",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You can carry 2 more reserve armor plates.",
+     "numbers": "+2 reserve plates",
+     "sources": [
+      "https://dmztracker.gg/traits/plate-pouch/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Supplied Drops",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Supply drops have a chance to hold one extra container. It works for the whole squad and stacks.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Bounty Intel",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Buying Bounty Intel costs less.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Bounty Hunter",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You get bigger rewards for collecting bounties.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Quick Regen",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Your health starts to regenerate a little sooner.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Popcorn Lethals",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Hostiles hit by your Lethals are more likely to drop Lethals.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/popcorn-lethals/",
+      "https://dmzcodex.com/traits/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Quick Knife",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Turns your weapon bash into a knife strike. Guides list it in both the Warfighter and Survivalist pools.",
+     "numbers": null,
+     "sources": [
+      "https://dmzcodex.com/traits/quick-knife/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "reported"
+    }
+   ]
+  },
+  {
+   "tree": "Scout",
+   "theme": "Yellow tree, round nodes. Looting, crafting, cash and UAV intel.",
+   "traits": [
+    {
+     "name": "Hostile Looter",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Container Looter",
+     "effect": "Enemy hostiles can drop an Uncommon printer ingredient now and then, and very rarely a Rare one.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Container Looter",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Hostile Looter",
+     "effect": "Containers have a chance to give you one extra item.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Field Crafting",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "UAV Upgrade",
+     "effect": "Lets you craft items straight from Common printer resources while you are deployed.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://www.reddit.com/r/DMZ/comments/1xb4nrm/scout_skill_tree_trait_question/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "UAV Upgrade",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "Field Crafting",
+     "effect": "Your UAVs reach farther, last longer and become Advanced UAVs.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Overwatch",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Thermal Padding",
+     "effect": "UAV Towers you switch on stay active for the rest of the match.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://www.reddit.com/r/DMZ/comments/1xbf794/overwatch_trait/",
+      "https://www.reddit.com/r/DMZ/comments/1xce1kz/the_most_obnoxious_trait_in_dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Thermal Padding",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Overwatch",
+     "effect": "UAVs do not show you, and an Advanced UAV only detects you the way a normal UAV would.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://www.reddit.com/r/DMZ/comments/1xce1kz/the_most_obnoxious_trait_in_dmz/",
+      "https://www.reddit.com/r/DMZ/comments/1xcn1i7/is_there_seriously_no_way_to_stay_off_the_minimap/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Investor",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You get a little more cash when you extract.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/traits/investor/",
+      "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Combat Scavenger",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Killed hostiles sometimes drop a valuable or a printer ingredient.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/combat-scavenger/",
+      "https://dmzcodex.com/traits/combat-scavenger/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Cash Ops",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You get 20% more cash for completing Ops.",
+     "numbers": "+20% Op cash",
+     "sources": [
+      "https://dmztracker.gg/traits/cash-ops/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Resource Pockets",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Scrapping items gives 20% more printer resources.",
+     "numbers": "+20% scrap resources",
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Stealthy",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Raises how many enemies you can kill before a Hunt Squad comes for you.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Fast Learner",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Your Operator gains slightly more XP. A small brain icon pops up when it triggers. Stacks with Faster Learner.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/fast-learner/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://www.reddit.com/r/DMZ/comments/1xckljq/fast_learner_trait/"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Mini Tracker",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Looting a container nobody opened yet has a 50% chance to send out a radar pulse.",
+     "numbers": "50% pulse chance",
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/traits/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Key Cash",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Unlocking something with a key pays you cash; rarer keys pay more.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Auto Fill",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Your Lethals and Tacticals refill on their own from your Backpack.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Pack Rat",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Your 3D Printer resource cap goes up by 20%. Works together with Resource Hoarder.",
+     "numbers": "+20% resource capacity",
+     "sources": [
+      "https://dmztracker.gg/traits/pack-rat/",
+      "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Resource Hoarder",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Increases your 3D Printer resource cap. Works together with Pack Rat.",
+     "numbers": "dmzcodex and codmunity say +20%; dmztracker says the amount is not published",
+     "sources": [
+      "https://dmztracker.gg/traits/resource-hoarder/",
+      "https://dmzcodex.com/traits/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Field Medic",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You revive teammates faster.",
+     "numbers": null,
+     "sources": [
+      "https://dmzcodex.com/traits/field-medic/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "reported"
+    }
+   ]
+  },
+  {
+   "tree": "Survivalist",
+   "theme": "Teal tree, square nodes. Revives, consumables, Last Stand and getting out.",
+   "traits": [
+    {
+     "name": "Faster Revive",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Consumable Duration",
+     "effect": "You revive faster.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Consumable Duration",
+     "kind": "major",
+     "point": 3,
+     "pairWith": "Faster Revive",
+     "effect": "Your consumables last longer.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Impact Smokes",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "Free Revive",
+     "effect": "Smoke comes out around you when you are downed.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Free Revive",
+     "kind": "major",
+     "point": 6,
+     "pairWith": "Impact Smokes",
+     "effect": "The first Wound you take gets fixed on its own.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://www.reddit.com/r/DMZ/comments/1xckj0z/how_does_the_free_revive_trait_work/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Numb the Pain",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Die Hard",
+     "effect": "Revives also give you the Painkiller and Smelling Salts effects.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Die Hard",
+     "kind": "major",
+     "point": 9,
+     "pairWith": "Numb the Pain",
+     "effect": "In Last Stand, getting close to an exfil calls it for you, and you never bleed out while in Last Stand.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://dmzcodex.com/trait-trees/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Air Superiority",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "UAV Towers and SAM Sites you take stay active longer.",
+     "numbers": null,
+     "sources": [
+      "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+      "https://dmztracker.gg/traits/air-superiority/",
+      "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "official"
+    },
+    {
+     "name": "Metabolism",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Slowly gives back the health you lose when you use the Tourniquet. Xbox Wire describes it more loosely as slowly regaining lost health.",
+     "numbers": null,
+     "sources": [
+      "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+      "https://dmztracker.gg/traits/metabolism/",
+      "https://dmzcodex.com/traits/",
+      "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Rescuer",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You move quicker when dragging a downed teammate.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/rescuer/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Consumable Stacker",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Taking a consumable while the same effect is still running adds the times together, up to twice the normal length.",
+     "numbers": "max 2x base duration",
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Rad Blocker",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "You take less damage from radiation.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Resupply",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Ammo crates and ammo restocks give you extra ammo, and armor boxes give 2 extra plates. dmzcodex lists it under Scout instead.",
+     "numbers": "+2 plates from armor boxes",
+     "sources": [
+      "https://dmztracker.gg/traits/resupply/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Expedited Extraction",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Exfils arrive much faster.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/",
+      "https://codmunity.gg/dmz/traits"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "name": "Lucky",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "When you suffer a bad effect or run low on supplies, you have a better chance to find a useful item.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Objective Oriented",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Op reward crates come one rarity higher, capped at Rare.",
+     "numbers": "+1 rarity tier, max Rare",
+     "sources": [
+      "https://dmztracker.gg/traits/objective-oriented/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Fuel Economy",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Vehicles use less fuel.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    },
+    {
+     "name": "Faster Learner",
+     "kind": "minor",
+     "point": null,
+     "pairWith": null,
+     "effect": "Your Operator gains slightly more XP. Stacks with Fast Learner.",
+     "numbers": null,
+     "sources": [
+      "https://dmztracker.gg/traits/",
+      "https://dmztracker.gg/tools/trait-builder/"
+     ],
+     "confidence": "reported"
+    }
+   ]
+  }
+ ],
+ "prestigeTraits": [
+  {
+   "name": "Impact Smokes Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Stronger version of Impact Smokes that fires when you go down. A player who got it says the smoke is bigger and lasts longer.",
+   "numbers": null,
+   "sources": [
+    "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes",
+    "https://dmztracker.gg/guides/dmz-patch-notes/",
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/",
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "name": "Possum Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Like Possum: after you die you can pick yourself back up into Last Stand. Also, once per match, using the Tourniquet costs no health.",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "name": "Viper Sense Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Alerts you when enemy players are close or aim at you, and keeps you hidden from thermal scopes and AI targeting. Its icon shows in the Prestige slot of a player's prestiged Operator.",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/",
+    "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/"
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "name": "Adaptive Restock Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Pro version of Adaptive Restock. A player says they got it from Prestige; its effect was not described.",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Overwatch Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Towers you switch on stay up all match, and they scan a 20% wider area. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": "+20% scan radius",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Quick Fix Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Health starts to regenerate right away when you kill an enemy Operator or hostile. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Field Crafting Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Craft from base materials while deployed, and each craft costs 50% fewer resources. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": "-50% craft cost",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Die Hard Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "In Last Stand the exfil is called for you near one, you never bleed out, and you move faster. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Numb the Pain Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "Revives give you the Painkiller and Smelling Salts effects; the menu text matches the base trait. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "UAV Upgrade Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "The menu only calls it an improved UAV Upgrade; no details given. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Thermal Padding Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "The menu only calls it an improved Thermal Padding; no details given. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "name": "Free Revive Pro",
+   "kind": "prestige",
+   "point": null,
+   "pairWith": null,
+   "effect": "The menu only calls it an improved Free Revive; no details given. (Seen only in a menu screenshot posted 16 Oct, before DMZ launch.)",
+   "numbers": null,
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/"
+   ],
+   "confidence": "reported"
+  }
+ ],
+ "rules": [
+  {
+   "label": "Trait count",
+   "value": "66 traits: 22 per tree, made of 6 Major and 16 Minor positions.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://gamelevate.com/modern-warfare-4-dmz-operator-traits-guide/",
+    "https://neonsect.com/modern-warfare-4/mw4-dmz-operators-explained/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Points per Operator",
+   "value": "An Operator earns at most 18 Trait Points, a point for every Dog Tag level. The 18 levels climb from Steel I up to Onyx III (Steel, Bronze, Silver, Gold, Damascus, then Onyx, three levels each). Points stay with the Operator that earned them.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://www.dexerto.com/wikis/modern-warfare-4/dmz-progression/",
+    "https://dmztracker.gg/progression/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "When points arrive",
+   "value": "After a successful exfil, if the Operator's Dog Tag levels up. A strong run can give more than one level. An Operator's level and your own DMZ player level are two different things.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://www.dexerto.com/wikis/modern-warfare-4/dmz-progression/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Banking points",
+   "value": "Points are banked automatically. You can save them or spend them any time in the Traits menu (left quick menu or Operators station).",
+   "sources": [
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Cost of a trait",
+   "value": "Every pick costs 1 point, Majors too. The row-9 Major is simply the ninth point in that tree.",
+   "sources": [
+    "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+    "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/"
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "label": "Tree cap",
+   "value": "Max 9 picks per tree, one per row. 18 points can finish two trees or be spread over all three.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "First pick",
+   "value": "The first point you spend in any tree always buys that tree's random starting Minor.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://dmzcodex.com/mechanics/trait-acquisition/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Branch rule",
+   "value": "Pick one trait in a row to open the next row. Picking one locks out the others in that row. Any node of the next row can be picked.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Majors are fixed",
+   "value": "The six Majors per tree and their rows (3, 6, 9) are the same for every Operator and are always visible.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/",
+    "https://dmztracker.gg/tools/trait-builder/",
+    "https://www.reddit.com/r/DMZ/comments/1xb4nrm/scout_skill_tree_trait_question/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Minors are random",
+   "value": "Minors are rolled per Operator: which Minors you get and where they sit change between Operators. Several players report that the Minors differ from one Operator to another. One player also found the same Minor in different trees on two Operators.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/",
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+    "https://gamelevate.com/modern-warfare-4-dmz-operator-traits-guide/"
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "label": "When Minors show",
+   "value": "Hidden Minor rows show '?' until you pick in the row below. Screenshots show the reveal goes row by row.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://dmzcodex.com/trait-trees/",
+    "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/"
+   ],
+   "confidence": "confirmed"
+  },
+  {
+   "label": "Permanence and respec",
+   "value": "Picks are locked in. There is no respec or refund. The only resets are Operator Prestige or dismissing the Operator and starting fresh.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+    "https://www.reddit.com/r/DMZ/comments/1xce1kz/the_most_obnoxious_trait_in_dmz/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Reroll by dismissing",
+   "value": "Each new Operator rolls its own Minors. Some players ask whether to dismiss an Operator early to get better rolls; no saved thread shows that this works for the same Operator. Dismissing gives up all normal traits, but Prestige traits stay with that Operator.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/",
+    "https://www.reddit.com/r/DMZ/comments/1xc4nyw/do_traits_randomize_again_after_prestige/",
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "label": "Does Prestige reroll Minors?",
+   "value": "Not stated officially. One player who prestiged said the random Minors were rolled again.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+    "https://dmzcodex.com/guides/dmz-operator-prestige-guide/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "label": "MIA cost",
+   "value": "A dead Operator goes MIA. Pay DMZ Cash to recover them with all traits but no gear, or dismiss them. The price goes up with Trait Points. You cannot Prestige an MIA Operator.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://news.xbox.com/en-us/2026/10/09/dmz-5-features-get-excited-for-mw4/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "MIA cost (player numbers)",
+   "value": "One player was asked about 1K to recover a fresh Operator with no traits; another got a bill of about 50K. One player says the price tops out near 100K at level 18. Two players say it follows the Operator's current level, not how often it died, and two say it drops again after Prestige.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xby7rz/dead_operators_with_no_traits_should_be_free/",
+    "https://www.reddit.com/r/DMZ/comments/1xc5jze/trying_to_understand_the_operator_system/",
+    "https://www.reddit.com/r/DMZ/comments/1xc2kg3/when_should_i_stop_buying_back_the_same_operator/",
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "label": "Prestige requirements",
+   "value": "18 earned Trait Points (they do not need to be spent), not MIA, plus cash and gear that are all used up. Prestige 1: 200,000 cash, two weapons (Rare or better) that each have 3 attachment slots, plate carrier and backpack both Rare, plus 4 Rare ingredients. Prestige 2: 300,000, Epic gear and weapons with 4 slots. Prestige 3 and every later one: 500,000, Legendary gear and weapons with 4 slots.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://dmzcodex.com/guides/dmz-operator-prestige-guide/",
+    "https://dmztracker.gg/progression/",
+    "https://www.reddit.com/r/DMZ/comments/1xcnolk/cant_prestige_operator_help_please/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Prestige blocker bug",
+   "value": "Some players hold the Prestige button and nothing happens. Official workaround (Trello, 21 Oct): use Rare (blue) guns that have just 3 attachment slots and have never carried 4 or more attachments. One player fixed it by swapping guns with 4 or 5 attachments for 3-attachment ones. Another player says every item should be exactly the asked rarity. A guide adds that taking an attachment off an upgraded gun does not count.",
+   "sources": [
+    "https://trello.com/c/BRbXRRYP",
+    "https://dmztracker.gg/guides/dmz-patch-notes/",
+    "https://www.reddit.com/r/DMZ/comments/1xcnolk/cant_prestige_operator_help_please/",
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+    "https://dmzcodex.com/guides/dmz-operator-prestige-guide/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "What Prestige does",
+   "value": "Removes all traits and unspent points, takes the cash and gear, and the Dog Tag starts climbing again. You then earn 18 points again.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://dmzcodex.com/guides/dmz-operator-prestige-guide/",
+    "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Permanent Prestige traits",
+   "value": "Each Prestige adds one random Permanent Prestige trait; you cannot choose it, and an Operator holds three at most. It sits in a separate Prestige column, does not use the 18 points, and stays with that Operator through dismissal, a slot change or a skin change. Players who got one so far report 'Pro' versions of tree traits.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/",
+    "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/",
+    "https://dmzcodex.com/trait-trees/",
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Prestige 4 and later",
+   "value": "You are offered a new random trait, different from your three. Swap it for one of them or turn it down.",
+   "sources": [
+    "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+    "https://dmzcodex.com/guides/dmz-operator-prestige-guide/",
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/"
+   ],
+   "confidence": "official"
+  },
+  {
+   "label": "Prestige trait list in game",
+   "value": "Two players say the game has a place that lists the possible Prestige traits. A menu screenshot from 16 Oct tags each one as Combat, Looting or Utility.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/",
+    "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/",
+    "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "label": "How fast Operators level",
+   "value": "In one thread, four players say they filled, or nearly filled, a whole tree within a few hours or three to four successful runs.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/"
+   ],
+   "confidence": "reported"
+  },
+  {
+   "label": "Known trait bugs",
+   "value": "One player says Equipment Professional stops refilling once both equipment slots are empty, even with spares in the Backpack, so keep at least one Lethal or Tactical in the slot; the same player says it sometimes stops mid-match too. One player on Switch says the Possum revive prompt did nothing, twice. The launch patch fixed Impact Smokes Pro not going off when you are downed.",
+   "sources": [
+    "https://www.reddit.com/r/DMZ/comments/1xc6pdi/has_anyone_else_noticed_the_equipment/",
+    "https://www.reddit.com/r/DMZ/comments/1xbshoh/hold_button_to_revive_possum_trait_bug/",
+    "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes"
+   ],
+   "confidence": "reported"
+  }
+ ],
+ "conflicts": [
+  "Adrenaline Burst (Warfighter), Investor (Scout) and Air Superiority (Survivalist) are Minors, not Majors. The official blog lists seven traits per tree: the six Majors plus the one random starting Minor its test Operator got, and these three are that random Minor (first in each list). In-game captures place Adrenaline Burst and Air Superiority in a Minor row (row 4) on one Operator, and dmztracker, dmzcodex, allthings and codmunity all call them Minor. The wiki's per-tree Major lists (3/6/9) are correct and need no change; the 'Type: Major' on these three entries is wrong.",
+  "neonsect reads the same blog list the other way and calls Adaptive Restock, Field Crafting and Die Hard the random Minors. In-game screenshots show those three in Major rows (9, 6, 9), so that reading is wrong.",
+  "Viper Sense: Xbox Wire (20 Oct) says it alerts you to enemy players nearby. The official blog and dmztracker's in-game capture say it keeps you hidden from thermal scopes and AI targeting. Pre-launch gameplay showed the warning version (Reddit threads of 6 and 9 Oct), and dmzcodex still calls the current effect unconfirmed. The Viper Sense Pro text in the Prestige menu lists both effects.",
+  "Xbox Wire (20 Oct) uses other names: Extra Loot from Hostiles (= Hostile Looter), Extra Container Loot (= Container Looter), Consumable Duration Increase (= Consumable Duration, also said to help gear durability), AI Drop Rare Loot and Free Tourniquet. The last two are not seen in game under those names. The wiki entries 'AI Drop Rare Loot' and 'Free Tourniquet' are unconfirmed; Possum Pro's text includes a free Tourniquet once per match.",
+  "Xbox Wire says every successful exfil gives one Trait Point. The official blog ties points to Dog Tag levels instead, so one exfil can give zero, one or more.",
+  "LT Hunter: one guide's in-game capture reads it as revealing one more Lieutenant; dmzcodex and allthings say extra paid intel; the wiki says more intel from Lieutenant towers.",
+  "Combat Scavenger tree: dmztracker (official infographic) says Scout, codmunity says Warfighter, dmzcodex says both. Quick Knife and Metabolism are also listed in two trees by dmzcodex. This fits players seeing some Minors in different trees on different Operators.",
+  "dmztracker's builder puts named Minors in fixed slots, but its own trait pages and players say Minors are random per Operator. Example: a player screenshot shows Final Intel in Warfighter row 2, while dmztracker shows it in row 4. Treat any Minor row number as one Operator's roll.",
+  "Minor reveal: the blog says a Minor group shows once you unlock the Major below it. Player screenshots show it is row by row: after a row-3 pick, row 4 shows but row 5 is still '?'.",
+  "Prestige: the official blog says the 18 points must be earned, not spent. allthings says all 18 must be spent.",
+  "MIA cost: one player thought the price rises with every death. Two other players say it depends only on the Operator's current level (trait points), which matches the official text.",
+  "Thermal Padding: official text says it hides you from UAVs and Advanced UAVs see you only like a normal UAV. One player reads this as never fully off the minimap when enemies run Advanced UAVs.",
+  "Prestige trait list: the only full list comes from an in-game menu screenshot posted on 16 Oct, before DMZ Early Access (20 Oct). Its path says Multiplayer, some text looks unfinished (for example 'Scavenger Pro Pro'), and commenters thought it might be a dev setup. After launch, players confirmed Possum Pro, the Viper Sense Pro icon on a prestiged Operator, a smoke Pro trait (Impact Smokes Pro is in the official patch notes) and Adaptive Restock Pro, which is not on that list, so the list is incomplete. The poster said it was found in the game's own menus, not in game files.",
+  "Wiki 'Extra ammo from enemy kills' says it is one of the first traits on the left side. Minor positions are random per Operator, so a fixed position cannot be given; the trait name is unknown.",
+  "Wiki overview lists 'Last Stand' as a named Survivalist trait. No source names a trait 'Last Stand'; it is the downed state that Possum and Die Hard use.",
+  "A player calls Equipment Professional 'Resupply'. There is a separate Survivalist Minor named Resupply (extra ammo and armor plates). Keep them apart.",
+  "Trait totals: official is 66. codmunity shows 88 and dmzcodex 76 entries because they add leaked or datamined names; those extras are not used here.",
+  "Resupply tree: dmztracker places it in Survivalist (row 2 on its Operator); dmzcodex lists it under Scout as a community report.",
+  "Several Minor names (for example Auto Fill, Bounty Hunter, Bounty Intel, Fuel Economy, Lucky, Objective Oriented, Plate Pouch, Quick Regen, Resupply, Stealthy) also appear in pre-launch leak lists that codmunity and dmzcodex label as unconfirmed. Here they rest only on dmztracker's in-game capture from 22 Oct, so they are marked reported. For Stealthy and Objective Oriented the in-game text dmztracker shows differs from those lists.",
+  "Survivalist row-9 left Major: dmztracker's in-game capture and the official blog give Numb the Pain; dmzcodex's planner still shows that slot as 'name unconfirmed'."
+ ],
+ "gaps": [
+  "Full Minor pools: 11 to 12 Minor names per tree are known from in-game captures or guides (dmztracker names 52 of 66). Each tree has 16 Minor positions; the pool may be bigger and may overlap between trees.",
+  "Exact numbers for most traits: Investor, Quick Fix, Quick Regen, Faster Revive, Consumable Duration, Air Superiority, UAV Upgrade, Fast Learner, Faster Learner, Expedited Extraction, Rad Blocker, Fuel Economy, Combat Resistance and others have no published values.",
+  "Full Permanent Prestige trait pool and the real effects of the 'enhanced version' Pro traits (UAV Upgrade Pro, Thermal Padding Pro, Free Revive Pro, Impact Smokes Pro, Adaptive Restock Pro). Whether every Major has a Pro version is unknown.",
+  "No official MIA recovery formula or price table; only player numbers.",
+  "How much XP each Dog Tag level needs is not published.",
+  "Whether Prestige rerolls the random Minors of the same Operator rests on one player's report.",
+  "How to use Field Crafting during a match: players asked and nobody explained it in the saved threads.",
+  "Free Revive: one player says it works once per match and brings you to full health, unlike the Tourniquet; not confirmed by an official source.",
+  "Hidden-node frames for the Warfighter tree were not seen in a screenshot (both screenshots had Warfighter fully picked); by pattern they should be hexagons with '?'.",
+  "The official 'First Look' trait tree video was not viewed (official media, not downloaded).",
+  "allthings.how pages block direct download (HTTP 403); only a WebFetch summary was saved.",
+  "Which side (left or right) each Major sits on comes from screenshots and dmztracker's in-game capture only: row 3 Equipment Professional | Combat Resistance, Hostile Looter | Container Looter, Faster Revive | Consumable Duration; row 6 Viper Sense | Quick Fix, Field Crafting | UAV Upgrade, Impact Smokes | Free Revive; row 9 Possum | Adaptive Restock, Overwatch | Thermal Padding, Numb the Pain | Die Hard.",
+  "17 Minors rest on a single in-game capture by one site (dmztracker): Free Prep, Plate Pouch, Supplied Drops, Bounty Intel, Bounty Hunter, Quick Regen, Cash Ops, Resource Pockets, Stealthy, Key Cash, Auto Fill, Consumable Stacker, Resupply, Lucky, Objective Oriented, Fuel Economy and Faster Learner. A second source, such as a player screenshot, is needed before calling them confirmed.",
+  "Deep Breath was dropped: no in-game capture of it was saved, and its name also sits in beta datamine lists.",
+  "Whether a dismissed Operator that is recruited again gets new Minors is not shown in any saved page.",
+  "The Prestige menu screenshot may not show the whole list (it may scroll); Adaptive Restock Pro, reported after launch, is missing from it."
+ ],
+ "sourceList": [
+  {
+   "url": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-how-to-play-forward-operating-base-guide",
+   "title": "Call of Duty blog: DMZ Deep Dive Part 2, Forward Operating Base guide (official)",
+   "raw": "structure/raw/cod-blog-fob-guide.html",
+   "date": "2026-10-09"
+  },
+  {
+   "url": "https://www.callofduty.com/patchnotes/2026/10/call-of-duty-modern-warfare-4-launch-patch-notes",
+   "title": "Call of Duty: Modern Warfare 4 Launch Patch Notes (official)",
+   "raw": "structure/raw/cod-launch-patch-notes.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://trello.com/c/BRbXRRYP",
+   "title": "Call of Duty Trello: Operator Prestige blocker card (official)",
+   "raw": "structure/raw/trello-card-BRbXRRYP-prestige-blocker.json",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://news.xbox.com/en-us/2026/10/20/call-of-duty-modern-warfare-4-how-to-get-started-operator-dmz/",
+   "title": "Xbox Wire: How to get started as an Operator in DMZ",
+   "raw": "structure/raw/xbox-wire-get-started-operator.html",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://news.xbox.com/en-us/2026/10/09/dmz-5-features-get-excited-for-mw4/",
+   "title": "Xbox Wire: DMZ, 5 features to get excited for",
+   "raw": "structure/raw/xbox-wire-5-features.html",
+   "date": "2026-10-09"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/",
+   "title": "DMZTracker: Traits list",
+   "raw": "structure/raw/dmztracker-traits.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/tools/trait-builder/",
+   "title": "DMZTracker: Trait Builder (slot data from an in-game capture)",
+   "raw": "structure/raw/dmztracker-trait-builder.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/adrenaline-burst/",
+   "title": "DMZTracker: Adrenaline Burst",
+   "raw": "structure/raw/dmztracker-trait-adrenaline-burst.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/investor/",
+   "title": "DMZTracker: Investor",
+   "raw": "structure/raw/dmztracker-trait-investor.html",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/air-superiority/",
+   "title": "DMZTracker: Air Superiority",
+   "raw": "structure/raw/dmztracker-trait-air-superiority.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/killing-spree/",
+   "title": "DMZTracker: Killing Spree",
+   "raw": "structure/raw/dmztracker-trait-killing-spree.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/lt-hunter/",
+   "title": "DMZTracker: LT Hunter",
+   "raw": "structure/raw/dmztracker-trait-lt-hunter.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/final-intel/",
+   "title": "DMZTracker: Final Intel",
+   "raw": "structure/raw/dmztracker-trait-final-intel.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/free-prep/",
+   "title": "DMZTracker: Free Prep",
+   "raw": "structure/raw/dmztracker-trait-free-prep.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/plate-pouch/",
+   "title": "DMZTracker: Plate Pouch",
+   "raw": "structure/raw/dmztracker-trait-plate-pouch.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/popcorn-lethals/",
+   "title": "DMZTracker: Popcorn Lethals",
+   "raw": "structure/raw/dmztracker-trait-popcorn-lethals.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/viper-sense/",
+   "title": "DMZTracker: Viper Sense",
+   "raw": "structure/raw/dmztracker-trait-viper-sense.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/cash-ops/",
+   "title": "DMZTracker: Cash Ops",
+   "raw": "structure/raw/dmztracker-trait-cash-ops.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/fast-learner/",
+   "title": "DMZTracker: Fast Learner",
+   "raw": "structure/raw/dmztracker-trait-fast-learner.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/pack-rat/",
+   "title": "DMZTracker: Pack Rat",
+   "raw": "structure/raw/dmztracker-trait-pack-rat.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/resource-hoarder/",
+   "title": "DMZTracker: Resource Hoarder",
+   "raw": "structure/raw/dmztracker-trait-resource-hoarder.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/combat-scavenger/",
+   "title": "DMZTracker: Combat Scavenger",
+   "raw": "structure/raw/dmztracker-trait-combat-scavenger.html",
+   "date": "2026-10-14"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/metabolism/",
+   "title": "DMZTracker: Metabolism",
+   "raw": "structure/raw/dmztracker-trait-metabolism.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/rescuer/",
+   "title": "DMZTracker: Rescuer",
+   "raw": "structure/raw/dmztracker-trait-rescuer.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/resupply/",
+   "title": "DMZTracker: Resupply",
+   "raw": "structure/raw/dmztracker-trait-resupply.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/traits/objective-oriented/",
+   "title": "DMZTracker: Objective Oriented",
+   "raw": "structure/raw/dmztracker-trait-objective-oriented.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/progression/",
+   "title": "DMZTracker: Progression (Dog Tags, Prestige costs)",
+   "raw": "structure/raw/dmztracker-progression.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmztracker.gg/guides/dmz-patch-notes/",
+   "title": "DMZTracker: DMZ patch notes and known issues",
+   "raw": "structure/raw/dmztracker-patch-notes.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-skill-trees-traits-guide/",
+   "title": "DMZ Codex: skill trees and traits guide",
+   "raw": "structure/raw/dmzcodex-skill-trees.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/trait-trees/",
+   "title": "DMZ Codex: skill tree planner",
+   "raw": "structure/raw/dmzcodex-trait-trees.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/traits/",
+   "title": "DMZ Codex: traits list",
+   "raw": "structure/raw/dmzcodex-traits.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/mechanics/trait-acquisition/",
+   "title": "DMZ Codex: trait acquisition",
+   "raw": "structure/raw/dmzcodex-trait-acquisition.html",
+   "date": "2026-10-17"
+  },
+  {
+   "url": "https://dmzcodex.com/guides/dmz-operator-prestige-guide/",
+   "title": "DMZ Codex: Operator Prestige guide",
+   "raw": "structure/raw/dmzcodex-operator-prestige-guide.html",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://dmzcodex.com/traits/quick-knife/",
+   "title": "DMZ Codex: Quick Knife",
+   "raw": "structure/raw/dmzcodex-trait-quick-knife.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/traits/field-medic/",
+   "title": "DMZ Codex: Field Medic",
+   "raw": "structure/raw/dmzcodex-trait-field-medic.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/traits/combat-scavenger/",
+   "title": "DMZ Codex: Combat Scavenger",
+   "raw": "structure/raw/dmzcodex-trait-combat-scavenger.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://dmzcodex.com/traits/lt-hunter/",
+   "title": "DMZ Codex: LT Hunter",
+   "raw": "structure/raw/dmzcodex-trait-lt-hunter.html",
+   "date": "2026-10-17"
+  },
+  {
+   "url": "https://codmunity.gg/dmz/traits",
+   "title": "CODMunity: MW4 DMZ Traits",
+   "raw": "structure/raw/codmunity-traits.html",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://gamelevate.com/modern-warfare-4-dmz-operator-traits-guide/",
+   "title": "Gamelevate: MW4 DMZ Operator Traits guide",
+   "raw": "structure/raw/gamelevate-operator-traits.html",
+   "date": "2026-10-13"
+  },
+  {
+   "url": "https://neonsect.com/modern-warfare-4/mw4-dmz-operators-explained/",
+   "title": "Neonsect: MW4 DMZ Operators, Traits and Prestige",
+   "raw": "structure/raw/neonsect-operators.html",
+   "date": "2026-10-10 (updated 2026-10-21)"
+  },
+  {
+   "url": "https://www.dexerto.com/wikis/modern-warfare-4/dmz-progression/",
+   "title": "Dexerto: DMZ progression explained",
+   "raw": "structure/raw/dexerto-dmz-progression.html",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://allthings.how/mw4-dmz-all-traits-and-how-to-get-them/",
+   "title": "All Things How: MW4 DMZ all traits (403 to curl; only a WebFetch model summary saved, weak support only)",
+   "raw": "structure/raw/allthings-mw4-dmz-all-traits.webfetch-summary.txt",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xce1kz/the_most_obnoxious_trait_in_dmz/",
+   "title": "Reddit: The most obnoxious trait in dmz (post body + screenshot)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body); structure/raw/img/1xce1kz-overwatch-trait-4aps3kjvizwh1.png",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xbf794/overwatch_trait/",
+   "title": "Reddit: Overwatch Trait (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xc6pdi/has_anyone_else_noticed_the_equipment/",
+   "title": "Reddit: Equipment Professional sometimes stops working (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xbshoh/hold_button_to_revive_possum_trait_bug/",
+   "title": "Reddit: Hold button to revive, Possum trait bug (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xckj0z/how_does_the_free_revive_trait_work/",
+   "title": "Reddit: How does the Free Revive trait work? (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xcn1i7/is_there_seriously_no_way_to_stay_off_the_minimap/",
+   "title": "Reddit: Is there seriously no way to stay off the mini-map? (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xby7rz/dead_operators_with_no_traits_should_be_free/",
+   "title": "Reddit: Dead operators with no traits should be free (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xc5jze/trying_to_understand_the_operator_system/",
+   "title": "Reddit: Trying to understand the operator system (post body)",
+   "raw": "structure/raw/reddit-search-trait-top-month.rss (post body)",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1wyes6o/official_first_look_at_the_dmz_trait_tree_in/",
+   "title": "Reddit: Official First Look at the DMZ Trait Tree (official video, comments only)",
+   "raw": "structure/raw/thread-1wyes6o-official-first-look-trait-tree.rss",
+   "date": "2026-10-05"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xbcvqz/all_warfighter_traits/",
+   "title": "Reddit: All Warfighter Traits (player video thumbnail + comments)",
+   "raw": "structure/raw/thread-1xbcvqz-all-warfighter-traits.rss; structure/raw/img/1xbcvqz-warfighter-video-thumb.png",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1x7g0bs/dmz_prestige_traits/",
+   "title": "Reddit: DMZ Prestige Traits (in-game menu screenshot, posted before Early Access)",
+   "raw": "structure/raw/thread-1x7g0bs-dmz-prestige-traits.rss; structure/raw/img/1x7g0bs-prestige-traits-dyq0gfdxxtvh1.jpeg",
+   "date": "2026-10-16"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xb9xv7/those_of_you_who_have_already_prestiged_an/",
+   "title": "Reddit: Did the random minor traits change locations after prestige?",
+   "raw": "structure/raw/thread-1xb9xv7-prestige-minor-locations.rss",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xc4nyw/do_traits_randomize_again_after_prestige/",
+   "title": "Reddit: Do traits randomize again after prestige",
+   "raw": "structure/raw/thread-1xc4nyw-traits-randomize-after-prestige.rss",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1x1v1n5/so_they_changed_how_viper_sense_trait_work/",
+   "title": "Reddit: so they changed how Viper Sense trait works",
+   "raw": "structure/raw/thread-1x1v1n5-viper-sense-changed.rss",
+   "date": "2026-10-09"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1wzgcqg/notable_traits_recently_shown_in_the_from_the/",
+   "title": "Reddit: Notable traits shown in the 'from the ward' gameplay",
+   "raw": "structure/raw/thread-1wzgcqg-notable-traits-from-the-ward.rss",
+   "date": "2026-10-06"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xb4nrm/scout_skill_tree_trait_question/",
+   "title": "Reddit: Scout skill tree trait question (Field Crafting)",
+   "raw": "structure/raw/thread-1xb4nrm-scout-field-crafting-question.rss",
+   "date": "2026-10-20"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xckljq/fast_learner_trait/",
+   "title": "Reddit: Fast Learner Trait",
+   "raw": "structure/raw/thread-1xckljq-fast-learner-trait.rss",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xc1cti/lvl_70_with_1_prestige/",
+   "title": "Reddit: Lvl 70 with 1 Prestige (player screenshots of the Traits screen)",
+   "raw": "structure/raw/thread-1xc1cti-lvl70-1-prestige.rss; structure/raw/img/1xc1cti-prestige-b-zd5ec6gibwwh1.png (+ -a, -c)",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xc2kg3/when_should_i_stop_buying_back_the_same_operator/",
+   "title": "Reddit: When should I stop buying back the same Operator?",
+   "raw": "structure/raw/thread-1xc2kg3-mia-buyback-cost.rss",
+   "date": "2026-10-21"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xcthx6/anyone_died_on_a_prestiged_operator_yet/",
+   "title": "Reddit: Anyone died on a prestiged operator yet?",
+   "raw": "structure/raw/thread-1xcthx6-died-on-prestiged-operator.rss; structure/raw/reddit-search-prestige-trait-new-week.rss",
+   "date": "2026-10-22"
+  },
+  {
+   "url": "https://www.reddit.com/r/DMZ/comments/1xcnolk/cant_prestige_operator_help_please/",
+   "title": "Reddit: Can't prestige operator, help please",
+   "raw": "structure/raw/thread-1xcnolk-cant-prestige-operator.rss",
+   "date": "2026-10-22"
+  }
+ ],
+ "removed": [
+  {
+   "item": "Layout claim that hovering a node is what lights up that tree's panel",
+   "reason": "Screenshots show a lit panel, but one screenshot has a lit Warfighter panel with no tooltip, so the cause is not shown; reworded to what the screenshots show."
+  },
+  {
+   "item": "'confirmed' label on 17 Minors: Free Prep, Plate Pouch, Supplied Drops, Bounty Intel, Bounty Hunter, Quick Regen, Cash Ops, Resource Pockets, Stealthy, Key Cash, Auto Fill, Consumable Stacker, Resupply, Lucky, Objective Oriented, Fuel Economy, Faster Learner",
+   "reason": "Their only first-hand source is one in-game capture by one site (dmztracker; its trait list and builder are the same data). codmunity and dmzcodex list most of these names only as leaked or beta-datamined, so they cannot count as a second source. Downgraded to reported."
+  },
+  {
+   "item": "Deep Breath (Survivalist Minor, longer breath underwater)",
+   "reason": "No in-game evidence in the saved pages: dmztracker's own source notes cite only press lists, dmzcodex marks it as datamined from the beta, and codmunity lists it under leaked traits. Not usable under the no-leaks/no-datamines rule."
+  },
+  {
+   "item": "Scavenger Pro Pro (Prestige trait)",
+   "reason": "Seen only as a placeholder-looking entry in a pre-launch menu screenshot (16 Oct); commenters thought it was a dev entry; no confirmed base trait has that name, and the related 'Scavenger Pro' name appears only in a leak list."
+  },
+  {
+   "item": "Source 1x5bs4b ('worth resetting an operator to reroll', 13 Oct) and the claim that a re-recruited Operator gets new Minors",
+   "reason": "The thread is pre-launch speculation, not gameplay experience or an official reveal. No saved page shows a dismissed and re-recruited Operator getting new Minors; only new Operators are reported."
+  },
+  {
+   "item": "Source 1xby7rz on the rule 'Reroll by dismissing'",
+   "reason": "The post is about the MIA price of a fresh Operator, not rerolling; it stays as a source for the MIA price numbers."
+  },
+  {
+   "item": "Wording 'Players also say every item should match the asked rarity exactly' (Prestige blocker)",
+   "reason": "Only one player says this in the saved threads; reworded to 'another player'."
+  },
+  {
+   "item": "Counts 'some players' in Known trait bugs (Equipment Professional mid-match stop; Possum prompt)",
+   "reason": "Each comes from a single post body; no comments were saved. Reworded to 'one player'."
+  },
+  {
+   "item": "sourceList entries for dmztracker Deep Breath page and Reddit 1x5bs4b",
+   "reason": "No remaining item relies on them (see the Deep Breath and reroll entries above)."
+  }
+ ]
+}
