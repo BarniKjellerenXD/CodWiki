@@ -108,6 +108,12 @@ webview { flex: 1; width: 100%; background: var(--bg); }
 .game-picker label, .sidebar-search { display:block; font-size:12px; color:var(--muted); margin-bottom:8px; }
 .game-picker select { width:100%; min-width:0; min-height:42px; padding:9px 7px; font-size:13px; font-weight:600; background:var(--bg); color:var(--text); border:1px solid var(--line-strong); border-radius:8px; }
 #nav-game-info { margin:9px 0 0; color:var(--muted); font-size:11px; line-height:1.5; }
+.game-picker [hidden] { display:none; }
+.nav-modes { display:flex; gap:4px; padding:3px; margin-bottom:16px; background:var(--bg); border:1px solid var(--line); border-radius:9px; }
+.nav-modes button { flex:1; min-width:0; min-height:32px; padding:0 8px; background:transparent; border:1px solid transparent; border-radius:6px; color:var(--muted); font-size:12.5px; font-weight:600; cursor:pointer; }
+.nav-modes button:hover { color:var(--text); background:rgba(255, 255, 255, .05); }
+.nav-modes button[aria-pressed="true"] { background:var(--gold-dim); color:var(--gold-bright); border-color:var(--gold-border); }
+.nav-modes button:focus-visible { outline-offset:1px; }
 .sidebar-search { margin:18px 16px 8px; }
 .sidebar-search-field { position:relative; margin:0 16px 12px; }
 .sidebar-search-field input { width:100%; min-height:40px; background:var(--bg); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:10px 48px 10px 10px; font-size:12px; caret-color:var(--gold); }

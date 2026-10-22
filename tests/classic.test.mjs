@@ -9,7 +9,7 @@ import {lighthouseResult,lighthouseDials,classicAtlases,classicGongs,classicSect
 import {normalizeTool,evaluateTool} from '../app/utils/expansionTools.mjs'
 import {sanitizePuzzleState} from '../app/utils/puzzleState.mjs'
 import {gongResult,moonSequence,tilePairs} from '../app/utils/chronicles.mjs'
-import {searchCatalogue} from '../app/utils/companion.mjs'
+import {hydrateSpotlight,searchSpotlight} from '../shared/spotlight.mjs'
 const require=createRequire(import.meta.url)
 const {groupNavigation}=require('../desktop-app/renderer/navigation.js')
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'))
@@ -42,14 +42,14 @@ test('all fifteen classic entries have complete authored routes, side secrets an
 })
 
 test('BO2 dropdown groups only the seven standalone modes and keeps search and desktop links',()=>{
- const catalogue=read('app/data/catalogue.json'),search=read('app/data/searchIndex.json')
+ const catalogue=read('app/data/catalogue.json'),spotlight=hydrateSpotlight(read('public/spotlight/index.json'))
  const expected=['borough','bus-depot','cell-block','diner','farm','nuketown-zombies','town'].map(s=>'bo2-'+s)
  assert.deepEqual(catalogue.maps.filter(m=>m.gameId==='bo2'&&m.group==='survival').map(m=>m.id).sort(),expected)
  assert.deepEqual(catalogue.maps.filter(m=>m.gameId==='bo2'&&!m.group).map(m=>m.id).sort(),['buried','die-rise','mob-of-the-dead','origins','tranzit'].map(s=>'bo2-'+s))
  const entries=require('../desktop-app/renderer/nav.js')
  const groups=groupNavigation(entries,[...entries].reverse().map(e=>e.id))
  assert.deepEqual(Array.from(groups.filter(g=>g.game==='bo2'&&g.group==='survival'),g=>g.id).sort(),expected)
- for(const name of ['Farm','Bus Depot','Town'])assert.ok(searchCatalogue(search,name).some(r=>r.route==='/guides/bo2-'+name.toLowerCase().replaceAll(' ','-')))
+ for(const name of ['Farm','Bus Depot','Town'])assert.ok(searchSpotlight(spotlight,name).results.some(r=>r.route==='/guides/bo2-'+name.toLowerCase().replaceAll(' ','-')))
 })
 
 test('lighthouse solver reaches the target from all 10,000 starts under an independent physical simulation',()=>{

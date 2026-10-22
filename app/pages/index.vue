@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import catalogue from '~/data/catalogue.json'
-import searchIndex from '~/data/searchIndex.json'
 import quickQuests from '~/data/quickQuests.json'
 import mapArtwork from '~/data/mapArtwork.json'
-import { searchCatalogue } from '~/utils/companion.mjs'
 const query = ref('')
-const selected = ref(0)
 const toolMap = ref('all')
 const toolGame = ref('all')
 const games = catalogue.games.map(game => ({ ...game, planned: catalogue.maps.filter(map => map.gameId === game.id).every(map => map.status === 'planned') }))
 const router = useRouter()
 const closedGames = ref<string[]>([])
 const groupsLoaded = ref(false)
+const isMac = ref(false)
 onMounted(() => {
+  isMac.value = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)
   try { const saved = JSON.parse(localStorage.getItem('codwiki-game-groups') || '[]'); if (Array.isArray(saved)) closedGames.value = saved.filter(id => games.some(game => game.id === id)) } catch {}
   nextTick(() => {
     groupsLoaded.value = true
@@ -23,7 +22,6 @@ onMounted(() => {
 const artwork = (map: {id: string; image?: string}): {src:string; srcset?:string; position?:string} => (mapArtwork as Record<string, {src:string; srcset?:string; position?:string}>)[map.id] || {src:map.image || '',position:'50% 50%'}
 async function jumpToGame(id: string, animate = true) {
   if (id !== 'top' && id !== 'tools' && !games.some(game => game.id === id)) return
-  query.value = ''
   closedGames.value = closedGames.value.filter(value => value !== id)
   await nextTick()
   const anchor = id === 'top' || id === 'tools' ? id : `game-${id}`
@@ -42,16 +40,21 @@ function saveGroup(id: string, event: Event) {
 }
 const gameMaps = (id:string) => catalogue.maps.filter(map => map.gameId === id)
 const { progress, run } = useProgress()
-const results = computed(() => searchCatalogue(searchIndex, query.value).slice(0,30))
+// The search box hands its text to Spotlight, the site-wide search, so both
+// rank the same way and this page bundles no index of its own. Keys typed
+// while the dialog loads land here and follow the text into its field.
+const { open: searchOpen, query: searchQuery, openSpotlight, prefetchSpotlight } = useSpotlight()
+watch(query, text => {
+  if (!text.trim()) return
+  if (searchOpen.value) searchQuery.value = text
+  else openSpotlight(text)
+})
+watch(searchOpen, value => { if (!value) query.value = '' })
 const last = computed(() => progress.value.last)
 const continueUrl = computed(() => last.value ? last.value.route + (last.value.section ? '#'+encodeURIComponent(last.value.section) : '') : '/')
 const filteredTools = computed(() => catalogue.tools.filter(t=>(toolMap.value==='all'||t.map===toolMap.value) && (toolGame.value==='all'||catalogue.maps.find(m=>m.id===t.map)?.gameId===toolGame.value)))
 watch(toolGame,()=>{toolMap.value='all'})
 function mapName(id:string) { return catalogue.maps.find(m=>m.id===id)?.name || 'Black Ops 7' }
-function resultContext(id:string) {
-  const map = catalogue.maps.find(map => map.id === id)
-  return map ? `${games.find(game => game.id === map.gameId)?.name} · ${map.name}` : 'Black Ops 7'
-}
 function count(id:string) {
   if (id === 'bo7-super-easter-egg') return `${Object.entries(progress.value.toys).filter(([key,done])=>key!=='rex' && done).length} / 5 toys extracted${progress.value.toys.rex ? ' · Warden placed' : ''}`
   const phases=(quickQuests as Record<string,any[]>)[id] || []
@@ -59,9 +62,6 @@ function count(id:string) {
   const done=steps.filter(s=>run(id).done.includes(s.id)).length
   return done?`${done} / ${steps.length} steps complete`:'Start a run'
 }
-function move(delta:number) { if(results.value.length) selected.value=(selected.value+delta+results.value.length)%results.value.length }
-function openSelected() { const item=results.value[selected.value]; if(item) navigateTo(item.route) }
-watch(query,()=>{selected.value=0})
 </script>
 
 <template>
@@ -69,30 +69,27 @@ watch(query,()=>{selected.value=0})
    <div class="home-layout">
     <HomeGameNav :games="games" @jump="jumpToGame" />
     <div class="home-content">
-    <header class="home-header"><span class="eyebrow">CodWiki · Call of Duty Zombies</span><h1 tabindex="-1">Ready for your next run?</h1><p class="lede">Your maps, quest progress and puzzle tools. All within reach.</p><a class="desktop-download" href="https://github.com/BarniKjellerenXD/CodWiki/releases/latest" target="_blank" rel="noopener noreferrer" aria-label="Windows app — Download on GitHub (opens in a new tab)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 15v5h14v-5" /></svg>Windows app<span class="desktop-download-source">Download on GitHub</span></a></header>
+    <header class="home-header"><nav class="mode-switch" aria-label="Game mode"><span class="mode-option is-current" aria-current="page">Zombies</span><NuxtLink to="/dmz" class="mode-option">DMZ<span class="mode-new">MW4</span></NuxtLink></nav><span class="eyebrow">CodWiki · Call of Duty Zombies</span><h1 tabindex="-1">Ready for your next run?</h1><p class="lede">Your maps, quest progress and puzzle tools. All within reach.</p><a class="desktop-download" href="https://github.com/BarniKjellerenXD/CodWiki/releases/latest" target="_blank" rel="noopener noreferrer" aria-label="Windows app — Download on GitHub (opens in a new tab)"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 15v5h14v-5" /></svg>Windows app<span class="desktop-download-source">Download on GitHub</span></a></header>
     <NuxtLink v-if="last" class="resume-card" :to="continueUrl"><div><span class="companion-label">Continue where you left off</span><h2>{{ last.title }}</h2><p>{{ count(last.route.split('/').pop()) }}</p></div><span aria-hidden="true">→</span></NuxtLink>
     <section class="search" aria-label="Search everything">
-      <div class="search-row"><UiIcon name="search" class="search-icon" /><input v-model="query" type="search" placeholder="Search maps, quest steps and tools…" aria-label="Search maps, quest steps and tools" :aria-controls="query ? 'search-results' : undefined" :aria-activedescendant="query && results.length ? `result-${selected}` : undefined" @keydown.down.prevent="move(1)" @keydown.up.prevent="move(-1)" @keydown.enter.prevent="openSelected" @keydown.esc="query=''" /><button v-if="query" class="search-clear" aria-label="Clear search" @click="query=''"><UiIcon name="close" /></button></div>
-      <p class="search-hint" aria-live="polite">{{ query ? `${results.length}${results.length===30?'+':''} results` : 'Try “serum”, “boss fight” or “clock”. Use ↑ ↓ and Enter to open a result.' }}</p>
-      <div v-if="query" id="search-results" class="search-results"><p v-if="!results.length" class="companion-muted">No matches for “{{ query }}”. Try a map, quest or tool name.</p><NuxtLink v-for="(item,i) in results" :id="`result-${i}`" :key="item.id" :to="item.route" :class="{selected:i===selected}" @mouseenter="selected=i"><div><strong>{{ item.name }}</strong><small>{{ resultContext(item.map) }}</small></div><span>{{ item.kind === 'Map entry' ? 'Guide planned' : item.kind }} ↗</span></NuxtLink></div>
+      <div class="search-row"><UiIcon name="search" class="search-icon" /><input v-model="query" type="search" placeholder="Search maps, steps, tools, DMZ…" aria-label="Search CodWiki" aria-haspopup="dialog" autocomplete="off" enterkeyhint="search" @focus="prefetchSpotlight" @pointerenter="prefetchSpotlight" @keydown.enter.prevent="openSpotlight(query)" /></div>
+      <p class="search-hint">Try “serum”, “boss fight” or “Pack-a-Punch”.<span class="search-keys"> On any page, press / or {{ isMac ? '⌘K' : 'Ctrl K' }} to search.</span></p>
     </section>
-    <template v-if="!query">
-      <details v-for="game in games" :id="`game-${game.id}`" :key="game.id" :data-game-target="game.id" class="game-section" :open="!closedGames.includes(game.id)" @toggle="saveGroup(game.id, $event)">
-        <summary><h2>{{ game.name }}</h2><span class="game-count">{{ gameMaps(game.id).length }} {{ game.id === 'mw3' ? 'destinations' : game.id === 'ww2' ? 'maps & modes' : 'maps' }} <span aria-hidden="true">⌄</span><small v-if="game.planned">Guides planned</small></span></summary>
-        <NuxtLink v-if="game.id==='bo7'" to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
-        <PlannedMapList v-if="game.planned" :maps="gameMaps(game.id)" />
-        <template v-else>
-        <component :is="group==='survival' ? 'details' : 'div'" v-for="group in game.id==='bo3' ? ['', 'chronicles'] : game.id==='bo2' ? ['', 'survival'] : ['']" :key="group" :class="{'survival-maps':group==='survival'}">
-          <summary v-if="group==='survival'"><span>Survival &amp; extra modes</span><small>{{ gameMaps(game.id).filter(m=>m.group==='survival').length }} maps</small><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary>
-          <p v-if="group==='survival'" class="survival-intro">Standalone Survival maps, Grief and Turned.</p>
-          <h3 v-if="game.id==='bo3'" class="map-group-name">{{ group==='chronicles' ? 'Zombies Chronicles' : 'Original maps' }}</h3>
-          <div class="guide-grid"><NuxtLink v-for="map in gameMaps(game.id).filter(m=>(m.group || '')===group)" :key="map.id" :to="map.route" class="guide-card"><div v-if="artwork(map).src" class="guide-thumb"><img :src="artwork(map).src" :srcset="artwork(map).srcset" sizes="(min-width: 1440px) 391px, (min-width: 1100px) calc((100vw - 268px) / 3), (min-width: 901px) calc((100vw - 88px) / 3), (min-width: 561px) calc((100vw - 68px) / 2), calc(100vw - 36px)" :style="{objectPosition:artwork(map).position || '50% 50%'}" alt="" width="960" height="540" loading="lazy" decoding="async" /></div><div class="guide-body"><span v-if="!artwork(map).src" class="map-edition">{{ group==='chronicles' ? 'Zombies Chronicles' : game.name }}</span><h3>{{ map.name }}</h3><p>{{ map.status==='planned' ? 'Guide planned' : count(map.id) }}</p><small v-if="map.status==='planned'">{{ map.edition }} · {{ map.mode }}</small><small v-else>{{ catalogue.tools.filter(t=>t.map===map.id).length }} tools</small><span class="map-card-action">{{ map.status==='planned' ? 'View map entry' : 'Open guide' }} →</span></div></NuxtLink></div>
-        </component>
-        </template>
-      </details>
-      <section id="tools" data-game-target="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2 tabindex="-1">Puzzle tools</h2></div><label>Game <select v-model="toolGame"><option value="all">All games</option><option v-for="game in games" :key="game.id" :value="game.id">{{ game.name }}</option></select></label><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>(toolGame==='all'||m.gameId===toolGame)&&catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div><p v-if="!filteredTools.length" class="tools-empty">No puzzle tools have been added for this game yet. <button type="button" @click="jumpToGame(toolGame)">Browse its map entries</button></p></section>
-    </template>
-    <details v-if="!query" class="artwork-credits"><summary>Map artwork credits</summary><p>Game artwork: Activision / Treyarch. Scenic images from <a href="https://www.callofduty.com/zombieschronicles" target="_blank" rel="noopener noreferrer">Call of Duty</a>, <a href="https://www.codzombieguides.com/" target="_blank" rel="noopener noreferrer">COD Zombie Guides / JokerAlex21</a> and <a href="https://www.zombacus.com/" target="_blank" rel="noopener noreferrer">Zombacus</a>. Shadows of Evil uses the supplied community reference. Some classic maps share scenic images with their remasters.</p></details>
+    <details v-for="game in games" :id="`game-${game.id}`" :key="game.id" :data-game-target="game.id" class="game-section" :open="!closedGames.includes(game.id)" @toggle="saveGroup(game.id, $event)">
+      <summary><h2>{{ game.name }}</h2><span class="game-count">{{ gameMaps(game.id).length }} {{ game.id === 'mw3' ? 'destinations' : game.id === 'ww2' ? 'maps & modes' : 'maps' }} <span aria-hidden="true">⌄</span><small v-if="game.planned">Guides planned</small></span></summary>
+      <NuxtLink v-if="game.id==='bo7'" to="/guides/bo7-super-easter-egg" class="super-quest"><span class="quest-symbol" aria-hidden="true">✦</span><div class="quest-copy"><h3>Super Easter Egg</h3><p>Five map toys. One final Warden quest.</p></div><span class="quest-status">{{ Object.entries(progress.toys).filter(([id,done])=>id!=='rex' && done).length }} / 5 toys</span><span class="quest-arrow" aria-hidden="true">→</span></NuxtLink>
+      <PlannedMapList v-if="game.planned" :maps="gameMaps(game.id)" />
+      <template v-else>
+      <component :is="group==='survival' ? 'details' : 'div'" v-for="group in game.id==='bo3' ? ['', 'chronicles'] : game.id==='bo2' ? ['', 'survival'] : ['']" :key="group" :class="{'survival-maps':group==='survival'}">
+        <summary v-if="group==='survival'"><span>Survival &amp; extra modes</span><small>{{ gameMaps(game.id).filter(m=>m.group==='survival').length }} maps</small><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></summary>
+        <p v-if="group==='survival'" class="survival-intro">Standalone Survival maps, Grief and Turned.</p>
+        <h3 v-if="game.id==='bo3'" class="map-group-name">{{ group==='chronicles' ? 'Zombies Chronicles' : 'Original maps' }}</h3>
+        <div class="guide-grid"><NuxtLink v-for="map in gameMaps(game.id).filter(m=>(m.group || '')===group)" :key="map.id" :to="map.route" class="guide-card"><div v-if="artwork(map).src" class="guide-thumb"><img :src="artwork(map).src" :srcset="artwork(map).srcset" sizes="(min-width: 1440px) 391px, (min-width: 1100px) calc((100vw - 268px) / 3), (min-width: 901px) calc((100vw - 88px) / 3), (min-width: 561px) calc((100vw - 68px) / 2), calc(100vw - 36px)" :style="{objectPosition:artwork(map).position || '50% 50%'}" alt="" width="960" height="540" loading="lazy" decoding="async" /></div><div class="guide-body"><span v-if="!artwork(map).src" class="map-edition">{{ group==='chronicles' ? 'Zombies Chronicles' : game.name }}</span><h3>{{ map.name }}</h3><p>{{ map.status==='planned' ? 'Guide planned' : count(map.id) }}</p><small v-if="map.status==='planned'">{{ map.edition }} · {{ map.mode }}</small><small v-else>{{ catalogue.tools.filter(t=>t.map===map.id).length }} tools</small><span class="map-card-action">{{ map.status==='planned' ? 'View map entry' : 'Open guide' }} →</span></div></NuxtLink></div>
+      </component>
+      </template>
+    </details>
+    <section id="tools" data-game-target="tools" class="tool-directory"><div class="section-head"><div><span class="companion-label">Solve it and get back to the game</span><h2 tabindex="-1">Puzzle tools</h2></div><label>Game <select v-model="toolGame"><option value="all">All games</option><option v-for="game in games" :key="game.id" :value="game.id">{{ game.name }}</option></select></label><label>Map <select v-model="toolMap"><option value="all">All maps</option><option v-for="map in catalogue.maps.filter(m=>(toolGame==='all'||m.gameId===toolGame)&&catalogue.tools.some(t=>t.map===m.id))" :key="map.id" :value="map.id">{{ map.name }}</option></select></label></div><div class="tool-grid"><NuxtLink v-for="tool in filteredTools" :key="tool.id" :to="tool.route"><span>{{ mapName(tool.map) }}</span><strong>{{ tool.name }}</strong><span aria-hidden="true">↗</span></NuxtLink></div><p v-if="!filteredTools.length" class="tools-empty">No puzzle tools have been added for this game yet. <button type="button" @click="jumpToGame(toolGame)">Browse its map entries</button></p></section>
+    <details class="artwork-credits"><summary>Map artwork credits</summary><p>Game artwork: Activision / Treyarch. Scenic images from <a href="https://www.callofduty.com/zombieschronicles" target="_blank" rel="noopener noreferrer">Call of Duty</a>, <a href="https://www.codzombieguides.com/" target="_blank" rel="noopener noreferrer">COD Zombie Guides / JokerAlex21</a> and <a href="https://www.zombacus.com/" target="_blank" rel="noopener noreferrer">Zombacus</a>. Shadows of Evil uses the supplied community reference. Some classic maps share scenic images with their remasters.</p></details>
     </div>
    </div>
   </main>
@@ -194,7 +191,7 @@ watch(query,()=>{selected.value=0})
 
 .search-row input {
   width: 100%;
-  padding: 0.85rem 2.75rem 0.85rem 2.75rem;
+  padding: 0.85rem 1rem 0.85rem 2.75rem;
   font-size: 1rem;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -207,29 +204,15 @@ watch(query,()=>{selected.value=0})
   border-color: var(--gold-border);
 }
 
-.search-clear {
-  position: absolute;
-  right: 0.7rem;
-  display: grid;
-  place-items: center;
-  width: 1.9rem;
-  height: 1.9rem;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: var(--surface-2);
-  color: var(--muted);
-  cursor: pointer;
-}
-
-.search-clear:hover {
-  color: var(--text);
-  border-color: var(--line-strong);
-}
-
 .search-hint {
   margin: 0.7rem 0 0 0.2rem;
   font-size: 0.82rem;
   color: var(--faint);
+}
+
+/* Touch screens have no keyboard shortcuts to offer. */
+@media (hover: none) and (pointer: coarse) {
+  .search-keys { display: none; }
 }
 
 .empty {
@@ -342,19 +325,18 @@ watch(query,()=>{selected.value=0})
 
 <style scoped>
 .home-header { padding-top:.5rem; margin-bottom:1.5rem; }
+.mode-switch { display:flex; width:fit-content; margin-bottom:1.25rem; padding:.25rem; border:1px solid var(--line); border-radius:999px; background:var(--surface); }
+.mode-option { display:inline-flex; align-items:center; gap:.5rem; min-height:2.5rem; padding:0 1.1rem; border-radius:999px; color:var(--muted); font-size:.85rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; }
+.mode-option.is-current { background:var(--gold); color:var(--on-gold); }
+a.mode-option:hover { color:var(--text); background:var(--surface-2); }
+a.mode-option:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+.mode-new { padding:.1rem .4rem; border:1px solid var(--gold-border); border-radius:4px; color:var(--gold); font-size:.65rem; letter-spacing:.08em; }
 .home-header h1 { font-size:clamp(2rem,4vw,3.1rem); }
 .resume-card { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.2rem 1.4rem; margin:1rem 0 1.5rem; border:1px solid var(--gold-border); background:var(--gold-dim); border-radius:var(--radius); color:var(--text); text-decoration:none; }
 .resume-card h2 { font-size:1.2rem; margin:.35rem 0; }
 .resume-card p { margin:0; color:var(--muted); font-size:.85rem; }
 .resume-card > span { color:var(--gold); font-size:1.5rem; }
 .search { max-width:none; }
-.search-results { border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
-.search-results > p { padding:1rem; }
-.search-results a { display:flex; justify-content:space-between; gap:1rem; padding:1rem 1.2rem; border-bottom:1px solid var(--line); color:var(--text); text-decoration:none; }
-.search-results a:last-child { border:0; }
-.search-results a.selected { background:var(--gold-dim); box-shadow:inset 3px 0 var(--gold); }
-.search-results small { display:block; margin-top:.3rem; color:var(--muted); }
-.search-results a > span { color:var(--gold); font-size:.75rem; white-space:nowrap; align-self:center; }
 .map-card-action { display:block; color:var(--gold); font-size:.8rem; margin-top:.8rem; }
 .tool-directory { margin-top:3rem; scroll-margin-top:5.5rem; }
 .tool-directory .section-head { flex-wrap:wrap; gap:1rem; }
@@ -367,6 +349,6 @@ watch(query,()=>{selected.value=0})
 .tool-grid strong { font-size:.95rem; }
 .tool-grid a > span:last-child { color:var(--gold); }
 @media(max-width:760px) { .tool-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-@media(max-width:480px) { .tool-grid { grid-template-columns:1fr; } .home { padding-top:1.5rem; } .home-header { padding-right:2rem; } .search-results a { padding:.9rem; } }
+@media(max-width:480px) { .tool-grid { grid-template-columns:1fr; } .home { padding-top:1.5rem; } .home-header { padding-right:2rem; } }
 @media(min-width:1100px){.tool-directory{scroll-margin-top:2rem}}
 </style>

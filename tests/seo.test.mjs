@@ -4,13 +4,15 @@ import fs from 'node:fs'
 import { DEFAULT_SITE_URL, SUPER_EASTER_EGG_PATH, createSeoPages, resolvePageSeo, sitemapUrls, renderSitemap, renderRobots, websiteSchema, siteOrigin, seoPath } from '../shared/seo.mjs'
 import { seoOverrides } from '../shared/seo-overrides.mjs'
 import { retiredTools } from '../shared/retired-tools.mjs'
+import { dmzPages } from '../shared/dmz.mjs'
 
 const catalogue = JSON.parse(fs.readFileSync(new URL('../shared/catalogue.json', import.meta.url)))
 
 test('sitemap covers actual authored routes, child quests and tools, without placeholders or duplicates', () => {
   const expected = ['/', SUPER_EASTER_EGG_PATH,
     ...catalogue.maps.filter(map => map.status !== 'planned').map(map => map.route),
-    ...catalogue.guides.map(guide => guide.route), ...catalogue.tools.map(tool => tool.route)]
+    ...catalogue.guides.map(guide => guide.route), ...catalogue.tools.map(tool => tool.route),
+    ...dmzPages.map(page => page.path)]
   assert.deepEqual(sitemapUrls(catalogue), expected.map(path => DEFAULT_SITE_URL + path).sort())
   assert.equal(new Set(expected).size, expected.length)
   for (const path of expected) {

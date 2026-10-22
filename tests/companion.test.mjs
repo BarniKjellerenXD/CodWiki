@@ -3,21 +3,25 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import { createRequire } from 'node:module'
 import { parse } from '@vue/compiler-dom'
-import { emptyProgress, readProgress, ensureRun, resetRun, searchCatalogue } from '../app/utils/companion.mjs'
+import { emptyProgress, readProgress, ensureRun, resetRun } from '../app/utils/companion.mjs'
+import { hydrateSpotlight, searchSpotlight } from '../shared/spotlight.mjs'
 const require = createRequire(import.meta.url)
 const { siteForDevelopment, isInternal, mergeOrder, mergeShortcuts, matchAccel } = require('../desktop-app/runtime.js')
 const { groupNavigation } = require('../desktop-app/renderer/navigation.js')
 const catalogue = JSON.parse(fs.readFileSync(new URL('../shared/catalogue.json', import.meta.url)))
 const index = JSON.parse(fs.readFileSync(new URL('../app/data/searchIndex.json', import.meta.url)))
 const quests = JSON.parse(fs.readFileSync(new URL('../app/data/quickQuests.json', import.meta.url)))
+// The home search box hands its text to Spotlight, so its cases run on the Spotlight index.
+const spotlight = hydrateSpotlight(JSON.parse(fs.readFileSync(new URL('../public/spotlight/index.json', import.meta.url))))
+const find = query => searchSpotlight(spotlight, query, { limit: Infinity }).results
 
 test('search finds tools and guide sections, handles accents and multiple words', () => {
-  assert.equal(searchCatalogue(index, 'serum')[0].route, '/tools/ashes-serum')
-  assert.ok(searchCatalogue(index, 'serum').some(e=>e.route.endsWith('#wiki_create_the_serum')))
-  assert.ok(searchCatalogue(index, 'kowakujo clock').some(e=>e.route==='/tools/kowakujo-clock-solver'))
-  assert.ok(searchCatalogue(index, 'Kowakujō').length)
-  assert.equal(searchCatalogue(index, '').length, 0)
-  assert.equal(searchCatalogue(index, 'no-such-map-981').length, 0)
+  assert.equal(find('serum')[0].route, '/tools/ashes-serum')
+  assert.ok(find('serum').some(e=>e.route.endsWith('#wiki_create_the_serum')))
+  assert.ok(find('kowakujo clock').some(e=>e.route==='/tools/kowakujo-clock-solver'))
+  assert.ok(find('Kowakujō').length)
+  assert.equal(find('').length, 0)
+  assert.equal(find('no-such-map-981').length, 0)
 })
 test('progress survives serialisation; resetting one run preserves toys and preferences', () => {
   const state = emptyProgress()

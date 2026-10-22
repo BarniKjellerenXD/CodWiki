@@ -1,5 +1,6 @@
 import { seoOverrides } from './seo-overrides.mjs'
 import { retiredToolDestination } from './retired-tools.mjs'
+import { dmzPages, dmzLabPages } from './dmz.mjs'
 
 export const DEFAULT_SITE_URL = 'https://codzmwiki.com'
 export const SUPER_EASTER_EGG_PATH = '/guides/bo7-super-easter-egg'
@@ -74,6 +75,10 @@ export function createSeoPages(catalogue) {
 
   add(SUPER_EASTER_EGG_PATH, 'BO7 Super Easter Egg Guide — CodWiki',
     'Follow the Black Ops 7 toy quests and Rex Infernus Warden instructions, with map guide links and checklists saved on your device.', true, 'guide')
+
+  for (const page of dmzPages) add(page.path, page.title, page.description, true, 'dmz')
+  // Concept drafts get real titles but stay noindex and out of the sitemap.
+  for (const page of dmzLabPages) add(page.path, page.title, page.description, false, 'concept')
   return pages
 }
 

@@ -9,10 +9,12 @@
   const chkRestore = document.getElementById('sp-restore')
   const btnReset = document.getElementById('sp-reset-shortcuts')
   const gameFilter = document.getElementById('sp-game')
+  // Bundled modes (DMZ) sit beside the live library and are customised like any map.
+  const navEntries = () => [...window.NAV, ...(window.NAV_MODE_ENTRIES || [])]
   function populateGameFilter() {
   const selected = gameFilter.value || 'all'
   gameFilter.replaceChildren(new Option('All games', 'all'))
-  for (const game of window.NAV_GAMES) {
+  for (const game of [...window.NAV_GAMES, ...(window.NAV_MODES || []).map(mode => ({ id: mode.id, name: mode.title }))]) {
     const option = document.createElement('option')
     option.value = game.id
     option.textContent = game.name
@@ -29,7 +31,7 @@
   let captureHandler = null
 
   const allActions = () => [
-    ...window.NAV.filter((n) => !n.external && (gameFilter.value === 'all' || n.game === gameFilter.value)).map((n) => ({ id: 'nav:' + n.id, label: n.label, group: n.gameName + ' · ' + n.section, navItem: n })),
+    ...navEntries().filter((n) => !n.external && (gameFilter.value === 'all' || n.game === gameFilter.value)).map((n) => ({ id: 'nav:' + n.id, label: n.label, group: n.gameName + ' · ' + n.section, navItem: n })),
     ...window.SYSTEM_ACTIONS.map((s) => ({ id: s.id, label: s.label, group: 'App' }))
   ]
 
@@ -134,7 +136,7 @@
 
   function renderNavList () {
     navListEl.innerHTML = ''
-    const ordered = window.groupNavigation(window.NAV, settings.order).flatMap(group => group.items)
+    const ordered = window.groupNavigation(navEntries(), settings.order).flatMap(group => group.items)
     let map = null
     ordered.forEach((item, idx) => {
       if (gameFilter.value !== 'all' && item.game !== gameFilter.value) return
@@ -192,7 +194,7 @@
   }
 
   function move (idx, delta) {
-    const items = window.groupNavigation(window.NAV, settings.order).flatMap(group => group.items)
+    const items = window.groupNavigation(navEntries(), settings.order).flatMap(group => group.items)
     const order = items.map(item => item.id)
     const j = idx + delta
     if (j < 0 || j >= order.length) return
@@ -261,7 +263,7 @@
   })
   btnReset.addEventListener('click', async () => {
     const defaults = {}
-    for (const it of window.NAV) defaults['nav:' + it.id] = it.accel || null
+    for (const it of navEntries()) defaults['nav:' + it.id] = it.accel || null
     for (const s of window.SYSTEM_ACTIONS) defaults[s.id] = s.accel
     settings.shortcuts = defaults
     persist()

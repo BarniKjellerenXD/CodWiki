@@ -1,4 +1,4 @@
-// Generated from shared/catalogue.json; run node scripts/generate-catalogue.mjs.
+// Generated from shared/catalogue.json and shared/dmz.mjs; run node scripts/generate-catalogue.mjs.
 const NAV = [
   {
     "id": "ashes-of-the-damned",
@@ -2905,5 +2905,241 @@ const SYSTEM_ACTIONS = [
     "accel": "F12"
   }
 ]
-if (typeof window !== 'undefined') { window.NAV = NAV; window.NAV_GAMES = NAV_GAMES; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS }
-if (typeof module !== 'undefined') { module.exports = NAV; module.exports.games = NAV_GAMES; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS }
+const NAV_MODES = [
+  {
+    "id": "dmz",
+    "name": "DMZ",
+    "title": "Modern Warfare 4 · DMZ",
+    "route": "/dmz",
+    "summary": "Modern Warfare 4 · 15 pages · Orders tracker"
+  }
+]
+const NAV_MODE_ENTRIES = [
+  {
+    "id": "dmz-stations",
+    "map": "dmz-stations",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ companion: Hajin Exclusion Zone points of interest, DMZ Orders and key trackers, and a briefing on how the mode works.",
+    "kind": "guide",
+    "section": "DMZ stations",
+    "label": "Station menu",
+    "url": "/dmz",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-hajin",
+    "map": "dmz-hajin",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Interactive Hajin Tac-Map for Modern Warfare 4 DMZ: all 13 major locations with threat ratings, police stations, clinics, UAV and Lieutenant towers, plus reported key rooms, bosses and exfils.",
+    "kind": "guide",
+    "section": "Hajin Exclusion Zone",
+    "label": "Deploy station",
+    "url": "/dmz/hajin",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-orders",
+    "map": "dmz-orders",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Track Modern Warfare 4 DMZ Order tasks between matches. Ticks and counters are saved on this device.",
+    "kind": "guide",
+    "section": "DMZ Orders tracker",
+    "label": "DMZ Orders station",
+    "url": "/dmz/orders",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-stash",
+    "map": "dmz-stash",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ key tracker: every key and locked room with its Hajin room, place, grid square and confidence label. Mark keys held or used; marks are saved on this device.",
+    "kind": "guide",
+    "section": "DMZ key tracker",
+    "label": "Stash station",
+    "url": "/dmz/stash",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel",
+    "map": "dmz-intel",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ Intel: start from what you are doing, such as hunting a boss, printing gear or getting out, or search keys, missions, traits and mechanics with sources.",
+    "kind": "guide",
+    "section": "DMZ Intel database",
+    "label": "Intel station",
+    "url": "/dmz/intel",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-boss-board",
+    "map": "dmz-boss-board",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ Boss Board: every Lieutenant and Commander with where players find them on Hajin, what they drop, and the enemy forces by tier.",
+    "kind": "guide",
+    "section": "DMZ Boss Board",
+    "label": "Boss Board station",
+    "url": "/dmz/boss-board",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-printer",
+    "map": "dmz-printer",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ 3D Printer recipes with their materials and unlocks, and a planner that adds up what to loot for your next prints.",
+    "kind": "guide",
+    "section": "DMZ 3D Printer recipes",
+    "label": "3D Printer station",
+    "url": "/dmz/printer",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-operators",
+    "map": "dmz-operators",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ trait trees side by side: Warfighter, Scout and Survivalist major and minor traits, plus Active Duty Operators, MIA and Dog Tags.",
+    "kind": "guide",
+    "section": "DMZ Operators and traits",
+    "label": "Operators station",
+    "url": "/dmz/operators",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel-missions",
+    "map": "dmz-intel-missions",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ missions in one list: Story Missions, Dynamic Ops, Side Ops and contracts, with sources and a confidence label.",
+    "kind": "guide",
+    "section": "DMZ missions",
+    "label": "Intel · Missions",
+    "url": "/dmz/intel/missions",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel-armory",
+    "map": "dmz-intel-armory",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ weapons, contraband, equipment, consumables, backpacks and kits, each with sources and a confidence label.",
+    "kind": "guide",
+    "section": "DMZ Armory",
+    "label": "Intel · Armory",
+    "url": "/dmz/intel/armory",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel-field-manual",
+    "map": "dmz-intel-field-manual",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction How Modern Warfare 4 DMZ works: rules of the zone, infil and exfil, vehicles, FOB stations, DMZ Cash and field notes from players.",
+    "kind": "guide",
+    "section": "DMZ Field manual",
+    "label": "Intel · Field manual",
+    "url": "/dmz/intel/field-manual",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel-status",
+    "map": "dmz-intel-status",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ known issues sorted by fix status, and launch, season and patch dates in order.",
+    "kind": "guide",
+    "section": "DMZ Status",
+    "label": "Intel · Status",
+    "url": "/dmz/intel/status",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-intel-all",
+    "map": "dmz-intel-all",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Every Modern Warfare 4 DMZ Intel entry on one page: filter by category or confidence label, or search names, details and sources.",
+    "kind": "guide",
+    "section": "All DMZ Intel",
+    "label": "Intel · Everything",
+    "url": "/dmz/intel/all",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-guide",
+    "map": "dmz-guide",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction What to do next in Modern Warfare 4 DMZ, from your first deploy to the endgame: early, mid and late game steps in order, which deployment and Dynamic Ops to pick, what to print and farm, and which Lieutenants to hunt first.",
+    "kind": "guide",
+    "section": "DMZ progression guide",
+    "label": "Guide station",
+    "url": "/dmz/guide",
+    "accel": null,
+    "icon": "◇"
+  },
+  {
+    "id": "dmz-briefing",
+    "map": "dmz-briefing",
+    "game": "dmz",
+    "gameName": "Modern Warfare 4 · DMZ",
+    "group": "",
+    "status": "available",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ basics: lobbies, the FOB, Active Duty Operators and MIA, missions, threat levels, DMZ Cash and progression.",
+    "kind": "guide",
+    "section": "How DMZ works",
+    "label": "Briefing station",
+    "url": "/dmz/briefing",
+    "accel": null,
+    "icon": "◇"
+  }
+]
+if (typeof window !== 'undefined') { window.NAV = NAV; window.NAV_GAMES = NAV_GAMES; window.SYSTEM_ACTIONS = SYSTEM_ACTIONS; window.NAV_MODES = NAV_MODES; window.NAV_MODE_ENTRIES = NAV_MODE_ENTRIES }
+if (typeof module !== 'undefined') { module.exports = NAV; module.exports.games = NAV_GAMES; module.exports.SYSTEM_ACTIONS = SYSTEM_ACTIONS; module.exports.MODES = NAV_MODES; module.exports.MODE_ENTRIES = NAV_MODE_ENTRIES }

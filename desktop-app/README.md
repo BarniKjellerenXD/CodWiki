@@ -11,6 +11,7 @@ near-black/gold theme matching the site.
 - Remembers the selected game; restored pages, guide/tool links and shortcuts select the matching game automatically. BO3 Chronicles and BO2 Survival grouping remain available.
 - Guides and tools render inside the app; external links open in the system browser
 - MW3 offers six direct guides and five interactive maps: Urzikstan and all four seasonal Dark Aether regions. Use Map or an inline map icon to search by location/grid, select pins, filter categories and return to the guide step. Candidate spawns and approximate areas are labelled; the maps do not track a live match.
+- A Zombies | DMZ switch sits above the game picker. DMZ lists the Modern Warfare 4 DMZ station menu, Hajin Exclusion Zone, the Orders tracker and the briefing; opening a DMZ page selects it. These entries are generated from `../shared/dmz.mjs` into the app, not the live guide library, which released apps only accept with Zombies guide and tool routes. DMZ navigation changes therefore need a desktop release. DMZ shortcuts start unbound and can be assigned in App settings.
 - Keyboard shortcuts: Ctrl+1..9 and Ctrl+Shift+1..9 (guides/tools), Ctrl+Alt+1 (Paradox notes), Ctrl+H home, F5 reload,
   Alt+←/→ back/forward, Ctrl+= / Ctrl+- / Ctrl+0 zoom, F12 devtools
 - Remembers the last page you had open (localStorage persists, so guide pins

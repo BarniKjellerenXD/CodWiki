@@ -25,6 +25,11 @@ function navigate(url) {
 
 /* ---------- companion navigation ---------- */
 const { filterNavigation, navigationForRoute, resolveNavigationGame } = window.CW_NAVIGATION
+// Modes such as DMZ ship with the app beside the live Zombies library; Zombies keeps the game picker.
+const modes = window.NAV_MODES || []
+const modeEntries = window.NAV_MODE_ENTRIES || []
+const allEntries = () => [...window.NAV, ...modeEntries]
+const modeSwitch = document.getElementById('nav-modes')
 const gameSelect = document.getElementById('nav-game')
 const searchInput = document.getElementById('nav-search')
 const searchClear = document.getElementById('nav-search-clear')
@@ -32,7 +37,40 @@ const searchStatus = document.getElementById('nav-search-status')
 const emptyNav = document.getElementById('nav-empty')
 const startUrl = settings?.restoreLastPage !== false && isSite(lastSiteUrl) ? lastSiteUrl : SITE + '/'
 let selectedGame = resolveNavigationGame(window.NAV, localStorage.getItem('cw-nav-selected-game'), startUrl)
-let activeItem = navigationForRoute(window.NAV, startUrl)
+let activeItem = navigationForRoute(allEntries(), startUrl)
+// A mode's own routes select it; Zombies guide and tool routes select Zombies; other pages keep the saved mode.
+function modeForRoute(url) {
+  try {
+    const route = new URL(url, SITE).pathname
+    const mode = modes.find(mode => route === mode.route || route.startsWith(mode.route + '/'))
+    if (mode) return mode.id
+  } catch { return null }
+  return navigationForRoute(window.NAV, url) ? 'zombies' : null
+}
+const savedMode = localStorage.getItem('cw-nav-mode')
+let selectedMode = modeForRoute(startUrl) || (modes.some(mode => mode.id === savedMode) ? savedMode : 'zombies')
+function setMode(id) {
+  selectedMode = id
+  localStorage.setItem('cw-nav-mode', id)
+  for (const button of modeSwitch.children) button.setAttribute('aria-pressed', String(button.dataset.mode === id))
+  gameSelect.hidden = gameSelect.labels[0].hidden = id !== 'zombies'
+}
+modeSwitch.hidden = !modes.length
+for (const mode of [{ id: 'zombies', name: 'Zombies' }, ...modes]) {
+  const button = document.createElement('button')
+  button.type = 'button'
+  button.dataset.mode = mode.id
+  button.textContent = mode.name
+  button.addEventListener('click', () => {
+    if (mode.id === selectedMode) return
+    setMode(mode.id)
+    searchInput.value = ''
+    buildSidebar()
+    navEl.scrollTop = 0
+  })
+  modeSwitch.appendChild(button)
+}
+setMode(selectedMode)
 
 function populateGames() {
 gameSelect.replaceChildren()
@@ -87,7 +125,7 @@ webview.addEventListener('ipc-message',event=>{
 function effectiveGroups () {
   const hidden = Array.isArray(settings?.hidden) ? settings.hidden : []
   const labels = settings?.labels || {}
-  return window.groupNavigation(window.NAV, settings?.order || []).map(group => ({
+  return window.groupNavigation(allEntries(), settings?.order || []).map(group => ({
     ...group,
     items: group.items.filter(item => !hidden.includes(item.id)).map(item => ({ ...item, label: labels[item.id] || item.label }))
   })).filter(group => group.items.length)
@@ -137,21 +175,28 @@ const subgroupNames = {
   'tortured-path': 'The Tortured Path',
   rifts: 'Dark Aether & rifts',
 }
+// Modes carry their own summary; MW3 names its guides, maps and finder; other games count maps and tools.
+function gameSummary(game) {
+  const mode = modes.find(mode => mode.id === game)
+  if (mode) return mode.summary
+  const maps = window.NAV.filter(item => item.game === game && item.kind === 'guide')
+  if (game === 'mw3') return `${maps.length} guides · 5 maps · photo finder`
+  const planned = maps.filter(map => map.status === 'planned').length
+  const tools = window.NAV.filter(item => item.game === game && item.kind === 'tool').length
+  return `${maps.length} ${game === 'ww2' ? 'maps & modes' : 'maps'} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
+}
 function buildSidebar() {
   const focusKey = navEl.contains(document.activeElement) ? document.activeElement.dataset.navFocus : null
   navEl.replaceChildren()
   const query = searchInput.value.trim()
   const allGroups = effectiveGroups()
-  const groups = filterNavigation(allGroups, selectedGame, query)
-  const maps = window.NAV.filter(item => item.game === selectedGame && item.kind === 'guide')
-  const planned = maps.filter(map => map.status === 'planned').length
-  const tools = window.NAV.filter(item => item.game === selectedGame && item.kind === 'tool').length
-  const units = selectedGame === 'mw3' ? 'destinations' : selectedGame === 'ww2' ? 'maps & modes' : 'maps'
-  document.getElementById('nav-game-info').textContent = selectedGame === 'mw3' ? `${maps.length} guides · 5 maps · photo finder` : `${maps.length} ${units} · ${planned === maps.length ? 'Guides planned' : tools + ' tools'}`
+  const view = selectedMode === 'zombies' ? selectedGame : selectedMode
+  const groups = filterNavigation(allGroups, view, query)
+  document.getElementById('nav-game-info').textContent = gameSummary(view)
   searchClear.hidden = !searchInput.value
   searchStatus.textContent = query ? `${groups.reduce((count, group) => count + group.items.length, 0)} results across all games` : ''
   emptyNav.hidden = groups.length > 0
-  emptyNav.textContent = query ? 'No matches. Try a map, game or tool name.' : 'All entries for this game are hidden. Show them in Settings → Sidebar.'
+  emptyNav.textContent = query ? 'No matches. Try a map, game or tool name.' : `All entries for this ${view === selectedGame ? 'game' : 'mode'} are hidden. Show them in Settings → Sidebar.`
   let lastGame = ''
   let lastGroup = null
   for (const group of groups) {
@@ -209,7 +254,7 @@ function applyCatalogue(snapshot) {
     window.NAV.splice(0, window.NAV.length, ...catalogue.entries)
     window.NAV_GAMES.splice(0, window.NAV_GAMES.length, ...catalogue.games)
     if (!window.NAV_GAMES.some(game => game.id === selectedGame)) selectedGame = resolveNavigationGame(window.NAV, null, lastSiteUrl)
-    activeItem = navigationForRoute(window.NAV, lastSiteUrl)
+    activeItem = navigationForRoute(allEntries(), lastSiteUrl)
     populateGames()
     buildSidebar()
   }
@@ -225,12 +270,14 @@ window.cw.onSettingsChanged(s => {
   buildSidebar()
 })
 
-/* Route changes from web links, back/forward and shortcuts reveal their game. */
+/* Route changes from web links, back/forward and shortcuts reveal their game or mode. */
 function setActive(url) {
   if (!isSite(url)) return
-  activeItem = navigationForRoute(window.NAV, url)
+  activeItem = navigationForRoute(allEntries(), url)
+  const mode = modeForRoute(url)
+  if (mode) setMode(mode)
   if (activeItem) {
-    selectGame(activeItem.game)
+    if (mode === 'zombies') selectGame(activeItem.game)
     searchInput.value = ''
   }
   buildSidebar()

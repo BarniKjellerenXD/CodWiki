@@ -42,17 +42,3 @@ export function togglePart(done, steps) {
   const rest = done.filter(id => !ids.has(id))
   return partStatus(done, steps) === 'complete' ? rest : [...rest, ...ids]
 }
-export function normalizeSearch(value) {
-  return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-}
-export function searchCatalogue(entries, query) {
-  const q = normalizeSearch(query)
-  if (!q) return []
-  const words = q.split(' ')
-  return entries.map(entry => {
-    const name = normalizeSearch(entry.name)
-    const haystack = normalizeSearch(`${entry.name} ${entry.keywords || ''} ${entry.map || ''}`)
-    const score = words.every(word => haystack.includes(word)) ? (name === q ? 100 : name.startsWith(q) ? 70 : name.includes(q) ? 50 : 10) + (entry.kind === 'Tool' ? 5 : 0) : 0
-    return { entry, score }
-  }).filter(hit => hit.score).sort((a,b)=>b.score-a.score || a.entry.name.localeCompare(b.entry.name)).map(hit=>hit.entry)
-}

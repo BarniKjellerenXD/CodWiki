@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, watch, nextTick } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch, nextTick } from 'vue'
 
 const { state, themes, setTheme, setFontScale, init } = useSettings()
 const open = ref(false)
@@ -92,9 +92,13 @@ const scales: { id: 'compact' | 'default' | 'relaxed', label: string }[] = [
   { id: 'relaxed', label: 'Relaxed' },
 ]
 
+// Search's "Reading settings" action opens this panel.
+function openFromSearch() { open.value = true }
 onMounted(() => {
   init()
+  window.addEventListener('codwiki:open-settings', openFromSearch)
 })
+onBeforeUnmount(() => window.removeEventListener('codwiki:open-settings', openFromSearch))
 </script>
 
 <style scoped>

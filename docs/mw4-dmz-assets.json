@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/maps/mw4-hajin/tac-map.webp",
+    "source": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/body/mw4/dmz-hajin-deep-dive/MW4-DMZ-TOUR-OF-HAJIN-027.webp",
+    "page": "https://www.callofduty.com/blog/2026/10/call-of-duty-modern-warfare-4-dmz-deep-dive-hajin",
+    "credit": "Activision: Hajin Tactical Map, DMZ Deep Dive Part 1",
+    "sourceSha256": "6771f6f2f82957a116d146746db2e379597f884e9f3fc8200d666a8c05706925",
+    "edit": "Cropped to the map area (x 754-1920, y 0-1080 of the 1920x1080 original), WebP quality 88. The legend panel and MW4 logo are cut; the Hajin title art is kept.",
+    "sha256": "2747eb4c398ca7e4a1974922eb80d57fe2be536f64784ad18bd9bf2bf3ec4c18",
+    "reviewed": "2026-10-22"
+  }
+]

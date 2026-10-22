@@ -20,8 +20,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // Keep local shared helpers in Nitro's bundle (Windows dev builds otherwise
   // rebase this external import outside the checkout).
-  nitro: { externals: { inline: [/shared[\\/](?:retired-tools|seo(?:-overrides)?)\.mjs/] } },
+  nitro: { externals: { inline: [/shared[\\/](?:retired-tools|dmz|seo(?:-overrides)?)\.mjs/] } },
   css: ['~/assets/css/main.css', '~/assets/css/companion.css', '~/assets/css/puzzles.css'],
+  // DMZ pages only. Saira's width axis gives the condensed and wide menu
+  // labels; pages set it with font-variation-settings because the generated
+  // @font-face rules carry no font-stretch range.
+  fonts: {
+    google: { experimental: { variableAxis: { Saira: { wdth: [['50', '125']] } } } },
+    families: [
+      { name: 'Saira', provider: 'google', weights: ['300 800'], styles: ['normal'] },
+      { name: 'JetBrains Mono', provider: 'google', weights: ['400 800'], styles: ['normal'] },
+    ],
+  },
   modules: [
     '@vercel/analytics/nuxt',
     '@nuxt/fonts',

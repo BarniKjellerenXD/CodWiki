@@ -10,6 +10,9 @@ const HOME = SITE + '/'
 const bundledNav = require('./renderer/nav.js')
 let nav = bundledNav
 const SYSTEM_ACTIONS = bundledNav.SYSTEM_ACTIONS || []
+// Bundled mode pages (DMZ) are not in the live catalogue but keep their own shortcuts and sidebar settings.
+const MODE_ENTRIES = bundledNav.MODE_ENTRIES || []
+const navEntries = () => [...nav, ...MODE_ENTRIES]
 let library = null, updates = null
 
 const isTest = !!process.env.CW_TEST
@@ -29,7 +32,7 @@ let win = null
 const webviews = new Map() // hostWebContents id -> webview webContents
 
 /* ---------------- settings ---------------- */
-let settings = migrateSettings({}, nav, SYSTEM_ACTIONS)
+let settings = migrateSettings({}, navEntries(), SYSTEM_ACTIONS)
 function settingsPath () {
   try { return path.join(app.getPath('userData'), 'codwiki-settings.json') } catch (_) { return null }
 }
@@ -38,14 +41,14 @@ function loadSettings () {
   if (!p || !fs.existsSync(p)) return
   try {
     const raw = JSON.parse(fs.readFileSync(p, 'utf8'))
-    settings = migrateSettings(raw, nav, SYSTEM_ACTIONS)
+    settings = migrateSettings(raw, navEntries(), SYSTEM_ACTIONS)
   } catch (err) {
     console.error('settings load failed:', err.message)
   }
 }
 function applyLibrary(snapshot) {
   nav = snapshot.catalogue.entries
-  settings = migrateSettings(settings, nav, SYSTEM_ACTIONS)
+  settings = migrateSettings(settings, navEntries(), SYSTEM_ACTIONS)
   for (const wc of webContents.getAllWebContents()) if (wc.getType() === 'window') wc.send('cw:library-changed', snapshot)
   saveSettings({})
 }
@@ -76,7 +79,7 @@ function saveSettings (next) {
 function dispatchAction (actionId, target) {
   if (actionId.startsWith('nav:')) {
     const id = actionId.slice(4)
-    const it = nav.find((n) => n.id === id)
+    const it = navEntries().find((n) => n.id === id)
     if (!it) return false
     if (it.external && isExternalUrl(it.url)) shell.openExternal(it.url)
     else target.loadURL(SITE + it.url).catch(() => {})

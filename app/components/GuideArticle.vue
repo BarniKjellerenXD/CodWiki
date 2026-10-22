@@ -175,7 +175,29 @@ function switchView(next:string) {
   const target=phase?(next==='quick'?'quick-'+phase.id:phase.detail):(next==='quick'?'quick-'+phases.value[0]?.id:shortcuts.value.find(t=>/Main Quest/.test(t.text))?.id)
   if(target) scrollTo(target)
 }
-async function scrollTo(id?:string, updateUrl=true) {
+// A step or section reached through the address, from a link or the site
+// search, glows for a moment so the reader sees where they landed.
+let landedEl:HTMLElement|null=null
+let landTimer:ReturnType<typeof setTimeout>|undefined
+let lastScroll=0
+const noteScroll=()=>{ lastScroll=performance.now() }
+function markLanding(el:HTMLElement) {
+  clearTimeout(landTimer)
+  landedEl?.classList.remove('guide-landed')
+  landedEl=el
+  lastScroll=performance.now()
+  window.addEventListener('scroll',noteScroll,{passive:true})
+  // Smooth scrolling may still be under way, so the glow waits until it settles.
+  const glow=()=>{
+    if(landedEl!==el) return
+    if(performance.now()-lastScroll<120) { landTimer=setTimeout(glow,60); return }
+    window.removeEventListener('scroll',noteScroll)
+    el.classList.add('guide-landed')
+    landTimer=setTimeout(()=>{ el.classList.remove('guide-landed'); if(landedEl===el) landedEl=null },2600)
+  }
+  landTimer=setTimeout(glow,120)
+}
+async function scrollTo(id?:string, updateUrl=true, landing=false) {
   if(!id) return
   const branch = branchForGuideAnchor(allPhases, id, selectedBranch.value)
   const sectionBranches = document.getElementById(id)?.closest<HTMLElement>('[data-guide-branches]')?.dataset.guideBranches?.split(',')
@@ -237,6 +259,7 @@ async function scrollTo(id?:string, updateUrl=true) {
   saveCollapsed()
   remember(id)
   el.scrollIntoView({behavior:'auto',block:'start'})
+  if(landing) markLanding(el)
 }
 function saveCollapsed() {
   articleRef.value?.querySelectorAll<HTMLInputElement>('.g-cb').forEach(input=>{
@@ -282,7 +305,7 @@ onMounted(async()=>{
   })
   mounted=true
   const anchor=route.hash?decodeGuideHash(route.hash):current.value.section || (view.value==='map'?'map':'')
-  if(anchor) await scrollTo(anchor,false)
+  if(anchor) await scrollTo(anchor,false,!!route.hash)
   else remember(view.value==='quick'?'quick-'+phases.value[0]?.id:'')
   if (!mounted) return
   window.addEventListener('scroll',trackPosition,{passive:true})
@@ -290,7 +313,7 @@ onMounted(async()=>{
 watch(()=>route.hash,hash=>{
   if(!mounted || (ignoreHash !== null && decodeGuideHash(hash)===decodeGuideHash(ignoreHash))) return
   const anchor=decodeGuideHash(hash)
-  if(anchor) scrollTo(anchor,false)
+  if(anchor) scrollTo(anchor,false,true)
   else scrollTo(props.defaultView === 'full' ? phases.value[0]?.detail : 'quick-'+phases.value[0]?.id,false)
 })
 watch(selectedBranch, async branch => {
@@ -305,7 +328,7 @@ async function chooseBranch(branch:string) {
   await router.replace({ path: route.path, query: { ...route.query, branch }, hash: '' })
 }
 watch(() => route.query.branch, branch => { if (props.branches?.some(item => item.id === branch)) selectedBranch.value = String(branch) })
-onBeforeUnmount(()=>{ mounted=false; navigationVersion++; window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer); cancelAnimationFrame(returnFrame) })
+onBeforeUnmount(()=>{ mounted=false; navigationVersion++; window.removeEventListener('scroll',trackPosition); clearTimeout(scrollTimer); clearTimeout(landTimer); window.removeEventListener('scroll',noteScroll); cancelAnimationFrame(returnFrame) })
 defineExpose({scrollTo})
 </script>
 <style scoped>
@@ -1214,6 +1237,12 @@ defineExpose({scrollTo})
 .guide-grid.showing-map { grid-template-columns:minmax(0,1fr); }
 .guide-map-view { margin-top:.85rem; scroll-margin-top:5.5rem; outline:none; }
 .guide-surface :deep([id^="guide-step-"]), .guide-surface :deep([data-guide-step]) { scroll-margin-top:6rem; }
+/* The landing glow holds, then fades back to the element's own look. */
+.guide-surface :deep(.guide-landed) { border-radius:var(--radius-sm); animation:guide-landed 2.6s ease-out; }
+@keyframes guide-landed {
+  0%, 45% { background-color:var(--gold-dim); background-color:color-mix(in srgb, var(--gold) 18%, transparent); box-shadow:0 0 0 2px var(--gold); }
+}
+@media(prefers-reduced-motion:reduce) { .guide-surface :deep(.guide-landed) { animation:none; background-color:var(--gold-dim); background-color:color-mix(in srgb, var(--gold) 18%, transparent); box-shadow:0 0 0 2px var(--gold); } }
 @media(max-width:600px) { .guide-surface :deep([id^="guide-step-"]), .guide-surface :deep([data-guide-step]), .guide-map-view { scroll-margin-top:9rem; } }
 .guide-map-loading { min-height:25rem; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; gap:.7rem; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface-2); }
 .guide-map-loading p { width:100%; text-align:center; }

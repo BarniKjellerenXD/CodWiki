@@ -57,6 +57,8 @@ onBeforeUnmount(() => {
 .game-jump-mobile label{font-size:.82rem;color:var(--muted);white-space:nowrap}
 .game-jump-mobile select{min-width:0;width:100%;min-height:44px;padding:.65rem 2rem .65rem .8rem;background:var(--surface);color:var(--text);border:1px solid var(--line-strong);border-radius:var(--radius-sm);font:inherit;font-size:.9rem}
 .game-jump-mobile select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* Tablets: clear the settings and search buttons fixed in the top-right corner. */
+@media(min-width:561px) and (max-width:1099px){.game-jump-mobile{padding-right:3.5rem}}
 .game-jump-desktop{display:none}
 @media(min-width:1100px){
  .game-jumps{top:2rem;margin:0;border:0;max-height:calc(100dvh - 4rem);overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent;padding:3px}

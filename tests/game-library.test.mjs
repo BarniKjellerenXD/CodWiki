@@ -4,7 +4,7 @@ import fs from 'node:fs'
 import { createRequire } from 'node:module'
 import { plannedMaps, remainingMapMetadata } from '../shared/planned-maps.mjs'
 import { games } from '../shared/games.mjs'
-import { searchCatalogue } from '../app/utils/companion.mjs'
+import { hydrateSpotlight, searchSpotlight } from '../shared/spotlight.mjs'
 const require = createRequire(import.meta.url)
 const nav = require('../desktop-app/renderer/nav.js')
 const { groupNavigation, filterNavigation, navigationForRoute, resolveNavigationGame } = require('../desktop-app/renderer/navigation.js')
@@ -12,6 +12,7 @@ const { mergeOrder, mergeShortcuts } = require('../desktop-app/runtime.js')
 const read = file => JSON.parse(fs.readFileSync(file, 'utf8'))
 const catalogue = read('shared/catalogue.json')
 const search = read('app/data/searchIndex.json')
+const spotlight = hydrateSpotlight(read('public/spotlight/index.json'))
 const quests = read('app/data/quickQuests.json')
 const groups = groupNavigation(nav)
 
@@ -43,7 +44,7 @@ test('the website and desktop both find edition names, aliases and accented maps
     ['modern warfare 3 countermeasures', 'mw3-dark-aether-season-2'],
     ['mwiii union', 'mw3-dark-aether-season-3'], ['tortured path storm', 'ww2-into-the-storm'],
   ]) {
-    assert.ok(searchCatalogue(search, query).some(item => item.id === id), query)
+    assert.ok(searchSpotlight(spotlight, query).results.some(item => item.route === `/guides/${id}`), query)
     assert.ok(filterNavigation(groups, 'bo7', query).some(group => group.id === id), query)
   }
   assert.deepEqual(filterNavigation(groups, 'bo7', 'not-a-real-map-987'), [])

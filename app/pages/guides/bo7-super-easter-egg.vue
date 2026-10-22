@@ -10,14 +10,45 @@ function continueQuest() {
  const index = map.stepIds.findIndex(id => !run('super-'+map.id).done.includes(id))
  document.getElementById(index < 0 ? map.id : map.id+'-'+map.stepIds[index])?.scrollIntoView({block:'start'})
 }
+// A step reached through the address, from a link or the site search, glows
+// for a moment.
+const route = useRoute()
+const landed = ref('')
+let landTimer: ReturnType<typeof setTimeout> | undefined
+let scrollTimer: ReturnType<typeof setTimeout> | undefined
+let lastScroll = 0
+const noteScroll = () => { lastScroll = performance.now() }
+function land(hash: string) {
+ const id = decodeURIComponent(hash.slice(1))
+ if (!superEggMaps.some(map => map.stepIds.some(step => `${map.id}-${step}` === id))) return
+ clearTimeout(landTimer)
+ clearTimeout(scrollTimer)
+ landed.value = ''
+ // The router's hash scroll ignores scroll-margin, which keeps steps clear of
+ // the sticky map list on phones, and can run before this page renders. This
+ // one follows it.
+ scrollTimer = setTimeout(() => document.getElementById(id)?.scrollIntoView({ block: 'start' }), 60)
+ lastScroll = performance.now()
+ window.addEventListener('scroll', noteScroll, { passive: true })
+ // Smooth scrolling may still be under way, so the glow waits until it settles.
+ const glow = () => {
+  if (performance.now() - lastScroll < 120) { landTimer = setTimeout(glow, 60); return }
+  window.removeEventListener('scroll', noteScroll)
+  landed.value = id
+  landTimer = setTimeout(() => { landed.value = '' }, 2600)
+ }
+ landTimer = setTimeout(glow, 180)
+}
+watch(() => route.hash, land)
 let observer: IntersectionObserver
 onMounted(() => {
+ land(location.hash)
  init()
  visit('bo7-super-easter-egg', 'Super Easter Egg', location.hash.slice(1))
  observer = new IntersectionObserver(entries => { for(const entry of entries) if(entry.isIntersecting) { activeMap.value=entry.target.id; visit('bo7-super-easter-egg','Super Easter Egg',entry.target.id) } }, {rootMargin:'-10% 0px -65% 0px'})
  document.querySelectorAll('.map-section').forEach(el=>observer.observe(el))
 })
-onBeforeUnmount(()=>observer?.disconnect())
+onBeforeUnmount(()=>{ observer?.disconnect(); clearTimeout(landTimer); clearTimeout(scrollTimer); window.removeEventListener('scroll', noteScroll) })
 
 </script>
 
@@ -60,7 +91,7 @@ onBeforeUnmount(()=>observer?.disconnect())
             <div class="equipment"><span>Bring / unlock</span><p>{{ map.equipment }}</p></div>
             <p v-if="map.note" class="map-note">{{ map.note }}</p>
             <ol class="steps">
-              <li v-for="(step, stepIndex) in map.steps" :id="`${map.id}-${map.stepIds[stepIndex]}`" :key="map.stepIds[stepIndex]" :class="{complete:run('super-'+map.id).done.includes(map.stepIds[stepIndex])}">
+              <li v-for="(step, stepIndex) in map.steps" :id="`${map.id}-${map.stepIds[stepIndex]}`" :key="map.stepIds[stepIndex]" :class="{complete:run('super-'+map.id).done.includes(map.stepIds[stepIndex]), landed:landed===`${map.id}-${map.stepIds[stepIndex]}`}">
                 <input class="egg-check" type="checkbox" :aria-label="`Complete ${map.short}: ${step[0]}`" :checked="run('super-'+map.id).done.includes(map.stepIds[stepIndex])" @change="toggle('super-'+map.id,map.stepIds[stepIndex]!)" />
                 <span class="step-number" aria-hidden="true">{{ String(stepIndex + 1).padStart(2, '0') }}</span>
                 <div><h3>{{ step[0] }}</h3><p>{{ step[1] }}</p></div>
@@ -152,6 +183,10 @@ h2 { font-size: clamp(1.65rem, 3vw, 2.1rem); letter-spacing: -.025em; font-weigh
 .map-nav a[aria-current] { color:var(--gold-bright); background:var(--gold-dim); box-shadow:inset 2px 0 var(--gold); }
 .steps li { scroll-margin-top:8rem; gap:.8rem; }
 .steps li.complete { background:var(--gold-dim); }
+/* The landing glow holds, then fades back to the step's own look. */
+.steps li.landed { border-radius:var(--radius-sm); animation:egg-landed 2.6s ease-out; }
+@keyframes egg-landed { 0%, 45% { background-color:var(--gold-dim); background-color:color-mix(in srgb, var(--gold) 18%, transparent); box-shadow:0 0 0 2px var(--gold); } }
+@media(prefers-reduced-motion:reduce) { .steps li.landed { animation:none; background-color:var(--gold-dim); background-color:color-mix(in srgb, var(--gold) 18%, transparent); box-shadow:0 0 0 2px var(--gold); } }
 .egg-reset { margin-top:1rem; }
 @media(max-width:600px) { .toy-overview { padding:1rem; } .toy-checks { grid-template-columns:repeat(2,1fr); } .map-section { scroll-margin-top:8rem; } .step-number { display:none; } }
 </style>

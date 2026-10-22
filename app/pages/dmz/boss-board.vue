@@ -1,0 +1,83 @@
+<script setup lang="ts">
+import { dmzStations } from '#shared/dmz.mjs'
+import { dmzIntel, intelConfidenceLabel, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
+import { bossGroups, intelDetail, intelEntry, entryPlaces, placeLink } from '#shared/dmz-stations.mjs'
+
+// Boss Board station: the named targets with where players find them and what
+// they drop, then the forces that escalate around you. Every card opens its
+// full entry in the drawer.
+type Entry = (typeof dmzIntel)[number]
+const icon = dmzStations.find(station => station.id === 'boss')!.icon
+const groups = bossGroups()
+const board = intelEntry('boss-board')
+const roster = groups.filter(group => group.id !== 'forces')
+const forces = groups.find(group => group.id === 'forces')
+const count = (id: string) => groups.find(group => group.id === id)?.entries.length || 0
+// Drops and the way to a target are the two facts players ask for.
+const drops = (entry: Entry) => intelDetail(entry, 'Drops')
+const way = (entry: Entry) => intelDetail(entry, 'Route') || intelDetail(entry, 'Find') || intelDetail(entry, 'Find via')
+const tier = (entry: Entry) => intelDetail(entry, 'Tier') ? `Tier ${intelDetail(entry, 'Tier')}` : intelDetail(entry, 'Type') || entry.type
+</script>
+
+<template>
+  <div class="dmz-page">
+    <DmzPageHead title="Boss Board" :icon="icon" :checked="DMZ_INTEL_CHECKED" :status="`${count('lieutenants')} Lieutenants · ${count('commanders')} Commanders and bosses · ${count('named') + count('forces')} more enemy types`">
+      <p v-if="board" class="dz-lede">{{ board.summary }} <DmzIntelLink :id="board.id" anchor class="bb-more">How the Boss Board works</DmzIntelLink></p>
+    </DmzPageHead>
+    <DmzIntelNav />
+
+    <section v-for="group in roster" :id="group.id" :key="group.id" class="dz-group" :aria-labelledby="`${group.id}-title`">
+      <header class="dz-group-head">
+        <h2 :id="`${group.id}-title`" class="dz-h2">{{ group.title }}<span class="dmz-mono">{{ group.entries.length }}</span></h2>
+        <p v-if="group.intro">{{ group.intro.summary }} <DmzIntelLink :id="group.intro.id" anchor class="bb-more">More on {{ group.title.toLowerCase() }}</DmzIntelLink></p>
+      </header>
+      <div class="bb-grid">
+        <article v-for="entry in group.entries" :key="entry.id" class="dz-card bb-card" :data-intel="entry.id">
+          <header class="bb-card-head">
+            <span class="dz-kind dmz-mono">{{ intelDetail(entry, 'Type') || entry.type }}</span>
+            <span class="dz-badge" :class="`is-${entry.confidence}`">{{ intelConfidenceLabel(entry.confidence) }}</span>
+          </header>
+          <h3 class="dz-h3">{{ entry.name }}</h3>
+          <p class="bb-summary">{{ entry.summary }}</p>
+          <div v-if="entryPlaces(entry).length" class="bb-places">
+            <span class="dmz-mono">Seen at</span>
+            <NuxtLink v-for="place in entryPlaces(entry).slice(0, 4)" :key="place.id" :to="placeLink(place.id)" class="bb-place">{{ place.name }}<span class="dmz-mono">{{ place.square }}</span></NuxtLink>
+          </div>
+          <dl v-if="drops(entry) || way(entry)" class="dz-facts">
+            <div v-if="drops(entry)"><dt>Drops</dt><dd>{{ drops(entry) }}</dd></div>
+            <div v-if="way(entry)"><dt>Find</dt><dd>{{ way(entry) }}</dd></div>
+          </dl>
+          <DmzIntelLink :id="entry.id" class="bb-open dmz-mono">Full intel<span class="sr-only"> on {{ entry.name }}</span> <span aria-hidden="true">→</span></DmzIntelLink>
+        </article>
+      </div>
+    </section>
+
+    <section v-if="forces" id="forces" class="dz-group" aria-labelledby="forces-title">
+      <header class="dz-group-head">
+        <h2 id="forces-title" class="dz-h2">{{ forces.title }}<span class="dmz-mono">{{ forces.entries.length }}</span></h2>
+        <p>The soldiers, machines and patrols that escalate as your threat level rises.</p>
+      </header>
+      <ul class="dz-rows">
+        <li v-for="entry in forces.entries" :key="entry.id"><DmzIntelRow :entry="entry" :meta="tier(entry)" /></li>
+      </ul>
+    </section>
+  </div>
+</template>
+
+<style scoped>
+.bb-more { color: var(--dz-ink) !important; text-underline-offset: 0.2em; }
+.bb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); align-items: start; gap: 0.75rem; }
+.bb-card { scroll-margin-top: 1.5rem; }
+.bb-card-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.bb-summary { margin: 0; color: #dcd9cb; font-size: 0.975rem; }
+.bb-places { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; }
+.bb-places > .dmz-mono { margin-right: 0.25rem; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-muted); }
+.bb-place { display: inline-flex; align-items: center; gap: 0.375rem; min-height: 2.75rem; padding: 0 0.625rem; border: 1px solid var(--dz-line-strong); border-radius: 8px; font-size: 0.875rem; text-decoration: none; }
+.bb-place:hover { border-color: var(--dz-ink); }
+.bb-place .dmz-mono { font-size: 0.6875rem; color: var(--dz-muted); }
+.bb-open { align-self: flex-start; display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--dz-ink) !important; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-underline-offset: 0.25em; }
+.bb-card:has(.bb-open.is-open) { border-color: var(--dz-accent); box-shadow: inset 3px 0 var(--dz-accent); }
+@media (max-width: 899px) {
+  .bb-grid { grid-template-columns: minmax(0, 1fr); }
+}
+</style>

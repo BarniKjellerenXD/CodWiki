@@ -1,8 +1,10 @@
 <template>
-  <div class="app-shell">
+  <div class="app-shell" :class="{ 'is-dmz': isDmz }">
     <NuxtRouteAnnouncer />
     <NuxtPage />
     <SettingsPanel />
+    <SpotlightTrigger />
+    <LazySpotlightDialog v-if="spotlightOpen" />
     <button
       v-if="showTop"
       class="back-to-top"
@@ -20,7 +22,31 @@ import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 usePageSeo()
 
+// DMZ pages bring their own theme and a phone dock, so the floating
+// controls move clear of it there.
+const route = useRoute()
+const isDmz = computed(() => /^\/dmz(?:\/|$)/.test(route.path))
 const showTop = ref(false)
+const { open: spotlightOpen, openSpotlight, closeSpotlight } = useSpotlight()
+
+// Ctrl K or Cmd K opens and closes search anywhere, even while typing; / opens
+// it when the visitor is not typing. A page that handles the key first wins,
+// and neither opens over another dialog, such as settings or an image.
+function handleKey(event: KeyboardEvent) {
+  // Autofill can send keydown events with no key.
+  if (event.defaultPrevented || event.isComposing || !event.key) return
+  const typing = (event.target as HTMLElement | null)?.closest?.('input, textarea, select, [contenteditable=""], [contenteditable="true"]')
+  const blocked = !spotlightOpen.value && !!document.querySelector('dialog[open], [aria-modal="true"]')
+  if (event.key.toLowerCase() === 'k' && (event.ctrlKey || event.metaKey) && !event.altKey && !event.shiftKey && !blocked) {
+    event.preventDefault()
+    if (spotlightOpen.value) closeSpotlight()
+    else openSpotlight()
+  }
+  else if (event.key === '/' && !typing && !event.ctrlKey && !event.metaKey && !event.altKey && !spotlightOpen.value && !blocked) {
+    event.preventDefault()
+    openSpotlight()
+  }
+}
 
 function handleScroll() {
   showTop.value = (typeof window !== 'undefined') && window.scrollY > 200
@@ -34,11 +60,13 @@ function scrollToTop() {
 onMounted(() => {
   handleScroll()
   window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('keydown', handleKey)
 })
 
 onBeforeUnmount(() => {
   if (typeof window === 'undefined') return
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('keydown', handleKey)
 })
 </script>
 
@@ -88,5 +116,10 @@ onBeforeUnmount(() => {
 
 .back-to-top:active {
   transform: translateY(0);
+}
+
+@media (max-width: 899px) {
+  .app-shell.is-dmz .back-to-top { bottom: calc(6.75rem + env(safe-area-inset-bottom)); }
+  .app-shell.is-dmz .settings-trigger { top: 1rem; bottom: auto; }
 }
 </style>
