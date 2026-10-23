@@ -203,6 +203,27 @@ export const traitIcon = trait => traitIcons[trait?.base || trait?.id] || (trait
 // ---------------------------------------------------------------- Player tips
 // What players say on r/DMZ about a trait, paraphrased, from posts and comments
 // dated 20 Oct 2026 or later. `players` counts separate comments that make the
-// point. Filled from docs/research/dmz-traits-meta/reddit-trait-tips.json.
-export const traitTips = []
+// point. Read from 168 r/DMZ threads (about 3,200 posts and comments, 20 to
+// 22 Oct); the thread list is in docs/research/dmz-traits-meta/reddit-read.json.
+export const traitTips = [
+  { trait: 'possum', say: 'The most argued-about trait so far. Many players find it too strong in fights: a squad you wiped can stand back up, and a whole squad running it can come back more than once.', players: 8, threads: ['reddit-possum-seems-very-op-in', 'reddit-possum-is-garbage-and-needs', 'reddit-remove-the-possum-perk', 'reddit-the-most-obnoxious-trait-in', 'reddit-counter-the-possum-trait'] },
+  { trait: 'possum', say: 'Players who use it say killers often loot and walk away or turn their back, which gives a clean chance to get up and leave. Solo players like it as a safety net.', players: 4, threads: ['reddit-i-love-possum', 'reddit-got-my-revenge-on-a', 'reddit-possum-seems-very-op-in'] },
+  { trait: 'possum', say: 'Counter: after a kill, take or drop the player’s gun, armor and backpack away from the body, so a self-revive has nothing to fight with.', players: 3, threads: ['reddit-remove-the-possum-perk'] },
+  { trait: 'possum', say: 'Counter: assume the body can get up. Pretend to leave, then watch it from cover or leave a trap on it.', players: 2, threads: ['reddit-remove-the-possum-perk'] },
+  { trait: 'possum', say: 'A quick check: look at the dog tag when you loot. A low-level Operator is unlikely to have reached Possum yet.', players: 1, threads: ['reddit-remove-the-possum-perk'] },
+  { trait: 'possum', say: 'Possum Pro from Prestige already includes Possum, so an Operator that rolls it does not need Possum from the tree.', players: 1, threads: ['reddit-those-of-you-who-have'] },
+  { trait: 'possum', say: 'Bug report: on Switch, holding the button to get up did nothing, twice.', players: 1, threads: ['reddit-hold-button-to-revive-possum'] },
+  { trait: 'die-hard', say: 'One player plans a Warfighter and Survivalist build to pair Possum with Die Hard’s endless bleed-out.', players: 1, threads: ['reddit-all-warfighter-traits'] },
+  { trait: 'overwatch', say: 'Seen as too strong when paired with UAV Upgrade from the same tree: a squad can keep a town under a permanent Advanced UAV and wait for anyone who walks in.', players: 5, threads: ['reddit-overwatch-trait', 'reddit-the-most-obnoxious-trait-in', 'reddit-scout-uav-upgrade-towers'] },
+  { trait: 'overwatch', say: 'Counter: a DDOS on the tower shuts it down so you can take it over.', players: 2, threads: ['reddit-the-most-obnoxious-trait-in', 'reddit-rework-possum-and-overwatch'] },
+  { trait: 'overwatch', say: 'Bug report: a Toxic Intercept step that needs a UAV tower would not start because the tower was already switched on with Overwatch.', players: 1, threads: ['reddit-toxic-intercept-overwatch'] },
+  { trait: 'uav-upgrade', say: 'Players are not sure it changes UAV towers; the trait text only talks about UAVs.', players: 2, threads: ['reddit-scout-uav-upgrade-towers', 'reddit-the-most-obnoxious-trait-in'] },
+  { trait: 'thermal-padding', say: 'It does not make you invisible against enemies with UAV Upgrade: you still show on their UAV, only without the direction marker.', players: 2, threads: ['reddit-is-there-seriously-no-way', 'reddit-scout-uav-upgrade-towers'] },
+  { trait: 'thermal-padding', say: 'For full stealth, players use the Sedative Inhaler, which takes you off the mini-map for about a minute.', players: 1, threads: ['reddit-is-there-seriously-no-way'] },
+  { trait: 'field-crafting', say: 'One player uses it to craft anti-UAV gear while deployed instead of looting it first.', players: 1, threads: ['reddit-the-most-obnoxious-trait-in'] },
+  { trait: 'equipment-professional', say: 'Keep at least one Lethal or Tactical in the slot: once both are used up it stops refilling, even with spares in the backpack. It can also stop mid-match.', players: 1, threads: ['reddit-has-anyone-else-noticed-the'] },
+  { trait: 'free-revive', say: 'A player reads it as once per match, bringing you back to full health, where the Tourniquet gives about two thirds.', players: 1, threads: ['reddit-how-does-the-free-revive'] },
+  { trait: 'fast-learner', say: 'Its small brain icon pops up every time it triggers, which some find distracting.', players: 1, threads: ['reddit-fast-learner-trait'] },
+  { trait: 'viper-sense', say: 'One player calls it too strong.', players: 1, threads: ['reddit-how-to-savely-exfill'] },
+]
 export const tipsFor = id => traitTips.filter(tip => tip.trait === id)

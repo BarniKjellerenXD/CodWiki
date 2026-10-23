@@ -75,3 +75,11 @@ The page title says "meta weapons", never "best guns" (`tests/seo.test.mjs`).
 
 - Intel: Adrenaline Burst, Investor and Air Superiority are tagged Major; they are Minors (the random starting Minor on the blog's test Operator).
 - Station facts: "33 traits" becomes the official 66 (22 per tree).
+
+## What Reddit said (read 22–23 Oct)
+
+168 r/DMZ threads, 3,075 comments, all from 20–22 Oct.
+
+- **Traits:** Possum dominates the talk: 8 comments call it too strong in PvP, 4 like it as a safety net, and players share counters (move the body's gear away, watch or trap the body, check the dog tag). Overwatch with UAV Upgrade is the other big complaint (5), countered with a DDOS on the tower. Smaller points cover Thermal Padding, Equipment Professional, Free Revive and Fast Learner. All 19 tips are on the trait cards with how many comments make each point.
+- **Weapons:** no meta yet. Players mostly asked how to unlock guns. Only five guns got a recommendation, one comment each (Astaroth .57, MAR-9, Rezi 12, VEL 46, Han 86). The page says so plainly and shows six general loadout tips instead of padding the list. The guide-site tier lists stay as a separate, labelled comparison.
+- Re-read Reddit after the weekend: the meta should show up once players have unlocked more guns.

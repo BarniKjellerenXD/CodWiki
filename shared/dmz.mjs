@@ -50,8 +50,8 @@ export const dmzStations = [
     // Counts match shared/dmz-weapons.mjs; tests/dmz-weapons.test.mjs checks them.
     id: 'gunsmith', label: 'Gunsmith', title: 'Meta weapons', route: '/dmz/gunsmith',
     icon: 'M2 10h14l3-2h3v4h-6l-2 2h-3l-1 4H6l1-4H2z M9 10v2',
-    desc: 'The guns players on r/DMZ say they win with, next to four guide-site tier lists, and every way to get a gun in DMZ.',
-    facts: ['33 launch weapons · 4 site tier lists', 'Reddit picks from 20 Oct on'],
+    desc: 'What players on r/DMZ recommend so far, next to four guide-site tier lists, and every way to get a gun in DMZ.',
+    facts: ['33 launch weapons · 4 site tier lists', 'Reddit picks and loadout tips'],
   },
   {
     id: 'briefing', label: 'Briefing', title: 'How DMZ works', route: '/dmz/briefing',

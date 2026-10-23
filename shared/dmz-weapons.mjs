@@ -82,6 +82,25 @@ export function siteConsensus() {
 // Weapons players on r/DMZ recommend for DMZ, from posts and comments dated
 // 20 Oct 2026 or later. `players` counts separate comments that recommend the
 // gun (questions and complaints are not counted); `why` paraphrases their
-// reasons. Filled from docs/research/dmz-traits-meta/reddit-weapon-meta.json.
-export const REDDIT_META = { threadsRead: 0, comments: 0, from: '2026-10-20', to: '2026-10-22' }
-export const redditMeta = []
+// reasons. Read from 168 threads; the list is in
+// docs/research/dmz-traits-meta/reddit-read.json. In the first three days
+// nobody posted a meta list: players mostly asked how to unlock guns, so each
+// pick below rests on one comment.
+export const REDDIT_META = { threadsRead: 168, comments: 3200, from: '2026-10-20', to: '2026-10-22' }
+export const redditMeta = [
+  { weapon: 'astaroth-57', players: 1, why: ['With a duo partner, it took the Deathstalker down in five shots, each pushing it into its next smoke phase. A sedan took three.'], threads: ['reddit-astaroth-kills-the-deathstalker'] },
+  { weapon: 'mar-9', players: 1, why: ['Good enough for everything the player has met so far.'], threads: ['reddit-extract-with-more-than-2-guns'] },
+  { weapon: 'rezi-12', players: 1, why: ['Named alongside the MAR-9 as good enough for anything so far.'], threads: ['reddit-extract-with-more-than-2-guns'] },
+  { weapon: 'vel-46', players: 1, why: ['A suppressed one found in a crate felt great to use.'], threads: ['reddit-have-any-of-yall-found'] },
+  { weapon: 'han-86', players: 1, why: ['Kitted with a large magazine, it won a 1 v 3.'], threads: ['reddit-possum-seems-very-op-in'] },
+]
+
+// Loadout tips from the same threads that are not about one gun.
+export const weaponTips = [
+  { say: 'You do not need a meta gun: several players run the blue guns enemies drop and save their good builds for squad runs or bosses.', players: 3, threads: ['reddit-psa-use-the-free-loadout', 'reddit-loot-value-and-money'] },
+  { say: 'Bring a suppressor. Objectives get you noticed anyway, and one player extracts two-attachment guns just to add a suppressor at the FOB.', players: 2, threads: ['reddit-im-fine-with-dmz-but', 'reddit-any-tips-for-a-solo-player'] },
+  { say: 'A looted gun that already has five attachments can have them swapped without paying for slots, which is much cheaper than building one.', players: 2, threads: ['reddit-122k-every-time-i-want', 'reddit-any-tips-for-a-solo-player'] },
+  { say: 'Time to kill is short: two players who tested it say an assault rifle takes about one plate per body shot at mid range, so extra plates buy little time.', players: 2, threads: ['reddit-ttk-is-way-too-fast', 'reddit-ttk-is-terrible-or-armor'] },
+  { say: 'For a sniper early, shoot down the helicopter carrying the brightly dressed Hunt Squad; they drop sniper rifles.', players: 2, threads: ['reddit-psa-use-the-free-loadout', 'reddit-helicopters-flying-around'] },
+  { say: 'Against bosses solo, bring an LMG, thermites and plenty of ammo boxes. Downing the tank with an RPG takes a full load plus two ammo boxes.', players: 2, threads: ['reddit-tips-killing-bosses-as-solo'] },
+]

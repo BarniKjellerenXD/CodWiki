@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { dmzWeapons, weaponClasses, weaponWays, siteTierLists, siteConsensus, redditMeta, REDDIT_META } from '../shared/dmz-weapons.mjs'
+import { dmzWeapons, weaponClasses, weaponWays, siteTierLists, siteConsensus, redditMeta, weaponTips, REDDIT_META } from '../shared/dmz-weapons.mjs'
 import { dmzStations } from '../shared/dmz.mjs'
 import { intelSources } from '../shared/dmz-intel.mjs'
 import { guideSources } from '../shared/dmz-guide-sources.mjs'
@@ -38,6 +38,11 @@ test('Reddit picks are counted from real threads and paraphrased', () => {
     assert.ok(row.players >= 1 && row.threads.length, row.weapon)
     for (const id of row.threads) assert.equal(sources[id]?.type, 'reddit', `${row.weapon}: ${id}`)
     for (const why of row.why) assert.ok(!/["“”]/.test(why) && !/\bu\//.test(why), `${row.weapon}: ${why}`)
+  }
+  for (const tip of weaponTips) {
+    assert.ok(tip.players >= 1 && tip.threads.length, tip.say)
+    for (const id of tip.threads) assert.equal(sources[id]?.type, 'reddit', id)
+    assert.ok(!/["“”]/.test(tip.say) && !/\bu\//.test(tip.say), tip.say)
   }
   const counts = redditMeta.map(row => row.players)
   assert.deepEqual(counts, [...counts].sort((a, b) => b - a), 'most recommended first')

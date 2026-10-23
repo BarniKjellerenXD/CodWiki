@@ -99,4 +99,17 @@ export const guideSources = {
   'dmzcodex-weapon-blueprints-guide': { label: 'DMZ Codex: weapon Blueprints guide', url: 'https://dmzcodex.com/guides/dmz-weapon-blueprints-guide/', type: 'guide', date: '2026-10-22' },
   'dmzcodex-bosses': { label: 'DMZ Codex: bosses list', url: 'https://dmzcodex.com/bosses/', type: 'guide', date: '2026-10-22' },
   'wzstats-mw4-dmz-pve': { label: 'WZStats: MW4 DMZ PvE meta', url: 'https://wzstats.gg/mw4/dmz/pve', type: 'guide', date: '2026-10-22' },
+  // Reddit threads behind the trait tips and weapon picks.
+  'reddit-astaroth-kills-the-deathstalker': { label: 'Astaroth kills the Deathstalker in under two mags.', url: 'https://www.reddit.com/r/DMZ/comments/1xbz5m2/astaroth_kills_the_deathstalker_in_under_two_mags/', type: 'reddit', date: '2026-10-21' },
+  'reddit-extract-with-more-than-2-guns': { label: 'I should be able to extract with more than 2 guns…', url: 'https://www.reddit.com/r/DMZ/comments/1xchp4k/i_should_be_able_to_extract_with_more_than_2_guns/', type: 'reddit', date: '2026-10-22' },
+  'reddit-any-tips-for-a-solo-player': { label: 'Any tips for a solo player?', url: 'https://www.reddit.com/r/DMZ/comments/1xccar6/any_tips_for_a_solo_player/', type: 'reddit', date: '2026-10-22' },
+  'reddit-tips-killing-bosses-as-solo': { label: 'Any tips for killing bosses as a solo?', url: 'https://www.reddit.com/r/DMZ/comments/1xcnn6a/any_tips_for_killing_bosses_as_a_solo/', type: 'reddit', date: '2026-10-22' },
+  'reddit-psa-use-the-free-loadout': { label: 'PSA: If you don\'t like losing kit, use the Free Loadout option!', url: 'https://www.reddit.com/r/DMZ/comments/1xbp5mc/psa_if_you_dont_like_losing_kit_use_the_free/', type: 'reddit', date: '2026-10-21' },
+  'reddit-remove-the-possum-perk': { label: 'REMOVE THE POSSUM PERK', url: 'https://www.reddit.com/r/DMZ/comments/1xcqna8/remove_the_possum_perk/', type: 'reddit', date: '2026-10-22' },
+  'reddit-scout-uav-upgrade-towers': { label: 'Does the scout UAV upgrade apply to UAV towers?', url: 'https://www.reddit.com/r/DMZ/comments/1xcgrwv/does_the_scout_uav_upgrade_apply_to_uav_towers/', type: 'reddit', date: '2026-10-22' },
+  'reddit-rework-possum-and-overwatch': { label: 'How I would rework Possum and Overwatch', url: 'https://www.reddit.com/r/DMZ/comments/1xcw301/how_i_would_rework_possum_and_overwatch/', type: 'reddit', date: '2026-10-22' },
+  'reddit-i-love-possum': { label: 'I love possum', url: 'https://www.reddit.com/r/DMZ/comments/1xclgad/i_love_possum/', type: 'reddit', date: '2026-10-22' },
+  'reddit-counter-the-possum-trait': { label: 'Proposal to counter the Possum trait', url: 'https://www.reddit.com/r/DMZ/comments/1xcv4mz/proposal_to_counter_the_possum_trait_double_tap/', type: 'reddit', date: '2026-10-22' },
+  'reddit-toxic-intercept-overwatch': { label: 'Toxic Intercept mission bugged at UAV tower while Overwatch is active?', url: 'https://www.reddit.com/r/DMZ/comments/1xcmvp2/toxic_intercept_mission_bugged_at_uav_tower_while/', type: 'reddit', date: '2026-10-22' },
+  'reddit-loot-value-and-money': { label: 'Loot value and money complaints', url: 'https://www.reddit.com/r/DMZ/comments/1xclhli/loot_value_and_money_complaints/', type: 'reddit', date: '2026-10-22' },
 }
