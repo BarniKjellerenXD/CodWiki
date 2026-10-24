@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
+import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelSources, intelSourceSite, intelCategory, intelConfidence, intelConfidenceLabel } from '#shared/dmz-intel.mjs'
 import { relatedIntel, entryPlaces, placeLink, intelHome, intelHomeLabel } from '#shared/dmz-stations.mjs'
 import { bossPlaybook } from '#shared/dmz-playbooks.mjs'
@@ -32,9 +33,13 @@ const sites = computed(() => {
   }
   return [...map].map(([site, pages]) => ({ site, pages }))
 })
-// The station link is left out when the entry already sits on this page as a row.
+// The one door off the page, drawn as the home station's rail item. It is left
+// out on the home page itself.
 const home = computed(() => intelHome(props.entry))
-const atHome = computed(() => home.value.split(/[?#]/)[0] === route.path.replace(/\/$/, '') && home.value.endsWith(`#intel-${props.entry.id}`))
+const homePath = computed(() => home.value.split(/[?#]/)[0]!)
+const atHome = computed(() => homePath.value === route.path.replace(/\/$/, ''))
+const homeStation = computed(() => dmzStations.find(station => station.route === homePath.value)
+  || (homePath.value.startsWith('/dmz/intel') ? dmzStations.find(station => station.id === 'intel') : undefined))
 </script>
 
 <template>
@@ -52,9 +57,11 @@ const atHome = computed(() => home.value.split(/[?#]/)[0] === route.path.replace
       <div v-for="[label, value] in entry.details" :key="label"><dt>{{ label }}</dt><dd>{{ value }}</dd></div>
     </dl>
     <p v-if="entry.note" class="dmz-note id-note">{{ entry.note }}</p>
-    <p v-if="entry.link || !atHome" class="id-go">
-      <NuxtLink v-if="entry.link" :to="entry.link.to" class="dz-link">{{ entry.link.label }}<span aria-hidden="true">&nbsp;→</span></NuxtLink>
-      <NuxtLink v-if="!atHome" :to="home" class="dz-link">Go to {{ intelHomeLabel(entry) }}<span aria-hidden="true">&nbsp;→</span></NuxtLink>
+    <p v-if="!atHome" class="id-go">
+      <NuxtLink :to="home" class="id-door">
+        <svg v-if="homeStation" viewBox="0 0 24 24" aria-hidden="true"><path :d="homeStation.icon" /></svg>
+        <span>Go to {{ intelHomeLabel(entry) }}</span><span aria-hidden="true">→</span>
+      </NuxtLink>
     </p>
 
     <section v-if="bossPlaybook(entry.id)" class="id-block" aria-label="How to find and kill">
@@ -103,7 +110,10 @@ const atHome = computed(() => home.value.split(/[?#]/)[0] === route.path.replace
 .id-conf-text { color: var(--dz-muted); font-size: 0.875rem; }
 .id-summary { margin: 0; color: #e3e0d0; font-size: 1.0625rem; }
 .id-note { margin: 0; }
-.id-go { display: flex; flex-wrap: wrap; gap: 0 1.25rem; margin: 0; }
+.id-go { margin: 0; }
+.id-door { display: inline-flex; align-items: center; gap: 0.625rem; min-height: 2.75rem; padding: 0 0.875rem 0 0.625rem; border: 1px solid var(--dz-line-strong); border-radius: 12px; background: rgba(233, 230, 214, 0.08); color: var(--dz-ink) !important; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-variation-settings: 'wdth' 75; text-decoration: none; }
+.id-door:hover { border-color: var(--dz-ink); }
+.id-door svg { flex: none; width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .id-block { display: flex; flex-direction: column; }
 .id-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.375rem; }
 .id-chip { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.75rem; padding: 0 0.875rem; border: 1px solid var(--dz-line-strong); border-radius: 10px; background: rgba(10, 12, 11, 0.4); color: var(--dz-ink) !important; font-size: 0.95rem; text-decoration: none; }

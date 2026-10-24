@@ -33,7 +33,7 @@ const JUMPS = [
   { id: 'jump:/#tools', name: 'Puzzle tools', route: '/#tools', icon: 'tool', badge: 'Page', context: 'Solvers and trackers' },
   { id: 'jump:/dmz', name: 'DMZ stations', route: '/dmz', icon: 'station', badge: 'DMZ', context: 'Modern Warfare 4' },
   { id: 'jump:/dmz/stash', name: 'Key tracker', route: '/dmz/stash', icon: 'key', badge: 'DMZ', context: 'Keys and locked rooms' },
-  { id: 'jump:/dmz/orders', name: 'Orders tracker', route: '/dmz/orders', icon: 'order', badge: 'DMZ', context: 'Faction Orders' },
+  { id: 'jump:/dmz/orders', name: 'Orders tracker', route: '/dmz/orders', icon: 'order', badge: 'DMZ', context: 'Order tasks' },
 ] as SpotlightItem[]
 const ICONS: Record<string, string> = {
   guide: 'M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z M5 19.5A1.5 1.5 0 0 0 6.5 21H19 M9 7h6',
@@ -78,7 +78,7 @@ const sections = computed<Section[]>(() => {
   const recents = recent.value.map(id => byId.value.get(id)).filter((item): item is SpotlightItem => !!item).slice(0, phone.value ? 4 : 6)
   if (recents.length) result.push({ id: 'recent', label: 'Recent', layout: 'row', options: wrap('recent', recents), clear: true })
   const page = pageItems.value
-  if (page.length) result.push({ id: 'page', label: here.value.mode === 'd' ? 'DMZ stations' : `On this map · ${mapName.value}`, layout: 'row', options: wrap('page', page) })
+  if (page.length) result.push({ id: 'page', label: `On this map · ${mapName.value}`, layout: 'row', options: wrap('page', page) })
   result.push({ id: 'try', label: 'Try', layout: 'chip', options: TRY.map(text => ({ index: index++, id: `sp-try-${slug(text)}`, text })) })
   result.push({ id: 'jump', label: 'Jump to', layout: 'tile', options: wrap('jump', JUMPS) })
   return result
@@ -88,11 +88,11 @@ const current = computed(() => options.value[active.value])
 const activeId = computed(() => current.value?.id)
 
 // On a guide or tool page: that map's guide, tools and first quest parts.
-// On DMZ pages: the stations.
+// On DMZ pages the rail already lists the stations, so nothing is added.
 const pageItems = computed(() => {
   const list = items.value
   if (!list) return []
-  if (here.value.mode === 'd') return list.filter(item => item.kind === 'dmz-page' && item.route !== currentPath.value)
+  if (here.value.mode === 'd') return []
   const map = here.value.map
   if (!map) return []
   const pick = (kind: string) => list.filter(item => item.kind === kind && item.map === map && item.route !== currentPath.value)

@@ -14,9 +14,9 @@ const title = (id: string) => dmzBriefingSections.find(section => section.id ===
 
     <section id="overview" class="dmz-section">
       <h2>{{ title('overview') }}</h2>
-      <p>DMZ is the extraction mode included with Modern Warfare 4. It is a core mode, not a free-to-play release, a beta or part of Warzone. You deploy into the <NuxtLink to="/dmz/hajin">Hajin Exclusion Zone</NuxtLink> with your squad, take on objectives and extract with what you find. Between deployments you return to your Forward Operating Base (FOB).</p>
+      <p>DMZ is the extraction mode included with Modern Warfare 4. It is a core mode, not a free-to-play release, a beta or part of Warzone. You deploy into the <DmzIntelLink id="hajin-exclusion-zone">Hajin Exclusion Zone</DmzIntelLink> with your squad, take on objectives and extract with what you find. Between deployments you return to your Forward Operating Base (FOB).</p>
       <p>DMZ runs on PS5, Xbox Series X|S and PC (Battle.net, Steam and the Xbox app). A Nintendo Switch 2 version is announced, but its date is unclear. There is no PS4 or Xbox One version.</p>
-      <p>Once you know the basics, the <NuxtLink to="/dmz/guide">progression guide</NuxtLink> says what to do next at each stage of the game: early, mid and late.</p>
+      <p>Once you know the basics, the Guide station says what to do next at each stage of the game: early, mid and late.</p>
     </section>
 
     <section id="lobbies" class="dmz-section">
@@ -47,7 +47,7 @@ const title = (id: string) => dmzBriefingSections.find(section => section.id ===
       <h2>{{ title('missions') }}</h2>
       <p>There are no faction contracts like the 2022 DMZ. Instead, objectives come in these kinds:</p>
       <dl class="br-facts">
-        <div><dt class="dmz-mono">DMZ Orders</dt><dd>Structured directives you pick up at the FOB. <NuxtLink to="/dmz/orders">Track their tasks</NuxtLink>.</dd></div>
+        <div><dt class="dmz-mono">DMZ Orders</dt><dd>Structured directives you pick up at the FOB (<DmzIntelLink id="dmz-orders">how they work</DmzIntelLink>). Tick off their tasks on the DMZ Orders station.</dd></div>
         <div><dt class="dmz-mono">Story Missions</dt><dd>Replayable missions played in shared servers.</dd></div>
         <div><dt class="dmz-mono">Dynamic Ops</dt><dd>Multi-step objectives that appear during a match. They pay $10,000–20,000 plus a supply drop.</dd></div>
         <div><dt class="dmz-mono">Side Ops · Free Roam</dt><dd>Also listed in the official how-to-play guide. Details are still thin.</dd></div>
@@ -79,7 +79,7 @@ const title = (id: string) => dmzBriefingSections.find(section => section.id ===
 
     <section id="unconfirmed" class="dmz-section">
       <h2>{{ title('unconfirmed') }}</h2>
-      <p>Launch guides have filled in key rooms, Lieutenant names, 3D Printer recipes and Story Missions; the <NuxtLink to="/dmz/intel">DMZ Intel database</NuxtLink> lists them with a confidence label on each entry. These details are still single-source or conflicting:</p>
+      <p>Launch guides have filled in key rooms, Lieutenant names, 3D Printer recipes and Story Missions; Intel lists them with a confidence label on each entry. These details are still single-source or conflicting:</p>
       <ul class="br-list">
         <li>Page 10 of DMZ Orders. Only one guide lists its Orders so far.</li>
         <li>How weapon insurance works. The Weapon Insurance Contract item exists, but no official post explains it.</li>

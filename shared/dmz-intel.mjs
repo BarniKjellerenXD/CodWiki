@@ -44,11 +44,11 @@ const orderEntries = dmzOrders.map(order => ({
   id: `order-${order.id}`, category: 'missions', type: 'DMZ Order', name: order.name, summary: order.summary,
   details: [['Page', order.chapter], ...order.tasks.map((task, index) => [`Task ${index + 1}`, task.text]), ['Page reward', dmzOrderRewards[order.chapter]]],
   note: order.note, confidence: order.confidence, proof: order.proof, sources: order.sources, tracked: true,
-  link: { to: '/dmz/orders', label: 'Track this Order' },
 }))
 
 // details: [label, value] pairs shown as a fact list on the card.
-// link: an optional { to, label } for a CodWiki page about the entry.
+// Entries carry no links to other pages; the drawer's one Go to leads to the
+// entry's home (intelHome).
 export const dmzIntel = [
   ...orderEntries,
   ...intelData,

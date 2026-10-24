@@ -140,7 +140,6 @@ watch(() => route.hash, markTarget)
                   </dl>
                 </details>
                 <p v-if="entry.note" class="in-note">{{ entry.note }}</p>
-                <NuxtLink v-if="entry.link" :to="entry.link.to" class="in-link">{{ entry.link.label }}<span aria-hidden="true"> →</span></NuxtLink>
                 <footer class="in-sources">
                   <span class="dmz-mono">Source{{ entry.sources.length > 1 ? 's' : '' }}</span>
                   <span v-for="group in sourcesOf(entry)" :key="group.site" class="in-site">
@@ -238,7 +237,6 @@ watch(() => route.hash, markTarget)
 .in-facts[open] summary { margin-bottom: 0.25rem; }
 .in-facts dd { white-space: pre-line; }
 .in-note { margin: 0; padding: 0.5rem 0.75rem; border-left: 3px solid var(--dz-accent); background: rgba(221, 179, 99, 0.08); color: #e7dcc2; font-size: 0.9rem; }
-.in-link { align-self: flex-start; display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--dz-ink) !important; text-underline-offset: 0.2em; }
 .in-sources { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--dz-line); font-size: 0.875rem; color: var(--dz-muted); }
 .in-sources > .dmz-mono { font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .in-sources a { color: var(--dz-ink-2); text-underline-offset: 0.2em; }

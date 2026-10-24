@@ -310,8 +310,8 @@ export const intelSuggestions = ['Bale', 'Medkit', 'exfil', 'H6', 'Secure Slots'
 
 // ---------------------------------------------------------------- Ask first
 
-// The Intel landing asks what you are doing. Most answers open the station or
-// tracker for that job; steps answers list a few entries in reading order.
+// The Intel landing asks what you are doing. Answers stay inside Intel: steps
+// answers list entries in reading order; the others open a Status section.
 // ids must be real Intel entries; tests check them.
 export const intelNeeds = [
   {
@@ -322,12 +322,7 @@ export const intelNeeds = [
       { title: 'In the zone', ids: ['threat-levels', 'start-in-low-threat-areas', 'health-and-the-tourniquet'] },
       { title: 'Getting out', ids: ['exfil-sites', 'extract-early-dont-get-greedy', 'death-and-failed-exfil'] },
     ],
-    more: { to: '/dmz/briefing', label: 'Read the full briefing' },
   },
-  { id: 'key', label: 'I found a key', ask: 'What does this key open?', icon: intelIcons.key, to: '/dmz/stash', toLabel: 'Key tracker' },
-  { id: 'boss', label: 'Hunting a boss', ask: 'Where is this Lieutenant?', icon: stationIcon('boss'), to: '/dmz/boss-board', toLabel: 'Boss Board' },
-  { id: 'print', label: 'Printing gear', ask: 'What does it cost to print?', icon: stationIcon('printer'), to: '/dmz/printer', toLabel: '3D Printer' },
-  { id: 'order', label: 'Stuck on an Order', ask: 'How do I finish this Order?', icon: stationIcon('orders'), to: '/dmz/orders', toLabel: 'Orders tracker' },
   {
     id: 'exfil', label: 'Getting out', ask: 'How do I extract safely?', icon: intelIcons.exfil, kind: 'steps',
     intro: 'The ways out of Hajin, and what players say about holding an exfil.',

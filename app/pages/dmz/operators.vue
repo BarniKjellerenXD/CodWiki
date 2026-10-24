@@ -23,7 +23,6 @@ const count = (kind: string) => traitList.filter(trait => trait.kind === kind).l
     <DmzPageHead title="Operators" :icon="icon" :checked="TRAITS_CHECKED" :status="`${traitTrees.length} trees · ${count('major')} Majors · ${count('minor')} Minors seen · ${operators.length} Operator entries`">
       <p class="dz-lede">Each Operator earns up to 18 Trait Points and spends them in three trees that climb from the bottom, like the in-game TRAITS screen. Tap a node to see what it does and what players say about it, or plan a build.<template v-if="overview">{{ " " }}<DmzIntelLink :id="overview.id" anchor class="tt-more">How traits work</DmzIntelLink></template></p>
     </DmzPageHead>
-    <DmzIntelNav />
 
     <section id="traits" class="dz-group" aria-labelledby="traits-title">
       <h2 id="traits-title" class="sr-only">Trait trees</h2>

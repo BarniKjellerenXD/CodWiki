@@ -114,7 +114,12 @@ onBeforeUnmount(() => { clearTimeout(toastTimer); clearTimeout(collapseTimer) })
           <p>Page 1 is the tutorial. Then you pick a chapter: Human Intel, Underground or Counterfeit. Each has two pages and ends with a story mission. Pages 4 and 7 are the same for everyone and sit between the chapters, so your page numbers depend on the order you pick.</p>
           <p>The Boss Board, which sells intel on Lieutenants, opens once you finish your second page.</p>
           <p>CodWiki adds an Order once its task text is checked in-game or matches across two independent guides. {{ dmzOrders.length }} are listed so far, and each page says which. Page 10 waits for a second guide.</p>
-          <NuxtLink to="/dmz/intel/missions" class="ord-intel">Story Missions, Dynamic Ops and Side Ops in Intel<span aria-hidden="true"> →</span></NuxtLink>
+          <p class="ord-more">
+            <span class="dmz-mono">Other missions</span>
+            <DmzIntelLink id="story-missions" class="ord-named-link">Story Missions</DmzIntelLink>
+            <DmzIntelLink id="dynamic-operations" class="ord-named-link">Dynamic Ops</DmzIntelLink>
+            <DmzIntelLink id="side-ops" class="ord-named-link">Side Ops</DmzIntelLink>
+          </p>
         </section>
         <section class="dmz-panel dmz-section">
           <span class="dmz-label dmz-mono">Saved on this device</span>
@@ -184,10 +189,12 @@ onBeforeUnmount(() => { clearTimeout(toastTimer); clearTimeout(collapseTimer) })
 .ord-side { display: flex; flex-direction: column; gap: 1rem; }
 .ord-side .dmz-section { margin-top: 0; }
 .ord-side p { font-size: 1rem; }
-.ord-intel { display: inline-flex; align-items: center; min-height: 2.75rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--dz-ink) !important; text-underline-offset: 0.2em; }
+.ord-more { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; margin: 0; }
+.ord-more > .dmz-mono { margin-right: 0.25rem; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-muted); }
 .ord-reset { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .ord-reset .dmz-pill { font-size: 0.95rem; min-height: 2.75rem; }
-.ord-toast-region { position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 45; }
+/* Under the open rail's scrim (39); on phones it sits above the dock instead. */
+.ord-toast-region { position: fixed; right: 1.5rem; bottom: 1.5rem; z-index: 38; }
 .ord-toast { display: flex; align-items: center; gap: 0.875rem; padding: 0.875rem 1.25rem; background: rgba(14, 16, 15, 0.9); border: 1px solid var(--dz-line); animation: ord-toast 0.3s ease-out both; }
 .ord-toast svg { width: 1.375rem; height: 1.375rem; fill: none; stroke: var(--dz-green); stroke-width: 2.4; }
 .ord-toast strong { display: block; font-style: italic; font-weight: 600; font-size: 1.125rem; }

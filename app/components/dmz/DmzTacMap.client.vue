@@ -676,7 +676,7 @@ const INTEL_PREVIEW = 6
         <p v-if="view === 'threat'" class="tm-legend-note">Zones are approximate. Activision rates each part of a location but draws no borders, so the ground near each rated place takes its rating, and the nearer place wins where two meet.</p>
       </div>
 
-      <aside ref="panelRef" class="tm-panel" aria-label="Tac-Map details" @keydown.esc="card && close()">
+      <aside ref="panelRef" class="tm-panel" aria-label="Tac-Map details" @keydown.esc="card && ($event.preventDefault(), close())">
         <section v-if="card" class="tm-card" aria-label="Selected">
           <div class="tm-card-head">
             <span class="dmz-label dmz-mono">{{ card.layer.one }}</span>

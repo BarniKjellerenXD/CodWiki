@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { intelStations, intelEverything } from '#shared/dmz-stations.mjs'
+import { dmzIntelShelves } from '#shared/dmz.mjs'
 
-// The Intel stations in one strip, on every station page. It scrolls sideways on phones.
-const links = [{ id: 'start', label: 'Start', path: '/dmz/intel' }, ...intelStations, intelEverything]
+// Intel's own pages, shown on the Intel shelves only. It scrolls sideways on phones.
+const links = [{ id: 'start', label: 'Intel home', path: '/dmz/intel' }, ...dmzIntelShelves]
 const strip = ref<HTMLElement>()
 onMounted(() => strip.value?.querySelector('[aria-current="page"]')?.scrollIntoView({ block: 'nearest', inline: 'nearest' }))
 </script>
 
 <template>
-  <nav class="inav" aria-label="Intel stations">
+  <nav class="inav" aria-label="Intel shelves">
     <ul ref="strip" class="inav-list">
       <li v-for="link in links" :key="link.id"><NuxtLink :to="link.path" class="dz-chip inav-chip">{{ link.label }}</NuxtLink></li>
     </ul>

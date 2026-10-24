@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { dmzStations, dmzOrders } from '#shared/dmz.mjs'
+import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelConfidence, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
-import { dmzKeys } from '#shared/dmz-keys.mjs'
-import { intelNeeds, intelNeed, intelEntry, intelStations, intelHandoffs, intelEverything, intelSuggestions, stationEntries, intelCount, bossGroups, printerRecipes } from '#shared/dmz-stations.mjs'
+import { intelNeeds, intelNeed, intelEntry, intelStations, intelEverything, intelSuggestions, stationEntries, intelCount } from '#shared/dmz-stations.mjs'
 
-// Intel opens on one question: what are you doing right now? Most answers open
-// the station for that job. The reading lists answer here, kept in ?need= so
-// Back and shared links work. Quick find and the stations sit underneath.
+// Intel opens on one question: what are you doing right now? Answers stay
+// inside Intel: reading lists here (kept in ?need= so Back and shared links
+// work) or a Status section. Quick find and Intel's shelves sit underneath.
 definePageMeta({ middleware: 'dmz-intel-links' })
 type Need = (typeof intelNeeds)[number]
 const route = useRoute()
@@ -15,12 +14,7 @@ const icon = dmzStations.find(station => station.id === 'intel')!.icon
 const query = ref('')
 const answer = ref<HTMLElement>()
 
-const targets = bossGroups().filter(group => group.id === 'lieutenants' || group.id === 'commanders').reduce((sum, group) => sum + group.entries.length, 0)
 const sizes: Record<string, string> = {
-  key: `${dmzKeys.length} keys`,
-  boss: `${targets} targets`,
-  print: `${printerRecipes.length} recipes`,
-  order: `${dmzOrders.length} Orders`,
   broken: `${intelCount('issues')} known issues`,
   next: `${intelCount('dates')} dates`,
 }
@@ -32,9 +26,7 @@ const need = computed(() => {
 const number = (stepIndex: number, index: number) => String(need.value!.steps!.slice(0, stepIndex).reduce((sum, step) => sum + step.ids.length, 0) + index + 1).padStart(2, '0')
 
 const cards = [
-  ...intelStations.map(station => ({ ...station, size: `${stationEntries(station).length} entries` })),
-  { ...intelHandoffs[0]!, size: `${intelCount('map')} places`, out: true },
-  { ...intelHandoffs[1]!, size: `${dmzKeys.length} keys`, out: true },
+  ...intelStations.filter(station => !station.fob).map(station => ({ ...station, size: `${stationEntries(station).length} entries` })),
   { ...intelEverything, size: `${dmzIntel.length} entries` },
 ]
 
@@ -107,14 +99,13 @@ watch(need, value => {
       </p>
     </section>
 
-    <section class="ix-stations" aria-labelledby="ix-stations">
-      <h2 id="ix-stations" class="dz-h2">Intel stations</h2>
+    <section class="ix-shelves" aria-labelledby="ix-shelves">
+      <h2 id="ix-shelves" class="dz-h2">Intel shelves</h2>
       <ul class="ix-cards">
         <li v-for="card in cards" :key="card.id">
-          <NuxtLink :to="card.path" class="ix-card" :class="{ 'is-out': 'out' in card }">
+          <NuxtLink :to="card.path" class="ix-card">
             <span class="ix-card-top">
               <svg class="dz-icon" viewBox="0 0 24 24" aria-hidden="true"><path :d="card.icon" /></svg>
-              <span v-if="'fob' in card" class="ix-tag dmz-mono">FOB station</span>
             </span>
             <span class="ix-card-label">{{ card.label }}</span>
             <span class="ix-card-desc">{{ card.desc }}</span>
@@ -164,13 +155,11 @@ watch(need, value => {
 .ix-label { margin: 0 0 0.625rem; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-teal); }
 .ix-try { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; margin: 0.75rem 0 0; }
 .ix-try > .dmz-mono { margin-right: 0.25rem; font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-muted); }
-.ix-stations { margin-top: 2.5rem; }
+.ix-shelves { margin-top: 2.5rem; }
 .ix-cards { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.625rem; }
 .ix-card { display: flex; flex-direction: column; gap: 0.375rem; height: 100%; padding: 1rem; border: 1px solid var(--dz-line); border-radius: 16px; background: rgba(20, 24, 23, 0.72); color: var(--dz-ink-2) !important; text-decoration: none; }
 .ix-card:hover { border-color: var(--dz-line-strong); background: rgba(30, 36, 34, 0.85); color: #fff !important; }
-.ix-card.is-out { border-style: dashed; background: rgba(14, 16, 15, 0.4); }
 .ix-card-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; color: var(--dz-ink); }
-.ix-tag { font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-accent); }
 .ix-card-label { font-size: 1.25rem; font-weight: 700; line-height: 1.1; letter-spacing: 0.03em; text-transform: uppercase; font-variation-settings: 'wdth' 75; color: #f3f1e5; }
 .ix-card-desc { font-size: 0.925rem; color: #cfccbd; }
 .ix-card-n { margin-top: auto; padding-top: 0.25rem; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dz-teal); }

@@ -55,7 +55,6 @@ function showPlan() {
     <DmzPageHead title="3D Printer" :icon="icon" :checked="DMZ_INTEL_CHECKED" :status="`${printerRecipes.length} recipes · plan saved on this device`">
       <p class="dz-lede">Pick what you want to print and the planner adds up the materials to bring home. Recipes are still settling after launch, so check each one's label.</p>
     </DmzPageHead>
-    <DmzIntelNav />
 
     <div class="pr">
       <div class="pr-main">

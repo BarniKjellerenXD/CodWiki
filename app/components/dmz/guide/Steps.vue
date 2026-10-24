@@ -38,7 +38,6 @@ const nameOf = (id: string) => intelEntry(id)?.name || id
             <div class="gs-links">
               <span class="dz-badge" :class="`is-${step.confidence}`">{{ step.advice ? 'Advice · ' : '' }}{{ intelConfidenceLabel(step.confidence) }}</span>
               <DmzIntelLink v-for="id in step.intel || []" :id="id" :key="id" class="gs-intel">{{ nameOf(id) }}</DmzIntelLink>
-              <NuxtLink v-if="step.to" :to="step.to.path" class="gs-station">{{ step.to.label }} →</NuxtLink>
             </div>
           </div>
         </details>
@@ -73,9 +72,8 @@ const nameOf = (id: string) => intelEntry(id)?.name || id
 .gs-detail .gs-how-label { margin: 0 0 0.25rem; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-accent); }
 .gs-how ol { margin: 0; padding-left: 1.15rem; list-style: decimal; display: grid; gap: 0.25rem; color: #dcd9cb; font-size: 0.9375rem; line-height: 1.45; }
 .gs-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem 0.5rem; }
-.gs-intel, .gs-station { display: inline-flex; align-items: center; min-height: 2rem; padding: 0 0.75rem; border: 1px solid var(--dz-line-strong); border-radius: 999px; font-size: 0.875rem; text-decoration: none; color: var(--dz-ink-2) !important; }
-.gs-intel:hover, .gs-station:hover { border-color: var(--dz-ink); color: #fff !important; }
-.gs-station { border-color: rgba(221, 179, 99, 0.6); color: var(--dz-accent) !important; }
+.gs-intel { display: inline-flex; align-items: center; min-height: 2rem; padding: 0 0.75rem; border: 1px solid var(--dz-line-strong); border-radius: 999px; font-size: 0.875rem; text-decoration: none; color: var(--dz-ink-2) !important; }
+.gs-intel:hover { border-color: var(--dz-ink); color: #fff !important; }
 @media (prefers-reduced-motion: reduce) { .gs-chev { transition: none; } }
 @media (max-width: 599px) {
   .gs-title { flex: 1 1 0; min-width: 0; }

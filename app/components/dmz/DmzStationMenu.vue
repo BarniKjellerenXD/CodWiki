@@ -1,33 +1,45 @@
 <script setup lang="ts">
-import { dmzStations, dmzBulletin, DMZ_CHECKED } from '#shared/dmz.mjs'
+import { dmzStations, dmzRailBreaks, dmzBulletin, DMZ_CHECKED } from '#shared/dmz.mjs'
 
-// The DMZ station menu. On /dmz it is the page; elsewhere it opens over the
-// current station as a dialog. Wide screens preview the selected station on
-// the right; phones expand it in place and open it with a second tap.
+// The DMZ station menu. On /dmz it is the start screen; under 900px it opens
+// over the page as the station sheet. Wide screens preview the selected
+// station on the right; on phones the current station is expanded and one tap
+// opens any station. The Zombies | DMZ pill in the header is the way out.
 const props = defineProps<{ overlay?: boolean, start?: string, current?: string }>()
 const emit = defineEmits<{ close: [] }>()
 
 type Station = (typeof dmzStations)[number] & { index: string }
-const stations: Station[] = dmzStations.map((station, i) => ({ ...station, index: `0${i + 1}.00` }))
-const active = ref(stations.some(station => station.id === props.start) ? props.start! : stations[0]!.id)
+const stations: Station[] = dmzStations.map((station, i) => ({ ...station, index: `${String(i + 1).padStart(2, '0')}.00` }))
+const known = (id?: string) => !!id && stations.some(station => station.id === id)
+const active = ref(known(props.start) ? props.start! : known(props.current) ? props.current! : stations[0]!.id)
 const selected = computed(() => stations.find(station => station.id === active.value)!)
 const root = ref<HTMLElement>()
 const list = ref<HTMLElement>()
 const compact = () => window.matchMedia('(max-width: 899px)').matches
+// current lights the station; only its own page hides the Open pill. Intel's
+// shelves light Intel but still need a way back to its home.
+const route = useRoute()
+const here = (station: Station) => station.route === (route.path.replace(/\/+$/, '') || '/')
+const { openSpotlight, prefetchSpotlight } = useSpotlight()
 let previousOverflow = ''
 
+// On phones hover and focus leave the rows alone, so nothing grows under a tap.
 function hover(id: string) { if (!compact()) active.value = id }
+function onFocus(id: string) { if (!compact()) active.value = id }
 function open(station: Station) {
   if (!station.route) return
   if (props.overlay) emit('close')
   navigateTo(station.route)
 }
+// Search closes the sheet first, so focus is back on the dock before Spotlight opens.
+function search() {
+  emit('close')
+  nextTick(() => openSpotlight())
+}
 function onItemClick(event: MouseEvent, station: Station) {
   if (!station.route) { active.value = station.id; return }
   if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return
   event.preventDefault()
-  // On phones the first tap previews the station; the second opens it.
-  if (compact() && active.value !== station.id) { active.value = station.id; return }
   open(station)
 }
 function onOpenClick(event: MouseEvent, station: Station) {
@@ -83,23 +95,26 @@ onBeforeUnmount(() => {
           <NuxtLink to="/" class="sm-mode-opt">Zombies</NuxtLink>
           <span class="sm-mode-opt is-on">DMZ<span class="sr-only"> (current mode)</span></span>
         </div>
-        <button v-if="overlay" type="button" class="sm-close" aria-label="Close menu" @click="emit('close')"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" /></svg></button>
+        <div v-if="overlay" class="sm-tools">
+          <button type="button" class="sm-close sm-search" aria-label="Search CodWiki" aria-haspopup="dialog" @click="search" @pointerenter="prefetchSpotlight" @focus="prefetchSpotlight"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 17a6.5 6.5 0 1 0 0-13a6.5 6.5 0 0 0 0 13z M15.5 15.5L21 21" /></svg></button>
+          <button type="button" class="sm-close" aria-label="Close menu" @click="emit('close')"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12 M18 6L6 18" /></svg></button>
+        </div>
       </header>
       <component :is="overlay ? 'h2' : 'h1'" id="dmz-menu-title" class="sm-heading dmz-mono">Modern Warfare 4 · DMZ<span class="sr-only"> stations</span></component>
 
       <nav class="sm-nav" aria-label="DMZ stations">
         <ul ref="list" @keydown="onListKey">
-          <li v-for="station in stations" :key="station.id" :class="{ 'is-active': station.id === active }">
+          <li v-for="station in stations" :key="station.id" :class="{ 'is-active': station.id === active, 'is-break': dmzRailBreaks.includes(station.id) }">
             <component
               :is="station.route ? 'a' : 'button'"
               class="sm-item"
               :href="station.route || undefined"
               :type="station.route ? undefined : 'button'"
-              :aria-current="station.id === current ? 'page' : undefined"
+              :aria-current="here(station) ? 'page' : station.id === current ? 'true' : undefined"
               :aria-expanded="station.route ? undefined : String(station.id === active)"
               :aria-describedby="`sm-desc-${station.id}`"
               @mouseenter="hover(station.id)"
-              @focus="active = station.id"
+              @focus="onFocus(station.id)"
               @click="onItemClick($event, station)"
             >
               <template v-if="station.id === active">
@@ -113,6 +128,7 @@ onBeforeUnmount(() => {
               <span class="sm-text">
                 <span v-if="station.id === active" class="sm-index dmz-mono" aria-hidden="true">{{ station.index }}</span>
                 <span class="sm-label">{{ station.label }}<template v-if="station.id === active"><span class="sm-g1" aria-hidden="true">{{ station.label }}</span><span class="sm-g2" aria-hidden="true">{{ station.label }}</span></template></span>
+                <span class="sm-sub dmz-mono"><span class="sr-only">, </span>{{ station.title }}</span>
               </span>
               <span v-if="station.locked" class="sr-only">, locked</span>
             </component>
@@ -121,14 +137,13 @@ onBeforeUnmount(() => {
               <p>{{ station.desc }}</p>
               <ul class="sm-facts dmz-mono"><li v-for="fact in station.facts" :key="fact">{{ fact }}</li></ul>
               <p v-if="station.locked" class="sm-locknote dmz-mono"><DmzLock /> {{ station.lockNote }}</p>
-              <a v-else :href="station.route" class="dmz-pill" @click="onOpenClick($event, station)">Open {{ station.label }}</a>
+              <a v-else-if="!here(station)" :href="station.route" class="dmz-pill" @click="onOpenClick($event, station)">Open {{ station.label }}</a>
             </div>
           </li>
         </ul>
       </nav>
 
       <footer class="sm-foot">
-        <NuxtLink to="/" class="sm-exit w-cond"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6l-6 6 6 6 M4 12h11 M15 4h5v16h-5" /></svg>Exit to Zombies</NuxtLink>
         <p class="sm-keys dmz-mono" aria-hidden="true"><span><kbd class="dmz-kbd">↑↓</kbd> Select</span><span><kbd class="dmz-kbd">↵</kbd> Open</span><span v-if="overlay"><kbd class="dmz-kbd">ESC</kbd> Close</span></p>
       </footer>
     </div>
@@ -146,7 +161,7 @@ onBeforeUnmount(() => {
         <ul class="sm-facts dmz-mono"><li v-for="fact in selected.facts" :key="fact">{{ fact }}</li></ul>
         <p v-if="selected.locked" class="sm-locknote dmz-mono"><DmzLock /> {{ selected.lockNote }}</p>
         <div class="sm-actions">
-          <a v-if="selected.route" :href="selected.route" class="dmz-pill" @click="onOpenClick($event, selected)">Open {{ selected.label }}</a>
+          <a v-if="selected.route && !here(selected)" :href="selected.route" class="dmz-pill" @click="onOpenClick($event, selected)">Open {{ selected.label }}</a>
           <button v-if="overlay" type="button" class="dmz-pill dmz-pill--ghost" @click="emit('close')">Close menu</button>
         </div>
       </div>
@@ -166,29 +181,36 @@ onBeforeUnmount(() => {
 .sm-mode-opt { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1rem; color: #c2c3b6 !important; text-decoration: none; font-weight: 500; font-size: 1.0625rem; letter-spacing: 0.06em; text-transform: uppercase; font-variation-settings: 'wdth' 75; }
 a.sm-mode-opt:hover { background: rgba(233, 230, 214, 0.1); color: #fff !important; }
 .sm-mode-opt.is-on { background: var(--dz-ink); color: var(--dz-bg) !important; font-weight: 700; }
-.sm-close { margin-left: auto; flex: none; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; border: 1px solid var(--dz-line-strong); background: rgba(233, 230, 214, 0.1); color: var(--dz-ink); cursor: pointer; }
+.sm-tools { margin-left: auto; flex: none; display: flex; gap: 0.5rem; }
+.sm-close { flex: none; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; border: 1px solid var(--dz-line-strong); background: rgba(233, 230, 214, 0.1); color: var(--dz-ink); cursor: pointer; }
 .sm-close svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
 .sm-heading { margin: 1rem 0 0.75rem; padding: 0 1.5rem 0 3.5rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-muted); }
 
 .sm-nav ul { list-style: none; margin: 0; padding: 0; }
 .sm-nav > ul { padding: 0.25rem 0 1rem; }
-.sm-item { position: relative; display: flex; align-items: center; gap: 1.5rem; width: 100%; min-height: 3.5rem; padding: 0 1.5rem 0 3.5rem; border: 0; background: none; color: var(--dz-ink-2) !important; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
+/* The same dividers as the rail: field tools | FOB stations | reading. */
+.sm-nav > ul > li.is-break::before { content: ''; display: block; height: 1px; margin: 0.375rem 1.5rem 0.375rem 3.5rem; background: var(--dz-line); }
+.sm-item { position: relative; display: flex; align-items: center; gap: 1.5rem; width: 100%; min-height: 3.5rem; padding: 0.25rem 1.5rem 0.25rem 3.5rem; border: 0; background: none; color: var(--dz-ink-2) !important; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
 .sm-icon { position: relative; flex: none; display: flex; }
 .sm-icon svg { width: 2rem; height: 2rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .sm-icon .sm-lock { position: absolute; right: -0.6rem; top: -0.4rem; width: 0.8rem; height: 0.9rem; color: var(--dz-ink); }
 .sm-text { display: flex; flex-direction: column; min-width: 0; }
 .sm-label { position: relative; white-space: nowrap; font-size: 2.375rem; font-weight: 400; line-height: 1.05; letter-spacing: 0.02em; text-transform: uppercase; font-variation-settings: 'wdth' 62.5; }
+.sm-sub { display: block; margin-top: 0.125rem; font-size: 0.75rem; line-height: 1.3; letter-spacing: 0.04em; color: var(--dz-muted); }
 .sm-item:hover .sm-label { color: #fff; }
 .sm-item:hover { background-image: repeating-linear-gradient(90deg, rgba(233, 230, 214, 0.07) 0 1px, transparent 1px 4px); }
 /* The scan animation clips to the item box, so the focus ring sits inside it. */
 .dmz .sm-item:focus-visible { outline-offset: -4px; }
 
-.is-active .sm-item { min-height: 7.5rem; color: #f7f5ea !important; background: none; animation: sm-scan 0.42s steps(6, end) both; }
+/* The band and flare sit under the big label; the extra bottom padding keeps
+   the job-name subline clear of the flare. */
+.is-active .sm-item { min-height: 7.5rem; padding-bottom: 1.5rem; color: #f7f5ea !important; background: none; animation: sm-scan 0.42s steps(6, end) both; }
 .is-active .sm-icon svg { width: 3rem; height: 3rem; }
 .is-active .sm-icon .sm-lock { width: 1.1rem; height: 1.2rem; }
 .is-active .sm-label { font-size: clamp(2.5rem, 4.2vw, 3.75rem); font-weight: 800; font-variation-settings: 'wdth' 125; text-shadow: 0 0 18px rgba(220, 240, 200, 0.45); }
+.is-active .sm-sub { color: #dfe8d0; }
 .sm-index { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; color: #dfe8d0; }
-.sm-band { position: absolute; left: 5.75rem; right: -5rem; top: 46%; height: 38%; pointer-events: none; background: repeating-linear-gradient(90deg, rgba(226, 236, 206, 0.24) 0 2px, transparent 2px 5px); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 62%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 62%, transparent); }
+.sm-band { position: absolute; left: 5.75rem; right: -5rem; bottom: 3rem; height: 2.5rem; pointer-events: none; background: repeating-linear-gradient(90deg, rgba(226, 236, 206, 0.24) 0 2px, transparent 2px 5px); -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 62%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 62%, transparent); }
 .sm-flare { position: absolute; left: 0; right: -16rem; bottom: 0.875rem; height: 2px; pointer-events: none; transform-origin: left center; background: linear-gradient(90deg, transparent, rgba(246, 249, 236, 0.95) 10%, rgba(246, 249, 236, 0.95) 55%, transparent); box-shadow: 0 0 16px 2px rgba(196, 232, 164, 0.45); animation: sm-flare 0.5s ease-out both; }
 .sm-g1, .sm-g2 { position: absolute; left: 0; top: 0; pointer-events: none; white-space: nowrap; }
 .sm-g1 { color: #bfe8ab; opacity: 0.55; clip-path: inset(18% 0 64% 0); transform: translateX(-4px); animation: sm-g1 0.5s steps(5, end) both; }
@@ -201,9 +223,6 @@ a.sm-mode-opt:hover { background: rgba(233, 230, 214, 0.1); color: #fff !importa
 .sm-locknote svg { width: 0.8rem; height: 0.9rem; flex: none; }
 
 .sm-foot { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 1.5rem 0 3.5rem; }
-.sm-exit { display: inline-flex; align-items: center; gap: 0.75rem; min-height: 2.75rem; color: var(--dz-ink-2) !important; text-decoration: none; font-size: 1.5rem; letter-spacing: 0.03em; text-transform: uppercase; }
-.sm-exit:hover { color: #fff !important; }
-.sm-exit svg { width: 1.375rem; height: 1.375rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .sm-keys { display: flex; gap: 1rem; margin: 0; font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-muted); }
 .sm-keys span { display: inline-flex; align-items: center; gap: 0.4rem; }
 
@@ -232,25 +251,27 @@ a.sm-mode-opt:hover { background: rgba(233, 230, 214, 0.1); color: #fff !importa
   .sm { display: block; }
   .sm-panel { min-height: 100vh; min-height: 100dvh; padding: 1rem 0 1rem; border-radius: 0; border-right: 0; overflow-x: hidden; }
   .sm-head { gap: 0.75rem; padding: 0 1rem; }
-  /* Leave the top-right corner to the site settings button. */
-  .sm--overlay .sm-head { padding-right: 4.25rem; }
+  .sm-close { width: 2.75rem; height: 2.75rem; }
   .sm-emblem { width: 3.5rem; height: 3.5rem; font-size: 1.125rem; }
   .sm-heading { margin: 0.75rem 0 0.375rem; padding: 0 1rem; font-size: 0.6875rem; }
-  .sm-item { gap: 1.125rem; min-height: 3.375rem; padding: 0 1rem 0 1.75rem; }
+  .sm-nav > ul > li.is-break::before { margin: 0.375rem 1rem 0.375rem 1.75rem; }
+  .sm-item { gap: 1.125rem; min-height: 3.375rem; padding: 0.25rem 1rem 0.25rem 1.75rem; }
   .sm-icon svg { width: 1.75rem; height: 1.75rem; }
   .sm-label { font-size: 2rem; }
-  .is-active .sm-item { min-height: 5.75rem; gap: 0.875rem; padding-left: 1.25rem; }
+  .is-active .sm-item { min-height: 5.75rem; gap: 0.875rem; padding-left: 1.25rem; padding-bottom: 1.125rem; }
   .is-active .sm-icon svg { width: 2.375rem; height: 2.375rem; }
   .is-active .sm-label { font-size: clamp(1.75rem, 9vw, 2.5rem); font-variation-settings: 'wdth' 112.5; }
-  .sm-band { left: 3.75rem; right: -2.5rem; }
+  .sm-band { left: 3.75rem; right: -2.5rem; bottom: 2.375rem; height: 1.875rem; }
   .sm-flare { right: -4rem; bottom: 0.5rem; }
   .sm-inline { display: flex; flex-direction: column; gap: 0.75rem; padding: 0.75rem 1rem 1.25rem 4.5rem; animation: sm-rise 0.35s ease-out 0.12s both; }
   .sm-inline p { margin: 0; font-size: 1rem; color: #d4d1c2; }
   .sm-inline .dmz-pill { align-self: flex-start; }
-  .sm-foot { padding: 1rem 1rem 0; }
-  .sm-exit { font-size: 1.375rem; }
-  .sm-keys { display: none; }
+  .sm-foot { display: none; }
   .sm-side { display: none; }
+}
+/* The emblem is decoration; at 320px the mode pill, Search and Close need the room. */
+@media (max-width: 380px) {
+  .sm--overlay .sm-emblem { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .is-active .sm-item, .sm-flare, .sm-g1, .sm-g2, .sm-preview, .sm-inline { animation: none; }

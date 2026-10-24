@@ -26,7 +26,6 @@ const tier = (entry: Entry) => intelDetail(entry, 'Tier') ? `Tier ${intelDetail(
     <DmzPageHead title="Boss Board" :icon="icon" :checked="DMZ_INTEL_CHECKED" :status="`${count('lieutenants')} Lieutenants · ${count('commanders')} Commanders and bosses · ${count('named') + count('forces')} more enemy types`">
       <p v-if="board" class="dz-lede">{{ board.summary }} <DmzIntelLink :id="board.id" anchor class="bb-more">How the Boss Board works</DmzIntelLink></p>
     </DmzPageHead>
-    <DmzIntelNav />
 
     <section v-for="group in roster" :id="group.id" :key="group.id" class="dz-group" :aria-labelledby="`${group.id}-title`">
       <header class="dz-group-head">

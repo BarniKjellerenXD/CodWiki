@@ -1,11 +1,20 @@
 <script setup lang="ts">
-import { DMZ_CHECKED } from '#shared/dmz.mjs'
+import { DMZ_CHECKED, dmzStations } from '#shared/dmz.mjs'
 // checked overrides the section-wide date on a page refreshed on its own.
-defineProps<{ title: string, icon: string, status?: string, checked?: string }>()
+const props = defineProps<{ title: string, icon: string, status?: string, checked?: string }>()
+const route = useRoute()
+// The lit station's game name sits above the title when the two differ, so
+// DEPLOY reads over Hajin Exclusion Zone. Lab drafts match no station.
+const station = computed(() => {
+  const path = route.path.replace(/\/+$/, '')
+  return dmzStations.find(station => station.route === path) || (path.startsWith('/dmz/intel/') ? dmzStations.find(station => station.id === 'intel') : undefined)
+})
+const eyebrow = computed(() => station.value && station.value.label.toLowerCase() !== props.title.toLowerCase() ? station.value.label : '')
 </script>
 
 <template>
   <header class="dh">
+    <p v-if="eyebrow" class="dh-eyebrow dmz-mono">{{ eyebrow }}</p>
     <div class="dh-row">
       <div class="dh-title">
         <span class="dh-skew" aria-hidden="true" />
@@ -21,6 +30,7 @@ defineProps<{ title: string, icon: string, status?: string, checked?: string }>(
 
 <style scoped>
 .dh { padding-right: 3.5rem; }
+.dh-eyebrow { margin: 0 0 0.375rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dz-muted); }
 .dh-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .dh-title { position: relative; display: inline-flex; align-items: center; gap: 0.875rem; padding: 0.375rem 1.5rem 0.375rem 0.625rem; }
 .dh-skew { position: absolute; inset: 0; transform: skewX(-18deg); background: rgba(233, 230, 214, 0.16); }

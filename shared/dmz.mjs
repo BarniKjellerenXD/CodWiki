@@ -74,8 +74,23 @@ export const dmzStations = [
   },
 ]
 
-// Phone dock: four stations around the menu button (null).
-export const dmzDock = ['deploy', 'orders', null, 'intel', 'guide']
+// Phone dock: four stations around the menu button (null), in rail order.
+export const dmzDock = ['deploy', 'orders', null, 'guide', 'intel']
+
+// A thin divider above these in the rail and the station menu:
+// field tools | FOB stations | reading.
+export const dmzRailBreaks = ['boss', 'briefing']
+
+// Intel's own pages, for the rail and Intel's chip row. They live here so the
+// shell never imports the Intel data; tests/dmz-nav.test.mjs checks them
+// against intelStations.
+export const dmzIntelShelves = [
+  { id: 'missions', label: 'Missions', path: '/dmz/intel/missions' },
+  { id: 'armory', label: 'Armory', path: '/dmz/intel/armory' },
+  { id: 'manual', label: 'Field manual', path: '/dmz/intel/field-manual' },
+  { id: 'status', label: 'Status', path: '/dmz/intel/status' },
+  { id: 'all', label: 'Everything', path: '/dmz/intel/all' },
+]
 
 // Menu bulletin. Update it when the next milestone passes.
 export const dmzBulletin = { title: 'DMZ early access is live', detail: 'Full launch 23 Oct · Season 1 on 6 Nov' }
