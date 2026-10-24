@@ -2,7 +2,8 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import { dmzStations, dmzDock, dmzRailBreaks, dmzIntelShelves } from '../shared/dmz.mjs'
-import { intelStations, intelEverything, intelNeeds } from '../shared/dmz-stations.mjs'
+import { intelStations, intelEverything, intelNeeds, layerLink, placeLink } from '../shared/dmz-stations.mjs'
+import { hajinLayers } from '../shared/dmz-map.mjs'
 import { guideTiers } from '../shared/dmz-guide.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
 
@@ -28,6 +29,12 @@ test('dynamic links stay inside their tab', () => {
   }
   for (const tier of guideTiers) for (const step of tier.steps) assert.ok(!step.to, `${tier.id}/${step.id}: ${step.to?.path}`)
   for (const entry of dmzIntel) assert.ok(!entry.link, `${entry.id}: ${entry.link?.to}`)
+})
+
+test('place and layer links open the Tac-Map at the map', () => {
+  assert.equal(placeLink('nurigo-mall'), '/dmz/hajin?pin=nurigo-mall#map')
+  assert.equal(layerLink('police'), '/dmz/hajin?layer=police#map')
+  for (const { id } of hajinLayers) assert.equal(layerLink(id), `/dmz/hajin?layer=${id}#map`)
 })
 
 test('the rail, dock and Intel shelves agree', () => {

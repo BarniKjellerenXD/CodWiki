@@ -3,10 +3,17 @@ import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelConfidenceLabel, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
 import { printerRecipes, recipeMaterials, recipeUnlock, recipeName, sumMaterials, intelEntry, PRINT_MAX } from '#shared/dmz-stations.mjs'
 import { materialPlaybooks, materialSpots } from '#shared/dmz-playbooks.mjs'
+import { BARRACKS, containers, exfilRule, recipeHotspots, recipesNoPlace, runSamples, secureSlotTip } from '#shared/dmz-recipe-spots.mjs'
+import { countLabel } from '#shared/dmz-sightings.mjs'
 
-// 3D Printer station: every recipe with its materials, and a planner that adds
-// up what to loot for the prints you pick. The plan stays on this device.
+// 3D Printer station: every recipe with its materials and where world recipes
+// have been found, and a planner that adds up what to loot for the prints you
+// pick. The plan stays on this device.
 const icon = dmzStations.find(station => station.id === 'printer')!.icon
+const PRINTER_VIDEOS = [
+  { id: 'youtube-b1z0rdpm1vg', why: 'How to open the printer, track a recipe and pick your first prints' },
+  { id: 'youtube-8lb8riyufq8', why: 'How bosses, keys, rooms and recipes fit together, and what the Track Recipe and Ingredient Locations buttons do' },
+]
 const { state, saveError, prints, change, clear } = useDmzPrinter()
 const query = ref('')
 const guides = dmzIntel.filter(entry => entry.category === 'crafting' && !printerRecipes.includes(entry))
@@ -65,7 +72,7 @@ function showPlan() {
         </label>
         <p class="pr-count dmz-mono" role="status">{{ shown.length }} of {{ printerRecipes.length }} recipes</p>
         <ul class="pr-list">
-          <li v-for="entry in shown" :key="entry.id" class="pr-recipe" :class="{ 'is-planned': prints(entry.id) }" :data-intel="entry.id">
+          <li v-for="entry in shown" :id="`recipe-${entry.id}`" :key="entry.id" class="pr-recipe" :class="{ 'is-planned': prints(entry.id) }" :data-intel="entry.id">
             <div class="pr-recipe-main">
               <DmzIntelLink :id="entry.id" class="pr-name">
                 <span class="w-semi">{{ recipeName(entry) }}</span>
@@ -82,9 +89,63 @@ function showPlan() {
               <span class="dmz-mono" aria-live="polite">{{ prints(entry.id) }}</span>
               <button type="button" :disabled="prints(entry.id) >= PRINT_MAX || !recipeMaterials(entry).length" :aria-label="`One more ${recipeName(entry)}`" @click="change(entry.id, 1)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12 M12 6v12" /></svg></button>
             </div>
+            <DmzRecipeSpots :id="entry.id" class="pr-spots" />
           </li>
         </ul>
         <p v-if="!shown.length" class="dz-empty">No recipe uses “{{ query.trim() }}”.</p>
+
+        <section id="where-recipes-drop" class="dz-group" aria-labelledby="pr-drop">
+          <header class="dz-group-head">
+            <h2 id="pr-drop" class="dz-h2">Where recipes drop<span class="dmz-mono">{{ recipeHotspots.length }}</span></h2>
+            <p>World recipes turn up in containers all over Hajin. These are the places with the most published finds. Open the full list for every place, a run to follow and what to search.</p>
+          </header>
+          <DmzSightings :rows="recipeHotspots" unit="find" compact />
+          <details class="pr-drop">
+            <summary class="dmz-mono">All places and how to search<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></summary>
+            <div class="pr-drop-body">
+              <DmzSightings :rows="recipeHotspots" unit="find" />
+              <section class="pr-part">
+                <h3 class="pr-label dmz-mono">The Chang-san barracks run <span class="dz-badge pr-advice">Advice</span></h3>
+                <ol class="pr-lines"><li v-for="step in BARRACKS.how" :key="step">{{ step }}</li></ol>
+              </section>
+              <section class="pr-part pr-part--fallback">
+                <h3 class="pr-label dmz-mono">If it goes wrong <span class="dz-badge pr-advice">Advice</span></h3>
+                <ul class="pr-lines"><li v-for="line in BARRACKS.fallback" :key="line">{{ line }}</li></ul>
+              </section>
+              <DmzVideoGuides :empty="BARRACKS.noVideo" />
+              <DmzGuideSources :ids="BARRACKS.sources" label="Barracks run sources" />
+              <section class="pr-block">
+                <h3 class="pr-label dmz-mono">Run samples</h3>
+                <ul class="pr-lines"><li v-for="sample in runSamples" :key="sample.text"><span class="w-semi">{{ sample.where }}:</span> {{ sample.text }}.<template v-if="sample.note"> {{ sample.note }}</template></li></ul>
+                <DmzGuideSources :ids="runSamples.flatMap(sample => sample.sources)" />
+              </section>
+              <section class="pr-block">
+                <h3 class="pr-label dmz-mono">What to open</h3>
+                <p class="pr-text">{{ containers.lead }}</p>
+                <ul class="pr-lines"><li v-for="item in containers.items" :key="item.name"><span class="w-semi">{{ item.name }}.</span> {{ item.text }}</li></ul>
+                <p class="pr-text pr-muted">{{ containers.note }}</p>
+                <DmzGuideSources :ids="containers.sources" />
+              </section>
+              <section class="pr-block">
+                <h3 class="pr-label dmz-mono">Also found, place not given</h3>
+                <ul class="pr-noplace">
+                  <li v-for="item in recipesNoPlace" :key="item.name">
+                    <p class="pr-text"><DmzIntelLink v-if="item.intel" :id="item.intel" class="w-semi">{{ item.name }}</DmzIntelLink><span v-else class="w-semi">{{ item.name }}</span> · {{ countLabel(item.seen, 'find') }}</p>
+                    <p v-if="item.note" class="pr-text pr-muted">{{ item.note }}</p>
+                    <DmzVideoGuides :refs="item.videos" />
+                  </li>
+                </ul>
+                <DmzGuideSources :ids="recipesNoPlace.flatMap(item => item.sources)" />
+              </section>
+              <section class="pr-block">
+                <h3 class="pr-label dmz-mono">Extract it</h3>
+                <p class="pr-text">{{ exfilRule.text }}</p>
+                <p class="pr-text">{{ secureSlotTip.text }}</p>
+                <DmzGuideSources :ids="[...exfilRule.sources, ...secureSlotTip.sources]" />
+              </section>
+            </div>
+          </details>
+        </section>
 
         <section v-if="materialPlaybooks.length" class="dz-group" aria-labelledby="pr-where">
           <header class="dz-group-head">
@@ -113,6 +174,7 @@ function showPlan() {
           <ul class="dz-rows">
             <li v-for="entry in guides" :key="entry.id"><DmzIntelRow :entry="entry" summary /></li>
           </ul>
+          <DmzVideoGuides :refs="PRINTER_VIDEOS" class="pr-videos" />
         </section>
       </div>
 
@@ -147,10 +209,12 @@ function showPlan() {
 .pr-search { max-width: 34rem; }
 .pr-count { margin: 0.75rem 0 0.5rem 1.125rem; font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-teal); }
 .pr-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.375rem; }
-.pr-recipe { display: flex; align-items: center; gap: 1rem; padding: 0.625rem 0.75rem 0.625rem 1rem; background: rgba(20, 24, 23, 0.78); border: 1px solid var(--dz-line); border-radius: 14px; }
+.pr-recipe { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1rem; padding: 0.625rem 0.75rem 0.625rem 1rem; background: rgba(20, 24, 23, 0.78); border: 1px solid var(--dz-line); border-radius: 14px; scroll-margin-top: 1.5rem; }
 .pr-recipe.is-planned { border-color: rgba(169, 217, 138, 0.55); box-shadow: inset 3px 0 var(--dz-green); }
 .pr-recipe:has(.pr-name.is-open) { border-color: var(--dz-accent); }
-.pr-recipe-main { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+.pr-recipe-main { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+/* Where the recipe drops takes the full width of the row, under the name and stepper. */
+.pr-spots { flex: 1 0 100%; min-width: 0; }
 .pr-name { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.625rem; align-self: flex-start; min-height: 2.75rem; color: #f3f1e5 !important; font-size: 1.125rem; text-decoration: none; }
 .pr-name:hover .w-semi { text-decoration: underline; text-underline-offset: 0.2em; }
 .pr-unlock { margin: 0; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dz-muted); }
@@ -193,6 +257,30 @@ function showPlan() {
 .pr-mat-how summary svg { width: 1.125rem; height: 1.125rem; fill: none; stroke: var(--dz-ink-2); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s; }
 .pr-mat-how[open] summary svg { transform: rotate(180deg); }
 .pr-mat-body { padding: 0.25rem 0.875rem 0.875rem; }
+.pr-drop { margin-top: 0.5rem; }
+.pr-drop > summary { display: inline-flex; align-items: center; gap: 0.375rem; min-height: 2.75rem; cursor: pointer; list-style: none; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-teal); }
+.pr-drop > summary::-webkit-details-marker { display: none; }
+.pr-drop > summary svg { flex: none; width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.15s; }
+.pr-drop[open] > summary svg { transform: rotate(180deg); }
+.pr-drop-body { display: grid; gap: 0.875rem; min-width: 0; padding: 0.25rem 0 0.5rem; }
+.pr-part, .pr-block { display: grid; gap: 0.375rem; min-width: 0; }
+.pr-part { padding: 0.625rem 0.875rem; border-left: 2px solid var(--dz-accent); background: rgba(11, 13, 12, 0.5); }
+.pr-part--fallback { border-left-color: #d8c47c; }
+.pr-label { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-teal); }
+.pr-part .pr-label { color: var(--dz-accent); }
+.pr-part--fallback .pr-label { color: #d8c47c; }
+.pr-advice { color: var(--dz-ink-2); }
+.pr-lines { margin: 0; padding-left: 1.15rem; display: grid; gap: 0.3rem; }
+.pr-lines li, .pr-text { margin: 0; color: #dcd9cb; font-size: 0.9375rem; line-height: 1.45; overflow-wrap: anywhere; }
+ol.pr-lines { list-style: decimal; }
+ul.pr-lines { list-style: disc; }
+ol.pr-lines li::marker { color: var(--dz-accent); font-weight: 700; }
+.pr-muted { color: var(--dz-muted); font-size: 0.875rem; }
+.pr-noplace { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.pr-noplace > li { display: grid; gap: 0.125rem; min-width: 0; padding-left: 0.75rem; border-left: 2px solid var(--dz-line-strong); }
+.pr-noplace a { color: var(--dz-ink) !important; text-underline-offset: 0.2em; }
+.pr-videos { margin-top: 0.5rem; }
+@media (prefers-reduced-motion: reduce) { .pr-drop > summary svg { transition: none; } }
 @media (max-width: 599px) {
   .pr-mat-how summary { grid-template-columns: auto minmax(0, 1fr) auto; }
   .pr-mat-hint { grid-column: 1 / -1; grid-row: 2; white-space: normal; }

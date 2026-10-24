@@ -35,6 +35,10 @@ const nameOf = (id: string) => intelEntry(id)?.name || id
               <p class="gs-how-label dmz-mono">How</p>
               <ol><li v-for="line in step.how" :key="line">{{ line }}</li></ol>
             </div>
+            <div v-if="step.fallback?.length" class="gs-how gs-how--fallback">
+              <p class="gs-how-label dmz-mono">If it goes wrong <span class="dz-badge gs-advice">Advice</span></p>
+              <ul><li v-for="line in step.fallback" :key="line">{{ line }}</li></ul>
+            </div>
             <div class="gs-links">
               <span class="dz-badge" :class="`is-${step.confidence}`">{{ step.advice ? 'Advice · ' : '' }}{{ intelConfidenceLabel(step.confidence) }}</span>
               <DmzIntelLink v-for="id in step.intel || []" :id="id" :key="id" class="gs-intel">{{ nameOf(id) }}</DmzIntelLink>
@@ -70,7 +74,11 @@ const nameOf = (id: string) => intelEntry(id)?.name || id
 .gs-detail p { margin: 0 0 0.625rem; max-width: 44rem; color: #dcd9cb; font-size: 1rem; line-height: 1.5; }
 .gs-how { margin: 0 0 0.75rem; max-width: 44rem; padding: 0.625rem 0.875rem; border-left: 2px solid var(--dz-accent); background: rgba(11, 13, 12, 0.5); }
 .gs-detail .gs-how-label { margin: 0 0 0.25rem; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-accent); }
-.gs-how ol { margin: 0; padding-left: 1.15rem; list-style: decimal; display: grid; gap: 0.25rem; color: #dcd9cb; font-size: 0.9375rem; line-height: 1.45; }
+.gs-how :is(ol, ul) { margin: 0; padding-left: 1.15rem; list-style: decimal; display: grid; gap: 0.25rem; color: #dcd9cb; font-size: 0.9375rem; line-height: 1.45; }
+.gs-how ul { list-style: disc; }
+.gs-how--fallback { border-left-color: #d8c47c; }
+.gs-detail .gs-how--fallback .gs-how-label { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; color: #d8c47c; }
+.gs-advice { color: var(--dz-ink-2); }
 .gs-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem 0.5rem; }
 .gs-intel { display: inline-flex; align-items: center; min-height: 2rem; padding: 0 0.75rem; border: 1px solid var(--dz-line-strong); border-radius: 999px; font-size: 0.875rem; text-decoration: none; color: var(--dz-ink-2) !important; }
 .gs-intel:hover { border-color: var(--dz-ink); color: #fff !important; }

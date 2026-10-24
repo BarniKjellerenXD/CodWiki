@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { dmzStations } from '#shared/dmz.mjs'
 import { intelConfidence } from '#shared/dmz-intel.mjs'
-import { dmzKeys, dmzKeyGuides, dmzKeyPlaces, filterKeys, keyPlaceIds, keyTally, KEY_MARKS, DMZ_KEYS_CHECKED } from '#shared/dmz-keys.mjs'
+import { placeLink } from '#shared/dmz-stations.mjs'
+import { dmzKeys, dmzKeyGuides, dmzKeyPlaces, filterKeys, haulLabel, keyHaul, keyPlaceIds, keyTally, keyVideos, sortKeysByHaul, KEY_MARKS, DMZ_KEYS_CHECKED } from '#shared/dmz-keys.mjs'
 
 // The key tracker. Search and filters stay on the page; held and used marks
-// are saved on this device. Cards link to Intel and to each room's Tac-Map pin.
+// are saved on this device. Cards link to Intel, to each room's Tac-Map pin and
+// to videos of its rooms.
 type Key = (typeof dmzKeys)[number]
 type Room = Key['rooms'][number]
 type Mark = (typeof KEY_MARKS)[number]
@@ -33,7 +35,8 @@ const NO_PLACE = 'No place on the map yet'
 const placeName = (id: string) => id === 'none' ? NO_PLACE : dmzKeyPlaces.find(item => item.id === id)?.name || id
 const placeCount = (id: string) => dmzKeys.filter(key => id === 'none' ? !keyPlaceIds(key).length : keyPlaceIds(key).includes(id)).length
 
-// Keys sit under their first room's place, or under the place being filtered.
+// Keys sit under their first room's place, or under the place being filtered,
+// ordered by haul tier and then by published openings.
 const groups = computed(() => {
   const list: { id: string, name: string, keys: Key[] }[] = []
   for (const key of shown.value) {
@@ -42,15 +45,15 @@ const groups = computed(() => {
     if (group) group.keys.push(key)
     else list.push({ id, name: placeName(id), keys: [key] })
   }
-  return list
+  return list.map(group => ({ ...group, keys: sortKeysByHaul(group.keys) }))
 })
+const videosOf = Object.fromEntries(dmzKeys.map(key => [key.id, keyVideos(key)]))
 const heldIn = (keys: Key[]) => keys.filter(key => marks.value[key.id] === 'held').length
 
 const confidenceLabel = (id: string) => intelConfidence.find(level => level.id === id)?.label
 const roomPlace = (room: Room) => room.placeName ? [room.placeName, room.areaName !== room.placeName && room.areaName].filter(Boolean).join(', ') : 'Place not reported'
 // A Reported room under a better-sourced key says so.
 const roomDoubt = (key: Key, room: Room) => room.confidence === 'reported' && key.confidence !== 'reported'
-const mapLink = (id: string) => `/dmz/hajin?pin=${id}#map`
 const markLabel = (value: Mark) => value === 'held' ? 'Held' : 'Used'
 
 function toggleLevel(id: string) {
@@ -109,6 +112,7 @@ watch(() => route.hash, hash => { target.value = hash })
           {{ shown.length === dmzKeys.length ? `Showing all ${shown.length} keys` : `${shown.length} of ${dmzKeys.length} keys` }}
           <button v-if="filtered" type="button" class="ks-clear" @click="clearFilters">Clear filters</button>
         </p>
+        <p v-if="shown.length" class="ks-legend">Ordered by what openings have shown. In each place, top hauls come first, then steady and starter ones, then keys not rated yet. An opening is a published video or write-up of the room with what was inside, and one opening can be luck.</p>
 
         <section v-for="group in groups" :key="group.id" class="ks-group" :aria-labelledby="`ks-h-${group.id}`">
           <header class="ks-group-head">
@@ -125,9 +129,10 @@ watch(() => route.hash, hash => { target.value = hash })
                 <span class="ks-badge" :class="`is-${key.confidence}`">{{ confidenceLabel(key.confidence) }}</span>
               </header>
               <h3>{{ key.name }}</h3>
+              <p v-if="keyHaul(key)" class="ks-haul dmz-mono" :class="[`is-${keyHaul(key)?.haul}`, { 'is-unopened': !keyHaul(key)?.openings }]">{{ haulLabel(key) }}</p>
               <ul v-if="key.rooms.length" class="ks-rooms">
                 <li v-for="room in key.rooms" :key="room.report">
-                  <NuxtLink :to="mapLink(room.report)" class="ks-room">
+                  <NuxtLink :to="placeLink(room.report)" class="ks-room">
                     <span class="ks-room-top">
                       <span class="ks-room-place w-semi"><template v-if="room.name">{{ room.name }} · </template>{{ roomPlace(room) }}</span>
                       <span class="ks-squares dmz-mono">
@@ -142,7 +147,7 @@ watch(() => route.hash, hash => { target.value = hash })
               </ul>
               <template v-else>
                 <p class="ks-summary">{{ key.summary }}</p>
-                <NuxtLink v-if="key.place" :to="mapLink(key.place)" class="ks-room ks-room--place">
+                <NuxtLink v-if="key.place" :to="placeLink(key.place)" class="ks-room ks-room--place">
                   <span class="ks-room-top">
                     <span class="ks-room-place w-semi">Named at {{ key.placeName }}</span>
                     <svg class="ks-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14" /></svg>
@@ -152,6 +157,7 @@ watch(() => route.hash, hash => { target.value = hash })
                 </NuxtLink>
                 <p v-else class="ks-none dmz-mono">No room reported yet</p>
               </template>
+              <DmzVideoGuides v-if="videosOf[key.id]?.length" :refs="videosOf[key.id] || []" title="Watch it done" variant="fold" />
               <footer class="ks-key-foot">
                 <div class="ks-marks" role="group" :aria-label="`${key.name}: mark as`">
                   <button v-for="value in KEY_MARKS" :key="value" type="button" class="ks-mark dmz-mono" :class="`is-${value}`" :aria-pressed="marks[key.id] === value" @click="setMark(key.id, value)">
@@ -230,6 +236,7 @@ watch(() => route.hash, hash => { target.value = hash })
 
 .ks-layout { display: grid; grid-template-columns: minmax(0, 1fr) 17.5rem; align-items: start; gap: 2rem; margin-top: 1.5rem; }
 .ks-count { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 0 0 0.5rem; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-teal); }
+.ks-legend { max-width: 46rem; margin: 0 0 1rem; font-size: 0.9375rem; line-height: 1.5; color: var(--dz-muted); }
 .ks-clear { min-height: 2.75rem; padding: 0 0.25rem; border: 0; background: none; color: var(--dz-ink); font: inherit; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
 .ks-group { margin-top: 1.5rem; }
 .ks-group:first-of-type { margin-top: 0; }
@@ -250,6 +257,10 @@ watch(() => route.hash, hash => { target.value = hash })
 .ks-badge.is-confirmed { color: var(--dz-green); }
 .ks-badge.is-reported { color: var(--dz-teal); border-style: dashed; }
 .ks-key h3 { margin: 0; font-size: 1.3125rem; font-weight: 700; line-height: 1.15; letter-spacing: 0.03em; text-transform: uppercase; font-variation-settings: 'wdth' 75; color: #f7f5ea; }
+.ks-haul { align-self: flex-start; max-width: 100%; margin: 0; padding: 0.2rem 0.55rem; border: 1px solid var(--dz-line-strong); border-radius: 4px; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dz-ink-2); }
+.ks-haul.is-top { border-color: var(--dz-accent); color: var(--dz-accent); }
+.ks-haul.is-starter { color: var(--dz-muted); }
+.ks-haul.is-unopened { border-style: dashed; }
 .ks-rooms { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.375rem; }
 .ks-room { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.5rem 0.625rem; background: rgba(10, 12, 11, 0.35); border-left: 2px solid var(--dz-line-strong); color: inherit !important; text-decoration: none; }
 .ks-room:hover { background: rgba(233, 230, 214, 0.08); border-left-color: var(--dz-ink); }

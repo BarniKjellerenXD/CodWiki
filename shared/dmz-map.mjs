@@ -6,9 +6,10 @@
 // and lands within about 10 px of each.
 
 import { dmzIntel, intelSources } from './dmz-intel.mjs'
+import { guideSources } from './dmz-guide-sources.mjs'
 import { mapReports, mapReportSources } from './dmz-map-reports.mjs'
 
-export const HAJIN_MAP_CHECKED = '22 Oct 2026'
+export const HAJIN_MAP_CHECKED = '24 Oct 2026'
 
 export const hajinMap = {
   image: '/maps/mw4-hajin/tac-map.webp', width: 1166, height: 1080,
@@ -44,6 +45,7 @@ export const hajinLayers = [
   { id: 'boss', group: 'Reported', label: 'Bosses', one: 'Boss', desc: 'Where guides have met a Lieutenant or Commander. Commanders roam, and some Lieutenants move between matches.', on: true },
   { id: 'exfil', group: 'Reported', label: 'Exfil sites', one: 'Exfil site', desc: 'Exfils switch on from a pool each match and show green smoke. Call the helicopter, then hold the site until it lands.', on: true },
   { id: 'sam', group: 'Reported', label: 'SAM sites', one: 'SAM site', desc: 'Hack the control computer and defend it. Once captured, it shoots down enemy aircraft, Deathstalkers included.', on: true },
+  { id: 'loot', group: 'Reported', label: 'Loot spots', one: 'Loot spot', desc: 'Places guides and players name for high-value loot. Nothing in them is guaranteed.', on: false },
   { id: 'mission-exit', group: 'Reported', label: 'Story Mission exits', one: 'Story Mission exit', desc: 'Where a Story Mission ends its run. Not a regular exfil.', on: false },
   { id: 'bounty', group: 'Reported', label: 'Bounty stations', one: 'Bounty station', desc: 'A laptop for reviewing bounties on other operators or paying off your own.', on: false },
   { id: 'station', group: 'Reported', label: 'Train stations', one: 'Station', desc: 'A train, tram or monorail stop.', on: false },
@@ -169,6 +171,9 @@ const REPORT_INTEL = {
   'supreme-leaders-bunker': 'supreme-leader-access-card', 'the-citadel-south-wing': 'citadel-south-wing-supply-room',
   'gun-store-weapons-lockers-western-cheongun-village': 'gun-store-weapons-locker-key', 'gun-store-weapons-lockers-northern-songdo-wharf': 'gun-store-weapons-locker-key',
   'jang-ui-encampment-nurigo-mall': 'jang-ui', 'tank': 'main-nk-battle-tank', 'gorani-loot-room-rice-mill-rooftop': 'gorani',
+  'colossus-fallen-ember-warhead': 'colossus', 'deathstalker-nurigo-mall': 'deathstalker',
+  'cheonwang-peak-array-safes': 'cheonwang-peak-array', 'haneul-reactor-loot-route': 'haneul-nuclear-reactor', 'reactor-02-decontamination-machine': 'irradiated-container',
+  'nurigo-east-loot-route': 'nurigo-east', 'casino-vault-run': 'counting-room-vault-key',
 }
 export const hajinReports = mapReports.map(report => {
   const intel = REPORT_INTEL[report.id] || intelByName.get(reportName(report.name))
@@ -230,4 +235,5 @@ export const hajinThreatParts = threatParts
 export const hajinThreatSeeds = threatSeeds
 export const hajinPins = pins
 export const hajinPin = id => pins.find(pin => pin.id === id)
-export const mapSources = { ...intelSources, ...mapReportSources }
+// Reports may cite guide-only sources too, videos included.
+export const mapSources = { ...intelSources, ...guideSources, ...mapReportSources }

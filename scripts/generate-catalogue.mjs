@@ -44,6 +44,17 @@ const dmzPageId = page => `dmz${page.path.slice(4).replaceAll('/', '-') || '-sta
 const intelShelf = page => [...intelStations, intelEverything].find(item => item.path === page.path)
 for (const page of dmzPages) entries.push({ id: dmzPageId(page), name: page.name, map: '', kind: 'DMZ', context: dmzContext, route: page.path, keywords: `${dmzKeywords} ${page.description}` })
 for (const section of dmzBriefingSections) entries.push({ id: `dmz-briefing:${section.id}`, name: section.title, map: '', kind: 'Section', context: `${dmzContext} · How DMZ works`, route: `/dmz/briefing#${section.id}`, keywords: `${dmzKeywords} briefing basics` })
+// Where-to-find answers open the Boss Board card, Printer section, Intel reading
+// list or Guide loot card that holds them; build-spotlight.mjs lists the same rows.
+for (const [name, route, station, words] of [
+  ['Where to find Colossus', '/dmz/boss-board#boss-colossus', 'boss', 'colossus spawn location jugg juggernaut commander'],
+  ['Where to find the Deathstalker', '/dmz/boss-board#boss-deathstalker', 'boss', 'deathstalker spawn location commander'],
+  ['Tempered recipe location', '/dmz/printer#recipe-tempered-armor-vest-recipe', 'printer', 'tempered armor vest recipe where find the doctor command office'],
+  ['World recipe spots', '/dmz/printer#where-recipes-drop', 'printer', 'world recipes where recipes drop locations find farm'],
+  ['Where is the good loot', '/dmz/intel?need=loot', 'intel', 'good loot spots where find cash money safes recipes weapon manuals keys farm'],
+  ['Safes without a key', '/dmz/guide?stage=early#loot-safes', 'guide', 'safes without a key keyless safe no code gold bars skulls cash loot compound cheonwang peak array'],
+  ['Weapon Manual spots', '/dmz/guide?stage=mid#loot-manuals', 'guide', 'weapon manual spots manuals where find farm loot chang-san air base barracks train duffel bags'],
+]) entries.push({ id: `dmz-${route.slice(5).replace(/[?=]/g, '-').replace('#', ':')}`, name, map: '', kind: 'Section', context: `${dmzContext} · ${dmzStations.find(item => item.id === station).label}`, route, keywords: `${dmzKeywords} ${words}` })
 // Guide stages open on their stage, found by any sign or step title.
 for (const tier of guideTiers) entries.push({ id: `dmz-guide:${tier.id}`, name: `${tier.name} game`, map: '', kind: 'Section', context: `${dmzContext} · Progression guide`, route: `/dmz/guide?stage=${tier.id}`, keywords: `${dmzKeywords} guide progression stage what to do next ${tier.short} ${tier.signs.map(([, text]) => text).join(' ')} ${tier.steps.map(step => step.title).join(' ')}` })
 // Hajin places open their Tac-Map card. A fortress named like its location is that location.

@@ -8,10 +8,12 @@ import { dmzIntel, intelConfidenceLabel, intelSourceSite } from '#shared/dmz-int
 // The Hajin Tac-Map. Official markers sit where Activision's map puts them.
 // Reported sites have no exact position, so they ride on the place they
 // belong to as a gold count badge, and the card lists them. The selection
-// lives in ?pin= so a place, service or report can be linked. ?view=threat
-// swaps the markers for approximate threat zones.
+// lives in ?pin= so a place, service or report can be linked. ?layer= shows
+// one layer for the visit. ?view=threat swaps the markers for approximate
+// threat zones.
 interface Pin { id: string, layer: string, name: string, at: [number, number], square: string, threat?: string, parts?: [string, string][], parent?: string, desc?: string, same?: string, near?: string, reports?: string[], intel?: string[] }
-interface Report { id: string, type: string, name: string, anchor: string | null, where: string, squares?: string[], threat?: string, note?: string, confidence: string, sources: string[], intel?: string }
+interface VideoRef { id: string, at?: string, why: string, shows?: boolean }
+interface Report { id: string, type: string, name: string, anchor: string | null, where: string, squares?: string[], threat?: string, note?: string, confidence: string, sources: string[], intel?: string, videos?: VideoRef[] }
 interface Source { label: string, url?: string }
 type Item = { kind: 'pin', id: string, pin: Pin } | { kind: 'report', id: string, report: Report }
 interface ThreatPart { id: string, name: string, level: string, poi: string, pin: string | null, at: [number, number] | null, hotter?: boolean }
@@ -53,6 +55,7 @@ const GLYPHS: Record<string, string> = {
   boss: 'M12 3a8 8 0 0 0-8 8c0 2.5 1.2 4.3 3 5.5V21h10v-4.5c1.8-1.2 3-3 3-5.5a8 8 0 0 0-8-8zM8 11.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0-3 0M13 11.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0-3 0M10.5 21v-2.5M13.5 21v-2.5',
   exfil: 'M12 21V9M7 14l5-5l5 5M4 4h16',
   sam: 'M12 3l3 5v8l2 3v2l-5-2l-5 2v-2l2-3V8z',
+  loot: 'M9 3h6l-2 4h-2zM11 7c-4 1.5-6.5 5-6.5 8.5A5.5 5.5 0 0 0 10 21h4a5.5 5.5 0 0 0 5.5-5.5C19.5 12 17 8.5 13 7',
   'mission-exit': 'M5 21V4M5 4h12l-2.5 4l2.5 4H5',
   bounty: 'M12 3v4M12 17v4M3 12h4M17 12h4M7 12a5 5 0 1 0 10 0a5 5 0 1 0-10 0',
   station: 'M7 4h10a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM5 11h14M8 21l2-4M16 21l-2-4',
@@ -62,7 +65,7 @@ const GLYPHS: Record<string, string> = {
 const SHORT: Record<string, string> = {
   poi: 'Major', fortress: 'Fortresses', area: 'Areas', compound: 'Compounds', police: 'Police', clinic: 'Clinics', fire: 'Fire', gas: 'Gas',
   'marine-gas': 'Marine gas', ammo: 'Ammo', uav: 'UAV', 'lt-tower': 'Lt. towers', 'key-room': 'Keys', boss: 'Bosses', exfil: 'Exfils',
-  sam: 'SAM', 'mission-exit': 'Mission exits', bounty: 'Bounty', station: 'Stations', landmark: 'Landmarks',
+  sam: 'SAM', loot: 'Loot', 'mission-exit': 'Mission exits', bounty: 'Bounty', station: 'Stations', landmark: 'Landmarks',
 }
 const svg = (layer: string) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${GLYPHS[layer] || GLYPHS.landmark}"/></svg>`
 
@@ -70,6 +73,12 @@ const route = useRoute()
 const router = useRouter()
 const defaults = hajinLayers.filter(layer => layer.on).map(layer => layer.id)
 const enabled = ref<string[]>([...defaults])
+// Layers a link switched on for this visit only: a ?layer= link, or a ?pin=
+// link to a place or site whose layer is off. save() keeps only the reader's
+// own choice in enabled.
+const visitLayers = ref<string[]>([])
+const visit = computed(() => visitLayers.value.filter(id => !enabled.value.includes(id)))
+const shown = computed(() => hajinLayers.map(layer => layer.id).filter(id => enabled.value.includes(id) || visit.value.includes(id)))
 const levelsOn = ref<string[]>([...threatLevels])
 const view = computed(() => route.query.view === 'threat' ? 'threat' : 'map')
 const showGrid = ref(true)
@@ -100,6 +109,7 @@ const reportLabel = (type: string) => hajinLayer(type)?.one || type
 
 // Selection: a pin id or a report id. A report with a place opens that place's card.
 const selectedId = computed(() => String(route.query.pin || ''))
+const linkedLayer = computed(() => hajinLayer(String(route.query.layer || '')) ? String(route.query.layer) : '')
 const selection = computed(() => {
   const id = selectedId.value
   const pin = pinIndex.get(id)
@@ -322,8 +332,10 @@ function placeMarker(pin: Pin, shown: Report[], selected: boolean, dim: boolean,
   if (shown.length) {
     const badge = document.createElement('span')
     badge.className = 'tm-badge'
-    const types = [...new Set(shown.map(report => report.type))]
+    // Loot leads, so its bag shows even where key rooms and bosses share the place.
+    const types = [...new Set(shown.map(report => report.type))].sort((a, b) => Number(b === 'loot') - Number(a === 'loot'))
     badge.innerHTML = types.slice(0, 2).map(svg).join('')
+    badge.classList.toggle('has-loot', types[0] === 'loot')
     const count = document.createElement('b')
     count.textContent = String(shown.length)
     badge.append(count)
@@ -341,7 +353,7 @@ function renderMarkers() {
   if (!map || !markers) return
   const focused = (document.activeElement as HTMLElement | null)?.dataset?.pin
   markers.clearLayers()
-  const on = new Set(enabled.value)
+  const on = new Set(shown.value)
   const threat = view.value === 'threat'
   const levels = new Set(levelsOn.value)
   const current = selection.value
@@ -381,16 +393,21 @@ function renderMarkers() {
     marker.on('remove', () => L.DomEvent.off(element, 'keydown', onKey))
     if (focused === pin.id) element.focus({ preventScroll: true })
   }
-  // A report that names no place sits in the middle of its square.
+  // A report that names no place sits in the middle of its square; others in the
+  // same square line up beside it.
+  const inSquare = new Map<string, number>()
   for (const report of reports) {
     if (report.anchor || !report.squares?.length) continue
     const selected = current?.report?.id === report.id
     if ((threat || !on.has(report.type)) && !selected) continue
+    const square = report.squares[0]!
+    const nth = inSquare.get(square) || 0
+    inSquare.set(square, nth + 1)
     const root = document.createElement('span')
     const dim = !!hits && !results.value.some(item => item.id === report.id)
-    root.className = `tm-pin tm-pin--report${selected ? ' is-on' : ''}${dim ? ' is-dim' : ''}`
+    root.className = `tm-pin tm-pin--report tm-pin--${report.type}${selected ? ' is-on' : ''}${dim ? ' is-dim' : ''}`
     root.innerHTML = `<span class="tm-glyph">${svg(report.type)}</span>`
-    const marker = L.marker(point(squareCentre(report.squares[0]!) as [number, number]), { icon: L.divIcon({ html: root, className: 'tm-marker', iconSize: [22, 22], iconAnchor: [11, 11] }), keyboard: true, zIndexOffset: selected ? 2000 : 0 })
+    const marker = L.marker(point(squareCentre(square) as [number, number]), { icon: L.divIcon({ html: root, className: 'tm-marker', iconSize: [22, 22], iconAnchor: [11 - nth * 24, 11], tooltipAnchor: [nth * 24, 0] }), keyboard: true, zIndexOffset: selected ? 2000 : 0 })
     const tip = document.createElement('span')
     tip.textContent = `${report.name} · somewhere in ${report.squares.join(', ')}`
     marker.bindTooltip(tip, { direction: 'top', offset: [0, -12], className: 'tm-tip' })
@@ -414,8 +431,11 @@ function frameSelection() {
     map.fitBounds(squareBounds(current.report.squares[0]!), { maxZoom: fitZoom + 1.5, padding: [40, 40], ...animate() })
   }
 }
+// The last selection the map made itself, so only a link reveals a hidden layer.
+let ownPick: string | null = null
 function select(id: string) {
   allIntel.value = false
+  ownPick = id
   router.replace({ query: { ...route.query, pin: id || undefined }, hash: route.hash })
 }
 function pick(item: Item) {
@@ -443,14 +463,45 @@ function close() {
 function showDetails() { panelRef.value?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' }) }
 
 function toggleLayer(id: string) {
+  if (visit.value.includes(id)) { hideVisit(id); return }
+  visitLayers.value = visitLayers.value.filter(layer => layer !== id)
   enabled.value = enabled.value.includes(id) ? enabled.value.filter(layer => layer !== id) : hajinLayers.map(layer => layer.id).filter(layer => layer === id || enabled.value.includes(layer))
+  if (id === linkedLayer.value && !enabled.value.includes(id)) router.replace({ query: { ...route.query, layer: undefined }, hash: route.hash })
 }
-function resetLayers() { enabled.value = [...defaults] }
+function resetLayers() {
+  if (linkedLayer.value) hideVisit(linkedLayer.value)
+  visitLayers.value = []
+  enabled.value = [...defaults]
+}
+function showForVisit(id: string) {
+  if (id && !enabled.value.includes(id) && !visitLayers.value.includes(id)) visitLayers.value = [...visitLayers.value, id]
+}
+// Turning off the linked layer, here or with its chip, drops ?layer= too, so a
+// reload keeps it off.
+function hideVisit(id: string) {
+  visitLayers.value = visitLayers.value.filter(layer => layer !== id)
+  if (linkedLayer.value === id) router.replace({ query: { ...route.query, layer: undefined }, hash: route.hash })
+}
+function revealSelection() {
+  const current = selection.value
+  showForVisit(current?.report ? current.report.type : current?.pin?.layer || '')
+}
+// A link to a layer on this page shows it and brings the map into view, since
+// the router does not scroll when only the query changes. On first load the
+// layer only shows: the hash or a saved Back position decides the scroll.
+function openLinkedLayer() {
+  if (!linkedLayer.value) return
+  showForVisit(linkedLayer.value)
+  nextTick(() => document.getElementById('map')?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' }))
+}
 function sourcesOf(report: Report) {
   const seen = new Map<string, Source & { site: string }>()
+  const watched = new Set((report.videos || []).map(video => video.id))
   for (const id of report.sources) {
     const source = sources[id]
     if (!source) continue
+    // Videos are credited under Watch it done.
+    if (watched.has(id) && source.url) continue
     const site = intelSourceSite(source)
     if (!seen.has(site)) seen.set(site, { ...source, site })
   }
@@ -521,6 +572,8 @@ function motionChanged(event: MediaQueryListEvent) { reducedMotion = event.match
 async function toggleExpand() { expanded.value = !expanded.value; await nextTick(); resize() }
 
 watch(selectedId, () => {
+  if (selectedId.value !== ownPick) revealSelection()
+  ownPick = null
   renderMarkers()
   renderZones()
   renderSquares()
@@ -528,7 +581,13 @@ watch(selectedId, () => {
   fromMap = false
   if (selectedId.value && !selection.value) select('')
 })
-watch(enabled, () => { renderMarkers(); save() })
+// Back to a URL without ?layer= takes its visit chip away too.
+watch(linkedLayer, (now, before) => {
+  if (before && !now) hideVisit(before)
+  openLinkedLayer()
+})
+watch(enabled, save)
+watch(shown, renderMarkers)
 watch(view, () => { renderZones(); renderMarkers() })
 watch(levelsOn, () => { renderZones(); renderMarkers(); save() })
 watch(query, () => {
@@ -546,6 +605,8 @@ onMounted(async () => {
   motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
   reducedMotion = motionQuery.matches
   motionQuery.addEventListener('change', motionChanged)
+  revealSelection()
+  showForVisit(linkedLayer.value)
   try {
     canvasRef.value.addEventListener('wheel', preserveBrowserZoom, { capture: true, passive: true })
     // As in InteractiveMap: no zoom animation, so a route change cannot leave
@@ -605,7 +666,15 @@ const INTEL_PREVIEW = 6
           <input v-model="query" type="search" placeholder="Search places, keys, bosses or a square (H6)" autocomplete="off" spellcheck="false">
         </label>
         <button type="button" class="tm-layers-toggle" aria-controls="tm-layers" :aria-expanded="layersOpen" @click="layersOpen = !layersOpen">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5l-9 5l-9-5zM3 13l9 5l9-5" /></svg>{{ view === 'threat' ? 'Levels' : 'Layers' }}<span class="dmz-mono">{{ view === 'threat' ? levelsOn.length : enabled.length }}</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5l-9 5l-9-5zM3 13l9 5l9-5" /></svg>{{ view === 'threat' ? 'Levels' : 'Layers' }}<span class="dmz-mono">{{ view === 'threat' ? levelsOn.length : shown.length }}</span>
+        </button>
+      </div>
+      <div v-if="view === 'map' && visit.length" class="tm-visit">
+        <button v-for="id in visit" :key="id" type="button" :class="`tm-chip--${id}`" :title="`On for this visit only; your saved layers stay as they were. Tap to hide ${hajinLayer(id)!.label.toLowerCase()}.`" @click="hideVisit(id)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path :d="GLYPHS[id]" /></svg>
+          <span>Showing: {{ hajinLayer(id)!.label }}</span>
+          <span class="sr-only">. Hide them</span>
+          <svg class="tm-visit-x" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
         </button>
       </div>
       <div v-if="view === 'threat'" id="tm-layers" class="tm-layers" :class="{ 'is-open': layersOpen }" role="group" aria-label="Threat levels">
@@ -623,7 +692,7 @@ const INTEL_PREVIEW = 6
         <div v-for="group in groups" :key="group.name" class="tm-group">
           <span class="tm-group-name dmz-mono">{{ group.name }}</span>
           <div class="tm-chips">
-            <button v-for="layer in group.layers" :key="layer.id" type="button" class="tm-chip" :class="`tm-chip--${layer.id}`" :aria-pressed="enabled.includes(layer.id)" :title="`${layer.label}: ${layer.desc}`" @click="toggleLayer(layer.id)">
+            <button v-for="layer in group.layers" :key="layer.id" type="button" class="tm-chip" :class="`tm-chip--${layer.id}`" :aria-pressed="shown.includes(layer.id)" :title="`${layer.label}: ${layer.desc}`" @click="toggleLayer(layer.id)">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path :d="GLYPHS[layer.id]" /></svg>{{ SHORT[layer.id] }}<span class="dmz-mono">{{ layerCount(layer.id) }}</span>
             </button>
           </div>
@@ -716,7 +785,7 @@ const INTEL_PREVIEW = 6
             <h4 class="dmz-mono">Reported {{ card.pin ? 'here' : 'site' }} · {{ card.reports.length }}</h4>
             <p v-if="card.pin" class="tm-hint">Guides and players place these at {{ card.name }}. The Tac-Map gives no exact spot.</p>
             <ul class="tm-reports">
-              <li v-for="report in card.reports" :key="report.id" :class="{ 'is-focus': selection?.report?.id === report.id }">
+              <li v-for="report in card.reports" :key="report.id" :class="[`tm-chip--${report.type}`, { 'is-focus': selection?.report?.id === report.id }]">
                 <div class="tm-report-head">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path :d="GLYPHS[report.type]" /></svg>
                   <span class="dmz-mono">{{ reportLabel(report.type) }}</span>
@@ -726,7 +795,8 @@ const INTEL_PREVIEW = 6
                 <p>{{ report.where }}</p>
                 <p v-if="report.squares || report.threat" class="tm-meta dmz-mono"><span v-if="report.squares">Square {{ report.squares.join(', ') }}</span><span v-if="report.threat" class="tm-threat" :data-threat="threatClass(report.threat)">{{ report.threat }} threat</span></p>
                 <p v-if="report.note" class="tm-note">{{ report.note }}</p>
-                <p class="tm-src"><span class="dmz-mono">Sources</span> <template v-for="(source, index) in sourcesOf(report)" :key="source.site"><template v-if="index">, </template><a v-if="source.url" :href="source.url" target="_blank" rel="noopener noreferrer" :title="source.label">{{ source.site }}<span class="sr-only"> (opens in a new tab)</span></a><span v-else>{{ source.site }}</span></template></p>
+                <DmzVideoGuides v-if="report.videos?.length" :refs="report.videos" />
+                <p v-if="sourcesOf(report).length" class="tm-src"><span class="dmz-mono">Sources</span> <template v-for="(source, index) in sourcesOf(report)" :key="source.site"><template v-if="index">, </template><a v-if="source.url" :href="source.url" target="_blank" rel="noopener noreferrer" :title="source.label">{{ source.site }}<span class="sr-only"> (opens in a new tab)</span></a><span v-else>{{ source.site }}</span></template></p>
                 <DmzIntelLink v-if="report.intel" :id="report.intel" class="tm-intel-link">Intel card: {{ intelIndex.get(report.intel)?.name }} →</DmzIntelLink>
               </li>
             </ul>
@@ -797,7 +867,7 @@ const INTEL_PREVIEW = 6
 </template>
 
 <style scoped>
-.tm { --tm-low: #a9b39a; --tm-medium: #d8c47c; --tm-high: #e8a04f; --tm-critical: #ef7a5a; --tm-extreme: #ff5468; --tm-report: var(--dz-accent); container-type: inline-size; color: var(--dz-ink); }
+.tm { --tm-low: #a9b39a; --tm-medium: #d8c47c; --tm-high: #e8a04f; --tm-critical: #ef7a5a; --tm-extreme: #ff5468; --tm-report: var(--dz-accent); --tm-loot: #d79cff; container-type: inline-size; color: var(--dz-ink); }
 .tm p, .tm li { margin: 0; max-width: none; font-size: inherit; color: inherit; }
 .tm svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 /* :deep, so markers, zones and tags that Leaflet builds pick up the level colours too. */
@@ -828,6 +898,12 @@ const INTEL_PREVIEW = 6
 .tm-chip[aria-pressed='true'] { color: var(--dz-ink); border-color: var(--dz-line-strong); background: rgba(233, 230, 214, 0.14); }
 .tm-chip[aria-pressed='true'] svg { color: var(--tm-c, var(--dz-ink)); }
 .tm-chip[aria-pressed='false'] { text-decoration: line-through; text-decoration-color: rgba(184, 185, 172, 0.5); }
+.tm-visit { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+.tm-visit button { display: inline-flex; align-items: center; gap: 0.45rem; max-width: 100%; min-height: 2.75rem; padding: 0 0.75rem 0 0.625rem; border: 1px solid var(--tm-c, var(--tm-report)); border-radius: 999px; background: color-mix(in srgb, var(--tm-c, var(--tm-report)) 12%, transparent); color: var(--dz-ink); font: inherit; font-size: 0.9rem; font-weight: 600; text-align: left; cursor: pointer; }
+.tm-visit button:hover { background: color-mix(in srgb, var(--tm-c, var(--tm-report)) 22%, transparent); }
+.tm-visit svg { flex: none; width: 1rem; height: 1rem; color: var(--tm-c, var(--dz-ink)); }
+.tm-visit .tm-visit-x { color: var(--dz-muted); }
+.tm-visit button:hover .tm-visit-x { color: var(--dz-ink); }
 .tm-reset { min-height: 2.25rem; margin-left: 0.25rem; padding: 0 0.25rem; border: 0; background: none; color: var(--dz-muted); font: inherit; font-size: 0.85rem; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer; }
 .tm-chip--poi, .tm-chip--fortress, .tm-chip--area { --tm-c: var(--dz-ink); }
 .tm-chip--compound { --tm-c: #b9c77e; }
@@ -842,6 +918,8 @@ const INTEL_PREVIEW = 6
 .tm-chip--level i { flex: none; width: 0.7rem; height: 0.7rem; border-radius: 2px; background: var(--tm-t); }
 .tm-chip--level[aria-pressed='false'] i { background: transparent; box-shadow: inset 0 0 0 2px var(--tm-t); }
 .tm-chip--key-room, .tm-chip--boss, .tm-chip--exfil, .tm-chip--sam, .tm-chip--mission-exit, .tm-chip--bounty, .tm-chip--station, .tm-chip--landmark { --tm-c: var(--tm-report); }
+/* Loot spots get a colour of their own, clear of the threat ramp and the gold of other reports. */
+.tm-chip--loot { --tm-c: var(--tm-loot); }
 
 /* Workspace */
 .tm-work { display: grid; grid-template-columns: minmax(0, 1fr) 21rem; gap: 1rem; align-items: start; }
@@ -909,10 +987,10 @@ const INTEL_PREVIEW = 6
 .tm-nearby svg { width: 0.95rem; height: 0.95rem; color: var(--tm-c, var(--dz-ink)); }
 .tm-nearby .dmz-mono { font-size: 0.7rem; color: var(--dz-muted); }
 .tm-reports { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-.tm-reports li { display: grid; gap: 0.3rem; padding: 0.625rem 0.75rem; background: rgba(10, 12, 11, 0.4); border: 1px solid var(--dz-line); border-left: 2px solid var(--tm-report); border-radius: 0 10px 10px 0; font-size: 0.925rem !important; }
-.tm-reports li.is-focus { border-color: var(--tm-report); box-shadow: 0 0 0 1px var(--tm-report); }
+.tm-reports li { display: grid; gap: 0.3rem; padding: 0.625rem 0.75rem; background: rgba(10, 12, 11, 0.4); border: 1px solid var(--dz-line); border-left: 2px solid var(--tm-c, var(--tm-report)); border-radius: 0 10px 10px 0; font-size: 0.925rem !important; }
+.tm-reports li.is-focus { border-color: var(--tm-c, var(--tm-report)); box-shadow: 0 0 0 1px var(--tm-c, var(--tm-report)); }
 .tm-reports strong { color: #f7f5ea; font-size: 1rem; }
-.tm-report-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tm-report); }
+.tm-report-head { display: flex; align-items: center; gap: 0.4rem; font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tm-c, var(--tm-report)); }
 .tm-report-head svg { width: 1rem; height: 1rem; }
 .tm-badge-conf { margin-left: auto; padding: 0.1rem 0.45rem; border: 1px solid currentColor; border-radius: 999px; font-weight: 700; }
 .tm-badge-conf.is-official { color: var(--dz-accent); }
@@ -989,7 +1067,9 @@ const INTEL_PREVIEW = 6
 .tm :deep(.tm-pin--marine-gas) { color: #8fd3e3; } .tm :deep(.tm-pin--ammo) { color: #cdbb98; } .tm :deep(.tm-pin--uav) { color: #9fd8cf; } .tm :deep(.tm-pin--lt-tower) { color: #e8a04f; }
 .tm :deep(.tm-pin--report) { color: var(--tm-report); }
 .tm :deep(.tm-pin--report .tm-glyph) { border-style: dashed; }
+.tm :deep(.tm-pin--report.tm-pin--loot) { color: var(--tm-loot); }
 .tm :deep(.tm-badge) { position: absolute; left: calc(100% - 6px); bottom: calc(100% - 8px); display: inline-flex; align-items: center; gap: 1px; height: 16px; padding: 0 4px 0 3px; border-radius: 4px; background: var(--tm-report); color: #15120a; box-shadow: 0 1px 3px #000a; pointer-events: auto; }
+.tm :deep(.tm-badge.has-loot) { box-shadow: 0 0 0 1.5px #0b0d0c, 0 0 0 3px var(--tm-loot), 0 1px 3px #000a; }
 .tm :deep(.tm-badge svg) { width: 10px; height: 10px; fill: none; stroke: currentColor; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
 .tm :deep(.tm-badge b) { margin-left: 2px; font: 800 10.5px/1 system-ui, sans-serif; }
 .tm :deep(.tm-pin.is-on .tm-glyph) { box-shadow: 0 0 0 2px #0b0d0c, 0 0 0 4px #f7f5ea, 0 0 14px rgba(247, 245, 234, 0.55); }

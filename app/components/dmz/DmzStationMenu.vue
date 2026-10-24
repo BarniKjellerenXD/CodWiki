@@ -149,7 +149,7 @@ onBeforeUnmount(() => {
     </div>
 
     <section class="sm-side" aria-label="Selected station">
-      <p class="sm-pills dmz-mono"><span>MW4 · DMZ</span><span class="is-hot">Early access</span><span>Checked {{ DMZ_CHECKED }}</span></p>
+      <p class="sm-pills dmz-mono"><span>MW4 · DMZ</span><span class="is-hot">Live</span><span>Checked {{ DMZ_CHECKED }}</span></p>
       <div class="sm-toast">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10v11 M8 6.5a6 6 0 0 0 0 8 M16 6.5a6 6 0 0 1 0 8 M5 3.5a10 10 0 0 0 0 14 M19 3.5a10 10 0 0 1 0 14" /></svg>
         <span><strong>{{ dmzBulletin.title }}</strong><small class="dmz-mono">{{ dmzBulletin.detail }}</small></span>

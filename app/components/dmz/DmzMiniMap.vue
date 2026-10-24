@@ -3,8 +3,9 @@ import { NuxtLink } from '#components'
 import { hajinMap, hajinPin, toArt, squareCentre } from '#shared/dmz-map.mjs'
 
 // A small picture of Hajin cut from the Tac-Map art, centred on the places or
-// squares it marks. Clicking it opens the full Tac-Map on the first place.
-const props = withDefaults(defineProps<{ pins?: string[], squares?: string[], label: string, names?: boolean, link?: boolean }>(), { pins: () => [], squares: () => [], names: true, link: true })
+// squares it marks. Clicking it opens the full Tac-Map on the first place, or
+// on to when the caller knows a better target.
+const props = withDefaults(defineProps<{ pins?: string[], squares?: string[], label: string, names?: boolean, link?: boolean, to?: string }>(), { pins: () => [], squares: () => [], names: true, link: true, to: '' })
 
 const { width: W, height: H, grid } = hajinMap
 const cellArt = grid.cell * hajinMap.toArt.scale
@@ -46,12 +47,12 @@ const labels = computed(() => {
     return [id, { 'x': lx, 'y': ly, 'text-anchor': anchor }]
   }))
 })
-const to = computed(() => places.value[0] ? { path: '/dmz/hajin', query: { pin: places.value[0].id }, hash: '#map' } : { path: '/dmz/hajin', hash: '#map' })
+const target = computed(() => props.to || (places.value[0] ? { path: '/dmz/hajin', query: { pin: places.value[0].id }, hash: '#map' } : { path: '/dmz/hajin', hash: '#map' }))
 </script>
 
 <template>
   <figure class="mm">
-    <component :is="link ? NuxtLink : 'div'" :to="link ? to : undefined" class="mm-frame" :aria-label="link ? `${label}. Open the Tac-Map` : undefined">
+    <component :is="link ? NuxtLink : 'div'" :to="link ? target : undefined" class="mm-frame" :aria-label="link ? `${label}. Open the Tac-Map` : undefined">
       <svg :viewBox="`${view.x} ${view.y} ${view.w} ${view.h}`" role="img" :aria-label="label" preserveAspectRatio="xMidYMid slice">
         <image :href="hajinMap.image" :width="W" :height="H" class="mm-art" />
         <rect v-for="box in boxes" :key="box.square" class="mm-square" :x="box.x" :y="box.y" :width="cellArt" :height="cellArt" :stroke-width="unit * 1.5" />

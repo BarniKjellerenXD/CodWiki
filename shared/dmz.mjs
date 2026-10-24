@@ -2,7 +2,7 @@
 // briefing facts. Facts come from early-access reporting (checked 2026-10-20);
 // counts that were single-source or conflicting stay out until confirmed.
 
-export const DMZ_CHECKED = '22 Oct 2026'
+export const DMZ_CHECKED = '24 Oct 2026'
 
 // Station icons are 24×24 stroke paths drawn for CodWiki.
 export const dmzStations = [
@@ -11,14 +11,14 @@ export const dmzStations = [
     icon: 'M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14',
     desc: 'The Hajin Tac-Map: 13 major locations rated Low to Extreme, the official service markers, and the key rooms, bosses and exfils players report at each place.',
     // Counts match shared/dmz-map.mjs; tests/dmz-map.test.mjs checks them.
-    facts: ['13 major locations · 137 official markers', '105 reported sites, by place'],
+    facts: ['13 major locations · 137 official markers', '122 reported sites, by place'],
   },
   {
     id: 'stash', label: 'Stash', short: 'Keys', title: 'Key tracker', route: '/dmz/stash',
     icon: 'M3 9h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M8 9V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3 M3 13h18',
     desc: 'Every key and locked room in Intel, with the room it opens, its place and grid square. Mark the keys you hold or have used; marks stay on this device.',
     // Counts match shared/dmz-keys.mjs; tests/dmz-keys.test.mjs checks them.
-    facts: ['45 keys · 40 reported rooms', 'Held and used marks, kept between matches'],
+    facts: ['53 keys · 47 reported rooms', 'Held and used marks, kept between matches'],
   },
   {
     id: 'orders', label: 'DMZ Orders', short: 'Orders', title: 'Orders tracker', route: '/dmz/orders',
@@ -37,7 +37,7 @@ export const dmzStations = [
     id: 'printer', label: '3D Printer', title: 'Materials calculator', route: '/dmz/printer',
     icon: 'M4 3h16v18H4z M4 8h16 M10 8v4h4V8 M8 17h8 M12 12v2',
     desc: 'Pick what to print and see which materials to loot this run. The plan stays on this device.',
-    facts: ['23 recipes with their materials', 'Recipes can still change after launch'],
+    facts: ['36 recipes with their materials', 'Where world recipes turn up, with find counts'],
   },
   {
     id: 'operators', label: 'Operators', title: 'Operators and traits', route: '/dmz/operators',
@@ -93,7 +93,7 @@ export const dmzIntelShelves = [
 ]
 
 // Menu bulletin. Update it when the next milestone passes.
-export const dmzBulletin = { title: 'DMZ early access is live', detail: 'Full launch 23 Oct · Season 1 on 6 Nov' }
+export const dmzBulletin = { title: 'DMZ is live', detail: 'Launch fixes 23 Oct · Season 1 on 6 Nov' }
 
 // Indexable DMZ pages. The SEO and search generators read this list.
 export const dmzPages = [
@@ -124,13 +124,13 @@ export const dmzPages = [
   },
   {
     path: '/dmz/boss-board', name: 'DMZ Boss Board',
-    title: 'DMZ Lieutenants and Commanders — Boss Board — MW4 DMZ — CodWiki',
-    description: 'Modern Warfare 4 DMZ Boss Board: every Lieutenant and Commander with where players find them on Hajin, what they drop, and the enemy forces by tier.',
+    title: 'DMZ Boss Locations: Colossus, Deathstalker and Lieutenants — MW4 DMZ — CodWiki',
+    description: 'Modern Warfare 4 DMZ Boss Board: where players report meeting Colossus, the Deathstalker, the tank and every Lieutenant on Hajin, with report counts, how to kill them and what they drop.',
   },
   {
     path: '/dmz/printer', name: 'DMZ 3D Printer recipes',
-    title: 'DMZ 3D Printer Recipes and Materials — MW4 DMZ — CodWiki',
-    description: 'Modern Warfare 4 DMZ 3D Printer recipes with their materials and unlocks, and a planner that adds up what to loot for your next prints.',
+    title: 'DMZ 3D Printer Recipes and Where They Drop — MW4 DMZ — CodWiki',
+    description: 'Modern Warfare 4 DMZ 3D Printer recipes with materials and unlocks, where world recipes have been found on Hajin with find counts, and a planner for your next prints.',
   },
   {
     path: '/dmz/operators', name: 'DMZ Operators and traits',

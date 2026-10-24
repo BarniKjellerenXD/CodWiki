@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { guideTier, guideTiers, guideOpFit, guideSignIcons, guideTierSources } from '#shared/dmz-guide.mjs'
+import { guideTier, guideTiers, guideOpFit, guideSignIcons, guideTierSources, guideLootSources } from '#shared/dmz-guide.mjs'
 import { hajinPin } from '#shared/dmz-map.mjs'
 
 // One whole stage of the game: the signs that you are in it, the steps in
-// order, then what to print, farm and hunt, the mistakes and the checklist for
-// the next stage. With fold, the parts after the steps become questions that
-// open on tap, which keeps a stage short on a phone.
+// order, then what to print, farm and hunt, where the loot is, the mistakes and
+// the checklist for the next stage. With fold, the parts after the steps
+// become questions that open on tap, which keeps a stage short on a phone.
 const props = withDefaults(defineProps<{ tier: string, headingLevel?: 2 | 3, fold?: boolean }>(), { headingLevel: 2, fold: false })
+const route = useRoute()
 const tier = computed(() => guideTier(props.tier)!)
 const rank = computed(() => guideTiers.indexOf(tier.value) + 1)
 const next = computed(() => guideTiers[rank.value])
@@ -14,6 +15,28 @@ const h = computed(() => `h${props.headingLevel}`)
 const sub = computed(() => (props.headingLevel + 1) as 3 | 4)
 const avoid = computed(() => tier.value.places.avoid.map((id: string) => hajinPin(id)!).map(pin => `${pin.name} (${pin.threat})`).join(', '))
 const where = computed(() => `${tier.value.places.go.length} places to play${tier.value.places.avoid.length ? `, ${tier.value.places.avoid.length} to leave for later` : ''}`)
+const loot = computed(() => (tier.value.loot || []) as { id: string, rows: unknown[] }[])
+// Cards are kinds of loot and can hold several places, so the hint counts rows.
+const lootPlaces = computed(() => loot.value.reduce((sum, card) => sum + card.rows.length, 0))
+
+// A link to one of this stage's loot cards (#loot-safes) opens the fold the
+// card sits in. The page is prerendered and the hash never reaches the
+// server, so this waits for the browser. Once the fonts settle, the card is
+// brought into view, as the DMZ shell does for any first-load hash.
+// route.hash is already decoded by the router.
+function openLoot(hash: string) {
+  const id = hash.slice(1)
+  if (!loot.value.some(card => card.id === id)) return
+  const card = document.getElementById(id)
+  const fold = card?.closest('details')
+  if (fold) fold.open = true
+  if (card) document.fonts.ready.then(() => card.scrollIntoView({ behavior: 'instant' }))
+}
+// The watcher goes first, so a bad first hash cannot stop later links working.
+onMounted(() => {
+  watch(() => route.hash, openLoot)
+  openLoot(route.hash)
+})
 </script>
 
 <template>
@@ -46,6 +69,8 @@ const where = computed(() => `${tier.value.places.go.length} places to play${tie
       <DmzGuideDeploy :ops="!fold" />
     </DmzGuideFold>
 
+    <DmzVideoGuides v-if="tier.videos?.length" :refs="tier.videos" />
+
     <div class="gt-parts" :class="{ 'is-folded': fold }">
       <DmzGuideFold v-if="fold && tier.id === 'early'" fold :level="sub" title="The Dynamic Ops" question="Which Dynamic Op should I take?" :hint="`${guideOpFit.length} ops rated for the early game`">
         <DmzGuideOps />
@@ -64,6 +89,11 @@ const where = computed(() => `${tier.value.places.go.length} places to play${tie
       <DmzGuideFold :fold="fold" :level="sub" title="Farm these" question="What should I farm, and where?" :hint="`${tier.farm.length} materials with a map`">
         <DmzGuideCards :tier="tier.id" kind="farm" />
         <DmzGuideSources :ids="tier.farmSources" />
+      </DmzGuideFold>
+
+      <DmzGuideFold v-if="loot.length" :fold="fold" :level="sub" title="Where the loot is" question="Where is the good loot?" :hint="`${lootPlaces} places to look`">
+        <DmzGuideCards :tier="tier.id" kind="loot" :level="(sub + 1) as 4 | 5" />
+        <DmzGuideSources :ids="guideLootSources(tier)" />
       </DmzGuideFold>
 
       <DmzGuideFold :fold="fold" :level="sub" title="Where to play" question="Where should I play?" :hint="where" class="gt-where">

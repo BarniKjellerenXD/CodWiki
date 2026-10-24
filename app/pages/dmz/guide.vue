@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { dmzStations } from '#shared/dmz.mjs'
 import { guideTiers, guideTier, GUIDE_CHECKED } from '#shared/dmz-guide.mjs'
+import { STUCK_VIDEOS } from '#shared/dmz-sightings.mjs'
 
 // Guide station: pick the stage of the game you are in and get its plan, with
 // the steps open and the rest folded into questions. The stage sits in
@@ -27,6 +28,7 @@ function pick(id: string, scroll = false) {
     <DmzPageHead title="Progression guide" :icon="icon" :checked="GUIDE_CHECKED" :status="`${guideTiers.length} stages · ${stepCount} steps · ticks saved on this device`">
       <p class="g-lede">Your time in DMZ runs in three stages, from your first deploy to the endgame. Pick the one you are in for its plan: what to do in order, then what to print, farm and hunt. New to DMZ? Read the Briefing first.</p>
     </DmzPageHead>
+    <DmzVideoGuides variant="strip" :refs="STUCK_VIDEOS" class="g-stuck" />
 
     <section class="g-ask" aria-labelledby="g-ask">
       <h2 id="g-ask" class="g-question">Where are you in DMZ?</h2>
@@ -60,6 +62,7 @@ function pick(id: string, scroll = false) {
 
 <style scoped>
 .g-lede { max-width: 46rem; margin: 1rem 0 0; color: #dcd9cb; font-size: 1.0625rem; }
+.g-stuck { margin-top: 1.25rem; }
 .g-ask { margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--dz-line-strong); border-radius: 20px; background: radial-gradient(120% 140% at 0% 0%, rgba(221, 179, 99, 0.12), rgba(20, 24, 23, 0.8) 55%); }
 .g-question { margin: 0 0 1.125rem; font-size: clamp(1.625rem, 5vw, 2.75rem); font-weight: 800; line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; font-variation-settings: 'wdth' 75; color: #f7f5ea; }
 .g-picks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }

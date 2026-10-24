@@ -51,8 +51,11 @@ test('every source is used, typed and linked', () => {
     if (source.type === 'in-game') assert.equal(source.url, undefined, id)
     else assert.match(source.url, /^https:\/\/[^\s]+$/, id)
   }
+  // Compare URLs without the scheme, a leading www. or a trailing slash, so the
+  // same page cannot be registered twice under two spellings.
   const urls = Object.values(intelSources).map(source => source.url).filter(Boolean)
-  assert.equal(new Set(urls).size, urls.length, 'a source URL is listed twice')
+    .map(url => url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))
+  assert.deepEqual(urls.filter((url, index) => urls.indexOf(url) !== index), [], 'a source URL is listed twice')
 })
 
 test('filters combine category, confidence and every search word', () => {

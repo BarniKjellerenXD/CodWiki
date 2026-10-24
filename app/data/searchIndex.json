@@ -17681,7 +17681,7 @@
     "kind": "DMZ",
     "context": "Modern Warfare 4 · DMZ",
     "route": "/dmz/boss-board",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ Boss Board: every Lieutenant and Commander with where players find them on Hajin, what they drop, and the enemy forces by tier."
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ Boss Board: where players report meeting Colossus, the Deathstalker, the tank and every Lieutenant on Hajin, with report counts, how to kill them and what they drop."
   },
   {
     "id": "dmz-printer",
@@ -17690,7 +17690,7 @@
     "kind": "DMZ",
     "context": "Modern Warfare 4 · DMZ",
     "route": "/dmz/printer",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ 3D Printer recipes with their materials and unlocks, and a planner that adds up what to loot for your next prints."
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction Modern Warfare 4 DMZ 3D Printer recipes with materials and unlocks, where world recipes have been found on Hajin with find counts, and a planner for your next prints."
   },
   {
     "id": "dmz-operators",
@@ -17855,6 +17855,69 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction briefing basics"
   },
   {
+    "id": "dmz-boss-board:boss-colossus",
+    "name": "Where to find Colossus",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · Boss Board",
+    "route": "/dmz/boss-board#boss-colossus",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction colossus spawn location jugg juggernaut commander"
+  },
+  {
+    "id": "dmz-boss-board:boss-deathstalker",
+    "name": "Where to find the Deathstalker",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · Boss Board",
+    "route": "/dmz/boss-board#boss-deathstalker",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction deathstalker spawn location commander"
+  },
+  {
+    "id": "dmz-printer:recipe-tempered-armor-vest-recipe",
+    "name": "Tempered recipe location",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · 3D Printer",
+    "route": "/dmz/printer#recipe-tempered-armor-vest-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction tempered armor vest recipe where find the doctor command office"
+  },
+  {
+    "id": "dmz-printer:where-recipes-drop",
+    "name": "World recipe spots",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · 3D Printer",
+    "route": "/dmz/printer#where-recipes-drop",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction world recipes where recipes drop locations find farm"
+  },
+  {
+    "id": "dmz-intel-need-loot",
+    "name": "Where is the good loot",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · Intel",
+    "route": "/dmz/intel?need=loot",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction good loot spots where find cash money safes recipes weapon manuals keys farm"
+  },
+  {
+    "id": "dmz-guide-stage-early:loot-safes",
+    "name": "Safes without a key",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · Guide",
+    "route": "/dmz/guide?stage=early#loot-safes",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction safes without a key keyless safe no code gold bars skulls cash loot compound cheonwang peak array"
+  },
+  {
+    "id": "dmz-guide-stage-mid:loot-manuals",
+    "name": "Weapon Manual spots",
+    "map": "",
+    "kind": "Section",
+    "context": "Modern Warfare 4 · DMZ · Guide",
+    "route": "/dmz/guide?stage=mid#loot-manuals",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction weapon manual spots manuals where find farm loot chang-san air base barracks train duffel bags"
+  },
+  {
     "id": "dmz-guide:early",
     "name": "Early game",
     "map": "",
@@ -17879,7 +17942,7 @@
     "kind": "Section",
     "context": "Modern Warfare 4 · DMZ · Progression guide",
     "route": "/dmz/guide?stage=late",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction guide progression stage what to do next Lieutenants down, Commanders next Commanders to kill Tempered and other Ultra vests Operation Fallen Ember Prestige and DMZ level 70 Extract the Tempered vest recipe Kill Colossus for Military Composites Clear Operation Fallen Ember Build Epic Ingredient Printing Take down the Deathstalker and the tank Print your Ultra vest Raise the Bank to $1 million Prestige your Operators Finish the Boss Board and reach level 70"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction guide progression stage what to do next Lieutenants down, Commanders next Commanders to kill Tempered and other Ultra vests Operation Fallen Ember Prestige and DMZ level 70 Extract the Tempered vest recipe Hunt Colossus for Military Composites Clear Operation Fallen Ember Build Epic Ingredient Printing Take down the Deathstalker and the tank Print your Ultra vest Raise the Bank to $1 million Prestige your Operators Finish the Boss Board and reach level 70"
   },
   {
     "id": "dmz-hajin:14th-political-prison",
@@ -18881,6 +18944,15 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel rules of the zone many players find dmz's time-to-kill very short shorter than with testing about armor plate assault-rifle body shot range"
   },
   {
+    "id": "dmz-intel:dmz-weapon-tuning",
+    "name": "DMZ weapon tuning",
+    "map": "",
+    "kind": "Mechanic",
+    "context": "Modern Warfare 4 · DMZ · Intel · Rules of the zone",
+    "route": "/dmz/intel/field-manual#intel-dmz-weapon-tuning",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel rules of the zone launch notes multiplayer each their weapon tuning infinity ward already looking pass following week interview same studio's leads"
+  },
+  {
     "id": "dmz-intel:ai-ammo-drops",
     "name": "AI ammo drops",
     "map": "",
@@ -19022,7 +19094,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=chang-san-air-base#intel-chang-san-air-base",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations heavily guarded base into granite hillside with hospital helipad runway barracks depots command building underground bunker tunnel network"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations heavily guarded base into granite hillside with hospital helipad runway barracks depots command building above bunker network larger"
   },
   {
     "id": "dmz-intel:deadtown",
@@ -19067,7 +19139,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=cheonwang-peak-array#intel-cheonwang-peak-array",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations hajin's largest telecom array station summit south korean wilderness enemy barracks boulder trails west roof helipad with long"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations hajin's largest telecom array station summit south korean wilderness enemy barracks known safe three safes that need plus"
   },
   {
     "id": "dmz-intel:haneul-nuclear-reactor",
@@ -19301,7 +19373,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=compound-echo#intel-compound-echo",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations fortified enemy compound marked official echo apartment building hajin river heights turned into military base"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations fortified enemy compound marked official echo apartment building hajin river heights turned into military base with two-block loot"
   },
   {
     "id": "dmz-intel:compound-foxtrot",
@@ -19311,6 +19383,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=compound-foxtrot#intel-compound-foxtrot",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations fortified enemy compound marked official"
+  },
+  {
+    "id": "dmz-intel:compound-safes",
+    "name": "Compound safes",
+    "map": "",
+    "kind": "Location",
+    "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
+    "route": "/dmz/hajin?pin=compound-alpha#intel-compound-safes",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations compounds surest place find safe every compound least usually main building tower some have more small cube hold"
   },
   {
     "id": "dmz-intel:gas-stations",
@@ -19337,7 +19418,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin#intel-fire-stations",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations buildings brick former areas modern usually guarded good radiation gear parachutes marks"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations buildings brick former areas modern usually guarded they stock radiation gear good first stop free-kit operator players find"
   },
   {
     "id": "dmz-intel:police-stations",
@@ -19346,7 +19427,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=cheongun-village#intel-police-stations",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations blue buildings with many rooms sometimes roof access military gear locked armory marks"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations blue buildings with many rooms sometimes roof access military gear locked armory their lockers hold backpacks armor weapon"
   },
   {
     "id": "dmz-intel:clinics-and-hospitals",
@@ -19355,7 +19436,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin#intel-clinics-and-hospitals",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations green-fronted local clinics that hold medical loot watch players camping them clinic markers share same spot"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations green-fronted local clinics that hold healing items players also pull chemicals self revives from them watch camping clinic"
   },
   {
     "id": "dmz-intel:ammo-and-armor-caches",
@@ -19455,6 +19536,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=chang-san-air-base#intel-chang-san-air-base-bunker",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations underground complex reached through hidden tunnels larger than base above only extreme zones hajin"
+  },
+  {
+    "id": "dmz-intel:missile-silo-bunkers",
+    "name": "Missile silo bunkers",
+    "map": "",
+    "kind": "Location",
+    "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
+    "route": "/dmz/hajin?pin=14th-political-prison#intel-missile-silo-bunkers",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations double-circle missile silos hajin's western woods have bunker entrances about away players count south chang-san base three around"
   },
   {
     "id": "dmz-intel:tank-depot",
@@ -19562,7 +19652,7 @@
     "kind": "Location",
     "context": "Modern Warfare 4 · DMZ · Intel · Hajin locations",
     "route": "/dmz/hajin?pin=nurigo-east#intel-nurigo-east",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations eastern half nurigo shopping district open bounty station sits rooftop nearby"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel hajin locations eastern half nurigo shopping district rated medium threat open bounty station sits rooftop nearby gamespot lists loot spot"
   },
   {
     "id": "dmz-intel:nurigo-west",
@@ -19913,7 +20003,7 @@
     "kind": "Vehicle",
     "context": "Modern Warfare 4 · DMZ · Intel · Vehicles",
     "route": "/dmz/intel/field-manual#intel-train",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel vehicles automated civilian train player-driven that runs winding route through many former-sk pois"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel vehicles automated civilian train player-driven that runs winding route through many former-sk pois players board loot while moves"
   },
   {
     "id": "dmz-intel:tram",
@@ -20075,7 +20165,7 @@
     "kind": "Boss",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-commanders",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses heavily armored roaming bosses that always present somewhere hajin intel them free cannot bought they show tac-map when"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses heavily armored roaming bosses colossus deathstalker drone main battle tank each always somewhere hajin with fixed spawn intel"
   },
   {
     "id": "dmz-intel:colossus",
@@ -20084,7 +20174,7 @@
     "kind": "Boss",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-colossus",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses seven-foot heavily armored soldier carrying minigun that fires depleted-uranium rounds field report shows joining enemy response exfil"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses seven-foot heavily armored commander whose minigun fires depleted-uranium rounds fixed spawn always iron citadel fallen ember story missions"
   },
   {
     "id": "dmz-intel:deathstalker",
@@ -20093,7 +20183,7 @@
     "kind": "Boss",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-deathstalker",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses helicopter-sized autonomous drone with twin machine-gun turrets four types hajin higher threat bring deathstalkers after captured sites help"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses helicopter-sized autonomous drone with twin machine-gun turrets four types hajin fixed spawn nurigo mall headquarters roof share most"
   },
   {
     "id": "dmz-intel:lieutenants",
@@ -20192,7 +20282,7 @@
     "kind": "Boss",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-main-nk-battle-tank",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses north korean main battle tank high alert that patrols hajin's roads"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses north korean main battle tank high alert that patrols hajin's roads mostly south side fixed spawn guide first-hand"
   },
   {
     "id": "dmz-intel:general-kang",
@@ -20219,7 +20309,7 @@
     "kind": "Lieutenant",
     "context": "Modern Warfare 4 · DMZ · Intel · Enemies and bosses",
     "route": "/dmz/boss-board#intel-the-scavenger",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses from ward mentioned side called kill scavenger' that drops legendary scavenger's fandom wiki lists scavenger lieutenant"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel enemies and bosses from ward mentioned side called kill scavenger' that drops legendary scavenger's fandom wiki lists scavenger lieutenant players describe"
   },
   {
     "id": "dmz-intel:jin-tae",
@@ -20291,7 +20381,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-gun-store-weapons-locker-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms included explosives equipment level trap"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms included explosives equipment level trap opens weapons lockers stores western cheongun village northern songdo wharf japanese early-game guide"
   },
   {
     "id": "dmz-intel:police-station-key",
@@ -20309,7 +20399,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-black-market-weapons-locker-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms included recon equipment awarded level"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms included recon equipment awarded level opens black market weapons locker shop stockroom hanrim village short video walks route"
   },
   {
     "id": "dmz-intel:police-station-armory",
@@ -20318,7 +20408,7 @@
     "kind": "Locked room",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-police-station-armory",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms police stations contain locked armory infinity ward mentions hole station that leads through underwater passage"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms police stations contain locked basement armory usually spawns inside same station infinity ward mentions hole that leads through"
   },
   {
     "id": "dmz-intel:heavenly-luck-casino-vault",
@@ -20327,7 +20417,7 @@
     "kind": "Locked room",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#intel-heavenly-luck-casino-vault",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms casino cheongun village vault that squads break into infinity ward suggests using cash-mule operator raid"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms casino cheongun village vault that squads break into infinity ward suggests using cash-mule operator raid during operation silent"
   },
   {
     "id": "dmz-intel:nurigo-mall-sealed-room",
@@ -20363,7 +20453,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-counting-room-vault-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms counting room vault exists launch-day video shows where find"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic from operation silent ledger counting room ground floor heavenly luck casino front doors right through double then"
   },
   {
     "id": "dmz-intel:militia-arms-depot-key",
@@ -20372,7 +20462,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-militia-arms-depot-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms militia arms depot launch-day video shows where find"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare militia arms depot lower-floor armory gangbyeon apartment hajin river heights turned duffel citadel's east wing dexerto reports"
   },
   {
     "id": "dmz-intel:goranis-scout-overlook-key-room",
@@ -20391,6 +20481,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-citadel-south-wing-supply-room",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms supply room south wing citadel mentioned launch-day location video"
+  },
+  {
+    "id": "dmz-intel:prison-encampment-storage",
+    "name": "Prison Encampment Storage",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-prison-encampment-storage",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare that guides opens ordnance storage south-east side 14th political prison camp player thread about shed named card"
   },
   {
     "id": "dmz-intel:mirae-electrical-room",
@@ -20417,7 +20516,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-coin-mining-den",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare given operation shopping hacks opens office multi-storey building nurigo west climb red-railed stairwell landing with large painted"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare given operation shopping hacks opens office third floor multi-storey building nurigo west climb red-railed stairwell landing with"
   },
   {
     "id": "dmz-intel:vault-armory",
@@ -20453,7 +20552,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-re-education-center-annex",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic annex ground floor re-education center deadtown door wooden close public access sign main building"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic annex ground floor re-education center deadtown enter main building turn left once wooden door close public access"
   },
   {
     "id": "dmz-intel:underground-propaganda-store-room",
@@ -20480,7 +20579,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-shop-records-room",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare records room shop building wolves stadium enter through grey-framed glass double doors red-brick wall cross floor find"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare records room above goh24 supermarket wolves stadium enter through grey-framed glass double doors red-brick wall cross shop"
   },
   {
     "id": "dmz-intel:supreme-leader-access-card",
@@ -20492,13 +20591,22 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary access card supreme leader's bunker deep under chang-san base from admin complex take stairwell marked down follow"
   },
   {
+    "id": "dmz-intel:air-base-access-card-multi-use",
+    "name": "Air Base Access Card - Multi Use",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-air-base-access-card-multi-use",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic access card operation iron citadel turns mission's access-card search zones fixed pickup outside mission during opens server"
+  },
+  {
     "id": "dmz-intel:the-doctors-command-office",
     "name": "The Doctor's Command Office",
     "map": "",
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-the-doctors-command-office",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary dropped doctor opens converted conference room behind wooden doors upper-floor offices mirae general hospital crate inside holds"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary dropped doctor though every kill opens converted conference room behind wooden doors upper-floor offices mirae general hospital"
   },
   {
     "id": "dmz-intel:rozes-high-rise-armory",
@@ -20525,7 +20633,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-jang-uis-converted-power-room",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms lieutenant jang-ui's loot room detonated places enclosed generator bottom floor nurigo mall next robot-dog agility course"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms lieutenant jang-ui's loot room enclosed generator bottom floor nurigo mall next robot-dog agility course jang-ui drop legendary when"
   },
   {
     "id": "dmz-intel:commandant-office",
@@ -20534,7 +20642,16 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-commandant-office",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms door admin complex chang-san base hallway hung with curtains flags"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic door admin complex chang-san base hallway hung with curtains flags"
+  },
+  {
+    "id": "dmz-intel:weapons-mod-workshop",
+    "name": "Weapons Mod Workshop",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-weapons-mod-workshop",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare weapons workshop upstairs military repair garage west clinic chang-san base"
   },
   {
     "id": "dmz-intel:rice-mill-bunker",
@@ -20552,7 +20669,16 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-hazard-storehouse",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms door haneul nuclear reactor white corrugated storage shed marked with light-blue blue barrels beside south shore island"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms door haneul nuclear reactor white corrugated storage shed marked with light-blue blue barrels beside stands south reactor's cooling"
+  },
+  {
+    "id": "dmz-intel:knrp-reactor-01",
+    "name": "KNRP Reactor 01",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-knrp-reactor-01",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms named knrp reactor haneul nuclear short location video covers lists dmzmap codex radar carry written source gives door"
   },
   {
     "id": "dmz-intel:imjin-mill-foremans-office",
@@ -20562,6 +20688,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-imjin-mill-foremans-office",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare foreman's office first floor rice mill imjin farmland clear ground level watch booby traps left that room"
+  },
+  {
+    "id": "dmz-intel:mill-explosives-lab",
+    "name": "Mill Explosives Lab",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-mill-explosives-lab",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms uncommon believed open explosives rice mill imjin farmland been seen control-room desk room labelled comms station several players"
   },
   {
     "id": "dmz-intel:police-weapon-depository",
@@ -20582,13 +20717,22 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic high-security server room upper floors nenshin tech complex grid found random loot residential locker"
   },
   {
+    "id": "dmz-intel:hanex-guard-station",
+    "name": "Hanex Guard Station",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-hanex-guard-station",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic guard station upper floor near hanex bank vault grid"
+  },
+  {
     "id": "dmz-intel:reactor-drc-locker",
     "name": "Reactor DRC Locker",
     "map": "",
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-reactor-drc-locker",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra weapons locker irradiated pool reactor haneul nuclear codex lists community-reported reward operation fallen ember"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra weapons locker bottom flooded fuel pool reactor haneul nuclear game red-outlined elite search pool's western side codex"
   },
   {
     "id": "dmz-intel:reactor-02-control-room",
@@ -20597,7 +20741,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-reactor-02-control-room",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare control room inside reactor building haneul nuclear"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare control room inside reactor building haneul nuclear building's upper interior catwalk"
   },
   {
     "id": "dmz-intel:the-chemists-secure-armory",
@@ -20606,7 +20750,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-the-chemists-secure-armory",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary linked lieutenant chemist card says opens secured bunker near boat house haneul nuclear reactor"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary linked lieutenant chemist opens secured bunker northern reactor road north-eastern boat house haneul nuclear location loot video"
   },
   {
     "id": "dmz-intel:air-base-drc-weapons-locker",
@@ -20615,7 +20759,16 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-air-base-drc-weapons-locker",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra weapons locker secure armory deep inside chang-san base bunker"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra weapons locker operation iron citadel armory deep inside chang-san base bunker game elite tall yellow with blue"
+  },
+  {
+    "id": "dmz-intel:airbase-armory-keycard",
+    "name": "Airbase Armory Keycard",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-airbase-armory-keycard",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary single-use keycard bunker armory chang-san base make during operation iron citadel using access card multi server room"
   },
   {
     "id": "dmz-intel:shopping-drc-locker",
@@ -20624,7 +20777,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-shopping-drc-locker",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra reported open locker labs under nurigo mall inside secured lower park"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms ultra locker labs secured lower park under nurigo mall reached through operation shopping hacks game elite weapons side"
   },
   {
     "id": "dmz-intel:gas-station-electrical-room",
@@ -20642,7 +20795,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-train-depot-storageroom",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare basement storeroom train station near fire cheongun village"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare basement storeroom train depot near fire station cheongun village lock itself reads rail storage depot's west entrance"
   },
   {
     "id": "dmz-intel:bank-branch-vault-access",
@@ -20651,7 +20804,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-bank-branch-vault-access",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare that codex says opens currency storage rooms south korean bank branches exact room recorded"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare that codex says opens currency storage rooms south korean bank branches exact room recorded players have opened"
   },
   {
     "id": "dmz-intel:fire-station-storage",
@@ -20669,7 +20822,7 @@
     "kind": "Locked room",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-old-barber-shop",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms named room songdo wharf reached through shop checkerboard-tiled corridor pale door next wall phone noticeboard reads barber"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms named room south side songdo wharf next crab shack reached through shop checkerboard-tiled corridor pale door wall phone"
   },
   {
     "id": "dmz-intel:silo-control-room",
@@ -20678,7 +20831,7 @@
     "kind": "Locked room",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-silo-control-room",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms unmarked underground bunker western hajin holds locked rooms entrance needs code main hallway room that spawns random side"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms unmarked bunkers about from double-circle missile silos western woods code gets main hallway locked bunker room needs that"
   },
   {
     "id": "dmz-intel:casino-penthouse-cartel-hideout",
@@ -20688,6 +20841,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#intel-casino-penthouse-cartel-hideout",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms reddit casino guide reports cartel hideout penthouse hotel rooms heavenly luck holding rare loot crates"
+  },
+  {
+    "id": "dmz-intel:jin-taes-private-lounge",
+    "name": "Jin-Tae's Private Lounge",
+    "map": "",
+    "kind": "Key",
+    "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
+    "route": "/dmz/stash#key-jin-taes-private-lounge",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms legendary lieutenant room penthouse heavenly luck casino from southern entrance take lobby's left lift passage then turn right"
   },
   {
     "id": "dmz-intel:poi-power-and-security-puzzles",
@@ -20714,7 +20876,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-hoesik-supply-room-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms opens hoesik supply room launch-day guide video shows door fits"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic hoesik supply room rice mill imjin farmland small office building southern edge complex upstairs brown door next"
   },
   {
     "id": "dmz-intel:lucera-suite-703-bedroom-key",
@@ -20723,7 +20885,7 @@
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-lucera-suite-703-bedroom-key",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms opens bedroom lucera suite guide video shows room loot"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms epic inner bedroom suite hotel lucera grid suite's front door alone does lock guide video shows room list"
   },
   {
     "id": "dmz-intel:dmz-orders",
@@ -20858,7 +21020,7 @@
     "kind": "Story Mission",
     "context": "Modern Warfare 4 · DMZ · Intel · Orders and missions",
     "route": "/dmz/intel/missions#intel-operation-silent-ledger",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions casino heist cheongun village into breach vault recover stolen printing plates that bankroll enemy"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions casino heist cheongun village into breach vault recover stolen printing plates that bankroll enemy vault's inner room also"
   },
   {
     "id": "dmz-intel:operation-shopping-hacks",
@@ -20876,7 +21038,7 @@
     "kind": "Story Mission",
     "context": "Modern Warfare 4 · DMZ · Intel · Orders and missions",
     "route": "/dmz/intel/missions#intel-operation-iron-citadel",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions named story mission whose completion reported unlock vehicle infil"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions story mission chang-san base bunker find access card upgrade admin complex server room single-use airbase armory keycard open"
   },
   {
     "id": "dmz-intel:operation-grid-assault",
@@ -20985,6 +21147,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Orders and missions",
     "route": "/dmz/intel/missions#intel-healer-page-10",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions central lists page 10's third order under title healer with crafting-material tasks that differ from treat wording unverified"
+  },
+  {
+    "id": "dmz-intel:goliath-order",
+    "name": "Goliath",
+    "map": "",
+    "kind": "DMZ Order",
+    "context": "Modern Warfare 4 · DMZ · Intel · Orders and missions",
+    "route": "/dmz/intel/missions#intel-goliath-order",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel orders and missions hornet's nest order with hits colossus thermite drill charge shock stick counts need kill page pays large backpack"
   },
   {
     "id": "dmz-intel:random-story-mission",
@@ -21506,7 +21677,7 @@
     "kind": "Trait",
     "context": "Modern Warfare 4 · DMZ · Intel · Traits",
     "route": "/dmz/operators#intel-numb-the-pain",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel traits applies painkiller smelling salts effects when revived"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel traits guides applies painkiller smelling salts effects when revived they took that from launch description update corrected numb pain"
   },
   {
     "id": "dmz-intel:free-revive",
@@ -21587,7 +21758,7 @@
     "kind": "FOB station",
     "context": "Modern Warfare 4 · DMZ · Intel · FOB stations",
     "route": "/dmz/intel/field-manual#intel-bounty-leaderboard",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel fob stations physical station listing most wanted operators bounty hunters viewable globally among friends list refreshes weekly"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel fob stations physical station listing most wanted operators bounty hunters global boards live list refreshes weekly friend leaderboards online infinity"
   },
   {
     "id": "dmz-intel:boss-board",
@@ -21596,7 +21767,7 @@
     "kind": "FOB station",
     "context": "Modern Warfare 4 · DMZ · Intel · FOB stations",
     "route": "/dmz/intel/field-manual#intel-boss-board",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel fob stations station buying intel lieutenants with cash reading free information about commanders extracting lieutenant cases killing progresses board"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel fob stations station buying intel lieutenants with cash reading free information about commanders extracting lieutenant cases killing progresses board first"
   },
   {
     "id": "dmz-intel:vendor",
@@ -21758,7 +21929,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-how-crafting-works",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting crafting needs recipe plus resources printer ingredients recipes unlock through levels orders looting extracting with them craft several"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting crafting needs recipe plus resources printer ingredients recipes unlock through levels orders looting card extracting with cards found"
   },
   {
     "id": "dmz-intel:resources",
@@ -21866,7 +22037,16 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-energy-drink-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting infinite stamina time recipe cost chemicals metals"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting common consumable that gives infinite stamina time recipe level track orders find hajin extract with printing costs chemicals"
+  },
+  {
+    "id": "dmz-intel:pain-killers-recipe",
+    "name": "Pain Killers recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-pain-killers-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting uncommon consumable whose recipe found hajin prints electronics chemicals reported from chemical storage container cheongun outskirts barracks washroom"
   },
   {
     "id": "dmz-intel:door-breacher-charge-recipe",
@@ -21875,7 +22055,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-door-breacher-charge-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting breaching consumable recipe cost experimental compounds stock volatile explosives"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting ultra breaching consumable level gives door breacher charge recipe card says find game extract with player took from"
   },
   {
     "id": "dmz-intel:armor-box-recipe",
@@ -21893,7 +22073,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-disposable-parachute-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting rare parachute with three uses recipe cost chemicals rigid synthetics"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting rare parachute with three uses printable from level recipe cost chemicals rigid synthetics parachutes wrong number until update"
   },
   {
     "id": "dmz-intel:bomb-glider-recipe",
@@ -21902,7 +22082,16 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-bomb-glider-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting handheld explosive glider multiplayer killstreak recipe cost chemicals stock control unit"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting epic fire support handheld explosive glider multiplayer killstreak recipe level orders reward find hajin extract with printing costs"
+  },
+  {
+    "id": "dmz-intel:combat-drone-recipe",
+    "name": "Combat Drone recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-combat-drone-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting epic fire support whose recipe found hajin level gives combat drone prints electronics control unit once printing opens"
   },
   {
     "id": "dmz-intel:recon-drone-recipe",
@@ -21920,7 +22109,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-legendary-parachute-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting reusable legendary parachute recipe found hajin extracted unlock printing then costs turned components nylon cloth rigid synthetics like"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting reusable legendary parachute level gives item recipe itself found hajin extracted printing costs turned components nylon cloth rigid"
   },
   {
     "id": "dmz-intel:flash-recipe",
@@ -21930,6 +22119,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-flash-recipe",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting reward from human intel orders page flash grenade prints synthetics chemicals next page's blindness order needs four"
+  },
+  {
+    "id": "dmz-intel:stim-recipe",
+    "name": "Stim recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-stim-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting uncommon tactical whose recipe found hajin world recipes players reported most first days prints synthetics chemicals duffel apartment"
   },
   {
     "id": "dmz-intel:ddos-recipe",
@@ -21956,7 +22154,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-night-vision-goggles-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting reward from underground page rare nvgs print metals printed circuit boards control units weak also picked tent outside"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting reward from underground page rare nvgs print metals printed circuit boards control units update stopped showing twice chapter"
   },
   {
     "id": "dmz-intel:defibrillator-recipe",
@@ -21977,13 +22175,49 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting uncommon lethal that prints chemicals metals once lethals category opens level work quietly asks print"
   },
   {
+    "id": "dmz-intel:zip-gun-recipe",
+    "name": "Zip Gun recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-zip-gun-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting common lethal whose recipe found hajin prints chemicals metals guide reports spots weapons locker behind counting room vault"
+  },
+  {
+    "id": "dmz-intel:drill-charge-recipe",
+    "name": "Drill Charge recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-drill-charge-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting uncommon lethal whose recipe found hajin level track prints chemicals metals guides report from chang-san base barracks twice"
+  },
+  {
+    "id": "dmz-intel:claymore-recipe",
+    "name": "Claymore recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-claymore-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting lethal whose recipe found hajin prints chemicals metals guide police station without saying which five text says filing"
+  },
+  {
+    "id": "dmz-intel:c4-recipe",
+    "name": "C4 recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-c4-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting common lethal recipe paid orders page together with defibrillator inflatable decoy prints chemicals metals hornet's nest order click"
+  },
+  {
     "id": "dmz-intel:gas-mask-recipe",
     "name": "Gas Mask recipe",
     "map": "",
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-gas-mask-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting rare mask prints chemicals rigid synthetics from level"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting rare mask prints chemicals rigid synthetics from level since update printed masks longer break soon enter radiation zone"
   },
   {
     "id": "dmz-intel:tempered-armor-vest-recipe",
@@ -21992,7 +22226,34 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-tempered-armor-vest-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting ultra plate carrier recipe found game level track route kill doctor mirae general hospital command office open crate"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting ultra plate carrier recipe found game level track known route kill doctor mirae general hospital take command office"
+  },
+  {
+    "id": "dmz-intel:3-plate-helmet-armor-vest-recipe",
+    "name": "3-Plate Helmet Armor Vest recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-3-plate-helmet-armor-vest-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting ultra plate carrier recipe found hajin prints nano-structured alloy alloyed plating reactive metals fixed spot known player random"
+  },
+  {
+    "id": "dmz-intel:3-plate-armor-vest-recipe",
+    "name": "3-Plate Armor Vest recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-3-plate-armor-vest-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting legendary plate carrier recipe paid orders page grid together with triage prints ballistic fabric nylon cloth reactive metals"
+  },
+  {
+    "id": "dmz-intel:2-plate-ballistic-gel-vest-recipe",
+    "name": "2-Plate Ballistic Gel Vest recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-2-plate-ballistic-gel-vest-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting epic two-plate vest that slowly regenerates recipe found hajin prints synthetics binding catalyst reactive metals one-off finds reported"
   },
   {
     "id": "dmz-intel:large-backpack-recipe",
@@ -22001,7 +22262,34 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-large-backpack-recipe",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting legendary backpack with weapon slot secure slots recipe prints nylon laminate structural alloy rigid synthetics"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting legendary backpack with weapon slot secure slots recipe reward orders page hornet's nest chapter choices after pays only"
+  },
+  {
+    "id": "dmz-intel:medium-secure-backpack-recipe",
+    "name": "Medium Secure Backpack recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-medium-secure-backpack-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting legendary medium backpack with four secure slots recipe found hajin prints alloyed plating nylon cloth reactive metals guide"
+  },
+  {
+    "id": "dmz-intel:large-secure-backpack-recipe",
+    "name": "Large Secure Backpack recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-large-secure-backpack-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting ultra backpack whose recipe found hajin prints prototype module alloyed plating rigid synthetics modules come from deathstalker guide"
+  },
+  {
+    "id": "dmz-intel:large-scavenger-backpack-recipe",
+    "name": "Large Scavenger Backpack recipe",
+    "map": "",
+    "kind": "Crafting",
+    "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
+    "route": "/dmz/printer#intel-large-scavenger-backpack-recipe",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting legendary backpack with three secure slots more room resources recipe found hajin prints nylon laminate high-tenacity fibers rigid"
   },
   {
     "id": "dmz-intel:self-revive-kit-recipe",
@@ -22028,7 +22316,7 @@
     "kind": "Crafting",
     "context": "Modern Warfare 4 · DMZ · Intel · 3D Printer and crafting",
     "route": "/dmz/printer#intel-high-tenacity-fibers",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting game points chang-san base armory songdo wharf rooftop players usually just find hard solo found only three hours"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel 3d printer and crafting game points chang-san base armory songdo wharf rooftop players back roof tall tower find only there sometimes none"
   },
   {
     "id": "dmz-intel:electronic-sensors",
@@ -22091,7 +22379,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-3-plate-armor-vest",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear plate carrier awarded epic item level"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear plate carrier awarded epic item level that does give recipe 3-plate armor vest paid orders page grid together"
   },
   {
     "id": "dmz-intel:2-plate-helmet-armor-vest",
@@ -22172,7 +22460,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-gas-mask",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear headgear against radiation recipe unlocks level required irradiated reactor area"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear headgear against radiation recipe unlocks level required irradiated reactor area since update masks longer break soon enter zone"
   },
   {
     "id": "dmz-intel:durable-gas-mask",
@@ -22181,7 +22469,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-durable-gas-mask",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear epic mask awarded level"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear epic mask level gives durable recipe found hajin since update masks longer break soon enter radiation zone"
   },
   {
     "id": "dmz-intel:night-vision-goggles",
@@ -22199,7 +22487,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-parachutes",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear parachutes have their loadout slot disposable parachute recipe unlocks level legendary awarded fire stations stock them"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear parachutes have their loadout slot disposable parachute recipe unlocks level legendary awarded fire stations stock them wrong number"
   },
   {
     "id": "dmz-intel:valuables",
@@ -22208,7 +22496,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-valuables",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear loot marked with icon that sold cash right away spent upgrades printer"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear loot marked with icon that becomes cash once extract sell spend upgrades printer gold bars skulls each only"
   },
   {
     "id": "dmz-intel:operator-rescue-beacon",
@@ -22217,7 +22505,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-operator-rescue-beacon",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear item found vault edition deployment advanced sere blogs describe works"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear item found vault edition deployment advanced sere blogs describe works short guide video walks through alongside weapon insurance"
   },
   {
     "id": "dmz-intel:gas-can",
@@ -22379,7 +22667,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-combat-drone-fire-support",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear epic fire support awarded level"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear epic fire support level gives combat drone recipe found hajin prints electronics control unit guide shows from footlocker"
   },
   {
     "id": "dmz-intel:crossfire-fire-support",
@@ -22604,7 +22892,7 @@
     "kind": "Weapon",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-weapon-insurance-contract",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear item found vault edition deployment legendary advanced sere official posts explain weapon insurance works"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear item found vault edition deployment legendary advanced sere official posts explain weapon insurance works short guide video walks"
   },
   {
     "id": "dmz-intel:rarity-tiers",
@@ -22622,7 +22910,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-plate-carriers",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear vests decide many armor plates wear eight known from 1-plate vest tempered"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear vests decide many armor plates wear eight known from 1-plate vest tempered free-kit players find them fire stations"
   },
   {
     "id": "dmz-intel:backpacks",
@@ -22649,7 +22937,16 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-radiation-gear",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear protective gear required with mask reactor found fire stations"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear protective gear legendary hazmat suit worn with mask reactor suits hang walls around haneul nuclear fire stations stock"
+  },
+  {
+    "id": "dmz-intel:irradiated-container",
+    "name": "Irradiated Container",
+    "map": "",
+    "kind": "Item",
+    "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
+    "route": "/dmz/intel/armory#intel-irradiated-container",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear ultra item that only opens decontamination machine ground floor breached reactor beside fuel pool haneul nuclear machine's panel"
   },
   {
     "id": "dmz-intel:tacticals",
@@ -22658,7 +22955,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-tacticals",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear tactical equipment mostly unlocked through levels"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear tactical equipment mostly unlocked through levels stim heartbeat sensor screamer mine recipes have found hajin instead recipe most"
   },
   {
     "id": "dmz-intel:lethals",
@@ -22667,7 +22964,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-lethals",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear lethal equipment"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear lethal equipment lethals printing opens level five recipes come from levels recipe orders page reward claymore proximity mine"
   },
   {
     "id": "dmz-intel:field-upgrades",
@@ -22685,7 +22982,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-fire-support-killstreaks",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear killstreaks printable lootable fire support items known ones epic advanced care package rare combat drone crossfire"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear killstreaks printable lootable fire support items known ones epic advanced care package rare combat drone crossfire since eliminated"
   },
   {
     "id": "dmz-intel:weapon-manuals",
@@ -22694,7 +22991,7 @@
     "kind": "Weapon",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-weapon-manuals",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear loot extract weapon's manual once unlock buying that base weapon gunsmith often like used pays"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear loot extract weapon's manual once unlock buying that base weapon gunsmith often like used pays manuals come from"
   },
   {
     "id": "dmz-intel:weapon-cases-and-safes",
@@ -22703,7 +23000,7 @@
     "kind": "Item",
     "context": "Modern Warfare 4 · DMZ · Intel · Weapons and gear",
     "route": "/dmz/intel/armory#intel-weapon-cases-and-safes",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear codmunity's types weapon cases safes locations contents were published before launch"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel weapons and gear codmunity's types weapon cases safes hold valuables cash sell rifle turn containers rooms player says case that hands"
   },
   {
     "id": "dmz-intel:hidden-caches",
@@ -22838,7 +23135,7 @@
     "kind": "Progression",
     "context": "Modern Warfare 4 · DMZ · Intel · Cash and progression",
     "route": "/dmz/intel/field-manual#intel-level-unlocks-1-to-70",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel cash and progression activision's full level table lists what each from unlocks printer extra stash space bounty payout boost advanced sere"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel cash and progression activision's full level table lists what each from unlocks printer extra stash space double bounty payouts advanced sere"
   },
   {
     "id": "dmz-intel:dmz-calling-card-challenges",
@@ -22928,7 +23225,7 @@
     "kind": "Economy",
     "context": "Modern Warfare 4 · DMZ · Intel · Cash and progression",
     "route": "/dmz/intel/field-manual#intel-lieutenant-dog-tags",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel cash and progression killing lieutenant extracting tags pays into bank kill claims that lieutenant's boss board card central says carrying reveals"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel cash and progression killing lieutenant extracting tags paid into bank each reported extraction kill claims that lieutenant's boss board card first"
   },
   {
     "id": "dmz-intel:keep-a-cash-mule",
@@ -23081,7 +23378,7 @@
     "kind": "Tip",
     "context": "Modern Warfare 4 · DMZ · Intel · Field notes",
     "route": "/dmz/intel/field-manual#intel-plan-around-exfil-campers",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel field notes exfil sites draw squads hoping catch players with full bags clear area re-plate before calling helicopter ping second"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel field notes exfil sites draw squads hoping catch players with full bags before commit activate tower range read scan campers"
   },
   {
     "id": "dmz-intel:soft-lock-without-the-starting-med",
@@ -23127,6 +23424,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-backpack-keybind-not-working-on-pc",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues backpack sometimes cannot opened with remapped shows correctly default still used match"
+  },
+  {
+    "id": "dmz-intel:toggle-ads-sprint-melee",
+    "name": "Sprint and Melee not leaving Toggle ADS",
+    "map": "",
+    "kind": "Known issue",
+    "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
+    "route": "/dmz/intel/status#intel-toggle-ads-sprint-melee",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues every platform with toggle pressing sprint melee does take aim-down-sights planned launch trello card says comes season"
   },
   {
     "id": "dmz-intel:battle-net-update-stuck-on-applying",
@@ -23180,7 +23486,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-free-loadout-spawns-with-no-weapons",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues under investigation since platforms some players deploy with free loadout arrive hajin weapons equipped workaround been posted"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues under investigation since platforms still open some players deploy with free loadout arrive hajin weapons equipped workaround been"
   },
   {
     "id": "dmz-intel:operator-prestige-blocked-after-meeting-requirements",
@@ -23189,7 +23495,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-operator-prestige-blocked-after-meeting-requirements",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some players cannot prestige active duty operator even after meeting requirements under investigation platforms activision's workaround meet weapon"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some players cannot prestige active duty operator even after meeting requirements under investigation since platforms still open activision's"
   },
   {
     "id": "dmz-intel:gunsmith-camos-and-reticles-charge-dmz",
@@ -23198,7 +23504,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-gunsmith-camos-and-reticles-charge-dmz",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues under investigation since applying some weapon camos reticles gunsmith take cash from your balance"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues under investigation since platforms still open applying some weapon camos reticles gunsmith take cash from your balance"
   },
   {
     "id": "dmz-intel:enemy-ai-not-counted-for-backstab",
@@ -23207,7 +23513,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-enemy-ai-not-counted-for-backstab",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues known issue since backstabbing enemy does count toward challenges that backstab kills"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues under investigation since platforms still open backstabbing enemy does count toward challenges that backstab kills"
   },
   {
     "id": "dmz-intel:no-dmz-launch-button-on-xbox",
@@ -23216,7 +23522,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-no-dmz-launch-button-on-xbox",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some xbox players button home launch campaign after installing activision investigating suggests call duty modern warfare content pack"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some xbox players button home launch campaign after installing activision support still lists under investigation suggests call duty"
   },
   {
     "id": "dmz-intel:dog-tag-case-station-error",
@@ -23225,7 +23531,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-dog-tag-case-station-error",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues fixed error stopped some players from opening case station trello marked released same appears patch notes"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues fixed error stopped some players from opening case station trello marked released same appears patch notes infinity ward"
   },
   {
     "id": "dmz-intel:disconnects-wiping-match-loot",
@@ -23280,6 +23586,15 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-ai-running-over-players-at-infil",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues enemy could players over while they were infilling first landed second infils into wilderness"
+  },
+  {
+    "id": "dmz-intel:enemy-ai-cars-driverless-or-stuck",
+    "name": "Enemy AI cars driverless or stuck",
+    "map": "",
+    "kind": "Known issue",
+    "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
+    "route": "/dmz/intel/status#intel-enemy-ai-cars-driverless-or-stuck",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues known issue since enemy cars sometimes drive with nobody wheel stuck infinity ward released some possible fixes watching"
   },
   {
     "id": "dmz-intel:keypad-code-safes-inside-locked-spaces",
@@ -23342,7 +23657,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-players-stuck-in-rocks-in-hajin",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues fixed some rocky spots hajin could trap players infinity ward patched several them"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues fixed batches some rocky spots hajin could trap players infinity ward patched first more update"
   },
   {
     "id": "dmz-intel:saved-blueprint-modifications-not-buyable-on",
@@ -23405,7 +23720,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-operator-kills-and-bounty-not-tracking",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some players' operator-kill count bounty stay zero despite several player kills every they collect shows steel"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues some players' operator-kill count bounty stay zero despite several player kills every they collect shows steel update fixed"
   },
   {
     "id": "dmz-intel:night-vision-goggles-wont-equip-or",
@@ -23432,7 +23747,7 @@
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-ddos-freezes-player-movement",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues getting ddos while flying recon drone casino lock whole character just players could move shoot change stance died"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues getting ddos while flying recon scout drone lock whole character just players could move shoot change stance after"
   },
   {
     "id": "dmz-intel:survival-kits-cant-be-claimed",
@@ -23453,13 +23768,22 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues players lower frame rates than campaign lowering resolution barely helps which points limit player blames large number"
   },
   {
+    "id": "dmz-intel:dlss-unavailable-with-ray-tracing",
+    "name": "DLSS unavailable with Ray Tracing on PC",
+    "map": "",
+    "kind": "Known issue",
+    "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
+    "route": "/dmz/intel/status#intel-dlss-unavailable-with-ray-tracing",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues nvidia dlss does work while tracing activision working with suggests smaa variable rate shading meantime separate trello note"
+  },
+  {
     "id": "dmz-intel:pay-for-lieutenant-intel-not-registering",
     "name": "Pay for Lieutenant Intel not registering",
     "map": "",
     "kind": "Known issue",
     "context": "Modern Warfare 4 · DMZ · Intel · Known issues",
     "route": "/dmz/intel/status#intel-pay-for-lieutenant-intel-not-registering",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues lieutenant intel task fail tick after buying boss board stalling orders page player count switching bought doctor several"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel known issues fixed buying certain lieutenant intel boss board could fail update tracked order stalling orders page notes cover every"
   },
   {
     "id": "dmz-intel:dmz-early-access",
@@ -23477,7 +23801,7 @@
     "kind": "Date",
     "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
     "route": "/dmz/intel/status#intel-full-launch",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons modern warfare with launches worldwide friday october 2026"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons modern warfare with launch midnight local time friday october 2026 infinity ward switched worldwide early from then open"
   },
   {
     "id": "dmz-intel:campaign-early-access",
@@ -23531,7 +23855,7 @@
     "kind": "Date",
     "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
     "route": "/dmz/intel/status#intel-season-1",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons season starts november warzone hajin becomes battle royale zodiac arrives resurgence pass blackcell live dmz-specific changes have been"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons season starts friday november warzone hajin becomes battle royale zodiac arrives resurgence pass blackcell live nothing been announced"
   },
   {
     "id": "dmz-intel:season-2",
@@ -23558,7 +23882,7 @@
     "kind": "Requirement",
     "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
     "route": "/dmz/intel/status#intel-anti-cheat-requirements",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons uses ricochet with server culling players need secure boot enabled"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons uses ricochet with server culling players need secure boot enabled before early access activision added detections cheats which"
   },
   {
     "id": "dmz-intel:stranded-campaign-mission-previews-dmz",
@@ -23606,6 +23930,15 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons second batch fixes listed addressed launch patch notes case error toxic intercept failing after defend bomb slowdown when"
   },
   {
+    "id": "dmz-intel:patch-23-oct-2026",
+    "name": "Patch 23 Oct 2026",
+    "map": "",
+    "kind": "Date",
+    "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
+    "route": "/dmz/intel/status#intel-patch-23-oct-2026",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons launch-day update added launch updates section patch notes brings more disconnect rock-trap fixes certain lieutenant intel that tracked"
+  },
+  {
     "id": "dmz-intel:no-weekly-challenges-in-season-1",
     "name": "No Weekly Challenges in Season 1",
     "map": "",
@@ -23613,5 +23946,14 @@
     "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
     "route": "/dmz/intel/status#intel-no-weekly-challenges-in-season-1",
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons infinity ward says season will have weekly challenges returning events instead with rewards such apex attachments camos calling"
+  },
+  {
+    "id": "dmz-intel:boot-camp-event",
+    "name": "Boot Camp event",
+    "map": "",
+    "kind": "Date",
+    "context": "Modern Warfare 4 · DMZ · Intel · Launch and seasons",
+    "route": "/dmz/intel/status#intel-boot-camp-event",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel launch and seasons boot camp first modern warfare event runs from thursday friday season starts nine challenges across modes three them"
   }
 ]

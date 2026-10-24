@@ -2,6 +2,7 @@
 import { dmzStations } from '#shared/dmz.mjs'
 import { dmzIntel, intelConfidence, DMZ_INTEL_CHECKED } from '#shared/dmz-intel.mjs'
 import { intelNeeds, intelNeed, intelEntry, intelStations, intelEverything, intelSuggestions, stationEntries, intelCount } from '#shared/dmz-stations.mjs'
+import { STUCK_VIDEOS } from '#shared/dmz-sightings.mjs'
 
 // Intel opens on one question: what are you doing right now? Answers stay
 // inside Intel: reading lists here (kept in ?need= so Back and shared links
@@ -74,6 +75,7 @@ watch(need, value => {
         </div>
         <button type="button" class="ix-close dmz-mono" @click="pick(need.id)">Close<span class="sr-only"> this reading list</span></button>
       </header>
+      <DmzVideoGuides v-if="need.id === 'loot'" :refs="STUCK_VIDEOS" variant="strip" />
       <div v-for="(step, stepIndex) in need.steps" :key="step.title">
         <h3 class="dz-sub dmz-mono">{{ step.title }}</h3>
         <ol class="ix-reads">
@@ -131,7 +133,8 @@ watch(need, value => {
 <style scoped>
 .ix-ask { margin-top: 2rem; }
 .ix-question { margin: 0 0 1rem; font-size: clamp(1.75rem, 4.5vw, 2.75rem); font-weight: 700; line-height: 1.05; letter-spacing: 0.02em; text-transform: uppercase; font-variation-settings: 'wdth' 75; color: #f7f5ea; }
-.ix-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.625rem; }
+/* One row with a column per question, however many there are. */
+.ix-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 0.625rem; }
 .ix-tile { display: flex; flex-direction: column; align-items: flex-start; gap: 0.375rem; width: 100%; height: 100%; min-height: 8.5rem; padding: 1rem; border: 1px solid var(--dz-line); border-radius: 16px; background: rgba(20, 24, 23, 0.72); color: var(--dz-ink-2) !important; font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
 .ix-tile:hover { border-color: var(--dz-line-strong); color: #fff !important; background: rgba(30, 36, 34, 0.85); }
 .ix-tile[aria-pressed='true'] { border-color: var(--dz-accent); background: linear-gradient(180deg, rgba(221, 179, 99, 0.18), rgba(221, 179, 99, 0.05)); color: #fff !important; }
@@ -169,7 +172,8 @@ watch(need, value => {
 .ix-labels dd { margin: 0; color: #dcd9cb; font-size: 0.95rem; }
 .ix-labels p { margin: 0.875rem 0 0; max-width: 46rem; color: var(--dz-muted); font-size: 0.9rem; }
 @media (max-width: 899px) {
-  .ix-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+  .ix-tiles { grid-auto-flow: row; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+  .ix-tiles > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .ix-tile { min-height: 7.5rem; padding: 0.875rem; }
   .ix-tile-ask { display: none; }
   .ix-answer { padding: 1rem; }

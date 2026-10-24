@@ -10,8 +10,12 @@ import { fileURLToPath } from 'node:url'
 import { dmzPages, dmzBriefingSections, dmzOrders, dmzStations } from '../shared/dmz.mjs'
 import { dmzIntel, intelCategory } from '../shared/dmz-intel.mjs'
 import { dmzKeys } from '../shared/dmz-keys.mjs'
-import { intelHome, intelHomeLabel, intelStations, intelEverything } from '../shared/dmz-stations.mjs'
+import { intelHome, intelHomeLabel, intelNeed, intelStations, intelEverything } from '../shared/dmz-stations.mjs'
 import { hajinPins, hajinLayer } from '../shared/dmz-map.mjs'
+import { guideTier } from '../shared/dmz-guide.mjs'
+import { bossPlaybook } from '../shared/dmz-playbooks.mjs'
+import { containers, recipeHotspots, recipeSpotLine } from '../shared/dmz-recipe-spots.mjs'
+import { countLabel, topRows } from '../shared/dmz-sightings.mjs'
 import { expansionGuides } from '../shared/expansion-guides.mjs'
 import { typeInfo, locationType } from '../app/utils/mapFilters.mjs'
 
@@ -123,6 +127,24 @@ for (const page of dmzPages) {
   add(page.name, 'dmz-page', page.path, { context: shelf && !station ? 'DMZ · Intel' : 'DMZ', keywords: `${station?.label || shelf?.label || ''} station intel`, preview: page.description })
 }
 for (const section of dmzBriefingSections) add(section.title, 'dmz-section', `/dmz/briefing#${section.id}`, { context: 'DMZ · Briefing', keywords: `briefing basics` })
+// Where-to-find answers open the Boss Board card, Printer section, Intel
+// reading list or Guide loot card that holds them.
+const recipeTop = topRows(recipeHotspots, 3, 'find').map(row => `${row.where} · ${countLabel(row.seen, 'find')}`).join('; ')
+// A guide loot card's preview: the places it lists, then its note.
+function lootPreview(stage, id) {
+  const card = guideTier(stage)?.loot?.find(item => item.id === id)
+  if (!card) throw new Error(`No ${id} loot card in the ${stage} stage`)
+  return [`Where to look: ${card.rows.map(row => row.where).join(' · ')}.`, card.note].filter(Boolean).join(' ')
+}
+for (const [name, route, station, keywords, preview] of [
+  ['Where to find Colossus', '/dmz/boss-board#boss-colossus', 'boss', 'colossus spawn location jugg juggernaut commander', bossPlaybook('colossus')?.lead],
+  ['Where to find the Deathstalker', '/dmz/boss-board#boss-deathstalker', 'boss', 'deathstalker spawn location commander', bossPlaybook('deathstalker')?.lead],
+  ['Tempered recipe location', '/dmz/printer#recipe-tempered-armor-vest-recipe', 'printer', 'tempered armor vest recipe where find the doctor command office', recipeSpotLine('tempered-armor-vest-recipe')?.text],
+  ['World recipe spots', '/dmz/printer#where-recipes-drop', 'printer', 'where recipes drop locations find farm', `Most published finds: ${recipeTop}. ${containers.lead}`],
+  ['Where is the good loot', '/dmz/intel?need=loot', 'intel', 'loot spots where find cash money safes recipes weapon manuals keys farm', intelNeed('loot').intro],
+  ['Safes without a key', '/dmz/guide?stage=early#loot-safes', 'guide', 'keyless safe safes no key code gold bars skulls cash loot compound cheonwang peak array', lootPreview('early', 'loot-safes')],
+  ['Weapon Manual spots', '/dmz/guide?stage=mid#loot-manuals', 'guide', 'weapon manuals where find farm loot chang-san air base barracks train duffel bags', lootPreview('mid', 'loot-manuals')],
+]) add(name, 'dmz-section', route, { context: `DMZ · ${dmzStations.find(item => item.id === station).label}`, keywords: words(keywords, name), badge: 'Section', preview })
 add('Hajin threat zones', 'dmz-place', '/dmz/hajin?view=threat#map', { context: 'DMZ · Tac-Map', keywords: `threat level zones low medium high critical danger map` })
 for (const pin of hajinPins.filter(pin => !pin.same)) {
   const layer = hajinLayer(pin.layer)

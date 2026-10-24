@@ -3,10 +3,12 @@
 // the how, paraphrased from the sources listed. Sources resolve through
 // guideSource in shared/dmz-guide.mjs.
 
-export const PLAYBOOKS_CHECKED = '22 Oct 2026'
+export const PLAYBOOKS_CHECKED = '24 Oct 2026'
 
 // Boss playbooks, keyed by Intel id. Every list is short lines a squad can act
-// on; kill runs in order.
+// on; kill runs in order. A Commander's where rows use the sightings row shape
+// from shared/dmz-sightings.mjs, and their sources resolve through anySource.
+// videos are Watch it done links (VideoRef); noVideo says so when there is none.
 export const bossPlaybooks = [
   {
     id: 'the-scavenger',
@@ -61,6 +63,7 @@ export const bossPlaybooks = [
     ],
     confidence: 'reported',
     sources: ['allthings-mw4-dmz-how-to-beat', 'allthings-call-of-duty-modern-warfare-12', 'dmzcodex-the-doctor', 'game8-archives-7', 'nintendolife-impressions-call-of-duty-modern', 'allthings-modern-warfare-4-dmz-key', 'dmzcodex-dmz-keys-loot-rooms-guide'],
+    videos: [{ id: 'youtube-0dzj-fybpru', why: 'The whole Doctor fight at Mirae General Hospital, with no commentary' }],
   },
   {
     id: 'iskra',
@@ -122,6 +125,7 @@ export const bossPlaybooks = [
     note: 'The tactics come from one guide. The official advice to bring NVGs is about the casino, not this fight.',
     confidence: 'reported',
     sources: ['allthings-call-of-duty-modern-warfare-12', 'allthings-how-to-make-money-fast', 'dmzcodex-jin-tae', 'game8-archives-7', 'callofduty-call-of-duty-modern-warfare-2', 'game8-archives-6'],
+    videos: [{ id: 'youtube-ffr1fcxcnss', why: 'A one-minute look at the Jin-Tae fight in the casino' }],
   },
   {
     id: 'the-warden',
@@ -148,6 +152,7 @@ export const bossPlaybooks = [
     note: 'Guides disagree on his spot: the prison mess hall or The Citadel. Check both.',
     confidence: 'confirmed',
     sources: ['allthings-how-to-beat-the-warden', 'allthings-call-of-duty-modern-warfare-12', 'dmztracker-the-warden', 'codcentral-mw4-dmz-boss-board', 'dmzcodex-the-warden'],
+    videos: [{ id: 'youtube-piclqzc0r6c', why: 'A full Warden fight in the prison, dealing with his shield and guards' }],
   },
   {
     id: 'the-chemist',
@@ -205,6 +210,7 @@ export const bossPlaybooks = [
     note: 'If your squad remembers constant smoke rather than fake bodies, this is the Lieutenant you met. The gear ideas are suggestions; no guide has tested them on him.',
     confidence: 'reported',
     sources: ['allthings-call-of-duty-modern-warfare-12', 'codcentral-mw4-dmz-boss-board', 'codmunity-2026-10-06', 'codmunity-bale', 'callofduty-call-of-duty-modern-warfare-2', 'dmztracker-bale'],
+    videos: [{ id: 'youtube-lfzq4-ihqww', why: 'A long solo run of the Bale mission and fight, with no commentary' }],
   },
   {
     id: 'gorani',
@@ -240,6 +246,7 @@ export const bossPlaybooks = [
     note: 'Untested idea: a thermal optic may show which figures are warm bodies. No guide has tried it on him yet.',
     confidence: 'reported',
     sources: ['allthings-call-of-duty-modern-warfare-12', 'gamingtrend-mw4-review', 'callofduty-call-of-duty-modern-warfare-2', 'codcentral-mw4-dmz-boss-board', 'windowscentral-i-went-hands-on-with', 'dmztracker-gorani', 'detonated-all-secret-lieutenant-room-locations'],
+    videos: [{ id: 'youtube-anpeaa2qauy', why: 'A short Gorani fight; the footage is the useful part' }],
   },
   {
     id: 'jang-ui',
@@ -306,47 +313,117 @@ export const bossPlaybooks = [
     ],
     confidence: 'reported',
     sources: ['allthings-how-to-beat-roze', 'allthings-call-of-duty-modern-warfare-5', 'allthings-call-of-duty-modern-warfare-12', 'dmzcodex-roze', 'codcentral-mw4-dmz-boss-board', 'callofduty-call-of-duty-modern-warfare-2', 'dmzcodex-dmz-keys-loot-rooms-guide'],
+    videos: [
+      { id: 'youtube-13eg3opr34i', why: 'A full Roze fight on the DBN Headquarters roof, with no commentary' },
+      { id: 'youtube-esbuzacslac', why: 'A quick Roze kill: deadly at range, weak up close' },
+    ],
   },
   {
     id: 'colossus',
-    pins: ['fortress-the-citadel', 'chang-san-air-base', 'cheonwang-peak-array'],
+    pins: ['cheonwang-peak-array', 'fortress-the-citadel', 'chang-san-air-base'],
+    lead: 'No fixed spawn. He is always in two story missions, Iron Citadel and Fallen Ember. In free roam, Cheonwang Peak Array and The Citadel have the same number of reports; the Array is the lower-threat place to look.',
+    where: [
+      {
+        kind: 'mission', report: 'colossus-iron-citadel-armory', where: 'Chang-san Air Base bunker and The Armory', square: 'B5', mission: 'operation-iron-citadel', seen: 8,
+        note: 'Also met on the walk from the infil to the fence (one guide).',
+        sources: ['codcentral-mw4-dmz-operation-iron-citadel', 'codcentral-mw4-dmz-boss-board', 'dmzcodex-colossus', 'dmztracker-bosses-colossus', 'dmzmap-missions', 'allthings-how-to-beat-the-colossus', 'gamerant-call-of-duty-cod-modern-3', 'reddit-1xc9snt', 'youtube-u8b_ru-p07i'],
+        videos: [{ id: 'youtube-u8b_ru-p07i', at: '11:19', why: 'A low-gear Iron Citadel run; the Colossus fight starts here', shows: true }],
+      },
+      {
+        kind: 'scripted', report: 'colossus-fallen-ember-warhead', where: 'Haneul Nuclear Reactor, the warhead fight', square: 'I4', mission: 'operation-fallen-ember', seen: 3,
+        note: 'COD Central\'s grid calls it H4.',
+        sources: ['codcentral-mw4-dmz-boss-board', 'dmzcodex-fallen-ember-walkthrough', 'dmzradar-mission-fallen-ember', 'allthings-how-to-beat-the-colossus', 'xboxplay-colossus', 'fanboydestroy-colossus'],
+      },
+      {
+        kind: 'seen', report: 'colossus-cheonwang-peak-array-gate', where: 'Cheonwang Peak Array', square: 'E6', seen: 3,
+        sources: ['gamespot-hot-spots', 'yahoo-gamespot-hot-spots', 'allthings-how-to-beat-the-colossus', 'xboxplay-colossus', 'fanboydestroy-colossus', 'reddit-comms-module-farming'],
+        claims: [{ text: 'One farming pair says he was at the Array on about a third of their runs.', checked: false }],
+        videos: [{ id: 'youtube-ap6kpzmgau8', at: '1:57', why: 'Two players catch Colossus between them during a safe run' }],
+      },
+      {
+        kind: 'seen', report: 'colossus-the-citadel', where: 'The Citadel, 14th Political Prison', square: 'B3', seen: 3,
+        note: 'One guide\'s drop note for The Citadel comes from another site\'s boss list, not a kill, and may mean the Chang-san barracks, which another guide also calls The Citadel.',
+        sources: ['dmzcodex-colossus', 'dmztracker-bosses-colossus', 'allthings-how-to-beat-the-colossus', 'xboxplay-colossus', 'fanboydestroy-colossus', 'gamingpromax-bosses'],
+      },
+      { kind: 'seen', where: 'The last objective of a Dynamic Op (place varies)', seen: 2, sources: ['reddit-1xc3exn', 'reddit-1xdlvkp'] },
+      { kind: 'seen', pin: 'wolves-stadium', where: 'Wolves Stadium', square: 'G7', seen: 1, sources: ['mw4meta-solo-farm'] },
+      { kind: 'seen', layer: 'police', where: 'A large police station (not named)', seen: 1, sources: ['reddit-which-bosses-have-you-killed'] },
+      { kind: 'seen', pin: 'dbn-headquarters', where: 'Near DBN Headquarters', square: 'G6', seen: 1, sources: ['reddit-which-bosses-have-you-killed'] },
+      {
+        kind: 'listed', where: 'Cheongun Village (F4) and Songdo Wharf (H7)',
+        note: 'Named on one boss list that seven articles repeat; nobody reports meeting him there.',
+        sources: ['gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dexerto-wikis-enemy-types-explained', 'gamesgg-boss-locations', 'showgamer-bosses', 'portaldopixel-bosses', 'gamingpromax-bosses'],
+      },
+    ],
     find: [
-      'He roams. You cannot buy intel on a Commander; he shows on the Tac-Map, and your Team Leader calls him out, once you are close.',
-      'Seen at the prison and The Citadel, on the Chang-san approach and in its armory, and at Cheonwang Peak Array.',
-      'Story missions put him in your path: Iron Citadel at Chang-san, and the warhead step of Fallen Ember at the reactor.',
+      'He roams, and there is no paid intel on a Commander. Once you are close he shows on the Tac-Map and your Team Leader calls him out.',
+      'One guide says a COMMANDER banner then names him, with the zone he is in written underneath.',
       'One guide says loud heavy-metal music travels with him.',
+      'Look for a gas mask with breathing hoses, tan armor plates with a 14 patch and a minigun fed from a yellow drum on his back.',
     ],
     fight: [
       'Minigun fire in long bursts, deadly down alleys, gates and corridors.',
-      'Explosives do not hurt him.',
+      'Whether explosives hurt him is disputed: some guides say his suit shrugs them off, one says C4 and Thermite hit hard.',
+      'Two players say fire works: one says Thermite and Molotovs do the most damage, and the other killed him with a couple of rifle magazines and about twelve Molotovs.',
       'Reported: an electric shock up close that jumps across metal, including vehicles, and a trail of green gas.',
+      'Two players ran him over with vehicles; one guide uses a parked truck bed at The Citadel as a firing spot.',
       'He walks toward you and flanks round cover.',
     ],
     kill: [
-      'Refill plates and ammo first, then pick hard cover with height: stairs, a roof or a truck bed.',
-      'Let him walk into you. Hold a corner, doorway or landing instead of crossing open ground.',
-      'Peek only in the pause between minigun bursts and aim for the head, then drop back to reload and replate.',
+      'Refill plates and ammo first, then take hard cover with height: stairs, a roof or a truck bed. Three players report killing him from a roof or high ground.',
+      'Clear his escort, then let him walk into you. Hold a corner, doorway or landing instead of crossing open ground.',
+      'Peek only in the pause between minigun bursts and aim for the head, then drop back to reload and replate. One player calling the pauses lets the squad fire together.',
       'Spread the squad so he can only shoot one of you at a time.',
       'If he flanks your cover, move to the far side at once. Stay out of his green gas.',
-      'Search the whole area around the body: his drops scatter. Then exfil to keep them.',
+      'His canister bursts into green gas when he dies; do not rush the body (one guide).',
+      'Once the gas clears, search the whole area around the body: his drops scatter. Then exfil to keep them.',
     ],
-    bring: ['Full plates and spares, or an Armor Box', 'An LMG or other high-capacity gun, ideally with armor-piercing rounds', 'A scoped rifle for headshots', 'Stun grenades to buy openings'],
-    avoid: ['Grenades, C4 and launchers: his suit shrugs off explosives', 'Fighting from a vehicle or behind one', 'Peeking while the minigun is spinning', 'Taking him on low on ammo after a story mission'],
+    bring: ['Full plates and spares, or an Armor Box', 'More ammo than you expect: players put a kill at five or more full magazines', 'An LMG or other high-capacity gun, ideally with armor-piercing rounds', 'Thermite and Molotovs to throw in the pauses', 'A scoped rifle for headshots', 'Stun grenades to buy openings'],
+    avoid: ['Peeking while the minigun is spinning', 'Taking him on low on ammo after a story mission'],
     loot: [
-      'Military Composites, the only known source: the Tempered vest, the Secure Scavenger Backpack and Epic Ingredient Printing need them',
-      'Sometimes Experimental Compounds or other printer ingredients instead',
-      'The boathouse key during Operation Fallen Ember',
+      'Nothing guaranteed. Guides list Military Composites and Experimental Compounds; players report the $50,000 Boss Board pay but rarely materials.',
+      'Military Composites, which guides give him as the only source of: the Tempered vest, the Secure Scavenger Backpack and Epic Ingredient Printing need them',
+      'The boathouse key, in one reported run of Operation Fallen Ember',
     ],
     confidence: 'confirmed',
-    sources: ['allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', 'codcentral-mw4-dmz-operation-iron-citadel', 'codcentral-mw4-dmz-operation-fallen-ember', 'callofduty-call-of-duty-modern-warfare', 'gamespot-mw4-dmz-tips', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes'],
+    sources: ['allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', 'dmztracker-bosses-colossus', 'codcentral-mw4-dmz-operation-iron-citadel', 'codcentral-mw4-dmz-operation-fallen-ember', 'dmzcodex-fallen-ember-walkthrough', 'callofduty-call-of-duty-modern-warfare', 'gamespot-mw4-dmz-tips', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'mw4map-bosses', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes', 'reddit-1xdvyoy', 'reddit-ai-make-no-footstep-sounds', 'reddit-tips-killing-bosses-as-solo', 'reddit-1xdypz0', 'reddit-1xc3exn', 'reddit-third-successful-extraction-somehow-got', 'reddit-1xclnhe'],
+    videos: [
+      { id: 'youtube-scglyw3u2ew', why: 'A full Colossus fight from start to finish, pacing the bursts and using cover' },
+      { id: 'youtube-nv7m_k7hl4g', why: 'A short solo kill that shows how much ammo the fight eats' },
+      { id: 'youtube-ldcgklqypa4', why: 'A quick clip of a stairwell keeping you out of his minigun line' },
+      { id: 'youtube-ncwkuwbgxw4', why: 'A short primer for players who keep losing to him' },
+      { id: 'youtube-2acpjmoofde', at: '13:25', why: 'The Colossus part of a chaptered DMZ tips video' },
+      { id: 'youtube-uahxoq3cjpm', why: 'Landing the Thermite or Drill Charge and Shock Stick hits the Goliath order asks for' },
+    ],
   },
   {
     id: 'deathstalker',
-    pins: ['dbn-headquarters', 'nurigo-mall'],
+    pins: ['nurigo-mall', 'dbn-headquarters'],
+    lead: 'No fixed spawn. NuriGO Mall and the DBN Headquarters roof have the same number of reports, and DBN also hosts the scripted Grid Assault fight. Capture a SAM site before you draw it in.',
+    where: [
+      {
+        kind: 'seen', report: 'deathstalker-nurigo-mall', where: 'NuriGO Mall', square: 'H6', seen: 5,
+        note: 'DMZ Codex gives H5. One meeting came right after Operation Shopping Hacks.',
+        sources: ['codcentral-mw4-dmz-operation-shopping-hacks', 'codcentral-mw4-dmz-boss-board', 'codcentral-map', 'dmzcodex-deathstalker', 'dmztracker-bosses-deathstalker', 'dmzradar-boss-deathstalker', 'allthings-deathstalker', 'xboxplay-deathstalker', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dexerto-wikis-enemy-types-explained', 'gamesgg-boss-locations', 'showgamer-bosses', 'portaldopixel-bosses', 'gamingpromax-bosses'],
+      },
+      {
+        kind: 'seen', report: 'deathstalker', where: 'DBN Headquarters roof helipad', square: 'G6', seen: 5,
+        note: 'Also the scripted Grid Assault fight and the Roze fight.',
+        sources: ['dmzcodex-deathstalker', 'dmztracker-bosses-deathstalker', 'dmzmap-missions', 'allthings-deathstalker', 'xboxplay-deathstalker', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dexerto-wikis-enemy-types-explained', 'gamesgg-boss-locations', 'showgamer-bosses', 'portaldopixel-bosses', 'gamingpromax-bosses'],
+      },
+      { kind: 'seen', pin: 'the-grid', where: 'Elsewhere in The Grid', square: 'G6', seen: 2, sources: ['codcentral-mw4-dmz-boss-board', 'dmzradar-boss-deathstalker', 'allthings-deathstalker', 'xboxplay-deathstalker', 'reddit-which-bosses-have-you-killed'] },
+      { kind: 'seen', pin: 'nurigo-west', where: 'NuriGO West (SAM-site lure)', square: 'G6', seen: 1, sources: ['allthings-deathstalker', 'xboxplay-deathstalker'] },
+      { kind: 'seen', pin: 'compound-delta', where: 'Compound Delta and the road to NuriGO Mall', square: 'H5', seen: 1, sources: ['allthings-deathstalker', 'xboxplay-deathstalker'] },
+      {
+        kind: 'listed', where: 'Songdo Wharf (H7)',
+        note: 'One boss list names it; another only says the east of the map.',
+        sources: ['gamesgg-boss-locations', 'gamingpromax-bosses'],
+      },
+    ],
     find: [
-      'Over the eastern city: the DBN Headquarters roof in The Grid and NuriGO Mall.',
-      'It shows on the Tac-Map and your Team Leader warns you when it is close.',
-      'Push your threat level high enough and one is sent to hunt you.',
+      'It flies over the east of the city. It shows on the Tac-Map as a moving icon you can ping, and your Team Leader warns you when it is close.',
+      'Guides tie it to a star meter: killing AI after you are spotted adds stars, and at five stars a Deathstalker is sent after you. Some star details come from pre-release information, and the exact trigger is unconfirmed.',
+      'To hunt one, raise the stars on purpose near a SAM site you already hold. To avoid one, kill quietly and leave the area while the stars climb.',
     ],
     fight: [
       'Two machine-gun turrets.',
@@ -354,49 +431,88 @@ export const bossPlaybooks = [
       'Attacks the moment you step onto an open roof or helipad, usually while ground troops push too.',
     ],
     kill: [
-      'Capture a SAM site in range first: use the laptop at the launcher and hold until the bar fills. A captured site fires at it by itself.',
+      'Capture a SAM site in range before you draw it in: clear the guards, use the laptop at the launcher and hold the zone until the bar fills. A captured site fires at it by itself.',
       'Stay near the SAM site. Wander off and the enemy can take it back.',
+      'The Deathstalker may flare several missiles before one hits: one player saw about four, though two guides say a single missile brings it down.',
       'During each gun run, get under roofs, overhangs or behind HVAC units.',
       'Between runs, the whole squad shoots the cockpit with scoped rifles. Launchers work too.',
-      'Search the wreck: the loot sits in containers marked as helicopter pieces.',
-      'Exfil to keep the parts and the first-kill reward.',
+      'With no SAM site, guns alone can do it: one guide needed about 25 seconds of sniper fire from the DBN helipad, and a duo about one rifle mag and five sniper shots.',
+      'Search every helicopter piece on the wreck, then exfil to keep the parts and the first-kill reward.',
     ],
     bring: ['A sniper or scoped rifle', 'A launcher if you have one', 'An Ammo Box and spare plates'],
     avoid: ['Open roofs and helipads during a gun run', 'Leaving the SAM site once you hold it'],
-    loot: ['Prototype RF Module, the only known source: the Large Secure Backpack, Vendor Item Upgrade I and the Fulton Drop Marker need it', 'Sometimes Experimental Compounds'],
-    note: 'SAM sites are reported at Imjin Farmland, by Deadtown, at NuriGO Mall, outside the Chang-san wall, near Hotel Lucera and near The Citadel.',
+    loot: [
+      'Prototype RF Module, the only known source: the Large Secure Backpack, Vendor Item Upgrade I and the Fulton Drop Marker need it',
+      'A Drone Motherboard for the Death From Above order, named by one readable guide',
+      'Sometimes Experimental Compounds; one wreck held Biomaterials',
+      'Nothing is guaranteed: one player got nothing from a SAM kill during a story mission',
+    ],
+    note: 'SAM sites are reported at Imjin Farmland, by Deadtown, at NuriGO Mall, outside the Chang-san wall, near Hotel Lucera and near The Citadel. One player saw a Deathstalker hovering by an exfil collide with the exfil helicopter when it was called, leaving its loot to pick up; a single report.',
     confidence: 'confirmed',
-    sources: ['callofduty-call-of-duty-modern-warfare-2', 'callofduty-call-of-duty-modern-warfare', 'callofduty-call-of-duty-modern-warfare-3', 'dmzcodex-deathstalker', 'allthings-call-of-duty-modern-warfare-5', 'allthings-how-to-beat-roze', 'codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes'],
+    sources: ['callofduty-call-of-duty-modern-warfare-2', 'callofduty-call-of-duty-modern-warfare', 'callofduty-call-of-duty-modern-warfare-3', 'dmzcodex-deathstalker', 'dmzcodex-solo', 'dmztracker-bosses-deathstalker', 'dmzradar-boss-deathstalker', 'allthings-deathstalker', 'allthings-mw4-dmz-death-from-above', 'gamingpromax-bosses', 'allthings-call-of-duty-modern-warfare-5', 'allthings-how-to-beat-roze', 'codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes', 'reddit-tips-killing-bosses-as-solo', 'reddit-which-bosses-have-you-killed', 'reddit-astaroth-kills-the-deathstalker', 'xboxplay-deathstalker'],
+    videos: [
+      { id: 'youtube-entyfw5v3ui', why: 'A squad captures a SAM site and lets it shoot the Deathstalker down' },
+      { id: 'youtube-pomrsz5icwg', why: 'A full Deathstalker kill; the commentary is Korean, but the fight is easy to follow' },
+      { id: 'youtube-2acpjmoofde', at: '25:53', why: 'The SAM-site part of a chaptered DMZ tips video' },
+    ],
   },
   {
     id: 'main-nk-battle-tank',
     pins: ['nurigo-mall'],
+    lead: 'No fixed spawn and no first-hand sighting place yet. Guides say it patrols roads, mostly on the South Korean side; one guide ties it to NuriGO Mall.',
+    where: [
+      {
+        kind: 'listed', where: 'Roads and highways, mostly on the South Korean side',
+        note: 'No guide gives a place they met it, and COD Central still lists it as not met.',
+        sources: ['gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dexerto-wikis-enemy-types-explained', 'gamesgg-boss-locations', 'showgamer-bosses', 'portaldopixel-bosses', 'gamingpromax-bosses', 'dmztracker-bosses-nk-battle-tank', 'codcentral-mw4-dmz-boss-board'],
+      },
+      {
+        kind: 'seen', report: 'tank', where: 'NuriGO Mall area', square: 'H6', seen: 1,
+        note: 'DMZ Codex gives H5. An earlier credit to COD Central was a Deathstalker sighting.',
+        sources: ['dmzcodex-tank'],
+      },
+    ],
     find: [
-      'It drives the roads and highways, mostly on the South Korean side. One was marked in the streets around NuriGO Mall.',
+      'Guides say it drives the roads and highways, mostly on the South Korean side. Players who have killed one did not say where.',
       'It shows on the Tac-Map and your Team Leader warns you when it is close.',
     ],
     fight: [
       'A main cannon that can destroy a vehicle in one hit.',
       'A roof machine gun for infantry.',
-      'Reactive armor that cuts rocket damage, so expect to need several.',
-      'Bullets do little or nothing.',
+      'Only rear hits do real damage, says one player who watched a fight; the front, sides and top barely mark it. Guides add the side (MW4Map) or the top (GamingProMax).',
+      'Reactive armor cut rocket damage in a preview build, so expect to need several rockets.',
+      'Bullets do little or nothing. Thermite is disputed: some guides list it with C4 and Drill Charges, one says it does little.',
     ],
     kill: [
-      'Gear up before you hunt it: a launcher for as many of you as possible, C4, Thermite or Drill Charges, and an Ammo Box for rocket refills.',
+      'Gear up before you hunt it: a launcher for as many of you as possible, C4 or Drill Charges, and an Ammo Box for rocket refills. Solo, one player says to bring a full rocket load and about two Ammo Boxes.',
       'Get out of your vehicle before it sees you.',
-      'Fight on foot from hard cover, never in the open.',
-      'Fire, duck back, refill from the Ammo Box and fire again until it goes up.',
-      'Loot the wreck and exfil.',
+      'Fight on foot and use buildings to block the main gun. One player draws its fire while the others flank.',
+      'Put your rockets into its rear, duck back, refill from the Ammo Box and fire again until it goes up.',
+      'Search the wreck front, rear and top (one guide says each can hold loot), then exfil.',
     ],
-    bring: ['Launchers, more than one in the squad', 'C4, Thermite or Drill Charges', 'The Ammo Box field upgrade', 'Full plates'],
-    avoid: ['Fighting it from inside a vehicle', 'Shooting it with rifles'],
-    loot: ['Nano-Structured Alloy, the only known source: the 3-Plate Helmet Armor Vest needs it', 'Sometimes Experimental Compounds'],
-    note: 'No guide has published a tested kill yet. These steps combine what each source says works on it.',
+    bring: ['Launchers, more than one in the squad', 'C4 or Drill Charges', 'The Ammo Box field upgrade', 'A Bombing Run if you have one', 'Full plates'],
+    avoid: ['Fighting it from inside a vehicle', 'Shooting it with rifles', 'Wasting rockets on the front', 'Counting on a bush to hide you once it has seen you'],
+    loot: [
+      'Nano-Structured Alloy, which guides name as its drop: the 3-Plate Helmet Armor Vest needs it. No player has named it as a tank drop yet.',
+      'One player with three kills names alloy plating, most likely Alloyed Plating',
+      'Sometimes Experimental Compounds',
+    ],
+    note: 'Players now report kills: one has killed three, and a single Bombing Run finished another that may already have been damaged.',
     confidence: 'reported',
-    sources: ['dmzcodex-tank', 'callofduty-call-of-duty-modern-warfare', 'codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes'],
+    sources: ['dmzcodex-tank', 'dmztracker-bosses-nk-battle-tank', 'callofduty-call-of-duty-modern-warfare', 'codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'mw4map-bosses', 'gamingpromax-bosses', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes', 'reddit-1xdvyoy', 'reddit-1xd5fv9', 'reddit-tips-killing-bosses-as-solo', 'reddit-1xbntwx'],
+    noVideo: 'No tank tutorial video yet',
   },
 ]
 export const bossPlaybook = id => bossPlaybooks.find(book => book.id === id)
+
+// Watch it done links for the Lieutenants as a group.
+export const LIEUTENANT_VIDEOS = [
+  { id: 'youtube-qubam_vtht8', why: 'All 13 bosses solo, chaptered by boss so you can jump to the one you need' },
+  { id: 'youtube-qw0fcgz8tgu', why: 'Solo kills on every Lieutenant, one after another' },
+  { id: 'youtube-lhzfrimdqz4', why: 'Finding and climbing a Hunt tower to mark the nearest Lieutenant' },
+  { id: 'youtube-2acpjmoofde', at: '24:02', why: 'The Lieutenant tower part of a chaptered DMZ tips video' },
+  { id: 'youtube-8hz69y4ln44', why: 'Where the Boss Board is and how paying for Lieutenant intel works' },
+]
 
 // Printer materials by name. A spot names a Hajin place, the room or building
 // and what to search there.
@@ -552,10 +668,11 @@ export const materialPlaybooks = [
     sources: [SPOTS, 'dmzcodex-dmz-biomaterials-binding-catalyst-guide', 'callofduty-call-of-duty-modern-warfare-2', 'callofduty-call-of-duty-modern-warfare', LEVELS],
   },
   {
-    name: 'High-Tenacity Fibers', rarity: 'Rare', hint: 'One find in a riverside barber shop; Songdo and Chang-san by the game\'s hint',
+    name: 'High-Tenacity Fibers', rarity: 'Rare', hint: 'A Songdo Wharf tower roof, the Re-Education Center basement and a riverside barber shop',
     spots: [
+      { pin: 'songdo-wharf', where: 'The rooftop of La Grande Vie, the tallest tower at the wharf (Low threat). The game\'s hint points here, and one player found them on the roof of a tall wharf tower.', search: 'Rooftop containers' },
+      { pin: 'fortress-re-education-center', where: 'The basement of the Re-Education Center in Deadtown (Medium threat). One player gets about two a run there.', search: 'Basement containers' },
       { where: 'One find: a little barber shop beside the road on the river\'s south bank, south of Wolves Stadium and Hajin River Heights (grid F8). Look for green walls, barber chairs and a long mirror. Its exact spot is not verified.', search: 'A blue duffel on the floor, back corner' },
-      { pin: 'songdo-wharf', where: 'The rooftop of La Grande Vie, the tallest tower at the wharf (Low threat). Game hint; no find published yet.', search: 'Rooftop containers' },
       { pin: 'chang-san-air-base', where: 'The armory and barracks (Extreme threat). Game hint.', search: 'Armory and barracks containers' },
     ],
     route: [
@@ -563,11 +680,11 @@ export const materialPlaybooks = [
       'Go west along the south river road to the barber shop at F8 and check the blue duffel.',
       'Exfil at the nearest active site.',
     ],
-    also: ['Colossus has dropped them', levelReward(53)],
+    also: ['Colossus has dropped them', levelReward(53), 'Otherwise players find them at random, about one a run'],
     print: 'Cannot be printed. Ballistic Fabric is printed from it.',
     note: 'Not the key-locked Old Barber Shop by the crab shack at Songdo Wharf. That is a different place.',
     confidence: 'reported',
-    sources: ['allthings-electronic-sensors-fibers', 'dmzcodex-sensors-fibers-guide', SPOTS, 'allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', LEVELS],
+    sources: ['allthings-electronic-sensors-fibers', 'dmzcodex-sensors-fibers-guide', SPOTS, 'reddit-1xbxnum', 'reddit-1xd3we9', 'youtube-6eu9cjjwxgg', 'allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', LEVELS],
   },
   {
     name: 'Nylon Cloth', rarity: 'Rare', hint: 'Citadel wings, Deadtown holding area, the casino nightclub',
@@ -683,12 +800,13 @@ export const materialPlaybooks = [
   {
     name: 'Alloyed Plating', rarity: 'Epic', hint: 'Print it from Structural Alloy',
     spots: [
-      { pin: 'chang-san-air-base', where: 'The hangars and repair bay (Extreme threat). Game hint.' },
+      { pin: 'chang-san-air-base', where: 'The hangars and repair bays (Extreme threat). The game\'s hint and DMZ Codex both name them, and one player rates the air base buildings his likeliest place.' },
     ],
+    also: ['One player with three tank kills and one Colossus kill found alloy plating each time, most likely this item'],
     print: 'Epic Ingredient Printing: 100 Metals and 3 Structural Alloy.',
-    note: 'Nobody has published a world find yet. The hint also names Bubun Yard, which no map places.',
+    note: 'No exact world spot is published yet. The hint also names Bubun Yard, which no map places.',
     confidence: 'reported',
-    sources: [SPOTS, RECIPES, HINTS],
+    sources: [SPOTS, RECIPES, HINTS, 'reddit-1xdvyoy'],
   },
   {
     name: 'Nylon Laminate', rarity: 'Epic', hint: 'Print it from Nylon Cloth',
@@ -731,7 +849,7 @@ export const materialPlaybooks = [
     sources: [SPOTS, 'codcentral-mw4-dmz-dynamic-ops', RECIPES],
   },
   {
-    name: 'Military Composites', rarity: 'Legendary', hint: 'Colossus only: kill him and extract',
+    name: 'Military Composites', rarity: 'Legendary', hint: 'Colossus, per guides: kill him and extract',
     spots: [
       { pin: 'fortress-the-citadel', where: 'Around The Citadel at the 14th Political Prison.', search: 'Colossus\'s scattered drops' },
       { pin: 'cheonwang-peak-array', where: 'The gate and the office hallways.' },
@@ -739,16 +857,16 @@ export const materialPlaybooks = [
       { pin: 'haneul-nuclear-reactor', where: 'The reactor yard in Operation Fallen Ember.' },
     ],
     route: [
-      'Plate up and bring lots of ammo. Explosives do nothing to him.',
-      'Check The Citadel, Cheonwang Peak Array and the Chang-san approach. He shows on the Tac-Map when you are close.',
+      'Plate up and bring lots of ammo, plus Thermite or Molotovs.',
+      'Run Iron Citadel, or check Cheonwang Peak Array and The Citadel. He shows on the Tac-Map when you are close.',
       'Kill him, search the whole area around the body, and move the drop to a Secure Slot.',
       'Exfil: it only counts once you extract.',
     ],
-    also: ['The drop varies: one kill gave Experimental Compounds and other ingredients instead'],
+    also: ['The drop varies: players report kills that paid the Boss Board cash but dropped no Military Composites'],
     print: 'Cannot be printed.',
-    note: 'One database has not had them from its own kill yet; five other sources name Colossus as the source.',
+    note: 'Guides name Colossus; players have not yet confirmed one from him.',
     confidence: 'confirmed',
-    sources: ['codcentral-mw4-dmz-boss-board', SPOTS, 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'allthings-how-to-beat-the-colossus', 'dmzcodex-colossus'],
+    sources: ['codcentral-mw4-dmz-boss-board', SPOTS, 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', 'reddit-1xclnhe'],
   },
   {
     name: 'Prototype RF Module', rarity: 'Unknown', hint: 'The Deathstalker only: shoot it down',
@@ -768,30 +886,31 @@ export const materialPlaybooks = [
     sources: ['codcentral-mw4-dmz-boss-board', SPOTS, 'dmzcodex-dmz-bosses-boss-board-guide', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'callofduty-call-of-duty-modern-warfare-2'],
   },
   {
-    name: 'Nano-Structured Alloy', rarity: 'Unknown', hint: 'The tank only: bring launchers',
+    name: 'Nano-Structured Alloy', rarity: 'Unknown', hint: 'The tank, per guides: bring launchers',
     spots: [
-      { pin: 'nurigo-mall', where: 'The streets around the mall. It patrols roads on the South Korean side.', search: 'The tank wreck' },
+      { pin: 'nurigo-mall', where: 'It patrols roads, mostly on the South Korean side; one database ties it to the mall area.', search: 'The tank wreck' },
     ],
     route: [
       'Bring launchers for several players and an Ammo Box.',
       'Get out of your vehicle before it sees you.',
-      'Fire from cover, duck back, refill and repeat.',
+      'Hit its rear from cover, duck back, refill and repeat.',
       'Loot the wreck and exfil.',
     ],
     print: 'Cannot be printed.',
-    note: 'Several sites name the tank as the source, but none describes a kill of its own yet.',
+    note: 'Guides name the tank; no player has named it as a tank drop yet.',
     confidence: 'reported',
-    sources: ['codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dmzcodex-tank', 'dmzcodex-dmz-bosses-boss-board-guide'],
+    sources: ['codcentral-mw4-dmz-boss-board', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', 'dmzcodex-tank', 'dmzcodex-dmz-bosses-boss-board-guide', HINTS, 'reddit-1xdvyoy'],
   },
   {
     name: 'Experimental Compounds', rarity: 'Legendary', hint: 'Sometimes dropped by Commanders',
     spots: [
-      { pin: 'fortress-the-citadel', where: 'One Colossus kill at The Citadel dropped one.', search: 'Colossus\'s scattered drops' },
+      { pin: 'fortress-the-citadel', where: 'One boss guide list, repeated by a database, names it as a Colossus drop here. Neither reports its own kill, and the list may mean the Chang-san barracks.', search: 'Colossus\'s scattered drops' },
       { pin: 'imjin-farmland', where: 'One found lying on a road.' },
     ],
+    also: ['One player with about ten Colossus kills got two (the report\'s item name is unclear)'],
     print: 'Cannot be printed.',
     confidence: 'reported',
-    sources: ['allthings-how-to-beat-the-colossus', 'gamerant-call-of-duty-cod-modern-3', 'insider-gaming-mw4-dmz-bosses', SPOTS],
+    sources: ['allthings-how-to-beat-the-colossus', 'gamerant-call-of-duty-cod-modern-3', 'dmztracker-bosses-colossus', 'insider-gaming-mw4-dmz-bosses', SPOTS, 'reddit-1xdvyoy'],
   },
   {
     name: 'Synthetics', rarity: 'Resource', hint: 'Breaks down from anything you loot',

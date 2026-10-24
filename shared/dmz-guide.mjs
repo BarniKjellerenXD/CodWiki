@@ -5,6 +5,9 @@
 
 import { dmzIntel, intelSources } from './dmz-intel.mjs'
 import { guideSources } from './dmz-guide-sources.mjs'
+import { mapReports, mapReportSources } from './dmz-map-reports.mjs'
+import { bossPlaybook } from './dmz-playbooks.mjs'
+import { BARRACKS, recipePlaybook } from './dmz-recipe-spots.mjs'
 
 const intel = id => dmzIntel.find(entry => entry.id === id)
 
@@ -38,10 +41,11 @@ export function intelSteps(id) {
 
 // ---------------------------------------------------------------- Content
 
-export const GUIDE_CHECKED = '22 Oct 2026'
-export const guideSource = id => intelSources[id] || guideSources[id]
+export const GUIDE_CHECKED = '24 Oct 2026'
+export const guideSource = id => intelSources[id] || guideSources[id] || mapReportSources[id]
 
-// Sources by id: Intel's own list first, then shared/dmz-guide-sources.mjs.
+// Sources by id: Intel's own list first, then shared/dmz-guide-sources.mjs,
+// then the map report sources.
 // Advice marked advice: true is CodWiki's reading of the sourced facts; its
 // confidence label covers the facts it rests on.
 
@@ -55,7 +59,7 @@ export const guideVests = [
   { id: '3-plate', name: '3-Plate Armor Vest', plates: 3, rarity: 'Epic', tier: 'mid', get: 'One at DMZ level 37, the Vendor ($50,000), or the printer once Orders unlock the recipe', intel: '3-plate-armor-vest' },
   { id: '3-plate-gel', name: '3-Plate Ballistic Gel Vest', plates: 3, rarity: 'Ultra', tier: 'late', get: 'Recipe found in Hajin; Commander parts', side: true },
   { id: '3-plate-helmet', name: '3-Plate Helmet Armor Vest', plates: 3, rarity: 'Ultra', tier: 'late', get: 'Recipe found in Hajin; Nano-Structured Alloy from the tank', side: true },
-  { id: 'tempered', name: 'Tempered Armor Vest', plates: 3, rarity: 'Ultra', tier: 'late', get: 'Recipe from The Doctor\'s Command Office; Military Composites from Colossus', intel: 'tempered-armor-vest-recipe', tempered: true },
+  { id: 'tempered', name: 'Tempered Armor Vest', plates: 3, rarity: 'Ultra', tier: 'late', get: 'Recipe from The Doctor\'s Command Office (not guaranteed); Military Composites from Colossus, per guides', intel: 'tempered-armor-vest-recipe', tempered: true },
 ]
 export const guideVestSources = ['callofduty-call-of-duty-modern-warfare-5', 'codcentral-mw4-dmz-3d-printer-recipes', 'codcentral-mw4-dmz-fob-guide', 'dmzcodex-dmz-armor-backpacks-guide', 'allthings-mw4-dmz-how-to-get']
 
@@ -126,19 +130,27 @@ export const guideSignIcons = {
   prestige: 'M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z',
 }
 
-// The way to the Tempered vest recipe, shared by the mid and late steps.
-const doctorOffice = [
-  'Find The Doctor at Mirae General Hospital with a Lieutenant Hunt tower or his Boss Board intel. He has been met in the wards, on a raised terrace and in the parking garage.',
-  'Take his Command Office key from the body and put it straight in a Secure Slot.',
-  'Go back into the hospital and up the stairs to the office floor, the 7th in one guide. Use the key on the double doors marked as his Command Office.',
-  'Open the large Lieutenant crate inside. It can hold the Tempered Armor Vest recipe, but guides do not agree that it always does.',
-  'Extract with the recipe to add it to your printer.',
-]
+// The way to the Tempered vest recipe lives in shared/dmz-recipe-spots.mjs;
+// the mid and late steps both read its how and fallback.
+const tempered = recipePlaybook('tempered-armor-vest-recipe')
+
+// A loot row for a reported site. Its name and sources come from the map
+// report, and the card shows the report's own where, squares and note, so the
+// guide never retypes them. extra.sources add to the report's.
+const reportById = new Map(mapReports.map(report => [report.id, report]))
+function reportRow(id, extra = {}) {
+  const report = reportById.get(id)
+  return { kind: 'listed', report: id, where: report?.name || id, ...extra, sources: [...new Set([...(report?.sources || []), ...(extra.sources || [])])] }
+}
 
 // The three stages of the game, early to late; the code calls each a tier.
 // signs tell you which stage you are in, armor being one of several, and
 // short sums them up for the picker. Steps run in order; "ready" is the
-// checklist for the next stage.
+// checklist for the next stage. videos are Watch it done links (VideoRef).
+// loot cards say where the loot is, in no order of worth: rows use the
+// sightings shape (shared/dmz-sightings.mjs) and point at a report, a place
+// or a layer; how, fallback and note are the card's own short text, intel
+// adds Intel drawer links, and sources back that text.
 export const guideTiers = [
   {
     id: 'early', name: 'Early', armor: '1–2 plate', vest: '2-plate', levels: 'DMZ level 1 to about 36',
@@ -196,6 +208,74 @@ export const guideTiers = [
       'You are close to DMZ level 37, which gives you a 3-plate.',
     ],
     readySources: ['codcentral-mw4-dmz-3d-printer-recipes', 'codcentral-mw4-dmz-fob-guide', 'callofduty-call-of-duty-modern-warfare-5'],
+    videos: [
+      { id: 'youtube-uhmkgffxbpu', why: 'A long beginner guide in chapters: the FOB, printer, Vendor, Secure Slots, Orders and which deployment to pick' },
+      { id: 'youtube-5l48scoonva', why: 'A short overview of how the new DMZ works, for players with no background' },
+      { id: 'youtube-ioiqlpz8wey', why: 'What to do first in the early game, then setup tips for keeping your first Operators alive' },
+      { id: 'youtube-glydmktlw5i', why: 'Early-game tips in chapters: playing solo, stealth, the Medium Backpack, looting fast and Lieutenants' },
+      { id: 'youtube-f4hvia-4-dc', at: '22:41', why: 'The loot locations chapter of a things-to-know-first video' },
+      { id: 'youtube-n0aygf1v8do', why: 'Tips to stop wasting time, including taking back enemy-held UAV Towers' },
+    ],
+    loot: [
+      {
+        id: 'loot-safes', title: 'Safes without a key',
+        rows: [
+          reportRow('cheonwang-peak-array-safes'),
+          { kind: 'listed', layer: 'compound', where: 'Any compound safe', search: 'Usually the main building or the top of the tower', sources: ['dmzcodex-dmz-safes-robbery-guide', 'mw4meta-safes-cash-farm', 'mw4meta-best-loot-spots', 'reddit-1xconmn', 'reddit-1xb1m4g'] },
+        ],
+        note: 'Gold Bars and Gold Skulls can turn up in ordinary safes, though never for sure. Keep any gold until you have checked your upgrades.',
+        how: [
+          'A safe is a small cube: hold interact on it to open it. There is no key, code or alarm. Safes with a handprint keypad are another kind.',
+          'Gunfire brings other squads, and one may have emptied the safe before you.',
+          'Before you sell a Gold Bar or Gold Skull, check the upgrade list at the 3D Printer. Skulls turn up in Stash upgrade costs, and one player says what each player is asked for can differ.',
+          'Park spare gold on a second Operator so it is not sold by accident.',
+        ],
+        intel: ['compounds', 'valuables'],
+        videos: [
+          { id: 'youtube-ap6kpzmgau8', why: 'Safes and server rooms in one run, from a video on farming Gold Bars from safes' },
+          { id: 'youtube-3vvrydq1yqq', why: 'A three-minute explainer on spotting a safe and opening it' },
+          { id: 'youtube-9crz7eenjxs', why: 'A compound safe opened for the Robbery Order' },
+        ],
+        sources: ['mw4meta-best-loot-spots', 'yahoo-gamespot-hot-spots', 'reddit-1xdvyoy', 'reddit-1xcncgm', 'reddit-1xcplj1', 'dmztracker-valuables', 'dmztracker-items-gold-bar', 'dmzcodex-loot-keep-sell-craft', 'reddit-1xconmn', 'reddit-1xb1m4g'],
+      },
+      {
+        id: 'loot-free-kit', title: 'Free kit',
+        rows: [
+          { kind: 'listed', layer: 'fire', where: 'Any fire station', note: 'Players find parachutes, gas masks, a bag and a 1-plate vest.', sources: ['reddit-1xbxnum', 'reddit-where-are-the-parachutes'] },
+          { kind: 'listed', where: 'Small military camps', search: 'Unmarked tents and encampments with trucks and crates', note: 'Plate carriers, bags and parachutes have turned up.', sources: ['reddit-1xcq7w7', 'reddit-where-are-the-parachutes'] },
+        ],
+        how: [
+          'Start at a fire station, then sweep the small camps near it.',
+          'Open any weapons locker on your way: two players found purple 2-plate vests in them.',
+        ],
+        intel: ['fire-stations', 'plate-carriers'],
+        noVideo: 'No free-kit video linked yet',
+        sources: ['reddit-1xbvee8', 'reddit-1xbr015'],
+      },
+      {
+        id: 'loot-train', title: 'The train',
+        rows: [
+          { kind: 'listed', where: 'The passenger train', search: 'Duffel bags, suitcases, jackets, first aid kits, lockers and two supply crates', sources: ['mw4meta-best-loot-spots', 'mw4meta-safes-cash-farm', 'yahoo-gamespot-hot-spots'] },
+        ],
+        how: [
+          'You loot it while it moves. One run parachuted onto the roof to get on.',
+          'Work through it car by car, small containers on and between the seats included. Duffel bags are slow to open.',
+          'Do not skip the front car: its supply crate and a locker have given a gun and Ballistic Fabric.',
+          'Ride it across the map and get off near your next stop; one run used it to get between compounds.',
+        ],
+        intel: ['train'],
+        videos: [
+          { id: 'youtube-adhcn7se7pw', why: 'Clearing compounds, then looting the train' },
+          { id: 'youtube-f4hvia-4-dc', at: '34:47', why: 'The train chapter at the end of a things-to-know-first video' },
+        ],
+        sources: ['mw4meta-best-loot-spots', 'mw4meta-safes-cash-farm', 'dmztracker-vehicles-train', 'gamerant-weapon-manuals-location-get', 'reddit-1xbxnum', 'reddit-1xchsle'],
+      },
+      {
+        id: 'loot-first-route', title: 'A first loot route',
+        rows: [reportRow('nurigo-east-loot-route')],
+        noVideo: 'No video of this route linked yet',
+      },
+    ],
   },
   {
     id: 'mid', name: 'Mid', armor: '3-plate', vest: '3-plate', levels: 'From about DMZ level 37',
@@ -217,7 +297,7 @@ export const guideTiers = [
       { id: 'lieutenants', title: 'Hunt Lieutenants in order', when: 'Once the Boss Board opens', text: 'Each one guards materials you need, and each extracted Dog Tag Case pays $25,000. A Lieutenant Hunt tower marks the nearest one for free.', intel: ['lieutenants', 'boss-board', 'lieutenant-hunt-towers'], how: ['Free: climb a Lieutenant Hunt tower, a tall radio mast with a yellow ladder and a skull icon on the Tac-Map. Use the laptop at the top and the nearest active Lieutenant\'s area is marked.', 'Towers stay put from match to match; the Hajin map here marks five. A tower picks the nearest active Lieutenant, so you cannot choose who.', 'Paid: buy a Lieutenant\'s intel on the Boss Board for $25,000. It lasts one deployment.', 'Pick your exfil before you take the Dog Tag Case: it shows you to every squad until you extract.'], confidence: 'confirmed', sources: ['codcentral-mw4-dmz-boss-board', 'callofduty-call-of-duty-modern-warfare', 'dmzcodex-dmz-bosses-boss-board-guide', 'callofduty-call-of-duty-modern-warfare-2', 'allthings-mw4-dmz-how-to-complete', 'codmunity-lt-towers', 'allthings-what-the-boss-board-is'] },
       { id: 'tier-2', title: 'Clear the Tier 2 Story Missions', when: 'With a squad in 3-plates', text: 'Iron Citadel and Grid Assault are Critical threat. They unlock the LTV and Helicopter infils and Roze\'s armory key.', intel: ['operation-iron-citadel', 'operation-grid-assault'], how: ['Both open after the three Tier 1 missions. Go with a full squad in 3-plates, with a Medkit and an Ammo Box.', 'Iron Citadel (Chang-san): find and upgrade the access card, crack the six-digit armory code from three notes, then mine three jets. Expect Colossus in the armory corridor and a hard hold at the SAM site.', 'Grid Assault (The Grid): hack the drone laptop, collect two code halves, which move between runs, and broadcast from the roof antenna. The Deathstalker strafes the roof, so stay under cover.'], confidence: 'confirmed', sources: ['codcentral-mw4-dmz-operation-iron-citadel', 'allthings-operation-iron-citadel-story-mission', 'dmzcodex-dmz-keys-loot-rooms-guide', 'allthings-call-of-duty-modern-warfare-5', 'codcentral-mw4-dmz-operation-grid-assault'] },
       { id: 'uncommon-print', title: 'Build Bank Upgrade II, then Uncommon Ingredient Printing', when: 'Later in mid game', text: 'Uncommon printing costs $50,000, 20 Biomaterials, 10 High-Tenacity Fibers and 5 Comms Modules. After it, Reactive Metals and Rigid Synthetics print from basic resources.', intel: ['bank-cap', 'fob-upgrades'], how: ['Open the 3D Printer, then Upgrades.', 'Bank Upgrade II costs $50,000. Uncommon Ingredient Printing costs $50,000, 20 Biomaterials, 10 High-Tenacity Fibers and 5 Comms Modules.', 'Hold to upgrade once every cost shows green.'], confidence: 'confirmed', sources: ['codcentral-mw4-dmz-3d-printer-recipes', 'codcentral-mw4-dmz-fob-guide', 'allthings-how-to-increase-stash-space'] },
-      { id: 'tempered-recipe', title: 'Take the Tempered vest recipe early', when: 'Any time', text: 'The Doctor\'s Command Office key opens a Lieutenant crate that has held the Tempered Armor Vest recipe. Extract it now and print the vest in the late game.', intel: ['the-doctor', 'the-doctors-command-office', 'tempered-armor-vest-recipe'], how: doctorOffice, confidence: 'confirmed', sources: ['allthings-mw4-dmz-how-to-get', 'allthings-mw4-dmz-how-to-beat', 'allthings-modern-warfare-4-dmz-key', 'dmzcodex-dmz-keys-loot-rooms-guide'] },
+      { id: 'tempered-recipe', title: 'Take the Tempered vest recipe early', when: 'Any time', text: 'The Doctor\'s Command Office key opens a Lieutenant crate that has held the Tempered Armor Vest recipe. Extract it now and print the vest in the late game.', intel: ['the-doctor', 'the-doctors-command-office', 'tempered-armor-vest-recipe'], how: tempered.how, fallback: tempered.fallback, confidence: 'confirmed', sources: ['allthings-mw4-dmz-how-to-get', 'allthings-mw4-dmz-how-to-beat', 'allthings-modern-warfare-4-dmz-key', 'dmzcodex-dmz-keys-loot-rooms-guide', 'dmzcodex-recipes-tempered-armor-vest', 'dmzcodex-the-doctors-command-office', 'xboxplay-get-tempered-armor-vest', 'reddit-third-successful-extraction-somehow-got'] },
       { id: 'grid-lts', title: 'Finish with Jang-ui and Roze', when: 'End of mid game', text: 'The two hardest Lieutenants, in the Extreme and Critical parts of The Grid. Killing all ten completes the Boss Board\'s first challenge.', intel: ['jang-ui', 'roze'], confidence: 'confirmed', sources: ['allthings-call-of-duty-modern-warfare-13', 'allthings-call-of-duty-modern-warfare-12', 'codcentral-mw4-dmz-boss-board'] },
     ],
     // Lieutenants in the order a mid-game squad can take them: easiest ground first.
@@ -267,6 +347,33 @@ export const guideTiers = [
       'Your squad clears the casino, The Citadel and Chang-san in 3-plates without wiping.',
     ],
     readySources: ['codcentral-mw4-dmz-3d-printer-recipes', 'callofduty-call-of-duty-modern-warfare-5', 'callofduty-call-of-duty-modern-warfare'],
+    loot: [
+      {
+        id: 'loot-manuals', title: 'Weapon Manual spots',
+        rows: [
+          reportRow('chang-san-barracks', { how: BARRACKS.how, fallback: BARRACKS.fallback }),
+          { kind: 'listed', where: 'Duffel bags on the train', note: 'One manual came out of a duffel bag as the train passed Cheongun Outskirts.', sources: ['dmztracker-vehicles-train', 'gamerant-weapon-manuals-location-get'] },
+        ],
+        intel: ['weapon-manuals', 'operation-iron-citadel', 'train'],
+        // The barracks how-to comes from the recipe spots, so its sources do too.
+        sources: BARRACKS.sources,
+        videos: [
+          { id: 'youtube-heipr3lrytk', why: 'A three-minute solo route for Weapon Manuals from a fresh start, easy to follow on screen' },
+          { id: 'youtube-bk7v9jthxws', why: 'Why extracting Weapon Manuals, at $5,000 each, builds cash quickly' },
+        ],
+      },
+      {
+        id: 'loot-casino', title: 'The casino vault',
+        rows: [
+          reportRow('casino-vault-run'),
+          reportRow('heavenly-luck-casino-basement-vault', { kind: 'mission', mission: 'operation-silent-ledger', where: 'Silent Ledger cash bags', seen: 1, sources: ['dmztracker-valuables'] }),
+        ],
+      },
+      {
+        id: 'loot-reactor', title: 'The reactor, no key needed',
+        rows: [reportRow('haneul-reactor-loot-route')],
+      },
+    ],
   },
   {
     id: 'late', name: 'Late', armor: 'Ultra', vest: 'tempered', levels: 'No level gate',
@@ -280,22 +387,23 @@ export const guideTiers = [
       { label: 'Bank', text: 'Upgrade III: a $1 million cap' },
     ],
     steps: [
-      { id: 'tempered', title: 'Extract the Tempered vest recipe', when: 'First', text: 'Kill The Doctor, take his Command Office key, open the Lieutenant crate and extract the recipe in a Secure Slot. Not every kill drops the key.', intel: ['the-doctor', 'tempered-armor-vest-recipe'], how: doctorOffice, confidence: 'confirmed', sources: ['allthings-mw4-dmz-how-to-get', 'dmztracker-tempered-armor-vest', 'dmzcodex-dmz-armor-backpacks-guide', 'allthings-mw4-dmz-how-to-beat', 'allthings-modern-warfare-4-dmz-key', 'dmzcodex-dmz-keys-loot-rooms-guide'] },
-      { id: 'colossus', title: 'Kill Colossus for Military Composites', when: 'Squad in 3-plates', text: 'He is the only source. The Tempered vest needs 2 and Epic Ingredient Printing needs 5. Use bullets in the pauses between his bursts; explosives do little.', intel: ['colossus', 'commanders'], how: ['Check the prison and The Citadel, the Chang-san approach and Cheonwang Peak Array. He shows on the Tac-Map once you are close; Fallen Ember also puts him at the reactor.', 'Hold hard cover with height and let him walk to you.', 'Peek in the pauses between his minigun bursts and aim for the head. Explosives do nothing.', 'Search around the body, then exfil: the Military Composites only count once you extract.'], confidence: 'confirmed', sources: ['allthings-how-to-beat-the-colossus', 'codcentral-mw4-dmz-boss-board', 'codcentral-mw4-dmz-ingredient-locations', 'codcentral-mw4-dmz-operation-iron-citadel', 'codcentral-mw4-dmz-operation-fallen-ember', 'gamespot-mw4-dmz-tips', 'callofduty-call-of-duty-modern-warfare'] },
-      { id: 'fallen-ember', title: 'Clear Operation Fallen Ember', when: 'After Tier 2', text: 'Extreme threat at the reactor. Wear the hazmat suits and carry Radiation Blockers. It pays the Cargo Plane infil and a key to the Reactor DRC Locker, said to hold one Ultra item.', intel: ['operation-fallen-ember', 'reactor-drc-locker'], how: ['It opens after Iron Citadel and Grid Assault. Bring 3-plates, a Medkit, Gas Masks, Radiation Blockers and spare plates.', 'Hazmat suits hang in Fire Stations and around the reactor, one in the Reactor 01 control room. Get one per player; a Radiation Blocker lasts about a minute.', 'Release the Reactor 01 lockdown, then fetch three fuel rods: the console shows a grid code, you dive to the matching container in the pool and confirm at the console. One player reads codes while another dives.', 'Carry the rods to the Reactor 02 decontamination station and defend the room.', 'At the warhead, plate up and fight the waves, then Colossus. He drops the boathouse key.', 'Take the patrol boat from the boathouse to the chopper, one player driving and one on the gun. Then exfil as normal to keep your loot.'], confidence: 'confirmed', sources: ['codcentral-mw4-dmz-operation-fallen-ember', 'allthings-call-of-duty-modern-warfare-7', 'gamerant-mw4-dmz-reactor-drc-locker', 'dmzcodex-operation-fallen-ember', 'dmzcodex-dmz-radiation-gas-mask-guide'] },
+      { id: 'tempered', title: 'Extract the Tempered vest recipe', when: 'First', text: 'Kill The Doctor, take his Command Office key, open the Lieutenant crate and extract the recipe in a Secure Slot. Not every kill drops the key.', intel: ['the-doctor', 'tempered-armor-vest-recipe'], how: tempered.how, fallback: tempered.fallback, confidence: 'confirmed', sources: ['allthings-mw4-dmz-how-to-get', 'dmztracker-tempered-armor-vest', 'dmzcodex-dmz-armor-backpacks-guide', 'allthings-mw4-dmz-how-to-beat', 'allthings-modern-warfare-4-dmz-key', 'dmzcodex-dmz-keys-loot-rooms-guide', 'dmzcodex-recipes-tempered-armor-vest', 'dmzcodex-the-doctors-command-office', 'xboxplay-get-tempered-armor-vest', 'reddit-third-successful-extraction-somehow-got'] },
+      { id: 'colossus', title: 'Hunt Colossus for Military Composites', when: 'Squad in 3-plates', text: 'Guides name him as the source and players report nothing guaranteed. Two players say fire works; whether other explosives hurt him is disputed. Look first in the story missions, then Cheonwang Peak Array or The Citadel.', intel: ['colossus', 'commanders'], how: ['He is always in Iron Citadel, in the Chang-san bunker and armory, and in the Fallen Ember warhead fight.', 'In free roam, try Cheonwang Peak Array (Medium threat) before The Citadel (Critical). He shows on the Tac-Map once you are close.', 'Hold hard cover with height, such as stairs, a roof or a truck bed, and let him walk to you.', 'Peek in the pauses between his minigun bursts and aim for the head. Throw Thermite or Molotovs in the pauses too.', 'Wait for the gas from his canister to clear, search around the body, then exfil: drops only count once you extract.'], confidence: 'confirmed', sources: ['allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', 'codcentral-mw4-dmz-boss-board', 'codcentral-mw4-dmz-ingredient-locations', 'codcentral-mw4-dmz-operation-iron-citadel', 'codcentral-mw4-dmz-operation-fallen-ember', 'yahoo-gamespot-hot-spots', 'gamesgg-boss-locations', 'gamespot-mw4-dmz-tips', 'callofduty-call-of-duty-modern-warfare', 'reddit-1xdvyoy', 'reddit-ai-make-no-footstep-sounds', 'reddit-1xclnhe'] },
+      { id: 'fallen-ember', title: 'Clear Operation Fallen Ember', when: 'After Tier 2', text: 'Extreme threat at the reactor. Wear the hazmat suits and carry Radiation Blockers. It pays the Cargo Plane infil and a key to the Reactor DRC Locker, said to hold one Ultra item.', intel: ['operation-fallen-ember', 'reactor-drc-locker'], how: ['It opens after Iron Citadel and Grid Assault. Bring 3-plates, a Medkit, Gas Masks, Radiation Blockers and spare plates.', 'Hazmat suits hang in Fire Stations and around the reactor, one in the Reactor 01 control room. Get one per player; a Radiation Blocker lasts about a minute.', 'Release the Reactor 01 lockdown, then fetch three fuel rods: the console shows a grid code, you dive to the matching container in the pool and confirm at the console. One player reads codes while another dives.', 'Carry the rods to the Reactor 02 decontamination station and defend the room.', 'At the warhead, plate up and fight the waves, then Colossus. In a reported run he dropped the boathouse key.', 'Take the patrol boat from the boathouse to the chopper, one player driving and one on the gun. Then exfil as normal to keep your loot.'], confidence: 'confirmed', sources: ['codcentral-mw4-dmz-operation-fallen-ember', 'allthings-call-of-duty-modern-warfare-7', 'gamerant-mw4-dmz-reactor-drc-locker', 'dmzcodex-operation-fallen-ember', 'dmzcodex-dmz-radiation-gas-mask-guide'] },
       { id: 'epic-print', title: 'Build Epic Ingredient Printing', when: 'Once you hold the parts', text: '$100,000, 10 Binding Catalysts, 10 Printed Circuit Boards and 5 Military Composites. After it, Ballistic Fabric and the other Epic parts print from basic resources.', intel: ['fob-upgrades'], how: ['Open the 3D Printer, then Upgrades, and pick Epic Ingredient Printing.', 'It needs $100,000, 10 Binding Catalysts, 10 Printed Circuit Boards and 5 Military Composites from Colossus.'], confidence: 'reported', sources: ['codcentral-mw4-dmz-3d-printer-recipes', 'codcentral-mw4-dmz-ingredient-locations', 'allthings-how-to-increase-stash-space', 'codcentral-mw4-dmz-fob-guide'] },
-      { id: 'commanders', title: 'Take down the Deathstalker and the tank', when: 'For Ultra backpacks', text: 'The Deathstalker drops Prototype RF Modules for the Large Secure Backpack: capture a SAM Site and let it shoot. The tank drops Nano-Structured Alloy for the Ultra Helmet vest, and only explosives hurt it.', intel: ['deathstalker', 'main-nk-battle-tank', 'sam-sites'], how: ['Deathstalker: capture a SAM site near The Grid or NuriGO Mall first and stay by it. Hide from gun runs under cover and shoot the cockpit between runs.', 'Tank: bring launchers for several players and an Ammo Box, leave your vehicle before it sees you and fire from hard cover.', 'Search the wrecks, then exfil to keep the parts.'], confidence: 'reported', sources: ['dmzcodex-deathstalker', 'gamerant-call-of-duty-cod-modern-3', 'codcentral-mw4-dmz-boss-board', 'callofduty-call-of-duty-modern-warfare-2', 'allthings-call-of-duty-modern-warfare-5', 'dmzcodex-tank', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes'] },
+      { id: 'commanders', title: 'Take down the Deathstalker and the tank', when: 'For Ultra backpacks', text: 'The Deathstalker drops Prototype RF Modules for the Large Secure Backpack: capture a SAM site and let it shoot; it may flare several missiles before one hits. Hit the tank in the rear, not the front. Guides name Nano-Structured Alloy, for the Ultra Helmet vest, as its drop; no player has named it yet.', intel: ['deathstalker', 'main-nk-battle-tank', 'sam-sites'], how: ['Deathstalker: capture a SAM site near The Grid or NuriGO Mall first and stay by it. It may flare several missiles before one hits.', 'Hide from its gun runs under cover and shoot the cockpit between runs.', 'Tank: bring launchers for several players and an Ammo Box, and leave your vehicle before it sees you.', 'Use buildings to block its main gun while one player draws its fire, and put your rockets into its rear, not the front.', 'Search the wrecks, then exfil to keep the parts. Nothing is guaranteed.'], confidence: 'reported', sources: ['dmzcodex-deathstalker', 'gamerant-call-of-duty-cod-modern-3', 'codcentral-mw4-dmz-boss-board', 'callofduty-call-of-duty-modern-warfare-2', 'allthings-call-of-duty-modern-warfare-5', 'reddit-tips-killing-bosses-as-solo', 'dmzcodex-tank', 'mw4map-bosses', 'reddit-1xd5fv9', 'reddit-1xdvyoy', 'codcentral-mw4-dmz-ingredient-locations', 'destructoid-3d-printer-recipes'] },
       { id: 'print-ultra', title: 'Print your Ultra vest', when: 'When the parts are in', text: 'The Tempered vest takes 2 Military Composites, 4 Ballistic Fabric and 10 Rigid Synthetics. Keep the materials for a second one before you wear the first.', intel: ['tempered-armor-vest-recipe'], advice: true, confidence: 'confirmed', sources: ['codcentral-mw4-dmz-3d-printer-recipes', 'allthings-mw4-dmz-how-to-get'] },
       { id: 'bank-3', title: 'Raise the Bank to $1 million', when: 'Before Prestige', text: 'Bank Upgrade III costs $100,000 and 5 Infantry Invasion Plans, which Gorani and the Scavenger drop. Prestige costs up to $500,000.', intel: ['bank-cap'], how: ['Open the 3D Printer, then Upgrades. Bank Upgrade III appears once Bank Upgrade II is built.', 'Hold to upgrade once you have the cash and all 5 Infantry Invasion Plans.'], confidence: 'reported', sources: ['codcentral-mw4-dmz-fob-guide', 'callofduty-call-of-duty-modern-warfare', 'allthings-how-to-increase-stash-space'] },
       { id: 'prestige', title: 'Prestige your Operators', when: 'At 18 Trait Points', text: 'At Onyx III, trade cash, two guns and gear for a random permanent Prestige Trait, up to three. Empty the backpack first: Prestige takes what is equipped.', intel: ['operator-prestige', 'permanent-prestige-traits'], how: ['Get one Operator to Onyx III, 18 Trait Points earned. The Operator must not be MIA.', 'Equip what the first Prestige asks for: two Rare guns with three attachment slots, a Rare vest, a Rare backpack and four Rare printer ingredients, plus $200,000 in the Bank.', 'Move anything you want to keep off that Operator first.', 'Pick Prestige at the Operators station. Traits reset and a random Permanent Prestige Trait is added.', 'Later Prestiges ask for Epic gear and $300,000, then Legendary gear and $500,000.'], confidence: 'official', sources: ['callofduty-call-of-duty-modern-warfare', 'gamerant-cod-mw4-dmz-prestige-unlocks', 'codcentral-mw4-dmz-fob-guide'] },
       { id: 'endgame', title: 'Finish the Boss Board and reach level 70', when: 'Endgame', text: 'Extract every Lieutenant and Commander tag. Level 70 adds 18 Stash slots, double bounty payouts and a Legendary Advanced SERE Kit.', intel: ['boss-board', 'level-unlocks-1-to-70', 'king-slayer'], how: ['Lieutenant challenges: kill all ten once, then extract each one\'s tag twice and five times.', 'A Commander counts once you kill it and extract.'], confidence: 'official', sources: ['callofduty-call-of-duty-modern-warfare-5', 'codcentral-mw4-dmz-boss-board', 'allthings-what-the-boss-board-is'] },
     ],
+    // Commander pins come from their playbooks in shared/dmz-playbooks.mjs.
     hunt: [
-      { intel: 'colossus', pins: ['14th-political-prison', 'cheonwang-peak-array', 'chang-san-air-base'], why: 'Military Composites: the Tempered vest and Epic Ingredient Printing.' },
-      { intel: 'deathstalker', pins: ['nurigo-mall', 'dbn-headquarters'], why: 'Prototype RF Modules: the Large Secure Backpack.' },
-      { intel: 'main-nk-battle-tank', pins: ['nurigo-mall'], why: 'Nano-Structured Alloy: the Ultra 3-plate Helmet vest.' },
+      { intel: 'colossus', pins: bossPlaybook('colossus').pins, why: 'Military Composites, per guides: the Tempered vest and Epic Ingredient Printing.' },
+      { intel: 'deathstalker', pins: bossPlaybook('deathstalker').pins, why: 'Prototype RF Modules: the Large Secure Backpack.' },
+      { intel: 'main-nk-battle-tank', pins: bossPlaybook('main-nk-battle-tank').pins, why: 'Nano-Structured Alloy, per guides: the Ultra 3-plate Helmet vest.' },
     ],
-    huntSources: ['allthings-how-to-beat-the-colossus', 'dmzcodex-deathstalker', 'codcentral-mw4-dmz-boss-board', 'codcentral-mw4-dmz-ingredient-locations'],
+    huntSources: ['allthings-how-to-beat-the-colossus', 'dmzcodex-colossus', 'dmzcodex-deathstalker', 'dmzcodex-tank', 'codcentral-mw4-dmz-boss-board', 'codcentral-mw4-dmz-ingredient-locations'],
     print: [
       { name: 'Tempered Armor Vest', cost: '2 Military Composites · 4 Ballistic Fabric · 10 Rigid Synthetics', unlock: 'Found recipe', why: 'Ultra plates', intel: 'tempered-armor-vest-recipe' },
       { name: 'Large Secure Backpack', cost: '2 Prototype RF Modules · 4 Alloyed Plating · 10 Rigid Synthetics', unlock: 'Found recipe', why: 'More Secure Slots' },
@@ -303,30 +411,68 @@ export const guideTiers = [
     ],
     printSources: ['codcentral-mw4-dmz-3d-printer-recipes', 'dmztracker-crafting'],
     farm: [
-      { name: 'Military Composites', rarity: 'Legendary', where: 'Colossus only, kept when you extract', pins: ['14th-political-prison'], for: 'Tempered vest (2), Epic Ingredient Printing (5)' },
-      { name: 'Prototype RF Module', rarity: 'Unknown', where: 'The Deathstalker only', pins: ['dbn-headquarters'], for: 'Large Secure Backpack (2)' },
-      { name: 'Nano-Structured Alloy', rarity: 'Unknown', where: 'The tank only', pins: ['nurigo-mall'], for: '3-plate Helmet vest (2)' },
+      { name: 'Military Composites', rarity: 'Legendary', where: 'Colossus, per guides; not yet confirmed by players', pins: bossPlaybook('colossus').pins, for: 'Tempered vest (2), Epic Ingredient Printing (5)' },
+      { name: 'Prototype RF Module', rarity: 'Unknown', where: 'The Deathstalker only', pins: bossPlaybook('deathstalker').pins, for: 'Large Secure Backpack (2)' },
+      { name: 'Nano-Structured Alloy', rarity: 'Unknown', where: 'The tank, per guides', pins: bossPlaybook('main-nk-battle-tank').pins, for: '3-plate Helmet vest (2)' },
       { name: 'Ballistic Fabric', rarity: 'Epic', where: 'Chang-san armory and barracks, or print it after Epic Ingredient Printing', pins: ['chang-san-air-base'], for: 'Tempered vest (4)' },
     ],
-    farmSources: ['codcentral-mw4-dmz-ingredient-locations', 'codcentral-mw4-dmz-3d-printer-recipes'],
+    farmSources: ['codcentral-mw4-dmz-ingredient-locations', 'codcentral-mw4-dmz-3d-printer-recipes', 'dmzcodex-colossus', 'dmzcodex-tank', 'reddit-1xclnhe'],
     places: { go: ['chang-san-air-base', 'the-grid', 'haneul-nuclear-reactor', '14th-political-prison'], avoid: [] },
     placesSources: ['callofduty-call-of-duty-modern-warfare-2', 'codcentral-mw4-dmz-operation-iron-citadel'],
     mistakes: [
       'Wearing Ultra gear you cannot rebuild. Only Secure Slot items survive a failed exfil.',
       'Killing a Commander and dying before exfil. The parts only count once you extract.',
-      'Throwing explosives at Colossus, or bullets at the tank.',
+      'Shooting the tank from the front: the rear is its weak spot.',
       'Leaving gear equipped when you Prestige. Everything in the backpack and loadout is used up.',
     ],
-    mistakeSources: ['callofduty-call-of-duty-modern-warfare', 'allthings-how-to-beat-the-colossus', 'gamerant-call-of-duty-cod-modern-3'],
+    mistakeSources: ['callofduty-call-of-duty-modern-warfare', 'reddit-1xd5fv9', 'mw4map-bosses'],
     ready: [],
     readySources: [],
+    loot: [
+      {
+        id: 'loot-bunker', title: 'The Supreme Leader\'s Bunker',
+        rows: [reportRow('supreme-leaders-bunker')],
+        how: [
+          'The access card is reported as an Operation Iron Citadel reward. Keep it in a Secure Slot; one guide says it opens the door once.',
+          'Inside, check the chest to the left of the bedroom, which one guide says always holds a Legendary weapon, then the lockers and the weapon room.',
+        ],
+        intel: ['operation-iron-citadel'],
+        sources: ['gamerant-supreme-leader-bunker-location', 'mw4meta-best-loot-spots'],
+      },
+      {
+        id: 'loot-drc', title: 'The DRC lockers',
+        rows: [reportRow('reactor-drc-locker'), reportRow('shopping-drc-locker-drc-labs-under-nurigo'), reportRow('air-base-drc-weapons-locker')],
+        note: 'Each locker takes its own key. In game all three show as Elite Weapons Lockers.',
+        noVideo: 'No DRC locker video linked yet',
+        sources: ['dmzcodex-drc-lockers', 'dmzcodex-air-base-drc-locker', 'dmzcodex-shopping-drc-locker-guide', 'mw4meta-best-loot-spots'],
+      },
+      {
+        id: 'loot-irradiated', title: 'Irradiated Containers',
+        rows: [reportRow('reactor-02-decontamination-machine')],
+        note: 'Bring Radiation Gear and a Gas Mask.',
+        noVideo: 'No decontamination video linked yet',
+      },
+      {
+        id: 'loot-silos', title: 'Missile silo bunkers',
+        rows: [reportRow('silo-bunkers-chang-san'), reportRow('silo-bunkers-prison')],
+        noVideo: 'No silo bunker video linked yet',
+      },
+    ],
   },
 ]
 export const guideTier = id => guideTiers.find(tier => tier.id === id)
+// Everything a stage's loot cards cite: their rows, then the cards' own text.
+export const guideLootSources = tier => [...new Set((tier.loot || []).flatMap(card => [...card.rows.flatMap(row => row.sources), ...(card.sources || [])]))]
 export const guideTierSources = tier => [...new Set([
   ...tier.steps.flatMap(step => step.sources), ...tier.printSources, ...tier.farmSources, ...tier.placesSources,
-  ...tier.mistakeSources, ...tier.readySources, ...(tier.huntSources || []),
+  ...tier.mistakeSources, ...tier.readySources, ...(tier.huntSources || []), ...guideLootSources(tier),
 ])]
+// A loot card's Watch it done links: its own first, then any its reports
+// carry, each video once.
+export function guideLootVideos(card) {
+  const refs = [...(card.videos || []), ...card.rows.flatMap(row => (row.report && reportById.get(row.report)?.videos) || [])]
+  return refs.filter((ref, index) => refs.findIndex(other => other.id === ref.id) === index)
+}
 
 // ---------------------------------------------------------------- Progress
 

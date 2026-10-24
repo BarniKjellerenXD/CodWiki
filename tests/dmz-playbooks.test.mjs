@@ -3,8 +3,9 @@ import assert from 'node:assert/strict'
 import { bossPlaybooks, bossPlaybook, materialPlaybooks, materialSpots } from '../shared/dmz-playbooks.mjs'
 import { guideTiers, guideSource } from '../shared/dmz-guide.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
-import { hajinPin } from '../shared/dmz-map.mjs'
+import { hajinPin, hajinReports } from '../shared/dmz-map.mjs'
 import { bossGroups } from '../shared/dmz-stations.mjs'
+import { anySource } from '../shared/dmz-sightings.mjs'
 
 const intelIds = new Set(dmzIntel.map(entry => entry.id))
 const CONFIDENCE = ['official', 'confirmed', 'reported']
@@ -26,6 +27,28 @@ test('boss playbooks name real Intel, places and sources, and say how to kill', 
     for (const id of book.sources) assert.ok(guideSource(id)?.url, `${book.id} source ${id}`)
     assert.ok(CONFIDENCE.includes(book.confidence), book.id)
     assert.ok(book.find.length && book.kill.length >= 3 && book.loot.length, book.id)
+  }
+})
+
+test('Commander where rows and Watch it done links cite real sources', () => {
+  const commanders = bossPlaybooks.filter(book => book.where)
+  assert.deepEqual(commanders.map(book => book.id), ['colossus', 'deathstalker', 'main-nk-battle-tank'])
+  for (const book of commanders) {
+    assert.ok(book.lead, book.id)
+    for (const row of book.where) {
+      assert.ok(row.sources.length, `${book.id}: ${row.where}`)
+      for (const id of row.sources) assert.ok(anySource(id)?.url, `${book.id}: ${row.where} source ${id}`)
+      for (const video of row.videos || []) assert.equal(anySource(video.id)?.type, 'video', `${book.id}: ${row.where} video ${video.id}`)
+    }
+    // A report row's anchor is a real place, so the mini-map can show it.
+    for (const row of book.where.filter(item => item.report)) {
+      const anchor = hajinReports.find(report => report.id === row.report)?.anchor
+      assert.ok(hajinPin(anchor), `${book.id}: ${row.report}`)
+    }
+  }
+  for (const book of bossPlaybooks) {
+    for (const video of book.videos || []) assert.equal(anySource(video.id)?.type, 'video', `${book.id} video ${video.id}`)
+    assert.ok(!(book.videos?.length && book.noVideo), `${book.id} has videos and a no-video line`)
   }
 })
 
@@ -72,7 +95,12 @@ test('guide steps with a how list cite where it came from', () => {
 test('guide-only sources do not repeat an Intel source under another id', async () => {
   const { intelSources } = await import('../shared/dmz-intel.mjs')
   const { guideSources } = await import('../shared/dmz-guide-sources.mjs')
-  const norm = url => url.replace(/^https?:\/\/(www\.)?/, '').replace(/[#?].*$/, '').replace(/\/$/, '').toLowerCase()
+  // One page per URL, query and fragment aside, except that each YouTube v= id is its own page.
+  const norm = url => {
+    const link = new URL(url)
+    const video = /(^|\.)youtube\.com$/.test(link.hostname) && link.searchParams.get('v')
+    return `${link.hostname.replace(/^www\./, '')}${link.pathname.replace(/\/$/, '')}`.toLowerCase() + (video ? `?v=${video}` : '')
+  }
   const intelUrls = new Set(Object.values(intelSources).filter(source => source.url).map(source => norm(source.url)))
   for (const [id, source] of Object.entries(guideSources)) assert.ok(!intelUrls.has(norm(source.url)), id)
 })

@@ -22,6 +22,7 @@ export const intelIcons = {
   bug: 'M9 7a3 3 0 0 1 6 0 M7 10h10v5a5 5 0 0 1-10 0z M12 10v10 M3 13h4 M17 13h4 M4 8l3 2 M20 8l-3 2 M4 19l3-2 M20 19l-3-2',
   clock: 'M12 21a9 9 0 1 0 0-18a9 9 0 1 0 0 18 M12 7v5l3 2',
   start: 'M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z',
+  loot: 'M3 5h18v4H3z M4 9h16v11H4z M10 13h4',
 }
 
 // ---------------------------------------------------------------- Stations
@@ -65,6 +66,8 @@ export function entryPlaces(entry) {
     .map(pin => ({ id: pin.id, name: pin.name, square: pin.square, threat: pin.threat, major: pin.layer === 'poi' }))
 }
 export const placeLink = id => `/dmz/hajin?pin=${id}#map`
+// Opens the Tac-Map with one layer switched on for this visit, e.g. every police station.
+export const layerLink = id => `/dmz/hajin?layer=${id}#map`
 
 // Major places on the Tac-Map, with the Intel each card lists.
 export const intelPlaces = hajinPins.filter(pin => pin.layer === 'poi').map(pin => ({
@@ -331,6 +334,16 @@ export const intelNeeds = [
       { title: 'Staying alive', ids: ['exfil-camping', 'plan-around-exfil-campers', 'extract-early-dont-get-greedy', 'successful-exfil'] },
     ],
     more: { to: '/dmz/intel/field-manual#exfil', label: 'Infil and exfil in the Field manual' },
+  },
+  {
+    id: 'loot', label: 'Good loot', ask: 'Where is the good loot?', icon: intelIcons.loot, kind: 'steps',
+    intro: 'Spots players report for cash, recipes and Weapon Manuals, from keyless safes to the late-game lockers.',
+    steps: [
+      { title: 'Money without keys', ids: ['cheonwang-peak-array', 'compound-safes', 'train', 'valuables'] },
+      { title: 'Recipes and Weapon Manuals', ids: ['chang-san-air-base', 'weapon-manuals', 'how-crafting-works'] },
+      { title: 'Keys worth the trip', ids: ['counting-room-vault-key', 'jin-taes-private-lounge', 'supreme-leader-access-card', 'reactor-drc-locker'] },
+      { title: 'Late game', ids: ['haneul-nuclear-reactor', 'irradiated-container', 'missile-silo-bunkers'] },
+    ],
   },
   { id: 'broken', label: 'Something broke', ask: 'Is it the game or me?', icon: intelIcons.bug, to: '/dmz/intel/status#issues', toLabel: 'Status' },
   { id: 'next', label: 'What is coming', ask: 'When is Season 1?', icon: intelIcons.clock, to: '/dmz/intel/status#dates', toLabel: 'Status' },

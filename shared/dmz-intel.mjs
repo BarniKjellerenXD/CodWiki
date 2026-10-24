@@ -5,7 +5,7 @@
 import { dmzOrders, dmzOrderRewards } from './dmz.mjs'
 import { intelData, intelDataSources } from './dmz-intel-data.mjs'
 
-export const DMZ_INTEL_CHECKED = '22 Oct 2026'
+export const DMZ_INTEL_CHECKED = '24 Oct 2026'
 
 export const intelConfidence = [
   { id: 'official', label: 'Official', desc: 'Stated by Activision, Infinity Ward or a platform holder.' },
