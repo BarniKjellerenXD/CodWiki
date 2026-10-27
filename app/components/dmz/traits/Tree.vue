@@ -60,7 +60,7 @@ function tap(tree: string, row: number, letter: string, state: string) {
           <button
             v-for="node in row.nodes" :key="node.letter" type="button"
             class="tr-node" :class="[`is-${node.kind}`, `is-${node.state}`, { 'is-sel': isSelected(tree.id, row.row, node.letter) }]"
-            :style="{ left: `${node.x}%`, top: `${node.y}%` }"
+            :style="{ left: `${node.x}%`, top: `${node.y}%`, '--x': node.x }"
             :aria-label="label(tree.name, row.row, node)" :aria-pressed="plan ? node.state === 'picked' : undefined"
             @click="tap(tree.id, row.row, node.letter, node.state)"
           >
@@ -110,7 +110,8 @@ function tap(tree: string, row: number, letter: string, state: string) {
 .tr-node:hover { --edge: var(--tc); }
 .tr-node:focus-visible .tr-shape { filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #fff); }
 .tr-node.is-sel .tr-shape { filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1.5px #fff); }
-.tr-tip { position: absolute; left: 50%; bottom: calc(100% + 0.375rem); z-index: 3; transform: translateX(-50%); padding: 0.25rem 0.5rem; background: rgba(8, 10, 9, 0.95); border-left: 2px solid var(--tc); color: #f3f1e5; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.12s; }
+/* Tips lean inward by their node's x, so the hex column's clip never cuts the outer ones. */
+.tr-tip { position: absolute; left: 50%; bottom: calc(100% + 0.375rem); z-index: 3; transform: translateX(calc(var(--x) * -1%)); padding: 0.25rem 0.5rem; background: rgba(8, 10, 9, 0.95); border-left: 2px solid var(--tc); color: #f3f1e5; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-variation-settings: 'wdth' 62.5; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 0.12s; }
 .tr-node:hover .tr-tip, .tr-node:focus-visible .tr-tip { opacity: 1; }
 .tr-foot { display: flex; align-items: baseline; justify-content: center; gap: 0.5rem; padding-top: 0.5rem; border-top: 1px solid color-mix(in srgb, var(--tc) 35%, transparent); }
 .tr-name { color: var(--tc); font-size: 1.25rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-variation-settings: 'wdth' 75; }

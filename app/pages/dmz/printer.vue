@@ -195,7 +195,7 @@ function showPlan() {
 .pr-mat-how[open] summary svg { transform: rotate(180deg); }
 .pr-mat-body { padding: 0.25rem 0.875rem 0.875rem; }
 @media (max-width: 599px) {
-  .pr-mat-how summary { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .pr-mat-how summary { grid-template-columns: auto minmax(min-content, 1fr) auto; }
   .pr-mat-hint { grid-column: 1 / -1; grid-row: 2; white-space: normal; }
 }
 .pr-total-n { font-size: 1.125rem; font-weight: 700; }

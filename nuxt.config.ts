@@ -32,6 +32,28 @@ export default defineNuxtConfig({
       { name: 'JetBrains Mono', provider: 'google', weights: ['400 800'], styles: ['normal'] },
     ],
   },
+  hooks: {
+    // Google also sends Saira as static .woff faces for old browsers, one per
+    // weight with all seven widths merged into its src list. Browsers picked
+    // those over the variable faces, so 'wdth' did nothing and every label drew
+    // at the first width (50). Keep only the woff2 variable faces.
+    'fonts:providers'(providers) {
+      const google = providers.google as any
+      providers.google = (options: unknown) => Object.assign(async (ctx: unknown) => {
+        const provider = await google(options)(ctx)
+        return provider && {
+          ...provider,
+          async resolveFont(family: string, fontOptions: unknown) {
+            const result = await provider.resolveFont(family, fontOptions)
+            if (family === 'Saira' && result) {
+              result.fonts = result.fonts.filter((font: any) => font.src.some((src: any) => src.format === 'woff2'))
+            }
+            return result
+          },
+        }
+      }, { _name: 'google' })
+    },
+  },
   modules: [
     '@vercel/analytics/nuxt',
     '@nuxt/fonts',

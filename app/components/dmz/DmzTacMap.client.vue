@@ -808,7 +808,7 @@ const INTEL_PREVIEW = 6
 .tm :deep([data-threat='extreme']) { --tm-t: var(--tm-extreme); }
 
 /* Tools */
-.tm-tools { display: grid; gap: 0.75rem; margin-bottom: 0.875rem; }
+.tm-tools { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.75rem; margin-bottom: 0.875rem; }
 .tm-find { display: flex; gap: 0.5rem; }
 .tm-layers-toggle { display: none; }
 .tm-search { flex: 1; min-width: 0; display: flex; align-items: center; gap: 0.625rem; min-height: 3rem; padding: 0 1.125rem; border: 1px solid var(--dz-line-strong); border-radius: 999px; background: rgba(14, 16, 15, 0.6); }
@@ -1006,7 +1006,7 @@ const INTEL_PREVIEW = 6
 .tm :deep([data-detail='far'] .tm-badge svg) { display: none; }
 .tm :deep([data-detail='far'] .tm-badge) { height: 14px; padding: 0 3px; }
 .tm :deep([data-detail='far'] .tm-badge b) { margin: 0; font-size: 9.5px; }
-.tm :deep([data-detail='far'] .tm-pin--poi .tm-label) { font-size: 11px; padding: 0 4px; }
+.tm :deep([data-detail='far'] .tm-pin--poi .tm-label) { font-size: 11px; padding: 0 4px; font-variation-settings: 'wdth' 50; }
 .tm :deep([data-detail='far'] .tm-marker:has(> .is-twin:not(.is-on))) { visibility: hidden; }
 .tm :deep([data-detail='mid'] .tm-pin--area .tm-label) { display: none; }
 .tm :deep([data-detail] .tm-pin.is-on .tm-label) { display: block; }

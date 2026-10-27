@@ -56,7 +56,7 @@ const titleId = useId()
 .go-list > li:has(> .go-op[open]) { grid-column: 1 / -1; }
 .go-op summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.375rem 0.75rem; align-items: center; padding: 0.75rem 0.875rem; cursor: pointer; list-style: none; }
 .go-op summary::-webkit-details-marker { display: none; }
-.go-name { font-size: 1.0625rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: var(--dz-ink); }
+.go-name { font-size: 1.0625rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; font-variation-settings: 'wdth' 75; color: var(--dz-ink); }
 .go-fit { display: inline-flex; align-items: center; gap: 0.375rem; font-size: 0.625rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-muted); }
 .go-icons { grid-column: 1 / -1; }
 .go-op[open] .go-icons { display: none; }

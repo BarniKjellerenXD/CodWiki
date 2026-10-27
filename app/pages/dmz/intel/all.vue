@@ -230,7 +230,7 @@ watch(() => route.hash, markTarget)
 .in-details { display: grid; gap: 0.25rem; margin: 0; }
 .in-details > div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.75rem; padding: 0.375rem 0.625rem; background: rgba(10, 12, 11, 0.35); border-left: 2px solid var(--dz-line-strong); }
 .in-details dt { padding-top: 0.15rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dz-muted); }
-.in-details dd { margin: 0; color: #e3e0d0; font-size: 0.95rem; }
+.in-details dd { margin: 0; color: #e3e0d0; font-size: 0.95rem; overflow-wrap: anywhere; }
 .in-facts summary { display: flex; align-items: center; min-height: 2.25rem; padding: 0 0.625rem; border: 1px dashed var(--dz-line-strong); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dz-ink-2); cursor: pointer; list-style: none; }
 .in-facts summary::-webkit-details-marker { display: none; }
 .in-facts summary::after { content: '+'; margin-left: auto; font-size: 1rem; color: var(--dz-muted); }
@@ -242,7 +242,7 @@ watch(() => route.hash, markTarget)
 .in-sources { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--dz-line); font-size: 0.875rem; color: var(--dz-muted); }
 .in-sources > .dmz-mono { font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .in-sources a { color: var(--dz-ink-2); text-underline-offset: 0.2em; }
-.in-site { display: inline-flex; align-items: baseline; gap: 0.25rem; }
+.in-site { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem; }
 .in-page { display: inline-block; min-width: 1.5rem; padding: 0.125rem 0; text-align: center; font-size: 0.75rem; }
 .in-more { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 2.75rem; margin-top: 0.75rem; border: 1px dashed var(--dz-line-strong); border-radius: 12px; background: transparent; color: var(--dz-ink); font: inherit; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; }
 .in-more:hover { background: rgba(233, 230, 214, 0.08); border-style: solid; }
