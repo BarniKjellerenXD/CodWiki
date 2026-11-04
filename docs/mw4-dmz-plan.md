@@ -101,6 +101,22 @@ How it works:
 - `?view=threat` opens the view, so it can be linked; the page's Threat ratings section links to it. Level chips filter zones, labels and the list, and the choice is saved with the other map preferences. The panel lists parts by level, most dangerous first, and the art is dimmed so the zones read.
 - The view says the zones are approximate. Zones also spill over water; masking that would need the art's land outline, which is a possible follow-up.
 
+### Routes (2026-11-04)
+
+A player asked for the Hajin run in a YouTube video (`vL3C8nRziCg`) to be drawn on the Tac-Map, and sent four Tac-Map screenshots with the route marked in red from memory. The video page could not be reached from the build environment, so the line comes from those screenshots, not from the video.
+
+1. **A reported site on one place.** Rejected: a route crosses most of the map, and a badge on one place says nothing about the path.
+2. **One gold badge per stop.** Rejected: it hides the order and the line between stops.
+3. **Chosen: a Routes layer that draws the line, with numbered stops.** The route is its own kind of item beside places and reports. It shares the `?pin=` link, search, and the card panel, and it shows in the threat view only while open, so a reader can see which zones it crosses.
+
+How it works:
+
+- `shared/dmz-routes.mjs` holds each route's path and stops in official units, its sources and a note on how it was traced. `shared/dmz-map.mjs` adds the square of each stop and names the nearest place, adding a compass side ("South of Wolves Stadium") when the stop is more than 100 units from it.
+- Tracing: each screenshot was registered on the art by edge correlation (all four at the same scale, 1.684 screen px per art px, match scores 0.81 to 0.90). The red line was followed pixel by pixel between the circled stops, then simplified. The screenshots' shared stops agree within about 6 art px, and every stop is a point on the path.
+- On the map the line sits over the art and under the markers, with a dot per stop. Opening the route numbers the stops above the places. The card lists the stops in order, and picking one zooms to it. The card also links the video and says the line is traced from memory.
+- Tests in `tests/dmz-map.test.mjs` check that each path stays on the art, passes its stops in order, names real places and cites a source that resolves.
+- Follow-up: once someone has watched the video, record what the run does at each stop and its title, and check the line against it.
+
 ## Content phases
 
 0. **Groundwork:** restore git history; add the mode model and switch; generalize wording; update count-based tests; add mode tests. No DMZ content yet.

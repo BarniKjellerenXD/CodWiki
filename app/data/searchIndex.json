@@ -18359,6 +18359,15 @@
     "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction map G7"
   },
   {
+    "id": "dmz-hajin:route-delta-to-dbn",
+    "name": "Compound Delta to DBN Headquarters",
+    "map": "",
+    "kind": "Location",
+    "context": "Modern Warfare 4 · DMZ · Hajin route",
+    "route": "/dmz/hajin?pin=route-delta-to-dbn#map",
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction route path run video stops Compound Delta East of Songdo Wharf Hajin River Heights Compound Echo Wolves Stadium South of Wolves Stadium Compound Bravo Compound Alpha North of Compound Alpha Cheonwang Peak Array South-east of Compound Charlie Compound Charlie Cheongun Village NuriGO Mall DBN Headquarters H5 I7 H7 G7 F7 G8 F8 E7 E5 D5 E4 F4 G6"
+  },
+  {
     "id": "dmz-hajin:threat-zones",
     "name": "Hajin threat zones",
     "map": "",

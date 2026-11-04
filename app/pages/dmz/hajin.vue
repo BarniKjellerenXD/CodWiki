@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { dmzStations } from '#shared/dmz.mjs'
-import { hajinPins, hajinReports, HAJIN_MAP_CHECKED } from '#shared/dmz-map.mjs'
+import { hajinPins, hajinReports, hajinRoutes, HAJIN_MAP_CHECKED } from '#shared/dmz-map.mjs'
+import { anySource, videoUrl } from '#shared/dmz-sightings.mjs'
 const route = useRoute()
 const icon = dmzStations.find(station => station.id === 'deploy')!.icon
 const pad = (n: number) => String(n).padStart(2, '0')
 const pois = hajinPins.filter(pin => pin.layer === 'poi')
 const count = (layers: string[]) => hajinPins.filter(pin => layers.includes(pin.layer)).length
-const status = `${pois.length} major locations · ${hajinPins.length} official markers · ${hajinReports.length} reported sites`
+const status = `${pois.length} major locations · ${hajinPins.length} official markers · ${hajinReports.length} reported sites · ${hajinRoutes.length} ${hajinRoutes.length === 1 ? 'route' : 'routes'}`
+const runs = hajinRoutes.map(run => ({ ...run, from: run.stops[0]!.square, to: run.stops.at(-1)!.square, videos: (run.videos || []).map(video => ({ label: anySource(video.id)?.label as string, href: videoUrl(video.id, video.at) as string })).filter(video => video.href) }))
 
 // A pin link on this page keeps the #map hash, so the router does not scroll; do it here.
 function revealMap() {
@@ -44,6 +46,20 @@ function revealMap() {
         </li>
       </ol>
       <p class="hz-small">Cheongun Village is the casino district. The Tac-Map also names {{ count(['area']) }} smaller places, {{ count(['compound']) }} compounds and {{ count(['fortress']) }} fortresses. Threat is the highest rating the Deep Dive gives any part of the location.</p>
+    </section>
+
+    <section id="routes" class="dmz-section" aria-labelledby="routes-title">
+      <h2 id="routes-title">Routes</h2>
+      <p>Runs from videos, drawn on the Tac-Map as a line with numbered stops. Each route is traced by hand, so the line follows roads only roughly.</p>
+      <ul class="hz-routes">
+        <li v-for="run in runs" :key="run.id">
+          <NuxtLink :to="{ query: { ...route.query, pin: run.id }, hash: '#map' }" @click="revealMap">
+            <span class="hz-name w-semi">{{ run.name }}</span>
+            <span class="hz-where dmz-mono">{{ run.stops.length }} stops · {{ run.from }} to {{ run.to }}</span>
+          </NuxtLink>
+          <a v-for="video in run.videos" :key="video.href" class="hz-route-video" :href="video.href" target="_blank" rel="noopener noreferrer">{{ video.label }}<span class="sr-only"> (opens in a new tab)</span></a>
+        </li>
+      </ul>
     </section>
 
     <section id="threat" class="dmz-section" aria-labelledby="threat-title">
@@ -85,6 +101,13 @@ function revealMap() {
 .hz-index { flex: none; font-size: 0.75rem; color: var(--dz-muted); }
 .hz-name { flex: 1; font-size: 1.1875rem !important; font-weight: 600; line-height: 1.2; text-transform: uppercase; letter-spacing: 0.03em; color: var(--dz-ink) !important; }
 .hz-where { flex: none; font-size: 0.6875rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--hz-t, var(--dz-muted)); }
+.hz-routes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; max-width: 46rem; }
+.hz-routes li { display: grid; gap: 0.25rem; }
+.hz-routes a:first-child { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.75rem; min-height: 3.25rem; padding: 0.5rem 1rem; background: rgba(22, 26, 25, 0.55); border: 1px solid var(--dz-line); border-left: 3px solid #ff7ac6; color: inherit; text-decoration: none; }
+.hz-routes a:first-child:hover { border-color: var(--dz-line-strong); border-left-color: #ff7ac6; background: rgba(233, 230, 214, 0.08); }
+.hz-routes a:focus-visible { outline: 2px solid var(--dz-ink); outline-offset: 2px; }
+.hz-routes .hz-where { color: #ff7ac6; }
+.hz-route-video { justify-self: start; display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 1rem; color: var(--dz-ink); font-size: 0.95rem; font-weight: 600; text-decoration: underline; text-underline-offset: 0.2em; }
 .hz-small { margin-top: 0.875rem !important; font-size: 0.95rem !important; color: var(--dz-muted) !important; }
 .hz-threat { display: flex; align-items: center; gap: 0.875rem; max-width: 34rem; margin-bottom: 1rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dz-muted); }
 .hz-threat-link { color: var(--dz-ink); font-weight: 600; text-underline-offset: 0.2em; }

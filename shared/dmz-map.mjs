@@ -8,6 +8,7 @@
 import { dmzIntel, intelSources } from './dmz-intel.mjs'
 import { guideSources } from './dmz-guide-sources.mjs'
 import { mapReports, mapReportSources } from './dmz-map-reports.mjs'
+import { mapRoutes, routeSources } from './dmz-routes.mjs'
 
 export const HAJIN_MAP_CHECKED = '24 Oct 2026'
 
@@ -50,6 +51,7 @@ export const hajinLayers = [
   { id: 'bounty', group: 'Reported', label: 'Bounty stations', one: 'Bounty station', desc: 'A laptop for reviewing bounties on other operators or paying off your own.', on: false },
   { id: 'station', group: 'Reported', label: 'Train stations', one: 'Station', desc: 'A train, tram or monorail stop.', on: false },
   { id: 'landmark', group: 'Reported', label: 'Landmarks', one: 'Landmark', desc: 'A building or spot that guides and missions refer to.', on: false },
+  { id: 'route', group: 'Routes', label: 'Routes', one: 'Route', desc: 'The path a video takes across Hajin, stop by stop. Routes are traced by hand, so the line follows roads only roughly.', on: true },
 ]
 export const hajinLayer = id => hajinLayers.find(layer => layer.id === id)
 
@@ -231,9 +233,30 @@ for (const poi of places.filter(place => place.layer === 'poi')) {
 }
 for (const place of places.filter(place => !place.parent && !place.threat)) threatSeeds.push({ at: place.at, reach: REACH[place.layer], part: null, poi: null, level: null })
 
+// Routes. Each stop names the nearest place; one further off than AT_PLACE also says
+// which side of it the stop lies. Official y grows southward.
+const AT_PLACE = 100
+const COMPASS = ['east', 'south-east', 'south', 'south-west', 'west', 'north-west', 'north', 'north-east']
+function stopAt(at) {
+  const { pin, off } = places.map(pin => ({ pin, off: distance(pin.at, at) })).sort((a, b) => a.off - b.off)[0]
+  const dir = off > AT_PLACE ? COMPASS[Math.round(((Math.atan2(at[1] - pin.at[1], at[0] - pin.at[0]) * 180 / Math.PI) + 360) / 45) % 8] : undefined
+  return { place: pin.same || pin.id, ...(dir ? { dir } : {}) }
+}
+export const hajinRoutes = mapRoutes.map(route => ({
+  ...route,
+  stops: route.stops.map((at, index) => ({ n: index + 1, at, square: squareOf(at), ...stopAt(at) })),
+  squares: [...new Set(route.stops.map(squareOf))],
+}))
+export const hajinRoute = id => hajinRoutes.find(route => route.id === id)
+// "Compound Echo", or "South of Wolves Stadium" for a stop beside a place.
+export const routeStopLabel = stop => {
+  const name = pins.find(pin => pin.id === stop.place)?.name || ''
+  return stop.dir ? `${stop.dir[0].toUpperCase()}${stop.dir.slice(1)} of ${name}` : name
+}
+
 export const hajinThreatParts = threatParts
 export const hajinThreatSeeds = threatSeeds
 export const hajinPins = pins
 export const hajinPin = id => pins.find(pin => pin.id === id)
-// Reports may cite guide-only sources too, videos included.
-export const mapSources = { ...intelSources, ...guideSources, ...mapReportSources }
+// Reports and routes may cite guide-only sources too, videos included.
+export const mapSources = { ...intelSources, ...guideSources, ...mapReportSources, ...routeSources }

@@ -11,7 +11,7 @@ import { dmzPages, dmzBriefingSections, dmzOrders, dmzStations } from '../shared
 import { dmzIntel, intelCategory } from '../shared/dmz-intel.mjs'
 import { dmzKeys } from '../shared/dmz-keys.mjs'
 import { intelHome, intelHomeLabel, intelNeed, intelStations, intelEverything } from '../shared/dmz-stations.mjs'
-import { hajinPins, hajinLayer } from '../shared/dmz-map.mjs'
+import { hajinPins, hajinLayer, hajinRoutes, routeStopLabel } from '../shared/dmz-map.mjs'
 import { guideTier } from '../shared/dmz-guide.mjs'
 import { bossPlaybook } from '../shared/dmz-playbooks.mjs'
 import { containers, recipeHotspots, recipeSpotLine } from '../shared/dmz-recipe-spots.mjs'
@@ -151,6 +151,7 @@ for (const pin of hajinPins.filter(pin => !pin.same)) {
   const major = ['poi', 'fortress', 'area', 'compound'].includes(pin.layer)
   add(pin.name, major ? 'dmz-place' : 'dmz-spot', `/dmz/hajin?pin=${pin.id}#map`, { context: `DMZ · Hajin · ${pin.square}${pin.threat ? ` · ${pin.threat} threat` : ''}`, keywords: `${layer.one} map`, badge: major ? '' : layer.one })
 }
+for (const run of hajinRoutes) add(run.name, 'dmz-place', `/dmz/hajin?pin=${run.id}#map`, { context: `DMZ · Hajin · ${run.stops.length} stops`, keywords: `route path run video ${words([...new Set(run.stops.map(routeStopLabel))].join(' '), run.name)}`, badge: 'Route', preview: run.summary })
 for (const order of dmzOrders) add(order.name, 'dmz-order', `/dmz/orders#order-${order.id}`, { context: `DMZ · Orders · ${order.chapter}`, keywords: `order ${words(order.tasks.map(task => task.text).join(' '), order.name)}`, preview: order.tasks.map(task => task.text).join(' · ') })
 const keyIntel = new Set(dmzKeys.map(key => key.intel).filter(Boolean))
 for (const key of dmzKeys) add(key.name, 'dmz-key', `/dmz/stash#key-${key.id}`, { context: `DMZ · Key tracker${key.rarity ? ` · ${key.rarity}` : ''}`, keywords: `key locked room ${key.rooms.flatMap(room => [room.name, ...(room.squares || [])]).join(' ')}`, badge: key.type === 'Locked room' ? 'Locked room' : 'Key', preview: key.summary })

@@ -2,7 +2,8 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import crypto from 'node:crypto'
-import { hajinMap, hajinLayers, hajinPins, hajinPin, hajinReports, hajinThreatParts, hajinThreatSeeds, mapSources, threatLevels, toArt, squareOf, squareCentre } from '../shared/dmz-map.mjs'
+import { hajinMap, hajinLayers, hajinPins, hajinPin, hajinReports, hajinRoutes, hajinThreatParts, hajinThreatSeeds, mapSources, routeStopLabel, threatLevels, toArt, squareOf, squareCentre } from '../shared/dmz-map.mjs'
+import { anySource, videoUrl } from '../shared/dmz-sightings.mjs'
 import { zoneField, ownerAt, traceRegions } from '../shared/dmz-zones.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
 import { dmzStations } from '../shared/dmz.mjs'
@@ -112,8 +113,8 @@ test('zone outlines close, and an inner zone leaves a hole', () => {
   assert.ok(Math.abs(area(regions.get('far')[0]) - Math.PI * 50 ** 2) < 300)
 })
 
-test('pins and reports share one id space without clashes', () => {
-  const ids = [...hajinPins.map(pin => pin.id), ...hajinReports.map(report => report.id)]
+test('pins, reports and routes share one id space without clashes', () => {
+  const ids = [...hajinPins.map(pin => pin.id), ...hajinReports.map(report => report.id), ...hajinRoutes.map(route => route.id)]
   assert.equal(new Set(ids).size, ids.length)
   for (const id of ids) assert.match(id, /^[a-z0-9]+(-[a-z0-9]+)*$/, id)
 })
@@ -148,10 +149,61 @@ test('report confidence follows the Intel rules', () => {
 
 test('every layer has something to show', () => {
   for (const layer of hajinLayers) {
-    const size = layer.group === 'Reported' ? hajinReports.filter(report => report.type === layer.id).length : hajinPins.filter(pin => pin.layer === layer.id).length
+    const size = layer.group === 'Routes' ? hajinRoutes.length : layer.group === 'Reported' ? hajinReports.filter(report => report.type === layer.id).length : hajinPins.filter(pin => pin.layer === layer.id).length
     assert.ok(size > 0, layer.id)
     assert.ok(layer.label && layer.one && layer.desc, layer.id)
   }
+})
+
+test('routes run on the art through their stops in order', () => {
+  assert.ok(hajinRoutes.length)
+  const along = (path, at) => path.findIndex(point => point[0] === at[0] && point[1] === at[1])
+  for (const route of hajinRoutes) {
+    assert.ok(route.name && route.summary && route.traced, route.id)
+    assert.ok(route.path.length >= route.stops.length && route.stops.length >= 2, route.id)
+    for (const at of route.path) {
+      const [u, v] = toArt(at)
+      assert.ok(u > 0 && u < hajinMap.width && v > 0 && v < hajinMap.height, `${route.id} at ${at}`)
+      assert.ok(squareOf(at), `${route.id} at ${at} is off the grid`)
+    }
+    // Every stop is a point on the path, the first and last at its ends, and the path meets them in order.
+    let last = -1
+    for (const stop of route.stops) {
+      const index = along(route.path, stop.at)
+      assert.ok(index > last, `${route.id} stop ${stop.n} is off the path or out of order`)
+      last = index
+    }
+    assert.deepEqual(route.path[0], route.stops[0].at, route.id)
+    assert.deepEqual(route.path.at(-1), route.stops.at(-1).at, route.id)
+    route.stops.forEach((stop, index) => {
+      assert.equal(stop.n, index + 1, route.id)
+      assert.equal(stop.square, squareOf(stop.at), `${route.id} stop ${stop.n}`)
+      assert.ok(PLACES.has(hajinPin(stop.place)?.layer) && !hajinPin(stop.place).same, `${route.id} stop ${stop.n} place ${stop.place}`)
+      // A stop names the nearest place, and says which side of it when it is not at it.
+      const off = Math.hypot(stop.at[0] - hajinPin(stop.place).at[0], stop.at[1] - hajinPin(stop.place).at[1])
+      assert.equal(!!stop.dir, off > 100, `${route.id} stop ${stop.n}`)
+      assert.match(routeStopLabel(stop), stop.dir ? new RegExp(`^[A-Z][a-z-]+ of ${hajinPin(stop.place).name}$`) : new RegExp(`^${hajinPin(stop.place).name}$`))
+    })
+    assert.deepEqual(route.squares, [...new Set(route.stops.map(stop => stop.square))], route.id)
+  }
+})
+
+test('routes cite their video and follow the confidence rules', () => {
+  for (const route of hajinRoutes) {
+    assert.ok(route.sources.length, route.id)
+    for (const id of route.sources) assert.ok(mapSources[id]?.url, `${route.id} source ${id}`)
+    const independent = new Set(route.sources.map(id => mapSources[id].url))
+    assert.equal(route.confidence, route.sources.some(id => mapSources[id].type === 'official') ? 'official' : independent.size >= 2 ? 'confirmed' : 'reported', route.id)
+    for (const video of route.videos || []) {
+      assert.ok(route.sources.includes(video.id), `${route.id} video ${video.id}`)
+      assert.match(videoUrl(video.id, video.at), /^https:\/\/www\.youtube\.com\/watch\?v=/, `${route.id} video ${video.id}`)
+      assert.ok(anySource(video.id)?.label && video.why, `${route.id} video ${video.id}`)
+    }
+  }
+  // The first route was traced from a player's marked-up screenshots of this run.
+  const delta = hajinRoutes.find(route => route.id === 'route-delta-to-dbn')
+  assert.deepEqual(delta.stops.filter(stop => !stop.dir).map(stop => stop.place).filter(place => hajinPin(place).layer === 'compound'), ['compound-delta', 'compound-echo', 'compound-bravo', 'compound-alpha', 'compound-charlie'])
+  assert.equal(delta.stops.at(-1).place, 'dbn-headquarters')
 })
 
 test('the Tac-Map art is the credited, reviewed file', () => {
@@ -163,8 +215,8 @@ test('the Tac-Map art is the credited, reviewed file', () => {
   for (const source of hajinMap.sources) assert.match(source.url, /^https:\/\/www\.callofduty\.com\//)
 })
 
-test('site search opens each named place on the Tac-Map', () => {
-  for (const pin of hajinPins.filter(pin => PLACES.has(pin.layer) && !pin.same)) {
+test('site search opens each named place and route on the Tac-Map', () => {
+  for (const pin of [...hajinPins.filter(pin => PLACES.has(pin.layer) && !pin.same), ...hajinRoutes]) {
     const entry = search.find(item => item.route === `/dmz/hajin?pin=${pin.id}#map`)
     assert.equal(entry?.name, pin.name, pin.id)
   }

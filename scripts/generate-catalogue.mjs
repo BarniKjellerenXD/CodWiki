@@ -6,7 +6,7 @@ import desktopCatalogue from '../desktop-app/catalogue.js'
 import { dmzPages, dmzStations, dmzBriefingSections, hajinPois, dmzOrders } from '../shared/dmz.mjs'
 import { dmzIntel, intelCategory } from '../shared/dmz-intel.mjs'
 import { intelHome, intelStations, intelEverything } from '../shared/dmz-stations.mjs'
-import { hajinPins, hajinLayer } from '../shared/dmz-map.mjs'
+import { hajinPins, hajinLayer, hajinRoutes, routeStopLabel } from '../shared/dmz-map.mjs'
 import { guideTiers } from '../shared/dmz-guide.mjs'
 import './generate-map-links.mjs'
 import './generate-expansion.mjs'
@@ -60,6 +60,8 @@ for (const tier of guideTiers) entries.push({ id: `dmz-guide:${tier.id}`, name: 
 // Hajin places open their Tac-Map card. A fortress named like its location is that location.
 for (const poi of hajinPois) { const pin = poi.toLowerCase().replace(/[^a-z0-9]+/g, '-'); entries.push({ id: `dmz-hajin:${pin}`, name: poi, map: '', kind: 'Location', context: `${dmzContext} · Hajin`, route: `/dmz/hajin?pin=${pin}#map`, keywords: `${dmzKeywords} poi point of interest map` }) }
 for (const pin of hajinPins.filter(pin => ['fortress', 'area', 'compound'].includes(pin.layer) && !pin.same)) entries.push({ id: `dmz-hajin:${pin.id}`, name: pin.name, map: '', kind: 'Location', context: `${dmzContext} · Hajin ${hajinLayer(pin.layer).one.toLowerCase()}`, route: `/dmz/hajin?pin=${pin.id}#map`, keywords: `${dmzKeywords} map ${pin.square}` })
+// Routes open their card on the Tac-Map; any stop's place finds them.
+for (const run of hajinRoutes) entries.push({ id: `dmz-hajin:${run.id}`, name: run.name, map: '', kind: 'Location', context: `${dmzContext} · Hajin route`, route: `/dmz/hajin?pin=${run.id}#map`, keywords: `${dmzKeywords} route path run video stops ${[...new Set(run.stops.map(routeStopLabel))].join(' ')} ${run.squares.join(' ')}` })
 entries.push({ id: 'dmz-hajin:threat-zones', name: 'Hajin threat zones', map: '', kind: 'Section', context: `${dmzContext} · Hajin Tac-Map`, route: '/dmz/hajin?view=threat#map', keywords: `${dmzKeywords} threat level zones low medium high critical extreme danger map` })
 for (const order of dmzOrders) entries.push({ id: `dmz-order:${order.id}`, name: order.name, map: '', kind: 'DMZ Order', context: `${dmzContext} · Orders tracker`, route: '/dmz/orders', keywords: `${dmzKeywords} orders ${order.tasks.map(task => task.text).join(' ')}` })
 // Tracked Orders already have search entries that open the tracker. The

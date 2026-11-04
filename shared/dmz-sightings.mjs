@@ -7,6 +7,7 @@
 import { dmzIntel, intelDateLabel, intelSources } from './dmz-intel.mjs'
 import { guideSources } from './dmz-guide-sources.mjs'
 import { mapReportSources } from './dmz-map-reports.mjs'
+import { routeSources } from './dmz-routes.mjs'
 
 export const SIGHTINGS_CHECKED = '24 Oct 2026'
 export const SIGHTINGS_ROUND = '2026-10-24'
@@ -34,7 +35,7 @@ export const STUCK_VIDEOS = [
   { id: 'youtube-q0m5u2rkgyu', why: 'The whole Tempered recipe chain, from The Doctor to the extract' },
 ]
 
-export const anySource = id => intelSources[id] || guideSources[id] || mapReportSources[id]
+export const anySource = id => intelSources[id] || guideSources[id] || mapReportSources[id] || routeSources[id]
 
 // A copy counts as the page it copies, clips sharing a same key count once and
 // anything else counts once per URL.

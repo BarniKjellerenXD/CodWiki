@@ -6,7 +6,7 @@ import { hydrateSpotlight, searchSpotlight, groupSpotlight, spotlightContext, no
 import { dmzOrders, dmzBriefingSections, dmzPages } from '../shared/dmz.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
 import { dmzKeys } from '../shared/dmz-keys.mjs'
-import { hajinPins } from '../shared/dmz-map.mjs'
+import { hajinPins, hajinRoutes } from '../shared/dmz-map.mjs'
 import { intelHome } from '../shared/dmz-stations.mjs'
 
 const read = file => fs.readFileSync(new URL(`../${file}`, import.meta.url), 'utf8')
@@ -59,9 +59,10 @@ test('the index covers the search index, quest steps, map spots and portals', ()
 
 test('DMZ results point at real pins, keys, Orders, Intel and briefing sections', () => {
   const ids = (prefix, pattern) => items.filter(item => item.route.startsWith(prefix)).map(item => item.route.match(pattern)?.[1]).filter(Boolean)
-  const pins = new Set(hajinPins.map(pin => pin.id))
+  // Routes share the Tac-Map's ?pin= links with places.
+  const pins = new Set([...hajinPins, ...hajinRoutes].map(pin => pin.id))
   for (const id of ids('/dmz/hajin?pin=', /pin=([^#&]+)/)) assert.ok(pins.has(id), id)
-  for (const pin of hajinPins.filter(pin => !pin.same)) assert.ok(routes.has(`/dmz/hajin?pin=${pin.id}#map`), pin.id)
+  for (const pin of [...hajinPins.filter(pin => !pin.same), ...hajinRoutes]) assert.ok(routes.has(`/dmz/hajin?pin=${pin.id}#map`), pin.id)
   assert.deepEqual(ids('/dmz/stash#key-', /#key-(.+)$/).sort(), dmzKeys.map(key => key.id).sort())
   assert.deepEqual(ids('/dmz/orders#order-', /#order-(.+)$/).sort(), dmzOrders.map(order => order.id).sort())
   // Intel entries open on the station they live on, in its entry drawer.
