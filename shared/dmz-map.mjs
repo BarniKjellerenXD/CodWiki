@@ -177,9 +177,57 @@ const REPORT_INTEL = {
   'cheonwang-peak-array-safes': 'cheonwang-peak-array', 'haneul-reactor-loot-route': 'haneul-nuclear-reactor', 'reactor-02-decontamination-machine': 'irradiated-container',
   'nurigo-east-loot-route': 'nurigo-east', 'casino-vault-run': 'counting-room-vault-key',
 }
+// Where each reported site is drawn, and how sure that spot is. None of these
+// has an official position, so the spot is derived from what sources say:
+// a report names the official service building it is in (`service`), and a
+// side and rough distance (`side`, `dist`) when sources give one.
+export const PRECISIONS = [
+  { id: 'exact', label: 'Marked building', desc: 'Inside a building the official map marks, such as a police station or gas station.' },
+  { id: 'building', label: 'Fortress or compound', desc: 'At a fortress or compound the official map marks. The room can be anywhere inside it.' },
+  { id: 'near', label: 'Beside a marker', desc: 'Sources give a side and rough distance from a marked place, so the spot is approximate.' },
+  { id: 'place', label: 'Somewhere in a place', desc: 'Sources name the place but not the spot. The pin sits on the place, inside the square sources give.' },
+  { id: 'square', label: 'Somewhere in a square', desc: 'Sources give only a grid square, so the pin sits in its middle.' },
+]
+export const precisionOf = id => PRECISIONS.find(item => item.id === id)
+export const REPORT_SIDES = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west']
+// Official units: a grid square is 276 wide.
+export const SIDE_STEPS = { adjacent: 35, short: 90, long: 170 }
+const pinById = new Map(pins.map(pin => [pin.id, pin]))
+const squareIndex = square => [hajinMap.grid.columns.indexOf(square[0]), Number(square.slice(1)) - 1]
+// The point of a square nearest `at`, kept `inset` units inside its edges.
+function intoSquare(at, square, inset = 40) {
+  const { left, top, cell } = hajinMap.grid
+  const [c, r] = squareIndex(square)
+  const clamp = (value, low) => Math.min(Math.max(value, low + inset), low + cell - inset)
+  return [Math.round(clamp(at[0], left + c * cell)), Math.round(clamp(at[1], top + r * cell))]
+}
+function siteOf(report) {
+  const service = report.service ? pinById.get(report.service) : undefined
+  const anchor = report.anchor ? pinById.get(report.anchor) : undefined
+  const base = service || anchor
+  if (!base) return { at: squareCentre(report.squares[0]).map(Math.round), precision: 'square' }
+  const step = REPORT_SIDES.indexOf(report.side)
+  if (step >= 0) {
+    // Compass sides clockwise from north; official y grows southward.
+    const angle = step * Math.PI / 4, length = SIDE_STEPS[report.dist] || SIDE_STEPS.short
+    return { at: [Math.round(base.at[0] + Math.sin(angle) * length), Math.round(base.at[1] - Math.cos(angle) * length)], precision: 'near', from: base.id }
+  }
+  if (service) return { at: service.at, precision: 'exact', from: service.id }
+  if (['fortress', 'compound'].includes(anchor.layer)) return { at: anchor.at, precision: 'building', from: anchor.id }
+  // A place's label can sit in the square next to the one sources give; move the
+  // pin into that square when it touches the place's own.
+  const square = report.squares?.[0]
+  if (square && square !== anchor.square) {
+    const [c, r] = squareIndex(square), [c0, r0] = squareIndex(anchor.square)
+    if (Math.max(Math.abs(c - c0), Math.abs(r - r0)) === 1) return { at: intoSquare(anchor.at, square), precision: 'place', from: anchor.id }
+  }
+  return { at: anchor.at, precision: 'place', from: anchor.id }
+}
+
 export const hajinReports = mapReports.map(report => {
   const intel = REPORT_INTEL[report.id] || intelByName.get(reportName(report.name))
-  return { ...report, ...(intel ? { intel } : {}) }
+  const site = siteOf(report)
+  return { ...report, ...(intel ? { intel } : {}), ...site, square: squareOf(site.at) }
 })
 for (const pin of pins) {
   const own = hajinReports.filter(report => report.anchor === pin.id)

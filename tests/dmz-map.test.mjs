@@ -2,7 +2,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import crypto from 'node:crypto'
-import { hajinMap, hajinLayers, hajinPins, hajinPin, hajinReports, hajinRoutes, hajinThreatParts, hajinThreatSeeds, mapSources, routeStopLabel, threatLevels, toArt, squareOf, squareCentre } from '../shared/dmz-map.mjs'
+import { hajinMap, hajinLayers, hajinPins, hajinPin, hajinReports, hajinRoutes, hajinThreatParts, hajinThreatSeeds, mapSources, routeStopLabel, threatLevels, toArt, squareOf, squareCentre, PRECISIONS, precisionOf, REPORT_SIDES, SIDE_STEPS } from '../shared/dmz-map.mjs'
 import { anySource, videoUrl } from '../shared/dmz-sightings.mjs'
 import { zoneField, ownerAt, traceRegions } from '../shared/dmz-zones.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
@@ -220,4 +220,32 @@ test('site search opens each named place and route on the Tac-Map', () => {
     const entry = search.find(item => item.route === `/dmz/hajin?pin=${pin.id}#map`)
     assert.equal(entry?.name, pin.name, pin.id)
   }
+})
+
+test('every reported site gets a drawn spot on the art, as precise as its sources allow', () => {
+  const ids = new Set(PRECISIONS.map(item => item.id))
+  for (const report of hajinReports) {
+    assert.ok(ids.has(report.precision), `${report.id} precision ${report.precision}`)
+    const [u, v] = toArt(report.at)
+    assert.ok(u > 0 && u < hajinMap.width && v > 0 && v < hajinMap.height, `${report.id} at ${report.at}`)
+    assert.equal(report.square, squareOf(report.at), report.id)
+    const service = report.service && hajinPin(report.service)
+    if (report.service) {
+      assert.ok(service && !PLACES.has(service.layer), `${report.id} service ${report.service}`)
+      // The building sits in or beside the place the report names.
+      assert.ok(!report.anchor || service.near === report.anchor || hajinPin(service.near)?.parent === report.anchor || hajinPin(report.anchor).parent === service.near || Math.hypot(service.at[0] - hajinPin(report.anchor).at[0], service.at[1] - hajinPin(report.anchor).at[1]) < 400, `${report.id}: ${report.service} is far from ${report.anchor}`)
+    }
+    if (report.side) {
+      assert.ok(REPORT_SIDES.includes(report.side) && (!report.dist || report.dist in SIDE_STEPS), report.id)
+      assert.equal(report.precision, 'near', report.id)
+    } else if (service) assert.deepEqual([report.precision, report.at], ['exact', service.at], report.id)
+    else if (!report.anchor) assert.equal(report.precision, 'square', report.id)
+    else if (['fortress', 'compound'].includes(hajinPin(report.anchor).layer)) assert.deepEqual([report.precision, report.at], ['building', hajinPin(report.anchor).at], report.id)
+    else {
+      assert.equal(report.precision, 'place', report.id)
+      // A place pin moves only into a square that sources give, next to the place's own.
+      if (report.square !== hajinPin(report.anchor).square) assert.equal(report.square, report.squares?.[0], report.id)
+    }
+  }
+  assert.ok(precisionOf('exact').label && PRECISIONS.every(item => item.desc))
 })
