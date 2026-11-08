@@ -166,7 +166,7 @@ watch(() => route.hash, hash => { target.value = hash })
                     {{ markLabel(value) }}
                   </button>
                 </div>
-                <DmzIntelLink :id="key.intel" class="ks-intel">Intel<span class="sr-only"> entry for {{ key.name }}</span><span aria-hidden="true"> →</span></DmzIntelLink>
+                <DmzIntelLink v-if="key.intel" :id="key.intel" class="ks-intel">Intel<span class="sr-only"> entry for {{ key.name }}</span><span aria-hidden="true"> →</span></DmzIntelLink>
               </footer>
             </article>
           </div>

@@ -22,6 +22,8 @@ const serviceName = pin => `the ${SERVICE_KIND[pin.layer]} near ${placeName(pin.
 export function siteLabel(report) {
   const from = report.from && pinById.get(report.from)
   const side = report.side && report.dist === 'same-building' ? `, ${report.side} side` : ''
+  // Sites under the map, such as X01's bosses, hang on the way down.
+  if (report.below) return `Inside ${report.below}: take the lift ${report.side} of ${from.name}`
   if (report.moves) return from ? `Seen around ${PLACES.includes(from.layer) ? from.name : serviceName(from)}; moves between matches` : `Seen in square ${report.squares[0]}; moves between matches`
   switch (report.precision) {
     case 'exact': return `${BUILDINGS.includes(from.layer) ? 'Inside' : 'At'} ${serviceName(from)}${side}`

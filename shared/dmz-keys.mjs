@@ -58,7 +58,8 @@ const fromIntel = keyEntries.filter(entry => !KEY_GUIDE_IDS.includes(entry.id)).
 })
 // Reported rooms whose Intel card is not a key (a Lieutenant, say) get an entry of their own.
 const fromReports = keyRooms.filter(report => !fromIntel.some(key => key.intel === report.intel)).map(report => ({
-  id: report.id, name: bare(report.name), type: 'Locked room', intel: report.intel, confidence: report.confidence, rooms: [{ ...roomOf(report), name: undefined }],
+  // A room whose key has no Intel card yet takes the key's name when sources give one.
+  id: report.id, name: report.key || bare(report.name), type: report.key ? 'Key' : 'Locked room', intel: report.intel, confidence: report.confidence, rooms: [{ ...roomOf(report), name: undefined }],
 }))
 
 const areaOf = key => key.rooms.find(room => room.area)?.area || key.place
