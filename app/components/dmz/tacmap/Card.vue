@@ -337,5 +337,8 @@ defineExpose({ focus: () => headingRef.value?.focus({ preventScroll: true }) })
 .tc--compact .tc-where { padding: 0.5rem 0.625rem; }
 .tc--compact .tc-key-name { display: none; }
 .tc--compact .tc-action, .tc--compact .tc-key-marks button { min-height: 2.75rem; padding: 0 0.75rem; }
+/* The peek sheet scrolls; its actions stay in reach at the bottom. */
+.tc--compact .tc-actions { position: sticky; bottom: 0; z-index: 1; margin: 0 -1rem -0.875rem; padding: 0.5rem 1rem 0.875rem; background: rgba(20, 24, 23, 0.98); }
+@media (pointer: coarse) { .tc-text { min-height: 2.75rem; } .tc-nearby button { min-height: 2.75rem; } }
 .tc :is(button, a):focus-visible { outline: 2px solid var(--dz-ink); outline-offset: 2px; }
 </style>

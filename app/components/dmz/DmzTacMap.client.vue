@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import * as L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import { hajinMap, hajinLayers, hajinLayer, hajinPins, hajinReports, hajinRoutes, hajinThreatParts, hajinThreatSeeds, threatLevels, toArt, squareCentre, HAJIN_MAP_CHECKED, MAP_SECTIONS, QUICK_FINDS, resolvePinId } from '#shared/dmz-map.mjs'
+import { hajinMap, hajinLayers, hajinLayer, hajinPins, hajinReports, hajinRoutes, hajinThreatParts, hajinThreatSeeds, threatLevels, toArt, squareOf, squareCentre, HAJIN_MAP_CHECKED, MAP_SECTIONS, QUICK_FINDS, resolvePinId } from '#shared/dmz-map.mjs'
 import { siteLabel, reportArea, tierCounts, pxPerUnit, groupSites, fanOffsets, searchMap, listGroups, readPrefs, prefsToSave, TACMAP_PREFS } from '#shared/dmz-map-view.mjs'
 import { keyOfReport } from '#shared/dmz-keys.mjs'
 import { zoneField, traceRegions } from '#shared/dmz-zones.mjs'
@@ -102,6 +102,8 @@ const layersButtonRef = ref<HTMLButtonElement>()
 const fullButtonRef = ref<HTMLButtonElement>()
 const closeFullRef = ref<HTMLButtonElement>()
 const searchRef = ref<HTMLInputElement>()
+const hudLayersRef = ref<HTMLButtonElement>()
+const { open: spotlightOpen } = useSpotlight()
 
 // Selection: a pin, report or route id. Old ids from renamed reports still resolve.
 const selectedId = computed(() => resolvePinId(String(route.query.pin || '')))
@@ -112,7 +114,7 @@ const selected = computed(() => selectedReport.value?.id || selectedPin.value?.i
 
 // Quick finds show only their reported layers for the moment; saved layers stay as they are.
 const heldCount = computed(() => Object.values(marks.value).filter(mark => mark === 'held').length)
-const quickFinds = computed(() => QUICK_FINDS.filter(find => !find.held || heldCount.value).map(find => ({ ...find, count: reports.filter(report => find.layers.includes(report.type) && (!find.held || markOf(report) === 'held')).length })))
+const quickFinds = computed(() => QUICK_FINDS.filter(find => !find.held || heldCount.value).map(find => ({ ...find, count: reports.filter(report => find.layers.includes(report.type) && (!find.held || markOf(report) === 'held') && !(hideUsed.value && markOf(report) === 'used')).length })))
 const focusFind = computed(() => QUICK_FINDS.find(find => find.id === focus.value))
 const inFocus = (report: Report) => { const find = focusFind.value; return !find || (find.layers.includes(report.type) && (!find.held || markOf(report) === 'held')) }
 const reportShown = (report: Report) => (focusFind.value ? inFocus(report) : shown.value.includes(report.type)) && !(hideUsed.value && markOf(report) === 'used')
@@ -180,6 +182,7 @@ let routeLayer: L.LayerGroup | undefined
 let zones: { areas: Zone[], edges: Zone[] } | undefined
 let observer: ResizeObserver | undefined
 let sizeObserver: ResizeObserver | undefined
+let sheetObserver: ResizeObserver | undefined
 let motionQuery: MediaQueryList | undefined
 let pointerQuery: MediaQueryList | undefined
 let reducedMotion = false
@@ -208,19 +211,26 @@ function squareBounds(square: string) {
 const animate = () => ({ animate: !reducedMotion })
 const detail = () => !map ? 'far' : map.getZoom() - fitZoom < 0.6 ? 'far' : map.getZoom() - fitZoom < 1.35 ? 'mid' : 'near'
 const radius = () => touch.value ? 42 : 34
-// The sheet covers the bottom of a full-screen phone map, so framing leaves room for it.
-function framePad(): L.FitBoundsOptions {
-  const box = inSheet.value ? panelRef.value?.getBoundingClientRect() : undefined
-  return box ? { paddingTopLeft: L.point(24, 72), paddingBottomRight: L.point(24, Math.max(24, window.innerHeight - box.top + 16)) } : { padding: L.point(30, 30) }
+// On a full-screen phone map the HUD covers the top and the sheet the bottom;
+// framing uses the clear strip between them. A sheet docked at the side covers nothing.
+function clearStrip() {
+  const box = canvasRef.value!.getBoundingClientRect()
+  const top = Math.max(0, ...[...rootRef.value!.querySelectorAll('.tm-hud, .tm-only')].map(element => element.getBoundingClientRect().bottom - box.top))
+  const sheetTop = panelRef.value ? panelRef.value.getBoundingClientRect().top - box.top : box.height
+  return { box, top, bottom: sheetTop > top + 40 ? Math.min(box.height, sheetTop) : box.height }
 }
-// setView that keeps the spot clear of the sheet.
+function framePad(): L.FitBoundsOptions {
+  if (!inSheet.value || !canvasRef.value) return { padding: L.point(30, 30) }
+  const { box, top, bottom } = clearStrip()
+  return { paddingTopLeft: L.point(24, top + 12), paddingBottomRight: L.point(24, Math.max(24, box.height - bottom + 12)) }
+}
+// setView that centres the spot in the clear strip.
 function showAt(at: [number, number], zoom: number) {
   if (!map) return
-  if (!inSheet.value) { map.setView(point(at), zoom, animate()); return }
-  const box = panelRef.value?.getBoundingClientRect()
-  const cover = box ? Math.max(0, window.innerHeight - box.top) : 0
+  if (!inSheet.value || !canvasRef.value) { map.setView(point(at), zoom, animate()); return }
+  const { box, top, bottom } = clearStrip()
   map.setView(point(at), zoom, { animate: false })
-  map.panBy([0, cover / 2], animate())
+  map.panBy([0, box.height / 2 - (top + bottom) / 2], animate())
 }
 
 function updateZoom() {
@@ -517,7 +527,7 @@ function renderSites() {
     const activate = () => { fromMap = true; if (isOpen) closeFan(true); else activateGroup(group.key) }
     marker.on('click', activate)
     marker.addTo(siteLayer)
-    asButton(marker, group.key, `${name}, ${members[0]!.square}: ${members.length} reported sites, ${chipCounts(members)}; ${pinned ? 'all in marked buildings' : 'spots inside not pinned'}. ${isOpen ? 'Press to close the fan.' : 'Press to spread them.'}`, null, activate)
+    asButton(marker, group.key, `${name}, ${pinIndex.get(group.anchorPin || '')?.square || squareOf(group.anchor)}: ${members.length} reported sites, ${chipCounts(members)}; ${pinned ? 'all in marked buildings' : 'spots inside not pinned'}. ${isOpen ? 'Press to close the fan.' : 'Press to spread them.'}`, null, activate)
     elements.get(group.key)?.setAttribute('aria-expanded', String(isOpen))
     if (isOpen) renderFan(group, members)
   }
@@ -691,13 +701,19 @@ function zoomTo() {
 let ownPick: string | null = null
 function select(id: string) {
   ownPick = id
-  router.replace({ query: { ...route.query, pin: id || undefined }, hash: route.hash })
+  return router.replace({ query: { ...route.query, pin: id || undefined }, hash: route.hash })
 }
-function pick(id: string) {
+// Focus moves to the card once it has rendered, so it never falls out of the panel.
+async function pick(id: string) {
   fromMap = false
   if (inSheet.value) sheet.value = 'peek'
-  if (selected.value === id) { nextTick(frameSelection); return }
-  select(id)
+  if (selected.value !== id) await select(id)
+  else nextTick(frameSelection)
+  await nextTick()
+  cardRef.value?.focus()
+}
+function showMore() {
+  sheet.value = 'full'
   nextTick(() => cardRef.value?.focus())
 }
 function pickPart(part: ThreatPart) { pick(part.pin || part.poi) }
@@ -724,6 +740,11 @@ function toggleFocus(id: string) {
   listLayer.value = ''
   fanMember.value = ''
   announce(focus.value ? `Showing only ${focusFind.value!.label.toLowerCase()}: ${quickFinds.value.find(find => find.id === id)?.count} on the map` : 'Showing your layers again')
+}
+// The Only pill goes away when pressed, so focus moves to the quick find it stood for.
+function clearFocusFromPill(id: string) {
+  toggleFocus(id)
+  nextTick(() => rootRef.value?.querySelector<HTMLElement>(`[data-find="${id}"]`)?.focus({ preventScroll: true }))
 }
 function toggleLayer(id: string) {
   if (visit.value.includes(id)) { hideVisit(id); return }
@@ -767,19 +788,25 @@ function openLinkedLayer() {
   showForVisit(linkedLayer.value)
   if (!full.value) nextTick(() => document.getElementById('map')?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' }))
 }
-function toggleLayers() {
+let layersOpener: HTMLElement | null = null
+function toggleLayers(event?: Event) {
+  layersOpener = (event?.currentTarget as HTMLElement | null) || null
   layersOpen.value = !layersOpen.value
   if (layersOpen.value) nextTick(() => layersRef.value?.focus())
 }
 function closeLayers() {
   layersOpen.value = false
-  nextTick(() => layersButtonRef.value?.focus())
+  nextTick(() => [layersOpener, hudLayersRef.value, layersButtonRef.value].find(button => button?.isConnected && button.getClientRects().length)?.focus({ preventScroll: true }))
 }
+// Leaving a group, a quick find or a panel-picked layer falls back to a linked
+// layer's list; only closing that list itself drops ?layer=.
 function clearList() {
-  if (listMode.value === 'focus') focus.value = ''
+  const mode = listMode.value
+  if (mode === 'focus') focus.value = ''
+  const dropLink = mode === 'layer' && !!linkedLayer.value && (!listLayer.value || listLayer.value === linkedLayer.value)
   panelGroup.value = null
   listLayer.value = ''
-  if (linkedLayer.value) router.replace({ query: { ...route.query, layer: undefined }, hash: route.hash })
+  if (dropLink) router.replace({ query: { ...route.query, layer: undefined }, hash: route.hash })
 }
 function announce(text: string) {
   announcement.value = ''
@@ -803,14 +830,34 @@ function applyGestures() {
   if (wheelZoom.value && (full.value || !touch.value)) map.scrollWheelZoom.enable()
   else map.scrollWheelZoom.disable()
 }
+// A phone held sideways is wide but short; full screen still docks the sheet there.
+const shortLandscape = () => window.matchMedia('(max-height: 30rem) and (orientation: landscape)').matches
+const sheetWidth = (width: number) => width > 0 && (width < 736 || (full.value && touch.value && shortLandscape()))
+let reframe = false
+const placeholder = ref(0)
 function openFull() {
   if (full.value) return
+  // The page keeps the map's room while it is lifted out, so nothing below it jumps.
+  placeholder.value = rootRef.value?.offsetHeight || 0
   full.value = true
   sheet.value = 'peek'
   layersOpen.value = false
+  reframe = true
   document.documentElement.classList.add('tm-locked')
   if (route.hash !== '#full') { pushedFull = true; router.push({ query: route.query, hash: '#full' }) }
-  nextTick(() => { narrow.value = window.innerWidth < 736; applyGestures(); resize(); closeFullRef.value?.focus({ preventScroll: true }) })
+  nextTick(() => { narrow.value = sheetWidth(window.innerWidth); applyGestures(); resize(); closeFullRef.value?.focus({ preventScroll: true }) })
+}
+// While the dialog is open, focus that drops out of it (a control that went away) comes back to the card or Close.
+// Inline, only focus whose control was removed is caught; a click elsewhere on the page is left alone.
+function onFocusOut(event: FocusEvent) {
+  const left = event.target as Element | null
+  setTimeout(() => {
+    if (disposed) return
+    const active = document.activeElement
+    if (active && active !== document.body && rootRef.value?.contains(active)) return
+    if (full.value) { if (cardRef.value) cardRef.value.focus(); else closeFullRef.value?.focus({ preventScroll: true }) }
+    else if ((!active || active === document.body) && left && !left.isConnected) panelRef.value?.focus({ preventScroll: true })
+  }, 0)
 }
 function closeFull() {
   if (!full.value) return
@@ -824,9 +871,13 @@ function finishFull() {
   document.documentElement.classList.remove('tm-locked')
   const query = keepQuery
   keepQuery = null
-  // Back restores the address from before full screen; keep the selection made inside it.
-  if (query && JSON.stringify(query) !== JSON.stringify(route.query)) router.replace({ query: query as any, hash: '#map' })
-  nextTick(() => { narrow.value = (rootRef.value?.getBoundingClientRect().width || 1000) < 736; applyGestures(); resize(); fullButtonRef.value?.focus({ preventScroll: true }) })
+  // Back restores the address from before full screen; keep the selection made inside it,
+  // as the map's own pick (no layer revealed, no reframe) and on the page's own hash, so it does not scroll.
+  if (query && JSON.stringify(query) !== JSON.stringify(route.query)) {
+    if (String(query.pin || '') !== String(route.query.pin || '')) { ownPick = resolvePinId(String(query.pin || '')); fromMap = true }
+    router.replace({ query: query as any, hash: route.hash === '#full' ? '#map' : route.hash })
+  }
+  nextTick(() => { narrow.value = sheetWidth(rootRef.value?.getBoundingClientRect().width || 1000); applyGestures(); resize(); placeholder.value = 0; fullButtonRef.value?.focus({ preventScroll: true }) })
 }
 function toggleSheet() { sheet.value = sheet.value === 'full' ? 'peek' : 'full' }
 
@@ -834,7 +885,8 @@ function toggleSheet() { sheet.value = sheet.value === 'full' ? 'peek' : 'full' 
 function onRootKey(event: KeyboardEvent) {
   if (event.key === 'Tab' && full.value) { trapTab(event); return }
   if (event.key !== 'Escape' || event.defaultPrevented) return
-  if (layersOpen.value) closeLayers()
+  if (event.target === searchRef.value && query.value) query.value = ''
+  else if (layersOpen.value) closeLayers()
   else if (fanKey()) closeFan(true)
   else if (selected.value) close()
   else if (panelGroup.value || listLayer.value) clearList()
@@ -849,8 +901,10 @@ function trapTab(event: KeyboardEvent) {
   if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus() }
   else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus() }
 }
+// Runs in the capture phase, ahead of the site-wide search's own '/' shortcut.
 function onSlash(event: KeyboardEvent) {
-  if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey || touch.value) return
+  if (event.defaultPrevented || event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey || touch.value) return
+  if (spotlightOpen.value || (!full.value && document.querySelector('[aria-modal="true"]'))) return
   if ((event.target as HTMLElement | null)?.closest?.('input, textarea, select, [contenteditable="true"]')) return
   const box = rootRef.value?.getBoundingClientRect()
   if (!full.value && (!box || box.bottom < 0 || box.top > window.innerHeight)) return
@@ -899,8 +953,10 @@ function resize() {
     const untouched = Math.abs(map.getZoom() - fitZoom) < 0.05
     map.invalidateSize({ pan: false, animate: false })
     measure()
-    if (first && selected.value) { fromMap = false; frameSelection() }
+    // Opening full screen frames the selection again once the new size has applied.
+    if ((first || reframe) && selected.value) { fromMap = false; frameSelection() }
     else if (first || untouched) map.fitBounds(imageBounds(), { padding: [8, 8], animate: false })
+    reframe = false
     updateZoom()
     if (regroup() || fanKey()) renderSites()
   })
@@ -927,7 +983,7 @@ function motionChanged(event: MediaQueryListEvent) { reducedMotion = event.match
 function pointerChanged(event: MediaQueryListEvent) { touch.value = event.matches; applyGestures(); renderAll() }
 function measureNarrow() {
   const width = full.value ? window.innerWidth : rootRef.value?.getBoundingClientRect().width || 0
-  const next = width > 0 && width < 736
+  const next = sheetWidth(width)
   if (next !== narrow.value) { narrow.value = next; nextTick(applyGestures) }
 }
 
@@ -972,7 +1028,13 @@ watch(query, () => {
 })
 watch(showGrid, () => { renderGrid(); save() })
 watch(wheelZoom, () => { applyGestures(); save() })
-watch(() => route.hash, hash => { if (full.value && hash !== '#full') { pushedFull = false; finishFull() } })
+// Back (or any navigation) off #full closes full screen and keeps what was picked inside it.
+watch(() => [route.hash, route.query] as const, ([hash], [oldHash, oldQuery]) => {
+  if (!full.value || hash === '#full') return
+  pushedFull = false
+  if (!keepQuery && oldHash === '#full') keepQuery = { ...oldQuery }
+  finishFull()
+})
 watch([sheet, full], () => nextTick(resize))
 
 onMounted(async () => {
@@ -994,7 +1056,9 @@ onMounted(async () => {
   measureNarrow()
   sizeObserver = new ResizeObserver(measureNarrow)
   sizeObserver.observe(rootRef.value!)
-  window.addEventListener('keydown', onSlash)
+  window.addEventListener('keydown', onSlash, { capture: true })
+  sheetObserver = new ResizeObserver(() => rootRef.value?.style.setProperty('--tm-sheet-h', `${panelRef.value?.offsetHeight || 0}px`))
+  if (panelRef.value) sheetObserver.observe(panelRef.value)
   try {
     canvasRef.value.addEventListener('wheel', preserveBrowserZoom, { capture: true, passive: true })
     // As in InteractiveMap: no zoom animation, so a route change cannot leave
@@ -1035,7 +1099,8 @@ onBeforeUnmount(() => {
   sizeObserver?.disconnect()
   motionQuery?.removeEventListener('change', motionChanged)
   pointerQuery?.removeEventListener('change', pointerChanged)
-  window.removeEventListener('keydown', onSlash)
+  window.removeEventListener('keydown', onSlash, { capture: true })
+  sheetObserver?.disconnect()
   document.documentElement.classList.remove('tm-locked')
   canvasRef.value?.removeEventListener('wheel', preserveBrowserZoom, true)
   map?.stop()
@@ -1054,11 +1119,12 @@ const PRECISION_HELP = [
 </script>
 
 <template>
+  <div v-if="full && placeholder" class="tm-placeholder" :style="{ height: `${placeholder}px` }" aria-hidden="true" />
   <div
     ref="rootRef" class="tm"
     :class="{ 'tm--full': full, 'tm--threat': view === 'threat', 'tm--sheet': inSheet, [`tm--sheet-${sheet}`]: inSheet, 'tm--touch': touch, 'tm--narrow': narrow, 'has-pick': !!selected }"
     :role="full ? 'dialog' : undefined" :aria-modal="full ? 'true' : undefined" :aria-label="full ? 'Hajin Tac-Map, full screen' : undefined"
-    @keydown="onRootKey"
+    @keydown="onRootKey" @focusout="onFocusOut"
   >
     <Teleport defer to="#tm-sheet-tools" :disabled="!inSheet">
       <div class="tm-tools">
@@ -1068,7 +1134,7 @@ const PRECISION_HELP = [
           <input ref="searchRef" v-model="query" type="search" placeholder="Search keys, bosses, exfils, places or a square (H6)" autocomplete="off" spellcheck="false" aria-keyshortcuts="/" @focus="inSheet && (sheet = 'full')">
         </label>
         <div class="tm-quick" role="group" aria-label="Quick finds">
-          <button v-for="find in quickFinds" :key="find.id" type="button" class="tm-q" :style="{ '--tm-c': layerColor(find.layers[0]!) }" :aria-pressed="focus === find.id" :title="find.id === 'mine' ? 'Rooms for the keys you marked held' : `Show only ${find.label.toLowerCase()} for now`" @click="toggleFocus(find.id)">
+          <button v-for="find in quickFinds" :key="find.id" type="button" class="tm-q" :data-find="find.id" :disabled="view === 'threat'" :style="{ '--tm-c': layerColor(find.layers[0]!) }" :aria-pressed="focus === find.id" :title="find.id === 'mine' ? 'Rooms for the keys you marked held' : `Show only ${find.label.toLowerCase()} for now`" @click="toggleFocus(find.id)">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path :d="GLYPHS[find.id === 'mine' ? 'held' : find.layers[0]!]" /></svg>{{ find.label }}<span class="dmz-mono">{{ find.count }}</span>
           </button>
           <button ref="layersButtonRef" type="button" class="tm-q tm-q--layers" aria-controls="tm-layers" :aria-expanded="layersOpen" @click="toggleLayers">
@@ -1097,12 +1163,12 @@ const PRECISION_HELP = [
               <button type="button" :aria-pressed="view === 'map'" @click="setView('map')">Map</button>
               <button type="button" :aria-pressed="view === 'threat'" @click="setView('threat')">Threat</button>
             </div>
-            <button v-if="inSheet" type="button" class="tm-hud-btn" aria-controls="tm-layers" :aria-expanded="layersOpen" @click="toggleLayers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5l-9 5l-9-5zM3 13l9 5l9-5" /></svg><span>Layers</span></button>
+            <button v-if="inSheet" ref="hudLayersRef" type="button" class="tm-hud-btn" aria-controls="tm-layers" :aria-expanded="layersOpen" @click="toggleLayers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5l-9 5l-9-5zM3 13l9 5l9-5" /></svg><span>Layers</span></button>
             <span v-if="cursor && !touch" class="tm-cursor dmz-mono" aria-hidden="true">Square {{ cursor }}</span>
           </div>
           <div v-if="focusFind && view === 'map'" class="tm-only">
             <span>Only: {{ focusFind.id === 'mine' ? 'My keys' : focusFind.label }}</span>
-            <button type="button" :aria-label="`Stop showing only ${focusFind.label.toLowerCase()}`" @click="toggleFocus(focusFind.id)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
+            <button type="button" :aria-label="`Stop showing only ${focusFind.label.toLowerCase()}`" @click="clearFocusFromPill(focusFind.id)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg></button>
           </div>
           <div class="tm-controls" role="group" aria-label="Map controls">
             <button type="button" aria-label="Zoom in" title="Zoom in" :disabled="!ready || atMax" @click="zoomBy(0.5)">+</button>
@@ -1147,7 +1213,7 @@ const PRECISION_HELP = [
         <div class="tm-panel-body">
           <DmzTacmapCard
             v-if="selected" :id="selected" ref="cardRef" :view="view" :compact="inSheet && sheet === 'peek'" :copied="copyMessage" :active-stop="activeStop"
-            @close="close" @select="pick" @zoom="zoomTo" @area="showArea" @copy="copyLink" @more="sheet = 'full'" @stop="focusStop"
+            @close="close" @select="pick" @zoom="zoomTo" @area="showArea" @copy="copyLink" @more="showMore" @stop="focusStop"
           />
           <template v-if="!(inSheet && sheet === 'peek' && selected)">
             <template v-if="view === 'threat' && !searching">
@@ -1314,6 +1380,7 @@ const PRECISION_HELP = [
 .tm-q:hover { background: rgba(233, 230, 214, 0.1); }
 .tm-q[aria-pressed='true'] { border-color: var(--tm-c); background: color-mix(in srgb, var(--tm-c) 22%, rgba(14, 16, 15, 0.8)); }
 .tm-q[aria-pressed='true'] .dmz-mono { color: var(--dz-ink); }
+.tm-q:disabled { opacity: 0.45; cursor: default; }
 .tm-q--layers { margin-left: auto; }
 .tm-q--layers[aria-expanded='true'] { border-color: var(--dz-ink); background: rgba(233, 230, 214, 0.14); }
 .tm-q--layers .dmz-mono { color: var(--dz-teal); }
@@ -1547,14 +1614,16 @@ span.tm-group-btn { cursor: default; }
 .tm--sheet .tm-stage { position: absolute; inset: 0; }
 .tm--sheet .tm-frame { height: 100%; border: 0; border-radius: 0; }
 .tm--sheet .tm-hud { top: max(0.5rem, env(safe-area-inset-top)); left: 0.5rem; right: 0.5rem; }
-.tm--sheet .tm-controls { top: 38%; right: max(0.5rem, env(safe-area-inset-right)); }
+.tm--sheet .tm-controls { top: auto; bottom: calc(var(--tm-sheet-h, 11rem) + 0.75rem); right: max(0.5rem, env(safe-area-inset-right)); }
+.tm--sheet-peek.has-pick .tm-controls { flex-direction: row; }
+.tm--sheet-full .tm-controls { display: none; }
 .tm--sheet .tm-controls button { width: 3rem; height: 3rem; }
 .tm--sheet .tm-hud-btn, .tm--sheet .tm-view button { min-height: 3rem; }
 .tm--sheet .tm-only { top: calc(max(0.5rem, env(safe-area-inset-top)) + 3.75rem); bottom: auto; }
 .tm--sheet .tm-layers-panel { z-index: 1100; }
 .tm--sheet .tm-panel { position: absolute; z-index: 1050; left: 0; right: 0; bottom: 0; height: calc(11rem + env(safe-area-inset-bottom)); max-height: none; padding-bottom: env(safe-area-inset-bottom); border: 1px solid var(--dz-line-strong); border-bottom: 0; border-radius: 18px 18px 0 0; background: rgba(20, 24, 23, 0.97); box-shadow: 0 -6px 24px #0009; }
 .tm--sheet-full .tm-panel { height: calc(100dvh - 4.5rem); }
-.tm--sheet-peek.has-pick .tm-panel { height: auto; max-height: min(32rem, 64dvh); }
+.tm--sheet-peek.has-pick .tm-panel { height: auto; max-height: min(34rem, calc(100dvh - 4.5rem)); }
 .tm--sheet-peek.has-pick .tm-quick, .tm--sheet-peek.has-pick .tm-visit { display: none; }
 .tm--sheet .tm-sheet-top { position: sticky; top: 0; z-index: 2; display: grid; gap: 0.375rem; padding: 0 0.75rem 0.5rem; background: rgba(20, 24, 23, 0.98); }
 .tm--sheet .tm-tools { margin: 0; gap: 0.5rem; }
@@ -1565,6 +1634,13 @@ span.tm-group-btn { cursor: default; }
   .tm--sheet .tm-stage { right: 20rem; }
   .tm--sheet .tm-panel, .tm--sheet-full .tm-panel { top: 0; left: auto; width: 20rem; height: 100%; border-radius: 0; border-left: 1px solid var(--dz-line-strong); }
   .tm--sheet .tm-handle { display: none; }
+  .tm--sheet .tm-controls, .tm--sheet-peek.has-pick .tm-controls { top: 0.75rem; bottom: auto; flex-direction: column; }
+  .tm--sheet-full .tm-controls { display: flex; }
+}
+/* Touch: every control is at least 44px tall. */
+@media (pointer: coarse) {
+  .tm-text, .tm-seg button, .tm-group-btn, .tm-check { min-height: 2.75rem; }
+  .tm-only button { width: 2.75rem; height: 2.75rem; }
 }
 @media (prefers-reduced-motion: reduce) { .tm :deep(*) { transition: none !important; animation: none !important; } }
 </style>
