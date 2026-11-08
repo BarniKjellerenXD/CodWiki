@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
-import { dmzKeys, dmzKeyGuides, dmzKeyPlaces, KEY_GUIDE_IDS, DMZ_KEYS_KEY, HAULS, KEY_HAULS, filterKeys, haulLabel, keyPlaceIds, keySquares, keyTally, keyVideos, normalizeDmzKeys, readDmzKeys, sortKeysByHaul } from '../shared/dmz-keys.mjs'
+import { dmzKeys, dmzKeyGuides, dmzKeyPlaces, KEY_GUIDE_IDS, KEY_MOVED, DMZ_KEYS_KEY, HAULS, KEY_HAULS, filterKeys, haulLabel, keyPlaceIds, keySquares, keyTally, keyVideos, normalizeDmzKeys, readDmzKeys, sortKeysByHaul } from '../shared/dmz-keys.mjs'
 import { dmzIntel } from '../shared/dmz-intel.mjs'
 import { hajinPin, hajinReports } from '../shared/dmz-map.mjs'
 import { anySource, NO_PERCENT } from '../shared/dmz-sightings.mjs'
@@ -117,7 +117,12 @@ test('search, mark, place and confidence filters narrow the list', () => {
 
 test('key IDs saved on devices are never renamed or dropped', () => {
   const ids = new Set(dmzKeys.map(key => key.id))
-  for (const id of SAVED_KEY_IDS) assert.ok(ids.has(id), id)
+  // A retired id is allowed only when KEY_MOVED hands its mark to a current key.
+  for (const id of SAVED_KEY_IDS) assert.ok(ids.has(id) || ids.has(KEY_MOVED[id]), id)
+  for (const [from, to] of Object.entries(KEY_MOVED)) {
+    assert.ok(!ids.has(from) && ids.has(to), `${from} → ${to}`)
+    assert.deepEqual(normalizeDmzKeys({ marks: { [from]: 'held' } }).marks, { [to]: 'held' })
+  }
 })
 
 test('haul tiers name real keys, with whole opening counts and real sources', () => {

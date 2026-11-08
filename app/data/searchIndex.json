@@ -20682,12 +20682,12 @@
   },
   {
     "id": "dmz-intel:knrp-reactor-01",
-    "name": "KNRP Reactor 01",
+    "name": "Utility Maintenance Storage",
     "map": "",
     "kind": "Key",
     "context": "Modern Warfare 4 · DMZ · Intel · Keys and locked rooms",
     "route": "/dmz/stash#key-knrp-reactor-01",
-    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms named knrp reactor haneul nuclear short location video covers lists dmzmap codex radar carry written source gives door"
+    "keywords": "mw4 modern warfare 4 dmz hajin exclusion zone extraction intel keys and locked rooms rare utility maintenance storage room basement under transformer yard beside reactor haneul nuclear door signed knrp tac-map lists"
   },
   {
     "id": "dmz-intel:imjin-mill-foremans-office",

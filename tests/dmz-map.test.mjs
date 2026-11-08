@@ -142,6 +142,7 @@ test('report confidence follows the Intel rules', () => {
     const independent = new Set(sources.map(source => ['reddit', 'forum', 'video'].includes(source.type) ? source.url : host(source.url)))
     const expected = sources.some(source => source.type === 'official') ? 'official' : independent.size >= 2 ? 'confirmed' : 'reported'
     assert.equal(report.confidence, expected, report.id)
+    for (const id of report.context || []) assert.ok(mapSources[id]?.url && !report.sources.includes(id), `${report.id} context ${id}`)
     // Notes add detail; the confidence label covers how sure the sources are.
     if (report.note) assert.doesNotMatch(report.note, /^(Reported, unconfirmed|Single source|Community-reported)/, report.id)
   }
@@ -239,8 +240,10 @@ test('every reported site gets a drawn spot on the art, as precise as its source
     const off = base ? Math.hypot(report.at[0] - base.at[0], report.at[1] - base.at[1]) : 0
     if (report.side) assert.ok(REPORT_SIDES.includes(report.side) && (!report.dist || report.dist in SIDE_STEPS), report.id)
     if (report.dist) assert.ok(report.side, `${report.id} has a distance and no side`)
-    // A side moves the pin by its distance; one within the building keeps the building's precision.
-    if (report.side) assert.ok(Math.abs(off - SIDE_STEPS[report.dist || 'short']) < 1, report.id)
+    // A side moves the pin by its distance, or less when that would leave every square sources give;
+    // one within the building keeps the building's precision.
+    if (report.side && report.precision === 'near' && report.squares?.length) assert.ok(report.squares.includes(report.square), `${report.id} is drawn outside its sourced squares`)
+    if (report.side) assert.ok(Math.abs(off - SIDE_STEPS[report.dist || 'short']) < 1 || (report.precision === 'near' && report.squares?.includes(report.square) && off < SIDE_STEPS.long + hajinMap.grid.cell), report.id)
     if (report.side && report.dist !== 'same-building') assert.equal(report.precision, 'near', report.id)
     else if (service) assert.deepEqual([report.precision, off < 30], ['exact', true], report.id)
     else if (!report.anchor) assert.equal(report.precision, 'square', report.id)
@@ -252,4 +255,21 @@ test('every reported site gets a drawn spot on the art, as precise as its source
     }
   }
   assert.ok(precisionOf('exact').label && PRECISIONS.every(item => item.desc))
+})
+
+test('reported text reads as written for players', () => {
+  const SELLER = /skycoach|timesaver|upblazed|playerauctions|gameboost|boostingfactory|lfcarry|overgear|epiccarry/i
+  for (const report of hajinReports) {
+    for (const field of ['where', 'note']) {
+      const text = report[field] || ''
+      assert.ok(!text.includes('…'), `${report.id} ${field} stops mid-sentence`)
+      assert.doesNotMatch(text, SELLER, `${report.id} ${field} names a seller`)
+      // No editor directives, first-person research voice or raw ids.
+      assert.doesNotMatch(text, /\b(Do not (plot|publish)|I found|our (earlier|existing|Intel)|check in game)\b/i, `${report.id} ${field}`)
+      assert.doesNotMatch(text, /\b[a-z0-9]+(-[a-z0-9]+){3,}\b/, `${report.id} ${field} carries a raw id`)
+    }
+    for (const id of [...report.sources, ...(report.context || [])]) assert.doesNotMatch(mapSources[id].url, SELLER, `${report.id} cites a seller`)
+    // A fortress or compound pin claims the site is inside it; the words must not put it outside.
+    if (report.precision === 'building') assert.doesNotMatch(report.where, new RegExp(`\\b(${REPORT_SIDES.join('|')}) of ${hajinPin(report.anchor).name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'), report.id)
+  }
 })

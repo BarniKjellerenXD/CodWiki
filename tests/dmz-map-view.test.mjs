@@ -53,8 +53,13 @@ test('rough and somewhere-in sites have ground to show; pinned ones do not', () 
     const area = reportArea(report)
     if (report.tier === 'pinned') { assert.equal(area, null, report.id); continue }
     assert.ok(area, report.id)
-    if (area.circle) assert.ok(area.circle.radius >= 30 && area.circle.at.length === 2, report.id)
-    else assert.ok(area.squares.length, `${report.id} has neither a circle nor a square`)
+    // Underground sites hang on the way down and claim no ground on the surface.
+    if (report.below) { assert.equal(area.circle, null, report.id); continue }
+    if (area.circle) {
+      assert.ok(area.circle.radius >= 30 && area.circle.at.length === 2, report.id)
+      // The ground shown always takes in the marker itself.
+      assert.ok(Math.hypot(report.at[0] - area.circle.at[0], report.at[1] - area.circle.at[1]) <= area.circle.radius, `${report.id}: its circle misses its own marker`)
+    } else assert.ok(area.squares.length, `${report.id} has neither a circle nor a square`)
   }
   for (const seed of hajinThreatSeeds) assert.ok(Object.values(PLACE_REACH).includes(seed.reach))
 })
@@ -168,11 +173,11 @@ test('search ranks names first and finds keys, places and squares', () => {
   assert.ok(searchMap('E5').sourced.some(report => report.id === 'train-depot-storageroom-cheongun-village'))
   // A held key's room ranks first among equal matches.
   const rooms = searchMap('armory').items.filter(item => item.kind === 'report' && keyOfReport(item.id))
-  const last = rooms.at(-1)
-  if (rooms.length > 1 && rooms[0].rank === last.rank) {
-    const held = searchMap('armory', { held: { [keyOfReport(last.id).id]: 'held' } }).items
-    assert.equal(held.filter(item => item.rank === rooms[0].rank)[0].id, last.id)
-  }
+  const tied = rooms.filter(item => item.rank === rooms[0].rank)
+  assert.ok(tied.length > 1, 'needs two key rooms that tie on "armory"')
+  const last = tied.at(-1)
+  const held = searchMap('armory', { held: { [keyOfReport(last.id).id]: 'held' } }).items
+  assert.equal(held.filter(item => item.rank === rooms[0].rank)[0].id, last.id)
 })
 
 test('lists group by major location in map order, or by square in reading order', () => {
