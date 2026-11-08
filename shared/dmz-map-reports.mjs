@@ -8,7 +8,9 @@
 // any grid squares its sources give. shared/dmz-map.mjs works out the spot each is drawn at and
 // how sure that spot is. Confidence follows the Intel rules. A report may also carry videos:
 // [{ id, at?, why, shows? }], plain links to watch; added or checked dates from research rounds;
-// key, the key's name when no Intel card covers it; moves, for things that roam.
+// key, the key's name when no Intel card covers it; moves, for things that roam; below, for
+// sites under the map (X01), drawn at the way down; context, pages cited for a side fact that
+// do not count toward confidence (an Official badge needs an official page that places the site).
 
 // Sources not already listed in dmz-intel-data.mjs or dmz-guide-sources.mjs.
 export const mapReportSources = {
