@@ -190,8 +190,9 @@ export const PRECISIONS = [
 ]
 export const precisionOf = id => PRECISIONS.find(item => item.id === id)
 export const REPORT_SIDES = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west']
-// Official units: a grid square is 276 wide.
-export const SIDE_STEPS = { adjacent: 35, short: 90, long: 170 }
+// Official units: a grid square is 276 wide. A side within the same building
+// nudges the pin and keeps the building's precision.
+export const SIDE_STEPS = { 'same-building': 22, adjacent: 35, short: 90, long: 170 }
 const pinById = new Map(pins.map(pin => [pin.id, pin]))
 const squareIndex = square => [hajinMap.grid.columns.indexOf(square[0]), Number(square.slice(1)) - 1]
 // The point of a square nearest `at`, kept `inset` units inside its edges.
@@ -207,13 +208,13 @@ function siteOf(report) {
   const base = service || anchor
   if (!base) return { at: squareCentre(report.squares[0]).map(Math.round), precision: 'square' }
   const step = REPORT_SIDES.indexOf(report.side)
-  if (step >= 0) {
-    // Compass sides clockwise from north; official y grows southward.
-    const angle = step * Math.PI / 4, length = SIDE_STEPS[report.dist] || SIDE_STEPS.short
-    return { at: [Math.round(base.at[0] + Math.sin(angle) * length), Math.round(base.at[1] - Math.cos(angle) * length)], precision: 'near', from: base.id }
-  }
-  if (service) return { at: service.at, precision: 'exact', from: service.id }
-  if (['fortress', 'compound'].includes(anchor.layer)) return { at: anchor.at, precision: 'building', from: anchor.id }
+  // Compass sides clockwise from north; official y grows southward.
+  const angle = step * Math.PI / 4, length = SIDE_STEPS[report.dist] || SIDE_STEPS.short
+  const beside = step >= 0 ? [Math.round(base.at[0] + Math.sin(angle) * length), Math.round(base.at[1] - Math.cos(angle) * length)] : base.at
+  const inside = report.dist === 'same-building'
+  if (step >= 0 && !inside) return { at: beside, precision: 'near', from: base.id }
+  if (service) return { at: beside, precision: 'exact', from: service.id }
+  if (['fortress', 'compound'].includes(anchor.layer)) return { at: beside, precision: 'building', from: anchor.id }
   // A place's label can sit in the square next to the one sources give; move the
   // pin into that square when it touches the place's own.
   const square = report.squares?.[0]
