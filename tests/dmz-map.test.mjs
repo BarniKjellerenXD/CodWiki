@@ -235,12 +235,16 @@ test('every reported site gets a drawn spot on the art, as precise as its source
       // The building sits in or beside the place the report names.
       assert.ok(!report.anchor || service.near === report.anchor || hajinPin(service.near)?.parent === report.anchor || hajinPin(report.anchor).parent === service.near || Math.hypot(service.at[0] - hajinPin(report.anchor).at[0], service.at[1] - hajinPin(report.anchor).at[1]) < 400, `${report.id}: ${report.service} is far from ${report.anchor}`)
     }
-    if (report.side) {
-      assert.ok(REPORT_SIDES.includes(report.side) && (!report.dist || report.dist in SIDE_STEPS), report.id)
-      assert.equal(report.precision, 'near', report.id)
-    } else if (service) assert.deepEqual([report.precision, report.at], ['exact', service.at], report.id)
+    const base = service || hajinPin(report.anchor || '')
+    const off = base ? Math.hypot(report.at[0] - base.at[0], report.at[1] - base.at[1]) : 0
+    if (report.side) assert.ok(REPORT_SIDES.includes(report.side) && (!report.dist || report.dist in SIDE_STEPS), report.id)
+    if (report.dist) assert.ok(report.side, `${report.id} has a distance and no side`)
+    // A side moves the pin by its distance; one within the building keeps the building's precision.
+    if (report.side) assert.ok(Math.abs(off - SIDE_STEPS[report.dist || 'short']) < 1, report.id)
+    if (report.side && report.dist !== 'same-building') assert.equal(report.precision, 'near', report.id)
+    else if (service) assert.deepEqual([report.precision, off < 30], ['exact', true], report.id)
     else if (!report.anchor) assert.equal(report.precision, 'square', report.id)
-    else if (['fortress', 'compound'].includes(hajinPin(report.anchor).layer)) assert.deepEqual([report.precision, report.at], ['building', hajinPin(report.anchor).at], report.id)
+    else if (['fortress', 'compound'].includes(hajinPin(report.anchor).layer)) assert.deepEqual([report.precision, off < 30], ['building', true], report.id)
     else {
       assert.equal(report.precision, 'place', report.id)
       // A place pin moves only into a square that sources give, next to the place's own.
