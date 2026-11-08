@@ -67,6 +67,10 @@ export const dmzKeys = [...fromIntel, ...fromReports]
   .map(key => ({ ...key, area: areaOf(key) }))
   .sort((a, b) => areaRank(a.area) - areaRank(b.area) || (a.area || '').localeCompare(b.area || '') || a.name.localeCompare(b.name))
 
+// The key that opens a reported room, so the Tac-Map can show held and used keys.
+const keyByReport = new Map(dmzKeys.flatMap(key => key.rooms.map(room => [room.report, key])))
+export const keyOfReport = id => keyByReport.get(id)
+
 export const dmzKeyGuides = KEY_GUIDE_IDS.map(id => keyEntries.find(entry => entry.id === id)).filter(Boolean)
 
 // Places a key's rooms sit in, major locations first; the place filter offers these.
