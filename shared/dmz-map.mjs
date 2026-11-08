@@ -53,7 +53,34 @@ export const hajinLayers = [
   { id: 'landmark', group: 'Reported', label: 'Landmarks', one: 'Landmark', desc: 'A building or spot that guides and missions refer to.', on: false },
   { id: 'route', group: 'Routes', label: 'Routes', one: 'Route', desc: 'The path a video takes across Hajin, stop by stop. Routes are traced by hand, so the line follows roads only roughly.', on: true },
 ]
+// The Layers panel groups layers into sections, in this order; every layer sits in one.
+export const MAP_SECTIONS = [
+  { id: 'keys', label: 'Keys and loot', layers: ['key-room', 'loot'], open: true },
+  { id: 'bosses', label: 'Bosses and objectives', layers: ['boss', 'sam', 'uav', 'lt-tower', 'bounty'], open: true },
+  { id: 'out', label: 'Getting out', layers: ['exfil', 'mission-exit', 'station', 'route'], open: true },
+  { id: 'supplies', label: 'Supplies', layers: ['ammo', 'gas', 'marine-gas', 'police', 'clinic', 'fire'], open: false },
+  { id: 'places', label: 'Places', layers: ['poi', 'fortress', 'compound', 'area', 'landmark'], open: false },
+]
+// Short names for chips and tight rows.
+const SHORT = {
+  poi: 'Major', fortress: 'Fortresses', area: 'Areas', compound: 'Compounds', police: 'Police', clinic: 'Clinics', fire: 'Fire', gas: 'Gas',
+  'marine-gas': 'Marine gas', ammo: 'Ammo', uav: 'UAV', 'lt-tower': 'Lt. towers', 'key-room': 'Keys', boss: 'Bosses', exfil: 'Exfils',
+  sam: 'SAM', loot: 'Loot', 'mission-exit': 'Mission exits', bounty: 'Bounty', station: 'Stations', landmark: 'Landmarks', route: 'Routes',
+}
+for (const layer of hajinLayers) Object.assign(layer, { section: MAP_SECTIONS.find(section => section.layers.includes(layer.id))?.id, short: SHORT[layer.id] || layer.label })
 export const hajinLayer = id => hajinLayers.find(layer => layer.id === id)
+// The layer ids saved maps knew before layers had sections. A saved choice
+// without a `known` list covers exactly these; newer layers take their default.
+export const LEGACY_LAYERS = Object.freeze(['poi', 'fortress', 'area', 'compound', 'police', 'clinic', 'fire', 'gas', 'marine-gas', 'ammo', 'uav', 'lt-tower', 'key-room', 'boss', 'exfil', 'sam', 'loot', 'mission-exit', 'bounty', 'station', 'landmark', 'route'])
+// One-tap filters above the map. They focus the map for the moment and leave the saved layers alone.
+export const QUICK_FINDS = [
+  { id: 'keys', label: 'Keys', layers: ['key-room'] },
+  { id: 'bosses', label: 'Bosses', layers: ['boss'] },
+  { id: 'exfils', label: 'Exfils', layers: ['exfil', 'mission-exit'] },
+  { id: 'sam', label: 'SAM', layers: ['sam'] },
+  { id: 'loot', label: 'Loot', layers: ['loot'] },
+  { id: 'mine', label: 'My keys', layers: ['key-room'], held: true },
+]
 
 // [name, x, y] for places and [x, y] for services, in official units.
 const OFFICIAL = {
@@ -105,7 +132,7 @@ const AREA_DESC = {
   'Namjin Riverside': 'Hajin\'s southern edge, where abandoned civilian cars cluster near a tunnel by the river\'s South Fork.',
 }
 // Other names the Intel database uses for a place. Matched case-sensitively as whole words.
-const ALIASES = {
+export const ALIASES = {
   '14th Political Prison': ['Political Prison'], 'Chang-san Air Base': ['Changsan Air Base', 'Air Base'], 'Cheongun Village': ['Cheongun'],
   'Haneul Nuclear Reactor': ['Haneul', 'Nuclear Reactor', 'Reactor 01', 'Reactor 02'], 'Mirae General Hospital': ['Mirae'],
   'NuriGO Mall': ['NuriGo Mall', 'NuriGO'], 'Cheonwang Peak Array': ['Cheonwang'], 'The Grid': ['Nenshin', 'Netshin'], 'Songdo Wharf': ['Songdo'],
@@ -181,14 +208,20 @@ const REPORT_INTEL = {
 // has an official position, so the spot is derived from what sources say:
 // a report names the official service building it is in (`service`), and a
 // side and rough distance (`side`, `dist`) when sources give one.
+// Each precision falls in one of three tiers, which the map draws by shape:
+// pinned (solid), approx (dashed, with a circle of where it could be) and area
+// (dashed, standing for a whole place or square).
 export const PRECISIONS = [
-  { id: 'exact', label: 'Marked building', desc: 'Inside a building the official map marks, such as a police station or gas station.' },
-  { id: 'building', label: 'Fortress or compound', desc: 'At a fortress or compound the official map marks. The room can be anywhere inside it.' },
-  { id: 'near', label: 'Beside a marker', desc: 'Sources give a side and rough distance from a marked place, so the spot is approximate.' },
-  { id: 'place', label: 'Somewhere in a place', desc: 'Sources name the place but not the spot. The pin sits on the place, inside the square sources give.' },
-  { id: 'square', label: 'Somewhere in a square', desc: 'Sources give only a grid square, so the pin sits in its middle.' },
+  { id: 'exact', tier: 'pinned', label: 'Marked building', desc: 'Inside a building the official map marks, such as a police station or gas station.' },
+  { id: 'building', tier: 'pinned', label: 'Fortress or compound', desc: 'At a fortress or compound the official map marks. The room can be anywhere inside it.' },
+  { id: 'near', tier: 'approx', label: 'Rough spot', desc: 'Sources give a side and rough distance from a marked place, so the spot is approximate.' },
+  { id: 'place', tier: 'area', label: 'Somewhere in a place', desc: 'Sources name the place but not the spot, so the marker stands for the whole place.' },
+  { id: 'square', tier: 'area', label: 'Somewhere in a square', desc: 'Sources give only a grid square, so the marker sits in its middle.' },
 ]
+export const TIERS = ['pinned', 'approx', 'area']
 export const precisionOf = id => PRECISIONS.find(item => item.id === id)
+// How far a rough spot can be from where it is drawn, in official units.
+export const NEAR_RADIUS = { adjacent: 30, short: 60, long: 110 }
 export const REPORT_SIDES = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west']
 // Official units: a grid square is 276 wide. A side within the same building
 // nudges the pin and keeps the building's precision.
@@ -225,11 +258,26 @@ function siteOf(report) {
   return { at: anchor.at, precision: 'place', from: anchor.id }
 }
 
+// The major location a place belongs to, or the place itself when it stands alone.
+function topOf(pin) {
+  const parent = pin.parent && pinById.get(pin.parent)
+  return parent && parent.id !== pin.id ? parent.id : pin.id
+}
 export const hajinReports = mapReports.map(report => {
   const intel = REPORT_INTEL[report.id] || intelByName.get(reportName(report.name))
   const site = siteOf(report)
-  return { ...report, ...(intel ? { intel } : {}), ...site, square: squareOf(site.at) }
+  const anchor = report.anchor && pinById.get(report.anchor)
+  // Something that roams, or moves between matches, is only ever a rough spot.
+  const tier = report.moves ? 'approx' : precisionOf(site.precision).tier
+  return { ...report, ...(intel ? { intel } : {}), ...site, tier, square: squareOf(site.at), top: anchor ? topOf(anchor) : `square:${report.squares[0]}` }
 })
+// Report ids that research merges renamed or folded into another, so old ?pin= links still open.
+export const REPORT_MOVED = {}
+export function resolvePinId(id) {
+  let current = id
+  for (let hop = 0; hop < 5 && REPORT_MOVED[current]; hop++) current = REPORT_MOVED[current]
+  return current
+}
 for (const pin of pins) {
   const own = hajinReports.filter(report => report.anchor === pin.id)
   if (own.length) pin.reports = own.map(report => report.id)
@@ -258,7 +306,8 @@ for (const pin of places) {
 // own is listed but not drawn.
 const LABEL_PART = { '14th Political Prison': 'Prison', 'Chang-san Air Base': 'Air Base Exterior', 'Deadtown': 'Deadtown Exterior', 'Imjin Farmland': 'Farmland Exterior', 'Haneul Nuclear Reactor': 'Reactor' }
 // How far a zone reaches from its label, in official units.
-const REACH = { poi: 200, area: 140, fortress: 90, compound: 90 }
+export const PLACE_REACH = { poi: 200, area: 140, fortress: 90, compound: 90 }
+const REACH = PLACE_REACH
 const threatParts = []
 const threatSeeds = []
 for (const poi of places.filter(place => place.layer === 'poi')) {
