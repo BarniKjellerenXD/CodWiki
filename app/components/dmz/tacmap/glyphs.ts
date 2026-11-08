@@ -22,9 +22,11 @@ export const GLYPHS: Record<string, string> = {
   station: 'M7 4h10a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM5 11h14M8 21l2-4M16 21l-2-4',
   landmark: 'M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11zM10 10a2 2 0 1 0 4 0a2 2 0 1 0-4 0',
   route: 'M5 18a2 2 0 1 0 4 0a2 2 0 1 0-4 0M15 4a2 2 0 1 0 4 0a2 2 0 1 0-4 0M9 18h6.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H15',
-  // Not a layer: the X01 lift, opportunities, intel and loot without a key.
+  mission: 'M9 4h6v3H9zM7 5.5H6V21h12V5.5h-1M9 13l2 2l4-4',
+  'supply-drop': 'M4 10a8 8 0 0 1 16 0M4 10l8 5l8-5M12 15v2M8 17h8v4H8z',
   x01: 'M4 20h16M6 20V9l6-5l6 5v11M10 20v-6h4v6M12 4v-1',
   op: 'M12 3l2.6 5.6l6.1.7l-4.5 4.2l1.2 6l-5.4-3l-5.4 3l1.2-6L3.3 9.3l6.1-.7z',
+  // Not layers: intel and the key tracker's held mark.
   intel: 'M6 3h9l4 4v14H6zM15 3v4h4M9 12h7M9 16h7',
   held: 'M5 12l4 4l10-10',
 }
@@ -37,6 +39,6 @@ export const LAYER_COLOR: Record<string, string> = {
   poi: 'var(--dz-ink)', fortress: 'var(--dz-ink)', area: 'var(--dz-ink)', compound: '#b9c77e',
   police: '#93bdf0', clinic: '#a9d98a', fire: '#f08b6c', gas: '#d8c47c', 'marine-gas': '#8fd3e3', ammo: '#cdbb98', uav: '#9fd8cf', 'lt-tower': '#e8a04f',
   'key-room': REPORT, boss: REPORT, exfil: REPORT, sam: REPORT, 'mission-exit': REPORT, bounty: REPORT, station: REPORT, landmark: REPORT,
-  loot: '#d79cff', route: '#ff7ac6',
+  loot: '#d79cff', route: '#ff7ac6', mission: '#f7f5ea', op: '#f0a35e', 'supply-drop': '#c7d98a', x01: '#ff7a8a',
 }
 export const layerColor = (id: string) => LAYER_COLOR[id] || REPORT

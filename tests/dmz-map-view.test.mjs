@@ -25,7 +25,8 @@ test('each site says in words where it is, as sure as its tier', () => {
   for (const report of hajinReports) {
     const label = siteLabel(report)
     const from = report.from && hajinPin(report.from)
-    if (report.moves) assert.match(label, /moves between matches$/, report.id)
+    if (report.below) assert.match(label, new RegExp(`^Inside ${report.below}: take the lift `), report.id)
+    else if (report.moves) assert.match(label, /moves between matches$/, report.id)
     else if (report.tier === 'pinned') assert.match(label, /^(Inside the|At the|Somewhere inside) /, report.id)
     else if (report.tier === 'area') assert.match(label, /^Somewhere in /, report.id)
     else assert.match(label, / of .+, rough spot$/, report.id)

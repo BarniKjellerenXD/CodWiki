@@ -35,7 +35,9 @@ test('every Intel key is tracked or linked as a guide, and every key links to a 
   }
   assert.equal(dmzKeyGuides.length, KEY_GUIDE_IDS.length)
   for (const key of dmzKeys) {
-    assert.ok(intel.has(key.intel), `${key.id} → ${key.intel}`)
+    // A room research found before any Intel card covers its key is tracked from its report.
+    if (key.intel === undefined) assert.ok(hajinReports.some(report => report.id === key.id && report.type === 'key-room' && report.sources.length), `${key.id} has no Intel entry and no report`)
+    else assert.ok(intel.has(key.intel), `${key.id} → ${key.intel}`)
     assert.ok(['official', 'confirmed', 'reported'].includes(key.confidence), key.id)
     assert.ok(key.name && key.type, key.id)
   }

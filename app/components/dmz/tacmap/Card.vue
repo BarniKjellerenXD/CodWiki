@@ -102,14 +102,14 @@ defineExpose({ focus: () => headingRef.value?.focus({ preventScroll: true }) })
     </div>
     <h3 ref="headingRef" tabindex="-1">{{ report.name }}</h3>
     <p class="tc-meta dmz-mono">
-      <span class="tc-tier" :class="`is-${report.tier}`">{{ report.moves ? 'Moves around' : precisionOf(report.precision).label }}</span>
+      <span class="tc-tier" :class="`is-${report.tier}`">{{ report.below ? `In ${report.below}` : report.moves ? 'Moves around' : precisionOf(report.precision).label }}</span>
       <span class="tc-conf" :class="`is-${report.confidence}`">{{ intelConfidenceLabel(report.confidence) }}</span>
       <span v-if="report.threat" class="tc-threat" :data-threat="threatClass(report.threat)">{{ report.threat }} threat</span>
     </p>
     <div class="tc-where">
       <p class="tc-label"><strong>{{ siteLabel(report) }}</strong></p>
       <p class="tc-square dmz-mono">{{ squareLine(report) }}</p>
-      <p v-if="!compact" class="tc-hint">{{ report.moves ? 'It roams or moves between matches, so look around the ground shown.' : precisionOf(report.precision).desc }}</p>
+      <p v-if="!compact" class="tc-hint">{{ report.below ? `Underground in ${report.below}, not on the Hajin surface. The marker shows the lift down.` : report.moves ? 'It roams or moves between matches, so look around the ground shown.' : precisionOf(report.precision).desc }}</p>
       <p v-if="compact" class="tc-clamp">{{ report.where }}</p>
     </div>
     <div v-if="key" class="tc-key">

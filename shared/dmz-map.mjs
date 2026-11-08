@@ -51,13 +51,17 @@ export const hajinLayers = [
   { id: 'bounty', group: 'Reported', label: 'Bounty stations', one: 'Bounty station', desc: 'A laptop for reviewing bounties on other operators or paying off your own.', on: false },
   { id: 'station', group: 'Reported', label: 'Train stations', one: 'Station', desc: 'A train, tram or monorail stop.', on: false },
   { id: 'landmark', group: 'Reported', label: 'Landmarks', one: 'Landmark', desc: 'A building or spot that guides and missions refer to.', on: false },
+  { id: 'mission', group: 'Reported', label: 'Mission objectives', one: 'Mission objective', desc: 'Where a Story Mission sends you: its infil, a laptop, door, generator or console it needs.', on: false },
+  { id: 'op', group: 'Reported', label: 'Side and Dynamic Ops', one: 'Op site', desc: 'Where a Side Op or Dynamic Op starts or needs you, such as a workbench or a radio tower.', on: false },
+  { id: 'supply-drop', group: 'Reported', label: 'Supply drop spots', one: 'Supply drop spot', desc: 'A spot where a Lost Supply Drop has landed. Each match uses only some of them.', on: false },
+  { id: 'x01', group: 'Reported', label: 'X01 entrance', one: 'X01 entrance', desc: 'The lift down to X01, the Season 1 site under Hajin. The whole squad has to be in the cage before it goes down.', on: true },
   { id: 'route', group: 'Routes', label: 'Routes', one: 'Route', desc: 'The path a video takes across Hajin, stop by stop. Routes are traced by hand, so the line follows roads only roughly.', on: true },
 ]
 // The Layers panel groups layers into sections, in this order; every layer sits in one.
 export const MAP_SECTIONS = [
-  { id: 'keys', label: 'Keys and loot', layers: ['key-room', 'loot'], open: true },
-  { id: 'bosses', label: 'Bosses and objectives', layers: ['boss', 'sam', 'uav', 'lt-tower', 'bounty'], open: true },
-  { id: 'out', label: 'Getting out', layers: ['exfil', 'mission-exit', 'station', 'route'], open: true },
+  { id: 'keys', label: 'Keys and loot', layers: ['key-room', 'loot', 'supply-drop'], open: true },
+  { id: 'bosses', label: 'Bosses and objectives', layers: ['boss', 'sam', 'mission', 'op', 'uav', 'lt-tower', 'bounty'], open: true },
+  { id: 'out', label: 'Getting out', layers: ['exfil', 'mission-exit', 'x01', 'station', 'route'], open: true },
   { id: 'supplies', label: 'Supplies', layers: ['ammo', 'gas', 'marine-gas', 'police', 'clinic', 'fire'], open: false },
   { id: 'places', label: 'Places', layers: ['poi', 'fortress', 'compound', 'area', 'landmark'], open: false },
 ]
@@ -66,6 +70,7 @@ const SHORT = {
   poi: 'Major', fortress: 'Fortresses', area: 'Areas', compound: 'Compounds', police: 'Police', clinic: 'Clinics', fire: 'Fire', gas: 'Gas',
   'marine-gas': 'Marine gas', ammo: 'Ammo', uav: 'UAV', 'lt-tower': 'Lt. towers', 'key-room': 'Keys', boss: 'Bosses', exfil: 'Exfils',
   sam: 'SAM', loot: 'Loot', 'mission-exit': 'Mission exits', bounty: 'Bounty', station: 'Stations', landmark: 'Landmarks', route: 'Routes',
+  mission: 'Missions', op: 'Ops', 'supply-drop': 'Supply drops', x01: 'X01',
 }
 for (const layer of hajinLayers) Object.assign(layer, { section: MAP_SECTIONS.find(section => section.layers.includes(layer.id))?.id, short: SHORT[layer.id] || layer.label })
 export const hajinLayer = id => hajinLayers.find(layer => layer.id === id)
