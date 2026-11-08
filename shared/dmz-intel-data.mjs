@@ -3303,8 +3303,8 @@ export const intelData = [
     confidence: 'confirmed', sources: ['allthings-modern-warfare-4-dmz-key', 'youtube-cqe4cmlsms', 'dmzcodex-hazard-storehouse-key', 'dmzmap-keys', 'youtube-x50zjbnjfkw'], updated: '2026-10-24',
   },
   {
-    id: 'knrp-reactor-01', category: 'keys', type: 'Key', name: 'KNRP Reactor 01',
-    summary: 'A key named KNRP Reactor 01, for the Haneul Nuclear Reactor. A short location video covers it, but the key lists on DMZMap, DMZ Codex and DMZ Radar do not carry it yet, and no written source gives its door or contents.',
+    id: 'knrp-reactor-01', category: 'keys', type: 'Key', name: 'Utility Maintenance Storage',
+    summary: 'A Rare key for the Utility Maintenance Storage room in the basement under the transformer yard beside Reactor 01 at the Haneul Nuclear Reactor. The door is signed KNRP Reactor 01. The room on the Tac-Map lists the written guides that place it.',
     details: [
       ['Location', 'Haneul Nuclear Reactor (HIGH threat)'],
     ],

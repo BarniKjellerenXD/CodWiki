@@ -38,7 +38,9 @@ export function siteLabel(report) {
 export function squareLine(report) {
   const squares = report.squares || []
   if (report.squaresDisagree && squares.length > 1) return `Sources disagree: ${squares.join(' / ')}`
-  if (squares.length) return `${report.type === 'key-room' ? 'Key card square' : 'Sources give square'} ${squares.join(', ')}`
+  // A key card names one square; more than one means sources give different ones.
+  if (squares.length > 1) return `Sources give square ${squares.join(' or ')}`
+  if (squares.length) return `${report.type === 'key-room' ? 'Key card square' : 'Sources give square'} ${squares[0]}`
   return `Drawn in ${report.square}`
 }
 
@@ -48,9 +50,15 @@ export function reportArea(report) {
   if (report.tier === 'pinned') return null
   const squares = report.squares || []
   const from = report.from && pinById.get(report.from)
-  if (report.moves) return { circle: from ? { at: from.at, radius: PLACE_REACH[from.layer] || PLACE_REACH.fortress } : null, squares }
+  // Underground sites have no ground on the surface; the marker is only the way down.
+  if (report.below) return { circle: null, squares }
+  if (report.moves) return { circle: from ? { at: report.at, radius: PLACE_REACH[from.layer] || PLACE_REACH.fortress } : null, squares }
   if (report.precision === 'near') return { circle: { at: report.at, radius: NEAR_RADIUS[report.dist] || NEAR_RADIUS.short }, squares }
-  if (report.precision === 'place') return { circle: { at: from.at, radius: PLACE_REACH[from.layer] }, squares }
+  if (report.precision === 'place') {
+    // The place's ground, widened to take in a pin moved into the square sources give.
+    const off = Math.hypot(report.at[0] - from.at[0], report.at[1] - from.at[1])
+    return { circle: { at: from.at, radius: Math.max(PLACE_REACH[from.layer], Math.ceil(off) + 40) }, squares }
+  }
   return { circle: null, squares }
 }
 
@@ -63,7 +71,8 @@ export const pxPerUnit = zoom => hajinMap.toArt.scale * 2 ** zoom
 const layerOrder = new Map(hajinLayers.map((layer, index) => [layer.id, index]))
 const tierOrder = tier => TIERS.indexOf(tier)
 const placeAt = new Map()
-for (const pin of hajinPins) if (PLACES.includes(pin.layer) && !pin.same) placeAt.set(pin.at.join(','), placeAt.get(pin.at.join(',')) || pin.id)
+// A fortress named like its location still has its own spot, so a chip there sits beside it.
+for (const pin of hajinPins) if (PLACES.includes(pin.layer)) placeAt.set(pin.at.join(','), placeAt.get(pin.at.join(',')) || pin.id)
 
 // Sites that would overlap on screen join one group, but never across major
 // locations. A group sits on one member's own spot, never an average: the

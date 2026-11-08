@@ -76,10 +76,11 @@ const routeCard = computed(() => {
   }
 })
 
-function sourcesOf(item: { sources: string[], videos?: VideoRef[] }) {
+// Pages cited for a side fact (context) are credited too, after the ones that place the site.
+function sourcesOf(item: { sources: string[], context?: string[], videos?: VideoRef[] }) {
   const seen = new Map<string, Source & { site: string }>()
   const watched = new Set((item.videos || []).map(video => video.id))
-  for (const id of item.sources) {
+  for (const id of [...item.sources, ...(item.context || [])]) {
     const source = sources[id]
     if (!source) continue
     // Videos are credited under Watch it done.

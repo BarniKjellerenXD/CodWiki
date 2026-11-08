@@ -11,14 +11,14 @@ export const dmzStations = [
     icon: 'M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14',
     desc: 'The Hajin Tac-Map: 13 major locations rated Low to Extreme, the official service markers, and the key rooms, bosses, exfils and mission spots players report, each drawn where sources put it.',
     // Counts match shared/dmz-map.mjs; tests/dmz-map.test.mjs checks them.
-    facts: ['13 major locations · 137 official markers', '250 reported sites, each at its spot'],
+    facts: ['13 major locations · 137 official markers', '249 reported sites, each at its spot'],
   },
   {
     id: 'stash', label: 'Stash', short: 'Keys', title: 'Key tracker', route: '/dmz/stash',
     icon: 'M3 9h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M8 9V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v3 M3 13h18',
     desc: 'Every key and locked room in Intel, with the room it opens, its place and grid square. Mark the keys you hold or have used; marks stay on this device.',
     // Counts match shared/dmz-keys.mjs; tests/dmz-keys.test.mjs checks them.
-    facts: ['71 keys · 73 reported rooms', 'Held and used marks, kept between matches'],
+    facts: ['67 keys · 73 reported rooms', 'Held and used marks, kept between matches'],
   },
   {
     id: 'orders', label: 'DMZ Orders', short: 'Orders', title: 'Orders tracker', route: '/dmz/orders',

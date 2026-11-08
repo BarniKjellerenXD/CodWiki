@@ -204,10 +204,15 @@ const intelByName = new Map(dmzIntel.filter(entry => !entry.tracked).map(entry =
 const REPORT_INTEL = {
   'supreme-leaders-bunker': 'supreme-leader-access-card', 'the-citadel-south-wing': 'citadel-south-wing-supply-room',
   'gun-store-weapons-lockers-western-cheongun-village': 'gun-store-weapons-locker-key', 'gun-store-weapons-lockers-northern-songdo-wharf': 'gun-store-weapons-locker-key',
-  'jang-ui-encampment-nurigo-mall': 'jang-ui', 'tank': 'main-nk-battle-tank', 'gorani-loot-room-rice-mill-rooftop': 'gorani',
+  'jang-ui-encampment-nurigo-mall': 'jang-ui', 'tank': 'main-nk-battle-tank', 'gorani-loot-room-rice-mill-rooftop': 'goranis-scout-overlook-key-room',
   'colossus-fallen-ember-warhead': 'colossus', 'deathstalker-nurigo-mall': 'deathstalker',
   'cheonwang-peak-array-safes': 'cheonwang-peak-array', 'haneul-reactor-loot-route': 'haneul-nuclear-reactor', 'reactor-02-decontamination-machine': 'irradiated-container',
   'nurigo-east-loot-route': 'nurigo-east', 'casino-vault-run': 'counting-room-vault-key',
+  // Rooms found in the 8 Nov 2026 research round whose key has an Intel card under another name.
+  'server-room-admin-complex-no-2': 'air-base-access-card-multi-use', 'air-base-armory-bunker-vault': 'airbase-armory-keycard',
+  'the-wardens-sealed-room-under-nurigo-mall': 'nurigo-mall-sealed-room',
+  'hanex-branch-bank-vault-cheongun-village': 'bank-branch-vault-access', 'hanex-branch-bank-vault-wolves-stadium': 'bank-branch-vault-access',
+  'hanex-branch-bank-vault-songdo-wharf': 'bank-branch-vault-access', 'hanex-branch-bank-vault-nurigo-west': 'bank-branch-vault-access',
 }
 // Where each reported site is drawn, and how sure that spot is. None of these
 // has an official position, so the spot is derived from what sources say:
@@ -250,7 +255,13 @@ function siteOf(report) {
   const angle = step * Math.PI / 4, length = SIDE_STEPS[report.dist] || SIDE_STEPS.short
   const beside = step >= 0 ? [Math.round(base.at[0] + Math.sin(angle) * length), Math.round(base.at[1] - Math.cos(angle) * length)] : base.at
   const inside = report.dist === 'same-building'
-  if (step >= 0 && !inside) return { at: beside, precision: 'near', from: base.id }
+  if (step >= 0 && !inside) {
+    // A rough spot that lands outside every square its sources give moves just inside the nearest one.
+    const given = report.squares || []
+    const at = !given.length || given.includes(squareOf(beside)) ? beside
+      : given.map(square => intoSquare(beside, square, 12)).sort((a, b) => Math.hypot(a[0] - beside[0], a[1] - beside[1]) - Math.hypot(b[0] - beside[0], b[1] - beside[1]))[0]
+    return { at, precision: 'near', from: base.id }
+  }
   if (service) return { at: beside, precision: 'exact', from: service.id }
   if (['fortress', 'compound'].includes(anchor.layer)) return { at: beside, precision: 'building', from: anchor.id }
   // A place's label can sit in the square next to the one sources give; move the
@@ -277,7 +288,9 @@ export const hajinReports = mapReports.map(report => {
   return { ...report, ...(intel ? { intel } : {}), ...site, tier, square: squareOf(site.at), top: anchor ? topOf(anchor) : `square:${report.squares[0]}` }
 })
 // Report ids that research merges renamed or folded into another, so old ?pin= links still open.
-export const REPORT_MOVED = {}
+export const REPORT_MOVED = {
+  'lost-supply-drop-spot-under-the-hajin-river-bridge-c7': 'lost-supply-drop-spot-under-the-hajin-river-bridge-deadtown',
+}
 export function resolvePinId(id) {
   let current = id
   for (let hop = 0; hop < 5 && REPORT_MOVED[current]; hop++) current = REPORT_MOVED[current]

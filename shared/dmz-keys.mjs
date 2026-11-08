@@ -161,11 +161,15 @@ export function filterKeys(keys, { query = '', mark = 'all', place = 'all', conf
 export const DMZ_KEYS_KEY = 'codwiki-dmz-keys-v1'
 export const KEY_MARKS = ['held', 'used']
 
+// Key IDs that research merges retired, and the key each one became, so saved marks carry over.
+export const KEY_MOVED = { 'gorani-loot-room-rice-mill-rooftop': 'goranis-scout-overlook-key-room' }
+
 // Keeps only known key IDs marked held or used.
 export function normalizeDmzKeys(raw) {
   const marks = {}
+  const old = id => Object.keys(KEY_MOVED).find(from => KEY_MOVED[from] === id)
   for (const key of dmzKeys) {
-    const value = raw?.marks?.[key.id]
+    const value = raw?.marks?.[key.id] ?? raw?.marks?.[old(key.id)]
     if (KEY_MARKS.includes(value)) marks[key.id] = value
   }
   return { marks }
