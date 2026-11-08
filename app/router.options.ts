@@ -33,6 +33,8 @@ export default {
     // GuideArticle opens the appropriate view/disclosures before scrolling.
     // Map hashes identify dataset targets rather than document elements.
     if (mapGuides.has(to.path) && (to.hash || to.path === from.path)) return false
+    // The full-screen Tac-Map opens and closes through #full; the page behind it stays put.
+    if (to.path.startsWith('/dmz/') && to.path === from.path && (to.hash === '#full' || from.hash === '#full')) return false
     if (savedPosition) return savedPosition
     // A DMZ page that only changes its query (a Tac-Map pin, an Intel category) stays put.
     if (to.path.startsWith('/dmz/') && to.path === from.path && to.hash === from.hash) return false

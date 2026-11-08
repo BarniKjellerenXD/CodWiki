@@ -26,7 +26,17 @@ function revealMap() {
 
     <section id="map" class="dmz-section" aria-labelledby="map-title">
       <h2 id="map-title">Tac-Map</h2>
-      <p>Official markers sit where Activision's own interactive map puts them. Gold badges count the key rooms, bosses, exfils and other sites that guides and players report at each place. Search a key card's square, such as H6, to see everything in it. Switch to Threat to see how dangerous each part of a location is.</p>
+      <p>Solid markers sit in a building the official map marks; dashed ones are rough spots, so pick one to see the ground it could be on. Gold chips hold several sites: tap to spread them.</p>
+      <details class="hz-how">
+        <summary>How to read the map</summary>
+        <ul>
+          <li>Round markers, diamonds and the place names come from Activision's own interactive map, so they sit where the game puts them.</li>
+          <li>Rounded squares are sites that guides and players report: key rooms, bosses, exfils, SAM sites, loot and more. Each card says in words where the site is and how sure that spot is.</li>
+          <li>Quick finds above the map show only keys, bosses, exfils, SAM sites or loot for now. Layers sets what the map shows every time.</li>
+          <li>Search a key card's square, such as H6, to list everything sources put in it. Mark keys held on a key room's card and My keys shows their rooms.</li>
+          <li>Switch to Threat to see how dangerous each part of a location is. On a phone, open the full map to pan and zoom.</li>
+        </ul>
+      </details>
       <ClientOnly>
         <DmzTacMap />
         <template #fallback><div class="hz-map-wait dmz-mono">Loading the Tac-Map…</div></template>
@@ -87,6 +97,10 @@ function revealMap() {
 
 <style scoped>
 .hz-lede { font-size: 1.1875rem !important; color: var(--dz-ink) !important; }
+.hz-how { margin: 0 0 1rem; max-width: 46rem; color: var(--dz-muted); }
+.hz-how summary { min-height: 2.5rem; display: flex; align-items: center; color: var(--dz-ink); font-weight: 600; cursor: pointer; }
+.hz-how ul { margin: 0.25rem 0 0; padding-left: 1.1rem; display: grid; gap: 0.35rem; }
+.hz-how li { font-size: 0.95rem; }
 .hz-map-wait { display: grid; place-items: center; height: clamp(26rem, 72svh, 42rem); border: 1px solid var(--dz-line-strong); border-radius: 18px; background: #0b0d0c; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dz-muted); }
 .hz-pois { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.5rem; }
 .hz-pois a { display: flex; align-items: center; gap: 0.75rem; min-height: 3.25rem; height: 100%; padding: 0.5rem 1rem; background: rgba(22, 26, 25, 0.55); border: 1px solid var(--dz-line); color: inherit; text-decoration: none; }
